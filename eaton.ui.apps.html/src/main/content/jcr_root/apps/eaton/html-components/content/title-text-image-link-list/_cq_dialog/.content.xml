@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Article List"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <view
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="view"
+                        name="./view">
+                        <items jcr:primaryType="nt:unstructured">
+                            <no-feature
+                                jcr:primaryType="nt:unstructured"
+                                text="Article List with No Feature"
+                                value="no-feature"/>
+                            <single-feature
+                                jcr:primaryType="nt:unstructured"
+                                text="Article List with Single Feature"
+                                value="single-feature"/>
+                            <related-products-text-only
+                                jcr:primaryType="nt:unstructured"
+                                text="Related Products Text Only"
+                                value="related-products-text-only"/>
+                            <related-products-with-images
+                                jcr:primaryType="nt:unstructured"
+                                text="Related Products With Images"
+                                value="related-products-with-images"/>
+                            <products
+                                jcr:primaryType="nt:unstructured"
+                                text="Products"
+                                value="products"/>
+                            <fea-list
+                                jcr:primaryType="nt:unstructured"
+                                text="fea-list"
+                                value="fea-list"/>
+                            <fea-story
+                                jcr:primaryType="nt:unstructured"
+                                text="fea-story"
+                                value="fea-story"/>
+                            <category-related-products-with-images
+                                jcr:primaryType="nt:unstructured"
+                                text="Category related products with images"
+                                value="category-related-products-with-images"/>
+                            <products-in-grid-feature
+                                jcr:primaryType="nt:unstructured"
+                                text="Products In Grid Feature"
+                                value="products-in-grid-feature"/>
+                            <tile-links
+                                jcr:primaryType="nt:unstructured"
+                                text="Tile Links"
+                                value="tile-links"/>
+                            <image-list
+                                jcr:primaryType="nt:unstructured"
+                                text="Image List"
+                                value="image-list"/>
+                            <no-feature-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="No Feature Release3"
+                                value="no-feature-rel3"/>
+                            <single-feature-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="Single Feature Release3"
+                                value="single-feature-rel3"/>
+                            <category-related-products-with-images-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="category-related-products-with-images-rel3"
+                                value="category-related-products-with-images-rel3"/>
+                            <image-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="image-rel3"
+                                value="image-rel3"/>
+                            <related-products-with-images-cat-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="related-products-with-images-cat-rel3"
+                                value="related-products-with-images-cat-rel3"/>
+                            <text-article-cat-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="text-article-cat-rel3"
+                                value="text-article-cat-rel3"/>
+                            <Image-list-career-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="Image-list-career-rel3"
+                                value="Image-list-career-rel3"/>
+                            <Tile-link-career-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="Tile-link-career-rel3"
+                                value="Tile-link-career-rel3"/>
+                        </items>
+                    </view>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

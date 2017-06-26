@@ -1,0 +1,78 @@
+.bodyText p{
+margin:0;
+}
+
+.highlightedStatement p{
+    border-left: 4px solid;
+    border-color: var(--Eaton-Blue);
+    padding: 0px 25px;
+    color: var(--Gray3);
+    font-size: 2.84em;
+    font-family: Arial;
+    line-height: 60px;
+    font-style: italic;
+
+}
+
+
+/* Seconadory Text Style */
+.sec_text_list ul {
+    padding-left:25px;
+    }
+.sec_text_list li {
+    margin: 5px 0px;
+    list-style: none;
+}
+
+.sec_text_list li::before {
+    content: "\2022";
+    color: var(--Eaton-Blue);
+    font-size: 1.5em;
+    margin-right: 10px;
+    /* or whatever color you prefer */
+}
+
+
+
+/* Secondary Article style */
+
+@media only screen and (max-width: 768px) {
+
+    .highlightedStatement p {
+    	margin-bottom: 60px;
+        padding-right: 0px;
+        font-size: 2.17em;
+        line-height: 40px;
+    }
+
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px) and(max-width:650px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px) and(max-width:650px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px) and(max-width:650px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px) and(max-width:650px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px) and(max-width:650px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) and(max-width:650px){ ​
+
+ .highlightedStatement p {
+    	margin-bottom: 60px;
+        padding-right: 0px;
+        font-size: 3.84em;
+        line-height: 40px;
+    }
+
+
+    }
+.sec_text_list li{
+  list-style: none;
+}
+.sec_text_list li::before{
+  content: "";
+  background: var(--Eaton-Blue);
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  border-radius: 50%;
+  margin: 21px 0 0 -20px;
+}
+

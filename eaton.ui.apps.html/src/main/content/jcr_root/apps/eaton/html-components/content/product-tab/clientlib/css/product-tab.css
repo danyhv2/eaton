@@ -1,0 +1,339 @@
+.productTabsFamily {
+	
+}
+
+.fixTab{
+	z-index:100;
+	position:fixed;
+	width:100%;
+}
+
+.mb-150{
+	margin-bottom:150px;
+}
+
+.productTabsBackground {
+	background: #333F48;
+}
+
+.productTabsFamily .tab .small {
+	color: #FFFFFF;
+	padding-top: 10px;
+	font-size: 0.875em;
+}
+
+.productTabsFamily .ptHolder {
+	padding: 28px 0px;
+	text-transform: uppercase;
+}
+
+.productTabsFamily .btnHolder {
+	padding: 40px 0px 0px 30px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.productTabsFamily .btnHolder .glyphicon-menu-down {
+	top: 3px !important;
+    left:10px !important;
+}
+
+.btnHolder .howToBuy {
+	border-radius: 0px;
+	background: #4c8c2b;
+	width: 100%;
+	padding: 20px;
+	border: 0px;
+	font-size: 1.25em;
+}
+.howToBuy:focus  {outline:0 !important;}
+.howToBuy:active {outline:0 !important;}
+.howToBuy:hover  {outline:0 !important;}
+.productTabsFamily .ptHolder .pxUps {
+	font-family: eaton;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.productTabsFamily .tab .tabInsideContent {
+	padding: 40px 0px;
+}
+
+.productTabsFamily .tabHolder {
+	color: #fff;
+}
+
+.productTabsFamily .tabIcon {
+	display: block;
+	margin: auto;
+}
+
+.productTabsFamily .tabHolder {
+	margin-left: 8.33333333%;
+}
+
+.productTabsFamily .tabHolder .active {
+	background: #5b6770 !important;
+}
+
+.productTabsFamily .tabHolder a {
+	color: white;
+	text-decoration: none;
+}
+
+.productTabsFamily .tabHolder  a:hover {
+	background-color: #5b6770 !important;
+	color: white;
+	text-decoration: none;
+}
+
+.productTabsFamily .tabHolder li:active {
+	background-color: #5b6770 !important;
+	color: white;
+	text-decoration: none;
+}
+
+.productTabsFamily .tabHolder li:focus {
+	background-color: #5b6770 !important;
+	color: white;
+	text-decoration: none;
+}
+
+.productTabsFamily .tabHolder>li>a {
+	padding: 0px !important;
+}
+
+.overview {
+	text-align: center;
+}
+
+.productTabsFamily .tabHolder li {
+	width: 33.33% !important;
+	margin-top: 0px !important;
+	margin-right: 0% !important;
+	float: left;
+}
+
+.productTabsFamily .tabHolder>li.active>a, .productTabsFamily .tabHolder>li.active>a:hover,
+	.productTabsFamily .tabHolder>li.active>a:focus {
+	background-color: none;
+	border-bottom: 0px solid #0a70cd;
+}
+
+.productTabsFamily .tabHolder>li>a, .productTabsFamily .tabHolder>li>a:hover,
+	.productTabsFamily .tabHolder>li>a:focus {
+	border-bottom: 0px;
+	margin-bottom: 0px;
+	padding: 0px 0px !important;
+}
+
+.productTabsFamily .no-padding {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.productTabsFamily .tabHolder li a {
+	border-bottom: 0px;
+}
+
+.productTabsFamily .tabHolder>li.active>a, .productTabsFamily .tabHolder>li.active>a:hover,
+	.productTabsFamily .tabHolder>li.active>a:focus {
+	background: none !important;
+	color: #fff !important;
+	margin-bottom: 0px;
+	padding: 0px 0px !important;
+}
+
+#how-to-buy-drop-down {
+	float: right !important;
+	display: none;
+	background: #F8F8F8;
+}
+
+.how-to-buy-drop-down {
+	margin-right: 0px;
+	margin-top: -40px !important;
+	padding: 0px 30px !important;
+	background: #eef0f2;
+	position: absolute;
+	width: 255px !important;
+	margin-left: 30px;
+}
+
+.how-to-buy-drop-down-sku {
+	margin-right: 0px;
+	padding: 0px 30px !important;
+	margin-top: -40px !important;
+	background: #eef0f2;
+	position: absolute;
+	width: 255px !important;
+	margin-left: 30px;
+}
+
+.how-to-buy-drop-down .small {
+	font-size: 1em !important;
+}
+
+.htb-dropdown {
+	list-style: none;
+	float: right;
+	padding-left: 0px !important;
+	margin-bottom: 0px !important;
+	margin-top: 30px !important;
+}
+
+.htb-dropdown li {
+	display: table;
+}
+
+.htb-dropdown li .small {
+	font-size: 1em !important;
+}
+
+.htb-dropdown li img {
+	display: table-cell;
+	vertical-align: middle;
+	padding-top: 0px;
+}
+
+.htb-dropdown-text {
+	padding-left: 40px !important;
+}
+
+.htb-dropdown span {
+	padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.productTabsBackground {
+		padding: 0px !important;
+	}
+	.productTabsFamily .container {
+		padding: 0px;
+	}
+	.productTabsFamily .tabHolder {
+		margin-left: 0px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.whiteBg {
+		background: #FFF !important;
+	}
+	.productTabsFamily .mobile-full-width {
+		width: 100% !important;
+		padding: 0px !important;
+	}
+	.productTabsFamily .tab .small {
+		font-size: 0.875em !important;
+	}
+	.productTabsFamily .ptHolder h5 {
+		font-size: 2.5em !important;
+	}
+	.productTabsFamily .ptHolder .small a {
+		font-size: 1.125em !important;
+	}
+	.productTabsFamily .ptHolder {
+		padding: 40px 30px;
+	}
+	.productTabsFamily .tabHolder {
+		margin: 40px 0px 0px 0px !important;
+	}
+	.smallScrenMargin {
+		margin: 0px 30px !important;
+	}
+	.productTabsFamily .mobile-full-width {
+		width: 100% !important;
+		padding: 0px !important;
+	}
+	.smallScrenMargin {
+		margin: 0px 30px !important;
+	}
+	.how-to-buy-drop-down {
+		float: left;
+	    margin: 0px !important;
+	    padding: 0 !important;
+	    width: 85% !important;
+	    background: #F8F8F8;
+	    z-index: 1;
+	    margin-left: 30px !important;
+	    margin-right: 30px !important;
+	}
+	.htb-dropdown {
+		float: left !important;
+		padding: 0px 60px !important;
+	}
+	.htb-dropdown li {
+		padding-bottom: 60px !important;
+	}
+	.productTabsFamily .btnHolder {
+		padding: 40px 0px 0px 0px !important;
+	}
+	.how-to-buy-drop-down .small {
+		font-size: 1.875em !important;
+	}
+	.htb-dropdown li img {
+		padding-top: 7px;
+	}
+	.tabHolder{
+	border-top:1px solid #eef0f2;
+	}
+}
+
+
+
+
+
+/* Search Results Tabs */
+.search-results-tabs-container{
+	overflow:hidden;
+    height:115px;
+    margin: 0 auto;
+    display: table;
+}
+
+
+.search-results-tabs-link  {
+    background-color: inherit;
+    display: table-cell;
+    border: none;
+    outline: none;
+    cursor: pointer;    
+    transition: 0.3s;
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+
+
+#search-results-tab-main{	
+	border: 1px solid #ccc;
+   	 background-color: #f1f1f1;
+}
+
+.search-tab-active  {
+    background: #fff !important;
+    border:none;
+    color:#333F48;        
+}
+
+.search-tab-active:hover  {
+    background: #fff !important;
+    border:none;
+    color:#333F48;        
+}
+
+
+
+
+
+
+
+
+
+
+
+

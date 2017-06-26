@@ -1,0 +1,32 @@
+.productHighlight h1{
+color:#5B6770;
+font-size:3.75em !important;
+}
+
+.thickLine{
+height:12px;
+background:#eef0f2;
+}
+.thinLine{
+height:6px;
+background:#eef0f2;
+}
+
+
+@media only screen and (max-width:992px){
+            .noMarginOnSmall{
+margin:0px !important;
+                }
+.productHighlight .highlight1 .eyeBrowSmall{
+margin-top:60px !important;
+}
+.productHighlight .highlight2 .eyeBrowSmall{
+margin-top:90px !important;
+}
+.productHighlight .highlight3 .eyeBrowSmall{
+margin-top:90px !important;
+}
+.productHighlight h1{
+font-size:3.125em !important;
+}
+ }

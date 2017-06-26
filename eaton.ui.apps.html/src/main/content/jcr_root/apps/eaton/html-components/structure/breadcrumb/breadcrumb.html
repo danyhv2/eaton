@@ -1,0 +1,85 @@
+<sly data-sly-test="${wcmmode.edit}">Breadcrumb Component</sly>
+<section class="container-fixed container-padding">
+    <div class="aem-Grid aem-Grid--12">
+        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+            <sly data-sly-test="${properties.view == 'article'}">
+                <ul class="breadcrumb-eaton">
+                    <li class="breadcrumb-item"><a href="#">Company</a></li>
+                    <li class="breadcrumb-item"><a href="#">About Eaton</a></li>
+                    <li class="breadcrumb-item"><a href="#">Our History</a></li>
+                    <li><a href="#">L4</a></li>
+                    <li><a href="#">L5</a></li>
+                    <li><a href="#">L6</a></li>
+                    <li><a href="#">L7</a></li>
+                    <li><a href="#">L8</a></li>
+                    <li class="breadcrumb-item active">Article</li>
+                </ul>
+            </sly>
+            <sly data-sly-test="${properties.view == 'primary-landing'}">
+                <ul class="breadcrumb-eaton">
+                    <li class="breadcrumb-item"><a href="#">Company</a></li>
+                    <li class="breadcrumb-item"><a href="#">About Eaton</a></li>
+                    <li class="breadcrumb-item"><a href="#">Our History</a></li>
+                    <li><a href="#">L4</a></li>
+                    <li><a href="#">L5</a></li>
+                    <li><a href="#">L6</a></li>
+                    <li><a href="#">L7</a></li>
+                    <li><a href="#">L8</a></li>
+                    <li class="breadcrumb-item active">Primary Landing</li>
+                </ul>
+            </sly>
+            
+            <sly data-sly-test="${properties.view == 'global-careers'}">
+                <ul class="breadcrumb-eaton">
+                    <li class="breadcrumb-item"><a href="#">Company</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Global Careers</a></li>                    
+                </ul>
+            </sly>
+            
+            <sly data-sly-test="${properties.view == 'investor-relations'}">
+                <ul class="breadcrumb-eaton">
+                    <li class="breadcrumb-item"><a href="#">Company</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Investor Relations</a></li>                    
+                </ul>
+            </sly>
+    	        
+        	
+        	<sly data-sly-test="${properties.view == 'news-media'}">
+                <ul class="breadcrumb-eaton">
+                    <li class="breadcrumb-item"><a href="#">Company</a></li>
+                    <li class="breadcrumb-item active"><a href="#">News and Media</a></li>                    
+                </ul>
+            </sly>
+        	    
+        	 <sly data-sly-test="${properties.view == 'news-releases'}">
+                <ul class="breadcrumb-eaton">
+                    <li class="breadcrumb-item"><a href="#">Company</a></li>
+                    <li class="breadcrumb-item"><a href="#">News and Media</a></li>
+                    <li class="breadcrumb-item active"><a href="#">News Releases</a></li>                    
+                </ul>
+            </sly>   
+        	  
+        	 <sly data-sly-test="${properties.view == 'backup-power-ups'}">
+                <ul class="breadcrumb-eaton">
+                    <li class="breadcrumb-item"><a href="#">Products</a></li>                    
+                    <li class="breadcrumb-item active"><a href="#">Backup Power UPS</a></li>                    
+                </ul>
+            </sly>   
+			 <sly data-sly-test="${properties.view == 'secondary-landing'}">
+                <ul class="breadcrumb-eaton">
+                    <li class="breadcrumb-item"><a href="#">Company</a></li>                    
+                    <li class="breadcrumb-item active"><a href="#">News and media</a></li>                    
+                </ul>
+            </sly>  
+        	 <sly data-sly-test="${properties.view == 'career-page'}">
+                <ul class="breadcrumb-eaton">
+                    <li class="breadcrumb-item"><a href="#">Company</a></li>                    
+                    <li class="breadcrumb-item active"><a href="#">Global careers</a></li>                    
+                </ul>
+            </sly>      
+
+        	    
+        </div>
+    </div>
+    
+</section>

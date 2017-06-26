@@ -1,0 +1,48 @@
+
+/* Download and links card  starts here*/
+.infoContainer{
+	 font-family: Arial;
+	 /*border-top:8px solid #EEF0F2;*/
+	 margin-right: 20px;
+    padding-right: 0px;
+	/*margin-bottom:15px;*/
+	font-size: 16px;
+}
+.infoContainer .heading{
+	font-weight: bold;
+    color: #0067c6;
+	font-size: 17px;
+}
+
+.infoContainer h4{
+	text-transform: uppercase;
+    margin-bottom: 25px;
+    margin-top: 20px;
+	font-size: 16px;
+    font-weight: bold;
+}
+.infoContainer p{
+	margin:5px 0px 5px 0px;
+}
+.infoContainer .main{
+	display:table;
+	margin-bottom: 10px;
+}
+.infoContainer .main span{
+	display: table-cell;
+    vertical-align: top;
+	padding-top: 8px;
+}
+
+/* Download and links card  ends here*/
+
+/* iPad portrait Style starts here */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+
+
+}
+/* iPad portrait Style ends here */
+
+

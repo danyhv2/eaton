@@ -1,0 +1,725 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+    <div>Search Component</div>
+</sly>
+<sly data-sly-test="${properties.view == 'site-search'}">
+    <div class="container-full hide-mob">
+        <div class="aem-Grid aem-Grid--12">
+            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                <div class="search-main pull-right" role="search">
+                    <button class="search-btn" id="search-btn"><span class="search-btn-icon"></span></button>
+                    <button class="close-search-btn" id="close-search-btn"><span class="close-search-btn-icon"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>
+<sly data-sly-test="${properties.view == 'mega-menu-product-search'}">
+    <div class="container-full container-padding">
+        <div class="aem-Grid aem-Grid--12">
+            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 search ">
+                 <div class="eyeBrowSmall smallPaddingBottom uppercase light"> Product Search </div>
+                <div class='searchContainer'>
+                    <div class='form-group'>
+                        <input type='text'  placeholder='Products, sku, parts, specs' class='form-control'>
+                        <div class="eyeBrowSmall smallPaddingBottom uppercase light smallPaddingTop"> Top Searches </div>
+                        <ul class="list-group small-body-copy-link-on-dark">
+                            <li class="list-group-item smallPaddingBottom"> VAVE Project Lead </li>
+                            <li class="list-group-item smallPaddingBottom"> Senior Product Engineer </li>
+                            <li class="list-group-item smallPaddingBottom"> Senior Field Service Engineer </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>
+<sly data-sly-test="${properties.view == 'mega-menu-career-search'}">
+    <div class="container-full container-padding">
+        <div class="aem-Grid aem-Grid--12">
+            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 search ">
+                <div class="eyeBrowSmall smallPaddingBottom uppercase light"> Search Careers </div>
+                <div class='searchContainer'>
+                    <div class='form-group'>
+                        <input type='text'  placeholder='Search' class='form-control'>
+                        <div class="eyeBrowSmall smallPaddingBottom uppercase light smallPaddingTop"> Top Searches </div>
+                        <ul class="list-group small-body-copy-link-on-dark">
+                            <li class="list-group-item smallPaddingBottom"> VAVE Project Lead </li>
+                            <li class="list-group-item smallPaddingBottom"> Senior Product Engineer </li>
+                            <li class="list-group-item smallPaddingBottom"> Senior Field Service Engineer </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>
+<sly data-sly-test="${properties.view == 'product-search'}">
+<div class="searchProducts">
+			<div class="container-fixed container-padding">
+            <div class="aem-Grid aem-Grid--12">
+				<div class="find_label aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 aem-GridColumn--tablet--12">Find products, parts, and help</div>
+				<div class="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 aem-GridColumn--tablet--12">
+						<div class="form-group has-feedback searchBoxHolder">
+							<input type="text" class="form-control" placeholder="Search products, parts, documentation, support etc." />
+							<a href="#"><img src="/content/dam/eaton/images/search_icon.png"></a>
+						</div>
+				</div>
+                </div>
+				<div class="clear"></div>
+			</div>
+	  </div>
+      </sly>
+
+<sly data-sly-test="${properties.view == 'product-search-rel3'}">
+<div id="product-search-input2" class="smallPaddingTop smallPaddingBottom">
+
+        <div class="container-fixed container-padding">
+            <div class="aem-Grid aem-Grid--12">
+                <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                    <div class="searchProducts2 hide-mob">
+                        <input class="searchProducts2-inputbox h5-search-input" type="text" placeholder="Search products, parts, documentation, support, etc" onfocus="if (this.placeholder=='Search products, parts, documentation, support, etc') this.placeholder = ''">
+
+                        <a href="#."><span class="searchService-icon-white-rel3"></span></a>
+					</div>
+					<div class="searchProducts2 searchProducts2-mob show-mob">
+                        <input id="searchProducts2-inputbox-mob" class="searchProducts2-inputbox h5-search-input" type="text" placeholder="Search products, parts, documentation, support, etc" onfocus="if (this.placeholder=='Search products, parts, documentation, support, etc') this.placeholder = ''">
+                        <a href="#."><span class="searchService-icon-white-rel3"></span></a>
+					</div>
+                </div>
+            </div>
+
+    </div>
+</div>
+</sly>
+
+<sly data-sly-test="${properties.view == 'site-search-rel3'}">
+</sly>
+
+
+<sly data-sly-test="${properties.view == 'careers-search-rel3'}">
+<div class="product-search-input3 smallPaddingTop smallPaddingBottom">
+    <div class="searchProducts3">
+        <div class="container-fixed container-padding ">
+            <div class="aem-Grid aem-Grid--12">
+                <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 main-search-box">
+					<div class="search-container">
+					<h5><input class="careers-search" type="text" placeholder="Search job opportunities by keyword or location" onfocus="if (this.placeholder=='Search job opportunities by keyword or location') this.placeholder = ''"></h5>
+					 <img class="img-responsive car-newwindow smallPaddingRight" src="/content/dam/eaton/images/new_window.png" alt="new_window">
+					<img class="img-responsive car-search smallPaddingLeft" src="/content/dam/eaton/images/search-service-icon-white.png" alt="search-icon-white">
+
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</sly>
+
+
+<sly data-sly-test="${properties.view == 'careers-search-two-rel3'}">
+<div class="product-search-input3 largeMarginTop smallPaddingTop smallPaddingBottom">
+    <div class="searchProducts3">
+        <div class="container-fixed container-padding">
+            <div class="aem-Grid aem-Grid--12">
+                <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 main-search-box">
+					<div class="search-container">
+					<h5><input class="careers-search" type="text" placeholder="Search job opportunities by keyword or location" onfocus="if (this.placeholder=='Search job opportunities by keyword or location') this.placeholder = ''"></h5>
+					 <img class="img-responsive car-newwindow smallPaddingRight" src="/content/dam/eaton/images/new_window.png" alt="new_window">
+					<img class="img-responsive car-search smallPaddingLeft" src="/content/dam/eaton/images/search-service-icon-white.png" alt="search-icon-white">
+
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</sly>
+
+
+
+<!-- Result List Page -->
+	
+<!-- 	<sly data-sly-test="${properties.view == 'search-results-productImage-description-links'}">
+	    <div class="container-full">
+	        <div class="aem-Grid aem-Grid--12">        
+	            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+	                <div class="searchResults" role="search-results">                   
+	                    Product Image, Title, Description, Links, Tabs                  	
+	                    	<div class="search-results-wrapper mediumMarginBottom">                    	
+		                    	<div class="search-results-img-container">	                    		
+		                    		<img class="search-results-img" src="/content/dam/eaton/images/eaton_5p.png">
+		                    	</div> 
+		                    	<div class="search-results-description-container"> 
+		                    			<h5 class="h5-link text-wrap" >Network, Server & Storage UPS</h5>
+		                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur. Vestibulum non magna ligula. Vivamus metus purus, sagittis non metus eu, mollis laoreet justo. Fusce mollis tortor in sem sodales imperdiet.</p>
+		                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+		                    			<br/>
+		                    			<div class=""> 
+		                    				<a class="small-link text-wrap" href="https://www.eaton.com">Overview</a>
+		                    				<a class="small-link link-separator" href="https://www.eaton.com">Models</a>
+		                    				<a class="small-link link-separator"  href="https://www.eaton.com">Resources</a>
+		                    			</div>
+		                    		</div>
+		                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>    
+	</sly>
+	
+	
+	<sly data-sly-test="${properties.view == 'search-results-description-only-links'}">
+	    <div class="container-full">
+	        <div class="aem-Grid aem-Grid--12">        
+	            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+	                <div class="searchResults" role="search-results">                   
+	                    Title, Description, Links, Tabs                  	
+	                    	<div class="search-results-wrapper mediumMarginBottom">
+		                    	<div class="search-results-description-only-container"> 
+		                    			<h5 class="h5-link text-wrap" >Backup Power UPS</h5>
+		                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+		                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+		                    			<br/>		                    			
+		                    		</div>
+		                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>    
+	</sly> -->
+	
+	
+	
+<!-- 	<sly data-sly-test="${properties.view == 'search-results-description-image-link'}">
+	    <div class="container-full">
+	        <div class="aem-Grid aem-Grid--12">        
+	            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+	                <div class="searchResults" role="search-results">                   
+	                    Product Image, Title, Description, Links, Tabs                  	
+	                    	<div class="search-results-wrapper mediumMarginBottom">
+	                    	<img class="search-results-img" src="/content/dam/eaton/images/eaton_5p.png">
+		                    	<div class="search-results-description-container"> 
+		                    			<h5 class="h5-link text-wrap" >Network, Server & Storage UPS</h5>
+		                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur. Vestibulum non magna ligula. Vivamus metus purus, sagittis non metus eu, mollis laoreet justo. Fusce mollis tortor in sem sodales imperdiet.</p>
+		                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+		                    			<br/>
+		                    			<div class=""> 
+		                    				<a class="small-link text-wrap" href="https://www.eaton.com">Overview</a>
+		                    				<a class="small-link link-separator" href="https://www.eaton.com">Models</a>
+		                    				<a class="small-link link-separator"  href="https://www.eaton.com">Resources</a>
+		                    			</div>
+		                    		</div>	                    		
+		                    		<h2>search-results-description-image-link</h2>
+		                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>    
+	</sly> -->
+	
+	
+	
+	<!-- Search Results Download Filesize Link  -->
+	<!-- 
+	<sly data-sly-test="${properties.view == 'search-results-download-filesize-link'}">
+	    <div class="container-full">
+	        <div class="aem-Grid aem-Grid--12">        
+	            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+	                <div class="searchResults" role="search-results">                   
+	                    Product Image, Title, Description, Links, Tabs                  	
+	                    	<div class="search-results-wrapper mediumMarginBottom">
+		                    	<div class="search-results-download-img-container">	                    
+			                    		<img class="search-results-img" src="/content/dam/eaton/images/download_blue_icon.png">
+			                    </div>
+		                    	<div class="search-results-description-container-download"> 
+		                    			<h5 class="h5-link text-wrap" >Eaton 9 Series Single-Phase UPS Visio Stencils</h5>
+		                    			<p>(PDF 4MB)</p>	                    			
+		                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+		                    			<br/>
+		             			</div>
+		                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>    
+	</sly> -->
+	
+	
+
+
+
+	
+	
+	
+		<!-- Search Results  ALL -->
+	
+	<sly data-sly-test="${properties.view == 'search-results-all'}">	
+	
+		<div class="mediumMarginTop"></div>
+		<!-- All Results Tab -->
+		
+			<div class="container-fixed container-padding search-results-tabContent text-wrap" id="search-tab-AllResults">
+		        <div class="aem-Grid aem-Grid--12">
+		            <div class="aem-GridColumn  aem-GridColumn--default--9 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">		            
+			             <!-- Product Image, Title, Description, Links, Tabs --> 
+			                <div class="search-results-wrapper">                 
+				                    	<div class="search-results-row search-results-product-img-container">	                    		
+				                    		<img class="search-results-img" src="/content/dam/eaton/images/eaton_5p.png">
+				                    	</div> 
+				                    	<div class="search-results-row  search-results-description-container  smallPaddingLeft"> 
+				                    			<h5 class="h5-link text-wrap" >Network, Server & Storage UPS</h5>
+				                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. </p>
+				                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+				                    			<br/>
+				                    			<div class=""> 
+				                    				<a class="small-link text-wrap" href="https://www.eaton.com">Overview</a>
+				                    				<a class="small-link link-separator" href="https://www.eaton.com">Models</a>
+				                    				<a class="small-link link-separator"  href="https://www.eaton.com">Resources</a>
+				                    			</div>
+				                    	</div>			                   
+			                </div>		  
+			                
+			                <!-- Description, Title Image & Link -->
+			                     <div class="search-results-wrapper">   	
+				                    	<div class="search-results-row "> 
+				                    			<h5 class="h5-link text-wrap" >Eaton 9 Series Single-Phase UPS Visio Stensils
+				                    				<img class="search-results-new-win-img" src="/content/dam/eaton/images/new_win.png">
+				                    			</h5>	                    			
+				                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+				                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>				                    			
+				                    	</div>			                   
+			                	</div>   			                 
+			                
+			                
+			               <!-- Description, Date & Link --> 
+				                 <div class="search-results-wrapper">   	
+					                    	<div class="search-results-row search-results-description-container text-wrap"> 
+					                    			<h5 class="h5-link text-wrap" >Eaton 9-Speed Synchronized Transmissions Single "H" Shift Control Configuration article</h5>
+					                    			<p class="small italic"> November 27, 2016</p>
+					                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+					                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+					                    			<br/>
+					                    	</div>			                   
+				                </div>    
+			                
+			                
+			               
+			               <!-- Description & Link --> 
+				                <div class="search-results-wrapper">   	
+					                    	<div class="search-results-row search-results-description-container"> 
+					                    			<h5 class="h5-link text-wrap" >Backup Power UPS</h5>				                    			
+					                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+					                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+					                    			<br/>
+					                    	</div>			                   
+				                </div>     
+			                 
+			               
+			               <!-- Download ICon & description -->
+				                 <div class="search-results-wrapper">                   
+				                    <!-- Product Image, Title, Description, Links --> 
+					                    	<div class="search-results-row search-results-download-img-container">	                    
+						                    		<img class="search-results-img" src="/content/dam/eaton/images/download_blue_icon.png">
+						                    </div>					                    
+						                    <div class="search-results-row search-results-description-container-download"> 
+					                    			<h5 class="h5-link text-wrap" >Eaton 9 Series Single-Phase UPS Visio Stencils</h5>
+					                    			<p>(PDF 4MB)</p>	                    			
+					                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+					                    			<br/>
+					             			</div>		                   
+				                </div>		             
+			                
+			                
+			                
+			                
+			                  <!-- Description & Link --> 
+					                <div class="search-results-wrapper">   	
+						                    	<div class="search-results-row search-results-description-container"> 
+						                    			<h5 class="h5-link text-wrap" >9E6Ki-Eaton 9E</h5>				                    			
+						                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+						                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+						                    			<br/>
+						                    	</div>			                   
+					                </div>    
+		                                
+		                		
+		                		<!-- Load More Button  -->
+		                		 <div class="alignCenter">
+					                <button type="button" class="btn btn-default primary-button-dark smallMarginTop smallMarginBottom">Load More</button>
+					            </div>	
+		                		
+		                		
+		            </div>	
+		        </div>
+		    </div>
+		<!-- All Results Tab -->
+		
+
+
+	<!-- Products Tab -->		
+		
+			<div class="container-fixed container-padding search-results-tabContent text-wrap" id="search-tab-products">
+		        <div class="aem-Grid aem-Grid--12">        
+		            <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">		            
+			       		
+			       		  <!-- Product Image, Title, Description, Links, Tabs --> 
+			                <div class="search-results-wrapper">                 
+				                    	<div class="search-results-row search-results-product-img-container">	                    		
+				                    		<img class="search-results-img" src="/content/dam/eaton/images/eaton_5p.png">
+				                    	</div> 
+				                    	<div class="search-results-row  search-results-description-container  smallPaddingLeft"> 
+				                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E</h5>
+				                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>				                    			
+				                    			<br/>
+				                    			<div class=""> 
+				                    				<a class="small-link text-wrap" href=" ">Download Software</a>
+				                    				<a class="small-link link-separator" href="">Configure</a>
+				                    				<a class="small-link link-separator"  href="">Troubleshoot</a>
+				                    			</div>
+				                    	</div>			                   
+			                </div>
+			       			
+			       			<!-- Description & Link --> 
+				                <div class="search-results-wrapper">   	
+					                    	<div class="search-results-row search-results-description-container"> 
+					                    			<h5 class="h5-link text-wrap" >Backup Power UPS</h5>				                    			
+					                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>					                   
+					                    			<br/>
+					                    	</div>			                   
+				                </div>
+				                
+				             <!-- Product Image, Title, Description, Links, Tabs --> 
+				                <div class="search-results-wrapper">                 
+					                    	<div class="search-results-row search-results-product-img-container">	                    		
+					                    		<img class="search-results-img" src="/content/dam/eaton/images/eaton_5p.png">
+					                    	</div> 
+					                    	<div class="search-results-row  search-results-description-container  smallPaddingLeft"> 
+					                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E</h5>
+					                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>				                    			
+					                    			<br/>
+					                    			<div class=""> 
+					                    				<a class="small-link text-wrap" href=" ">Download Software</a>
+					                    				<a class="small-link link-separator" href="">Configure</a>
+					                    				<a class="small-link link-separator"  href="">Troubleshoot</a>
+					                    			</div>
+					                    	</div>			                   
+				                </div>   
+				             
+				             
+				             <!-- Description & Link --> 
+				                <div class="search-results-wrapper">   	
+					                    	<div class="search-results-row search-results-description-container"> 
+					                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E</h5>				                    			
+					                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>					                   
+					                    			<br/>
+					                    	</div>			                   
+				                </div>
+				                
+				              
+				                 <!-- Product Image, Title, Description, Links, Tabs --> 
+				                <div class="search-results-wrapper">                 
+					                    	<div class="search-results-row search-results-product-img-container">	                    		
+					                    		<img class="search-results-img" src="/content/dam/eaton/images/p2.png">
+					                    	</div> 
+					                    	<div class="search-results-row  search-results-description-container  smallPaddingLeft"> 
+					                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E Eaton 5PX UPS</h5>
+					                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>				                    			
+					                    			<br/>
+					                    			<div class=""> 
+					                    				<a class="small-link text-wrap" href=" ">Download Software</a>
+					                    				<a class="small-link link-separator" href="">Configure</a>
+					                    				<a class="small-link link-separator"  href="">Troubleshoot</a>
+					                    			</div>
+					                    	</div>			                   
+				                </div>   
+				               
+				                 <!-- Product Image, Title, Description, Links, Tabs --> 
+				                <div class="search-results-wrapper">                 
+					                    	<div class="search-results-row search-results-product-img-container">	                    		
+					                    		<img class="search-results-img" src="/content/dam/eaton/images/p2.png">
+					                    	</div> 
+					                    	<div class="search-results-row  search-results-description-container  smallPaddingLeft"> 
+					                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E Eaton 5PX UPS</h5>
+					                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>				                    			
+					                    			<br/>
+					                    			<div class=""> 
+					                    				<a class="small-link text-wrap" href=" ">Download Software</a>
+					                    				<a class="small-link link-separator" href="">Configure</a>
+					                    				<a class="small-link link-separator"  href="">Troubleshoot</a>
+					                    			</div>
+					                    	</div>			                   
+				                </div>
+				                
+				                 <!-- Product Image, Title, Description, Links, Tabs --> 
+				                <div class="search-results-wrapper">                 
+					                    	<div class="search-results-row search-results-product-img-container">	                    		
+					                    		<img class="search-results-img" src="/content/dam/eaton/images/p2.png">
+					                    	</div> 
+					                    	<div class="search-results-row  search-results-description-container  smallPaddingLeft"> 
+					                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E Eaton 5PX UPS</h5>
+					                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>				                    			
+					                    			<br/>
+					                    			<div class=""> 
+					                    				<a class="small-link text-wrap" href=" ">Download Software</a>
+					                    				<a class="small-link link-separator" href="">Configure</a>
+					                    				<a class="small-link link-separator"  href="">Troubleshoot</a>
+					                    			</div>
+					                    	</div>			                   
+				                </div>
+				                
+				                 <!-- Product  Title, Description, Links, Tabs --> 
+				                <div class="search-results-wrapper">
+					                    	<div class="search-results-row  search-results-description-container  smallPaddingLeft"> 
+					                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E Eaton 5PX UPS</h5>
+					                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>				                    			
+					                    			<br/>
+					                    			<div class=""> 
+					                    				<a class="small-link text-wrap" href=" ">Download Software</a>
+					                    				<a class="small-link link-separator" href="">Configure</a>
+					                    				<a class="small-link link-separator"  href="">Troubleshoot</a>
+					                    			</div>
+					                    	</div>			                   
+				                </div> 
+				                 
+			       			<!-- Load More Button  -->
+		                		 <div class="alignCenter">
+					                <button type="button" class="btn btn-default primary-button-dark smallMarginTop smallMarginBottom">Load More</button>
+					            </div>
+		            </div>	
+		        </div>
+		    </div>
+	
+	<!-- Products Tab -->
+	
+	
+	
+		<!-- News & Insights Tab -->		
+		
+			<div class="container-fixed container-padding search-results-tabContent text-wrap" id="search-tab-newsInsights">
+		        <div class="aem-Grid aem-Grid--12">        
+		            <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">            
+			       			
+		       			  <!-- Description, Title Image & Link -->
+		                     <div class="search-results-wrapper">   	
+			                    	<div class="search-results-row "> 
+			                    			<h5 class="h5-link text-wrap" >Eaton 9 Series Single-Phase UPS Visio Stensils
+			                    				<img class="search-results-new-win-img" src="/content/dam/eaton/images/new_win.png">
+			                    			</h5>	                    			
+			                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>			                    							                    			
+			                    	</div>			                   
+		                	</div>
+		                	
+		                	
+		                <!-- Description, Date & Link --> 
+				                 <div class="search-results-wrapper">   	
+					                    	<div class="search-results-row search-results-description-container"> 
+					                    			<h5 class="h5-link text-wrap" >Eaton 9-Speed Synchronized Transmissions Single "H" Shift Control Configuration article</h5>
+					                    			<p class="small italic"> November 27, 2016</p>
+					                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+					                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+					                    			<br/>
+					                    	</div>			                   
+				                </div>  	
+		                	
+		                	
+		                	 	
+		                <!-- Description, Date & Link --> 
+				                 <div class="search-results-wrapper">   	
+					                    	<div class="search-results-row search-results-description-container"> 
+					                    			<h5 class="h5-link text-wrap" >Eaton 9-Speed Synchronized Transmissions Single "H" Shift Control Configuration article</h5>
+					                    			<p class="small italic"> November 27, 2016</p>
+					                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+					                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+					                    			<br/>
+					                    	</div>			                   
+				                </div>  
+		                	
+		                	
+		                	<!-- Product , Title, Description, Links,  --> 
+				                <div class="search-results-wrapper"> 
+					                    	<div class="search-results-row  search-results-description-container"> 
+					                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E</h5>
+					                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>				                    			
+					                    			<br/>					                    			
+					                    	</div>			                   
+				                </div>
+				                
+				                
+				                 <!-- Description, Title Image & Link -->
+			                     <div class="search-results-wrapper">   	
+				                    	<div class="search-results-row "> 
+				                    			<h5 class="h5-link text-wrap" >Eaton 9 Series Single-Phase UPS Visio Stensils
+				                    				<img class="search-results-new-win-img" src="/content/dam/eaton/images/new_win.png">
+				                    			</h5>	                    			
+				                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+				                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>				                    			
+				                    	</div>			                   
+			                	</div>  
+		                	   
+		                	   
+		                	   <!-- Description, Date & Link --> 
+				                 <div class="search-results-wrapper">   	
+					                    	<div class="search-results-row search-results-description-container"> 
+					                    			<h5 class="h5-link text-wrap" >Eaton 9-Speed Synchronized Transmissions Single "H" Shift Control Configuration article</h5>
+					                    			<p class="small italic"> November 27, 2016</p>
+					                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+					                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+					                    			<br/>
+					                    	</div>			                   
+				                </div>  
+		                	   
+		                	   
+		                	   <!-- Description, Date & Link --> 
+				                 <div class="search-results-wrapper">
+				                 		   	
+					                    	<div class="search-results-row search-results-description-container"> 
+					                    			<div class="eyeBrowSmall ">ELECTRICAL</div>
+					                    			<h5 class="h5-link text-wrap" >Eaton 9-Speed Synchronized Transmissions Single "H" Shift Control Configuration article</h5>
+					                    			<p class="small italic"> November 27, 2016</p>
+					                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+					                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+					                    			<br/>
+					                    	</div>			                   
+				                </div>
+
+
+							 <!-- Description, Date & Link --> 
+				                 <div class="search-results-wrapper">				                 		   	
+					                    	<div class="search-results-row search-results-description-container">
+					                    			<div class="eyeBrowSmall ">ELECTRICAL</div> 
+					                    			<h5 class="h5-link text-wrap" >Eaton 9-Speed Synchronized Transmissions Single "H" Shift Control Configuration article</h5>
+					                    			<p class="small italic"> November 27, 2016</p>
+					                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+					                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+					                    			<br/>
+					                    	</div>			                   
+				                </div>  
+				                
+				                <!-- Load More Button  -->
+		                		 <div class="alignCenter">
+					                <button type="button" class="btn btn-default primary-button-dark smallMarginTop smallMarginBottom">Load More</button>
+					            </div>
+		       				               
+		            </div>	
+		        </div>
+		    </div>
+	
+		<!-- News & Insights Tab -->
+	
+	
+	
+	
+		<!-- Resources Tab -->		
+		
+			<div class="container-fixed container-padding search-results-tabContent" id="search-tab-resources">
+		        <div class="aem-Grid aem-Grid--12">        
+		            <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">		            
+			       		 <!-- Description, Title Image & Link -->
+			                     <div class="search-results-wrapper">   	
+				                    	<div class="search-results-row "> 
+				                    			<h5 class="h5-link text-wrap" >Eaton 9 Series Single-Phase UPS Visio Stensils
+				                    				<img class="search-results-new-win-img" src="/content/dam/eaton/images/new_win.png">
+				                    			</h5>	                    			
+				                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+				                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>				                    			
+				                    	</div>			                   
+			                	</div>  
+		                	   
+			       		<!-- Product , Title, Description, Links,  --> 
+				                <div class="search-results-wrapper"> 
+					                    	<div class="search-results-row  search-results-description-container"> 
+					                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E</h5>
+					                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>				                    			
+					                    			<br/>					                    			
+					                    	</div>			                   
+				                </div>
+				         
+				           <!-- Download ICon & description -->
+				                 <div class="search-results-wrapper">                   
+				                    <!-- Product Image, Title, Description, Links --> 
+					                    	<div class="search-results-row search-results-download-img-container">	                    
+						                    		<img class="search-results-img" src="/content/dam/eaton/images/download_blue_icon.png">
+						                    </div>					                    
+						                    <div class="search-results-row search-results-description-container-download"> 
+					                    			<h5 class="h5-link text-wrap" >Eaton 9 Series Single-Phase UPS Visio Stencils</h5>
+					                    			<p>(PDF 4MB)</p>
+					                    			<br/>
+					             			</div>		                   
+				                </div>
+				                
+				                
+				             <!-- Download ICon & description -->
+				                 <div class="search-results-wrapper">                   
+				                    <!-- Product Image, Title, Description, Links --> 
+					                    	<div class="search-results-row search-results-download-img-container">	                    
+						                    		<img class="search-results-img" src="/content/dam/eaton/images/download_blue_icon.png">
+						                    </div>					                    
+						                    <div class="search-results-row search-results-description-container-download"> 
+					                    			<h5 class="h5-link text-wrap" >Eaton 9 Series Single-Phase UPS Visio Stencils</h5>
+					                    			<p>(PDF 4MB)</p>	                    			
+					                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>
+					                    			<br/>
+					             			</div>		                   
+				                </div>  
+				                
+				             <!-- Product , Title, Description, Links,  --> 
+				                <div class="search-results-wrapper"> 
+					                    	<div class="search-results-row  search-results-description-container"> 
+					                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E</h5>
+					                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>				                    			
+					                    			<br/>					                    			
+					                    	</div>			                   
+				                </div>
+				                
+				                
+				             <!-- Product , Title, Description, Links,  --> 
+				                <div class="search-results-wrapper"> 
+					                    	<div class="search-results-row  search-results-description-container"> 
+					                    			<h5 class="h5-link text-wrap" >9E6Ki-EATON 9E</h5>
+					                    			<p class="small text-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae hendrerit elit. Quisque tristique nec mi in aliquam. Sed id ipsum nec nunc hendrerit ullamcorper. Proin varius est ac nibh ultricies, sit amet blandit leo ultrices. Etiam condimentum gravida sapien, nec sollicitudin magna sagittis at. Vestibulum hendrerit, tortor id consequat sodales, erat turpis porta erat, ut sagittis massa ipsum ac dolor. Aliquam erat volutpat. Duis at facilisis justo. Proin posuere nisi interdum purus molestie, a faucibus quam consectetur.</p>				                    			
+					                    			<br/>					                    			
+					                    	</div>			                   
+				                </div>
+				                
+				                <!-- Download ICon & description -->
+				                 <div class="search-results-wrapper">                   
+				                    <!-- Product Image, Title, Description, Links --> 
+					                    	<div class="search-results-row search-results-download-img-container">	                    
+						                    		<img class="search-results-img" src="/content/dam/eaton/images/download_blue_icon.png">
+						                    </div>					                    
+						                    <div class="search-results-row search-results-description-container-download"> 
+					                    			<h5 class="h5-link text-wrap" >Eaton 9 Series Single-Phase UPS Visio Stencils</h5>
+					                    			<p>(PDF 4MB)</p>
+					                    			<br/>
+					             			</div>		                   
+				                </div>
+				                 
+				                  
+				                  
+				                  <!-- Description, Title Image & Link -->
+			                     <div class="search-results-wrapper">   	
+				                    	<div class="search-results-row "> 
+				                    			<h5 class="h5-link text-wrap" >Eaton 9 Series Single-Phase UPS Visio Stensils
+				                    				<img class="search-results-new-win-img" src="/content/dam/eaton/images/new_win.png">
+				                    			</h5>	                    			
+				                    			<p class="small text-wrap">Eaton is a leading provider of quality backup power UPS. Uninterrupatable Power Supply. Eaton UPs are designed to deliver high quality backup power from desktop PCs to large data centers.</p>
+				                    			<a class="small-link text-wrap" href="http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm">http://www.eaton.com/Eaton/ProductsServices/Aerospace/index.htm</a>				                    			
+				                    	</div>			                   
+			                	</div> 
+			                	
+			                	 <!-- Load More Button  -->
+		                		 <div class="alignCenter">
+					                <button type="button" class="btn btn-default primary-button-dark smallMarginTop smallMarginBottom">Load More</button>
+					            </div>             
+			       		
+		            </div>	
+		        </div>
+		    </div>	
+		<!-- Resources Tab -->
+	
+	
+				
+	</sly>
+	
+	
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/eaton/clientlib"/>
+    <filter root="/apps/eaton/components"/>
+    <filter root="/apps/eaton/i18n"/>
+    <filter root="/apps/eaton/install"/>
+    <filter root="/apps/eaton/runmodes"/>
+    <filter root="/apps/eaton/templates"/>
+    <filter root="/conf/eaton"/>
+    <filter root="/etc/designs/eaton"/>
+</workspaceFilter>

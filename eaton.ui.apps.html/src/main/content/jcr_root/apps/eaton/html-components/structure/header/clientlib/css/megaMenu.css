@@ -1,0 +1,366 @@
+.megaMenu{
+    display:none;
+
+}
+.megaMenu .main{
+	margin-bottom:50px;
+    margin-top:15px;        
+}
+.megaMenu.productPage{
+	/*height:93vh;*/
+}
+.megaMenu.productPage .utility-nav-mob-view{
+	overflow:hidden;
+ }
+
+.marginBtm0{
+	margin-bottom:0px;
+}
+.megaMenu .listCntnt .list-group-item{
+	border:none;
+	cursor:pointer;
+	background-color: #5B6770;
+    /*color: #fff;
+	font-family: Arial;*/
+    padding-left:0px;
+    /*padding-right:30px;*/
+    padding-right:0px;
+    margin-right:15px;
+    padding-top:0px;
+}
+.megaMenu .listCntnt .list-group-item{
+    padding:0 !important;            
+    margin-bottom:30px;            
+	display: block;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAeTWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS41LWMwMTEgNzkuMTQ5NTk4LCAyMDEyLzEwLzEwLTEyOjA5OjU2ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6bnMxPSJodHRwOi8vd3d3LmRheS5jb20vZGFtLzEuMCIKICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIKICAgbnMxOlBoeXNpY2FsaGVpZ2h0aW5pbmNoZXM9Ii0xLjAiCiAgIG5zMTpQaHlzaWNhbHdpZHRoaW5pbmNoZXM9Ii0xLjAiCiAgIG5zMTpGaWxlZm9ybWF0PSJQTkciCiAgIG5zMTpQcm9ncmVzc2l2ZT0ibm8iCiAgIG5zMTpleHRyYWN0ZWQ9IjIwMTctMDUtMTdUMjA6MzU6NTguMzUzKzA1OjMwIgogICBuczE6Qml0c3BlcnBpeGVsPSIzMiIKICAgbnMxOk1JTUV0eXBlPSJpbWFnZS9wbmciCiAgIG5zMTpDb21tZW50cz0iU29mdHdhcmU6IEFkb2JlIEltYWdlUmVhZHkmI3hBOyIKICAgbnMxOlBoeXNpY2Fsd2lkdGhpbmRwaT0iLTEiCiAgIG5zMTpQaHlzaWNhbGhlaWdodGluZHBpPSItMSIKICAgbnMxOk51bWJlcm9maW1hZ2VzPSIxIgogICBuczE6TnVtYmVyb2Z0ZXh0dWFsY29tbWVudHM9IjEiCiAgIG5zMTpzaGExPSIzZjFmMjUyMzA3NTkxMDc0YTA0NTgyODM0NjYzMDQ3ZDUxMjdjYTNiIgogICBuczE6c2l6ZT0iNzkzNCIKICAgdGlmZjpJbWFnZUxlbmd0aD0iMTAiCiAgIHRpZmY6SW1hZ2VXaWR0aD0iNiIKICAgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIKICAgZGM6Zm9ybWF0PSJpbWFnZS9wbmciCiAgIGRjOm1vZGlmaWVkPSIyMDE3LTA1LTAzVDE0OjI3OjQ0Ljc5OSswNTozMCIKICAgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2OUUyNTBBNTFGNUIxMUU3OEYxNjgzREREQjgzNjgxQyIKICAgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2OUUyNTBBNDFGNUIxMUU3OEYxNjgzREREQjgzNjgxQyI+CiAgIDx4bXBNTTpEZXJpdmVkRnJvbQogICAgc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2OUUyNTBBMjFGNUIxMUU3OEYxNjgzREREQjgzNjgxQyIKICAgIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjlFMjUwQTMxRjVCMTFFNzhGMTY4M0REREI4MzY4MUMiLz4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAKPD94cGFja2V0IGVuZD0iciI/PiCYVrkAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAR0lEQVR42mL4////NiBuBWIGZAwiyv5DQAu6BAinQiXb0CVAOAIq2QviszAgwAogfgPEu4GYm4kBF8BlFF7LcToXqwcBAgwAgMSf1eC1RyQAAAAASUVORK5CYII=") no-repeat right bottom 6px; 
+}
+.megaMenu .header{
+	background-color:#333F48;
+	position:relative;
+        font-size: 2.18em;
+        float: left;
+}
+.megaMenu .header > div.container-fixed{
+	padding-right:0px;
+}            
+.vAlign{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.megaMenu .closeBtn{
+	background: url('/content/dam/eaton/images/Close-Icon-white.png') no-repeat;
+    width: 50px;
+    height: 35px;
+   /* margin-top: 10px;
+        background-size: 25px;*/
+}
+.megaMenu .menuHeading  .arrowLeft{
+	background: url('/content/dam/eaton/images/sprite-sheet.png') no-repeat;
+	width:20px;
+	height:20px;
+}
+.megaMenu .menuHeading a{
+	text-decoration:none;
+}
+.megaMenu .menuHeading:after{
+	content:url('/content/dam/eaton/images/Link_Arrow_Big.png'); 
+	position: relative;
+    left: 5px;
+   /*  top: -3px; */
+	padding-left: 5px;
+}
+.megaMenu .menuHeading{
+	font-family: EatonMedium;
+    font-size: 0.875em;
+    margin:0;
+    color: #fff;
+}
+
+.contentLoad{
+	background-color:#5a6770;
+    margin: 0 auto;
+	position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.megaMenu .productList{
+	padding-left:0px;
+	padding-right:0px;
+}
+.megaMenu .listCntnt{
+    overflow-y: auto;
+	margin-bottom: 5px;
+    max-height:650px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.megaMenu .listCntnt .list-group-item:hover{
+	/*text-decoration:underline;*/
+}
+.alignClose{
+	float:right;
+	margin-bottom:0px;
+	line-height: 67px;
+	cursor:pointer;
+}
+.pdfSize{
+	color: #fff;
+	font-size:0.69em;
+	display:block;
+	font-family:Arial;
+}
+.imgIcon{
+	line-height: 30px;
+    vertical-align: 17px;
+    padding-right: 10px;
+}
+.imgIcon > img{
+	width:15px;
+}
+.imgIcon + div.sectionHeading{
+	display:inline-block;
+}
+.megaMenu .topStory{
+	border-left:1px solid #8c9aa5;
+	color:white;
+}
+.megaMenu .storyContainer .imgContainer{
+	display: inline-block;
+	vertical-align: top;
+}
+.megaMenu .storyContainer .imgContainer + .desc{
+	display: inline-block;
+    width: 70%;
+    padding-left: 30px;
+	padding-right:30px;	
+}
+.megaMenu  .imgContainer + .desc > p:first-child{
+	font-family:Arial;
+}
+.megaMenu  .imgContainer + .desc > p:not(:first-child){
+	font-family:Arial;
+}
+.megaMenu  .imgContainer + .desc > p:first-child:after{
+	content:url('/content/dam/eaton/images/Link-Arrow.png'); 
+	position: relative;
+    left: 2px;
+    top: -3px;
+}
+
+.megaMenu .featureMarket {
+	padding-left: 15px !important;
+	padding-right:0px;
+}
+
+.megaMenu .highLightContainer  .imgContainer > img{
+	width:250px;
+}
+.rightBorder{
+	border-right:1px solid #8c9aa5;
+}
+.searchContainer .list-group-item{
+	padding-left:0px;
+}
+.megaMenu  .topStory h4,.megaMenu  .featureMarket h4,.megaMenu .compHighlight h4, .megaMenu .search h4{
+	color:white;
+	text-transform:uppercase;
+	margin-top:0px;
+	font-family:'Eaton';
+}
+.megaMenu .searchContainer input{
+	background: url('/content/dam/eaton/images/SearchIcon.png') no-repeat #fff;
+    background-position: 96% 6px;
+    padding-right: 25px;
+    padding-left: 5px;
+    border-radius:0;
+    /*color: #000;*/
+	width: 90%;
+    height: 30px;
+}
+.megaMenu .searchContainer input::-ms-clear{
+	display:none;
+}
+.megaMenu .highLightContainer, .megaMenu .search, .megaMenu  .featureMarket,.megaMenu  .topStory, .megaMenu .compHighlight  {
+	color:white;
+}
+.megaMenu .topStory{
+	font-family: Arial;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+#Product-Menu, #Support-Menu, #Company-Menu, #Industry-Sol-Menu{
+	border-bottom:4px solid transparent;
+}
+
+.small-body-copy-link-on-dark-deviation{
+	/* font-size:1.5em; */
+	font-family:Arial;
+	line-height:2em;
+}
+
+.storyContainer .desc img{
+margin-left:15px;
+margin-top:-5px;
+}	
+.highLightContainer .desc img{
+margin-left: 15px;
+    margin-top: -5px;
+}
+.megamenu-margin-deviation
+{
+	margin-top:20px;
+}
+
+.downloadIconImage{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 15px;
+	margin-top:-2px;
+}
+.storyContainer .sectionHeading{
+	display:inline-block;
+}
+#megaMenuOption > li.active{
+	box-shadow:0 4px 0 #005EB8;
+    border-bottom:none !important;
+}   
+#megaMenuOption > li{
+	box-shadow:0 4px 0 transparent;
+    border-bottom:none !important;
+} 
+@media only screen and (max-width: 600px) , screen and (min-width:601px) and (max-width:992px){
+    .megaMenu .search, .megaMenu .compHighlight, .megaMenu  .topStory, .megaMenu .compHighlight,.megaMenu  .featureMarket {
+    	display:none;
+     }               
+
+    .megaMenu .listCntnt{
+    	/*max-height:380px;*/
+        max-height:95%;
+	}
+	.megaMenu .topStory{
+	border-left:none;
+	color:white;
+	}
+	.rightBorder{
+	border-right:none;
+	}
+	.alignClose{
+		display:none;
+	}
+	.megaMenu .header{
+		/*height:58px;*/
+    	height:auto;
+		margin-bottom: 2px;
+	}
+	.megaMenu .menuHeading{
+		width: 100%;
+		text-align: center;
+		padding-right: 50px;
+    	padding-top: 60px;
+    	padding-bottom: 60px;
+    	font-size:	1.25em;
+	}
+	.megaMenu .menuHeading:after{
+		content: ''; 
+	}
+	.megaMenu .header:before{
+		content:url('/content/dam/eaton/images/Link_Arrow_Left_Big.png'); 
+		position: relative;
+   	 	top: -5px;
+    	padding-left: 15px;
+    	left: 15px;
+	}
+
+	#bs-example-navbar-collapse-1{
+		position:absolute;
+    	z-index:1;
+	}
+
+	.megaMenu .listCntnt .list-group-item {
+		margin-right:5px;
+        padding-right: 1px;   
+    	padding-top:40px;
+    	padding-bottom: 0px !important;
+    	width: 90%;
+    }
+	ul.list-group{
+		margin-bottom:0px;
+	}
+	.megaMenu .listCntnt .list-group-item:after{
+
+       float:right;       
+    }
+	.megaMenu{
+		height:93vh;
+    }
+	#megaMenuOption > li[data-menu]{
+		padding-right:15px;
+        padding-left:15px;
+    	height: auto;
+    }
+	/*#megaMenuOption > li[data-menu]  a{
+		padding-bottom:120px;
+    }*/
+}
+
+@media only screen and (min-width:993px) and (max-width:1200px){
+    #megaMenuOption{
+        right: -43%;
+    } 
+}    
+
+
+/* @media screen and (max-width:425px){
+    .megaMenu .menuHeading{
+    	font-size: .8em;
+	}
+
+    #megaMenuOption > li[data-menu]{
+		padding-right:0px;
+        padding-left:0px;
+    }    
+    .megaMenu .header:before {
+    	left: 0px;
+	}        
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1280px) and (orientation: landscape){
+	.megaMenu .storyContainer .imgContainer + .desc{
+		padding-left: 0px; 
+    }
+    .megaMenu .compHighlight{
+		margin-left:30px;
+    }                                
+} 
+ */
+
+           
+/*        
+@media screen and (min-width:320px){
+    #header-navigation-bar .nav.navbar-nav li.utility-nav-mob-view{
+		bottom:42px;
+    }    
+.megaMenu .listCntnt{
+    	max-height:70%;
+	}
+}
+
+@media screen and (min-width:375px){
+    #header-navigation-bar .nav.navbar-nav li.utility-nav-mob-view{
+		bottom:35px;
+    }    
+.megaMenu .listCntnt{
+    	max-height:76%;
+	}
+}
+
+@media screen and (min-width:414px){
+    #header-navigation-bar .nav.navbar-nav li.utility-nav-mob-view{
+		bottom:30px;
+    }    
+.megaMenu .listCntnt{
+    	max-height:79%;
+	}
+}*/

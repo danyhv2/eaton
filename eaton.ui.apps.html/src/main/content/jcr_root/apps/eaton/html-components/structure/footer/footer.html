@@ -1,0 +1,62 @@
+<sly data-sly-test="${wcmmode.edit}">Footer Component</sly>
+<footer>
+	<section class="footer-top mediumPaddingTop mediumPaddingBottom">
+		<div class="container-fixed container-padding">
+			<div class="aem-Grid aem-Grid--12">
+				<div
+					class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--3 aem-GridColumn--phone--4 footer-logo-container">
+					<p>
+						<sly
+							data-sly-resource="${'footer-logo' @ resourceType='eaton/html-components/structure/logo'}"></sly>
+					</p>
+				</div>
+			</div>
+			<div class="aem-Grid aem-Grid--12">
+				<div
+					class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+					<sly
+						data-sly-resource="${'footer-desc' @ resourceType='eaton/html-components/content/text'}"></sly>
+				</div>
+				<div
+					class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+					<sly
+						data-sly-resource="${'footer-link-list1' @ resourceType='eaton/html-components/content/link-list'}"></sly>
+				</div>
+				<div
+					class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+					<div class="container-full">
+						<div class="aem-Grid aem-Grid--12">
+							<div
+								class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+								<sly
+									data-sly-resource="${'footer-link-list2' @ resourceType='eaton/html-components/content/link-list'}"></sly>
+							</div>
+						</div>
+					</div>
+					<div class="container-full">
+						<div class="aem-Grid aem-Grid--12">
+							<div
+								class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+								<sly
+									data-sly-resource="${'footer-social-media' @ resourceType='eaton/html-components/content/link-list'}"></sly>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section
+		class="footer-bottom">
+		<div class="container-fixed container-padding">
+			<div class="aem-Grid aem-Grid--12">
+				<div
+					class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+					<sly
+						data-sly-resource="${'footer-primary-link-list' @ resourceType='eaton/html-components/content/link-list'}"></sly>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</footer>

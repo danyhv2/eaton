@@ -1,0 +1,245 @@
+.categoryMenu .cat-menu-name {
+	margin-top: 50px;
+}
+        .categoryMenu ul{
+margin-bottom:0px !important;
+                padding-left:0px !important;
+
+            }
+
+.categoryMenu .cat-menu-name h5 {
+	font-size: 1.5em !important;
+}
+
+
+.cat-menu-name > h5 {
+	border-bottom:1px solid #F8F8F8;
+	padding-bottom:50px;
+}
+
+
+.categoryMenu .cat-menu-name.active {
+	border-bottom: 3px solid #005CBC;
+	padding-bottom: 0px !important;
+}
+
+.tabHolder li {
+	width: 30% !important;
+	border-radius: 0px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: 3% !important;
+}
+
+.tabHolder li:nth-child(1) {
+	margin-right: 0%;
+}
+
+.tabHolder li:nth-child(1) a {
+	padding-left: 0px !important;
+}
+
+.tabHolder li:nth-child(2) {
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.tabHolder li:nth-child(3) {
+	margin-left: 0%;
+}
+
+.tabHolder>li a {
+	border-radius: 0px !important;
+}
+
+.menuListHolder {
+	padding-top: 50px;
+}
+
+.menuList li {
+	padding-bottom: 50px !important;
+}
+
+.tabHolder>li.active>h5>a, .tabHolder>li.active>h5>a:hover, .tabHolder>li.active>h5>a:focus
+	{
+	background-color: #fff !important;
+	color: #000 !important;
+	margin-bottom: -2px;
+}
+
+.tabHolder>li a:hover {
+	background: #fff !important;
+}
+
+.menuList {
+	list-style: none;
+}
+
+.mSeperator {
+	border-left: 1px solid #e3e3e3;
+	padding: 0px 60px !important;
+}
+
+.tab-content>.active {
+	overflow: auto;
+}
+
+.categoryMenu .panel-group .panel {
+	border-radius: 0;
+	box-shadow: none;
+	border-color: #EEEEEE;
+	border-right: 0px;
+	border-left: 0px;
+	border-top: 0px;
+}
+
+.categoryMenu .panel-group .panel:first-child {
+	border-top: 1px;
+}
+
+.panel-group .panel+.panel {
+	margin-top: 0px;
+}
+
+.collapse.in {
+	overflow: auto;
+}
+
+.categoryMenu .panel-default>.panel-heading {
+	padding: 0;
+	border-radius: 0;
+	color: #212121;
+	background: none !important;
+	border-color: #EEEEEE;
+}
+
+.categoryMenu .panel-title {
+	font-size: 1.25em;
+}
+
+.categoryMenu .panel-title>a {
+	display: block;
+	text-decoration: none;
+}
+
+.categoryMenu .more-less {
+	float: right;
+	color: #005EB8;
+	font-family: Arial;
+	font-size: 2.125em;
+	line-height: 34px;
+	top: -5px;
+}
+
+.categoryMenu .panel-default>.panel-heading+.panel-collapse>.panel-body
+	{
+	border-top-color: #EEEEEE;
+}
+
+.tabHolder li {
+	font-family: ArialBold;
+}
+
+.tabHolder>li a {
+	padding: 0px;
+}
+
+.tabHolder>li.active>a, .tabHolder>li.active>a:hover, .tabHolder>li.active>a:focus
+	{
+	border-bottom: 3px solid #0a70cd;
+	background-color: #fff !important;
+	color: #000 !important;
+}
+
+.tabHolder>li a:hover {
+	background: #fff !important;
+}
+
+.bottom_options {
+	margin-top: 10px;
+}
+
+.viewAllLink {
+	color: #0a70cd;
+	width: 70%;
+}
+
+.categoryMenuPanel {
+	background-color: #F8F8F8;
+}
+
+.categoryMenu .panel-group .panel {
+	border-radius: 0;
+	box-shadow: none;
+	border-color: #EEEEEE;
+}
+
+.categoryMenu .panel-default>.panel-heading {
+	padding: 0;
+	border-radius: 0;
+	color: #212121;
+	background-color: #FAFAFA;
+	border-color: #EEEEEE;
+}
+
+.categoryMenu .panel-default>.panel-heading+.panel-collapse>.panel-body
+	{
+	border-top-color: #EEEEEE;
+}
+
+.categoryMenu .viewAllList {
+	padding-right: 30px !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .menuList-heading{
+		padding-bottom:60px;
+}
+	.categoryMenu .panel-title>a.collapsed {
+		color: #337ab7;
+	}
+	.categoryMenu .panel-title>a {
+		color: #333f48;
+	}
+	.catg-menu-mobile 
+.panel-heading .glyphicon-plus:before {
+		color: #337ab7;
+	}
+	.catg-menu-mobile .col-xs-12.np {
+		padding: 0px !important;
+	}
+	.catg-menu-mobile  .mSeperator {
+		border-left: 0px;
+	}
+	.no-padd-lr {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.menuList {
+		padding-left: 0%;
+		margin-bottom: 0px;
+	}
+}
+
+
+@media only screen and (max-width: 992px) {
+	.menuList {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+	.menuListItems {
+		list-style: none;
+		padding-left: 0px;
+	}
+	.menuListItems li {
+		padding-bottom: 60px !important;
+	}
+	
+	
+	/* .cat-menu-name > h5 {
+		border-bottom:1px solid #F8F8F8;
+		padding-bottom:30px;
+	} */
+	
+		
+}

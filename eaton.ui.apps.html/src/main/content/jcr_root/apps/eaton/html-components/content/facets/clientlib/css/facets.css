@@ -1,0 +1,223 @@
+label{
+font-weight:normal;
+}
+
+.dekstop-view-wrapper{
+display:block;
+}
+.filterOverlay{
+display:none;
+        }
+
+.filter-list ul{
+    list-style: none;
+    padding: 0;
+}
+    .dividerLine
+    {
+border-bottom:1px solid;
+    color:#EEF0F2;
+    }
+
+
+.filterHead{
+	font-family:Arial;
+	font-weight:Bold;
+    font-size:1.125em;
+	color:#333F48;
+}
+
+.clear-filters label{
+margin-bottom:0px;
+    font-family: Arial;
+    font-size: 0.875em;
+	color:#005EB8;
+    }
+
+.filter-link-label{ 
+margin-left: 15px;
+    font-size: 0.875em;
+    font-family: Arial;
+	color:#005EB8;
+}
+
+.smallButtonPadding
+{
+padding:6px 10px;
+}
+ .overlayPage {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+	overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content-Page {
+   /* position: relative;
+    top: 0%;*/
+    width: 100%;
+	overflow:scroll;
+    height:75%;
+}
+
+.overlayPage a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.overlayPage a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+.overlayPage .closebtn {
+    position: absolute;
+    font-size: 1.5em;
+    color:#ffffff !important;
+    top:20px;
+    right:20px;
+    padding:0;
+}
+
+.overlayPage .filterNavHeader{
+z-index:5000;
+        }
+
+.mob-view-filter-wraper
+{
+display:none;
+}
+
+.facets-lists li span.custom-check{
+	/*background:url(/content/dam/eaton/images/close_icon.png) no-repeat middle center;
+    padding-left: 20px;*/
+        display:none;
+
+}
+ul.facets-lists li span img{
+display:inline;
+}
+ul.facets-lists li label{
+display:inline;
+margin-left:15px;
+}
+
+ul.facets-lists li input[type="checkbox"]{
+display:none;
+}
+
+
+input[type="checkbox"]{
+    -webkit-appearance: initial;
+    appearance: initial;
+    border: 1px #eef0f2 solid;
+    width: 15px;
+    height: 15px;
+    background: #eef0f2;
+    position: relative;
+        margin:0px;
+}
+input[type="checkbox"]:checked:after {
+content: "\2713";
+position: absolute;
+        left: 10%;
+    top: -30%;
+}
+
+
+.filter-collapse img
+{
+padding:5px;
+}
+.filter-collapse img.expand
+{
+margin-top:5px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px), screen and (max-width: 992px){
+
+.downArrowIcon {  
+display:inline;
+margin-left: 10px;
+}
+.filterNavHeader
+	{
+	background:#323f48;
+    position:relative;
+	padding:40px 0px;                    
+	}
+
+                .TBDfont{
+font-family:Arial;
+    font-size:0.9em;
+    color:#005EB8;
+    }
+
+
+.dekstop-view-wrapper{
+display:none;
+}
+.mob-view-filter-wraper
+{
+display:block;
+}
+
+.small-link-active{
+font-weight:bold;
+    }
+
+/*.mobileFilterButtons button
+{
+background:#005EB8;
+    text-align: center;
+    font-weight: Bold;
+    padding: 20px 0px;
+    border:none;
+}*/
+
+
+.mobileFilterButtons{
+bottom: 0;
+    margin-bottom: 0;
+    /*border-width: 1px 0 0;*/
+right: 0;
+    left: 0;
+    z-index: 5000;
+}
+
+ .overlayPage {overflow-y: auto;}
+  .overlayPage .closebtn {    
+    top: 40px;
+  }
+
+
+
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlayPage {overflow-y: auto;}
+  .overlayPage a {font-size: 1.25em}
+  .overlayPage .closebtn {
+    font-size: 2.5empx;
+    top: 40px;
+    right: 35px;
+  }
+
+}

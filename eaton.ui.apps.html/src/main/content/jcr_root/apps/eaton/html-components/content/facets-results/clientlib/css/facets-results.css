@@ -1,0 +1,17 @@
+
+.filter-labels label{
+font-family:Arial;
+font-size:0.875em;
+	color:#333F48;
+    margin:0px 10px;
+    }
+
+.downArrowIcon {  
+display:inline;
+margin-left: 10px;
+}
+
+.filterLabelMargin
+{
+margin-left:10px;
+}

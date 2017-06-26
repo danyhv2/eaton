@@ -1,0 +1,81 @@
+.in-grid-product-feature{
+    position:relative;
+    margin-top:30px;
+}
+.product-catalogue-text{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-family: EatonBold;
+}
+@media only screen and (max-width: 768px) {
+    .in-grid-product-feature{margin-left:0px;}
+.product-catalogue-text{
+   position: absolute;
+    top: 50%;
+    left: 37%;
+    font-size: 15px;
+    font-family: EatonBold;
+    overflow: hidden;
+}
+}
+
+/*rel3 career */
+
+.fea-block-one .fea-block-img-one
+{
+	width: 100%;
+    height: 535px;
+}
+
+.fea-block-two .fea-block-img-one,.fea-block-three .fea-block-img-one
+{
+	width: 100%;
+     height:498px;
+}
+
+.fea-block-one .fea-block,.fea-block-three .fea-block
+{
+	background-color:#f8f8f8;
+}
+.fea-block-two .fea-block 
+{
+	    margin-left: 15px;
+}
+
+@media only screen and (min-width:993px){
+.fea-block-two .pushclass
+{
+	left: 55%;
+    position: absolute;
+}
+
+    }
+
+@media only screen and (max-width:993px){
+            .fea-block-one .mediumMarginLeft,.fea-block-two .mediumMarginLeft,.fea-block-three .mediumMarginLeft
+{
+	margin-left:0px !important;
+}
+
+.fea-block-one .mediumMarginRight,.fea-block-two .mediumMarginRight,.fea-block-three .mediumMarginRight
+{
+	margin-right:0px !important;
+}
+.topicLinks .smallPaddingTop
+{
+	padding-top:60px !important;
+}
+
+.fea-block-two .fea-block 
+{
+	    margin-left: 0px;
+}
+.fea-block-one .fea-block-img-one,.fea-block-two .fea-block-img-one,.fea-block-three .fea-block-img-one
+{
+	height:auto;
+}
+
+    }        

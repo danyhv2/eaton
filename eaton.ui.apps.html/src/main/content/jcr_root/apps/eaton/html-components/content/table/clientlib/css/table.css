@@ -1,0 +1,43 @@
+.tableHolder td{
+padding:30px 5px !important;
+}
+tbody tr td:first-child{
+text-transform:uppercase;
+}
+tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+tr:nth-child(even) {
+    background-color: #fff;
+}
+tbody > tr > td{
+width:50% !important;
+    border:none !important;
+}
+table{
+
+}
+.tableHolder{
+margin-top:60px !important;
+}
+@media screen and (max-width: 992px) {
+    td{
+	width:100% !important;
+        display:block;
+        border:0px !important;
+    }
+    table{
+display:block;
+        border:none;
+    }
+    tbody{
+	display:block;
+    }
+    tr{
+    padding-bottom:0px !important;
+	display:block;
+
+    }
+
+
+}

@@ -1,0 +1,52 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+    <div>Desktop Country Selector Component</div>
+</sly>
+<sly data-sly-use.CountrySelectorModel="com.eaton.platform.core.models.CountrySelectorBean"></sly>
+<sly data-sly-use.countrySelectorHelper="com.eaton.platform.core.helpers.CountrySelectorHelper">
+
+<div class="aem-Grid aem-Grid--12 headingHolder" id="index" data-countryview="${CountrySelectorModel.view}" data-domain="${countrySelectorHelper.serverUrl}">
+	<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+		<div class="container-fixed container-padding">
+			<div class="aem-Grid aem-Grid--12 ">
+				<div class="aem-GridColumn aem-GridColumn--default--11 aem-GridColumn--tablet--11 aem-GridColumn--phone--12">
+					<div class="heading container-fixed">Select your location</div>
+				</div>
+				<div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--1 aem-GridColumn--phone--12">
+					<a href="#." class="utility-close-icon"></a>
+				</div>
+                <div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</sly>
+
+<div class="utility-content container-fixed container-padding">
+    <div class="aem-Grid aem-Grid--12">
+        <!-- Navigation Buttons -->
+        <div class="aem-GridColumn aem-GridColumn--tablet--3 aem-GridColumn--default--3">
+            <ul class="nav nav-pills nav-stacked" id="myTabs" data-sly-list.regionListbean="${countrySelectorHelper.regionListArr}">
+                <li><a href="#${regionListbean.regionName}" data-toggle="pill">${regionListbean.regionName}<span class="glyphicon glyphicon-menu-right"></span></a></li>     
+            </ul>
+        </div>
+        <!-- Content -->
+        <div class="aem-GridColumn aem-GridColumn--tablet--9 aem-GridColumn--default--9 flag-list" data-sly-list.regionListbean="${countrySelectorHelper.regionListArr}">
+            <div class="tab-content">
+                <div class="tab-pane" id="${regionListbean.regionName}">
+					 <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4" data-sly-list.countryListbean="${regionListbean.countryList}">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+                                <span class="country-name">${countryListbean.countryName}</span>
+                            </div>
+                            <div class="language" data-sly-list.languageListbean="${countryListbean.languageList}">
+                                <a href="#" data-languagepath="${languageListbean.languagePath}">${languageListbean.languageName}</a>
+                                <div data-sly-test="${!languageListbeanList.last}" data-sly-unwrap>|</div>
+                             </div>
+                        </div>
+          			</div>
+				</div>
+    		</div>
+		</div>
+   </div>
+ </div>

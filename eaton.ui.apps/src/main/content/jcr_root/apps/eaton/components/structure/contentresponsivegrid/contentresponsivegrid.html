@@ -1,0 +1,22 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+    <div>Content Responsive Grid Component</div>
+</sly>
+
+<sly data-sly-test.fixed="${properties.view == 'fixed'}">
+    <div class="container-fixed">
+    	<div class="aem-Grid aem-Grid--12">
+        	<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+    			<sly data-sly-resource="${'responsive-grid' @ resourceType='wcm/foundation/components/responsivegrid'}"> </sly>
+            </div>
+        </div>
+    </div>
+</sly>
+<sly data-sly-test="${!fixed}">
+    <div class="container-full">
+    	<div class="aem-Grid aem-Grid--12">
+        	<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+    			<sly data-sly-resource="${'responsive-grid' @ resourceType='wcm/foundation/components/responsivegrid'}"> </sly>
+            </div>
+        </div>
+    </div>
+</sly>

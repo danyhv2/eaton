@@ -1,0 +1,23 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}"><div>Utility Navigation Component</div></sly>
+<!-- Utility dropdown desktop starts here -->
+<div class="continent-dropdown-menu" id="continent-dropdown-menu">
+	<sly data-sly-resource="${'countrySelector' @ resourceType='eaton/html-components/structure/country-selector'}"></sly>
+
+</div>
+<!-- Utility dropdown desktop ends here -->
+<div class="utility-nav hide-mob padding-top-10 padding-bottom-10" id="utility-nav">
+    <div class="container-fixed container-padding">
+        <div class="aem-Grid aem-Grid--12">
+            <div class="aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-GridColumn--default--6 contry-language-selector">
+                <ul>
+                    <li id="select-region">
+                        <a href="#." class="select-region-link"><span class="utility-icon"></span><span class='usEng'>US/English</span><span class="caret"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-GridColumn--default--6 sign-up-link">
+                <a href="#." class="pull-right"><span class="user-icon"></span><span class='signIn'>Sign In</span></a>
+            </div>
+        </div>
+    </div>
+</div>

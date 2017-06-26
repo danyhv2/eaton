@@ -1,0 +1,62 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}"><div>Header Component</div></sly>
+<header>
+			
+    		
+	<div class="aem-Grid aem-Grid--12">
+        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+            <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/html-components/structure/full-page-drawer'}"></sly>
+        </div>
+    </div>
+    		<!-- <div>
+    			<div class="MQMobile">~~~Mobile</div>
+    			<div class="MQTablet">~~~~Tablet</div>
+    			<div class="MQDesktop">~~~~~Desktop</div>      		
+    		</div> -->
+    <div class="aem-Grid aem-Grid--12">
+        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 headerBorder headerMain">
+
+            <sly data-sly-resource="${'countrySelector' @ resourceType='eaton/html-components/structure/country-selector', selectors='country-selector-mobile', wcmmode='disabled'}"></sly>
+
+            <nav class="navbar navbar-default" id="header-navigation-bar">
+                <div class="container-fixed container-padding ">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default-12 aem-GridColumn--tablet-12 aem-GridColumn--phone--12">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button pull-right" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id='closeBtnHeader'>
+                                <span></span>
+                                </button>
+    							<sly data-sly-resource="${'search-comp' @ resourceType='eaton/html-components/content/search', selectors='search-mobile', wcmmode='disabled'}"></sly>
+                                <sly data-sly-resource="${'header-logo' @ resourceType='eaton/html-components/structure/logo'}"></sly>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="floatRight">
+                                <sly data-sly-resource="${'search-comp' @ resourceType='eaton/html-components/content/search'}"></sly>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-role="page">
+                            	<sly data-sly-include="primary-nav.html"/>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <sly data-sly-resource="${'search-comp' @ resourceType='eaton/html-components/content/search', selectors='search-bar', wcmmode='disabled'}"></sly>
+        </div>       
+        
+    </div>
+    <div class="aem-Grid aem-Grid--12">
+        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+			<!--<sly data-sly-resource="${'utility-nav' @ resourceType='eaton/html-components/structure/full-page-drawer', selectors='country-selector-mobile-reference', wcmmode='disabled'}"></sly>-->
+			
+			<!--  
+			 <sly data-sly-resource="${'search-comp' @ resourceType='eaton/html-components/content/search', selectors='search-bar', wcmmode='disabled'}"></sly> -->
+			
+        </div>
+    </div>
+</header>
+<div class="aem-Grid aem-Grid--12 "></div>
+<div class="contentLoad">
+	<sly data-sly-include="${'mega-menu-reference.jsp' @ wcmmode='disabled'}"></sly>
+</div>

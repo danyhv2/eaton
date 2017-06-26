@@ -1,0 +1,262 @@
+<sly data-sly-test="${wcmmode.edit}">TTIL List Component</sly>
+<div data-sly-use.ttilList="com.eaton.platform.core.helpers.TTILListHelper">
+
+<sly data-sly-list.item="${ttilList.typeList}" data-sly-unwrap> 	
+
+	<!--  ARTICLE LIST -->
+	<sly data-sly-test="${properties.view == 'no-feature'}">
+	    <div class="container-full page_overview" id="primary-content-article-list-single-feature">
+	        <div class='aem-Grid aem-Grid--12 noFeature'>
+                    <div data-sly-test="${itemList.first}" class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 Heading-bottom'>
+                       <div data-sly-test="${ttilList.ttilBean.headerLink}" class='mainHeading leftPadding0'>
+		                   <h3><a href="${ttilList.ttilBean.headerLink}" target="${ttilList.ttilBean.newWindow ? '_blank' : ''}">${ttilList.ttilBean.transHeader}
+									<img class='iconClass' src='/content/dam/eaton/images/Arrow_Blue.png'>
+							</a></h3>
+                       </div>
+                   </div> 
+                   <div class='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 noFeature-infoContainer'>
+                       <div class='main'>
+                           <span class='selected'></span>
+                           <h3>${item.eyebrow}</h3>
+                           <h2><a href="${item.pagePath}" target="${item.windowFixed ? '_blank' : ''}">${item.headline}</a></h2>
+                           <p>${item.publicationDate}</p>
+                       </div>
+                   </div>
+	        </div>
+	    </div>
+	</sly>
+	
+	<!--  ARTICLE LIST FEATURE -->
+	<sly data-sly-test="${properties.view == 'single-feature'}">
+	    <div class="container-full  container-padding page_overview" id="primary-content-article-list-single-feature">
+	        <div class='aem-Grid aem-Grid--12 noFeature'>
+	            <div class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12'>
+	                <div class='aem-Grid aem-Grid--12'>
+	                    <div data-sly-test="${itemList.first}" class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 Heading-bottom'>
+	                        <div  data-sly-test="${ttilList.ttilBean.headerLink}" class='mainHeading leftPadding0'>
+		                        <h3><a href="${ttilList.ttilBean.headerLink}" target="${ttilList.ttilBean.newWindow ? '_blank' : ''}">${ttilList.ttilBean.transHeader}
+									<img class='iconClass' src='/content/dam/eaton/images/Arrow_Blue.png'>
+								</a></h3>
+	                        </div>
+	                    </div> 
+	                   
+	                    <div data-sly-test="${itemList.first}" class='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 noFeature-imgContainer'>
+	                        <div class='main'>
+	                            <img class='width100Perc' src='${item.teaserImage}' alt="${item.altTxt ? item.altTxt : 'image'}">
+	                            <div class='info'>
+	                                <h3>${item.eyebrow}</h3>
+	                                <h2><a href="${item.pagePath}" target="${item.windowFixed ? '_blank' : ''}">${item.headline}</a></h2>
+	                                <p>${item.publicationDate}</p>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div data-sly-test="${!itemList.first}" class='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 noFeature-infoContainer'>
+	                        <div class='main'>
+	                            <span class='selected'></span>
+	                            <h3>${item.eyebrow}</h3>
+	                            <h2><a href="${item.pagePath}" target="${item.windowFixed ? '_blank' : ''}">${item.headline}</a></h2>
+	                            <p>${item.publicationDate}</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</sly>
+	
+	<!--  RELATED ITEMS WITH TEXT ONLY -->
+	<sly data-sly-test="${properties.view == 'related-products-text-only'}">
+		<div id="related-items-content">
+	        <div class="container-fixed related-item-web-container">
+	            <div class="aem-Grid aem-Grid--12">
+	                <div data-sly-test="${itemList.first}" class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+	                   <h3><a href="${ttilList.ttilBean.headerLink}" target="${ttilList.ttilBean.newWindow ? '_blank' : ''}">${ttilList.ttilBean.transHeader}</a></h3>
+	                </div>
+	            </div>
+	            <div class="aem-Grid aem-Grid--12">
+	                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--4 related-items-padding">
+	                    <div class="related-item">
+	                        <div class="related-items-Description">
+	                        	<span class='selected'></span>
+	                            <h4 class="related-items-title">
+	                                <div id="mask"></div>
+	                                ${item.eyebrow}
+	                            </h4>
+	                            <p class="related-item-card">
+	                                <a href="${item.pagePath}" target="${item.windowFixed ? '_blank' : ''}">${item.headline}</a>
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!--  mobile view -->
+	        <div class="container-fixed container-padding related-item-mob-container">
+	            <div class="aem-Grid aem-Grid--12">
+	                <div class="aem-GridColumn aem-GridColumn--phone--12">
+	                    <div data-sly-test="${itemList.first}" class="related-item-heading">
+	                    	<h3><a href="${ttilList.ttilBean.headerLink}" target="${ttilList.ttilBean.newWindow ? '_blank' : ''}">${ttilList.ttilBean.transHeader}</a></h3>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="aem-Grid aem-Grid--12">
+	                <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+	                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+	                        <!-- Indicators -->
+	                        <ol class="carousel-indicators">
+	                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	                        </ol>
+	                        <!-- Wrapper for slides -->
+	                        <div class="carousel-inner" role="listbox">
+	                            <div class="item active">
+	                                <div class="related-item">
+										<span class='selected'></span>
+	                                    <div class="related-items-Description">
+	                                        <h3 class="related-items-title">
+	                                            <div id="mask"></div>
+	                                            ${item.eyebrow}
+	                                        </h3>
+	                                        <p class="related-item-card">
+												<a href="${item.pagePath}" target="${item.windowFixed ? '_blank' : ''}">${item.headline}</a>
+	                                        </p>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</sly>
+	
+	<!--  RELATED ITEMS WITH IMAGE ONLY -->
+	<sly data-sly-test="${properties.view == 'related-products-with-images'}">
+	    <div id="related-items-content">
+	        <div class="container-fixed related-item-web-container">
+	            <div class="aem-Grid aem-Grid--12">
+	                <div data-sly-test="${itemList.first}" class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+	                    <h3 class="related-item-heading"> 
+	                    	<a href="${ttilList.ttilBean.headerLink}" target="${ttilList.ttilBean.newWindow ? '_blank' : ''}">${ttilList.ttilBean.transHeader}</a>
+	                    </h3>
+	                </div>
+	            </div>
+	            <div class="aem-Grid aem-Grid--12">
+	                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--4 related-items-padding">
+	                    <div class="related-item">
+	                        <div class="related-items-image">
+	                            <img src="${item.teaserImage}">
+	                        </div>
+	                        <div class="related-items-Description">
+	                            <h4 class="related-items-title">
+	                                <div id="mask"></div>
+	                                ${item.eyebrow}
+	                            </h4>
+	                            <p class="related-item-card">
+									<a href="${item.pagePath}" target="${item.windowFixed ? '_blank' : ''}">${item.headline}</a>
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!--  mobile view -->
+	        <div class="container-fixed container-padding related-item-mob-container">
+	            <div class="aem-Grid aem-Grid--12">
+	                <div class="aem-GridColumn aem-GridColumn--phone--12">
+	                    <div data-sly-test="${itemList.first}" class="related-item-heading">
+	                    	<h3><a   href="${ttilList.ttilBean.headerLink}" target="${ttilList.ttilBean.newWindow ? '_blank' : ''}">${ttilList.ttilBean.transHeader}</a></h3>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="aem-Grid aem-Grid--12">
+	                <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+	                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+	                        <!-- Indicators -->
+	                        <ol class="carousel-indicators">
+	                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	                        </ol>
+	                        <!-- Wrapper for slides -->
+	                        <div class="carousel-inner" role="listbox">
+	                            <div class="item active">
+	                                <div class="related-item">
+	                                    <div class="related-items-image">
+	                                        <img src="${item.teaserImage}">
+	                                    </div>
+	                                    <div class="related-items-Description">
+	                                        <h3 class="related-items-title">
+	                                            <div id="mask"></div>
+	                                            ${item.eyebrow}
+	                                        </h3>
+	                                        <p class="related-item-card">
+												<a href="${item.pagePath}" target="${item.windowFixed ? '_blank' : ''}">${item.headline}</a>
+	                                        </p>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</sly>
+
+
+	<!-- FEATURED LIST -->
+	<sly data-sly-test="${properties.view == 'fea-list'}">
+		<div class="aem-Grid aem-Grid--12">
+	        <div class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 compHighlight'>
+	            <h4 data-sly-test="${itemList.first}"><a   href="${ttilList.ttilBean.headerLink}" target="${ttilList.ttilBean.newWindow ? '_blank' : ''}">${ttilList.ttilBean.transHeader}</a></h4>
+	            <div class='storyContainer'>
+	                <div>
+	                    <div class='imgContainer'>
+	                        <img src='${item.teaserImage}' />
+	                    </div>
+	                    <div class='desc'>
+	                        <p>${item.eyebrow}</p>
+	                        <p><a href="${item.pagePath}" target="${item.windowFixed ? '_blank' : ''}">${item.descriptionFeature}</a></p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</sly>
+	
+	<!-- FEATURED STORY -->
+	<sly data-sly-test="${properties.view == 'fea-story'}">
+	    <div class="container-full extraLargeMarginTop" id="featured-story-${properties.jcr:Position}">
+	        <div class="storyHolder storyHolder-${properties.jcr:Position}">
+	        	<div class="aem-Grid aem-Grid--12">
+					<div class="aem-GridColumn aem-GridColumn--default--11 aem-GridColumn--tablet--11 aem-GridColumn--phone--12 storyBoardImageFS odd noPadding">
+						<div class='imgContainer'>
+							<img class="img-responsive show-desktop" src="${item.teaserImage}" />
+							<img class="img-responsive show-mob" src="${item.teaserImage}" />
+						</div>
+						<div class="aem-Grid aem-Grid--12">
+							<div class="storyBoardOverlayRight  aem-GridColumn aem-GridColumn--tablet--5  aem-GridColumn--phone--12  aem-GridColumn--default--4">
+								<div class="aem-Grid aem-Grid--12">
+									<div class="storyBoardOverlayContent aem-GridColumn aem-GridColumn--tablet--11 aem-GridColumn--phone--8 aem-GridColumn--default--11">
+										<div class="infoContent largeMarginTop largeMarginLeft">
+											<div class="eyeBrowLarge light storyBoardHeadline">${item.eyebrow}</div>
+											<h2 class="light smallMarginTop infoContentHead">
+												<a href="${item.pagePath}" target="${item.windowFixed ? '_blank' : ''}">${item.headline}</a>
+												<span class="glyphicon glyphicon-menu-right"></span>
+											</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	        </div>
+	    </div>
+	</sly>
+
+</sly>
+</div>

@@ -1,0 +1,1169 @@
+<sly data-sly-test="${wcmmode.edit}">TTIL List Component</sly>
+<sly data-sly-test="${properties.view == 'no-feature'}">
+<div class="container-full page_overview"
+	id="primary-content-article-list-single-feature">
+	<div class='aem-Grid aem-Grid--12 noFeature'>
+		<div
+			class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12'>
+			<p>Article List with No Feature</p>
+		</div>
+	</div>
+</div>
+</sly>
+<sly data-sly-test="${properties.view == 'single-feature'}">
+<div
+	class="container-full  container-padding extraLargePaddingTop extraLargePaddingBottom"
+	id="primary-content-article-list-single-feature">
+	<div class='aem-Grid aem-Grid--12 noFeature'>
+		<div
+			class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12'>
+			<div class='aem-Grid aem-Grid--12'>
+				<div
+					class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12'>
+					<div class='mediumMarginBottom'>
+						<h2>In the news</h2>
+					</div>
+				</div>
+				<div
+					class='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 noFeature-imgContainer mediumMarginBottom'>
+					<div class='main'>
+						<img class='width100Perc'
+							src='/content/dam/eaton/images/In-the-News.png'>
+						<div class='info smallPaddingLeft  smallPaddingRight'>
+							<div class="eyeBrowLarge smallMarginBottom smallMarginTop">Company</div>
+							<h4>
+								<a href="#.">Eaton Reports Fourth Quarter Net Income and
+									operating Earnings Per Share of $1.12</a>
+							</h4>
+							<div class="smallMarginBottom smallMarginTop date">January
+								1, 2017</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 noFeature-infoContainer mediumMarginLeft'>
+					<div class='main'>
+						<span class='selected'></span>
+						<div class="eyeBrowSmall smallMarginBottom">Category</div>
+						<h4>
+							<a href="#.">Improve performance, lower costs and reduce
+								environmental impact with Eaton's new digital PpQ control for
+								Hydrokraft pumps</a>
+						</h4>
+						<div class="mediumMarginBottom smallMarginTop date">September
+							14, 2016</div>
+					</div>
+					<div class='main'>
+						<span class='selected'></span>
+						<div class="eyeBrowSmall smallMarginBottom">Category</div>
+						<h4>
+							<a href="#.">Eaton's Everflex Teflon PTFE Hose and Fittings
+								Withstand High Temperatures, Abrasive Chemicals</a>
+						</h4>
+						<div class="mediumMarginBottom smallMarginTop date">August
+							30, 2016</div>
+					</div>
+					<div class='main'>
+						<span class='selected'></span>
+						<div class="eyeBrowSmall smallMarginBottom">Category</div>
+						<h4>
+							<a href="#.">Eaton Explores How Drives Technology Can Support
+								Overall Energy Efficiency at Drives & Controls 2016</a>
+						</h4>
+						<div class="date smallMarginTop">March 29, 2016</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</sly>
+<sly data-sly-test="${properties.view == 'related-products-text-only'}">
+</sly>
+
+<sly
+	data-sly-test="${properties.view == 'category-related-products-with-images'}">
+<div class="cardHolder hidden-xs hidden-sm">
+	<div class="container-fixed container-padding">
+		<div class="aem-Grid aem-Grid--12">
+			<div class="aem-GridColumn aem-GridColumn--default--6">
+				<div class="categoryHighlightCard padding-right-10">
+					<img src="/content/dam/eaton/images/card1.png">
+					<div class="inner-border smallPaddingLeft smallPaddingRight smallPaddingTop smallPaddingBottom">
+						<div class="eyeBrowSmall text-uppercase">DATA CENTER & FACILITY UPS</div>
+						<h5 class="smallMarginTop">
+							<a href="#">Unlock power and revenue with a modern UPS</a>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="aem-GridColumn aem-GridColumn--default--6">
+				<div class="categoryHighlightCard padding-left-10">
+
+					<img src="/content/dam/eaton/images/card2.png">
+					<div class="inner-border smallPaddingLeft smallPaddingRight smallPaddingTop smallPaddingBottom">
+						<div class="eyeBrowSmall text-uppercase">ELECTRICAL</div>
+						<h5 class="smallMarginTop">
+							<a href="#">Eaton awarded U.S. Army Corps Contract to
+								Modernize Electrical..</a>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-full">
+	<div
+		class="cardCaraousel container-fixed container-padding show-mob">
+		<div id="category-highlight-carousel" class="carousel slide" data-ride="carousel"
+			data-interval="false">
+			<!-- Carousel indicators -->
+			<ol
+				class="carousel-indicators category-highlight-carousel-indicator noPadding noMargin">
+				<li data-target="#category-highlight-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#category-highlight-carousel" data-slide-to="1"></li>
+			</ol>
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="/content/dam/eaton/images/card1.png" alt="First Slide" class="img-responsive">
+					<div class="inner-border">
+						<div class="eyeBrowSmall text-uppercase">DATA CENTER & FACILITY UPS</div>
+						<h5 class="smallPaddingTop">
+							<a href="#">Unlock power and revenue with a modern UPS</a>
+						</h5>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/content/dam/eaton/images/card2.png" alt="Second Slide">
+					<div class="inner-border">
+						<div class="eyeBrowSmall text-uppercase">ELECTRICAL</div>
+						<h5 class="smallPaddingTop">
+							<a href="#">Eaton awarded U.S. Army Corps Contract to
+								Modernize Electrical..</a>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Carousel controls -->
+
+	</div>
+
+</div>
+
+</sly>
+<sly
+	data-sly-test="${properties.view == 'related-products-with-images'}">
+<div id="related-items-content" class="mediumMarginTop">
+	<div
+		class="container-fixed related-item-web-container extraLargePaddingTop extraLargePaddingBottom">
+		<div class="aem-Grid aem-Grid--12">
+			<div
+				class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+				<h2 class="related-item-heading">Related Items</h2>
+			</div>
+		</div>
+		<div class="aem-Grid aem-Grid--12 smallMarginTop">
+			<div
+				class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--4 related-items-padding">
+				<div class="related-item">
+					<div class="related-items-image">
+						<a href="#."> <img
+							src="/content/dam/eaton/images/company-insight.png"></a>
+					</div>
+					<div
+						class="related-items-Description smallPaddingLeft smallPaddingTop smallPaddingRight ">
+						<div class="related-items-title eyeBrowSmall">
+							<div id="mask"></div>
+							Company Insights
+						</div>
+						<div class="related-item-card smallMarginTop mediumMarginBottom">
+							<h5>
+								<a class="" href="#."> Eaton to Focus on Key Global
+									Industrial Trends at Hannover 2016 </a>
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--4 related-items-padding">
+				<div class="related-item">
+					<div class="related-items-image">
+						<a href="#."> <img src="/content/dam/eaton/images/utility.png"></a>
+					</div>
+					<div
+						class="related-items-Description smallPaddingLeft smallPaddingTop smallPaddingRight ">
+						<div class="related-items-title eyeBrowSmall">
+							<div id="mask"></div>
+							Utility
+						</div>
+						<div class="related-item-card smallMarginTop mediumMarginBottom">
+							<h5>
+								<a class="" href="#."> Eaton Displays Critical Solution for
+									Wind Energy Industry </a>
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--4 related-items-padding">
+				<div class="related-item">
+					<div class="related-items-image">
+						<a href="#."> <img
+							src="/content/dam/eaton/images/community.png"></a>
+					</div>
+					<div
+						class="related-items-Description smallPaddingLeft smallPaddingTop smallPaddingRight ">
+						<div class="related-items-title eyeBrowSmall">
+							<div id="mask"></div>
+							Community
+						</div>
+						<div class="related-item-card smallMarginTop mediumMarginBottom">
+							<h5>
+								<a class="" href="#."> Eaton helps Young People Build Skills
+									for the Future </a>
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  mobile view -->
+	<div
+		class="container-fixed container-padding related-item-mob-container extraLargePaddingTop extraLargePaddingBottom">
+		<div class="aem-Grid aem-Grid--12">
+			<div class="aem-GridColumn aem-GridColumn--phone--12">
+				<h2 class="related-item-heading">Related Items</h2>
+			</div>
+		</div>
+		<div class="aem-Grid aem-Grid--12">
+			<div
+				class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 smallMarginTop">
+				<div id="carousel-example-generic" class="carousel slide"
+					data-ride="carousel" data-interval="false">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0"
+							class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="related-item">
+								<div class="related-items-image">
+									<a href="#."> <img
+										src="/content/dam/eaton/images/company-insight.png">
+									</a>
+								</div>
+								<div
+									class="related-items-Description smallPaddingLeft smallPaddingTop smallPaddingRight ">
+									<div class="related-items-title eyeBrowSmall">
+										<div id="mask"></div>
+										Company Insights
+									</div>
+
+									<div class="related-item-card smallMarginTop mediumMarginBottom">
+										<h5>
+											<a class="" href="#."> Eaton to Focus on Key Global
+												Industrial Trends at Hannover 2016 </a>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="related-item">
+								<div class="related-items-image">
+									<a href="#."> <img
+										src="/content/dam/eaton/images/utility.png"></a>
+								</div>
+								<div
+									class="related-items-Description smallPaddingLeft smallPaddingTop smallPaddingRight ">
+									<div class="related-items-title eyeBrowSmall">
+										<div id="mask"></div>
+										Utility
+									</div>
+
+									<div class="related-item-card smallMarginTop mediumMarginBottom">
+										<h5>
+											<a class="" href="#."> Eaton Displays Critical Solution
+												for Wind Energy Industry </a>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="related-item">
+								<div class="related-items-image">
+									<a href="#."> <img
+										src="/content/dam/eaton/images/community.png"></a>
+								</div>
+								<div
+									class="related-items-Description smallPaddingLeft smallPaddingTop smallPaddingRight ">
+									<div class="related-items-title eyeBrowSmall">
+										<div id="mask"></div>
+										Community
+									</div>
+
+									<div class="related-item-card smallMarginTop mediumMarginBottom">
+										<h5>
+											<a class="" href="#."> Eaton helps Young People Build
+												Skills for the Future </a>
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</sly>
+
+<sly data-sly-test="${properties.view == 'products'}">
+<div
+	class="relatedProducts mediumMarginTop mediumMarginBottom container-padding container-fixed">
+	<div class="eyeBrowLarge">More Eaton products</div>
+	<div class="smallMarginTop">
+		<div id="myCarousel" class="carousel slide show-desktop"
+			data-ride="carousel" data-interval="false">
+			<ol class="carousel-indicators-related-products carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="product_card_row">
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop noLeftMargin">
+									<img src="../../../../../../../content/dam/eaton/images/p1.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop">
+									<img src="../../../../../../../content/dam/eaton/images/p5.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop">
+									<img src="../../../../../../../content/dam/eaton/images/p3.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop">
+									<img src="../../../../../../../content/dam/eaton/images/p1.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="product_card_row">
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop noLeftMargin">
+									<img src="../../../../../../../content/dam/eaton/images/p1.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop">
+									<img src="../../../../../../../content/dam/eaton/images/p5.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop">
+									<img src="../../../../../../../content/dam/eaton/images/p3.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop">
+									<img src="../../../../../../../content/dam/eaton/images/p1.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="product_card_row">
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop noLeftMargin">
+									<img src="../../../../../../../content/dam/eaton/images/p1.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop">
+									<img src="../../../../../../../content/dam/eaton/images/p5.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop">
+									<img src="../../../../../../../content/dam/eaton/images/p3.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--default--3">
+								<div class="related-product-card-desktop">
+									<img src="../../../../../../../content/dam/eaton/images/p1.png"
+										class="img-responsive">
+									<div class="eyeBrowSmall smallMarginTop smallPaddingLeft smallPaddingRight">Eaton 5PX</div>
+									<a href="#"><h4 class="smallMarginTop mediumMarginBottom smallPaddingLeft smallPaddingRight">EATON
+											5P UPS</h4></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="product-carousel-mob"
+			class="carousel slide show-mob mediumMarginTop"
+			data-ride="carousel" data-interval="false">
+			<ol class="carousel-indicators-related-products carousel-indicators">
+				<li data-target="#product-carousel-mob" data-slide-to="0" class="active"></li>
+				<li data-target="#product-carousel-mob" data-slide-to="1"></li>
+				<li data-target="#product-carousel-mob" data-slide-to="2"></li>
+				<li data-target="#product-carousel-mob" data-slide-to="3"></li>
+			</ol>
+
+			<div class="carousel-inner">
+				<div class="item active">
+					<div
+						class="product-card-mobile mediumPaddingTop extraLargePaddingBottom">
+						<img src="../../../../../../../content/dam/eaton/images/p1.png"
+							class="img-responsive">
+						<div class="eyeBrowSmall mediumMarginTop mediumMarginLeft mediumMarginRight">Eaton
+							5PX</div>
+						<a href="#"><h4
+								class="mediumMarginTop mediumMarginLeft mediumMarginRight">EATON
+								5P UPS</h4></a>
+					</div>
+				</div>
+				<div class="item">
+					<div
+						class="product-card-mobile mediumPaddingTop extraLargePaddingBottom">
+						<img src="../../../../../../../content/dam/eaton/images/p1.png"
+							class="img-responsive">
+						<div class="eyeBrowSmall mediumMarginTop mediumMarginLeft mediumMarginRight">Eaton
+							5PX</div>
+						<a href="#"><h4
+								class="mediumMarginTop mediumMarginLeft mediumMarginRight">EATON
+								5P UPS</h4></a>
+					</div>
+				</div>
+				<div class="item">
+					<div
+						class="product-card-mobile mediumPaddingTop extraLargePaddingBottom">
+						<img src="../../../../../../../content/dam/eaton/images/p3.png"
+							class="img-responsive">
+						<div class="eyeBrowSmall mediumMarginTop mediumMarginLeft mediumMarginRight">Eaton
+							5PX</div>
+						<a href="#"><h4
+								class="mediumMarginTop mediumMarginLeft mediumMarginRight">EATON
+								5P UPS</h4></a>
+					</div>
+				</div>
+				<div class="item">
+					<div
+						class="product-card-mobile mediumPaddingTop extraLargePaddingBottom">
+						<img src="../../../../../../../content/dam/eaton/images/p2.png"
+							class="img-responsive">
+						<div class="eyeBrowSmall mediumMarginTop mediumMarginLeft mediumMarginRight">Eaton
+							5PX</div>
+						<a href="#"><h4
+								class="mediumMarginTop mediumMarginLeft mediumMarginRight">EATON
+								5P UPS</h4></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</sly>
+<sly data-sly-test="${properties.view == 'fea-list'}">
+<div class="aem-Grid aem-Grid--12">
+	<div
+		class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 compHighlight'>
+		<div class="eyeBrowSmall smallPaddingBottom  uppercase light">
+			Featured Markets</div>
+		<div class='storyContainer'>
+			<div class="smallPaddingBottom">
+				<div class='imgContainer'>
+					<img src=' /content/dam/eaton/images/Image1.png' />
+				</div>
+				<div class='desc'>
+					<span class="small-body-copy-link-on-dark light light arrowAfter">Aerospace</span>
+					<img src='/content/dam/eaton/images/Link-Arrow.png' />
+					<div
+						class="small light megamenu-margin-deviation">
+						Motor protection for the IE3 revolution, that discusses the impact
+						of the Energy-related Products (ErP) directive on switchgear and
+						protection systems for electric motors.</div>
+				</div>
+			</div>
+			<div class="smallPaddingBottom">
+				<div class='imgContainer'>
+					<img src=' /content/dam/eaton/images/Image2.png' />
+				</div>
+				<div class='desc'>
+					<span class="small-body-copy-link-on-dark light light arrowAfter">Renewables</span>
+					<img src='/content/dam/eaton/images/Link-Arrow.png' />
+					<div
+						class="small light megamenu-margin-deviation">Motor
+						protection for the IE3 revolution, that discusses the impact of
+						the Energy-related Products (ErP) directive on switchgear and
+						protection systems for electric motors.</div>
+				</div>
+			</div>
+			<div class="smallPaddingBottom">
+				<div class='imgContainer'>
+					<img src=' /content/dam/eaton/images/Image3.png' />
+				</div>
+				<div class='desc'>
+					<span class="small-body-copy-link-on-dark light light arrowAfter">Oil
+						and Gas</span> <img src='/content/dam/eaton/images/Link-Arrow.png' />
+					<div
+						class="small light megamenu-margin-deviation">Motor
+						protection for the IE3 revolution, that discusses the impact of
+						the Energy-related Products (ErP) directive on switchgear and
+						protection systems for electric motors.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</sly>
+<sly data-sly-test="${properties.view == 'fea-story'}">
+<div class="container-full extraLargeMarginTop"
+	id="featured-story-${properties.jcr:Position}">
+	<div class="storyHolder storyHolder-${properties.jcr:Position}">	
+		<div class="aem-Grid aem-Grid--12">
+			<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 storyBoardImageFS odd noPadding">
+				<div class='imgContainer'>
+					<img class="img-responsive show-desktop" src="/content/dam/eaton/images/story_01.png" /> 
+					<img class="img-responsive show-mob" src="/content/dam/eaton/images/FeaturedStory_Img1_mob.png" />
+				</div>
+				<!-- <div class="aem-Grid aem-Grid--12 absolute rightAligned"> -->
+				<div class="aem-Grid aem-Grid--12">
+					<div class="storyBoardOverlayRight  aem-GridColumn aem-GridColumn--tablet--5  aem-GridColumn--phone--12  aem-GridColumn--default--4">
+						<div class="aem-Grid aem-Grid--12" >							
+							<div class="storyBoardOverlayContent mediumPaddingTop mediumPaddingBottom aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--8 aem-GridColumn--default--11">
+								<div class="infoContent ">
+									<div class="eyeBrowLarge light storyBoardHeadline">Hydraulics</div>
+									<h2 class="light smallMarginTop infoContentHead ">
+										<span class="rightArrowIcon"> Augmented reality brings a new vision to hydraulic control</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="aem-Grid aem-Grid--12 ">
+			<div
+				class="aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn--default--12 storyBoardImageFS even noPadding">
+				<div class='imgContainer'>
+					<img class="img-responsive show-desktop"	src="/content/dam/eaton/images/story_02.png" /> 
+						<img class="img-responsive show-mob"	src="/content/dam/eaton/images/FeaturedStory_Img2_mob.png" />
+				</div>
+				<div class="aem-Grid aem-Grid--12">
+					<div class="storyBoardOverlayLeft   aem-GridColumn aem-GridColumn--tablet--5 aem-GridColumn--phone--12  aem-GridColumn--default--4">
+						<div class="aem-Grid aem-Grid--12">
+							<div class="storyBoardOverlayContent mediumPaddingTop  mediumPaddingBottom aem-GridColumn aem-GridColumn--tablet--8 aem-GridColumn--phone--8 aem-GridColumn--default--8">
+								<div class="infoContent">
+									<div class="eyeBrowLarge light storyBoardHeadline">Lighting	</div>
+									<h2 class="light smallMarginTop infoContentHead ">
+										<span class="rightArrowIcon">Lighting for sports venues: how LEDs are transforming the game </span>
+									</h2>
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="aem-Grid aem-Grid--12 ">
+			<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 storyBoardImageFS odd allPaddings0">
+				<div class='imgContainer'>
+					<img class="img-responsive show-desktop"
+						src="/content/dam/eaton/images/story_03.png" /> <img
+						class="img-responsive show-mob"
+						src="/content/dam/eaton/images/FeaturedStory_Img3_mob.png" />
+				</div>
+				<div class="aem-Grid aem-Grid--12 absolute rightAligned">
+					<div
+						class="storyBoardOverlayRight  aem-GridColumn aem-GridColumn--tablet--5  aem-GridColumn--phone--12  aem-GridColumn--default--4">
+						<div class="aem-Grid aem-Grid--12">
+							<div class="storyBoardOverlayContent mediumPaddingTop mediumPaddingBottom aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn--phone--8 aem-GridColumn--default--11">
+								<div class="infoContent">
+									<div class="eyeBrowLarge light storyBoardHeadline">Data	Centers</div>
+									<h2 class="light smallMarginTop infoContentHead ">
+										<span class="rightArrowIcon">How increased efficiency keeps data flowing</span>
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</sly>
+
+<sly data-sly-test="${properties.view == 'products-in-grid-feature'}">
+<div class="market-feature">
+	<div class="marketFeatureHolder">
+		<div	data-sly-resource="${'inGridTitle' @ resourceType='eaton/html-components/content/title'}"></div>
+		<div class="market-feature-desc">
+			<div	data-sly-resource="${'inGridText' @ resourceType='eaton/html-components/content/text'}"></div>
+		</div>
+
+	</div>
+</div>
+
+</sly>
+<sly data-sly-test="${properties.view == 'no-feature-rel3'}">
+</sly>
+
+<sly data-sly-test="${properties.view == 'single-feature-rel3'}">
+	<div class="container-full  container-padding extraLargeMarginTop single-feature-secondary-landing" id="primary-content-article-list-single-feature-secondary-landing">
+        <div class='aem-Grid aem-Grid--12 noFeature'>
+            <div class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12'>
+                <div class='aem-Grid aem-Grid--12'>
+                  
+                    <div class='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 noFeature-imgContainer mediumMarginBottom'>
+                        <div class='main'>
+                            <img src='/content/dam/eaton/images/articli_list_Secondary_Landing.png' alt="Article List">
+                            <div class='info smallPaddingLeft smallPaddingRight smallPaddingBottom'>
+                                <div class="eyeBrowLarge smallMarginTop">Company</div>
+                                <div class="smallMarginTop"><h4><a href="#.">Eaton Reports Fourth Quarter Net Income and operating Earnings Per Share of $1.12</a></h4></div>
+                                <div class="smallMarginTop date-single-feature">January 1, 2017</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 noFeature-infoContainer mediumMarginLeft'>
+                        <div class='main'>
+                            <span class='selected'></span>
+                            <div class="eyeBrowLarge smallMarginTop">Category</div>
+                           <h4 class="smallMarginTop"><a href="#." >Eaton's New GH100 and GH101 Biodiesel Hose Products Feature Exceptionally  High Temperatures</a></h4>
+                            <div class="smallMarginTop date-single-feature">December 7, 2016</div>
+                        </div>
+                        <div class='main mediumMarginTop'>
+                            <span class='selected'></span>
+                            <div class="eyeBrowLarge smallMarginTop">Category</div>
+                            <h4 class="smallMarginTop"><a href="#.">Eaton, Powin Energy Collabarate to Fast-Track Aliso Canyon Energy Storage Project in Southern California</a></h4>
+                            <div class="smallMarginTop date-single-feature">September 14, 2016</div>
+                        </div>
+                        <div class='main mediumMarginTop'>
+                            <span class='selected'></span>
+                            <div class="eyeBrowLarge smallMarginTop">Category</div>
+                           <h4 class="smallMarginTop"><a href="#.">Eaton Everflex Teflon PTFE Hose and Fittings Withstand High Temperatures, Abrasive Chemicals</a></h4>
+                            <div class="date-single-feature smallMarginTop">August 30, 2016</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>
+
+<sly data-sly-test="${properties.view == 'tile-links'}">
+</sly>
+
+<sly data-sly-test="${properties.view == 'image-list'}">
+</sly>
+
+<sly data-sly-test="${properties.view == 'category-related-products-with-images-rel3'}">
+<div class="cardHolderRel3 cardHolder hide-mob">
+	<div class="container-fixed container-padding">
+		<div class="aem-Grid aem-Grid--12">
+			<div class="aem-GridColumn aem-GridColumn--default--4">
+				<div class="categoryHighlightCard padding-right-10">
+					<img src="/content/dam/eaton/images/Jet.png"  alt="First Slide">
+					<div class="inner-border smallPaddingLeft smallPaddingTop smallPaddingRight smallPaddingBottom">
+						<div class="eyeBrowSmall">MILITARY</div>
+                                    <div class="smallMarginTop"><h5><a href="#.">The Department of Defence selects Eaton for critical power needs</a></h5></div>
+                                    <div class="small smallMarginTop">April 22, 2017</div>
+					</div>
+				</div>
+			</div>
+			<div class="aem-GridColumn aem-GridColumn--default--4">
+				<div class="categoryHighlightCard padding-left-10 padding-right-10">
+
+					<img src="/content/dam/eaton/images/Tractors.png"  alt="Second Slide">
+					<div class="inner-border smallPaddingLeft smallPaddingTop smallPaddingRight smallPaddingBottom">
+						<div class="eyeBrowSmall">AGRICULTURE</div>
+                                    <div class="smallMarginTop"><h5><a href="#.">New large tough coil improves safety and reliability in the harshest environments</a></h5></div>
+                                    <div class="small smallMarginTop">April 22, 2017</div>
+					</div>
+				</div>
+			</div>
+			<div class="aem-GridColumn aem-GridColumn--default--4">
+				<div class="categoryHighlightCard padding-left-10 padding-right-10">
+					<img src="/content/dam/eaton/images/Power_Lines.png"  alt="Third Slide">
+					<div class="inner-border smallPaddingLeft smallPaddingTop smallPaddingRight smallPaddingBottom">
+						<div class="eyeBrowSmall">ELECTRICAL</div>
+                                    <div class="smallMarginTop"><h5><a href="#.">Eaton awarded U.S. Army Corps contract to modernize electrical systems at four</a></h5></div>
+                                    <div class="small smallMarginTop">April 22, 2017</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-full">
+	<div class="cardCaraousel container-fixed container-padding hidden-md show-mob">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel"
+			data-interval="false">
+			<!-- Carousel indicators -->
+			<ol
+				class="carousel-indicators category-highlight-carousel-indicator noPadding noMargin">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+                	<div class="categoryHighlightCard">
+                        <img src="/content/dam/eaton/images/Jet.png" alt="First Slide">
+                        <div class="inner-border mediumPaddingLeft mediumPaddingTop mediumPaddingRight mediumPaddingBottom">
+                                    <div class="eyeBrowSmall">MILITARY</div>
+                                    <div class="smallMarginTop"><h5><a href="#.">The Department of Defence selects Eaton for critical power needs</a></h5></div>
+                                    <div class="small smallMarginTop">April 22, 2017</div>
+                        </div>
+                   </div> 
+				</div>
+				<div class="item">
+					<div class="categoryHighlightCard">	
+					<img src="/content/dam/eaton/images/Tractors.png" alt="Second Slide">
+					<div class="inner-border mediumPaddingLeft mediumPaddingTop mediumPaddingRight mediumPaddingBottom">
+						<div class="eyeBrowSmall">AGRICULTURE</div>
+                                    <div class="smallMarginTop"><h5><a href="#.">New large tough coil improves safety and reliability in the harshest environments</a></h5></div>
+                                    <div class="small smallMarginTop">April 22, 2017</div>
+					</div>
+                    </div>
+				</div>
+				<div class="item">
+                	<div class="categoryHighlightCard">
+					<img src="/content/dam/eaton/images/Power_Lines.png" alt="Third Slide">
+					<div class="inner-border mediumPaddingLeft mediumPaddingTop mediumPaddingRight mediumPaddingBottom">
+							<div class="eyeBrowSmall">ELECTRICAL</div>
+                                    <div class="smallMarginTop"><h5><a href="#.">Eaton awarded U.S. Army Corps contract to modernize electrical systems at four</a></h5></div>
+                                    <div class="small smallMarginTop">April 22, 2017</div>
+					</div>
+                   </div> 
+				</div>
+			</div>
+		</div>
+
+		<!-- Carousel controls -->
+
+	</div>
+
+</div>
+
+</sly>
+
+
+
+<sly data-sly-test="${properties.view == 'image-rel3'}">
+<div class="category-highlight_rel3">
+<div class="cardHolder">
+			<div class="container-fixed container-padding">
+            <div class="aem-Grid aem-Grid--12">
+						<div class="aem-GridColumn aem-GridColumn--default--12 categoryHighlightCard container-carrel-prodrel3">
+							<img src="/content/dam/eaton/images/category_highlight_secondary_Landing.png" alt="category highlight">
+						</div>
+             </div>
+			</div>
+		</div>
+ </div>
+</sly>
+
+
+<sly data-sly-test="${properties.view == 'related-products-with-images-cat-rel3'}">
+    <div  class="">
+        <div class="container-fixed related-item-web-container related-products-with-images-cat-secondary-landing mediumMarginTop container-padding">
+           
+            <div class="aem-Grid aem-Grid--12">
+                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--4 padding-right-10">
+                    <div class="related-item">
+                        <div class="related-items-image">
+                           <a href="#."> <img src="/content/dam/eaton/images/healthcare.png" alt="healthcare"></a>
+                        </div>
+                        <div class="related-items-Description smallPaddingLeft smallPaddingTop smallPaddingRight smallPaddingBottom rel-height">
+                            <div class="related-items-title eyeBrowSmall">
+                                <div id="mask"></div>
+                                 HEALTHCARE
+                            </div>
+                            <div class="related-item-card smallMarginTop">
+                                <h5><a class="" href="#.">
+                                Emergency power systems basics: maintaining always-on.
+                                </a></h5>
+                            </div>
+							<div class="small smallMarginTop">April 22, 2017</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--4 padding-left-10 padding-right-10">
+                    <div class="related-item">
+                        <div class="related-items-image">
+                         <a href="#.">  <img src="/content/dam/eaton/images/knowledge_center_Secondary_Landing.png" alt="knowledge center"></a>
+                        </div>
+                        <div class="related-items-Description smallPaddingLeft smallPaddingTop smallPaddingRight smallPaddingBottom rel-height">
+                            <div class="related-items-title eyeBrowSmall">
+                                <div id="mask"></div>
+                                KNOWLEDGE CENTER
+                            </div>
+                            <div class="related-item-card smallMarginTop">
+                              <h5><a class="" href="#.">
+                                Green by design
+                                </a>
+								</h5>	
+                            </div>
+							<div class="small smallMarginTop">April 22, 2017</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--4 padding-left-10">
+                    <div class="related-item">
+                        <div class="related-items-image">
+                           <a href="#."> <img src="/content/dam/eaton/images/community.png" alt="community"></a>
+                        </div>
+                        <div class="related-items-Description smallPaddingLeft smallPaddingTop smallPaddingRight smallPaddingBottom rel-height">
+                            <div class="related-items-title eyeBrowSmall">
+                                <div id="mask"></div>
+                                SUCCESS STORY
+                            </div>
+                            <div class="related-item-card smallMarginTop">
+                                 <h5><a class="" href="#.">
+                                ESS exceeds expectations for colocation provider
+                                </a>
+								</h5>
+                            </div>
+							<div class="small smallMarginTop">April 22, 2017</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  mobile view -->
+        <div class="container-fixed container-padding related-item-mob-container related-products-with-images-cat-secondary-landing largeMarginTop">
+
+            <div class="aem-Grid aem-Grid--12">
+                <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="related-item">
+                                    <div class="related-items-image">
+                                       <a href="#."> <img src="/content/dam/eaton/images/healthcare.png" alt="healthcare"> </a>
+                                    </div>
+                                    <div class="related-items-Description mediumPaddingLeft mediumPaddingTop mediumPaddingRight mediumPaddingBottom">
+                                        <div class="related-items-title eyeBrowSmall">
+                                            <div id="mask"></div>
+                                             HEALTHCARE
+                                        </div>
+
+                                        <div class="related-item-card smallMarginTop">
+                                             <h5><a class="" href="#.">
+                                            Emergency power systems basics: maintaining always-on
+                                            </a>
+											</h5>
+                                        </div>
+										<div class="small smallMarginTop">April 22, 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="related-item">
+                                    <div class="related-items-image">
+                                       <a href="#."> <img src="/content/dam/eaton/images/knowledge_center_Secondary_Landing.png" alt="knowledge center"></a>
+                                    </div>
+                                    <div class="related-items-Description mediumPaddingLeft mediumPaddingTop mediumPaddingRight mediumPaddingBottom">
+										<div class="related-items-title eyeBrowSmall">
+                                            <div id="mask"></div>
+                                            KNOWLEDGE CENTER
+                                        </div>
+
+                                        <div class="related-item-card smallMarginTop">
+                                            <h5><a class="" href="#.">
+                                            Green by design
+                                            </a>
+											</h5>
+                                        </div>
+										<div class="small smallMarginTop">April 22, 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="related-item">
+                                    <div class="related-items-image">
+                                       <a href="#."> <img src="/content/dam/eaton/images/community.png" alt="community"></a>
+                                    </div>
+                                    <div class="related-items-Description mediumPaddingLeft mediumPaddingTop mediumPaddingRight mediumPaddingBottom">
+										<div class="related-items-title eyeBrowSmall">
+                                            <div id="mask"></div>
+                                              SUCCESS STORY
+                                        </div>
+
+                                        <div class="related-item-card smallMarginTop">
+                                             <h5><a class="" href="#.">
+                                            ESS exceeds expectations for colocation provider
+                                            </a>
+											</h5>
+                                        </div>
+										<div class="small smallMarginTop">April 22, 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>
+
+
+
+<sly data-sly-test="${properties.view == 'text-article-cat-rel3'}">
+	<div class="container-fixed  component-padding largePaddingTop" id="primary-content-article-list-single-feature">
+        <div class='aem-Grid aem-Grid--12 noFeature'>
+            
+					
+                    <div class='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 noFeature-infoContainer'>
+                        <div class='main mediumMarginTop component-padding'>
+                            <span class='selected'></span>
+                            <div class="eyeBrowSmall smallMarginTop">NEWS RELEASE</div>
+                           <div class="smallMarginTop"><h4><a href="#." >Eaton Named ENERGY STAR Partner of the Year by the EPA</a></h4></div>
+
+                        </div>
+					</div>	
+					<div class='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 noFeature-infoContainer'>			
+                        <div class='main mediumMarginTop component-padding'>
+                            <span class='selected'></span>
+                            <div class="eyeBrowSmall smallMarginTop">ARTICLE</div>
+                            <div class="smallMarginTop"><h4><a href="#.">Eaton Makes a Difference in St.Louis & Surrounding Communities</a></h4></div>
+                        </div>
+						</div>
+					<div class='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 noFeature-infoContainer'>				
+
+                        <div class='main mediumMarginTop component-padding'>
+                            <span class='selected'></span>
+                            <div class="eyeBrowSmall smallMarginTop">CASE STUDY</div>
+                           <div class="smallMarginTop"><h4><a href="#.">Eaton Helps Young People Build Skills for the Future</a></h4></div>
+                         </div>
+					</div>	
+                
+            
+        </div>
+    </div>
+</sly>
+
+
+<sly data-sly-test="${properties.view == 'Image-list-career-rel3'}">
+	<div class="container-fixed container-padding extraLargePaddingTop Image-list-career">
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+								<h2>Innovation gets noticed</h2>
+								<div class="body-copy smallPaddingTop">See what people are saying about Eaton.</div>
+							</div>
+						</div>
+					<div class="aem-Grid aem-Grid--12"> 
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="career-container largePaddingTop">
+						<div class="image-list"> <img src="/content/dam/eaton/images/BEHL_Gold.png" alt="BEHL_Gold"></div>
+	
+                           <div class="body-link imagelist-desc  mediumPaddingTop smallPaddingRight"><a href="#." >Eaton Named a 2016 Best Employer for Healthy lifestyles&reg;, Earns Global Distinction Award</a></div>
+						
+						</div>
+						</div>
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="career-container largePaddingTop">
+							<div class="image-list">
+							<img src="/content/dam/eaton/images/Energy_Star.png" alt="Energy_Star">
+							</div>
+							<div class="body-link imagelist-desc  mediumPaddingTop smallPaddingRight"><a href="#." >Partner of the year by the EPA for 3rd consecutive year</a></div>
+						
+						</div>
+						</div>						
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="career-container largePaddingTop">
+							<div class="image-list">
+							<img src="/content/dam/eaton/images/WME_2016.png" alt="WME_2016">
+							</div>
+						
+                        
+							<div class="body-link imagelist-desc  mediumPaddingTop smallPaddingRight"><a href="#." >World's most ethical companies 2007-2014</a></div>
+						</div>	
+						</div>						
+					</div>
+					<div class="aem-Grid aem-Grid--12"> 
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="career-container mediumPaddingTop">
+							<div class="image-list">
+							<img src="/content/dam/eaton/images/TOP_100.png" alt="TOP_100">
+							</div>
+						
+						
+	
+                           <div class="body-link imagelist-desc  mediumPaddingTop smallPaddingRight"><a href="#." >Top 100 innovators of 2011,2012 and 2013</a></div>
+						</div>
+						</div>
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="career-container mediumPaddingTop">
+							<div class="image-list">
+							<img src="/content/dam/eaton/images/TOP_50.png" alt="TOP_50">
+						</div>	
+						
+							<div class="body-link  imagelist-desc  mediumPaddingTop smallPaddingRight"><a href="#." >Readers choice, Top 50 employers for workspace diversity</a></div>
+						</div>
+						</div>							
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="career-container mediumPaddingTop">
+							<div class="image-list">
+							<img src="/content/dam/eaton/images/Best_place.png" alt="Best_place">
+							</div>
+						
+                        
+							<div class="body-link imagelist-desc  mediumPaddingTop smallPaddingRight"><a href="#." >Best places to work 2016</a></div>
+						</div>
+						</div>						
+					</div> 
+					
+				</div>					
+
+</sly>
+
+
+
+<sly data-sly-test="${properties.view == 'Tile-link-career-rel3'}">
+	<div class="container-fixed tile-link component-padding largePaddingTop">
+					
+					<div class="aem-Grid aem-Grid--12"> 
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 ">
+						<div class="tile-link-container mediumPaddingTop component-padding">
+							<div class="tile-box-one"> </div>
+	
+                           <div class="tile-description"><a href="#"><h2>Hiring process<span class="glyphicon glyphicon-menu-right arrow"></span></h2></a></div>
+						
+						</div>
+						</div>
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="tile-link-container mediumPaddingTop component-padding">
+							<div class="tile-box-two"> </div>
+							<div class="tile-description"><a href="#"><h2>Life at Eaton<span class="glyphicon glyphicon-menu-right arrow"></span></h2></a></div>
+						
+						</div>
+						</div>						
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="tile-link-container mediumPaddingTop component-padding">
+						<div class="tile-box-three"></div>	
+						<div class="tile-description"><a href="#"><h2>Inclusion & diversity<span class="glyphicon glyphicon-menu-right arrow"></span></h2></a></div>
+						
+						</div>	
+						</div>						
+					</div>
+					<div class="aem-Grid aem-Grid--12"> 
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="tile-link-container mediumPaddingTop component-padding">
+
+						<div class="tile-box-four"></div>
+						<div class="tile-description"><a href="#"><h2>Culture & Values<span class="glyphicon glyphicon-menu-right arrow"></span></h2></a></div>
+	
+                           
+						</div>
+						</div>
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="tile-link-container mediumPaddingTop component-padding">
+						<div class="tile-box-five"></div>	
+						<div class="tile-description"><a href="#"><h2>Wellness<span class="glyphicon glyphicon-menu-right arrow"></span></h2></a></div>
+					
+						</div>
+						</div>							
+						<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+						<div class="tile-link-container mediumPaddingTop component-padding">
+						<div class="tile-box-six"></div>	
+						<div class="tile-description"><a href="#"><h2>Benefits<span class="glyphicon glyphicon-menu-right arrow"></span></h2></a></div>
+
+							
+						</div>
+						</div>	
+					</div>						
+					</div> 
+					
+				</div>					
+
+</sly>
+

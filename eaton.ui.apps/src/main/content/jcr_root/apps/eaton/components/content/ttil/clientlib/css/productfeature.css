@@ -1,0 +1,24 @@
+.in-grid-product-feature{
+	margin-left:25%;
+    position:relative;
+    margin-top:30px;
+}
+.product-catalogue-text{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-family: EatonBold;
+}
+@media only screen and (max-width: 768px) {
+    .in-grid-product-feature{margin-left:0px;}
+.product-catalogue-text{
+   position: absolute;
+    top: 50%;
+    left: 37%;
+    font-size: 15px;
+    font-family: EatonBold;
+    overflow: hidden;
+}
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Text"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <componentstyles
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/componentstyles"
+                        name="./cq:cssClass"/>
+                    <view
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="view"
+                        name="./view">
+                        <items jcr:primaryType="nt:unstructured">
+                            <text
+                                jcr:primaryType="nt:unstructured"
+                                text="Text"
+                                value="text"/>
+                            <statement
+                                jcr:primaryType="nt:unstructured"
+                                text="Statement"
+                                value="statement"/>
+                            <text-homepage1
+                                jcr:primaryType="nt:unstructured"
+                                text="Text - Home Page1"
+                                value="text-homepage1"/>
+                            <text-homepage2
+                                jcr:primaryType="nt:unstructured"
+                                text="Text - Home Page2"
+                                value="text-homepage2"/>
+                            <text-primary-landing-1
+                                jcr:primaryType="nt:unstructured"
+                                text="Text - Primary Landing 1"
+                                value="text-primary-landing-1"/>
+                            <text-article1
+                                jcr:primaryType="nt:unstructured"
+                                text="Text - Article 1"
+                                value="text-article1"/>
+                            <text-article2
+                                jcr:primaryType="nt:unstructured"
+                                text="Text - Article 2"
+                                value="text-article2"/>
+                            <text-article-more-info
+                                jcr:primaryType="nt:unstructured"
+                                text="Text - Article More Info"
+                                value="text-article-more-info"/>
+                            <text-market-feature
+                                jcr:primaryType="nt:unstructured"
+                                text="Text Market Feature"
+                                value="text-market-feature"/>
+                            <text-with-listonly
+                                jcr:primaryType="nt:unstructured"
+                                text="text-with-listonly"
+                                value="text-with-listonly"/>
+                            <text-with-list-with-downloadIcon
+                                jcr:primaryType="nt:unstructured"
+                                text="text-with-list-with-downloadIcon"
+                                value="text-with-list-with-downloadIcon"/>
+                            <text-with-list-authored
+                                jcr:primaryType="nt:unstructured"
+                                text="text-with-list-authored"
+                                value="text-with-list-authored"/>
+                            <text-with-list-with-download-sku
+                                jcr:primaryType="nt:unstructured"
+                                text="text-with-list-with-download-sku"
+                                value="text-with-list-with-download-sku"/>
+                            <terms
+                                jcr:primaryType="nt:unstructured"
+                                text="terms"
+                                value="terms"/>
+                            <next-steps
+                                jcr:primaryType="nt:unstructured"
+                                text="next-steps"
+                                value="next-steps"/>
+                            <text-with-list-with-download-sku-2
+                                jcr:primaryType="nt:unstructured"
+                                text="text-with-list-with-download-sku-2"
+                                value="text-with-list-with-download-sku-2"/>
+                            <text-homepage2-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="Text - Home Page2-rel3"
+                                value="text-homepage2-rel3"/>
+                            <text-article-more-info-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="text-article-more-info-rel3"
+                                value="text-article-more-info-rel3"/>
+                        </items>
+                    </view>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Quick Links"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <view
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="view"
+                        name="./view">
+                        <items jcr:primaryType="nt:unstructured">
+                            <footer-our-company
+                                jcr:primaryType="nt:unstructured"
+                                text="Footer Our Company"
+                                value="footer-our-company"/>
+                            <footer-terms
+                                jcr:primaryType="nt:unstructured"
+                                text="Footer Terms"
+                                value="footer-terms"/>
+                            <footer-popular-links
+                                jcr:primaryType="nt:unstructured"
+                                text="Footer Popular Links"
+                                value="footer-popular-links"/>
+                            <mega-menu-products-2col
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Product 2 column"
+                                value="mega-menu-products-2col"/>
+                            <mega-menu-product-search-links
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Product Search Links"
+                                value="mega-menu-product-search-links"/>
+                            <mega-menu-industry-links
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu IndustryLinks"
+                                value="mega-menu-industry-links"/>
+                            <mega-menu-company-links
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Company Links"
+                                value="mega-menu-company-links"/>
+                            <mega-menu-support-links
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Support Links"
+                                value="mega-menu-support-links"/>
+                            <mega-menu-industry-download-links
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Industry Download Links"
+                                value="mega-menu-industry-download-links"/>
+                            <mega-menu-support-download-links
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Support Download Links"
+                                value="mega-menu-support-download-links"/>
+                            <mega-menu-company-download-links
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Company Download Links"
+                                value="mega-menu-company-download-links"/>
+                            <homepage-fea-topic-left
+                                jcr:primaryType="nt:unstructured"
+                                text="Home Page Feature Topic Left"
+                                value="homepage-fea-topic-left"/>
+                            <homepage-fea-topic-right
+                                jcr:primaryType="nt:unstructured"
+                                text="Home Page Feature Topic Right"
+                                value="homepage-fea-topic-right"/>
+                            <topic-link-list1
+                                jcr:primaryType="nt:unstructured"
+                                text="topic-link-list1"
+                                value="topic-link-list1"/>
+                            <topic-link-list2
+                                jcr:primaryType="nt:unstructured"
+                                text="topic-link-list2"
+                                value="topic-link-list2"/>
+                            <article-list-1
+                                jcr:primaryType="nt:unstructured"
+                                text="Article List 1"
+                                value="article-list-1"/>
+                            <article-download-links1
+                                jcr:primaryType="nt:unstructured"
+                                text="Article Download Links 1"
+                                value="article-download-links1"/>
+                            <article-list-2
+                                jcr:primaryType="nt:unstructured"
+                                text="Article List 2"
+                                value="article-list-2"/>
+                            <social-list
+                                jcr:primaryType="nt:unstructured"
+                                text="Social List"
+                                value="social-list"/>
+                            <topic-link-list-with-icon2
+                                jcr:primaryType="nt:unstructured"
+                                text="topic-link-list-with-icon2"
+                                value="topic-link-list-with-icon2"/>
+                            <topic-link-list-with-icon3
+                                jcr:primaryType="nt:unstructured"
+                                text="topic-link-list-with-icon3"
+                                value="topic-link-list-with-icon3"/>
+                            <topic-link-list-with-icon3-repeate
+                                jcr:primaryType="nt:unstructured"
+                                text="topic-link-list-with-icon3-repeate"
+                                value="topic-link-list-with-icon3-repeate"/>
+                            <topic-link-list-with-icon3-part2
+                                jcr:primaryType="nt:unstructured"
+                                text="topic-link-list-with-icon3-part2"
+                                value="topic-link-list-with-icon3-part2"/>
+                            <primary-navigation
+                                jcr:primaryType="nt:unstructured"
+                                text="Primary Navigation"
+                                value="Primary-Navigation"/>
+                            <section-navigation
+                                jcr:primaryType="nt:unstructured"
+                                text="Section Navigation"
+                                value="Section-Navigation"/>
+                            <article-download-links1-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="article-download-links1-rel3"
+                                value="article-download-links1-rel3"/>
+                            <article-list-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="article-list-rel3"
+                                value="article-list-rel3"/>
+                            <Section-Navigation-Careers
+                                jcr:primaryType="nt:unstructured"
+                                text="Section Navigation Careers"
+                                value="Section-Navigation-Careers"/>
+                        </items>
+                    </view>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

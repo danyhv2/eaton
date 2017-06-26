@@ -1,0 +1,179 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+    <div>Link List Component</div>
+</sly>
+
+<div data-sly-use.linkList="com.eaton.platform.core.helpers.LinkListHelper">
+
+<div class="container-full">
+    <div class="aem-Grid aem-Grid--12">
+        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+        <sly data-sly-list.item="${linkList.typeList}" data-sly-unwrap>
+
+<!-- DOWNLOAD LIST WITH DESCRIPTION -->
+            <sly data-sly-test="${properties.view == 'download-list-view-with-description'}">
+                <div class="container-full industry-download-links">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                            <h4 data-sly-test="${itemList.first}"><a href="${linkList.linkListBean.headerLink}" target="${linkList.linkListBean.newWindow ? '_blank' : ''}">${linkList.linkListBean.transHeader}</a></h4>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--default--11 aem-GridColumn--tablet--11 aem-GridColumn--phone--11">
+                            <div class='storyContainer'>
+                                <div>
+                                    <p class='marginBtm0'><a href="${item.assetLink}" target="_blank">${item.linkTitle}</a></p>
+                                    <div>
+                                        <span class='imgIcon'><img  src='/content/dam/eaton/images/download_icon_white.png'/></span>
+                                        <div class='sectionHeading'>
+                                            <p class="download-size">(${item.assetType} ${item.assetSize} MB)</p>
+                                			<p class="download-desc">${item.assetDescription}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+            
+<!-- DOWNLOAD LIST -->   
+            <sly data-sly-test="${properties.view == 'download-list-view'}">
+                <div class="container-full support-download-links">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                            <h4 data-sly-test="${itemList.first}"><a href="${linkList.linkListBean.headerLink}" target="${linkList.linkListBean.newWindow ? '_blank' : ''}">${linkList.linkListBean.transHeader}</a></h4>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                            <div class='storyContainer'>
+                                <div>
+                                    <div>
+                                        <span class='imgIcon'><img  src='/content/dam/eaton/images/download_icon_white.png'/></span>
+                                        <div class='sectionHeading'>
+                                        	<p><a href="${item.assetLink}" target="_blank">${item.linkTitle}</a></p>
+                                            <p class="pdfSize">(${item.assetType} ${item.assetSize} MB)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+            <sly data-sly-test="${properties.view == 'mega-menu-company-download-links'}">
+                <div class="container-full leftPadding15">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                            <div>
+                                <span class='imgIcon'><img  src='/content/dam/eaton/images/download_icon_white.png'/></span>
+                                <div class='sectionHeading'>
+                                    <p>Annual Report</p>
+                                    <p class="pdfSize">(PDF 2MB)</p>
+                                </div>
+                            </div>
+                            <div>
+                                <span class='imgIcon'><img  src='/content/dam/eaton/images/download_icon_white.png'/></span>
+                                <div class='sectionHeading'>
+                                    <p>Eaton Fact Sheet</p>
+                                    <p class="pdfSize">(PDF 2MB)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+            <sly data-sly-test="${properties.view == 'footer-our-company'}">
+                <h3 class="footer-link-heading">Our Company</h3>
+				<ul class="footerLinks">
+                <li><a href="#.">About Eaton<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#.">Careers<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#.">Investor Relations<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#.">Inclusions & Diversity<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#.">Ethics & Compliance<span class="glyphicon glyphicon-menu-right"></span></a></li>
+				</ul>
+			</sly>
+            <sly data-sly-test="${properties.view == 'footer-popular-links'}">
+                <h3 class="footer-link-heading">Popular Links</h3>
+					<ul class="footerLinks">
+                <li><a href="#.">Product Documentation<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#.">Tools & Downloads<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#.">Eaton in the News<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#.">Success Stories<span class="glyphicon glyphicon-menu-right"></span></a></li>
+            </sly>
+            
+<!-- HORIZONTAL LINK LIST -->    
+            <sly data-sly-test="${properties.view == 'horizontal-link-list'}">
+                <a href="${item.linkPagePath}">${item.linkTitle}</a>  <span data-sly-test="${!itemList.last}" class="hide-mob-inline footer-pipe">&nbsp;|&nbsp;</span>
+            </sly>
+            
+<!-- VERTICAL LINK LIST  -->
+            <sly data-sly-test="${properties.view == 'verical-link-list'}">
+                <div class="container-full">
+                    <div class="aem-Grid aem-Grid--12 comp5_bottom">
+                    	<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 quicklink-centered">
+                        	<h2 data-sly-test="${itemList.first}"><a href="${linkList.linkListBean.headerLink}" target="${linkList.linkListBean.newWindow ? '_blank' : ''}">${linkList.linkListBean.transHeader}</a></h2>
+                            <ul class="quick-link-ul">
+                                <li><a href="${item.linkPagePath}" class="quick-link-blue">${item.linkTitle}</a></li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </sly>
+
+            <sly data-sly-test="${properties.view == 'article-download-links1'}">
+                <div class="container-full container-padding">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 infoContainer">
+							<div class='info-quick-link'>
+                                <a href="#." class="quick-link-blue">
+                                    <img class='iconClass' src='/content/dam/eaton/images/Download_Icon.png'>
+                                    <span class="quick-link-span-block">Download High</span>
+                                    <span>Resolution Image</span>
+                                </a>
+                                <p class="download-size">(PNG 8MB)</p>
+                                <p class="download-desc">Lorem ipsum dolor sit amet, </p>
+							</div>	
+				
+                     
+
+                        </div>
+                    </div>
+                </div>
+            </sly>
+<!-- SOCIAL LIST -->
+			<sly data-sly-test="${properties.view == 'social-list'}">
+                <div class="social-media-links">
+                    <a class="social-media-${item.socialSite}" href="${item.socialLink}" target="_blank" >${item.socialSite}</a>
+                </div>
+            </sly>
+            
+<!-- PRIMARY NAVIGATION -->
+			<sly data-sly-test="${properties.view == 'primary-nav'}">
+				<sly data-sly-test="${properties.listType == 'child-pages'}">
+					<ul class="nav navbar-nav" id="megaMenuOption">
+						<li id="${item.navName}-Menu" data-menu='${item.navName}Page'><a href="#">
+								<span class="glyphicon glyphicon-menu-left show-mob pull-left"></span>${item.navTitle}
+								<span class="glyphicon glyphicon-menu-right show-mob pull-right"></span>
+						</a></li>
+						<li class="utility-nav-mob-view show-mob rightPadding0">
+						<sly data-sly-resource="${'utility-nav' @ resourceType='eaton/components/structure/full-page-drawer', selectors='full-page-drawer-mobile', wcmmode='disabled'}"></sly>
+						</li>
+					</ul>
+				</sly>	
+			
+				<sly data-sly-test="${properties.listType == 'manual-list'}">
+						<ul class="nav navbar-nav" id="megaMenuOption">
+							<li id="${item.cssLinkTitle}-Menu" data-menu='${item.cssLinkTitle}Page'>
+								<a href="#">
+									<span class="glyphicon glyphicon-menu-left show-mob pull-left"></span>${item.linkTitle}
+									<span class="glyphicon glyphicon-menu-right show-mob pull-right"></span>
+								</a>
+							</li>
+							<li class="utility-nav-mob-view show-mob rightPadding0">
+								<sly data-sly-resource="${'utility-nav' @ resourceType='eaton/components/structure/full-page-drawer', selectors='full-page-drawer-mobile', wcmmode='disabled'}"></sly>
+							</li>
+						</ul>					
+				</sly>			
+			</sly>
+		</sly>		
+		</div>
+    </div>
+</div>
+</div>

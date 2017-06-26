@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Menu Overlay"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <view
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        class="cq-dialog-dropdown-showhide "
+                        cq-dialog-dropdown-showhide-target=".overlay-hide-show"
+                        fieldLabel="view"
+                        name="./view"
+                        required="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <country-selector
+                                jcr:primaryType="nt:unstructured"
+                                text="Country Selector"
+                                value="country-selector"/>
+                            <mega-menu
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu"
+                                value="mega-menu"/>
+                        </items>
+                    </view>
+                    <titletext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        class="hide overlay-hide-show"
+                        fieldLabel="Title Text"
+                        name="./transTitleText"
+                        required="true"
+                        showhidetargetvalue="mega-menu"/>
+                    <titlepath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        class="hide overlay-hide-show"
+                        fieldLabel="Title Path"
+                        name="./titlePath"
+                        required="true"
+                        rootPath="/content/eaton"
+                        showhidetargetvalue="mega-menu"/>
+                    <newWindow
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container"
+                        class="hide overlay-hide-show"
+                        showhidetargetvalue="mega-menu">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <newWindow
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        class="hide overlay-hide-show"
+                                        name="./newWindow"
+                                        required="true"
+                                        showhidetargetvalue="mega-menu"
+                                        text="Open Link in&#xa;New Tab"
+                                        value="true"/>
+                                </items>
+                            </column>
+                        </items>
+                    </newWindow>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

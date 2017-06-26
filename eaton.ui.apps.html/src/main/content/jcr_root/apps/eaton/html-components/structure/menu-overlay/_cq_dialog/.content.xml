@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Menu Overlay"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text &amp; Image - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <view
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="view"
+                        name="./view">
+                        <items jcr:primaryType="nt:unstructured">
+                            <country-selector
+                                jcr:primaryType="nt:unstructured"
+                                text="Country Selector"
+                                value="country-selector"/>
+                            <mega-menu-products
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Products"
+                                value="mega-menu-products"/>
+                            <mega-menu-industry
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Industry"
+                                value="mega-menu-industry"/>
+                            <mega-menu-support
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Support"
+                                value="mega-menu-support"/>
+                            <mega-menu-company
+                                jcr:primaryType="nt:unstructured"
+                                text="Mega Menu Company"
+                                value="mega-menu-company"/>
+                        </items>
+                    </view>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

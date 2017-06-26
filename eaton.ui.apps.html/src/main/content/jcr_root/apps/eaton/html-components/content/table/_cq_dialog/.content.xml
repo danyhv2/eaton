@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Article List"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <article-title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        cq-msm-lockable="trans-article-title"
+                        fieldLabel="CTA Text"
+                        name="./trans-article-title"
+                        renderReadOnly="{Boolean}true"
+                        required="{Boolean}true"/>
+                    <article-path
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        cq-msm-lockable="article-path"
+                        fieldLabel="Design"
+                        name="./article-path"
+                        renderReadOnly="{Boolean}true"
+                        rootPath="/content"/>
+                    <article-open-new-window
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        allowBulkEdit="{Boolean}true"
+                        cq-msm-lockable="artifle-open-new-window"
+                        name="./artifle-open-new-window"
+                        renderReadOnly="{Boolean}true"
+                        text="Article Open New Window"
+                        value="true"/>
+                    <view
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="view"
+                        name="./view">
+                        <items jcr:primaryType="nt:unstructured">
+                            <no-feature
+                                jcr:primaryType="nt:unstructured"
+                                text="Article List with No Feature"
+                                value="no-feature"/>
+                            <single-feature
+                                jcr:primaryType="nt:unstructured"
+                                text="Article List with Single Feature"
+                                value="single-feature"/>
+                        </items>
+                    </view>
+                    <hide-component
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        allowBulkEdit="{Boolean}true"
+                        cq-msm-lockable="hide-component"
+                        name="./hide-component"
+                        renderReadOnly="{Boolean}true"
+                        text="Hide Component"
+                        value="true"/>
+                    <article-list-type
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Article List Type"
+                        name="./article-list-type">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fixed-list
+                                jcr:primaryType="nt:unstructured"
+                                text="Fixed List"
+                                value="fixed-list"/>
+                            <manual
+                                jcr:primaryType="nt:unstructured"
+                                text="Manual"
+                                value="manual"/>
+                            <tags
+                                jcr:primaryType="nt:unstructured"
+                                text="Tags"
+                                value="tags"/>
+                            <child-page
+                                jcr:primaryType="nt:unstructured"
+                                text="Child Page"
+                                value="child-page"/>
+                        </items>
+                    </article-list-type>
+                    <article-order-type
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Article Order Type"
+                        name="./article-order-type">
+                        <items jcr:primaryType="nt:unstructured">
+                            <publication-date
+                                jcr:primaryType="nt:unstructured"
+                                text="Publication Date"
+                                value="publication-date"/>
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                text="Title"
+                                value="title"/>
+                            <created-date
+                                jcr:primaryType="nt:unstructured"
+                                text="Created Date"
+                                value="created-date"/>
+                            <last-modified-date
+                                jcr:primaryType="nt:unstructured"
+                                text="Last Modified Date"
+                                value="last-modified-date"/>
+                            <template
+                                jcr:primaryType="nt:unstructured"
+                                text="Template"
+                                value="template"/>
+                        </items>
+                    </article-order-type>
+                    <article-display-order
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Article Display Order"
+                        name="./article-display-order">
+                        <items jcr:primaryType="nt:unstructured">
+                            <ascending
+                                jcr:primaryType="nt:unstructured"
+                                text="Ascending"
+                                value="ascending"/>
+                            <descending
+                                jcr:primaryType="nt:unstructured"
+                                text="Descending"
+                                value="descending"/>
+                        </items>
+                    </article-display-order>
+                    <article-list
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/multifield"
+                        class="full-width"
+                        eaem-nested=""
+                        fieldDescription="Click '+' to add a new page"
+                        fieldLabel="Article List">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                            name="./article-list">
+                            <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                method="absolute"/>
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <link-title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            fieldDescription="Enter Link Title"
+                                            fieldLabel="Link Title"
+                                            name="./trans-link-title"/>
+                                        <link-path
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            fieldDescription="Select Path"
+                                            fieldLabel="Link Path"
+                                            name="./link-path"
+                                            rootPath="/content"/>
+                                        <open-new-window
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                            allowBulkEdit="{Boolean}true"
+                                            cq-msm-lockable="open-new-window"
+                                            name="./open-new-window"
+                                            renderReadOnly="{Boolean}true"
+                                            text="Open New Window"
+                                            value="true"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </article-list>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

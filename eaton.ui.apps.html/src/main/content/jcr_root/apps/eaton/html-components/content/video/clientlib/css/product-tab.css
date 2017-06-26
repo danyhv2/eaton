@@ -1,0 +1,101 @@
+.productTabsBackground{
+background:#333f48;
+}
+.productTabsFamily .btnHolder{
+padding:20px 0px;
+color:#fff;
+text-transform: uppercase;
+}
+.ptHolder{
+padding:20px 0px;
+color:#fff;
+text-transform: uppercase;
+}
+.ptHolder .pxUps{
+font-family:eaton;
+font-weight:bold;
+margin-top:5px;
+}
+.btnHolder .howToBuy{
+border-radius:0px;
+background:#4c8c2b;
+width:100%;
+}
+
+.productTabsFamily .tab{
+
+
+}
+.tab .tabInsideContent{
+padding:10px 0px 13px 0px;
+}
+.productTabsFamily .tabHolder{
+color:#fff;
+}
+.tabIcon{
+display:block;
+margin:auto;
+}
+
+.tabInsideContent .overview{
+text-align:center;
+}
+.tabHolder{
+margin-left:8.33333333%;
+}
+.tabHolder .active{
+background:#5b6770 !important;
+}
+ .tabHolder a{
+ color:white;
+	   text-decoration:none;
+ }
+ .tabHolder  a:hover {
+       background-color: #5b6770 !important;
+	   color:white;
+	   text-decoration:none;
+ }
+ .tabHolder a:active{
+ background-color: #5b6770 !important;
+ color:white;
+text-decoration:none;
+ }
+ .tabHolder a:focus{
+ background-color: #5b6770 !important;
+ color:white;
+text-decoration:none;
+ }
+ .tabHolder> li > a {
+ padding:0px !important;
+ }
+.overview{
+text-align:center;
+}
+
+@media only screen and (max-width: 768px) {
+.ptHolder{
+border-bottom:2px solid #5b6770;
+}
+.productTabsFamily .container{
+padding:0px;
+}
+.btnHolder{
+margin-left:8.333333%;
+margin-right:8.333333%;
+
+}
+.tabHolder{
+margin-left:0px;
+}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+.btnHolder{
+margin-left:8.333333%;
+margin-right:8.333333%;
+
+}
+
+
+}
+

@@ -1,0 +1,32 @@
+<sly data-sly-test="${wcmmode.edit}">CTA Component</sly>
+<div class="container-full container-padding">
+    <div class="aem-Grid aem-Grid--12">
+    	<sly data-sly-test="${properties.view == 'pl1'}">
+            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 alignCenter mediumMarginTop extraLargeMarginBottom">
+                <button type="button" class="btn btn-default primary-button-dark">Learn about our history</button>
+            </div>
+        </sly>
+        <sly data-sly-test="${properties.view == 'home-page-fea-topic'}">
+            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 alignCenter">
+                <button type="button" class="btn btn-default primary-button-dark mediumMarginTop extraLargeMarginBottom">View tools and downloads</button>
+            </div>
+        </sly>
+		<sly data-sly-test="${properties.view == 'load-more'}">
+            <div class="alignCenter">
+                <button type="button" class="btn btn-default primary-button-dark smallMarginTop smallMarginBottom">Load More</button>
+            </div>
+        </sly>
+<sly data-sly-test="${properties.view == 'fea-topic-rel3'}">
+            
+			<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 alignCenter">
+                <button type="button" class="btn btn-default primary-button-dark mediumMarginTop">View all press releases</button>
+            </div>
+        </sly>
+<sly data-sly-test="${properties.view == 'sec-nav-rel3'}">
+            
+			<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 alignCenter">
+                <button type="button" class="btn btn-default primary-button-dark  mediumMarginTop btn-text-wrap">View all throught leadership articles</button>
+            </div>
+        </sly>       
+    </div>
+</div>

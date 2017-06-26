@@ -1,0 +1,75 @@
+.featureBlock{
+margin:20px 0px 0px 0px;
+}
+.featureBlockUpper{
+
+margin-bottom:10px;
+}
+.featureBlockAbsolute{
+position:absolute;
+top:75%;
+width:100%;
+}
+.featureHighlight{
+font-weight:bold;
+font-family:eaton;
+font-size:20px;
+}
+.featureDescription{
+margin-top:10px;
+}
+.featureBlockImage{
+width:100% !important;
+}
+.featureBlockBottomRight{
+background:#005eb8;
+height:550px;
+color:#fff;
+padding:50px 0px !important;
+
+}
+.serverImage img{
+max-height:550px;
+width:100%;
+}
+.featureBlockRightContent{
+    color: white;
+}
+.featureBlockHeading{
+font-weight:bold;
+font-family:eaton;
+font-size:30px;
+}
+.featureBlockBottomDesc{
+font-size:16px;
+line-height:32px;
+margin-top:10px;
+}
+.esImage{
+margin-top:20px;
+}
+.energyStatHead{
+font-weight:bold;
+
+}
+.energyStatDesc{
+margin-top:10px;
+line-height:32px;
+}
+@media only screen and (max-width: 768px) {
+.featureBlockUpper{
+position:static;
+}
+.featureBlockAbsolute{
+position:static;
+}
+.featureBlockUpper{
+margin-bottom:10px;
+}
+.featureBlockBottomRight{
+height:auto;
+}
+.serverImage img{
+height:400px;
+}
+}

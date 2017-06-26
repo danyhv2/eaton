@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="TTIL"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text &amp; Image - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <herotext
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Component Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <view
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                class="cq-dialog-dropdown-showhide "
+                                cq-dialog-dropdown-showhide-target=".ttil-hide-show"
+                                fieldLabel="View"
+                                name="./view">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <single-feature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Single Feature"
+                                        value="singleFeature"/>
+                                    <descriptive-feature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Descriptive Feature"
+                                        value="descriptiveFeature"/>
+                                    <product-card
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Product Card"
+                                        value="productCard"/>
+                                    <proof-points
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Proof Point"
+                                        value="proofPoints"/>
+                                    <hero
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Home page Hero"
+                                        value="hero"/>
+                                    <secondary-hero
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Secondary page Hero"
+                                        value="secondaryHero"/>
+                                </items>
+                            </view>
+                            <header
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Header"
+                                name="./transHeader"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Image"
+                                name="./image"
+                                required="{Boolean}true"
+                                rootPath="/content/dam/eaton"/>
+                            <alttxt
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Alt Txt"
+                                name="./transAlttxt"/>
+                            <eyebrow
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Eyebrow"
+                                name="./transEyebrow"/>
+                            <link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Link"
+                                name="./link"
+                                required="{Boolean}true"
+                                rootPath="/content/eaton"/>
+                            <link-title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Link Title"
+                                name="./transLinkTitle"/>
+                            <new-window
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./newWindow"
+                                text="Open in New Window"
+                                value="true"/>
+                            <description
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                class="hide ttil-hide-show"
+                                fieldLabel="Description"
+                                name="./transFeatureDesc"
+                                showhidetargetvalue="descriptiveFeature,hero,proofPoints"/>
+                            <graphic
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                class="hide ttil-hide-show"
+                                fieldLabel="Graphic"
+                                multiple="{Boolean}false"
+                                name="./graphic"
+                                showhidetargetvalue="proofPoints">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/bin/dropdown/icons"
+                                    addNone="{Boolean}true"/>
+                            </graphic>
+                            <highlight-type
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                class="hide ttil-hide-show"
+                                fieldLabel="Highlight Type"
+                                name="./highlightType"
+                                showhidetargetvalue="proofPoints">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <plain
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Plain"
+                                        value="plain"/>
+                                    <percentage
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Percentage"
+                                        value="percentage"/>
+                                </items>
+                            </highlight-type>
+                            <hide-component
+		                        jcr:primaryType="nt:unstructured"
+		                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+		                        allowBulkEdit="{Boolean}true"
+		                        name="./hidecomponent"
+		                        text="Hide Component"
+		                        value="hide-component"/>
+                        </items>
+                    </column>
+                </items>
+            </herotext>
+        </items>
+    </content>
+</jcr:root>

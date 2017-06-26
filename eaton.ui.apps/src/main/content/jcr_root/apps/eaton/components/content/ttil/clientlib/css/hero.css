@@ -1,0 +1,104 @@
+/**  **/
+
+.hero,
+.sec_hero,
+.sec_hero_with_description {
+    position: relative; 
+    background-size: cover;
+
+}
+.hero .background-image,
+.sec_hero .background-image,
+.sec_hero_with_description .background-image {
+    min-height: 100% !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+.overlay {
+    position: absolute;
+    color: #fff;
+    top: 10%;
+
+}
+.sec_hero .overlay{
+top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero_button {
+	text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.hero-down-arrow {
+    display: none;
+}
+.see_more {
+    display: none;
+}
+
+.hero-down-arrow {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.25em;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .see_more {
+        display: block;
+    }
+
+
+
+
+}
+
+
+
+
+/* iPhone 4, 5, 5s landscape Style starts here */
+@media (max-width:767px) and (orientation: portrait)
+{
+
+       .overlay {
+    top: 10%;
+    left: 0%;
+    transform: translate(0%,0%);
+}
+
+}
+@media (max-width: 767px) and (orientation: landscape) {
+
+    .hero-down-arrow {
+        display: none;
+        text-align: center;
+        margin-top: 184px;
+        font-size: 1.25em;
+    }
+
+}
+/* iPad portrait Style starts here */
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) and (orientation: portrait) {
+
+.overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+}
+/* iPad portrait Style ends here */
+/* iPad landscape Style starts here */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .hero,
+    .sec_hero,
+    .sec_hero_with_description {
+        /*height: 530px;*/
+    }
+}
+/* iPad landscape Style ends here */

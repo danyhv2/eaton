@@ -1,0 +1,48 @@
+.compHighlight {
+    color: white;
+}
+.compHighlight h4 {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 0px;
+    font-family: 'Eaton';
+}	
+.highLightContainer .imgContainer > img {
+    width: 250px;
+}
+.highLightContainer .imgContainer + .desc > p:first-child {
+    font-family: Arial;
+	padding-top: 15px;
+}
+.highLightContainer .imgContainer + .desc > p:not(:first-child) {
+    font-family: Arial;
+}
+.imgIcon + div.sectionHeading {
+    display: inline-block;
+    font-size: 14px;
+    font-family: Arial;
+}
+.imgIcon + div.sectionHeading p {
+ 	margin-bottom: 0px;
+}
+.pdfSize {
+    color: #fff;
+    font-size: 11px;
+    display: block;
+    font-family: Arial;
+}
+.feature-list{
+	color: white;
+}
+.feature-list h4 {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-family: 'Eaton';
+}    
+
+@media only screen (max-width:768px),  screen and (min-width:769px) and (max-width:992px){
+	.feature-list{
+	display:none;
+	}
+}

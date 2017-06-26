@@ -1,0 +1,301 @@
+.language a{
+	color:white;	
+}
+
+
+.headingHolder{
+background:#323f48;
+}
+
+.continent-dropdown-menu{
+	background:#5B6770;
+	height: 0;
+    overflow-y: hidden;
+	transition: 0.9s;
+	font-family: Eaton;
+}
+.country-sel-tabs{
+	padding-right:0;
+    }
+.border-line{
+
+    padding-left: 30px;
+}
+.continent-dropdown-menu .nav.nav-pills > li {
+  	min-height: 40px;
+    margin-top: 0;
+}
+
+.continent-dropdown-menu .nav.nav-pills > li > a {
+    padding:15px 30px!important;
+    color: White;
+    border-radius: 0;
+    font-family: Arial;
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: left;
+    min-height: 40px;
+
+}
+
+.continent-dropdown-menu .nav.nav-pills > li > a:hover, .continent-dropdown-menu .nav.nav-pills > li > a:focus {
+	padding:15px 30px!important;
+    color: #FFFFFF;
+    border-radius: 0;
+    font-family: Arial;
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    min-height: 40px;
+	background-color: transparent; 
+}
+.continent-dropdown-menu .nav.nav-pills > li > a:hover {
+    font-weight: bold;
+
+}                
+.continent-dropdown-menu .nav-pills > li.active > a, .continent-dropdown-menu .nav-pills > li.active > a:hover, .continent-dropdown-menu .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #333F48;
+	color:#FFFFFF;
+	border-left:5px solid #005EB8;
+    padding-left:25px !important;
+}
+.continent-dropdown-menu .heading{
+	background: #323f48;
+    height: auto;
+    padding: 30px 0;	
+	font-family: EatonMedium;
+	color: White;
+	font-size: 2.813em;/* Approximation due to font substitution */
+	font-weight: 700;
+	text-align: left;
+    line-height:0.899em;
+    font-size: 1.625em;
+}
+.continent-dropdown-menu .utility-content{
+	padding-top:30px;
+	padding-bottom: 50px;
+}
+.continent-dropdown-menu .nav-pills  .glyphicon.glyphicon-menu-right{
+	font-size: 0.56em;
+    margin-left: 10px;
+}
+.continent-dropdown-menu .tab-content{
+	color:#FFFFFF;
+}
+
+.continent-dropdown-menu .tab-content .country img{
+	border-radius: 100%;
+    width: 26px;
+    height: 25px;
+  	margin-right: 5px;
+    display: none;
+}
+.continent-dropdown-menu .tab-content .country-name{
+	text-transform:uppercase;
+	font-family: Eaton;
+
+font-size: 1.125em;/* Approximation due to font substitution */
+font-weight: 700;
+line-height: 18px;/* Approximation due to font substitution */
+text-align: left;
+}
+.continent-dropdown-menu .tab-content .language{
+	margin-bottom:40px;
+	font-family: Arial;
+color: #fff;
+font-size: 1em;/* Approximation due to font substitution */
+font-weight: 500;
+line-height: 30px;/* Approximation due to font substitution */
+text-align: left;
+}
+
+.continent-dropdown-menu .tab-content .language a{
+	color:white;
+}
+.continent-dropdown-menu .utility-close-icon{
+	display: inline-block;
+    background: url(/content/dam/eaton/images/sprite-sheet.png) -888px -2990px no-repeat;
+    border: none;
+    transform: scale(.4);
+    display: inline-block;
+    border: none;
+    float: right;
+    width:72px;
+    height:90px;
+
+}
+.continent-dropdown-menu .utility-content .flag-list{
+        padding-left: 35px !important;
+        padding-top: 10px !important;
+    	border-left:1px solid #98A4AE;
+}
+.continent-dropdown-menu .nav.navbar-nav li.utility-nav-mob-view{
+	display:none;
+}
+.continent-dropdown-menu-mob{    
+	height: 0;
+    overflow: scroll;
+    transition-duration: 2s;
+    opacity: 1;
+    z-index: 1300;
+    position: fixed;
+    width: 100%;
+	bottom: 0;
+	font-family: Eaton;
+    background-color:#333F48;
+} 
+.flag{
+    width: 28px;
+    height: 28px;
+    display:inline-block;
+    transform: scale(.7);
+    margin-bottom:-7px;
+}
+    .flag1{
+
+    background: url(/content/dam/eaton/images/sprite-sheet-flag.png) 0px -6145px no-repeat;
+}
+ .flag2{
+
+    background: url(/content/dam/eaton/images/sprite-sheet-flag.png) -289px -6145px no-repeat;
+}
+    .flag3{
+
+    background: url(/content/dam/eaton/images/sprite-sheet-flag.png) -578px -6145px no-repeat;
+}
+
+
+@media only screen and  (max-width:992px) {
+
+    #continent-dropdown-menu-mob .country{
+		margin-top:3px;
+
+    }
+    .country-holder{
+		margin-top:50px;
+        }
+        .country-language-holder{
+		margin-top:50px;
+            }
+	#continent-dropdown-menu-mob .panel-group .panel {
+		border-radius: 0;
+		box-shadow: none;
+		border:none;
+		margin-top: 0 !important;
+		border-bottom: 1px solid transparent;
+		background-color: #5B6770;
+		font-family: Eaton;
+	}
+
+	#continent-dropdown-menu-mob .panel-default > .panel-heading {
+		padding: 0;
+		border-radius: 0;
+		color: #FFFFFF;
+		background-color: #333F48;
+		border-color: #333F48;
+	}
+	
+	#continent-dropdown-menu-mob .panel-title {
+		font-size: 1em;
+	}
+
+	#continent-dropdown-menu-mob .panel-title > a {
+		display: block;
+		padding: 30px 30px 30px 30px;
+		text-decoration: none;
+	}
+	
+	#continent-dropdown-menu-mob .more-less {
+		float: right;
+		color: #FFFFFF;    
+    	font-family:Arial !important;
+    	font-size:28px !important;
+		top: -5px;
+	}
+	
+	#continent-dropdown-menu-mob .panel-default > .panel-heading + .panel-collapse > .panel-body {
+		border-top-color: transparent;
+		color:#FFFFFF;
+		padding: 0px;	
+        overflow-x: hidden;
+	}
+
+
+	#continent-dropdown-menu-mob  .country img{
+		border-radius: 100%;
+		width: 20px;
+		height: 20px;
+	}
+#continent-dropdown-menu-mob .country-language-margin{
+		margin:40px 0px 50px 0px;
+}
+	#continent-dropdown-menu-mob  .country-name{
+		text-transform:uppercase;
+	}
+	
+	#continent-dropdown-menu-mob  .language{
+		/* margin-bottom:25px; */
+	}
+	#continent-dropdown-menu-mob  .language a{
+		color:white;
+	}
+	#continent-dropdown-menu-mob .utility-close-icon-mob{
+		display: inline-block;
+		background: url(/content/dam/eaton/images/sprite-sheet.png) -888px -2990px no-repeat;
+		border: none;
+		width: 98px;
+		height: 99px;
+		 transform: scale(.3);
+
+    margin-top: -33px;
+		float: right;
+	}
+	
+	#continent-dropdown-menu-mob .heading {
+		color: #FFFFFF;
+		font-size: 18px;
+		background: #333F48;
+		height: 50px;
+		padding: 10px 0;
+		border-bottom: 1px #5B6770 solid;
+	}
+	#continent-dropdown-menu-mob .country-language{
+		border-bottom:1px solid #98A4AE;
+
+	}
+	#continent-dropdown-menu-mob .heading {
+		color: #FFFFFF;
+		font-size: 1em;
+    	line-height:1.25em;
+		background: #333F48;
+		height: auto;
+    	padding: 30px 0;
+		border-bottom: 1px #5B6770 solid;
+	}
+	#continent-dropdown-menu-mob .utility-close-icon-mob{
+		display: inline-block;
+		background: url(/content/dam/eaton/images/sprite-sheet.png) -888px -2990px no-repeat;
+		border: none;
+		width: 98px;
+		height: 99px;
+		transform: scale(.25) !important;
+    	margin-top: -40px;
+		float: right;
+        position: absolute;
+    	right: -13px;
+	}
+}
+
+@media only screen and (min-width:601px) and (max-width: 1200px) {
+/*
+#continent-dropdown-menu-mob .utility-close-icon-mob{
+		margin-right:-44px;
+	}*/
+    #continent-dropdown-menu-mob  .container-fixed{
+		padding:0px 15px !important;
+    }
+
+}

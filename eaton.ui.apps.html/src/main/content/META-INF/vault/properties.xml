@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>FileVault Package Properties</comment>
+<entry key="createdBy">admin</entry>
+<entry key="name">eaton-platform</entry>
+<entry key="lastModified">2017-04-28T03:05:55.058-04:00</entry>
+<entry key="lastModifiedBy">admin</entry>
+<entry key="created">2017-04-28T03:06:02.823-04:00</entry>
+<entry key="buildCount">2</entry>
+<entry key="version">28-Apr-2017</entry>
+<entry key="dependencies"/>
+<entry key="packageFormatVersion">2</entry>
+<entry key="description"/>
+<entry key="lastWrapped">2017-04-28T03:05:55.058-04:00</entry>
+<entry key="group">Sradhanand</entry>
+<entry key="lastWrappedBy">admin</entry>
+</properties>

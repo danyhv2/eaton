@@ -1,0 +1,20 @@
+.firstCard .pImgHolder{
+	height:34.68em;
+	width:34.68em;
+}
+
+        .firstCard .pWidth{
+			width:34.68em;
+                }
+
+@media only screen and (max-width: 992px) {
+
+.firstCard .pImgHolder{
+	height:23.438em;
+	width:23.438em;
+}
+.pWidth
+{
+width:23.438em;
+}
+}

@@ -1,0 +1,18 @@
+.up-sell-background {
+    background-color: #005EB8;
+}
+.up-sell-feature .body-copy{
+    color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+    .up-sell-background{
+padding-left:60px !important;
+padding-right:60px !important;
+}
+.up-sell-background .body-copy{
+font-size:0.9375;
+    line-height:1.2em;
+    padding-top:60px !important;
+}
+}

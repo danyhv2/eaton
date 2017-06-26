@@ -1,0 +1,233 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2016 Adobe Systems Incorporated
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+<sly data-sly-test="${wcmmode.edit}">Title Component</sly>
+<div class="container-full container-padding">
+    <div class="aem-Grid aem-Grid--12">
+        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-Grid aem-Grid--12">
+            <sly data-sly-test="${properties.type == 'h1-sitemap'}">
+				<h1 class="page-title mediumMarginTop">
+					SiteMap
+				</h1>
+            </sly>
+            <sly data-sly-test="${properties.type == 'h1-homepage1'}">
+                <article class="container-full ">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 ">
+                           <h1 id="titleMainText" class="alignCenter extraLargeMarginTop">Eaton powers solutions for Businesses worldwide </h1>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 blueLine mediumMarginTop">
+							<span></span>
+						</div>
+                    </div>
+                </article>
+            </sly>
+            <sly data-sly-test="${properties.type == 'h1-homepage2'}">
+                <article class="container-full ">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 ">
+                           <h2 class="alignCenter extraLargeMarginTop"> Designing tommorrow's innovations, today. </h2>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 blueLine mediumMarginTop"><span></span></div>
+                    </div>
+                </article>
+            </sly>
+            <sly data-sly-test="${properties.type == 'h1-PL1'}">
+                <article class="container-full  extraLargePaddingTop">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 ">
+                           <h1 class="alignCenter">Eaton powers solutions for Businesses worldwide </h1>
+                        </div>
+                         <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 blueLine mediumMarginTop">
+							<span></span>
+						</div>
+                    </div>
+                </article>
+            </sly>
+            <sly data-sly-test="${properties.type == 'h1'}">
+                <article class="container-full  primary_content_text_only">
+                    <div class="aem-Grid aem-Grid--12">
+						<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                        <h1 class="smallMarginBottom">H1 Page Title or Article Headline that flows to a second line.</h1></div>
+                        <div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--1 aem-GridColumn--phone--2">
+                            <div class="divider"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </article>
+            </sly>
+            <sly data-sly-test="${properties.type == 'h2'}">
+                <article class="container-full  primary_content_text_only">
+                    <div class="aem-Grid aem-Grid--12">
+					<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                        <h2 class="h2-title header">
+						H2 Page Title or Article Headline that flows to a second line.</h2> </div>
+                        <div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--1 aem-GridColumn--phone--2">
+                            <div class="divider"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </article>
+            </sly>
+            <sly data-sly-test="${properties.type == 'h1Entire'}">
+                <article class="primary_content_text_only extraLargeMarginTop">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12"><div class="eyeBrowSmall ebSmall">CATEGORY LABEL</div></div>
+	<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+<h1 class="smallMarginTop">H1 Page Title or Article Headline that flows to a second line.</h1> </div>
+                        <div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--1 aem-GridColumn--phone--2">
+                            <div class="divider smallMarginTop"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 byLine smallMarginTop">ByLine (optional), November 27, 2015</div>
+                        <div class="clear"></div>
+                    </div>
+                </article>
+            </sly>
+            <sly data-sly-test="${properties.type == 'h2Entire'}">
+                <article class="container-full  primary_content_text_only">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 eyeBrowSmall">CATEGORY LABEL</div>
+	<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+<h2 class="h2-title header">H1 Page Title or Article Headline that flows to a second line.</h2></div>
+                        <div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--1 aem-GridColumn--phone--2">
+                            <div class="divider smallMarginBottom smallMarginTop"></div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 byLine smallMarginBottom">ByLine (optional), November 27, 2015</div>
+                        <div class="clear"></div>
+                    </div>
+                </article>
+            </sly>
+         <!--  Repeated one
+3				<sly data-sly-test="${properties.type == 'h1Center'}">
+                <article class="container-full container-padding primary_content_text_only">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class= "aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 primaryContentText allPaddings0" style="margin-top:10px;">Designing tommorows's innovations today</div>
+                        <div class="clear"></div>
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 divider-align">
+                            <div class="center-divider"></div>
+                        </div>
+                    </div>
+                </article>
+            </sly> -->
+            <sly data-sly-test="${properties.type == 'h4-article1'}">
+				<div class="moreInfoTitle smallPaddingTop mediumMarginTop">
+                <div class="eyeBrowSmall">For More Information</div>
+				</div>
+            </sly>
+            <sly data-sly-test="${properties.type == 'h4-article2'}">
+				<div class="moreInfoTitle smallPaddingTop mediumMarginTop">
+                <div class="eyeBrowSmall">DOWNLOADS & RELATED LINKS</div>
+				</div>
+            </sly>
+<sly data-sly-test="${properties.type == 'title-market-feature'}">
+
+    	<span>Data Center & Facility UPS ></span>
+
+            </sly>
+
+<sly data-sly-test="${properties.type == 'topic-link-with-icon-title-sku'}">
+
+    	<h1 class="largePaddingTop">How to buy from Eaton</h1>
+
+            </sly>
+<sly data-sly-test="${properties.type == 'title-with-listonly'}">
+
+    	<div class="topicLinkHeading">Meet the 9PX family</div>
+
+            </sly>
+<sly data-sly-test="${properties.type == 'title-with-list-with-downloadIcon'}">
+
+    	<div class="topicLinkHeading">Meet the 9PX family</div>
+
+            </sly>
+<sly data-sly-test="${properties.type == 'title-with-list-authored'}">
+
+    	<div class="text-with-list-authored-head">Loren ipsum dolor sit amet</div>
+
+            </sly>
+
+<sly data-sly-test="${properties.type == 'blank'}">
+
+    	<div style="height:1px;"></div>
+
+            </sly>
+
+<sly data-sly-test="${properties.type == 'title-with-list-with-download-sku'}">
+
+    	<h2 class="largeMarginTop">Supporting Documentation</h2>
+
+            </sly>
+
+<sly data-sly-test="${properties.type == 'title-with-list-with-download-sku-2'}">
+
+    	<h2 class="mediumMarginTop">Marketing materials</h2>
+
+            </sly>
+            <sly data-sly-test="${properties.type == 'title-video'}">
+
+    	 <h1 class="largeMarginTop">Optional Video title</h1>
+
+            </sly>
+			<sly data-sly-test="${properties.type == 'title-topic-link-with-icon-sku'}">
+
+    	 <div class="topicLinkHeading">How to Buy from Eaton</div>
+
+            </sly>
+
+<sly data-sly-test="${properties.type == 'h1Entire-rel3'}">
+               <article class="primary_content_text_only primary_content_text_only-sec-landing mediumMarginTop">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 eyeBrowLarge">CATEGORY</div>
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 smallMarginTop">
+                   			 <h4><a href="#" class="">Eaton ranked among the world's largest companies on sustainability and environmental impact</a></h4>
+						</div>
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 small smallMarginTop"><b>Author optional</b>, April 22, 2017</div>
+					</div>
+               </article>
+</sly>
+
+<sly data-sly-test="${properties.type == 'h4-article1-rel3'}">
+				<div class="moreInfoTitle smallPaddingTop  extraLargeMarginTop">
+                <div class="eyeBrowLarge">MEDIA CONTACTS</div>
+				</div>
+            </sly>
+<sly data-sly-test="${properties.type == 'h4-article2-rel3'}">
+				<div class="moreInfoTitle moreInfoTitle-secondary-landing smallPaddingTop  extraLargeMarginTop">
+                <div class="eyeBrowLarge">DOWNLOADS</div>
+				</div>
+            </sly>
+<sly data-sly-test="${properties.type == 'h4-article3-rel3'}">
+				<div class="moreInfoTitle moreInfoTitle-secondary-landing smallPaddingTop extraLargeMarginTop">
+                <div class="eyeBrowLarge">PRESS KIT</div>
+				</div>
+            </sly>
+
+<sly data-sly-test="${properties.type == 'category-highlight-h1Entire-rel3'}">
+               <article class="primary_content_text_only category-highlight-primary_content_text_only-secondary-landing">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 eyeBrowLarge smallMarginTop">CATEGORY</div>
+						<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 smallMarginTop">
+							<h5><a href="#">Why reality is the innovation challenge</a></h5>
+						</div>
+						<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 small smallMarginTop">April 22, 2017</div>
+					 </div>
+                </article>
+            </sly>
+
+        </div>
+    </div>
+</div>

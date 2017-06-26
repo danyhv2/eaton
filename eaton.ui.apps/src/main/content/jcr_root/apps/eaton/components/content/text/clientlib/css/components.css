@@ -1,0 +1,156 @@
+#primary-content {
+    padding-top: 15px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.primaryContentText {
+    font-family: EatonBold;
+    color: #333f48;
+    font-size: 50px;
+    /* Approximation due to font substitution */
+    //line-height: 4em;/* Approximation due to font substitution */
+    text-align: center;
+    margin: 0 0;
+}
+
+.blueLine > span {
+    width: 60px;
+    margin: 0 auto;
+    border-bottom: 3px solid #005eb8;
+    display: block;
+    padding-top: 30px;
+}
+
+.primaryContentDesc {
+    font-family: Arial;
+    color: #333f48;
+    font-size: 26px;
+    /* Approximation due to font substitution */
+    //font-weight: 500;
+    //line-height: 4em;/* Approximation due to font substitution */
+    text-align: center;
+    margin-top: 30px;
+}
+
+.storybox2 {
+    background-color: rgba(0, 94, 184, 0.6);
+    position: relative;
+    margin-left: -30%;
+    /* left: -30%; */
+    /* opacity: 0.5; */
+    width: 30%;
+}
+
+.storyRow:nth-child(even) .storybox2 {
+    left: -70%;
+}
+
+.storybox1 {
+    /*flex-direction:column;*/
+    padding: 0;
+}
+
+.storyRow:nth-child(even) {
+    display: flex;
+    padding-left: 12%;
+}
+
+.storyRow:nth-child(odd) {
+    display: flex;
+    padding-right: 12%;
+}
+
+.storyRow .contextBox {
+    position: relative;
+    top: 25%;
+}
+
+#featured-story .Headline {
+    color: #fff;
+    font-weight: bold;
+}
+
+#featured-story .contextText {
+    color: #fff;
+    font-size: 30px;
+}
+
+.storybox1 img {
+    width: 100%;
+}
+
+.right-link {
+    display: inline-block;
+    background: url(/content/dam/eaton/images/sprite-sheet.png) -450px -2242px no-repeat;
+    border: none;
+    width: 30px;
+    height: 55px;
+    vertical-align: -5px;
+    zoom: .5;
+}
+
+.page_overview {
+    margin-top: 10px;
+}
+
+
+/** comp5 css **/
+
+.comp5 {
+    font-family: Arial;
+    margin-bottom: 30px;
+}
+
+.comp5_bottom {
+    margin-top: 15px;
+}
+
+/*.comp5_bottom_left {
+    text-align: center;
+   
+}
+
+.comp5_bottom_right {
+    text-align: center;
+}
+
+.comp5_list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.comp5_list li {
+    padding: 6px 0px;
+    color: #0266C6;
+    font-size: 24px;
+    font-weight: bold;
+} 
+
+.comp5Btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.comp5Btn {
+    text-align: center;
+}
+
+.comp5_cstm_btn {
+    border: 2px solid #0266C6;
+    color: #0266C6;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0px !important;
+    width: 250px;
+    height: 45px;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.comp5_cstm_btn:hover {
+    background-color: #0266C6;
+    color: white;
+    border-color: #0266C6;
+} */

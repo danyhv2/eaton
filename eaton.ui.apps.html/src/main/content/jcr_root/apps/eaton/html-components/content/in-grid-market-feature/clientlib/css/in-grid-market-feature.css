@@ -1,0 +1,33 @@
+.market-feature {
+    background-color: #005EB8;
+}
+.marketFeatureHolder .body-copy{
+    color: #fff;
+}
+
+.marketFeatureHolder .h4-link{
+    color: #fff;
+}
+
+.marketFeatureHolder{
+	margin: 0px 40px;
+    overflow: hidden;
+	    margin-top: 40%;
+}
+
+.market-feature-desc {	
+  font-size: 1.375em !important;
+  line-height:1.636em !important;
+}
+@media only screen and (max-width: 992px) {
+
+    .mobilePadding0
+{
+padding:0px !important;
+
+}
+.marginMobileProductCard{
+margin-top:50px !important;
+        }
+
+}

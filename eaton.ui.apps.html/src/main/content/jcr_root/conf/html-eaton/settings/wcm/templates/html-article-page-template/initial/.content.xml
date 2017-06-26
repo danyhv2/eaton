@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-05-23T12:38:02.511+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/html-eaton/settings/wcm/templates/html-article-page-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="eaton/html-components/structure/eaton-page">
+        <root
+            jcr:lastModified="{Date}2017-05-23T12:43:22.378+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2017-05-23T12:24:06.367+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-05-23T13:19:43.030+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                view="container-full">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <title_text_image_lin
+                    jcr:created="{Date}2017-05-23T12:28:13.567+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-05-23T12:28:31.500+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/html-components/content/title-text-image-link"
+                    view="secondary-hero-title-only"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

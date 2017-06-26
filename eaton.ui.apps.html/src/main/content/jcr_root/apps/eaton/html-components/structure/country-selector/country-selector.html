@@ -1,0 +1,503 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+    <div>Desktop Country Selector Component</div>
+</sly>
+<div class="aem-Grid aem-Grid--12 headingHolder">
+	<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+		<div class="container-fixed container-padding">
+			<div class="aem-Grid aem-Grid--12 ">
+				<div class="aem-GridColumn aem-GridColumn--default--11 aem-GridColumn--tablet--11 aem-GridColumn--phone--12">
+					<div class="heading container-fixed">Select your location</div>
+				</div>
+				<div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--1 aem-GridColumn--phone--12">
+					<a href="#." class="utility-close-icon"></a>
+				</div>
+                <div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="utility-content container-fixed container-padding">
+    <div class="aem-Grid aem-Grid--12">
+        <!-- Navigation Buttons -->
+        <div class="aem-GridColumn aem-GridColumn--tablet--3 aem-GridColumn--default--3">
+            <ul class="nav nav-pills nav-stacked" id="myTabs">
+                <li><a href="#Africa" data-toggle="pill">Africa<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#Asia" data-toggle="pill">Asia<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#Central-America" data-toggle="pill">Central America and Caribean<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li class="active"><a href="#Europe" data-toggle="pill">Europe<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#Middle-East" data-toggle="pill">Middle East<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#North-America" data-toggle="pill">North America<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#Oceania" data-toggle="pill">Oceania<span class="glyphicon glyphicon-menu-right"></span></a></li>
+                <li><a href="#South-America" data-toggle="pill">South America<span class="glyphicon glyphicon-menu-right"></span></a></li>
+            </ul>
+        </div>
+        <!-- Content -->
+        <div class="aem-GridColumn aem-GridColumn--tablet--9 aem-GridColumn--default--9 flag-list">
+            <div class="tab-content">
+                <div class="tab-pane" id="Africa">
+					 <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+                                <span class="country-name">Africa 1</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Deutch</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+                                <span class="country-name">Africa 2</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Nederlands</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+                                <span class="country-name">Africa 3</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Cestina</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+						</div>
+				</div>
+                <div class="tab-pane" id="Asia">
+					 <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+                                <span class="country-name">Asia 1</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Deutch</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+                                <span class="country-name">Asia 2</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Nederlands</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+                                <span class="country-name">Czech Republic</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Cestina</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+						</div>
+				</div>
+                <div class="tab-pane" id="Central-America"> 
+						<div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+                                <span class="country-name">Central America 1</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Deutch</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+                                <span class="country-name">Central America 2</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Nederlands</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+                                <span class="country-name">Central America 3</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Cestina</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+						</div></div>
+                <div class="tab-pane active" id="Europe">
+                    <div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+                                <span class="country-name">Austria</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Deutch</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+                                <span class="country-name">Belgium</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Nederlands</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+                                <span class="country-name">Czech Republic</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Cestina</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+						</div>
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+									<span class="flag flag1"></span>
+									<span class="country-name">Austria</span>
+								</div>
+								<div class="language">
+									<a href="#">Deutch</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+									<span class="country-name">Belgium</span>
+								</div>
+								<div class="language">
+									<a href="#">Nederlands</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+									<span class="country-name">Czech Republic</span>
+								</div>
+								<div class="language">
+									<a href="#">Cestina</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+						</div>
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+									<span class="country-name">Austria</span>
+								</div>
+								<div class="language">
+									<a href="#">Deutch</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+									<span class="flag flag2"></span>
+									<span class="country-name">Belgium</span>
+								</div>
+								<div class="language">
+									<a href="#">Nederlands</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+									<span class="country-name">Czech Republic</span>
+								</div>
+								<div class="language">
+									<a href="#">Cestina</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+						</div>
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+									<span class="country-name">Austria</span>
+								</div>
+								<div class="language">
+									<a href="#">Deutch</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+									<span class="country-name">Belgium</span>
+								</div>
+								<div class="language">
+									<a href="#">Nederlands</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+									<span class="country-name">Czech Republic</span>
+								</div>
+								<div class="language">
+									<a href="#">Cestina</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+						</div>
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+									<span class="country-name">Austria</span>
+								</div>
+								<div class="language">
+									<a href="#">Deutch</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+									<span class="country-name">Belgium</span>
+								</div>
+								<div class="language">
+									<a href="#">Nederlands</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+									<span class="country-name">Czech Republic</span>
+								</div>
+								<div class="language">
+									<a href="#">Cestina</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+						</div>
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+									<span class="country-name">Austria</span>
+								</div>
+								<div class="language">
+									<a href="#">Deutch</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+									<span class="country-name">Belgium</span>
+								</div>
+								<div class="language">
+									<a href="#">Nederlands</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+									<span class="country-name">Czech Republic</span>
+								</div>
+								<div class="language">
+									<a href="#">Cestina</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+						</div>
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+									<span class="country-name">Austria</span>
+								</div>
+								<div class="language">
+									<a href="#">Deutch</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+									<span class="country-name">Belgium</span>
+								</div>
+								<div class="language">
+									<a href="#">Nederlands</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+								<div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+									<span class="country-name">Czech Republic</span>
+								</div>
+								<div class="language">
+									<a href="#">Cestina</a>
+									<a href="#">| English</a>
+								</div>
+							</div>
+						</div>
+                </div>
+                <div class="tab-pane" id="Middle-East">
+					<div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+                                <span class="country-name">Middle East 1</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Deutch</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+                                <span class="country-name">Middle East 2</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Nederlands</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+                                <span class="country-name">Middle East 3</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Cestina</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+						</div></div>
+                <div class="tab-pane" id="North-America">
+					<div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+                                <span class="country-name">North-America 1</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Deutch</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+                                <span class="country-name">North-America 2</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Nederlands</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+                                <span class="country-name">North-America 3</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Cestina</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+						</div>
+				</div>
+                <div class="tab-pane" id="Oceania">
+					<div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+                                <span class="country-name">Oceania 1</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Deutch</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+                                <span class="country-name">Oceania 2</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Nederlands</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+                                <span class="country-name">Oceania 3</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Cestina</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+						</div>
+				</div>
+                <div class="tab-pane" id="South-America">
+					<div class="aem-Grid aem-Grid--12">
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag1"></span>
+                                <span class="country-name">South-America 1</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Deutch</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag2"></span>
+                                <span class="country-name">South-America 2</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Nederlands</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+                        <div class="aem-GridColumn aem-GridColumn--tablet--4 aem-GridColumn--default--4">
+                            <div class="country smallMarginBottom">
+								<span class="flag flag3"></span>
+                                <span class="country-name">South-America 3</span>
+                            </div>
+                            <div class="language">
+                                <a href="#">Cestina</a>
+                                <a href="#">| English</a>
+                            </div>
+                        </div>
+						</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>

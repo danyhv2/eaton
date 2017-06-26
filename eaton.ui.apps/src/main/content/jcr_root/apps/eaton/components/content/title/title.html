@@ -1,0 +1,75 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2016 Adobe Systems Incorporated
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+    <div>Title Component</div>
+</sly>
+<template data-sly-template.first>
+<sly data-sly-use.title="com.eaton.platform.core.helpers.TitleHelper">
+
+	<div class="container-full">
+		<div class="aem-Grid aem-Grid--12">
+			<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-Grid aem-Grid--12">
+				<sly data-sly-test="${properties.view == 'header-with-line'}">
+					<article class="container-full container-padding">
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+							<h2 class="${properties.alignment} extraLargeMarginTop" data-sly-element="${properties.headerType}">${properties.jcr:title} </h2>
+							</div>
+							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 blueLine mediumMarginTop"><span></span></div>
+						</div>
+					</article>
+				</sly>
+
+				<sly data-sly-test="${properties.view == 'header-with-by-line'}">
+					<article class="container-full container-padding primary_content_text_only">
+						<div class="aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 eyeBrowSmall">${properties.transCatLabel}, ${title.dateByLine}</div>
+							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 ">
+							<h2 class="h2-title header" data-sly-element="${properties.headerType}">${properties.jcr:title}</h2></div>
+							<div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--1 aem-GridColumn--phone--2">
+								<div class="divider smallMarginBottom smallMarginTop"></div>
+							</div>
+							<div class="clear"></div>
+							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 byLine smallMarginBottom">${properties.transByLineText}</div>
+							<div class="clear"></div>
+						</div>
+					</article>
+				</sly>
+
+				<sly data-sly-test="${properties.view == 'header-only'}">
+					<div class="moreInfoTitle smallPaddingTop">
+					<div class="eyeBrowSmall" data-sly-element="${properties.headerType}">${properties.jcr:title} </div>
+					</div>
+				</sly>
+
+				</div>
+			</div>
+		</div>
+	</sly>
+	</template>
+   
+
+	<div data-sly-test="${properties.hidecomponent != 'hide-component'}">
+	
+		<sly data-sly-test="${wcmmode.disabled}">
+
+		<div data-sly-call="${first}"></div>
+		</sly>
+	</div>
+
+	<div data-sly-test="${wcmmode.edit}">
+		<div data-sly-call="${first}"></div>
+	</div>

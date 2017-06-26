@@ -1,0 +1,37 @@
+.product-card-sku{
+border:1px Solid #CCC;
+}
+    .product-sku-link-border{
+border-bottom:1px Solid #CCC;
+    font-weight:bold;
+    padding-top:40px;
+    background:#F8F8F8;
+}
+.product_card_property_set .product_card_sku_property{
+
+	font-size:1em;
+    font-family:Arial;
+	font-weight:Bold;
+    color:#5B6770;
+    line-height:1em;
+}
+.product_card_property_set .product_card_sku_value{
+
+	font-size:1em;
+    font-family:Arial;
+    color:#5B6770;
+    line-height:1em;
+    margin-top:8px;
+}
+@media only screen and (max-width: 992px) {
+    .product-card-sku{
+	border-left:0px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:0px solid #ccc;
+    margin:0px !important;
+}
+            .product-sku-link-border{
+border-right:0px Solid #CCC;
+
+}
+}

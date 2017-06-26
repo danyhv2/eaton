@@ -1,0 +1,129 @@
+.fliterLabelHolder{
+margin-top:30px;
+    }
+.filter-labels{
+float:left;
+    }
+.filter-labels label{
+font-family:Arial;
+font-size:13px;
+        padding-right:10px;
+    font-weight:normal;
+    }
+.clear-filters{
+float:right;
+    color: #005EB8;
+    font-family:Arial;
+font-size:13px;
+    }
+.categoryMenu{
+margin:10px 0px;
+}
+.tabHolder li{
+width:27%;
+border-radius:0px;
+font-weight:bold;
+margin-top:10px;
+
+}
+.tabHolder li:nth-child(1) {
+margin-right:3%;
+
+}
+.tabHolder li:nth-child(1) a{
+padding-left:0px !important;
+}
+.tabHolder li:nth-child(2) {
+margin-left: 3%;
+margin-right:3%;
+}
+.tabHolder li:nth-child(3) {
+margin-left:3%;
+}
+.tabHolder > li a{
+border-radius:0px !important;
+}
+.tabHolder > li.active > a, .tabHolder > li.active > a:hover, .tabHolder > li.active > a:focus{
+border-bottom:3px solid #0a70cd;
+background-color:#fff !important;
+color:#000 !important;
+}
+.tabHolder > li a:hover{
+background:#fff !important;
+}
+
+/*.menuListHolder{
+margin:10px 0px;
+}*/
+.menuList{
+list-style:none;
+padding-left:0px;
+}
+.mSeperator{
+border-left:1px solid #e3e3e3;
+padding:0px 20px;
+}
+.menuList li{
+color:#0a70cd;
+padding-bottom:20px;
+}
+.bottom_options{
+margin-top:10px;
+}
+
+
+.loadMoreButton{
+padding:0px 30px;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:20px;
+    }
+
+
+
+.categoryMenu .panel-group .panel {
+		border-radius: 0;
+		box-shadow: none;
+		border-color: #EEEEEE;
+	}
+
+	.categoryMenu .panel-default > .panel-heading {
+		padding: 0;
+		border-radius: 0;
+		color: #212121;
+		background-color: #FAFAFA;
+		border-color: #EEEEEE;
+	}
+
+	.categoryMenu .panel-title {
+		font-size: 14px;
+	}
+
+	.categoryMenu .panel-title > a {
+		display: block;
+		padding: 15px 0px;
+		text-decoration: none;
+	}
+
+	.categoryMenu .more-less {
+		float: right;
+		color: #212121;
+	}
+
+	.categoryMenu .panel-default > .panel-heading + .panel-collapse > .panel-body {
+		border-top-color: #EEEEEE;
+	}
+
+
+.loadMoreButton{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+@media only screen and (max-width: 768px) {
+.menuList{
+margin-top:5px;
+margin-bottom:5px;
+}
+}

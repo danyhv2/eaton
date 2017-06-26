@@ -1,0 +1,22 @@
+div.image {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+div.image img {
+    display: block;
+    margin:auto;
+}
+div.image small {
+    display: block;
+}
+.highlighed-image{
+     /*  float: right; */
+
+    }
+.secondary-landing-article-feature-img img{
+	width:auto !important;
+    }
+    .secondary-landing-article-feature-img small {
+    display: none;
+}

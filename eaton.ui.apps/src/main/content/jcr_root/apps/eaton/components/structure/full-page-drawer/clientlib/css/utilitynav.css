@@ -1,0 +1,87 @@
+
+/***Utility Navigation***/
+.utility-nav {
+    background: #005EB8;
+    color: #FFFFFF;
+ /*    height: 34px; */
+}
+
+.utility-bottom-fixed{
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.utility-nav .contry-language-selector, .utility-nav .sign-up-link {
+    background: #005EB8;
+    /* padding-top: 6px !important;
+    padding-bottom: 5px !important;
+    height: 33px; */
+}
+#utility-nav-mob .contry-language-selector{
+	 border-bottom:1px solid #1b84e4; 
+}
+#utility-nav-mob .contry-language-selector, #utility-nav-mob .sign-up-link{
+	height: 35px;
+    line-height: 35px;
+}    
+.utility-nav .contry-language-selector ul {
+    margin-bottom: 0px;
+    padding-left: 0;
+}
+.utility-nav .contry-language-selector ul li {
+    list-style: none;
+}
+.utility-nav .contry-language-selector a, .utility-nav .sign-up-link a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Arial;
+        font-size: 0.875em;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 1px;
+}
+.utility-nav .utility-icon {
+    display: inline-block;
+    background: url(/content/dam/eaton/images/sprite-sheet.png) -901px 8px no-repeat;
+    border: none;
+    width: 68px;
+    height: 68px;
+    zoom: .2;
+    margin-right: 25px;
+}
+.utility-nav .contry-language-selector ul li .caret {
+    display: inline-block;
+    background: url(/content/dam/eaton/images/sprite-sheet.png) -1195px -2233px no-repeat;
+    border: none;
+    width: 68px;
+    height: 68px;
+    zoom: .13;
+    margin-left: 45px;
+}
+.utility-nav .user-icon{
+	display: inline-block;
+    background: url(/content/dam/eaton/images/sprite-sheet.png) -2px -746px no-repeat;
+    border: none;
+    width: 67px;
+    height: 67px;
+        zoom: 0.23;
+    margin: 3px 19px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.utility-nav-mob-view .utility-nav-mob{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.utility-nav-mob-view .contry-language-selector, .utility-nav-mob-view .sign-up-link {
+		text-align:center;
+	}
+
+	.utility-nav-mob-view .contry-language-selector a, .utility-nav-mob-view .sign-up-link a {
+		float:none !important;
+	}
+	
+	
+}
+	

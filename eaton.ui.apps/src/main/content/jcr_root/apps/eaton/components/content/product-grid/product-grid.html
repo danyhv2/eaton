@@ -1,0 +1,54 @@
+
+
+
+<div class="aem-Grid aem-Grid--12">
+
+<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 fliterLabelHolder hidden-xs">
+		<div class="filter-labels">
+            <label><span>&#10005;<span>  Loren Ipsum1</label>
+            <label><span>&#10005;<span> Loren Ipsum2</label>
+            <label><span>&#10005;<span>  Loren Ipsum3</label>
+         </div>
+
+         <div class="clear-filters">
+            <label>Clear Filters</label>
+         </div>
+   </div>
+
+ <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+		<div data-sly-resource="${'facets' @ resourceType='eaton/components/content/facets'}"></div>
+
+</div>
+	<div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
+
+
+			<div data-sly-resource="${'productCardList' @ resourceType='eaton/components/content/product-card-list'}"></div>
+
+
+	<!--<div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--tablet--9 aem-GridColumn--phone--12 market-feature-parent">-->
+		<div class="aem-Grid aem-Grid--12">
+        <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--6 market-feature">
+			<div data-sly-resource="${'inGridMarketFeature' @ resourceType='eaton/components/content/title-text'}"></div>
+		</div>
+		<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--6">
+			<div data-sly-resource="${'product-card2' @ resourceType='eaton/components/content/product-card'}"></div>
+		</div>
+<div class="clear hidden-lg hidden-md hidden-sm"></div>
+		<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--6">
+			<div data-sly-resource="${'product-card3' @ resourceType='eaton/components/content/product-card'}"></div>
+		</div>
+		<div class="hidden-lg hidden-md hidden-sm aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--6">
+			<div data-sly-resource="${'product-card4' @ resourceType='eaton/components/content/product-card'}"></div>
+		</div>
+<div class="clear  hidden-lg hidden-md hidden-sm"></div>
+
+		</div>
+
+
+    </div> 
+
+	<div class="loadMoreButton">
+				<button type="button" class="btn btn-default viewSupportBtn ">Load More</button>
+			</div>
+
+	</div> 

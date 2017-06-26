@@ -1,0 +1,26 @@
+
+/* Product card  starts here*/
+
+.residential{
+
+	border: 3px solid #EEF0F2;
+}
+
+.residential .width100Perc{
+	width:100%;
+}
+.residential .heading{
+	text-transform:uppercase;
+}
+.residential .heading + .body-link{
+	font-weight:bold;
+	font-size: 1.875em;
+}
+/* Product card  ends here*/
+@media only screen and (max-width:992px){
+   
+   .noFeature.smallPaddingLeft.smallPaddingRight{
+    padding-left:0px;
+    padding-right:0px;
+    }
+ }

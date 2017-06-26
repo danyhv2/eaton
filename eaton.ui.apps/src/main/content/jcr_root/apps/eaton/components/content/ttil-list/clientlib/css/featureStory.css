@@ -1,0 +1,205 @@
+#featured-story-one {
+    margin-top: 10px;
+}
+
+#featured-story-three {
+    margin-bottom: 30px;
+}
+
+.storyBoardImageFS .imgContainer > img.show-mob{
+	width:auto;
+}    
+/** storyboard **/
+
+.storyBoardImageFS {
+    position: relative;
+}
+
+.storyBoardImageFS.odd {
+    margin-left:0px
+}
+.storyBoardImageFS.even {
+    margin-left:10%;
+}            
+.storyBoardImageFS img {
+    width: 100%;
+}
+.storyBoardImageFS .imgContainer > img.show-mob{
+	width:auto;
+} 
+.storyBoardOverlayRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height:100%;
+    /*height: 490px;*/
+    background: #0266C6;
+    color: #fff;
+    opacity: 0.8;
+    padding: 0;
+    transition: opacity .5s;
+    margin-right: 0px !Important;
+}
+
+.storyBoardOverlayLeft {
+	position: absolute;
+    top: 0;
+    left: 0;
+    /*height: 490px;*/
+    height:100%;
+    background: #0266C6;
+    color: #fff;
+    opacity: 0.8;
+    padding: 0;
+    transition: opacity .5s;
+    margin-left: 0px !Important;
+}
+
+.storyBoardOverlayContent {
+	left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top: 35%;
+    width: 85% !important;
+    line-height:45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.storyBoardHeadline {
+       font-size: 24px;
+    font-family: EatonBold;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    line-height: 45px;
+    margin: auto;
+}
+
+.storyBoardText {
+        font-size: 40px;
+    font-family: EatonMedium;
+    word-break: break-word;
+    margin: 0px;
+}
+
+.storyBoardSmall {
+    background: #0266C6;
+    color: #fff;
+}
+
+.storyBoardSmallContent {
+    padding: 50px 0px;
+}
+
+
+.right-link {
+   display: inline-block;
+    background: url(/content/dam/eaton/images/sprite-sheet.png) -450px -2242px no-repeat;
+    border: none;
+    width: 30px;
+    height: 55px;
+	vertical-align:5px;
+    zoom: .35 !important;
+    margin-left:-10px;
+}
+
+.descriptive-feature:nth-Child(even) .storyBoardImage{
+	margin-left:10%;
+}            
+@media only screen and (max-width: 768px) {
+    .storyBoardImageFS .imgContainer > img.show-desktop{
+		height:300px;
+	} 
+    .storyBoardHeadline {
+        font-size: 1.5em;
+    }
+
+    .storyBoardText {
+        font-size: 2em;
+    }
+	.storyBoardOverlayContent {
+        line-height: normal;   
+    	top:45%;
+    	padding-left: 10px !important;
+    	padding-right: 10px !important;
+    }
+	.storyBoardImageFS.odd {
+    	margin-left:0px
+    }
+    .storyBoardImageFS.even {
+        /*margin-left:0px;*/
+    }
+	.storyBoardOverlayRight,
+    .storyBoardOverlayLeft {
+
+        height: 300px;    
+    }
+	.right-link {
+    	vertical-align:0px
+    }   
+	.storyBoardHeadline {
+
+    	padding-bottom: 20px;
+    	font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .storyBoardOverlayRight,
+    .storyBoardOverlayLeft {
+        position: static;
+        height: auto;  
+        border-bottom:10px solid white;    
+    }
+    .storyBoardImageFS > div.imgContainer{
+		width:1000px;
+	}     
+    .storyBoardOverlayContent {
+        left:0%;    
+        /*height: 150px;*/
+        height:400px;    
+        position:static;
+        vertical-align: middle;
+        transform: translate(0%,0%);
+        line-height: 30px; 
+        margin-top: auto;
+   		margin-bottom: auto;
+        padding: 15px !important;
+    	padding: 25px !important;
+    	display: table;
+
+    	width: 90% !important;
+    	margin-left: 5%;
+    }
+	.storyBoardOverlayContent > .infoContent
+	{	
+    	display:table-cell;
+    	vertical-align:middle;
+	}
+     .storyBoardHeadline {
+
+    	padding-bottom: 20px;
+    	font-size: 24px;
+    }
+
+    .storyBoardText {
+        /*font-size: 1.8em;*/
+    	font-size: 40px;
+    	line-height: 50px;
+    }
+	.descriptive-feature:nth-Child(even) .storyBoardImage{
+		margin-left:0;
+	}  
+	.right-link{
+		vertical-align: -5px;
+    }
+
+}
+@media only screen and (max-width: 500px){
+	.right-link {
+    	vertical-align:5px;
+    }
+}

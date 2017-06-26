@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/eaton/html-templates"/>
+    <filter root="/apps/eaton/html-components"/>
+    <filter root="/conf/html-eaton"/>
+    <filter root="/etc/designs/eaton-html"/>
+</workspaceFilter>

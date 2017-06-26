@@ -1,0 +1,76 @@
+ <sly data-sly-test="${wcmmode.edit}">Link</sly>
+<sly data-sly-test="${properties.view == 'model-list'}">
+<!-- Intra Tab Links Starts -->
+	<div class="alignCenter mediumMarginTop smallMarginBottom container-padding linkHolder"> 
+		<a class="body-link" href="#">Continue To Models &gt;</a>
+	</div>
+<!-- Intra Tab Links Ends -->
+</sly>
+
+<sly data-sly-test="${properties.view == 'resources'}">
+<!-- Intra Tab Links Starts -->
+	<div class="alignCenter mediumMarginTop mediumMarginBottom linkHolder container-padding"> 
+		<a class="body-link" href="#">Continue To Resources &gt;</a>
+	</div>
+<!-- Intra Tab Links Ends -->
+</sly>
+
+<sly data-sly-test="${properties.view == 'model-grid'}">
+<!-- Intra Tab Links Starts -->
+<div class="alignCenter mediumMarginTop mediumMarginBottom linkHolder container-padding">
+	<a class="body-link" href="#">
+		Continue To Model Grid &gt;
+	</a>
+</div>
+<!-- Intra Tab Links Ends -->
+</sly>
+
+<sly data-sly-test="${properties.view == 'specifications'}">
+<!-- Intra Tab Links Starts -->
+<div class="alignCenter mediumMarginTop linkHolder container-padding">
+	<a class="body-link" href="#">
+		Continue To Specifications &gt;
+	</a>
+</div>
+<!-- Intra Tab Links Ends -->
+</sly>
+
+
+<sly data-sly-test="${properties.view == 'anchor-link'}">
+<div class="aem-Grid aem-Grid--12">
+	<div class="container-padding">
+		<ul class="anchorLinkList largeMarginTop noPadding">
+			<a href="#." class="small">
+				<li class="active">
+					<span>Electrical Input</span>
+					<span class="glyphicon glyphicon-menu-right link-arrow"></span>
+				</li>
+			</a>
+            <a href="#." class="small">
+				<li>
+					<span>Electrical Output</span>
+					<span class="glyphicon glyphicon-menu-right link-arrow"></span>
+				</li>
+			</a>
+            <a href="#." class="small">
+				<li>
+					<span>Battery</span>
+					<span class="glyphicon glyphicon-menu-right link-arrow"></span>
+				</li>
+			</a>
+            <a href="#." class="small">
+				<li>
+					<span>Communications</span>
+					<span class="glyphicon glyphicon-menu-right link-arrow"></span>
+				</li>
+			</a>
+            <a href="#." class="small">
+				<li>
+                    <span>Environmental & Standards</span>
+                    <span class="glyphicon glyphicon-menu-right link-arrow"></span>
+				</li>
+			</a>
+		</ul>
+	</div>
+</div>
+</sly>

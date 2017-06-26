@@ -1,0 +1,10 @@
+<sly data-sly-test="${wcmmode.edit}">Logo Component</sly>
+<sly data-sly-use.logo="com.eaton.platform.core.helpers.LogoHelper">
+<sly data-sly-test="${properties.view == 'header'}">
+    <a class="navbar-brand" href="${logo.getHome}.html"><img src="${properties.logoReference}" title="${properties.transLogoTitle}" alt="logo" class="img-responsive"></a>
+</sly>
+
+<sly data-sly-test="${properties.view == 'footer'}">
+    <p><img class="footer-logo" src="${properties.logoReference}" alt="logo" title="${properties.transLogoTitle}"></p>
+</sly>
+</sly>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Title"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Title - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="Leave empty to use the page title."
+                        fieldLabel="Title"
+                        name="./jcr:title"/>
+                    <type
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Type / Size"
+                        name="./type">
+                        <items jcr:primaryType="nt:unstructured">
+                            <def
+                                jcr:primaryType="nt:unstructured"
+                                text="(default)"
+                                value=""/>
+                            <h1
+                                jcr:primaryType="nt:unstructured"
+                                text="H1"
+                                value="h1"/>
+                            <h2
+                                jcr:primaryType="nt:unstructured"
+                                text="H2"
+                                value="h2"/>
+                            <h3
+                                jcr:primaryType="nt:unstructured"
+                                text="H3"
+                                value="h3"/>
+                            <h4
+                                jcr:primaryType="nt:unstructured"
+                                text="H4"
+                                value="h4"/>
+                            <h1-sitemap
+                                jcr:primaryType="nt:unstructured"
+                                text="h1-sitemap"
+                                value="h1-sitemap"/>
+                            <h1-homepage1
+                                jcr:primaryType="nt:unstructured"
+                                text="h1-homepage1"
+                                value="h1-homepage1"/>
+                            <h1-homepage2
+                                jcr:primaryType="nt:unstructured"
+                                text="h1-homepage2"
+                                value="h1-homepage2"/>
+                            <h1-PL1
+                                jcr:primaryType="nt:unstructured"
+                                text="H1 Primary Landing 1"
+                                value="h1-PL1"/>
+                            <h1Entire
+                                jcr:primaryType="nt:unstructured"
+                                text="H1 - Entire"
+                                value="h1Entire"/>
+                            <h2Entire
+                                jcr:primaryType="nt:unstructured"
+                                text="H2 - Entire"
+                                value="h2Entire"/>
+                            <h1Center
+                                jcr:primaryType="nt:unstructured"
+                                text="H1 - Center"
+                                value="h1Center"/>
+                            <h4-article1
+                                jcr:primaryType="nt:unstructured"
+                                text="H4 - Article 1"
+                                value="h4-article1"/>
+                            <h4-article2
+                                jcr:primaryType="nt:unstructured"
+                                text="H4 - Article 2"
+                                value="h4-article2"/>
+                            <title-market-feature
+                                jcr:primaryType="nt:unstructured"
+                                text="Title Market Feature"
+                                value="title-market-feature"/>
+                            <title-with-listonly
+                                jcr:primaryType="nt:unstructured"
+                                text="title-with-listonly"
+                                value="title-with-listonly"/>
+                            <title-with-list-with-downloadIcon
+                                jcr:primaryType="nt:unstructured"
+                                text="title-with-list-with-downloadIcon"
+                                value="title-with-list-with-downloadIcon"/>
+                            <title-with-list-authored
+                                jcr:primaryType="nt:unstructured"
+                                text="title-with-list-authored"
+                                value="title-with-list-authored"/>
+                            <title-with-list-with-download-sku
+                                jcr:primaryType="nt:unstructured"
+                                text="title-with-list-with-download-sku"
+                                value="title-with-list-with-download-sku"/>
+                            <title-video
+                                jcr:primaryType="nt:unstructured"
+                                text="title-video"
+                                value="title-video"/>
+                            <title-topic-link-with-icon-sku
+                                jcr:primaryType="nt:unstructured"
+                                text="title-topic-link-with-icon-sku"
+                                value="title-topic-link-with-icon-sku"/>
+                            <h1Entire-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="H1 - Entire-rel3"
+                                value="h1Entire-rel3"/>
+                            <h4-article1-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="h4-article1-rel3"
+                                value="h4-article1-rel3"/>
+                            <h4-article2-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="h4-article2-rel3"
+                                value="h4-article2-rel3"/>
+                            <h4-article3-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="h4-article3-rel3"
+                                value="h4-article3-rel3"/>
+                            <category-highlight-h1Entire-rel3
+                                jcr:primaryType="nt:unstructured"
+                                text="category-highlight-h1Entire-rel3"
+                                value="category-highlight-h1Entire-rel3"/>
+                            <topic-link-with-icon-title-sku
+                                jcr:primaryType="nt:unstructured"
+                                text="topic-link-with-icon-title-sku"
+                                value="topic-link-with-icon-title-sku"/>
+                            <blank
+                                jcr:primaryType="nt:unstructured"
+                                text="blank"
+                                value="blank"/>
+                            <title-with-list-with-download-sku-2
+                                jcr:primaryType="nt:unstructured"
+                                text="title-with-list-with-download-sku-2"
+                                value="title-with-list-with-download-sku-2"/>
+                        </items>
+                    </type>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

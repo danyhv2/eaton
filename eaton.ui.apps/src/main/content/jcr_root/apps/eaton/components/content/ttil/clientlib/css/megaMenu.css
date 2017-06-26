@@ -1,0 +1,316 @@
+.megaMenu{
+    display:none;
+}
+.megaMenu .main{
+	margin-bottom:50px;
+    margin-top:15px;        
+}
+.megaMenu.productPage{
+	/*height:93vh;*/
+}
+.megaMenu.productPage .utility-nav-mob-view{
+	overflow:hidden;
+ }
+
+.marginBtm0{
+	margin-bottom:0px;
+}
+.megaMenu .listCntnt .list-group-item{
+	border:none;
+	cursor:pointer;
+	background-color: var(--Gray2);
+    /*color: var(--White);
+	font-family: Arial;*/
+    padding-left:0px;
+    /*padding-right:30px;*/
+    padding-right:0px;
+    margin-right:15px;
+    padding-top:0px;
+}
+.megaMenu .listCntnt .list-group-item:after{
+	content:url('/content/dam/eaton/images/Link-Arrow.png'); 
+	position: relative;
+    left: -10px;
+    top: 1px;
+    float:right;
+}
+.megaMenu .header{
+	background-color:var(--Gray1);
+	position:relative;
+        font-size: 2.18em;
+        float: left;
+}
+.megaMenu .header > div.container-fixed{
+	padding-right:0px;
+}            
+.vAlign{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.megaMenu .closeBtn{
+	background: url('/content/dam/eaton/images/Close-Icon-white.png') no-repeat;
+    width: 50px;
+    height: 35px;
+   /* margin-top: 10px;
+        background-size: 25px;*/
+}
+.megaMenu .menuHeading  .arrowLeft{
+	background: url('/content/dam/eaton/images/sprite-sheet.png') no-repeat;
+	width:20px;
+	height:20px;
+}
+.megaMenu .menuHeading a{
+	text-decoration:none;
+}
+.megaMenu .menuHeading:after{
+	content:url('/content/dam/eaton/images/Link_Arrow_Big.png'); 
+	position: relative;
+    left: 2px;
+    top: 1px;
+	padding-left: 5px;
+}
+.megaMenu .menuHeading{
+	font-family: EatonMedium;
+    font-size: 1.18em;
+    letter-spacing: 1px;
+    margin:0;  
+    font-weight:normal;
+    color: var(--White);
+}
+
+.contentLoad{
+	background-color:#5a6770;
+    margin: 0 auto;
+	position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+.megaMenu .productList{
+	padding-left:0px;
+	padding-right:0px;
+}
+.megaMenu .listCntnt{
+    overflow-y: auto;
+	margin-bottom: 5px;
+    max-height:650px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.megaMenu .listCntnt .list-group-item:hover{
+	/*text-decoration:underline;*/
+}
+.alignClose{
+	float:right;
+	margin-bottom:0px;
+	line-height: 67px;
+	cursor:pointer;
+}
+.pdfSize{
+	color: #fff;
+	font-size:0.69em;
+	display:block;
+	font-family:Arial;
+}
+.imgIcon{
+	line-height: 30px;
+    vertical-align: 17px;
+    padding-right: 10px;
+}
+.imgIcon > img{
+	width:15px;
+}
+.imgIcon + div.sectionHeading{
+	display:inline-block;
+}
+.megaMenu .topStory{
+	border-left:1px solid #8c9aa5;
+	color:white;
+}
+.megaMenu .storyContainer .imgContainer{
+	display: inline-block;
+	vertical-align: top;
+}
+.megaMenu .storyContainer .imgContainer + .desc{
+	display: inline-block;
+    width: 70%;
+    padding-left: 30px;
+	padding-right:30px;	
+}
+.megaMenu  .imgContainer + .desc > p:first-child{
+	font-family:Arial;
+}
+.megaMenu  .imgContainer + .desc > p:not(:first-child){
+	font-family:Arial;
+}
+.megaMenu  .imgContainer + .desc > p:first-child:after{
+	content:url('/content/dam/eaton/images/Link-Arrow.png'); 
+	position: relative;
+    left: 2px;
+    top: 1px;
+}
+
+.megaMenu .featureMarket {
+	padding-left: 15px !important;
+	padding-right:0px;
+}
+
+.megaMenu .highLightContainer  .imgContainer > img{
+	width:250px;
+}
+.rightBorder{
+	border-right:1px solid #8c9aa5;
+}
+.searchContainer .list-group-item{
+	padding-left:0px;
+}
+.megaMenu  .topStory h4,.megaMenu  .featureMarket h4,.megaMenu .compHighlight h4, .megaMenu .search h4{
+	color:white;
+	text-transform:uppercase;
+	margin-top:0px;
+	font-family:'Eaton';
+}
+.megaMenu .searchContainer input{
+	background: url('/content/dam/eaton/images/SearchIcon.png') no-repeat #fff;
+    background-position: 98% 4px;
+    padding-right: 25px;
+    padding-left: 5px;
+    border-radius:0;
+    color: #000;
+	width: 90%;
+    height: 30px;
+}
+.megaMenu .highLightContainer, .megaMenu .search, .megaMenu  .featureMarket,.megaMenu  .topStory, .megaMenu .compHighlight  {
+	color:white;
+}
+.megaMenu .topStory{
+	font-family: Arial;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+#Product-Menu, #Support-Menu, #Company-Menu, #Industry-Sol-Menu{
+	border-bottom:4px solid transparent;
+}
+
+.small-body-copy-link-on-dark-deviation{
+	font-size:1.5em;
+	font-family:Arial;
+	line-height:2em;
+}
+
+.storyContainer .desc img{
+margin-left:15px;
+margin-top:-5px;
+}	
+.highLightContainer .desc img{
+margin-left: 15px;
+    margin-top: -5px;
+}
+.megamenu-margin-deviation
+{
+	margin-top:1.25em;
+}
+
+.downloadIconImage{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 15px;
+	margin-top:-2px;
+}
+.storyContainer .sectionHeading{
+	display:inline-block;
+}
+@media screen and (max-width:768px){
+    .megaMenu .search, .megaMenu .compHighlight, .megaMenu  .topStory, .megaMenu .compHighlight,.megaMenu  .featureMarket {
+    	display:none;
+     }               
+
+    .megaMenu .listCntnt{
+    	/*max-height:380px;*/
+        max-height:95%;
+	}
+	.megaMenu .topStory{
+	border-left:none;
+	color:white;
+	}
+	.rightBorder{
+	border-right:none;
+	}
+	.alignClose{
+		display:none;
+	}
+	.megaMenu .header{
+		height:58px;
+		margin-bottom: 2px;
+	}
+	.megaMenu .menuHeading{
+		width: 100%;
+		text-align: center;
+		/*padding-right: 50px;*/
+	}
+	.megaMenu .menuHeading:after{
+		content: ''; 
+	}
+	.megaMenu .header:before{
+		content:url('/content/dam/eaton/images/Link_Arrow_Left_Big.png'); 
+		position: relative;
+   	 	top: -28px;
+    	padding-left: 15px;
+	}
+
+	#bs-example-navbar-collapse-1{
+		position:absolute;
+	}
+/*	#bs-example-navbar-collapse-1.navbar-collapse.in{
+		overflow-y:visible;
+    	 height:93vh;
+	}*/
+	.megaMenu .listCntnt .list-group-item {
+		margin-right:5px;
+        padding-right: 1px;        
+    }
+	ul.list-group{
+		margin-bottom:0px;
+	}
+}
+
+@media screen and (max-width:425px){
+    .megaMenu .menuHeading{
+    	font-size: .8em;
+	}
+}
+@media screen and (min-width:1024px) and (max-width:1280px) and (orientation: landscape){
+	.megaMenu .storyContainer .imgContainer + .desc{
+		padding-left: 0px; 
+    }
+    .megaMenu .compHighlight{
+		margin-left:30px;
+    }                                
+}            
+/*        
+@media screen and (min-width:320px){
+    #header-navigation-bar .nav.navbar-nav li.utility-nav-mob-view{
+		bottom:42px;
+    }    
+.megaMenu .listCntnt{
+    	max-height:70%;
+	}
+}
+
+@media screen and (min-width:375px){
+    #header-navigation-bar .nav.navbar-nav li.utility-nav-mob-view{
+		bottom:35px;
+    }    
+.megaMenu .listCntnt{
+    	max-height:76%;
+	}
+}
+
+@media screen and (min-width:414px){
+    #header-navigation-bar .nav.navbar-nav li.utility-nav-mob-view{
+		bottom:30px;
+    }    
+.megaMenu .listCntnt{
+    	max-height:79%;
+	}
+}*/

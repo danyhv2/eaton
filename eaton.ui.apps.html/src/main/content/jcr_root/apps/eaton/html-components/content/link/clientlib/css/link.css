@@ -1,0 +1,28 @@
+.linkHolder>a {
+	font-family: EatonBold !important;
+	font-size: 2em !important;
+}
+
+.anchorLinkList {
+	list-style: none;
+}
+
+.anchorLinkList li {
+	display: block;
+	vertical-align: middle;
+	padding: 25px 15px;
+	color: #005EB8;
+	border-bottom: 1px solid #F8F8F8;
+}
+
+.anchorLinkList li:hover {
+	color: #005CBC;
+}
+
+.anchorLinkList li.active {
+	background: #EEF0F2;
+    font-weight:bold;
+}
+.anchorLinkList a li .link-arrow{
+float:right;
+}

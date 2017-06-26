@@ -1,0 +1,57 @@
+/* Desktop Style starts here */
+
+body{
+background:#FFFFFF;
+}
+#sitemap-content {
+
+}
+/* #sitemap-content  .page-title{ */
+	/* padding:35px 0; */
+    /* font-family: Eaton; */
+	/* color:  #333f48; */
+	/* font-size: 49.82px; */
+	/* font-weight: 500; */
+	/* /* line-height: 61.777px; */ */
+	/* transform: scaleY(1.0037); */
+/* } */
+#sitemap-content a{
+	text-decoration:none;
+
+}
+#sitemap-content  a:hover, #sitemap-content  a:focus {
+    text-decoration:none;
+
+}
+
+#sitemap-content hr{
+	border-color: var(--Gray5);
+    margin-bottom:0px;
+    margin-top:30px;
+}
+#level-six a{
+    display:block;
+	text-align: left;
+	margin-left: 30px;
+
+} 
+
+/* Desktop Style ends here */
+
+/* Mobile view Style starts here */
+
+@media only screen and (max-width: 767px) {
+ .level-five {
+			width: 100% !important;
+        }
+}
+
+
+/* Tablet Style starts here */
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .level-five {
+			width: 100% !important;
+        }
+
+}
