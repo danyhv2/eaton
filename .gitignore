@@ -1,4 +1,7 @@
 /AEM_6.2_Quickstart.jar
 /license.properties
 /crx-quickstart
+/eaton.core/target
+/eaton.ui.apps/target
+/eaton.ui.apps.html/target
 *.DS_Store
