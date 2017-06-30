@@ -1,0 +1,13 @@
+// Import Sass Utils
+//--------------
+@import '../_config/variables';
+@import '../_config/mixins/**/*.scss';
+
+
+.c-product-grid {
+
+  &__row {
+    margin-bottom: 1rem;
+  }
+
+}

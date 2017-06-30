@@ -1,0 +1,78 @@
+//-----------------------------------
+// Global Typography definition
+//-----------------------------------
+
+body { }
+
+p { }
+
+strong { }
+
+em { }
+
+b { }
+
+
+h1,
+h2,
+h3,
+.heading-h3 {
+  font-family: 'Eaton', Arial;
+}
+
+
+h4,
+h5 {
+  font-family: Arial;
+}
+
+
+
+h1,
+.heading-h1 {
+  font-size: 2rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.8rem;
+}
+
+h3,
+.h3 {
+
+}
+
+h4,
+.h4 {
+
+}
+
+h5,
+.heading--h5 {
+
+}
+
+
+.body-copy {
+
+}
+
+.body-copy-large {
+
+}
+
+.body-copy-small {
+
+}
+
+.body-copy-link {
+
+}
+
+
+// @include media-tablet {
+//   .h1 {
+//
+//   }
+// }

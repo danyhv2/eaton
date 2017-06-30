@@ -1,0 +1,19 @@
+
+// Breakpoints
+//--------------
+@import 'variables/variables-colors';
+@import 'variables/variables-locale';
+
+
+// TBD These variables need to have the same names that Bootstrap uses
+$bp__sm: 480px;
+$bp__md: 600px;
+$bp__lg: 1024px;
+$bp__xl: 1440px;
+
+
+// Typography
+//--------------
+$base__font-size: 16px;
+$base__line-height: 1.5;
+$base__font-family: map-get($font-en, font__primary);
