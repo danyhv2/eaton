@@ -1,4 +1,5 @@
 <sly data-sly-test="${wcmmode.edit}">TTIL List Component</sly>
+
 <sly data-sly-test="${properties.view == 'no-feature'}">
 <div class="container-full page_overview"
 	id="primary-content-article-list-single-feature">
@@ -10,6 +11,7 @@
 	</div>
 </div>
 </sly>
+
 <sly data-sly-test="${properties.view == 'single-feature'}">
 <div
 	class="container-full  container-padding extraLargePaddingTop extraLargePaddingBottom"
@@ -78,11 +80,11 @@
 	</div>
 </div>
 </sly>
+
 <sly data-sly-test="${properties.view == 'related-products-text-only'}">
 </sly>
 
-<sly
-	data-sly-test="${properties.view == 'category-related-products-with-images'}">
+<sly data-sly-test="${properties.view == 'category-related-products-with-images'}">
 <div class="cardHolder hidden-xs hidden-sm">
 	<div class="container-fixed container-padding">
 		<div class="aem-Grid aem-Grid--12">
@@ -156,8 +158,8 @@
 </div>
 
 </sly>
-<sly
-	data-sly-test="${properties.view == 'related-products-with-images'}">
+
+<sly data-sly-test="${properties.view == 'related-products-with-images'}">
 <div id="related-items-content" class="mediumMarginTop">
 	<div
 		class="container-fixed related-item-web-container extraLargePaddingTop extraLargePaddingBottom">
@@ -537,6 +539,7 @@
 	</div>
 </div>
 </sly>
+
 <sly data-sly-test="${properties.view == 'fea-list'}">
 <div class="aem-Grid aem-Grid--12">
 	<div
@@ -590,6 +593,7 @@
 	</div>
 </div>
 </sly>
+
 <sly data-sly-test="${properties.view == 'fea-story'}">
 <div class="container-full extraLargeMarginTop"
 	id="featured-story-${properties.jcr:Position}">
@@ -684,6 +688,7 @@
 </div>
 
 </sly>
+
 <sly data-sly-test="${properties.view == 'no-feature-rel3'}">
 </sly>
 
@@ -827,8 +832,6 @@
 
 </sly>
 
-
-
 <sly data-sly-test="${properties.view == 'image-rel3'}">
 <div class="category-highlight_rel3">
 <div class="cardHolder">
@@ -842,7 +845,6 @@
 		</div>
  </div>
 </sly>
-
 
 <sly data-sly-test="${properties.view == 'related-products-with-images-cat-rel3'}">
     <div  class="">
@@ -995,8 +997,6 @@
     </div>
 </sly>
 
-
-
 <sly data-sly-test="${properties.view == 'text-article-cat-rel3'}">
 	<div class="container-fixed  component-padding largePaddingTop" id="primary-content-article-list-single-feature">
         <div class='aem-Grid aem-Grid--12 noFeature'>
@@ -1030,7 +1030,6 @@
         </div>
     </div>
 </sly>
-
 
 <sly data-sly-test="${properties.view == 'Image-list-career-rel3'}">
 	<div class="container-fixed container-padding extraLargePaddingTop Image-list-career">
@@ -1105,8 +1104,6 @@
 				</div>					
 
 </sly>
-
-
 
 <sly data-sly-test="${properties.view == 'Tile-link-career-rel3'}">
 	<div class="container-fixed tile-link component-padding largePaddingTop">

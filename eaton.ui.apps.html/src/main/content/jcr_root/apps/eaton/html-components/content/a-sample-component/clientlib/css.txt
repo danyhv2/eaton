@@ -1,3 +1,4 @@
 #base=css
 
 a-sample-component.css
+a-sample-component.less

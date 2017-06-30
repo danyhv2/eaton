@@ -1,6 +1,6 @@
 #base=css
 no-Feature.css
-products.css
+products.less
 relatedItems.css
 title-text.css
 descriptiveFeature.css
