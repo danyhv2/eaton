@@ -1,4 +1,25 @@
+## Project Folders
 /AEM_6.2_Quickstart.jar
 /license.properties
 /crx-quickstart
+node_modules
+
+
+## OS Files
+._*
 *.DS_Store
+
+
+## IDE's Folders
+.idea
+nbproject
+.vscode
+.atomignore
+
+
+## Auto Generated Files
+*.map
+.sass-cache
+/eaton.core/target
+/eaton.ui.apps/target
+/eaton.ui.apps.html/target
