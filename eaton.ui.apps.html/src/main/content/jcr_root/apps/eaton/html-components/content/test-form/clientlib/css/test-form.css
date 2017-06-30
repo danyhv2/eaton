@@ -1,0 +1,11 @@
+
+.form-container {
+		padding: 30px;
+}
+
+.form-container__btn {
+		border: 3px solid #005EB8;
+		padding: 8px 24px;
+		color: #005EB8;
+		background: transparent;
+}
