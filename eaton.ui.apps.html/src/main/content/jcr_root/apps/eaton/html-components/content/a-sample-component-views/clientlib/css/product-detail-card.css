@@ -1,37 +1,35 @@
 .intro-image{
-width:553px !important;
-    height:553px !important;
+    width: 553px !important;
+    height: 553px !important;
 }
+
 .product-family-divider{
     background-color: #005EB8;
-	height:4px;
-    width:10%;
+    height: 4px;
+    width: 10%;
 }
 .requestQuoteList{
-list-style:none;
+    list-style: none;
 }
 
-
 .newWinIcon{
-width:20px;
-margin-right:10px;
+    width: 20px;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 992px) {
-.intro-image{
-width:750px !important;
-    height:750px !important;
-}
+    .intro-image{
+        width: 750px !important;
+        height: 750px !important;
+    }
 
     .product-detail-card-family h1{
-margin-top:60px !important;
+        margin-top: 60px !important;
+    }
+    .product-detail-card-family .btn{
+        margin-top: 60px !important;
+    }
+    .requestQuoteList{
+        margin-top: 60px;
+    }
 }
-.product-detail-card-family .btn{
-margin-top:60px !important;
-}
-.requestQuoteList{
-margin-top:60px;
-}
-
-        }
-
