@@ -1,0 +1,14 @@
+<sly data-sly-test="${wcmmode.edit}">Responsive Image</sly>
+<picture class="responsive-image-component">
+    <source data-sly-test="${properties.desktopImage != '' && properties.desktopImage != null}"
+            media="(min-width: 1024px)"
+            srcset="${properties.desktopImage}" />
+    <source data-sly-test="${properties.tabletImage != '' && properties.tabletImage != null}"
+            media="(min-width: 600px) and (max-width: 991px)"
+            srcset="${properties.tabletImage}" />
+    <source data-sly-test="${properties.mobileImage != ''}"
+            media="(max-width: 480px)"
+            srcset="${properties.mobileImage}" />
+    <img src="${properties.mobileImage}" alt="${properties.alt}"/>
+</picture>
+

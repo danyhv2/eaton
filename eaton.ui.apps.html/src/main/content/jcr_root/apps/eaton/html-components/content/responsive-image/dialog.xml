@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1 jcr:primaryType="cq:Panel"
+                title="Images">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <desktopImage
+                        jcr:primaryType="cq:Widget"
+                        allowUpload="{Boolean}false"
+                        ddGroups="[media]"
+                        fieldLabel="Desktop Image"
+                        fileNameParameter="./desktopFileName"
+                        fileReferenceParameter="./desktopImage"
+                        mimeTypes="*.jpg;*.png"
+                        name="./desktopImage"
+                        xtype="smartfile"/>
+                    <tabletImage
+                        jcr:primaryType="cq:Widget"
+                        allowUpload="{Boolean}false"
+                        ddGroups="[media]"
+                        fieldLabel="Tablet Image"
+                        fileNameParameter="./tabletFileName"
+                        fileReferenceParameter="./tabletImage"
+                        mimeTypes="*.jpg;*.png"
+                        name="./tabletImage"
+                        xtype="smartfile"/>
+                    <mobileImage
+                        jcr:primaryType="cq:Widget"
+                        allowUpload="{Boolean}false"
+                        ddGroups="[media]"
+                        fieldLabel="Mobile Image"
+                        fileNameParameter="./mobileFileName"
+                        fileReferenceParameter="./mobileImage"
+                        mimeTypes="*.jpg;*.png"
+                        name="./mobileImage"
+                        xtype="smartfile"/>
+                    <alt
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Alt Text"
+                        name="./alt"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>
