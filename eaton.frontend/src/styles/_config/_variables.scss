@@ -16,4 +16,4 @@ $bp__xl: 1440px;
 //--------------
 $base__font-size: 16px;
 $base__line-height: 1.5;
-$base__font-family: map-get($font-en, font__primary);
+$base__font-family: get-locale-font();

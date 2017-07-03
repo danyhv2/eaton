@@ -40,6 +40,6 @@ $locales: (
  Getter for retrieving Font Families
  @param {String} $locale Locale Value to retrieve properties for
 */
-@function get-locale-font($locale : 'en') {
-    @return map-deep-get($locales, $locale, 'font__primary');
+@function get-locale-font($locale : 'en', $font-property: 'font__primary') {
+    @return map-deep-get($locales, $locale, $font-property);
 }
