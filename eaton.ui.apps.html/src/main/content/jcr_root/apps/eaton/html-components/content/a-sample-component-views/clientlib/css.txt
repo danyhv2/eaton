@@ -1,4 +1,3 @@
 #base=css
 
-product-detail-card.css
-feature-block.css
+eaton-component.css
