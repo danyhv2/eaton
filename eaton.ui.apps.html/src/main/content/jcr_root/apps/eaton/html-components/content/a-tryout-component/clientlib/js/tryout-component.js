@@ -5,20 +5,20 @@ App.Hero = (function () {
 	var componentClass = $('.testimony');
     var testimonyIndex;
     
-    var testimonies = [{
+    var testimonials = [{
             'testimonyPerson' : 'John Smith',
             'testimonyPosition' : 'CEO, Advance Inc.',
-            'testtimonyContent' : '"Eaton excelent products has improved our efficiency as a company and is helping us to maintaing a level of quality for our services that has been greatly praised by our clients."'
+            'testimonyContent' : '"Eaton excelent products has improved our efficiency as a company and is helping us to maintaing a level of quality for our services that has been greatly praised by our clients."'
         },
         {
             'testimonyPerson' : 'Alice Jones',
             'testimonyPosition' : 'IT Engineer, SkyTech Inc.',
-            'testtimonyContent' : 'Eaton products has made our life in the IT infrastructure side very simple and stress free.'
+            'testimonyContent' : 'Eaton products has made our life in the IT infrastructure side very simple and stress free.'
         },
         {
             'testimonyPerson' : 'Michael Fritz',
             'testimonyPosition' : 'Facility Manager, Blue Code Inc.',
-            'testtimonyContent' : 'I can not recommend Eaton enough, customer support, product quality, etc. They are light years ahead from any other company in their field.'
+            'testimonyContent' : 'I can not recommend Eaton enough, customer support, product quality, etc. They are light years ahead from any other company in their field.'
         }
     ];
 
@@ -38,9 +38,9 @@ App.Hero = (function () {
         else {
             testimonyIndex = testimonyIndex + 1;
         }
-        $("#testimonyPerson").text(testimonies[testimonyIndex]['testimonyPerson']);
-        $("#testimonyPosition").text(testimonies[testimonyIndex]['testimonyPosition']);
-        $("#testimonyContent").text(testimonies[testimonyIndex]['testtimonyContent']);
+        $("#testimonyPerson").text(testimonials[testimonyIndex]['testimonyPerson']);
+        $("#testimonyPosition").text(testimonials[testimonyIndex]['testimonyPosition']);
+        $("#testimonyContent").text(testimonials[testimonyIndex]['testimonyContent']);
         return false;
     };
 
