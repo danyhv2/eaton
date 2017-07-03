@@ -1,2 +1,3 @@
 #base=js
-product-detail-card.js
+
+eaton-component.js
