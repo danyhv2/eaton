@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Advanced Text"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <herotext
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Component Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <view
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="View"
+                                name="./view">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <product-detail-card-family
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Product Detail Card-Family"
+                                        value="product-detail-card-family"/>
+                                    <feature-block-1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="feature-block-1"
+                                        value="feature-block-1"/>
+                                    <feature-block-2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="feature-block-2"
+                                        value="feature-block-2"/>
+                                    <feature-block-3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="feature-block-3"
+                                        value="feature-block-3"/>
+                                    <product-detail-card-sku
+                                        jcr:primaryType="nt:unstructured"
+                                        text="product-detail-card-sku"
+                                        value="product-detail-card-sku"/>
+                                    <product-detail-card-rel3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Product Detail Card Release3"
+                                        value="Product-Detail-Card-rel3"/>
+                                    <feature-block-rel3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Feature Block Release3"
+                                        value="Feature-Block-rel3"/>
+                                </items>
+                            </view>
+                        </items>
+                    </column>
+                </items>
+            </herotext>
+        </items>
+    </content>
+</jcr:root>
