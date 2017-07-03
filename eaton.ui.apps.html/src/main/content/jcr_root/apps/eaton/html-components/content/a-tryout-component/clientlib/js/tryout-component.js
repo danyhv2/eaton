@@ -24,7 +24,7 @@ App.Hero = (function () {
 
 	var init = function () {
         testimonyIndex = 0;
-        $("#testimonyContainer").on('click', '#seeMoreTestimonies', function (event) {
+        $("#testimonyContainer").on('click', '#seeMoreTestimonials', function (event) {
             showNextTestimony();
             event.preventDefault();
         });
@@ -32,28 +32,17 @@ App.Hero = (function () {
 	};
     
     var showNextTestimony = function () {
-        if (testimonyIndex === 2) {
-            testimonyIndex = 0;
-        }
-        else {
-            testimonyIndex = testimonyIndex + 1;
-        }
-        $("#testimonyPerson").text(testimonials[testimonyIndex]['testimonyPerson']);
-        $("#testimonyPosition").text(testimonials[testimonyIndex]['testimonyPosition']);
-        $("#testimonyContent").text(testimonials[testimonyIndex]['testimonyContent']);
+        testimonyIndex = testimonyIndex === 2 ? 0 : testimonyIndex + 1;
+        $('#testimonyContentContainer').children().each(function (index, element) {
+            $(element).animate({opacity : 0}).queue(function () { 
+                $(element).text(testimonials[testimonyIndex][$(element).attr('id')]).dequeue();
+            }).animate({opacity : 1});
+        });
         return false;
     };
-
-	var callMe = function (str) {
-		console.log(str);
-	};
-	
-	//if containing DOM element is found expose getDate() method
-	if (componentClass.length > 0) {
+    
+    if (componentClass.length > 0) {
 		init();
-		return {
-			callMe : callMe
-		};
 	}
     else {
         console.log('Component not found on current page.');
