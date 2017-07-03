@@ -1,14 +1,112 @@
 <sly data-sly-test="${wcmmode.edit}">Sample Component with Views</sly>
 <!-- Begin: Sample Component with Views -->
 <sly data-sly-test="!${wcmmode.edit}">
-    <div class="container-padding container-fixed">
-      <div class="aem-Grid aem-Grid--12">
-        <div class="aem-GridColumn aem-GridColumn--default--12 eaton-component">
+    <div class="container container-padding container-fixed">
+      <div class="row">
+        <div class="col-xs-12 eaton-component">
                <h2 class="eaton-component--heading">Sample Component with multiple views.</h2>
                <p class="eaton-component--small-text">Currently viewing variation -  <span>${properties.view}</span></p>
                <p class="eaton-component--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi condimentum cursus ultrices. Nunc facilisis, leo eu scelerisque euismod, velit est viverra orci, eu semper eros ante et turpis. Mauris vitae quam eget eros malesuada convallis in eu quam.</p>
           </div>
       </div>
+
+      <!--View - Product Detail Card Family / Sku -->
+      <div data-sly-test="${properties.view == 'product-detail-card-family' || 'product-detail-card-sku'}">
+     	   <div class="product-detail-card-family container-padding smallMarginTop">
+         		<div class="row">
+           			<div class="col-xs-12 ${properties.view == 'product-detail-card-sku' ? 'col-md-6 col-md-push-6' : 'col-md-6'}">
+               				<h3>Product Detail Card Family</h3>
+               				<div class="product-family-divider smallMarginTop"></div>
+               				<div class="body-copy smallMarginTop">Reliable. Versatile. Powerful. Efficient. With double-conversion topology for constant power conditioning and up to 93% efficiency, the Eaton 9PX 700-3000 VA models support your overall goal of business continuity. It's built for scalable deployment, features a graphical LCD for local status updates and integrates with virtualized environments.Works as a rackmount or tower unit and can be combined to support all types of configurations.LCD display provides 13 measurements, 25 settings, 15 control functionalities, 6 points of identification and optional</div>
+           			</div>
+           			<div class="col-xs-12 ${properties.view == 'product-detail-card-sku' ? 'col-md-6 col-md-pull-6' : 'col-md-6'}">
+           					  <img class="img-responsive intro-image" src="../../../../../../../content/dam/eaton/images/intro_image.png" alt="No image"/>
+           			</div>
+         		</div>
+       		<div class="row smallMarginTop">
+       			<div class="col-xs-12 col-md-7">
+       					<div class="col-xs-12">
+       						  <button type="button" class="btn primary-button-dark">Request A Quote</button>
+       					</div>
+       					<div class="col-xs-12 smallMarginTop">
+         						<ul class="requestQuoteList component-padding noMargin">
+             						<li class="smallPaddingBottom"><a class="small-link" href="#">Interact with the 9PX1500RTN</a></li>
+             						<li class="smallPaddingBottom"><a class="small-link" href="#"><img src="../../../../../../../content/dam/eaton/images/new_win.png" class="newWinIcon">View Spicework Reviews</a></li>
+             						<li class="smallPaddingBottom"><a class="small-link" href="#"><img src="../../../../../../../content/dam/eaton/images/new_win.png" class="newWinIcon">View StorageReviews.com reviews</a></li>
+       					     </ul>
+       					</div>
+       			</div>
+
+       			<div class="clear"></div>
+       		</div>
+       	</div>
+    </div>
+
+    <!--View - Feature Block 1 -->
+     <sly data-sly-test="${properties.view == 'feature-block-1'}">
+     	   <div class="extraLargeMarginTop container-padding feature-block-holder">
+     		<div class="aem-Grid aem-Grid--12">
+     			<div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+
+     				<h2>Core features</h2>
+     				<div class="body-copy smallMarginTop">
+     					Works as a rackmount or tower unit and can be combined to support all types of configurations.LCD display provides 13 measurements, 25 settings, 15 control functionalities, 6 points of identification and optional password protection.Includes remote power off (RPO) and remote on/off (ROO).Online double conversion topology works well in IT, edge networks, industrial automation, healthcare, K-12 and more.
+
+     				</div>
+
+     			</div>
+     			<div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+     				<img src="../../../../../../../content/dam/eaton/images/feature_block_image.png" class="img-responsive featureBlockImage">
+     			</div>
+     		</div>
+     	</div>
+     </sly>
+
+     <!--View - Feature Block 2 -->
+     <sly data-sly-test="${properties.view == 'feature-block-2'}">
+        <div class="container-full feature-block-holder">
+     	<div class="aem-Grid aem-Grid--12">
+     		<div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+     			<img src="../../../../../../../content/dam/eaton/images/server.png" class="img-responsive serverImage">
+     		</div>
+     		<div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 featureBlockBottomRight">
+     			<div class="extraLargePaddingTop extraLargePaddingBottom mediumPaddingLeft mediumPaddingRight">
+                     <h2>Virtualization-ready for seamless integrations</h2>
+     				<div class="body-copy light smallMarginTop">
+     						Integrates seamlessly with Eaton's Intelligent Power Manager (IPM) software for continuous uptime of servers and virtual machines.
+     						Works with Eaton's PredictPulse remote monitoring service for a second set of expert eyes to keep tabs on your equipment 24/7 and call you if there's a critical alarm.
+     						Integrates with Eaton network closet and server room solutions.
+
+     				</div>
+     				</div>
+     		</div>
+     	</div>
+     </div>
+     </sly>
+
+    <!--View - Feature Block 3 -->
+     <sly data-sly-test="${properties.view == 'feature-block-3'}">
+         <div class="largeMarginTop container-padding feature-block-holder">
+     	<div class="aem-Grid aem-Grid--12">
+     		<div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+     			<h2>Energy efficiency</h2>
+     			<div class="body-copy smallMarginTop">
+     				Built in energy metering.
+     				Extends battery service life by 50% with ABM technology.
+     				Maximizes availability with extended battery modules for more runtime and optional maintenance bypass.
+     				Helps save money and protect the environment through energy efficient operation (ENERGY STAR &#174; qualified UPS).
+     				<a href="#">Learn more about Energy Star &#174;</a>
+     			</div>
+
+     		</div>
+     		<div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+     			<img src="../../../../../../../content/dam/eaton/images/energy.png" class="featureBlockImage">
+     		</div>
+     	</div>
+     </div>
+     </sly>
+
+
   </div>
 </sly>
 <!-- End: Sample Component with Views -->
