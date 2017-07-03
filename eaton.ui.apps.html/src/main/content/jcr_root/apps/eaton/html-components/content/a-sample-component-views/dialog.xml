@@ -30,18 +30,6 @@
                                     jcr:primaryType="nt:unstructured"
                                     text="Product Detail Card - Sku"
                                     value="product-detail-card-sku"/>
-                                <feature-block-1
-                                    jcr:primaryType="nt:unstructured"
-                                    text="Feature Block - 1"
-                                    value="feature-block-1"/>
-                                <feature-block-2
-                                    jcr:primaryType="nt:unstructured"
-                                    text="Feature Block - 2"
-                                    value="feature-block-2"/>
-                                <feature-block-3
-                                    jcr:primaryType="nt:unstructured"
-                                    text="Feature Block - 3"
-                                    value="feature-block-3"/>
                             </options>
                         </view>
                 </items>
