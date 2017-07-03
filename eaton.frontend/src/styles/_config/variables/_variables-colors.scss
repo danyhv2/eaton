@@ -1,8 +1,27 @@
 
 // Colors
+// Some color names are simplified to match the Toolkit
 //--------------
-$color__primary-1: #000;
-$color__primary-2: #333;
-$color__primary-3: #666;
-$color__primary-4: #999;
-$color__primary-5: #ccc;
+
+$eaton-blue:        #005EB8;
+
+// Primary Grays
+$primary-gray1:     #333F48;  //Gray1
+$primary-gray2:     #5B6770;  //Gray2
+$primary-gray3:     #98A4AE;  //Gray3
+
+//Secondary Grays
+$secondary-gray1:    #CCD2D7;  //Gray5
+$secondary-gray2:    #EEF0F2;  //Gray6
+$secondary-gray3:    #F8F8F8;  //Gray7
+
+//Accent Colors
+$accent-darkblue:    #003865;  //Dark Blue
+$accent-aqua:        #00B2A9;  //Aqua
+$accent-orange:      #ED8B00;  //Orange
+
+//System colors
+$black:              #000000;
+$white:              #FFFFFF;
+$green:              #4C8C2B;
+$red:                #9D2235;
