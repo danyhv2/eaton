@@ -8,7 +8,52 @@
         <items jcr:primaryType="cq:WidgetCollection">
             <tab1
                 jcr:primaryType="cq:Panel"
-                title="Tab - Classic UI"/>
+                title="Component Properties - Classic UI"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <view
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="false"
+                            defaultValue="product-detail-card-family"
+                            fieldDescription="Determine which variation of component to view"
+                            fieldLabel="View"
+                            fieldSubLabel=""
+                            name="./view"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <product-detail-card-family
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Product Detail Card-Family"
+                                    value="product-detail-card-family"/>
+                                <product-detail-card-sku
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Product Detail Card - Sku"
+                                    value="product-detail-card-sku"/>
+                                <product-detail-card-rel3
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Product Detail Card - Release3"
+                                    value="Product-Detail-Card-rel3"/>
+                                <feature-block-1
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Feature Block - 1"
+                                    value="feature-block-1"/>
+                                <feature-block-2
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Feature Block - 2"
+                                    value="feature-block-2"/>
+                                <feature-block-3
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Feature Block - 3"
+                                    value="feature-block-3"/>
+                                <feature-block-rel3
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Feature Block - Release3"
+                                    value="Feature-Block-rel3"/>
+                            </options>
+                        </view>
+                </items>
+            </tab1>
         </items>
     </items>
 </jcr:root>
