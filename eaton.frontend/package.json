@@ -20,8 +20,8 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8",
-    "node-sass-globbing": "^0.0.23",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "node-sass-globbing": "^0.0.23"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.7"
