@@ -8,10 +8,16 @@ $locales: (
         font__primary: Eaton,
         font__secondary: Arial,
         h1: (
-          font: '',
-          desktop: 'xx',
+          font: 'Eaton Medium',
+          desktop: (
+              font-size: '',
+              line-height: '',
+          ),
           tablet: 'xx',
-          mobile: 'xx'
+          mobile: (
+              font-size: '',
+              line-height: '',
+          )
         )
     ),
     jp: (
