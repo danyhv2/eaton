@@ -14,6 +14,9 @@ const sassToCSS = function(gulp, CONFIG) {
     // Compile SASS to CSS
     gulp.src([CONFIG.paths.styles.srcFolder + '/**/*.scss'])
       .pipe(sass({
+        includePaths: [
+          'node_modules'
+        ],
         outputStyle: 'compact',
         importer: sassGlobbing
       }))

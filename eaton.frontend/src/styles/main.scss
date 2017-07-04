@@ -4,9 +4,9 @@
 @import '_config/mixins/**/*.scss';
 
 
-// Import Base Styles (Normalize, HTML Tags) in specific order
+// Import Base Styles in specific order
 //--------------
-@import 'base/normalize';
+// @import 'base/normalize'; // NOTE: This project is using the 'normalize' file that bootstrap includes
 @import 'base/fonts';
 @import 'base/typography';
 
