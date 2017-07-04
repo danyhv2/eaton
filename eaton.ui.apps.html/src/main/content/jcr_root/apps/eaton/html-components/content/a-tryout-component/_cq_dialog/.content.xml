@@ -28,69 +28,18 @@
                             <view
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Choose the view"
                                 fieldLabel="View"
                                 name="./view">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <sctill
+                                    <lightview
                                         jcr:primaryType="nt:unstructured"
-                                        text="sctill"
-                                        value="sctill"/>
-                                    <po
+                                        text="Light view"
+                                        value="lightview"/>
+                                    <darkview
                                         jcr:primaryType="nt:unstructured"
-                                        text="po"
-                                        value="po"/>
-                                    <po-button
-                                        jcr:primaryType="nt:unstructured"
-                                        text="po-button"
-                                        value="po-button"/>
-                                    <pcto
-                                        jcr:primaryType="nt:unstructured"
-                                        text="pcto"
-                                        value="pcto"/>
-                                    <pcti
-                                        jcr:primaryType="nt:unstructured"
-                                        text="pcti"
-                                        value="pcti"/>
-                                    <pcts
-                                        jcr:primaryType="nt:unstructured"
-                                        text="pcts"
-                                        value="pcts"/>
-                                    <pctpp
-                                        jcr:primaryType="nt:unstructured"
-                                        text="pctpp"
-                                        value="pctpp"/>
-                                    <pctpc
-                                        jcr:primaryType="nt:unstructured"
-                                        text="pctpc"
-                                        value="pctpc"/>
-                                    <pctmic
-                                        jcr:primaryType="nt:unstructured"
-                                        text="pctmic"
-                                        value="pctmic"/>
-                                    <pctdic
-                                        jcr:primaryType="nt:unstructured"
-                                        text="pctdic"
-                                        value="pctdic"/>
-                                    <sctir
-                                        jcr:primaryType="nt:unstructured"
-                                        text="sctir"
-                                        value="sctir"/>
-                                    <scts
-                                        jcr:primaryType="nt:unstructured"
-                                        text="scts"
-                                        value="scts"/>
-                                    <scto
-                                        jcr:primaryType="nt:unstructured"
-                                        text="scto"
-                                        value="scto"/>
-                                    <ft
-                                        jcr:primaryType="nt:unstructured"
-                                        text="ft"
-                                        value="ft"/>
-                                    <swi
-                                        jcr:primaryType="nt:unstructured"
-                                        text="swi"
-                                        value="swi"/>
+                                        text="Dark view"
+                                        value="darkview"/>
                                 </items>
                             </view>
                         </items>

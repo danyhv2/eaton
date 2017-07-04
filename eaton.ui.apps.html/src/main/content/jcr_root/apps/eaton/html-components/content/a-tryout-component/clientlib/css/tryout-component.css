@@ -6,3 +6,11 @@ p {
     padding: 10px 0;
     color: palevioletred;
 }
+
+.lightview {
+    background-color: floralwhite;
+}
+
+.darkview {
+    background-color: gainsboro;
+}
