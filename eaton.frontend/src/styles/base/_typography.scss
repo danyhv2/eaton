@@ -12,11 +12,11 @@ $base__font-family: get-locale-font();
 $secondary__font-family: get-locale-font('font__secondary');
 
 body {
-    color: $primary-gray1;
-    font-family: $secondary__font-family;
-    .dark-theme & {
-        color: $white;
-    }
+  color: $color__primary-gray1;
+  font-family: $secondary__font-family;
+  .dark-theme & {
+    color: $color__white;
+  }
 }
 
 .body-copy, .body-copy-link {
@@ -36,16 +36,21 @@ body {
 //---------------------
 
 .body-link {
-  color: $eaton-blue;
+  color: $color__primary-blue;
   cursor: pointer;
+
   &:hover, &:focus, &:active {
-      color: $accent-darkblue; //TBD
+    color: $color__accent-darkblue; //TBD
   }
+
   .dark-theme & {
-      color: $white;
-      &:hover, &:focus, &:active {
-          color: $white; //TBD
-      }
+    color: $color__white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__white; //TBD
+    }
   }
 }
 
