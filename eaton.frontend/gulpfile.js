@@ -1,11 +1,8 @@
 'use strict';
 
-/*
-* Gulp Tasks
-*/
 const gulp = require('gulp');
-// const gutil = require('gulp-util');
 
+// Environment Constants
 const CONFIG = require('./config/eaton-config');
 
 
