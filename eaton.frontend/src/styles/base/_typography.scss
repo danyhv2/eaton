@@ -1,78 +1,82 @@
 //-----------------------------------
 // Global Typography definition
 //-----------------------------------
+// Typography
+//--------------
+@import '../_config/variables/variables-colors';
+@import '../_config/variables/variables-locale';
 
-body { }
+$base__font-size: 16px;
+$base__line-height: 1.5;
+$base__font-family: get-locale-font();
+$secondary__font-family: get-locale-font('font__secondary');
 
-p { }
-
-strong { }
-
-em { }
-
-b { }
-
-
-h1,
-h2,
-h3,
-.heading-h3 {
-  font-family: 'Eaton', Arial;
+body {
+    color: $primary-gray1;
+    font-family: $secondary__font-family;
+    .dark-theme & {
+        color: $white;
+    }
 }
 
-
-h4,
-h5 {
-  font-family: Arial;
+.body-copy, .body-copy-link {
+  font-size: 1.5em;
+  line-height: 2.375em;
 }
 
+.body-copy-small, .body-small-link {
+  font-size: 1.125em;
+  line-height: 1.5em;
+}
 
+// Body Link
+// Used with Body Copy & Body Small Links for link styles
+// <a href="#" class="body-link body-small-link">...</a>
+//---------------------
 
-h1,
-.heading-h1 {
+.body-link {
+  color: $eaton-blue;
+  cursor: pointer;
+  &:hover, &:focus, &:active {
+      color: $accent-darkblue; //TBD
+  }
+  .dark-theme & {
+      color: $white;
+      &:hover, &:focus, &:active {
+          color: $white; //TBD
+      }
+  }
+}
+
+// Headings
+// ----------------
+
+h1, h2, h3,
+.heading-h1, .heading-h2, .heading-h3 {
+  font-family: $base__font-family;
+}
+
+h4, h5,
+.heading-h5, .heading-h6 {
+  font-family: $secondary__font-family;
+}
+
+h1, .heading-h1 {
   font-size: 2rem;
 }
 
-h2,
-.h2 {
+h2, .heading-h2 {
   font-size: 1.8rem;
 }
 
-h3,
-.h3 {
+h3, .heading-h3 {
 
 }
 
-h4,
-.h4 {
+h4, .heading-h4 {
 
 }
 
-h5,
-.heading--h5 {
+h5, .heading-h5 {
 
 }
-
-
-.body-copy {
-
-}
-
-.body-copy-large {
-
-}
-
-.body-copy-small {
-
-}
-
-.body-copy-link {
-
-}
-
-
-// @include media-tablet {
-//   .h1 {
-//
-//   }
-// }
