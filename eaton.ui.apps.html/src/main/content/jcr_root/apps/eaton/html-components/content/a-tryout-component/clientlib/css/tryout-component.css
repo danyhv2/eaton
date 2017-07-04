@@ -14,3 +14,7 @@ p {
 .darkview {
     background-color: gainsboro;
 }
+
+.quote {
+    font-style: italic;
+}

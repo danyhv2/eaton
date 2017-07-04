@@ -13,12 +13,12 @@ App.Hero = (function () {
         {
             'testimonyPerson' : 'Alice Jones',
             'testimonyPosition' : 'IT Engineer, SkyTech Inc.',
-            'testimonyContent' : 'Eaton products has made our life in the IT infrastructure side very simple and stress free.'
+            'testimonyContent' : '"Eaton products has made our life in the IT infrastructure side very simple and stress free."'
         },
         {
             'testimonyPerson' : 'Michael Fritz',
             'testimonyPosition' : 'Facility Manager, Blue Code Inc.',
-            'testimonyContent' : 'I can not recommend Eaton enough, customer support, product quality, etc. They are light years ahead from any other company in their field.'
+            'testimonyContent' : '"I can not recommend Eaton enough, customer support, product quality, etc. They are light years ahead from any other company in their field."'
         }
     ];
 
