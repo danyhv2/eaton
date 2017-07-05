@@ -8,8 +8,12 @@
 
 $base__font-size: 16px;
 $base__line-height: 1.5;
-$base__font-family: get-locale-font();
-$secondary__font-family: get-locale-font('font__secondary');
+
+// TODO: Sass function has some issues when is compiled, needs to be reviewd
+// $base__font-family: get-locale-font();
+// $secondary__font-family: get-locale-font('font__secondary');
+$base__font-family: 'Eaton', Arial, sans-serif;
+$secondary__font-family: 'Arial', sans-serif;
 
 body {
   color: $color__primary-gray1;
