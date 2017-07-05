@@ -20,12 +20,13 @@
                     <reference
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        class="path-readonly"
                         fieldLabel="Reference"
                         name="./reference"
                         predicate="nosystem"
                         required="true"
                         rootPath="/content/eaton"/>
-                     <column
+                    <column
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
@@ -65,6 +66,7 @@
                                                 <linkPath
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    class="path-readonly"
                                                     fieldLabel="Link Path"
                                                     name="./linkPath"
                                                     required="true"

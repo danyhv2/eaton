@@ -6,19 +6,19 @@
 	 margin-right: 20px;
     padding-right: 0px;
 	/*margin-bottom:15px;*/
-	font-size: 16px;
+	
 }
 .infoContainer .heading{
 	font-weight: bold;
     color: #0067c6;
-	font-size: 17px;
+	/* font-size: 17px; */
 }
 
 .infoContainer h4{
 	text-transform: uppercase;
     margin-bottom: 25px;
     margin-top: 20px;
-	font-size: 16px;
+	/* font-size: 16px; */
     font-weight: bold;
 }
 .infoContainer p{

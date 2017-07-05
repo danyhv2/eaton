@@ -8,7 +8,7 @@
 	width:100%;
 }
 
-.mb-150{
+.productTabMargin{
 	margin-bottom:150px;
 }
 
@@ -215,6 +215,10 @@
 	.productTabsFamily .tabHolder {
 		margin-left: 0px;
 	}
+
+	.mb-150{
+	margin-bottom:0px;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -279,6 +283,15 @@
 	.tabHolder{
 	border-top:1px solid #eef0f2;
 	}
+
+.removemarginMobile{
+margin-bottom:0px !important;
+}
+
+.removeFixtabForMobile
+{
+	position:static !important;
+}
 }
 
 
