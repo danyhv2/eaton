@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Slider Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <fieldset
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Slider Options"
+                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                  <indicators
+                                      jcr:primaryType="nt:unstructured"
+                                      sling:resourceType="granite/ui/components/foundation/form/select"
+                                      fieldLabel="Show slider indicators"
+                                      fieldDescription="Determine which variation of component to view"
+                                      name="./indicators">
+                                      <items jcr:primaryType="nt:unstructured">
+                                          <indicators-yes
+                                              jcr:primaryType="nt:unstructured"
+                                              text="Yes, please"
+                                              value="yes"/>
+                                          <indicators-no
+                                              jcr:primaryType="nt:unstructured"
+                                              text="Nope"
+                                              value="no"/>
+                                      </items>
+                                    </indicators>
+                                    <pages
+                                      jcr:primaryType="nt:unstructured"
+                                      sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                      fieldDescription="Click '+' to add a new slider item"
+                                      fieldLabel="Slider items">
+                                      <field
+                                          jcr:primaryType="nt:unstructured"
+                                          sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                          fieldLabel="Path"
+                                          rootPath="/content"
+                                          name="./items">
+                                      </field>
+                                    </pages>
+                                    <sliders
+                                      jcr:primaryType="nt:unstructured"
+                                      sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                      fieldDescription="Click '+' to add a new slider item"
+                                      fieldLabel="Slider images">
+                                      <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                        class="cq-droptarget"
+                                        fieldLabel="Image"
+                                        fileNameParameter="./productImageName"
+                                        fileReferenceParameter="./productImageRef"
+                                        mimeTypes="[image]"
+                                        multiple="{Boolean}false"
+                                        name="./productImage"
+                                        title="Upload Image"
+                                        uploadUrl="${suffix.path}"
+                                        useHTML5="{Boolean}true">
+                                      </field>
+                                    </sliders>
+                                </items>
+                            </column>
+                        </items>
+                    </fieldset>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

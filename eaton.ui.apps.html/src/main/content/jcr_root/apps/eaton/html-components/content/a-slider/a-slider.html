@@ -1,0 +1,39 @@
+<sly data-sly-test="${wcmmode.edit}">Slider</sly>
+<!--/* BEGIN Slider bootstrap component */ -->
+<!--/*
+
+*/-->
+<sly data-sly-test="!${wcmmode.edit}">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol data-sly-test="${properties.indicators == 'yes'}"
+        class="carousel-indicators">
+        <sly data-sly-list="${properties.items}" >
+          <li data-target="#carousel-example-generic" data-slide-to="${itemList.index}" class="active"></li>
+        </sly>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <sly data-sly-list="${properties.items}" >
+          <div class="item ${itemList.first && 'active'}">
+            ${item}
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+      </sly>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</sly>
+<!--/* END Slider Component with Views */ -->
