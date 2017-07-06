@@ -23,13 +23,22 @@ const watch = function (gulp, CONFIG) {
   ], ['css:components']
   );
 
-  // Watch: JS
-  // TBD...
+
+  // Watch: JS Global
   gulp.watch([
-    path.join(CONFIG.paths.js.srcFolder, '/**/*.js'),
-    path.join(CONFIG.paths.js.srcFolder, '/**/*.jsx')
-  ],
-  ['js']
+    CONFIG.paths.src.global + '/**/*.js'
+  ], ['js:global']
+  );
+
+  // Watch: JS Components
+  gulp.watch([
+    CONFIG.paths.src.components.content + '/**/js/*.js',
+    CONFIG.paths.src.components.structure + '/**/js/*.js',
+
+    // NOTE: Ignore OLD JS Files inside 'clientlibs' folders
+    '!' + CONFIG.paths.src.components.content + '/**/clientlib/js/*.js',
+    '!' + CONFIG.paths.src.components.structure + '/**/clientlib/js/*.js'
+  ], ['js:components']
   );
 
 };
