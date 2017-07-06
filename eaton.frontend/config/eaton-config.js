@@ -16,17 +16,7 @@ module.exports = {
     destAEM: {
       global:       '../eaton.ui.apps.html/src/main/content/jcr_root/etc/designs/eaton-static/clientlibs/global',
       components:   '../eaton.ui.apps.html/src/main/content/jcr_root/etc/designs/eaton-static/clientlibs/components'
-    },
-
-    // styles: {
-    //   srcFolder: './src/styles',
-    //   destFolder:
-    // },
-    //
-    // js: {
-    //   srcFolder: './src/js',
-    //   destFolder: './build/js'
-    // }
+    }
 
   },
 }
