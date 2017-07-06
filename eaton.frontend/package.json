@@ -5,7 +5,11 @@
   "license": "MIT",
   "author": "Razorfish",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "maven": "cd ../ && mvn -PautoInstallPackage clean install",
+    "aemdev": "gulp build:dev",
+    "preaemprod": "npm install --no-optional",
+    "aemprod": "gulp build:prod"
   },
   "repository": {
     "type": "git",
