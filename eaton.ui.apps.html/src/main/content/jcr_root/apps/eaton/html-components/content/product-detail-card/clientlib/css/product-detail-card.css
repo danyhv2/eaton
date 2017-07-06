@@ -1,3 +1,12 @@
+.capitalize:first-letter{
+text-transform:capitalize;
+}
+
+.capitalize{
+text-transform:lowercase;
+}
+
+
 .intro-image{
 width:553px !important;
     height:553px !important;

@@ -18,221 +18,108 @@
                 <items jcr:primaryType="nt:unstructured">
                     <view
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/container">
-                        <layout
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                            margin="{Boolean}false"/>
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        class="cq-dialog-dropdown-showhide"
+                        cq-dialog-dropdown-showhide-target=".title-text-hide-show"
+                        fieldLabel=" Header View&#xa;Type"
+                        name="./view">
                         <items jcr:primaryType="nt:unstructured">
-                            <column
+                            <header-only
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <view
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/select"
-                                        class="cq-dialog-dropdown-showhide"
-                                        cq-dialog-dropdown-showhide-target=".title-text-hide-show"
-                                        fieldLabel=" Header View&#xa;Type"
-                                        name="./view">
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <header-only
-                                                jcr:primaryType="nt:unstructured"
-                                                text="Header only"
-                                                value="header-only"/>
-                                            <header-with-line
-                                                jcr:primaryType="nt:unstructured"
-                                                text="Header With Line"
-                                                value="header-with-line"/>
-                                            <header-with-by-line
-                                                jcr:primaryType="nt:unstructured"
-                                                text="Header With By Line"
-                                                value="header-with-by-line"/>
-                                        </items>
-                                    </view>
-                                </items>
-                            </column>
+                                text="Header only"
+                                value="header-only"/>
+                            <header-with-line
+                                jcr:primaryType="nt:unstructured"
+                                text="Header With Line"
+                                value="header-with-line"/>
+                            <header-with-by-line
+                                jcr:primaryType="nt:unstructured"
+                                text="Header With By Line"
+                                value="header-with-by-line"/>
                         </items>
                     </view>
-                    <transHeaderTitle
+                    <transCatLabel
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/container">
-                        <layout
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                            margin="{Boolean}false"/>
-                        <items jcr:primaryType="nt:unstructured">
-                            <column
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <transHeaderTitle
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                        fieldLabel="Header Title"
-                                        name="./jcr:title"/>
-                                </items>
-                            </column>
-                        </items>
-                    </transHeaderTitle>
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        class="hide title-text-hide-show"
+                        fieldLabel="Eyebrow"
+                        name="./transCatLabel"
+                        showhidetargetvalue="header-with-by-line"/>
                     <headerType
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/container">
-                        <layout
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                            margin="{Boolean}false"/>
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Header Type"
+                        name="./headerType">
                         <items jcr:primaryType="nt:unstructured">
-                            <column
+                            <h1
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <headerType
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/select"
-                                        fieldLabel="Header Type"
-                                        name="./headerType">
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <h1
-                                                jcr:primaryType="nt:unstructured"
-                                                text="H1"
-                                                value="h1"/>
-                                            <h2
-                                                jcr:primaryType="nt:unstructured"
-                                                text="H2"
-                                                value="h2"/>
-                                            <h3
-                                                jcr:primaryType="nt:unstructured"
-                                                text="H3"
-                                                value="h3"/>
-                                            <h4
-                                                jcr:primaryType="nt:unstructured"
-                                                text="H4"
-                                                value="h4"/>
-                                            <h5
-                                                jcr:primaryType="nt:unstructured"
-                                                text="H5"
-                                                value="h5"/>
-                                            <h6
-                                                jcr:primaryType="nt:unstructured"
-                                                text="H6"
-                                                value="h6"/>
-                                        </items>
-                                    </headerType>
-                                </items>
-                            </column>
+                                text="H1"
+                                value="h1"/>
+                            <h2
+                                jcr:primaryType="nt:unstructured"
+                                text="H2"
+                                value="h2"/>
+                            <h3
+                                jcr:primaryType="nt:unstructured"
+                                text="H3"
+                                value="h3"/>
+                            <h4
+                                jcr:primaryType="nt:unstructured"
+                                text="H4"
+                                value="h4"/>
+                            <h5
+                                jcr:primaryType="nt:unstructured"
+                                text="H5"
+                                value="h5"/>
+                            <h6
+                                jcr:primaryType="nt:unstructured"
+                                text="H6"
+                                value="h6"/>
                         </items>
                     </headerType>
+                    <transHeaderTitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Header"
+                        name="./jcr:title"/>
                     <alignment
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/container"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
                         class="hide title-text-hide-show"
+                        fieldLabel="Alignment"
+                        name="./alignment"
+                        required="true"
                         showhidetargetvalue="header-with-line">
-                        <layout
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                            margin="{Boolean}false"/>
                         <items jcr:primaryType="nt:unstructured">
-                            <column
+                            <left
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <alignment
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/select"
-                                        fieldLabel="Alignment"
-                                        name="./alignment"
-                                        required="true">
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <left
-                                                jcr:primaryType="nt:unstructured"
-                                                text="Left"
-                                                value="alignLeft"/>
-                                            <right
-                                                jcr:primaryType="nt:unstructured"
-                                                text="Right"
-                                                value="alignRight"/>
-                                            <centre
-                                                jcr:primaryType="nt:unstructured"
-                                                text="Centre"
-                                                value="alignCenter"/>
-                                        </items>
-                                    </alignment>
-                                </items>
-                            </column>
+                                text="Left"
+                                value="title-left"/>
+                            <right
+                                jcr:primaryType="nt:unstructured"
+                                text="Right"
+                                value="title-right"/>
+                            <centre
+                                jcr:primaryType="nt:unstructured"
+                                text="Centre"
+                                value="title-center"/>
                         </items>
                     </alignment>
                     <transByLineText
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/container"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
                         class="hide title-text-hide-show"
-                        showhidetargetvalue="header-with-by-line">
-                        <layout
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                            margin="{Boolean}false"/>
-                        <items jcr:primaryType="nt:unstructured">
-                            <column
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <transByLineText
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                        fieldLabel="By Line Text"
-                                        name="./transByLineText"/>
-                                </items>
-                            </column>
-                        </items>
-                    </transByLineText>
+                        fieldLabel="By Line Text"
+                        name="./transByLineText"
+                        showhidetargetvalue="header-with-by-line"/>
                     <byLineDate
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/container"
+                        sling:resourceType="granite/ui/components/foundation/form/datepicker"
                         class="hide title-text-hide-show"
-                        showhidetargetvalue="header-with-by-line">
-                        <layout
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                            margin="{Boolean}false"/>
-                        <items jcr:primaryType="nt:unstructured">
-                            <column
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <byLineDate
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/datepicker"
-                                        displayedFormat="MMMM DD, YYYY "
-                                        fieldLabel="Date"
-                                        name="./byLineDate"
-                                        type="datetime"/>
-                                </items>
-                            </column>
-                        </items>
-                    </byLineDate>
-                    <transCatLabel
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/container"
-                        class="hide title-text-hide-show"
-                        showhidetargetvalue="header-with-by-line">
-                        <layout
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                            margin="{Boolean}false"/>
-                        <items jcr:primaryType="nt:unstructured">
-                            <column
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <transCatLabel
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                        fieldLabel="Category Label"
-                                        name="./transCatLabel"/>
-                                </items>
-                            </column>
-                        </items>
-                    </transCatLabel>
+                        displayedFormat="MMMM DD, YYYY "
+                        fieldLabel="Date"
+                        name="./byLineDate"
+                        showhidetargetvalue="header-with-by-line"/>
                     <hide-component
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/container">

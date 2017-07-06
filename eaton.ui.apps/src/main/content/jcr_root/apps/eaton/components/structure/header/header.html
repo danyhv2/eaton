@@ -1,18 +1,18 @@
-<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}"><div>Header Component</div></sly>
-<div data-sly-use.headerhelper="com.eaton.platform.core.helpers.HeaderHelper">
-
-    <sly data-sly-test="${headerhelper.HomePagelevel==true ||headerhelper.TemplatePath ==true } ">
-	<header>
-	<div class="aem-Grid aem-Grid--12">
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+    <div>Header Component</div>
+</sly>
+<header>
+	<sly data-sly-use.headerHelper="com.eaton.platform.core.helpers.HeaderHelper"/>
+    <div class="aem-Grid aem-Grid--12">
         <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-            <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/components/structure/full-page-drawer'}"></sly>
+            <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/components/structure/full-page-drawer', wcmmode=headerHelper.editMode}"></sly>
         </div>
     </div>
     <div class="aem-Grid aem-Grid--12">
         <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 headerBorder headerMain">
             <sly data-sly-resource="${'countrySelector' @ resourceType='eaton/components/structure/country-selector', selectors='country-selector-mobile', wcmmode='disabled'}"></sly>
             <nav class="navbar navbar-default" id="header-navigation-bar">
-                <div class="container-fixed container-padding">
+                <div class="container-fixed container-padding ">
                     <div class="aem-Grid aem-Grid--12">
                         <div class="aem-GridColumn aem-GridColumn--default-12 aem-GridColumn--tablet-12 aem-GridColumn--phone--12">
                             <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,81 +20,25 @@
                                 <button type="button pull-right" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id='closeBtnHeader'>
                                 <span></span>
                                 </button>
-    							<sly data-sly-resource="${'search-comp' @ resourceType='eaton/components/content/search', selectors='search-mobile', wcmmode='disabled'}"></sly>
-                                <sly data-sly-resource="${'header-logo' @ resourceType='eaton/components/structure/logo'}"></sly>
+                                <sly data-sly-resource="${'search-comp' @ resourceType='eaton/components/content/search', selectors='search-mobile', wcmmode='disabled'}"></sly>
+                                <sly data-sly-resource="${'header-logo' @ resourceType='eaton/components/structure/logo', selectors='header-logo', wcmmode=headerHelper.editMode}"></sly>
                             </div>
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="floatRight">
-                                <sly data-sly-resource="${'search-comp' @ resourceType='eaton/components/content/search'}"></sly>
+                                <sly data-sly-resource="${'search-comp' @ resourceType='eaton/components/content/search', selectors='search-header', wcmmode=headerHelper.editMode}"></sly>
                             </div>
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-role="page">
-                            	<sly data-sly-resource="${'primary-nav' @ resourceType='eaton/components/content/link-list'}"></sly>
+                                <sly data-sly-resource="${'primary-nav' @ resourceType='eaton/components/content/link-list', selectors='primary-nav', wcmmode=headerHelper.editMode}"></sly>
                             </div>
-
                         </div>
                     </div>
                 </div>
-                <!-- /.container-fluid -->
             </nav>
-        </div>
-    </div> 
-    <div class="aem-Grid aem-Grid--12">
-        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-			<!--<sly data-sly-resource="${'search-comp' @ resourceType='eaton/components/content/search', selectors='search-bar', wcmmode='disabled'}"></sly>-->
+			<sly data-sly-resource="${'search-comp' @ resourceType='eaton/components/content/search', selectors='search-bar', wcmmode='disabled'}"></sly>
         </div>
     </div>
 </header>
-
-
-	</sly>
-<sly data-sly-test="${headerhelper.HomePagelevel==false && headerhelper.TemplatePath ==false }" >
-				<header>
-	<div class="aem-Grid aem-Grid--12">
-        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-         <sly data-sly-include="${'full-page-drawer-reference.jsp' @ wcmmode='disabled'}"></sly>
-        </div>
-    </div>
-    <div class="aem-Grid aem-Grid--12">
-        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 headerBorder headerMain">
- 		<sly data-sly-resource="${'countrySelector' @ resourceType='eaton/components/structure/country-selector', selectors='country-selector-mobile', wcmmode='disabled'}"></sly>
-            <nav class="navbar navbar-default" id="header-navigation-bar">
-                <div class="container-fixed container-padding">
-                    <div class="aem-Grid aem-Grid--12">
-                        <div class="aem-GridColumn aem-GridColumn--default-12 aem-GridColumn--tablet-12 aem-GridColumn--phone--12">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header">
-                                <button type="button pull-right" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id='closeBtnHeader'>
-                                <span></span>
-                                </button>
-							 <sly data-sly-include="${'search-reference-mobile.jsp' @ wcmmode='disabled'}"></sly>
-                             <sly data-sly-include="${'logo-reference.jsp'  @ wcmmode='disabled'}"></sly>
-                            </div>
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="floatRight">
-                                <sly data-sly-include="${'search-reference.jsp' @ wcmmode='disabled'}"></sly>
-                            </div>
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-role="page">
-                            	   <sly data-sly-include="${'primary-nav-reference.jsp' @ wcmmode='disabled'}"></sly>
-                            </div>
-                            <!-- /.navbar-collapse -->
-                        </div>
-                    </div>
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-        </div>
-    </div>
-    <div class="aem-Grid aem-Grid--12">
-        <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-		<!--<sly data-sly-include="${'search-reference-bar.jsp' @ wcmmode='disabled'}"></sly>-->
-    </div>
-    </div>
-</header>
-			</sly>
-	</div>
-
-
 <div class="aem-Grid aem-Grid--12 "></div>
 <div class="contentLoad">
-	<sly data-sly-include="${'mega-menu-reference.jsp' @ wcmmode='disabled'}"></sly>
+    <sly data-sly-include="${'mega-menu-reference.jsp' @ wcmmode='disabled'}"></sly>
 </div>

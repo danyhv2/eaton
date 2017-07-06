@@ -2,10 +2,12 @@
 <sly data-sly-test="${properties.view == 'product-family-overview'}">
 
 <!-- Product Tabs Family Starts -->
-	  <div class="productTabsFamily mb-150">
-	  <div class="productTabsBackground fixTab">
+	  <div class="productTabsFamily productTabMargin removemarginMobile">
+	  <div class="productTabsBackground fixTab removeFixtabForMobile">
 	  <div class="container-fixed container-padding mobile-full-width">
+
 		<div class="aem-Grid aem-Grid--12">
+
 			<div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
 			<div class="ptHolder">
 				<a class="small-link light" href="#"><span class="glyphicon glyphicon-menu-left"></span> Network Storage UPS</a>
@@ -45,6 +47,7 @@
 					</li>
                     <div class="clear"></div>	
 			</ul>
+
 			<div class="aem-GridColumn aem-GridColumn--default--3 show-desktop">
             	<div class="btnHolder">
                     <button type="button" class="btn btn-success howToBuy">How to buy 
@@ -54,6 +57,8 @@
 
 			</div>
 		</div>
+
+
 	  
 	  <div class="show-mob aem-GridColumn aem-GridColumn--phone--12 allPaddings0">
 		<div class="aem-Grid aem-Grid--12 whiteBg">
@@ -97,8 +102,8 @@
   
 	<sly data-sly-test="${properties.view == 'product-family-model'}">
 
-<div class="productTabsFamily mb-150">
-	  <div class="productTabsBackground fixTab">
+<div class="productTabsFamily productTabMargin removemarginMobile">
+	  <div class="productTabsBackground fixTab removeFixtabForMobile">
 		<div class=" container-fixed container-padding mobile-full-width">
 		<div class="aem-Grid aem-Grid--12">
 			<div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
@@ -184,8 +189,8 @@
 
 <sly data-sly-test="${properties.view == 'product-family-resources'}">
 
-<div class="productTabsFamily mb-150">
-	  <div class="productTabsBackground fixTab">
+<div class="productTabsFamily productTabMargin removemarginMobile">
+	  <div class="productTabsBackground fixTab removeFixtabForMobile">
 	  <div class="container-fixed container-padding mobile-full-width">
 		<div class="aem-Grid aem-Grid--12">
 			<div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
@@ -270,7 +275,8 @@
 	</sly>
 
 <sly data-sly-test="${properties.view == 'sku-overview'}">
-<div class="productTabsSku">
+<div class="productSkuTab productTabMargin removemarginMobile">
+<div class="productTabsSku fixTab removeFixtabForMobile">
 <div class="container-padding container-fixed noSmallScreenPadding">
 		<div class="aem-Grid aem-Grid--12">
 			<div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
@@ -351,10 +357,12 @@
 	  </div>
 	  </div>
 </div>
+</div>
 </sly>
 
 <sly data-sly-test="${properties.view == 'sku-specs'}">
-<div class="productTabsSku">
+<div class=" productSkuTab productTabMargin removemarginMobile">
+<div class="productTabsSku fixTab removeFixtabForMobile">
 <div class="container-padding container-fixed noSmallScreenPadding">
 		<div class="aem-Grid aem-Grid--12">
 			<div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
@@ -435,11 +443,14 @@
 	  </div>
 	  </div>
 </div>
+</div>
 </sly>
 
 <sly data-sly-test="${properties.view == 'sku-resources'}">
-<div class="productTabsSku">	
+<div class="productSkuTab productTabMargin removemarginMobile">
+<div class="productTabsSku fixTab removeFixtabForMobile">	
 <div class="container-padding container-fixed noSmallScreenPadding">
+<div>
 		<div class="aem-Grid aem-Grid--12">
 			<div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
 			<div class="ptHolder2">
@@ -490,6 +501,7 @@
 			</div>
 			<div class="clear"></div>
 		</div>
+</div>
 	  <div class="show-mob aem-GridColumn aem-GridColumn--phone--12 allPaddings0">
 		<div class="aem-Grid aem-Grid--12">
 			<div class="btnHolder smallScrenMargin">
@@ -517,7 +529,9 @@
 			  </div>
 		  </div>
 	  </div>
+
 	  </div>
+</div>
 </div>
 </sly>
 

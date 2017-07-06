@@ -46,6 +46,16 @@ public final class CommonConstants {
     public static final char QUESTION_MARK_CHAR = '?';
     /** The Constant COLON_DOUBLE_SLASH. */
     public static final String COLON_DOUBLE_SLASH = "://";
+    /** The Constant WCM_MODE. */
+    public static final String WCM_MODE = "wcmmode";
+    /** The Constant CONTENT_PAGE_DEPTH. */
+    public static final int CONTENT_PAGE_DEPTH = 1;
+    /** The Constant BRAND_PAGE_DEPTH. */
+    public static final int BRAND_PAGE_DEPTH = 1;
+    /** The Constant COUNTRY_PAGE_DEPTH. */
+    public static final int COUNTRY_PAGE_DEPTH = 3;
+    /** The Constant LANGUAGE_PAGE_DEPTH. */
+    public static final int LANGUAGE_PAGE_DEPTH = 4;
     /* **************** Symbol Constants - Ends Here **************** */
     
     /* **************** Property Constants - Starts Here **************** */
@@ -108,7 +118,6 @@ public final class CommonConstants {
     public final static String TEXT = "text";
     
     /** TTIL List Constants */
-    public final static String JCR_CONTENT = "/jcr:content";
     public final static String CHILD_PAGES = "child-pages";
     public final static String TAGS = "tags";
     public final static String PUBLICATION_DATE = "publication-date";
@@ -119,6 +128,7 @@ public final class CommonConstants {
     public final static String MANUAL_LIST = "manual-list";
     public final static String PUB_DATE = "publicationDate";
     public final static String LINK_DESTINATION = "transLinkDestination";
+    public final static String NEW_WINDOW_MANUAL = "newWindowManual";
     public final static String EYEBROW = "eyebrow";
     public final static String FEATURE_IMAGE = "featureImage";
     public final static String TITLE = "title";
@@ -136,6 +146,8 @@ public final class CommonConstants {
     public final static String MANUAL_PUB_DATE ="yyyy-MM-dd'T'HH:mm:ss.SSSXXX";
     public final static String MANUAL_PUB_DATE_FORMAT ="MMMM dd, yyyy";
     public final static String UTF_8 ="UTF-8";
+    public final static String TARGET_BLANK ="_blank";
+    public final static String TRUE ="true";
     
     /* ***************************************/
     public final static int HOME_LEVEL = 3;
@@ -157,11 +169,21 @@ public final class CommonConstants {
     public static final String JCR_CONTENT_STR = "jcr:content";
     public static final String CLOUD_SERVICES = "cq:cloudserviceconfigs";
     
-    /** Brightcove Component Constants */
+    /** Social Share Component Constants */
     public static final String SOCIAL_SHARE_CLOUD_CONFIG = "socialshare";
     public static final String SOCIAL_SHARE_PUB_ID = "pubID";
-    public static final String ARTICLE_TEMPLATE_PATH = "/conf/eaton/settings/wcm/templates/article-page-template";
     public static final String CQ_TEMPLATE_PROPERTY = "cq:template";
+    public static final String ALLOWED_TEMPLATE_PROPERTY = "allowedTemplates";
+    public static final String PAGE_TYPE = "page-type";
+    public static final String PAGE_TYPE_HOME_PAGE = "home-page";
+    public static final String PAGE_TYPE_GENERIC_PAGE = "generic-page";
+    public static final String PAGE_TYPE_ARTICLE_PAGE = "article-page";
+    public static final String PAGE_TYPE_SITEMAP_PAGE = "sitemap-page";
+    public static final String HOME_PAGE_LABEL = "Home page";
+    public static final String GENERIC_PAGE_LABEL = "Generic Page";
+    public static final String ARTICLE_PAGE_LABEL = "Article Page";
+    public static final String SITEMAP_PAGE_LABEL = "Sitemap Page";
+    
     
     
     /** MegaMenu Component Constants */
@@ -174,5 +196,9 @@ public final class CommonConstants {
     public static final String CQ_TEMPLATE_PROPERTY_INITIAL = "initial";
     public static final String CQ_TEMPLATE_PROPERTY_STRUCRTURE = "structure";
     
+    /** CommonUtil Constants */
+    
+    public static final String WWW = "www.";
+    public static final String HTTP_SLASH = "http://";
     
 }

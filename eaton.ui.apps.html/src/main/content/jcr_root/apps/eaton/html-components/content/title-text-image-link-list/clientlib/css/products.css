@@ -1,3 +1,12 @@
+
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
+
+.carousel-control .link-arrow{
+color:#CCD2D7;
+        }
+
+
 .related-product-card-desktop img{
 height:262px;
 width:262px;
@@ -66,4 +75,7 @@ width:530px;
             margin:0 auto;
 }
 
+
+
     }
+

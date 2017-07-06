@@ -25,7 +25,8 @@ import com.adobe.granite.ui.components.ds.ValueMapResource;
 import com.day.cq.commons.jcr.JcrConstants;
 import com.day.cq.wcm.webservicesupport.ConfigurationManagerFactory;
 import com.eaton.platform.core.constants.CommonConstants;
-import com.eaton.platform.core.models.sitemap.BCAccountBean;
+import com.eaton.platform.core.models.BCAccountBean;
+import com.eaton.platform.core.services.AdminService;
 import com.eaton.platform.core.util.BrightcoveUtil;
 
 /**
@@ -39,58 +40,61 @@ public class BCContentIdDropDownServlet extends SlingSafeMethodsServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger LOG = LoggerFactory.getLogger(BCContentIdDropDownServlet.class);
 	
+	// ConfigurationManagerFactory reference
 	@Reference
 	ConfigurationManagerFactory configManagerFctry;
+	
+	// AdminService reference
+	@Reference
+	AdminService adminService;
 
 	@Override
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
 
 		LOG.debug("******** BCContentIdDropDownServlet servlet execution started ***********");
 		//local variables
-		Resource brightcoveconfigJCRResource = null;
+		Resource brightcoveConfigRes = null;
 		// set fallback
 		request.setAttribute(DataSource.class.getName(), EmptyDataSource.instance());
-		ResourceResolver resolver = request.getResource().getResourceResolver();
+		// get admin resource resolver to resolve resource under /etc/cloudservices
+		ResourceResolver adminResourceResolver = adminService.getReadService();
 		// get refererURL from request since current page is not available in fixed path servelts
 		String refererURL = BrightcoveUtil.getRefererURL(request);
 		//get content path
-		String resourcePath = BrightcoveUtil.getContentPath(resolver, refererURL);
-		Resource currentPageRes = resolver.resolve(resourcePath);
-		brightcoveconfigJCRResource = BrightcoveUtil.getBCConfigJcrResource(configManagerFctry,
-										 resolver, currentPageRes);
+		String resourcePath = BrightcoveUtil.getContentPath(adminResourceResolver, refererURL);
+		Resource currentPageRes = adminResourceResolver.resolve(resourcePath);
+		brightcoveConfigRes = BrightcoveUtil.getBCConfigResource(configManagerFctry,
+				adminResourceResolver, currentPageRes);
 		
 		// invoke getBCAccounts method to get account details
-		List<BCAccountBean> bcAcctBeanList = BrightcoveUtil.getBCAccounts(brightcoveconfigJCRResource);
+		BCAccountBean bcAcctBean = BrightcoveUtil.getBCAccounts(brightcoveConfigRes);
 		
 		// Create an ArrayList to hold data
 		List<Resource> bcAcctList = new ArrayList<Resource>();
 
 		ValueMap valueMap = null;
-		if(null != brightcoveconfigJCRResource){
+		if(null != brightcoveConfigRes){
 				
-			// Add Brightcove account details to Graphic drop down!
-			for (BCAccountBean bcAccountBean : bcAcctBeanList) {
-
 				// allocate memory to the Map instance
 				valueMap = new ValueMapDecorator(new HashMap<String, Object>());
 
 				// Specify the value and text values
-				String dropDownValue = bcAccountBean.getAccNumber();
-				String dropDownText = bcAccountBean.getAccName();
+				String dropDownValue = bcAcctBean.getAccNumber();
+				String dropDownText = bcAcctBean.getAccName();
 
 				// populate the map
 				valueMap.put(CommonConstants.VALUE, dropDownValue);
 				valueMap.put(CommonConstants.TEXT, dropDownText);
 
-				bcAcctList.add(new ValueMapResource(resolver, new ResourceMetadata(), JcrConstants.NT_UNSTRUCTURED, valueMap));
-			}
+				bcAcctList.add(new ValueMapResource(adminResourceResolver, new ResourceMetadata(), JcrConstants.NT_UNSTRUCTURED, valueMap));
 
 			// Create a DataSource that is used to populate the drop-down control
 			DataSource dataSource = new SimpleDataSource(bcAcctList.iterator());
 			request.setAttribute(DataSource.class.getName(), dataSource);
 			
-			LOG.debug("******** BCContentIdDropDownServlet servlet execution ended ***********");
 		}
+		
+		LOG.debug("******** BCContentIdDropDownServlet servlet execution ended ***********");
 	}
 
 	
