@@ -1,23 +1,13 @@
 //-----------------------------------
 // Global Typography definition
 //-----------------------------------
+
 // Typography
 //--------------
-@import '../_config/variables/variables-colors';
-@import '../_config/variables/variables-locale';
-
-$base__font-size: 16px;
-$base__line-height: 1.5;
-
-// TODO: Sass function has some issues when is compiled, needs to be reviewd
-// $base__font-family: get-locale-font();
-// $secondary__font-family: get-locale-font('font__secondary');
-$base__font-family: 'Eaton', Arial, sans-serif;
-$secondary__font-family: 'Arial', sans-serif;
 
 body {
   color: $color__primary-gray1;
-  font-family: $secondary__font-family;
+  font-family: $font-family__secondary;
   .dark-theme & {
     color: $color__white;
   }
@@ -63,12 +53,12 @@ body {
 
 h1, h2, h3,
 .heading-h1, .heading-h2, .heading-h3 {
-  font-family: $base__font-family;
+  font-family: $font-family__primary;
 }
 
 h4, h5,
 .heading-h5, .heading-h6 {
-  font-family: $secondary__font-family;
+  font-family: $font-family__secondary;
 }
 
 h1, .heading-h1 {

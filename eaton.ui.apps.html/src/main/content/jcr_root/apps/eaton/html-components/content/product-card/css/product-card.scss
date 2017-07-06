@@ -1,0 +1,15 @@
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import 'global/css/_config/config';
+
+//-----------------------------------
+// Component M-25: Product Card
+//-----------------------------------
+.c-product-card {
+
+  text-align: center;
+
+  &__item {
+    border-bottom: 1px solid $color__red;
+  }
+
+}

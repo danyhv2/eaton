@@ -20,8 +20,12 @@
 .u-no-margin { margin: 0; }
 .u-no-padding { padding: 0; }
 
-.u-fl-left { float: left; }
-.u-fl-right { float: right; }
+.u-float-left { float: left; }
+.u-float-right { float: right; }
+
+.u-clearfix {
+  @include clearfix();
+}
 
 
 // Text Utils
