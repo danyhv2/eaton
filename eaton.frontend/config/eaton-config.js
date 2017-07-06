@@ -19,4 +19,9 @@ module.exports = {
     }
 
   },
+
+  // Bundles Folders for AEMSync Task
+  aemBundles: [
+    '../eaton.ui.apps.html/src/main/content/jcr_root'
+  ]
 }
