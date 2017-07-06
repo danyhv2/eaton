@@ -81,6 +81,12 @@
                                 jcr:primaryType="nt:unstructured"
                                 text="search-results-all"
                                 value="search-results-all"/>
+                                
+                            
+                            <autocorrected-search
+                                jcr:primaryType="nt:unstructured"
+                                text="autocorrected-search"
+                                value="autocorrected-search"/>
                         </items>
                     </view>
                 </items>

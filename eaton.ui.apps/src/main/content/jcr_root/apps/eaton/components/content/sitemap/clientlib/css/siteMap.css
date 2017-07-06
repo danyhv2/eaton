@@ -25,7 +25,7 @@ background:#FFFFFF;
 }
 
 #sitemap-content hr{
-	border-color: var(--Gray5);
+	border-color: #EEF0F2;
     margin-bottom:0px;
     margin-top:30px;
 }
@@ -54,4 +54,9 @@ background:#FFFFFF;
 			width: 100% !important;
         }
 
+}
+
+
+.sitemapPage .page-title{
+	padding:0 !important;
 }

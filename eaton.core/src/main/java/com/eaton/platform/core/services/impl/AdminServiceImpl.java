@@ -61,7 +61,7 @@ public class AdminServiceImpl implements AdminService {
     protected final void activate(final Map<String, Object> properties) throws Exception {
     	LOG.info("******** activate *********4**");
         Map<String, Object> readParam = new HashMap<String, Object>();
-	    readParam.put(ResourceResolverFactory.SUBSERVICE, "readService");
+	    readParam.put(ResourceResolverFactory.SUBSERVICE, CommonConstants.RESOURCE_RESOLVER_READ_SERVICE);
 	    this.adminReadResourceResolver = resolverFactory.getServiceResourceResolver(readParam);
 	    
 	    Map<String, Object> writeParam = new HashMap<String, Object>();
@@ -83,33 +83,30 @@ public class AdminServiceImpl implements AdminService {
 		}
     }
 
-/**
- * <html>Description: This function return the read service </html>
- * @return ResourceResolver
- */
+
     @Override
 	public ResourceResolver getReadService() {
 		LOG.info("******** ReadService Start ***********");
-		param.put(ResourceResolverFactory.SUBSERVICE, "readService");
+		param.put(ResourceResolverFactory.SUBSERVICE, CommonConstants.RESOURCE_RESOLVER_READ_SERVICE);
 		
 		try {
-			adminReadResourceResolver = resolverFactory.getServiceResourceResolver(param);
+			if(this.adminReadResourceResolver == null) {
+				this.adminReadResourceResolver = resolverFactory.getServiceResourceResolver(param);
+			}
 		} catch (LoginException exception) {
 			LOG.error("Exception occured while getting the reader service", exception.getMessage());
 		}
 		return this.adminReadResourceResolver;
 	}
 
-    /**
-     * <html>Description: This service returns the write service . </html>
-     * @return ResourceResolver
-     */
 	@Override
 	public ResourceResolver getWriteService() {
 		LOG.info("******** WriteService Start ***********");
 		param.put(ResourceResolverFactory.SUBSERVICE, CommonConstants.RESOURCE_RESOLVER_WRITE_SERVICE);
 		try {
-			adminWriteResourceResolver = resolverFactory.getServiceResourceResolver(param);
+			if(this.adminWriteResourceResolver == null) {
+				this.adminWriteResourceResolver = resolverFactory.getServiceResourceResolver(param);
+			}
 		} catch (LoginException exception) {
 			LOG.error("Exception occured while getting the write service", exception.getMessage());
 		}

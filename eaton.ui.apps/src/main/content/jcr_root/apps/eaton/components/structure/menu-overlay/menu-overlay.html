@@ -1,4 +1,4 @@
-<sly data-sly-test="${wcmmode.edit}|| wcmmode.design || wcmmode.layouting}">Menu Overlay Component</sly>
+<sly data-sly-test="${wcmmode.edit}">Menu Overlay Component</sly>
 <sly data-sly-test="${properties.view == 'country-selector'}">
     <sly data-sly-resource="${'countrySelector' @ resourceType='eaton/components/structure/country-selector'}"></sly>
 </sly>
@@ -21,8 +21,8 @@
                     <div class='listCntnt'>
                         <div class="container-fixed container-padding  aem-Grid aem-Grid--12">
                             <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-                                <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-                                    <sly data-sly-resource="${'mega-menu-products-responsive-grid' @ resourceType='wcm/foundation/components/responsivegrid'}"> </sly>
+                                <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 mega-menu-desktop">
+                                    <sly data-sly-resource="${'mega-menu-responsive-grid' @ resourceType='wcm/foundation/components/responsivegrid'}"> </sly>
                                 </div>
                             </div>
                         </div>

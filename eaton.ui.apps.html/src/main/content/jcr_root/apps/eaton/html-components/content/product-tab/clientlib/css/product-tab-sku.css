@@ -1,5 +1,19 @@
+.productSkuTab {
+	
+}
+
+    .productTabMargin{
+	margin-bottom:150px;
+        }
+
 .productTabsSku {
 	background: #F8F8F8;
+}
+
+.fixTab{
+    z-index:100;
+    position:fixed;
+	width:100%;
 }
 
 .productTabsSku .tab .small {

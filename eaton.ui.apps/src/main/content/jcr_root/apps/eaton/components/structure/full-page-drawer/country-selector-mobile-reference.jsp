@@ -1,6 +1,13 @@
-<%@include file="/libs/foundation/global.jsp"%><%
-%><%@page session="false" %><%
+<%@include file="/libs/foundation/global.jsp"%>
+<%@page session="false"%>
+<%@page import="com.eaton.platform.core.helpers.ReferenceHelper" %>
+
+<%
+	String reference = ReferenceHelper.getFullPageDrawerReference(resourceResolver,currentPage);
+
+	if(reference != null && reference != ""){
 %>
-<c:if test="${!empty properties.reference}">
-	<sling:include path="${properties.reference}" addSelectors="menu-overlay-mobile"/>
-</c:if>
+	<sling:include path= "<%=reference%>"  addSelectors="menu-overlay-mobile"/>
+<%
+    }
+%>
