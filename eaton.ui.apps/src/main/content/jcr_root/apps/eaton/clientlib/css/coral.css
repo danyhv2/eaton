@@ -1,8 +1,3 @@
 .coral-Form-fieldlabel {
   color: #708090;
 }
-
-.coral-SelectList.is-visible {
-    display: block;
-    z-index: 9999999 !important;
-}

@@ -1,273 +1,207 @@
 /* Desktop Style starts here */
-#related-items-content {
-	background: #F8F8F8;
+#related-items-content{
+	/*min-height: 615px;*/
+	background:#F8F8F8;
+	padding: 0px 0 120px 0;
+	
 }
-
-.related-item {
+.related-item{
 	border-width: 1px;
-	border-color: #8c9aa5;
+	border-color:  #8c9aa5;
 	border-style: solid;
-	background-color: #fff;
+	background-color:  #ffffff;
+	/* width: 358px; */
 	min-height: auto;
-}
 
-.related-items-image img {
-	max-width: 100%;
+}
+.related-items-Description{
+	padding: 0 31px;
+	padding-bottom: 25px;
+        padding-right: 71px;
+
+}
+@media (max-width: 767px) and (orientation: landscape){
+    .related-items-Description{
+
+    padding-bottom: 30px;
+}
+}
+.related-items-image img{
+	/* width: 358px;
+	height: 262px; */
+	max-width:100%;
 	width: 100%;
 }
 
-.related-item {
-	/* min-height: 452px; */
-	   /* min-height: 490px;*/
-    min-height:530px;
+.related-item{
+	min-height: 452px;
 }
 
 .related-items-title #mask {
-	position: absolute;
-	top: -1px;
-	left: 1px;
-	width: 16%;
-	height: 4px;
-	background-color: #005EB8;
-	display: none;
+        position: absolute;
+		top: -1px;
+		left: 1px;
+		width: 16%;
+		height: 4px;
+		background-color: #005EB8;
+		display:none;
 }
-
-.related-item-heading {
+.related-item-heading{
+	font-family: Eaton;
+	color:  #333f48;
+	font-size: 35.97px;
+	font-weight: 700;
+	line-height: 58px;
 	text-align: center;
+	transform: scaleY(1.0007);
+	    margin-bottom: 20px;
+    margin-top: 42px;
 }
-
-.related-items-title {
-	text-align: left;
+.related-items-title{
+	margin-top: 7px;
+	font-family: Arial;
+	color:  #333f48;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.42857143;
+    text-align: left;
+    padding: 10px 0px;
+	transform: scaleX(1.0021);
 	text-transform: uppercase;
-    font-size: 1.125em;
+	margin-bottom: 0px;
 }
-
-.related-item-card a {
+.related-item-card a{
+	font-family: Eaton;
+	color:  #005eb8;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 32px;
 	text-align: left;
-	text-decoration: none;
+	text-decoration:none;
 }
-
-.related-item-mob-container {
-	display: none;
+.related-item-mob-container{
+	display:none;
 }
 
 .related-item-mob-container .carousel-indicators li {
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	margin: 1px;
-	text-indent: -999px;
-	cursor: pointer;
-	background-color: #8c9aa5;
-	border: 1px solid #fff;
-	border-radius: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #8c9aa5;
+    border: 1px solid #fff;
+    border-radius: 10px;
 }
-
 .related-item-mob-container .carousel-indicators .active {
-	width: 15px;
-	height: 15px;
-	margin: 1px;
-	background-color: #005EB8;
+    width: 15px;
+    height: 15px;
+    margin: 1px;
+    background-color: #005eb8;
 }
-
 .related-item-mob-container .carousel-indicators {
-	position: absolute;
-	bottom: -62px;
-	left: 0;
-	z-index: 9;
-	width: 100%;
-	padding-left: 0;
-	margin-left: 0;
-	text-align: center;
-	list-style: none;
-	top: auto;
-	transform: initial;
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+    list-style: none;
+        top: auto;
+    transform: initial;
 }
 
-.related-items-padding {
-	padding-left: 15px !important;
-	padding-right: 15px !important;
+.related-items-padding{
+	padding-left:15px !important;
+    padding-right:15px !important;
 }
-
-.related-products-with-images-cat-rel3 .related-item {
-
-	    height: 535px;
-}
-.related-products-with-images-cat-rel3 div.carousel {
-
-    margin-bottom: 0px;
-}
-
-.related-products-with-images-cat-rel3.related-item-mob-container .carousel-indicators{
-    margin-bottom:0px;
-            }
 /* Desktop Style ends here */
 
+/* iPhone 4, 5, 5s Style starts here */
 
+@media only screen and (max-width: 767px) {
 
-/**********MOBILE TABLET ***********/
-@media only screen and (max-width: 600px) , screen and (min-width:
-	601px) and (max-width:992px) {
-	.related-item-web-container {
-		display: none;
-	}
-	.related-item-mob-container {
-		display: block;
-	}
+.related-item-web-container{
+	display:none;
+}
+.related-item-mob-container{
+	display:block;
+}
+    .related-item{
+	min-height: auto;
+}
+}
+/* iPhone 4, 5, 5s Style ends here */
 
-	#related-items-content div.carousel {
-		margin-bottom: 45px;
-	}
-	.related-item {		
-		 /*height: 560px;*/
-	}
-	.related-products-with-images-cat-rel3 .related-item {
+/* iPhone 4, 5, 5s landscape Style starts here */
+@media (max-width: 767px) and (orientation: landscape){
+    
+}
+/* iPhone 4, 5, 5s landscape Style ends here */
 
-	    height: auto;
-	}
-	.related-products-with-images-cat-rel3.related-item-mob-container {
+/*iPhone 6 Portrait Style starts here*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {	
+    
+}
+/*iPhone 6 Portrait Style ends here*/
 
-   	 margin-bottom: 54px;
-	}
-	.related-item .related-item-card {
-        max-height: 60px;
-        overflow: hidden;
-        min-height: 60px;        
-	}
+/*iPhone 6 landscape starts here*/
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation : landscape) { 
+}
+/*iPhone 6 landscape ends here*/
+
+/*iPhone 6+ Portrait starts here*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
+	
+}
+/*iPhone 6+ Portrait ends here*/
+
+/*iPhone 6+ landscape starts here*/
+@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation : landscape) { 
+    
+}
+/*iPhone 6+ landscape ends here*/
+
+/* iPad portrait Style starts here */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.related-item {
+    border-width: 1px;
+    border-color: #8c9aa5;
+    border-style: solid;
+    background-color: #ffffff;
+    /* width: 358px; */
+    min-height: 740px;
+}
+.related-item-web-container{
+	display:none;
+}
+.related-item-mob-container{
+	display:block;
+}
+.related-items-Description{
+	padding: 0 31px;
+	padding-bottom: 25px;
+        padding-right: 50px;
+
 }
 
-@media only screen and (min-width:320px) and (max-width:425px)
-{	
-	.related-item .related-item-card {
-        max-height: 120px;
-        overflow: hidden;
-        min-height: 120px;        
-	}
+}
+/* iPad portrait Style ends here */
+
+/* iPad landscape Style starts here */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .related-item-web-container{
+	display:block;
+}
+.related-item-mob-container{
+	display:none;
+}
+  .related-item{
+	min-height: 488px;
 }  
-@media only screen and (min-width:425px) and (max-width:600px)
-{	
-	.related-item .related-item-card {
-        max-height: 90px;
-        overflow: hidden;
-        min-height: 90px;        
-	}
-}         
-/**********MOBILE TABLET ***********/
-
-/* 
-screen and (min-width:	601px) and (max-width:992px) {
-	.related-item {		
-		 height: 840px; 
-	}
-	} */
-/* career -rel3 */
-
-.imagelist-desc
-{
-	 font-family: Arial;
-     font-weight: bold;
-
 }
-
-.career-container
-{
-	height:500px;
-}
-.image-list
-{
-	height:200px;
-}
-
-.image-list img
-{
-	float:right;
-}
-
-.tile-link-container
-{
-	position: relative;
-
-}
-.tile-box-one
-{
-	background-color: #005CBC;
-    height:200px;
-
-}
-.tile-box-two
-{
-	background-color: #5B6770;
-    height:200px;
-
-}
-.tile-box-three
-{
-	background-color: #00B2A9;
-    height:200px;
-
-}
-.tile-box-four
-{
-	background-color: #ED8B00;
-    height:200px;
-
-}
-.tile-box-five
-{
-	background-color: #005EB8;
-    height:200px;
-
-}
-.tile-box-six
-{
-	background-color: #333F48;
-    height:200px;
-
-}
-
-.tile-description
-{
-	position: absolute;
-    bottom: 30px;
-    left: 45px;
-
-}
-
-.tile-description h2
-{
-	color:#FFF;
-    font-size: 2em;
-    font-family: EatonMedium;
-
-}
-
-.tile-description  .arrow
-{
-	font-size: 0.7em;
-    left: 5%;
-}
-
-
-@media only screen and (max-width: 992px) {
-.tile-box-one,.tile-box-two,.tile-box-three,.tile-box-four,.tile-box-five,.tile-box-six
-{
-
-    height:350px;
-}
-.image-list img
-{
-	float:none;
-}
-.tile-link .smallPaddingRight
-{
-	padding-right:0px !important;
-}
-
-.tile-description h2
-{
-
-    font-size:1.725em;
-}
-
-
-}
+/* iPad landscape Style ends here */

@@ -1,6 +1,7 @@
 package com.eaton.platform.core.models;
 
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 
 import javax.inject.Inject;
 
@@ -9,7 +10,10 @@ import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.Source;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import com.day.cq.dam.api.Asset;
 import com.eaton.platform.core.util.CommonUtil;
 
 /**
@@ -53,12 +57,10 @@ public class TTILBean {
 	@Inject @Optional
 	private String highlightType;
 	
-	@Inject @Optional
-	private String config;
-	
     @Inject @Source("sling-object")
     private ResourceResolver resourceResolver;
 
+    private static Logger LOG = LoggerFactory.getLogger(TTILBean.class);
 	/**
 	 * 
 	 * @return view
@@ -80,8 +82,8 @@ public class TTILBean {
      * @return image
      * @throws UnsupportedEncodingException 
      */
-	public String getImage() {
-		return image;
+	public String getImage() throws UnsupportedEncodingException {
+		return URLDecoder.decode(image, "UTF-8");
 	}
 
 	/**
@@ -91,9 +93,15 @@ public class TTILBean {
 	 * @return transAlttxt
 	 */
 	public String getTransAlttxt() {
-		if(transAlttxt == null) {
-				return CommonUtil.getAssetAltText(resourceResolver, getImage());
+		Asset imageAsset;
+		try {
+			imageAsset = resourceResolver.getResource(getImage()).adaptTo(Asset.class);
+			if(transAlttxt == null && imageAsset != null)
+				return imageAsset.getName();
+		} catch (UnsupportedEncodingException e) {
+			LOG.error("Exception occured due to unsupported encoding ",e);
 		}
+
 		return transAlttxt;
 	}
 
@@ -122,6 +130,8 @@ public class TTILBean {
 	public String getTransLinkTitle() {
 		return CommonUtil.getLinkTitle(transLinkTitle, link, resourceResolver);
 	}
+
+
 
 	/**
 	 * 
@@ -154,14 +164,5 @@ public class TTILBean {
 	public String getHighlightType() {
 		return highlightType;
 	}
-
-	/**
-	 * @return the config
-	 */
-	public String getConfig() {
-		return config;
-	}
-	
-	
 
 }

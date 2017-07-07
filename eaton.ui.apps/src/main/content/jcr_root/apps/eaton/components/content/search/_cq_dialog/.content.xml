@@ -45,7 +45,7 @@
                         sling:resourceType="granite/ui/components/foundation/form/textfield"
                         fieldLabel="Field Aid"
                         name="./transFieldAid"
-                        required="true"
+                        required="false"
                         showFor="site-search"/>
                     <transSearchHeader
                         jcr:primaryType="nt:unstructured"
@@ -53,7 +53,7 @@
                         class="hide search-hide-show"
                         fieldLabel="Search Header"
                         name="./transSearchHeader"
-                        required="true"
+                        required="false"
                         showhidetargetvalue="product-search,career-search"/>
                     <transSubhead
                         jcr:primaryType="nt:unstructured"

@@ -46,18 +46,14 @@ $(window).scroll(
 			var navigationHeight = $('#header-navigation-bar').height();
             if (distanceFromTop >= $('#utility-nav').height()) {
 				$('.productTabsFamily').css('margin-top', '62px');
-				$('.productSkuTab').css('margin-top', '62px');
-
             }
             else
             {
 				$('.productTabsFamily').css('margin-top', '0px');
-                $('.productSkuTab').css('margin-top', '0px');
             }
 
         }
 
     });
-
 
     

@@ -18,7 +18,7 @@
 .megaMenu .listCntnt .list-group-item{
 	border:none;
 	cursor:pointer;
-	background-color: #5B6770;
+	background-color: var(--Gray2);
     /*color: var(--White);
 	font-family: Arial;*/
     padding-left:0px;
@@ -35,7 +35,7 @@
     float:right;
 }
 .megaMenu .header{
-	background-color:#333F48;
+	background-color:var(--Gray1);
 	position:relative;
         font-size: 2.18em;
         float: left;

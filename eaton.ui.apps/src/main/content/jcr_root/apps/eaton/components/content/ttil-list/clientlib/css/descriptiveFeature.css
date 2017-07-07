@@ -41,7 +41,7 @@
     font-family: 'Eaton';
 }    
 
-@media only screen (max-width:768px),  screen and (min-width:769px) and (max-width:992px){
+@media only screen (max-width:767px){
 	.feature-list{
 	display:none;
 	}
