@@ -10,10 +10,9 @@
 .anchorLinkList li {
 	display: block;
 	vertical-align: middle;
-	padding: 25px 20px;
+	padding: 25px 15px;
 	color: #005EB8;
 	border-bottom: 1px solid #F8F8F8;
-    margin-right:20px;
 }
 
 .anchorLinkList li:hover {
@@ -26,5 +25,4 @@
 }
 .anchorLinkList a li .link-arrow{
 float:right;
-    margin-left:20px;
 }

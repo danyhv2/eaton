@@ -2,9 +2,6 @@
 no-Feature.css
 products.css
 relatedItems.css
-title-text.css
 descriptiveFeature.css
 featureStory.css
 download-link-card.css
-category-highlight-related-products.css
-category-highlight-rel3.css
