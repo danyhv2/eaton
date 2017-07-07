@@ -3,7 +3,7 @@
 * Gulp Task: Lint scss Files
 */
 
-const path = require('path');
+// const path = require('path');
 const sassLint = require('gulp-sass-lint');
 // const configFile = require(path.resolve('./', '.scsslint.yml'));
 
@@ -16,7 +16,7 @@ const lintCSS = function(gulp, CONFIG) {
       CONFIG.paths.src.components.structure + '/**/*.scss',
 
       // Ignore these folders
-      '!' + CONFIG.paths.src.global + '/css/vendor/**/*.scss',
+      '!' + CONFIG.paths.src.global + '/css/vendor/**/*.scss'
     ])
       .pipe(sassLint({ configFile: '.scsslint.yml' }))
       .pipe(sassLint.format())
