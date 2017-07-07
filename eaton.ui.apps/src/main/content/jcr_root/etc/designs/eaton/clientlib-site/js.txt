@@ -2,4 +2,3 @@
 jquery-2.2.0.min.js
 bootstrap.min.js
 header.js
-jquery.cookie.js

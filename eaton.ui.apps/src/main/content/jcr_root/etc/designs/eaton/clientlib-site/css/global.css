@@ -38,7 +38,7 @@
 	padding: 0px !important;
 }
 
-html, body {	
+html, body {
 	max-width: 100%;
 	overflow-x: hidden;
 	font-family: Eaton;
@@ -376,7 +376,6 @@ a:hover, a:focus, a:active {
 	font-weight: bold;
 	line-height: 1.333em;
 	color: #333F48;
-	text-transform: uppercase;
 }
 
 .eyeBrowLarge {
@@ -397,7 +396,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.500rem;
+	font-size: 2.500em;
 	font-family: EatonMedium;
 	line-height: 1.250em;
 	margin: 0px;
@@ -463,7 +462,7 @@ h5 {
 }
 
 .small-body-copy-link-on-dark {
-    font-size: 1.125em;
+	/* font-size: 1.125em; */
 	font-family: Arial;
 	line-height: 1.333em;
 	color: #fff;
@@ -631,24 +630,6 @@ h5 {
 	float: right;
 }
 
-.copyRightSymbol{	
-	float:right;
-}
-
-  .copyRightSymbol:before{
- 	content:"\00A9";
-	padding-right:5px;
- } 
-
-
- .rightArrowIcon{    
-    	 padding-right: 24px; 
-   		 display: inline;
-   		 background: transparent	url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAXCAQAAACRmLYJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAChSURBVCjPldIhCgJREMbxLy3LXkDE4CE2GAwGL6LFosGzWDZZDB7EYhA8gFUQQbCKLvI3OAq+YQecF3883ryZT6x5140S/R5RsDc+0kpRdLkYb8hSFANq48qjmPGpiUexNHzQ95ixNT7TSVG0ORnvyFMUPe7GK49i/G1s7lEsDJ8MPeZcjQ9/3Rw1vxl0G/wznFAw22nzVoJ9BkkIMxSk7wVffq9TEC+EWgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wNi0xMlQwMTozMDoxNSswMDowMFicFAEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDYtMTJUMDE6MzA6MTUrMDA6MDApway9AAAAAElFTkSuQmCC') no-repeat right center;
-   		 background-position-y: 17px;
-   		}
-
-
 /****** MOBILE RETINA  *******/
 
 /*
@@ -659,7 +640,7 @@ only screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and(max-width
 only screen and ( min-resolution: 192dpi) and (min-width: 320px) and(max-width: 650px),
 only screen and ( min-resolution: 2dppx) and (min-width: 320px) and(max-width: 650px) {
   
-    
+    #copyRightText{ float:left !important;}
     .h1Hero {
         font-size: 4.375em;
         line-height: 1.143em;
@@ -759,22 +740,8 @@ only screen and ( min-resolution: 2dppx) and (min-width: 320px) and(max-width: 6
 
 /****** MOBILE(upto 600px)  & TABLET(upto 992px)*******/
 /*@media only screen and (max-width: 768px) {*/
-@media only screen and (max-width: 600px) , screen and (min-width: 601px) and (max-width:992px) {
-	
-	.copyRightSymbol{	
-		float:left;
-	}
-	
-	
-	 .rightArrowIcon{    
-    	 padding-right: 20px; 
-   		 display: inline;
-   		 background: transparent	url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAXCAQAAACRmLYJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAChSURBVCjPldIhCgJREMbxLy3LXkDE4CE2GAwGL6LFosGzWDZZDB7EYhA8gFUQQbCKLvI3OAq+YQecF3883ryZT6x5140S/R5RsDc+0kpRdLkYb8hSFANq48qjmPGpiUexNHzQ95ixNT7TSVG0ORnvyFMUPe7GK49i/G1s7lEsDJ8MPeZcjQ9/3Rw1vxl0G/wznFAw22nzVoJ9BkkIMxSk7wVffq9TEC+EWgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wNi0xMlQwMTozMDoxNSswMDowMFicFAEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDYtMTJUMDE6MzA6MTUrMDA6MDApway9AAAAAElFTkSuQmCC') no-repeat right center;
-   	     background-position-y: 11px;
-    	 background-size: 10px;
-    
-   		}
-	
+@media only screen and (max-width: 600px) , screen and (min-width: 601px)
+	and (max-width:992px) {
 	.MQMobile {
 		display: block;
 	}
@@ -808,7 +775,6 @@ only screen and ( min-resolution: 2dppx) and (min-width: 320px) and(max-width: 6
 	.eyeBrowSmall {
 		font-size: 0.875em;
 		line-height: 1.063em;
-		text-transform: uppercase;
 	}
 	.eyeBrowLarge {
 		font-size: 1.063em;
@@ -924,7 +890,7 @@ only screen and ( min-resolution: 2dppx) and (min-width: 320px) and(max-width: 6
         margin-right: 0px;
     }
     
-    
+    #copyRightText{ float:left !important;}
  	   
  } */
 
@@ -956,7 +922,20 @@ only screen and ( min-resolution: 2dppx) and (min-width: 320px) and(max-width: 6
 
 /****** LARGE DESKTOP ENDS******/
 
-
+/*
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-fixed {
+        width: 100%;      
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .aem-GridColumn-margin-both-2 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #copyRightText{ float:left !important;}
+}
+*/
 .padding-top-40 {
 	padding-top: 40px;
 }
@@ -988,34 +967,10 @@ sup {
   top: -0.2em !important;
 }
 
-/* To wrap Link text For LinkList Component*/ 
-    
-.text-wrap{
-white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
-white-space: -pre-wrap;      /* Opera 4-6 */
-white-space: -o-pre-wrap;    /* Opera 7 */
-white-space: pre-wrap;       /* css-3 */
-word-wrap: break-word;       /* Internet Explorer 5.5+ */
-white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
-word-break: break-all;
-white-space: normal;
-}      
 
-/* Image Component*/ 
-
-div.image {
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-div.image img {
-    display: block;
-    margin:auto;
-}
-div.image small {
-    display: block;
-}    
-    
-    
-    
+ .rightArrowIcon{    
+    	 padding-right: 20px;
+   		 display: inline;
+   		 background: transparent	url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAXCAQAAACRmLYJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAChSURBVCjPldIhCgJREMbxLy3LXkDE4CE2GAwGL6LFosGzWDZZDB7EYhA8gFUQQbCKLvI3OAq+YQecF3883ryZT6x5140S/R5RsDc+0kpRdLkYb8hSFANq48qjmPGpiUexNHzQ95ixNT7TSVG0ORnvyFMUPe7GK49i/G1s7lEsDJ8MPeZcjQ9/3Rw1vxl0G/wznFAw22nzVoJ9BkkIMxSk7wVffq9TEC+EWgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0wNi0xMlQwMTozMDoxNSswMDowMFicFAEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMDYtMTJUMDE6MzA6MTUrMDA6MDApway9AAAAAElFTkSuQmCC') no-repeat right center;
+   		}
     

@@ -29,11 +29,6 @@
     $(document).on("change", ".cq-dialog-checkbox-showhide", function(e) {
         showHide($(this));
     });
-    
-    $(document).on("change", ".ttil-list-hide-show", function(e) {
-        showHide($(this));
-    });
-        
 
    function showHide(el){
 
@@ -73,18 +68,12 @@
                    $(this).parent().children('ul').addClass('hide');
                    $(this).parent().children('[data-init="quicktip"]').addClass('hide');
                    $(this).parent().children('coral-icon').addClass('hide');
-                   if(($(this).attr('data-init')== "pathbrowser") && $(this).hasClass("hide") && $(this).children().children('input').attr('aria-required')){
+                   if(($(this).attr('data-init')== "pathbrowser") && $(this).hasClass("hide")){
 						$(this).parent().children().children().children('input').removeAttr('aria-required');
-                       $(this).parent().children().children().children('input').attr("data-required", "added");
                    }
-                   if($(this).parent().children('input').attr('aria-required')) {
+                   if($(this).parent().children('input').hasClass("hide")) {
 						$(this).parent().children('input').removeAttr('aria-required');
-                        $(this).parent().children('input').attr("data-required", "added");
-
                    } 
-                   if($(this).attr('type') == 'checkbox') {
-					  $(this).parent().parent().addClass('hide'); 
-                   }
 
                });
                //unhide proper fields
@@ -107,20 +96,14 @@
                            tabIndex = $tabsContents.index($tabsContent[0]),
                            $tabs = $(this).closest('.coral-TabPanel').find('.coral-TabPanel-navigation > .coral-TabPanel-tab');
                        $tabs.eq(tabIndex).removeClass('hide');
-                       if($(this).parent().children('input').attr('data-required')){
-                            $(this).parent().children('input').attr("aria-required","true");
-                       }
                        $(this).removeClass('hide');
                        $(this).parent().children('label').removeClass('hide');
                        $(this).parent().children('ul').removeClass('hide');
                        $(this).parent().children('[data-init="quicktip"]').removeClass('hide');
-					   //$(this).parent().children('input').attr("aria-required","true");
-                       if( !$(this).hasClass("hide") && ($(this).attr('data-init')== "pathbrowser") && !$(this).hasClass("js-cq-TagsPickerField") && $(this).parent().children().children().children('input').attr('data-required')){
+                       $(this).parent().children('input').attr("aria-required","true");
+                       if( !$(this).hasClass("hide") && ($(this).attr('data-init')== "pathbrowser") && !$(this).hasClass("js-cq-TagsPickerField") ){
 						$(this).parent().children().children().children('input').attr("aria-required","true");
-                   	   }
-                       if($(this).attr('type') == 'checkbox') {
-						  $(this).parent().parent().removeClass('hide'); 
-                   	   }
+                   }
                    }
 
                        }

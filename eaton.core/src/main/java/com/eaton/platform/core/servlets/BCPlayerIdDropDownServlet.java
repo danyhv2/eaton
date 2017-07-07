@@ -27,9 +27,8 @@ import com.adobe.granite.ui.components.ds.ValueMapResource;
 import com.day.cq.commons.jcr.JcrConstants;
 import com.day.cq.wcm.webservicesupport.ConfigurationManagerFactory;
 import com.eaton.platform.core.constants.CommonConstants;
-import com.eaton.platform.core.models.BCAccountBean;
-import com.eaton.platform.core.models.BCPlayerBean;
-import com.eaton.platform.core.services.AdminService;
+import com.eaton.platform.core.models.sitemap.BCAccountBean;
+import com.eaton.platform.core.models.sitemap.BCPlayerBean;
 import com.eaton.platform.core.util.BrightcoveUtil;
 
 /**
@@ -46,61 +45,59 @@ public class BCPlayerIdDropDownServlet extends SlingSafeMethodsServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger LOG = LoggerFactory.getLogger(BCPlayerIdDropDownServlet.class);
 	
-	// ConfigurationManagerFactory reference
 	@Reference
 	ConfigurationManagerFactory configManagerFctry;
-	
-	// AdminService reference
-	@Reference
-	AdminService adminService;
 
 	@Override
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
 
 		LOG.debug("******** BCPlayerIdDropDownServlet servlet execution started ***********");
 		//local variables
-		Resource brightcoveConfigRes = null;
-		// get admin resource resolver to resolve resource under /etc/cloudservices
-		ResourceResolver adminResourceResolver = adminService.getReadService();
+		Resource brightcoveconfigJCRResource = null;
+		ResourceResolver resolver = request.getResource().getResourceResolver();
 		// get refererURL from request since current page is not available in fixed path servelts
 		String refererURL = BrightcoveUtil.getRefererURL(request);
 		//get content path
-		String resourcePath = BrightcoveUtil.getContentPath(adminResourceResolver, refererURL);
-		Resource currentPageRes = adminResourceResolver.resolve(resourcePath);
-		brightcoveConfigRes = BrightcoveUtil.getBCConfigResource(configManagerFctry,
-				adminResourceResolver, currentPageRes);
+		String resourcePath = BrightcoveUtil.getContentPath(resolver, refererURL);
+		Resource currentPageRes = resolver.resolve(resourcePath);
+		brightcoveconfigJCRResource = BrightcoveUtil.getBCConfigJcrResource(configManagerFctry,
+										 resolver, currentPageRes);
 		// invoke getBCAccounts method to get account details
-		BCAccountBean bcAcctBean = BrightcoveUtil.getBCAccounts(brightcoveConfigRes);
+		List<BCAccountBean> bcAcctBeanList = BrightcoveUtil.getBCAccounts(brightcoveconfigJCRResource);
 		// Create an ArrayList to hold data
 		List<Resource> bcPlayerList = new ArrayList<Resource>();
 		
 		List<BCPlayerBean> bcPlayerBeanList = null;
 
 		ValueMap valueMap = null;
-		if(null != brightcoveConfigRes){
+		if(null != brightcoveconfigJCRResource){
 				
-			bcPlayerBeanList = bcAcctBean.getPlayerDetails();
-			for(BCPlayerBean bcPlayerBean : bcPlayerBeanList){
-				// allocate memory to the Map instance
-				valueMap = new ValueMapDecorator(new HashMap<String, Object>());
+			// Add Brightcove account details to Graphic drop down!
+			for (BCAccountBean bcAccountBean : bcAcctBeanList) {
 
-				// Specify the value and text values
-				String dropDownValue = bcPlayerBean.getPlayerId();
-				String dropDownText = bcPlayerBean.getPlayerName();
+				bcPlayerBeanList = bcAccountBean.getPlayerDetails();
+				for(BCPlayerBean bcPlayerBean : bcPlayerBeanList){
+					// allocate memory to the Map instance
+					valueMap = new ValueMapDecorator(new HashMap<String, Object>());
 
-				// populate the map
-				valueMap.put(CommonConstants.VALUE, dropDownValue);
-				valueMap.put(CommonConstants.TEXT, dropDownText);
+					// Specify the value and text values
+					String dropDownValue = bcPlayerBean.getPlayerId();
+					String dropDownText = bcPlayerBean.getPlayerName();
 
-				bcPlayerList.add(new ValueMapResource(adminResourceResolver, new ResourceMetadata(), JcrConstants.NT_UNSTRUCTURED, valueMap));
+					// populate the map
+					valueMap.put(CommonConstants.VALUE, dropDownValue);
+					valueMap.put(CommonConstants.TEXT, dropDownText);
+
+					bcPlayerList.add(new ValueMapResource(resolver, new ResourceMetadata(), JcrConstants.NT_UNSTRUCTURED, valueMap));
+				}
+				
 			}
-				
+
 			// Create a DataSource that is used to populate the drop-down control
 			DataSource dataSource = new SimpleDataSource(bcPlayerList.iterator());
 			request.setAttribute(DataSource.class.getName(), dataSource);
 			
+			LOG.debug("******** BCContentIdDropDownServlet servlet execution ended ***********");
 		}
-		
-		LOG.debug("******** BCContentIdDropDownServlet servlet execution ended ***********");
 	}
 }

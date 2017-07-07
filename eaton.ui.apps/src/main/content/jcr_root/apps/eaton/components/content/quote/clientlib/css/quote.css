@@ -4,7 +4,7 @@
 .quoteHolder{
 	border-top:8px solid ;
     border-bottom:4px solid;
-    border-color: #EEF0F2;
+    border-color: var(--Gray5);
 }
 
 .quote_by br{
@@ -20,26 +20,22 @@
 
 .quote_description{
     font-family: Arial;
-    color: #98A4AE;
-    font-size: 2.125em;
+    color: var(--Gray3);
+    font-size: 2.84em;
     font-style: italic;
-    line-height: 1.765em;
+    line-height: 80px;
     text-align: center;
-    margin-bottom:0;
 }
 .quote_by{
     text-align:center;
     font-style: italic;
     font-family: Arial;
-    color: #333F48;
-    font-size: 1.250em;    
+    color: var(--Gray1);
+    font-size: 1.67em;
+    color: var(--Gray1);
 }
-/*
- @media only screen and (max-width: 768px) { 
-*/
- /*Mobile & Tablet */
-@media only screen and (max-width: 600px) , screen and (min-width: 601px) and (max-width:992px) {
-	
+@media only screen and (max-width: 768px) {
+
     .quote_by br{
         display: block;
      }
@@ -48,26 +44,19 @@
 
       }
     .quote_by {    
-        font-size: 1.50em;
-        line-height: 1.50em;
-         color: #333F48;
+        font-size: 1.00em;
+        line-height: 24px;
           }
     .quote_description{
         font-family: Arial;
-        color: #98A4AE;        
-        font-style: italic;        
+        color: var(--Gray3);
+        font-size: 1.92em;
+        font-style: italic;
+        line-height: 40px;
         text-align: center;
-        font-size: 1.438em !important;
-    	line-height: 1.652em !important;
     }	
 
 }
-
-
-
-
-
-/*
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px) and(max-width:650px),
@@ -79,7 +68,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 
     .quote_description{
         font-family: Arial;
-        color: #98A4AE;
+        color: var(--Gray3);
         font-size: 3.84em;
         font-style: italic;
         line-height: 40px;
@@ -90,219 +79,4 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
             line-height: 48px;
           }
     }
-    
-    */
-    
 /** quote end **/
-
-/*rel 3 - career */
-
-.quote_description_withimg
-{
-    font-family: Arial;
-    color: #FFF;
-    font-size: 1.875em;
-    font-style: italic;
-    line-height: 1.60em;
-}
-.quote-main-one .quote-box
-{
-	height: 484px;
-	background-color: #005EB8;
-    float: right;
-    right: 42%;
-}
-.quote-main-two .quote-box
-{
-	height: 484px;
-	background-color: #005EB8;
-    float: right;
-
-}
-.designation
-{
-	font-family: Arial;
-    color: #FFF;
-    font-size: 1.25em;
-    font-style: italic;
-    font-weight:Bold;
-
-}
-.quote-main-two .quote-img
-{	
-    height: 484px;
-    width: 484px;
-    margin-left: 14%;
-} 
-
-.quote-main-one .quoteImg
-
-{
-    position: absolute;
-    left: 55%;
-    margin-top: 150px;
-}  
-
-.quote-main-two .quoteImg
-
-{
-	position: absolute;
-    left: 39%;
-    margin-top: 145px;
-}
-.quote-main-one .quote_description_withimg,.quote-main-one .designation
-{
-	margin-left: 15px
-}
-
- @media only screen and (min-width:993px){
-.quote-main-one .pushclass
-{
-	left: 58%;
-    position: absolute;
-}
-.quote-main-one .quote-img
-{
-    height: 484px;
-    width:484px;
-
-}    
-    }
-@media only screen and (min-width: 601px) and (max-width: 992px){
-
-.quote-main-one .quote-img
-{
-
-    width: 100%;
-
-}  
-.quote-main-two .quote-img
-{
-	width: 100%;
-    margin-left: 0%;
-	height:auto;        
-} 
-.quote-main-one .quoteImg
-{
-    position: absolute;
-   	left: 45%;
-    margin-top: -30px;
-} 
-
-.quote-main-two .quoteImg
-
-{
-	position: absolute;
-    left: 45%;
-    margin-top: -24px;
-}
-.quote_description_withimg
-{
-
-  	font-size: 1.437em;
-    line-height: 1.652em;
-} 
-.designation
-{
-    font-size: 0.937em;
-
-}
-.quote-box .extraLargePaddingTop
-{
-	padding-top:60px !important
-}
-
-.quote-box .extraLargePaddingBottom
-{
-	padding-bottom:90px !important
-}
-.quote-main-one .quote-box
-{
-	height: auto;
-
-}
-.quote-main-two .quote-box
-{
-	height: auto;
-
-}
-.quote-main-one .quote_description_withimg,.quote-main-one .designation
-{
-	margin-left: 0px
-}
-.quote-main-two
-{
-	padding-top:30px;
-}
-
-}
-
-@media only screen and (max-width: 600px){
-.quote-main-two .quote-img
-{
-	 width: 100%;
-    margin-left: 0%;
-} 
-.quote-main-one .quote-img
-{
-
-    width: 100%;
-
-}  
-    .quote-main-one .quoteImg
-{
-    position: absolute;
-   	left: 40%;
-    margin-top: -30px;
-}
-.quote-main-two .quoteImg
-
-{
-	position: absolute;
-    left: 39%;
-    margin-top: -24px;
-}
-.quote_description_withimg
-{
-	font-size: 1.437em;
-    line-height: 1.652em;
-}
-.designation
-{
-       font-size: 0.937em;
-
-}
-.quote-box .extraLargePaddingTop
-{
-	padding-top:60px !important;
-}
-
-.quote-main-one .quote-box .extraLargePaddingBottom
-{
-	padding-bottom:90px !important;
-}
-
-.quote-main-one .quote-box
-{
-	height: auto;
-
-}
-.quote-main-two .quote-box
-{
-	height: auto;
-
-}
-.quote-main-one .container-padding,.quote-main-two .container-padding
-{
-	padding-left:0px !important;
-    padding-right:0px !important;
-}
-.quote-main-one .quote_description_withimg,.quote-main-one .designation
-{
-	margin-left: 0px
-}
-.quote-main-two
-{
-	padding-top:30px;
-}
-}

@@ -1,11 +1,8 @@
 package com.eaton.platform.core.util;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
 import java.net.URLEncoder;
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -17,9 +14,6 @@ import java.util.Map;
 import java.util.ResourceBundle;
 import java.util.zip.CRC32;
 
-import javax.jcr.RepositoryException;
-
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
@@ -31,8 +25,6 @@ import org.slf4j.LoggerFactory;
 
 import com.day.cq.commons.inherit.HierarchyNodeInheritanceValueMap;
 import com.day.cq.commons.inherit.InheritanceValueMap;
-import com.day.cq.commons.jcr.JcrConstants;
-import com.day.cq.dam.api.DamConstants;
 import com.day.cq.i18n.I18n;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
@@ -590,25 +582,60 @@ public final class CommonUtil {
 		}
 		return attrValue;
 	}
+    
+    public static String convertStringToIntegerCurrency(String value, String currencyType) {
+    	
+		NumberFormat numFmt = null;
+		String returnValue = StringUtils.EMPTY;
+		try {
+			
+			//int currencyVal = Integer.valueOf(value);
+			Double currencyVal = Double.valueOf(value);
+			if(StringUtils.equals("USD", currencyType)) {
+				numFmt = NumberFormat.getCurrencyInstance(Locale.US);
+			} 
+			if(StringUtils.equals("CAD", currencyType)) {
+				numFmt = NumberFormat.getCurrencyInstance(Locale.CANADA);
+			} 
+			if(numFmt != null) {
+				returnValue = numFmt.format(currencyVal);
+			}
+			returnValue = returnValue.substring(0, returnValue.indexOf("."));
+			if(returnValue.startsWith("("))
+			{
+				returnValue="-"+returnValue.substring(1);
+			}
+			
+		} catch (NumberFormatException nfe) {
+			LOGGER.error("NumberFormatException - "+nfe); 
+		}
+		return returnValue;
+    }
+    
+	public static String removeDotHtml(String link) {
+		return StringUtils.removeEnd(link, CommonConstants.HTML_EXTN);
+	}
+
+	public static String dotHtmlLink(String link) {
+		if(StringUtils.startsWith(link, CommonConstants.STARTS_WITH_CONTENT)){
+			return link + CommonConstants.HTML_EXTN;
+		}
+		return link;
+	}
 	
 	/**
 	 * 
 	 * @param linkTitle
 	 * @param link
 	 * @param resourceResolver
-	 * @return title
+	 * @return linkTitle
 	 */
 	public static String getLinkTitle(String linkTitle, String link, ResourceResolver resourceResolver) {
-		String titleValue = linkTitle;
-		if(null == linkTitle){
-			if(null != link && StringUtils.startsWith(link, CommonConstants.CONTENT_ROOT_FOLDER)){
-					Page linkPage = resourceResolver.getResource(link).adaptTo(Page.class);
-					titleValue = null != linkPage.getNavigationTitle()? linkPage.getNavigationTitle() : null != linkPage.getPageTitle() ? linkPage.getPageTitle() : linkPage.getTitle();
-			} else {
-				titleValue = StringUtils.EMPTY;
-			}
+		if(linkTitle == null && link!=null ){
+				Page linkPage = resourceResolver.getResource(link).adaptTo(Page.class);
+				return linkPage.getNavigationTitle() != null? linkPage.getNavigationTitle() : linkPage.getPageTitle() != null ? linkPage.getPageTitle() : linkPage.getTitle();
 		}
-		return titleValue;
+		return linkTitle;
 	}
 
 	/**
@@ -628,118 +655,5 @@ public final class CommonUtil {
 		ConfigurationManager configMgr = configManagerFctry.getConfigurationManager(resolver);
 		Configuration configObj = configMgr.getConfiguration(configName, services);
 		return configObj;
-	}
-	
-	/**
-     * Gets the home page path.
-     * @param page the page
-     * @return the home page path
-     */
-    public static String getHomePagePath(Page page) {
-        LOGGER.debug("Entered into getHomePagePath method");
-        LOGGER.debug("Depth - " + page.getDepth());
-        String homepagePath = StringUtils.EMPTY;
-        if (StringUtils.startsWith(page.getPath(), CommonConstants.CONTENT_ROOT_FOLDER) && page.getDepth() > CommonConstants.COUNTRY_PAGE_DEPTH) {
-            homepagePath = page.getAbsoluteParent(CommonConstants.LANGUAGE_PAGE_DEPTH-1).getPath();
-        }
-        LOGGER.debug("Exited from getHomePagePath method");
-        return homepagePath;
-    }
-    
-    /**
-     * This method gets the home page.
-     * @param page
-     * @return the home page
-     */
-    public static Page getHomePage(Page page) {
-        LOGGER.debug("Entered into getHomePage method");
-        LOGGER.debug("Depth - " + page.getDepth());
-        Page homePage = null;
-        if (StringUtils.startsWith(page.getPath(), CommonConstants.CONTENT_ROOT_FOLDER) && page.getDepth() > CommonConstants.COUNTRY_PAGE_DEPTH) {
-            homePage = page.getAbsoluteParent(CommonConstants.LANGUAGE_PAGE_DEPTH-1);
-        }
-        LOGGER.debug("Exited from getHomePage method");
-        return homePage;
-    }
-    
-    /**
-     * This method checks if it is a home page.
-     * @param page
-     * @return isHomepage
-     */
-    public static boolean isHomePagePath(Page page) {
-        LOGGER.debug("Entered into isHomePagePath method");
-        LOGGER.debug("Depth - " + page.getDepth());
-        boolean isHomepage = false;
-        if (StringUtils.startsWith(page.getPath(), CommonConstants.CONTENT_ROOT_FOLDER) && page.getDepth() == CommonConstants.LANGUAGE_PAGE_DEPTH) {
-        	isHomepage = true;
-        }
-        LOGGER.debug("Exited from isHomePagePath method");
-        return isHomepage;
-    }
-    
-    /**
-     * This method reads the jcr:data of file and returns the response
-     * @param adminResourceResolver
-     * @param filePath
-     * @return response from file
-     * @throws IOException
-     * @throws RepositoryException
-     */
-    public static String getResponseStringFromFile(ResourceResolver adminResourceResolver, String filePath) throws IOException, RepositoryException {
-		
-		StringWriter writer = new StringWriter();
-		
-		Resource res = adminResourceResolver.getResource(filePath.concat("/jcr:content/renditions/original/jcr:content"));
-		if(res != null) {
-			ValueMap resvm = res.getValueMap();
-			if(resvm.containsKey("jcr:data")){
-				InputStream stream = (InputStream) resvm.get("jcr:data");
-				IOUtils.copy(stream, writer, "UTF-8");
-			}
-		}
-		
-		return writer.toString();
-	}
-    
-    /**
-     * This method appends the .html if link is internal
-     * @param link
-     * @return the link
-     */
-    public static String dotHtmlLink(String link) {
-		if(StringUtils.startsWith(link, CommonConstants.CONTENT_ROOT_FOLDER)){
-			link = link + CommonConstants.HTML_EXTN;
-		} else if(StringUtils.startsWith(link, CommonConstants.WWW)) {
-			link = CommonConstants.HTTP_SLASH + link ;
-		}
-		return link;
-	}
-    
-    /**
-     * This method returns the alternate txt from DAM asset
-     * @param resourceResolver
-     * @param imagePath
-     * @return asset alternate text
-     */
-    public static String getAssetAltText(ResourceResolver resourceResolver, String imagePath) {
-		String assetAltText = StringUtils.EMPTY;
-		Resource assetResource;
-		try {
-			assetResource = resourceResolver.getResource(URLDecoder.decode(imagePath, CommonConstants.UTF_8));
-
-			if(assetResource != null) {
-				Resource jcrResource = assetResource.getChild(JcrConstants.JCR_CONTENT);
-				
-				if(jcrResource != null) {
-					Resource metaDataResource =  jcrResource.getChild(DamConstants.METADATA_FOLDER);
-					ValueMap properties = metaDataResource.getValueMap();
-					assetAltText = !StringUtils.equals(StringUtils.EMPTY, CommonUtil.getStringProperty(properties, DamConstants.DC_TITLE)) ? CommonUtil.getStringProperty(properties, DamConstants.DC_TITLE) : CommonUtil.getStringProperty(jcrResource.getValueMap(), DamConstants.PN_NAME);
-				}
-			}
-		} catch (UnsupportedEncodingException e) {
-			LOGGER.error("Exception occured due to improper image name - ", e);
-		}
-		return assetAltText;
 	}
 }
