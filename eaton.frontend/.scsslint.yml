@@ -1,0 +1,15 @@
+files:
+  ignore:
+    - '/src/global/css/vendor/*.scss'
+rules:
+   class-name-format:
+   - 1
+   -
+     allow-leading-underscore: true
+     convention: hyphenatedbem
+
+   variable-name-format:
+   - 1
+   -
+     allow-leading-underscore: true
+     convention: hyphenatedbem

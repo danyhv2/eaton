@@ -16,6 +16,10 @@ gulp.task('clean',
 
 // TASKS: Compile SASS to CSS
 //--------------
+gulp.task('css:lint',
+  require('./config/gulp-tasks/gulp-scss-lint')(gulp, CONFIG)
+);
+
 gulp.task('css:global',
   require('./config/gulp-tasks/gulp-css')(gulp, CONFIG, 'global')
 );
