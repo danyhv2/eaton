@@ -20,8 +20,6 @@
                     <view
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/select"
-                        class="cq-dialog-dropdown-showhide"
-                        cq-dialog-dropdown-showhide-target=".ttil-list-view-hide-show"
                         fieldLabel="View"
                         name="./view"
                         required="{Boolean}true">
@@ -55,26 +53,20 @@
                     <header
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/textfield"
-                        class="hide ttil-list-view-hide-show"
                         fieldLabel="Header"
                         name="./transHeader"
-                        required="{Boolean}true"
-                        showhidetargetvalue="no-feature,single-feature,related-products-text-only,related-products-with-images,fea-list"/>
+                        required="{Boolean}true"/>
                     <header-link
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        class="hide ttil-list-view-hide-show"
                         fieldLabel="Header Link"
                         name="./headerLink"
                         required="{Boolean}true"
-                        rootPath="/content/eaton"
-                        showhidetargetvalue="no-feature,single-feature"/>
+                        rootPath="/content/eaton"/>
                     <newWindow
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                        class="hide ttil-list-view-hide-show"
                         name="./newWindow"
-                        showhidetargetvalue="no-feature,single-feature"
                         text="Open in New Window"
                         value="true"/>
                     <list-type
@@ -112,21 +104,10 @@
                         name="./parentPage"
                         rootPath="/content/eaton"
                         showhidetargetvalue="child-pages"/>
-                    <tags
-                        cq:showOnCreate="{Boolean}true"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="cq/gui/components/common/tagspicker"
-                        allowBulkEdit="{Boolean}true"
-                        allowCreate="{Boolean}true"
-                        class="hide ttil-list-hide-show"
-                        cq-msm-lockable="tags"
-                        fieldLabel="Tags"
-                        name="./tags"
-                        showhidetargetvalue="tags"/>
                     <fixed-links
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/multifield"
-                        class="full-width hide ttil-list-hide-show"
+                        class="full-width,hide ttil-list-hide-show"
                         eaem-nested=""
                         fieldDescription="Click '+' to add more Links"
                         fieldLabel="Fixed Links"
@@ -165,7 +146,7 @@
                     <manual-links
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/multifield"
-                        class="full-width hide ttil-list-hide-show"
+                        class="full-width,hide ttil-list-hide-show"
                         eaem-nested=""
                         fieldDescription="Click '+' to add more manual Links"
                         fieldLabel="Manual Links"
@@ -186,10 +167,8 @@
                                         <eyebrow
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                            class="ttil-list-view-hide-show"
                                             fieldLabel="Eyebrow"
-                                            name="./eyebrow"
-                                            showhidetargetvalue="no-feature,single-feature,related-products-text-only,related-products-with-images,fea-story"/>
+                                            name="./eyebrow"/>
                                         <headline
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/foundation/form/textfield"
@@ -201,46 +180,44 @@
                                             fieldLabel="Link Destionation"
                                             name="./transLinkDestination"
                                             rootPath="/content/eaton"/>
-                                        <newWindow
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                                            name="./newWindowManual"
-                                            text="Open in New Window"
-                                            value="true"/>
                                         <publictn-date
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/foundation/form/datepicker"
-                                            class="ttil-list-hide-show"
                                             fieldLabel="Publication Date"
-                                            name="./publicationDate"
-                                            showhidetargetvalue="no-feature,single-feature"/>
+                                            name="./publicationDate"/>
                                         <featureImage
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                            class="ttil-list-view-hide-show"
                                             fieldLabel="Feature Image"
                                             name="./featureImage"
-                                            rootPath="/content/dam/eaton"
-                                            showhidetargetvalue="single-feature,related-products-with-images,fea-story,fea-list"/>
+                                            rootPath="/content/dam/eaton"/>
                                         <altText
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                            class="ttil-list-view-hide-show"
                                             fieldLabel="Alt Txt"
-                                            name="./transAltTxt"
-                                            showhidetargetvalue="single-feature,related-products-with-images,fea-story,fea-list"/>
+                                            name="./transAltTxt"/>
                                         <description
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/foundation/form/textarea"
-                                            class="ttil-list-view-hide-show"
                                             fieldLabel="Description"
                                             name="./transDescription"
-                                            showhidetargetvalue="fea-list"/>
+                                            required="{Boolean}true"/>
                                     </items>
                                 </column>
                             </items>
                         </field>
                     </manual-links>
+                    <tags
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/common/tagspicker"
+                        allowBulkEdit="{Boolean}true"
+                        allowCreate="{Boolean}true"
+                        class="hide ttil-list-hide-show"
+                        cq-msm-lockable="tags"
+                        fieldLabel="Tags"
+                        name="./tags"
+                        showhidetargetvalue="tags"/>
                     <sort
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/select"

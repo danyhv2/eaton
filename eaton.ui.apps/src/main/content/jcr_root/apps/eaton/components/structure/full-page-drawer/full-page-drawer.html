@@ -1,25 +1,25 @@
-<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
-    <div>Full Page Drawer Component</div>
-</sly>
-<sly data-sly-use.fullPageDrawerHelper="com.eaton.platform.core.helpers.FullPageDrawerHelper"></sly>
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}"><div>Full Page Drawer Component</div></sly>
 <!-- Utility dropdown desktop starts here --> 
+<sly data-sly-use.fullPageDrawerModel="com.eaton.platform.core.models.FullPageDrawerBean">
 <div class="continent-dropdown-menu" id="continent-dropdown-menu">
-    <sly data-sly-test="${fullPageDrawerHelper.fullPageDrawerSlingModel.reference}" data-sly-include="${'country-selector-reference.jsp' @ wcmmode='disabled'}"></sly>
-</div>
-<!-- Utility dropdown desktop ends here -->
-<div class="utility-nav hide-mob padding-top-10 padding-bottom-10" id="utility-nav">
-    <div class="container-fixed container-padding">
-        <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-GridColumn--default--6 contry-language-selector">
-                <ul>
-                    <li id="select-region">
-                        <a href="#." class="select-region-link"><span class="utility-icon"></span><span id="selected-region" class='usEng'>${fullPageDrawerHelper.countryTitle}/${fullPageDrawerHelper.languageTitle}</span><span class="caret"></span></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-GridColumn--default--6 sign-up-link" data-sly-list=${fullPageDrawerHelper.fullPageDrawerSlingModel.linkList.listChildren}>
-					<a data-sly-test="${item.transLinkTitle}" href="${item.linkPath}.html" target="${item.newWindow ? '_blank' : ''}" class="pull-right"><span class="${item.icons}"></span>${item.transLinkTitle}</a>
+		<sly data-sly-resource="${'countrySelector' @ resourceType='eaton/components/structure/country-selector'}"></sly>
+		<!-- <sly data-sly-test="${fullPageDrawerModel.reference}" data-sly-include="${'country-selector-reference.jsp' @ wcmmode='disabled'}"></sly> -->
+	</div>
+	<!-- Utility dropdown desktop ends here -->
+	<div class="utility-nav hide-mob padding-top-10 padding-bottom-10" id="utility-nav">
+		<div class="container-fixed container-padding">
+			<div class="aem-Grid aem-Grid--12">
+				<div class="aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-GridColumn--default--6 contry-language-selector">
+					<ul>
+						<li id="select-region">
+							<a href="#." class="select-region-link"><span class="utility-icon"></span><span id="selected-region">US/English</span><span class="caret"></span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-GridColumn--default--6 sign-up-link" data-sly-list=${fullPageDrawerModel.linkList.listChildren}>
+					<a href="${item.linkPath}" class="pull-right"><span class="${item.icons}"></span>${item.transLinkTitle}</a>
+				</div>
 			</div>
-        </div>
-    </div>
+		</div>
 </div>
+</sly>

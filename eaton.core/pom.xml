@@ -33,31 +33,11 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Bundle-SymbolicName>com.eaton.platform.core-bundle</Bundle-SymbolicName>
-						<Embed-Dependency>*;scope=compile|runtime</Embed-Dependency>
-						<Embed-Directory>OSGI-INF/lib</Embed-Directory>
-						<Embed-Transitive>true</Embed-Transitive>
-						<Import-Package>*;resolution:=optional</Import-Package>
-						<Export-Package>
-							com.eaton.platform.core.*;
-							com.eaton.platform.core.helpers.*;
-							com.eaton.platform.core.helpers.pagecomponent.eatonpage.*;
-							com.eaton.platform.core.helpers.tags.*;
-							com.eaton.platform.core.listeners.*;
-							com.eaton.platform.core.models.*;
-							com.eaton.platform.core.models.sitemap.*;
-							com.eaton.platform.core.schedulers.*;
-							com.eaton.platform.core.services.*;
-							com.eaton.platform.core.servlets.*;
-							version=${project.version}
-						</Export-Package>
+						<!-- <Embed-Dependency> artifactId1, artifactId2;inline=true </Embed-Dependency> -->
+						<Import-Package>javax.inject;version=0.0.0,*</Import-Package>
 						<Sling-Model-Packages>
 							com.eaton.platform.core.models
 						</Sling-Model-Packages>
-						<Include-Resource>
-							META-INF/=src/main/resources/META-INF/tags/,
-							OSGI-INF/=target/classes/OSGI-INF/
-						</Include-Resource>
 					</instructions>
 				</configuration>
 			</plugin>
@@ -163,6 +143,8 @@
 			<groupId>com.day.commons.osgi.wrapper</groupId>
 			<artifactId>com.day.commons.osgi.wrapper.commons-httpclient</artifactId>
 		</dependency>
+
+
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
@@ -176,13 +158,6 @@
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-		</dependency>
+
 	</dependencies>
 </project>
