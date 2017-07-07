@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-04-28T03:05:55.058-04:00"
+    jcr:createdBy="admin"
+    jcr:description=""
+    jcr:lastModified="{Date}2017-04-28T03:05:55.058-04:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="2"
+    builtWith="Adobe Experience Manager-6.2.0.SP1-CFP2"
+    group="Sradhanand"
+    lastUnwrapped="{Date}2017-04-28T03:05:55.058-04:00"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2017-04-28T03:05:55.058-04:00"
+    lastWrappedBy="admin"
+    name="eaton-platform"
+    version="28-Apr-2017">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/eaton"
+            rules="[exclude:/apps/eaton/install]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/etc/designs/eaton"
+            rules="[]"/>
+        <f2
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/conf/eaton"
+            rules="[]"/>
+    </filter>
+</jcr:root>
