@@ -1,0 +1,52 @@
+###
+# ERROR Level: Severity should be one of the following:
+#  0 = off
+#  1 = warn
+#  2 = error
+###
+rules:
+
+  class-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedbem
+
+  clean-import-paths:
+    - 0 # Disabled since we are using SASS Globbings when importing entire folders
+
+  empty-args:
+    - 0 # Disabled for consistency when writing mixins
+
+  hex-notation:
+    - 2
+    - style: uppercase
+
+  no-duplicate-properties:
+    - 2
+    - exclude: # Exclude these properties since sometimes they are used as fallback for older browsers
+      - display
+      - color
+      - border-color
+      - font-size
+
+  no-empty-rulesets:
+    - 0 # Disabled since empty selectors are used for future reference, and the are no compiled by SASS
+
+  no-ids:
+    - 2 # Avoid Using #ID for styling purposes
+
+  property-sort-order:
+    - 0
+
+  quotes:
+    - 0
+
+  trailing-semicolon:
+    - 2
+
+  variable-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedbem

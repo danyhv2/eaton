@@ -8,17 +8,20 @@
 body {
   color: $color__primary-gray1;
   font-family: $font-family__secondary;
+
   .dark-theme & {
     color: $color__white;
   }
 }
 
-.body-copy, .body-copy-link {
+.body-copy,
+.body-copy-link {
   font-size: 1.5em;
   line-height: 2.375em;
 }
 
-.body-copy-small, .body-small-link {
+.body-copy-small,
+.body-small-link {
   font-size: 1.125em;
   line-height: 1.5em;
 }
@@ -33,7 +36,9 @@ body {
   color: $color__primary-blue;
   cursor: pointer;
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     color: $color__accent-darkblue; //TBD
   }
 
@@ -51,32 +56,43 @@ body {
 // Headings
 // ----------------
 
-h1, h2, h3,
-.heading-h1, .heading-h2, .heading-h3 {
+h1,
+h2,
+h3,
+.heading-h1,
+.heading-h2,
+.heading-h3 {
   font-family: $font-family__primary;
 }
 
-h4, h5,
-.heading-h5, .heading-h6 {
+h4,
+h5,
+.heading-h5,
+.heading-h6 {
   font-family: $font-family__secondary;
 }
 
-h1, .heading-h1 {
+h1,
+.heading-h1 {
   font-size: 2rem;
 }
 
-h2, .heading-h2 {
+h2,
+.heading-h2 {
   font-size: 1.8rem;
 }
 
-h3, .heading-h3 {
+h3,
+.heading-h3 {
 
 }
 
-h4, .heading-h4 {
+h4,
+.heading-h4 {
 
 }
 
-h5, .heading-h5 {
+h5,
+.heading-h5 {
 
 }

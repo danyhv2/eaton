@@ -4,22 +4,22 @@
 
 // Typography
 //--------------
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return #{$remSize}rem;
+@function calculate-rem($size) {
+  $rem-size: $size / 16px;
+  @return #{$rem-size}rem;
 }
 
-@mixin fontSize($size) {
+@mixin font-size($size) {
   font-size: $size; // Fallback in px
-  font-size: calculateRem($size);
+  font-size: calculate-rem($size);
 }
 
 
 // Size
 //--------------
 @mixin size($width, $height) {
-  width: $width;
   height: $height;
+  width: $width;
 }
 
 // Width & Height
@@ -43,13 +43,13 @@
 //
 // Source: http://nicolasgallagher.com/micro-clearfix-hack/
 @mixin clearfix() {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: " ";   // 1
     display: table; // 2
   }
 
-  &:after {
+  &::after {
     clear: both;
   }
 }
