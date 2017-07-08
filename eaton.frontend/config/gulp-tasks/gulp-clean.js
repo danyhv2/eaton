@@ -10,20 +10,23 @@ const path = require('path');
 const cleanAEM = function(gulp, CONFIG) {
   return function() {
 
+    // Clean Build Folders
+    //--------------
     del([
-      './eaton.frontend/build', // NOTE: Old Build Folder, It should be removed once merged into `master` branch
 
       // Delete Files, Not folders
-      path.join(CONFIG.paths.destAEM.global, '/**/*'),
-      path.join(CONFIG.paths.destAEM.components, '/**/*')
+      path.join(CONFIG.paths.destAEM.js, '/**/*'),
+      path.join(CONFIG.paths.destAEM.css, '/**/*')
     ],
 
-    // Aditional Options
-    {
-      force: true // NOTE: Cannot delete files/folders outside the current working directory. 'Force' is required.
-    }
-    );
+      // Aditional Options
+      {
 
+        // NOTE: Cannot delete files/folders outside the current working directory. 'Force' is required.
+        force: true
+      }
+
+    );
   };
 };
 

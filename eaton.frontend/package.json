@@ -10,7 +10,9 @@
     "aemsync": "node config/aemsync",
     "aemdev": "gulp build:dev",
     "preaemprod": "npm install --no-optional",
-    "aemprod": "gulp build:prod"
+    "aemprod": "gulp build:prod",
+    "build:js": "gulp js",
+    "build:css": "gulp css"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,6 @@
     "del": "3.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "6.1.2",
-    "gulp-filenamelist": "1.1.1",
     "gulp-eslint": "3.0.1",
     "gulp-plumber": "1.1.0",
     "gulp-sass": "^3.1.0",

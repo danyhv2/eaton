@@ -12,15 +12,13 @@ const configFile = require(path.resolve('./', '.eslintrc.js'));
 const lintJS = function(gulp, CONFIG, bundle) {
   return function() {
 
-    return gulp.src([
+    // Lint JavaScript
+    //--------------
+    gulp.src([
       path.join('./', 'config/gulp-tasks/*.js'),
 
-      CONFIG.paths.src.components.content + '/**/js/*.js',
-      CONFIG.paths.src.components.structure + '/**/js/*.js',
+      CONFIG.paths.src.js + '/**/*.js'
 
-      // NOTE: Ignore OLD JS Files inside 'clientlibs' folders
-      '!' + CONFIG.paths.src.components.content + '/**/clientlib/js/*.js',
-      '!' + CONFIG.paths.src.components.structure + '/**/clientlib/js/*.js'
     ])
       .pipe(gulpEslint(configFile))
       .pipe(gulpEslint.format())

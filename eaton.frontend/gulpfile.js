@@ -15,8 +15,10 @@ gulp.task('clean',
 
 // TASKS: Linting
 //--------------
+
+// SASS-Lint
 gulp.task('lint:css',
-  require('./config/gulp-tasks/gulp-scss-lint')(gulp, CONFIG)
+  require('./config/gulp-tasks/gulp-css-lint')(gulp, CONFIG)
 );
 
 // ESLint
@@ -27,31 +29,16 @@ gulp.task('lint:js',
 
 // TASKS: Compile SASS to CSS
 //--------------
-gulp.task('css:global',
-  require('./config/gulp-tasks/gulp-css')(gulp, CONFIG, 'global')
+gulp.task('css',
+  require('./config/gulp-tasks/gulp-css')(gulp, CONFIG)
 );
-
-gulp.task('css:components',
-  require('./config/gulp-tasks/gulp-css')(gulp, CONFIG, 'components')
-);
-
-// Alias for All CSS tasks
-gulp.task('css', ['css:global', 'css:components']);
-
 
 
 // TASKS: JavaScript
 //--------------
-gulp.task('js:global',
-  require('./config/gulp-tasks/gulp-js')(gulp, CONFIG, 'global')
+gulp.task('js',
+  require('./config/gulp-tasks/gulp-js')(gulp, CONFIG)
 );
-
-gulp.task('js:components',
-  require('./config/gulp-tasks/gulp-js')(gulp, CONFIG, 'components')
-);
-
-// Alias for common JS tasks
-gulp.task('js', ['js:global', 'js:components']);
 
 
 
@@ -61,6 +48,7 @@ gulp.task('build:dev', [
   'clean',
   'css',
   'js',
+  'lint:css',
   'lint:js'
 ]);
 
@@ -72,6 +60,7 @@ gulp.task('build:prod', [
   'clean',
   'css',
   'js',
+  'lint:css',
   'lint:js'
 ]);
 

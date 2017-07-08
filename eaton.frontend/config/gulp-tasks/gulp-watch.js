@@ -10,36 +10,18 @@ const watch = function (gulp, CONFIG) {
 
   gutil.log(gutil.colors.green.bold('Watching Files...'));
 
-  // Watch: SASS Global
+  // Watch: SASS
   gulp.watch([
-    CONFIG.paths.src.global + '/**/*.scss'
-  ], ['css:global']
+    CONFIG.paths.src.scss + '/**/*.scss'
+  ], ['css', 'lint:css']
   );
 
-  // Watch: SASS Components
+  // Watch: JS
   gulp.watch([
-    CONFIG.paths.src.components.content + '/**/*.scss',
-    CONFIG.paths.src.components.structure + '/**/*.scss'
-  ], ['css:components']
+    CONFIG.paths.src.js + '/**/*.js'
+  ], ['js', 'lint:js']
   );
 
-
-  // Watch: JS Global
-  gulp.watch([
-    CONFIG.paths.src.global + '/**/*.js'
-  ], ['js:global']
-  );
-
-  // Watch: JS Components
-  gulp.watch([
-    CONFIG.paths.src.components.content + '/**/js/*.js',
-    CONFIG.paths.src.components.structure + '/**/js/*.js',
-
-    // NOTE: Ignore OLD JS Files inside 'clientlibs' folders
-    '!' + CONFIG.paths.src.components.content + '/**/clientlib/js/*.js',
-    '!' + CONFIG.paths.src.components.structure + '/**/clientlib/js/*.js'
-  ], ['js:components']
-  );
 
 };
 

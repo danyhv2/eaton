@@ -1,0 +1,10 @@
+#base=js
+
+### Load Global/Utility Files
+global/config-constants.js
+global/config-utils.js
+global/global.js
+
+### Load All EATON Components
+components/global-header.js
+components/example-product-tabs.js

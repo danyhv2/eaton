@@ -1,29 +1,31 @@
-## Project Folders
+##### Project Folders
 /AEM_6.2_Quickstart.jar
 /license.properties
 /crx-quickstart
 node_modules
 
 
-## OS Files
+##### OS Files
 ._*
 *.DS_Store
 
 
-## IDE's Folders
+##### IDE's Folders
 .idea
 nbproject
 .vscode
-.atomignore
 
 
-## Auto Generated Files
+##### Auto Generated Files
 *.map
 .sass-cache
 /eaton.core/target
 /eaton.ui.apps/target
 /eaton.ui.apps.html/target
-# /eaton.frontend/build
+/eaton.ui.static/target
 
-## ClientLibs Created By Gulp Tasks
-/eaton.ui.apps.html/src/main/content/jcr_root/etc/designs/eaton-static/clientlibs/**
+
+##### ClientLibs Created By Gulp/Maven Tasks
+/eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/css/style.css
+# /eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/js/global/**
+# /eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/js/components/**
