@@ -18,9 +18,19 @@ rules:
   empty-args:
     - 0 # Disabled for consistency when writing mixins
 
+  final-newline:
+    - 2
+
   hex-notation:
     - 2
     - style: uppercase
+
+  indentation:
+    - 2
+    - size: 2
+
+  nesting-depth:
+    - 2
 
   no-duplicate-properties:
     - 2
