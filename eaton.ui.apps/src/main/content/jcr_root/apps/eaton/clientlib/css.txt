@@ -1,3 +1,2 @@
 #base=css
 coral.css
-rte.css

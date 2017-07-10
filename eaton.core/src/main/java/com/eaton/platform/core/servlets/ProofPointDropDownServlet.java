@@ -2,10 +2,12 @@ package com.eaton.platform.core.servlets;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 
-import org.apache.commons.lang.StringUtils;
+import javax.jcr.Node;
+import javax.jcr.NodeIterator;
+import javax.jcr.RepositoryException;
+
 import org.apache.felix.scr.annotations.sling.SlingServlet;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
@@ -23,8 +25,6 @@ import com.adobe.granite.ui.components.ds.EmptyDataSource;
 import com.adobe.granite.ui.components.ds.SimpleDataSource;
 import com.adobe.granite.ui.components.ds.ValueMapResource;
 import com.day.cq.commons.jcr.JcrConstants;
-import com.day.cq.dam.api.Asset;
-import com.day.cq.dam.api.DamConstants;
 import com.eaton.platform.core.constants.CommonConstants;
 
 /**
@@ -49,31 +49,27 @@ public class ProofPointDropDownServlet extends SlingSafeMethodsServlet {
 		List<Resource> iconsResourceList = new ArrayList<Resource>();
 
 		ValueMap valueMap = null;
-		List<Resource> iconList = new ArrayList<Resource>();
+		List<Node> iconList = new ArrayList<Node>();
 		Resource imageResource = resolver.getResource(CommonConstants.ICON_IMAGE_ROOT);
+		try {
 			if(imageResource != null){
-				Iterator<Resource> allIcons = imageResource.listChildren();
-				iconList = new ArrayList<Resource>();
+				Node imageNode = imageResource.adaptTo(Node.class);
+				NodeIterator allIcons = imageNode.getNodes();
+				iconList = new ArrayList<Node>();
 				while (allIcons.hasNext()) {
 					// add the icons images node names in the iconList
-					iconList.add(allIcons.next());
+					iconList.add(allIcons.nextNode());
 				}
 	
 				// Add icon path values to Graphic drop down!
-				for (Resource iconResource : iconList) {
+				for (int index = 0; index < iconList.size(); index++) {
 	
 					// allocate memory to the Map instance
 					valueMap = new ValueMapDecorator(new HashMap<String, Object>());
 	
 					// Specify the value and text values
-					String dropDownValue = iconResource.getPath();
-					String dropDownText = StringUtils.EMPTY;
-					
-					Asset iconAsset = iconResource.adaptTo(Asset.class);
-					if(iconAsset.getMetadata().containsKey(DamConstants.DC_TITLE))
-						dropDownText = iconAsset.getMetadataValue(DamConstants.DC_TITLE);
-					else
-						dropDownText = iconResource.getName();
+					String dropDownValue = iconList.get(index).getPath();
+					String dropDownText = iconList.get(index).getName();
 	
 					// populate the map
 					valueMap.put(CommonConstants.VALUE, dropDownValue);
@@ -88,5 +84,8 @@ public class ProofPointDropDownServlet extends SlingSafeMethodsServlet {
 
 				LOG.debug("******** ProofPointDropDownServlet servlet execution ended ***********");
 			}
+		} catch (RepositoryException repositoryExcep) {
+			LOG.error("Exception occured as repository is not accessible -",	repositoryExcep);
+		}
 	}
 }

@@ -1,55 +1,41 @@
-.grey_bkg{
-background:#F8F8F8;
-}
-.top-bottom-padding-custom{
-padding:50px 0px;
-}
-
-/*rel3 career */
-
-.topiclink-career .content-grey-bg
-{
-	background-color: #f8f8f8;
-    margin:0px;
-
-}
-.topiclink-career button
-{
-	float:right;
+.topicLinks .topicLinkHeading{
+font-size:40px;
+font-family:EatonBold;
+color:#333f48;
 }
 
- @media only screen and (min-width:993px){
-.topiclink-career .largePaddingTop
-{
-	padding-top:50px !important;
+.topicLinks .topicLinkDesc{
+margin-top:5px;
+font-size:22px;
+font-family:Arial;
+color:#333f48;
 }
-
-.topiclink-career .largePaddingBottom
-{
-	padding-bottom:50px !important;
+.content-grey-bg { background-color:#f8f8f8; margin-top:160px; padding:40px 0px; }
+.viewSupportBtn{
+border: 2px solid #0266C6 !important;
+color: #0266C6 !important;
+font-weight: bold !important;
+font-size: 20px !important;
+border-radius: 0px !important; padding:20px 50px;
+background:none;
 }
-    .topiclink-career .mediumPaddingTop
-{
-	padding-top: 20px !important;
-}
-
-} 
-@media only screen and  (max-width: 992px){
-.topiclink-career .smallPaddingTop
-    {
-		padding-top:30px !important;
+.grey-bg { background-color:#f8f8f8; }
+.margin-support { 
+	margin-top:160px; padding-bottom:50px; padding-top:40px;
     }
-.topiclink-career .topic-link-desc .smallPaddingTop          
-    {
-		padding-top:60px !important;
-    }
-.top-bottom-padding-custom{
-padding:90px 0px !important;
+
+@media only screen and (max-width: 768px) {
+.topicLinks .topicLinkDesc{
+margin-top;10px;
 }
-   .topic-links h3{
-padding-bottom:60px !important;
+.topicLinks .topicLinkDesc{
+margin-top:10px;
 }
-  .topic-links .body-copy{
-padding-bottom:60px !important;
+.viewSupportBtn{
+width:100% !important;
+margin:20px 0px;
+}
+.content-grey-bg {
+    margin-top: 130px;
 }
 }

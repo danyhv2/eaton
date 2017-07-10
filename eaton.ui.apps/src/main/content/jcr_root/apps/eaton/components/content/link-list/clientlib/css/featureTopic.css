@@ -1,4 +1,16 @@
 
+/** featured  css **/
+.comp5_bottom{
+	margin-top:15px;
+}
+.comp5_bottom h2{
+    font-family: EatonBold;
+    color:  #333f48;
+    font-size: 28px;
+    text-align: center;
+    transform: scaleY(1.0001);
+    margin-top:0;
+}
 
 
 

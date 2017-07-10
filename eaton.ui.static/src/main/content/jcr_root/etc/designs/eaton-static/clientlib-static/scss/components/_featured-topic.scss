@@ -1,0 +1,12 @@
+//-----------------------------------
+// Component M-28: Featured Topic
+//-----------------------------------
+.eaton-featured-topic {
+
+  text-align: center;
+
+  &__item {
+    border-bottom: 1px solid $color__red;
+  }
+
+}

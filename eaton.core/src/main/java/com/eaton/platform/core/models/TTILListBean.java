@@ -2,14 +2,13 @@ package com.eaton.platform.core.models;
 
 import javax.inject.Inject;
 
-import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.Source;
 
-import com.eaton.platform.core.constants.CommonConstants;
 import com.eaton.platform.core.util.CommonUtil;
 
 /**
@@ -50,16 +49,10 @@ public class TTILListBean {
 	@Inject
 	private int count;
 	
-	@Inject
-	private String desktopconfig;
-	
-	@Inject
-	private String mobileconfig;
-	
-    @Inject
+    @Inject @Optional
     private Resource manualLinks;
     
-    @Inject
+    @Inject @Optional
     private Resource fixedLinks;
     
     @Inject @Source("sling-object")
@@ -94,7 +87,7 @@ public class TTILListBean {
 	 * @return newWindow
 	 */
 	public String getNewWindow() {
-		return StringUtils.equals(newWindow, CommonConstants.TRUE) ? CommonConstants.TARGET_BLANK : StringUtils.EMPTY;
+		return newWindow;
 	}
 	
 	/**
@@ -160,20 +153,5 @@ public class TTILListBean {
 	public ResourceResolver getResourceResolver() {
 		return resourceResolver;
 	}
-
-	/**
-	 * @return the desktopconfig
-	 */
-	public String getDesktopconfig() {
-		return desktopconfig;
-	}
-
-	/**
-	 * @return the mobileconfig
-	 */
-	public String getMobileconfig() {
-		return mobileconfig;
-	}
-
 	
 }

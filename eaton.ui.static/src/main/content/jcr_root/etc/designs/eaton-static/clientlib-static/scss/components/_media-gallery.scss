@@ -1,0 +1,30 @@
+//-----------------------------------
+// Component M-25: Media Gallery
+//-----------------------------------
+.eaton-media-gallery {
+
+  background: $color__primary-blue;
+  text-align: left;
+
+  &__item {
+    padding: 2rem;
+  }
+
+  &__caption {
+    font-family: $font-family__primary;
+  }
+
+
+  @include media-mobile-only {
+    width: 100%;
+  }
+
+  @include media-tablet-only {
+    margin: 40px 0;
+  }
+
+  @include media-desktop-only {
+    margin: 60px 0;
+  }
+
+}
