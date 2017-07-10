@@ -1,27 +1,28 @@
 <style>
     .mega-menu {
-        height: 100px;
         background: #333F48;
         padding: 30px 0;
     }
 </style>
 
-<section>
-    <div class="mega-menu">
-        <!-- CONTENT MODULES -->
+<section class="mega-menu">
+    <div class="container-fixed container-padding">
+        <div class="row">
+            <!-- CONTENT MODULES -->
+            
+            <!-- Include: Mega-Menu-Products -->
+            <div data-sly-include="pages/mega-menu-products.html" />
 
-        <!-- Include: Mega-Menu-Products -->
-        <sly data-sly-resource="${ @ path='eaton/static-components/structure/mega-menu/pages/mega-menu-products.html'}"></sly>
+            <!-- Include: Mega-Menu-Support -->
+            <div data-sly-include="pages/mega-menu-support.html" />
 
-        <!-- Include: Mega-Menu-Support -->
-        <sly data-sly-resource="${ @ path='eaton/static-components/structure/mega-menu/pages/mega-menu-support.html'}"></sly>
+            <!-- Include: Mega-Menu-Services -->
+            <div data-sly-include="pages/mega-menu-services.html" />
 
-        <!-- Include: Mega-Menu-Services -->
-        <sly data-sly-resource="${ @ path='eaton/static-components/structure/mega-menu/pages/mega-menu-services.html'}"></sly>
+            <!-- Include: Mega-Menu-Company -->
+            <div data-sly-include="pages/mega-menu-company.html" />
 
-        <!-- Include: Mega-Menu-Company -->
-        <sly data-sly-resource="${ @ path='eaton/static-components/structure/mega-menu/pages/mega-menu-company.html'}"></sly>
-
-        <!-- / CONTENT MODULES -->
+            <!-- / CONTENT MODULES -->
+        </div>
     </div>
 </section>
