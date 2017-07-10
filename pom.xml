@@ -20,6 +20,7 @@
 		<module>eaton.core</module>
 		<module>eaton.ui.apps</module>
 		<module>eaton.ui.apps.html</module>
+		<module>eaton.ui.static</module>
 	</modules>
 
 	<properties>
