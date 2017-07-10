@@ -7,7 +7,7 @@ module.exports = {
   paths: {
     src: {
       js: './src/js',
-      scss: '../eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/scss'
+      scss: './src/scss'
     },
 
     destAEM: {
