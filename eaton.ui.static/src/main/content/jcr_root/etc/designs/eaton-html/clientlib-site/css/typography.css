@@ -1,0 +1,23 @@
+/**
+* Custom Fonts
+*/
+@font-face {
+  font-family: 'Eaton';
+  src: url('/etc/designs/eaton-html/clientlib-site/css/fonts/EatonRegular.woff') format('woff');
+}
+@font-face {
+  font-family: 'EatonMedium';
+  src: url('/etc/designs/eaton-html/clientlib-site/css/fonts/EatonMedium.woff') format('woff');
+}
+@font-face {
+  font-family: 'EatonBold';
+  src: url('/etc/designs/eaton-html/clientlib-site/css/fonts/EatonBold.woff') format('woff');
+}
+
+
+/**  All browsers compatible Arial fonts***/
+@font-face {
+  font-family: 'Arial';
+  src: url('/etc/designs/eaton-html/clientlib-site/css/fonts/Arial.woff');
+}
+/**  All browsers compatible Arial fonts***/

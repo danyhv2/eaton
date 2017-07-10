@@ -6,22 +6,20 @@ module.exports = {
   // srcFolder: './src',
   paths: {
     src: {
-      global:       './src/global',
-      components:   {
-        content: '../eaton.ui.apps.html/src/main/content/jcr_root/apps/eaton/html-components/content',
-        structure: '../eaton.ui.apps.html/src/main/content/jcr_root/apps/eaton/html-components/structure',
-      }
+      js: './src/js',
+      scss: './src/scss'
     },
 
     destAEM: {
-      global:       '../eaton.ui.apps.html/src/main/content/jcr_root/etc/designs/eaton-static/clientlibs/global',
-      components:   '../eaton.ui.apps.html/src/main/content/jcr_root/etc/designs/eaton-static/clientlibs/components'
+      js:  '../eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/js',
+      css: '../eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/css'
     }
 
   },
 
-  // Bundles Folders for AEMSync Task
+  // AEM Project Folders for AEMSync Task
   aemBundles: [
-    '../eaton.ui.apps.html/src/main/content/jcr_root'
+    '../eaton.ui.static/src/main/content/jcr_root'
   ]
+
 }
