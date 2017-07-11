@@ -5,21 +5,30 @@
       <p data-sly-test="${data.headline}" class="eaton-link-list__headline">${data.headline}</p>
 
       <!--/* List Links */-->
-      <nav data-sly-list="${data.links}" class="eaton-link-list__items">
-          <a href="#" data-menu-category="${data.menuCategory}" aria-expanded="false">${ item.title }</a>
+      <nav data-sly-list.level1="${data.links}" class="eaton-link-list__items">
+          <a href="#" data-menu-category="${level1.menuCategory}" aria-expanded="false">${ level1.title }</a>
       </nav>
     </div>
 
     <style>
         @media (max-width: 991px) {
+
+            /* Behaviors when Nav is open*/
             .eaton-link-list--primary-navigation {
                 position: fixed;
                 top: 100px;
                 bottom: 42px;
                 width: 100%;
                 left: 0;
+                height: 0;
+                overflow: hidden;
                 background: #5B6770; /* Gray 2 */
                 color: white;
+                transition: height 0.7s ease-in-out;
+            }
+            .nav-open .eaton-link-list--primary-navigation {
+                height: 100%;
+                overflow: auto;
             }
 
             /* Headline */
