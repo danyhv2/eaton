@@ -2,10 +2,10 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:description="eaton page templare for developing pages"
     jcr:primaryType="cq:Template"
-    jcr:title="Eaton HTML Page Template"
+    jcr:title="SR_: Eaton Content Page Template"
     allowedPaths="[/content(/.*)?]"
     ranking="{Long}19">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="eaton/html-components/structure/eaton-redirect-page"/>
+        sling:resourceType="eaton/static-components/structure/eaton-content-page"/>
 </jcr:root>
