@@ -24,7 +24,7 @@ const buildJS = function(gulp, CONFIG, bundle) {
     // Build JS
     //--------------
     gulp.src([
-      CONFIG.paths.src.js + '/**/*.js'
+      CONFIG.paths.srcRoot + '/**/*.js'
     ])
       .pipe(plumber())
       .pipe(babel(babelOptions))
@@ -34,7 +34,7 @@ const buildJS = function(gulp, CONFIG, bundle) {
           err.message
         );
       })
-      .pipe(gulp.dest(CONFIG.paths.destAEM.js));
+      .pipe(gulp.dest( CONFIG.paths.destAEM.clientlibStatic ));
 
   };
 };

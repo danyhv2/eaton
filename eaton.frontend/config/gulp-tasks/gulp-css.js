@@ -12,7 +12,7 @@ const sassToCSS = function(gulp, CONFIG, bundle) {
     // SASS to CSS
     //--------------
     gulp.src([
-      CONFIG.paths.src.scss + '/style.scss'
+      CONFIG.paths.srcRoot + '/**/*.scss'
     ])
       .pipe(sass({
         includePaths: [
@@ -22,7 +22,7 @@ const sassToCSS = function(gulp, CONFIG, bundle) {
         importer: sassGlobbing
       }))
       .on('error', sass.logError)
-      .pipe(gulp.dest(CONFIG.paths.destAEM.css));
+      .pipe(gulp.dest( CONFIG.paths.destAEM.clientlibStatic ));
 
   };
 };

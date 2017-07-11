@@ -45,7 +45,7 @@ gulp.task('js',
 // Build For Local Development
 //--------------
 gulp.task('build:dev', [
-  'clean',
+  // 'clean',
   'css',
   'js',
   'lint:css',
@@ -57,7 +57,7 @@ gulp.task('build:dev', [
 // Build for Prod Servers
 //--------------
 gulp.task('build:prod', [
-  'clean',
+  // 'clean',
   'css',
   'js',
   'lint:css',

@@ -14,9 +14,15 @@ const cleanAEM = function(gulp, CONFIG) {
     //--------------
     del([
 
+      /**
+      * NOTE: This task is not being used.
+      * TODO: This Taks needs to be reviewd since AEM Creates aditional files(css.txt, js.txt, content.xml)
+      * files in order to load Clientlibs, and those files SHOULD NOT be deleted
+      */
+
       // Delete Files, Not folders
-      path.join(CONFIG.paths.destAEM.js, '/**/*'),
-      path.join(CONFIG.paths.destAEM.css, '/**/*')
+      // path.join(CONFIG.paths.destAEM.clientlibStatic, '/global/**/*'),
+      // path.join(CONFIG.paths.destAEM.clientlibStatic, '/components/**/*')
     ],
 
       // Aditional Options
