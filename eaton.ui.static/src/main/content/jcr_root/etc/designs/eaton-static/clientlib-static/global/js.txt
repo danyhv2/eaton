@@ -1,0 +1,2 @@
+#base=js
+etn-global.js

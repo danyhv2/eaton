@@ -1,0 +1,37 @@
+<template data-sly-template.socialLinks="${ @ data }">
+
+  <div class="eaton-social-links">
+
+    <!--/* If Eyebrow */-->
+    <sly data-sly-test="${ data.eyebrow }">
+      <h4 class="eaton-social-links__eyebrow">${ data.eyebrow }</h4>
+    </sly>
+
+    <!--/* List Links */-->
+    <ul
+      data-sly-list="${ data.links }"
+      class="eaton-social-links__list"
+    >
+      <li class="eaton-social-links__list-item">
+        <a href="${ item.url }"
+          class="eaton-social-links__list-link"
+          target="${ item.target }"
+        >
+          <img
+            data-src="${ item.icon }"
+            class="eaton-social-links__list-icon"
+            alt="${ item.title }" />
+        </a>
+      </li>
+    </ul>
+
+    <div class="body-copy-small">
+      <a href="${ data.pageLink.url }"
+        class="eaton-social-links__page-link"
+        target="${ data.pageLink.target }">
+        ${ data.pageLink.title }
+      </a>
+    </div>
+
+  </div>
+</template>
