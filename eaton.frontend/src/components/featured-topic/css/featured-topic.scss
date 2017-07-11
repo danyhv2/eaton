@@ -1,7 +1,9 @@
-// Import Sass Utils
-//--------------
-// @import './variables';
-// @import './buttons';
+//-----------------------------------
+// Component M-22: Quote
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
 
 .eaton-featured-topic {
     // TODO: move to the root component
