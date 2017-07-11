@@ -15,17 +15,21 @@
       margin-bottom: 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
         .mega-menu {
           position: fixed;
           width: 100%;
           top: 100px;
           bottom: 42px;
-          transition: left 0.7s ease-in-out;
+          transition: all 0.7s ease-in-out;
           overflow: auto;
+          transform: translate(100%);
+          visibility: hidden;
+        }
+
+        .nav-open.level-2-open .mega-menu {
           visibility: visible;
-          /*visibility: visible;
-          transform: translate(100%);*/
+          transform: translate(0);
         }
     }
 

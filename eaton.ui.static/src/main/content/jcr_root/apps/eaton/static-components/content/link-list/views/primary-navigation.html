@@ -1,0 +1,48 @@
+<template data-sly-template.primaryNavigation="${ @ data }">
+    <div class="eaton-link-list eaton-link-list--primary-navigation">
+
+      <!--/* Headline: Visible only for Mobile Breakpoints */-->
+      <p data-sly-test="${data.headline}" class="eaton-link-list__headline">${data.headline}</p>
+
+      <!--/* List Links */-->
+      <nav data-sly-list="${data.links}" class="eaton-link-list__items">
+          <a href="#" data-menu-category="${data.menuCategory}" aria-expanded="false">${ item.title }</a>
+      </nav>
+    </div>
+
+    <style>
+        @media (max-width: 991px) {
+            .eaton-link-list--primary-navigation {
+                position: fixed;
+                top: 100px;
+                bottom: 42px;
+                width: 100%;
+                left: 0;
+                background: #5B6770; /* Gray 2 */
+                color: white;
+            }
+
+            /* Headline */
+            .eaton-link-list--primary-navigation .eaton-link-list__headline {
+                display: block;
+                padding: 60px 0;
+                font-size: 40px;
+                line-height: 50px;
+                color: white;
+                background: #333F48; /* Gray 1 */
+            }
+        }
+
+        @media (min-width: 992px) {
+            .eaton-link-list--primary-navigation {
+                position: relative;
+                text-align: right;
+            }
+
+            /* Headline */
+            .eaton-link-list--primary-navigation .eaton-link-list__headline {
+                display: none;
+            }
+        }
+    </style>
+</template>
