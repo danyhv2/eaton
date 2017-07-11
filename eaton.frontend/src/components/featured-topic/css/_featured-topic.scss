@@ -6,15 +6,15 @@
 .eaton-featured-topic {
     // TODO: move to the root component
     background: $color__secondary-gray3;
-    padding: $space__xl $space__sm;
+    padding: $spacing__xl $spacing__sm;
 
     // TODO: in the markup i'm still using body-copy
     &__title {
-      margin-bottom: $space__sm;
+      margin-bottom: $spacing__sm;
     }
 
     &__paragraph {
-      margin-bottom: $space__md;
+      margin-bottom: $spacing__md;
     }
 
 }
@@ -24,7 +24,7 @@
 // TODO: check for reuse
 .eaton-link-list {
   &__title {
-    margin-bottom: $space__sm;
+    margin-bottom: $spacing__sm;
   }
 
   &--no-list-style {
