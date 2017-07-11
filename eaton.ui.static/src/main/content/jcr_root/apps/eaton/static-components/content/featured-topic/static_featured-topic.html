@@ -16,7 +16,7 @@
       <div class="eaton-link-list col-md-6">
         <h4 class="eaton-link-list__title" >${featuredTopic.leftList.title}</h4>
         <ul class="eaton-link-list--no-list-style" >
-          <li data-sly-list="${featuredTopic.leftList.items}">
+          <li data-sly-repeat="${featuredTopic.leftList.items}">
             <a class="h5-link" aria-label="Go to" href="${item.href}">${item.title}</a>
           </li>
         </ul>
@@ -26,7 +26,7 @@
       <div class="eaton-link-list col-md-6">
         <h4 class="eaton-link-list__title">${featuredTopic.rightList.title}</h4>
         <ul  class="eaton-link-list--no-list-style" >
-          <li data-sly-list="${featuredTopic.leftList.items}">
+          <li data-sly-repeat="${featuredTopic.leftList.items}">
             <a class="h5-link" aria-label="Go to" href="${item.href}">${item.title}</a>
           </li>
         </ul>
