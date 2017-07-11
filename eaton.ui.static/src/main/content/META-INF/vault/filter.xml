@@ -3,5 +3,5 @@
     <filter root="/apps/eaton/static-templates"/>
     <filter root="/apps/eaton/static-components"/>
     <filter root="/conf/static-eaton"/>
-    <!-- <filter root="/etc/designs/eaton-static"/> -->
+    <filter root="/etc/designs/eaton-static"/>
 </workspaceFilter>
