@@ -1,0 +1,44 @@
+<sly data-sly-test="${wcmmode.edit}">Featured Topic</sly>
+
+<!--/* BEGIN M-28 Featured Topic Component */ -->
+<sly data-sly-test="!${wcmmode.edit}" data-sly-use.ft="js/title-text-image-link-data.js" >
+  <div class="m-featured-topic" >
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="m-featured-topic__title">${ft.title}</h2>
+        <div class="m-featured-topic__paragraph body-copy">
+          ${ft.paragraph}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- TODO: check if can reuse -->
+      <div class="m-link-list col-md-6">
+        <h4 class="m-link-list__title" >${ft.leftList.title}</h4>
+        <ul class="m-link-list--no-list-style" >
+          <li data-sly-list="${ft.leftList.items}">
+            <a class="h5-link" aria-label="Go to" href="${item.href}">${item.title}</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- TODO: check if can reuse -->
+      <div class="m-link-list col-md-6">
+        <h4 class="m-link-list__title">${ft.rightList.title}</h4>
+        <ul  class="m-link-list--no-list-style" >
+          <li data-sly-list="${ft.leftList.items}">
+            <a class="h5-link" aria-label="Go to" href="${item.href}">${item.title}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 u-text-center">
+        <a href="${ft.ctaHref}" aria-label="Go to" class="b-button b-button--secondary b-button--light">
+          ${ft.ctaText}
+        </a>
+      </div>
+    </div>
+  </div>
+</sly>
+<!--/* END M-28 Featured Topic Component */ -->

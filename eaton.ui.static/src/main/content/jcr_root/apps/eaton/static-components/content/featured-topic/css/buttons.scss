@@ -1,0 +1,62 @@
+//-----------------------------------
+// Styleguide - Buttons
+// described in build book page 365
+//-----------------------------------
+
+.b-button {
+  background: none;
+  border-radius: 0;
+  border-style: solid;
+  display: inline-block;
+  font-weight: bold;
+  max-width: 600px;
+
+  &--dark {
+    background: black;
+  }
+
+  &--with-icon {
+
+    .icon {
+      margin-left: 1rem;
+    }
+  }
+
+  &--primary {
+    border-width: 3px;
+    font-size: 1.25em;
+    padding: 20px 40px;
+  }
+
+  &--secondary {
+    border-width: 2px;
+    font-size: 0.87em;
+    padding: 5px 20px;
+  }
+
+  &--light {
+    border-color: $color__primary-blue;
+    color: $color__primary-blue;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color__white;
+      background: $color__primary-blue;
+      border-color: $color__primary-blue;
+    }
+  }
+
+  &--dark {
+    border-color: $color__white;
+    color: $color__white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color__primary-blue;
+      background: $color__white;
+      border-color: $color__white;
+    }
+  }
+}
