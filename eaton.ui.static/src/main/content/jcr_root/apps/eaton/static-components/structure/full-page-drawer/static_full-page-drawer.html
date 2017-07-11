@@ -1,0 +1,33 @@
+<style>
+  p {
+    margin-bottom: 10px;
+  }
+
+  .full-page-drawer {
+      background: #5B6770;
+      border-bottom: 1px solid #005EB8;
+      padding: 30px 0;
+      color: white;
+  }
+
+  @media (max-width: 768px) {
+      .full-page-drawer {
+          position: fixed;
+          top: 100%;
+          width: 100%;
+      }
+  }
+</style>
+
+<!-- Full Page Drawer -->
+<div class="full-page-drawer">
+    <div class="container-fixed container-padding">
+        <div class="row">
+            <div class="col-xs-12">
+              <!-- Include: Country Selector -->
+              <p>Full Page Drawer</p>
+              <sly data-sly-resource="${'country-selector' @ resourceType='eaton/static-components/content/country-selector'}"></sly>
+            </div>
+        </div>
+    </div>
+</div>
