@@ -10,9 +10,7 @@
     "aemsync": "node config/aemsync",
     "aemdev": "gulp build:dev",
     "preaemprod": "npm install --no-optional",
-    "aemprod": "gulp build:prod",
-    "build:js": "gulp js",
-    "build:css": "gulp css"
+    "aemprod": "gulp build:prod"
   },
   "repository": {
     "type": "git",
@@ -37,7 +35,5 @@
     "node-sass": "^4.5.3",
     "node-sass-globbing": "^0.0.23"
   },
-  "dependencies": {
-    "bootstrap-sass": "^3.3.7"
-  }
+  "dependencies": {}
 }

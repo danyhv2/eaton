@@ -1,0 +1,19 @@
+//-----------------------------------
+// Component M-7: Global Footer
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-footer {
+  // Empty selector for future Reference
+}
+
+.eaton-footer-top {
+  background: $color__primary-gray2;
+  padding: 3em 0;
+}
+
+.eaton-footer-bottom {
+  background: $color__primary-gray1;
+}
