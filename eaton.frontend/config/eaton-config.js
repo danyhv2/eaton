@@ -3,16 +3,18 @@ module.exports = {
     type: 'git',
     url: 'https://github.com/Razorfish-Central/sr_eaton'
   },
-  // srcFolder: './src',
+
   paths: {
+    srcRoot: './src',
     src: {
-      js: './src/js',
-      scss: './src/scss'
+      // global: './src/components',
+      // components: './src/global'
     },
 
     destAEM: {
-      js:  '../eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/js',
-      css: '../eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/css'
+      // global: '../eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/global',
+      // components: '../eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/components'
+      clientlibStatic: '../eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static'
     }
 
   },

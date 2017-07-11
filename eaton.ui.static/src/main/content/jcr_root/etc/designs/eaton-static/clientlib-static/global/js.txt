@@ -1,2 +1,8 @@
 #base=js
+
+vendors/jquery-3.2.1.min.js
+vendors/bootstrap-3.3.7.js
+
 etn-global.js
+etn-global-constants.js
+etn-global-utils.js

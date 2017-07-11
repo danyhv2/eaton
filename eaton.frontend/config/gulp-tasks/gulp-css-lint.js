@@ -13,10 +13,12 @@ const lintCSS = function(gulp, CONFIG) {
     // Lint SASS
     //--------------
     gulp.src([
-      CONFIG.paths.src.scss + '/**/*.scss',
 
-      // Ignore these folders
-      '!' + CONFIG.paths.src.global + '/global/vendor/**/*.scss'
+      CONFIG.paths.srcRoot + '/**/*.scss',
+
+      // Ignore Vendor Libs
+      '!' + CONFIG.paths.srcRoot + '/**/vendors/**/*.(scss|css)'
+
     ])
       .pipe(sassLint({ configFile: '.scsslint.yml' }))
       .pipe(sassLint.format())
