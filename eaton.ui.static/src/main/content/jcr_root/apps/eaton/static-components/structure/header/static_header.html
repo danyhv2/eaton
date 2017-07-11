@@ -27,7 +27,9 @@
                 <div class="row">
                     <!--/* Logo */-->
                     <div class="col-xs-6 col-md-3">
-                        <a href="#">Logo goes here</a>
+                        <a class="eaton-logo" href="#">
+                            <img src="/content/dam/eaton/images/eaton-logo.png" alt="logo" class="img-responsive navbar-brand__img--header">
+                        </a>
                     </div>
                     <!--/* Search & Mobile Hamburger Menu  */-->
                     <div class="col-xs-6 col-md-push-7 col-md-2">
@@ -69,7 +71,14 @@
         background: white;
         border-bottom: 1px solid #005EB8;
         padding: 20px 0;
+        transition: height 0.3s ease-in-out;
     }
+
+    .eaton-logo {
+        padding: 0;
+        display: block;
+    }
+    .eaton-logo img { height: 100%; }
 
     @media (max-width: 991px) {
         .header-utility-nav {
@@ -87,5 +96,33 @@
             opacity: 1;
             visibility: visible;
         }
-    }
+
+        .eaton-logo {
+            width: 200px;
+            height: 65px;
+        }
+      }
+
+      @media (min-width: 992px) {
+          .eaton-logo {
+            width: 181px;
+            height: 57px;
+          }
+
+          .eaton-header--fixed {
+              position: fixed;
+              width: 100%;
+          }
+          .eaton-header--fixed .header-utility-nav,  .eaton-header--fixed .full-page-drawer {
+             display: none;
+          }
+          .eaton-header--fixed .header-primary-nav {
+              height: 80px;
+          }
+          .eaton-header--fixed .eaton-logo {
+            width: 126px;
+            height: 40px;
+            transition: all 0.3s ease-in-out; /* Add transition only when fixed */
+          }
+      }
 </style>
