@@ -1,12 +1,5 @@
 <!-- Static HTML code goes here -->
 
-<h1>Static HTML code goes here</h1>
-
-<div data-sly-use.ttil="js/title-text-image-link-data.js">
-    <h1>${ttil.title}</h1>
-    <p>${ttil.text}</p>
-</div>
-
-<sly data-sly-test="${properties.view != 'l2-hero'}">
+<sly data-sly-test="${properties.view == 'l2-hero'}">
     <div data-sly-include="views/l2-hero.html"></div>    
 </sly>

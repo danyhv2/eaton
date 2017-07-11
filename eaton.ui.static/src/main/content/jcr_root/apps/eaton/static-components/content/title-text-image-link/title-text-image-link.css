@@ -3,7 +3,7 @@
 }
 
 .header__image {
-    background-image: url(content/dam/eaton/images/story_board.png);
+    background-image: url(/content/dam/eaton/images/story_board.png);
     background-size: cover;
     height: 492px;
 }
