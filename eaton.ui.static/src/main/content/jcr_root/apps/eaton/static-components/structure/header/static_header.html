@@ -31,16 +31,16 @@
                     <div class="col-xs-6 col-md-3">
                         <sly data-sly-resource="${'logo' @ resourceType='eaton/static-components/structure/logo'}"></sly>
                     </div>
+                    <!-- Search & Mobile Hamburger Menu  -->
+                    <div class="col-xs-6 col-md-push-7 col-md-2">
+                        <a href="#">Search &nbsp; </a>
+                        <a href="#">M-Menu > </a>
+                    </div>
                     <!-- Link List: Primary Navigation  -->
-                    <div class="col-md-7">
+                    <div class="col-md-pull-2 col-md-7">
                         <sly data-sly-use.tpl="../../content/link-list/views/primary-navigation.html">
                           <sly data-sly-call="${ tpl.primaryNavigation @ data=header.primaryNavigation }"></sly>
                         </sly>
-                    </div>
-                    <!-- Search & Mobile Hamburger Menu  -->
-                    <div class=" col-xs-6 col-md-2">
-                        <p>Search Goes here</p>
-                        <p>Hamburger Menu Goes here</p>
                     </div>
                 </div>
             </div>
