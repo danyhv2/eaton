@@ -1,15 +1,14 @@
 // Import Sass Utils
 //--------------
-@import './variables';
-@import './buttons';
+// @import './variables';
+// @import './buttons';
 
-.m-featured-topic {
-    // TODO move to the component root
+.eaton-featured-topic {
+    // TODO: move to the root component
     background: $color__secondary-gray3;
     padding: $space__xl $space__sm;
-    
+
     // TODO: in the markup i'm still using body-copy
-    // move .body-copy to the component root
     &__title {
       margin-bottom: $space__sm;
     }
@@ -22,7 +21,8 @@
 
 
 // TODO: move to a standalone component
-.m-link-list {
+// TODO: check for reuse
+.eaton-link-list {
   &__title {
     margin-bottom: $space__sm;
   }
