@@ -1,0 +1,34 @@
+// Import Sass Utils
+//--------------
+@import './variables';
+@import './buttons';
+
+.m-featured-topic {
+    // TODO move to the component root
+    background: $color__secondary-gray3;
+    padding: $space__xl $space__sm;
+    
+    // TODO: in the markup i'm still using body-copy
+    // move .body-copy to the component root
+    &__title {
+      margin-bottom: $space__sm;
+    }
+
+    &__paragraph {
+      margin-bottom: $space__md;
+    }
+
+}
+
+
+// TODO: move to a standalone component
+.m-link-list {
+  &__title {
+    margin-bottom: $space__sm;
+  }
+
+  &--no-list-style {
+    list-style: none;
+    padding: 0;
+  }
+}
