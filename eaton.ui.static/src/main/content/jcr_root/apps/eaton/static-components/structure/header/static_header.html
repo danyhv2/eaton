@@ -1,0 +1,72 @@
+<style>
+    .header-utility-nav {
+      background: #005EB8;
+      padding: 10px 0;
+    }
+    .open-selector, .open-sign-in {
+      color: white;
+    }
+    .header-utility-nav__country {
+      text-transform: uppercase;
+    }
+    .header-utility-nav__sign-in {
+      text-align: right;
+    }
+
+    .header-primary-nav {
+        height: 100px;
+        background: white;
+        border-bottom: 1px solid #005EB8;
+        padding: 30px 0;
+    }
+
+    @media (max-width: 768px) {
+        .header-utility-nav {
+          position: fixed;
+          bottom: 0;
+          z-index: 1;
+          width: 100%;
+          right: 0;
+        }
+    }
+</style>
+
+<header>
+    <div class="eaton-header">
+        <!-- CONTENT MODULES -->
+        <!-- Utility Navigation -->
+        <div class="header-utility-nav">
+            <div class="container-fixed container-padding">
+                <div class="row">
+                    <div class="col-xs-9 header-utility-nav__toggle-selector">
+                        <a href="#" class="open-selector">
+                            <span class='header-utility-nav__country'>United States</span>
+                            <span class='header-utility-nav__language'>English</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 header-utility-nav__sign-in">
+                        <a href="#" class='open-sign-in'>Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Include: Full Page Drawer -->
+        <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/static-components/structure/full-page-drawer'}"></sly>
+
+        <!-- Primary Navigation -->
+        <div class="header-primary-nav">
+            <div class="container-fixed container-padding">
+                <div class="row">
+                    <div class="col-xs-12">
+                        Primary Nav Goes here
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Include: Mega Menu -->
+        <sly data-sly-resource="${'mega-menu' @ resourceType='eaton/static-components/structure/mega-menu'}"></sly>
+        <!-- / CONTENT MODULES -->
+    </div>
+</header>
