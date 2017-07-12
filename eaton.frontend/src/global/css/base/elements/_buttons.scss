@@ -19,14 +19,14 @@
 
   &--primary {
     border-width: 3px;
-    font-size: 1.25em;
-    padding: 20px 40px;
+    font-size: 2.8em; // ???
+    padding: 40px;
   }
 
   &--secondary {
-    border-width: 2px;
-    font-size: 0.87em;
-    padding: 5px 20px;
+    border-width: 3px;
+    font-size: 1.4em;
+    padding: 20px;
   }
 
   &--light {
@@ -39,6 +39,7 @@
       color: $color__white;
       background: $color__primary-blue;
       border-color: $color__primary-blue;
+      text-decoration: none;
     }
   }
 
@@ -52,6 +53,7 @@
       color: $color__primary-blue;
       background: $color__white;
       border-color: $color__white;
+      text-decoration: none;
     }
   }
 }

@@ -2,15 +2,21 @@
 // Component M-22: Quote
 //-----------------------------------
 
-// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
 .eaton-featured-topic {
-  // TODO: move to the root component
-  background: $color__secondary-gray3;
-  padding: $spacing__xl $spacing__sm;
+  padding-top: $spacing__xl;
+  padding-bottom: $spacing__xl;
 
-  // TODO: in the markup i'm still using body-copy
+  // TODO: check if I can upload it to base components
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
   &__title {
     margin-bottom: $spacing__sm;
   }
@@ -18,18 +24,37 @@
   &__paragraph {
     margin-bottom: $spacing__md;
   }
-}
 
+  &__button-container {
+    margin-top: $spacing__md;
+  }
 
-// TODO: move to a standalone component
-// TODO: check for reuse
-.eaton-link-list {
-  &__title {
+  &__list-title {
+    font-weight: bold;
     margin-bottom: $spacing__sm;
   }
 
-  &--no-list-style {
-    list-style: none;
-    padding: 0;
+  @include media-mobile-only {
+    &__list-title {
+      margin-top: $spacing__sm;
+    }
+  }
+
+  @include media-desktop-and-up {
+    &__list-left {
+      &:after {
+        background: $color__secondary-gray3;
+        content: '';
+        height: 85%;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 2px;
+      }
+    }
+
+    &__list-right {
+      padding-left: 9%;
+    }
   }
 }
