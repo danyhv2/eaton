@@ -26,6 +26,9 @@ gulp.task('lint:js',
   require('./config/gulp-tasks/gulp-js-lint')(gulp, CONFIG)
 );
 
+// Shortcut for all Linting Tasks
+gulp.task('lint', ['lint:css', 'lint:js']);
+
 
 // TASKS: Compile SASS to CSS
 //--------------

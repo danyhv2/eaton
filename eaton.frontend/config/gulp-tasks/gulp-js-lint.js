@@ -15,7 +15,7 @@ const lintJS = function(gulp, CONFIG, bundle) {
     // Lint JavaScript
     //--------------
     gulp.src([
-      path.join('./', 'config/gulp-tasks/*.js'),
+      path.join('./', '/config/gulp-tasks/*.js'),
 
       CONFIG.paths.srcRoot + '/**/*.js',
 
