@@ -57,7 +57,8 @@ $size-xl: 120px;
   display: inline-block;
   max-width: 600px;
   text-align: center;
-  margin: $size-md 0 0 0;
+  margin: $size-md 0 0;
+  text-decoration: none;
 
   &:hover {
     background-color: $color__primary-blue;

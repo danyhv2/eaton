@@ -55,6 +55,6 @@
 
 .eaton-page-overview__cta { text-align: center; }
 
-.eaton-cta-button { background-color: #FFF; color: #005EB8; border: 2px solid #005EB8; padding: 20px 40px; display: inline-block; max-width: 600px; text-align: center; margin: 60px 0 0 0; }
+.eaton-cta-button { background-color: #FFF; color: #005EB8; border: 2px solid #005EB8; padding: 20px 40px; display: inline-block; max-width: 600px; text-align: center; margin: 60px 0 0; text-decoration: none; }
 
 .eaton-cta-button:hover { background-color: #005EB8; color: #FFF; text-decoration: none; }
