@@ -1,0 +1,12 @@
+//------------------------------------------
+// Component M-1: Header: Primary Navigation
+//------------------------------------------
+
+$desktop-height: 100px;
+
+.header-primary-nav {
+  height: $desktop-height;
+  background: $color__white;
+  padding: 20px 0;
+  transition: height 0.3s ease-in-out;
+}

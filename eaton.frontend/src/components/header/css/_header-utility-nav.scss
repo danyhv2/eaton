@@ -1,0 +1,41 @@
+//-----------------------------------
+// Component M-3: Header: Utility Navigation
+//-----------------------------------
+
+.header-utility-nav {
+  background: $color__primary-blue;
+  padding: 10px 0;
+
+  &__country {
+    text-transform: uppercase;
+  }
+
+  &__sign-in {
+    text-align: right;
+  }
+
+  .open-country-selector,
+  .open-sign-in {
+    color: $color__white;
+  }
+
+  //-----------------------------
+  // Mobile Breakpoints
+  // ----------------------------
+
+  @include media-mobile-only {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+
+    .nav-open & {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

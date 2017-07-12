@@ -6,10 +6,10 @@
 
         <!--/* Utility Navigation */-->
         <div class="header-utility-nav">
-            <div class="container-fixed container-padding">
+            <div class="container">
                 <div class="row">
                     <div class="col-xs-9 header-utility-nav__toggle-selector">
-                        <a href="#" class="open-selector">
+                        <a href="#" class="open-country-selector">
                             <span class='header-utility-nav__country'>${header.defaultLabels.country}</span>
                             <span class='header-utility-nav__language'>${header.defaultLabels.language}</span>
                         </a>
@@ -23,13 +23,13 @@
 
         <!--/* Primary Navigation */-->
         <div class="header-primary-nav">
-            <div class="container-fixed container-padding">
+            <div class="container">
                 <div class="row">
                     <!--/* Logo */-->
                     <div class="col-xs-6 col-md-3">
-                        <a class="eaton-logo" href="#">
-                            <img src="/content/dam/eaton/images/eaton-logo.png" alt="logo" class="img-responsive navbar-brand__img--header">
-                        </a>
+                      <div class="header-primary-nav__logo">
+                        <sly data-sly-resource="${'header-logo' @ resourceType='/apps/eaton/static-components/content/logo'}"></sly>
+                      </div>
                     </div>
                     <!--/* Search & Mobile Hamburger Menu  */-->
                     <div class="col-xs-6 col-md-push-7 col-md-2">
@@ -50,79 +50,3 @@
         <sly data-sly-resource="${'mega-menu' @ resourceType='eaton/static-components/structure/mega-menu'}"></sly>
     </div>
 </header>
-
-<style>
-    .header-utility-nav {
-      background: #005EB8;
-      padding: 10px 0;
-    }
-    .open-selector, .open-sign-in {
-      color: white;
-    }
-    .header-utility-nav__country {
-      text-transform: uppercase;
-    }
-    .header-utility-nav__sign-in {
-      text-align: right;
-    }
-
-    .header-primary-nav {
-        height: 100px;
-        background: white;
-        border-bottom: 1px solid #005EB8;
-        padding: 20px 0;
-        transition: height 0.3s ease-in-out;
-    }
-
-    .eaton-logo {
-        padding: 0;
-        display: block;
-    }
-    .eaton-logo img { height: 100%; }
-
-    @media (max-width: 991px) {
-        .header-utility-nav {
-          position: fixed;
-          bottom: 0;
-          z-index: 1;
-          width: 100%;
-          right: 0;
-          opacity: 0;
-          visibility: hidden;
-          transition: opacity 0.5s ease-in-out;
-        }
-
-        .nav-open .header-utility-nav {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .eaton-logo {
-            width: 200px;
-            height: 65px;
-        }
-      }
-
-      @media (min-width: 992px) {
-          .eaton-logo {
-            width: 181px;
-            height: 57px;
-          }
-
-          .eaton-header--fixed {
-              position: fixed;
-              width: 100%;
-          }
-          .eaton-header--fixed .header-utility-nav,  .eaton-header--fixed .full-page-drawer {
-             display: none;
-          }
-          .eaton-header--fixed .header-primary-nav {
-              height: 80px;
-          }
-          .eaton-header--fixed .eaton-logo {
-            width: 126px;
-            height: 40px;
-            transition: all 0.3s ease-in-out; /* Add transition only when fixed */
-          }
-      }
-</style>

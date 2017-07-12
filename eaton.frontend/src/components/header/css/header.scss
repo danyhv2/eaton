@@ -1,5 +1,5 @@
 //-----------------------------------
-// Component M-1: Global Header
+// Component: Global Header
 //-----------------------------------
 
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
@@ -7,5 +7,32 @@
 
 
 // Import Sub Components
-@import "header__primary-nav";
-@import "header__utility-nav";
+@import "header-utility-nav";
+@import "header-primary-nav";
+
+// Base Styles
+$header-fixed-height: 80px;
+
+.eaton-header {
+  @include media-desktop-and-up {
+    &--fixed {
+      position: fixed;
+      width: 100%;
+
+      .full-page-drawer,
+      .header-utility-nav {
+        display: none;
+      }
+
+      .header-primary-nav {
+        height: $header-fixed-height;
+      }
+
+      .eaton-logo__link {
+        width: 126px;
+        height: 40px;
+        transition: height 0.3s ease-in-out, width 0.3s ease-in-out; // Add transition only when fixed
+      }
+    }
+  }
+}
