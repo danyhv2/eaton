@@ -36,3 +36,12 @@ $header-fixed-height: 80px;
     }
   }
 }
+
+// Global Body Styles
+.nav-open {
+  .eaton-link-list-primary-nav {
+    height: 100%;
+    visibility: visible;
+    overflow: auto;
+  }
+}

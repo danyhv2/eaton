@@ -23,7 +23,7 @@
   // Mobile Breakpoints
   // ----------------------------
 
-  @include media-mobile-only {
+  @include media-mobile-and-tablet {
     position: fixed;
     bottom: 0;
     z-index: 1;

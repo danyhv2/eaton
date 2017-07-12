@@ -6,12 +6,14 @@
 
 .header-utility-nav .open-country-selector, .header-utility-nav .open-sign-in { color: #FFF; }
 
-@media screen and (max-width: 767px) { .header-utility-nav { position: fixed; bottom: 0; z-index: 1; width: 100%; right: 0; opacity: 0; visibility: hidden; transition: opacity 0.5s ease-in-out; }
+@media screen and (max-width: 991px) { .header-utility-nav { position: fixed; bottom: 0; z-index: 1; width: 100%; right: 0; opacity: 0; visibility: hidden; transition: opacity 0.5s ease-in-out; }
   .nav-open .header-utility-nav { opacity: 1; visibility: visible; } }
 
-.header-primary-nav { height: 100px; background: #FFF; padding: 20px 0; transition: height 0.3s ease-in-out; }
+.header-primary-nav { height: 100px; background: #FFF; padding: 20px 0; border-bottom: 4px solid #eef0f2; transition: height 0.3s ease-in-out; }
 
 @media screen and (min-width: 992px) { .eaton-header--fixed { position: fixed; width: 100%; }
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
   .eaton-header--fixed .header-primary-nav { height: 80px; }
   .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; transition: height 0.3s ease-in-out, width 0.3s ease-in-out; } }
+
+.nav-open .eaton-link-list-primary-nav { height: 100%; visibility: visible; overflow: auto; }
