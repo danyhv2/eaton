@@ -46,3 +46,5 @@
   .featured-story-component__row { padding-bottom: 20px; }
   .show-desktop { display: none; }
   .show-mobile { display: block; } }
+
+.eaton-product-overview h1, .eaton-product-overview h2, .eaton-product-overview h3 { color: yellow; background-color: grey; }
