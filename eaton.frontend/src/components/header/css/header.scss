@@ -11,7 +11,6 @@
 @import "header-primary-nav";
 
 // Base Styles
-$header-fixed-height: 80px;
 
 .eaton-header {
   @include media-desktop-and-up {
@@ -22,10 +21,6 @@ $header-fixed-height: 80px;
       .full-page-drawer,
       .header-utility-nav {
         display: none;
-      }
-
-      .header-primary-nav {
-        height: $header-fixed-height;
       }
 
       .eaton-logo__link {

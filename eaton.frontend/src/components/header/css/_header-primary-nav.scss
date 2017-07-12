@@ -2,13 +2,11 @@
 // Component M-1: Header: Primary Navigation
 //------------------------------------------
 
-$desktop-height: 100px;
 $primary-nav-border: #eef0f2;
 
 .header-primary-nav {
-  height: $desktop-height;
   background: $color__white;
-  padding: 20px 0;
+  padding: 20px 0 16px; // 4px for bottom shadow - height
   border-bottom: 4px solid $primary-nav-border;
   transition: height 0.3s ease-in-out;
 }
