@@ -9,4 +9,8 @@ $primary-nav-border: #eef0f2;
   padding: 20px 0 16px; // 4px for bottom shadow - height
   border-bottom: 4px solid $primary-nav-border;
   transition: height 0.3s ease-in-out;
+
+  .row {
+    display: flex;
+  }
 }

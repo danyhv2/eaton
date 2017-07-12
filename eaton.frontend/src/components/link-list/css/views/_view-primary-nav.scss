@@ -4,6 +4,12 @@
 
 .eaton-link-list-primary-nav {
 
+  &__items {
+    a {
+      text-decoration: none;
+    }
+  }
+
   //-----------------------------
   // Mobile-Tablet Breakpoint
   // ----------------------------
@@ -61,10 +67,23 @@
   // ----------------------------
   @include media-desktop-and-up {
     position: relative;
-    text-align: right;
+    height: 100%;
 
     &__headline {
       display: none;
+    }
+
+    &__items {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+      a {
+        margin: 0px 15px;
+        padding-right: 5px;
+        padding-left: 5px;
+        color: $color__primary-gray1;
+      }
     }
 
     &--has-background {

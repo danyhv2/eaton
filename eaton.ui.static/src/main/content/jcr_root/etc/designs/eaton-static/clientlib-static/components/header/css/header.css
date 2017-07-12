@@ -11,6 +11,8 @@
 
 .header-primary-nav { background: #FFF; padding: 20px 0 16px; border-bottom: 4px solid #eef0f2; transition: height 0.3s ease-in-out; }
 
+.header-primary-nav .row { display: flex; }
+
 @media screen and (min-width: 992px) { .eaton-header--fixed { position: fixed; width: 100%; }
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
   .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; transition: height 0.3s ease-in-out, width 0.3s ease-in-out; } }
