@@ -6,19 +6,18 @@
 @import "../../../global/css/_config/sass";
 
 .eaton-featured-topic {
-    // TODO: move to the root component
-    background: $color__secondary-gray3;
-    padding: $spacing__xl $spacing__sm;
+  // TODO: move to the root component
+  background: $color__secondary-gray3;
+  padding: $spacing__xl $spacing__sm;
 
-    // TODO: in the markup i'm still using body-copy
-    &__title {
-      margin-bottom: $spacing__sm;
-    }
+  // TODO: in the markup i'm still using body-copy
+  &__title {
+    margin-bottom: $spacing__sm;
+  }
 
-    &__paragraph {
-      margin-bottom: $spacing__md;
-    }
-
+  &__paragraph {
+    margin-bottom: $spacing__md;
+  }
 }
 
 
