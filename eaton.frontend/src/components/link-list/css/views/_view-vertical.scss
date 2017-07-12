@@ -1,16 +1,51 @@
+//-----------------------------------
+// LinkList Component: Vertical View
+//-----------------------------------
 .eaton-link-list-vertical {
 
   &__list {
     padding: 0;
     margin: 0;
+    list-style-type: none;
   }
 
   &__list-item {
-    padding: 1em;
+
   }
 
   &__list-link {
-    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0; // Visually 30px Spacing between items
   }
+
+  &__list-icon {
+    font-size: 0.75em;
+    margin-left: 0.25em;
+  }
+
+
+  //-----------------------------------
+  // Media Query: Mobile/Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    &__eyebrow {
+      margin-bottom: 60px;
+    }
+
+  }
+
+
+  //-----------------------------------
+  // Media Query: Mobile/Tablet
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__eyebrow {
+      margin-bottom: 30px;
+    }
+
+  }
+
 
 }

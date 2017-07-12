@@ -4,21 +4,27 @@
 
     <!--/* If Eyebrow */-->
     <sly data-sly-test="${ data.view.eyebrow }">
-      <h4 class="eaton-link-list__eyebrow">${ data.view.eyebrow }</h4>
+      <h4 class="eaton-link-list-vertical__eyebrow eyebrow-small">${ data.view.eyebrow }</h4>
     </sly>
 
     <!--/* List Links */-->
     <ul
       data-sly-list="${ data.view.links }"
-      class="eaton-link-list__list"
+      class="eaton-link-list-vertical__list"
     >
-      <li class="eaton-link-list__list-item">
+      <li class="eaton-link-list-vertical__list-item">
         <a href="${ item.url }"
-          class="eaton-link-list__list-link"
+          aria-label="Go to ${ item.title }"
+          class="eaton-link-list-vertical__list-link"
           target="${ item.target }"
-        >${ item.title }</a>
+        >
+          <span class="eaton-link-list-vertical__list-text">${ item.title }</span>
+          <i class="eaton-link-list-vertical__list-icon glyphicon glyphicon-menu-right"
+            aria-hidden="true"></i>
+        </a>
       </li>
     </ul>
+
   </div>
 
 </sly>
