@@ -1,3 +1,56 @@
+
+<header data-sly-use.header="header-data.js">
+    <div class="eaton-header">
+        <!--/* Include: Full Page Drawer */*/-->
+        <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/static-components/structure/full-page-drawer'}"></sly>
+
+        <!--/* Utility Navigation */-->
+        <div class="header-utility-nav">
+            <div class="container-fixed container-padding">
+                <div class="row">
+                    <div class="col-xs-9 header-utility-nav__toggle-selector">
+                        <a href="#" class="open-selector">
+                            <span class='header-utility-nav__country'>${header.defaultLabels.country}</span>
+                            <span class='header-utility-nav__language'>${header.defaultLabels.language}</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 header-utility-nav__sign-in">
+                        <a href="#" class='open-sign-in'>${header.defaultLabels.signIn}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--/* Primary Navigation */-->
+        <div class="header-primary-nav">
+            <div class="container-fixed container-padding">
+                <div class="row">
+                    <!--/* Logo */-->
+                    <div class="col-xs-6 col-md-3">
+                        <a class="eaton-logo" href="#">
+                            <img src="/content/dam/eaton/images/eaton-logo.png" alt="logo" class="img-responsive navbar-brand__img--header">
+                        </a>
+                    </div>
+                    <!--/* Search & Mobile Hamburger Menu  */-->
+                    <div class="col-xs-6 col-md-push-7 col-md-2">
+                        <a href="#">Search &nbsp; </a>
+                        <a href="#">M-Menu > </a>
+                    </div>
+                    <!--/* Link List: Primary Navigation  */-->
+                    <div class="col-md-pull-2 col-md-7">
+                        <sly data-sly-use.tpl="../../content/link-list/views/primary-navigation.html">
+                          <sly data-sly-call="${ tpl.primaryNavigation @ data=header.primaryNavigation }"></sly>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--/* Include: Mega Menu */-->
+        <sly data-sly-resource="${'mega-menu' @ resourceType='eaton/static-components/structure/mega-menu'}"></sly>
+    </div>
+</header>
+
 <style>
     .header-utility-nav {
       background: #005EB8;
@@ -17,56 +70,59 @@
         height: 100px;
         background: white;
         border-bottom: 1px solid #005EB8;
-        padding: 30px 0;
+        padding: 20px 0;
+        transition: height 0.3s ease-in-out;
     }
 
-    @media (max-width: 768px) {
+    .eaton-logo {
+        padding: 0;
+        display: block;
+    }
+    .eaton-logo img { height: 100%; }
+
+    @media (max-width: 991px) {
         .header-utility-nav {
           position: fixed;
           bottom: 0;
           z-index: 1;
           width: 100%;
           right: 0;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.5s ease-in-out;
         }
-    }
+
+        .nav-open .header-utility-nav {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .eaton-logo {
+            width: 200px;
+            height: 65px;
+        }
+      }
+
+      @media (min-width: 992px) {
+          .eaton-logo {
+            width: 181px;
+            height: 57px;
+          }
+
+          .eaton-header--fixed {
+              position: fixed;
+              width: 100%;
+          }
+          .eaton-header--fixed .header-utility-nav,  .eaton-header--fixed .full-page-drawer {
+             display: none;
+          }
+          .eaton-header--fixed .header-primary-nav {
+              height: 80px;
+          }
+          .eaton-header--fixed .eaton-logo {
+            width: 126px;
+            height: 40px;
+            transition: all 0.3s ease-in-out; /* Add transition only when fixed */
+          }
+      }
 </style>
-
-<header>
-    <div class="eaton-header">
-        <!-- CONTENT MODULES -->
-        <!-- Utility Navigation -->
-        <div class="header-utility-nav">
-            <div class="container-fixed container-padding">
-                <div class="row">
-                    <div class="col-xs-9 header-utility-nav__toggle-selector">
-                        <a href="#" class="open-selector">
-                            <span class='header-utility-nav__country'>United States</span>
-                            <span class='header-utility-nav__language'>English</span>
-                        </a>
-                    </div>
-                    <div class="col-xs-3 header-utility-nav__sign-in">
-                        <a href="#" class='open-sign-in'>Sign In</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Include: Full Page Drawer -->
-        <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/static-components/structure/full-page-drawer'}"></sly>
-
-        <!-- Primary Navigation -->
-        <div class="header-primary-nav">
-            <div class="container-fixed container-padding">
-                <div class="row">
-                    <div class="col-xs-12">
-                        Primary Nav Goes here
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Include: Mega Menu -->
-        <sly data-sly-resource="${'mega-menu' @ resourceType='eaton/static-components/structure/mega-menu'}"></sly>
-        <!-- / CONTENT MODULES -->
-    </div>
-</header>
