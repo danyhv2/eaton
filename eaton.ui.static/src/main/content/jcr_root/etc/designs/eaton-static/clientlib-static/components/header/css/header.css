@@ -1,6 +1,6 @@
 .header-utility-nav { background: #005EB8; padding: 10px 0; }
 
-.header-utility-nav__country { text-transform: uppercase; }
+.header-utility-nav__country { text-transform: uppercase; font-weight: bold; margin-right: 5px; font-family: Arial, sans-serif; }
 
 .header-utility-nav__sign-in { text-align: right; }
 
@@ -9,7 +9,7 @@
 @media screen and (max-width: 991px) { .header-utility-nav { position: fixed; bottom: 0; z-index: 1; width: 100%; right: 0; opacity: 0; visibility: hidden; transition: opacity 0.5s ease-in-out; }
   .nav-open .header-utility-nav { opacity: 1; visibility: visible; } }
 
-.header-primary-nav { background: #FFF; padding: 20px 0 16px; border-bottom: 4px solid #EEF OF2; transition: height 0.3s ease-in-out; }
+.header-primary-nav { background: #FFF; padding: 20px 0 16px; border-bottom: 4px solid #eef0f2; transition: height 0.3s ease-in-out; }
 
 @media screen and (min-width: 992px) { .eaton-header--fixed { position: fixed; width: 100%; }
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
