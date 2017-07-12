@@ -15,17 +15,21 @@
       margin-bottom: 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
         .mega-menu {
           position: fixed;
           width: 100%;
           top: 100px;
           bottom: 42px;
-          transition: left 0.7s ease-in-out;
+          transition: all 0.7s ease-in-out;
           overflow: auto;
+          transform: translate(100%);
+          visibility: hidden;
+        }
+
+        .nav-open.level-2-open .mega-menu {
           visibility: visible;
-          /*visibility: visible;
-          transform: translate(100%);*/
+          transform: translate(0);
         }
     }
 
@@ -34,21 +38,17 @@
 <section class="mega-menu">
     <div class="container-fixed container-padding">
         <div class="row">
-            <!-- CONTENT MODULES -->
+            <!--/*  Include: Mega-Menu-Products */-->
+            <sly data-sly-include="pages/mega-menu-products.html" />
 
-            <!-- Include: Mega-Menu-Products -->
-            <div data-sly-include="pages/mega-menu-products.html" />
+            <!--/*  Include: Mega-Menu-Support */-->
+            <sly data-sly-include="pages/mega-menu-support.html" />
 
-            <!-- Include: Mega-Menu-Support -->
-            <div data-sly-include="pages/mega-menu-support.html" />
+            <!--/*  Include: Mega-Menu-Services */-->
+            <sly data-sly-include="pages/mega-menu-services.html" />
 
-            <!-- Include: Mega-Menu-Services -->
-            <div data-sly-include="pages/mega-menu-services.html" />
-
-            <!-- Include: Mega-Menu-Company -->
-            <div data-sly-include="pages/mega-menu-company.html" />
-
-            <!-- / CONTENT MODULES -->
+            <!--/*  Include: Mega-Menu-Company */-->
+            <sly data-sly-include="pages/mega-menu-company.html" />
         </div>
     </div>
 </section>

@@ -1,0 +1,48 @@
+.carousel-component-slide__caption { top: 10%; }
+
+.carousel-component-slide__cta { margin-top: 60px; }
+
+.carousel-component-slide__text { margin-top: 20px; }
+
+.carousel-component-slide__title { font-size: 3.250em; line-height: 1.192em; margin: 0px; }
+
+.carousel-control { display: none; }
+
+.carousel-indicators__item:only-child { display: none; }
+
+.carousel-component-slide__image--mobile { width: 100%; }
+
+.carousel-component__down-arrow { position: absolute; bottom: 25px; color: #fff; width: 10%; font-size: 24px; z-index: 10; left: 47%; }
+
+.carousel-inner:hover > .carousel-control { display: block; }
+
+.carousel-component-slide__image--mobile { display: none !important; }
+
+.primary-button-light { font-size: 1.25em; font-family: Arial; font-weight: bold; color: #fff; border: 3px solid #fff; border-radius: 0px; background: none; padding: 20px 40px; }
+
+.primary-button-light:hover { background: #fff; color: #005EB8; border-color: #005EB8; }
+
+@media only screen and (max-width: 992px) { .carousel-component-slide__image--mobile { display: block !important; }
+  .carousel-component-slide__image--desktop { display: none !important; }
+  .carousel-control { display: none !important; }
+  .carousel-indicators { bottom: 56px; } }
+
+.featured-story-component__content { padding: 60px 50px; }
+
+.featured-story-component__text { color: #fff; font-size: 2.5em; line-height: 1.250em; padding-top: 30px; }
+
+.imgContainer > img.show-desktop { height: 470px; }
+
+.featured-story-component--right { position: absolute; top: 0; right: 0; height: 100%; background: #0266C6; color: #fff; opacity: 0.8; padding: 0; }
+
+.featured-story-component--left { position: absolute; top: 0; left: 0; height: 100%; background: #0266C6; color: #fff; opacity: 0.8; padding: 0; margin-left: 0px !important; }
+
+.show-mobile { display: none; }
+
+/* @media only screen and (max-width: 769px) { */
+@media only screen and (max-width: 600px), screen and (max-width: 992px) { .featured-story-component--right { position: relative; }
+  .featured-story-component--left { position: relative; }
+  .img-responsive { width: 100%; }
+  .featured-story-component__row { padding-bottom: 20px; }
+  .show-desktop { display: none; }
+  .show-mobile { display: block; } }

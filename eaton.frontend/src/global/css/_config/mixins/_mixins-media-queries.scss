@@ -1,0 +1,141 @@
+//-----------------------------------
+// Media Queries: Mobile
+//-----------------------------------
+
+// Mobile: 0px to 767px
+//--------------
+@mixin media-mobile-only {
+  @media screen
+  and ( max-width: $grid__xs-max ) {
+
+    @content;
+
+  }
+}
+
+
+// Mobile Portrait: 0px to 479px
+//--------------
+@mixin media-mobile-portrait {
+  @media screen
+  and (max-width: $grid__xs - 1 ) {
+
+    @content;
+
+  }
+}
+
+
+// Mobile Landscape: 480px to 767px
+//--------------
+@mixin media-mobile-landscape {
+  @media screen
+  and (min-width: $grid__xs )
+  and (max-width: $grid__xs-max ) {
+
+    @content;
+
+  }
+}
+
+
+// Mobile Landscape and up:  > 480px
+//--------------
+@mixin media-mobile-landscape-and-up {
+  @media screen
+  and (min-width: $grid__xs ) {
+
+    @content;
+
+  }
+}
+
+
+// Mobile and Tablet: 0 to 992px
+//--------------
+@mixin media-mobile-and-tablet {
+  @media screen
+  and (max-width: $grid__sm-max ) {
+
+    @content;
+
+  }
+}
+
+
+
+
+//-----------------------------------
+// Media Queries: Tablet
+//-----------------------------------
+
+// Tablet and Desktop: > 768px
+//--------------
+@mixin media-tablet-and-up {
+  @media screen
+  and (min-width: $grid__sm ) {
+
+    @content;
+
+  }
+}
+
+// Tablet: 768px to 991px
+//--------------
+@mixin media-tablet-only {
+  @media screen
+  and (min-width: $grid__sm )
+  and (max-width: $grid__sm-max) {
+
+    @content;
+
+  }
+}
+
+
+//-----------------------------------
+// Media Queries: Desktop
+//-----------------------------------
+
+
+// Desktop Small and Desktop Large: > 992px
+//--------------
+@mixin media-desktop-and-up {
+  @media screen
+  and (min-width: $grid__md ) {
+
+    @content;
+
+  }
+}
+
+// Desktop Small: 992px to 1199px
+//--------------
+@mixin media-desktop-only {
+  @media screen
+  and (min-width: $grid__md )
+  and (max-width: $grid__md-max) {
+
+    @content;
+
+  }
+}
+
+
+
+
+
+//-----------------------------------
+// Media Queries: Desktop Large
+//-----------------------------------
+
+// Desktop Large:  > 1200px
+//--------------
+@mixin media-desktop-large {
+  @media screen
+  and (min-width: $grid__lg ) {
+
+    @content;
+
+  }
+}

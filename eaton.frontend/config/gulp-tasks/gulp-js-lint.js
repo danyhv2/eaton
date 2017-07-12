@@ -15,9 +15,12 @@ const lintJS = function(gulp, CONFIG, bundle) {
     // Lint JavaScript
     //--------------
     gulp.src([
-      path.join('./', 'config/gulp-tasks/*.js'),
+      path.join('./', '/config/gulp-tasks/*.js'),
 
-      CONFIG.paths.src.js + '/**/*.js'
+      CONFIG.paths.srcRoot + '/**/*.js',
+
+      // Ignore Vendor Libs
+      '!' + CONFIG.paths.srcRoot + '/**/vendors/**/*.js'
 
     ])
       .pipe(gulpEslint(configFile))

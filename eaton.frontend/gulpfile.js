@@ -26,6 +26,9 @@ gulp.task('lint:js',
   require('./config/gulp-tasks/gulp-js-lint')(gulp, CONFIG)
 );
 
+// Shortcut for all Linting Tasks
+gulp.task('lint', ['lint:css', 'lint:js']);
+
 
 // TASKS: Compile SASS to CSS
 //--------------
@@ -45,7 +48,7 @@ gulp.task('js',
 // Build For Local Development
 //--------------
 gulp.task('build:dev', [
-  'clean',
+  // 'clean',
   'css',
   'js',
   'lint:css',
@@ -57,7 +60,7 @@ gulp.task('build:dev', [
 // Build for Prod Servers
 //--------------
 gulp.task('build:prod', [
-  'clean',
+  // 'clean',
   'css',
   'js',
   'lint:css',

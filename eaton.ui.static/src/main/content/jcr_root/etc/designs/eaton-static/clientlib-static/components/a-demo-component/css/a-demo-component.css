@@ -1,0 +1,11 @@
+.a-demo-component { background-color: #333F48; }
+
+.a-demo-component__heading { margin-bottom: 1em; }
+
+.a-demo-component__author { color: #005EB8; font-family: "Eaton", Arial, sans-serif; }
+
+@media screen and (max-width: 767px) { .a-demo-component { width: 100%; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) { .a-demo-component { margin: 40px 0; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) { .a-demo-component { margin: 60px 0; } }

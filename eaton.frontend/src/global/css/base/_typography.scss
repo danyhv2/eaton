@@ -1,0 +1,130 @@
+//-----------------------------------
+// Global Typography definition
+//-----------------------------------
+
+// Typography
+//--------------
+
+body {
+  color: $color__primary-gray1;
+  font-family: $font-family__secondary;
+
+  // .dark-theme & {
+  //   color: $color__white;
+  // }
+}
+
+// Headings
+//----------------
+
+h1,
+h2,
+h3,
+.heading-h1,
+.heading-h2,
+.heading-h3 {
+  font-family: $font-family__primary;
+}
+
+h4,
+h5,
+.heading-h5,
+.heading-h6 {
+  font-family: $font-family__secondary;
+}
+
+h1,
+.heading-h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+h2,
+.heading-h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+h3,
+.heading-h3 {
+  margin-top: 0;
+}
+
+h4,
+.heading-h4 {
+  margin-top: 0;
+}
+
+h5,
+.heading-h5 {
+  margin-top: 0;
+}
+
+
+// Custom Text Elements
+//--------------
+
+// Body Link
+// Used with various typography elements  for link styles
+// Eg: <a href="#" class="body-link body-small-link">...</a>
+// Eg: <a href="#" class="body-link heading-h5">...</a>
+//---------------------
+
+.body-link {
+  color: $color__primary-blue;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__accent-darkblue; //TBD
+  }
+
+  .dark-theme & {
+    color: $color__white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__white; //TBD
+    }
+  }
+}
+
+.body-copy {
+  font-size: 1.5em;
+  line-height: 2.375em;
+}
+
+.body-copy-small {
+  color: $color__primary-gray1;
+  font-family: $font-family__secondary;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+.eyebrow-small {
+  color: $color__primary-gray1;
+  font-family: $font-family__secondary;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 34px;
+}
+
+
+
+//-----------------------------------
+// Media-Query: Desktop
+//-----------------------------------
+@include media-desktop-and-up {
+
+  .body-copy-small {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .eyebrow-small {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+}

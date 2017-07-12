@@ -21,6 +21,9 @@ rules:
   final-newline:
     - 2
 
+  force-element-nesting:
+    - 0
+
   hex-notation:
     - 2
     - style: uppercase
@@ -28,6 +31,10 @@ rules:
   indentation:
     - 2
     - size: 2
+
+  leading-zero:
+    - 2
+    - include: true
 
   nesting-depth:
     - 2

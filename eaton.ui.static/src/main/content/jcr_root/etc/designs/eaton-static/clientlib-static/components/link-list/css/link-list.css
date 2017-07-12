@@ -1,0 +1,18 @@
+.eaton-link-list-vertical__list { padding: 0; margin: 0; list-style-type: none; }
+
+.eaton-link-list-vertical__list-link { display: inline-block; padding: 10px 0; }
+
+.eaton-link-list-vertical__list-icon { font-size: 0.75em; margin-left: 0.25em; }
+
+@media screen and (max-width: 991px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 60px; } }
+
+@media screen and (min-width: 992px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 30px; } }
+
+.eaton-link-list-horizontal__list { margin: 0; padding: 0; }
+
+@media screen and (max-width: 991px) { .eaton-link-list-horizontal__list-item { padding: 0; width: 100%; } }
+
+@media screen and (min-width: 992px) { .eaton-link-list-horizontal__list { display: flex; flex-flow: row wrap; }
+  .eaton-link-list-horizontal__list-item { position: relative; margin: 0 1.8em 0 0; padding: 0 1.8em 0 0; }
+  .eaton-link-list-horizontal__list-item::after { content: ''; background-color: #5B6770; height: 1em; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 1px; }
+  .eaton-link-list-horizontal__list-item:last-child::after { display: none; } }

@@ -1,0 +1,89 @@
+<template data-sly-template.primaryNavigation="${ @ data }">
+    <div class="eaton-link-list eaton-link-list--primary-navigation ${data.backgroundImage ? 'eaton-link-list--has-background' : ''} ">
+
+      <!--/* Headline: Visible only for Mobile Breakpoints */-->
+      <p data-sly-test="${data.headline}" class="eaton-link-list__headline">${data.headline}</p>
+
+      <!--/* List Links */-->
+      <!--/* TODO: BgImg + Markup Structure */-->
+      <nav data-sly-list.level1="${data.links}" class="eaton-link-list__items" style="background-image: url('${data.backgroundImage @ context = 'uri'}')">
+          <a href="#" data-menu-category="${level1.menuCategory}" aria-expanded="false">${ level1.title }</a>
+      </nav>
+    </div>
+
+    <style>
+        @media (max-width: 991px) {
+
+            /* Behaviors when Nav is open*/
+            .eaton-link-list--primary-navigation {
+                position: fixed;
+                top: 100px;
+                bottom: 42px;
+                width: 100%;
+                left: 0;
+                height: 0;
+                visibility: hidden;
+                overflow: hidden;
+                background: #5B6770; /* Gray 2 */
+                color: white;
+                transition: height 0.7s ease-in-out;
+            }
+            .eaton-link-list__items {
+                height: 100%;
+                width: 100%;
+                padding: 30px;
+            }
+            .eaton-link-list__items a {
+                display: block;
+                margin: 30px 0;
+                padding: 30px 0;
+                color: white;
+                border: 1px solid red;
+            }
+            .eaton-link-list__items a:first-child {
+                margin-top: 0;
+            }
+            .eaton-link-list--has-background .eaton-link-list__items {
+                background-repeat: no-repeat;
+                background-position: center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            .nav-open .eaton-link-list--primary-navigation {
+                height: 100%;
+                visibility: visible;
+                overflow: auto;
+            }
+
+            /* Headline */
+            .eaton-link-list--primary-navigation .eaton-link-list__headline {
+                display: block;
+                padding: 60px 30px;
+                font-size: 40px;
+                line-height: 50px;
+                color: white;
+                background: #333F48; /* Gray 1 */
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .eaton-link-list--primary-navigation {
+                position: relative;
+                text-align: right;
+            }
+
+            .eaton-link-list--has-background .eaton-link-list__items {
+                background: none !important;
+            }
+
+            /* Headline */
+            .eaton-link-list--primary-navigation .eaton-link-list__headline {
+                display: none;
+            }
+        }
+    </style>
+</template>
