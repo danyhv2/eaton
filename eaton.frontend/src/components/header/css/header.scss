@@ -11,7 +11,6 @@
 @import "header-primary-nav";
 
 // Base Styles
-
 .eaton-header {
   @include media-desktop-and-up {
     &--fixed {
@@ -34,9 +33,21 @@
 
 // Global Body Styles
 .nav-open {
-  .eaton-link-list-primary-nav {
-    height: 100%;
-    visibility: visible;
-    overflow: auto;
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .eaton-link-list-primary-nav {
+      height: 100%;
+      visibility: visible;
+      overflow: auto;
+    }
+
+    &.level-2-open {
+      .mega-menu {
+        visibility: visible;
+        transform: translate(0);
+      }
+    }
   }
 }

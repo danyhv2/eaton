@@ -2,11 +2,11 @@
 // Component M-1: Header: Primary Navigation
 //------------------------------------------
 
-$primary-nav-border: #eef0f2;
+$_primary-nav-border: #EEFOF2;
 
 .header-primary-nav {
   background: $color__white;
   padding: 20px 0 16px; // 4px for bottom shadow - height
-  border-bottom: 4px solid $primary-nav-border;
+  border-bottom: 4px solid $_primary-nav-border;
   transition: height 0.3s ease-in-out;
 }

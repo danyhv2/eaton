@@ -1,0 +1,7 @@
+.mega-menu { background: #333F48; padding: 30px 0; display: none; }
+
+.mega-menu__content { padding: 20px; margin-bottom: 20px; display: none; }
+
+.mega-menu__content--active { display: block; }
+
+@media screen and (max-width: 991px) { .mega-menu { position: fixed; width: 100%; top: 105px; bottom: 42px; transition: transform 0.7s ease-in-out; overflow: auto; transform: translate(100%); visibility: hidden; } }
