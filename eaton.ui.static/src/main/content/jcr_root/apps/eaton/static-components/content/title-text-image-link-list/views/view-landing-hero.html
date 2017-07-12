@@ -1,0 +1,31 @@
+<div data-sly-use.data="../data/view-landing-hero-multiple-data.js" id="carousel-example-generic" class="carousel-component carousel slide" data-ride="carousel" data-pause="hover">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" data-sly-list.slide="${data}">
+        <li data-target="#carousel-example-generic" data-slide-to="${slideList.index}" class="carousel-indicators__item ${slideList.index == 0 ? 'active' : ''}"></li>
+    </ol>
+    <div class="carousel-component__down-arrow show-mobile">
+        <span class="glyphicon glyphicon-menu-down"></span>
+    </div>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-component-slide carousel-inner" data-sly-list.slide="${data}" role="listbox">
+        <div class="item ${slideList.index == 0 ? 'active' : ''}">
+            <img class="carousel-component-slide__image--desktop img-responsive" src="${slide.image}" alt="...">
+            <img class="carousel-component-slide__image--mobile" src="${slide.mobile_image}" alt="...">
+            <div class="carousel-component-slide__caption carousel-caption">
+                <h1 class="carousel-component-slide__title">${slide.title}</h1>
+                <p class="carousel-component-slide__text">${slide.text}</p>
+                <input class="carousel-component-slide__cta primary-button-light" type="button" value="See how">
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" data-sly-test="${slideList.count > 1}">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" data-sly-test="${slideList.count > 1}">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
