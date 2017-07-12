@@ -1,3 +1,18 @@
-.eaton-footer-top { background: #5B6770; padding: 3em 0; }
+.eaton-footer-top { background: #5B6770; padding: 60px 0; }
+
+.eaton-footer-top .eaton-text-default__description, .eaton-footer-top .eaton-link-list-vertical__eyebrow, .eaton-footer-top .eaton-link-list-vertical__list-link, .eaton-footer-top .eaton-social-links__eyebrow { color: #FFF; }
 
 .eaton-footer-bottom { background: #333F48; }
+
+.eaton-footer-bottom__link-list a, .eaton-footer-bottom__copyright { color: #FFF; }
+
+@media screen and (max-width: 991px) { .eaton-footer-top__logo { margin-bottom: 60px; }
+  .eaton-footer-top__text { margin-bottom: 120px; }
+  .eaton-footer-top__link-list { margin-bottom: 60px; }
+  .eaton-footer-bottom { padding: 120px 0; }
+  .eaton-footer-bottom__link-list .eaton-link-list-horizontal__list-item { margin-bottom: 32px; } }
+
+@media screen and (min-width: 992px) { .eaton-footer-top__logo { margin-bottom: 30px; }
+  .eaton-footer-bottom { padding: 40px 0; }
+  .eaton-footer-bottom__link-list { float: left; }
+  .eaton-footer-bottom__copyright { float: right; } }

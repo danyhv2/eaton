@@ -1,4 +1,48 @@
 
-<!-- Integrated code goes here -->
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Social Links Component</div>
+</sly>
 
-<sly data-sly-include="views/view-footer.html" data-sly-unwrap></sly>
+
+
+<sly data-sly-use.data="data/social-links-data.js">
+
+  <div class="eaton-social-links">
+
+    <!--/* If Eyebrow */-->
+    <sly data-sly-test="${ data.eyebrow }">
+      <h4 class="eaton-social-links__eyebrow eyebrow-small">${ data.eyebrow }</h4>
+    </sly>
+
+    <!--/* List Links */-->
+    <ul
+      data-sly-list="${ data.links }"
+      class="eaton-social-links__list"
+    >
+      <li class="eaton-social-links__list-item">
+        <a href="${ item.url }"
+          class="eaton-social-links__list-link"
+          target="${ item.target }"
+        >
+          <img
+            data-src="${ item.icon }"
+            class="eaton-social-links__list-icon"
+            alt="${ item.title }" />
+        </a>
+      </li>
+    </ul>
+
+    <div class="body-copy-small">
+      <a href="${ data.pageLink.url }"
+        aria-label="${ data.pageLink.titleA11y }"
+        class="eaton-social-links__page-link"
+        target="${ data.pageLink.target }">
+        <span class="eaton-social-links__page-link-text">${ data.pageLink.title }</span>
+        <i class="eaton-social-links__page-link-icon glyphicon glyphicon-menu-right"
+          aria-hidden="true"></i>
+      </a>
+    </div>
+
+  </div>
+
+</sly>

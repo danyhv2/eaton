@@ -1,12 +1,20 @@
 body { color: #333F48; font-family: "Arial", sans-serif; }
 
-.dark-theme body { color: #FFF; }
+h1, h2, h3, .heading-h1, .heading-h2, .heading-h3 { font-family: "Eaton", Arial, sans-serif; }
 
-.body-copy, .body-copy-link { font-size: 1.5em; line-height: 2.375em; }
+h4, h5, .heading-h5, .heading-h6 { font-family: "Arial", sans-serif; }
 
-.body-copy-small, .body-small-link { font-size: 1.125em; line-height: 1.5em; }
+h1, .heading-h1 { font-size: 2rem; margin-top: 0; }
 
-.body-link { color: #005EB8; cursor: pointer; }
+h2, .heading-h2 { font-size: 1.8rem; margin-top: 0; }
+
+h3, .heading-h3 { margin-top: 0; }
+
+h4, .heading-h4 { margin-top: 0; }
+
+h5, .heading-h5 { margin-top: 0; }
+
+.body-link { color: #005EB8; }
 
 .body-link:hover, .body-link:focus, .body-link:active { color: #003865; }
 
@@ -14,13 +22,14 @@ body { color: #333F48; font-family: "Arial", sans-serif; }
 
 .dark-theme .body-link:hover, .dark-theme .body-link:focus, .dark-theme .body-link:active { color: #FFF; }
 
-h1, h2, h3, .heading-h1, .heading-h2, .heading-h3 { font-family: "Eaton", Arial, sans-serif; }
+.body-copy { font-size: 1.5em; line-height: 2.375em; }
 
-h4, h5, .heading-h5, .heading-h6 { font-family: "Arial", sans-serif; }
+.body-copy-small { color: #333F48; font-family: "Arial", sans-serif; font-size: 26px; line-height: 34px; }
 
-h1, .heading-h1 { font-size: 2rem; }
+.eyebrow-small { color: #333F48; font-family: "Arial", sans-serif; font-size: 28px; font-weight: bold; line-height: 34px; }
 
-h2, .heading-h2 { font-size: 1.8rem; }
+@media screen and (min-width: 992px) { .body-copy-small { font-size: 18px; line-height: 24px; }
+  .eyebrow-small { font-size: 18px; line-height: 24px; } }
 
 .u-flex { display: flex; }
 

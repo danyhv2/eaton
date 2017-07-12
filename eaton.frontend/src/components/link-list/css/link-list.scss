@@ -1,9 +1,10 @@
 //-----------------------------------
-// Component M-0: Link List
+// Component Link List
 //-----------------------------------
 
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
 // Import SubViews
-@import 'views/view-vertical'
+@import "views/view-vertical";
+@import "views/view-horizontal";

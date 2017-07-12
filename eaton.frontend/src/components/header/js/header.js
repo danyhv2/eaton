@@ -13,4 +13,4 @@ App.header = (function() {
 
   init();
 
-})();
+}());

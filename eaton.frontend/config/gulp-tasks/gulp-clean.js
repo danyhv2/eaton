@@ -4,7 +4,7 @@
 */
 
 const del = require('del');
-const path = require('path');
+// const path = require('path');
 
 
 const cleanAEM = function(gulp, CONFIG) {
