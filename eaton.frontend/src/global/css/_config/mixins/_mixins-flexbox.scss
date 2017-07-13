@@ -2,7 +2,8 @@
 // Flexbox Mixins
 //-----------------------------------
 
-@mixin flex() {
-  display: -webkit-flex;
-  display: flex;
-}
+// NOTE: We might not need FLEXBOX Mixins since gulp has 'autoprefixer' enabled
+
+// @mixin flex() {
+//   display: flex;
+// }

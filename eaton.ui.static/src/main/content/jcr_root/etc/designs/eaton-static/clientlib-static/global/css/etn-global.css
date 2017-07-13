@@ -33,25 +33,25 @@ h5__link, .heading-h5__link { font-size: 2.4rem; font-weight: bold; }
 @media screen and (min-width: 992px) { .body-copy-small { font-size: 18px; line-height: 24px; }
   .eyebrow-small { font-size: 18px; line-height: 24px; } }
 
-.u-flex { display: flex; }
+.u-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.u-inline-flex { display: inline-flex; }
+.u-inline-flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
 
-.u-flex-wrap { flex-wrap: wrap; }
+.u-flex-wrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.u-flex-column { flex-direction: column; }
+.u-flex-column { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
-.u-flex-row { flex-direction: row; }
+.u-flex-row { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
 
-.u-flex-align-center { align-items: center; }
+.u-flex-align-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.u-flex-justify-center { justify-content: center; }
+.u-flex-justify-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 .u-is-fixed { position: fixed; }
 
 .u-absolute-fill { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
-.u-is-center-aligned { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.u-is-center-aligned { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 .u-no-margin { margin: 0; }
 
