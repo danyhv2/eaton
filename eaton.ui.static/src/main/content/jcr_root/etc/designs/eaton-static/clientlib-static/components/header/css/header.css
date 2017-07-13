@@ -38,3 +38,5 @@
 
 @media screen and (max-width: 991px) { .nav-open .eaton-link-list-primary-nav { height: 100%; visibility: visible; overflow: auto; }
   .nav-open.level-2-open .mega-menu { visibility: visible; -webkit-transform: translate(0); transform: translate(0); } }
+
+@media screen and (min-width: 992px) { .nav-open.level-2-open .mega-menu { visibility: visible; opacity: 1; } }

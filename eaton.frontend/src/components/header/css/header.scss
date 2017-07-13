@@ -69,4 +69,16 @@
       }
     }
   }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &.level-2-open {
+      .mega-menu {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
 }
