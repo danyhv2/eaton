@@ -24,7 +24,7 @@
   .eaton-link-list-primary-nav__items { height: 100%; width: 100%; padding: 30px; }
   .eaton-link-list-primary-nav__items a { display: block; margin: 30px 0; padding: 30px 0; color: #FFF; cursor: pointer; }
   .eaton-link-list-primary-nav__items a:first-child { margin-top: 0; }
-  .eaton-link-list-primary-nav--has-background .eaton-link-list-primary-nav__items { background-repeat: no-repeat; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; } }
+  .eaton-link-list-primary-nav--has-background .eaton-link-list-primary-nav__items { background-repeat: no-repeat; background-position: center center; background-size: cover; } }
 
 @media screen and (min-width: 992px) { .eaton-link-list-primary-nav { position: relative; height: 100%; }
   .eaton-header .eaton-link-list-primary-nav { margin-right: 15px; }

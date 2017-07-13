@@ -52,7 +52,7 @@ $primary-nav-border: #EEF0F2;
       flex-grow: 1;
       position: relative;
 
-      &:after {
+      &::after {
         content: '';
         height: 30px;
         width: 1px;
@@ -73,7 +73,6 @@ $primary-nav-border: #EEF0F2;
       justify-content: flex-end;
       height: 90px;
       padding: 30px; // Equidistant Spacing between menu & search icon
-      display: flex;
       margin-top: 10px;
 
       .eaton-header--fixed & {
