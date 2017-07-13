@@ -1,0 +1,67 @@
+<sly data-sly-use.data="../data/view-default-data.js">
+    <div class="list-default container-fluid">
+    
+        <!--/* Desktop layout */-->
+        <div class="row hidden-xs visible-sm visible-md visible-lg card-container--topmargin">
+            <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-2 equal-height-row">
+                <div class="related-category--tablet-left">
+                    <img src="${data.leftImage}" class="img-responsive category__image"/>
+                </div>
+                <div class="category__item--border category__item-innerpadding related-category--tablet-right category__item">
+                    <div class="related-category__title--font category__title--bottompadding">${data.leftTitle}</div>
+                    <div>
+                        <a class="category__link--font" href="${data.leftLinkURL}">${data.leftLinkText}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0 equal-height-row">
+                <div class="related-category--tablet-left">
+                    <img src="${data.righImage}" class="img-responsive category__image"/>
+                </div>
+                <div class="category__item--border category__item-innerpadding related-category--tablet-right category__item">
+                    <div class="related-category__title--font category__title--bottompadding">${data.rightTitle}</div>
+                    <div>
+                        <a class="category__link--font" href="${data.rightLinkURL}">${data.rightLinkText}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--/* Mobile slider */-->
+        <div class="row visible-xs card-container--topmargin">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="${data.leftImage}" class="img-responsive category__image" />
+                            <div class="category__item--border category__item-innerpadding carousel__item">
+                                <div class="related-category__title--font category__title--bottompadding">${data.leftTitle}</div>
+                                <h5>
+                                    <a class="category__link--font" href="${data.leftLinkURL}">${data.leftLinkText}</a>
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="${data.righImage}" class="img-responsive category__image" />
+                            <div class="category__item--border category__item-innerpadding carousel__item">
+                                <div class="related-category__title--font category__title--bottompadding">${data.rightTitle}</div>
+                                <h5>
+                                    <a class="category__link--font" href="${data.rightLinkURL}">${data.rightLinkText}</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <div class="text-center">
+                            <a data-target="#myCarousel" data-slide-to="0" href="#">&#9679;</a>
+                            <a data-target="#myCarousel" data-slide-to="1" href="#">&#9679;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</sly>

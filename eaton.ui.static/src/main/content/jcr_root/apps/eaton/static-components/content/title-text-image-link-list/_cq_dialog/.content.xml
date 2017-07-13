@@ -41,6 +41,10 @@
                     jcr:primaryType="nt:unstructured"
                     text="Landing Hero"
                     value="landing-hero"/>
+                  <product-overview
+                    jcr:primaryType="nt:unstructured"
+                    text="Product Overview"
+                    value="product-overview"/>
                 </items>
               </view>
             </items>

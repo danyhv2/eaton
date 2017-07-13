@@ -1,0 +1,103 @@
+//-----------------------------------
+// LinkList Component: Primary Navigation
+//-----------------------------------
+
+.eaton-link-list-primary-nav {
+
+  &__items {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  //-----------------------------
+  // Mobile-Tablet Breakpoint
+  // ----------------------------
+  @include media-mobile-and-tablet {
+    position: fixed;
+    top: 100px;
+    bottom: 42px;
+    width: 100%;
+    left: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    background: $color__primary-gray2;
+    color: $color__white;
+    transition: height 0.7s ease-in-out;
+
+    &__headline {
+      display: block;
+      padding: 60px 30px;
+      font-size: 40px;
+      line-height: 50px;
+      background: $color__primary-gray1;
+      margin-bottom: 0;
+    }
+
+    &__items {
+      height: 100%;
+      width: 100%;
+      padding: 30px;
+
+      a {
+        display: block;
+        margin: 30px 0;
+        padding: 30px 0;
+        color: $color__white;
+        cursor: pointer;
+        &:first-child { margin-top: 0; }
+      }
+    }
+
+    &--has-background {
+      .eaton-link-list-primary-nav__items {
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+    }
+  }
+
+  //-----------------------------
+  // Desktop Breakpoint
+  // ----------------------------
+  @include media-desktop-and-up {
+    position: relative;
+    height: 100%;
+
+    &__headline {
+      display: none;
+    }
+
+    &__items {
+      display: flex;
+      height: 100px;
+      align-items: center;
+      justify-content: flex-end;
+
+      a {
+        margin: 0 15px;
+        padding-right: 5px;
+        padding-left: 5px;
+        color: $color__primary-gray1;
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+
+      .eaton-header--fixed & {
+        height: 80px;
+      }
+    }
+
+    &--has-background {
+      .eaton-link-list-primary-nav__items {
+        background: none !important;
+      }
+    }
+  }
+}

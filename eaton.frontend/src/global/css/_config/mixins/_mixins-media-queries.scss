@@ -51,7 +51,7 @@
 }
 
 
-// Mobile and Tablet: 0 to 992px
+// Mobile and Tablet: 0 to 991px
 //--------------
 @mixin media-mobile-and-tablet {
   @media screen
@@ -61,9 +61,6 @@
 
   }
 }
-
-
-
 
 //-----------------------------------
 // Media Queries: Tablet
