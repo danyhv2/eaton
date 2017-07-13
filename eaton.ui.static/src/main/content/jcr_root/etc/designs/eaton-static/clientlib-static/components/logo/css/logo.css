@@ -2,7 +2,7 @@
 
 .eaton-logo__link { display: block; cursor: pointer; }
 
-.eaton-logo__img { height: 100%; }
+.eaton-logo__image { height: 100%; }
 
 @media screen and (max-width: 991px) { .eaton-logo__link { width: 200px; height: 65px; } }
 

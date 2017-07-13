@@ -69,6 +69,10 @@
     position: relative;
     height: 100%;
 
+    .eaton-header & {
+      margin-right: 15px;
+    }
+
     &__headline {
       display: none;
     }
@@ -87,6 +91,7 @@
         display: flex;
         height: 100%;
         align-items: center;
+        font-size: 20px; //1.25em;
       }
 
       .eaton-header--fixed & {

@@ -30,8 +30,8 @@ a { color: #005EB8; }
   .category__item--border { border-top: 1px solid #CCD2D7; background-color: #FFF; }
   .col-sm-10 { margin-bottom: 30px; }
   .col-sm-10 > div { width: 50%; display: inline-block; }
-  .equal-height-row { display: flex; flex-wrap: wrap; }
-  .equal-height-row > div { display: flex; flex-direction: column; }
+  .equal-height-row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .equal-height-row > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .card-container--topmargin { margin-top: -13%; }
   .category__item, .category__image { min-height: 203px; }
   .category__link--font { font-size: 1.5em; } }

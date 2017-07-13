@@ -25,17 +25,17 @@
           target="${ item.target }"
         >
           <img
-            data-src="${ item.icon }"
+            src="${ item.icon }"
             class="eaton-social-links__list-icon"
             alt="${ item.title }" />
         </a>
       </li>
     </ul>
 
-    <div class="body-copy-small">
+    <div class="eaton-social-links__cta">
       <a href="${ data.pageLink.url }"
         aria-label="${ data.pageLink.titleA11y }"
-        class="eaton-social-links__page-link"
+        class="eaton-social-links__page-link body-copy-small"
         target="${ data.pageLink.target }">
         <span class="eaton-social-links__page-link-text">${ data.pageLink.title }</span>
         <i class="eaton-social-links__page-link-icon glyphicon glyphicon-menu-right"
