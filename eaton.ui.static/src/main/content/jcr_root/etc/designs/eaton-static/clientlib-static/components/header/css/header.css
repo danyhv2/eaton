@@ -13,9 +13,9 @@
 
 .header-primary-nav .row { display: flex; align-items: center; }
 
-.header-primary-nav__links i { font-size: 25px; }
+.header-primary-nav__links a:hover, .header-primary-nav__links a:focus { text-decoration: none; }
 
-.header-primary-nav__links:hover, .header-primary-nav__links:focus { text-decoration: none; }
+.header-primary-nav__links i { font-size: 25px; }
 
 @media screen and (max-width: 991px) { .header-primary-nav__links { text-align: right; }
   .header-primary-nav__open-search { display: inline-block; margin-right: 30px; } }

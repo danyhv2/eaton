@@ -16,12 +16,14 @@ $primary-nav-border: #eef0f2;
   }
 
   &__links {
+    a {
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
     i {
       font-size: 25px;
-    }
-    &:hover,
-    &:focus {
-      text-decoration: none;
     }
   }
 
