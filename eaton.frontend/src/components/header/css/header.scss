@@ -12,6 +12,7 @@
 
 // Base Styles
 .eaton-header {
+  position: relative;
 
   //-----------------------------------
   // Mobile Breakpoint
@@ -33,6 +34,7 @@
     &--fixed {
       position: fixed;
       width: 100%;
+      z-index: 20;
 
       .full-page-drawer,
       .header-utility-nav {

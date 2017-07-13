@@ -63,8 +63,10 @@ $primary-nav-border: #EEF0F2;
       }
 
       .eaton-header--fixed & {
-        top: 26px;
-        right: 7px;
+        &::after {
+          top: 26px;
+          right: 7px;
+        }
       }
     }
 
