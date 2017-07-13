@@ -5,6 +5,7 @@
 
 const sass = require('gulp-sass');
 const sassGlobbing = require('node-sass-globbing');
+const autoprefixer = require('gulp-autoprefixer');
 
 const sassToCSS = function(gulp, CONFIG, bundle) {
   return function() {
@@ -22,6 +23,9 @@ const sassToCSS = function(gulp, CONFIG, bundle) {
         importer: sassGlobbing
       }))
       .on('error', sass.logError)
+
+      // Config file: ./eaton.frontend/browserslist
+      .pipe(autoprefixer({ remove: false }))
       .pipe(gulp.dest( CONFIG.paths.destAEM.clientlibStatic ));
 
   };

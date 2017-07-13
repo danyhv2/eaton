@@ -14,10 +14,6 @@
 
 .carousel-inner:hover > .carousel-control { display: block; }
 
-.primary-button-light { font-size: 1.25em; font-family: Arial; font-weight: bold; color: #fff; border: 3px solid #fff; border-radius: 0px; background: none; padding: 20px 40px; }
-
-.primary-button-light:hover { background: #fff; color: #005EB8; border-color: #005EB8; }
-
 @media only screen and (max-width: 992px) { .carousel-control { display: none !important; }
   .carousel-indicators { bottom: 56px; } }
 
@@ -33,7 +29,6 @@
 
 .featured-story-component__blue--left { left: 0; }
 
-/* @media only screen and (max-width: 769px)  */
 @media screen and (max-width: 991px) { .featured-story-component__blue { position: relative; }
   .featured-story-component__row { padding-bottom: 20px; } }
 

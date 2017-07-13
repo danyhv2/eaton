@@ -4,7 +4,7 @@
 
 .category-hightlight-header__image { /*background-image: url(/content/dam/eaton/images/story_board.png);*/ background-size: cover; height: 450px; }
 
-.category-hightlight-header--vertical-align { display: flex; align-items: center; }
+.category-hightlight-header--vertical-align { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 @media only screen and (max-width: 767px) { .category-hightlight-header__image { height: 400px; /*background-image: url(/content/dam/eaton/images/story_boardphone2.png);*/ }
   .category-hightlight-header__title { font-size: 2.5em; }

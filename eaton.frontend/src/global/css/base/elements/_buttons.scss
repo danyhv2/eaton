@@ -19,8 +19,9 @@
 
   &--primary {
     border-width: 3px;
-    font-size: 2.8em; // ???
-    padding: 40px;
+    font-size: 1.6em;
+    padding: 20px 40px;
+
   }
 
   &--secondary {
@@ -32,6 +33,8 @@
   &--light {
     border-color: $color__primary-blue;
     color: $color__primary-blue;
+    padding: 20px 40px;
+    font-size: 1.6em;
 
     &:hover,
     &:active,
