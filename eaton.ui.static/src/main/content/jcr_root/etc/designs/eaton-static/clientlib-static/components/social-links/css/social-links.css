@@ -4,6 +4,8 @@
 
 .eaton-social-links__list-item { display: inline-block; margin-right: 18px; }
 
-.eaton-social-links__page-link { color: #FFF; font-size: 18px; }
+.eaton-social-links__page-link { font-size: 18px; }
+
+.eaton-social-links__page-link, .eaton-social-links__page-link:hover, .eaton-social-links__page-link:active { color: #FFF; }
 
 .eaton-social-links__page-link-icon { font-size: 0.7em; }

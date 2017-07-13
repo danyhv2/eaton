@@ -24,8 +24,14 @@
   }
 
   &__page-link {
-    color: $color__white;
+
     font-size: 18px;
+
+    &,
+    &:hover,
+    &:active {
+      color: $color__white;
+    }
   }
 
   &__page-link-icon {
