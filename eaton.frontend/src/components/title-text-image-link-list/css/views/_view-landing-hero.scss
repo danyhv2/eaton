@@ -1,49 +1,50 @@
-.carousel-component-slide__caption {
-  top: 10%;
-}
+.carousel-component {
 
-.carousel-component-slide__cta {
-  margin-top: 60px;
-}
+  &-slide {
 
-.carousel-component-slide__text {
-  margin-top: 20px;
-}
+    &__caption {
+      top: 10%;
+    }
 
-.carousel-component-slide__title {
-  font-size: 3.250em;
-  line-height: 1.192em;
-  margin: 0px;
-}
+    &__cta {
+      margin-top: 60px;
+    }
 
-.carousel-control {
-  display: none;
-}
+    &__text {
+      margin-top: 20px;
+    }
 
-.carousel-indicators__item:only-child {
-  display: none;
-}
+    &__title {
+      font-size: 3.250em;
+      line-height: 1.192em;
+      margin: 0px;
+    }
+  }
 
-.carousel-component-slide__image--mobile {
-  width: 100%;
-}
+  &__dots {
 
-.carousel-component__down-arrow {
-  position: absolute;
-  bottom: 25px;
-  color: #fff;
-  width: 10%;
-  font-size: 24px;
-  z-index: 10;
-  left: 47%;
+    &:only-child {
+      display: none;
+    }
+  }
+
+  &__down-arrow {
+    position: absolute;
+    bottom: 25px;
+    color: $color__white;
+    width: 10%;
+    font-size: 1.5em;
+    z-index: 10;
+    left: 47%;
+  }
+
+  .carousel-control {
+    display: none;
+  }
 }
 
 .carousel-inner:hover > .carousel-control {
   display: block;
-}
-
-.carousel-component-slide__image--mobile {
-  display: none !important;
 }
 
 .primary-button-light {
@@ -65,12 +66,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .carousel-component-slide__image--mobile {
-    display: block !important;
-  }
-  .carousel-component-slide__image--desktop {
-    display: none !important;
-  }
   .carousel-control {
     display: none !important;
   }
