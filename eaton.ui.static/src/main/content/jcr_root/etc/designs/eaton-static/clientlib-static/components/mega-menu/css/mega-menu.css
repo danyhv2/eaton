@@ -4,6 +4,6 @@
 
 .mega-menu__content--active { display: block; }
 
-@media screen and (max-width: 991px) { .mega-menu { position: fixed; top: 105px; bottom: 42px; -webkit-transition: -webkit-transform 0.7s ease-in-out; transition: -webkit-transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; overflow: auto; -webkit-transform: translate(100%); transform: translate(100%); visibility: hidden; } }
+@media screen and (max-width: 991px) { .mega-menu { position: fixed; top: 109px; bottom: 40px; -webkit-transition: -webkit-transform 0.7s ease-in-out; transition: -webkit-transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; overflow: auto; -webkit-transform: translate(100%); transform: translate(100%); visibility: hidden; } }
 
 @media screen and (min-width: 992px) { .mega-menu { opacity: 0; visibility: hidden; -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; } }

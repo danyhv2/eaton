@@ -63,6 +63,9 @@
     }
 
     &.level-2-open {
+      // Styles on Body while the nav is open
+      overflow: hidden;
+      position: fixed;
       .mega-menu {
         visibility: visible;
         transform: translate(0);

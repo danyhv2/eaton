@@ -37,6 +37,7 @@
   .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; -webkit-transition: height 0.3s ease-in-out, width 0.3s ease-in-out; transition: height 0.3s ease-in-out, width 0.3s ease-in-out; } }
 
 @media screen and (max-width: 991px) { .nav-open .eaton-link-list-primary-nav { height: 100%; visibility: visible; overflow: auto; }
+  .nav-open.level-2-open { overflow: hidden; position: fixed; }
   .nav-open.level-2-open .mega-menu { visibility: visible; -webkit-transform: translate(0); transform: translate(0); } }
 
 @media screen and (min-width: 992px) { .nav-open.level-2-open .mega-menu { visibility: visible; opacity: 1; } }
