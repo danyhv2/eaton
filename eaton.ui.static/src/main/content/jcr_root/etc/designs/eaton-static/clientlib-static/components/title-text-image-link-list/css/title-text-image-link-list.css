@@ -1,0 +1,50 @@
+.carousel-component-slide__caption { top: 10%; }
+
+.carousel-component-slide__cta { margin-top: 60px; }
+
+.carousel-component-slide__text { margin-top: 20px; }
+
+.carousel-component-slide__title { font-size: 3.250em; line-height: 1.192em; margin: 0px; }
+
+.carousel-component__dots:only-child { display: none; }
+
+.carousel-component__down-arrow { position: absolute; bottom: 25px; color: #FFF; width: 10%; font-size: 1.5em; z-index: 10; left: 47%; }
+
+.carousel-component .carousel-control { display: none; }
+
+.carousel-inner:hover > .carousel-control { display: block; }
+
+.primary-button-light { font-size: 1.25em; font-family: Arial; font-weight: bold; color: #fff; border: 3px solid #fff; border-radius: 0px; background: none; padding: 20px 40px; }
+
+.primary-button-light:hover { background: #fff; color: #005EB8; border-color: #005EB8; }
+
+@media only screen and (max-width: 992px) { .carousel-control { display: none !important; }
+  .carousel-indicators { bottom: 56px; } }
+
+.featured-story-component__content { padding: 60px 50px; }
+
+.featured-story-component__text { color: #FFF; font-size: 2.45em; font-family: "Eaton", Arial, sans-serif; line-height: 1.250em; padding-top: 30px; }
+
+.featured-story-component__title { font-size: 2.55em; }
+
+.featured-story-component__blue { position: absolute; top: 0; height: 100%; background-color: #005EB8; color: #FFF; opacity: 0.8; padding: 0; }
+
+.featured-story-component__blue--right { right: 0; }
+
+.featured-story-component__blue--left { left: 0; }
+
+/* @media only screen and (max-width: 769px)  */
+@media screen and (max-width: 991px) { .featured-story-component__blue { position: relative; }
+  .featured-story-component__row { padding-bottom: 20px; } }
+
+.eaton-page-overview { padding: 120px 0; }
+
+.eaton-page-overview__header h1 { color: #005EB8; font-size: 52px; margin: 0; }
+
+.eaton-page-overview__header__dash { display: block; width: 68px; height: 4px; margin: 60px 0; background-color: #005EB8; }
+
+.eaton-page-overview__cta { text-align: center; }
+
+.eaton-cta-button { background-color: #FFF; color: #005EB8; border: 2px solid #005EB8; padding: 20px 40px; display: inline-block; max-width: 600px; text-align: center; margin: 60px 0 0; text-decoration: none; }
+
+.eaton-cta-button:hover { background-color: #005EB8; color: #FFF; text-decoration: none; }

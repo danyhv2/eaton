@@ -1,0 +1,59 @@
+//-----------------------------------
+// Styleguide - Buttons
+//-----------------------------------
+
+.b-button {
+  background: none;
+  border-radius: 0;
+  border-style: solid;
+  display: inline-block;
+  font-weight: bold;
+  max-width: 600px;
+
+  &--with-icon {
+
+    .icon {
+      margin-left: 1rem;
+    }
+  }
+
+  &--primary {
+    border-width: 3px;
+    font-size: 2.8em; // ???
+    padding: 40px;
+  }
+
+  &--secondary {
+    border-width: 3px;
+    font-size: 1.4em;
+    padding: 20px;
+  }
+
+  &--light {
+    border-color: $color__primary-blue;
+    color: $color__primary-blue;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color__white;
+      background: $color__primary-blue;
+      border-color: $color__primary-blue;
+      text-decoration: none;
+    }
+  }
+
+  &--dark {
+    border-color: $color__white;
+    color: $color__white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color__primary-blue;
+      background: $color__white;
+      border-color: $color__white;
+      text-decoration: none;
+    }
+  }
+}

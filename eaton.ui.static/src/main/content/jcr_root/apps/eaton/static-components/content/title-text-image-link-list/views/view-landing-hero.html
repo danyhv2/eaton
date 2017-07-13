@@ -1,0 +1,31 @@
+<div data-sly-use.data="../data/view-landing-hero-multiple-data.js" class="carousel-component carousel slide" data-ride="carousel" data-pause="hover">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" data-sly-list.slide="${data}">
+        <li data-target=".carousel-component" data-slide-to="${slideList.index}" class="carousel-component__dots ${slideList.index == 0 ? 'active' : ''}"></li>
+    </ol>
+    <div class="carousel-component__down-arrow visible-xs">
+        <span class="glyphicon glyphicon-menu-down"></span>
+    </div>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-component-slide carousel-inner" data-sly-list.slide="${data}" role="listbox">
+        <div class="item ${slideList.index == 0 ? 'active' : ''}">
+            <img class="img-responsive hidden-xs" src="${slide.image}" alt="${data.alt}">
+            <img class="img-responsive visible-xs" src="${slide.mobile_image}" alt="${data.alt}">
+            <div class="carousel-component-slide__caption carousel-caption">
+                <h1 class="carousel-component-slide__title">${slide.title}</h1>
+                <p class="carousel-component-slide__text">${slide.text}</p>
+                <input class="carousel-component-slide__cta primary-button-light" type="button" value="See how">
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href=".carousel-component" role="button" data-slide="prev" data-sly-test="${slideList.count > 1}">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href=".carousel-component" role="button" data-slide="next" data-sly-test="${slideList.count > 1}">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>

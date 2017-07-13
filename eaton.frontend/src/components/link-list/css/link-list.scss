@@ -1,0 +1,11 @@
+//-----------------------------------
+// Component Link List
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+// Import SubViews
+@import "views/view-vertical";
+@import "views/view-horizontal";
+@import "views/view-primary-nav";

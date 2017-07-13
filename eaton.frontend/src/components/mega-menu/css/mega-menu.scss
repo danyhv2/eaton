@@ -1,0 +1,36 @@
+//-----------------------------------
+// Component: Mega Menu
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.mega-menu {
+  background: $color__primary-gray1;
+  padding: 30px 0;
+  display: none;
+
+  &__content {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: $color__white;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    position: fixed;
+    width: 100%;
+    top: 105px;
+    bottom: 42px;
+    transition: transform 0.7s ease-in-out;
+    overflow: auto;
+    transform: translate(100%);
+    visibility: hidden;
+  }
+}

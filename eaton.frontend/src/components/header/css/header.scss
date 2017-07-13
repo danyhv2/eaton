@@ -1,0 +1,70 @@
+//-----------------------------------
+// Component: Global Header
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+
+// Import Sub Components
+@import "header-utility-nav";
+@import "header-primary-nav";
+
+// Base Styles
+.eaton-header {
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .eaton-logo {
+      margin: 20px 30px; // 4px for bottom shadow - height
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    .eaton-logo {
+      margin: 20px 15px 16px; // 4px for bottom shadow - height
+    }
+
+    &--fixed {
+      position: fixed;
+      width: 100%;
+
+      .full-page-drawer,
+      .header-utility-nav {
+        display: none;
+      }
+
+      .eaton-logo__link {
+        width: 126px;
+        height: 40px;
+        transition: height 0.3s ease-in-out, width 0.3s ease-in-out; // Add transition only when fixed
+      }
+    }
+  }
+}
+
+// Global Body Styles
+.nav-open {
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .eaton-link-list-primary-nav {
+      height: 100%;
+      visibility: visible;
+      overflow: auto;
+    }
+
+    &.level-2-open {
+      .mega-menu {
+        visibility: visible;
+        transform: translate(0);
+      }
+    }
+  }
+}
