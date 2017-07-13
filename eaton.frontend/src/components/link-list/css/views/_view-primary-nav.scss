@@ -74,12 +74,13 @@
     }
 
     &__items {
-    display: flex;
-    height: 60px;
-    align-items: center;
-    justify-content: flex-end;
+      display: flex;
+      height: 100px;
+      align-items: center;
+      justify-content: flex-end;
+
       a {
-        margin: 0px 15px;
+        margin: 0 15px;
         padding-right: 5px;
         padding-left: 5px;
         color: $color__primary-gray1;
@@ -87,8 +88,9 @@
         height: 100%;
         align-items: center;
       }
+
       .eaton-header--fixed & {
-        height: 40px;
+        height: 80px;
       }
     }
 

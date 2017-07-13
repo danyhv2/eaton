@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 992px) { .eaton-link-list-primary-nav { position: relative; height: 100%; }
   .eaton-link-list-primary-nav__headline { display: none; }
-  .eaton-link-list-primary-nav__items { display: flex; height: 60px; align-items: center; justify-content: flex-end; }
-  .eaton-link-list-primary-nav__items a { margin: 0px 15px; padding-right: 5px; padding-left: 5px; color: #333F48; display: flex; height: 100%; align-items: center; }
-  .eaton-header--fixed .eaton-link-list-primary-nav__items { height: 40px; }
+  .eaton-link-list-primary-nav__items { display: flex; height: 100px; align-items: center; justify-content: flex-end; }
+  .eaton-link-list-primary-nav__items a { margin: 0 15px; padding-right: 5px; padding-left: 5px; color: #333F48; display: flex; height: 100%; align-items: center; }
+  .eaton-header--fixed .eaton-link-list-primary-nav__items { height: 80px; }
   .eaton-link-list-primary-nav--has-background .eaton-link-list-primary-nav__items { background: none !important; } }

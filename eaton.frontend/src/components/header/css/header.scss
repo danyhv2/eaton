@@ -12,6 +12,9 @@
 
 // Base Styles
 .eaton-header {
+  .eaton-logo {
+    padding: 20px 0 16px; // 4px for bottom shadow - height
+  }
   @include media-desktop-and-up {
     &--fixed {
       position: fixed;
