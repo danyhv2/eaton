@@ -22,7 +22,7 @@ $primary-nav-border: #EEF0F2;
     }
 
     i {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 
@@ -50,7 +50,22 @@ $primary-nav-border: #EEF0F2;
   @include media-desktop-and-up {
     &__menu {
       flex-grow: 1;
-      margin-right: 15px; // Equidistant Spacing between menu & search icon
+      position: relative;
+
+      &:after {
+        content: '';
+        height: 30px;
+        width: 1px;
+        background: $color__primary-gray3;
+        position: absolute;
+        top: 36px;
+        right: 0;
+      }
+
+      .eaton-header--fixed & {
+        top: 26px;
+        right: 7px;
+      }
     }
 
     &__open-search {
@@ -64,9 +79,6 @@ $primary-nav-border: #EEF0F2;
       .eaton-header--fixed & {
         height: 70px;
         padding: 20px;
-        i {
-          font-size: 20px;
-        }
       }
     }
 
