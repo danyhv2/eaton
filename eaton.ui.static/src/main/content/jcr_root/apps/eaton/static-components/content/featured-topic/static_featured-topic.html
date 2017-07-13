@@ -26,6 +26,7 @@
           <li>
             <a class="heading-h5__link b-list__item"
               aria-label="Go to ${ item.title }"
+              target="${ item.target }"
               href="${item.href}"
             >${item.title}</a>
           </li>
@@ -43,6 +44,7 @@
           <li>
             <a class="heading-h5__link b-list__item"
               aria-label="Go to ${ item.title }"
+              target="${ item.target }"
               href="${item.href}"
             >${item.title}</a>
           </li>
@@ -52,10 +54,11 @@
 
     <div class="row eaton-featured-topic__button-container">
       <div class="col-sm-12 u-text-center">
-        <a href="${featuredTopic.ctaHref}"
-          aria-label="Go to ${ item.ctaText }"
+        <a href="${featuredTopic.mainCta.href}"
+          aria-label="Go to ${ featuredTopic.mainCta.title }"
+          target="${ item.target }"
           class="b-button b-button--secondary b-button--light"
-        >${featuredTopic.ctaText}</a>
+        >${featuredTopic.mainCta.title}</a>
       </div>
     </div>
   </div>
