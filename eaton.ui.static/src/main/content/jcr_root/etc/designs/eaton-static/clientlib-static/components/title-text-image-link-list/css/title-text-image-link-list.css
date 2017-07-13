@@ -33,7 +33,6 @@
 
 .featured-story-component__blue--left { left: 0; }
 
-/* @media only screen and (max-width: 769px)  */
 @media screen and (max-width: 991px) { .featured-story-component__blue { position: relative; }
   .featured-story-component__row { padding-bottom: 20px; } }
 

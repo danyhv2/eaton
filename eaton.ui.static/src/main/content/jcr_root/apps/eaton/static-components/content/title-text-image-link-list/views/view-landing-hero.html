@@ -1,4 +1,4 @@
-<div data-sly-use.data="../data/view-landing-hero-multiple-data.js" class="carousel-component carousel slide" data-ride="carousel" data-pause="hover">
+<div data-sly-use.data="../data/view-landing-hero-single-data.js" class="carousel-component carousel slide" data-ride="carousel" data-pause="hover">
     <!-- Indicators -->
     <ol class="carousel-indicators" data-sly-list.slide="${data}">
         <li data-target=".carousel-component" data-slide-to="${slideList.index}" class="carousel-component__dots ${slideList.index == 0 ? 'active' : ''}"></li>
@@ -15,7 +15,7 @@
             <div class="carousel-component-slide__caption carousel-caption">
                 <h1 class="carousel-component-slide__title">${slide.title}</h1>
                 <p class="carousel-component-slide__text">${slide.text}</p>
-                <input class="carousel-component-slide__cta primary-button-light" type="button" value="See how">
+                <input class="carousel-component-slide__cta b-button b-button--light" type="button" value="See how">
             </div>
         </div>
         <!-- Controls -->
