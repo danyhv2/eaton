@@ -5,7 +5,7 @@
 
 const path = require('path');
 const sassLint = require('gulp-sass-lint');
-// const configFile = require(path.resolve('./', '.scsslint.yml'));
+const configFile = require(path.resolve('./', 'sasslint-config.js'));
 
 const lintCSS = function(gulp, CONFIG) {
   return function() {
@@ -21,7 +21,8 @@ const lintCSS = function(gulp, CONFIG) {
       // '!' + path.join(CONFIG.paths.srcRoot, '/global/css/vendors/**/*.css')
 
     ])
-      .pipe(sassLint({ configFile: '.scsslint.yml' }))
+      // .pipe(sassLint({ configFile: '.scsslint.yml' }))
+      .pipe(sassLint( configFile ))
       .pipe(sassLint.format())
       .pipe(sassLint.failOnError());
 
