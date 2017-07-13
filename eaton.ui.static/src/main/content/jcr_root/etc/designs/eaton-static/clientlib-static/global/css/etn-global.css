@@ -91,11 +91,11 @@ h5__link, .heading-h5__link { font-size: 2.4rem; font-weight: bold; }
 
 .b-button--with-icon .icon { margin-left: 1rem; }
 
-.b-button--primary { border-width: 3px; font-size: 2.8em; padding: 40px; }
+.b-button--primary { border-width: 3px; font-size: 1.6em; padding: 20px 40px; }
 
 .b-button--secondary { border-width: 3px; font-size: 1.4em; padding: 20px; }
 
-.b-button--light { border-color: #005EB8; color: #005EB8; }
+.b-button--light { border-color: #005EB8; color: #005EB8; padding: 20px 40px; font-size: 1.6em; }
 
 .b-button--light:hover, .b-button--light:active, .b-button--light:focus { color: #FFF; background: #005EB8; border-color: #005EB8; text-decoration: none; }
 
