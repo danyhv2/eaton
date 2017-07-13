@@ -13,6 +13,7 @@ module.exports = {
     'class-name-format': [ 2, {'allow-leading-underscore': true, 'convention': 'hyphenatedbem' } ],
     'clean-import-paths': 0, // Disabled since we are using SASS Globbings when importing entire folders
     'empty-args': 0, // Disabled for consistency when writing mixins
+    'empty-line-between-blocks': 2,
     'final-newline': 2,
     'force-element-nesting': 0,
     'force-pseudo-nesting': 2,
