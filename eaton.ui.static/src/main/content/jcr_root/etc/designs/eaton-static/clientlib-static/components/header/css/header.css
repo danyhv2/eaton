@@ -11,7 +11,18 @@
 
 .header-primary-nav { background: #FFF; padding: 20px 0 16px; border-bottom: 4px solid #eef0f2; transition: height 0.3s ease-in-out; }
 
-.header-primary-nav .row { display: flex; }
+.header-primary-nav .row { display: flex; align-items: center; }
+
+.header-primary-nav__links i { font-size: 25px; }
+
+.header-primary-nav__links:hover, .header-primary-nav__links:focus { text-decoration: none; }
+
+@media screen and (max-width: 991px) { .header-primary-nav__links { text-align: right; }
+  .header-primary-nav__open-search { display: inline-block; margin-right: 30px; } }
+
+@media screen and (min-width: 992px) { .header-primary-nav__open-search { display: flex; justify-content: flex-end; height: 60px; align-items: center; }
+  .eaton-header--fixed .header-primary-nav__open-search { height: 40px; }
+  .header-primary-nav__open-mobile-menu { display: none; } }
 
 @media screen and (min-width: 992px) { .eaton-header--fixed { position: fixed; width: 100%; }
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
