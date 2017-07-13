@@ -19,7 +19,7 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     .eaton-logo {
-      margin: 20px 30px; // 4px for bottom shadow - height
+      margin: 20px 30px 20px 15px; // 4px for bottom shadow - height
     }
   }
 
@@ -66,6 +66,8 @@
       // Styles on Body while the nav is open
       overflow: hidden;
       position: fixed;
+      width: 100%;
+      
       .mega-menu {
         visibility: visible;
         transform: translate(0);

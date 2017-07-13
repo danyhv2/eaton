@@ -7,14 +7,11 @@
 
 .mega-menu {
   background: $color__primary-gray1;
-  padding: 30px 0;
-  // display: none;
   position: absolute;
   width: 100%;
   z-index: 2;
 
   &__content {
-    padding: 20px;
     margin-bottom: 20px;
     color: $color__white;
 
@@ -40,8 +37,69 @@
   // Desktop Breakpoint
   //-----------------------------------
   @include media-desktop-and-up {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     transition: opacity 0.1s ease-in-out;
+  }
+}
+
+// Move to Title View
+.eaton-title {
+  position: relative;
+  padding: 30px 0;
+  font-size: 20px;
+  display: flex;
+
+  a {
+    color: $color__white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__level1-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__close-menu {
+    display: none;
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__level1-link {
+      .glyphicon-menu-left {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      .glyphicon-menu-right {
+        display: none;
+      }
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__level1-link {
+      .glyphicon-menu-left {
+        display: none;
+      }
+
+      .glyphicon-menu-right {
+        display: inline;
+        margin-left: 10px;
+      }
+    }
+
+    &__close-menu {
+      display: inline;
+      position: absolute;
+      right: 0;
+    }
   }
 }
