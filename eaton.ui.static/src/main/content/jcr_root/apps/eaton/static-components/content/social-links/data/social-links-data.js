@@ -16,22 +16,32 @@ use(function () {
     {
       title: 'Facebook',
       url: '#facebook',
-      icon: '/content/dam/eaton/images/socialmedia/facebook.png'
+      icon: '/content/dam/eaton/images/sociallinks/facebook.png',
+      target: '_blank'
     },
     {
       title: 'Twitter',
       url: '#twitter',
-      icon: '/content/dam/eaton/images/socialmedia/twitter.png'
+      icon: '/content/dam/eaton/images/sociallinks/twitter.png',
+      target: '_blank'
     },
     {
       title: 'Google+',
       url: '#google-plus',
-      icon: '/content/dam/eaton/images/socialmedia/google-plus.png'
+      icon: '/content/dam/eaton/images/sociallinks/google-plus.png',
+      target: '_blank'
     },
     {
       title: 'LinkedIn',
       url: '#linked-in',
-      icon: '/damadmin/social/linked-in.png'
+      icon: '/content/dam/eaton/images/sociallinks/linked-in.png',
+      target: '_blank'
+    },
+    {
+      title: 'Pinterest',
+      url: '#pinterest',
+      icon: '/content/dam/eaton/images/sociallinks/pinterest.png',
+      target: '_blank'
     }
   ];
 
