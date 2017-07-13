@@ -1,0 +1,11 @@
+.eaton-search-inline__headline { text-transform: uppercase; margin-bottom: 30px; }
+
+.eaton-search-inline__form { margin-bottom: 30px; }
+
+.eaton-search-inline .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.eaton-search-inline__form-input { -webkit-appearance: none; border: none; background: #FFF; border-radius: 0; font-size: 1em; height: auto; }
+
+.eaton-search-inline__form-submit { -webkit-appearance: none; background: white; border: none; color: #005EB8; padding: 10px 20px; }
+
+.dark-theme .eaton-search-inline__headline { color: #FFF; }
