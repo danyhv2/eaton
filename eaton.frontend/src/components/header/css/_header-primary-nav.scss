@@ -11,7 +11,6 @@ $primary-nav-border: #EEF0F2;
 
   .row {
     display: flex;
-    align-items: center;
   }
 
   &__links {
@@ -32,12 +31,16 @@ $primary-nav-border: #EEF0F2;
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__links {
-      text-align: right;
+      justify-content: flex-end;
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
     }
 
-    &__open-search {
+    &__open-search,
+    &__open-mobile-menu {
       display: inline-block;
-      margin-right: 30px;
+      padding: 30px;
     }
   }
 
@@ -45,14 +48,25 @@ $primary-nav-border: #EEF0F2;
   // Desktop Breakpoint
   //-----------------------------------
   @include media-desktop-and-up {
+    &__menu {
+      flex-grow: 1;
+      margin-right: 15px; // Equidistant Spacing between menu & search icon
+    }
+
     &__open-search {
       display: flex;
       justify-content: flex-end;
-      height: 60px;
-      align-items: center;
+      height: 90px;
+      padding: 30px; // Equidistant Spacing between menu & search icon
+      display: flex;
+      margin-top: 10px;
 
       .eaton-header--fixed & {
-        height: 40px;
+        height: 70px;
+        padding: 20px;
+        i {
+          font-size: 20px;
+        }
       }
     }
 

@@ -11,22 +11,25 @@
 
 .header-primary-nav { background: #FFF; border-bottom: 4px solid #EEF0F2; transition: height 0.3s ease-in-out; }
 
-.header-primary-nav .row { display: flex; align-items: center; }
+.header-primary-nav .row { display: flex; }
 
 .header-primary-nav__links a:hover, .header-primary-nav__links a:focus { text-decoration: none; }
 
 .header-primary-nav__links i { font-size: 25px; }
 
-@media screen and (max-width: 991px) { .header-primary-nav__links { text-align: right; }
-  .header-primary-nav__open-search { display: inline-block; margin-right: 30px; } }
+@media screen and (max-width: 991px) { .header-primary-nav__links { justify-content: flex-end; display: flex; flex-grow: 1; align-items: center; }
+  .header-primary-nav__open-search, .header-primary-nav__open-mobile-menu { display: inline-block; padding: 30px; } }
 
-@media screen and (min-width: 992px) { .header-primary-nav__open-search { display: flex; justify-content: flex-end; height: 60px; align-items: center; }
-  .eaton-header--fixed .header-primary-nav__open-search { height: 40px; }
+@media screen and (min-width: 992px) { .header-primary-nav__menu { flex-grow: 1; margin-right: 15px; }
+  .header-primary-nav__open-search { display: flex; justify-content: flex-end; height: 90px; padding: 30px; display: flex; margin-top: 10px; }
+  .eaton-header--fixed .header-primary-nav__open-search { height: 70px; padding: 20px; }
+  .eaton-header--fixed .header-primary-nav__open-search i { font-size: 20px; }
   .header-primary-nav__open-mobile-menu { display: none; } }
 
-.eaton-header .eaton-logo { padding: 20px 0 16px; }
+@media screen and (max-width: 991px) { .eaton-header .eaton-logo { margin: 20px 30px; } }
 
-@media screen and (min-width: 992px) { .eaton-header--fixed { position: fixed; width: 100%; }
+@media screen and (min-width: 992px) { .eaton-header .eaton-logo { margin: 20px 15px 16px; }
+  .eaton-header--fixed { position: fixed; width: 100%; }
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
   .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; transition: height 0.3s ease-in-out, width 0.3s ease-in-out; } }
 

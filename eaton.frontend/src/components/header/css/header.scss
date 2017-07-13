@@ -12,10 +12,24 @@
 
 // Base Styles
 .eaton-header {
-  .eaton-logo {
-    padding: 20px 0 16px; // 4px for bottom shadow - height
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .eaton-logo {
+      margin: 20px 30px; // 4px for bottom shadow - height
+    }
   }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
   @include media-desktop-and-up {
+    .eaton-logo {
+      margin: 20px 15px 16px; // 4px for bottom shadow - height
+    }
+
     &--fixed {
       position: fixed;
       width: 100%;
