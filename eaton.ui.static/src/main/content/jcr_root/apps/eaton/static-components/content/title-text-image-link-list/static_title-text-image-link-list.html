@@ -1,3 +1,10 @@
-<!-- Static HTML code goes here -->
+<div data-sly-test="${properties.view == 'landing-hero'}">
+    <sly data-sly-include="views/view-landing-hero.html"></sly>
+</div>
+<div data-sly-test="${properties.view == 'featured-story'}">
+    <sly data-sly-include="views/view-featured-story.html"></sly>
+</div>
+<div data-sly-test="${properties.view == 'product-overview'}">
+    <sly data-sly-include="views/view-product-overview.html"></sly>
+</div>
 
-<h1>Static HTML code goes here</h1>

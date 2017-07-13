@@ -5,15 +5,94 @@
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
+
 .eaton-footer {
   // Empty selector for future Reference
 }
 
+
+// Footer Top
+//--------------
 .eaton-footer-top {
   background: $color__primary-gray2;
-  padding: 3em 0;
+  padding: 60px 0;
+
+  .eaton-text-default__description ,
+  .eaton-link-list-vertical__eyebrow,
+  .eaton-link-list-vertical__list-link,
+  .eaton-social-links__eyebrow {
+    color: $color__white;
+  }
+
+  .eaton-footer-top__link-list {
+    margin-bottom: 40px;
+  }
 }
 
+
+
+// Footer Bottom
+//--------------
 .eaton-footer-bottom {
   background: $color__primary-gray1;
+}
+
+.eaton-footer-bottom__link-list a,
+.eaton-footer-bottom__copyright {
+  color: $color__white;
+}
+
+
+//-----------------------------------
+// Media-Query: Tablet & Desktop
+//-----------------------------------
+@include media-mobile-and-tablet {
+
+  .eaton-footer-top__logo {
+    margin-bottom: 60px;
+  }
+
+  .eaton-footer-top__text {
+    margin-bottom: 120px;
+  }
+
+  .eaton-footer-top__link-list {
+    margin-bottom: 60px;
+  }
+
+  .eaton-footer-bottom {
+    padding: 120px 0;
+  }
+
+  .eaton-footer-bottom__link-list {
+
+    // LinkList Component Nested in the Footer
+    .eaton-link-list-horizontal__list-item {
+      margin-bottom: 32px; // Visually 40px between elements
+    }
+
+  }
+
+}
+
+//-----------------------------------
+// Media-Query: Tablet & Desktop
+//-----------------------------------
+@include media-desktop-and-up {
+
+  .eaton-footer-top__logo {
+    margin-bottom: 30px;
+  }
+
+  .eaton-footer-bottom {
+    padding: 40px 0;
+  }
+
+  .eaton-footer-bottom__link-list {
+    float: left;
+  }
+
+  .eaton-footer-bottom__copyright {
+    float: right;
+  }
 }

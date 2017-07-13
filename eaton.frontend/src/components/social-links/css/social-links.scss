@@ -1,0 +1,35 @@
+//-----------------------------------
+// Component Social Links
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-social-links {
+
+  &__eyebrow {
+    margin-bottom: 18px;
+  }
+
+  &__list {
+    font-size: 0; // Remove spacing between elements when using "display: inline-block"
+    list-style-type: none;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  &__list-item {
+    display: inline-block;
+    margin-right: 18px;
+  }
+
+  &__page-link {
+    color: $color__white;
+    font-size: 18px;
+  }
+
+  &__page-link-icon {
+    font-size: 0.7em;
+  }
+
+}

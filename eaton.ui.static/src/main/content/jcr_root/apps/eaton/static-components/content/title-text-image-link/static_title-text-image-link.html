@@ -1,5 +1,11 @@
-<!-- Static HTML code goes here -->
-<div data-sly-use.ttil="js/title-text-image-link-data.js">
-    <h1>${ttil.title}</h1>
-    <p>${ttil.text}</p>
-</div>
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Title Text Image Link Component - Edit Start</div>
+</sly>
+
+<sly data-sly-test="${properties.view == 'l2-hero'}">
+    <sly data-sly-include="views/view-l2-hero.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Title Text Image Link Component - Edit End</div>
+</sly>

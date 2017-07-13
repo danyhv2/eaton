@@ -1,3 +1,23 @@
+<!--/*
 
-<!-- TODO: Load Component Views -->
-<sly data-sly-include="views/view-vertical.html" data-sly-unwrap></sly>
+  Load Component Views:
+
+	Author may select one of the following views
+	- vertical
+	- horizontal
+
+*/-->
+
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">LinkList Component</div>
+</sly>
+
+
+<sly data-sly-test="${ properties.view == 'vertical' }">
+  <sly data-sly-include="views/view-vertical.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'horizontal' }">
+  <sly data-sly-include="views/view-horizontal.html" data-sly-unwrap></sly>
+</sly>

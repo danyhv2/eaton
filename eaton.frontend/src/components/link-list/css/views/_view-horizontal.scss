@@ -1,0 +1,63 @@
+//-----------------------------------
+// LinkList Component: Horizontal View
+//-----------------------------------
+.eaton-link-list-horizontal {
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    // Empty Selector for future reference
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Mobile
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__list-item {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Tablet & Desktop
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    &__list-item {
+      position: relative;
+      margin: 0 1.8em 0 0;
+      padding: 0 1.8em 0 0;
+
+      &::after {
+        content: '';
+        background-color: $color__primary-gray2;
+        height: 1em;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+      }
+
+      &:last-child {
+
+        // Hide Line Divider in the last link
+        &::after { display: none; }
+      }
+    }
+
+  }
+
+
+}

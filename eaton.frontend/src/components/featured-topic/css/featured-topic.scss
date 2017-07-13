@@ -1,0 +1,60 @@
+//-----------------------------------
+// Component M-22: Quote
+//-----------------------------------
+
+@import "../../../global/css/_config/sass";
+
+.eaton-featured-topic {
+  padding-top: $spacing__xl;
+  padding-bottom: $spacing__xl;
+
+  // TODO: check if I can upload it to base components
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  &__title {
+    margin-bottom: $spacing__sm;
+  }
+
+  &__paragraph {
+    margin-bottom: $spacing__md;
+  }
+
+  &__button-container {
+    margin-top: $spacing__md;
+  }
+
+  &__list-title {
+    font-weight: bold;
+    margin-bottom: $spacing__sm;
+  }
+
+  @include media-mobile-only {
+    &__list-title {
+      margin-top: $spacing__sm;
+    }
+  }
+
+  @include media-desktop-and-up {
+    &__list-left {
+      &:after {
+        background: $color__secondary-gray3;
+        content: '';
+        height: 85%;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 2px;
+      }
+    }
+
+    &__list-right {
+      padding-left: 9%;
+    }
+  }
+}

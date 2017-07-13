@@ -4,34 +4,43 @@
 
   <div class="eaton-footer-top">
     <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="eaton-footer-top__logo">
+            <sly data-sly-resource="${'footer-logo' @ resourceType='/apps/eaton/static-components/content/logo'}"></sly>
+          </div>
+        </div>
+      </div>
+
+
       <div class="row">
 
         <!--/* Column #1 */-->
         <div class="col-xs-12 col-md-6">
 
-          <!--/* TODO: Include "Logo Component Here" */-->
-          <sly data-sly-resource="${'logo' @ resourceType='/apps/eaton/static-components/content/logo'}"></sly>
-          <!--/* END: Logo Component */-->
+          <div class="eaton-footer-top__text">
+            <sly data-sly-resource="${'footer-text' @ resourceType='/apps/eaton/static-components/content/text'}"></sly>
+          </div>
 
-          <p class="body-copy-small body-copy-small--theme-dark">${ data.text }</p>
         </div>
 
         <!--/* Column #2 */-->
         <div class="col-xs-12 col-md-3">
-          <div class="footer-bottom__nav">
-            <sly data-sly-resource="${'link-list' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+          <div class="eaton-footer-top__link-list">
+            <sly data-sly-resource="${'footer-link-list-company' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
           </div>
         </div>
 
         <!--/* Column #3 */-->
         <div class="col-xs-12 col-md-3">
 
-          <div class="footer-bottom__nav">
-            <sly data-sly-resource="${'link-list' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+          <div class="eaton-footer-top__link-list">
+            <sly data-sly-resource="${'footer-link-list-popular' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
           </div>
 
-          <div class="footer-top__social-links">
-            <sly data-sly-resource="${'social-links' @ resourceType='/apps/eaton/static-components/content/social-links'}"></sly>
+          <div class="eaton-footer-top__social-links">
+            <sly data-sly-resource="${'footer-social-links' @ resourceType='/apps/eaton/static-components/content/social-links'}"></sly>
           </div>
 
         </div>
@@ -43,76 +52,17 @@
   <!--/* Footer: Bottom */-->
   <div class="eaton-footer-bottom">
     <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
 
-      <div class="footer-bottom__nav">
-        <!-- <div data-sly-use.tpl="../../content/link-list/views/horizontal.html">
-          <div data-sly-call="${ tpl.linkList @ data=footer.bottom.linkList }"></div>
-        </div> -->
+          <div class="eaton-footer-bottom__link-list">
+            <sly data-sly-resource="${'footer-link-list-legal' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+          </div>
 
-        <div class="footer-bottom__nav">
-          <sly data-sly-resource="${'link-list' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+          <div class="eaton-footer-bottom__copyright"> ${ data.bottom.copyright } </div>
+
         </div>
       </div>
-
-      <div class="footer-bottom__copyright body-copy-small"> ${ data.bottom.copyright } </div>
     </div>
   </div>
 </footer>
-
-
-
-
-<style>
-
-/**
-* Styleguide: Mobile
-*/
-body {
-  font-family: 'Arial', sans-serif;
-}
-
-.body-copy-small,
-.body-copy-small-link {
-  /* Gray1 */
-  color: #333F48;
-  font-size: 26px;
-  line-height: 34px;
-}
-
-.eyebrow-small {
-  /* Gray1 */
-  color: #333F48;
-  font-size: 28px;
-  line-height: 34px;
-}
-
-.body-copy-small--theme-dark,
-.body-copy-small-link--theme-dark,
-.eyebrow-small--theme-dark {
-  color: #FFF;
-}
-
-
-/**
-* Styleguide: Desktop
-*/
-@media screen (min-width: 1200px) {
-
-  .body-copy-small,
-  .body-copy-small-link {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .eyebrow-small {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-}
-
-
-
-
-
-</style>
