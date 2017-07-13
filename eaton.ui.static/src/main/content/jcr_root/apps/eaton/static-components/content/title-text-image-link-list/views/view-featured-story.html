@@ -6,9 +6,9 @@
                     <img class="img-responsive hidden-xs" src="${component.image}" />
                     <img class="img-responsive visible-xs" src="${component.mobile_image}" />
                 </div>
-                <div class="col-xs-12 col-md-5 col-lg-4 ${componentList.odd ? 'featured-story-component--right' : 'featured-story-component--left'}">
+                <div class="col-xs-12 col-md-5 col-lg-4 featured-story-component__blue ${componentList.odd ? 'featured-story-component__blue--right' : 'featured-story-component__blue--left'}">
                     <div class="featured-story-component__content">
-                        <h2>${component.title}</h2>
+                        <h2 class="featured-story-component__title">${component.title}</h2>
                         <p class="featured-story-component__text">${component.text}</p>
                     </div>
                 </div>
