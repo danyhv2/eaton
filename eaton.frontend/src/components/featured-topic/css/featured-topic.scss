@@ -42,7 +42,7 @@
 
   @include media-desktop-and-up {
     &__list-left {
-      &:after {
+      &::after {
         background: $color__secondary-gray3;
         content: '';
         height: 85%;
