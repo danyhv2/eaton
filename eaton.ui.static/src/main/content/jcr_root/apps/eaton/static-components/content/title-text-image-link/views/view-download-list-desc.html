@@ -5,13 +5,13 @@
       <!--/* List Links */-->
       <ul data-sly-list="${data.items}" class="eaton-download-list__links">
         <li>
+          <span class="eaton-download-list__description">${item.description}</span>
           <a href="${item.url}" class="eaton-download-list__item" aria-label="Download ${item.type} for ${ item.title }">
-            <p class="eaton-download-list__description">${item.description}</p>
             <i class="glyphicon glyphicon-download-alt" aria-hidden="true"></i>
-            <p class="eaton-download-list__document">
+            <div class="eaton-download-list__document">
                 <span class="eaton-download-list__title">${item.title}</span>
                 <span class="eaton-download-list__size">(${item.type} ${item.size})</span>
-            </p>
+            </div>
           </a>
         </li>
       </ul>
