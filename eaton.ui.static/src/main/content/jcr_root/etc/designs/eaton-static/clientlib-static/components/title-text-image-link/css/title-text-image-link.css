@@ -27,4 +27,6 @@
 
 .eaton-single-feature__item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 10px 0; text-decoration: none; }
 
+.eaton-single-feature__item i { font-size: 0.75em; margin-left: 0.25em; }
+
 .dark-theme .eaton-single-feature__item { color: #FFF; }

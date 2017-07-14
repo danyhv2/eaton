@@ -19,7 +19,6 @@ App.carousel = function () {
                 $(this).off("touchmove");
             });
         });
-        console.log('carousel2');
     };
 
     init();
