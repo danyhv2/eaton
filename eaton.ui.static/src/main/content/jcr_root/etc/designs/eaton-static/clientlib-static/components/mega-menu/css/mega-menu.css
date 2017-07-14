@@ -2,7 +2,7 @@
 
 .mega-menu { background: #333F48; position: absolute; width: 100%; z-index: 2; }
 
-.mega-menu__content { margin-bottom: 20px; color: #FFF; }
+.mega-menu__content { color: #FFF; }
 
 .mega-menu__content--active { display: block; }
 
