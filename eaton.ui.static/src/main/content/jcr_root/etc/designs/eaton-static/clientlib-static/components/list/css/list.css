@@ -12,7 +12,9 @@ a { color: #005EB8; text-decoration: none; }
 
 a:hover, a:active, a:visited, a:focus { color: #005EB8; text-decoration: none; }
 
-.carousel-button { font-size: 2em; background-color: #005EB8; height: 15px; width: 15px; border-radius: 50%; display: inline-block; border: 0; margin-left: 4px; margin-right: 4px; margin-top: 15px; margin-bottom: 15px; text-decoration: none; }
+.carousel-button { font-size: 2em; background-color: #98A4AE; height: 15px; width: 15px; border-radius: 50%; display: inline-block; border: 0; margin-left: 4px; margin-right: 4px; margin-top: 15px; margin-bottom: 15px; text-decoration: none; }
+
+.carousel-button-active { background-color: #005EB8; }
 
 .category__item-innerpadding { padding: 30px; }
 
