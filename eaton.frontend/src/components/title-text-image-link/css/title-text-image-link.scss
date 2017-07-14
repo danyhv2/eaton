@@ -1,16 +1,23 @@
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-title-text-image {
+  font-family: $font-family__primary;
+}
+
 .category-hightlight-header__text {
   font-size: 1.5em;
-  color: #FFF;
+  color: $color__white;
 }
 
 .category-hightlight-header__title {
   font-size: 3.5em;
   line-height: 1.192em;
-  color: #FFF;
+  color: $color__white;
 }
 
 .category-hightlight-header__image {
-  /*background-image: url(/content/dam/eaton/images/story_board.png);*/
+  // background-image: url(/content/dam/eaton/images/story_board.png);
   background-size: cover;
   height: 450px;
 }
@@ -23,11 +30,13 @@
 @media only screen and (max-width: 767px) {
   .category-hightlight-header__image {
     height: 400px;
-    /*background-image: url(/content/dam/eaton/images/story_boardphone2.png);*/
+    // background-image: url(/content/dam/eaton/images/story_boardphone2.png);
   }
+
   .category-hightlight-header__title {
     font-size: 2.5em;
   }
+
   .category-hightlight-header__text {
     font-size: 1.3em;
   }
@@ -36,8 +45,9 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .category-hightlight-header-header__image {
     height: 300px;
-    /*background-image: url(/content/dam/eaton/images/story_boardtablet.png);*/
+    // background-image: url(/content/dam/eaton/images/story_boardtablet.png);
   }
+
   .category-hightlight-header__title {
     font-size: 3em;
   }

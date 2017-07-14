@@ -1,3 +1,5 @@
+.list-default { font-family: "Eaton", Arial, sans-serif; }
+
 .category__image { width: 100%; max-height: 361px; }
 
 .category__title--font, .related-category__title--font { font-size: 1em; font-weight: bold; color: #333F48; text-transform: uppercase; }
@@ -6,9 +8,11 @@
 
 .category__link--font { font-size: 1.7em; font-weight: bold; }
 
-a { color: #005EB8; }
+a { color: #005EB8; text-decoration: none; }
 
-.carousel-buttons a { font-size: 2em; }
+a:hover, a:active, a:visited, a:focus { color: #005EB8; text-decoration: none; }
+
+.carousel-button { font-size: 2em; background-color: #005EB8; height: 15px; width: 15px; border-radius: 50%; display: inline-block; border: 0; margin-left: 4px; margin-right: 4px; margin-top: 15px; margin-bottom: 15px; text-decoration: none; }
 
 .category__item-innerpadding { padding: 30px; }
 
@@ -20,12 +24,13 @@ a { color: #005EB8; }
 
 .category__item { min-height: 200px; }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) { .carousel__item { min-height: 220px; }
+@media only screen and (min-width: 320px) and (max-width: 767px) { .carousel__item { min-height: 227px; }
   .card-container--topmargin { margin-top: -15%; }
   .category__link--font { font-size: 1.4em; line-height: 1.3em; }
   .category__title--bottompadding { padding-bottom: 10px; } }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) { .related-category--tablet-left { float: left; }
+@media only screen and (min-width: 768px) and (max-width: 991px) { .category-item-date { padding-top: 15px; }
+  .related-category--tablet-left { float: left; }
   .related-category--tablet-right { float: right; }
   .category__item--border { border-top: 1px solid #CCD2D7; background-color: #FFF; }
   .col-sm-10 { margin-bottom: 30px; }
@@ -33,7 +38,7 @@ a { color: #005EB8; }
   .equal-height-row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .equal-height-row > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .card-container--topmargin { margin-top: -13%; }
-  .category__item, .category__image { min-height: 203px; }
+  .category__item, .category__image { min-height: 263px; }
   .category__link--font { font-size: 1.5em; } }
 
 @media only screen and (min-width: 992px) { .category__item { min-height: 260px; } }
