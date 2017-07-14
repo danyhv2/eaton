@@ -16,13 +16,9 @@ $size-xl: 120px;
   padding:  $size-xl 0;
 
 
-
-
   &__content {
 
   }
-
-
 
   &__cta {
     text-align: center;
@@ -59,25 +55,25 @@ $size-xl: 120px;
 
 
 
-  .eaton-title {
+.eaton-title {
 
-    &__eyebrow {
-      color: $color__primary-blue;
-      font-size: 52px;
-      margin:  0;
-    }
-
-    &__dash {
-      display: block;
-      width: 68px;
-      height: 4px;
-      margin:  $size-md 0;
-      background-color: $color__primary-blue;
-    }
-
-    &__byline {
-      font-size: 12px;
-      margin-top:  15px;
-    }
-
+  &__eyebrow {
+    color: $color__primary-blue;
+    font-size: 52px;
+    margin:  0;
   }
+
+  &__dash {
+    display: block;
+    width: 68px;
+    height: 4px;
+    margin:  $size-md 0;
+    background-color: $color__primary-blue;
+  }
+
+  &__byline {
+    font-size: 12px;
+    margin-top:  15px;
+  }
+
+}
