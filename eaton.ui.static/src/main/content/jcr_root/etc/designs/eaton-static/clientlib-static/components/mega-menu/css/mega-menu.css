@@ -21,7 +21,7 @@
   .mega-menu__row .mega-menu__col { margin-bottom: 30px; }
   .mega-menu__row .mega-menu__col:last-child { margin-bottom: 0; } }
 
-@media screen and (min-width: 992px) { .mega-menu { -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; }
+@media screen and (min-width: 992px) { .mega-menu { opacity: 0; visibility: hidden; -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; }
   .mega-menu__col--4 { -ms-flex-preferred-size: 25%; flex-basis: 25%; } }
 
 .eaton-title { position: relative; padding: 30px 0; font-size: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
