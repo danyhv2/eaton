@@ -29,8 +29,10 @@
 
   &__col {
     margin: 0 ($spacing__sm / 2 );
+
     .mega-menu__category-item {
       margin-bottom: $spacing__sm;
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -56,8 +58,10 @@
 
     &__row {
       flex-direction: column;
+
       .mega-menu__col {
         margin-bottom: $spacing__sm;
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -69,11 +73,12 @@
   // Desktop Breakpoint
   //-----------------------------------
   @include media-desktop-and-up {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     transition: opacity 0.1s ease-in-out;
 
     &__col {
+
       &--4 {
         flex-basis: 25%;
       }

@@ -32,21 +32,3 @@
 .eaton-single-feature__item i { font-size: 0.75em; margin-left: 0.25em; }
 
 .dark-theme .eaton-single-feature__item { color: #FFF; }
-
-.eaton-download-list__links { padding: 0; margin: 0; list-style-type: none; }
-
-.eaton-download-list__headline { margin-bottom: 15px; text-transform: uppercase; }
-
-.dark-theme .eaton-download-list__headline { color: #FFF; }
-
-.eaton-download-list__item { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 10px 0; text-decoration: none; margin-bottom: 10px; }
-
-.eaton-download-list__item i { font-size: 0.75em; margin-right: 10px; margin-top: 0.25em; }
-
-.dark-theme .eaton-download-list__item { color: #FFF; }
-
-.eaton-download-list__description, .eaton-download-list__title, .eaton-download-list__size { display: block; }
-
-.eaton-download-list--has-desc__item { margin-bottom: 15px; }
-
-.eaton-download-list--has-desc__headline { margin-bottom: 30px; }

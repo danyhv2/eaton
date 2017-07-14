@@ -1,6 +1,6 @@
 //-----------------------------------
 // Component 4.5: Header - Mega Menu
-// TTIL - View - Download List
+// Link List - View - Download List
 //-----------------------------------
 
 .eaton-download-list {
@@ -44,9 +44,11 @@
   }
 
   &--has-desc {
+
     &__item {
       margin-bottom: ($spacing__sm / 2);
     }
+
     &__headline {
       margin-bottom: ($spacing__sm);
     }
