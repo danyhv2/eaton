@@ -21,31 +21,20 @@
         <div class="row visible-xs card-container--topmargin">
             <div class="col-xs-10 col-xs-offset-1">
                 <div class="default-view-carousel-component carousel slide">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="${data[1].mobile_image}" class="img-responsive category__image" alt="${data[0].image_alt}"/>
+                    <div class="carousel-inner" data-sly-list.slider="${data}" role="listbox">
+                        <div class="item ${sliderList.index == 0 ? 'active' : ''}">
+                            <img src="${slider.mobile_image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
                             <div class="category__item--border category__item-innerpadding carousel__item">
-                                <div class="related-category__title--font category__title--bottompadding">${data[0].title}</div>
+                                <div class="related-category__title--font category__title--bottompadding">${slider.title}</div>
                                 <h5>
-                                    <a class="category__link--font" href="${data[0].link_url}">${data[0].link_text}</a>
-                                </h5>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <img src="${data[1].mobile_image}" class="img-responsive category__image" alt="${data[1].image_alt}"/>
-                            <div class="category__item--border category__item-innerpadding carousel__item">
-                                <div class="related-category__title--font category__title--bottompadding">${data[1].title}</div>
-                                <h5>
-                                    <a class="category__link--font" href="${data[1].link_url}">${data[1].link_text}</a>
+                                    <a class="category__link--font" href="${slider.link_url}">${slider.link_text}</a>
                                 </h5>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="text-center">
-                            <button data-target=".default-view-carousel-component" data-slide-to="0" class="carousel-button"><span class="sr-only">1</span></button>
-                            <button data-target=".default-view-carousel-component" data-slide-to="1" class="carousel-button"><span class="sr-only">2</span></button>
+                        <div class="text-center" data-sly-list.slider="${data}">
+                            <button data-target=".default-view-carousel-component" data-slide-to="${sliderList.index}" class="carousel-button ${sliderList.index == 0 ? 'active carousel-button-active' : ''}"><span class="sr-only">${sliderList.index}</span></button>
                         </div>
                     </div>
                 </div>
