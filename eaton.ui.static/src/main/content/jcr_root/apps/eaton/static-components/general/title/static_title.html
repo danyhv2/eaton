@@ -1,0 +1,23 @@
+<!--/*
+
+  Load Component Views:
+
+	Author may select one of the following views
+	- default
+	- witheyebrowandbyline
+
+*/-->
+
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Title Component</div>
+</sly>
+
+
+<sly data-sly-test="${ properties.view == 'default' }">
+  <sly data-sly-include="views/view-default.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'witheyebrowandbyline' }">
+  <sly data-sly-include="views/view-witheyebrowandbyline.html" data-sly-unwrap></sly>
+</sly>

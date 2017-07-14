@@ -1,0 +1,18 @@
+//-----------------------------------
+// Component Overrides Specific to: Mega Menu
+//-----------------------------------
+
+.mega-menu {
+  // Link-List: Vertical
+
+  //-----------------------------------
+  // Media Query: Mobile/Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .eaton-link-list-vertical {
+      &__eyebrow {
+        margin-bottom: ($spacing__sm / 2);
+      }
+    }
+  }
+}
