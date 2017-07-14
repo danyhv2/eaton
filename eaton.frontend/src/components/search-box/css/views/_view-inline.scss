@@ -17,8 +17,8 @@
   }
 
   &__form-input { // Styles for Form Elements
-    -webkit-appearance: none;
-    border: none;
+    appearance: none;
+    border: 0;
     background: $color__white;
     border-radius: 0;
     font-size: 1em;
@@ -26,9 +26,9 @@
   }
 
   &__form-submit { // Styles for Form Elements
-    -webkit-appearance: none;
-    background: white;
-    border: none;
+    appearance: none;
+    background: $color__white;
+    border: 0;
     color: $color__primary-blue;
     padding: 10px 20px;
   }
