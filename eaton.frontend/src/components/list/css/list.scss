@@ -42,23 +42,26 @@ a {
   }
 }
 
-.carousel-button {
-  font-size: 2em;
-  background-color: $color__primary-gray3;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  display: inline-block;
-  border: 0;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-decoration: none;
+.carousel-indicators {
+  position: inherit;
+  margin: 15px auto 0;
 }
 
-.carousel-button-active {
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  cursor: inherit;
+  background-color: $color__primary-gray3;
+  border: 0;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.carousel-indicators .active {
   background-color: $color__primary-blue;
+  width: 15px;
+  height: 15px;
+  margin: 0 4px;
 }
 
 .category__item-innerpadding {
