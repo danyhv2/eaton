@@ -15,8 +15,8 @@
   // ----------------------------
   @include media-mobile-and-tablet {
     position: fixed;
-    top: 100px;
-    bottom: 42px;
+    top: 109px;
+    bottom: 40px;
     width: 100%;
     left: 0;
     height: 0;
@@ -54,9 +54,6 @@
       .eaton-link-list-primary-nav__items {
         background-repeat: no-repeat;
         background-position: center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
         background-size: cover;
       }
     }

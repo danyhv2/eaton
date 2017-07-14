@@ -1,3 +1,35 @@
-<div class="col-xs-12 mega-menu__content mega-menu--no-margin">
-    Company: Menu
+<div class="mega-menu__content">
+    <!--/* Include Level 1: Links *-->
+    <div class="container">
+        <div class="eaton-title">
+            <a href="#" class="eaton-title__level1-link">
+              <i class="eaton-title__icon glyphicon glyphicon-menu-left" aria-hidden="true"></i>
+              <span>Company</span>
+              <i class="eaton-title__icon glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="eaton-title__close-menu">
+              <span class="sr-only">Close Search</span>
+              <i class="eaton-title__icon glyphicon glyphicon-remove" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <!--/* Include: Mega Menu Modules */ -->
+    <div class="mega-menu__category">
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <!--/* Include: Search Box - Inline */ -->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'search-inline' @ resourceType='/apps/eaton/static-components/content/search-box'}"></sly>
+                </div>
+
+                <!--/* Include: Link List - default */ -->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'link-list' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
 </div>

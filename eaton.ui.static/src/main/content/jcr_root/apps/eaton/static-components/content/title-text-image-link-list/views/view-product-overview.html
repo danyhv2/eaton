@@ -1,31 +1,36 @@
 <sly data-sly-use.data="../data/view-product-overview-data.js">
 
+  <div class="eaton-page-overview">
 
-
-    <div class="eaton-page-overview">
+    <div class="container">
+      <div class="row">
 
         <div class="eaton-page-overview__header col-xs-12 col-sm-6">
-            <h1>${data.title}</h1>
-            <div class="eaton-page-overview__header__dash"></div>
-            <div class="hidden-xs text-center">
-                <a href="#" class="eaton-cta-button">Learn About our History</a>
-            </div>
-        </div>
+          <div class="eaton-page-overview__title">
+            <sly data-sly-resource="${'page-overview-text' @ resourceType='/apps/eaton/static-components/general/title'}"></sly>
+          </div>
 
+          <div class="eaton-page-overview__cta hidden-xs text-center">
+            <sly data-sly-resource="${'page-overview-ctabutton' @ resourceType='/apps/eaton/static-components/general/ctabutton'}"></sly>
+          </div>
+        </div>
 
 
         <div class="eaton-page-overview__content col-xs-12 col-sm-6">
-            <sly data-sly-resource="${'page-overview-text' @ resourceType='/apps/eaton/static-components/content/text'}"></sly>
+          <div class="eaton-page-overview__text">
+            <sly data-sly-resource="${'page-overview-text' @ resourceType='/apps/eaton/static-components/general/text'}"></sly>
+          </div>
         </div>
 
+      </div>
 
-        <div class="col-xs-12 visible-xs  text-center">
-            <a href="#" class="eaton-cta-button">Learn About our History</a>
+      <div class="row">
+        <div class="eaton-page-overview__cta visible-xs text-center">
+          <sly data-sly-resource="${'page-overview-ctabutton' @ resourceType='/apps/eaton/static-components/general/ctabutton'}"></sly>
         </div>
-
-
+      </div>
 
     </div>
-
+  </div>
 
 </sly>

@@ -20,8 +20,8 @@ module.exports = {
     'hex-notation': 0,
     'indentation': [ 2, { size: 2 } ],
     'leading-zero': [ 2, { include: true } ],
+    'mixins-before-declarations': 0,
     'nesting-depth': 2,
-    'no-color-literals': 2,
     'no-color-literals': 2,
     'no-css-comments': 2,
     'no-duplicate-properties': [ 2, { exclude: ['display', 'color', 'border-color', 'font-size' ] } ], // Exclude these properties since sometimes they are used as fallback for older browsers

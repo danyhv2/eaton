@@ -12,13 +12,14 @@
 
 // Base Styles
 .eaton-header {
+  position: relative;
 
   //-----------------------------------
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-and-tablet {
     .eaton-logo {
-      margin: 20px 30px; // 4px for bottom shadow - height
+      margin: 20px 30px 20px 15px; // 4px for bottom shadow - height
     }
   }
 
@@ -33,6 +34,7 @@
     &--fixed {
       position: fixed;
       width: 100%;
+      z-index: 20;
 
       .full-page-drawer,
       .header-utility-nav {
@@ -61,9 +63,26 @@
     }
 
     &.level-2-open {
+      // Styles on Body while the nav is open
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+
       .mega-menu {
         visibility: visible;
         transform: translate(0);
+      }
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &.level-2-open {
+      .mega-menu {
+        visibility: visible;
+        opacity: 1;
       }
     }
   }

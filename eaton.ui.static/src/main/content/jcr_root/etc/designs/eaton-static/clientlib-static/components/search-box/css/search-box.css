@@ -1,0 +1,11 @@
+.eaton-search-inline__headline { text-transform: uppercase; margin-bottom: 30px; }
+
+.eaton-search-inline__form { margin-bottom: 30px; }
+
+.eaton-search-inline .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.eaton-search-inline__form-input { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 0; background: #FFF; border-radius: 0; font-size: 1em; height: auto; }
+
+.eaton-search-inline__form-submit { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: #FFF; border: 0; color: #005EB8; padding: 10px 20px; }
+
+.dark-theme .eaton-search-inline__headline { color: #FFF; }
