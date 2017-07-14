@@ -17,8 +17,8 @@
     <!--/* Include: Mega Menu Modules */ -->
     <div class="mega-menu__category">
       <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-3">
+          <div class="mega-menu__row">
+            <div class="mega-menu__col mega-menu__col--4">
                 <!--/* Include: Search Box - Inline */ -->
                 <div class="mega-menu__category-item">
                   <sly data-sly-resource="${'search-inline' @ resourceType='/apps/eaton/static-components/content/search-box'}"></sly>
@@ -30,26 +30,32 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-md-3">
+            <div class="mega-menu__col mega-menu__col--4">
                 <!--/* Include: TTIL - Single Feature */ -->
                 <div class="mega-menu__category-item">
                   <sly data-sly-resource="${'single-feature' @ resourceType='/apps/eaton/static-components/content/title-text-image-link'}"></sly>
                 </div>
             </div>
 
-            <div class="col-xs-12 col-md-3">
+            <div class="mega-menu__col mega-menu__col--4">
                 <!--/* Include: TTIL - Download List */ -->
                 <div class="mega-menu__category-item">
                   <sly data-sly-resource="${'download-list' @ resourceType='/apps/eaton/static-components/content/title-text-image-link'}"></sly>
                 </div>
             </div>
 
-            <div class="col-xs-12 col-md-3">
-                <!--/* Include: TTIL - Download List with Descriptions */ -->
+            <div class="mega-menu__col mega-menu__col--4">
+                <!--/* Include: TTIL - Single Feature */ -->
                 <div class="mega-menu__category-item">
-                  <sly data-sly-resource="${'download-list-desc' @ resourceType='/apps/eaton/static-components/content/title-text-image-link'}"></sly>
+                  <sly data-sly-resource="${'single-feature' @ resourceType='/apps/eaton/static-components/content/title-text-image-link'}"></sly>
+                </div>
+
+                <!--/* Include: TTIL - Download List */ -->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'download-list' @ resourceType='/apps/eaton/static-components/content/title-text-image-link'}"></sly>
                 </div>
             </div>
+
           </div>
       </div>
     </div>

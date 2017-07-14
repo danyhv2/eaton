@@ -13,7 +13,7 @@
   &__headline {
     margin-bottom: ($spacing__sm / 2);
     text-transform: uppercase;
-    
+
     .dark-theme & {
       color: $color__white;
     }
@@ -24,11 +24,11 @@
     flex-wrap: wrap;
     padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
     text-decoration: none;
-    margin-bottom: ($spacing__sm / 2);
+    margin-bottom: ($spacing__sm / 3);
 
     i {
       font-size: 0.75em;
-      margin-right: 0.75em;
+      margin-right: ($spacing__sm / 3);
       margin-top: 0.25em;
     }
 
@@ -44,6 +44,9 @@
   }
 
   &--has-desc {
+    &__item {
+      margin-bottom: ($spacing__sm / 2);
+    }
     &__headline {
       margin-bottom: ($spacing__sm);
     }
