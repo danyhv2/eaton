@@ -1,3 +1,5 @@
+@media screen and (max-width: 991px) { .mega-menu .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; } }
+
 .mega-menu { background: #333F48; position: absolute; width: 100%; z-index: 2; }
 
 .mega-menu__content { margin-bottom: 20px; color: #FFF; }

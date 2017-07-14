@@ -1,12 +1,16 @@
+.eaton-link-list-vertical__eyebrow { text-transform: uppercase; }
+
 .eaton-link-list-vertical__list { padding: 0; margin: 0; list-style-type: none; }
 
 .eaton-link-list-vertical__list-link { display: inline-block; padding: 10px 0; }
 
 .eaton-link-list-vertical__list-icon { font-size: 0.75em; margin-left: 0.25em; }
 
+.dark-theme .eaton-link-list-vertical__eyebrow, .dark-theme .eaton-link-list-vertical__list-link { color: #FFF; }
+
 @media screen and (max-width: 991px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 60px; } }
 
-@media screen and (min-width: 992px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 30px; } }
+@media screen and (min-width: 992px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; } }
 
 .eaton-link-list-horizontal__list { margin: 0; padding: 0; }
 

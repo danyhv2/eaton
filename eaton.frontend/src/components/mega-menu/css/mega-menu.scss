@@ -5,6 +5,9 @@
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
+// Import Overrides
+@import "mega-menu-modules";
+
 .mega-menu {
   background: $color__primary-gray1;
   position: absolute;

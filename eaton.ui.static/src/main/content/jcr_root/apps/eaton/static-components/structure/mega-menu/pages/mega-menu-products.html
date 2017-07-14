@@ -18,8 +18,16 @@
     <div class="mega-menu__category">
       <div class="container">
           <div class="row">
+            <!--/* Include: Search Box - Inline */ -->
             <div class="col-xs-12 col-md-3">
-                <sly data-sly-resource="${'search-inline' @ resourceType='/apps/eaton/static-components/content/search-box'}"></sly>
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'search-inline' @ resourceType='/apps/eaton/static-components/content/search-box'}"></sly>
+                </div>
+                
+                <!--/* Include: Link List - default */ -->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'link-list' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                </div>
             </div>
           </div>
       </div>

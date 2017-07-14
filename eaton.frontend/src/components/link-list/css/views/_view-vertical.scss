@@ -3,6 +3,10 @@
 //-----------------------------------
 .eaton-link-list-vertical {
 
+  &__eyebrow {
+    text-transform: uppercase;
+  }
+
   &__list {
     padding: 0;
     margin: 0;
@@ -15,12 +19,20 @@
 
   &__list-link {
     display: inline-block;
-    padding: 10px 0; // Visually 30px Spacing between items
+    padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
   }
 
   &__list-icon {
     font-size: 0.75em;
     margin-left: 0.25em;
+  }
+
+  .dark-theme & {
+
+    &__eyebrow,
+    &__list-link {
+      color: $color__white;
+    }
   }
 
 
@@ -32,7 +44,6 @@
     &__eyebrow {
       margin-bottom: 60px;
     }
-
   }
 
 
@@ -42,7 +53,7 @@
   @include media-desktop-and-up {
 
     &__eyebrow {
-      margin-bottom: 30px;
+      margin-bottom: ($spacing__sm / 2);
     }
 
   }
