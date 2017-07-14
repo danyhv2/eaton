@@ -1,29 +1,24 @@
+.carousel-component-slide:hover > .carousel-component__arrow { display: block; border: 0; background-image: none; }
+
 .carousel-component-slide__caption { top: 10%; }
 
 .carousel-component-slide__cta { margin-top: 60px; }
 
 .carousel-component-slide__text { margin-top: 20px; }
 
-.carousel-component-slide__title { font-size: 3.250em; line-height: 1.192em; margin: 0px; }
+.carousel-component-slide__title { font-size: 3.25em; line-height: 1.192em; margin: 0; }
 
 .carousel-component__dots:only-child { display: none; }
 
 .carousel-component__down-arrow { position: absolute; bottom: 25px; color: #FFF; width: 10%; font-size: 1.5em; z-index: 10; left: 47%; }
 
-.carousel-component .carousel-control { display: none; }
+.carousel-component__arrow { display: none; }
 
-.carousel-inner:hover > .carousel-control { display: block; }
-
-.primary-button-light { font-size: 1.25em; font-family: Arial; font-weight: bold; color: #fff; border: 3px solid #fff; border-radius: 0px; background: none; padding: 20px 40px; }
-
-.primary-button-light:hover { background: #fff; color: #005EB8; border-color: #005EB8; }
-
-@media only screen and (max-width: 992px) { .carousel-control { display: none !important; }
-  .carousel-indicators { bottom: 56px; } }
+@media screen and (max-width: 991px) { .carousel-indicators { bottom: 56px; } }
 
 .featured-story-component__content { padding: 60px 50px; }
 
-.featured-story-component__text { color: #FFF; font-size: 2.45em; font-family: "Eaton", Arial, sans-serif; line-height: 1.250em; padding-top: 30px; }
+.featured-story-component__text { color: #FFF; font-size: 2.45em; font-family: "Eaton", Arial, sans-serif; line-height: 1.25em; padding-top: 30px; }
 
 .featured-story-component__title { font-size: 2.55em; }
 

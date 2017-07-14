@@ -2,6 +2,12 @@
 
   &-slide {
 
+    &:hover > .carousel-component__arrow {
+      display: block;
+      border: 0;
+      background-image: none;
+    }
+
     &__caption {
       top: 10%;
     }
@@ -15,9 +21,9 @@
     }
 
     &__title {
-      font-size: 3.250em;
+      font-size: 3.25em;
       line-height: 1.192em;
-      margin: 0px;
+      margin: 0;
     }
   }
 
@@ -38,21 +44,12 @@
     left: 47%;
   }
 
-  .carousel-control {
+  &__arrow {
     display: none;
   }
 }
 
-.carousel-inner:hover > .carousel-control {
-  display: block;
-}
-
-
-@media only screen and (max-width: 992px) {
-  .carousel-control {
-    display: none !important;
-  }
-
+@include media-mobile-and-tablet {
   .carousel-indicators {
     bottom: 56px;
   }
