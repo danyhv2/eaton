@@ -35,6 +35,10 @@
                                         jcr:primaryType="nt:unstructured"
                                         text="L2 Hero"
                                         value="l2-hero"/>
+                                    <singleFeature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Single Feature"
+                                        value="single-feature"/>
                                 </items>
                             </view>
                         </items>
