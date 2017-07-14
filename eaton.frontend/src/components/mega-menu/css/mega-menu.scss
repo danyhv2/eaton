@@ -38,6 +38,16 @@
     overflow: auto;
     transform: translate(100%);
     visibility: hidden;
+
+    &__category {
+      .mega-menu__category-item {
+        margin-bottom: $spacing__sm;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   //-----------------------------------

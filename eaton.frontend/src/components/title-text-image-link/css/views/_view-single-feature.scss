@@ -1,0 +1,46 @@
+//-----------------------------------
+// Component 4.4: Header - Mega Menu
+// TTIL - View - Single feature
+//-----------------------------------
+
+.eaton-single-feature {
+
+  &__headline,
+  &__image {
+    margin-bottom: $spacing__sm;
+  }
+
+  &__headline,
+  &__eyebrow {
+    text-transform: uppercase;
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  &__image {
+    max-width: 300px;
+  }
+
+  &__eyebrow {
+    margin-bottom: ($spacing__sm / 2);
+  }
+
+  &__links {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
+    text-decoration: none;
+    
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+}
