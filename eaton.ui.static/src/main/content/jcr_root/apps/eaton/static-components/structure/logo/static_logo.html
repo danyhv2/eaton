@@ -1,4 +1,12 @@
-<a class="eaton-logo" href="#">
-  <img src="/content/dam/eaton/images/eaton-logo.png" alt="logo" class="eaton-logo__img eaton-logo__img--header img-responsive">
-  <img src="/content/dam/eaton/images/logo-footer.png" alt="logo" class="eaton-logo__img eaton-logo__img--footer img-responsive">
-</a>
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Logo Component</div>
+</sly>
+
+<sly data-sly-use.data="data/logo-data.js">
+  <div class="eaton-logo">
+    <a href="/" class="eaton-logo__link">
+      <img class="eaton-logo__image img-responsive" src="${ data.imageSrc }" alt="${ data.imageAlt }" />
+    </a>
+  </div>
+</sly>
