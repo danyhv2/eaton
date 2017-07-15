@@ -28,7 +28,7 @@ a:hover, a:active, a:visited, a:focus { color: #005EB8; text-decoration: none; }
 
 .category__item { min-height: 200px; }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) { .carousel__item { min-height: 227px; }
+@media only screen and (max-width: 767px) { .carousel__item { min-height: 227px; }
   .card-container--topmargin { margin-top: -15%; }
   .category__link--font { font-size: 1.4em; line-height: 1.3em; }
   .category__title--bottompadding { padding-bottom: 10px; } }

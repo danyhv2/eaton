@@ -34,12 +34,9 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <ol class="carousel-indicators list-unstyled">
-                            <li data-target=".default-view-carousel-component" data-slide-to="0" class="active" role="button">
-                                <span class="sr-only">1</span>
-                            </li>
-                            <li data-target=".default-view-carousel-component" data-slide-to="1" role="button">
-                                <span class="sr-only">2</span>
+                        <ol class="carousel-indicators list-unstyled" data-sly-list.slider1="${data}">
+                            <li data-target=".default-view-carousel-component" data-slide-to="${slider1List.index}" class="${slider1List.index == 0 ? 'active' : ''}">
+                                <span class="sr-only">${slider1List.index}</span>
                             </li>
                         </ol>
                     </div>

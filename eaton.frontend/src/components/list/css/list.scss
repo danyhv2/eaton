@@ -85,7 +85,7 @@ a {
   min-height: 200px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .carousel__item {
     min-height: 227px;
   }
