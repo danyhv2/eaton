@@ -25,7 +25,7 @@ App.demoComponent = (function() {
       console.log(event.target);
     });
 
-    window.matchMedia(`(min-width:${ App.global.constants.GRID.SM }px)`).onchange = onBreakpointChange;
+    window.matchMedia(`(min-width:992px)`).onchange = onBreakpointChange;
 
   };
 

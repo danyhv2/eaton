@@ -8,6 +8,11 @@
 // Import Overrides
 @import "mega-menu-modules";
 
+.container-full {
+  height: 2000px;
+  background: beige;
+}
+
 .mega-menu {
   background: $color__primary-gray1;
   position: absolute;

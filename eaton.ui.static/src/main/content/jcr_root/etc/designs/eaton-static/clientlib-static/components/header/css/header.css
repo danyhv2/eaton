@@ -34,7 +34,7 @@
 @media screen and (min-width: 992px) { .eaton-header .eaton-logo { margin: 20px 15px 16px; }
   .eaton-header--fixed { position: fixed; width: 100%; z-index: 20; }
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
-  .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; -webkit-transition: height 0.3s ease-in-out, width 0.3s ease-in-out; transition: height 0.3s ease-in-out, width 0.3s ease-in-out; } }
+  .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; } }
 
 @media screen and (max-width: 991px) { .nav-open .eaton-link-list-primary-nav { height: 100%; visibility: visible; overflow: auto; }
   .nav-open.level-2-open { overflow: hidden; position: fixed; width: 100%; }
