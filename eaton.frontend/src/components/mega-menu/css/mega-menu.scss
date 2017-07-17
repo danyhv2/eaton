@@ -10,7 +10,7 @@
 
 .container-full {
   height: 2000px;
-  background: beige;
+  background: #F5F5DC;
 }
 
 .mega-menu {
@@ -21,7 +21,7 @@
 
   &__content {
     color: $color__white;
-    display: none;
+    // display: none;
 
     &--active {
       display: block;
@@ -100,9 +100,18 @@
   display: flex;
 
   a {
-    color: $color__white;
     text-decoration: none;
     cursor: pointer;
+
+    .dark-theme & {
+      color: $color__white;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__white;
+    }
   }
 
   &__level1-link {

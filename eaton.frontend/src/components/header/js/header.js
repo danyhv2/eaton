@@ -8,9 +8,13 @@ let App = window.App || {};
 App.header = (function() {
 
   const $componentClass = $('.eaton-header');
+  const bodyEl = $('body');
+  let $primaryLinks = $componentClass.find('.eaton-link-list-primary-nav__items a');
+  let $megaMenu = $componentClass.find('.mega-menu');
+  let $megaMenuSections = $componentClass.find('.mega-menu__content');
 
   const init = () => {
-    console.log(`component-demo - ${ window.location.host }`);
+    console.log(`Header Component - ${ window.location.host }`);
     addEventListeners();
   };
 
@@ -32,6 +36,20 @@ App.header = (function() {
         $componentClass.removeClass('eaton-header--fixed');
         $('body').removeClass('nav-open level-2-open');
       }
+    });
+
+    $primaryLinks.on('click', (event) => {
+      event.preventDefault();
+
+      // Highlight only the active Link
+      $primaryLinks.removeClass('active');
+      $(event.currentTarget).addClass('active');
+      const activeCategory = $(event.currentTarget).attr('data-menu-category');
+      bodyEl.addClass('nav-open level-2-open');
+
+      // Highlight the active mega-menu section
+      $megaMenuSections.removeClass('mega-menu__content--active');
+      $megaMenu.find("[data-target='${activeCategory}']").addClass('mega-menu__content--active');
     });
 
     window.matchMedia(`(min-width:992px)`).onchange = onBreakpointChange;
