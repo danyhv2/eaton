@@ -1,3 +1,11 @@
+@font-face { font-family: 'Eaton'; src: url("fonts/EatonRegular.woff") format("woff"); }
+
+@font-face { font-family: 'EatonMedium'; src: url("fonts/EatonMedium.woff") format("woff"); }
+
+@font-face { font-family: 'EatonBold'; src: url("fonts/EatonBold.woff") format("woff"); }
+
+@font-face { font-family: 'Arial'; src: url("fonts/Arial.woff"); }
+
 body { color: #333F48; font-family: "Arial", sans-serif; }
 
 h1, h2, h3, .heading-h1, .heading-h2, .heading-h3 { font-family: "Eaton", Arial, sans-serif; }
