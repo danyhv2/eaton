@@ -25,7 +25,7 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     padding: 10px 0;
-    
+
     &__nav-item {
       border-bottom: 1px solid $color__primary-gray3;
       margin: 0 20px;
@@ -45,7 +45,7 @@
 
       // hide the white line for fist line nav items
       &:after {
-        background: $color__primary-gray1;
+        background: $color__primary-gray2;
         bottom: 0px;
         height: 1px;
         left: 0;
