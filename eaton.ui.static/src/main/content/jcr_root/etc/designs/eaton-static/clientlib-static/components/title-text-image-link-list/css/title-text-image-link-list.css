@@ -45,3 +45,17 @@
 .eaton-title__dash { display: block; width: 68px; height: 4px; margin: 60px 0; background-color: #005EB8; }
 
 .eaton-title__byline { font-size: 12px; margin-top: 15px; }
+
+.tile-link-component__element { color: #FFF; }
+
+.tile-link-component__element--0 { background-color: #005EB8; }
+
+.tile-link-component__element--1 { background-color: #5B6770; }
+
+.tile-link-component__element--2 { background-color: #00B2A9; }
+
+.tile-link-component__element--3 { background-color: #ED8B00; }
+
+.tile-link-component__element--4 { background-color: #005EB8; }
+
+.tile-link-component__element--5 { background-color: #333F48; }
