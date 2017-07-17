@@ -90,14 +90,18 @@
   }
 }
 
+//-----------------------------------
 // AEM Author Mode Styles
-.aem-AuthorLayer-Edit {
+//-----------------------------------
+
+.aem-AuthorLayer-Edit { // sass-lint:disable-line class-name-format
   .eaton-header {
     .mega-menu {
-      visibility: visible !important;
-      opacity: 1 !important;
+      visibility: visible !important; // sass-lint:disable-line no-important
+      opacity: 1 !important; // sass-lint:disable-line no-important
+
       &__content {
-        display: block !important;
+        display: block !important; // sass-lint:disable-line no-important
       }
     }
   }
