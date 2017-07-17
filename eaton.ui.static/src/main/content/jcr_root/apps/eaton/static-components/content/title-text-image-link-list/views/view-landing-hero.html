@@ -15,7 +15,7 @@
             <div class="carousel-component-slide__caption carousel-caption">
                 <h2 class="carousel-component-slide__title">${slide.title}</h2>
                 <p class="carousel-component-slide__text">${slide.text}</p>
-                <a class="carousel-component-slide__cta b-button b-button--light" href="${data.cta}" role="button">See how</a>
+                <a class="carousel-component-slide__cta b-button b-button--light" href="${data.cta}" role="button" data-sly-test="${data.cta.length > 0}">See how</a>
             </div>
         </div>
         <!-- Controls -->
