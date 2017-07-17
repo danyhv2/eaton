@@ -1,8 +1,8 @@
 .eaton-featured-topic { padding-top: 120px; padding-bottom: 120px; }
 
-.eaton-featured-topic h2 { font-size: 3.6rem; }
+.eaton-featured-topic h2 { font-size: 3.6rem; font-weight: bold; }
 
-.eaton-featured-topic h4 { font-size: 3rem; }
+.eaton-featured-topic h4 { font-size: 2.9rem; }
 
 .eaton-featured-topic__title { margin-bottom: 30px; }
 
