@@ -31,10 +31,8 @@ App.header = (function() {
 
       if ( scrollTop > (headerHeight)) {
         $componentClass.addClass('eaton-header--fixed');
-        $('body').addClass('nav-open level-2-open');
       } else {
         $componentClass.removeClass('eaton-header--fixed');
-        $('body').removeClass('nav-open level-2-open');
       }
     });
 
@@ -49,20 +47,28 @@ App.header = (function() {
 
       // Highlight the active mega-menu section
       $megaMenuSections.removeClass('mega-menu__content--active');
+      $megaMenu.find(`[data-target="${activeCategory}"]`).addClass('mega-menu__content--active');
       $megaMenuSections.find('.products-link').focus();
-      console.log($megaMenu, $megaMenu.find(`[data-target='${activeCategory}']`));
-      $megaMenu.find("[data-target='${activeCategory}']").addClass('mega-menu__content--active');
+      console.log($megaMenu, $megaMenu.find(`[data-target="${activeCategory}"]`));
     });
 
     $('.eaton-title__close-menu').on('click', (event) => {
       // Close the mega menu
       event.preventDefault();
-      $megaMenuSections.removeClass('mega-menu__content--active');
-      bodyEl.removeClass('nav-open level-2-open');
+      closeNav();
     });
 
     window.matchMedia(`(min-width:992px)`).onchange = onBreakpointChange;
   };
+
+  /**
+  * Close the Nav
+  */
+  const closeNav = () => {
+    $primaryLinks.removeClass('active');
+    $megaMenuSections.removeClass('mega-menu__content--active');
+    bodyEl.removeClass('nav-open level-2-open');
+  });
 
   /**
   * Breakpoint Change Callback Function
@@ -77,7 +83,7 @@ App.header = (function() {
 
     // Else is Mobile Breakpoint
     else {
-      console.log('Mobile BP');
+      closeNav();
     }
   };
 
