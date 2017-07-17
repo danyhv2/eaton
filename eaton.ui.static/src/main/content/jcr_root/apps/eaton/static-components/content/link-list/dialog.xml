@@ -38,6 +38,10 @@
                   jcr:primaryType="nt:unstructured"
                   text="Download List with Descriptions"
                   value="download-list-desc"/>
+              <sectionNavigation
+                  jcr:primaryType="nt:unstructured"
+                  text="Section Navigation"
+                  value="section-navigation"/>
             </options>
           </view>
         </items>

@@ -1,0 +1,66 @@
+//-----------------------------------
+// LinkList Component: Horizontal View
+//-----------------------------------
+.eaton-link-list-section-navigation {
+  background-color: $color__primary-gray2;
+
+  &__nav-item {
+    color: $color__white;
+    font-family: Arial;
+    font-weight: bold;
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color__primary-blue;
+    }
+  }
+
+  //-----------------------------------
+  // Media-Query: Mobile
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    padding: 10px 0;
+    
+    &__nav-item {
+      border-bottom: 1px solid $color__primary-gray3;
+      margin: 0 20px;
+      display: block;
+      padding: 20px 0;
+      font-size: 1.8rem;
+    }
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Tablet & Desktop
+  //-----------------------------------
+  @include media-desktop-and-up {
+    .container {
+      position: relative;
+
+      // hide the white line for fist line nav items
+      &:after {
+        background: $color__primary-gray1;
+        bottom: 0px;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+
+    &__nav-item {
+      border-bottom: 1px solid $color__white;
+      border-right: 1px solid $color__white;
+      display: inline-block;
+      float: left;
+      padding: 20px $spacing__sm;
+    }
+  }
+
+}
