@@ -1,0 +1,13 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Quote Component</div>
+</sly>
+
+
+<sly data-sly-use.data="data/quote-data.js">
+
+  <div class="eaton-quote">
+    <div class="eaton-quote__text">${ data.text }</div>
+    <div class="eaton-quote__author">${ data.author }</div>
+  </div>
+
+</sly>
