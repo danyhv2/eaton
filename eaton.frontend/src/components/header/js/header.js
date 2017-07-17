@@ -49,7 +49,7 @@ App.header = (function() {
       // Highlight the active mega-menu section
       $megaMenuSections.removeClass('mega-menu__content--active');
       $megaMenu.find(`[data-target="${ activeCategory }"]`).addClass('mega-menu__content--active');
-      $megaMenuSections.find('.products-link').focus();
+      $megaMenu.find(`[data-target="${ activeCategory }"]`).find('a').eq(0).focus();
       console.log($megaMenu, $megaMenu.find(`[data-target="${ activeCategory }"]`));
     });
 

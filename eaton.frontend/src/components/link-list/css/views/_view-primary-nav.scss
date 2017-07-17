@@ -90,17 +90,16 @@
         align-items: center;
         font-size: 20px; //1.25em;
         position: relative;
-        &.active {
-          &:after {
-            content: '';
-            position: absolute;
-            height: 4px;
-            bottom: -4px;
-            left: 5px;
-            right: 5px;
-            width: 90%;
-            background: $color__primary-blue;
-          }
+
+        &.active::after {
+          content: '';
+          position: absolute;
+          height: 4px;
+          bottom: -4px;
+          left: 5px;
+          right: 5px;
+          width: 90%;
+          background: $color__primary-blue;
         }
       }
 
