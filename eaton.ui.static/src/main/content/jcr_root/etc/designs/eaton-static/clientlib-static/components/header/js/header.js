@@ -64,11 +64,11 @@ App.header = function () {
   /**
   * Close the Nav
   */
-  // const closeNav = () => {
-  //   $primaryLinks.removeClass('active');
-  //   $megaMenuSections.removeClass('mega-menu__content--active');
-  //   bodyEl.removeClass('nav-open level-2-open');
-  // };
+  var closeNav = function closeNav() {
+    $primaryLinks.removeClass('active');
+    $megaMenuSections.removeClass('mega-menu__content--active');
+    bodyEl.removeClass('nav-open level-2-open');
+  };
 
   /**
   * Breakpoint Change Callback Function
