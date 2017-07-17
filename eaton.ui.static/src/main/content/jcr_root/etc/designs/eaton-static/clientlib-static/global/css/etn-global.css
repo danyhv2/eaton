@@ -1,3 +1,11 @@
+@font-face { font-family: 'Eaton'; src: url("fonts/EatonRegular.woff") format("woff"); }
+
+@font-face { font-family: 'EatonMedium'; src: url("fonts/EatonMedium.woff") format("woff"); }
+
+@font-face { font-family: 'EatonBold'; src: url("fonts/EatonBold.woff") format("woff"); }
+
+@font-face { font-family: 'Arial'; src: url("fonts/Arial.woff"); }
+
 body { color: #333F48; font-family: "Arial", sans-serif; }
 
 h1, h2, h3, .heading-h1, .heading-h2, .heading-h3 { font-family: "Eaton", Arial, sans-serif; }
@@ -24,7 +32,7 @@ h5__link, .heading-h5__link { font-size: 2.4rem; font-weight: bold; }
 
 .dark-theme .body-link:hover, .dark-theme .body-link:focus, .dark-theme .body-link:active { color: #FFF; }
 
-.body-copy { background: inherit; font-size: 2.5rem; line-height: 3.8rem; }
+.body-copy { background: inherit; font-size: 2.2rem; line-height: 3.5rem; color: #333F48; }
 
 .body-copy-small { color: #333F48; font-family: "Arial", sans-serif; font-size: 26px; line-height: 34px; }
 
