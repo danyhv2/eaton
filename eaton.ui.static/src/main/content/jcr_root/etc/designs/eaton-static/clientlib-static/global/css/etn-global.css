@@ -103,6 +103,8 @@ h5__link, .heading-h5__link { font-size: 2.4rem; font-weight: bold; }
 
 .b-button--dark:hover, .b-button--dark:active, .b-button--dark:focus { color: #005EB8; background: #FFF; border-color: #FFF; text-decoration: none; }
 
+@media screen and (max-width: 767px) { .b-button { width: 100%; } }
+
 .b-list__item { display: inline-block; padding-bottom: 2rem; }
 
 .b-list--no-bullets { list-style-type: none; padding-left: 0; }

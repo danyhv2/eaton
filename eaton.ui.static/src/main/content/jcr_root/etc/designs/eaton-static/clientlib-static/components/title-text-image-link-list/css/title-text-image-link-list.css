@@ -14,7 +14,8 @@
 
 .carousel-component__arrow { display: none; }
 
-@media screen and (max-width: 991px) { .carousel-indicators { bottom: 56px; } }
+@media screen and (max-width: 991px) { .carousel-component-slide__caption { top: 0; }
+  .carousel-indicators { bottom: 56px; } }
 
 .featured-story-component__content { padding: 60px 50px; }
 
