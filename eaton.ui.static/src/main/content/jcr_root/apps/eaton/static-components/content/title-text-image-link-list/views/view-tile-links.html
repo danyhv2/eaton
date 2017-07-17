@@ -1,0 +1,9 @@
+<sly data-sly-use.data="../data/view-tile-links-multiple-data.js">
+    <div class="tile-link-component">
+        <div class="row" data-sly-list.tile="${data}">
+            <div class="col-xs-12 col-xs-4 tile-link-component__element tile-link-component__element--${tileList.index}">
+                <h2>${tile.title} <span class="glyphicon glyphicon-menu-right arrow"></span></h2>
+            </div>
+        </div>
+    </div>
+</sly>
