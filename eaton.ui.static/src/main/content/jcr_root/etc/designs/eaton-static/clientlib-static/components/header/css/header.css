@@ -42,6 +42,6 @@
 
 @media screen and (min-width: 992px) { .nav-open.level-2-open .mega-menu { visibility: visible; opacity: 1; overflow-y: auto; height: 400px; } }
 
-.aem-author-mode .eaton-header .mega-menu { visibility: visible !important; opacity: 1 !important; }
+.aem-AuthorLayer-Edit .eaton-header .mega-menu { visibility: visible !important; opacity: 1 !important; }
 
-.aem-author-mode .eaton-header .mega-menu__content { display: block !important; }
+.aem-AuthorLayer-Edit .eaton-header .mega-menu__content { display: block !important; }
