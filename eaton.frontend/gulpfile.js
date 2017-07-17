@@ -74,5 +74,5 @@ gulp.task('build:prod', [
 gulp.task('default', ['build:dev'], () => {
 
   // Watch for File Changes
-  require('./config/gulp-tasks/gulp-watch')(gulp, CONFIG)
+  require('./config/gulp-tasks/gulp-watch')(gulp, CONFIG);
 });

@@ -1,12 +1,17 @@
 module.exports = {
+
+  options: {
+    formatter: 'stylish' // 'table'
+  },
+
   rules: {
 
-
     /**
-     * NOTE: Set All Warinings as Errors or Disabled. NO Warnings.
+     * NOTE: Force Errors for most of the rules.
      * ------
      * ERROR Level: Severity should be one of the following:
      * 0 = off
+     * 1 = warning
      * 2 = error
      */
 
@@ -27,7 +32,7 @@ module.exports = {
     'no-duplicate-properties': [ 2, { exclude: ['display', 'color', 'border-color', 'font-size' ] } ], // Exclude these properties since sometimes they are used as fallback for older browsers
     'no-empty-rulesets': 0, // Disabled since empty selectors are used for future reference, and the are no compiled by SASS
     'no-ids': 2,
-    'no-important': 2,
+    'no-important': 1,
     'no-trailing-zero': 2,
     'no-vendor-prefixes': 2,
     'pseudo-element': 2,

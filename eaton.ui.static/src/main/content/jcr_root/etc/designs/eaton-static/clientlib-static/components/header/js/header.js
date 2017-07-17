@@ -55,12 +55,19 @@ App.header = function () {
     $('.eaton-title__close-menu').on('click', function (event) {
       // Close the mega menu
       event.preventDefault();
-      primaryLinks.removeClass('active');
-      $megaMenuSections.removeClass('mega-menu__content--active');
-      bodyEl.removeClass('nav-open level-2-open');
+      closeNav();
     });
 
     window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
+  };
+
+  /**
+  * Close the Nav
+  */
+  var closeNav = function closeNav() {
+    $primaryLinks.removeClass('active');
+    $megaMenuSections.removeClass('mega-menu__content--active');
+    bodyEl.removeClass('nav-open level-2-open');
   };
 
   /**
@@ -76,10 +83,7 @@ App.header = function () {
 
     // Else is Mobile Breakpoint
     else {
-        $primaryLinks.removeClass('active');
-        $megaMenuSections.removeClass('mega-menu__content--active');
-        bodyEl.removeClass('nav-open level-2-open');
-        console.log('Mobile BP');
+        closeNav();
       }
   };
 

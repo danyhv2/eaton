@@ -8,7 +8,6 @@ var App = window.App || {};
 App.demoComponent = function () {
 
   var $componentClass = $('.a-demo-component');
-  console.log('a-demo-component-loaded');
 
   var init = function init() {
     console.log('component-demo - ' + window.location.host);
@@ -24,7 +23,8 @@ App.demoComponent = function () {
       console.log(event.target);
     });
 
-    window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
+    // window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
+    window.matchMedia('(min-width:' + App.global.constants.GRID.SM + 'px)').onchange = onBreakpointChange;
   };
 
   /**
@@ -45,17 +45,7 @@ App.demoComponent = function () {
   };
 
   /**
-   * Example of Public Method
-   *
-   * @return { Array } Test ES6
-   */
-  var publicMethodOne = function publicMethodOne(number) {
-    var testES6 = [1, 2, 3];
-    return [].concat(testES6, ['es6', 'aem']);
-  };
-
-  /**
-   * Custom Date Format
+   * Example of Public Method: Custom Date Format
    *
    * @return { String } Formated Date
    */
@@ -71,7 +61,6 @@ App.demoComponent = function () {
     init();
 
     return {
-      publicMethodOne: publicMethodOne,
       getDate: getDate
     };
   }

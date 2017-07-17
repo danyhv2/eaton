@@ -50,8 +50,17 @@
 }
 
 @include media-mobile-and-tablet {
+  .carousel-component {
+
+    &-slide {
+
+      &__caption {
+        top: 0;
+      }
+    }
+  }
+
   .carousel-indicators {
     bottom: 56px;
   }
-
 }

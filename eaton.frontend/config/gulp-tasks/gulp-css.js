@@ -7,7 +7,7 @@ const sass = require('gulp-sass');
 const sassGlobbing = require('node-sass-globbing');
 const autoprefixer = require('gulp-autoprefixer');
 
-const sassToCSS = function(gulp, CONFIG, bundle) {
+const sassToCSS = function(gulp, CONFIG) {
   return function() {
 
     // SASS to CSS
