@@ -56,7 +56,7 @@ App.header = (function() {
     $('.eaton-title__close-menu').on('click', (event) => {
       // Close the mega menu
       event.preventDefault();
-      // closeNav();
+      closeNav();
     });
 
     window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
@@ -85,7 +85,7 @@ App.header = (function() {
 
     // Else is Mobile Breakpoint
     else {
-      // closeNav();
+      closeNav();
     }
   };
 
