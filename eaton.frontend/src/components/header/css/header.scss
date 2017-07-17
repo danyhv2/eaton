@@ -89,3 +89,16 @@
     }
   }
 }
+
+// AEM Author Mode Styles
+.aem-author-mode {
+  .eaton-header {
+    .mega-menu {
+      visibility: visible !important;
+      opacity: 1 !important;
+      &__content {
+        display: block !important;
+      }
+    }
+  }
+}

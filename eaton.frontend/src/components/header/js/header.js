@@ -47,10 +47,12 @@ App.header = (function() {
       bodyEl.addClass('nav-open level-2-open');
 
       // Highlight the active mega-menu section
-      $megaMenuSections.removeClass('mega-menu__content--active');
-      $megaMenu.find(`[data-target="${ activeCategory }"]`).addClass('mega-menu__content--active');
-      $megaMenu.find(`[data-target="${ activeCategory }"]`).find('a').eq(0).focus();
+      // $megaMenuSections.removeClass('mega-menu__content--active');
       console.log($megaMenu, $megaMenu.find(`[data-target="${ activeCategory }"]`));
+      $megaMenu.find(`[data-target="${ activeCategory }"]`)
+      .addClass('mega-menu__content--active')
+      .siblings().removeClass('mega-menu__content--active');
+      $megaMenu.find(`[data-target="${ activeCategory }"]`).find('a').eq(0).focus();
     });
 
     $('.eaton-title__close-menu').on('click', (event) => {
