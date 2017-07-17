@@ -13,13 +13,13 @@ const watch = function (gulp, CONFIG) {
   // Watch: SASS
   gulp.watch([
     CONFIG.paths.srcRoot + '/**/*.scss'
-  ], ['lint:css', 'css']
+  ], ['css', 'lint:css']
   );
 
   // Watch: JS
   gulp.watch([
     CONFIG.paths.srcRoot + '/**/*.js'
-  ], ['lint:js', 'js']
+  ], ['js', 'lint:js']
   );
 
 
