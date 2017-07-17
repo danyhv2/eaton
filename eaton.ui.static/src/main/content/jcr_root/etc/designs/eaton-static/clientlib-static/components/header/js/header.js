@@ -10,7 +10,6 @@ App.header = function () {
   var $componentClass = $('.eaton-header');
 
   var init = function init() {
-    console.log('component-demo - ' + window.location.host);
     addEventListeners();
   };
 

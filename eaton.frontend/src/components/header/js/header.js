@@ -10,7 +10,6 @@ App.header = (function() {
   const $componentClass = $('.eaton-header');
 
   const init = () => {
-    console.log(`component-demo - ${ window.location.host }`);
     addEventListeners();
   };
 
@@ -34,7 +33,7 @@ App.header = (function() {
       }
     });
 
-    window.matchMedia(`(min-width:992px)`).onchange = onBreakpointChange;
+    window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
   };
 
   /**
