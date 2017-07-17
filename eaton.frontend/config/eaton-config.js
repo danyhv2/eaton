@@ -24,4 +24,4 @@ module.exports = {
     '../eaton.ui.static/src/main/content/jcr_root'
   ]
 
-}
+};
