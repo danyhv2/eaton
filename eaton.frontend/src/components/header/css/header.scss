@@ -97,6 +97,7 @@
 .aem-AuthorLayer-Edit { // sass-lint:disable-line class-name-format
   .eaton-header {
     .mega-menu {
+      position: relative !important; // sass-lint:disable-line no-important
       visibility: visible !important; // sass-lint:disable-line no-important
       opacity: 1 !important; // sass-lint:disable-line no-important
 
