@@ -49,7 +49,16 @@ App.header = function () {
 
       // Highlight the active mega-menu section
       $megaMenuSections.removeClass('mega-menu__content--active');
+      $megaMenuSections.find('.products-link').focus();
+      console.log($megaMenu, $megaMenu.find('[data-target=\'' + activeCategory + '\']'));
       $megaMenu.find("[data-target='${activeCategory}']").addClass('mega-menu__content--active');
+    });
+
+    $('.eaton-title__close-menu').on('click', function (event) {
+      // Close the mega menu
+      event.preventDefault();
+      $megaMenuSections.removeClass('mega-menu__content--active');
+      bodyEl.removeClass('nav-open level-2-open');
     });
 
     window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
