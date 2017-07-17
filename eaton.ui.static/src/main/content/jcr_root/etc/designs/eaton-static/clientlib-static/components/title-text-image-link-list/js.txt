@@ -1,0 +1,3 @@
+#base=js
+
+title-text-image-link-list.js

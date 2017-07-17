@@ -1,4 +1,4 @@
-<div class="mega-menu__content">
+<div class="mega-menu__content" data-target="mega-menu-products">
     <!--/* Include Level 1: Links *-->
     <div class="container">
         <div class="eaton-title">
@@ -17,18 +17,45 @@
     <!--/* Include: Mega Menu Modules */ -->
     <div class="mega-menu__category">
       <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-3">
+          <div class="mega-menu__row">
+            <div class="mega-menu__col mega-menu__col--4">
                 <!--/* Include: Search Box - Inline */ -->
                 <div class="mega-menu__category-item">
                   <sly data-sly-resource="${'search-inline' @ resourceType='/apps/eaton/static-components/content/search-box'}"></sly>
                 </div>
 
-                <!--/* Include: Link List - default */ -->
+                <!--/* Include: Link List - Default */ -->
                 <div class="mega-menu__category-item">
                   <sly data-sly-resource="${'link-list' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
                 </div>
             </div>
+
+            <div class="mega-menu__col mega-menu__col--4">
+                <!--/* Include: TTIL - Single Feature */ -->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'download-list-1' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                </div>
+            </div>
+
+            <div class="mega-menu__col mega-menu__col--4">
+                <!--/* Include: LinkList - Download List */ -->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'download-list-2' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                </div>
+            </div>
+
+            <div class="mega-menu__col mega-menu__col--4">
+                <!--/* Include: TTIL - Single Feature */ -->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'single-feature' @ resourceType='/apps/eaton/static-components/content/title-text-image-link'}"></sly>
+                </div>
+
+                <!--/* Include: Link List - Download List */ -->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'download-list-3' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                </div>
+            </div>
+
           </div>
       </div>
     </div>

@@ -35,6 +35,18 @@
                                         jcr:primaryType="nt:unstructured"
                                         text="L2 Hero"
                                         value="l2-hero"/>
+                                    <singleFeature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Single Feature"
+                                        value="single-feature"/>
+                                    <downloadList
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Download List"
+                                        value="download-list"/>
+                                    <downloadListDesc
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Download List with Descriptions"
+                                        value="download-list-desc"/>
                                 </items>
                             </view>
                         </items>

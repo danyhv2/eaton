@@ -18,7 +18,7 @@ let workingDirs = [];
 
 // NOTE: Add more AEM Working dirs to 'eaton-config.js' File
 
-_.each(CONFIG.aemBundles, (item, index) => {
+_.each(CONFIG.aemBundles, (item, index) => {
   dirPath = path.resolve(__dirname, path.join('../', item));
   workingDirs.push(dirPath);
 });
@@ -28,7 +28,7 @@ _.each(CONFIG.aemBundles, (item, index) => {
 let targets = [
 
   // AEM:Author
-  'http://admin:admin@localhost:4502',
+  'http://admin:admin@localhost:4502'
 
   // AEM:Publish
   // 'http://admin:admin@localhost:4503'

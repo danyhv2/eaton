@@ -44,7 +44,7 @@
       .eaton-logo__link {
         width: 126px;
         height: 40px;
-        transition: height 0.3s ease-in-out, width 0.3s ease-in-out; // Add transition only when fixed
+        // transition: height 0.3s ease-in-out, width 0.3s ease-in-out; // Add transition only when fixed
       }
     }
   }
@@ -83,6 +83,21 @@
       .mega-menu {
         visibility: visible;
         opacity: 1;
+        overflow-y: auto;
+        height: 400px;
+      }
+    }
+  }
+}
+
+// AEM Author Mode Styles
+.aem-AuthorLayer-Edit {
+  .eaton-header {
+    .mega-menu {
+      visibility: visible !important;
+      opacity: 1 !important;
+      &__content {
+        display: block !important;
       }
     }
   }

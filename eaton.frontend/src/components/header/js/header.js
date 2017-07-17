@@ -7,10 +7,96 @@ let App = window.App || {};
 
 App.header = (function() {
 
+  const $componentClass = $('.eaton-header');
+  const bodyEl = $('body');
+  let $primaryLinks = $componentClass.find('.eaton-link-list-primary-nav__items a');
+  let $megaMenu = $componentClass.find('.mega-menu');
+  let $megaMenuSections = $componentClass.find('.mega-menu__content');
+
   const init = () => {
-    console.log('Header-init');
+    console.log(`Header Component - ${ window.location.host }`);
+    addEventListeners();
   };
 
-  init();
+  /**
+   * Bind All Event Listeners
+   */
+  const addEventListeners = () => {
+
+    $(window).on('scroll', (event) => {
+      let scrollTop = $(window).scrollTop();
+      let headerHeight = 144;
+
+      console.log('Values are', scrollTop, headerHeight);
+
+      if ( scrollTop > (headerHeight)) {
+        $componentClass.addClass('eaton-header--fixed');
+      } else {
+        $componentClass.removeClass('eaton-header--fixed');
+      }
+    });
+
+
+    $primaryLinks.on('click', (event) => {
+      event.preventDefault();
+
+      // Highlight only the active Link
+      $primaryLinks.removeClass('active');
+      $(event.currentTarget).addClass('active');
+      const activeCategory = $(event.currentTarget).attr('data-menu-category');
+      bodyEl.addClass('nav-open level-2-open');
+
+      // Highlight the active mega-menu section
+      // $megaMenuSections.removeClass('mega-menu__content--active');
+      console.log($megaMenu, $megaMenu.find(`[data-target="${ activeCategory }"]`));
+      $megaMenu.find(`[data-target="${ activeCategory }"]`)
+      .addClass('mega-menu__content--active')
+      .siblings().removeClass('mega-menu__content--active');
+      $megaMenu.find(`[data-target="${ activeCategory }"]`).find('a').eq(0).focus();
+    });
+
+    $('.eaton-title__close-menu').on('click', (event) => {
+      // Close the mega menu
+      event.preventDefault();
+      closeNav();
+    });
+
+    window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
+
+  };
+
+  /**
+  * Close the Nav
+  */
+  const closeNav = () => {
+    $primaryLinks.removeClass('active');
+    $megaMenuSections.removeClass('mega-menu__content--active');
+    bodyEl.removeClass('nav-open level-2-open');
+  };
+
+  /**
+  * Breakpoint Change Callback Function
+  * @param { Object} event - MatchMedia Event Object
+  */
+  const onBreakpointChange = (event) => {
+
+    // If Tablet Breakpoint and Up
+    if (event.matches) {
+      console.log('Tablet BP');
+    }
+
+    // Else is Mobile Breakpoint
+    else {
+      closeNav();
+    }
+  };
+
+  /**
+  * If containing DOM element is found, Initialize and Expose public methods
+  */
+  if ($componentClass.length > 0) {
+    init();
+
+  }
 
 }());

@@ -1,14 +1,34 @@
+.eaton-title-text-image { font-family: "Eaton", Arial, sans-serif; }
+
 .category-hightlight-header__text { font-size: 1.5em; color: #FFF; }
 
 .category-hightlight-header__title { font-size: 3.5em; line-height: 1.192em; color: #FFF; }
 
-.category-hightlight-header__image { /*background-image: url(/content/dam/eaton/images/story_board.png);*/ background-size: cover; height: 450px; }
+.category-hightlight-header__image { background-size: cover; height: 450px; }
 
 .category-hightlight-header--vertical-align { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-@media only screen and (max-width: 767px) { .category-hightlight-header__image { height: 400px; /*background-image: url(/content/dam/eaton/images/story_boardphone2.png);*/ }
+@media only screen and (max-width: 767px) { .category-hightlight-header__image { height: 400px; }
   .category-hightlight-header__title { font-size: 2.5em; }
   .category-hightlight-header__text { font-size: 1.3em; } }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) { .category-hightlight-header-header__image { height: 300px; /*background-image: url(/content/dam/eaton/images/story_boardtablet.png);*/ }
+@media only screen and (min-width: 768px) and (max-width: 991px) { .category-hightlight-header-header__image { height: 300px; }
   .category-hightlight-header__title { font-size: 3em; } }
+
+.eaton-single-feature__headline, .eaton-single-feature__image { margin-bottom: 30px; }
+
+.eaton-single-feature__headline, .eaton-single-feature__eyebrow { text-transform: uppercase; }
+
+.dark-theme .eaton-single-feature__headline, .dark-theme .eaton-single-feature__eyebrow { color: #FFF; }
+
+.eaton-single-feature__image { max-width: 300px; }
+
+.eaton-single-feature__eyebrow { margin-bottom: 15px; }
+
+.eaton-single-feature__links { padding: 0; margin: 0; list-style-type: none; }
+
+.eaton-single-feature__item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 10px 0; text-decoration: none; }
+
+.eaton-single-feature__item i { font-size: 0.75em; margin-left: 0.25em; }
+
+.dark-theme .eaton-single-feature__item { color: #FFF; }

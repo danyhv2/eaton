@@ -34,10 +34,14 @@
 @media screen and (min-width: 992px) { .eaton-header .eaton-logo { margin: 20px 15px 16px; }
   .eaton-header--fixed { position: fixed; width: 100%; z-index: 20; }
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
-  .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; -webkit-transition: height 0.3s ease-in-out, width 0.3s ease-in-out; transition: height 0.3s ease-in-out, width 0.3s ease-in-out; } }
+  .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; } }
 
 @media screen and (max-width: 991px) { .nav-open .eaton-link-list-primary-nav { height: 100%; visibility: visible; overflow: auto; }
   .nav-open.level-2-open { overflow: hidden; position: fixed; width: 100%; }
   .nav-open.level-2-open .mega-menu { visibility: visible; -webkit-transform: translate(0); transform: translate(0); } }
 
-@media screen and (min-width: 992px) { .nav-open.level-2-open .mega-menu { visibility: visible; opacity: 1; } }
+@media screen and (min-width: 992px) { .nav-open.level-2-open .mega-menu { visibility: visible; opacity: 1; overflow-y: auto; height: 400px; } }
+
+.aem-AuthorLayer-Edit .eaton-header .mega-menu { visibility: visible !important; opacity: 1 !important; }
+
+.aem-AuthorLayer-Edit .eaton-header .mega-menu__content { display: block !important; }

@@ -16,9 +16,27 @@
 
   &__content {
     color: $color__white;
+    display: none;
 
     &--active {
       display: block;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__col {
+    margin: 0 ($spacing__sm / 2 );
+
+    .mega-menu__category-item {
+      margin-bottom: $spacing__sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -38,6 +56,18 @@
     overflow: auto;
     transform: translate(100%);
     visibility: hidden;
+
+    &__row {
+      flex-direction: column;
+
+      .mega-menu__col {
+        margin-bottom: $spacing__sm;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   //-----------------------------------
@@ -47,6 +77,13 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.1s ease-in-out;
+
+    &__col {
+
+      &--4 {
+        flex-basis: 25%;
+      }
+    }
   }
 }
 
@@ -58,9 +95,18 @@
   display: flex;
 
   a {
-    color: $color__white;
     text-decoration: none;
     cursor: pointer;
+
+    .dark-theme & {
+      color: $color__white;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__white;
+    }
   }
 
   &__level1-link {

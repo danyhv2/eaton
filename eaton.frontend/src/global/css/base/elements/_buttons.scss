@@ -60,3 +60,11 @@
     }
   }
 }
+
+@include media-mobile-only {
+
+  .b-button {
+    width: 100%;
+  }
+
+}

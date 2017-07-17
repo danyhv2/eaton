@@ -1,0 +1,19 @@
+<sly data-sly-use.data="../data/view-download-list-data.js">
+    <div class="eaton-download-list eaton-download-list--has-desc">
+      <p class="eaton-download-list__headline eyebrow-small">${data.headline}</p>
+
+      <!--/* List Links */-->
+      <ul data-sly-list="${data.items}" class="eaton-download-list__links">
+        <li>
+          <span class="eaton-download-list__description">${item.description}</span>
+          <a href="${item.url}" class="eaton-download-list__item" aria-label="Download ${item.type} for ${ item.title }">
+            <i class="glyphicon glyphicon-download-alt" aria-hidden="true"></i>
+            <div class="eaton-download-list__document">
+                <span class="eaton-download-list__title">${item.title}</span>
+                <span class="eaton-download-list__size">(${item.type} ${item.size})</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+</sly>

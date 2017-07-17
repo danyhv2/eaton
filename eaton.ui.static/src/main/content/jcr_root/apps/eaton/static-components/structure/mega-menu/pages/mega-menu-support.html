@@ -1,4 +1,4 @@
-<div class="mega-menu__content">
+<div class="mega-menu__content" data-target="mega-menu-support">
     <!--/* Include Level 1: Links *-->
     <div class="container">
         <div class="eaton-title">
@@ -17,8 +17,8 @@
     <!--/* Include: Mega Menu Modules */ -->
     <div class="mega-menu__category">
       <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-3">
+          <div class="mega-menu__row">
+            <div class="mega-menu__col mega-menu__col--4">
                 <!--/* Include: Search Box - Inline */ -->
                 <div class="mega-menu__category-item">
                   <sly data-sly-resource="${'search-inline' @ resourceType='/apps/eaton/static-components/content/search-box'}"></sly>
@@ -29,6 +29,14 @@
                   <sly data-sly-resource="${'link-list' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
                 </div>
             </div>
+
+            <div class="mega-menu__col mega-menu__col--4">
+                <!--/* Include: TTIL - Download List with Descriptions */ -->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'download-list-desc' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                </div>
+            </div>
+
           </div>
       </div>
     </div>

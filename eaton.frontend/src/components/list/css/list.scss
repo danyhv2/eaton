@@ -1,6 +1,10 @@
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
+.list-default {
+  font-family: $font-family__primary;
+}
+
 .category__image {
   width: 100%;
   max-height: 361px;
@@ -27,10 +31,37 @@
 
 a {
   color: $color__primary-blue;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    color: $color__primary-blue;
+    text-decoration: none;
+  }
 }
 
-.carousel-buttons a {
-  font-size: 2em;
+.carousel-indicators {
+  position: inherit;
+  margin: 15px auto 0;
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  cursor: inherit;
+  background-color: $color__primary-gray3;
+  border: 0;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.carousel-indicators .active {
+  background-color: $color__primary-blue;
+  width: 15px;
+  height: 15px;
+  margin: 0 4px;
 }
 
 .category__item-innerpadding {
@@ -54,9 +85,9 @@ a {
   min-height: 200px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .carousel__item {
-    min-height: 220px;
+    min-height: 227px;
   }
 
   .card-container--topmargin {
@@ -74,6 +105,10 @@ a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .category-item-date {
+    padding-top: 15px;
+  }
+
   .related-category--tablet-left {
     float: left;
   }
@@ -112,7 +147,7 @@ a {
 
   .category__item,
   .category__image {
-    min-height: 203px;
+    min-height: 263px;
   }
 
   .category__link--font {
