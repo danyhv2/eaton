@@ -14,7 +14,7 @@
                     <view
                         jcr:primaryType="cq:Widget"
                         allowBlank="false"
-                        defaultValue="default"
+                        defaultValue="nofeaturedarticle"
                         fieldDescription="Choose a view"
                         fieldLabel="View"
                         fieldSubLabel=""
@@ -22,10 +22,10 @@
                         type="select"
                         xtype="selection">
                         <options jcr:primaryType="cq:WidgetCollection">
-                            <default
+                            <nofeaturedarticle
                                 jcr:primaryType="nt:unstructured"
-                                text="Default"
-                                value="default"/>
+                                text="No Featured Article"
+                                value="nofeaturedarticle"/>
                         </options>
                     </view>
                 </items>
