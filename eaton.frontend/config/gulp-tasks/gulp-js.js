@@ -3,6 +3,7 @@
 * Gulp Task: Transform Javascript Files
 */
 
+const path = require('path');
 const babel = require('gulp-babel');
 const plumber = require('gulp-plumber');
 const gutil = require('gulp-util');
@@ -24,7 +25,7 @@ const buildJS = function(gulp, CONFIG, bundle) {
     // Build JS
     //--------------
     gulp.src([
-      CONFIG.paths.srcRoot + '/**/*.js'
+      path.resolve(CONFIG.paths.srcRoot) + '/**/*.js'
     ])
       .pipe(plumber())
       .pipe(babel(babelOptions))

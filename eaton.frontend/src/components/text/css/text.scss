@@ -2,8 +2,9 @@
 // Component: Text
 //-----------------------------------
 
-// Import All SASS config files (Variables, Mixins, Functions etc...)
+// Import All SASS config files (Variables, Mixins etc...)
 @import "../../../global/css/_config/sass";
 
 // Import SubViews
-@import 'views/default';
+@import 'views/view-default';
+@import 'views/view-statement';

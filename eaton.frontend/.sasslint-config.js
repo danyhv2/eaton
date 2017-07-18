@@ -7,7 +7,7 @@ module.exports = {
   rules: {
 
     /**
-     * NOTE: Force Errors for most of the rules.
+     * NOTE: Force Errors or Disabled for most of the rules.
      * ------
      * ERROR Level: Severity should be one of the following:
      * 0 = off

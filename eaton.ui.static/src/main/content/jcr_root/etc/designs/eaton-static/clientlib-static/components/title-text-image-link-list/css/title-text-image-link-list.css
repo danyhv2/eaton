@@ -46,7 +46,9 @@
 
 .eaton-title__byline { font-size: 12px; margin-top: 15px; }
 
-.tile-link-component__element { color: #FFF; margin-left: 30px; margin-bottom: 60px; height: 240px; position: relative; width: 31%; padding: 0; }
+.tile-link-component__copy { padding: 60px 0; }
+
+.tile-link-component__element { color: #FFF; margin-left: 30px; margin-bottom: 60px; height: 240px; position: relative; padding: 0; }
 
 .tile-link-component__element:hover { color: #FFF; text-decoration: none; }
 
@@ -62,6 +64,8 @@
 
 .tile-link-component__element--5 { background-color: #333F48; }
 
+.tile-link-component__icon { position: absolute; bottom: 70px; color: #FFF; width: 20%; left: 15px; }
+
 .tile-link-component__image { width: 100%; }
 
 .tile-link-component__title { position: absolute; bottom: 0; width: 100%; margin: 0; padding: 10px 15px; }
@@ -70,4 +74,14 @@
 
 .tile-link-component__arrow { font-size: .75em; }
 
-@media screen and (max-width: 991px) { .tile-link-component__element { margin-left: 0; width: 100%; } }
+@media screen and (max-width: 991px) { .tile-link-component__element { margin-left: 0; } }
+
+@media screen and (max-width: 767px) { .tile-link-component { margin: 0 15px; } }
+
+@media screen and (min-width: 992px) { .tile-link-component__element { width: 31%; } }
+
+.eaton-ttil-list-category-hero { font-family: "Eaton", Arial, sans-serif; }
+
+.category-hero__header-image { width: 100%; height: auto; }
+
+.category-hero__header-content { position: absolute; top: 0; left: 0; }

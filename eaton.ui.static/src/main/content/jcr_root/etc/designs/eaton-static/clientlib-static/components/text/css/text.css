@@ -1,3 +1,5 @@
-.dark-theme .eaton-text-default__content { color: #FFF; }
+.eaton-text-statement__content { padding: 15px 0 15px 30px; border-left: 10px solid #005EB8; font-family: Arial; font-style: italic; color: #98A4AE; margin: 0; }
 
-.dark-theme .eaton-text-default__content h2, .dark-theme .eaton-text-default__content h3, .dark-theme .eaton-text-default__content h4, .dark-theme .eaton-text-default__content h5, .dark-theme .eaton-text-default__content h6 { color: #FFF; }
+@media screen and (max-width: 991px) { .eaton-text-statement__content { font-size: 1em; } }
+
+@media screen and (min-width: 992px) { .eaton-text-statement__content { font-size: 2em; } }

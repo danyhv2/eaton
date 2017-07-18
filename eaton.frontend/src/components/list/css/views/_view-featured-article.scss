@@ -6,6 +6,15 @@
   &-container {
     margin-bottom: 30px;
   }
+
+  &__cta-container {
+    margin-top: 30px;
+    a:hover,
+    a:active,
+    a:focus {
+      color: $color__white;;
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {

@@ -24,21 +24,23 @@
 @media screen and (min-width: 992px) { .mega-menu { opacity: 0; visibility: hidden; -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; }
   .mega-menu__col--4 { -ms-flex-preferred-size: 25%; flex-basis: 25%; } }
 
-.eaton-title { position: relative; padding: 30px 0; font-size: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.mega-menu-title { padding: 30px 0; font-size: 20px; }
 
-.eaton-title a { text-decoration: none; cursor: pointer; }
+.mega-menu-title .container { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; }
 
-.dark-theme .eaton-title a { color: #FFF; }
+.mega-menu-title a { text-decoration: none; cursor: pointer; }
 
-.eaton-title a:hover, .eaton-title a:focus, .eaton-title a:active { color: #FFF; }
+.dark-theme .mega-menu-title a { color: #FFF; }
 
-.eaton-title__level1-link { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.mega-menu-title a:hover, .mega-menu-title a:focus, .mega-menu-title a:active { color: #FFF; }
 
-.eaton-title__close-menu { display: none; }
+.mega-menu-title__level1-link { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-@media screen and (max-width: 991px) { .eaton-title__level1-link .glyphicon-menu-left { display: inline; margin-right: 10px; }
-  .eaton-title__level1-link .glyphicon-menu-right { display: none; } }
+.mega-menu-title__close-menu { display: none; }
 
-@media screen and (min-width: 992px) { .eaton-title__level1-link .glyphicon-menu-left { display: none; }
-  .eaton-title__level1-link .glyphicon-menu-right { display: inline; margin-left: 10px; }
-  .eaton-title__close-menu { display: inline; position: absolute; right: 0; } }
+@media screen and (max-width: 991px) { .mega-menu-title__level1-link .glyphicon-menu-left { display: inline; margin-right: 10px; }
+  .mega-menu-title__level1-link .glyphicon-menu-right { display: none; } }
+
+@media screen and (min-width: 992px) { .mega-menu-title__level1-link .glyphicon-menu-left { display: none; }
+  .mega-menu-title__level1-link .glyphicon-menu-right { display: inline; margin-left: 10px; }
+  .mega-menu-title__close-menu { display: inline; position: absolute; right: 0; } }
