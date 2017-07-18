@@ -1,0 +1,28 @@
+<sly data-sly-use.data="../data/view-vertical-data.js">
+
+  <div class="eaton-link-list-vertical">
+
+    <!--/* If Eyebrow */-->
+    <div data-sly-test="${ data.view.eyebrow }" class="eaton-link-list-vertical__eyebrow eyebrow-small">${ data.view.eyebrow }</div>
+
+    <!--/* List Links */-->
+    <ul
+      data-sly-list="${ data.view.links }"
+      class="eaton-link-list-vertical__list"
+    >
+      <li class="eaton-link-list-vertical__list-item">
+        <a href="${ item.url }"
+          aria-label="Go to ${ item.title }"
+          class="eaton-link-list-vertical__list-link"
+          target="${ item.target }"
+        >
+          <span class="eaton-link-list-vertical__list-text">${ item.title }</span>
+          <i class="eaton-link-list-vertical__list-icon glyphicon glyphicon-menu-right"
+            aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+</sly>
