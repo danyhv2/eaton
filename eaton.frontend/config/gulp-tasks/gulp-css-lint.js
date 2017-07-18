@@ -13,7 +13,7 @@ const lintCSS = function(gulp, CONFIG) {
     // Lint SASS
     //--------------
     gulp.src([
-      path.join(CONFIG.paths.srcRoot, '/**/*.scss')
+      path.resolve(CONFIG.paths.srcRoot) + '/**/*.scss'
 
       // Ignore Vendor Libs
       // '!' + path.join(CONFIG.paths.srcRoot, '/global/css/vendors/**/*.scss'),

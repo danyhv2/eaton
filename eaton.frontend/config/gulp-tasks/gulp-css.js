@@ -3,10 +3,11 @@
 * Gulp Task: Transform SASS to CSS
 */
 
-// const plumber = require('gulp-plumber');
+const path = require('path');
 const sass = require('gulp-sass');
 const sassGlobbing = require('node-sass-globbing');
 const autoprefixer = require('gulp-autoprefixer');
+// const plumber = require('gulp-plumber');
 
 const sassToCSS = function(gulp, CONFIG) {
   return function() {
@@ -14,7 +15,7 @@ const sassToCSS = function(gulp, CONFIG) {
     // SASS to CSS
     //--------------
     gulp.src([
-      CONFIG.paths.srcRoot + '/**/*.scss'
+      path.resolve(CONFIG.paths.srcRoot) + '/**/*.scss'
     ])
       // .pipe(plumber())
       .pipe(sass({
