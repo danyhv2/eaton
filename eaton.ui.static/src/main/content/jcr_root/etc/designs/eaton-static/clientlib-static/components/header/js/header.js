@@ -52,7 +52,7 @@ App.header = function () {
       $megaMenu.find('[data-target="' + activeCategory + '"]').find('a').eq(0).focus();
     });
 
-    $('.eaton-title__close-menu').on('click', function (event) {
+    $('.mega-menu-title__close-menu').on('click', function (event) {
       // Close the mega menu
       event.preventDefault();
       closeNav();
