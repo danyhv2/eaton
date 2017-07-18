@@ -1,5 +1,5 @@
 <sly data-sly-test="${ wcmmode.edit }">
-    <div class="alert alert-warning">List Component - Edit Start</div>
+    <div class="alert alert-warning">List Component</div>
 </sly>
 
 <sly data-sly-test="${properties.view == 'nofeaturedarticle'}">
@@ -8,8 +8,4 @@
 
 <sly data-sly-test="${properties.view == 'featuredarticle'}">
     <sly data-sly-include="views/view-featured-article.html" data-sly-unwrap></sly>
-</sly>
-
-<sly data-sly-test="${ wcmmode.edit }">
-    <div class="alert alert-warning">List Component - Edit End</div>
 </sly>

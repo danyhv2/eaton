@@ -6,6 +6,8 @@
 
 .eaton-social-links__page-link { font-size: 18px; }
 
-.eaton-social-links__page-link, .eaton-social-links__page-link:hover, .eaton-social-links__page-link:active { color: #FFF; }
-
 .eaton-social-links__page-link-icon { font-size: 0.7em; }
+
+.dark-theme .eaton-social-links__eyebrow { color: #FFF; }
+
+.dark-theme .eaton-social-links__page-link, .dark-theme .eaton-social-links__page-link:hover, .dark-theme .eaton-social-links__page-link:active { color: #FFF; }
