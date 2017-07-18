@@ -84,4 +84,10 @@
     }
 
   }
+
+  @include media-mobile-and-tablet {
+    &__results-container {
+      padding: 0;
+    }
+  }
 }
