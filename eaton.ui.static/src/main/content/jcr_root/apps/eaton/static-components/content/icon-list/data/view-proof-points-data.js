@@ -4,12 +4,14 @@ use(function () {
     data.items = [
       {
         relatedText: 'of board represent diverse groups',
-        facts: '25%',
+        facts: '25',
+        factSymbol: '%',
         img: '/content/dam/eaton/images/iconlist/icon-proof-points-1.jpg'
       },
       {
         relatedText: 'reduction of energy consumption',
-        facts: '19%',
+        facts: '19',
+        factSymbol: '%',
         img: '/content/dam/eaton/images/iconlist/icon-proof-points-2.jpg'
       },
       {
