@@ -9,3 +9,35 @@
 .eaton-search-inline__form-submit { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: #FFF; border: 0; color: #005EB8; padding: 10px 20px; }
 
 .dark-theme .eaton-search-inline__headline { color: #FFF; }
+
+.eaton-search-box { background-color: #005EB8; padding: 30px; }
+
+.eaton-search-box__form { position: relative; }
+
+.eaton-search-box__buttons-container { height: 30px; position: absolute; right: 0; top: 5px; }
+
+.eaton-search-box__button-transparent { background: none; border: none; color: #FFF; font-size: 2rem; padding: 0 0 0 30px; position: relative; }
+
+.eaton-search-box__button-transparent:first-child::after { content: ''; background-color: #FFF; position: absolute; height: 20px; width: 1px; right: -19px; top: 3px; }
+
+.eaton-search-box__results-container { display: none; padding: 50px 0 20px; }
+
+.eaton-search-box__result-list { list-style: none; color: white; padding: 0; }
+
+.eaton-search-box__result-item { font-size: 1.9rem; padding: 3px 0; }
+
+.eaton-search-box__input { background: transparent; border: 0; border-bottom: 1px solid #FFF; color: white; display: block; font-size: 2.5rem; font-weight: bold; outline: none; width: 100%; }
+
+.eaton-search-box__input::-webkit-input-placeholder { color: #FFF; }
+
+.eaton-search-box__input:-ms-input-placeholder { color: #FFF; }
+
+.eaton-search-box__input::placeholder { color: #FFF; }
+
+.eaton-search-box__input:focus + .eaton-search-box__results-container { display: block; }
+
+.eaton-search-box__input:focus::-webkit-input-placeholder { color: transparent; }
+
+.eaton-search-box__input:focus:-ms-input-placeholder { color: transparent; }
+
+.eaton-search-box__input:focus::placeholder { color: transparent; }
