@@ -17,7 +17,7 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__content {
-      font-size: 1em;
+      font-size: 2.375em;
     }
   }
 
@@ -26,7 +26,7 @@
   //-----------------------------------
   @include media-desktop-and-up {
     &__content {
-      font-size: 2em;
+      font-size: 1.625em;
     }
   }
 }

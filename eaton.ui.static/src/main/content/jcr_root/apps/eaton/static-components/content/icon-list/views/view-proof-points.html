@@ -1,25 +1,19 @@
-<sly data-sly-use.data="../data/view-proof-points.js">
+<sly data-sly-use.data="../data/view-proof-points-data.js">
 
   <div class="icon-list-proof-points">
-
-    <!--/* List Links */-->
-    <ul
-      data-sly-list="${ data.view.links }"
-      class="eaton-link-list-vertical__list"
-    >
-      <li class="eaton-link-list-vertical__list-item">
-        <a href="${ item.url }"
-          aria-label="Go to ${ item.title }"
-          class="eaton-link-list-vertical__list-link"
-          target="${ item.target }"
-        >
-          <span class="eaton-link-list-vertical__list-text">${ item.title }</span>
-          <i class="eaton-link-list-vertical__list-icon glyphicon glyphicon-menu-right"
-            aria-hidden="true"></i>
-        </a>
-      </li>
-    </ul>
-
+    <div class="container">
+      <div class="row">
+          <!--/* Icon List */-->
+          <div data-sly-list="${ data.items }">
+            <div class="col-xs-12 col-md-4 icon-list-proof-points__item">
+              <img src="${item.img}" alt="${item.facts} ${item.relatedText}" />
+              <div class="icon-list-proof-points__content">
+                <div class="icon-list-proof-points__facts">${item.facts}</div>
+                <div class="icon-list-proof-points__related">${item.relatedText}</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
   </div>
-
 </sly>
