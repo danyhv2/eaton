@@ -1,7 +1,5 @@
 @media screen and (max-width: 991px) { .mega-menu .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; } }
 
-.container-full { height: 2000px; background: beige; }
-
 .mega-menu { background: #333F48; position: absolute; width: 100%; z-index: 2; }
 
 .mega-menu__content { color: #FFF; display: none; }
@@ -23,12 +21,16 @@
   .mega-menu__row .mega-menu__col { margin-bottom: 30px; }
   .mega-menu__row .mega-menu__col:last-child { margin-bottom: 0; } }
 
-@media screen and (min-width: 992px) { .mega-menu { -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; }
+@media screen and (min-width: 992px) { .mega-menu { opacity: 0; visibility: hidden; -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; }
   .mega-menu__col--4 { -ms-flex-preferred-size: 25%; flex-basis: 25%; } }
 
 .eaton-title { position: relative; padding: 30px 0; font-size: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.eaton-title a { color: #FFF; text-decoration: none; cursor: pointer; }
+.eaton-title a { text-decoration: none; cursor: pointer; }
+
+.dark-theme .eaton-title a { color: #FFF; }
+
+.eaton-title a:hover, .eaton-title a:focus, .eaton-title a:active { color: #FFF; }
 
 .eaton-title__level1-link { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 

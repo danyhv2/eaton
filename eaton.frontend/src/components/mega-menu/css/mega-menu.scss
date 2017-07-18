@@ -8,11 +8,6 @@
 // Import Overrides
 @import "mega-menu-modules";
 
-.container-full {
-  height: 2000px;
-  background: beige;
-}
-
 .mega-menu {
   background: $color__primary-gray1;
   position: absolute;
@@ -79,8 +74,8 @@
   // Desktop Breakpoint
   //-----------------------------------
   @include media-desktop-and-up {
-    // opacity: 0;
-    // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     transition: opacity 0.1s ease-in-out;
 
     &__col {
@@ -100,9 +95,18 @@
   display: flex;
 
   a {
-    color: $color__white;
     text-decoration: none;
     cursor: pointer;
+
+    .dark-theme & {
+      color: $color__white;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__white;
+    }
   }
 
   &__level1-link {
