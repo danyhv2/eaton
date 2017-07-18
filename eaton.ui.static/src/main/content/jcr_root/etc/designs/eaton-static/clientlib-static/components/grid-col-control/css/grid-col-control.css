@@ -1,3 +1,4 @@
-.eaton-grid-control { position: relative; }
+.eaton-grid-control { position: relative; margin: 30px 0; }
 
-@media screen and (max-width: 991px) { .eaton-grid-control__column { margin-top: 30px; } }
+@media screen and (max-width: 991px) { .eaton-grid-control__column { margin-bottom: 30px; }
+  .eaton-grid-control__column:last-child { margin-bottom: 0; } }
