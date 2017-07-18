@@ -27,7 +27,6 @@
 }
 
 .eaton-list-component a {
-  color: $color__primary-blue;
   text-decoration: none;
 
   &:hover,
@@ -42,7 +41,7 @@
 .eaton-list-component {
   & .carousel-indicators {
     position: inherit;
-    margin: 15px auto 0;
+    margin: 40px auto 0;
   }
 
   & .carousel-indicators li {
