@@ -4,6 +4,8 @@
 
 .carousel-component-slide__cta { margin-top: 60px; }
 
+.carousel-component-slide__image { width: 100%; }
+
 .carousel-component-slide__text { margin-top: 20px; }
 
 .carousel-component-slide__title { font-size: 3.25em; line-height: 1.192em; margin: 0; }
