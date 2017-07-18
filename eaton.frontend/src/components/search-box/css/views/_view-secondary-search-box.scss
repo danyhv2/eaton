@@ -1,0 +1,43 @@
+//-----------------------------------
+// SearchBox Component: Inline View
+//-----------------------------------
+
+.eaton-search-box {
+  background-color: $color__primary-blue;
+  padding: $spacing__sm;
+
+  &__form {
+    position: relative;
+  }
+
+  &__buttons-container {
+    height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
+  &__button-transparent {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0 11px 0;
+  }
+
+  &__input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 100%;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+}

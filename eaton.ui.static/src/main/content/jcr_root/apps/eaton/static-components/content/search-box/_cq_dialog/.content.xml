@@ -41,6 +41,10 @@
                     jcr:primaryType="nt:unstructured"
                     text="Primary Navigation View"
                     value="primary-nav"/>
+                  <searchBox
+                    jcr:primaryType="nt:unstructured"
+                    text="Search box"
+                    value="search-box"/>
                 </items>
               </view>
             </items>
