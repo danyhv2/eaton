@@ -52,6 +52,10 @@
   &__result-item {
     font-size: 1.9rem;
     padding: 3px 0;
+
+    a {
+      color: $color__white;
+    }
   }
 
   &__input {
@@ -69,7 +73,7 @@
       color: $color__white;
     }
 
-    &:focus {
+    &:valid {
       & + .eaton-search-box__results-container {
         display: block;
       }

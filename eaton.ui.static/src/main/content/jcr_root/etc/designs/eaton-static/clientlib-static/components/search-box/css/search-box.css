@@ -26,6 +26,8 @@
 
 .eaton-search-box__result-item { font-size: 1.9rem; padding: 3px 0; }
 
+.eaton-search-box__result-item a { color: #FFF; }
+
 .eaton-search-box__input { background: transparent; border: 0; border-bottom: 1px solid #FFF; color: white; display: block; font-size: 2.5rem; font-weight: bold; outline: none; width: 100%; }
 
 .eaton-search-box__input::-webkit-input-placeholder { color: #FFF; }
@@ -34,10 +36,10 @@
 
 .eaton-search-box__input::placeholder { color: #FFF; }
 
-.eaton-search-box__input:focus + .eaton-search-box__results-container { display: block; }
+.eaton-search-box__input:valid + .eaton-search-box__results-container { display: block; }
 
-.eaton-search-box__input:focus::-webkit-input-placeholder { color: transparent; }
+.eaton-search-box__input:valid::-webkit-input-placeholder { color: transparent; }
 
-.eaton-search-box__input:focus:-ms-input-placeholder { color: transparent; }
+.eaton-search-box__input:valid:-ms-input-placeholder { color: transparent; }
 
-.eaton-search-box__input:focus::placeholder { color: transparent; }
+.eaton-search-box__input:valid::placeholder { color: transparent; }

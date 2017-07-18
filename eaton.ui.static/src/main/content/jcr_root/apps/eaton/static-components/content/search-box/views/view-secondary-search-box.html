@@ -5,14 +5,15 @@
       <div class="row">
         <form action="/search" class="eaton-search-box__form">
           <input type="text" name="q"
+            required="required"
+            pattern=".{3,}"
             placeholder="${ data.form.placeholder }"
             class="eaton-search-box__input" >
 
           <div class="eaton-search-box__results-container">
-            <ul class="eaton-search-box__result-list" >
-              <li class="eaton-search-box__result-item">Hola</li>
-              <li class="eaton-search-box__result-item">Hola</li>
-              <li class="eaton-search-box__result-item">Hola</li>
+            <ul data-sly-list="${ data.results }" class="eaton-search-box__result-list" >
+              <li class="eaton-search-box__result-item">
+                <a href="${ item.href }">${ item.title }</a>
             </ul>
           </div>
 
