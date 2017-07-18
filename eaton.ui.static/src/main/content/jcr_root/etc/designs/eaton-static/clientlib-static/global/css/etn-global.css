@@ -119,6 +119,6 @@ h5__link, .heading-h5__link { font-size: 2.4rem; font-weight: bold; }
 
 .b-list--no-bullets { list-style-type: none; padding-left: 0; }
 
-.dark-theme .rich-text-container__content { color: #FFF; }
+.dark-theme .rich-text-container { color: #FFF; }
 
-.dark-theme .rich-text-container__content h2, .dark-theme .rich-text-container__content h3, .dark-theme .rich-text-container__content h4, .dark-theme .rich-text-container__content h5, .dark-theme .rich-text-container__content h6 { color: #FFF; }
+.dark-theme .rich-text-container h2, .dark-theme .rich-text-container h3, .dark-theme .rich-text-container h4, .dark-theme .rich-text-container h5, .dark-theme .rich-text-container h6 { color: #FFF; }
