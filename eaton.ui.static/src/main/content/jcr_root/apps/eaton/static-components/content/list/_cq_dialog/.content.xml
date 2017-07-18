@@ -31,10 +31,10 @@
                                 fieldLabel="View"
                                 name="./view">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <default
+                                    <nofeaturedarticle
                                         jcr:primaryType="nt:unstructured"
-                                        text="Default"
-                                        value="default"/>
+                                        text="No Featured Article"
+                                        value="nofeaturedarticle"/>
                                 </items>
                             </view>
                         </items>

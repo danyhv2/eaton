@@ -107,6 +107,7 @@ a {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .category-item-date {
     padding-top: 15px;
+    color: $color__primary-gray1;
   }
 
   .related-category--tablet-left {
@@ -122,22 +123,14 @@ a {
     background-color: $color__white;
   }
 
-  .col-sm-10 {
+  .equal-height-row  {
     margin-bottom: 30px;
-
-    > div {
-      width: 50%;
-      display: inline-block;
-    }
-  }
-
-  .equal-height-row {
     display: flex;
     flex-wrap: wrap;
 
     > div {
-      display: flex;
-      flex-direction: column;
+      width: 50%;
+      display: inline-block;
     }
   }
 
@@ -155,8 +148,14 @@ a {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .category__item {
+    min-height: 328px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .category__item {
     min-height: 260px;
-  }
+  }  
 }

@@ -1,40 +1,46 @@
-<sly data-sly-use.data="../data/view-default-data.js">
+<sly data-sly-use.data="../data/view-default-3-column-data.js">
 
     <div class="list-default container-fluid">
     
         <!--/* Desktop/Tablet Layout */-->
-        <div class="row hidden-xs visible-sm visible-md visible-lg card-container--topmargin" data-sly-list.slider="${data}" role="listbox">
-            <div class="col-sm-10 col-sm-offset-1 col-md-4 equal-height-row ${sliderList.index == 0 ? 'col-md-offset-2' : 'col-md-offset-0'}">
-                <div class="related-category--tablet-left">
-                    <img src="${slider.image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
-                </div>
-                <div class="category__item--border category__item-innerpadding related-category--tablet-right category__item">
-                    <div class="related-category__title--font category__title--bottompadding">${slider.title}</div>
-                    <div>
-                        <a class="category__link--font" href="${slider.link_url}">${slider.link_text}</a>
-                    </div>
-                    <p class="visible-sm category-item-date"><em>${slider.date_text}</em></p>
+        <div class="row hidden-xs visible-sm visible-md visible-lg card-container--topmargin">
+
+            <sly sly data-sly-test.colMDoffSet="${data.cards.length == 2 ? 'col-md-offset-2' : ''}" />
+
+            <div class="col-sm-10 col-sm-offset-1 ${colMDoffSet}" data-sly-list.slider="${data.cards}" role="listbox">
+                <div class="col-sm-12 ${data.cards.length == 2 ? 'col-md-5' : 'col-md-4'}">
+                    <a href="${slider.link_url}" class="equal-height-row tablet-card">
+                        <div class="related-category--tablet-left">
+                            <img src="${slider.image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
+                        </div>
+                        <div class="category__item--border category__item-innerpadding related-category--tablet-right category__item">
+                            <div class="related-category__title--font category__title--bottompadding">${slider.title}</div>
+                            <div class="category__link--font">${slider.link_text}</div>
+                            <p class="visible-sm category-item-date"><em>${slider.date_text}</em></p>
+                        </div>
+                    </a>
                 </div>
             </div>
+
         </div>
 
         <!--/* Mobile slider */-->
         <div class="row visible-xs card-container--topmargin">
             <div class="col-xs-10 col-xs-offset-1">
                 <div class="default-view-carousel-component carousel slide">
-                    <div class="carousel-inner" data-sly-list.slider="${data}" role="listbox">
-                        <div class="item ${sliderList.index == 0 ? 'active' : ''}">
-                            <img src="${slider.mobile_image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
-                            <div class="category__item--border category__item-innerpadding carousel__item">
-                                <div class="related-category__title--font category__title--bottompadding">${slider.title}</div>
-                                <h5>
-                                    <a class="category__link--font" href="${slider.link_url}">${slider.link_text}</a>
-                                </h5>
+                    <div class="carousel-inner" data-sly-list.slider="${data.cards}" role="listbox">
+                        <a href="${slider.link_url}" class="item ${sliderList.index == 0 ? 'active' : ''}">
+                            <div>
+                                <img src="${slider.mobile_image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
+                                <div class="category__item--border category__item-innerpadding carousel__item">
+                                    <div class="related-category__title--font category__title--bottompadding">${slider.title}</div>
+                                    <h5 class="category__link--font">${slider.link_text}</h5>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="text-center">
-                        <ol class="carousel-indicators list-unstyled" data-sly-list.slider1="${data}">
+                        <ol class="carousel-indicators list-unstyled" data-sly-list.slider1="${data.cards}">
                             <li data-target=".default-view-carousel-component" data-slide-to="${slider1List.index}" class="${slider1List.index == 0 ? 'active' : ''}">
                                 <span class="sr-only">${slider1List.index}</span>
                             </li>
