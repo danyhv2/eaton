@@ -3,6 +3,7 @@
 * Gulp Task: Transform SASS to CSS
 */
 
+// const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
 const sassGlobbing = require('node-sass-globbing');
 const autoprefixer = require('gulp-autoprefixer');
@@ -15,6 +16,7 @@ const sassToCSS = function(gulp, CONFIG) {
     gulp.src([
       CONFIG.paths.srcRoot + '/**/*.scss'
     ])
+      // .pipe(plumber())
       .pipe(sass({
         includePaths: [
           'node_modules'
