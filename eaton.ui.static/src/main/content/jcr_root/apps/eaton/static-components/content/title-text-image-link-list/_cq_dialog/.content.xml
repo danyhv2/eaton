@@ -45,6 +45,10 @@
                     jcr:primaryType="nt:unstructured"
                     text="Product Overview"
                     value="product-overview"/>
+                  <category-hero
+                    jcr:primaryType="nt:unstructured"
+                    text="Category Hero"
+                    value="category-hero"/>
                 </items>
               </view>
             </items>

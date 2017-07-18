@@ -38,6 +38,10 @@
                 jcr:primaryType="nt:unstructured"
                 text="Tile Link"
                 value="tile-link"/>
+              <category-hero
+                jcr:primaryType="nt:unstructured"
+                text="Category Hero"
+                value="category-hero"/>
             </options>
           </view>
         </items>

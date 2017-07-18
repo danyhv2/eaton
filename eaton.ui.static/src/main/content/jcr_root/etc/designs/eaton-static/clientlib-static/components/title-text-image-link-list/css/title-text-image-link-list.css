@@ -73,3 +73,5 @@
 @media screen and (max-width: 991px) { .tile-link-component__element { margin-left: 0; } }
 
 @media screen and (min-width: 992px) { .tile-link-component__element { width: 31%; } }
+
+.eaton-ttil-list-category-hero { font-family: "Eaton", Arial, sans-serif; }
