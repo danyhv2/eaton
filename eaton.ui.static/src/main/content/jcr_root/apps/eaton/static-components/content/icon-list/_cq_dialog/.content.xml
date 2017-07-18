@@ -33,18 +33,10 @@
                 fieldDescription="Determine which variation of component to view"
                 name="./view">
                 <items jcr:primaryType="nt:unstructured">
-                  <inline
+                  <proofPoints
                     jcr:primaryType="nt:unstructured"
-                    text="Inline View"
-                    value="inline"/>
-                  <primaryNav
-                    jcr:primaryType="nt:unstructured"
-                    text="Primary Navigation View"
-                    value="primary-nav"/>
-                  <searchBox
-                    jcr:primaryType="nt:unstructured"
-                    text="Search box"
-                    value="search-box"/>
+                    text="Proof Points"
+                    value="proof-points"/>
                 </items>
               </view>
             </items>

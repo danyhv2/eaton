@@ -32,6 +32,11 @@
       display: block;
       padding: 20px 0;
       font-size: 1.8rem;
+
+
+      &:first-child {
+        padding-left: 0;
+      }
     }
   }
 

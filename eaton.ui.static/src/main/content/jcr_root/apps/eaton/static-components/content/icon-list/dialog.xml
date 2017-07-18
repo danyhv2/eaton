@@ -14,7 +14,7 @@
           <view
             jcr:primaryType="cq:Widget"
             allowBlank="false"
-            defaultValue="is-half"
+            defaultValue="proof-points"
             fieldDescription="Determine which variation of component to view"
             fieldLabel="View"
             fieldSubLabel=""
@@ -22,18 +22,10 @@
             type="select"
             xtype="selection">
             <options jcr:primaryType="cq:WidgetCollection">
-              <colEqualWidth
+              <proofPoints
                 jcr:primaryType="nt:unstructured"
-                text="Column Default (6/6)"
-                value="is-half"/>
-              <colSevenFive
-                jcr:primaryType="nt:unstructured"
-                text="Column (7/5)"
-                value="is-7"/>
-              <colTwoThird
-                  jcr:primaryType="nt:unstructured"
-                  text="Column (8/4)"
-                  value="is-two-third"/>
+                text="Proof Points"
+                value="proof-points"/>
             </options>
           </view>
         </items>
