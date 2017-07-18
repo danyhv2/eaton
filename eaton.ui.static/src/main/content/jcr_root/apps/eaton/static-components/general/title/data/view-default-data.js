@@ -3,7 +3,7 @@ use(function () {
 
   var data = {};
 
-  data.eyebrow = 'About Eaton';
+  data.headline = 'Title Component';
 
   return data;
 });

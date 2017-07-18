@@ -1,16 +1,16 @@
 <sly data-sly-test="${ wcmmode.edit }">
-    <div class="alert alert-warning">TTIL List</div>
+    <div class="alert alert-warning">TTIL List Component</div>
 </sly>
 
-<div data-sly-test="${properties.view == 'landing-hero'}">
+<sly data-sly-test="${properties.view == 'landing-hero'}">
     <sly data-sly-include="views/view-landing-hero.html"></sly>
-</div>
-<div data-sly-test="${properties.view == 'featured-story'}">
+</sly>
+<sly data-sly-test="${properties.view == 'featured-story'}">
     <sly data-sly-include="views/view-featured-story.html"></sly>
-</div>
-<div data-sly-test="${properties.view == 'product-overview'}">
+</sly>
+<sly data-sly-test="${properties.view == 'product-overview'}">
     <sly data-sly-include="views/view-product-overview.html"></sly>
-</div>
-<div data-sly-test="${properties.view == 'tile-link'}">
+</sly>
+<sly data-sly-test="${properties.view == 'tile-link'}">
     <sly data-sly-include="views/view-tile-links.html"></sly>
-</div>
+</sly>
