@@ -12,7 +12,9 @@
 
 @media screen and (min-width: 992px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; } }
 
-.eaton-link-list-horizontal__list { margin: 0; padding: 0; }
+.eaton-link-list-horizontal__eyebrow { text-transform: uppercase; }
+
+.eaton-link-list-horizontal__list { margin: 0; padding: 0; list-style-type: none; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-horizontal__list-item { padding: 0; width: 100%; } }
 
@@ -69,5 +71,5 @@
   .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; margin: 0 20px; display: block; padding: 20px 0; font-size: 1.8rem; } }
 
 @media screen and (min-width: 992px) { .eaton-link-list-section-navigation .container { position: relative; }
-  .eaton-link-list-section-navigation .container:after { background: #333F48; bottom: 0px; height: 1px; left: 0; position: absolute; width: 100%; }
+  .eaton-link-list-section-navigation .container:after { background: #5B6770; bottom: 0px; height: 1px; left: 0; position: absolute; width: 100%; }
   .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #FFF; border-right: 1px solid #FFF; display: inline-block; float: left; padding: 20px 30px; } }

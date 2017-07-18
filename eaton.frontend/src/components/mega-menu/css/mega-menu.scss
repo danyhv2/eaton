@@ -87,12 +87,15 @@
   }
 }
 
-// Move to Title View
-.eaton-title {
-  position: relative;
+// Mega Menu Title
+.mega-menu-title {
   padding: 30px 0;
   font-size: 20px;
-  display: flex;
+
+  .container {
+    display: flex;
+    position: relative;
+  }
 
   a {
     text-decoration: none;

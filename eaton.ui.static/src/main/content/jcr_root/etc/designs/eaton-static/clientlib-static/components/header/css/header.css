@@ -13,9 +13,7 @@
 
 .header-primary-nav .row { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.header-primary-nav__links a:hover, .header-primary-nav__links a:focus { text-decoration: none; }
-
-.header-primary-nav__links i { font-size: 20px; }
+.header-primary-nav__links i { font-size: 20px; color: #005EB8; }
 
 @media screen and (max-width: 991px) { .header-primary-nav__links { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .header-primary-nav__open-search, .header-primary-nav__open-mobile-menu { display: inline-block; padding: 30px; } }
@@ -23,6 +21,7 @@
 @media screen and (min-width: 992px) { .header-primary-nav__menu { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; position: relative; }
   .header-primary-nav__menu::after { content: ''; height: 30px; width: 1px; background: #98A4AE; position: absolute; top: 36px; right: 0; }
   .eaton-header--fixed .header-primary-nav__menu::after { top: 26px; right: 7px; }
+  .header-primary-nav__links i { top: -5px; }
   .header-primary-nav__open-search { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; height: 90px; padding: 30px; margin-top: 10px; }
   .eaton-header--fixed .header-primary-nav__open-search { height: 70px; padding: 20px; }
   .header-primary-nav__open-mobile-menu { display: none; } }
@@ -32,7 +31,7 @@
 @media screen and (max-width: 991px) { .eaton-header .eaton-logo { margin: 20px 30px 20px 15px; } }
 
 @media screen and (min-width: 992px) { .eaton-header .eaton-logo { margin: 20px 15px 16px; }
-  .eaton-header--fixed { position: fixed; width: 100%; z-index: 20; }
+  .eaton-header--fixed { position: fixed; width: 100%; z-index: 20; top: 0; }
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
   .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; } }
 
@@ -42,6 +41,6 @@
 
 @media screen and (min-width: 992px) { .nav-open.level-2-open .mega-menu { visibility: visible; opacity: 1; overflow-y: auto; height: 400px; } }
 
-.aem-AuthorLayer-Edit .eaton-header .mega-menu { visibility: visible !important; opacity: 1 !important; }
+.aem-AuthorLayer-Edit .eaton-header .mega-menu { position: relative !important; visibility: visible !important; opacity: 1 !important; }
 
 .aem-AuthorLayer-Edit .eaton-header .mega-menu__content { display: block !important; }

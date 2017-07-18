@@ -7,7 +7,7 @@ module.exports = {
   rules: {
 
     /**
-     * NOTE: Force Errors for most of the rules.
+     * NOTE: Force Errors or Disabled for most of the rules.
      * ------
      * ERROR Level: Severity should be one of the following:
      * 0 = off
@@ -21,7 +21,7 @@ module.exports = {
     'empty-line-between-blocks': 2,
     'final-newline': 2,
     'force-element-nesting': 0,
-    'force-pseudo-nesting': 2,
+    'force-pseudo-nesting': 0,
     'hex-notation': 0,
     'indentation': [ 2, { size: 2 } ],
     'leading-zero': [ 2, { include: true } ],
@@ -33,11 +33,13 @@ module.exports = {
     'no-empty-rulesets': 0, // Disabled since empty selectors are used for future reference, and the are no compiled by SASS
     'no-ids': 2,
     'no-important': 1,
+    'no-trailing-whitespace': 2,
     'no-trailing-zero': 2,
     'no-vendor-prefixes': 2,
     'pseudo-element': 2,
     'property-sort-order': 0,
     'quotes': 0,
+    'space-before-brace': 2,
     'trailing-semicolon': 2,
     'variable-name-format': [ 2, { 'allow-leading-underscore': true, 'convention': 'hyphenatedbem' } ],
     'zero-unit': 2

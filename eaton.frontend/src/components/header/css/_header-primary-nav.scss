@@ -14,15 +14,9 @@ $primary-nav-border: #EEF0F2;
   }
 
   &__links {
-    a {
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
-    }
-
     i {
       font-size: 20px;
+      color: $color__primary-blue;
     }
   }
 
@@ -67,6 +61,12 @@ $primary-nav-border: #EEF0F2;
           top: 26px;
           right: 7px;
         }
+      }
+    }
+
+    &__links {
+      i {
+        top: -5px;
       }
     }
 
