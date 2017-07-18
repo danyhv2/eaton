@@ -1,0 +1,50 @@
+.feature-block-component {
+
+  &__container {
+    height: 600px;
+  }
+
+  &__copy {
+    height: 100%;
+    color: $color__white;
+  }
+
+  &__text {
+    padding: 60px 60px 60px 120px;
+  }
+
+  &__image {
+    height: 100%;
+  }
+
+  &__cta {
+    margin-top: 60px;
+  }
+}
+
+@include media-mobile-only {
+  .feature-block-component {
+    
+    &__container {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__text {
+      padding: 0;
+    }
+    &__copy {
+      order: 1;
+    }
+  }
+}
+
+@include media-tablet-only {
+  .feature-block-component {
+
+    &__container {
+      height: 400px;
+    }
+  }
+}
