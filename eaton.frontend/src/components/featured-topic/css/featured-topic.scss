@@ -8,13 +8,17 @@
   padding-top: $spacing__xl;
   padding-bottom: $spacing__xl;
 
-  // &__title {
-  //   margin-bottom: $spacing__sm;
-  // }
-  //
-  // &__paragraph {
-  //   margin-bottom: $spacing__md;
-  // }
+  .glyphicon {
+    display: none;
+  }
+
+  .eaton-link-list-vertical__list-link {
+    font-weight: bold; 
+  }
+
+  &__text {
+    margin-bottom: $spacing__md;
+  }
 
   &__button-container {
     margin-top: $spacing__md;
