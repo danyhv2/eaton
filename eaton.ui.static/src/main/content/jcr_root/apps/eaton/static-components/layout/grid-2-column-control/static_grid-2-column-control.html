@@ -1,0 +1,27 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Grid 2-Column-Control Component</div>
+</sly>
+
+
+<div class="eaton-grid-2-column-control">
+  <div class="container">
+    <div class="row">
+      <!--/* Include Column One */-->
+      <div class="col-xs-12
+        ${properties.view === 'is-half' ? 'col-md-6' : 'col-md-12'}
+        ${properties.view === 'is-7' ? 'col-md-7' : 'col-md-12'}
+        ${properties.view === 'is-two-third' ? 'col-md-8' : 'col-md-12'}">
+          Column One
+      </div>
+
+      <!--/* Include Column Two */-->
+      <div class="col-xs-12
+        ${properties.view === 'is-half' ? 'col-md-6' : 'col-md-12'}
+        ${properties.view === 'is-7' ? 'col-md-5' : 'col-md-12'}
+        ${properties.view === 'is-two-third' ? 'col-md-4' : 'col-md-12'}">
+          Column Two
+      </div>
+
+    </div>
+  </div>
+</div>
