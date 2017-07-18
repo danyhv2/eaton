@@ -1,0 +1,3 @@
+.eaton-grid-control { position: relative; }
+
+@media screen and (max-width: 991px) { .eaton-grid-control__column { margin-top: 30px; } }
