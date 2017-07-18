@@ -2,41 +2,5 @@
 // Component: Text - View: Default
 //-----------------------------------
 .eaton-text-default {
-
-
-
-  // Over DARK-Background
-  //--------------
-  .dark-theme & {
-
-    &__content {
-      color: $color__white;
-
-      // Headings
-      //--------------
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        color: $color__white;
-      }
-
-      // Ordered Lists
-      //--------------
-      ol {
-
-      }
-
-      // Unordered lists
-      //--------------
-      ul {
-
-      }
-
-
-
-
-    }
-  }
+  
 }
