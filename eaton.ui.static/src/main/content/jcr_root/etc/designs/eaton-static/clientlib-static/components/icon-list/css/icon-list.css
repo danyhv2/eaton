@@ -6,16 +6,13 @@
 
 .icon-list-proof-points__content { padding-left: 40px; }
 
-.icon-list-proof-points__facts { color: #00B2A9; font-weight: bold; line-height: 1; margin-left: -3px; display: inline-block; }
+.icon-list-proof-points__facts { color: #00B2A9; font-weight: bold; line-height: 1; margin-left: -3px; display: inline-block; font-size: 100px; }
 
-.icon-list-proof-points__symbol { color: #00B2A9; font-weight: bold; position: relative; top: -20px; right: 0; display: inline-block; }
+.icon-list-proof-points__symbol { color: #00B2A9; font-weight: bold; position: relative; right: 0; display: inline-block; font-size: 50px; top: -30px; }
 
-@media screen and (max-width: 991px) { .icon-list-proof-points__item { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 90px; }
-  .icon-list-proof-points__image { width: 150px; }
-  .icon-list-proof-points__content { padding-left: 80px; }
-  .icon-list-proof-points__facts { font-size: 100px; }
-  .icon-list-proof-points__symbol { font-size: 50px; top: -30px; }
-  .icon-list-proof-points__related { font-size: 36px; } }
+.icon-list-proof-points__related { font-size: 29px; }
+
+@media screen and (max-width: 991px) { .icon-list-proof-points__item { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 90px; } }
 
 @media screen and (min-width: 992px) { .icon-list-proof-points__facts { font-size: 75px; }
   .icon-list-proof-points__symbol { font-size: 45px; top: -20px; }

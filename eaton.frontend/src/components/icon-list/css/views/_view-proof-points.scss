@@ -28,16 +28,21 @@
     line-height: 1;
     margin-left: -3px;
     display: inline-block;
+    font-size: 100px;
   }
 
   &__symbol {
     color: $color__accent-aqua;
-
     font-weight: bold;
     position: relative;
-    top: -20px;
     right: 0;
     display: inline-block;
+    font-size: 50px;
+    top: -30px;
+  }
+
+  &__related {
+    font-size: 29px;
   }
 
   //-----------------------------------
@@ -49,26 +54,26 @@
       margin-bottom: ($spacing__sm * 3);
     }
 
-    &__image {
-      width: 150px;
-    }
+    // &__image {
+    //   width: 150px;
+    // }
 
-    &__content {
-      padding-left: 80px;
-    }
+    // &__content {
+    //   padding-left: 80px;
+    // }
+    //
+    // &__facts {
+    //   font-size: 100px;
+    // }
 
-    &__facts {
-      font-size: 100px;
-    }
+    // &__symbol {
+    //   font-size: 50px;
+    //   top: -30px;
+    // }
 
-    &__symbol {
-      font-size: 50px;
-      top: -30px;
-    }
-
-    &__related {
-      font-size: 36px;
-    }
+    // &__related {
+    //   font-size: 36px;
+    // }
   }
 
   //-----------------------------------
