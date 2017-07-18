@@ -1,0 +1,11 @@
+//-----------------------------------
+// Component M-22: Quote
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.eaton-quote {
+  padding: $spacing__md 0;
+}

@@ -35,6 +35,10 @@
                                         jcr:primaryType="nt:unstructured"
                                         text="No Featured Article"
                                         value="nofeaturedarticle"/>
+                                    <featuredarticle
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Featured Article"
+                                        value="featuredarticle"/>
                                 </items>
                             </view>
                         </items>
