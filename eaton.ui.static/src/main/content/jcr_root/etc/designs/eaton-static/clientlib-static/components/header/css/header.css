@@ -13,9 +13,7 @@
 
 .header-primary-nav .row { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.header-primary-nav__links a:hover, .header-primary-nav__links a:focus { text-decoration: none; }
-
-.header-primary-nav__links i { font-size: 20px; }
+.header-primary-nav__links i { font-size: 20px; color: #005EB8; }
 
 @media screen and (max-width: 991px) { .header-primary-nav__links { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .header-primary-nav__open-search, .header-primary-nav__open-mobile-menu { display: inline-block; padding: 30px; } }
@@ -23,6 +21,7 @@
 @media screen and (min-width: 992px) { .header-primary-nav__menu { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; position: relative; }
   .header-primary-nav__menu::after { content: ''; height: 30px; width: 1px; background: #98A4AE; position: absolute; top: 36px; right: 0; }
   .eaton-header--fixed .header-primary-nav__menu::after { top: 26px; right: 7px; }
+  .header-primary-nav__links i { top: -5px; }
   .header-primary-nav__open-search { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; height: 90px; padding: 30px; margin-top: 10px; }
   .eaton-header--fixed .header-primary-nav__open-search { height: 70px; padding: 20px; }
   .header-primary-nav__open-mobile-menu { display: none; } }

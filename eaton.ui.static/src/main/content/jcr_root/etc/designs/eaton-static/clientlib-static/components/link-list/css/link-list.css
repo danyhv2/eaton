@@ -69,5 +69,5 @@
   .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; margin: 0 20px; display: block; padding: 20px 0; font-size: 1.8rem; } }
 
 @media screen and (min-width: 992px) { .eaton-link-list-section-navigation .container { position: relative; }
-  .eaton-link-list-section-navigation .container:after { background: #333F48; bottom: 0px; height: 1px; left: 0; position: absolute; width: 100%; }
+  .eaton-link-list-section-navigation .container:after { background: #5B6770; bottom: 0px; height: 1px; left: 0; position: absolute; width: 100%; }
   .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #FFF; border-right: 1px solid #FFF; display: inline-block; float: left; padding: 20px 30px; } }
