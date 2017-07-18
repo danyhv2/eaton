@@ -31,7 +31,7 @@
 @media screen and (max-width: 991px) { .eaton-header .eaton-logo { margin: 20px 30px 20px 15px; } }
 
 @media screen and (min-width: 992px) { .eaton-header .eaton-logo { margin: 20px 15px 16px; }
-  .eaton-header--fixed { position: fixed; width: 100%; z-index: 20; }
+  .eaton-header--fixed { position: fixed; width: 100%; z-index: 20; top: 0; }
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
   .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; } }
 
