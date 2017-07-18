@@ -1,3 +1,14 @@
 .eaton-ttil-list-category-hero {
   font-family: $font-family__primary;
 }
+
+.category-hero__header-image {
+  width: 100%;
+  height: auto;
+}
+
+.category-hero__header-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

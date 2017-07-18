@@ -12,11 +12,11 @@
 
 .eaton-list-component a:hover, .eaton-list-component a:active, .eaton-list-component a:visited, .eaton-list-component a:focus { color: #005EB8; text-decoration: none; }
 
-.carousel-indicators { position: inherit; margin: 15px auto 0; }
+.eaton-list-component .carousel-indicators { position: inherit; margin: 15px auto 0; }
 
-.carousel-indicators li { width: 15px; height: 15px; cursor: inherit; background-color: #98A4AE; border: 0; border-radius: 50%; margin: 0 4px; }
+.eaton-list-component .carousel-indicators li { width: 15px; height: 15px; cursor: inherit; background-color: #98A4AE; border: 0; border-radius: 50%; margin: 0 4px; }
 
-.carousel-indicators .active { background-color: #005EB8; width: 15px; height: 15px; margin: 0 4px; }
+.eaton-list-component .carousel-indicators .active { background-color: #005EB8; width: 15px; height: 15px; margin: 0 4px; }
 
 .category__item-innerpadding { padding: 30px; }
 
