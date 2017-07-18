@@ -14,7 +14,7 @@
           <view
             jcr:primaryType="cq:Widget"
             allowBlank="false"
-            defaultValue="vertical"
+            defaultValue="is-half"
             fieldDescription="Determine which variation of component to view"
             fieldLabel="View"
             fieldSubLabel=""
