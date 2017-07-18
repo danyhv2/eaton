@@ -12,7 +12,9 @@
 
 @media screen and (min-width: 992px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; } }
 
-.eaton-link-list-horizontal__list { margin: 0; padding: 0; }
+.eaton-link-list-horizontal__eyebrow { text-transform: uppercase; }
+
+.eaton-link-list-horizontal__list { margin: 0; padding: 0; list-style-type: none; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-horizontal__list-item { padding: 0; width: 100%; } }
 
