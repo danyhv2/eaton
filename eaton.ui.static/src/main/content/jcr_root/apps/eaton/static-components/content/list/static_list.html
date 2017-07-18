@@ -3,5 +3,9 @@
 </sly>
 
 <sly data-sly-test="${properties.view == 'nofeaturedarticle'}">
-    <sly data-sly-include="views/view-default.html"></sly>
+    <sly data-sly-include="views/view-default.html" data-sly-unwrap></sly>    
+</sly>
+
+<sly data-sly-test="${properties.view == 'featuredarticle'}">
+    <sly data-sly-include="views/view-featured-article.html" data-sly-unwrap></sly>
 </sly>

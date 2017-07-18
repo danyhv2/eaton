@@ -1,9 +1,10 @@
 <sly data-sly-use.data="../data/view-tile-links-multiple-data.js">
-    <div class="tile-link-component">
+    <div class="tile-link-component container">
         <div class="row" data-sly-list.tile="${data}">
-            <div class="col-xs-12 col-xs-4 tile-link-component__element tile-link-component__element--${tileList.index}">
-                <h2>${tile.title} <span class="glyphicon glyphicon-menu-right arrow"></span></h2>
-            </div>
+            <a class="col-xs-12 col-md-3 tile-link-component__element tile-link-component__element--${tileList.index}" href="${tile.link}">
+                <img class="tile-link-component__image" data-sly-test="${tile.image}" src="${tile.image}" alt="${tile.alt}"/>
+                <h2 class="tile-link-component__title ${tile.image != '' ? 'tile-link-component__title--background' : ''  }">${tile.title} <span class="tile-link-component__arrow glyphicon glyphicon-menu-right arrow"></span></h2>
+            </a>
         </div>
     </div>
 </sly>
