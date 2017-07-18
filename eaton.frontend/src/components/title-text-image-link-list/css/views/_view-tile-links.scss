@@ -7,7 +7,6 @@
     margin-bottom: 60px;
     height: 240px;
     position: relative;
-    width: 31%;
     padding: 0;
 
     &:hover {
@@ -70,7 +69,15 @@
 
     &__element {
       margin-left: 0;
-      width: 100%;
+    }
+  }
+}
+
+@include media-desktop-and-up {
+  .tile-link-component {
+
+    &__element {
+      width: 31%;
     }
   }
 }
