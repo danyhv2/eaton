@@ -16,7 +16,7 @@
 
 .carousel-component__dots:only-child { display: none; }
 
-.carousel-component__down-arrow { position: absolute; bottom: 25px; color: #FFF; width: 10%; font-size: 1.5em; z-index: 10; left: 47%; }
+.carousel-component__down-arrow { position: absolute; bottom: 25px; color: #FFF; width: 100%; font-size: 1.5em; z-index: 10; text-align: center; }
 
 .carousel-component__arrow { display: none; }
 
