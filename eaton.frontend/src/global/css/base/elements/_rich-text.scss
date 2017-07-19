@@ -4,6 +4,16 @@
 
 .rich-text-container {
 
+  b,
+  strong {
+    font-weight: 700;
+  }
+
+  i,
+  em {
+    font-style: italic;
+  }
+
   // Over DARK-Background
   //--------------
   .dark-theme & {
