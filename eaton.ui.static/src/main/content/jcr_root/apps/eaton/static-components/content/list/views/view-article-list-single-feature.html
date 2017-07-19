@@ -5,7 +5,7 @@
             <p>${data.description}</p>
         </div>
         <div class="col-xs-12 col-md-6 article-list-single-feature__single">
-            <a href="${data.single_feature_card.url}" class="equal-height-row tablet-card">
+            <a href="${data.single_feature_card.url}" class="article-list-single-feature__link equal-height-row tablet-card">
                 <div class="related-category--tablet-left">
                     <img src="${data.single_feature_card.image}" class="img-responsive category__image" alt="${data.single_feature_card.alt}"/>
                 </div>
@@ -17,7 +17,7 @@
             </a>
         </div>
         <div class="col-xs-12 col-md-6 article-list-single-feature__article" data-sly-list.card="${data.cards}">
-            <a href="${data.single_feature_card.url}" class="">
+            <a href="${data.single_feature_card.url}" class="article-list-single-feature__link">
                 <span class="article-list-single-feature--border"></span>
                 <div class="article-list-single-feature__article--copy">
                     <p class="related-category__title--font category__title--bottompadding">${card.title}</p>
