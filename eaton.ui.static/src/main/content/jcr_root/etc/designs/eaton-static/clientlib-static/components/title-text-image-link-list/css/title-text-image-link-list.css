@@ -1,3 +1,7 @@
+.eaton-page-overview .eaton-title__headline { font-family: 'EatonMedium', sans-serif; font-size: 35px; line-height: 40px; }
+
+@media screen and (min-width: 992px) { .eaton-page-overview .eaton-title__headline { font-size: 54px; line-height: 68px; } }
+
 .carousel-component-slide:hover > .carousel-component__arrow { display: block; border: 0; background-image: none; }
 
 .carousel-component-slide__caption { top: 10%; }
@@ -12,18 +16,22 @@
 
 .carousel-component__dots:only-child { display: none; }
 
-.carousel-component__down-arrow { position: absolute; bottom: 25px; color: #FFF; width: 10%; font-size: 1.5em; z-index: 10; left: 47%; }
+.carousel-component__down-arrow { position: absolute; bottom: 25px; color: #FFF; width: 100%; font-size: 1.5em; z-index: 10; text-align: center; }
 
 .carousel-component__arrow { display: none; }
 
 @media screen and (max-width: 991px) { .carousel-component-slide__caption { top: 0; }
   .carousel-indicators { bottom: 56px; } }
 
-.featured-story-component__content { padding: 60px 50px; }
+.featured-story-component__content { padding: 60px 40px; }
 
-.featured-story-component__text { color: #FFF; font-size: 2.45em; font-family: "Eaton", Arial, sans-serif; line-height: 1.25em; padding-top: 30px; }
+.featured-story-component__text { color: #FFF; font-size: 2.30em; font-family: "Eaton", Arial, sans-serif; line-height: 1.25em; padding-top: 30px; }
+
+.featured-story-component__arrow { font-size: .70em; left: 10px; }
 
 .featured-story-component__title { font-size: 2.55em; }
+
+.featured-story-component__link:hover, .featured-story-component__link:active, .featured-story-component__link:focus { text-decoration: none; color: #FFF; }
 
 .featured-story-component__blue { position: absolute; top: 0; height: 100%; background-color: #005EB8; color: #FFF; opacity: 0.8; padding: 0; }
 
@@ -36,23 +44,19 @@
 
 .eaton-page-overview { padding: 120px 0; }
 
-.eaton-page-overview__cta { text-align: center; }
+.eaton-page-overview__title { position: relative; margin-bottom: 60px; padding-bottom: 60px; }
 
-.eaton-cta-button { background-color: #FFF; color: #005EB8; border: 2px solid #005EB8; padding: 20px 40px; display: inline-block; max-width: 600px; text-align: center; margin: 60px 0 0; text-decoration: none; }
+.eaton-page-overview__title::after { content: ''; background-color: #005EB8; bottom: 0; display: block; height: 4px; left: 0; position: absolute; width: 68px; }
 
-.eaton-cta-button:hover { background-color: #005EB8; color: #FFF; text-decoration: none; }
+@media screen and (max-width: 767px) { .eaton-page-overview__cta { margin-top: 60px; } }
 
-.eaton-title__eyebrow { color: #005EB8; font-size: 52px; margin: 0; }
-
-.eaton-title__dash { display: block; width: 68px; height: 4px; margin: 60px 0; background-color: #005EB8; }
-
-.eaton-title__byline { font-size: 12px; margin-top: 15px; }
+@media screen and (min-width: 992px) { .eaton-page-overview .eaton-title__headline { font-size: 54px; line-height: 68px; } }
 
 .tile-link-component__copy { padding: 60px 0; }
 
 .tile-link-component__element { color: #FFF; margin-left: 30px; margin-bottom: 60px; height: 240px; position: relative; padding: 0; }
 
-.tile-link-component__element:hover { color: #FFF; text-decoration: none; }
+.tile-link-component__element:hover, .tile-link-component__element:active, .tile-link-component__element:focus { color: #FFF; text-decoration: none; }
 
 .tile-link-component__element--0 { background-color: #005EB8; margin-left: 0; }
 
@@ -70,7 +74,7 @@
 
 .tile-link-component__image { width: 100%; }
 
-.tile-link-component__title { position: absolute; bottom: 0; width: 100%; margin: 0; padding: 10px 15px; }
+.tile-link-component__title { position: absolute; bottom: 0; width: 100%; margin: 0; padding: 10px 15px; font-size: 2.25em; }
 
 .tile-link-component__title--background { background-color: #333F48; opacity: 0.7; }
 
