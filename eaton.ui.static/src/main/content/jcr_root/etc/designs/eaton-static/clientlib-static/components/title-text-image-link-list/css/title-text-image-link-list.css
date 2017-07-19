@@ -82,6 +82,13 @@
 
 @media screen and (min-width: 992px) { .tile-link-component__element { width: 31%; } }
 
+.eaton-ttil-image-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.eaton-ttil-image-list__item { -ms-flex-preferred-size: 31%; flex-basis: 31%; padding: 0 10px; margin-bottom: 60px; }
+
+@media screen and (max-width: 991px) { .eaton-ttil-image-list { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .eaton-ttil-image-list__item { -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 0 10px; } }
+
 .eaton-ttil-list-category-hero { font-family: "Eaton", Arial, sans-serif; }
 
 .category-hero__header-image { width: 100%; height: auto; }
