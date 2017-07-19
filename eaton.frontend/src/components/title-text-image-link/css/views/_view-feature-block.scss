@@ -35,7 +35,6 @@
 
 @include media-mobile-only {
   .feature-block-component {
-    
     &__container {
       display: flex;
       flex-direction: column;
@@ -45,6 +44,7 @@
     &__text {
       padding: 30px;
     }
+
     &__copy {
       order: 1;
     }
