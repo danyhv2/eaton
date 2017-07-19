@@ -9,7 +9,9 @@
                 <div class="col-xs-12 col-md-5 col-lg-4 featured-story-component__blue ${componentList.odd ? 'featured-story-component__blue--right' : 'featured-story-component__blue--left'}">
                     <div class="featured-story-component__content">
                         <h2 class="featured-story-component__title">${component.title}</h2>
-                        <p class="featured-story-component__text">${component.text}</p>
+                        <a class="featured-story-component__link" href="${component.link}">
+                            <p class="featured-story-component__text">${component.text}<span class="featured-story-component__arrow glyphicon glyphicon-menu-right arrow"></span></p>
+                        </a>
                     </div>
                 </div>
             </div>
