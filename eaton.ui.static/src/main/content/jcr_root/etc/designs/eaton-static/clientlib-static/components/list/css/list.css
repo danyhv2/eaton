@@ -55,3 +55,5 @@
 @media only screen and (max-width: 767px) { .featured-category-container { padding: 0; margin-bottom: 30px; } }
 
 @media only screen and (min-width: 1200px) { .category__item { min-height: 280px; } }
+
+.article-list-single-feature--border { border-top: 4px solid; border-color: #005EB8; width: 60px; display: block; margin-left: 30px; }

@@ -1,0 +1,34 @@
+<sly data-sly-use.data="../data/view-secondary-search-box.js">
+  <!--/* Secondary search box */-->
+  <div class="eaton-search-box">
+    <div class="container">
+      <div class="row">
+        <form action="/search" class="eaton-search-box__form">
+          <input type="text" name="q"
+            required="required"
+            pattern=".{3,}"
+            placeholder="${ data.form.placeholder }"
+            class="eaton-search-box__input" >
+
+          <div class="eaton-search-box__results-container">
+            <ul data-sly-list="${ data.results }" class="eaton-search-box__result-list" >
+              <li class="eaton-search-box__result-item">
+                <a href="${ item.href }">${ item.title }</a>
+            </ul>
+          </div>
+
+          <div class="eaton-search-box__buttons-container" >
+            <button class="eaton-search-box__button-transparent">
+              <span class="sr-only">${data.form.externalLinkLabel}</span>
+              <i class="glyphicon glyphicon glyphicon-new-window" aria-hidden="true"></i>
+            </button>
+            <button type="submit" class="eaton-search-box__button-transparent">
+              <span class="sr-only">${data.form.searchLabel}</span>
+              <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</sly>

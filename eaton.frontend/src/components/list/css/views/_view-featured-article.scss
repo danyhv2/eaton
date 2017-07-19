@@ -9,10 +9,11 @@
 
   &__cta-container {
     margin-top: 30px;
+
     a:hover,
     a:active,
     a:focus {
-      color: $color__white;;
+      color: $color__white;
     }
   }
 }

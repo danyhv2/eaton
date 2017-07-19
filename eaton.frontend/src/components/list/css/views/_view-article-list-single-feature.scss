@@ -1,0 +1,10 @@
+.article-list-single-feature {
+
+  &--border {
+    border-top: 4px solid;
+    border-color: $color__primary-blue;
+    width: 60px;
+    display: block;
+    margin-left: 30px;
+  }
+}

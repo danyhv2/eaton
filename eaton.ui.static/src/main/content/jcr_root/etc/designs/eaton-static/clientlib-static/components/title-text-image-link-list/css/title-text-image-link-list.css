@@ -4,6 +4,8 @@
 
 .carousel-component-slide__cta { margin-top: 60px; }
 
+.carousel-component-slide__image { width: 100%; }
+
 .carousel-component-slide__text { margin-top: 20px; }
 
 .carousel-component-slide__title { font-size: 3.25em; line-height: 1.192em; margin: 0; }
@@ -80,8 +82,41 @@
 
 @media screen and (min-width: 992px) { .tile-link-component__element { width: 31%; } }
 
+.eaton-ttil-image-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.eaton-ttil-image-list__item { -ms-flex-preferred-size: 31%; flex-basis: 31%; padding: 0 10px; margin-bottom: 60px; }
+
+@media screen and (max-width: 991px) { .eaton-ttil-image-list { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .eaton-ttil-image-list__item { -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 0 10px; } }
+
 .eaton-ttil-list-category-hero { font-family: "Eaton", Arial, sans-serif; }
 
 .category-hero__header-image { width: 100%; height: auto; }
 
-.category-hero__header-content { position: absolute; top: 0; left: 0; }
+.category-hero__header-content { position: absolute; top: 20%; color: #FFF; width: 100%; }
+
+.category-hero__header-cta { border: 0; font-size: 1.2em; color: #FFF; }
+
+.category-hero-eye-brown { color: #FFF; }
+
+.category-hero-eye-brown a:hover, .category-hero-eye-brown a:active, .category-hero-eye-brown a:visited, .category-hero-eye-brown a:focus { color: #FFF; text-decoration: none; }
+
+.category-hero-body-copy { color: #FFF; font-size: 1.2em; margin-top: 30px; }
+
+.category-hero__header-title h2 { font-size: 3.5em; margin-top: 30px; margin-bottom: 30px; }
+
+.category-hero-bottomline { background-color: #FFF; height: .3em; width: 4em; }
+
+@media only screen and (max-width: 480px) { .category-hero__header-image { height: 430px; }
+  .category-hero__header-content { top: 15%; }
+  .category-hero__header-title h2 { font-size: 2em; }
+  .category-hero-body-copy { font-size: 1em; }
+  .category-hero__header-cta { font-size: 1em; } }
+
+@media only screen and (min-width: 481px) and (max-width: 991px) { .category-hero__header-image { height: 430px; }
+  .category-hero__header-content { top: 15%; }
+  .category-hero__header-title h2 { font-size: 2.5em; }
+  .category-hero-body-copy { font-size: 1.5em; }
+  .category-hero__header-cta { font-size: 1.5em; } }
+
+@media only screen and (min-width: 991px) { .category-hero__header-image { min-height: 385px; } }

@@ -52,6 +52,20 @@
     }
   }
 
+  &--white {
+    border-color: $color__white;
+    color: $color__white;
+    padding: 20px 40px;
+    font-size: 1.6em;
+    text-align: center;
+
+    &:hover {
+      text-decoration: none;
+      color: $color__white;
+    }
+
+  }
+
   &--dark {
     border-color: $color__white;
     color: $color__white;

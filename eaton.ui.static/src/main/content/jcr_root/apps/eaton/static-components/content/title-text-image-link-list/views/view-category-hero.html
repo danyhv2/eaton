@@ -1,15 +1,24 @@
 <sly data-sly-use.data="../data/view-category-hero-data.js">
-    <div class="eaton-ttil-list-category-hero container-fluid">
+    <div class="eaton-ttil-list-category-hero">
         <div class="row">
             <div class="col-xs-12">
                 <img src="${data.image}" class="visible-xs img-responsive category-hero__header-image" />
                 <img src="${data.mobile_image}" class="hidden-xs img-responsive category-hero__header-image" />
-                <div class="category-hero__header-content">
-                    <div>
-                        Left side
+                <div class="row category-hero__header-content">
+                    <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 text-left">
+                        <div class="category-hero-eye-brown text-left">
+                            <i class="glyphicon glyphicon-menu-left"></i>
+                            <a class="category-hero__header-cta" target="${data.cta._target}" href="${data.cta.url}">${data.cta.title}</a>
+                        </div>
                     </div>
-                    <div>
-                        Right side
+                    <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1 text-left">
+                        <div class="category-hero__header-title">
+                            <sly data-sly-resource="${'category-hero-title1' @ resourceType='/apps/eaton/static-components/general/title'}"></sly>
+                        </div>
+                        <div class="category-hero-bottomline"></div>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-0 category-hero-body-copy">
+                        <p>${data.text}</p>
                     </div>
                 </div>
             </div>

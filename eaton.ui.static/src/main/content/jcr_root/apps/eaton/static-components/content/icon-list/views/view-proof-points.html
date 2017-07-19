@@ -1,0 +1,20 @@
+<sly data-sly-use.data="../data/view-proof-points-data.js">
+
+  <div class="icon-list-proof-points">
+    <div class="container">
+      <div class="row">
+          <!--/* Icon List */-->
+          <div data-sly-list="${ data.items }">
+            <div class="col-xs-12 col-md-4 icon-list-proof-points__item">
+              <img class="icon-list-proof-points__image" src="${item.img}" alt="${item.facts} ${item.relatedText}" />
+              <div class="icon-list-proof-points__content">
+                <div class="icon-list-proof-points__facts">${item.facts}</div>
+                <div data-sly-test="${item.factSymbol}" class="icon-list-proof-points__symbol">${item.factSymbol}</div>
+                <div class="icon-list-proof-points__related">${item.relatedText}</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</sly>

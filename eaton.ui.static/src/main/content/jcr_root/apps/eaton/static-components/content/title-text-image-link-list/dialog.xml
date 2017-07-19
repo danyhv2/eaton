@@ -42,6 +42,10 @@
                 jcr:primaryType="nt:unstructured"
                 text="Category Hero"
                 value="category-hero"/>
+              <image-only
+                jcr:primaryType="nt:unstructured"
+                text="Image Only"
+                value="image-only"/>
             </options>
           </view>
         </items>

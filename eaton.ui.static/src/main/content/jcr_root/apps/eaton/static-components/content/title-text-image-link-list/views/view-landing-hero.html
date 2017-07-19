@@ -10,7 +10,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-component-slide carousel-inner" data-sly-list.slide="${data.hero}" role="listbox">
         <div class="item ${slideList.index == 0 ? 'active' : ''}">
-            <img class="img-responsive hidden-xs" src="${slide.image}" alt="${slide.alt}">
+            <img class="img-responsive hidden-xs carousel-component-slide__image" src="${slide.image}" alt="${slide.alt}">
             <img class="img-responsive visible-xs" src="${slide.mobile_image}" alt="${slide.alt}">
             <div class="carousel-component-slide__caption carousel-caption">
                 <h2 class="carousel-component-slide__title">${slide.title}</h2>
