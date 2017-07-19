@@ -68,7 +68,8 @@
 .eaton-link-list-section-navigation__nav-item:hover, .eaton-link-list-section-navigation__nav-item:active, .eaton-link-list-section-navigation__nav-item:focus { color: #005EB8; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-section-navigation { padding: 10px 0; }
-  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; margin: 0 20px; display: block; padding: 20px 0; font-size: 1.8rem; } }
+  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; margin: 0 20px; display: block; padding: 20px 0; font-size: 1.8rem; }
+  .eaton-link-list-section-navigation__nav-item:first-child { padding-left: 0; } }
 
 @media screen and (min-width: 992px) { .eaton-link-list-section-navigation .container { position: relative; }
   .eaton-link-list-section-navigation .container::after { background: #5B6770; bottom: 0; height: 1px; left: 0; position: absolute; width: 100%; }

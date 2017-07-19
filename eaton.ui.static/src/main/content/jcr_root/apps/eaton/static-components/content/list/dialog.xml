@@ -30,6 +30,10 @@
                                 jcr:primaryType="nt:unstructured"
                                 text="Featured Article"
                                 value="featuredarticle"/>
+                            <article-list-single-feature
+                                jcr:primaryType="nt:unstructured"
+                                text="Article List: Single Feature"
+                                value="article-list-single-feature"/>
                         </options>
                     </view>
                 </items>

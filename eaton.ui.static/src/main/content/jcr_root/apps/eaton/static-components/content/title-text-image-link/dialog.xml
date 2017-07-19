@@ -30,6 +30,10 @@
                                 jcr:primaryType="nt:unstructured"
                                 text="Single Feature"
                                 value="single-feature"/>
+                            <feature-block
+                                jcr:primaryType="nt:unstructured"
+                                text="Feature Block"
+                                value="feature-block"/>
                         </options>
                     </view>
                 </items>

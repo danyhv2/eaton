@@ -36,6 +36,7 @@
         <div data-sly-use.data="../data/view-landing-hero-single-data.js" class="carousel-component carousel slide landing-hero-single" data-ride="carousel" data-pause="hover" data-sly-test="${param.hero.length == 1}">
             
 
+<<<<<<< HEAD
             <div class="carousel-component-slide carousel-inner" data-sly-list.slide="${data.hero}" role="listbox">
                 <div class="item ${slideList.index == 0 ? 'active' : ''}">
                     <img class="img-responsive hidden-xs" src="${slide.image}" alt="${slide.alt}">
@@ -47,6 +48,17 @@
                         <a class="carousel-component-slide__cta b-button b-button--light" href="${data.cta}" role="button" data-sly-test="${properties.showCta}">See how</a>
                     </div>
                 </div>
+=======
+    <!-- Wrapper for slides -->
+    <div class="carousel-component-slide carousel-inner" data-sly-list.slide="${data.hero}" role="listbox">
+        <div class="item ${slideList.index == 0 ? 'active' : ''}">
+            <img class="img-responsive hidden-xs carousel-component-slide__image" src="${slide.image}" alt="${slide.alt}">
+            <img class="img-responsive visible-xs" src="${slide.mobile_image}" alt="${slide.alt}">
+            <div class="carousel-component-slide__caption carousel-caption">
+                <h2 class="carousel-component-slide__title">${slide.title}</h2>
+                <p class="carousel-component-slide__text">${slide.text}</p>
+                <a class="carousel-component-slide__cta b-button b-button--light" href="${data.cta}" role="button" data-sly-test="${data.cta.length > 0}">See how</a>
+>>>>>>> 95f99fbd531add88788b39c9a70447cf1efd562e
             </div>
         </div>
     </div>

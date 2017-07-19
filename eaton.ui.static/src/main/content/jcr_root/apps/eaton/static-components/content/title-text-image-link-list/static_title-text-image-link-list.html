@@ -24,5 +24,6 @@
 		<div data-sly-call="${lib.single @ param=data}"></div>
 	</div>  
 </sly>
-
-
+<sly data-sly-test="${properties.view == 'image-only'}">
+    <sly data-sly-include="views/view-image-only.html"></sly>
+</sly>

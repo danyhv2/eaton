@@ -1,8 +1,14 @@
+.eaton-page-overview .eaton-title__headline { font-family: 'EatonMedium', sans-serif; font-size: 35px; line-height: 40px; }
+
+@media screen and (min-width: 992px) { .eaton-page-overview .eaton-title__headline { font-size: 54px; line-height: 68px; } }
+
 .carousel-component-slide:hover > .carousel-component__arrow { display: block; border: 0; background-image: none; }
 
 .carousel-component-slide__caption { top: 10%; }
 
 .carousel-component-slide__cta { margin-top: 60px; }
+
+.carousel-component-slide__image { width: 100%; }
 
 .carousel-component-slide__text { margin-top: 20px; }
 
@@ -46,17 +52,13 @@
 
 .eaton-page-overview { padding: 120px 0; }
 
-.eaton-page-overview__cta { text-align: center; }
+.eaton-page-overview__title { position: relative; margin-bottom: 60px; padding-bottom: 60px; }
 
-.eaton-cta-button { background-color: #FFF; color: #005EB8; border: 2px solid #005EB8; padding: 20px 40px; display: inline-block; max-width: 600px; text-align: center; margin: 60px 0 0; text-decoration: none; }
+.eaton-page-overview__title::after { content: ''; background-color: #005EB8; bottom: 0; display: block; height: 4px; left: 0; position: absolute; width: 68px; }
 
-.eaton-cta-button:hover { background-color: #005EB8; color: #FFF; text-decoration: none; }
+@media screen and (max-width: 767px) { .eaton-page-overview__cta { margin-top: 60px; } }
 
-.eaton-title__eyebrow { color: #005EB8; font-size: 52px; margin: 0; }
-
-.eaton-title__dash { display: block; width: 68px; height: 4px; margin: 60px 0; background-color: #005EB8; }
-
-.eaton-title__byline { font-size: 12px; margin-top: 15px; }
+@media screen and (min-width: 992px) { .eaton-page-overview .eaton-title__headline { font-size: 54px; line-height: 68px; } }
 
 .tile-link-component__copy { padding: 60px 0; }
 
@@ -92,8 +94,41 @@
 
 @media screen and (min-width: 992px) { .tile-link-component__element { width: 31%; } }
 
+.eaton-ttil-image-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.eaton-ttil-image-list__item { -ms-flex-preferred-size: 31%; flex-basis: 31%; padding: 0 10px; margin-bottom: 60px; }
+
+@media screen and (max-width: 991px) { .eaton-ttil-image-list { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .eaton-ttil-image-list__item { -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 0 10px; } }
+
 .eaton-ttil-list-category-hero { font-family: "Eaton", Arial, sans-serif; }
 
 .category-hero__header-image { width: 100%; height: auto; }
 
-.category-hero__header-content { position: absolute; top: 0; left: 0; }
+.category-hero__header-content { position: absolute; top: 20%; color: #FFF; width: 100%; }
+
+.category-hero__header-cta { border: 0; font-size: 1.2em; color: #FFF; }
+
+.category-hero-eye-brown { color: #FFF; }
+
+.category-hero-eye-brown a:hover, .category-hero-eye-brown a:active, .category-hero-eye-brown a:visited, .category-hero-eye-brown a:focus { color: #FFF; text-decoration: none; }
+
+.category-hero-body-copy { color: #FFF; font-size: 1.2em; margin-top: 30px; }
+
+.category-hero__header-title h2 { font-size: 3.5em; margin-top: 30px; margin-bottom: 30px; }
+
+.category-hero-bottomline { background-color: #FFF; height: .3em; width: 4em; }
+
+@media only screen and (max-width: 480px) { .category-hero__header-image { height: 430px; }
+  .category-hero__header-content { top: 15%; }
+  .category-hero__header-title h2 { font-size: 2em; }
+  .category-hero-body-copy { font-size: 1em; }
+  .category-hero__header-cta { font-size: 1em; } }
+
+@media only screen and (min-width: 481px) and (max-width: 991px) { .category-hero__header-image { height: 430px; }
+  .category-hero__header-content { top: 15%; }
+  .category-hero__header-title h2 { font-size: 2.5em; }
+  .category-hero-body-copy { font-size: 1.5em; }
+  .category-hero__header-cta { font-size: 1.5em; } }
+
+@media only screen and (min-width: 991px) { .category-hero__header-image { min-height: 385px; } }

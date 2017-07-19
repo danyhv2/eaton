@@ -46,6 +46,10 @@
                 jcr:primaryType="nt:unstructured"
                 text="Landing Hero Single"
                 value="landing-hero-single"/>
+              <image-only
+                jcr:primaryType="nt:unstructured"
+                text="Image Only"
+                value="image-only"/>
             </options>
           </view>
           <showCta

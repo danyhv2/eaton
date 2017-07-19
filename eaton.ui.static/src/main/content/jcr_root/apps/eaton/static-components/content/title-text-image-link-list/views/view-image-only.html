@@ -1,0 +1,8 @@
+<sly data-sly-use.data="../data/view-image-only-data.js">
+    <div class="eaton-ttil-image-list" data-sly-list="${ data.items }">
+        <div class="eaton-ttil-image-list__item">
+          <a data-sly-test="${item.url}" href="${item.url}">
+            <img src="${item.image}" class="img-responsive eaton-ttil-image-list__image" />
+          </a>
+    </div>
+</sly>

@@ -1,0 +1,96 @@
+//-----------------------------------
+// IconList Component: Proof Points
+//-----------------------------------
+
+.icon-list-proof-points {
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: ($spacing__sm);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    width: 80px;
+  }
+
+  &__content {
+    padding-left: 40px;
+  }
+
+  &__facts {
+    color: $color__accent-aqua;
+    font-weight: bold;
+    line-height: 1;
+    margin-left: -3px;
+    display: inline-block;
+    font-size: 100px;
+  }
+
+  &__symbol {
+    color: $color__accent-aqua;
+    font-weight: bold;
+    position: relative;
+    right: 0;
+    display: inline-block;
+    font-size: 50px;
+    top: -30px;
+  }
+
+  &__related {
+    font-size: 29px;
+  }
+
+  //-----------------------------------
+  // Media-Query: Mobile
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__item {
+      justify-content: center;
+      margin-bottom: ($spacing__sm * 3);
+    }
+
+    // &__image {
+    //   width: 150px;
+    // }
+
+    // &__content {
+    //   padding-left: 80px;
+    // }
+    //
+    // &__facts {
+    //   font-size: 100px;
+    // }
+
+    // &__symbol {
+    //   font-size: 50px;
+    //   top: -30px;
+    // }
+
+    // &__related {
+    //   font-size: 36px;
+    // }
+  }
+
+  //-----------------------------------
+  // Media-Query: Desktop
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__facts {
+      font-size: 75px;
+    }
+
+    &__symbol {
+      font-size: 45px;
+      top: -20px;
+    }
+
+    &__related {
+      font-size: 29px;
+    }
+  }
+}

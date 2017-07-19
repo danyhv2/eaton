@@ -53,6 +53,10 @@
                     jcr:primaryType="nt:unstructured"
                     text="Category Hero Single"
                     value="category-hero-single"/>
+                  <image-only
+                    jcr:primaryType="nt:unstructured"
+                    text="Image Only"
+                    value="image-only"/>
                 </items>
                 <showCta 
                   jcr:primaryType="nt:unstructured"
