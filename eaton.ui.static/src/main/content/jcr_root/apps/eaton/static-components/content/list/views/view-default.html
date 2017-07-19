@@ -16,7 +16,7 @@
                         <div class="category__item--border category__item-innerpadding related-category--tablet-right category__item">
                             <div class="related-category__title--font category__title--bottompadding">${slider.title}</div>
                             <div class="category__link--font">${slider.link_text}</div>
-                            <p class="visible-sm category-item-date"><em>${slider.date_text}</em></p>
+                            <p data-sly-test="${data.cards.length == 3}" class="category-item-date"><em>${slider.date_text}</em></p>
                         </div>
                     </a>
                 </div>
@@ -35,6 +35,7 @@
                                 <div class="category__item--border category__item-innerpadding carousel__item">
                                     <div class="related-category__title--font category__title--bottompadding">${slider.title}</div>
                                     <h5 class="category__link--font">${slider.link_text}</h5>
+                                    <p data-sly-test="${data.cards.length == 3}" class="category-item-date"><em>${slider.date_text}</em></p>
                                 </div>
                             </div>
                         </a>
