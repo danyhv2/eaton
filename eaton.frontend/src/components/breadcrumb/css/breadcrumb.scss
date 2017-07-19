@@ -19,10 +19,33 @@
   background: $color__secondary-gray2;
   padding: 1rem 0;
 
+  .container {
+    padding: 0;
+  }
+
   &__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    &-item {
+      font-size: 14px;
+      margin-right: 5px;
+      display: inline;
+
+      span {
+        font-size: 10px;
+      }
+
+      &:last-child {
+        a {
+          color: $color__black;
+        }
+        span {
+          display: none;
+        }
+      }
+    }
   }
 
 }
