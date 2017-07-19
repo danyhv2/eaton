@@ -1,7 +1,19 @@
 <sly data-sly-use.data="../data/view-default-data.js">
 
   <div class="eaton-text-default">
+
+    <!--/* If Grid Enabled - Open Grid */-->
+    <sly data-sly-test="${properties.toggleInnerGrid}">
+      <div class="container">
+    </sly>
+
     <div class="eaton-text-default__content rich-text-container">${ data.text @ context = 'html' }</div>
+
+    <!--/* If Grid Enabled - Close Grid */-->
+    <sly data-sly-test="${properties.toggleInnerGrid}">
+      </div>
+    </sly>
+
   </div>
 
 </sly>

@@ -42,6 +42,10 @@
                     text="With Eyebrow and Byline View"
                     value="witheyebrowandbyline"/>
                 </items>
+                <toggleInnerGrid
+                  jcr:primaryType="nt:unstructured"
+                  name="./toggleInnerGrid"
+                  value="{Boolean}true" />
               </view>
             </items>
           </column>

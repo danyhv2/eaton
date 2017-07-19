@@ -1,9 +1,21 @@
 <sly data-sly-use.data="../data/title-data.js">
 
   <div class="eaton-title eaton-title--eyebrow-and-byline">
+
+    <!--/* If Grid Enabled - Open Grid */-->
+    <sly data-sly-test="${properties.toggleInnerGrid}">
+      <div class="container">
+    </sly>
+
     <h2 class="eaton-title__eyebrow">${ data.eyebrow }</h2>
     <h2 class="eaton-title__headline">${ data.headline }</h2>
     <h2 class="eaton-title__byline">${ data.byline }</h2>
+
+    <!--/* If Grid Enabled - Close Grid */-->
+    <sly data-sly-test="${properties.toggleInnerGrid}">
+      </div>
+    </sly>
+
   </div>
 
 </sly>

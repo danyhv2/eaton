@@ -42,6 +42,10 @@
                     text="Statement View"
                     value="statement"/>
                 </items>
+                <toggleInnerGrid
+                  jcr:primaryType="nt:unstructured"
+                  name="./toggleInnerGrid"
+                  value="{Boolean}true" />
               </view>
             </items>
           </column>
