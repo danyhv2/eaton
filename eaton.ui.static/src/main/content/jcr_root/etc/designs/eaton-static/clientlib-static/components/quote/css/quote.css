@@ -1,6 +1,6 @@
 .eaton-quote .container { padding: 100px 0 60px; border-top: 4px solid #EEF0F2; border-bottom: 4px solid #EEF0F2; position: relative; }
 
-.eaton-quote__image { width: 80px; height: 82px; background: url("/content/dam/eaton/images/Quote.png") no-repeat; position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; }
+.eaton-quote__image { width: 80px; height: 82px; background: #005EB8; position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; }
 
 .eaton-quote__text { font-size: 34px; font-style: italic; font-family: Arial; color: #98A4AE; margin-bottom: 60px; }
 

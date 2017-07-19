@@ -41,6 +41,10 @@
                     jcr:primaryType="nt:unstructured"
                     text="Landing Hero"
                     value="landing-hero"/>
+                  <landing-hero-single
+                    jcr:primaryType="nt:unstructured"
+                    text="Landing Hero Single"
+                    value="landing-hero-single"/>
                   <product-overview
                     jcr:primaryType="nt:unstructured"
                     text="Product Overview"
@@ -49,10 +53,7 @@
                     jcr:primaryType="nt:unstructured"
                     text="Category Hero"
                     value="category-hero"/>
-                  <category-hero-single
-                    jcr:primaryType="nt:unstructured"
-                    text="Category Hero Single"
-                    value="category-hero-single"/>
+                 
                   <image-only
                     jcr:primaryType="nt:unstructured"
                     text="Image Only"
