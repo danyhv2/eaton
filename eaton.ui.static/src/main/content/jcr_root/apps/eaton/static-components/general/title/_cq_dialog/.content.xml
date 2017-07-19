@@ -45,6 +45,7 @@
                 <toggleInnerGrid
                   jcr:primaryType="nt:unstructured"
                   name="./toggleInnerGrid"
+                  text="Toggle Inner Grid"
                   value="{Boolean}true" />
               </view>
             </items>

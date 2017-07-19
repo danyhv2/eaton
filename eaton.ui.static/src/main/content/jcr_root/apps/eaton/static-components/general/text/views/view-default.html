@@ -2,17 +2,14 @@
 
   <div class="eaton-text-default">
 
-    <!--/* If Grid Enabled - Open Grid */-->
-    <sly data-sly-test="${properties.toggleInnerGrid}">
-      <div class="container">
-    </sly>
+    <!--/* If Grid Enabled */-->
+    <div data-sly-test="${ properties.toggleInnerGrid }" class="container">
+      <div class="eaton-text-default__content rich-text-container">${ data.text @ context = 'html' }</div>
+    </div>
 
-    <div class="eaton-text-default__content rich-text-container">${ data.text @ context = 'html' }</div>
-
-    <!--/* If Grid Enabled - Close Grid */-->
-    <sly data-sly-test="${properties.toggleInnerGrid}">
-      </div>
-    </sly>
+    <!--/* If Grid NOT-Enabled */-->
+    <div data-sly-test="${ !properties.toggleInnerGrid }"
+      class="eaton-text-default__content rich-text-container" >${ data.text @ context = 'html' }</div>
 
   </div>
 

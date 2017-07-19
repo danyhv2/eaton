@@ -35,7 +35,7 @@
           <toggleInnerGrid
             jcr:primaryType="cq:Widget"
             fieldDescription=""
-            fieldLabel="Enable/Disable inner Grid"
+            fieldLabel="Toggle Inner Grid"
             inputValue="true"
             name="./toggleInnerGrid"
             type="checkbox"
