@@ -3,4 +3,18 @@
 //-----------------------------------
 .eaton-title {
 
+  &__eyebrow {
+    color: $color__primary-blue;
+    font-size: 52px;
+    margin:  0;
+  }
+
+  &__headline {
+    margin-bottom: 0;
+  }
+
+  &__byline {
+
+  }
+
 }
