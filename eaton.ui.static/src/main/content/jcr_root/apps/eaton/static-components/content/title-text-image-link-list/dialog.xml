@@ -34,10 +34,10 @@
                 jcr:primaryType="nt:unstructured"
                 text="Landing Hero Single"
                 value="landing-hero-single"/>
-              <product-overview
+              <page-overview
                 jcr:primaryType="nt:unstructured"
-                text="Product Overview"
-                value="product-overview"/>
+                text="Page Overview"
+                value="page-overview"/>
               <tile-link
                 jcr:primaryType="nt:unstructured"
                 text="Tile Link"
