@@ -32,7 +32,7 @@
                 value="landing-hero"/>
               <landing-hero-single
                 jcr:primaryType="nt:unstructured"
-                text="Landing Hero Single"
+                text="Landing Hero - Single"
                 value="landing-hero-single"/>
               <page-overview
                 jcr:primaryType="nt:unstructured"

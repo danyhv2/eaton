@@ -43,7 +43,7 @@
                     value="landing-hero"/>
                   <landing-hero-single
                     jcr:primaryType="nt:unstructured"
-                    text="Landing Hero Single"
+                    text="Landing Hero - Single"
                     value="landing-hero-single"/>
                   <page-overview
                     jcr:primaryType="nt:unstructured"
@@ -53,7 +53,6 @@
                     jcr:primaryType="nt:unstructured"
                     text="Category Hero"
                     value="category-hero"/>
-                 
                   <image-only
                     jcr:primaryType="nt:unstructured"
                     text="Image Only"
@@ -62,15 +61,15 @@
                 <showCta
                   jcr:primaryType="nt:unstructured"
                   sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                  text="Show cta"
+                  text="Show CTA"
                   name="./showCta"
-                  value="{Boolean}true"/>
-                <showSeparator 
+                  value="true"/>
+                <showSeparator
                   jcr:primaryType="nt:unstructured"
                   sling:resourceType="granite/ui/components/foundation/form/checkbox"
                   text="Show separator"
                   name="./showSeparator"
-                  value="{Boolean}true"/>
+                  value="true"/>
               </view>
             </items>
           </column>
