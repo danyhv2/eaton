@@ -61,12 +61,16 @@
                 </items>
                 <showCta 
                   jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                  text="Show cta"
                   name="./showCta"
-                  value="{Boolean}true"/>
+                  value="true"/>
                 <showSeparator 
                   jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                  text="Show separator"
                   name="./showSeparator"
-                  value="{Boolean}true"/>
+                  value="true"/>
               </view>
             </items>
           </column>
