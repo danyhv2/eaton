@@ -3,7 +3,7 @@
         <div class="col-xs-12 col-sm-7 feature-block-component__copy" style="background-color: ${data.backgroundColor @ context='styleString'}">
             <div class="feature-block-component__text">
                 <h2>${data.headline}</h2>
-                <p>${data.copy}</p>
+                <p class="feature-block-component__description">${data.copy}</p>
                 <a class="b-button b-button--white feature-block-component__cta" href="${data.ctaUrl}" role="button" data-sly-test="${data.ctaUrl.length > 0}">${data.ctaText}</a>
             </div>
         </div>
