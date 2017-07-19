@@ -49,7 +49,19 @@
                     jcr:primaryType="nt:unstructured"
                     text="Category Hero"
                     value="category-hero"/>
+                  <category-hero-single
+                    jcr:primaryType="nt:unstructured"
+                    text="Category Hero Single"
+                    value="category-hero-single"/>
                 </items>
+                <showCta 
+                  jcr:primaryType="nt:unstructured"
+                  name="./showCta"
+                  value="{Boolean}true"/>
+                <showSeparator 
+                  jcr:primaryType="nt:unstructured"
+                  name="./showSeparator"
+                  value="{Boolean}true"/>
               </view>
             </items>
           </column>

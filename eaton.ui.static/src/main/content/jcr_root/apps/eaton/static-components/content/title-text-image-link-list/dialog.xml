@@ -42,8 +42,28 @@
                 jcr:primaryType="nt:unstructured"
                 text="Category Hero"
                 value="category-hero"/>
+              <landing-hero-single
+                jcr:primaryType="nt:unstructured"
+                text="Landing Hero Single"
+                value="landing-hero-single"/>
             </options>
           </view>
+          <showCta
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Show or hide the cta"
+            fieldLabel="Show cta"
+            inputValue="true"
+            name="./showCta"
+            type="checkbox"
+            xtype="selection"/>
+          <showSeparator
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Show or hide the separator for the headline"
+            fieldLabel="Show separator"
+            inputValue="true"
+            name="./showSeparator"
+            type="checkbox"
+            xtype="selection"/>
         </items>
       </tab1>
     </items>

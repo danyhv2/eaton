@@ -44,9 +44,9 @@
       position: relative;
 
       // hide the white line for fist line nav items
-      &:after {
+      &::after {
         background: $color__primary-gray2;
-        bottom: 0px;
+        bottom: 0;
         height: 1px;
         left: 0;
         position: absolute;
