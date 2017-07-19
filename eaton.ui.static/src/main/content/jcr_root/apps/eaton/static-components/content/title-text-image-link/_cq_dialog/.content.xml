@@ -47,6 +47,10 @@
                                         jcr:primaryType="nt:unstructured"
                                         text="Download List with Descriptions"
                                         value="download-list-desc"/>
+                                    <article-feature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Article Feature"
+                                        value="article-feature"/>
                                 </items>
                             </view>
                         </items>
