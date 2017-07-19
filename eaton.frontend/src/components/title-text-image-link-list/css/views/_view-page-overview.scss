@@ -1,0 +1,66 @@
+//-----------------------------------
+// Component M-11: Page Overview
+//-----------------------------------
+
+.eaton-page-overview {
+
+  padding: $spacing__xl 0;
+
+  // Components Overrides
+  //--------------
+  .eaton-title__headline {
+    @extend %h1;
+  }
+
+  // Page Overview Styles
+  //--------------
+  &__title {
+    position: relative;
+    margin-bottom: $spacing__md;
+    padding-bottom: $spacing__md;
+
+    &::after {
+      content: '';
+      background-color: $color__primary-blue;
+      bottom: 0;
+      display: block;
+      height: 4px;
+      left: 0;
+      position: absolute;
+      width: 68px;
+    }
+  }
+
+  &__content {
+    // empty selector for future reference
+  }
+
+  &__content {
+    // empty selector for future reference
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: Mobile
+  //-----------------------------------
+  @include media-mobile-only {
+    &__cta {
+      margin-top: $spacing__md;
+    }
+  }
+
+  //-----------------------------------
+  // MediaQuery: Mobile
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    .eaton-title__headline {
+      font-size: 54px;
+      line-height: 68px;
+    }
+
+  }
+
+
+
+}
