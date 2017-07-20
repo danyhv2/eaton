@@ -45,10 +45,6 @@
                     jcr:primaryType="nt:unstructured"
                     text="Landing Hero - Single"
                     value="landing-hero-single"/>
-                  <page-overview
-                    jcr:primaryType="nt:unstructured"
-                    text="Page Overview"
-                    value="page-overview"/>
                   <category-hero
                     jcr:primaryType="nt:unstructured"
                     text="Category Hero"

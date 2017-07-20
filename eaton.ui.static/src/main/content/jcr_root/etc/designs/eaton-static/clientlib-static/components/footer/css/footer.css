@@ -1,3 +1,11 @@
+.eaton-footer-top .eaton-text-default__content { font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
+
+.eaton-footer-top .eaton-text-default__content a { color: #005EB8; }
+
+.eaton-footer-top .eaton-text-default__content a:active { font-weight: bold; }
+
+@media screen and (min-width: 992px) { .eaton-footer-top .eaton-text-default__content { font-size: 18px; line-height: 24px; } }
+
 .eaton-footer-top { background: #5B6770; padding: 60px 0; }
 
 .eaton-footer-top .eaton-footer-top__link-list { margin-bottom: 40px; }

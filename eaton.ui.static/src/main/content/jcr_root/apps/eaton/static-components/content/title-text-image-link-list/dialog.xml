@@ -34,10 +34,6 @@
                 jcr:primaryType="nt:unstructured"
                 text="Landing Hero - Single"
                 value="landing-hero-single"/>
-              <page-overview
-                jcr:primaryType="nt:unstructured"
-                text="Page Overview"
-                value="page-overview"/>
               <tile-link
                 jcr:primaryType="nt:unstructured"
                 text="Tile Link"

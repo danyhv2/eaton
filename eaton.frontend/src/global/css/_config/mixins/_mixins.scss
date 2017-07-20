@@ -29,7 +29,7 @@
 
 // Size
 //--------------
-@mixin component-spacing($spacing : $spacing__sm) {
+@mixin component-spacing($spacing: $spacing__sm) {
   padding: $spacing 0;
 }
 
