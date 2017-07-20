@@ -3,7 +3,7 @@
   <div class="alert alert-warning">Logo Component</div>
 </sly>
 
-<sly data-sly-use.data="data/logo-data.js">
+<sly data-sly-use.data="${'data/logo-data.js' @testdata=properties.testdata}">
   <div class="eaton-logo">
     <a href="/" class="eaton-logo__link">
       <img class="eaton-logo__image img-responsive" src="${ data.imageSrc }" alt="${ data.imageAlt }" />
