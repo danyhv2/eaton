@@ -7,3 +7,8 @@
 
 // Import SubViews
 @import "views/view-proof-points";
+
+
+.icon-list {
+  @include component-spacing();
+}
