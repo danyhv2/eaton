@@ -1,6 +1,4 @@
-.icon-list-proof-points__item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 30px; }
-
-.icon-list-proof-points__item:last-child { margin-bottom: 0; }
+.icon-list-proof-points__item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .icon-list-proof-points__image { width: 80px; }
 
@@ -12,8 +10,11 @@
 
 .icon-list-proof-points__related { font-size: 29px; }
 
-@media screen and (max-width: 991px) { .icon-list-proof-points__item { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 90px; } }
+@media screen and (max-width: 991px) { .icon-list-proof-points__item { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 90px; }
+  .icon-list-proof-points__item:last-child { margin-bottom: 0; } }
 
 @media screen and (min-width: 992px) { .icon-list-proof-points__facts { font-size: 75px; }
   .icon-list-proof-points__symbol { font-size: 45px; top: -20px; }
   .icon-list-proof-points__related { font-size: 29px; } }
+
+.icon-list { padding: 30px 0; }

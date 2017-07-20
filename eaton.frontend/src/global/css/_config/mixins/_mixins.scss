@@ -27,6 +27,12 @@
   @include size($size, $size);
 }
 
+// Size
+//--------------
+@mixin component-spacing($spacing : $spacing__sm) {
+  padding: $spacing 0;
+}
+
 
 // Layout Mixins
 //--------------

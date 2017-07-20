@@ -7,11 +7,6 @@
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: ($spacing__sm);
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   &__image {
@@ -52,6 +47,10 @@
     &__item {
       justify-content: center;
       margin-bottom: ($spacing__sm * 3);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     // &__image {
