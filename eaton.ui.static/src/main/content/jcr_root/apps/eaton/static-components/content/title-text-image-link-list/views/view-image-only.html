@@ -1,8 +1,21 @@
 <sly data-sly-use.data="../data/view-image-only-data.js">
     <div class="eaton-ttil-image-list" data-sly-list="${ data.items }">
         <div class="eaton-ttil-image-list__item">
-          <a data-sly-test="${item.url}" href="${item.url}">
+          <!--/* When Image has Headline & No Url */-->
+          <div data-sly-test="${!item.url && item.headline}" class="eaton-ttil-image-list__content">
             <img src="${item.image}" class="img-responsive eaton-ttil-image-list__image" />
+            <div class="img-responsive eaton-ttil-image-list__image-headline">${item.headline}</div>
+          </div>
+
+          <!--/* When Image has Headline & Url */-->
+          <a data-sly-test="${item.url && item.headline}" href="${item.url}" class="eaton-ttil-image-list__content">
+            <img src="${item.image}" class="img-responsive eaton-ttil-image-list__image" />
+            <div class="img-responsive eaton-ttil-image-list__image-headline">${item.headline}</div>
           </a>
+
+          <!--/* When Image has no Headline */-->
+          <div data-sly-test="${!item.headline}" class="eaton-ttil-image-list__content">
+            <img src="${item.image}" class="img-responsive eaton-ttil-image-list__image" />
+          </div>
     </div>
 </sly>
