@@ -20,7 +20,10 @@ use(function () {
                 link_url: '#',
                 date_text: 'December 12, 2015'
             }
-        ]
+        ],
+
+        /* If there is more than one carousel in the page, the carousel class has to be unique */
+        carouselClassUnique: Math.floor(Math.random() * 100)
     }
     return data;
 });

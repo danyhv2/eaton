@@ -94,8 +94,14 @@
 
 .eaton-ttil-image-list__item { -ms-flex-preferred-size: 31%; flex-basis: 31%; padding: 0 10px; margin-bottom: 60px; }
 
+.eaton-ttil-image-list__content { display: block; }
+
+.eaton-ttil-image-list__image-headline { margin-top: 30px; color: #005EB8; }
+
 @media screen and (max-width: 991px) { .eaton-ttil-image-list { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-  .eaton-ttil-image-list__item { -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 0 10px; } }
+  .eaton-ttil-image-list__item { -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 0 10px; }
+  .eaton-ttil-image-list__content { text-align: center; }
+  .eaton-ttil-image-list__image { width: 150px; display: inline-block; } }
 
 .eaton-ttil-list-category-hero { font-family: "Eaton", Arial, sans-serif; overflow: hidden; }
 
