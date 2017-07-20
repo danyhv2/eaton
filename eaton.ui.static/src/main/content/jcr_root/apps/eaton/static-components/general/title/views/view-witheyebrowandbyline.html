@@ -5,19 +5,19 @@
     <!--/* If Grid Enabled */-->
     <div data-sly-test="${ properties.toggleInnerGrid }"
       class="container">
-      <div class="eaton-title__eyebrow eyebrow-small">${ data.eyebrow }</div>
-      <h2 class="eaton-title__headline heading-h1">${ data.headline }</h2>
+      <div class="eaton-title__eyebrow b-eyebrow-small">${ data.eyebrow }</div>
+      <h2 class="eaton-title__headline b-heading-h1">${ data.headline }</h2>
       <div data-sly-test="${ data.byline }"
-        class="eaton-title__byline body-copy-small">${ data.byline }</div>
+        class="eaton-title__byline b-body-copy-small">${ data.byline }</div>
     </div>
 
 
     <!--/* If Grid NOT-Enabled */-->
     <sly data-sly-test="${ !properties.toggleInnerGrid }">
-      <div class="eaton-title__eyebrow eyebrow-small">${ data.eyebrow }</div>
-      <h2 class="eaton-title__headline heading-h1">${ data.headline }</h2>
+      <div class="eaton-title__eyebrow b-eyebrow-small">${ data.eyebrow }</div>
+      <h2 class="eaton-title__headline b-heading-h1">${ data.headline }</h2>
       <div data-sly-test="${ data.byline }"
-        class="eaton-title__byline body-copy-small">${ data.byline }</div>
+        class="eaton-title__byline b-body-copy-small">${ data.byline }</div>
     </sly>
 
   </div>
