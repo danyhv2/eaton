@@ -13,6 +13,7 @@
 // Base Styles
 .eaton-header {
   position: relative;
+  z-index: 30;
 
   //-----------------------------------
   // Mobile Breakpoint
@@ -89,7 +90,7 @@
       .eaton-header--fixed {
         .mega-menu {
           overflow-y: auto;
-          height: 400px;
+          height: 550px;
         }
       }
     }
