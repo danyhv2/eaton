@@ -159,7 +159,7 @@ h5, .b-heading-h5 { margin-top: 0; }
 
 .rich-text-container ul li { position: relative; padding-left: 40px; }
 
-.rich-text-container ul li::before { height: 6px; width: 6px; content: ''; background-color: #005EB8; border-radius: 50%; left: 20px; position: absolute; top: 8px; }
+.rich-text-container ul li::before { height: 6px; width: 6px; content: ''; background-color: #005EB8; border-radius: 50%; left: 20px; position: absolute; top: 0.6em; }
 
 .dark-theme .rich-text-container { color: #FFF; }
 
