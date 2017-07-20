@@ -149,10 +149,20 @@ h5, .b-heading-h5 { margin-top: 0; }
 
 .b-list--no-bullets { list-style-type: none; padding-left: 0; }
 
-.rich-text-container b, .rich-text-container strong { font-weight: 700; }
+.rich-text-container b, .rich-text-container strong { font-weight: bold; }
 
 .rich-text-container i, .rich-text-container em { font-style: italic; }
+
+.rich-text-container a { text-decoration: underline; }
+
+.rich-text-container ul { list-style-type: none; padding: 0; }
+
+.rich-text-container ul li { position: relative; padding-left: 40px; }
+
+.rich-text-container ul li::before { height: 6px; width: 6px; content: ''; background-color: #005EB8; border-radius: 50%; left: 20px; position: absolute; top: 8px; }
 
 .dark-theme .rich-text-container { color: #FFF; }
 
 .dark-theme .rich-text-container h2, .dark-theme .rich-text-container h3, .dark-theme .rich-text-container h4, .dark-theme .rich-text-container h5, .dark-theme .rich-text-container h6 { color: #FFF; }
+
+.dark-theme .rich-text-container ul li::before { background-color: #FFF; }
