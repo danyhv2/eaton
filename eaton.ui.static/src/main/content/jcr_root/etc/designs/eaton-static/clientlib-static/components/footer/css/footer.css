@@ -9,7 +9,7 @@
 .dark-theme .eaton-footer-bottom a, .dark-theme .eaton-footer-bottom a:hover, .dark-theme .eaton-footer-bottom a:focus { color: #FFF; }
 
 @media screen and (max-width: 991px) { .eaton-footer-top__logo { margin-bottom: 60px; }
-  .eaton-footer-top__text { margin-bottom: 120px; }
+  .eaton-footer-top__content { margin-bottom: 120px; }
   .eaton-footer-top__link-list { margin-bottom: 60px; }
   .eaton-footer-bottom { padding: 120px 0; }
   .eaton-footer-bottom__link-list .eaton-link-list-horizontal__list-item { margin-bottom: 32px; } }

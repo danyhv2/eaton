@@ -99,9 +99,7 @@
 }
 
 
-
-
-// Body Copy
+// Body Copy Small
 //--------------
 %body-copy-small {
   font-family: Arial, sans-serif;
@@ -122,4 +120,36 @@
     line-height: 24px;
   }
 
+}
+
+
+// Eyebrow Large
+//--------------
+%eyebrow-large {
+  color: $color__primary-gray1;
+  font-family: $font-family__secondary;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @include media-desktop-and-up {
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+
+
+// Eyebrow Small
+//--------------
+%eyebrow-small {
+  color: $color__primary-gray1;
+  font-family: $font-family__secondary;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+
+  @include media-desktop-and-up {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

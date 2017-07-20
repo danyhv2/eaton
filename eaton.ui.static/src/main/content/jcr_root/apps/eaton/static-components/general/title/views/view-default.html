@@ -1,7 +1,17 @@
 <sly data-sly-use.data="../data/title-data.js">
 
   <div class="eaton-title eaton-title--default">
-    <h2 class="eaton-title__headline">${ data.headlineShort }</h2>
+
+    <!--/* If Grid Enabled */-->
+    <div data-sly-test="${ properties.toggleInnerGrid }" class="container">
+      <h2 class="eaton-title__headline">${ data.headlineShort }</h2>
+    </div>
+
+    <!--/* If Grid NOT-Enabled */-->
+    <sly data-sly-test="${ !properties.toggleInnerGrid }">
+      <h2 class="eaton-title__headline">${ data.headlineShort }</h2>
+    </sly>
+
   </div>
 
 </sly>

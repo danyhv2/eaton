@@ -3,19 +3,26 @@
 </sly>
 
 <sly data-sly-test="${properties.view == 'landing-hero'}">
-    <sly data-sly-include="views/view-landing-hero.html"></sly>
+    <div data-sly-use.lib="views/view-landing-hero.html" data-sly-use.data = "../data/view-landing-hero-multiple-data.js">
+		<div data-sly-call="${lib.multiple @ param=data}"></div>
+	</div>
 </sly>
 <sly data-sly-test="${properties.view == 'featured-story'}">
     <sly data-sly-include="views/view-featured-story.html"></sly>
 </sly>
-<sly data-sly-test="${properties.view == 'product-overview'}">
-    <sly data-sly-include="views/view-product-overview.html"></sly>
+<sly data-sly-test="${properties.view == 'page-overview'}">
+    <sly data-sly-include="views/view-page-overview.html"></sly>
 </sly>
 <sly data-sly-test="${properties.view == 'tile-link'}">
     <sly data-sly-include="views/view-tile-links.html"></sly>
 </sly>
 <sly data-sly-test="${properties.view == 'category-hero'}">
     <sly data-sly-include="views/view-category-hero.html"></sly>
+</sly>
+<sly data-sly-test="${properties.view == 'landing-hero-single'}" >
+	<div data-sly-use.lib="views/view-landing-hero.html" data-sly-use.data = "../data/view-landing-hero-single-data.js">
+		<div data-sly-call="${lib.single @ param=data}"></div>
+	</div>
 </sly>
 <sly data-sly-test="${properties.view == 'image-only'}">
     <sly data-sly-include="views/view-image-only.html"></sly>

@@ -2,4 +2,14 @@
 
 .eaton-breadcrumb { background: #EEF0F2; padding: 1rem 0; }
 
+.eaton-breadcrumb .container { padding: 0; }
+
 .eaton-breadcrumb__list { list-style-type: none; margin: 0; padding: 0; }
+
+.eaton-breadcrumb__list-item { font-size: 14px; margin-right: 5px; display: inline; }
+
+.eaton-breadcrumb__list-item span { font-size: 10px; }
+
+.eaton-breadcrumb__list-item:last-child a { color: #000; }
+
+.eaton-breadcrumb__list-item:last-child span { display: none; }
