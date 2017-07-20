@@ -58,19 +58,19 @@
                     text="Image Only"
                     value="image-only"/>
                 </items>
-                <showCta
-                  jcr:primaryType="nt:unstructured"
-                  sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                  text="Show CTA"
-                  name="./showCta"
-                  value="true"/>
-                <showSeparator
-                  jcr:primaryType="nt:unstructured"
-                  sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                  text="Show separator"
-                  name="./showSeparator"
-                  value="true"/>
               </view>
+              <showCta
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                text="Show CTA"
+                name="./showCta"
+                value="true"/>
+              <showSeparator
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                text="Show separator"
+                name="./showSeparator"
+                value="true"/>
             </items>
           </column>
         </items>
