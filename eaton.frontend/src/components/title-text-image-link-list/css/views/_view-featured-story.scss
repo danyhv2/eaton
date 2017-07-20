@@ -11,6 +11,13 @@
     line-height: 1.25em;
     padding-top: 30px;
   }
+
+  &__row {
+
+    &--nopadding {
+      padding: 0;
+    }
+}
   
   &__arrow {
     font-size: .70em;
@@ -51,7 +58,7 @@
 }
 
 // @media only screen and (max-width: 769px)
-@include media-mobile-and-tablet {
+@include media-mobile-only {
 
   .featured-story-component {
 
@@ -63,6 +70,16 @@
       padding-bottom: 20px;
     }
   }
+}
 
+@include media-tablet-only {
+
+  .featured-story-component {
+
+    &__text {
+      padding-top: 15px;
+      font-size: 1.75em;
+    }
+  }
 }
 

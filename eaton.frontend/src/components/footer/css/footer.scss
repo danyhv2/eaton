@@ -50,7 +50,7 @@
 
   .eaton-footer-top__logo { margin-bottom: 60px; }
 
-  .eaton-footer-top__text { margin-bottom: 120px; }
+  .eaton-footer-top__content { margin-bottom: 120px; }
 
   .eaton-footer-top__link-list { margin-bottom: 60px; }
 
@@ -68,7 +68,7 @@
 }
 
 //-----------------------------------
-// Media-Query: Tablet & Desktop
+// Media-Query: Desktop & Desktop Large
 //-----------------------------------
 @include media-desktop-and-up {
 

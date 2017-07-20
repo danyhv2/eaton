@@ -1,3 +1,7 @@
-.eaton-title__eyebrow { color: #005EB8; font-size: 52px; margin: 0; }
+.eaton-title { margin-top: 90px; margin-bottom: 30px; }
 
 .eaton-title__headline { margin-bottom: 0; }
+
+.eaton-title__byline { color: #98A4AE; font-family: Arial, "Arial", sans-serif; font-size: 15px; font-style: italic; }
+
+@media screen and (min-width: 992px) { .eaton-title__byline { font-size: 20px; } }

@@ -2,6 +2,8 @@
 
 @media screen and (min-width: 992px) { .eaton-page-overview .eaton-title__headline { font-size: 54px; line-height: 68px; } }
 
+.eaton-landing-hero .item img { width: 100%; }
+
 .carousel-component-slide:hover > .carousel-component__arrow { display: block; border: 0; background-image: none; }
 
 .carousel-component-slide__caption { top: 10%; }
@@ -23,9 +25,23 @@
 @media screen and (max-width: 991px) { .carousel-component-slide__caption { top: 0; }
   .carousel-indicators { bottom: 56px; } }
 
+.eaton-landing-hero--single .carousel-component-slide__caption { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); bottom: auto; }
+
+.eaton-landing-hero--single .carousel-component-slide__separator { width: 5%; height: 2px; background: #FFF; margin: 20px auto; }
+
+.eaton-landing-hero--single .carousel-component-slide h2 { font-size: 53px; }
+
+.eaton-landing-hero--single .carousel-component-slide__text { font-size: 20px; }
+
+@media screen and (max-width: 991px) { .eaton-landing-hero--single .carousel-component-slide h2 { font-size: 35px; }
+  .eaton-landing-hero--single .carousel-component-slide__separator { display: none; }
+  .eaton-landing-hero--single .carousel-component-slide__text { font-size: 14px; } }
+
 .featured-story-component__content { padding: 60px 40px; }
 
 .featured-story-component__text { color: #FFF; font-size: 2.30em; font-family: "Eaton", Arial, sans-serif; line-height: 1.25em; padding-top: 30px; }
+
+.featured-story-component__row--nopadding { padding: 0; }
 
 .featured-story-component__arrow { font-size: .70em; left: 10px; }
 
@@ -39,8 +55,10 @@
 
 .featured-story-component__blue--left { left: 0; }
 
-@media screen and (max-width: 991px) { .featured-story-component__blue { position: relative; }
+@media screen and (max-width: 767px) { .featured-story-component__blue { position: relative; }
   .featured-story-component__row { padding-bottom: 20px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) { .featured-story-component__text { padding-top: 15px; font-size: 1.75em; } }
 
 .eaton-page-overview { padding: 120px 0; }
 

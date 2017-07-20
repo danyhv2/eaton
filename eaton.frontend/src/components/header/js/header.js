@@ -27,7 +27,7 @@ App.header = (function() {
       let scrollTop = $(window).scrollTop();
       let headerHeight = 144;
 
-      console.log('Values are', scrollTop, headerHeight);
+      // console.log('Values are', scrollTop, headerHeight);
 
       if ( scrollTop > (headerHeight)) {
         $componentClass.addClass('eaton-header--fixed');
