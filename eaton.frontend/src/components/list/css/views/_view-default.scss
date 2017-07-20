@@ -85,13 +85,17 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .category__item-innerpadding {
+    padding: 25px;
+  }
+
   .carousel__item {
-    min-height: 227px;
+    min-height: 233px;
   }
 
   .category__link--font {
-    font-size: 1.4em;
-    line-height: 1.3em;
+    font-size: 1.1em;
+    line-height: 1.2em;
   }
 
   .category__title--bottompadding {
@@ -136,12 +140,12 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .category__item {
-    min-height: 328px;
+    min-height: 389px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .category__item {
-    min-height: 260px;
+    min-height: 231px;
   }
 }

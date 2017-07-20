@@ -28,8 +28,9 @@
 
 .category-item-date { padding-top: 15px; color: #333F48; }
 
-@media only screen and (max-width: 767px) { .carousel__item { min-height: 227px; }
-  .category__link--font { font-size: 1.4em; line-height: 1.3em; }
+@media only screen and (max-width: 767px) { .category__item-innerpadding { padding: 25px; }
+  .carousel__item { min-height: 233px; }
+  .category__link--font { font-size: 1.1em; line-height: 1.2em; }
   .category__title--bottompadding { padding-bottom: 10px; } }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) { .related-category--tablet-left { float: left; }
@@ -40,9 +41,9 @@
   .category__item, .category__image { min-height: 263px; }
   .category__link--font { font-size: 1.3em; } }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) { .category__item { min-height: 328px; } }
+@media only screen and (min-width: 992px) and (max-width: 1199px) { .category__item { min-height: 389px; } }
 
-@media only screen and (min-width: 1200px) { .category__item { min-height: 260px; } }
+@media only screen and (min-width: 1200px) { .category__item { min-height: 231px; } }
 
 .featured-category--topbottompadding { padding: 30px 0; }
 
