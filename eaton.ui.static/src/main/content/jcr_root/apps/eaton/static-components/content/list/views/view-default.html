@@ -1,29 +1,26 @@
-<sly data-sly-use.data="../data/view-default-3-column-data.js">
+<sly data-sly-use.data="../data/view-default-2-column-data.js">
 
     <div class="container-fluid eaton-list-component eaton-list-component-default-view">
 
-
-
-        <!--/* Desktop/Tablet Layout */-->
+     <!--/* Desktop/Tablet Layout */-->
         <div class="row hidden-xs visible-sm visible-md visible-lg">
 
-            <sly data-sly-test.colMDoffSet="${data.cards.length == 2 ? 'col-md-offset-2' : ''}" />
-
-            <div class="col-sm-10 col-sm-offset-1 ${colMDoffSet}" data-sly-list.slider="${data.cards}" role="listbox">
-                <div class="col-sm-12 ${data.cards.length == 2 ? 'col-md-5' : 'col-md-4'}">
-                    <a href="${slider.link_url}" class="equal-height-row tablet-card">
-                        <div class="related-category--tablet-left">
-                            <img src="${slider.image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
-                        </div>
-                        <div class="category__item--border category__item-innerpadding related-category--tablet-right category__item">
-                            <div class="related-category__title--font category__title--bottompadding">${slider.title}</div>
-                            <div class="category__link--font">${slider.link_text}</div>
-                            <p data-sly-test="${data.cards.length == 3}" class="category-item-date"><em>${slider.date_text}</em></p>
-                        </div>
-                    </a>
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <div data-sly-list.slider="${data.cards}" role="listbox">
+                    <div class="col-sm-12 ${data.cards.length == 2 ? 'col-md-6' : 'col-md-4'}">
+                        <a href="${slider.link_url}" class="equal-height-row tablet-card">
+                            <div class="related-category--tablet-left">
+                                <img src="${slider.image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
+                            </div>
+                            <div class="category__item--border category__item-innerpadding related-category--tablet-right category__item">
+                                <div class="related-category__title--font category__title--bottompadding">${slider.title}</div>
+                                <div class="category__link--font">${slider.link_text}</div>
+                                <p data-sly-test="${data.cards.length == 3}" class="category-item-date"><em>${slider.date_text}</em></p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-
         </div>
 
         <!--/* Mobile slider */-->
