@@ -32,10 +32,7 @@ use(function () {
                 _target: '_self',
                 date_text: 'October 12, 2014'
             }
-        ],
-
-        /* If there is more than one carousel in the page, the carousel class has to be unique */
-        carouselClassUnique: Math.floor(Math.random() * 100)
+        ]
     }
     return data;
 });
