@@ -84,8 +84,13 @@
       .mega-menu {
         visibility: visible;
         opacity: 1;
-        overflow-y: auto;
-        height: 400px;
+      }
+
+      .eaton-header--fixed {
+        .mega-menu {
+          overflow-y: auto;
+          height: 400px;
+        }
       }
     }
   }
@@ -97,20 +102,14 @@
 
 .aem-AuthorLayer-Edit, // sass-lint:disable-line class-name-format
 .cq-wcm-edit  {
-  .eaton-header {
-    .mega-menu {
-      position: relative !important; // sass-lint:disable-line no-important
-      visibility: visible !important; // sass-lint:disable-line no-important
-      opacity: 1 !important; // sass-lint:disable-line no-important
-      z-index: 99999 !important; // sass-lint:disable-line no-important
+  .mega-menu {
+    position: relative !important; // sass-lint:disable-line no-important
+    visibility: visible !important; // sass-lint:disable-line no-important
+    opacity: 1 !important; // sass-lint:disable-line no-important
+    z-index: 99999 !important; // sass-lint:disable-line no-important
 
-      &__content {
-        display: block !important; // sass-lint:disable-line no-important
-      }
-
-      &--fixed {
-        position: relative !important; // sass-lint:disable-line no-important
-      }
+    &__content {
+      display: block !important; // sass-lint:disable-line no-important
     }
   }
 }
