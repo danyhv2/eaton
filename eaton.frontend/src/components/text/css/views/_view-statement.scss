@@ -17,7 +17,8 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__content {
-      font-size: 2.375em;
+      font-size: 1.063em;
+      line-height: 2em;
     }
   }
 
