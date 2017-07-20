@@ -1,7 +1,3 @@
-.eaton-page-overview .eaton-title__headline { font-family: 'EatonMedium', sans-serif; font-size: 35px; line-height: 40px; }
-
-@media screen and (min-width: 992px) { .eaton-page-overview .eaton-title__headline { font-size: 54px; line-height: 68px; } }
-
 .eaton-landing-hero .item img { width: 100%; }
 
 .carousel-component-slide:hover > .carousel-component__arrow { display: block; border: 0; background-image: none; }
@@ -59,16 +55,6 @@
   .featured-story-component__row { padding-bottom: 20px; } }
 
 @media screen and (min-width: 768px) and (max-width: 991px) { .featured-story-component__text { padding-top: 15px; font-size: 1.75em; } }
-
-.eaton-page-overview { padding: 120px 0; }
-
-.eaton-page-overview__title { position: relative; margin-bottom: 60px; padding-bottom: 60px; }
-
-.eaton-page-overview__title::after { content: ''; background-color: #005EB8; bottom: 0; display: block; height: 4px; left: 0; position: absolute; width: 68px; }
-
-@media screen and (max-width: 767px) { .eaton-page-overview__cta { margin-top: 60px; } }
-
-@media screen and (min-width: 992px) { .eaton-page-overview .eaton-title__headline { font-size: 54px; line-height: 68px; } }
 
 .tile-link-component__copy { padding: 60px 0; }
 
