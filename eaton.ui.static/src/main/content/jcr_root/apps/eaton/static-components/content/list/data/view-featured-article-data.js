@@ -39,7 +39,10 @@ use(function () {
             image_alt: 'Featured image',
             link_url: '#',
             date_text: 'September 23, 2013'    
-        }
+        },
+
+        /* If there is more than one carousel in the page, the carousel class has to be unique */
+        carouselClassUnique: Math.floor(Math.random() * 100)
     }
     return data;
 });

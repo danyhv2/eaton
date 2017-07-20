@@ -1,4 +1,4 @@
-<sly data-sly-use.data="../data/view-default-2-column-data.js">
+<sly data-sly-use.data="../data/view-default-3-column-data.js">
 
     <div class="container-fluid eaton-list-component eaton-list-component-default-view">
 
@@ -26,7 +26,7 @@
         <!--/* Mobile slider */-->
         <div class="row visible-xs">
             <div class="col-xs-10 col-xs-offset-1">
-                <div class="default-view-carousel-component carousel slide">
+                <div class="default-view-carousel-component${data.carouselClassUnique} carousel slide">
                     <div class="carousel-inner" data-sly-list.slider="${data.cards}" role="listbox">
                         <a href="${slider.link_url}" class="item ${sliderList.index == 0 ? 'active' : ''}">
                             <div>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="text-center">
                         <ol class="carousel-indicators list-unstyled" data-sly-list.slider1="${data.cards}">
-                            <li data-target=".default-view-carousel-component" data-slide-to="${slider1List.index}" class="${slider1List.index == 0 ? 'active' : ''}">
+                            <li data-target=".default-view-carousel-component${data.carouselClassUnique}" data-slide-to="${slider1List.index}" class="${slider1List.index == 0 ? 'active' : ''}">
                                 <span class="sr-only">${slider1List.index}</span>
                             </li>
                         </ol>
