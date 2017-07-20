@@ -111,11 +111,11 @@
 @media screen and (max-width: 991px) { .eaton-ttil-image-list { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .eaton-ttil-image-list__item { -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 0 10px; } }
 
-.eaton-ttil-list-category-hero { font-family: "Eaton", Arial, sans-serif; }
+.eaton-ttil-list-category-hero { font-family: "Eaton", Arial, sans-serif; overflow: hidden; }
 
 .category-hero__header-image { width: 100%; height: auto; }
 
-.category-hero__header-content { position: absolute; top: 20%; color: #FFF; width: 100%; }
+.category-hero__header-content { position: absolute; top: 25%; color: #FFF; width: 100%; }
 
 .category-hero__header-cta { border: 0; font-size: 1.2em; color: #FFF; }
 

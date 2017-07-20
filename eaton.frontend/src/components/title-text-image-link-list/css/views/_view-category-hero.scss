@@ -1,5 +1,6 @@
 .eaton-ttil-list-category-hero {
   font-family: $font-family__primary;
+  overflow: hidden;
 }
 
 .category-hero {
@@ -10,7 +11,7 @@
 
   &__header-content {
     position: absolute;
-    top: 20%;
+    top: 25%;
     color: $color__white;
     width: 100%;
   }
