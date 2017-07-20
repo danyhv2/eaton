@@ -4,6 +4,8 @@
 
 .rich-text-container {
 
+  @extend %body-copy;
+
   b,
   strong {
     font-weight: bold;
@@ -17,6 +19,11 @@
   a {
     text-decoration: underline;
   }
+
+  p {
+    @extend %body-copy;
+  }
+
 
   // Unordered lists
   //--------------
