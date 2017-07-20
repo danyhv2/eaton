@@ -10,8 +10,8 @@
 @import 'views/view-single-feature';
 @import 'views/view-feature-block';
 @import 'views/view-article-feature';
-@import 'views/view-cards';
+@import 'views/view-card';
 
 .title-text-image-link {
-  @include component-spacing();
+  // @include component-spacing(); // Disabled since it creates spacing when used inside column container components
 }
