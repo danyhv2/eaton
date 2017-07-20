@@ -18,13 +18,13 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 @media screen and (min-width: 992px) { h5, .b-heading-h5 { font-size: 26px; line-height: 40px; } }
 
-.b-body-copy, .b-body-copy-small { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
+.b-body-copy, .b-body-copy-small, .rich-text-container, .rich-text-container p { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
 
-.b-body-copy a, .b-body-copy-small a { color: #005EB8; }
+.b-body-copy a, .b-body-copy-small a, .rich-text-container a { color: #005EB8; }
 
-.b-body-copy a:active, .b-body-copy-small a:active { font-weight: bold; }
+.b-body-copy a:active, .b-body-copy-small a:active, .rich-text-container a:active { font-weight: bold; }
 
-@media screen and (min-width: 992px) { .b-body-copy, .b-body-copy-small { font-size: 24px; line-height: 38px; } }
+@media screen and (min-width: 992px) { .b-body-copy, .b-body-copy-small, .rich-text-container, .rich-text-container p { font-size: 24px; line-height: 38px; } }
 
 .b-eyebrow-large { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 17px; line-height: 20px; text-transform: uppercase; }
 
