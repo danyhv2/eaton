@@ -1,10 +1,10 @@
-<sly data-sly-use.data="../data/view-l2-hero-data.js">
+<sly data-sly-use.data="${'../data/view-l2-hero-data.js' @tesdata=properties.testdata}">
     <div class="eaton-title-text-image container-fluid category-hightlight-header__image category-hightlight-header--vertical-align"
-        style="background-image:url('${data.headerImage @ context='uri'}')">
+        style="background-image:url('${data.imgSrc @ context='uri'}')">
         <div class="row text-center center-block">
-            <div class="col-xs-12">
-                <h1 class="category-hightlight-header__title">${data.headerTitle}</h1>
-                <p class="category-hightlight-header__text">${data.headerTitle}</p>
+            <div class="col-xs-12" data-testdata="${properties.testdata}">
+                <h1 class="category-hightlight-header__title">${data.title}</h1>
+                <p class="category-hightlight-header__text">${data.text}</p>
             </div>
         </div>
     </div>
