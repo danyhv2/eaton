@@ -31,6 +31,14 @@
                                 fieldLabel="View"
                                 name="./view">
                                 <items jcr:primaryType="nt:unstructured">
+                                    <card
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Card"
+                                        value="card"/>
+                                    <page-overview
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Page Overview"
+                                        value="page-overview"/>
                                     <l2-hero
                                         jcr:primaryType="nt:unstructured"
                                         text="L2 Hero"
