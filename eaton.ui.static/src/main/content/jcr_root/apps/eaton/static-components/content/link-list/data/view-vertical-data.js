@@ -58,10 +58,47 @@ use(function () {
 			        title: 'Success Stories',
 			        url: '#link-4',
 			        target: '_self'
+			      }
+			    ]
+			  }
+  } else if ((typeof(testdata) != "undefined") && testdata == "homepage-featuredtopic-list1") {
+	  data.view = {
+			    eyebrow: 'For Design Engineers',
+			    links: [
+			      {
+			        title: '2D/3D Models',
+			        url: '#link-1',
+			        target: '_self'
 			      },
 			      {
-			        title: 'Text Link 5',
-			        url: '#link-5',
+			        title: 'Software Downloads',
+			        url: '#link-2',
+			        target: '_self'
+			      },
+			      {
+			        title: 'On demand Presentation',
+			        url: '#link-3',
+			        target: '_self'
+			      }
+			    ]
+			  }
+  } else if ((typeof(testdata) != "undefined") && testdata == "homepage-featuredtopic-list2") {
+	  data.view = {
+			    eyebrow: 'For IT Professionals',
+			    links: [
+			      {
+			        title: 'Installation Guides',
+			        url: '#link-1',
+			        target: '_self'
+			      },
+			      {
+			        title: 'Software and firmware downloads',
+			        url: '#link-2',
+			        target: '_self'
+			      },
+			      {
+			        title: 'IT handbooks',
+			        url: '#link-3',
 			        target: '_self'
 			      }
 			    ]
