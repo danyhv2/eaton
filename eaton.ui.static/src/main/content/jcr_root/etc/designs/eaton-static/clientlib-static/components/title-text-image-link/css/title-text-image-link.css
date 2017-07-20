@@ -67,7 +67,7 @@
 
 .article-feature-date { margin-bottom: 60px; }
 
-.article-feature-body { margin-bottom: 120px; padding-right: 7%; }
+.article-feature-body { margin-bottom: 120px; padding-right: 7%; font-size: 1.5em; }
 
 @media only screen and (max-width: 767px) { .article-feature-image { margin-top: 60px; }
   .article-feature-title { font-size: 1.1em; margin-top: 30px; }
