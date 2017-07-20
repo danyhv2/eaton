@@ -1,5 +1,5 @@
 <template data-sly-template.multiple="${@ param}">
-    <div data-sly-use.data="../data/view-landing-hero-multiple-data.js" class="carousel-component carousel slide" data-ride="carousel" data-pause="hover" data-sly-test="${param.hero.length > 1}">
+    <div data-sly-use.data="../data/view-landing-hero-multiple-data.js" class="eaton-landing-hero carousel-component carousel slide" data-ride="carousel" data-pause="hover" data-sly-test="${param.hero.length > 1}">
         <!-- Indicators -->
         <ol class="carousel-indicators" data-sly-list.slide="${data.hero}">
             <li data-target=".carousel-component" data-slide-to="${slideList.index}" class="carousel-component__dots ${slideList.index == 0 ? 'active' : ''}"></li>
@@ -32,8 +32,8 @@
     </div>
 </template>
 <template data-sly-template.single="${@ param}">
-    
-        <div data-sly-use.data="../data/view-landing-hero-single-data.js" class="carousel-component carousel slide landing-hero-single" data-ride="carousel" data-pause="hover" data-sly-test="${param.hero.length == 1}">
+
+        <div data-sly-use.data="../data/view-landing-hero-single-data.js" class="eaton-landing-hero eaton-landing-hero--single carousel-component carousel slide " data-ride="carousel" data-pause="hover" data-sly-test="${param.hero.length == 1}">
             <div class="carousel-component-slide carousel-inner" data-sly-list.slide="${data.hero}" role="listbox">
                 <div class="item ${slideList.index == 0 ? 'active' : ''}">
                     <img class="img-responsive hidden-xs" src="${slide.image}" alt="${slide.alt}">
