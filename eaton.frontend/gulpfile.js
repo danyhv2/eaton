@@ -27,7 +27,7 @@ gulp.task('lint:js',
 );
 
 
-// TASKS: Compile SASS to CSS
+// TASK: Compile SASS to CSS
 //--------------
 gulp.task('css:build',
   require('./config/gulp-tasks/gulp-css')(gulp, CONFIG)
@@ -38,6 +38,13 @@ gulp.task('css:build',
 //--------------
 gulp.task('js:build',
   require('./config/gulp-tasks/gulp-js')(gulp, CONFIG)
+);
+
+
+// TASK: Build Glyphicon Font
+//--------------
+gulp.task('iconfont',
+  require('./config/gulp-tasks/gulp-glyphicon-font')(gulp, CONFIG)
 );
 
 
