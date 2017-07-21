@@ -17,8 +17,8 @@
     <sly data-sly-include="views/view-category-hero.html"></sly>
 </sly>
 <sly data-sly-test="${properties.view == 'landing-hero-single'}" >
-	<div data-sly-use.lib="views/view-landing-hero.html" data-sly-use.data = "../data/view-landing-hero-single-data.js">
-		<div data-sly-call="${lib.single @ param=data}"></div>
+	<div data-sly-use.lib="views/view-landing-hero.html" data-sly-use.data = "${'../data/view-landing-hero-single-data.js' @testdata=properties.testdata}">
+		<div data-sly-call="${lib.single @param=data}"></div>
 	</div>
 </sly>
 <sly data-sly-test="${properties.view == 'image-only'}">

@@ -140,6 +140,60 @@ use(function () {
 			      }
 			    ]
 	 }
+  } else if ((typeof(testdata) != "undefined") && testdata == "primary-featuredtopic-list1") {
+	  data.view = {
+			    eyebrow: 'Stock information',
+			    links: [
+			      {
+			        title: 'Stock information',
+			        url: '#link-1',
+			        target: '_self',
+	                external_link: false,
+	                document_download: ''
+			      },
+			      {
+			        title: 'SEC filings',
+			        url: '#link-2',
+			        target: '_self',
+	                external_link: false,
+	                document_download: ''
+			      },
+			      {
+			        title: 'Company profile',
+			        url: '#link-3',
+			        target: '_self',
+	                external_link: false,
+	                document_download: ''
+			      }
+			    ]
+			  }
+  } else if ((typeof(testdata) != "undefined") && testdata == "primary-featuredtopic-list2") {
+	  data.view = {
+			    eyebrow: 'Financial reports',
+			    links: [
+			      {
+			        title: '2016 annual and sustainability report',
+			        url: '#link-1',
+			        target: '_self',
+	                external_link: false,
+	                document_download: ''
+			      },
+			      {
+			        title: '2016 Q4 quarterly report',
+			        url: '#link-2',
+			        target: '_self',
+	                external_link: false,
+	                document_download: ''
+			      },
+			      {
+			        title: 'Dividend report',
+			        url: '#link-3',
+			        target: '_self',
+	                external_link: false,
+	                document_download: ''
+			      }
+			    ]
+	 }
   } else {
 	  data.view = {
 	    eyebrow: 'Eyebrow / Title',

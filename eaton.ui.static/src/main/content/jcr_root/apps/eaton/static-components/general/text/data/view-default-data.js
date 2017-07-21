@@ -25,6 +25,13 @@ use(function () {
 	  data.text = '<p>Together, we can create more powerful and \
 			efficient ways to keep communities and commerce running 24/7. We \
 			have resources and tools to help you solve problems every day..<p>';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "primary-pageoverview")) {
+      data.text = "<p>Our world runs on power. Technology, transportation, energy and infrastructure absolutely depend on it. \
+      		At Eaton, our vision is to deliver that power more efficiently, reliably and safely with innovative technologies that \
+      		improve people&apos;s lives, the communities where we live and work, and the planet our future generations depend upon. \
+      		To meet today&apos;s challenges, and tomorrow&apos;s. That&apos;s what really matters. And we&apos;re here to make sure it works.</p>";
+  } else if ((typeof(testdata) != "undefined") && (testdata == "primary-featuredtopic")) {
+      data.text = "<p>When you invest in Eaton, you help power energy solutions that improve the quality of life and the environment for all.</p>";
   } else {
 	  // Rich-Text-Editor - Content-Example:
  	  data.text = '<p><strong>Eaton Text component</strong>. Eaton is a power management company with 2016 sales of $19.7 billion. <em>We provide energy-efficient solutions</em> that help <b>our customers</b> effectively manage electrical, <i>hydraulic and mechanical</i> power more efficiently, safely and sustainably.</p> \

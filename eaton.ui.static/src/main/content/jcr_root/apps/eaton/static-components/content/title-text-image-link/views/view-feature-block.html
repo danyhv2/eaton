@@ -2,13 +2,13 @@
     <div class="row feature-block-component__container">
         <div class="col-xs-12 col-sm-7 feature-block-component__copy" style="background-color: ${data.backgroundColor @ context='styleString'}">
             <div class="feature-block-component__text">
-                <h2>${data.headline}</h2>
-                <p class="feature-block-component__description">${data.copy}</p>
-                <a class="b-button b-button--white feature-block-component__cta" href="${data.ctaUrl}" role="button" data-sly-test="${data.ctaUrl.length > 0}">${data.ctaText}</a>
+                <h2>${data.title}</h2>
+                <p class="feature-block-component__description">${data.text}</p>
+                <a class="b-button b-button--white feature-block-component__cta" href="${data.cta.url}" role="button" data-sly-test="${data.cta.url.length > 0}">${data.cta.text}</a>
             </div>
         </div>
         <div class="col-xs-12 col-sm-5 feature-block-component__image"
-             style="background:url('${data.image @ context='styleString'}') center no-repeat; background-size: cover">
+             style="background:url('${data.imgSrc @ context='styleString'}') center no-repeat; background-size: cover">
         </div>
     </div>
 </div>
