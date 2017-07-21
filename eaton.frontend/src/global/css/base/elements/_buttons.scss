@@ -16,67 +16,70 @@
   font-weight: bold;
   max-width: 600px;
 
-  &--with-icon {
 
-    .icon {
-      margin-left: 1rem;
-    }
-  }
-
-  &--primary {
+  &__primary {
     border-width: 3px;
-    font-size: 1.6em;
+    font-size: 1.250em;
     padding: 20px 40px;
 
-  }
-
-  &--secondary {
-    border-width: 3px;
-    font-size: 1.4em;
-    padding: 20px;
-  }
-
-  &--light {
-    border-color: $color__primary-blue;
-    color: $color__primary-blue;
-    padding: 20px 40px;
-    font-size: 1.6em;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: $color__white;
-      background: $color__primary-blue;
+    &--light {
       border-color: $color__primary-blue;
-      text-decoration: none;
-    }
-  }
-
-  &--white {
-    border-color: $color__white;
-    color: $color__white;
-    padding: 20px 40px;
-    font-size: 1.6em;
-    text-align: center;
-
-    &:hover {
-      text-decoration: none;
-      color: $color__white;
-    }
-
-  }
-
-  &--dark {
-    border-color: $color__white;
-    color: $color__white;
-
-    &:hover,
-    &:active,
-    &:focus {
       color: $color__primary-blue;
-      background: $color__white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color__white;
+        background: $color__primary-blue;
+        text-decoration: none;
+      }
+    }
+
+    &--dark {
       border-color: $color__white;
-      text-decoration: none;
+      color: $color__white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color__primary-blue;
+        background: $color__white;
+        text-decoration: none;
+        text-shadow: none;
+      }
+    }
+
+  }
+
+  &__secondary {
+    border-width: 3px;
+    font-size: 0.875em;
+    padding: 20px;
+
+    &--light {
+      border-color: $color__primary-blue;
+      color: $color__primary-blue;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color__white;
+        background: $color__primary-blue;
+        text-decoration: none;
+      }
+    }
+
+    &--dark {
+      border-color: $color__white;
+      color: $color__white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color__primary-blue;
+        background: $color__white;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -85,6 +88,10 @@
 
   .b-button {
     max-width: 100%;
+
+    &__secondary {
+      font-size: 1em;
+    }
   }
 
 }
