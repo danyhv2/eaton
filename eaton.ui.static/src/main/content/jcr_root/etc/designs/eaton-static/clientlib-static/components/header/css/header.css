@@ -1,4 +1,4 @@
-.header-utility-nav { background: #005EB8; padding: 10px 0; }
+.header-utility-nav { background: #005EB8; padding: 10px 0; font-size: 14px; }
 
 .header-utility-nav__country { text-transform: uppercase; font-weight: bold; margin-right: 5px; font-family: Arial, sans-serif; }
 
