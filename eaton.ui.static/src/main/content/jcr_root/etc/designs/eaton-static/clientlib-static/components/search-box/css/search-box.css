@@ -12,9 +12,7 @@
 
 .eaton-search-box { background-color: #005EB8; padding: 30px; }
 
-.eaton-search-box .row { padding: 0 15px; }
-
-.eaton-search-box__form { position: relative; }
+.eaton-search-box__form { padding: 0 15px; position: relative; }
 
 .eaton-search-box__buttons-container { height: 30px; position: absolute; right: 0; top: 5px; }
 
@@ -55,7 +53,7 @@
 .eaton-search-box__label-mobile { display: none; }
 
 @media screen and (max-width: 991px) { .eaton-search-box { padding: 30px 15px; }
-  .eaton-search-box .row { padding: 0; }
+  .eaton-search-box__form { padding: 0; }
   .eaton-search-box__results-container { padding: 0; }
   .eaton-search-box__button-transparent { font-size: 1.5rem; }
   .eaton-search-box__label-mobile { color: #FFF; font-size: 1.5rem; padding-right: 88px; position: absolute; top: -9px; }
