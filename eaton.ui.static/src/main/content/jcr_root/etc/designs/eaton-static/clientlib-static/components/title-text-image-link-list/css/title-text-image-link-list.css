@@ -134,3 +134,25 @@
   .category-hero__header-cta { font-size: 1.5em; } }
 
 @media only screen and (min-width: 991px) { .category-hero__header-image { min-height: 385px; } }
+
+.eaton-featured-list__eyebrow { margin-bottom: 30px; text-transform: uppercase; }
+
+.dark-theme .eaton-featured-list__eyebrow { color: #FFF; }
+
+.eaton-featured-list__item { margin-bottom: 30px; }
+
+.eaton-featured-list__link { display: block; text-decoration: none; cursor: pointer; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.eaton-featured-list__link:hover, .eaton-featured-list__link:focus { text-decoration: none; }
+
+.dark-theme .eaton-featured-list__link { color: #FFF; }
+
+.eaton-featured-list__image { max-width: 300px; }
+
+.eaton-featured-list__body { padding-left: 20px; }
+
+.dark-theme .eaton-featured-list__body { color: #FFF; }
+
+.eaton-featured-list__title { margin-bottom: 20px; }
+
+.eaton-featured-list__icon { font-size: 0.75em; margin-left: 0.25em; }

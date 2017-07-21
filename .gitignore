@@ -6,7 +6,6 @@ node_modules
 
 
 ##### OS Files
-._*
 *.DS_Store
 
 
@@ -30,3 +29,8 @@ npm-debug.log
 /eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/css/style.css
 # /eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/js/global/**
 # /eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/js/components/**
+/**/.project
+/git2svn-log.txt
+/**/.settings/
+/**/.classpath/
+/**/.classpath/

@@ -1,4 +1,4 @@
-.eaton-list-component { font-family: "Eaton", Arial, sans-serif; margin-bottom: 10px; }
+.eaton-list-component { font-family: "Eaton", Arial, sans-serif; margin-bottom: 60px; }
 
 .category__image { width: 100%; }
 
@@ -24,7 +24,7 @@
 
 .header-text__topmargin { margin-top: 5%; }
 
-.category__item { min-height: 200px; }
+.category__item { min-height: 231px; }
 
 .category-item-date { padding-top: 15px; color: #333F48; }
 
@@ -41,10 +41,6 @@
   .category__item, .category__image { min-height: 263px; }
   .category__link--font { font-size: 1.3em; } }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) { .category__item { min-height: 389px; } }
-
-@media only screen and (min-width: 1200px) { .category__item { min-height: 231px; } }
-
 .featured-category--topbottompadding { padding: 30px 0; }
 
 .featured-category-container { margin-bottom: 30px; }
@@ -54,8 +50,6 @@
 .featured-category__cta-container a:hover, .featured-category__cta-container a:active, .featured-category__cta-container a:focus { color: #FFF; }
 
 @media only screen and (max-width: 767px) { .featured-category-container { padding: 0; margin-bottom: 30px; } }
-
-@media only screen and (min-width: 1200px) { .category__item { min-height: 280px; } }
 
 .article-list-single-feature { padding-bottom: 50px; }
 

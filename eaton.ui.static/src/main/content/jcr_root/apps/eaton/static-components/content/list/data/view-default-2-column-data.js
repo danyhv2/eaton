@@ -8,7 +8,8 @@ use(function () {
                 image: '/content/dam/eaton/images/Jet.png',
                 mobile_image: '/content/dam/eaton/images/Jet.png',
                 image_alt: 'Image 1',
-                link_url: '#',
+                link_url: 'http://www.eaton.com',
+                _target: '_self',
                 date_text: 'November 30, 2016'
             },
             {
@@ -17,13 +18,11 @@ use(function () {
                 image: '/content/dam/eaton/images/Tractors.png',
                 mobile_image: '/content/dam/eaton/images/Tractors.png',
                 image_alt: 'Image 2',
-                link_url: '#',
+                link_url: 'http://www.eaton.com',
+                _target: '_self',
                 date_text: 'December 12, 2015'
             }
-        ],
-
-        /* If there is more than one carousel in the page, the carousel class has to be unique */
-        carouselClassUnique: Math.floor(Math.random() * 100)
+        ]
     }
     return data;
 });

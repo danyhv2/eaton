@@ -53,6 +53,10 @@
                     jcr:primaryType="nt:unstructured"
                     text="Image Only"
                     value="image-only"/>
+                  <featured-list
+                    jcr:primaryType="nt:unstructured"
+                    text="Featured List"
+                    value="featured-list"/>
                 </items>
               </view>
               <showCta
