@@ -19,6 +19,12 @@
 
   .eaton-text-default__content {
     @extend %body-copy-small;
+
+    // override the default font size for /text component
+    p {
+      font-size: 1.7rem;
+      line-height: 2.8rem;
+    }
   }
 
   .eaton-footer-top__link-list {
