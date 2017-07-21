@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-19T22:39:11.972Z"
+        cq:lastModifiedBy="etn-daniela"
+        cq:lastReplicated="{Date}2017-07-19T22:39:22.106Z"
+        cq:lastReplicatedBy="etn-daniela"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/eaton/static-templates/eaton-homepage-template-html"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="m8-landing-hero"
+        jcr:uuid="14936828-04ee-42df-9b02-01879a621d93"
+        sling:resourceType="eaton/static-components/structure/eaton-home-page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <title_text_image_lin
+                jcr:created="{Date}2017-07-19T22:39:03.601Z"
+                jcr:createdBy="etn-daniela"
+                jcr:lastModified="{Date}2017-07-19T22:39:11.967Z"
+                jcr:lastModifiedBy="etn-daniela"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/title-text-image-link-list"
+                view="landing-hero"/>
+        </par>
+    </jcr:content>
+</jcr:root>

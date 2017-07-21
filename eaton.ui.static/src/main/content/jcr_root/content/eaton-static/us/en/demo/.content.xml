@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-13T18:48:38.870Z"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/eaton/static-templates/eaton-homepage-template-html"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Demo Page"
+        sling:resourceType="eaton/static-components/structure/eaton-home-page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <title_text_image_lin
+                jcr:created="{Date}2017-07-13T18:47:20.209Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-07-13T18:48:38.865Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/title-text-image-link-list"
+                view="landing-hero"/>
+        </par>
+    </jcr:content>
+</jcr:root>
