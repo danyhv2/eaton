@@ -6,11 +6,8 @@
   background-color: $color__primary-blue;
   padding: $spacing__sm;
 
-  .row {
-    padding: 0 15px;
-  }
-
   &__form {
+    padding: 0 15px;
     position: relative;
   }
 
@@ -103,7 +100,7 @@
   @include media-mobile-and-tablet {
     padding: 30px 15px;
 
-    .row {
+    &__form {
       padding: 0;
     }
 
