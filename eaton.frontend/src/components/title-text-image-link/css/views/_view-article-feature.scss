@@ -25,10 +25,10 @@
     margin-top: 30px;
     margin-bottom: 30px;
 
-    & a:hover,
-    & a:active,
-    & a:visited,
-    & a:focus {
+    a:hover,
+    a:active,
+    a:visited,
+    a:focus {
       text-decoration: none;
       color: $color__primary-blue;
     }

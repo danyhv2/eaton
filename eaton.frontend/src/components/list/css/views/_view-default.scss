@@ -39,12 +39,12 @@
 }
 
 .eaton-list-component {
-  & .carousel-indicators {
+  .carousel-indicators {
     position: inherit;
     margin: 40px auto 0;
   }
 
-  & .carousel-indicators li {
+  .carousel-indicators li {
     width: 15px;
     height: 15px;
     cursor: inherit;
@@ -54,7 +54,7 @@
     margin: 0 4px;
   }
 
-  & .carousel-indicators .active {
+  .carousel-indicators .active {
     background-color: $color__primary-blue;
     width: 15px;
     height: 15px;
@@ -117,7 +117,7 @@
     background-color: $color__white;
   }
 
-  .equal-height-row  {
+  .equal-height-row {
     margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;

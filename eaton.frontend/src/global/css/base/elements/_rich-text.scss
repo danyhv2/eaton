@@ -6,6 +6,7 @@
 
   @extend %body-copy;
 
+  // stylelint-disable selector-max-compound-selectors
   b,
   strong {
     font-weight: bold;

@@ -19,6 +19,7 @@ nbproject
 *.map
 npm-debug.log
 .sass-cache
+.stylelintcache
 /eaton.core/target
 /eaton.ui.apps/target
 /eaton.ui.apps.html/target

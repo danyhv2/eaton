@@ -101,16 +101,19 @@
 // AEM Author Mode Styles
 //-----------------------------------
 
-.aem-AuthorLayer-Edit, // sass-lint:disable-line class-name-format
-.cq-wcm-edit  {
+// stylelint-disable selector-class-pattern
+.aem-AuthorLayer-Edit,
+.cq-wcm-edit {
+
+  // stylelint-disable declaration-no-important
   .mega-menu {
-    position: relative !important; // sass-lint:disable-line no-important
-    visibility: visible !important; // sass-lint:disable-line no-important
-    opacity: 1 !important; // sass-lint:disable-line no-important
-    z-index: 99999 !important; // sass-lint:disable-line no-important
+    position: relative !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 99999 !important;
 
     &__content {
-      display: block !important; // sass-lint:disable-line no-important
+      display: block !important;
     }
   }
 }
