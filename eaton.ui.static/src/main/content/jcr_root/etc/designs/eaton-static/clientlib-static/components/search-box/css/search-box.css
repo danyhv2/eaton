@@ -14,7 +14,7 @@
 
 .eaton-search-box__form { padding: 0 15px; position: relative; }
 
-.eaton-search-box__buttons-container { height: 30px; position: absolute; right: 0; top: 5px; }
+.eaton-search-box__buttons-container { height: 30px; position: absolute; right: 10px; top: 5px; }
 
 .eaton-search-box__button-transparent { background: none; border: 0; color: #FFF; font-size: 2rem; margin-left: 30px; padding-left: 30px; padding: 0 5px; position: relative; }
 
@@ -28,7 +28,7 @@
 
 .eaton-search-box__result-item a { color: #FFF; }
 
-.eaton-search-box__input { background: transparent; border: 0; border-bottom: 1px solid #FFF; color: #FFF; display: block; font-size: 2.5rem; font-weight: bold; outline: none; width: 100%; }
+.eaton-search-box__input { background: transparent; border: 0; border-bottom: 1px solid #FFF; color: #FFF; display: block; font-size: 2.5rem; font-weight: bold; outline: none; padding-right: 100px; width: 100%; }
 
 .eaton-search-box__input::-webkit-input-placeholder { color: #FFF; }
 
@@ -53,11 +53,14 @@
 .eaton-search-box__label-mobile { display: none; }
 
 @media screen and (max-width: 991px) { .eaton-search-box { padding: 30px 15px; }
+  .eaton-search-box__buttons-container { right: -3px; top: 9px; }
+  .eaton-search-box__buttons-container .icon { font-size: 17px; }
+  .eaton-search-box__button-transparent:first-child::after { top: 0px; }
   .eaton-search-box__form { padding: 0; }
   .eaton-search-box__results-container { padding: 0; }
   .eaton-search-box__button-transparent { font-size: 1.5rem; }
   .eaton-search-box__label-mobile { color: #FFF; font-size: 1.5rem; padding-right: 88px; position: absolute; top: -9px; }
-  .eaton-search-box__input { font-size: 1.8rem; height: 38px; padding-right: 88px; position: relative; z-index: 1; }
+  .eaton-search-box__input { font-size: 1.8rem; height: 38px; padding-right: 120px; position: relative; z-index: 1; }
   .eaton-search-box__input:placeholder-shown + label { display: block; }
   .eaton-search-box__input:focus + label { display: none; }
   .eaton-search-box__input::-webkit-input-placeholder { color: transparent; }
