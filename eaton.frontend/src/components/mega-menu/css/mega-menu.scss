@@ -84,10 +84,17 @@
         margin-left: 0;
       }
 
+      // Container for Flexible list-links
+      &--flex {
+        border-right: 1px solid $color__secondary-gray1;
+      }
+
+      // Container for 25% columns
       &--4 {
         flex-basis: 25%;
       }
 
+      // Container for 50% columns
       &--6 {
         flex-basis: 50%;
       }

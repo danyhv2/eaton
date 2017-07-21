@@ -12,10 +12,16 @@ App.header = (function() {
   let $primaryLinks = $componentClass.find('.eaton-link-list-primary-nav__items a');
   let $megaMenu = $componentClass.find('.mega-menu');
   let $megaMenuSections = $componentClass.find('.mega-menu__content');
+  const isAEMAuthorMode = (window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode()) ? true : false;
 
   const init = () => {
     console.log(`Header Component - ${ window.location.host }`);
-    addEventListeners();
+    console.log(`Author Mode - ${ isAEMAuthorMode }`);
+
+    // If not in AEM Author Mode - initialize scripts
+    if (!isAEMAuthorMode) {
+      addEventListeners();
+    }
   };
 
   /**
@@ -26,8 +32,6 @@ App.header = (function() {
     $(window).on('scroll', (event) => {
       let scrollTop = $(window).scrollTop();
       let headerHeight = 144;
-
-      // console.log('Values are', scrollTop, headerHeight);
 
       if ( scrollTop > (headerHeight)) {
         $componentClass.addClass('eaton-header--fixed');

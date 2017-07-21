@@ -1,4 +1,7 @@
-@media screen and (max-width: 991px) { .mega-menu .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; } }
+.mega-menu .eaton-title__headline { font-size: 26px; line-height: 34px; }
+
+@media screen and (max-width: 991px) { .mega-menu .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; }
+  .mega-menu .eaton-title__headline { font-size: 16px; line-height: 20px; } }
 
 .mega-menu { background: #333F48; position: absolute; width: 100%; z-index: 2; }
 
@@ -23,6 +26,7 @@
 
 @media screen and (min-width: 992px) { .mega-menu { opacity: 0; visibility: hidden; -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; }
   .mega-menu__col:first-child { margin-left: 0; }
+  .mega-menu__col--flex { border-right: 1px solid #CCD2D7; }
   .mega-menu__col--4 { -ms-flex-preferred-size: 25%; flex-basis: 25%; }
   .mega-menu__col--6 { -ms-flex-preferred-size: 50%; flex-basis: 50%; } }
 

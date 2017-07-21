@@ -2,7 +2,7 @@
 
 .eaton-featured-topic .glyphicon { display: none; }
 
-.eaton-featured-topic .eaton-link-list-vertical__list-link { font-weight: bold; }
+.eaton-featured-topic .eaton-link-list-vertical__list-link, .eaton-featured-topic .eaton-link-list-vertical__eyebrow { font-weight: bold; }
 
 .eaton-featured-topic__text { margin-bottom: 60px; }
 
