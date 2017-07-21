@@ -4,14 +4,62 @@
 //-----------------------------------
 
 .eaton-list-links {
+  display: flex;
 
-  &__row {
-    display: flex;
-  }
-  
   &__col {
     padding: 0;
     margin: 0;
     list-style-type: none;
+  }
+
+  &__link {
+    padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
+    text-decoration: none;
+    display: inline-block;
+
+    i {
+      font-size: 0.75em;
+      margin-right: ($spacing__sm / 3);
+      margin-top: 0.25em;
+    }
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  //-----------------------------
+  // Mobile-Tablet Breakpoint
+  // ----------------------------
+  @include media-mobile-and-tablet {
+    flex-direction: column;
+
+    &__col {
+      margin-bottom: ($spacing__sm);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  //-----------------------------
+  // Desktop Breakpoint
+  // ----------------------------
+  @include media-desktop-and-up {
+    flex-wrap: nowrap;
+
+    &__col {
+      flex-basis: 25%;
+      margin: 0 ($spacing__sm / 2 );
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        border-right: 1px solid $color__secondary-gray1;
+      }
+    }
   }
 }
