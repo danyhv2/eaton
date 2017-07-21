@@ -2,6 +2,7 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/eaton/static-templates"/>
     <filter root="/apps/eaton/static-components"/>
+    <filter root="/content/eaton-static"/>
     <filter root="/conf/static-eaton"/>
     <filter root="/etc/designs/eaton-static"/>
 </workspaceFilter>
