@@ -30,6 +30,8 @@
   .eaton-link-list-horizontal__list-item::after { content: ''; background-color: #5B6770; height: 1em; position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1px; }
   .eaton-link-list-horizontal__list-item:last-child::after { display: none; } }
 
+.eaton-link-list-primary-nav__items { font-family: 'EatonMedium'; }
+
 .eaton-link-list-primary-nav__items a { text-decoration: none; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-primary-nav { position: fixed; top: 109px; bottom: 40px; width: 100%; left: 0; height: 0; visibility: hidden; overflow: hidden; background: #5B6770; color: #FFF; -webkit-transition: height 0.7s ease-in-out; transition: height 0.7s ease-in-out; }
