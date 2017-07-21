@@ -20,7 +20,12 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     .eaton-logo {
-      margin: 20px 30px 20px 15px; // 4px for bottom shadow - height
+      margin: 10px 15px; // 4px for bottom shadow - height
+
+      &__link {
+        width: 100px;
+        height: 32px;
+      }
     }
   }
 

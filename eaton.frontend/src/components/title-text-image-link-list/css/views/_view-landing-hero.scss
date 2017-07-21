@@ -1,15 +1,3 @@
-//-----------------------------------
-// Eaton TTIL-LIST - Landing Hero View
-//-----------------------------------
-.eaton-landing-hero {
-  .item {
-    img {
-      width: 100%;
-    }
-  }
-}
-
-// Bootstrap Carousel
 .carousel-component {
 
   &-slide {
@@ -21,11 +9,11 @@
     }
 
     &__caption {
-      top: 10%;
+      top: 0;
     }
 
     &__cta {
-      margin-top: 60px;
+      margin-top: 30px;
     }
 
     &__image {
@@ -63,25 +51,37 @@
   &__arrow {
     display: none;
   }
-}
-
-@include media-mobile-and-tablet {
-  .carousel-component {
-
-    &-slide {
-
-      &__caption {
-        top: 0;
-      }
-    }
-  }
 
   .carousel-indicators {
     bottom: 56px;
   }
 }
 
-// ******** landing hero styles **********
+@include media-mobile-only {
+  .carousel-component-slide {
+    &__image--mobile {
+      min-height: 750px;
+    }
+  }
+}
+
+@include media-desktop-large {
+  .carousel-component {
+
+    &-slide {
+
+      &__caption {
+        top: 10%;
+      }
+
+      &__cta {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+ //******** landing hero styles **********
 .eaton-landing-hero--single {
 
   .carousel-component-slide {
