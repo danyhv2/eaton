@@ -28,7 +28,7 @@
 
     &__nav-item {
       border-bottom: 1px solid $color__primary-gray3;
-      margin: 0 20px;
+      margin: 0 15px;
       display: block;
       padding: 20px 0;
       font-size: 1.8rem;
@@ -62,7 +62,7 @@
       padding: 20px $spacing__sm;
 
       &:first-child {
-        padding-left: 0;
+        padding-left: 15px;
       }
     }
   }
