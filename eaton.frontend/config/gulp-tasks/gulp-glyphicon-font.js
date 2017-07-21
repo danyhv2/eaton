@@ -45,7 +45,7 @@ const buildIconfont = function(gulp, CONFIG) {
 
       function handleFonts(cb) {
         iconStream
-          .pipe(gulp.dest(CONFIG.paths.destAEM.clientlibStatic + '/global/css/fonts',))
+          .pipe(gulp.dest(CONFIG.paths.destAEM.clientlibStatic + '/global/css/fonts'))
           .on('finish', cb);
       }
 
