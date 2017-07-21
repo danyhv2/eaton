@@ -23,6 +23,7 @@
 
 @media screen and (min-width: 992px) { .mega-menu { opacity: 0; visibility: hidden; -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; }
   .mega-menu__col:first-child { margin-left: 0; }
+  .mega-menu__col--flex { border-right: 1px solid #CCD2D7; }
   .mega-menu__col--4 { -ms-flex-preferred-size: 25%; flex-basis: 25%; }
   .mega-menu__col--6 { -ms-flex-preferred-size: 50%; flex-basis: 50%; } }
 
