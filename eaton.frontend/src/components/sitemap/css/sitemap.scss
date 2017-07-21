@@ -1,0 +1,12 @@
+//-----------------------------------
+// Component : Sitemap
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+// Override Bootstrap's Breadcrumb component
+.eaton-sitemap {
+  background-color: $color__primary-gray2
+}

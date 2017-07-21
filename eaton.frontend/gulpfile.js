@@ -26,22 +26,27 @@ gulp.task('lint:js',
   require('./config/gulp-tasks/gulp-js-lint')(gulp, CONFIG)
 );
 
-// Shortcut for all Linting Tasks
-gulp.task('lint', ['lint:css', 'lint:js']);
-
 
 // TASKS: Compile SASS to CSS
 //--------------
-gulp.task('css',
+gulp.task('css:build',
   require('./config/gulp-tasks/gulp-css')(gulp, CONFIG)
 );
 
 
 // TASKS: JavaScript
 //--------------
-gulp.task('js',
+gulp.task('js:build',
   require('./config/gulp-tasks/gulp-js')(gulp, CONFIG)
 );
+
+
+// Shortcuts for Common Tasks
+//--------------
+gulp.task('lint', ['lint:css', 'lint:js']);
+gulp.task('css', ['lint:css', 'css:build']);
+gulp.task('js', ['js:css', 'js:build']);
+
 
 
 
@@ -49,8 +54,8 @@ gulp.task('js',
 //--------------
 gulp.task('build:dev', [
   // 'clean',
-  'css',
-  'js',
+  'css:build',
+  'js:build',
   'lint:css',
   'lint:js'
 ]);
@@ -58,11 +63,12 @@ gulp.task('build:dev', [
 
 
 // Build for Prod Servers
+// TODO: For production builds Add minifcation, hashes, cleanup folders etc
 //--------------
 gulp.task('build:prod', [
   // 'clean',
-  'css',
-  'js',
+  'css:build',
+  'js:build',
   'lint:css',
   'lint:js'
 ]);
