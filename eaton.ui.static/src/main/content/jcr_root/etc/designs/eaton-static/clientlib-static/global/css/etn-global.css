@@ -125,25 +125,28 @@ h5, .b-heading-h5 { margin-top: 0; }
 
 .b-button { background: none; border-radius: 0; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; }
 
-.b-button--with-icon .icon { margin-left: 1rem; }
+.b-button__primary { border-width: 3px; font-size: 1.250em; padding: 20px 40px; }
 
-.b-button--primary { border-width: 3px; font-size: 1.6em; padding: 20px 40px; }
+.b-button__primary--light { border-color: #005EB8; color: #005EB8; }
 
-.b-button--secondary { border-width: 3px; font-size: 1.4em; padding: 20px; }
+.b-button__primary--light:hover, .b-button__primary--light:active, .b-button__primary--light:focus { color: #FFF; background: #005EB8; text-decoration: none; }
 
-.b-button--light { border-color: #005EB8; color: #005EB8; padding: 20px 40px; font-size: 1.6em; }
+.b-button__primary--dark { border-color: #FFF; color: #FFF; }
 
-.b-button--light:hover, .b-button--light:active, .b-button--light:focus { color: #FFF; background: #005EB8; border-color: #005EB8; text-decoration: none; }
+.b-button__primary--dark:hover, .b-button__primary--dark:active, .b-button__primary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; text-shadow: none; }
 
-.b-button--white { border-color: #FFF; color: #FFF; padding: 20px 40px; font-size: 1.6em; text-align: center; }
+.b-button__secondary { border-width: 3px; font-size: 0.875em; padding: 20px; }
 
-.b-button--white:hover { text-decoration: none; color: #FFF; }
+.b-button__secondary--light { border-color: #005EB8; color: #005EB8; }
 
-.b-button--dark { border-color: #FFF; color: #FFF; }
+.b-button__secondary--light:hover, .b-button__secondary--light:active, .b-button__secondary--light:focus { color: #FFF; background: #005EB8; text-decoration: none; }
 
-.b-button--dark:hover, .b-button--dark:active, .b-button--dark:focus { color: #005EB8; background: #FFF; border-color: #FFF; text-decoration: none; }
+.b-button__secondary--dark { border-color: #FFF; color: #FFF; }
 
-@media screen and (max-width: 767px) { .b-button { max-width: 100%; } }
+.b-button__secondary--dark:hover, .b-button__secondary--dark:active, .b-button__secondary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; }
+
+@media screen and (max-width: 767px) { .b-button { max-width: 100%; }
+  .b-button__secondary { font-size: 1em; } }
 
 .b-list__item { display: inline-block; padding-bottom: 2rem; }
 

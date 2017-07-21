@@ -50,15 +50,11 @@
     flex-wrap: nowrap;
 
     &__col {
-      flex-basis: 25%;
+      width: 100%;
       margin: 0 ($spacing__sm / 2 );
 
       &:first-child {
         margin-left: 0;
-      }
-
-      &:last-child {
-        border-right: 1px solid $color__secondary-gray1;
       }
     }
   }
