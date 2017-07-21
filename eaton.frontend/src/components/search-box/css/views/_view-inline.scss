@@ -16,6 +16,12 @@
     display: flex;
   }
 
+  .icon-search {
+    font-size: 18px;
+    top: 2px;
+    position: relative;
+  }
+
   &__form-input { // Styles for Form Elements
     appearance: none;
     border: 0;

@@ -6,6 +6,8 @@
 
 .header-utility-nav .icon { position: relative; top: 2px; margin-right: 5px; font-size: 1em; }
 
+.header-utility-nav .icon.icon-chevron-right { font-size: 12px; top: 1px; }
+
 .header-utility-nav .open-country-selector, .header-utility-nav .open-sign-in { color: #FFF; text-decoration: none; }
 
 @media screen and (max-width: 991px) { .header-utility-nav { position: fixed; bottom: 0; z-index: 1; width: 100%; right: 0; opacity: 0; visibility: hidden; -webkit-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; }
@@ -15,7 +17,7 @@
 
 .header-primary-nav .row { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.header-primary-nav__links i { font-size: 20px; color: #005EB8; }
+.header-primary-nav__links i { font-size: 20px; color: #005EB8; position: relative; }
 
 @media screen and (max-width: 991px) { .header-primary-nav .row { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .header-primary-nav__links { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
