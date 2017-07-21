@@ -5,6 +5,9 @@ let App = window.App || {};
 App.carousel = function () {
 
   const init = () => {
+    $('.carousel').carousel({
+      interval: 3000
+    });
     $('.carousel').on('touchstart', function(event) {
       let xClick = event.originalEvent.touches[0].pageX;
       $(this).one('touchmove', function(event) {

@@ -1,4 +1,4 @@
-.header-utility-nav { background: #005EB8; padding: 10px 0; }
+.header-utility-nav { background: #005EB8; padding: 10px 0; font-size: 14px; }
 
 .header-utility-nav__country { text-transform: uppercase; font-weight: bold; margin-right: 5px; font-family: Arial, sans-serif; }
 
@@ -15,8 +15,9 @@
 
 .header-primary-nav__links i { font-size: 20px; color: #005EB8; }
 
-@media screen and (max-width: 991px) { .header-primary-nav__links { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .header-primary-nav__open-search, .header-primary-nav__open-mobile-menu { display: inline-block; padding: 30px; } }
+@media screen and (max-width: 991px) { .header-primary-nav .row { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .header-primary-nav__links { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .header-primary-nav__open-search, .header-primary-nav__open-mobile-menu { display: inline-block; padding: 15px; } }
 
 @media screen and (min-width: 992px) { .header-primary-nav__menu { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; position: relative; }
   .header-primary-nav__menu::after { content: ''; height: 30px; width: 1px; background: #98A4AE; position: absolute; top: 36px; right: 0; }
@@ -28,7 +29,8 @@
 
 .eaton-header { position: relative; z-index: 30; }
 
-@media screen and (max-width: 991px) { .eaton-header .eaton-logo { margin: 20px 30px 20px 15px; } }
+@media screen and (max-width: 991px) { .eaton-header .eaton-logo { margin: 10px 15px; }
+  .eaton-header .eaton-logo__link { width: 100px; height: 32px; } }
 
 @media screen and (min-width: 992px) { .eaton-header .eaton-logo { margin: 20px 15px 16px; }
   .eaton-header--fixed { position: fixed; width: 100%; z-index: 20; top: 0; }

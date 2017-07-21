@@ -34,6 +34,82 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 @media screen and (min-width: 992px) { .b-eyebrow-small { font-size: 18px; line-height: 24px; } }
 
+.icon::before { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; font-family: "eaton-glyphicon"; font-smoothing: antialiased; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; text-decoration: inherit; text-rendering: optimizeLegibility; text-transform: none; }
+
+.icon-badge::before { content: "\EA01"; }
+
+.icon-book::before { content: "\EA02"; }
+
+.icon-bulb::before { content: "\EA03"; }
+
+.icon-calendar::before { content: "\EA04"; }
+
+.icon-chevron-down::before { content: "\EA05"; }
+
+.icon-chevron-left::before { content: "\EA06"; }
+
+.icon-chevron-right::before { content: "\EA07"; }
+
+.icon-close::before { content: "\EA08"; }
+
+.icon-doc-badge::before { content: "\EA09"; }
+
+.icon-doc-download::before { content: "\EA0A"; }
+
+.icon-doc-text::before { content: "\EA0B"; }
+
+.icon-download::before { content: "\EA0C"; }
+
+.icon-globe::before { content: "\EA0D"; }
+
+.icon-hamburger::before { content: "\EA0E"; }
+
+.icon-headset::before { content: "\EA0F"; }
+
+.icon-help::before { content: "\EA10"; }
+
+.icon-info::before { content: "\EA11"; }
+
+.icon-link-external::before { content: "\EA12"; }
+
+.icon-list-checkmark::before { content: "\EA13"; }
+
+.icon-list-items::before { content: "\EA14"; }
+
+.icon-list::before { content: "\EA15"; }
+
+.icon-marker::before { content: "\EA16"; }
+
+.icon-phone::before { content: "\EA17"; }
+
+.icon-plane::before { content: "\EA18"; }
+
+.icon-player-pause::before { content: "\EA19"; }
+
+.icon-player-play::before { content: "\EA1A"; }
+
+.icon-quote-dark::before { content: "\EA1B"; }
+
+.icon-quote-light::before { content: "\EA1C"; }
+
+.icon-search-minus::before { content: "\EA1D"; }
+
+.icon-search-plus::before { content: "\EA1E"; }
+
+.icon-search::before { content: "\EA1F"; }
+
+.icon-shopping-cart::before { content: "\EA20"; }
+
+.icon-sign-minus::before { content: "\EA21"; }
+
+.icon-sign-plus::before { content: "\EA22"; }
+
+.icon-tiles::before { content: "\EA23"; }
+
+.icon-tree::before { content: "\EA24"; }
+
+.icon-user::before { content: "\EA25"; }
+
 @font-face { font-family: 'Eaton'; src: url("fonts/EatonRegular.woff") format("woff"); }
 
 @font-face { font-family: 'EatonMedium'; src: url("fonts/EatonMedium.woff") format("woff"); }
@@ -41,6 +117,10 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 @font-face { font-family: 'EatonBold'; src: url("fonts/EatonBold.woff") format("woff"); }
 
 @font-face { font-family: 'Arial'; src: url("fonts/Arial.woff"); }
+
+@font-face { font-family: "eaton-glyphicon"; font-style: normal; font-weight: normal; src: url("../css/fontseaton-glyphicon.eot"); src: url("../css/fontseaton-glyphicon.eot?#iefix") format("eot"), url("../css/fontseaton-glyphicon.woff") format("woff"), url("../css/fontseaton-glyphicon.ttf") format("truetype"); }
+
+.icon { font-size: 24px; line-height: 0; }
 
 body { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 16px; }
 
@@ -125,7 +205,7 @@ h5, .b-heading-h5 { margin-top: 0; }
 
 .b-button { background: none; border-radius: 0; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; }
 
-.b-button__primary { border-width: 3px; font-size: 1.250em; padding: 20px 40px; }
+.b-button__primary { border-width: 3px; font-size: 1.25em; padding: 20px 40px; }
 
 .b-button__primary--light { border-color: #005EB8; color: #005EB8; }
 

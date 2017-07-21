@@ -1,6 +1,6 @@
-<sly data-sly-use.data="../data/view-links-2col-data.js">
+<sly data-sly-use.data="${'../data/view-links-2col-data.js' @testdata=properties.testdata}">
   <!--/* Link Groups - Cols */-->
-  <div data-sly-list="${data}" class="eaton-list-links">
+  <div data-sly-list="${data}" class="eaton-list-links" data-testdata="${data.testdata}">
       <ul data-sly-list="${item.linkGroup}" class="eaton-list-links__col">
         <li class="eaton-list-links__item">
           <a href="${item.cta.url}"
