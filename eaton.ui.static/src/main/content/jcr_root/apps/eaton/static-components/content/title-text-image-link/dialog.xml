@@ -14,7 +14,7 @@
                     <view
                         jcr:primaryType="cq:Widget"
                         allowBlank="false"
-                        defaultValue="default"
+                        defaultValue="card"
                         fieldDescription="Choose a view"
                         fieldLabel="View"
                         fieldSubLabel=""
@@ -22,6 +22,14 @@
                         type="select"
                         xtype="selection">
                         <options jcr:primaryType="cq:WidgetCollection">
+                            <card
+                                jcr:primaryType="nt:unstructured"
+                                text="Card"
+                                value="card"/>
+                            <page-overview
+                                jcr:primaryType="nt:unstructured"
+                                text="Page Overview"
+                                value="page-overview"/>
                             <l2-hero
                                 jcr:primaryType="nt:unstructured"
                                 text="L2 Hero"

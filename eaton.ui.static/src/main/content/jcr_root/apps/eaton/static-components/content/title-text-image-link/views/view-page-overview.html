@@ -1,0 +1,35 @@
+<sly data-sly-use.data="${'../data/view-page-overview-data.js' @tesdata=properties.testdata}">
+
+  <div class="eaton-page-overview">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-6">
+          <div class="eaton-page-overview__title">
+            <sly data-sly-resource="${'title' @ resourceType='/apps/eaton/static-components/general/title'}"></sly>
+          </div>
+
+          <div class="eaton-page-overview__cta hidden-xs">
+            <sly data-sly-resource="${'ctabutton' @ resourceType='/apps/eaton/static-components/general/ctabutton'}"></sly>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <div class="eaton-page-overview__content">
+            <sly data-sly-resource="${'text' @ resourceType='/apps/eaton/static-components/general/text'}"></sly>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="eaton-page-overview__cta visible-xs text-center">
+          <sly data-sly-resource="${'ctabutton' @ resourceType='/apps/eaton/static-components/general/ctabutton'}"></sly>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</sly>

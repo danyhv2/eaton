@@ -1,12 +1,13 @@
 <sly data-sly-use.data="../data/view-featured-article-data.js">
 
-    <div class="eaton-list-component eaton-list-component-featured-article-view">
-        
+    <!--/* Container */-->
+    <div class="container eaton-list-component eaton-list-component-featured-article-view">
+
         <!--/* Featured Article */-->
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
-                <div class="featured-category-container col-sm-12">
-                    <a href="${data.featured_content.link_url}">
+            <div class="col-xs-12">
+                <div class="featured-category-container">
+                    <a href="${data.featured_content.link_url}" target="${data.featured_content._target}">
                         <img src="${data.featured_content.image}" class="hidden-xs img-responsive category__image" alt="${data.featured_content.image_alt}"/>
                         <img src="${data.featured_content.mobile_image}" class="visible-xs img-responsive category__image" alt="${data.featured_content.image_alt}"/> 
                         <div class="featured-category--topbottompadding">
@@ -18,15 +19,12 @@
                 </div>
             </div>
         </div>
-    
+
         <!--/* Desktop/Tablet Layout */-->
         <div class="row hidden-xs visible-sm visible-md visible-lg">
-
-            <sly sly data-sly-test.colMDoffSet="${data.cards.length == 2 ? 'col-md-offset-2' : ''}" />
-
-            <div class="col-sm-10 col-sm-offset-1 ${colMDoffSet}" data-sly-list.slider="${data.cards}" role="listbox">
-                <div class="col-sm-12 ${data.cards.length == 2 ? 'col-md-5' : 'col-md-4'}">
-                    <a href="${slider.link_url}" class="equal-height-row tablet-card">
+            <div data-sly-list.slider="${data.cards}" role="listbox">
+                <div class="col-sm-12 ${data.cards.length == 2 ? 'col-md-6' : 'col-md-4'}">
+                    <a href="${slider.link_url}" class="equal-height-row tablet-card" target="${slider._target}">
                         <div class="related-category--tablet-left">
                             <img src="${slider.image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
                         </div>
@@ -38,15 +36,14 @@
                     </a>
                 </div>
             </div>
-
         </div>
 
         <!--/* Mobile slider */-->
         <div class="row visible-xs">
-            <div class="col-xs-10 col-xs-offset-1">
+            <div class="col-xs-12">
                 <div class="featured-article-carousel-component carousel slide">
                     <div class="carousel-inner" data-sly-list.slider="${data.cards}" role="listbox">
-                        <a href="${slider.link_url}" class="item ${sliderList.index == 0 ? 'active' : ''}">
+                        <a href="${slider.link_url}" class="item ${sliderList.index == 0 ? 'active' : ''}" target="${slider._target}">
                             <div>
                                 <img src="${slider.mobile_image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
                                 <div class="category__item--border category__item-innerpadding carousel__item">
@@ -59,7 +56,7 @@
                     </div>
                     <div class="text-center">
                         <ol class="carousel-indicators list-unstyled" data-sly-list.slider1="${data.cards}">
-                            <li data-target=".featured-article-carousel-component" data-slide-to="${slider1List.index}" class="${slider1List.index == 0 ? 'active' : ''}">
+                            <li data-target=".featured-article-carousel-component${data.carouselClassUnique}" data-slide-to="${slider1List.index}" class="${slider1List.index == 0 ? 'active' : ''}">
                                 <span class="sr-only">${slider1List.index}</span>
                             </li>
                         </ol>
@@ -70,7 +67,7 @@
 
         <!--/* Bottom CTA */-->
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 text-center featured-category__cta-container">
+            <div class="col-xs-12 text-center featured-category__cta-container">
                 <sly data-sly-resource="${'featured-article-ctabutton' @ resourceType='/apps/eaton/static-components/general/ctabutton'}"></sly>
             </div>
         </div>

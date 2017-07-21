@@ -1,0 +1,15 @@
+//-----------------------------------
+// TTIL - View - Card
+//-----------------------------------
+.eaton-ttil-card-view {
+
+  &__image { margin-bottom: $spacing__sm; }
+
+  &__title { margin-bottom: $spacing__sm; }
+
+  &__text {
+    color: $color__primary-blue;
+    text-transform: none;
+  }
+
+}

@@ -13,6 +13,15 @@
     margin-bottom: ($spacing__sm * 2);
   }
 
+  &__content {
+    display: block;
+  }
+
+  &__image-headline {
+    margin-top: ($spacing__sm);
+    color: $color__primary-blue;
+  }
+
   //-----------------------------
   // Mobile-Tablet Breakpoint
   // ----------------------------
@@ -22,6 +31,15 @@
     &__item {
       flex-basis: 100%;
       padding: 0 10px;
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__image {
+      width: 150px;
+      display: inline-block;
     }
   }
 }

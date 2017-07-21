@@ -4,15 +4,52 @@
 
 .rich-text-container {
 
+  @extend %body-copy;
+
+  // stylelint-disable selector-max-compound-selectors
   b,
   strong {
-    font-weight: 700;
+    font-weight: bold;
   }
 
   i,
   em {
     font-style: italic;
   }
+
+  a {
+    text-decoration: underline;
+  }
+
+  p {
+    @extend %body-copy;
+  }
+
+
+  // Unordered lists
+  //--------------
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      position: relative;
+      padding-left: 40px;
+
+      &::before {
+        @include square(6px); // Width & Height
+
+        content: '';
+        background-color: $color__primary-blue;
+        border-radius: 50%;
+        left: 20px;
+        position: absolute;
+        top: 0.6em;
+
+      }
+    }
+  }
+
 
   // Over DARK-Background
   //--------------
@@ -39,7 +76,11 @@
     // Unordered lists
     //--------------
     ul {
-
+      li {
+        &::before {
+          background-color: $color__white;
+        }
+      }
     }
 
 

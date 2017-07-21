@@ -6,7 +6,6 @@ node_modules
 
 
 ##### OS Files
-._*
 *.DS_Store
 
 
@@ -20,6 +19,7 @@ nbproject
 *.map
 npm-debug.log
 .sass-cache
+.stylelintcache
 /eaton.core/target
 /eaton.ui.apps/target
 /eaton.ui.apps.html/target
@@ -27,6 +27,9 @@ npm-debug.log
 
 
 ##### ClientLibs Created By Gulp/Maven Tasks
-/eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/css/style.css
 # /eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/js/global/**
 # /eaton.ui.static/src/main/content/jcr_root/etc/designs/eaton-static/clientlib-static/js/components/**
+/**/.project
+/git2svn-log.txt
+/**/.settings/
+/**/.classpath/

@@ -2,8 +2,16 @@
     <div class="alert alert-warning">TTIL Component</div>
 </sly>
 
+<sly data-sly-test="${properties.view == 'card'}">
+    <sly data-sly-include="views/view-card.html"></sly>
+</sly>
+
 <sly data-sly-test="${properties.view == 'l2-hero'}">
     <sly data-sly-include="views/view-l2-hero.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${properties.view == 'page-overview'}">
+    <sly data-sly-include="views/view-page-overview.html"></sly>
 </sly>
 
 <sly data-sly-test="${properties.view == 'single-feature'}">

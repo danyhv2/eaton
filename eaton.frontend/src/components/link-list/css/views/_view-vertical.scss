@@ -27,6 +27,22 @@
     margin-left: 0.25em;
   }
 
+  &__external-icon {
+    padding-right: 10px;
+    font-size: 1.125em;
+  }
+
+  &__download-text {
+    width: 100%;
+    margin-left: 30px;
+    font-size: .90em;
+
+    &--description {
+      color: $color__primary-gray3;
+      font-family: $font-family__secondary;
+    }
+  }
+
 
   // Over DARK-Background
   //--------------
@@ -57,6 +73,10 @@
 
     &__eyebrow {
       margin-bottom: ($spacing__sm / 2);
+    }
+
+    &__download-text {
+      width: auto;
     }
 
   }

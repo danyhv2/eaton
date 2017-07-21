@@ -18,19 +18,17 @@
   }
 
   &-cta {
-    margin-top: 30px;
     color: $color__primary-blue;
     font-size: 2.5em;
     font-family: Arial;
     font-weight: bold;
-    padding-right: 7%;
     margin-top: 30px;
     margin-bottom: 30px;
 
-    & a:hover,
-    & a:active,
-    & a:visited,
-    & a:focus {
+    a:hover,
+    a:active,
+    a:visited,
+    a:focus {
       text-decoration: none;
       color: $color__primary-blue;
     }
@@ -42,7 +40,7 @@
 
   &-body {
     margin-bottom: 120px;
-    padding-right: 7%;
+    font-size: 1.5em;
   }
 }
 
@@ -68,10 +66,9 @@
     }
 
     &-cta {
-      padding-right: 1%;
       font-size: 1.5em;
       margin-top: 15px;
       margin-bottom: 15px;
     }
-  }    
+  }
 }

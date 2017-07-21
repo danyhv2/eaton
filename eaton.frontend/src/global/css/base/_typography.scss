@@ -37,45 +37,45 @@ p {
 h1,
 h2,
 h3,
-.heading-h1,
-.heading-h2,
-.heading-h3 {
+.b-heading-h1,
+.b-heading-h2,
+.b-heading-h3 {
   font-family: $font-family__primary;
 }
 
 h4,
 h5,
-.heading-h5,
-.heading-h6 {
+.b-heading-h5,
+.b-heading-h6 {
   font-family: $font-family__secondary;
 }
 
 h1,
-.heading-h1 {
+.b-heading-h1 {
   @extend %h1;
   margin-top: 0;
 }
 
 h2,
-.heading-h2 {
+.b-heading-h2 {
   @extend %h2;
   margin-top: 0;
 }
 
 h3,
-.heading-h3 {
+.b-heading-h3 {
   @extend %h3;
   margin-top: 0;
 }
 
 h4,
-.heading-h4 {
+.b-heading-h4 {
   @extend %h4;
   margin-top: 0;
 }
 
 h5,
-.heading-h5 {
+.b-heading-h5 {
   @extend %h5;
   margin-top: 0;
 }
@@ -84,12 +84,20 @@ h5,
 
 // BodyCopy
 //--------------
-.body-copy {
+.b-body-copy {
   @extend %body-copy;
 }
 
-.body-copy-small {
+.b-body-copy-small {
   @extend %body-copy;
+}
+
+.b-eyebrow-large {
+  @extend %eyebrow-large;
+}
+
+.b-eyebrow-small {
+  @extend %eyebrow-small;
 }
 
 
@@ -102,8 +110,8 @@ h5,
 // Eg: <a href="#" class="body-link heading-h5">...</a>
 //---------------------
 
-
 // TODO: TBD
+// sass-lint:disable no-css-comments
 /*
 .body-link {
   color: $color__primary-blue;
@@ -123,46 +131,5 @@ h5,
       color: $color__white; //TBD
     }
   }
-}
-
-.body-copy {
-  background: inherit;
-  font-size: 2.2rem;
-  line-height: 3.5rem;
-  color: $color__primary-gray1;
-}
-
-.body-copy-small {
-  color: $color__primary-gray1;
-  font-family: $font-family__secondary;
-  font-size: 26px;
-  line-height: 34px;
-}
-
-.eyebrow-small {
-  color: $color__primary-gray1;
-  font-family: $font-family__secondary;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 34px;
-}
-
-
-
-//-----------------------------------
-// Media-Query: Desktop
-//-----------------------------------
-@include media-desktop-and-up {
-
-  .body-copy-small {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .eyebrow-small {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
 }
 */

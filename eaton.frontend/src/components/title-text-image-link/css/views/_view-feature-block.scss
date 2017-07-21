@@ -31,10 +31,8 @@
   &__cta {
     margin-top: 30px;
   }
-}
 
-@include media-mobile-only {
-  .feature-block-component {
+  @include media-mobile-only {
     &__container {
       display: flex;
       flex-direction: column;
@@ -43,19 +41,19 @@
 
     &__text {
       padding: 30px;
+      min-height: 380px;
     }
 
     &__copy {
       order: 1;
+      min-height: 380px;
     }
   }
-}
 
-@include media-tablet-only {
-  .feature-block-component {
-
+  @include media-tablet-only {
     &__container {
       height: 400px;
     }
   }
 }
+

@@ -30,10 +30,10 @@
                 jcr:primaryType="nt:unstructured"
                 text="Landing Hero"
                 value="landing-hero"/>
-              <product-overview
+              <landing-hero-single
                 jcr:primaryType="nt:unstructured"
-                text="Product Overview"
-                value="product-overview"/>
+                text="Landing Hero - Single"
+                value="landing-hero-single"/>
               <tile-link
                 jcr:primaryType="nt:unstructured"
                 text="Tile Link"
@@ -46,8 +46,28 @@
                 jcr:primaryType="nt:unstructured"
                 text="Image Only"
                 value="image-only"/>
+              <featured-list
+                jcr:primaryType="nt:unstructured"
+                text="Featured List"
+                value="featured-list"/>
             </options>
           </view>
+          <showCta
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Show or hide the cta"
+            fieldLabel="Show cta"
+            inputValue="true"
+            name="./showCta"
+            type="checkbox"
+            xtype="selection"/>
+          <showSeparator
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Show or hide the separator for the headline"
+            fieldLabel="Show separator"
+            inputValue="true"
+            name="./showSeparator"
+            type="checkbox"
+            xtype="selection"/>
         </items>
       </tab1>
     </items>

@@ -1,7 +1,7 @@
 "use strict";
 use(function () {
     var data = {};
-    data.headline = "Top Insights & Stories";
+    data.eyebrow = "Top Insights & Stories";
     data.items = [
       {
         title: 'Aerospace Warranty',

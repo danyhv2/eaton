@@ -17,9 +17,14 @@
   background: $color__primary-gray2;
   padding: 60px 0;
 
+  .eaton-text-default__content {
+    @extend %body-copy-small;
+  }
+
   .eaton-footer-top__link-list {
     margin-bottom: 40px;
   }
+
 }
 
 
@@ -50,7 +55,7 @@
 
   .eaton-footer-top__logo { margin-bottom: 60px; }
 
-  .eaton-footer-top__text { margin-bottom: 120px; }
+  .eaton-footer-top__content { margin-bottom: 120px; }
 
   .eaton-footer-top__link-list { margin-bottom: 60px; }
 
@@ -68,7 +73,7 @@
 }
 
 //-----------------------------------
-// Media-Query: Tablet & Desktop
+// Media-Query: Desktop & Desktop Large
 //-----------------------------------
 @include media-desktop-and-up {
 

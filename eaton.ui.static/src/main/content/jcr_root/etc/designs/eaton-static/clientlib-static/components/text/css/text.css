@@ -1,5 +1,5 @@
 .eaton-text-statement__content { padding: 15px 0 15px 30px; border-left: 10px solid #005EB8; font-family: Arial; font-style: italic; color: #98A4AE; margin: 0; }
 
-@media screen and (max-width: 991px) { .eaton-text-statement__content { font-size: 2.375em; } }
+@media screen and (max-width: 991px) { .eaton-text-statement__content { font-size: 1.063em; line-height: 2em; } }
 
 @media screen and (min-width: 992px) { .eaton-text-statement__content { font-size: 1.625em; } }

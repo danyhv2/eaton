@@ -1,9 +1,9 @@
-<sly data-sly-use.data="../data/view-vertical-data.js">
+<sly data-sly-use.data="${'../data/view-vertical-data.js' @testdata=properties.testdata}">
 
   <div class="eaton-link-list-vertical">
 
     <!--/* If Eyebrow */-->
-    <div data-sly-test="${ data.view.eyebrow }" class="eaton-link-list-vertical__eyebrow eyebrow-small">${ data.view.eyebrow }</div>
+    <div data-sly-test="${ data.view.eyebrow }" class="eaton-link-list-vertical__eyebrow b-eyebrow-small">${ data.view.eyebrow }</div>
 
     <!--/* List Links */-->
     <ul
@@ -11,18 +11,25 @@
       class="eaton-link-list-vertical__list"
     >
       <li class="eaton-link-list-vertical__list-item">
-        <a href="${ item.url }"
+        <a href="${item.document_download ? item.document_download : item.url}"
           aria-label="Go to ${ item.title }"
           class="eaton-link-list-vertical__list-link"
-          target="${ item.target }"
-        >
-          <span class="eaton-link-list-vertical__list-text">${ item.title }</span>
-          <i class="eaton-link-list-vertical__list-icon glyphicon glyphicon-menu-right"
+          target="${ item.external_link ? '_blank' : '_self' }"
+                data-sly-attribute.download="${item.document_download}">
+          <span class="eaton-link-list-vertical__list-text">
+              <i data-sly-test="${item.external_link}" class="eaton-link-list-vertical__external-icon glyphicon glyphicon-new-window" aria-hidden="true"></i>
+              <i data-sly-test="${item.document_download != ''}" class="eaton-link-list-vertical__external-icon glyphicon glyphicon-save" aria-hidden="true"></i>
+              ${ item.title }
+          </span>
+          <i data-sly-test="${item.document_download == ''}" class="eaton-link-list-vertical__list-icon glyphicon glyphicon-menu-right"
             aria-hidden="true"></i>
         </a>
+        <div class="eaton-link-list-vertical__download-text" data-sly-test="${item.document_download != ''}">
+            <p>(${item.document_size})</p>
+            <p class="eaton-link-list-vertical__download-text--description">${item.document_description}</p>
+        </div>
       </li>
     </ul>
-
   </div>
 
 </sly>

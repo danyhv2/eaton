@@ -16,7 +16,7 @@
 
 .eaton-search-box__buttons-container { height: 30px; position: absolute; right: 0; top: 5px; }
 
-.eaton-search-box__button-transparent { background: none; border: none; color: #FFF; font-size: 2rem; padding: 0 0 0 30px; position: relative; }
+.eaton-search-box__button-transparent { background: none; border: 0; color: #FFF; font-size: 2rem; padding: 0 0 0 30px; position: relative; }
 
 .eaton-search-box__button-transparent:first-child::after { content: ''; background-color: #FFF; position: absolute; height: 20px; width: 1px; right: -19px; top: 3px; }
 

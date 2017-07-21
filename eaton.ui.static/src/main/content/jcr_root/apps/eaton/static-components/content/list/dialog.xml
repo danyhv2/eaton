@@ -34,6 +34,10 @@
                                 jcr:primaryType="nt:unstructured"
                                 text="Article List: Single Feature"
                                 value="article-list-single-feature"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                text="Links"
+                                value="links"/>
                         </options>
                     </view>
                 </items>

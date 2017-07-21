@@ -1,6 +1,6 @@
 .eaton-list-component {
   font-family: $font-family__primary;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 }
 
 .category__image {
@@ -22,7 +22,7 @@
 }
 
 .category__link--font {
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
@@ -39,12 +39,12 @@
 }
 
 .eaton-list-component {
-  & .carousel-indicators {
+  .carousel-indicators {
     position: inherit;
     margin: 40px auto 0;
   }
 
-  & .carousel-indicators li {
+  .carousel-indicators li {
     width: 15px;
     height: 15px;
     cursor: inherit;
@@ -54,7 +54,7 @@
     margin: 0 4px;
   }
 
-  & .carousel-indicators .active {
+  .carousel-indicators .active {
     background-color: $color__primary-blue;
     width: 15px;
     height: 15px;
@@ -76,7 +76,7 @@
 }
 
 .category__item {
-  min-height: 200px;
+  min-height: 231px;
 }
 
 .category-item-date {
@@ -85,13 +85,17 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .category__item-innerpadding {
+    padding: 25px;
+  }
+
   .carousel__item {
-    min-height: 227px;
+    min-height: 233px;
   }
 
   .category__link--font {
-    font-size: 1.4em;
-    line-height: 1.3em;
+    font-size: 1.1em;
+    line-height: 1.2em;
   }
 
   .category__title--bottompadding {
@@ -113,7 +117,7 @@
     background-color: $color__white;
   }
 
-  .equal-height-row  {
+  .equal-height-row {
     margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -130,18 +134,6 @@
   }
 
   .category__link--font {
-    font-size: 1.5em;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .category__item {
-    min-height: 328px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .category__item {
-    min-height: 260px;
+    font-size: 1.3em;
   }
 }

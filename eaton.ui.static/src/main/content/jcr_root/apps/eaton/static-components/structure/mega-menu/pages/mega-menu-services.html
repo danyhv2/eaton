@@ -7,22 +7,32 @@
     <div class="mega-menu__category">
       <div class="container">
           <div class="mega-menu__row">
+            <!--/* Include: Column 1 - Flexible width */ -->
+            <div class="mega-menu__col mega-menu__col--flex">
+              <!--/* Include: List - Links */ -->
+              <div class="mega-menu__category-item">
+                <sly data-sly-resource="${'links-services' @ resourceType='/apps/eaton/static-components/content/list'}"></sly>
+              </div>
+            </div>
+
+            <!--/* Include: Column 2 */ -->
             <div class="mega-menu__col mega-menu__col--4">
                 <!--/* Include: Search Box - Inline */ -->
                 <div class="mega-menu__category-item">
-                  <sly data-sly-resource="${'search-inline' @ resourceType='/apps/eaton/static-components/content/search-box'}"></sly>
+                  <sly data-sly-resource="${'search-inline-services' @ resourceType='/apps/eaton/static-components/content/search-box'}"></sly>
                 </div>
 
                 <!--/* Include: Link List - default */ -->
                 <div class="mega-menu__category-item">
-                  <sly data-sly-resource="${'link-list' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                  <sly data-sly-resource="${'link-list-services' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
                 </div>
             </div>
 
+            <!--/* Include: Column 3 */ -->
             <div class="mega-menu__col mega-menu__col--4">
-                <!--/* Include: TTIL - Single Feature */ -->
+                <!--/* Include: Link List - Download Feature */ -->
                 <div class="mega-menu__category-item">
-                  <sly data-sly-resource="${'download-list-1' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                  <sly data-sly-resource="${'download-list-services' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
                 </div>
             </div>
           </div>

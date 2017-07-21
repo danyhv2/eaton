@@ -32,6 +32,14 @@
                 value="witheyebrowandbyline"/>
             </options>
           </view>
+          <toggleInnerGrid
+            jcr:primaryType="cq:Widget"
+            fieldDescription=""
+            fieldLabel="Enable Inner Grid"
+            inputValue="true"
+            name="./toggleInnerGrid"
+            type="checkbox"
+            xtype="selection" />
         </items>
       </tab1>
     </items>

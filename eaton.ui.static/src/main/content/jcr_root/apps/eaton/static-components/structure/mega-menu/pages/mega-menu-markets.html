@@ -7,15 +7,27 @@
     <div class="mega-menu__category">
       <div class="container">
           <div class="mega-menu__row">
-            <div class="mega-menu__col mega-menu__col--4">
-                <!--/* Include: Search Box - Inline */ -->
-                <div class="mega-menu__category-item">
-                  <sly data-sly-resource="${'search-inline' @ resourceType='/apps/eaton/static-components/content/search-box'}"></sly>
-                </div>
+            <!--/* Include: Column 1 - Flexible width */ -->
+            <div class="mega-menu__col mega-menu__col--flex">
+              <!--/* Include: List - Links */ -->
+              <div class="mega-menu__category-item">
+                <sly data-sly-resource="${'links-markets' @ resourceType='/apps/eaton/static-components/content/list'}"></sly>
+              </div>
+            </div>
 
-                <!--/* Include: Link List - default */ -->
+            <!--/* Include: Column 2  */-->
+            <div class="mega-menu__col mega-menu__col--4">
+                <!--/* Include: LinkList - Download List */ -->
                 <div class="mega-menu__category-item">
-                  <sly data-sly-resource="${'link-list' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                  <sly data-sly-resource="${'download-list-markets' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                </div>
+            </div>
+
+            <!--/* Include: Column 3  */-->
+            <div class="mega-menu__col mega-menu__col--6">
+                <!--/* Include: TTIL List - Featured List */ -->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'featured-list-markets' @ resourceType='/apps/eaton/static-components/content/title-text-image-link-list'}"></sly>
                 </div>
             </div>
           </div>

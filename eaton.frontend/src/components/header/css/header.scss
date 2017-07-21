@@ -13,6 +13,7 @@
 // Base Styles
 .eaton-header {
   position: relative;
+  z-index: 30;
 
   //-----------------------------------
   // Mobile Breakpoint
@@ -84,8 +85,13 @@
       .mega-menu {
         visibility: visible;
         opacity: 1;
-        overflow-y: auto;
-        height: 400px;
+      }
+
+      .eaton-header--fixed {
+        .mega-menu {
+          overflow-y: auto;
+          height: 550px;
+        }
       }
     }
   }
@@ -95,16 +101,19 @@
 // AEM Author Mode Styles
 //-----------------------------------
 
-.aem-AuthorLayer-Edit { // sass-lint:disable-line class-name-format
-  .eaton-header {
-    .mega-menu {
-      position: relative !important; // sass-lint:disable-line no-important
-      visibility: visible !important; // sass-lint:disable-line no-important
-      opacity: 1 !important; // sass-lint:disable-line no-important
+// stylelint-disable selector-class-pattern
+.aem-AuthorLayer-Edit,
+.cq-wcm-edit {
 
-      &__content {
-        display: block !important; // sass-lint:disable-line no-important
-      }
+  // stylelint-disable declaration-no-important
+  .mega-menu {
+    position: relative !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 99999 !important;
+
+    &__content {
+      display: block !important;
     }
   }
 }

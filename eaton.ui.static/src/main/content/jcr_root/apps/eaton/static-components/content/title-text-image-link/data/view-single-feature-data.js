@@ -2,7 +2,7 @@
 use(function () {
     var data = {};
     data.headline = "Product Highlight";
-    data.image = "/content/dam/eaton/images/story_board.png";
+    data.image = "/content/dam/eaton/images/Image4.png";
     data.eyebrow = "Eyebrow Label";
     data.links = [
       {

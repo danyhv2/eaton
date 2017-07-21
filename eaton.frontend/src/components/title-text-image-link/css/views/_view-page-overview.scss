@@ -35,10 +35,6 @@
     // empty selector for future reference
   }
 
-  &__content {
-    // empty selector for future reference
-  }
-
 
   //-----------------------------------
   // MediaQuery: Mobile
@@ -49,11 +45,11 @@
     }
   }
 
+
   //-----------------------------------
-  // MediaQuery: Mobile
+  // MediaQuery: Desktop & Desktop Large
   //-----------------------------------
   @include media-desktop-and-up {
-
     .eaton-title__headline {
       font-size: 54px;
       line-height: 68px;
