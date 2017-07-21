@@ -4,6 +4,8 @@
 
 .header-utility-nav__sign-in { text-align: right; }
 
+.header-utility-nav .icon { position: relative; top: 2px; margin-right: 10px; }
+
 .header-utility-nav .open-country-selector, .header-utility-nav .open-sign-in { color: #FFF; text-decoration: none; }
 
 @media screen and (max-width: 991px) { .header-utility-nav { position: fixed; bottom: 0; z-index: 1; width: 100%; right: 0; opacity: 0; visibility: hidden; -webkit-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; }

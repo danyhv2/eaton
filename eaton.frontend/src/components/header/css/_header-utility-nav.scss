@@ -18,6 +18,12 @@
     text-align: right;
   }
 
+  .icon {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+  }
+
   .open-country-selector,
   .open-sign-in {
     color: $color__white;
