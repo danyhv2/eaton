@@ -4,45 +4,53 @@ use(function () {
         cards: [
             {
                 title: 'Data Center Facility UPS',
-                link_text: 'Emergency power system basics',
+                text: 'Emergency power system basics',
                 image: '/content/dam/eaton/images/Jet.png',
                 mobile_image: '/content/dam/eaton/images/Jet.png',
                 image_alt: 'Image 1',
-                link_url: 'http://www.eaton.com',
-                _target: '_self',
-                date_text: 'November 30, 2016'
+                date_text: 'November 30, 2016',
+                cta: {
+                    url: 'http://www.eaton.com',
+                    target: '_self'
+                }
             },
             {
                 title: 'Knowledge Center',
-                link_text: 'Eaton Awarded U.S. Army Corps Contract to Modernize Electrical Systems',
+                text: 'Eaton Awarded U.S. Army Corps Contract to Modernize Electrical Systems',
                 image: '/content/dam/eaton/images/Tractors.png',
                 mobile_image: '/content/dam/eaton/images/Tractors.png',
                 image_alt: 'Image 2',
-                link_url: 'http://www.eaton.com',
-                _target: '_self',
-                date_text: 'December 12, 2015'
+                date_text: 'December 12, 2015',
+                cta: {
+                    url: 'http://www.eaton.com',
+                    target: '_self'
+                }
             },
             {
                 title: 'Healthcare',
-                link_text: 'Unlock power and reverse with a modern UPS',
+                text: 'Unlock power and reverse with a modern UPS',
                 image: '/content/dam/eaton/images/Power_Lines.png',
                 mobile_image: '/content/dam/eaton/images/Power_Lines.png',
                 image_alt: 'Image 3',
-                link_url: 'http://www.eaton.com',
-                _target: '_self',
-                date_text: 'October 12, 2014'
+                date_text: 'October 12, 2014',
+                cta: {
+                    url: 'http://www.eaton.com',
+                    target: '_self'
+                }
             }
         ],
         
-        featured_content: {
+        single_feature_card: {
             title: 'Featured Category',
-            link_text: 'Why reality is the innovation challenge',
+            text: 'Why reality is the innovation challenge',
             image: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
             mobile_image: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
             image_alt: 'Featured image',
-            link_url: 'http://www.eaton.com',
-            _target: '_self',
-            date_text: 'September 23, 2013'    
+            date_text: 'September 23, 2013',
+            cta: {
+                url: 'http://www.eaton.com',
+                target: '_self'
+            }
         }
     }
     return data;
