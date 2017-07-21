@@ -1,33 +1,32 @@
     <div class="article-list-single-feature container" data-sly-use.data="../data/view-article-list-single-data.js">
     <div class="row article-list-single-feature__container">
-        <div class="article-list-single-feature__text">
-            <h2>${data.header}</h2>
-            <p>${data.description}</p>
-        </div>
         <div class="col-xs-12 col-md-6 article-list-single-feature__single">
-            <a href="${data.single_feature_card.url}" class="article-list-single-feature__link equal-height-row tablet-card">
+            <a href="${data.single_feature_card.cta.url}" class="article-list-single-feature__link equal-height-row tablet-card">
                 <div class="related-category--tablet-left">
                     <img src="${data.single_feature_card.image}" class="img-responsive category__image" alt="${data.single_feature_card.alt}"/>
                 </div>
                 <div class="category__item--border category__item-innerpadding related-category--tablet-right">
-                    <p class="related-category__title--font category__title--bottompadding">${data.single_feature_card.eyebrow}</p>
-                    <p class="category__link--font">${data.single_feature_card.headline}</p>
-                    <p class="category-item-date"><em>${data.single_feature_card.date}</em></p>
+                    <p class="related-category__title--font category__title--bottompadding">${data.single_feature_card.title}</p>
+                    <p class="category__link--font">${data.single_feature_card.text}</p>
+                    <p class="category-item-date"><em>${data.single_feature_card.date_text}</em></p>
                 </div>
             </a>
         </div>
         <div class="col-xs-12 col-md-6 article-list-single-feature__article" data-sly-list.card="${data.cards}">
-            <a href="${data.single_feature_card.url}" class="article-list-single-feature__link">
+            <a href="${data.single_feature_card.cta.url}" class="article-list-single-feature__link">
                 <span class="article-list-single-feature--border"></span>
                 <div class="article-list-single-feature__article--copy">
                     <p class="related-category__title--font category__title--bottompadding">${card.title}</p>
                     <p class="category__link--font">${card.text}</p>
-                    <p class="category-item-date"><em>${card.date}</em></p>
+                    <p class="category-item-date"><em>${card.date_text}</em></p>
                 </div>
             </a>
         </div>
     </div>
-    <div class="col-xs-12 article-list-single-feature__cta">
-        <sly data-sly-resource="${@path='col2-par', resourceType='wcm/foundation/components/parsys'}" />
-    </div>
+    <!--/* Bottom CTA */-->
+    <div class="row">
+        <div class="col-xs-12 text-center featured-category__cta-container">
+            <sly data-sly-resource="${'featured-article-ctabutton' @ resourceType='/apps/eaton/static-components/general/ctabutton'}"></sly>
+        </div>
+    </div>    
 </div>
