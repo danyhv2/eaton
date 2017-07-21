@@ -67,3 +67,7 @@
 
 @media screen and (min-width: 992px) { .article-list-single-feature--border { margin-left: 30px; }
   .article-list-single-feature__article--copy { padding: 50px 30px; } }
+
+.eaton-list-links__row { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.eaton-list-links__col { padding: 0; margin: 0; list-style-type: none; }

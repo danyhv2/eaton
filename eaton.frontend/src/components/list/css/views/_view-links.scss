@@ -1,0 +1,17 @@
+//-----------------------------------
+// Component 4.2: Header - Mega Menu
+// List - View - Links
+//-----------------------------------
+
+.eaton-list-links {
+
+  &__row {
+    display: flex;
+  }
+  
+  &__col {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
