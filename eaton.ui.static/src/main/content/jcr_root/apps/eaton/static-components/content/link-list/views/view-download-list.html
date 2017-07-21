@@ -1,6 +1,6 @@
-<sly data-sly-use.data="../data/view-download-list-data.js">
+<sly data-sly-use.data="${'../data/view-download-list-data.js' @testdata=properties.testdata}">
     <div class="eaton-download-list">
-      <p class="eaton-download-list__headline b-eyebrow-small">${data.headline}</p>
+      <p class="eaton-download-list__headline b-eyebrow-small">${data.eyebrow}</p>
 
       <!--/* List Links */-->
       <ul data-sly-list="${data.items}" class="eaton-download-list__links">

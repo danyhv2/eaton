@@ -12,6 +12,8 @@ use(function () {
 	  data.title = 'About Eaton';
   } else if ((typeof(testdata) != "undefined") && (testdata == "primary-featuredtopic")) {
 	  data.title = 'Invest in something bigger';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "primary-inthenews")) {
+	  data.title = 'In the news';
   } else if ((typeof(testdata) != "undefined") && (testdata == "article-relateditems")) {
 	  data.title = 'Related Items';
   } else {

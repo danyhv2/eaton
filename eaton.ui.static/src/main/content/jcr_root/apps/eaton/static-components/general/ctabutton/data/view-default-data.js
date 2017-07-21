@@ -12,7 +12,9 @@ use(function () {
   } else if ((typeof(testdata) != "undefined") && ((testdata == "primary-pageoverview") || (testdata == "primary-featuredtopic"))) {
 	data.cta = {title: "View investor relations", url: "http://www.eaton.com", target: "_self"}
   } else if ((typeof(testdata) != "undefined") && (testdata == "primary-articlelist")) {
-		data.cta = {title: "View all press releases", url: "http://www.eaton.com", target: "_self"}
+	data.cta = {title: "View all press releases", url: "http://www.eaton.com", target: "_self"}
+  } else if ((typeof(testdata) != "undefined") && (testdata == "l2-news-viewthoughtleadership")) {
+	data.cta = {title: "View all thought leadership articles", url: "http://www.eaton.com", target: "_self"}
   } else {
 	data.cta = {title: "CTA Component", url: "http://www.eaton.com", target: "_self"}
   }

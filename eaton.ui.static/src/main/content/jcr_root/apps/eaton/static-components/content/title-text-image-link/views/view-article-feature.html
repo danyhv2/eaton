@@ -13,13 +13,13 @@
                     ${data.title}
                 </div>
                 <div class="article-feature-cta">
-                    <a href="${data.link_url}" target="${data.link_target}">${data.link_text}</a>
+                    <a href="${data.cta.url}" target="${data.cta._target}">${data.cta.text}</a>
                 </div>
                 <div class="small-body-copy article-feature-date">
-                    <em>${data.date_text}</em>
+                    <em>${data.byline @context='html'}</em>
                 </div>
                 <div class="body-copy article-feature-body">
-                    ${data.article_text}
+                    ${data.text}
                 </div>
             </div>        
         </div>

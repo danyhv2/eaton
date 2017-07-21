@@ -3,7 +3,7 @@
 use(function () {
     var data = {};
     data.form = {
-      placeholder: 'Search products, arts, documentations, support, etc',
+      placeholder: 'Search products, parts, documentations, support, etc',
       externalLinkLabel: 'Go to external link',
       searchLabel: 'search in eaton.com'
     };
