@@ -4,12 +4,12 @@
 
     <!--/* If Grid Enabled */-->
     <div data-sly-test="${ properties.toggleInnerGrid }" class="container">
-      <h2 class="eaton-title__headline">${ data.headlineShort }</h2>
+      <h2 class="eaton-title__headline">${ data.title }</h2>
     </div>
 
     <!--/* If Grid NOT-Enabled */-->
     <sly data-sly-test="${ !properties.toggleInnerGrid }">
-      <h2 class="eaton-title__headline">${ data.headlineShort }</h2>
+      <h2 class="eaton-title__headline">${ data.title }</h2>
     </sly>
 
   </div>

@@ -17,6 +17,20 @@ use(function () {
 		        ],
 		        testdata:testdata
 		    }
+    } else if ((typeof(testdata) != "undefined") && (testdata == "article-hero")) {
+	    data = {
+		        hero: [
+		            {
+		                title: 'Article short headline for hero area',
+		                text: 'Aliquam fringilla elit at erat semper, eget dignissim consequat. Sed eget vestibulum ex. Quisque rhoncus eu ornare. Duis sollicitudin ex ac vehicula suscipit.',
+		                image: '/content/dam/eaton/images/Hero Images.png',
+		                mobile_image: '/content/dam/eaton/images/Hero_Mobile.png',
+		                alt: 'Image 1',
+		                cta: {url: 'http://www.eaton.com', text: 'See How'}
+		            }
+		        ],
+		        testdata:testdata
+		    }
     } else {
 	    data = {
 	        hero: [

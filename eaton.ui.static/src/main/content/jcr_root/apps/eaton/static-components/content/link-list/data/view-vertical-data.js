@@ -187,6 +187,56 @@ use(function () {
 			      }
 			    ]
 	 }
+  } else if ((typeof(testdata) != "undefined") && testdata == "article-nextsteps") {
+	  data.view = {
+			    eyebrow: 'Downloads & Related Links',
+			    links: [
+			      {
+			        title: 'Download Success Story Name',
+			        url: '#link-1',
+			        target: '_self',
+	                external_link: false,
+	                document_size: 'PDF 15MB',
+	                document_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis. ',
+	                document_download: 'http://google.com'
+			      },
+			      {
+			        title: 'Market 1',
+			        url: '#link-2',
+			        target: '_self',
+	                external_link: false,
+	                document_download: ''
+			      },
+			      {
+			        title: 'Market 2',
+			        url: '#link-3',
+			        target: '_self',
+	                external_link: false,
+	                document_download: ''
+			      },
+			      {
+			        title: 'Sector Application',
+			        url: '#link-3',
+			        target: '_self',
+	                external_link: false,
+	                document_download: ''
+			      },
+			      {
+			        title: 'www.microsite.com',
+			        url: '#link-3',
+			        target: '_self',
+	                external_link: true,
+	                document_download: ''
+			      },
+			      {
+			        title: 'www.external.com',
+			        url: '#link-3',
+			        target: '_self',
+	                external_link: true,
+	                document_download: ''
+			      }
+			    ]
+	 }
   } else {
 	  data.view = {
 	    eyebrow: 'Eyebrow / Title',
