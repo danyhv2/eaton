@@ -1,5 +1,5 @@
 <template data-sly-template.multiple="${@ param}">
-    <div data-sly-use.data="${'../data/view-landing-hero-multiple-data.js' @testdata=properties.tesdata}" class="eaton-landing-hero carousel-component carousel slide" data-ride="carousel" data-pause="hover" data-sly-test="${param.hero.length > 1}">
+    <div data-sly-use.data="${'../data/view-landing-hero-multiple-data.js' @testdata=param.testdata}" class="eaton-landing-hero carousel-component carousel slide" data-ride="carousel" data-pause="hover" data-sly-test="${param.hero.length > 1}">
         <!-- Indicators -->
         <ol class="carousel-indicators" data-sly-list.slide="${data.hero}">
             <li data-target=".carousel-component" data-slide-to="${slideList.index}" class="carousel-component__dots ${slideList.index == 0 ? 'active' : ''}"></li>
@@ -16,7 +16,7 @@
                 <div class="carousel-component-slide__caption carousel-caption">
                     <h2 class="carousel-component-slide__title">${slide.title}</h2>
                     <p class="carousel-component-slide__text">${slide.text}</p>
-                    <a class="carousel-component-slide__cta b-button b-button--white" href="${data.cta.url}" role="button" data-sly-test="${data.cta.length > 0}">${data.cta.text}</a>
+                    <a class="carousel-component-slide__cta b-button b-button--white" href="${slide.cta.url}" role="button" data-sly-test="${slide.cta.text.length > 0}">${slide.cta.text}</a>
                 </div>
             </div>
             <!-- Controls -->
@@ -41,7 +41,7 @@
                         <h2 class="landing-hero-single__title">${slide.title}</h2>
                         <div class="carousel-component-slide__separator" data-sly-test="${properties.showSeparator}"></div>
                         <p class="carousel-component-slide__text">${slide.text}</p>
-                        <a class="carousel-component-slide__cta b-button b-button--white" href="${data.cta.url}" role="button" data-sly-test="${properties.showCta}">${data.cta.text}</a>
+                        <a class="carousel-component-slide__cta b-button b-button--white" href="${slide.cta.url}" role="button" data-sly-test="${properties.showCta}">${slide.cta.text}</a>
                     </div>
                 </div>
             </div>

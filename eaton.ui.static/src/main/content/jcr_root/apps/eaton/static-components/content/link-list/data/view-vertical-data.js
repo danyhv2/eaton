@@ -76,13 +76,6 @@ use(function () {
 			        target: '_self',
 	                external_link: false,
 	                document_download: ''
-			      },
-			      {
-			        title: 'Text Link 5',
-			        url: '#link-5',
-			        target: '_self',
-	                external_link: false,
-	                document_download: ''
 			      }
 			    ]
 	  }

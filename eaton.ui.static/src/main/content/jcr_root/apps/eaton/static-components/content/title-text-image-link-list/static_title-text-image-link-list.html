@@ -3,7 +3,7 @@
 </sly>
 
 <sly data-sly-test="${properties.view == 'landing-hero'}">
-    <div data-sly-use.lib="views/view-landing-hero.html" data-sly-use.data = "../data/view-landing-hero-multiple-data.js">
+    <div data-sly-use.lib="views/view-landing-hero.html" data-sly-use.data = "${'../data/view-landing-hero-multiple-data.js' @testdata=properties.testdata}">
 		<div data-sly-call="${lib.multiple @ param=data}"></div>
 	</div>
 </sly>
