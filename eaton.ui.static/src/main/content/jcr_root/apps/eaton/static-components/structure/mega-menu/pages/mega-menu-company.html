@@ -1,7 +1,21 @@
 <div class="mega-menu__content" data-target="mega-menu-company">
   <!--/* Include Level 1: Links *-->
   <!--/*  Include: Mega-Menu-Title */-->
-  <sly data-sly-include="pages/partials/mega-menu-title.html" />
+  <div class="mega-menu-title">
+    <div class="container">
+      <a href="#" class="mega-menu-title__level1-link">
+        <i class="mega-menu-title__icon glyphicon glyphicon-menu-left" aria-hidden="true"></i>
+        <div>
+          <sly data-sly-resource="${'company-title' @ resourceType='/apps/eaton/static-components/general/title'}"></sly>
+        </div>
+        <i class="mega-menu-title__icon glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+      </a>
+      <button class="button--reset mega-menu-title__close-menu">
+        <span class="sr-only">Close Search</span>
+        <i class="mega-menu-title__icon glyphicon glyphicon-remove" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
 
     <!--/* Include: Mega Menu Modules */ -->
     <div class="mega-menu__category">

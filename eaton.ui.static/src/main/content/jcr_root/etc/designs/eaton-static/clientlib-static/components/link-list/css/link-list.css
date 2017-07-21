@@ -30,6 +30,8 @@
   .eaton-link-list-horizontal__list-item::after { content: ''; background-color: #5B6770; height: 1em; position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1px; }
   .eaton-link-list-horizontal__list-item:last-child::after { display: none; } }
 
+.eaton-link-list-primary-nav__items { font-family: 'EatonMedium'; }
+
 .eaton-link-list-primary-nav__items a { text-decoration: none; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-primary-nav { position: fixed; top: 109px; bottom: 40px; width: 100%; left: 0; height: 0; visibility: hidden; overflow: hidden; background: #5B6770; color: #FFF; -webkit-transition: height 0.7s ease-in-out; transition: height 0.7s ease-in-out; }
@@ -75,9 +77,9 @@
 .eaton-link-list-section-navigation__nav-item:hover, .eaton-link-list-section-navigation__nav-item:active, .eaton-link-list-section-navigation__nav-item:focus { color: #005EB8; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-section-navigation { padding: 10px 0; }
-  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; margin: 0 20px; display: block; padding: 20px 0; font-size: 1.8rem; }
-  .eaton-link-list-section-navigation__nav-item:first-child { padding-left: 0; } }
+  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; margin: 0 15px; display: block; padding: 20px 0; font-size: 1.8rem; } }
 
 @media screen and (min-width: 992px) { .eaton-link-list-section-navigation .container { position: relative; }
   .eaton-link-list-section-navigation .container::after { background: #5B6770; bottom: 0; height: 1px; left: 0; position: absolute; width: 100%; }
-  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #FFF; border-right: 1px solid #FFF; display: inline-block; float: left; padding: 20px 30px; } }
+  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #FFF; border-right: 1px solid #FFF; display: inline-block; float: left; padding: 20px 30px; }
+  .eaton-link-list-section-navigation__nav-item:first-child { padding-left: 15px; } }

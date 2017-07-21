@@ -10,6 +10,10 @@
             placeholder="${ data.form.placeholder }"
             class="eaton-search-box__input" >
 
+          <label
+            class="eaton-search-box__label-mobile"
+            for="q">${ data.form.placeholder }</label>
+
           <div class="eaton-search-box__results-container">
             <ul data-sly-list="${ data.results }" class="eaton-search-box__result-list" >
               <li class="eaton-search-box__result-item">
@@ -23,7 +27,7 @@
               <i class="glyphicon glyphicon glyphicon-new-window" aria-hidden="true"></i>
             </button>
             <button type="submit" class="eaton-search-box__button-transparent">
-              <span class="sr-only">${data.form.searchLabel}</span>
+              <span class="sr-only">${data.form.submitLabel}</span>
               <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
             </button>
           </div>

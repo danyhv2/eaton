@@ -1,14 +1,14 @@
-<sly data-sly-use.data="../data/view-links-1col-data.js">
+<sly data-sly-use.data="../data/view-links-2col-data.js">
   <!--/* Link Groups - Cols */-->
   <div data-sly-list="${data}" class="eaton-list-links">
       <ul data-sly-list="${item.linkGroup}" class="eaton-list-links__col">
         <li class="eaton-list-links__item">
-          <a href="${item.url}"
-            aria-label="Go to ${ item.title }"
+          <a href="${item.cta.url}"
+            aria-label="Go to ${ item.cta.title }"
             class="eaton-list-links__link"
-            target="${ item.target }">
+            target="${ item.cta.target }">
             <span class="eaton-list-links__text">
-                ${ item.title }
+                ${ item.cta.title }
             </span>
             <i class="eaton-list-links__icon glyphicon glyphicon-menu-right"
               aria-hidden="true"></i>

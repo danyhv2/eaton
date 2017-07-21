@@ -7,6 +7,7 @@
   padding: $spacing__sm;
 
   &__form {
+    padding: 0 15px;
     position: relative;
   }
 
@@ -22,7 +23,9 @@
     border: 0;
     color: $color__white;
     font-size: 2rem;
-    padding: 0 0 0 30px;
+    margin-left: 30px;
+    padding-left: 30px;
+    padding: 0 5px;
     position: relative;
 
     &:first-child {
@@ -45,7 +48,7 @@
 
   &__result-list {
     list-style: none;
-    color: white;
+    color: $color__white;
     padding: 0;
   }
 
@@ -62,7 +65,7 @@
     background: transparent;
     border: 0;
     border-bottom: 1px solid $color__white;
-    color: white;
+    color: $color__white;
     display: block;
     font-size: 2.5rem;
     font-weight: bold;
@@ -73,8 +76,14 @@
       color: $color__white;
     }
 
+    &:focus {
+      &::placeholder {
+        color: transparent;
+      }
+    }
+
     &:valid {
-      & + .eaton-search-box__results-container {
+      + label + .eaton-search-box__results-container {
         display: block;
       }
 
@@ -82,12 +91,54 @@
         color: transparent;
       }
     }
+  }
 
+  &__label-mobile {
+    display: none;
   }
 
   @include media-mobile-and-tablet {
+    padding: 30px 15px;
+
+    &__form {
+      padding: 0;
+    }
+
     &__results-container {
       padding: 0;
+    }
+
+    &__button-transparent {
+      font-size: 1.5rem;
+    }
+
+    &__label-mobile {
+      color: $color__white;
+      font-size: 1.5rem;
+      padding-right: 88px;
+      position: absolute;
+      top: -9px;
+    }
+
+    &__input {
+      font-size: 1.8rem;
+      height: 38px;
+      padding-right: 88px;
+      position: relative;
+      z-index: 1;
+
+      &:placeholder-shown + label {
+        display: block;
+      }
+
+      &:focus + label {
+        display: none;
+      }
+
+      &::placeholder {
+        color: transparent;
+      }
+
     }
   }
 }
