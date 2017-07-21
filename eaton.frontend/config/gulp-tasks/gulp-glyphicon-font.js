@@ -35,7 +35,7 @@ const buildIconfont = function(gulp, CONFIG) {
             .pipe(consolidate('lodash', {
               glyphs: glyphs,
               fontName: 'eaton-glyphicon',
-              fontPath: '../fonts/',
+              fontPath: '../css/fonts',
               className: 'icon'
             }))
             .pipe(gulp.dest(CONFIG.paths.srcRoot + '/global/css/base/'))
@@ -45,7 +45,7 @@ const buildIconfont = function(gulp, CONFIG) {
 
       function handleFonts(cb) {
         iconStream
-          .pipe(gulp.dest(CONFIG.paths.destAEM.clientlibStatic + '/global/css/fonts',))
+          .pipe(gulp.dest(CONFIG.paths.destAEM.clientlibStatic + '/global/css/fonts'))
           .on('finish', cb);
       }
 
