@@ -16,6 +16,8 @@ use(function () {
 	  data.title = 'In the news';
   } else if ((typeof(testdata) != "undefined") && (testdata == "article-relateditems")) {
 	  data.title = 'Related Items';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "sitemap")) {
+    data.title = 'Sitemap';
   } else if ((typeof(testdata) != "undefined") && (testdata == "megamenu-products")) {
 	  data.title = 'Products';
   } else if ((typeof(testdata) != "undefined") && (testdata == "megamenu-services")) {
