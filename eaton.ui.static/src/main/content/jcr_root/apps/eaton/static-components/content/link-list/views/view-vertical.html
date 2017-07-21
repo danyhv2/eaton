@@ -17,11 +17,11 @@
           target="${ item.external_link ? '_blank' : '_self' }"
                 data-sly-attribute.download="${item.document_download}">
           <span class="eaton-link-list-vertical__list-text">
-              <i data-sly-test="${item.external_link}" class="eaton-link-list-vertical__external-icon glyphicon glyphicon-new-window" aria-hidden="true"></i>
-              <i data-sly-test="${item.document_download != ''}" class="eaton-link-list-vertical__external-icon glyphicon glyphicon-save" aria-hidden="true"></i>
+              <i data-sly-test="${item.external_link}" class="eaton-link-list-vertical__external-icon icon icon-link-external" aria-hidden="true"></i>
+              <i data-sly-test="${item.document_download != ''}" class="eaton-link-list-vertical__external-icon icon icon-download" aria-hidden="true"></i>
               ${ item.title }
           </span>
-          <i data-sly-test="${item.document_download == ''}" class="eaton-link-list-vertical__list-icon glyphicon glyphicon-menu-right"
+          <i data-sly-test="${item.document_download == ''}" class="eaton-link-list-vertical__list-icon icon icon-chevron-right"
             aria-hidden="true"></i>
         </a>
         <div class="eaton-link-list-vertical__download-text" data-sly-test="${item.document_download != ''}">

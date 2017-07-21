@@ -35,7 +35,7 @@ const buildIconfont = function(gulp, CONFIG) {
             .pipe(consolidate('lodash', {
               glyphs: glyphs,
               fontName: 'eaton-glyphicon',
-              fontPath: '../css/fonts',
+              fontPath: '../css/fonts/',
               className: 'icon'
             }))
             .pipe(gulp.dest(CONFIG.paths.srcRoot + '/global/css/base/'))
