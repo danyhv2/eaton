@@ -2,3 +2,7 @@
 @import 'variables/**/*.scss';
 @import 'mixins/**/*.scss';
 @import 'placeholders/**/*.scss';
+
+// Import Glyphicon Placeholders Created By Gulp
+// TODO: Tweak Gulp to create placeholder file into this folder not "/base/" folder
+@import '../base/eaton-glyphicon-placeholders';
