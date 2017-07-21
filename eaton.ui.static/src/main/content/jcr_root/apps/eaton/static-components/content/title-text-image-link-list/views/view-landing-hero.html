@@ -11,8 +11,8 @@
         <!-- Wrapper for slides -->
         <div class="carousel-component-slide carousel-inner" data-sly-list.slide="${data.hero}" role="listbox">
             <div class="item ${slideList.index == 0 ? 'active' : ''}">
-                <img class="img-responsive hidden-xs" src="${slide.image}" alt="${slide.alt}">
-                <img class="img-responsive visible-xs" src="${slide.mobile_image}" alt="${slide.alt}">
+                <img class="carousel-component-slide__image visible-lg visible-md " src="${slide.image}" alt="${slide.alt}">
+                <img class="carousel-component-slide__image carousel-component-slide__image--mobile visible-xs visible-sm" src="${slide.mobile_image}" alt="${slide.alt}">
                 <div class="carousel-component-slide__caption carousel-caption">
                     <h2 class="carousel-component-slide__title">${slide.title}</h2>
                     <p class="carousel-component-slide__text">${slide.text}</p>
@@ -35,8 +35,8 @@
         <div data-sly-use.data="${'../data/view-landing-hero-single-data.js' @testdata=param.testdata}" class="eaton-landing-hero eaton-landing-hero--single carousel-component carousel slide " data-ride="carousel" data-pause="hover" data-sly-test="${param.hero.length == 1}">
             <div class="carousel-component-slide carousel-inner" data-sly-list.slide="${data.hero}" role="listbox">
                 <div class="item ${slideList.index == 0 ? 'active' : ''}">
-                    <img class="img-responsive hidden-xs" src="${slide.image}" alt="${slide.alt}">
-                    <img class="img-responsive visible-xs" src="${slide.mobile_image}" alt="${slide.alt}">
+                    <img class="carousel-component-slide__image visible-lg visible-md " src="${slide.image}" alt="${slide.alt}">
+                    <img class="carousel-component-slide__image carousel-component-slide__image--mobile visible-xs visible-sm" src="${slide.mobile_image}" alt="${slide.alt}">
                     <div class="carousel-component-slide__caption carousel-caption">
                         <h2 class="landing-hero-single__title">${slide.title}</h2>
                         <div class="carousel-component-slide__separator" data-sly-test="${properties.showSeparator}"></div>

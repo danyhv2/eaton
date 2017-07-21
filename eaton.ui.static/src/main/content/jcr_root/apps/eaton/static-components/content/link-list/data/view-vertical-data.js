@@ -253,7 +253,7 @@ use(function () {
 	 }
   } else if ((typeof(testdata) != "undefined") && testdata == "l2-news-nextsteps2") {
 	  data.view = {
-			    eyebrow: 'Pess Kits',
+			    eyebrow: 'Press Kits',
 			    links: [
 			      {
 			        title: 'Customer Success Stories',
@@ -273,6 +273,68 @@ use(function () {
 				  },
 			      {
 				        title: 'White papers',
+				        url: '#link-1',
+				        target: '_self',
+		                external_link: false,
+		                document_size: 'PDF 8MB',
+		                document_download: ''
+				  }
+			      
+			    ]
+	 }
+  } else if ((typeof(testdata) != "undefined") && testdata == "megamenu-products") {
+	  data.view = {
+			    eyebrow: 'Top Searches',
+			    links: [
+			      {
+			        title: 'Electrical Circuit Protection',
+			        url: '#link-1',
+			        target: '_self',
+	                external_link: false,
+	                document_size: 'PDF 8MB',
+	                document_download: ''
+			      },
+			      {
+				        title: 'Lighting & Controls',
+				        url: '#link-1',
+				        target: '_self',
+		                external_link: false,
+		                document_size: 'PDF 8MB',
+		                document_download: ''
+				  },
+			      {
+				        title: 'Automation & Control',
+				        url: '#link-1',
+				        target: '_self',
+		                external_link: false,
+		                document_size: 'PDF 8MB',
+		                document_download: ''
+				  }
+			      
+			    ]
+	 }
+  } else if ((typeof(testdata) != "undefined") && testdata == "megamenu-company") {
+	  data.view = {
+			    eyebrow: 'Top Searches',
+			    links: [
+			      {
+			        title: 'VAVE Project Lead',
+			        url: '#link-1',
+			        target: '_self',
+	                external_link: false,
+	                document_size: 'PDF 8MB',
+	                document_download: ''
+			      },
+			      {
+				        title: 'Senior Product Engineer',
+				        url: '#link-1',
+				        target: '_self',
+		                external_link: false,
+		                document_size: 'PDF 8MB',
+		                document_download: ''
+				  },
+			      {
+				        title: 'Senior Field Service Engineer',
 				        url: '#link-1',
 				        target: '_self',
 		                external_link: false,

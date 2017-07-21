@@ -24,6 +24,11 @@ $primary-nav-border: #EEF0F2;
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-and-tablet {
+
+    .row {
+      align-items: center;
+    }
+
     &__links {
       justify-content: flex-end;
       display: flex;
@@ -34,7 +39,7 @@ $primary-nav-border: #EEF0F2;
     &__open-search,
     &__open-mobile-menu {
       display: inline-block;
-      padding: 30px;
+      padding: ($spacing__sm / 2);
     }
   }
 

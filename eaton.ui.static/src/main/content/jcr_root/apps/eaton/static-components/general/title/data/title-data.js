@@ -16,6 +16,16 @@ use(function () {
 	  data.title = 'In the news';
   } else if ((typeof(testdata) != "undefined") && (testdata == "article-relateditems")) {
 	  data.title = 'Related Items';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "megamenu-products")) {
+	  data.title = 'Products';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "megamenu-services")) {
+	  data.title = 'Services';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "megamenu-markets")) {
+	  data.title = 'Markets';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "megamenu-support")) {
+	  data.title = 'Support';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "megamenu-company")) {
+	  data.title = 'Company';
   } else {
 	  data.title = 'Eaton’s New 2-gang Switched Sockets with Usb ports Make It Easy to Stay Charged';
 	  data.eyebrow = 'CATEGORY';
