@@ -5,7 +5,7 @@ use(function () {
     data.form = {
       placeholder: 'Search products, parts, documentations, support, etc',
       externalLinkLabel: 'Go to external link',
-      searchLabel: 'search in eaton.com'
+      submitLabel: 'search in eaton.com'
     };
 
     data.results = [
