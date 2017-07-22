@@ -28,6 +28,9 @@ use(function () {
 	  data.title = 'Support';
   } else if ((typeof(testdata) != "undefined") && (testdata == "megamenu-company")) {
 	  data.title = 'Company';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "sitemap")) {
+	  data.title = 'Sitemap';
+	  data.style = "h1";
   } else {
 	  data.title = 'Eaton’s New 2-gang Switched Sockets with Usb ports Make It Easy to Stay Charged';
 	  data.eyebrow = 'CATEGORY';
