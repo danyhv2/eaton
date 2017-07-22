@@ -7,7 +7,7 @@
   "scripts": {
     "start": "gulp",
     "lint-fix": "stylelint \"src/**/*.scss\" --syntax scss --fix --cache --cache-location \".stylelintcache/\" --quiet",
-    "maven": "cd ../ && mvn -PautoInstallPackage clean install",
+    "maven": "cd ../eaton.ui.static/ && mvn -PautoInstallPackage clean install",
     "aemsync": "node config/aemsync",
     "aemdev": "gulp build:dev",
     "preaemprod": "npm install --no-optional",
