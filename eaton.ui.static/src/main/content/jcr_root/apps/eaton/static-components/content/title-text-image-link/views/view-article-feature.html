@@ -1,29 +1,23 @@
 <sly data-sly-use.data="../data/view-article-feature-data.js">
 
-    <!--/* Container */-->
-    <div class="container eaton-title-text-image eaton-article-feature-view">
-
-        <div class="row">
-            <div class="col-xs-12">
-                <div>
-                    <img src="${data.image}" class="hidden-xs img-responsive article-feature-image" alt="${data.image_alt}" />
-                    <img src="${data.mobile_image}" class="visible-xs img-responsive article-feature-image" alt="${data.image_alt}" />
-                </div>
-                <div class="article-feature-title">
-                    ${data.title}
-                </div>
-                <div class="article-feature-cta">
-                    <a href="${data.cta.url}" target="${data.cta._target}">${data.cta.text}</a>
-                </div>
-                <div class="small-body-copy article-feature-date">
-                    <em>${data.byline @context='html'}</em>
-                </div>
-                <div class="body-copy article-feature-body">
-                    ${data.text}
-                </div>
-            </div>        
+  <!--/* Container */-->
+  <div class="eaton-ttil eaton-article-feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div>
+            <img src="${data.imgSrc}" class="hidden-xs img-responsive eaton-article-feature__image" alt="${data.imgAlt}" />
+            <img src="${data.imgSrcMobile}" class="visible-xs img-responsive  eaton-article-feature__image" alt="${data.imgAlt}" />
+          </div>
+          <div class="eaton-article-feature__title">${data.title}</div>
+          <div class="eaton-article-feature__cta">
+            <a href="${data.cta.url}" target="${data.cta.target}">${data.cta.text}</a>
+          </div>
+          <div class="small-body-copy eaton-article-feature__date">${data.byline @context='html'}</div>
+          <div class="body-copy eaton-article-feature__body">${data.text}</div>
         </div>
-
+      </div>
     </div>
+  </div>
 
 </sly>
