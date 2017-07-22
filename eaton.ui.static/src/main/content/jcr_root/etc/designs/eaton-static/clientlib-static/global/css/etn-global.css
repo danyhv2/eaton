@@ -18,13 +18,21 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 @media screen and (min-width: 992px) { h5, .b-heading-h5 { font-size: 26px; line-height: 40px; } }
 
-.b-body-copy, .b-body-copy-small, .rich-text-container, .rich-text-container p { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
+.b-body-copy, .rich-text-container, .rich-text-container p { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
 
-.b-body-copy a, .b-body-copy-small a, .rich-text-container a { color: #005EB8; }
+.b-body-copy a, .rich-text-container a { color: #005EB8; }
 
-.b-body-copy a:active, .b-body-copy-small a:active, .rich-text-container a:active { font-weight: bold; }
+.b-body-copy a:active, .rich-text-container a:active { font-weight: bold; }
 
-@media screen and (min-width: 992px) { .b-body-copy, .b-body-copy-small, .rich-text-container, .rich-text-container p { font-size: 24px; line-height: 38px; } }
+@media screen and (min-width: 992px) { .b-body-copy, .rich-text-container, .rich-text-container p { font-size: 24px; line-height: 38px; } }
+
+.b-body-copy-small { font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
+
+.b-body-copy-small a { color: #005EB8; }
+
+.b-body-copy-small a:active { font-weight: bold; }
+
+@media screen and (min-width: 992px) { .b-body-copy-small { font-size: 18px; line-height: 24px; } }
 
 .b-eyebrow-large { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 17px; line-height: 20px; text-transform: uppercase; }
 
@@ -146,7 +154,27 @@ h4, .b-heading-h4 { margin-top: 0; }
 
 h5, .b-heading-h5 { margin-top: 0; }
 
-/* .body-link { color: $color__primary-blue; &:hover, &:focus, &:active { color: $color__accent-darkblue; //TBD } .dark-theme & { color: $color__white; &:hover, &:focus, &:active { color: $color__white; //TBD } } } */
+/*
+.body-link {
+  color: $color__primary-blue;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__accent-darkblue; //TBD
+  }
+
+  .dark-theme & {
+    color: $color__white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__white; //TBD
+    }
+  }
+}
+*/
 .u-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .u-inline-flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
