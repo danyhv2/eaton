@@ -4,20 +4,12 @@
 
 .eaton-page-overview {
 
-  padding: $spacing__xl 0;
-
-  // Components Overrides
-  //--------------
-  .eaton-title__headline {
-    @extend %h1;
-  }
+  padding: ($spacing__xl / 2) 0;
 
   // Page Overview Styles
   //--------------
   &__title {
     position: relative;
-    margin-bottom: $spacing__md;
-    padding-bottom: $spacing__md;
 
     &::after {
       content: '';
@@ -36,27 +28,45 @@
   }
 
 
+
   //-----------------------------------
-  // MediaQuery: Mobile
+  // Media-Query: Desktop & Desktop Large
   //-----------------------------------
-  @include media-mobile-only {
+  @include media-mobile-and-tablet {
+
+    &__title { padding-bottom: 30px; }
+
+    &__content,
     &__cta {
-      margin-top: $spacing__md;
+      margin-top: 30px;
     }
+
+    &__cta {
+
+      &--mobile { display: block; }
+      &--desktop { display: none; }
+
+    }
+
   }
 
 
   //-----------------------------------
-  // MediaQuery: Desktop & Desktop Large
+  // Media-Query: Desktop & Desktop Large
   //-----------------------------------
   @include media-desktop-and-up {
-    .eaton-title__headline {
-      font-size: 54px;
-      line-height: 68px;
+    padding: $spacing__xl 0;
+
+    &__title { padding-bottom: 50px; }
+
+    &__cta {
+      margin-top: $spacing__md;
+
+      &--mobile { display: none; }
+      &--desktop { display: block; }
+
     }
 
   }
-
-
 
 }

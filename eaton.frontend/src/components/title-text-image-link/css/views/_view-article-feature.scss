@@ -1,15 +1,14 @@
-.eaton-title-text-image {
-  font-family: $font-family__primary;
-}
+.eaton-article-feature {
 
-.article-feature {
-  &-image {
+  font-family: $font-family__primary;
+
+  &__image {
     width: 100%;
     height: auto;
     margin-top: 60px;
   }
 
-  &-title {
+  &__title {
     font-size: 1.5em;
     font-weight: bold;
     color: $color__primary-gray1;
@@ -17,7 +16,7 @@
     margin-top: 30px;
   }
 
-  &-cta {
+  &__cta {
     color: $color__primary-blue;
     font-size: 2.5em;
     font-family: Arial;
@@ -34,11 +33,12 @@
     }
   }
 
-  &-date {
+  &__date {
+    font-style: italic;
     margin-bottom: 30px;
   }
 
-  &-body {
+  &__body {
     margin-bottom: 60px;
     font-size: 1.5em;
   }
@@ -46,26 +46,26 @@
 
 @media only screen and (max-width: 767px) {
   .article-feature {
-    &-image {
+    &__image {
       margin-top: 30px;
     }
 
-    &-title {
+    &__title {
       font-size: 1.1em;
       margin-top: 15px;
     }
 
-    &-date {
+    &__date {
       margin-bottom: 15px;
     }
 
-    &-body {
+    &__body {
       margin-bottom: 30px;
       line-height: 1.5em;
       font-size: 1.2em;
     }
 
-    &-cta {
+    &__cta {
       font-size: 1.5em;
       margin-top: 10px;
       margin-bottom: 10px;

@@ -5,28 +5,23 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-xs-12 col-sm-6">
-          <div class="eaton-page-overview__title">
-            <sly data-sly-resource="${'title' @ resourceType='/apps/eaton/static-components/general/title'}"></sly>
-          </div>
+        <div class="col-xs-12 col-md-6">
+          <h1 class="eaton-page-overview__title b-heading-h1">${ data.title }</h1>
 
-          <div class="eaton-page-overview__cta hidden-xs">
-            <sly data-sly-resource="${'ctabutton' @ resourceType='/apps/eaton/static-components/general/ctabutton'}"></sly>
+          <div data-sly-test="${ data.cta.text }" class="eaton-page-overview__cta eaton-page-overview__cta--desktop">
+            <a href="${ data.cta.url }" class="b-button b-button__primary b-button__primary--light" role="button">${ data.cta.text }</a>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6">
-          <div class="eaton-page-overview__content">
-            <sly data-sly-resource="${'text' @ resourceType='/apps/eaton/static-components/general/text'}"></sly>
-          </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="eaton-page-overview__content">${ data.text }</div>
         </div>
 
       </div>
 
-      <div class="row">
-        <div class="eaton-page-overview__cta visible-xs text-center">
-          <sly data-sly-resource="${'ctabutton' @ resourceType='/apps/eaton/static-components/general/ctabutton'}"></sly>
-        </div>
+      <div data-sly-test="${ data.cta.text }"
+        class="eaton-page-overview__cta eaton-page-overview__cta--mobile text-center">
+        <a href="${ data.cta.url }" class="b-button b-button__primary b-button__primary--light" role="button">${ data.cta.text }</a>
       </div>
 
     </div>
