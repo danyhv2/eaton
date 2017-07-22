@@ -7,11 +7,11 @@
 <sly data-sly-use.data="data/sitemap-data.js">
 
   <div class="eaton-sitemap">
-    <div class="container">
-    	<a class="eaton-sitemap__levelone" href="${data.level1.url}" title="${data.level1.text}">
-    		${data.level1.text}
+    <div class="container" data-sly-list.level1element="${data.levels}">
+    	<a class="eaton-sitemap__levelone" href="${level1element.url}" title="${level1element.text}">
+    		${level1element.text}
     	</a>
-    	<div class="eaton-sitemap__wrapper" data-sly-list.level2element="${data.level1.levels}">
+    	<div class="eaton-sitemap__wrapper" data-sly-list.level2element="${level1element.levels}">
     		<a class="eaton-sitemap__leveltow" href="${level2element.url}"  title="${level2element.text}">${level2element.text}</a>
     		<div class="separator" data-sly-test="${level2element.levels}"></div>
     		<div class="eaton-sitemap__wrapper" data-sly-test="${level2element.levels}" >
