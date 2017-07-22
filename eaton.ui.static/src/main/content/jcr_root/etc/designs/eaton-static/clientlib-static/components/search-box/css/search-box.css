@@ -57,7 +57,7 @@
 @media screen and (max-width: 991px) { .eaton-search-box { padding: 30px 15px; }
   .eaton-search-box__buttons-container { right: -3px; top: 9px; }
   .eaton-search-box__buttons-container .icon { font-size: 17px; }
-  .eaton-search-box__button-transparent:first-child::after { top: 0px; }
+  .eaton-search-box__button-transparent:first-child::after { top: 0; }
   .eaton-search-box__form { padding: 0; }
   .eaton-search-box__results-container { padding: 0; }
   .eaton-search-box__button-transparent { font-size: 1.5rem; }

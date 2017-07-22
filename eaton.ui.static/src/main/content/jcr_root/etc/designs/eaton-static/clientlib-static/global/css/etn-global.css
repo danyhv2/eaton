@@ -154,27 +154,6 @@ h4, .b-heading-h4 { margin-top: 0; }
 
 h5, .b-heading-h5 { margin-top: 0; }
 
-/*
-.body-link {
-  color: $color__primary-blue;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: $color__accent-darkblue; //TBD
-  }
-
-  .dark-theme & {
-    color: $color__white;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $color__white; //TBD
-    }
-  }
-}
-*/
 .u-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .u-inline-flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
