@@ -15,8 +15,8 @@ App.header = (function() {
   const isAEMAuthorMode = (window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode()) ? true : false;
 
   const init = () => {
-    console.log(`Header Component - ${ window.location.host }`);
-    console.log(`Author Mode - ${ isAEMAuthorMode }`);
+    // console.log(`Header Component - ${ window.location.host }`);
+    // console.log(`Author Mode - ${ isAEMAuthorMode }`);
 
     // If not in AEM Author Mode - initialize scripts
     if (!isAEMAuthorMode) {
@@ -86,7 +86,7 @@ App.header = (function() {
 
     // If Tablet Breakpoint and Up
     if (event.matches) {
-      console.log('Tablet BP');
+      // console.log('Tablet BP');
     }
 
     // Else is Mobile Breakpoint
