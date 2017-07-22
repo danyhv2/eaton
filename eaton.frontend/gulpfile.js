@@ -52,7 +52,7 @@ gulp.task('iconfont',
 //--------------
 gulp.task('lint', ['lint:css', 'lint:js']);
 gulp.task('css', ['lint:css', 'css:build']);
-gulp.task('js', ['js:css', 'js:build']);
+gulp.task('js', ['lint:js', 'js:build']);
 
 
 
