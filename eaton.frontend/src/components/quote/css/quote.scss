@@ -20,11 +20,16 @@
     width: 80px;
     height: 82px;
     background: $color__primary-blue;
+    color: $color__white;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
+
+    .icon {
+      font-size: 8rem;
+    }
   }
 
   &__text {
