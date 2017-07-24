@@ -65,6 +65,12 @@ App.header = (function() {
       closeNav();
     });
 
+    $('.header-primary-nav__open-mobile-menu').on('click', (event) => {
+      // Close the mega menu
+      event.preventDefault();
+      bodyEl.addClass('nav-open');
+    });
+
     window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
 
   };

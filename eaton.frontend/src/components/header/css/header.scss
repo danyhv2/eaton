@@ -63,6 +63,10 @@
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-and-tablet {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    
     .eaton-link-list-primary-nav {
       height: 100%;
       visibility: visible;

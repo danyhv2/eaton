@@ -41,7 +41,8 @@
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
   .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; } }
 
-@media screen and (max-width: 991px) { .nav-open .eaton-link-list-primary-nav { height: 100%; visibility: visible; overflow: auto; }
+@media screen and (max-width: 991px) { .nav-open { position: fixed; width: 100%; overflow: hidden; }
+  .nav-open .eaton-link-list-primary-nav { height: 100%; visibility: visible; overflow: auto; }
   .nav-open.level-2-open { overflow: hidden; position: fixed; width: 100%; }
   .nav-open.level-2-open .mega-menu { visibility: visible; -webkit-transform: translate(0); transform: translate(0); } }
 
