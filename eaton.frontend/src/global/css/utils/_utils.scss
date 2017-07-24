@@ -56,3 +56,15 @@
 
 .u-hidden { visibility: hidden; }
 .u-visible { visibility: visible; }
+
+.u-visible-mobile {
+  display: block;
+
+  @include media-desktop-and-up { display: none; }
+}
+
+.u-visible-desktop {
+  display: none;
+
+  @include media-desktop-and-up { display: block; }
+}

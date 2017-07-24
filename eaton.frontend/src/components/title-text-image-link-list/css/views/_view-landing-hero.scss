@@ -42,19 +42,14 @@
     text-align: center;
   }
 
-  &__arrow {
-    display: none;
-    border: 0;
-    background-image: none;
-  }
-
   .carousel-indicators .active {
     background-color: $color__primary-blue;
     border: 1px solid $color__primary-blue;
   }
+
 }
 
-@include media-mobile-only {
+@include media-mobile-and-tablet {
   .carousel-component-slide {
     &__image--mobile {
       min-height: 750px;
@@ -66,13 +61,8 @@
   }
 }
 
-@include  media-tablet-and-up {
-  .carousel-indicators {
-    bottom: 20px;
-  }
-}
 
-@include media-desktop-large {
+@include media-desktop-and-up {
   .carousel-component {
 
     &-slide {
@@ -89,6 +79,10 @@
       &__cta {
         margin-top: 60px;
       }
+    }
+
+    .carousel-indicators {
+      bottom: 20px;
     }
   }
 }
