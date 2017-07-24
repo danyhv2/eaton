@@ -208,6 +208,14 @@ h5, .b-heading-h5 { margin-top: 0; }
 
 .u-visible { visibility: visible; }
 
+.u-visible-mobile { display: block; }
+
+@media screen and (min-width: 992px) { .u-visible-mobile { display: none; } }
+
+.u-visible-desktop { display: none; }
+
+@media screen and (min-width: 992px) { .u-visible-desktop { display: block; } }
+
 .button--reset { border: 0; background: none; padding: 0; }
 
 .b-button { background: none; border-radius: 0; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; }
