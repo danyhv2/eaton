@@ -130,7 +130,7 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 .icon { font-size: 24px; line-height: 0; }
 
-body { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 16px; }
+body { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 16px; overflow-x: hidden; }
 
 b, strong { font-weight: bold; }
 
