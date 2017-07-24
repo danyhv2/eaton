@@ -17,15 +17,15 @@
   }
 
   &__image {
-    width: 80px;
-    height: 82px;
-    background: $color__primary-blue;
-    color: $color__white;
+    // width: 80px;
+    // height: 82px;
+    // background: $color__white;
+    color: $color__primary-blue;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: -8px auto 0;
 
     .icon {
       font-size: 8rem;
@@ -59,9 +59,14 @@
     }
 
     &__image {
-      width: 17%;
-      height: 50px;
-      background-size: contain;
+      // width: 17%;
+      // height: 50px;
+      // background-size: contain;
+
+      .icon {
+        font-size: 6rem;
+        line-height: .9;
+      }
     }
 
     &__text {
