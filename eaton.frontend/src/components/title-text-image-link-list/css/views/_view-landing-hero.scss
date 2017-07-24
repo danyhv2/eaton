@@ -25,6 +25,10 @@
     }
   }
 
+  &__arrow {
+    display: none;
+  }
+
   &__dots {
 
     &:only-child {
@@ -74,6 +78,10 @@
       &__cta {
         margin-top: 60px;
       }
+    }
+
+    &:hover .carousel-component__arrow {
+      display: block;
     }
 
     .carousel-indicators {
