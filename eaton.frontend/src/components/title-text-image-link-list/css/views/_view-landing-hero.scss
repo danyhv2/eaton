@@ -67,11 +67,6 @@
 
     &-slide {
 
-      &:hover > .carousel-component__arrow {
-        display: block;
-        background-image: none;
-      }
-
       &__caption {
         top: 10%;
       }
