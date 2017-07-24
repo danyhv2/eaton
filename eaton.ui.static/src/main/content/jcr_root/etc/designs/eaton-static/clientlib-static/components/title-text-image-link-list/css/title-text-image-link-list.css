@@ -8,11 +8,11 @@
 
 .carousel-component-slide__title { font-size: 3.25em; line-height: 1.192em; margin: 0; }
 
+.carousel-component__arrow { display: none; }
+
 .carousel-component__dots:only-child { display: none; }
 
 .carousel-component__down-arrow { position: absolute; bottom: 25px; color: #FFF; width: 100%; font-size: 1.5em; z-index: 10; text-align: center; }
-
-.carousel-component__arrow { display: none; border: 0; background-image: none; }
 
 .carousel-component .carousel-indicators .active { background-color: #005EB8; border: 1px solid #005EB8; }
 
@@ -21,9 +21,9 @@
 
 @media screen and (min-width: 768px) { .carousel-indicators { bottom: 20px; } }
 
-@media screen and (min-width: 1200px) { .carousel-component-slide:hover > .carousel-component__arrow { display: block; background-image: none; }
-  .carousel-component-slide__caption { top: 10%; }
-  .carousel-component-slide__cta { margin-top: 60px; } }
+@media screen and (min-width: 1200px) { .carousel-component-slide__caption { top: 10%; }
+  .carousel-component-slide__cta { margin-top: 60px; }
+  .carousel-component:hover .carousel-component__arrow { display: block; background-image: none; } }
 
 .eaton-landing-hero--single .carousel-component-slide__caption { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); bottom: auto; }
 

@@ -130,7 +130,7 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 .icon { font-size: 24px; line-height: 0; }
 
-body { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 16px; }
+body { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 16px; overflow-x: hidden; }
 
 b, strong { font-weight: bold; }
 
@@ -207,6 +207,14 @@ h5, .b-heading-h5 { margin-top: 0; }
 .u-hidden { visibility: hidden; }
 
 .u-visible { visibility: visible; }
+
+.u-visible-mobile { display: block; }
+
+@media screen and (min-width: 992px) { .u-visible-mobile { display: none; } }
+
+.u-visible-desktop { display: none; }
+
+@media screen and (min-width: 992px) { .u-visible-desktop { display: block; } }
 
 .button--reset { border: 0; background: none; padding: 0; }
 
