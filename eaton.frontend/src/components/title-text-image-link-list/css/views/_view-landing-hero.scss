@@ -53,7 +53,7 @@
 
 }
 
-@include media-mobile-and-tablet {
+@include media-mobile-only {
   .carousel-component-slide {
     &__image--mobile {
       min-height: 750px;
@@ -66,7 +66,14 @@
 }
 
 
-@include media-desktop-and-up {
+@include  media-tablet-and-up {
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}
+
+
+@include media-desktop-large {
   .carousel-component {
 
     &-slide {
@@ -82,10 +89,7 @@
 
     &:hover .carousel-component__arrow {
       display: block;
-    }
-
-    .carousel-indicators {
-      bottom: 20px;
+      background-image: none;
     }
   }
 }
