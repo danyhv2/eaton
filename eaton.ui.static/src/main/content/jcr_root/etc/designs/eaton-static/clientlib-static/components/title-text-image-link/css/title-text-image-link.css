@@ -33,6 +33,8 @@
 
 .dark-theme .eaton-single-feature__item { color: #FFF; }
 
+.feature-block-component { padding: 60px 0; }
+
 .feature-block-component__container { height: 600px; }
 
 .feature-block-component__copy { height: 100%; color: #FFF; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }

@@ -2,12 +2,6 @@
 
   &-slide {
 
-    &:hover > .carousel-component__arrow {
-      display: block;
-      border: 0;
-      background-image: none;
-    }
-
     &__caption {
       top: 0;
     }
@@ -50,10 +44,13 @@
 
   &__arrow {
     display: none;
+    border: 0;
+    background-image: none;
   }
 
-  .carousel-indicators {
-    bottom: 56px;
+  .carousel-indicators .active {
+    background-color: $color__primary-blue;
+    border: 1px solid $color__primary-blue;
   }
 }
 
@@ -63,12 +60,27 @@
       min-height: 750px;
     }
   }
+
+  .carousel-indicators {
+    bottom: 56px;
+  }
+}
+
+@include  media-tablet-and-up {
+  .carousel-indicators {
+    bottom: 20px;
+  }
 }
 
 @include media-desktop-large {
   .carousel-component {
 
     &-slide {
+
+      &:hover > .carousel-component__arrow {
+        display: block;
+        background-image: none;
+      }
 
       &__caption {
         top: 10%;
