@@ -25,7 +25,7 @@
     overflow: hidden;
     background: $color__primary-gray2;
     color: $color__white;
-    transition: height 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 
     &__headline {
       display: block;
@@ -44,6 +44,7 @@
       // padding: 0 ($spacing__sm / 2);
       padding: 0;
       font-family: Arial;
+      min-height: 600px;
 
       a {
         display: block;
@@ -81,7 +82,7 @@
     &__container {
       width: auto;
     }
-    
+
     &__headline {
       display: none;
     }

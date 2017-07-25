@@ -92,11 +92,12 @@ App.header = (function() {
 
     // If Tablet Breakpoint and Up
     if (event.matches) {
-      // console.log('Tablet BP');
+      console.log('Tablet BP');
     }
 
     // Else is Mobile Breakpoint
     else {
+      console.log('Mobile BP');
       closeNav();
     }
   };

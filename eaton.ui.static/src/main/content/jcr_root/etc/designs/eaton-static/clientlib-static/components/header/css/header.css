@@ -44,6 +44,7 @@
 @media screen and (max-width: 991px) { .nav-open { position: fixed; width: 100%; overflow: hidden; }
   .nav-open .eaton-link-list-primary-nav { height: 100%; visibility: visible; overflow: auto; }
   .nav-open.level-2-open { overflow: hidden; position: fixed; width: 100%; }
+  .nav-open.level-2-open .eaton-link-list-primary-nav { left: -100%; }
   .nav-open.level-2-open .mega-menu { visibility: visible; -webkit-transform: translate(0); transform: translate(0); } }
 
 @media screen and (min-width: 992px) { .nav-open.level-2-open .mega-menu { visibility: visible; opacity: 1; } }

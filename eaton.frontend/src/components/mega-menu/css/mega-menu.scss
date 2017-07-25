@@ -140,6 +140,8 @@
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-and-tablet {
+    min-height: 90px;
+    
     &__level1-link {
       .glyphicon-menu-left {
         display: inline;

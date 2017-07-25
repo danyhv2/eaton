@@ -66,7 +66,7 @@
     position: fixed;
     width: 100%;
     overflow: hidden;
-    
+
     .eaton-link-list-primary-nav {
       height: 100%;
       visibility: visible;
@@ -78,6 +78,10 @@
       overflow: hidden;
       position: fixed;
       width: 100%;
+
+      .eaton-link-list-primary-nav {
+        left: -100%;
+      }
 
       .mega-menu {
         visibility: visible;
