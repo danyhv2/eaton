@@ -1,0 +1,18 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Tabs Family</div>
+</sly>
+
+<!--/* BEGIN M-40.1 Product Tabs Family */ -->
+<sly data-sly-test="!${wcmmode.edit}" data-sly-use.featuredTopic="data/product-tabs-family-data.js" >
+  <div class="eaton-product-tabs container" >
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="eaton-featured-topic__title">
+          <!--/* Component: Title */-->
+          <sly data-sly-resource="${'featured-topic-title' @ resourceType='/apps/eaton/static-components/general/title'}"></sly>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>
+<!--/* END M-40.1 Product Tabs Family */ -->

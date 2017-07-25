@@ -1,0 +1,18 @@
+//-----------------------------------
+// Component M-22: Quote
+//-----------------------------------
+
+@import "../../../global/css/_config/sass";
+
+.eaton-product-tabs {
+  padding-top: $spacing__xl;
+  padding-bottom: $spacing__xl;
+
+  @include media-mobile-only {
+
+  }
+
+  @include media-desktop-and-up {
+
+  }
+}
