@@ -34,10 +34,18 @@
                                 jcr:primaryType="nt:unstructured"
                                 text="Article List: Single Feature"
                                 value="article-list-single-feature"/>
+                            <related-products
+                                jcr:primaryType="nt:unstructured"
+                                text="Related Products"
+                                value="related-products"/>
                             <links
                                 jcr:primaryType="nt:unstructured"
                                 text="Links"
                                 value="links"/>
+                            <top-list-with-icon
+                                jcr:primaryType="nt:unstructured"
+                                text="Top List With Icon"
+                                value="top-list-with-icon"/>
                         </options>
                     </view>
                 </items>

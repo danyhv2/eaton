@@ -81,6 +81,18 @@ h5,
   margin-top: 0;
 }
 
+//links
+
+.b-h4-link {
+  font-size: 1.375em;
+  color: $color__primary-blue;
+
+  @include media-desktop-and-up {
+    font-size: 1.625em;
+  }
+}
+
+
 
 
 // BodyCopy
