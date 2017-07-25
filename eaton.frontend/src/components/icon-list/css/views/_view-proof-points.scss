@@ -22,18 +22,16 @@
     font-weight: bold;
     display: inline-block;
     color: $color__accent-aqua;
+    display: flex;
   }
 
-  &__facts {
+  &__fact {
     line-height: 1;
     margin-left: -3px;
   }
 
   &__symbol {
     position: relative;
-    right: 0;
-    font-size: 50px;
-    top: -30px;
   }
 
   //-----------------------------------
@@ -49,8 +47,13 @@
       }
     }
 
-    &__facts {
+    &__fact {
       font-size: 83px;
+    }
+
+    &__symbol {
+      font-size: 40px;
+      top: -6px;
     }
 
     &__title {
@@ -62,13 +65,13 @@
   // Media-Query: Desktop
   //-----------------------------------
   @include media-desktop-and-up {
-    &__facts {
+    &__fact {
       font-size: 75px;
     }
 
     &__symbol {
       font-size: 45px;
-      top: -20px;
+      top: -6px;
     }
 
     &__title {
