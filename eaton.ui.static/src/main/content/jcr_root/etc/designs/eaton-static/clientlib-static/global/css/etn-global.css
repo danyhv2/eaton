@@ -84,7 +84,7 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 .icon-list-items::before { content: "\EA14"; }
 
-.icon-list::before { content: "\EA15"; }
+.icon-checklist::before { content: "\EA15"; }
 
 .icon-marker::before { content: "\EA16"; }
 
