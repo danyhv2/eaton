@@ -43,6 +43,10 @@
                                         jcr:primaryType="nt:unstructured"
                                         text="Links"
                                         value="links"/>
+                                    <top-list-with-icon
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Top List With Icon"
+                                        value="top-list-with-icon"/>
                                 </items>
                             </view>
                         </items>
