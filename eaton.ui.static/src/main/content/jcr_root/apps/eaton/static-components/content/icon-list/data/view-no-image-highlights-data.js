@@ -8,9 +8,9 @@ use(function () {
     var data = {};
     data.items = [
       {
-        title: 'maximize reliability',
-        text: 'Maintenance bypass',
-        tcsText: 'Maintenance bypass'
+        title: 'battery',
+        text: 'Sealed, lead-acid',
+        tcsText: 'Sealed, lead-acid'
       },
       {
         title: 'exclusive abm technology',

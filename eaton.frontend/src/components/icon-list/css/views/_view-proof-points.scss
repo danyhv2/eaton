@@ -60,6 +60,10 @@
   // Media-Query: Desktop
   //-----------------------------------
   @include media-desktop-and-up {
+    &__wrapper {
+      display: flex;
+    }
+    
     &__text {
       font-size: 75px;
     }
