@@ -3,8 +3,7 @@
         <div class="row featured-story-component__row">
             <div class="col-xs-12 col-lg-11 featured-story-component__row--nopadding ${componentList.odd ? 'col-lg-pull-0' : 'col-lg-offset-1'}">
                 <div>
-                    <img class="img-responsive hidden-xs featured-story-component__image" src="${component.image}" />
-                    <img class="img-responsive visible-xs" src="${component.mobile_image}" />
+                    <img class="img-responsive featured-story-component__image" data-src="${component.mobile_image}" data-desktop-rendition="${component.image}" data-mobile-rendition="${component.mobile_image}" data-tablet-rendition="${component.image}" />
                 </div>
                 <div class="col-xs-12 col-sm-5 col-lg-4 featured-story-component__blue ${componentList.odd ? 'featured-story-component__blue--right' : 'featured-story-component__blue--left'}">
                     <div class="featured-story-component__content">
