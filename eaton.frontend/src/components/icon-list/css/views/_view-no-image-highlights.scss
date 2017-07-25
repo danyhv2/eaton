@@ -36,17 +36,17 @@
     }
 
     &__text {
-      font-size: 50px;
+      font-size: 3.125em;
       line-height: 55px;
     }
 
     &__symbol {
-      font-size: 30px;
+      font-size: 0.6em;
       top: -15px;
     }
 
     &__title {
-      font-size: 14px;
+      font-size: 0.875em;
       margin-bottom: 5px;
     }
   }
@@ -62,17 +62,17 @@
     }
 
     &__text {
-      font-size: 60px;
+      font-size: 3.750em;
       line-height: 65px;
     }
 
     &__symbol {
-      font-size: 40px;
+      font-size: 0.667em;
       top: -15px;
     }
 
     &__title {
-      font-size: 18px;
+      font-size: 1.125em;
       margin-bottom: ($spacing__sm / 2);
     }
   }
