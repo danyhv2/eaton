@@ -8,9 +8,9 @@ use(function () {
     var data = {};
     data.items = [
       {
-        title: 'battery',
-        text: 'Sealed, lead-acid',
-        tcsText: 'Sealed, lead-acid'
+        title: 'maximize reliability',
+        text: 'Maintenance bypass',
+        tcsText: 'Maintenance bypass'
       },
       {
         title: 'exclusive abm technology',
@@ -19,8 +19,8 @@ use(function () {
       },
       {
         title: 'predictpulse service',
-        text: '$18B',
-        tcsText: '<span class="icon-list-no-image-highlights__symbol">$</span>18B'
+        text: '24/7 monitoring',
+        tcsText: '24/7 monitoring'
       }
     ]
     return data;
