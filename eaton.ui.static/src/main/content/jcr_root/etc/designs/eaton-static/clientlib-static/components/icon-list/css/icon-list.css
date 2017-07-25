@@ -45,5 +45,3 @@
   .icon-list-no-image-highlights__title { font-size: 1.125em; margin-bottom: 15px; } }
 
 .icon-list { padding: 30px 0; }
-
-.icon-list::before { display: none; }
