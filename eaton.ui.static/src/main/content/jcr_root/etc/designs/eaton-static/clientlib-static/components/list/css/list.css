@@ -85,3 +85,5 @@
 @media screen and (min-width: 992px) { .eaton-list-links { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
   .eaton-list-links__col { width: 100%; margin: 0 15px; }
   .eaton-list-links__col:first-child { margin-left: 0; } }
+
+.related-products-component__card { background-color: #F8F8F8; padding: 0 15px; margin-right: 15px; }
