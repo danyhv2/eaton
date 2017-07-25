@@ -1,0 +1,19 @@
+<sly data-sly-use.data="${'../data/view-no-image-highlights-data.js' @testdata=properties.testdata}">
+
+  <div class="icon-list-no-image-highlights">
+    <div class="container">
+      <div class="row">
+          <!--/* Icon List */-->
+          <div class="icon-list-no-image-highlights__wrapper" data-sly-list="${ data.items }">
+            <div class="col-xs-12 col-md-4 icon-list-no-image-highlights__item">
+              <div class="icon-list-no-image-highlights__content">
+                <!--/* Post integration - to be mapped with ${item.text} */-->
+                <div class="icon-list-no-image-highlights__title">${item.title}</div>
+                <div class="icon-list-no-image-highlights__text">${item.tcsText @context = 'html'}</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</sly>

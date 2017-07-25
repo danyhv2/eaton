@@ -7,8 +7,13 @@
 
 // Import SubViews
 @import "views/view-proof-points";
+@import "views/view-no-image-highlights";
 
 
 .icon-list {
   @include component-spacing();
+
+  &::before {
+    display: none;
+  }
 }

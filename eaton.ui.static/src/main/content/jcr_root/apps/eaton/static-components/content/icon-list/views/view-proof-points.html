@@ -4,16 +4,16 @@
     <div class="container">
       <div class="row">
           <!--/* Icon List */-->
-          <div data-sly-list="${ data.items }">
+          <div class="icon-list-proof-points__wrapper" data-sly-list="${ data.items }">
             <div class="col-xs-12 col-md-4 icon-list-proof-points__item">
               <div class="icon-list-proof-points__image">
-                <img src="${item.img}" alt="${item.facts} ${item.relatedText}" />
+                <img src="${item.image}" alt="${item.title}" />
               </div>
-              
+
               <div class="icon-list-proof-points__content">
-                <div class="icon-list-proof-points__facts">${item.facts}</div>
-                <div data-sly-test="${item.factSymbol}" class="icon-list-proof-points__symbol">${item.factSymbol}</div>
-                <div class="icon-list-proof-points__related">${item.relatedText}</div>
+                <!--/* Post integration - to be mapped with ${item.text} */-->
+                <div class="icon-list-proof-points__text">${item.tcsText @context = 'html'}</div>
+                <div class="icon-list-proof-points__title">${item.title}</div>
               </div>
             </div>
           </div>
