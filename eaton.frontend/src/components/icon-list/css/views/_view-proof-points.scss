@@ -23,10 +23,6 @@
     display: inline-block;
     color: $color__accent-aqua;
     display: flex;
-  }
-
-  &__fact {
-    line-height: 1;
     margin-left: -3px;
   }
 
@@ -47,13 +43,13 @@
       }
     }
 
-    &__fact {
+    &__text {
       font-size: 83px;
     }
 
     &__symbol {
       font-size: 40px;
-      top: -6px;
+      top: 13px;
     }
 
     &__title {
@@ -65,13 +61,13 @@
   // Media-Query: Desktop
   //-----------------------------------
   @include media-desktop-and-up {
-    &__fact {
+    &__text {
       font-size: 75px;
     }
 
     &__symbol {
       font-size: 45px;
-      top: -6px;
+      top: 8px;
     }
 
     &__title {
