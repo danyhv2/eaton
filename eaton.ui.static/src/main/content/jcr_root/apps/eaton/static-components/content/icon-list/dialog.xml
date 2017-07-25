@@ -26,6 +26,10 @@
                 jcr:primaryType="nt:unstructured"
                 text="Proof Points"
                 value="proof-points"/>
+              <noImageHighlights
+                jcr:primaryType="nt:unstructured"
+                text="No Image Highlights"
+                value="no-image-highlights"/>
             </options>
           </view>
         </items>
