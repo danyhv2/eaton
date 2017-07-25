@@ -11,4 +11,8 @@
 
 .icon-list {
   @include component-spacing();
+  
+  &:before {
+    display: none;
+  }
 }
