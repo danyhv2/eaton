@@ -1,28 +1,26 @@
 //-----------------------------------
-// IconList Component: Proof Points
+// IconList Component: No Image Highlights
 //-----------------------------------
 
-.icon-list-proof-points {
+.icon-list-no-image-highlights {
+  background: $color__secondary-gray3;
 
   &__item {
     display: flex;
-  }
-
-  &__image {
-    margin-top: 20px;
-
-    img { width: 80px; }
+    color: $color__primary-gray2;
   }
 
   &__content {
-    padding-left: 40px;
+    text-align: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   &__text {
-    font-weight: bold;
-    color: $color__accent-aqua;
-    display: flex;
-    margin-left: -3px;
+
   }
 
   &__symbol {
@@ -34,8 +32,7 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__item {
-      justify-content: center;
-      margin-bottom: ($spacing__sm ) + 10;
+
 
       &:last-child {
         margin-bottom: 0;
@@ -43,16 +40,14 @@
     }
 
     &__text {
-      font-size: 83px;
+
     }
 
     &__symbol {
-      font-size: 40px;
-      top: 13px;
+
     }
 
     &__title {
-      font-size: 18px;
     }
   }
 
@@ -60,17 +55,21 @@
   // Media-Query: Desktop
   //-----------------------------------
   @include media-desktop-and-up {
+    padding: 42px 0;
+
     &__text {
-      font-size: 75px;
+      font-size: 60px;
+      line-height: 65px;
     }
 
     &__symbol {
-      font-size: 45px;
-      top: 8px;
+      font-size: 40px;
+      top: -15px;
     }
 
     &__title {
-      font-size: 24px;
+      font-size: 18px;
+      margin-bottom: ($spacing__sm / 2);
     }
   }
 }

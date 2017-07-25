@@ -15,12 +15,12 @@ use(function () {
       {
         title: 'exclusive abm technology',
         text: 'Increase life by 50%',
-        tcsText: 'Increase life by 50<div class="icon-list-no-image-highlights__symbol">%</div>'
+        tcsText: 'Increase life by 50<span class="icon-list-no-image-highlights__symbol">%</span>'
       },
       {
         title: 'predictpulse service',
         text: '$18B',
-        tcsText: '<div class="icon-list-no-image-highlights__symbol">$</div>18B'
+        tcsText: '<span class="icon-list-no-image-highlights__symbol">$</span>18B'
       }
     ]
     return data;
