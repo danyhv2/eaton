@@ -1,28 +1,21 @@
 //-----------------------------------
-// IconList Component: Proof Points
+// IconList Component: No Image Highlights
 //-----------------------------------
 
-.icon-list-proof-points {
+.icon-list-no-image-highlights {
+  background: $color__secondary-gray3;
 
   &__item {
-    display: flex;
-  }
-
-  &__image {
-    margin-top: 20px;
-
-    img { width: 80px; }
+    color: $color__primary-gray2;
   }
 
   &__content {
-    padding-left: 40px;
+    text-align: center;
   }
 
-  &__text {
+  &__title {
+    text-transform: uppercase;
     font-weight: bold;
-    color: $color__accent-aqua;
-    display: flex;
-    margin-left: -3px;
   }
 
   &__symbol {
@@ -33,9 +26,9 @@
   // Media-Query: Mobile
   //-----------------------------------
   @include media-mobile-and-tablet {
+    padding: 30px 0;
     &__item {
-      justify-content: center;
-      margin-bottom: ($spacing__sm ) + 10;
+      margin-bottom: 40px;
 
       &:last-child {
         margin-bottom: 0;
@@ -43,16 +36,18 @@
     }
 
     &__text {
-      font-size: 83px;
+      font-size: 3.125em;
+      line-height: 55px;
     }
 
     &__symbol {
-      font-size: 40px;
-      top: 13px;
+      font-size: 0.6em;
+      top: -15px;
     }
 
     &__title {
-      font-size: 18px;
+      font-size: 0.875em;
+      margin-bottom: 5px;
     }
   }
 
@@ -60,21 +55,25 @@
   // Media-Query: Desktop
   //-----------------------------------
   @include media-desktop-and-up {
+    padding: 42px 0;
+
     &__wrapper {
       display: flex;
     }
-    
+
     &__text {
-      font-size: 75px;
+      font-size: 3.750em;
+      line-height: 65px;
     }
 
     &__symbol {
-      font-size: 45px;
-      top: 8px;
+      font-size: 0.667em;
+      top: -15px;
     }
 
     &__title {
-      font-size: 24px;
+      font-size: 1.125em;
+      margin-bottom: ($spacing__sm / 2);
     }
   }
 }

@@ -1,6 +1,6 @@
 <sly data-sly-use.data="${'../data/view-l2-hero-data.js' @tesdata=properties.testdata}">
-    <div class="eaton-title-text-image container-fluid category-hightlight-header__image category-hightlight-header--vertical-align"
-        style="background-image:url('${data.imgSrc @ context='uri'}')">
+    <div class="resp-bg eaton-title-text-image container-fluid category-hightlight-header__image category-hightlight-header--vertical-align"
+        style="background-image:url('${data.imgSrc @ context='uri'}')" data-src="${data.imgSrcMobile}" data-desktop-rendition="${data.imgSrcDesktop}" data-mobile-rendition="${data.imgSrcMobile}" data-tablet-rendition="${data.imgSrcTablet}">
         <div class="row text-center center-block">
             <div class="col-xs-12" data-testdata="${data.testdata}">
                 <h1 class="category-hightlight-header__title">${data.title}</h1>
