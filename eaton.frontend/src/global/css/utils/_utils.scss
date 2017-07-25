@@ -68,3 +68,17 @@
 
   @include media-desktop-and-up { display: block; }
 }
+
+//Responsive Images
+//-------------
+[data-mobile-rendition] {
+  min-width: 0 !important;
+
+  @media all and (max-width: 979px) {
+    min-width: 1px !important;
+  }
+
+  @media all and (max-width: 767px) {
+    min-width: 2px !important;
+  }
+}
