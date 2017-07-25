@@ -4,12 +4,92 @@
 
 <!--/* BEGIN M-40.1 Product Tabs Family */ -->
 <sly data-sly-test="!${wcmmode.edit}" data-sly-use.featuredTopic="data/product-tabs-family-data.js" >
-  <div class="eaton-product-tabs container" >
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="eaton-featured-topic__title">
-          <!--/* Component: Title */-->
-          <sly data-sly-resource="${'featured-topic-title' @ resourceType='/apps/eaton/static-components/general/title'}"></sly>
+  <div class="eaton-product-tabs" >
+
+    <div class="container">
+      <input id="overview" type="radio" name="product-tab" checked>
+      <input id="specifications" type="radio" name="product-tab">
+      <input id="resources" type="radio" name="product-tab">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="eaton-product-tabs__description">
+            <div class="b-eyebrow-small">
+              EATON 9PX
+            </div>
+            <div class="b-heading-h5">
+              9PX UPS
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <label for="overview">
+            <!-- <a href="#overview" > -->
+              <i class="icon icon-doc-text" aria-hidden="true"></i>
+              <span>Overview</span>
+            <!-- </a> -->
+          </label>
+          <label for="specifications">
+            <!-- <a href="#" > -->
+              <i class="icon icon-tiles" aria-hidden="true"></i>
+              <span>Specifications</span>
+            <!-- </a> -->
+          </label>
+          <label for="resources">
+            <!-- <a href="#resources" > -->
+              <i class="icon icon-doc-download" aria-hidden="true"></i>
+              <span>Resources</span>
+            <!-- </a> -->
+          </label>
+        </div>
+        <div class="col-sm-3 u-text-center">
+          <button class="eaton-product-tabs__dropdown">
+            How to buy
+            <i class="icon icon-chevron-down" aria-hidden="true"></i>
+            <div class="eaton-product-tabs__dropdown__content">
+              <ul>
+                <li>
+                  <a href="#1">
+                    <i class="icon icon-tiles" aria-hidden="true"></i><span>Uno</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#1">
+                    <i class="icon icon-tiles" aria-hidden="true"></i><span>Dos</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#2">
+                    <i class="icon icon-tiles" aria-hidden="true"></i><span>Tres</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#3">
+                    <i class="icon icon-tiles" aria-hidden="true"></i>
+                    <span>Cuatro</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-sm-12 eaton-product-tabs__tab-panel"
+          data-tab-name="overview" >
+          <h1>content overviews</h1>
+        </div>
+        <div
+          class="col-sm-12 eaton-product-tabs__tab-panel"
+          data-tab-name="specifications" >
+          <h1>content specifications</h1>
+        </div>
+        <div
+          class="col-sm-12 eaton-product-tabs__tab-panel"
+          data-tab-name="resources" >
+          <h1>content resources</h1>
         </div>
       </div>
     </div>
