@@ -140,6 +140,8 @@ i { font-style: normal; }
 
 p { line-height: 1.3; }
 
+a, p a { color: #005EB8; }
+
 h1, h2, h3, .b-heading-h1, .b-heading-h2, .b-heading-h3 { font-family: "Eaton", Arial, sans-serif; }
 
 h4, h5, .b-heading-h5, .b-heading-h6 { font-family: Arial, "Arial", sans-serif; }
@@ -153,6 +155,8 @@ h3, .b-heading-h3 { margin-top: 0; }
 h4, .b-heading-h4 { margin-top: 0; }
 
 h5, .b-heading-h5 { margin-top: 0; }
+
+h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .b-h4-link { font-size: 1.375em; color: #005EB8; }
 
