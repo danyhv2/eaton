@@ -1,0 +1,23 @@
+//-----------------------------------
+// Component: Divider
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.eaton-divider {
+  height: 6px;
+  background-color: $color__secondary-gray5;
+  margin-bottom: 10px;
+
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+    height: 10px;
+    margin-bottom: 20px;
+  }
+
+}
