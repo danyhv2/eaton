@@ -1,0 +1,9 @@
+//-----------------------------------
+// Component Icon List
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc)
+@import "../../../global/css/_config/sass";
+
+// Import SubViews
+@import "views/view-simple";

@@ -1,0 +1,25 @@
+//-----------------------------------
+// M-60 Search Results Component
+//-----------------------------------
+
+.search-results-simple {
+
+  &__item {
+    margin-bottom: $spacing__md;
+  }
+
+  //-----------------------------------
+  // Media-Query: Mobile & Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+  }
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+
+  }
+}

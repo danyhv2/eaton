@@ -1,0 +1,13 @@
+<!--/*
+  Search Result Item - Type: Resource
+*/-->
+<template data-sly-template.item="${ @ data }">
+
+  <div class="search-results-simple__item search-results-simple--type-${ data.contentType }">
+    <h4>${ data.content.name }</h4>
+    <div>(${ data.content.type } ${ data.content.size })</div>
+    <a href="${ data.content.link.url }"
+      target="${ data.content.link.target }">${ data.content.link.text }</a>
+  </div>
+
+</template>
