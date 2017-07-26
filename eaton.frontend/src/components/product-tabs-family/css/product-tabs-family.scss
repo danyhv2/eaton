@@ -12,7 +12,7 @@
     &:checked {
       ~ .row {
         label[for="#{$radioId}"] {
-          background-color: $color__secondary-gray2;
+          background-color: $color__secondary-gray5;
 
           .dark-theme & {
             background-color: $color__primary-gray2;
@@ -28,7 +28,7 @@
 }
 
 .eaton-product-tabs {
-  background-color: $color__secondary-gray3;
+  background-color: $color__secondary-gray6;
 
   .dark-theme & {
     background-color: $color__primary-gray1;
@@ -100,7 +100,7 @@
     &:hover,
     &:focus,
     &:active {
-      background-color: $color__secondary-gray2;
+      background-color: $color__secondary-gray5;
     }
 
     .icon {
@@ -147,7 +147,7 @@
       display: none;
       position: absolute;
       width: 100%;
-      background-color: $color__secondary-gray3;
+      background-color: $color__secondary-gray6;
       top: 100%;
       left: 0;
       z-index: 10;
