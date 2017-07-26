@@ -1,31 +1,53 @@
 "use strict";
 use(function () {
-    var featuredTopic = {};
-    featuredTopic.title = "Designing tomorrow's innovation, today.";
-    featuredTopic.paragraph = 'Together, we can create more powerful and efficient ways to keep communities and commerce running 24/7. we have resources and tools to help you solve problems every day.';
+    var data = {};
 
-    featuredTopic.leftList = {
-      title: 'For design engineers',
-      items: [
-        { title: '2D/3D models', href: '#si', target: '_blank' },
-        { title: 'Software downloads', href: '#sec' , target: '_blank'},
-        { title: 'On-demmand presentations', href: '#cp', target: '_blank'} ]
-    };
-
-    featuredTopic.rightList = {
-      title: 'For IT professionals',
-      items: [
-        { title: 'Installations guide', href: '#annual', target: '_blank' },
-        { title: 'Software & formware downloads', href: '#q4', target: '_blank'},
-        { title: 'IT Handbooks', href: '#report', target: '_blank'} ]
-    };
-
-    featuredTopic.mainCta =  {
-      title: 'View Tools & downloads', 
-      href: '#how-to',
+    data.eyebrowCta =  {
+      title: 'NETWORK SERVER STORAGE UPS',
+      href: '#take-me-somewhere',
       target: '_blank'
     };
-    Href = '';
+    data.productName = '9PX UPS';
 
-    return featuredTopic;
+    data.overviewTabLabel = 'Overview';
+    data.specificationsTabLabel = 'Specifications';
+    data.resourcesTabLabel = 'Resources';
+
+    data.dropdown = {
+      label : 'How to buy',
+      options : [
+        {
+          icon: 'headset',
+          title: 'Request a quote',
+          href: '#request-a-quote',
+          target: '_blank'
+        },
+        {
+          icon: 'tiles',
+          title: 'Find a reseller',
+          href: '#find-a-reseller',
+          target: '_blank'
+        },
+        {
+          icon: 'tiles',
+          title: 'Order a catalog',
+          href: '#order-a-catalog',
+          target: '_blank'
+        },
+        {
+          icon: 'phone',
+          title: 'Call toll-free 1 800 365 5794',
+          href: 'tel:18003655794',
+          target: '_blank'
+        },
+        {
+          icon: 'tiles',
+          title: 'live chat',
+          href: '#live-chat',
+          target: '_blank'
+        }
+      ]
+    };
+
+    return data;
 });

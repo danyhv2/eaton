@@ -158,10 +158,11 @@
       }
 
       li {
-        padding: $spacing__sm 0 0 0;
+        padding: $spacing__sm 0 0 35px;
+        position: relative;
 
         &:first-child {
-          padding: 0;
+          padding-top: 0;
         }
 
         a {
@@ -176,8 +177,10 @@
         }
 
         .icon {
-          padding: 0 10px 0 0;
           font-size: 25px;
+          left: 0;
+          padding: 0 10px 0 0;
+          position: absolute;
         }
       }
     }

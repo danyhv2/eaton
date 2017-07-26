@@ -3,7 +3,7 @@
 </sly>
 
 <!--/* BEGIN M-40.1 Product Tabs Family */ -->
-<sly data-sly-test="!${wcmmode.edit}" data-sly-use.featuredTopic="data/product-tabs-family-data.js" >
+<sly data-sly-test="!${wcmmode.edit}" data-sly-use.data="data/product-tabs-family-data.js" >
   <div class="eaton-product-tabs" >
 
     <div class="container">
@@ -14,12 +14,14 @@
       <div class="row">
         <div class="col-md-4">
           <div class="eaton-product-tabs__description">
-            <a href="#take-me-somewhere" class="b-eyebrow-small">
+            <a href="${data.eyebrowCta.href}"
+               class="b-eyebrow-small"
+               aria-label="Go to ${data.eyebrowCta.title}" >
               <i class="icon icon-chevron-left" aria-hidden="true"></i>
-                NETWORK SERVER STORAGE UPS
+                ${data.eyebrowCta.title}
             </a>
             <div class="b-heading-h5">
-              9PX UPS
+              ${data.productName}
             </div>
           </div>
         </div>
@@ -29,19 +31,19 @@
             <label for="overview">
               <!-- <a href="#overview" > -->
               <i class="icon icon-doc-text" aria-hidden="true"></i>
-              <span>Overview</span>
+              <span>${data.overviewTabLabel}</span>
               <!-- </a> -->
             </label>
             <label for="specifications">
               <!-- <a href="#" > -->
               <i class="icon icon-tiles" aria-hidden="true"></i>
-              <span>Specifications</span>
+              <span>${data.specificationsTabLabel}</span>
               <!-- </a> -->
             </label>
             <label for="resources">
               <!-- <a href="#resources" > -->
               <i class="icon icon-doc-download" aria-hidden="true"></i>
-              <span>Resources</span>
+              <span>${data.resourcesTabLabel}</span>
               <!-- </a> -->
             </label>
           </div>
@@ -49,29 +51,13 @@
 
         <div class="col-md-3 u-text-center">
           <button class="eaton-product-tabs__dropdown">
-            How to buy
+            ${data.dropdown.label}
             <i class="icon icon-chevron-down" aria-hidden="true"></i>
             <div class="eaton-product-tabs__dropdown__content">
-              <ul>
+              <ul data-sly-list="${ data.dropdown.options }">
                 <li>
-                  <a href="#1">
-                    <i class="icon icon-tiles" aria-hidden="true"></i><span>Uno</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#1">
-                    <i class="icon icon-tiles" aria-hidden="true"></i><span>Dos</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#2">
-                    <i class="icon icon-tiles" aria-hidden="true"></i><span>Tres</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#3">
-                    <i class="icon icon-tiles" aria-hidden="true"></i>
-                    <span>Cuatro</span>
+                  <a href="#1" aria-label="Go to ${item.title}" >
+                    <i class="icon icon-${item.icon}" aria-hidden="true"></i><span>${item.title}</span>
                   </a>
                 </li>
               </ul>
@@ -84,17 +70,20 @@
         <div
           class="col-sm-12 eaton-product-tabs__tab-panel"
           data-tab-name="overview" >
-          <h1>content overviews</h1>
+          <h1>content overview</h1>
+          <h2>TODO: replace this with content overview</h2>
         </div>
         <div
           class="col-sm-12 eaton-product-tabs__tab-panel"
           data-tab-name="specifications" >
           <h1>content specifications</h1>
+          <h2>TODO: replace this with content Specifications</h2>
         </div>
         <div
           class="col-sm-12 eaton-product-tabs__tab-panel"
           data-tab-name="resources" >
           <h1>content resources</h1>
+          <h2>TODO: replace this with content resources</h2>
         </div>
       </div>
     </div>
