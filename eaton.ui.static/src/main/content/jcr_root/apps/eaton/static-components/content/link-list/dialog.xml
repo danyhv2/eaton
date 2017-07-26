@@ -42,6 +42,10 @@
                   jcr:primaryType="nt:unstructured"
                   text="Section Navigation"
                   value="section-navigation"/>
+              <towColumn
+                  jcr:primaryType="nt:unstructured"
+                  text="2 Column"
+                  value="2column"/>
             </options>
           </view>
           <testdata

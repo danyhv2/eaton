@@ -1,0 +1,9 @@
+<sly data-sly-use.data="../data/view-2column-data.js">
+	<div class="eaton-linklist-2column">
+		<div class="row" data-sly-list.link=${data.links}>
+			<div class="col-xs-12 col-md-6 eaton-linklist-2column__link">
+				<a href="${link.url}" title="${link.text}">${link.text}</a>
+			</div>
+		</div>
+	</div>
+</sly>
