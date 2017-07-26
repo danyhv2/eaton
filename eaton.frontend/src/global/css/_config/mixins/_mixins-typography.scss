@@ -1,83 +1,138 @@
 //-----------------------------------
-// SASS: Placeholders
+// SASS: Typography Mixins
 // EATON - Styleguide
+//-----------------------------------
+
+
+//-----------------------------------
+// NOTE: There 3 Mixins for each heading tag since there are some use cases where a Heading
+// should look like an H4 in mobile but like an H5 in desktop breakpoints. EG: M-36 Product Card SKU
 //-----------------------------------
 
 // H1 Heading
 //--------------
-%h1 {
+@mixin h1-mobile {
   font-family: 'EatonMedium', sans-serif;
   font-size: 35px;
   line-height: 40px;
+}
+
+@mixin h1-desktop {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 54px;
+  line-height: 68px;
+}
+
+@mixin h1 {
+  @include h1-mobile;
 
   @include media-desktop-and-up {
-    font-size: 54px;
-    line-height: 68px;
+    @include h1-desktop;
   }
 }
 
 
 // H2 Heading
 //--------------
-%h2 {
+@mixin h2-mobile {
   font-family: 'EatonMedium', sans-serif;
   font-size: 28px;
   line-height: 32px;
+}
+
+@mixin h2-desktop {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+@mixin h2 {
+  @include h2-mobile;
 
   @include media-desktop-and-up {
-    font-size: 40px;
-    line-height: 50px;
+    @include h2-desktop;
   }
 }
+
 
 
 // H3 Heading
 //--------------
-%h3 {
+@mixin h3-mobile {
   font-family: 'EatonMedium', sans-serif;
   font-size: 28px;
   line-height: 32px;
+}
+
+@mixin h3-desktop {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+@mixin h3 {
+  @include h3-mobile;
 
   @include media-desktop-and-up {
-    font-size: 40px;
-    line-height: 50px;
+    @include h3-desktop;
   }
 }
 
 
+
 // H4 Heading
 //--------------
-%h4 {
+@mixin h4-mobile {
   font-family: Arial, sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 29px;
+}
+
+@mixin h4-desktop {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+@mixin h4 {
+  @include h4-mobile;
 
   @include media-desktop-and-up {
-    font-size: 30px;
-    line-height: 42px;
+    @include h4-desktop;
   }
 }
 
 
 // H5 Heading
 //--------------
-%h5 {
+@mixin h5-mobile {
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 30px;
+}
+
+@mixin h5-desktop {
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+@mixin h5 {
+  @include h5-mobile;
 
   @include media-desktop-and-up {
-    font-size: 26px;
-    line-height: 40px;
+    @include h5-desktop;
   }
 }
 
 
 // Body Copy
 //--------------
-%body-copy {
+@mixin body-copy {
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -101,7 +156,7 @@
 
 // Body Copy Small
 //--------------
-%body-copy-small {
+@mixin body-copy-small {
   font-family: Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
@@ -125,7 +180,7 @@
 
 // Eyebrow Large
 //--------------
-%eyebrow-large {
+@mixin eyebrow-large {
   color: $color__primary-gray1;
   font-family: $font-family__secondary;
   font-size: 17px;
@@ -141,7 +196,7 @@
 
 // Eyebrow Small
 //--------------
-%eyebrow-small {
+@mixin eyebrow-small {
   color: $color__primary-gray1;
   font-family: $font-family__secondary;
   font-size: 14px;
