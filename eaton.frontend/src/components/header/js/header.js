@@ -98,7 +98,7 @@ App.header = (function() {
     // Else is Mobile Breakpoint
     else {
       console.log('Mobile BP');
-      closeNav();
+      // closeNav();
     }
   };
 

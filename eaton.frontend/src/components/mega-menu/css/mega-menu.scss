@@ -51,7 +51,7 @@
   @include media-mobile-and-tablet {
     position: fixed;
     top: 60px;
-    bottom: 40px;
+    bottom: 0;
     transition: transform 0.7s ease-in-out;
     overflow: auto;
     transform: translate(100%);
@@ -141,7 +141,7 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     min-height: 90px;
-    
+
     &__level1-link {
       .glyphicon-menu-left {
         display: inline;

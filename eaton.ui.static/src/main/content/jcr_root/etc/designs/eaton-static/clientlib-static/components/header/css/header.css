@@ -10,7 +10,7 @@
 
 .header-utility-nav .open-country-selector, .header-utility-nav .open-sign-in { color: #FFF; text-decoration: none; }
 
-@media screen and (max-width: 991px) { .header-utility-nav { position: fixed; bottom: 0; z-index: 1; width: 100%; right: 0; opacity: 0; visibility: hidden; -webkit-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; }
+@media screen and (max-width: 991px) { .header-utility-nav { position: fixed; bottom: 0; z-index: 5; width: 100%; right: 0; opacity: 0; visibility: hidden; -webkit-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; }
   .nav-open .header-utility-nav { opacity: 1; visibility: visible; } }
 
 .header-primary-nav { background: #FFF; border-bottom: 4px solid #EEF0F2; -webkit-transition: height 0.3s ease-in-out; transition: height 0.3s ease-in-out; }
