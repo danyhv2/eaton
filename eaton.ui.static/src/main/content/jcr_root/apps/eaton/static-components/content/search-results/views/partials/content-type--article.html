@@ -8,19 +8,19 @@
     <!--/* Content */-->
     <div class="results-list-module__content-wrapper">
 
-      <h4 class="results-list-module__title b-heading-h5">
-        <a href="${ data.content.link.url }" class="results-list-module__title-link">${ data.content.name }</a>
+      <h4 class="results-list-module__name b-heading-h5">
+        <a href="${ data.contentItem.link.url }" class="results-list-module__name-link">${ data.contentItem.name }</a>
       </h4>
 
-      <div data-sly-test="${ data.content.date }"
-        class="results-list-module__date b-body-copy-small">${ data.content.date }</div>
+      <div data-sly-test="${ data.contentItem.date }"
+        class="results-list-module__date b-body-copy-small">${ data.contentItem.date }</div>
 
-      <div class="results-list-module__description b-body-copy-small">${ data.content.description }</div>
+      <div class="results-list-module__description b-body-copy-small">${ data.contentItem.description }</div>
 
       <div class="results-list-module__url b-body-copy-small">
-        <a href="${ data.content.link.url }"
-          target="${ data.content.link.target }"
-          class="results-list-module__url-link">${ data.content.link.text }</a>
+        <a href="${ data.contentItem.link.url }"
+          target="${ data.contentItem.link.target }"
+          class="results-list-module__url-link">${ data.contentItem.link.text }</a>
       </div>
 
     </div>

@@ -7,25 +7,25 @@
 
     <!--/* Image */-->
     <div class="results-list-module__image-wrapper b-body-copy-small">
-      <img src="${ data.content.imgSrc }" class="results-list-module__image" alt="${ data.content.imgAlt }" />
+      <img src="${ data.contentItem.imgSrc }" class="results-list-module__image" alt="${ data.contentItem.imgAlt }" />
     </div>
 
     <!--/* Content */-->
     <div class="results-list-module__content-wrapper">
 
-      <h4 class="results-list-module__title b-heading-h5">
-        <a href="${ data.content.link.url }" class="results-list-module__title-link">${ data.content.name }</a>
+      <h4 class="results-list-module__name b-heading-h5">
+        <a href="${ data.contentItem.link.url }" class="results-list-module__name-link">${ data.contentItem.name }</a>
       </h4>
 
-      <div class="results-list-module__description b-body-copy-small">${ data.content.description }</div>
+      <div class="results-list-module__description b-body-copy-small">${ data.contentItem.description }</div>
 
       <div class="results-list-module__url b-body-copy-small">
-        <a href="${ data.content.link.url }"
-          target="${ data.content.link.target }"
-          class="results-list-module__url-link">${ data.content.link.text }</a>
+        <a href="${ data.contentItem.link.url }"
+          target="${ data.contentItem.link.target }"
+          class="results-list-module__url-link">${ data.contentItem.link.text }</a>
       </div>
 
-      <div data-sly-list.link="${ data.content.secondaryLinks }"
+      <div data-sly-list.link="${ data.contentItem.secondaryLinks }"
         class="results-list-module__links b-body-copy-small">
         <a class="results-list-module__links-item"
           href="${ link.url }"
