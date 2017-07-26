@@ -45,6 +45,8 @@
 
 .feature-block-component__copy--white-text { color: #FFF; }
 
+.feature-block-component__link { display: block; }
+
 .feature-block-component__text { padding-left: 120px; padding-right: 40px; }
 
 .feature-block-component__description { font-family: "Eaton", Arial, sans-serif; font-size: 1.125em; line-height: 1.5; padding-top: 30px; }
