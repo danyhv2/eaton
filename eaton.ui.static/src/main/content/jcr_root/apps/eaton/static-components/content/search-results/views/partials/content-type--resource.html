@@ -6,30 +6,30 @@
   <div class="results-list-module results-list-module--type-${ data.contentType }">
 
     <div class="results-list-module__icon-wrapper">
-      <a data-sly-attribute.href="${ data.content.link.url }"
-        target="${ data.content.link.target }"
+      <a data-sly-attribute.href="${ data.contentItem.link.url }"
+        target="${ data.contentItem.link.target }"
         class="results-list-module__url-link"
-        aria-label="${ 'Download {0}' @ format=[ data.content.documentName ] }">
+        aria-label="${ 'Download {0}' @ format=[ data.contentItem.documentName ] }">
         <i class="icon icon-download" aria-hidden="true"></i>
-        <span class="sr-only">${ data.content.link.text }</span>
+        <span class="sr-only">${ data.contentItem.link.text }</span>
       </a>
     </div>
 
     <!--/* Content */-->
     <div class="results-list-module__content-wrapper">
 
-      <h4 class="results-list-module__title b-heading-h5">
-        <a href="${ data.content.link.url }" class="results-list-module__title-link">${ data.content.name }</a>
+      <h4 class="results-list-module__name b-heading-h5">
+        <a href="${ data.contentItem.link.url }" class="results-list-module__name-link">${ data.contentItem.name }</a>
       </h4>
 
       <div class="results-list-module__document b-body-copy">
-        ${ '({0} {1})' @ format=[ data.content.documentType, data.content.documentSize ] }
+        ${ '({0} {1})' @ format=[ data.contentItem.documentType, data.contentItem.documentSize ] }
       </div>
 
       <div class="results-list-module__link-url b-body-copy-small">
-        <a data-sly-attribute.href="${ data.content.link.url }"
-          target="${ data.content.link.target }"
-          class="results-list-module__link">${ data.content.link.text }</a>
+        <a data-sly-attribute.href="${ data.contentItem.link.url }"
+          target="${ data.contentItem.link.target }"
+          class="results-list-module__link">${ data.contentItem.link.text }</a>
 
       </div>
 

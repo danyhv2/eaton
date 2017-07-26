@@ -8,10 +8,13 @@
 
   &__copy {
     height: 100%;
-    color: $color__white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &--white-text {
+      color: $color__white;
+    }
   }
 
   &__text {
@@ -24,6 +27,10 @@
     font-size: 1.125em;
     line-height: 1.5;
     padding-top: 30px;
+
+    & p {
+      padding-bottom: 15px;
+    }
   }
 
   &__image {

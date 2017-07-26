@@ -96,6 +96,13 @@ h5,
   font-size: 1.375em;
   color: $color__primary-blue;
 
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: $color__primary-blue;
+  }
+
   @include media-desktop-and-up {
     font-size: 1.625em;
   }
