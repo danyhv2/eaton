@@ -4,7 +4,7 @@
 
 // All SASS config files (Variables, Mixins, Functions, etc...)
 @import "_config/sass";
-
+@import "vendors/bootstrap-overrides";
 
 // Import Base Styles in specific order
 // NOTE: Bootstrap 3 provides a 'normalize/reset' module.

@@ -1,0 +1,195 @@
+//-----------------------------------
+// M-60 Search Results Component
+//-----------------------------------
+
+.search-results-simple {
+
+  &__header-top,
+  &__header-bottom,
+  &__active-filters,
+  &__filter-link {
+    display: flex;
+  }
+
+  &__sort-options,
+  &__filters-actions {
+    margin-left: auto;
+  }
+
+  &__header {
+    margin-bottom: $spacing__md;
+  }
+
+
+  // Results: Header Title
+  //--------------
+  &__header-top {
+    border-bottom: 2px solid $color__secondary-gray6;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  // Results: Header Filters
+  //--------------
+
+  &__filter-link {
+
+    align-items: center;
+    display: flex;
+    margin-right: 2rem;
+
+    .icon {
+      font-size: 10px;
+      margin-right: 1rem;
+    }
+
+  }
+
+  &__filter-label {
+    // Empty selector for future reference
+  }
+
+
+
+  //-----------------------------------
+  // Media-Query: Mobile & Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+
+  }
+}
+
+
+.eaton-facets {
+  border: 1px solid $color__secondary-gray4;
+
+  //-----------------------------------
+  // Media-Query: Mobile & Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    margin-bottom: $spacing__md / 2;
+  }
+}
+
+
+
+//-----------------------------------
+// M-60: Results List Container
+//-----------------------------------
+.results-list {
+  padding-bottom: $spacing__lg / 2;
+
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+    padding-bottom: $spacing__lg;
+  }
+
+}
+
+
+
+
+//-----------------------------------
+// M-60.1: Results List Modules
+//-----------------------------------
+.results-list-module {
+
+  // Local Variables
+  //--------------
+  $color__image-border: #E9E9E9;
+  $line-height-offset: 8px;
+
+  display: flex;
+  margin-bottom: $spacing__md / 2;
+
+  &__image {
+    border: 1px solid $color__image-border;
+    padding: 1rem;
+  }
+
+  &__date {
+    color: $color__primary-gray3;
+    font-style: italic;
+  }
+
+  &__secondary-links {
+    display: flex;
+  }
+
+
+
+
+  //-----------------------------------
+  // Media-Query: Mobile & Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    // Force Image to be displayed Above the content
+    &--type-family,
+    &--type-sku {
+      flex-flow: column nowrap;
+    }
+
+    &__image-wrapper {
+      margin-bottom: 20px;
+    }
+
+    &__image {
+      min-width: 300px;
+      max-height: 200px;
+    }
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    margin-bottom: $spacing__md;
+
+    // Product Item with Image (Thumbnail)
+    //--------------
+    &__image-wrapper {
+      flex-basis: 140px;
+      margin-right: $spacing__sm;
+      padding-top: $line-height-offset; // Used to align the Icon with the Result Title
+    }
+
+    &__image {
+      max-width: 140px;
+    }
+
+
+    // Resource Item with Download Icon
+    //--------------
+    &__icon-wrapper {
+      flex-basis: 48px;
+      margin-right: $spacing__sm;
+      padding-top: $line-height-offset; // Used to align the Icon with the Result Title
+
+      .icon {
+        color: $color__primary-blue;
+        font-size: 48px;
+      }
+    }
+
+
+  }
+}

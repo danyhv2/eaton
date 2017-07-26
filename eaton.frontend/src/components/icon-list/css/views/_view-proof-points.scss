@@ -18,23 +18,15 @@
     padding-left: 40px;
   }
 
-  &__facts,
-  &__symbol {
+  &__text {
     font-weight: bold;
-    display: inline-block;
     color: $color__accent-aqua;
-  }
-
-  &__facts {
-    line-height: 1;
+    display: flex;
     margin-left: -3px;
   }
 
   &__symbol {
     position: relative;
-    right: 0;
-    font-size: 50px;
-    top: -30px;
   }
 
   //-----------------------------------
@@ -50,11 +42,16 @@
       }
     }
 
-    &__facts {
+    &__text {
       font-size: 83px;
     }
 
-    &__related {
+    &__symbol {
+      font-size: 40px;
+      top: 13px;
+    }
+
+    &__title {
       font-size: 18px;
     }
   }
@@ -63,16 +60,20 @@
   // Media-Query: Desktop
   //-----------------------------------
   @include media-desktop-and-up {
-    &__facts {
+    &__wrapper {
+      display: flex;
+    }
+
+    &__text {
       font-size: 75px;
     }
 
     &__symbol {
       font-size: 45px;
-      top: -20px;
+      top: 8px;
     }
 
-    &__related {
+    &__title {
       font-size: 24px;
     }
   }

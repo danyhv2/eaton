@@ -37,11 +37,15 @@
 
 .feature-block-component__container { height: 600px; }
 
-.feature-block-component__copy { height: 100%; color: #FFF; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.feature-block-component__copy { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.feature-block-component__copy--white-text { color: #FFF; }
 
 .feature-block-component__text { padding-left: 120px; padding-right: 40px; }
 
 .feature-block-component__description { font-family: "Eaton", Arial, sans-serif; font-size: 1.125em; line-height: 1.5; padding-top: 30px; }
+
+.feature-block-component__description p { padding-bottom: 15px; }
 
 .feature-block-component__image { height: 100%; }
 

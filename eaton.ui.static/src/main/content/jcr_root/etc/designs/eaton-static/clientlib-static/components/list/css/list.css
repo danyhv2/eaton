@@ -86,23 +86,12 @@
   .eaton-list-links__col { width: 100%; margin: 0 15px; }
   .eaton-list-links__col:first-child { margin-left: 0; } }
 
-.related-products-component__card { background-color: #F8F8F8; padding: 0 15px; margin-right: 15px; }
+.related-products-component { padding-bottom: 75px; }
 
-.eaton-top-list-with-icon { margin-top: 45px; overflow: hidden; }
+.related-products-component__card { background-color: #F8F8F8; padding: 0 15px; margin-right: 15px; border: 1px solid #EEF0F2; }
 
-.eaton-top-list-with-icon__icon { color: #ED8B00; max-width: 60px; display: inline-block; }
+.related-products-component__title { padding-top: 15px; }
 
-.eaton-top-list-with-icon__icon .icon { font-size: 60px; padding: 0; }
+.related-products-component__arrow { bottom: 50%; }
 
-.eaton-top-list-with-icon__text-wrapper { width: calc(100% - 90px); display: inline-block; float: right; }
-
-.eaton-top-list-with-icon__element { margin-bottom: 45px; }
-
-@media screen and (min-width: 992px) { .eaton-top-list-with-icon { margin-top: 90px; }
-  .eaton-top-list-with-icon__icon { max-width: 70px; }
-  .eaton-top-list-with-icon__icon .icon { font-size: 70px; }
-  .eaton-top-list-with-icon__text-wrapper { width: calc(100% - 100px); }
-  .eaton-top-list-with-icon__element { margin-bottom: 90px; }
-  .eaton-top-list-with-icon .container { margin: 0 auto; }
-  .eaton-top-list-with-icon .container.row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .eaton-top-list-with-icon .container.row .row { margin: 0; } }
+@media screen and (min-width: 992px) { .related-products-component__title { padding-top: 30px; } }

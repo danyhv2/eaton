@@ -34,6 +34,11 @@
     &:only-child {
       display: none;
     }
+
+    &--gray .inactive-gray {
+      background-color: $color__secondary-gray5;
+      border: 1px solid $color__secondary-gray5;
+    }
   }
 
   &__down-arrow {
@@ -50,6 +55,11 @@
     background-color: $color__primary-blue;
     border: 1px solid $color__primary-blue;
   }
+
+  //.carousel-indicators .inactive-gray {
+  //  background-color: $color__secondary-gray2;
+  //  border: 1px solid $color__secondary-gray2;
+  //}
 
 }
 

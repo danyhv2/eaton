@@ -8,7 +8,7 @@ use(function () {
 	    	headline: 'How to buy from Eaton',
 			links: [
 				{
-					icon: 'list',
+					icon: 'list-checkmark',
 					headline: {
 						text: 'Register product',
 						url: '#'
@@ -49,7 +49,7 @@ use(function () {
 					header: 'Our power managment portfolio'
 				},
 				{
-					icon: 'list',
+					icon: 'list-checkmark',
 					headline: {
 						text: 'Register product',
 						url: '#'
@@ -73,12 +73,28 @@ use(function () {
 					description: 'Still have questions? We&quote;ve got the answers.'
 				},
 				{
-					icon: 'list',
+					icon: 'list-checkmark',
 					headline: {
 						text: 'Register product',
 						url: '#'
 					},
 					description: 'Registering hepl us keep you up-to-date with your product.'
+				},
+				{
+					icon: 'download',
+					headline: {
+						text: 'Download list/firmware',
+						url: '#'
+					},
+					description: 'Optimize performance with the latest patch.'
+				},
+				{
+					icon: 'help',
+					headline: {
+						text: 'Help center',
+						url: '#'
+					},
+					description: 'Still have questions? We&quote;ve got the answers.'
 				},
 				{
 					icon: 'download',
@@ -102,7 +118,7 @@ use(function () {
 		data = {
 			links: [
 				{
-					icon: 'list',
+					icon: 'list-checkmark',
 					headline: {
 						text: 'Register product',
 						url: '#'

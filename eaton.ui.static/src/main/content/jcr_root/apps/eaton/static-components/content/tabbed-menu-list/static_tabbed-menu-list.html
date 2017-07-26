@@ -1,0 +1,10 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Tabbed Menu List Component</div>
+</sly>
+
+<div class="eaton-tabbed-menu-list" data-sly-use.data="../data/tabbed-menu-list-data.js">
+	tabbed
+	<div class="container" data-sly-list.tab=${data.tabs}>
+		<div>${tab.title}</div>
+	</div>
+</div>
