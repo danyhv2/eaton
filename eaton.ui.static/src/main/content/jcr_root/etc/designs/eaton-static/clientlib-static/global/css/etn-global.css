@@ -118,6 +118,8 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 .icon-user::before { content: "\EA25"; }
 
+@media screen and (max-width: 991px) { .container { padding: 0 30px; } }
+
 @font-face { font-family: 'Eaton'; src: url("fonts/EatonRegular.woff") format("woff"); }
 
 @font-face { font-family: 'EatonMedium'; src: url("fonts/EatonMedium.woff") format("woff"); }
