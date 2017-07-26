@@ -1,9 +1,14 @@
 <!--/*
-  Search Result Module - Type: Article (Interal & External)
+  Search Result Module - Type: Family (Product / SKU)
 */-->
 <template data-sly-template.item="${ @ data }">
 
   <div class="results-list-module results-list-module--type-${ data.contentType }">
+
+    <!--/* Image */-->
+    <div class="results-list-module__image-wrapper b-body-copy-small">
+      <img src="${ data.content.imgSrc }" class="results-list-module__image" alt="${ data.content.imgAlt }" />
+    </div>
 
     <!--/* Content */-->
     <div class="results-list-module__content-wrapper">
@@ -12,15 +17,19 @@
         <a href="${ data.content.link.url }" class="results-list-module__title-link">${ data.content.name }</a>
       </h4>
 
-      <div data-sly-test="${ data.content.date }"
-        class="results-list-module__date b-body-copy-small">${ data.content.date }</div>
-
       <div class="results-list-module__description b-body-copy-small">${ data.content.description }</div>
 
       <div class="results-list-module__url b-body-copy-small">
         <a href="${ data.content.link.url }"
           target="${ data.content.link.target }"
           class="results-list-module__url-link">${ data.content.link.text }</a>
+      </div>
+
+      <div data-sly-list.link="${ data.content.secondaryLinks }"
+        class="results-list-module__links b-body-copy-small">
+        <a class="results-list-module__links-item"
+          href="${ link.url }"
+          aria-label="${ 'Go to {0}' @ format = [ link.text ] }">${ link.text }</a>
       </div>
 
     </div>

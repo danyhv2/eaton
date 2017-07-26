@@ -1,40 +1,118 @@
 <sly data-sly-use.data="${ '../data/view-simple-data.js' @testdata=properties.testdata }">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-3">
-        <h4>Facets</h4>
+  <div class="search-results-simple">
+    <div class="container">
+
+      <!--/* Results Header */-->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="search-results-simple__header">
+
+            <div class="search-results-simple__header-top">
+              <div class="search-results-simple__title">${ '{0} results' @ i18n, format=[ data.results.items.length ] }</div>
+              <div class="search-results-simple__sort-options">${ 'Sort by' @ i18n }</div>
+            </div>
+
+            <div data-sly-test="${ data.results.activeFilters.length > 0 }"
+              class="search-results-simple__header-bottom">
+
+              <div data-sly-list.filter="${ data.results.activeFilters }"
+                class="search-results-simple__active-filters">
+                <a class="search-results-simple__filter-link"
+                  href="${ filter.url }"
+                  aria-label="${ 'Remove filter {0}' @ i18n, format=[ filter.text ] }">
+                  <i class="icon icon-close" aria-hidden="true"></i>
+                  <span class="search-results-simple__filter-label">${ filter.text }</span>
+                </a>
+              </div>
+
+              <!--/* Clear Filters */-->
+              <div class="search-results-simple__filters-actions">
+                <a href="#clear-filters" class="search-results-simple__action-link">${ 'Clear filters' @ i18n }</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="col-xs-12 col-md-9">
-        <div data-sly-list="${ data.results }"
-          class="search-results-simple">
 
-          <sly data-sly-test="${ item.contentType == 'product' }">
-            <sly data-sly-use.tpl="views/partials/content-type--product.html">
-          		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
-          	</sly>
-          </sly>
 
-          <sly data-sly-test="${ item.contentType == 'sku' }">
-            <sly data-sly-use.tpl="views/partials/content-type--product.html">
-          		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
-          	</sly>
-          </sly>
 
-          <sly data-sly-test="${ item.contentType == 'article' }">
-            <sly data-sly-use.tpl="views/partials/content-type--article.html">
-          		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
-          	</sly>
-          </sly>
+      <!--/* Results List */-->
+      <div class="row">
 
-          <sly data-sly-test="${ item.contentType == 'resource' }">
-            <sly data-sly-use.tpl="views/partials/content-type--resource.html">
-          		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
-          	</sly>
-          </sly>
+        <!--/* Col 1 - Facets */-->
+        <div class="col-xs-12 col-md-3">
+          <div class="eaton-form eaton-facets">
+            <h4>${ 'Narrow Results' @ i18n }</h4>
+
+            <sly data-sly-list.facet="${ data.facets.items }">
+              <div class="eaton-facets__group">
+
+                <button class="eaton-facet__group-header button--reset"
+                  data-toggle="collapse"
+                  data-target="#${ 'facet-{0}' @ format=[ facet.id ] }"
+                  aria-expanded="true"
+                  aria-controls="${ 'facet-{0}' @ format=[ facet.id ] }">
+                  <span class="eaton-facet__group-name">${ facet.name }</span>
+                  <i class="icon icon-sign-minus" aria-hidden="true"></i>
+                  <i class="icon icon-sign-plus u-hide" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse in" id="${ 'facet-{0}' @ format=[ facet.id ] }">
+                  <div data-sly-list.label="${ facet.labels }" class="eaton-facet__list">
+                    <div class="eaton-facet__list-item u-flex">
+                      <input type="checkbox" id="${ 'facet-{0}__{1}' @ format=[ facet.id, label.id ] }"/>
+                      <label for="${ 'facet-{0}__{1}' @ format=[ facet.id, label.id ] }">${ label.text }</label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </sly>
+          </div>
+        </div>
+
+        <!--/* Col 2 - Result List Items */-->
+        <div class="col-xs-12 col-md-9">
+          <div class="results-list">
+            <div data-sly-list="${ data.results.items }"
+              class="results-list__content">
+
+              <sly data-sly-test="${ item.contentType == 'family' }">
+                <sly data-sly-use.tpl="views/partials/content-type--family.html">
+              		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
+              	</sly>
+              </sly>
+
+              <sly data-sly-test="${ item.contentType == 'sku' }">
+                <sly data-sly-use.tpl="views/partials/content-type--family.html">
+              		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
+              	</sly>
+              </sly>
+
+              <sly data-sly-test="${ item.contentType == 'article' }">
+                <sly data-sly-use.tpl="views/partials/content-type--article.html">
+              		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
+              	</sly>
+              </sly>
+
+              <sly data-sly-test="${ item.contentType == 'resource' }">
+                <sly data-sly-use.tpl="views/partials/content-type--resource.html">
+              		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
+              	</sly>
+              </sly>
+
+            </div>
+
+            <div class="results-list__bottom text-center">
+              <a href="#" class="b-button b-button__primary b-button__primary--light" role="button">${ 'Load More' @ i18n }</a>
+            </div>
+          </div>
 
         </div>
       </div>
+
     </div>
   </div>
 
