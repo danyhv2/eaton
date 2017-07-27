@@ -11,46 +11,46 @@
 
 // H1 Heading
 //--------------
-@mixin h1-mobile {
+@mixin h1--mobile {
   font-family: 'EatonMedium', sans-serif;
   font-size: 35px;
   line-height: 40px;
 }
 
-@mixin h1-desktop {
+@mixin h1--desktop {
   font-family: 'EatonMedium', sans-serif;
   font-size: 54px;
   line-height: 68px;
 }
 
 @mixin h1 {
-  @include h1-mobile;
+  @include h1--mobile;
 
   @include media-desktop-and-up {
-    @include h1-desktop;
+    @include h1--desktop;
   }
 }
 
 
 // H2 Heading
 //--------------
-@mixin h2-mobile {
+@mixin h2--mobile {
   font-family: 'EatonMedium', sans-serif;
   font-size: 28px;
   line-height: 32px;
 }
 
-@mixin h2-desktop {
+@mixin h2--desktop {
   font-family: 'EatonMedium', sans-serif;
   font-size: 40px;
   line-height: 50px;
 }
 
 @mixin h2 {
-  @include h2-mobile;
+  @include h2--mobile;
 
   @include media-desktop-and-up {
-    @include h2-desktop;
+    @include h2--desktop;
   }
 }
 
@@ -58,23 +58,23 @@
 
 // H3 Heading
 //--------------
-@mixin h3-mobile {
+@mixin h3--mobile {
   font-family: 'EatonMedium', sans-serif;
   font-size: 28px;
   line-height: 32px;
 }
 
-@mixin h3-desktop {
+@mixin h3--desktop {
   font-family: 'EatonMedium', sans-serif;
   font-size: 40px;
   line-height: 50px;
 }
 
 @mixin h3 {
-  @include h3-mobile;
+  @include h3--mobile;
 
   @include media-desktop-and-up {
-    @include h3-desktop;
+    @include h3--desktop;
   }
 }
 
@@ -82,14 +82,14 @@
 
 // H4 Heading
 //--------------
-@mixin h4-mobile {
+@mixin h4--mobile {
   font-family: Arial, sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 29px;
 }
 
-@mixin h4-desktop {
+@mixin h4--desktop {
   font-family: Arial, sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -97,24 +97,24 @@
 }
 
 @mixin h4 {
-  @include h4-mobile;
+  @include h4--mobile;
 
   @include media-desktop-and-up {
-    @include h4-desktop;
+    @include h4--desktop;
   }
 }
 
 
 // H5 Heading
 //--------------
-@mixin h5-mobile {
+@mixin h5--mobile {
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 30px;
 }
 
-@mixin h5-desktop {
+@mixin h5--desktop {
   font-family: Arial, sans-serif;
   font-size: 26px;
   font-weight: bold;
@@ -122,33 +122,42 @@
 }
 
 @mixin h5 {
-  @include h5-mobile;
+  @include h5--mobile;
 
   @include media-desktop-and-up {
-    @include h5-desktop;
+    @include h5--desktop;
   }
 }
 
 
 // Body Copy
 //--------------
-@mixin body-copy {
+@mixin body-copy--mobile {
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 28px;
+};
+
+@mixin body-copy--desktop {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 38px;
+};
+
+
+@mixin body-copy {
+  @include body-copy--mobile;
 
   a {
     color: $color__primary-blue;
 
-    &:active {
-      font-weight: bold;
-    }
+    &:active { font-weight: bold; }
   }
 
   @include media-desktop-and-up {
-    font-size: 24px;
-    line-height: 38px;
+    @include body-copy--desktop;
   }
 
 }
@@ -156,23 +165,31 @@
 
 // Body Copy Small
 //--------------
-@mixin body-copy-small {
+@mixin body-copy-small--mobile {
   font-family: Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 17px;
+};
+
+@mixin body-copy-small--desktop {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+};
+
+@mixin body-copy-small {
+  @include body-copy-small--mobile;
 
   a {
     color: $color__primary-blue;
 
-    &:active {
-      font-weight: bold;
-    }
+    &:active { font-weight: bold; }
   }
 
   @include media-desktop-and-up {
-    font-size: 18px;
-    line-height: 24px;
+    @include body-copy-small--desktop;
   }
 
 }
@@ -180,31 +197,50 @@
 
 // Eyebrow Large
 //--------------
-@mixin eyebrow-large {
-  color: $color__primary-gray1;
+@mixin eyebrow-large--mobile {
   font-family: $font-family__secondary;
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@mixin eyebrow-large--desktop {
+  font-family: $font-family__secondary;
+  font-size: 24px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+@mixin eyebrow-large {
+  @include eyebrow-large--mobile;
 
   @include media-desktop-and-up {
-    font-size: 24px;
-    line-height: 38px;
+    @include eyebrow-large--desktop;
   }
 }
 
 
 // Eyebrow Small
 //--------------
-@mixin eyebrow-small {
-  color: $color__primary-gray1;
+@mixin eyebrow-small--mobile {
   font-family: $font-family__secondary;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
+}
+
+@mixin eyebrow-small--desktop {
+  font-family: $font-family__secondary;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@mixin eyebrow-small {
+
+  @include eyebrow-small--mobile;
 
   @include media-desktop-and-up {
-    font-size: 18px;
-    line-height: 24px;
+    @include eyebrow-small--desktop;
   }
 }

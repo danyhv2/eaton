@@ -96,10 +96,12 @@ h5,
 }
 
 .b-eyebrow-large {
+  color: $color__primary-gray1;
   @include eyebrow-large;
 }
 
 .b-eyebrow-small {
+  color: $color__primary-gray1;
   @include eyebrow-small;
 }
 

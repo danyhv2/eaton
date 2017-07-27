@@ -132,7 +132,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .b-body-copy a:active { font-weight: bold; }
 
-@media screen and (min-width: 992px) { .b-body-copy { font-size: 24px; line-height: 38px; } }
+@media screen and (min-width: 992px) { .b-body-copy { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
 
 .b-body-copy-small { font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
 
@@ -140,15 +140,15 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .b-body-copy-small a:active { font-weight: bold; }
 
-@media screen and (min-width: 992px) { .b-body-copy-small { font-size: 18px; line-height: 24px; } }
+@media screen and (min-width: 992px) { .b-body-copy-small { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; } }
 
 .b-eyebrow-large { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 17px; line-height: 20px; text-transform: uppercase; }
 
-@media screen and (min-width: 992px) { .b-eyebrow-large { font-size: 24px; line-height: 38px; } }
+@media screen and (min-width: 992px) { .b-eyebrow-large { font-family: Arial, "Arial", sans-serif; font-size: 24px; line-height: 38px; text-transform: uppercase; } }
 
 .b-eyebrow-small { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 14px; line-height: 17px; text-transform: uppercase; }
 
-@media screen and (min-width: 992px) { .b-eyebrow-small { font-size: 18px; line-height: 24px; } }
+@media screen and (min-width: 992px) { .b-eyebrow-small { font-family: Arial, "Arial", sans-serif; font-size: 18px; line-height: 24px; text-transform: uppercase; } }
 
 .u-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -255,7 +255,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .rich-text-container a:active { font-weight: bold; }
 
-@media screen and (min-width: 992px) { .rich-text-container { font-size: 24px; line-height: 38px; } }
+@media screen and (min-width: 992px) { .rich-text-container { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
 
 .rich-text-container b, .rich-text-container strong { font-weight: bold; }
 
@@ -269,7 +269,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .rich-text-container p a:active { font-weight: bold; }
 
-@media screen and (min-width: 992px) { .rich-text-container p { font-size: 24px; line-height: 38px; } }
+@media screen and (min-width: 992px) { .rich-text-container p { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
 
 .rich-text-container ul { list-style-type: none; padding: 0; }
 
