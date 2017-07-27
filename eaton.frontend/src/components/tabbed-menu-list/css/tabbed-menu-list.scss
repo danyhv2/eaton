@@ -17,6 +17,20 @@
 		&.desktop {
 			display: none;
 		}
+
+		span {
+			&::before {
+				@extend %glyphicon-sign-minus;
+			}
+		}
+
+		&.collapsed {
+			span {
+				&::before {
+					@extend %glyphicon-sign-plus;
+				}
+			}
+		}
 	}
 
 	&__item {
@@ -31,6 +45,7 @@
 		&.tab-pane {
 			display: none;
 		}
+
 	}
 
 	@include media-desktop-and-up {
@@ -54,7 +69,9 @@
 		&__item {
 			border-color: transparent;
 
-			
+			&.tab-pane {
+				display: block;
+			}
 
 
 			a {

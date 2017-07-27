@@ -1,3 +1,7 @@
+.eaton-tabbed-menu-list__title span::before { content: "\EA21"; }
+
+.eaton-tabbed-menu-list__title.collapsed span::before { content: "\EA22"; }
+
 .eaton-tabbed-menu-list__title { display: block; padding: 30px 0; }
 
 .eaton-tabbed-menu-list__title.mobile { display: block; }
@@ -15,4 +19,5 @@
   .eaton-tabbed-menu-list__title.desktop { display: block; }
   .eaton-tabbed-menu-list__title.active { border-bottom: 2px solid #005EB8; }
   .eaton-tabbed-menu-list__item { border-color: transparent; }
+  .eaton-tabbed-menu-list__item.tab-pane { display: block; }
   .eaton-tabbed-menu-list__item a { padding-bottom: 50px; } }
