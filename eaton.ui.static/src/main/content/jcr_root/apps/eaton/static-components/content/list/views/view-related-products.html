@@ -2,11 +2,13 @@
 <div data-sly-use.data="${'../data/view-related-products-data.js'}" class="related-products-component carousel-component carousel slide container desktop-carousel hidden-xs" data-ride="carousel" data-pause="hover">
 
     <!-- Indicators -->
-    <ol data-sly-list.slide="${data}" class="carousel-indicators">
-        <li data-target=".carousel-component"
-            data-slide-to="${slideList.index}"
-            class="carousel-component__dots carousel-component__dots--gray ${slideList.index == 0 ? 'active' : ''}"></li>
-    </ol>
+    <sly data-sly-test="${data.length > 1}">
+        <ol data-sly-list.slide="${data}" class="carousel-indicators">
+            <li data-target=".carousel-component"
+                data-slide-to="${slideList.index}"
+                class="carousel-component__dots carousel-component__dots--gray ${slideList.index == 0 ? 'active' : ''}"></li>
+        </ol>
+    </sly>
 
      <!--Carousel for Desktop -->
     <div data-sly-list="${data}" class="carousel-component-slide carousel-inner hidden-xs" role="listbox">
@@ -28,16 +30,18 @@
     </div>
 
     <!--Controls -->
-    <button class="carousel-component__arrow related-products-component__arrow left carousel-control button--reset"
-            role="button">
-        <span class="icon icon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Go to Previous Slide</span>
-    </button>
-    <button class="carousel-component__arrow related-products-component__arrow right carousel-control button--reset"
-            role="button">
-        <span class="icon icon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Go to Next Slide</span>
-    </button>
+    <sly data-sly-test="${data.length > 1}">
+        <button class="carousel-component__arrow related-products-component__arrow left carousel-control button--reset"
+                role="button">
+            <span class="icon icon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Go to Previous Slide</span>
+        </button>
+        <button class="carousel-component__arrow related-products-component__arrow right carousel-control button--reset"
+                role="button">
+            <span class="icon icon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Go to Next Slide</span>
+        </button>
+    </sly>
 </div>
 
 <!--Mobile Carousel-->
