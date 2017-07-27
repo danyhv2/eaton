@@ -7,7 +7,14 @@
 
     <!--/* Product Image */-->
     <div class="product-card-sku__image-wrapper b-body-copy-small">
-      <img src="${ data.productItem.imgSrc }" class="product-card-sku__image" alt="${ data.productItem.imgAlt }" />
+      <a href="${ data.productItem.link.url @ context='uri' }"
+        class="product-card-sku__image-link"
+        target="${ data.productItem.link.target }"
+      >
+        <img src="${ data.productItem.imgSrc }"
+          class="product-card-sku__image"
+          alt="${ data.productItem.name }" />
+      </a>
     </div>
 
     <!--/* Product Header */-->
@@ -17,23 +24,36 @@
         <h3 class="product-card-sku__name">
           <a href="${ data.productItem.link.url @ context='uri' }"
             target="${ data.productItem.link.target }"
-            class="product-card-sku__url-link">${ data.productItem.name }</a>
-
+            class="product-card-sku__url-link"
+          >
+            <span class="name-label">${ data.productItem.name }</span>
             <i class="icon icon-chevron-right" aria-hidden="true"></i>
+          </a>
         </h3>
-        <div class="product-card-sku__price b-body-copy">${ '${0}' @ format=[ data.productItem.price ] }</div>
+        <div class="product-card-sku__price b-body-copy">${ '${0}*' @ format=[ data.productItem.price ] }</div>
       </div>
 
       <!--/* Product Links */-->
-      <div class="product-card-sku__links-list b-body-copy">
-        <a href="#" class="product-card-sku__link-item">
+      <div class="product-card-sku__links-list">
+
+        <a href="${ data.productItem.productLinks.specificationsURL @ context='uri' }"
+          class="product-card-sku__link-item"
+          target="_self"
+          aria-label="${ 'Go to' @ i18n } ${ 'Specifications' @ i18n }"
+        >
           <span class="link-label">${ 'Specifications' @ i18n }</span>
           <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
         </a>
-        <a href="#" class="product-card-sku__link-item">
+
+        <a href="${ data.productItem.productLinks.resourcesURL @ context='uri' }"
+          class="product-card-sku__link-item"
+          target="_self"
+          aria-label="${ 'Go to' @ i18n } ${ 'Resources' @ i18n }"
+        >
           <span class="link-label">${ 'Resources' @ i18n }</span>
           <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
         </a>
+
       </div>
 
     </div>
@@ -42,7 +62,6 @@
 
     <!--/* Content */-->
     <div class="product-card-sku__content">
-
       <div class="product-card-sku__attrs-list"
         data-sly-list.attribute="${ data.productItem.attributes }">
         <div class="product-card-sku__attrs-list-item">
@@ -51,9 +70,10 @@
         </div>
       </div>
 
-      <div class="product-card-sku__description b-body-copy">${ data.productItem.description }</div>
-
+      <div class="product-card-sku__description">${ data.productItem.description }</div>
     </div>
+
+
   </div>
 
 </template>

@@ -58,27 +58,29 @@ use(function () {
         "productItem": {
           "name": "Fuse Disconnect ePDUs",
           "imgSrc": "/content/dam/eaton/images/p1.png",
-          "imgAlt": "Network, Server & Storage UPS",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 2400,
           "link": {
-            "url": "https://eaton.dev/content/en/us/catalog/pid-1213.html",
+            "url": "https://eaton.dev/products/pid-1213.html#overview",
             "target": "_self"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
           },
           "attributes": [
             {
               "label": "Voltage rating",
-              "value": "600V lorem ipsum dolor"
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
             },
             {
               "label": "Input Plug",
-              "value": "309-532P6W"
+              "value": "2A-2B right pigtail auxiliary switch"
             },
             {
               "label": "Output Recepticles",
-              "value": "(18 C13 Outlet grip, (12) C19 Outlet grip"
-            },
-
+              "value": "110-127V right pigtail undervoltage release"
+            }
           ]
         }
       },
@@ -87,12 +89,15 @@ use(function () {
         "productItem": {
           "name": "9E6Ki-Eaton 9E",
           "imgSrc": "/content/dam/eaton/images/p2.png",
-          "imgAlt": "Network, Server & Storage UPS",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 3200,
           "link": {
-            "url": "https://eaton.dev/content/en/us/catalog/pid-1213.html",
+            "url": "https://eaton.dev/products/pid-1213.html#overview",
             "target": "_self"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
           },
           "attributes": [
             {
@@ -105,9 +110,8 @@ use(function () {
             },
             {
               "label": "Output Recepticles",
-              "value": "(18 C13 Outlet grip, (12) C19 Outlet grip"
-            },
-
+              "value": "(18) C13 Outlet grip, (12) C19 Outlet grip"
+            }
           ]
         }
       },
@@ -116,30 +120,94 @@ use(function () {
         "productItem": {
           "name": "Network, Server & Storage UPS this is a really long title used for testing purposes, text wraps in multiple lines",
           "imgSrc": "/content/dam/eaton/images/p3.png",
-          "imgAlt": "Network, Server & Storage UPS",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 5500,
           "link": {
-            "url": "https://eaton.dev/content/en/us/catalog/pid-1213.html",
+            "url": "https://eaton.dev/products/pid-1213.html#overview",
             "target": "_self"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
           },
           "attributes": [
             {
               "label": "Voltage rating",
-              "value": "600V lorem ipsum dolor"
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
             },
             {
               "label": "Input Plug",
-              "value": "309-532P6W"
+              "value": "2A-2B right pigtail auxiliary switch"
             },
             {
               "label": "Output Recepticles",
-              "value": "(18 C13 Outlet grip, (12) C19 Outlet grip"
-            },
-
+              "value": "110-127V right pigtail undervoltage release"
+            }
           ]
         }
       },
+      {
+        "productType": "sku",
+        "productItem": {
+          "name": "Fuse Disconnect ePDUs",
+          "imgSrc": "/content/dam/eaton/images/p4.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 2400,
+          "link": {
+            "url": "https://eaton.dev/products/pid-1213.html#overview",
+            "target": "_self"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "attributes": [
+            {
+              "label": "Voltage rating",
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
+            },
+            {
+              "label": "Input Plug",
+              "value": "2A-2B right pigtail auxiliary switch"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "110-127V right pigtail undervoltage release"
+            }
+          ]
+        }
+      },
+      {
+        "productType": "sku",
+        "productItem": {
+          "name": "9E6Ki-Eaton 9E",
+          "imgSrc": "/content/dam/eaton/images/p5.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 2400,
+          "link": {
+            "url": "https://eaton.dev/products/pid-1213.html#overview",
+            "target": "_self"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "attributes": [
+            {
+              "label": "Voltage rating",
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
+            },
+            {
+              "label": "Input Plug",
+              "value": "2A-2B right pigtail auxiliary switch"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "110-127V right pigtail undervoltage release"
+            }
+          ]
+        }
+      }
 
     ];
 
