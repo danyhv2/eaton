@@ -34,27 +34,31 @@
       </div>
 
       <!--/* Product Links */-->
-      <div class="product-card-sku__links-list">
+      <ul class="product-card-sku__links-list">
 
-        <a href="${ data.productItem.productLinks.specificationsURL @ context='uri' }"
-          class="product-card-sku__link-item"
-          target="_self"
-          aria-label="${ 'Go to' @ i18n } ${ 'Specifications' @ i18n }"
-        >
-          <span class="link-label">${ 'Specifications' @ i18n }</span>
-          <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
-        </a>
+        <li class="product-card-sku__link-item">
+          <a href="${ data.productItem.productLinks.specificationsURL @ context='uri' }"
+            class="product-card-sku__link-item-link"
+            target="_self"
+            aria-label="${ 'Go to' @ i18n } ${ 'Specifications' @ i18n }"
+          >
+            <span class="link-label">${ 'Specifications' @ i18n }</span>
+            <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
+          </a>
+        </li>
 
-        <a href="${ data.productItem.productLinks.resourcesURL @ context='uri' }"
-          class="product-card-sku__link-item"
-          target="_self"
-          aria-label="${ 'Go to' @ i18n } ${ 'Resources' @ i18n }"
-        >
-          <span class="link-label">${ 'Resources' @ i18n }</span>
-          <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
-        </a>
+        <li class="product-card-sku__link-item">
+          <a href="${ data.productItem.productLinks.resourcesURL @ context='uri' }"
+            class="product-card-sku__link-item-link"
+            target="_self"
+            aria-label="${ 'Go to' @ i18n } ${ 'Resources' @ i18n }"
+          >
+            <span class="link-label">${ 'Resources' @ i18n }</span>
+            <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
+          </a>
+        </li>
 
-      </div>
+      </ul>
 
     </div>
 
