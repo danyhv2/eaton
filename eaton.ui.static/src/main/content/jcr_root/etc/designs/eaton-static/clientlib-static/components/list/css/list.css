@@ -89,6 +89,6 @@
 
 .related-products-component__title { padding-top: 15px; }
 
-.related-products-component__arrow { bottom: 50%; }
+.related-products-component__arrow { bottom: 35%; }
 
 @media screen and (min-width: 992px) { .related-products-component__title { padding-top: 30px; } }
