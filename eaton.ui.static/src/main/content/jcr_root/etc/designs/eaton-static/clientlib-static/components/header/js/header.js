@@ -31,6 +31,7 @@ App.header = function () {
     console.log('After transition ends');
 
     bodyEl.removeClass('nav-open');
+    //TODO: Remove event listener when transition is completed
   };
 
   /**
