@@ -7,13 +7,13 @@
 
     <!--/* Product Image */-->
     <div class="product-card-sku__image-wrapper b-body-copy-small">
-      <a href="${ data.productItem.link.url @ context='uri' }"
+      <a href="${ data.contentItem.link.url @ context='uri' }"
         class="product-card-sku__image-link"
-        target="${ data.productItem.link.target }"
+        target="${ data.contentItem.link.target }"
       >
-        <img src="${ data.productItem.imgSrc }"
+        <img src="${ data.contentItem.imgSrc }"
           class="product-card-sku__image"
-          alt="${ data.productItem.name }" />
+          alt="${ data.contentItem.name }" />
       </a>
     </div>
 
@@ -22,22 +22,22 @@
 
       <div class="product-card-sku__title-wrapper">
         <h3 class="product-card-sku__name">
-          <a href="${ data.productItem.link.url @ context='uri' }"
-            target="${ data.productItem.link.target }"
+          <a href="${ data.contentItem.link.url @ context='uri' }"
+            target="${ data.contentItem.link.target }"
             class="product-card-sku__url-link"
           >
-            <span class="name-label">${ data.productItem.name }</span>
+            <span class="name-label">${ data.contentItem.name }</span>
             <i class="icon icon-chevron-right" aria-hidden="true"></i>
           </a>
         </h3>
-        <div class="product-card-sku__price b-body-copy">${ '${0}*' @ format=[ data.productItem.price ] }</div>
+        <div class="product-card-sku__price b-body-copy">${ '${0}*' @ format=[ data.contentItem.price ] }</div>
       </div>
 
       <!--/* Product Links */-->
       <ul class="product-card-sku__links-list">
 
         <li class="product-card-sku__link-item">
-          <a href="${ data.productItem.productLinks.specificationsURL @ context='uri' }"
+          <a href="${ data.contentItem.productLinks.specificationsURL @ context='uri' }"
             class="product-card-sku__link-item-link"
             target="_self"
             aria-label="${ 'Go to' @ i18n } ${ 'Specifications' @ i18n }"
@@ -48,7 +48,7 @@
         </li>
 
         <li class="product-card-sku__link-item">
-          <a href="${ data.productItem.productLinks.resourcesURL @ context='uri' }"
+          <a href="${ data.contentItem.productLinks.resourcesURL @ context='uri' }"
             class="product-card-sku__link-item-link"
             target="_self"
             aria-label="${ 'Go to' @ i18n } ${ 'Resources' @ i18n }"
@@ -67,14 +67,14 @@
     <!--/* Content */-->
     <div class="product-card-sku__content">
       <div class="product-card-sku__attrs-list"
-        data-sly-list.attribute="${ data.productItem.attributes }">
+        data-sly-list.attribute="${ data.contentItem.productAttributes }">
         <div class="product-card-sku__attrs-list-item">
           <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">${ attribute.label }</div>
           <div class="product-card-sku__attr-value b-body-copy">${ attribute.value }</div>
         </div>
       </div>
 
-      <div class="product-card-sku__description">${ data.productItem.description }</div>
+      <div class="product-card-sku__description">${ data.contentItem.description }</div>
     </div>
 
 

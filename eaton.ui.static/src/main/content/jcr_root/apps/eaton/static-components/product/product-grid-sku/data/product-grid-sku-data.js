@@ -54,8 +54,8 @@ use(function () {
     // Results List
     data.results.items = [
       {
-        "productType": "sku",
-        "productItem": {
+        "contentType": "sku",
+        "contentItem": {
           "name": "Fuse Disconnect ePDUs",
           "imgSrc": "/content/dam/eaton/images/p1.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
@@ -68,7 +68,7 @@ use(function () {
             "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
             "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
           },
-          "attributes": [
+          "productAttributes": [
             {
               "label": "Voltage rating",
               "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
@@ -85,8 +85,8 @@ use(function () {
         }
       },
       {
-        "productType": "sku",
-        "productItem": {
+        "contentType": "sku",
+        "contentItem": {
           "name": "9E6Ki-Eaton 9E",
           "imgSrc": "/content/dam/eaton/images/p2.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
@@ -99,7 +99,7 @@ use(function () {
             "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
             "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
           },
-          "attributes": [
+          "productAttributes": [
             {
               "label": "Voltage rating",
               "value": "600V lorem ipsum dolor"
@@ -116,12 +116,12 @@ use(function () {
         }
       },
       {
-        "productType": "sku",
-        "productItem": {
+        "contentType": "sku",
+        "contentItem": {
           "name": "Network, Server & Storage UPS this is a really long title used for testing purposes, text wraps in multiple lines",
           "imgSrc": "/content/dam/eaton/images/p3.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
-          "price": 5500,
+          "price": 99500,
           "link": {
             "url": "https://eaton.dev/products/pid-1213.html#overview",
             "target": "_self"
@@ -130,7 +130,7 @@ use(function () {
             "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
             "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
           },
-          "attributes": [
+          "productAttributes": [
             {
               "label": "Voltage rating",
               "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
@@ -147,8 +147,8 @@ use(function () {
         }
       },
       {
-        "productType": "sku",
-        "productItem": {
+        "contentType": "sku",
+        "contentItem": {
           "name": "Fuse Disconnect ePDUs",
           "imgSrc": "/content/dam/eaton/images/p4.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
@@ -161,7 +161,7 @@ use(function () {
             "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
             "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
           },
-          "attributes": [
+          "productAttributes": [
             {
               "label": "Voltage rating",
               "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
@@ -178,8 +178,8 @@ use(function () {
         }
       },
       {
-        "productType": "sku",
-        "productItem": {
+        "contentType": "sku",
+        "contentItem": {
           "name": "9E6Ki-Eaton 9E",
           "imgSrc": "/content/dam/eaton/images/p5.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
@@ -192,7 +192,7 @@ use(function () {
             "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
             "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
           },
-          "attributes": [
+          "productAttributes": [
             {
               "label": "Voltage rating",
               "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
