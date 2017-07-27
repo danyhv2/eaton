@@ -31,11 +31,11 @@ App.TabbedMenuList = (function() {
     		$(element).addClass('active');
     	}
     });
-    $collapses.eq(index).addClass('active');
-    $tabs.eq(index).addClass('active');
-    $titles.find('span').removeClass('icon-sign-minus');
-    $titles.find('span').addClass('icon-sign-plus');
-    $(this).find('span').addClass('icon-sign-minus');
+    // $collapses.eq(index).addClass('active');
+    // $tabs.eq(index).addClass('active');
+    // $titles.find('span').removeClass('icon-sign-minus');
+    // $titles.find('span').addClass('icon-sign-plus');
+    // $(this).find('span').addClass('icon-sign-minus');
     // if ($this.hasClass('mobile')) {
     // 	$tabs.tab('hide');
     // 	$('#tab' + index).tab('show');
