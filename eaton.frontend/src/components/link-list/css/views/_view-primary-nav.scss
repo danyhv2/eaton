@@ -28,6 +28,7 @@
     margin-bottom: 80px;
     opacity: 0;
     visibility: hidden;
+    transition: transform 0.5s ease-in-out;
 
     &__headline {
       display: block;
