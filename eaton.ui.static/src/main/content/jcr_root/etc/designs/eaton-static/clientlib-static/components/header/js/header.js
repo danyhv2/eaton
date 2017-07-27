@@ -25,6 +25,15 @@ App.header = function () {
   };
 
   /**
+   * Close Level-1 Menu
+   */
+  var closeLevel1 = function closeLevel1() {
+    console.log('After transition ends');
+
+    bodyEl.removeClass('nav-open');
+  };
+
+  /**
    * Bind All Event Listeners
    */
   var addEventListeners = function addEventListeners() {
@@ -66,7 +75,20 @@ App.header = function () {
       // Close the mega menu
       event.preventDefault();
       if (bodyEl.hasClass('nav-open')) {
-        bodyEl.removeClass('nav-open level-2-open');
+
+        // Check if Level 2 - open/close
+        if (bodyEl.hasClass('level-2-open')) {
+          // Close Level-2
+          bodyEl.removeClass('level-2-open');
+
+          // Close Level- 1 after
+          // window.setTimeout( (function() {
+          //   bodyEl.removeClass('nav-open');
+          // }), 700);
+          $('.mega-menu').on('transitionend', closeLevel1);
+        } else {
+          bodyEl.removeClass('nav-open');
+        }
       } else {
         bodyEl.addClass('nav-open');
 

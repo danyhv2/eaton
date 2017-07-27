@@ -52,14 +52,15 @@
   .eaton-header--fixed .full-page-drawer, .eaton-header--fixed .header-utility-nav { display: none; }
   .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; } }
 
+@media screen and (max-width: 991px) { .level-2-open { overflow: hidden; position: fixed; width: 100%; }
+  .level-2-open .eaton-link-list-primary-nav { left: -100%; }
+  .level-2-open .mega-menu { -webkit-transform: translate(0, 0); transform: translate(0, 0); } }
+
 @media screen and (max-width: 991px) { .nav-open { position: fixed; width: 100%; overflow: hidden; }
-  .nav-open .eaton-link-list-primary-nav { height: 100%; visibility: visible; overflow: auto; opacity: 1; }
+  .nav-open .eaton-link-list-primary-nav { height: 100%; overflow: auto; }
   .nav-open .header-primary-nav__toggle-mobile-menu { -webkit-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; background: #333F48; }
   .nav-open .header-primary-nav__toggle-mobile-menu .icon-hamburger { display: none; }
-  .nav-open .header-primary-nav__toggle-mobile-menu .icon-close { display: block; }
-  .nav-open.level-2-open { overflow: hidden; position: fixed; width: 100%; }
-  .nav-open.level-2-open .eaton-link-list-primary-nav { left: -100%; }
-  .nav-open.level-2-open .mega-menu { visibility: visible; -webkit-transform: translate(0); transform: translate(0); opacity: 1; } }
+  .nav-open .header-primary-nav__toggle-mobile-menu .icon-close { display: block; } }
 
 @media screen and (min-width: 992px) { .nav-open.level-2-open .mega-menu { visibility: visible; opacity: 1; } }
 

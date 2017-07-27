@@ -17,7 +17,7 @@
 
 .mega-menu__category { background: #5B6770; }
 
-@media screen and (max-width: 991px) { .mega-menu { position: fixed; top: 56px; bottom: 0; -webkit-transition: -webkit-transform 0.7s ease-in-out; transition: -webkit-transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; background: #5B6770; overflow: auto; -webkit-transform: translate(100%); transform: translate(100%); visibility: hidden; opacity: 0; }
+@media screen and (max-width: 991px) { .mega-menu { position: fixed; top: 56px; bottom: 0; -webkit-transition: -webkit-transform 0.7s ease-in-out; transition: -webkit-transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; background: #5B6770; overflow: auto; -webkit-transform: translate(100%, 0); transform: translate(100%, 0); }
   .mega-menu__row { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .mega-menu__row .mega-menu__col { display: none; }
   .mega-menu__row .mega-menu__col.mega-menu__col--flex { display: block; margin-bottom: 30px; }

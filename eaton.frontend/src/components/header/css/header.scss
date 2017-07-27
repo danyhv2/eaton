@@ -57,6 +57,28 @@
   }
 }
 
+//-----------------------------------
+// Mobile Breakpoint
+//-----------------------------------
+@include media-mobile-and-tablet {
+  .level-2-open {
+    // Styles on Body while the nav is open
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+
+    .eaton-link-list-primary-nav {
+      left: -100%;
+    }
+
+    .mega-menu {
+      // visibility: visible;
+      transform: translate(0, 0);
+      // opacity: 1;
+    }
+  }
+}
+
 // Global Body Styles
 .nav-open {
   //-----------------------------------
@@ -69,9 +91,9 @@
 
     .eaton-link-list-primary-nav {
       height: 100%;
-      visibility: visible;
+      // visibility: visible;
       overflow: auto;
-      opacity: 1;
+      // opacity: 1;
     }
 
     .header-primary-nav__toggle-mobile-menu {
@@ -84,23 +106,6 @@
 
       .icon-close {
         display: block;
-      }
-    }
-
-    &.level-2-open {
-      // Styles on Body while the nav is open
-      overflow: hidden;
-      position: fixed;
-      width: 100%;
-
-      .eaton-link-list-primary-nav {
-        left: -100%;
-      }
-
-      .mega-menu {
-        visibility: visible;
-        transform: translate(0);
-        opacity: 1;
       }
     }
   }

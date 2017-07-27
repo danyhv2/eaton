@@ -52,9 +52,9 @@
     transition: transform 0.7s ease-in-out;
     background: $color__primary-gray2;
     overflow: auto;
-    transform: translate(100%);
-    visibility: hidden;
-    opacity: 0;
+    transform: translate(100%, 0);
+    // visibility: hidden;
+    // opacity: 0;
 
     &__row {
       flex-direction: column;

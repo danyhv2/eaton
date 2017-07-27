@@ -21,13 +21,13 @@
     width: 100%;
     left: 0;
     height: 0;
-    visibility: hidden;
+    // visibility: hidden;
     overflow: hidden;
     background: $color__primary-gray2;
     color: $color__white;
     transition: height 0.7s ease-in-out, left 0.7s ease-in-out;
     margin-bottom: 80px;
-    opacity: 0;
+    // opacity: 0;
 
     &__headline {
       display: block;
