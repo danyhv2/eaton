@@ -73,6 +73,19 @@
       overflow: auto;
     }
 
+    .header-primary-nav__toggle-mobile-menu {
+      transition: background 0.3s ease-in-out;
+      background: $color__primary-gray1;
+
+      .icon-hamburger {
+        display: none
+      }
+
+      .icon-close {
+        display: block;
+      }
+    }
+
     &.level-2-open {
       // Styles on Body while the nav is open
       overflow: hidden;

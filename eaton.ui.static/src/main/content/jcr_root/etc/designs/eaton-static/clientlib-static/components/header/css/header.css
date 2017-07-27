@@ -21,7 +21,8 @@
 
 @media screen and (max-width: 991px) { .header-primary-nav .row { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .header-primary-nav__links { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .header-primary-nav__open-search, .header-primary-nav__open-mobile-menu { display: inline-block; padding: 15px; } }
+  .header-primary-nav__open-search, .header-primary-nav__toggle-mobile-menu { display: inline-block; padding: 17px; }
+  .header-primary-nav .icon-close { display: none; color: #FFF; } }
 
 @media screen and (min-width: 992px) { .header-primary-nav__menu { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; position: relative; }
   .header-primary-nav__menu::after { content: ''; height: 30px; width: 1px; background: #98A4AE; position: absolute; top: 36px; right: 0; }
@@ -29,7 +30,7 @@
   .header-primary-nav__links i { top: -5px; }
   .header-primary-nav__open-search { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; height: 90px; padding: 30px; margin-top: 10px; }
   .eaton-header--fixed .header-primary-nav__open-search { height: 70px; padding: 20px; }
-  .header-primary-nav__open-mobile-menu { display: none; } }
+  .header-primary-nav__toggle-mobile-menu { display: none; } }
 
 .eaton-header { position: relative; z-index: 30; }
 
@@ -43,6 +44,9 @@
 
 @media screen and (max-width: 991px) { .nav-open { position: fixed; width: 100%; overflow: hidden; }
   .nav-open .eaton-link-list-primary-nav { height: 100%; visibility: visible; overflow: auto; }
+  .nav-open .header-primary-nav__toggle-mobile-menu { -webkit-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; background: #333F48; }
+  .nav-open .header-primary-nav__toggle-mobile-menu .icon-hamburger { display: none; }
+  .nav-open .header-primary-nav__toggle-mobile-menu .icon-close { display: block; }
   .nav-open.level-2-open { overflow: hidden; position: fixed; width: 100%; }
   .nav-open.level-2-open .eaton-link-list-primary-nav { left: -100%; }
   .nav-open.level-2-open .mega-menu { visibility: visible; -webkit-transform: translate(0); transform: translate(0); } }

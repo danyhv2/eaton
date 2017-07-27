@@ -10,7 +10,10 @@
       <!--/* List Links */-->
       <div class="eaton-link-list-primary-nav__container container">
         <nav data-sly-list.level1="${data.links}" class="eaton-link-list-primary-nav__items">
-            <a href="#" data-menu-category="${level1.menuCategory}" aria-expanded="false">${ level1.title }</a>
+            <a href="#" data-menu-category="${level1.menuCategory}" aria-expanded="false">
+              <span>${ level1.title }</span>
+              <i class="icon icon-chevron-right" aria-hidden="true"></i>
+            </a>
         </nav>
       </div>
     </div>

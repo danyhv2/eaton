@@ -62,10 +62,15 @@ App.header = function () {
       closeNav();
     });
 
-    $('.header-primary-nav__open-mobile-menu').on('click', function (event) {
+    $('.header-primary-nav__toggle-mobile-menu').on('click', function (event) {
       // Close the mega menu
       event.preventDefault();
-      bodyEl.addClass('nav-open');
+      if (bodyEl.hasClass('nav-open')) {
+        bodyEl.removeClass('nav-open level-2-open');
+      } else {
+        bodyEl.addClass('nav-open');
+        $primaryLinks.eq(0).focus();
+      }
     });
 
     window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
