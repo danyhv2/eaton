@@ -5,22 +5,24 @@
     <ol data-sly-list.slide="${data}" class="carousel-indicators">
         <li data-target=".carousel-component"
             data-slide-to="${slideList.index}"
-            class="carousel-component__dots carousel-component__dots--gray inactive-gray ${slideList.index == 0 ? 'active' : ''}"></li>
+            class="carousel-component__dots carousel-component__dots--gray ${slideList.index == 0 ? 'active' : ''}"></li>
     </ol>
 
      <!--Carousel for Desktop -->
     <div data-sly-list="${data}" class="carousel-component-slide carousel-inner hidden-xs" role="listbox">
         <div class="item ${itemList.index == 0 ? 'active' : ''} hidden-xs">
             <div class="row" data-sly-list="${item.cards}">
-                <div class="col-sm-3">
-                    <div class="col-xs-12 related-products-component__card">
-                        <img class="carousel-component-slide__image" src="${item.image}" alt="${item.alt}">
+                <a href="${item.link}" role="link">
+                    <div class="col-sm-3">
+                        <div class="col-xs-12 related-products-component__card">
+                            <img class="carousel-component-slide__image" src="${item.image}" alt="${item.alt}">
+                        </div>
+                        <div class="col-xs-12">
+                            <p class="b-eyebrow-small related-products-component__title">${item.title}</p>
+                            <p class="b-h4-link">${item.text}</p>
+                        </div>
                     </div>
-                    <div class="col-xs-12">
-                        <p class="b-eyebrow-small related-products-component__title">${item.title}</p>
-                        <p class="b-h4-link">${item.text}</p>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -39,14 +41,14 @@
 </div>
 
 <!--Mobile Carousel-->
-<div data-sly-use.data="${'../data/view-related-products-data.js'}" class="related-products-component carousel-component carousel slide container mobile-carousel visible-xs" data-ride="carousel" data-pause="hover">
+<div data-sly-use.data="${'../data/view-related-products-data.js'}" class="related-products-component carousel-component carousel-component1 carousel slide container mobile-carousel visible-xs" data-ride="carousel" data-pause="hover">
 
     <!-- Indicators -->
-    <ol data-sly-list.data="${data}" class="carousel-indicators">
+    <ol data-sly-list.data="${data}" class="carousel-indicators carousel-component--indicators">
         <sly data-sly-list.card="${data.cards}">
-            <li data-target=".carousel-component"
+            <li data-target=".carousel-component1"
                 data-slide-to="${cardList.index}"
-                class="carousel-component__dots carousel-component__dots--gray inactive-gray ${cardList.index == 0 ? 'active' : ''}"></li>
+                class="carousel-component__dots carousel-component__dots--gray ${cardList.index == 0 ? 'active' : ''}"></li>
         </sly>
     </ol>
 
@@ -54,13 +56,15 @@
     <div data-sly-list.data="${data}" class="carousel-component-slide carousel-inner visible-xs" role="listbox">
         <sly  data-sly-list.card="${data.cards}">
             <div class="item ${cardList.index == 0 ? 'active' : ''}">
-                <div class="col-xs-12 related-products-component__card">
-                    <img class="carousel-component-slide__image" src="${card.image}" alt="${card.alt}">
-                </div>
-                <div class="col-xs-12">
-                    <p class="b-eyebrow-small related-products-component__title">${card.title}</p>
-                    <p class="b-h4-link">${card.text}</p>
-                </div>
+                <a href="${card.link}" role="link">
+                    <div class="col-xs-12 related-products-component__card">
+                        <img class="carousel-component-slide__image" src="${card.image}" alt="${card.alt}">
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="b-eyebrow-small related-products-component__title">${card.title}</p>
+                        <p class="b-h4-link">${card.text}</p>
+                    </div>
+                </a>
             </div>
         </sly>
     </div>

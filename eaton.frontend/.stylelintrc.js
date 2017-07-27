@@ -50,6 +50,7 @@ module.exports = {
       'ignore': ['attribute', 'class']
     }],
     'string-no-newline': true,
+    'selector-max-compound-selectors': 4,
 
 
     // Disabled Rules
@@ -69,6 +70,7 @@ module.exports = {
     'scss/dollar-variable-colon-space-after': null,
     'scss/dollar-variable-pattern': null,
     'scss/percent-placeholder-pattern': null,
+    'scss/at-mixin-pattern': null,
     'scss/operator-no-unspaced': true,
     'plugin/selector-bem-pattern': {
       'componentName': '(([a-z0-9]+(?!-$)-?)+)',

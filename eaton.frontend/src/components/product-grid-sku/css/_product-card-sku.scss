@@ -1,0 +1,250 @@
+//------------------------------------------
+// Component M-36: Product Card Sku
+//------------------------------------------
+
+.product-card-sku {
+
+  // Local Variables
+  //--------------
+  $color__image-border: #E9E9E9;
+  $grid-container-padding-mobile: 30px;
+  $thumbnail-size-mobile: 54px;
+  $thumbnail-size-desktop: 148px;
+  $carret-right-icon-size: 1rem;
+
+  position: relative;
+
+
+  // Styleguide Overrides
+  //--------------
+  &__name,
+  &__price {
+    color: $color__white;
+  }
+
+  &__name a {
+    color: $color__white;
+  }
+
+
+  // Product Card - General Styles
+  //--------------
+  &__name,
+  &__link-item {
+
+    // Carret Icon
+    .icon { font-size: $carret-right-icon-size; }
+
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    z-index: 5;
+  }
+
+  &__image {
+    @include square($thumbnail-size-mobile); // Width & Height
+    border: 1px solid $color__image-border;
+    background-color: $color__white;
+    padding: 0.5rem;
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Mobile & Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    // Overide Bootstrap's Container in order to make the component full-width (Mobile Only)
+    margin-left: ($grid-container-padding-mobile * -1);  // Negative value
+    margin-right: ($grid-container-padding-mobile * -1); // Negative value
+
+    // Product Image
+    //--------------
+    &__image-wrapper {
+      left: 30px;
+      top: 20px;
+    }
+
+    // Product Header
+    //--------------
+    &__title-wrapper {
+      background-color: $color__primary-blue;
+      position: relative;
+    }
+
+    &__name {
+      // Mobile should look like an H4
+      @include h4--mobile;
+
+      margin-bottom: 5px;
+      padding-left: $grid-container-padding-mobile + $thumbnail-size-mobile + ($spacing__sm / 2);
+      padding-right: $grid-container-padding-mobile + 10px;
+      padding-top: 16px; // NOTE: Top-padding is reduced to compensate for Line-Height
+
+      .icon {
+        @include square($carret-right-icon-size);
+        // It centers the icon vertically
+        line-height: $carret-right-icon-size;
+        position: absolute;
+        right: $grid-container-padding-mobile;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &__price {
+      padding-bottom: 20px;
+      padding-left: $grid-container-padding-mobile + $thumbnail-size-mobile + ($spacing__sm / 2);
+    }
+
+
+    // Product Links
+    //--------------
+    &__link-item {
+      @include body-copy-small--mobile;
+
+      align-items: center;
+      background-color: $color__secondary-gray6;
+      display: flex;
+      padding: 12px $grid-container-padding-mobile;
+
+      .link-label {
+        flex: 1;
+      }
+    }
+
+
+    // Text Content Wrapper
+    //--------------
+    &__content {
+      padding: ($spacing__md / 2) $grid-container-padding-mobile;
+    }
+
+    // Product Attributes
+    //--------------
+    &__attrs-list {
+      padding-bottom: 16px; // Visually 30px bottom margin
+    }
+
+    &__attrs-list-item {
+      margin-bottom: 10px; // Visually 20px bottom margin
+
+      &:last-child { margin-bottom: 0; }
+    }
+
+    &__attr-label { margin-bottom: 4px; } // Visually 15px bottom margin
+
+    &__attr-value {
+      // Empty selector for future reference
+    }
+
+    // Product Description
+    //--------------
+    &__description {
+      @include body-copy--mobile;
+    }
+
+  }
+
+
+
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    $product-card-padding: 20px;
+
+    // Product Image
+    //--------------
+    &__image-wrapper {
+      left: 20px;
+      top: 20px;
+    }
+
+    &__image {
+      @include square($thumbnail-size-desktop); // Width & Height
+      padding: 1rem;
+    }
+
+
+    // Product Header
+    //--------------
+    $padding-left: $thumbnail-size-desktop + 40px;
+
+    &__header {
+      background-color: $color__primary-blue;
+      padding: 20px 120px 20px $padding-left;
+      position: relative;
+    }
+
+    &__title-wrapper {
+
+    }
+
+    &__name {
+      @include h5--desktop;
+
+      .icon {
+        font-size: 26px;
+        position: relative;
+        top: 4px; // Icon Vertical Alignment
+      }
+    }
+
+    &__price {
+      position: absolute;
+      top: 50%;
+      right: $product-card-padding;
+      transform: translateY(-50%);
+    }
+
+    &__link-item {
+      @include body-copy-small--desktop;
+
+      border-right: 1px solid $color__white;
+      margin-right: 20px;
+      padding-right: 16px;
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      .link-label {
+        color: $color__white;
+      }
+
+      &:hover {
+        color: $color__white;
+        text-decoration: underline;
+      }
+    }
+
+
+    // Product Content Wrapper
+    //--------------
+    &__content {
+      margin-top: $spacing__sm;
+      margin-bottom: $spacing__md;
+      padding-left: $padding-left;
+    }
+
+    &__attrs-list {
+      display: flex;
+      flex-flow: row wrap;
+      margin-bottom: $spacing__sm;
+    }
+
+    &__attrs-list-item {
+      flex: 1;
+    }
+
+    &__description {
+      @include body-copy-small--desktop;
+    }
+
+  }
+
+}

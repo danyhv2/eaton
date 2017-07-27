@@ -12,11 +12,13 @@
 
 .carousel-component__dots:only-child { display: none; }
 
-.carousel-component__dots--gray .inactive-gray { background-color: #EEF0F2; border: 1px solid #EEF0F2; }
-
 .carousel-component__down-arrow { position: absolute; bottom: 25px; color: #FFF; width: 100%; font-size: 1.5em; z-index: 10; text-align: center; }
 
+.carousel-component .carousel-indicators .carousel-component__dots--gray { background-color: #EEF0F2; border: 1px solid #EEF0F2; width: 12px; height: 12px; margin: 2px; }
+
 .carousel-component .carousel-indicators .active { background-color: #005EB8; border: 1px solid #005EB8; }
+
+.carousel-component .carousel-component--indicators { bottom: 20px; }
 
 @media screen and (max-width: 767px) { .carousel-component-slide__image--mobile { min-height: 750px; }
   .carousel-indicators { bottom: 56px; } }

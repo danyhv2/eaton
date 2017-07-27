@@ -9,7 +9,10 @@
     <div class="results-list-module__content-wrapper">
 
       <h4 class="results-list-module__name b-heading-h5">
-        <a href="${ data.contentItem.link.url }" class="results-list-module__name-link">${ data.contentItem.name }</a>
+        <a href="${ data.contentItem.link.url @ context='uri' }"
+          class="results-list-module__name-link"
+          target="${ data.contentItem.link.target }"
+        >${ data.contentItem.name }</a>
       </h4>
 
       <div data-sly-test="${ data.contentItem.date }"
@@ -18,9 +21,10 @@
       <div class="results-list-module__description b-body-copy-small">${ data.contentItem.description }</div>
 
       <div class="results-list-module__url b-body-copy-small">
-        <a href="${ data.contentItem.link.url }"
+        <a href="${ data.contentItem.link.url @ context='uri' }"
           target="${ data.contentItem.link.target }"
-          class="results-list-module__url-link">${ data.contentItem.link.text }</a>
+          class="results-list-module__url-link"
+        >${ data.contentItem.link.text }</a>
       </div>
 
     </div>

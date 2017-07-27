@@ -8,7 +8,7 @@
 body {
   color: $color__primary-gray1;
   font-family: $font-family__secondary;
-  font-size: 16px;
+  font-size: $base__font-size;  // 16px base-size
   overflow-x: hidden;
 }
 
@@ -30,59 +30,40 @@ p {
   line-height: 1.3;
 }
 
-a,
-p a {
+a {
   color: $color__primary-blue;
 }
 
 
 // Headings
 //----------------
-// sizes based on root font size (10px) 10px = 1rem
-
-h1,
-h2,
-h3,
-.b-heading-h1,
-.b-heading-h2,
-.b-heading-h3 {
-  font-family: $font-family__primary;
-}
-
-h4,
-h5,
-.b-heading-h5,
-.b-heading-h6 {
-  font-family: $font-family__secondary;
-}
-
 h1,
 .b-heading-h1 {
-  @extend %h1;
+  @include h1;
   margin-top: 0;
 }
 
 h2,
 .b-heading-h2 {
-  @extend %h2;
+  @include h2;
   margin-top: 0;
 }
 
 h3,
 .b-heading-h3 {
-  @extend %h3;
+  @include h3;
   margin-top: 0;
 }
 
 h4,
 .b-heading-h4 {
-  @extend %h4;
+  @include h4;
   margin-top: 0;
 }
 
 h5,
 .b-heading-h5 {
-  @extend %h5;
+  @include h5;
   margin-top: 0;
 
   a {
@@ -95,6 +76,7 @@ h5,
 .b-h4-link {
   font-size: 1.375em;
   color: $color__primary-blue;
+  font-weight: bold;
 
   &:hover,
   &:focus,
@@ -114,19 +96,21 @@ h5,
 // BodyCopy
 //--------------
 .b-body-copy {
-  @extend %body-copy;
+  @include body-copy;
 }
 
 .b-body-copy-small {
-  @extend %body-copy-small;
+  @include body-copy-small;
 }
 
 .b-eyebrow-large {
-  @extend %eyebrow-large;
+  color: $color__primary-gray1;
+  @include eyebrow-large;
 }
 
 .b-eyebrow-small {
-  @extend %eyebrow-small;
+  color: $color__primary-gray1;
+  @include eyebrow-small;
 }
 
 
@@ -140,7 +124,6 @@ h5,
 //---------------------
 
 // TODO: TBD
-// sass-lint:disable no-css-comments
 
 // .body-link {
 //   color: $color__primary-blue;

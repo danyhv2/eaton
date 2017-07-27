@@ -34,11 +34,6 @@
     &:only-child {
       display: none;
     }
-
-    &--gray .inactive-gray {
-      background-color: $color__secondary-gray5;
-      border: 1px solid $color__secondary-gray5;
-    }
   }
 
   &__down-arrow {
@@ -51,15 +46,22 @@
     text-align: center;
   }
 
+  .carousel-indicators .carousel-component__dots--gray {
+    background-color: $color__secondary-gray5;
+    border: 1px solid $color__secondary-gray5;
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+  }
+
   .carousel-indicators .active {
     background-color: $color__primary-blue;
     border: 1px solid $color__primary-blue;
   }
+}
 
-  //.carousel-indicators .inactive-gray {
-  //  background-color: $color__secondary-gray2;
-  //  border: 1px solid $color__secondary-gray2;
-  //}
+.carousel-component .carousel-component--indicators {
+  bottom: 20px;
 
 }
 

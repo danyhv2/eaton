@@ -16,6 +16,11 @@
   &__title {
     text-transform: uppercase;
     font-weight: bold;
+    color: $color__primary-gray2;
+  }
+
+  &__text {
+    word-wrap: break-word;
   }
 
   &__symbol {
@@ -26,7 +31,8 @@
   // Media-Query: Mobile
   //-----------------------------------
   @include media-mobile-and-tablet {
-    padding: 30px 0;
+    padding: $spacing__sm 0;
+
     &__item {
       margin-bottom: 40px;
 
@@ -55,14 +61,14 @@
   // Media-Query: Desktop
   //-----------------------------------
   @include media-desktop-and-up {
-    padding: 42px 0;
+    padding: ($spacing__sm * 2) 0;
 
     &__wrapper {
       display: flex;
     }
 
     &__text {
-      font-size: 3.750em;
+      font-size: 3.75em;
       line-height: 65px;
     }
 
