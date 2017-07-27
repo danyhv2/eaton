@@ -29,7 +29,6 @@
   }
 
   &__col {
-    margin: 0 ($spacing__sm / 2 );
 
     .mega-menu__category-item {
       margin-bottom: $spacing__sm;
@@ -42,7 +41,6 @@
 
   &__category {
     background: $color__primary-gray2;
-    padding: $spacing__sm 0;
   }
 
   //-----------------------------------
@@ -79,6 +77,7 @@
     transition: opacity 0.1s ease-in-out;
 
     &__col {
+      margin: 0 ($spacing__sm / 2 );
 
       &:first-child {
         margin-left: 0;
@@ -99,12 +98,15 @@
         flex-basis: 50%;
       }
     }
+
+    &__category {
+      padding: $spacing__sm 0;
+    }
   }
 }
 
 // Mega Menu Title
 .mega-menu-title {
-  padding: 30px 0;
   font-size: 20px;
 
   .container {
@@ -140,12 +142,15 @@
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-and-tablet {
-    min-height: 90px;
+    padding: 20px 0;
 
     &__level1-link {
+      padding: 10px 10px 10px 0;
+
       .glyphicon-menu-left {
         display: inline;
         margin-right: 10px;
+        font-size: 0.75em;
       }
 
       .glyphicon-menu-right {
@@ -158,6 +163,8 @@
   // Desktop Breakpoint
   //-----------------------------------
   @include media-desktop-and-up {
+    padding: 30px 0;
+
     &__level1-link {
       .glyphicon-menu-left {
         display: none;
