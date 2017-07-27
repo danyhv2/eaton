@@ -17,6 +17,7 @@
   .product-card-sku__name .icon { height: 1rem; width: 1rem; line-height: 1rem; position: absolute; right: 30px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
   .product-card-sku__price { padding-bottom: 20px; padding-left: 99px; }
   .product-card-sku__link-item { font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #F8F8F8; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 12px 30px; }
+  .product-card-sku__link-item:hover { color: #005EB8; text-decoration: none; }
   .product-card-sku__link-item .link-label { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
   .product-card-sku__content { padding: 30px 30px; }
   .product-card-sku__attrs-list { padding-bottom: 16px; }
