@@ -127,7 +127,7 @@ use(function () {
           "documentName": "Specs-2017.pdf",
           "link": {
             "text": "www.eaton.co/.../specs.pdf",
-            "url": "https://eaton.co/dev/files/specs.pdf?download=true",
+            "url": "https://eaton.dev/resources/specs.pdf?download=true",
             "target": "_blank"
           }
         }
@@ -221,7 +221,7 @@ use(function () {
           "documentName": "Specs-2017.pdf",
           "link": {
             "text": "www.eaton.co/.../specs.pdf",
-            "url": "https://eaton.co/dev/files/specs.pdf?download=true",
+            "url": "https://eaton.dev/resources/specs.pdf?download=true",
             "target": "_blank"
           }
         }
