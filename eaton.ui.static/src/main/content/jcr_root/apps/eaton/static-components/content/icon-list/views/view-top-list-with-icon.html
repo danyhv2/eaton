@@ -12,19 +12,19 @@
     <sly data-sly-test="${!data.headline}">
       <div class="container row" >
     </sly>
-    <sly data-sly-list.link="${data.links}">
+    <sly data-sly-list.link="${data.items}">
 
       <div class="col-xs-12 ${data.headline ? 'col-md-5' : 'col-md-4'} eaton-top-list-with-icon__element" data-sly-test=${link.icon}>
         <div class="eaton-top-list-with-icon__icon">
           <i class="icon icon-${link.icon}"></i>
         </div>
         <div class="eaton-top-list-with-icon__text-wrapper">
-          <a href="${link.headline.url}" class="${data.headline ? 'b-heading-h4' : 'b-heading-h5'}" title="${link.headline.text}">${link.headline.text}</a>
-          <div class="p-body-copy">${link.description}</div>
+          <a href="${link.linkl}" class="${data.headline ? 'b-heading-h4' : 'b-heading-h5'}" title="${link.title}">${link.title}</a>
+          <div class="p-body-copy">${link.text}</div>
         </div>
       </div>
       <div class="col-xs-12 col-md-4 eaton-top-list-with-icon__element" data-sly-test="${!link.icon}">
-        <div class="b-heading-h4">${link.header}</div>
+        <div class="b-heading-h4">${link.title}</div>
       </div>
     </sly>
     </div>

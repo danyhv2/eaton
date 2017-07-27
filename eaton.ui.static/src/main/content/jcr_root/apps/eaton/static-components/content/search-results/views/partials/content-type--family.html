@@ -33,6 +33,7 @@
         <a href="${ data.contentItem.link.url @ context='uri' }"
           target="${ data.contentItem.link.target }"
           class="results-list-module__url-link"
+          aria-label="${ 'Go to' @i18n } ${ data.contentItem.link.text }"
         >${ data.contentItem.link.text }</a>
       </div>
 
@@ -42,7 +43,7 @@
           <a class="results-list-module__link-item-link"
             href="${ link.url @ context='uri' }"
             target="${ link.target }"
-            aria-label="${ 'Go to {0}' @ format = [ link.text ] }"
+            aria-label="${ 'Go to' @i18n } ${ link.text }"
           >${ link.text }</a>
         </li>
       </ul>

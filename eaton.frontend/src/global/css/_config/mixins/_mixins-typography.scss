@@ -212,6 +212,7 @@
 }
 
 @mixin eyebrow-large {
+  font-weight: bold;
   @include eyebrow-large--mobile;
 
   @include media-desktop-and-up {
@@ -237,7 +238,7 @@
 }
 
 @mixin eyebrow-small {
-
+  font-weight: bold;
   @include eyebrow-small--mobile;
 
   @include media-desktop-and-up {
