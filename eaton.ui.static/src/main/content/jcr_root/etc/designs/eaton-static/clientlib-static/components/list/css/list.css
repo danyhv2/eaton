@@ -53,20 +53,17 @@
 
 .article-list-single-feature { padding-bottom: 50px; }
 
-.article-list-single-feature--border { border-top: 4px solid; border-color: #005EB8; width: 60px; display: block; margin-left: 0; }
+.article-list-single-feature--border { border-top: 4px solid; border-color: #005EB8; width: 60px; display: block; }
 
 .article-list-single-feature__link:hover { text-decoration: none; }
 
 .article-list-single-feature__text { margin-left: 15px; }
 
-.article-list-single-feature__article--copy { padding: 50px 0; }
+.article-list-single-feature__article--copy { padding: 15px 0; }
 
 .article-list-single-feature__cta { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 @media screen and (max-width: 767px) { .article-list-single-feature__article { margin-top: 30px; } }
-
-@media screen and (min-width: 992px) { .article-list-single-feature--border { margin-left: 30px; }
-  .article-list-single-feature__article--copy { padding: 50px 30px; } }
 
 .eaton-list-links { display: -webkit-box; display: -ms-flexbox; display: flex; }
 

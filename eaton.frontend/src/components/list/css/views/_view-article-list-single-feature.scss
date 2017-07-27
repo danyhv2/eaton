@@ -7,7 +7,6 @@
     border-color: $color__primary-blue;
     width: 60px;
     display: block;
-    margin-left: 0;
   }
 
   &__link {
@@ -24,7 +23,7 @@
   &__article {
 
     &--copy {
-      padding: 50px 0;
+      padding: 15px 0;
     }
   }
 
@@ -43,18 +42,14 @@
   }
 }
 
-@include media-desktop-and-up {
-  .article-list-single-feature {
-
-    &--border {
-      margin-left: 30px;
-    }
-
-    &__article {
-
-      &--copy {
-        padding: 50px 30px;
-      }
-    }
-  }
-}
+//@include media-desktop-and-up {
+//  .article-list-single-feature {
+//
+//    &__article {
+//
+//      &--copy {
+//        padding: 15px 0;
+//      }
+//    }
+//  }
+//}
