@@ -6,5 +6,60 @@
 @import "../../../global/css/_config/sass";
 
 .eaton-tabbed-menu-list {
-	
+	&__title {
+		display: block;
+		padding: $spacing__md / 2 0;
+
+		&.mobile {
+			display: block;
+		}
+
+		&.desktop {
+			display: none;
+		}
+	}
+
+	&__item {
+		padding: 0;
+		border-bottom: 1px solid $color__secondary-gray6;
+
+		a {
+			display: block;
+			padding-bottom: $spacing__md / 2;
+		}
+
+		&.tab-pane {
+			display: none;
+		}
+	}
+
+	@include media-desktop-and-up {
+		&__title {
+			
+			padding: 50px 0;
+
+			&.mobile {
+				display: none;
+			}
+
+			&.desktop {
+				display: block;
+			}
+
+			&.active {
+				border-bottom: 2px solid $color__primary-blue;
+			}
+		}
+
+		&__item {
+			border-color: transparent;
+
+			
+
+
+			a {
+				padding-bottom: 50px;
+			}
+		}
+	}
 }

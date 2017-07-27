@@ -3,8 +3,42 @@
 </sly>
 
 <div class="eaton-tabbed-menu-list" data-sly-use.data="../data/tabbed-menu-list-data.js">
-	tabbed
-	<div class="container" data-sly-list.tab=${data.tabs}>
-		<div>${tab.title}</div>
+	<div class="container">
+		<div id="accordion" class="panel-group eaton-tabbed-menu-list__accordion" data-sly-list.tab=${data.tabs}>
+			<div class="eaton-tabbed-menu-list__item col-md-4">
+				<a class="eaton-tabbed-menu-list__title mobile" data-toggle="collapse" data-parent="#accordion" href="#collapse${tabList.index}" data-index="${tabList.index}">
+					${tab.title} <span class="icon icon-sign-plus pull-right"></span>
+				</a>
+				<a class="eaton-tabbed-menu-list__title desktop" data-toggle="tab" href="#tab${tabList.index}" data-index="${tabList.index}">
+					${tab.title}	
+				</a>
+				<div id="collapse${tabList.index}" class="panel-collapse collapse">
+					<div class="row">
+						<div class="col-xs-12">
+							<a class="b-body-copy" href="${tab.content.header.url}" title="${tab.content.header.text}">${tab.content.header.text}</a>
+						</div>
+						<sly data-sly-list.link="${tab.content.links}">
+							<div class="col-xs-12">
+								<a class="b-body-copy-small" href="${link.url}" title="${link.text}">${link.text}</a>
+							</div>
+						</sly>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-content" data-sly-list.tab=${data.tabs}>
+			<div id="tab${tabList.index}" class="tab-pane fade eaton-tabbed-menu-list__item">
+				<div class="row">
+					<div class="col-xs-12">
+						<a class="b-body-copy" href="${tab.content.header.url}" title="${tab.content.header.text}">${tab.content.header.text}</a>
+					</div>
+					<sly data-sly-list.link="${tab.content.links}">
+						<div class="col-xs-12">
+							<a class="b-body-copy-small" href="${link.url}" title="${link.text}">${link.text}</a>
+						</div>
+					</sly>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
