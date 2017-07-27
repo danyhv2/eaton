@@ -7,25 +7,29 @@ use(function () {
                   title: 'Eaton 9px Family',
                   text: 'Eaton S-Series Enlosure',
                   image: '/content/dam/eaton/images/product.png',
-                  image_alt: 'Image 1'
+                  image_alt: 'Image 1',
+                  link: 'http://www.eaton.com/'
               },
               {
                   title: 'Eaton 9px Family',
                   text: 'Eaton FlexPDU& HotSwap MBP',
                   image: '/content/dam/eaton/images/product2.png',
-                  image_alt: 'Image 2'
+                  image_alt: 'Image 2',
+                  link: 'http://www.eaton.com/'
               },
               {
                   title: 'Eaton 9px Family',
                   text: 'Eaton S-Series Enlosure',
                   image: '/content/dam/eaton/images/product.png',
-                  image_alt: 'Image 3'
+                  image_alt: 'Image 3',
+                  link: 'http://www.eaton.com/'
               },
               {
                   title: 'Eaton 9px Family',
                   text: 'Eaton FlexPDU& HotSwap MBP',
                   image: '/content/dam/eaton/images/product2.png',
-                  image_alt: 'Image 4'
+                  image_alt: 'Image 4',
+                  link: 'http://www.eaton.com/'
               }
           ]
         },
@@ -35,25 +39,29 @@ use(function () {
                     title: 'Eaton 9px Family',
                     text: 'Eaton S-Series Enlosure',
                     image: '/content/dam/eaton/images/product.png',
-                    image_alt: 'Image 5'
+                    image_alt: 'Image 5',
+                    link: 'http://www.eaton.com/'
                 },
                 {
                     title: 'Eaton 9px Family',
                     text: 'Eaton FlexPDU& HotSwap MBP',
                     image: '/content/dam/eaton/images/product2.png',
-                    image_alt: 'Image 6'
+                    image_alt: 'Image 6',
+                    link: 'http://www.eaton.com/'
                 },
                 {
                     title: 'Eaton 9px Family',
                     text: 'Eaton S-Series Enlosure',
                     image: '/content/dam/eaton/images/product.png',
-                    image_alt: 'Image 7'
+                    image_alt: 'Image 7',
+                    link: 'http://www.eaton.com/'
                 },
                 {
                     title: 'Eaton 9px Family',
                     text: 'Eaton FlexPDU& HotSwap MBP',
                     image: '/content/dam/eaton/images/product2.png',
-                    image_alt: 'Image 8'
+                    image_alt: 'Image 8',
+                    link: 'http://www.eaton.com/'
                 }
             ]
         }

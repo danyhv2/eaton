@@ -1,0 +1,83 @@
+<!--/*
+  Component M-36 - Product Card: SKU
+*/-->
+<template data-sly-template.item="${ @ data }">
+
+  <div class="product-card-sku">
+
+    <!--/* Product Image */-->
+    <div class="product-card-sku__image-wrapper b-body-copy-small">
+      <a href="${ data.contentItem.link.url @ context='uri' }"
+        class="product-card-sku__image-link"
+        target="${ data.contentItem.link.target }"
+      >
+        <img src="${ data.contentItem.imgSrc }"
+          class="product-card-sku__image"
+          alt="${ data.contentItem.name }" />
+      </a>
+    </div>
+
+    <!--/* Product Header */-->
+    <div class="product-card-sku__header">
+
+      <div class="product-card-sku__title-wrapper">
+        <h3 class="product-card-sku__name">
+          <a href="${ data.contentItem.link.url @ context='uri' }"
+            target="${ data.contentItem.link.target }"
+            class="product-card-sku__url-link"
+          >
+            <span class="name-label">${ data.contentItem.name }</span>
+            <i class="icon icon-chevron-right" aria-hidden="true"></i>
+          </a>
+        </h3>
+        <div class="product-card-sku__price b-body-copy">${ '${0}*' @ format=[ data.contentItem.price ] }</div>
+      </div>
+
+      <!--/* Product Links */-->
+      <ul class="product-card-sku__links-list">
+
+        <li class="product-card-sku__link-item">
+          <a href="${ data.contentItem.productLinks.specificationsURL @ context='uri' }"
+            class="product-card-sku__link-item-link"
+            target="_self"
+            aria-label="${ 'Go to' @ i18n } ${ 'Specifications' @ i18n }"
+          >
+            <span class="link-label">${ 'Specifications' @ i18n }</span>
+            <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li class="product-card-sku__link-item">
+          <a href="${ data.contentItem.productLinks.resourcesURL @ context='uri' }"
+            class="product-card-sku__link-item-link"
+            target="_self"
+            aria-label="${ 'Go to' @ i18n } ${ 'Resources' @ i18n }"
+          >
+            <span class="link-label">${ 'Resources' @ i18n }</span>
+            <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!--/* Content */-->
+    <div class="product-card-sku__content">
+      <div class="product-card-sku__attrs-list"
+        data-sly-list.attribute="${ data.contentItem.productAttributes }">
+        <div class="product-card-sku__attrs-list-item">
+          <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">${ attribute.label }</div>
+          <div class="product-card-sku__attr-value b-body-copy">${ attribute.value }</div>
+        </div>
+      </div>
+
+      <div class="product-card-sku__description">${ data.contentItem.description }</div>
+    </div>
+
+
+  </div>
+
+</template>

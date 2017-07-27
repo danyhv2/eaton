@@ -1,0 +1,101 @@
+.eaton-product-tabs { background-color: #F8F8F8; }
+
+.dark-theme .eaton-product-tabs { background-color: #333F48; }
+
+.dark-theme .eaton-product-tabs__buttons { background-color: #333F48; }
+
+.dark-theme .eaton-product-tabs label:hover, .dark-theme .eaton-product-tabs label:focus, .dark-theme .eaton-product-tabs label:active { background-color: #5B6770; }
+
+.dark-theme .eaton-product-tabs label .icon, .dark-theme .eaton-product-tabs label span { color: #FFF; }
+
+.dark-theme .eaton-product-tabs__description .b-eyebrow-small, .dark-theme .eaton-product-tabs__description .icon, .dark-theme .eaton-product-tabs__description .b-heading-h5 { color: #FFF; }
+
+.eaton-product-tabs__buttons { background-color: #F8F8F8; }
+
+.eaton-product-tabs--fixed .eaton-product-tabs__tab-panel { padding-top: 390px; }
+
+.eaton-product-tabs--fixed .eaton-product-tabs__buttons { position: fixed; z-index: 2; padding: 0; margin-left: 0; margin-right: 0; }
+
+.eaton-product-tabs--fixed .eaton-product-tabs__buttons:after { background-color: inherit; content: ''; height: 149px; left: -50%; position: absolute; top: 0; width: 200%; z-index: -1; }
+
+.eaton-product-tabs--fixed .eaton-product-tabs__buttons .container { position: fixed; padding: 0; margin-left: -15px; margin-right: -15px; }
+
+.eaton-product-tabs__description { padding: 10px 0; }
+
+.eaton-product-tabs__description .b-eyebrow-small { color: #005EB8; font-weight: bold; }
+
+.eaton-product-tabs__description .icon { font-size: 1.1rem; font-weight: bold; }
+
+.eaton-product-tabs__description .b-heading-h5 { padding-top: 6px; }
+
+.eaton-product-tabs__tab-panel { display: none; }
+
+.eaton-product-tabs label { cursor: pointer; width: 33.333%; text-align: center; float: left; padding: 1.3rem 0; margin: 0; }
+
+.eaton-product-tabs label a { display: block; width: 100%; height: 100%; }
+
+.eaton-product-tabs label a:hover, .eaton-product-tabs label a:focus, .eaton-product-tabs label a:active { text-decoration: none; }
+
+.eaton-product-tabs label:hover, .eaton-product-tabs label:focus, .eaton-product-tabs label:active { background-color: #EEF0F2; }
+
+.eaton-product-tabs label .icon { color: #005EB8; display: block; font-size: 2.4rem; }
+
+.eaton-product-tabs label span { color: #005EB8; display: inline-block; font-size: 1.2rem; padding-top: 8px; }
+
+.eaton-product-tabs__dropdown { background-color: #4C8C2B; border: 0; color: #FFF; display: inline-block; font-family: "Eaton", Arial, sans-serif; font-size: 1.8rem; font-weight: bold; height: 57px; margin: 40px 0; width: 100%; position: relative; }
+
+.eaton-product-tabs__dropdown:focus .eaton-product-tabs__dropdown__content { display: block; }
+
+.eaton-product-tabs__dropdown .icon { display: inline-block; font-size: 14px; padding-left: 10px; vertical-align: middle; }
+
+.eaton-product-tabs__dropdown__content { display: none; position: absolute; width: 100%; background-color: #F8F8F8; top: 100%; left: 0; z-index: 10; }
+
+.eaton-product-tabs__dropdown__content ul { list-style: none; padding: 30px; }
+
+.eaton-product-tabs__dropdown__content li { padding: 30px 0 0 35px; position: relative; }
+
+.eaton-product-tabs__dropdown__content li:first-child { padding-top: 0; }
+
+.eaton-product-tabs__dropdown__content li a { color: #5B6770; display: inline-block; width: 100%; text-align: left; }
+
+.eaton-product-tabs__dropdown__content li span { font-size: 1.5rem; }
+
+.eaton-product-tabs__dropdown__content li .icon { font-size: 25px; left: 0; padding: 0 10px 0 0; position: absolute; }
+
+.eaton-product-tabs input[id="overview"] { display: none; }
+
+.eaton-product-tabs input[id="overview"]:target ~ .row label[for="overview"], .eaton-product-tabs input[id="overview"]:target ~ .container label[for="overview"], .eaton-product-tabs input[id="overview"]:checked ~ .row label[for="overview"], .eaton-product-tabs input[id="overview"]:checked ~ .container label[for="overview"] { background-color: #EEF0F2; }
+
+.dark-theme .eaton-product-tabs input[id="overview"]:target ~ .row label[for="overview"], .dark-theme .eaton-product-tabs input[id="overview"]:target ~ .container label[for="overview"], .dark-theme .eaton-product-tabs input[id="overview"]:checked ~ .row label[for="overview"], .dark-theme .eaton-product-tabs input[id="overview"]:checked ~ .container label[for="overview"] { background-color: #5B6770; }
+
+.eaton-product-tabs input[id="overview"]:target ~ .row div[data-tab-name="overview"], .eaton-product-tabs input[id="overview"]:target ~ .container div[data-tab-name="overview"], .eaton-product-tabs input[id="overview"]:checked ~ .row div[data-tab-name="overview"], .eaton-product-tabs input[id="overview"]:checked ~ .container div[data-tab-name="overview"] { display: block; }
+
+.eaton-product-tabs input[id="specifications"] { display: none; }
+
+.eaton-product-tabs input[id="specifications"]:target ~ .row label[for="specifications"], .eaton-product-tabs input[id="specifications"]:target ~ .container label[for="specifications"], .eaton-product-tabs input[id="specifications"]:checked ~ .row label[for="specifications"], .eaton-product-tabs input[id="specifications"]:checked ~ .container label[for="specifications"] { background-color: #EEF0F2; }
+
+.dark-theme .eaton-product-tabs input[id="specifications"]:target ~ .row label[for="specifications"], .dark-theme .eaton-product-tabs input[id="specifications"]:target ~ .container label[for="specifications"], .dark-theme .eaton-product-tabs input[id="specifications"]:checked ~ .row label[for="specifications"], .dark-theme .eaton-product-tabs input[id="specifications"]:checked ~ .container label[for="specifications"] { background-color: #5B6770; }
+
+.eaton-product-tabs input[id="specifications"]:target ~ .row div[data-tab-name="specifications"], .eaton-product-tabs input[id="specifications"]:target ~ .container div[data-tab-name="specifications"], .eaton-product-tabs input[id="specifications"]:checked ~ .row div[data-tab-name="specifications"], .eaton-product-tabs input[id="specifications"]:checked ~ .container div[data-tab-name="specifications"] { display: block; }
+
+.eaton-product-tabs input[id="resources"] { display: none; }
+
+.eaton-product-tabs input[id="resources"]:target ~ .row label[for="resources"], .eaton-product-tabs input[id="resources"]:target ~ .container label[for="resources"], .eaton-product-tabs input[id="resources"]:checked ~ .row label[for="resources"], .eaton-product-tabs input[id="resources"]:checked ~ .container label[for="resources"] { background-color: #EEF0F2; }
+
+.dark-theme .eaton-product-tabs input[id="resources"]:target ~ .row label[for="resources"], .dark-theme .eaton-product-tabs input[id="resources"]:target ~ .container label[for="resources"], .dark-theme .eaton-product-tabs input[id="resources"]:checked ~ .row label[for="resources"], .dark-theme .eaton-product-tabs input[id="resources"]:checked ~ .container label[for="resources"] { background-color: #5B6770; }
+
+.eaton-product-tabs input[id="resources"]:target ~ .row div[data-tab-name="resources"], .eaton-product-tabs input[id="resources"]:target ~ .container div[data-tab-name="resources"], .eaton-product-tabs input[id="resources"]:checked ~ .row div[data-tab-name="resources"], .eaton-product-tabs input[id="resources"]:checked ~ .container div[data-tab-name="resources"] { display: block; }
+
+@media screen and (max-width: 991px) { .eaton-product-tabs__description { padding: 10px 15px; }
+  .eaton-product-tabs .container { padding: 0; }
+  .eaton-product-tabs .eaton-product-tabs__dropdown { width: 93%; margin-top: 20px; margin-bottom: 20px; }
+  .eaton-product-tabs--fixed .eaton-product-tabs__buttons { top: 0; left: 0; margin: 0; width: 100%; }
+  .eaton-product-tabs--fixed .eaton-product-tabs__description { display: none; }
+  .eaton-product-tabs--fixed .eaton-product-tabs__tab-panel { padding-top: 265px; } }
+
+@media screen and (min-width: 992px) { .eaton-product-tabs__description { position: relative; top: 78px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+  .eaton-product-tabs__description .icon { font-size: 1.4rem; }
+  .eaton-product-tabs label { padding: 4rem 0; }
+  .eaton-product-tabs label .icon { font-size: 4rem; }
+  .eaton-product-tabs label span { font-size: 1.4rem; }
+  .eaton-product-tabs--fixed .eaton-product-tabs__buttons { top: 84px; margin-left: -15px; margin-right: -15px; } }

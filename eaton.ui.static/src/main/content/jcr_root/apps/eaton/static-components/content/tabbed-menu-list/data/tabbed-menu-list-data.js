@@ -5,19 +5,157 @@ use(function () {
 
   data.tabs = [
     {
-      title: 'Workstation & home UPS'
+      title: 'Workstation & home UPS',
+      content: {
+        header: {
+          text: 'View all Workstation & home UPS',
+          url: '#'
+        },
+        links: [
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          }
+        ]
+      } 
     },
     {
-      title: 'Network & server UPS'
+      title: 'Network & server UPS',
+      content: {
+        header: {
+          text: 'View all Network & server UPS',
+          url: '#'
+        },
+        links: [
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          }
+        ]
+      } 
     },
     {
-      title: 'Data center & facility UPS'
-    },
-    {
-      title: 'Industrial UPS'
-    },
-    {
-      title: 'TAA compilant UPS'
+      title: 'Data center & facility UPS',
+      content: {
+        header: {
+          text: 'View all Data center & facility UPS',
+          url: '#'
+        },
+        links: [
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          },
+          {
+            text: 'Blade UPS (12-60 kW)',
+            url: '#'
+          }
+        ]
+      } 
     }
   ];
 
