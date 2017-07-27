@@ -72,7 +72,11 @@ App.header = (function() {
         bodyEl.removeClass('nav-open level-2-open');
       } else {
         bodyEl.addClass('nav-open');
-        $primaryLinks.eq(0).focus();
+
+        // window.setTimeout( (function() {
+        //   console.log('First Link', $primaryLinks.eq(0));
+        //   $primaryLinks.eq(0).focus();
+        // }), 40);
       }
     });
 

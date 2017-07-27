@@ -9,7 +9,6 @@
 @import "mega-menu-modules";
 
 .mega-menu {
-  background: $color__primary-gray1;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -51,9 +50,11 @@
     top: 56px;
     bottom: 0;
     transition: transform 0.7s ease-in-out;
+    background: $color__primary-gray2;
     overflow: auto;
     transform: translate(100%);
     visibility: hidden;
+    opacity: 0;
 
     &__row {
       flex-direction: column;
@@ -68,6 +69,14 @@
         }
       }
     }
+
+    &__content {
+
+      &--active {
+        margin-bottom: 100px;
+      }
+    }
+
   }
 
   //-----------------------------------
@@ -77,6 +86,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.1s ease-in-out;
+    background: $color__primary-gray1;
 
     &__col {
       margin: 0 ($spacing__sm / 2 );
@@ -110,6 +120,7 @@
 // Mega Menu Title
 .mega-menu-title {
   font-size: 20px;
+  background: $color__primary-gray1;
 
   .container {
     display: flex;

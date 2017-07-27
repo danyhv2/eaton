@@ -3,7 +3,7 @@
 @media screen and (max-width: 991px) { .mega-menu .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; }
   .mega-menu .eaton-title__headline { font-size: 20px; line-height: 24px; } }
 
-.mega-menu { background: #333F48; position: absolute; width: 100%; z-index: 2; }
+.mega-menu { position: absolute; width: 100%; z-index: 2; }
 
 .mega-menu__content { color: #FFF; display: none; }
 
@@ -17,12 +17,13 @@
 
 .mega-menu__category { background: #5B6770; }
 
-@media screen and (max-width: 991px) { .mega-menu { position: fixed; top: 56px; bottom: 0; -webkit-transition: -webkit-transform 0.7s ease-in-out; transition: -webkit-transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; overflow: auto; -webkit-transform: translate(100%); transform: translate(100%); visibility: hidden; }
+@media screen and (max-width: 991px) { .mega-menu { position: fixed; top: 56px; bottom: 0; -webkit-transition: -webkit-transform 0.7s ease-in-out; transition: -webkit-transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; background: #5B6770; overflow: auto; -webkit-transform: translate(100%); transform: translate(100%); visibility: hidden; opacity: 0; }
   .mega-menu__row { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .mega-menu__row .mega-menu__col { display: none; }
-  .mega-menu__row .mega-menu__col.mega-menu__col--flex { display: block; margin-bottom: 30px; } }
+  .mega-menu__row .mega-menu__col.mega-menu__col--flex { display: block; margin-bottom: 30px; }
+  .mega-menu__content--active { margin-bottom: 100px; } }
 
-@media screen and (min-width: 992px) { .mega-menu { opacity: 0; visibility: hidden; -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; }
+@media screen and (min-width: 992px) { .mega-menu { opacity: 0; visibility: hidden; -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; background: #333F48; }
   .mega-menu__col { margin: 0 15px; }
   .mega-menu__col:first-child { margin-left: 0; }
   .mega-menu__col--flex { border-right: 1px solid #CCD2D7; }
@@ -30,7 +31,7 @@
   .mega-menu__col--6 { -ms-flex-preferred-size: 50%; flex-basis: 50%; }
   .mega-menu__category { padding: 30px 0; } }
 
-.mega-menu-title { font-size: 20px; }
+.mega-menu-title { font-size: 20px; background: #333F48; }
 
 .mega-menu-title .container { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; }
 
