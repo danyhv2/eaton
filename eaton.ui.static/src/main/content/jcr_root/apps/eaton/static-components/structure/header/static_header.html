@@ -6,8 +6,8 @@
         <!--/* Utility Navigation */-->
         <div class="header-utility-nav">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-9 header-utility-nav__toggle-selector">
+                <div class="row header-utility-nav__row">
+                    <div class="header-utility-nav__toggle-selector">
                         <a href="#" class="open-country-selector">
                             <i class="icon icon-globe" aria-hidden="true"></i>
                             <span class='header-utility-nav__country'>${header.defaultLabels.country}</span>
@@ -15,10 +15,10 @@
                             <i class="icon icon-chevron-down" aria-hidden="true"></i>
                         </a>
                     </div>
-                    <div class="col-xs-3 header-utility-nav__sign-in">
+                    <div class="header-utility-nav__sign-in">
                         <a href="#" class='open-sign-in'>
                           <i class="icon icon-user" aria-hidden="true"></i>
-                          ${header.defaultLabels.signIn}
+                          <span class='header-utility-nav__signin'>${header.defaultLabels.signIn}</span>
                         </a>
                     </div>
                 </div>
