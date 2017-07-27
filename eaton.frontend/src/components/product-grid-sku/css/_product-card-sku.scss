@@ -49,6 +49,12 @@
     padding: 0.5rem;
   }
 
+  &__links-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
 
   //-----------------------------------
   // Media-Query: Mobile & Tablet
@@ -101,21 +107,32 @@
 
     // Product Links
     //--------------
+    &__links-list {
+      // empty selector for future reference
+    }
+
     &__link-item {
       @include body-copy-small--mobile;
 
-      align-items: center;
       background-color: $color__secondary-gray6;
-      display: flex;
       padding: 12px $grid-container-padding-mobile;
+    }
 
-      .link-label {
-        flex: 1;
+    &__link-item-link {
+      align-items: center;
+      display: flex;
+
+      &:hover {
+        color: $color__primary-blue;
+        text-decoration: none;
       }
+
+      .link-label { flex: 1; }
+
     }
 
 
-    // Text Content Wrapper
+    // Text Content
     //--------------
     &__content {
       padding: ($spacing__md / 2) $grid-container-padding-mobile;
@@ -201,6 +218,12 @@
       transform: translateY(-50%);
     }
 
+    &__links-list {
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
     &__link-item {
       @include body-copy-small--desktop;
 
@@ -211,6 +234,9 @@
       &:last-child {
         border-right: 0;
       }
+    }
+
+    &__link-item-link {
 
       .link-label {
         color: $color__white;
@@ -237,9 +263,7 @@
       margin-bottom: $spacing__sm;
     }
 
-    &__attrs-list-item {
-      flex: 1;
-    }
+    &__attrs-list-item { flex: 1; }
 
     &__description {
       @include body-copy-small--desktop;
