@@ -92,6 +92,14 @@
 .results-list {
   padding-bottom: $spacing__lg / 2;
 
+  &__disclaimer {
+    border-top: 3px solid $color__secondary-gray5;
+    padding: 20px 0;
+  }
+
+  &__actions {
+    margin-top: 40px;
+  }
 
   //-----------------------------------
   // Media-Query: Desktop & Desktop Large
@@ -132,6 +140,34 @@
     display: flex;
   }
 
+  &__name {
+    margin-bottom: 5px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
+
+    // External Link Icon
+    .icon {
+      margin-left: 10px;
+    }
+  }
+
+  &__description,
+  &__url,
+  &__link-list {
+    margin-bottom: 12px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
+  }
+
+  &__link-item {
+    border-right: 1px solid $color__secondary-gray4;
+    margin-right: 16px;
+    padding-right: 16px;
+
+    // Remove Line / Reset Margins for last link in the list
+    &:last-child {
+      border-right: 0;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+
 
 
 
@@ -162,7 +198,7 @@
   //-----------------------------------
   @include media-desktop-and-up {
 
-    margin-bottom: $spacing__md;
+    margin-bottom: 40px; // Visually 60px Bottom Margin
 
     // Product Item with Image (Thumbnail)
     //--------------

@@ -36,14 +36,16 @@
         >${ data.contentItem.link.text }</a>
       </div>
 
-      <div data-sly-list.link="${ data.contentItem.secondaryLinks }"
-        class="results-list-module__links b-body-copy-small">
-        <a class="results-list-module__links-item"
-          href="${ link.url @ context='uri' }"
-          target="${ link.target }"
-          aria-label="${ 'Go to {0}' @ format = [ link.text ] }"
-        >${ link.text }</a>
-      </div>
+      <ul data-sly-list.link="${ data.contentItem.secondaryLinks }"
+        class="results-list-module__link-list b-body-copy-small u-list-inline">
+        <li class="results-list-module__link-item">
+          <a class="results-list-module__link-item-link"
+            href="${ link.url @ context='uri' }"
+            target="${ link.target }"
+            aria-label="${ 'Go to {0}' @ format = [ link.text ] }"
+          >${ link.text }</a>
+        </li>
+      </ul>
 
     </div>
   </div>

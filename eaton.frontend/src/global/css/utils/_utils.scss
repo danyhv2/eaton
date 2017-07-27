@@ -27,6 +27,14 @@
   @include clearfix();
 }
 
+.u-list-inline {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 // Text Utils
 //--------------

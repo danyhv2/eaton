@@ -48,14 +48,14 @@
         <sly data-sly-list.card="${data.cards}">
             <li data-target=".carousel-component1"
                 data-slide-to="${cardList.index}"
-                class="carousel-component__dots carousel-component__dots--gray ${cardList.index == 0 ? 'active' : ''}"></li>
+                class="carousel-component__dots carousel-component__dots--gray"></li>
         </sly>
     </ol>
 
     <!-- Carousel for Mobile -->
     <div data-sly-list.data="${data}" class="carousel-component-slide carousel-inner visible-xs" role="listbox">
         <sly  data-sly-list.card="${data.cards}">
-            <div class="item ${cardList.index == 0 ? 'active' : ''}">
+            <div class="item">
                 <a href="${card.link}" role="link">
                     <div class="col-xs-12 related-products-component__card">
                         <img class="carousel-component-slide__image" src="${card.image}" alt="${card.alt}">
