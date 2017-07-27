@@ -15,23 +15,11 @@ App.header = (function() {
   const isAEMAuthorMode = (window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode()) ? true : false;
 
   const init = () => {
-    // console.log(`Header Component - ${ window.location.host }`);
-    // console.log(`Author Mode - ${ isAEMAuthorMode }`);
 
     // If not in AEM Author Mode - initialize scripts
     if (!isAEMAuthorMode) {
       addEventListeners();
     }
-  };
-
-  /**
-   * Close Level-1 Menu
-   */
-  const closeLevel1 = () => {
-    console.log('After transition ends -- supriya');
-
-    bodyEl.removeClass('nav-open');
-    // TODO: Remove event listener when transition is completed
   };
 
   /**
@@ -82,30 +70,28 @@ App.header = (function() {
         if (bodyEl.hasClass('level-2-open')) {
           // Close Level-2
           bodyEl.removeClass('nav-open');
-          setTimeout(function () {
-            bodyEl.removeClass('level-2-open nav-is-animating');
-          }, 300);
+          bodyEl.removeClass('level-2-open nav-is-animating');
 
         } else {
           bodyEl.removeClass('nav-open');
         }
       } else {
         bodyEl.addClass('nav-open');
+        $primaryLinks.eq(0).focus();
       }
     });
 
     $('.mega-menu-title__level1-link').on('click', (event) => {
 
+      const activeLink = $primaryLinks.filter('.active');
       event.preventDefault();
       if ($(window).width() <= 991) {
         bodyEl.removeClass('level-2-open');
+        activeLink.focus();
       } else {
         console.log('go to CTA');
       }
     });
-
-    window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
-
   };
 
   /**
@@ -114,25 +100,7 @@ App.header = (function() {
   const closeNav = () => {
     $primaryLinks.removeClass('active');
     $megaMenuSections.removeClass('mega-menu__content--active');
-    bodyEl.removeClass('nav-open level-2-open');
-  };
-
-  /**
-  * Breakpoint Change Callback Function
-  * @param { Object} event - MatchMedia Event Object
-  */
-  const onBreakpointChange = (event) => {
-
-    // If Tablet Breakpoint and Up
-    if (event.matches) {
-      console.log('Tablet BP');
-    }
-
-    // Else is Mobile Breakpoint
-    else {
-      console.log('Mobile BP');
-      // closeNav();
-    }
+    bodyEl.removeClass('nav-open level-2-open nav-is-animating');
   };
 
   /**
@@ -140,7 +108,6 @@ App.header = (function() {
   */
   if ($componentClass.length > 0) {
     init();
-
   }
 
 }());
