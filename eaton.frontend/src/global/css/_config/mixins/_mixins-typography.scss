@@ -139,7 +139,7 @@
   line-height: 28px;
 };
 
-@mixin body-copy--desktop {
+@mixin body-copy--desktop { // stylelint-disable-line indentation
   font-family: Arial, sans-serif;
   font-size: 24px;
   font-weight: normal;
@@ -147,7 +147,7 @@
 };
 
 
-@mixin body-copy {
+@mixin body-copy { // stylelint-disable-line indentation
   @include body-copy--mobile;
 
   a {
@@ -172,14 +172,14 @@
   line-height: 17px;
 };
 
-@mixin body-copy-small--desktop {
+@mixin body-copy-small--desktop { // stylelint-disable-line indentation
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 24px;
 };
 
-@mixin body-copy-small {
+@mixin body-copy-small { // stylelint-disable-line indentation
   @include body-copy-small--mobile;
 
   a {
