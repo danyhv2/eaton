@@ -53,11 +53,11 @@
   .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; } }
 
 @media screen and (max-width: 991px) { .level-2-open { overflow: hidden; position: fixed; width: 100%; }
-  .level-2-open .eaton-link-list-primary-nav { left: -100%; }
-  .level-2-open .mega-menu { -webkit-transform: translate(0, 0); transform: translate(0, 0); } }
+  .level-2-open .eaton-link-list-primary-nav { -webkit-transform: translate(-100%, 0); transform: translate(-100%, 0); }
+  .level-2-open .mega-menu { -webkit-transform: translate(0, 0); transform: translate(0, 0); -webkit-transition: -webkit-transform 0.5s ease-in-out; transition: -webkit-transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out; } }
 
 @media screen and (max-width: 991px) { .nav-open { position: fixed; width: 100%; overflow: hidden; }
-  .nav-open .eaton-link-list-primary-nav { height: 100%; overflow: auto; }
+  .nav-open .eaton-link-list-primary-nav { overflow: auto; visibility: visible; opacity: 1; -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.5s ease-in-out; transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.5s ease-in-out; transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.5s ease-in-out; transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out; }
   .nav-open .header-primary-nav__toggle-mobile-menu { -webkit-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; background: #333F48; }
   .nav-open .header-primary-nav__toggle-mobile-menu .icon-hamburger { display: none; }
   .nav-open .header-primary-nav__toggle-mobile-menu .icon-close { display: block; } }

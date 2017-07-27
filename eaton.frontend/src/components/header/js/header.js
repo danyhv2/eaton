@@ -97,10 +97,10 @@ App.header = (function() {
       } else {
         bodyEl.addClass('nav-open');
 
-        // window.setTimeout( (function() {
-        //   console.log('First Link', $primaryLinks.eq(0));
+        // Queue - After JS
+        // $('.eaton-link-list-primary-nav').on('transitionend', function() {
         //   $primaryLinks.eq(0).focus();
-        // }), 40);
+        // });
       }
     });
 

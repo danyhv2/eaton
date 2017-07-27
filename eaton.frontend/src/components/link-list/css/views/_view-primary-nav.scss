@@ -17,17 +17,17 @@
   @include media-mobile-and-tablet {
     position: fixed;
     top: 56px;
+    left: 0;
     bottom: 0;
     width: 100%;
-    left: 0;
-    height: 0;
-    // visibility: hidden;
+    height: 100%;
+    transform: translate(0, 0);
     overflow: hidden;
     background: $color__primary-gray2;
     color: $color__white;
-    transition: height 0.7s ease-in-out, left 0.7s ease-in-out;
     margin-bottom: 80px;
-    // opacity: 0;
+    opacity: 0;
+    visibility: hidden;
 
     &__headline {
       display: block;
