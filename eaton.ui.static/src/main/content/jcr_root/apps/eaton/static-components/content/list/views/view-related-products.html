@@ -5,7 +5,7 @@
     <ol data-sly-list.slide="${data}" class="carousel-indicators">
         <li data-target=".carousel-component"
             data-slide-to="${slideList.index}"
-            class="carousel-component__dots carousel-component__dots--gray inactive-gray ${slideList.index == 0 ? 'active' : ''}"></li>
+            class="carousel-component__dots carousel-component__dots--gray ${slideList.index == 0 ? 'active' : ''}"></li>
     </ol>
 
      <!--Carousel for Desktop -->
@@ -39,14 +39,14 @@
 </div>
 
 <!--Mobile Carousel-->
-<div data-sly-use.data="${'../data/view-related-products-data.js'}" class="related-products-component carousel-component carousel slide container mobile-carousel visible-xs" data-ride="carousel" data-pause="hover">
+<div data-sly-use.data="${'../data/view-related-products-data.js'}" class="related-products-component carousel-component carousel-component1 carousel slide container mobile-carousel visible-xs" data-ride="carousel" data-pause="hover">
 
     <!-- Indicators -->
-    <ol data-sly-list.data="${data}" class="carousel-indicators">
+    <ol data-sly-list.data="${data}" class="carousel-indicators carousel-component--indicators">
         <sly data-sly-list.card="${data.cards}">
-            <li data-target=".carousel-component"
+            <li data-target=".carousel-component1"
                 data-slide-to="${cardList.index}"
-                class="carousel-component__dots carousel-component__dots--gray inactive-gray ${cardList.index == 0 ? 'active' : ''}"></li>
+                class="carousel-component__dots carousel-component__dots--gray ${cardList.index == 0 ? 'active' : ''}"></li>
         </sly>
     </ol>
 
