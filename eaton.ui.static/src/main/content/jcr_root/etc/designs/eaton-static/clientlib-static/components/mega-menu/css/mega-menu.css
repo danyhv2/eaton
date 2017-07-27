@@ -19,8 +19,8 @@
 
 @media screen and (max-width: 991px) { .mega-menu { position: fixed; top: 56px; bottom: 0; -webkit-transition: -webkit-transform 0.7s ease-in-out; transition: -webkit-transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out; transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out; overflow: auto; -webkit-transform: translate(100%); transform: translate(100%); visibility: hidden; }
   .mega-menu__row { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-  .mega-menu__row .mega-menu__col { margin-bottom: 30px; }
-  .mega-menu__row .mega-menu__col:last-child { margin-bottom: 0; } }
+  .mega-menu__row .mega-menu__col { display: none; }
+  .mega-menu__row .mega-menu__col.mega-menu__col--flex { display: block; margin-bottom: 30px; } }
 
 @media screen and (min-width: 992px) { .mega-menu { opacity: 0; visibility: hidden; -webkit-transition: opacity 0.1s ease-in-out; transition: opacity 0.1s ease-in-out; }
   .mega-menu__col { margin: 0 15px; }
