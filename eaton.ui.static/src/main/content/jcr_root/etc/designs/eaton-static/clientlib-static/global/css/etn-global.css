@@ -122,7 +122,9 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 h5 a, .b-heading-h5 a { color: #005EB8; }
 
-.b-h4-link { font-size: 1.375em; color: #005EB8; }
+.b-h4-link { font-size: 1.375em; color: #005EB8; font-weight: bold; }
+
+.b-h4-link:hover, .b-h4-link:focus, .b-h4-link:active { text-decoration: none; color: #005EB8; }
 
 @media screen and (min-width: 992px) { .b-h4-link { font-size: 1.625em; } }
 

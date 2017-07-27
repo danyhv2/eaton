@@ -50,6 +50,7 @@ module.exports = {
       'ignore': ['attribute', 'class']
     }],
     'string-no-newline': true,
+    'selector-max-compound-selectors': 4,
 
 
     // Disabled Rules
