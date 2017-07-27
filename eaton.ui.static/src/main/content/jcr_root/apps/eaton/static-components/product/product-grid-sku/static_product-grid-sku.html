@@ -1,4 +1,4 @@
-<sly data-sly-use.data="${ '../data/view-simple-data.js' @testdata=properties.testdata }">
+<sly data-sly-use.data="${ '../data/product-grid-sku-data.js' @testdata=properties.testdata }">
 
   <div class="search-results-simple">
     <div class="container">
@@ -13,7 +13,7 @@
               <div class="search-results-simple__sort-options">${ 'Sort by' @ i18n }</div>
             </div>
 
-            <div data-sly-test="${ data.results.activeFilters.length }"
+            <div data-sly-test="${ data.results.activeFilters.length > 0 }"
               class="search-results-simple__header-bottom">
 
               <div data-sly-list.filter="${ data.results.activeFilters }"
@@ -79,39 +79,20 @@
             <div data-sly-list="${ data.results.items }"
               class="results-list__content">
 
-              <sly data-sly-test="${ item.contentType == 'family' }">
-                <sly data-sly-use.tpl="views/partials/content-type--family.html">
-              		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
-              	</sly>
-              </sly>
-
-              <sly data-sly-test="${ item.contentType == 'sku' }">
-                <sly data-sly-use.tpl="views/partials/content-type--family.html">
-              		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
-              	</sly>
-              </sly>
-
-              <sly data-sly-test="${ item.contentType == 'article' }">
-                <sly data-sly-use.tpl="views/partials/content-type--article.html">
-              		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
-              	</sly>
-              </sly>
-
-              <sly data-sly-test="${ item.contentType == 'resource' }">
-                <sly data-sly-use.tpl="views/partials/content-type--resource.html">
-              		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
-              	</sly>
-              </sly>
+              <sly data-sly-use.tpl="partials/product-card-sku.html">
+            		<sly data-sly-call="${ tpl.item @ data=item }"></sly>
+            	</sly>
 
             </div>
 
-            <div class="results-list__bottom text-center">
+            <div class="results-list__bottom">
+              <div class="results-list__disclaimer">${ 'List Prices are not a reflection of the actual product Stree Price. Check with your Eaton reseller or partner to get actual pricing.' @ i18n }</div>
               <div class="results-list__actions text-center">
                 <button class="b-button b-button__primary b-button__primary--light" role="button">${ 'Load More' @ i18n }</button>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
 

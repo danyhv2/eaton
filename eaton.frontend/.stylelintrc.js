@@ -70,6 +70,7 @@ module.exports = {
     'scss/dollar-variable-colon-space-after': null,
     'scss/dollar-variable-pattern': null,
     'scss/percent-placeholder-pattern': null,
+    'scss/at-mixin-pattern': null,
     'scss/operator-no-unspaced': true,
     'plugin/selector-bem-pattern': {
       'componentName': '(([a-z0-9]+(?!-$)-?)+)',

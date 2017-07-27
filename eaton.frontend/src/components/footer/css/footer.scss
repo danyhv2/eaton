@@ -18,7 +18,7 @@
   padding: 60px 0;
 
   .eaton-text-default__content {
-    @extend %body-copy-small;
+    @include body-copy-small;
 
     // override the default font size for /text component
     p {

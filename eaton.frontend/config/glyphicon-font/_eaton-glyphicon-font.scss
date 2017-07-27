@@ -19,10 +19,10 @@
   line-height: 0;
 
   &::before {
-    @extend %<%= className %>::before;
+    @extend %glyphicon-font-family;
   }
 }
 
 <% _.each(glyphs, function(glyph) { %>
-.<%= className %>-<%= glyph.name %>::before { @extend %<%= className %>-<%= glyph.name %>::before; }
+.<%= className %>-<%= glyph.name %>::before { @extend %glyphicon-<%= glyph.name %>; }
 <% }); %>
