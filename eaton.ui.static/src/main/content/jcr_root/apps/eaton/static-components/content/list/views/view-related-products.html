@@ -12,7 +12,7 @@
     <div data-sly-list="${data}" class="carousel-component-slide carousel-inner hidden-xs" role="listbox">
         <div class="item ${itemList.index == 0 ? 'active' : ''} hidden-xs">
             <div class="row" data-sly-list="${item.cards}">
-                <a href="${item.link}" role="link">
+                <a href="${item.link}" role="link" target="${item.target}">
                     <div class="col-sm-3">
                         <div class="col-xs-12 related-products-component__card">
                             <img class="carousel-component-slide__image" src="${item.image}" alt="${item.alt}">
@@ -56,7 +56,7 @@
     <div data-sly-list.data="${data}" class="carousel-component-slide carousel-inner visible-xs" role="listbox">
         <sly  data-sly-list.card="${data.cards}">
             <div class="item">
-                <a href="${card.link}" role="link">
+                <a href="${card.link}" role="link" target="${card.target}">
                     <div class="col-xs-12 related-products-component__card">
                         <img class="carousel-component-slide__image" src="${card.image}" alt="${card.alt}">
                     </div>
