@@ -92,6 +92,14 @@
 .results-list {
   padding-bottom: $spacing__lg / 2;
 
+  &__disclaimer {
+    border-top: 3px solid $color__secondary-gray5;
+    padding: 20px 0;
+  }
+
+  &__actions {
+    margin-top: 40px;
+  }
 
   //-----------------------------------
   // Media-Query: Desktop & Desktop Large
