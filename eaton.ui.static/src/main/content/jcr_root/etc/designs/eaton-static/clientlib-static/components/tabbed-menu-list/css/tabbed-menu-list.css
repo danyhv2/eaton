@@ -19,5 +19,4 @@
   .eaton-tabbed-menu-list__title.desktop { display: block; }
   .eaton-tabbed-menu-list__title.active { border-bottom: 2px solid #005EB8; }
   .eaton-tabbed-menu-list__item { border-color: transparent; }
-  .eaton-tabbed-menu-list__item.tab-pane { display: block; }
   .eaton-tabbed-menu-list__item a { padding-bottom: 50px; } }
