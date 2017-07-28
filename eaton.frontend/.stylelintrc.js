@@ -31,7 +31,7 @@ module.exports = {
     'declaration-no-important': true,
     'indentation': [2],
     'max-empty-lines': 5,
-    'max-nesting-depth': 4,
+    'max-nesting-depth': 5,
     'media-feature-name-no-vendor-prefix': true,
     'no-duplicate-selectors': true,
     'no-eol-whitespace': true,
