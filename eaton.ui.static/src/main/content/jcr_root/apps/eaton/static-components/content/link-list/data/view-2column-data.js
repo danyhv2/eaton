@@ -7,24 +7,19 @@ use(function () {
       data = {
         links: [
           {
-            text: '9PX700RT',
-            url: '#'
+            text: '9PX700RT'
           },
           {
-            text: '9PX1000RT',
-            url: '#'
+            text: '9PX1000RT'
           },
           {
-            text: '9PX1500RT',
-            url: '#'
+            text: '9PX1500RT'
           },
           {
-            text: '9PX1500RTN',
-            url: '#'
+            text: '9PX1500RTN'
           },
           {
-            text: '9PX2000RT',
-            url: '#'
+            text: '9PX2000RT' 
           }
         ]
       };
@@ -33,19 +28,23 @@ use(function () {
         links: [
           {
             text: 'Competitive cross reference tool',
-            url: '#'
+            url: '#',
+            target: '_self'
           },
           {
             text: 'Order a catalog',
-            url: '#'
+            url: '#',
+            target: '_self'
           },
           {
             text: 'Rack selection checklist',
-            url: '#'
+            url: '#',
+            target: '_self'
           },
           {
             text: 'Find a ditributor',
-            url: '#'
+            url: '#',
+            target: '_self'
           }
         ]
       };

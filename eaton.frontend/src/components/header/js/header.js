@@ -7,15 +7,25 @@ let App = window.App || {};
 
 App.header = (function() {
 
+  // Variable Declarations
   const $componentClass = $('.eaton-header');
   const bodyEl = $('body');
-  let $primaryLinks = $componentClass.find('.eaton-link-list-primary-nav__items a');
-  let $megaMenu = $componentClass.find('.mega-menu');
-  let $megaMenuSections = $componentClass.find('.mega-menu__content');
+  const windowEl = $(window);
+
+  const $primaryLinks = $componentClass.find('.eaton-link-list-primary-nav__items a');
+  const $megaMenu = $componentClass.find('.mega-menu');
+  const $megaMenuSections = $componentClass.find('.mega-menu__content');
+  const megaMenuTitle = $componentClass.find('.mega-menu-title__level1-link');
+  const closeMegaMenuBtn = $componentClass.find('.mega-menu-title__close-menu');
+  const toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
+
+  // Check AEM Author Mode
   const isAEMAuthorMode = (window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode()) ? true : false;
 
+  /**
+  * Init
+  */
   const init = () => {
-
     // If not in AEM Author Mode - initialize scripts
     if (!isAEMAuthorMode) {
       addEventListeners();
@@ -23,12 +33,22 @@ App.header = (function() {
   };
 
   /**
+  * Close the Nav
+  */
+  const closeNav = () => {
+    $primaryLinks.removeClass('active');
+    $megaMenuSections.removeClass('mega-menu__content--active');
+    bodyEl.removeClass('nav-open level-2-open nav-is-animating');
+  };
+
+  /**
    * Bind All Event Listeners
    */
   const addEventListeners = () => {
 
-    $(window).on('scroll', (event) => {
-      let scrollTop = $(window).scrollTop();
+    // Sticky Navigation Behaviors - Handle Scroll
+    windowEl.on('scroll', (event) => {
+      let scrollTop = windowEl.scrollTop();
       let headerHeight = 144;
 
       if ( scrollTop > (headerHeight)) {
@@ -38,7 +58,7 @@ App.header = (function() {
       }
     });
 
-
+    // Handle Mega Menu Behaviors - Open Mega-Menu
     $primaryLinks.on('click', (event) => {
       event.preventDefault();
 
@@ -55,13 +75,15 @@ App.header = (function() {
       $megaMenu.find(`[data-target="${ activeCategory }"]`).find('a').eq(0).focus();
     });
 
-    $('.mega-menu-title__close-menu').on('click', (event) => {
+    // Handle Mega Menu Behaviors - Close Mega-Menu (Desktop)
+    closeMegaMenuBtn.on('click', (event) => {
       // Close the mega menu
       event.preventDefault();
       closeNav();
     });
 
-    $('.header-primary-nav__toggle-mobile-menu').on('click', (event) => {
+    // Handle Mobile Menu Behaviors - Open/Close
+    toggleMobileMenuBtn.on('click', (event) => {
       // Close the mega menu
       event.preventDefault();
       if (bodyEl.hasClass('nav-open')) {
@@ -81,26 +103,15 @@ App.header = (function() {
       }
     });
 
-    $('.mega-menu-title__level1-link').on('click', (event) => {
-
+    megaMenuTitle.on('click', (event) => {
       const activeLink = $primaryLinks.filter('.active');
-      event.preventDefault();
-      if ($(window).width() <= 991) {
+      if (windowEl.width() <= 991) {
+        event.preventDefault();
+
         bodyEl.removeClass('level-2-open');
         activeLink.focus();
-      } else {
-        console.log('go to CTA');
       }
     });
-  };
-
-  /**
-  * Close the Nav
-  */
-  const closeNav = () => {
-    $primaryLinks.removeClass('active');
-    $megaMenuSections.removeClass('mega-menu__content--active');
-    bodyEl.removeClass('nav-open level-2-open nav-is-animating');
   };
 
   /**
