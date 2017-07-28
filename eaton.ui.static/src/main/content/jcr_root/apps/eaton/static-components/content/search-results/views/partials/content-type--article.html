@@ -12,7 +12,15 @@
         <a href="${ data.contentItem.link.url @ context='uri' }"
           class="results-list-module__name-link"
           target="${ data.contentItem.link.target }"
-        >${ data.contentItem.name }</a>
+        >
+          <span class="name-label">${ data.contentItem.name }</span>
+
+          <!--/* Add Icon for External Links */-->
+          <sly data-sly-test="${ data.contentItem.articleType == 'external' }">
+            <i class="icon icon-link-external" aria-hidden="true"></i>
+          </sly>
+
+        </a>
       </h4>
 
       <div data-sly-test="${ data.contentItem.date }"
@@ -24,6 +32,7 @@
         <a href="${ data.contentItem.link.url @ context='uri' }"
           target="${ data.contentItem.link.target }"
           class="results-list-module__url-link"
+          aria-label="${ 'Go to' @i18n } ${ data.contentItem.link.text }"
         >${ data.contentItem.link.text }</a>
       </div>
 

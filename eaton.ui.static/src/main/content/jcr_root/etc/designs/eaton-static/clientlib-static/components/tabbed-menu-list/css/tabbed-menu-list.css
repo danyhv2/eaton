@@ -1,0 +1,23 @@
+.eaton-tabbed-menu-list__title span::before { content: "\EA21"; }
+
+.eaton-tabbed-menu-list__title.collapsed span::before { content: "\EA22"; }
+
+.eaton-tabbed-menu-list__title { display: block; padding: 30px 0; }
+
+.eaton-tabbed-menu-list__title.mobile { display: block; }
+
+.eaton-tabbed-menu-list__title.desktop { display: none; }
+
+.eaton-tabbed-menu-list__item { padding: 0; border-bottom: 1px solid #F8F8F8; }
+
+.eaton-tabbed-menu-list__item a { display: block; padding-bottom: 30px; }
+
+.eaton-tabbed-menu-list__item.tab-pane { display: none; }
+
+@media screen and (min-width: 992px) { .eaton-tabbed-menu-list__title { padding: 50px 0; }
+  .eaton-tabbed-menu-list__title.mobile { display: none; }
+  .eaton-tabbed-menu-list__title.desktop { display: block; }
+  .eaton-tabbed-menu-list__title.active { border-bottom: 2px solid #005EB8; }
+  .eaton-tabbed-menu-list__item { border-color: transparent; }
+  .eaton-tabbed-menu-list__item.tab-pane { display: block; }
+  .eaton-tabbed-menu-list__item a { padding-bottom: 50px; } }

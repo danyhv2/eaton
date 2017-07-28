@@ -142,6 +142,11 @@
 
   &__name {
     margin-bottom: 5px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
+
+    // External Link Icon
+    .icon {
+      margin-left: 10px;
+    }
   }
 
   &__description,
@@ -193,7 +198,7 @@
   //-----------------------------------
   @include media-desktop-and-up {
 
-    margin-bottom: $spacing__md;
+    margin-bottom: 40px; // Visually 60px Bottom Margin
 
     // Product Item with Image (Thumbnail)
     //--------------

@@ -6,26 +6,19 @@ background:#FFFFFF;
 #sitemap-content {
 
 }
-/* #sitemap-content  .page-title{ */
-	/* padding:35px 0; */
-    /* font-family: Eaton; */
-	/* color:  #333f48; */
-	/* font-size: 49.82px; */
-	/* font-weight: 500; */
-	/* /* line-height: 61.777px; */ */
-	/* transform: scaleY(1.0037); */
-/* } */
+
 #sitemap-content a{
 	text-decoration:none;
-
+	color:#005EB8 !important;
 }
+
 #sitemap-content  a:hover, #sitemap-content  a:focus {
     text-decoration:none;
 
 }
 
 #sitemap-content hr{
-	border-color: var(--Gray5);
+	border-color: #EEF0F2;
     margin-bottom:0px;
     margin-top:30px;
 }
@@ -35,6 +28,10 @@ background:#FFFFFF;
 	margin-left: 30px;
 
 } 
+
+.sitemapPage a{
+	color:#005EB8 !important;
+}
 
 /* Desktop Style ends here */
 
@@ -54,4 +51,9 @@ background:#FFFFFF;
 			width: 100% !important;
         }
 
+}
+
+
+.sitemapPage .page-title{
+	padding:0 !important;
 }
