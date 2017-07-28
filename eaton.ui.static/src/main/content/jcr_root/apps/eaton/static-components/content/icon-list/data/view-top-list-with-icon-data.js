@@ -8,28 +8,29 @@ use(function () {
 	    	headline: 'How to buy from Eaton',
 			items: [
 				{
-					icon: 'list-checkmark',
+					// image: '/content/dam/eaton/images/edit_orange_icon.png',
+					image: '/content/dam/eaton/images/edit_orange_icon.png',
 					title: 'Register product',
 					link: '#',
 					target: '_self',
 					text: 'Registering hepl us keep you up-to-date with your product.'
 				},
 				{
-					icon: 'download',
+					image: '/content/dam/eaton/images/download_orange_icon.png',
 					title: 'Download list/firmware',
 					link: '#',
 					target: '_self',
 					text: 'Optimize performance with the latest patch.'
 				},
 				{
-					icon: 'phone',
+					image: '/content/dam/eaton/images/faq_orange_icon.png',
 					title: 'Help center',
 					link: '#',
 					target: '_self',
 					text: 'Still have questions? We&quote;ve got the answers.'
 				},
 				{
-					icon: 'book',
+					image: '/content/dam/eaton/images/edit_orange_icon.png',
 					title: 'Help center',
 					link: '#',
 					target: '_self',
@@ -45,56 +46,56 @@ use(function () {
 					title: 'Our power managment portfolio'
 				},
 				{
-					icon: 'list-checkmark',
+					image: '/content/dam/eaton/images/edit_orange_icon.png',
 					title: 'Register product',
 					link: '#',
 					target: '_self',
 					text: 'Registering hepl us keep you up-to-date with your product.'
 				},
 				{
-					icon: 'download',
+					image: '/content/dam/eaton/images/download_orange_icon.png',
 					title: 'Download list/firmware',
 					link: '#',
 					target: '_self',
 					text: 'Optimize performance with the latest patch.'
 				},
 				{
-					icon: 'help',
+					image: '/content/dam/eaton/images/faq_orange_icon.png',
 					title: 'Help center',
 					link: '#',
 					target: '_self',
 					text: 'Still have questions? We&quote;ve got the answers.'
 				},
 				{
-					icon: 'list-checkmark',
+					image: '/content/dam/eaton/images/edit_orange_icon.png',
 					title: 'Register product',
 					link: '#',
 					target: '_self',
 					text: 'Registering hepl us keep you up-to-date with your product.'
 				},
 				{
-					icon: 'download',
+					image: '/content/dam/eaton/images/download_orange_icon.png',
 					title: 'Download list/firmware',
 					link: '#',
 					target: '_self',
 					text: 'Optimize performance with the latest patch.'
 				},
 				{
-					icon: 'help',
+					image: '/content/dam/eaton/images/faq_orange_icon.png',
 					title: 'Help center',
 					link: '#',
 					target: '_self',
 					text: 'Still have questions? We&quote;ve got the answers.'
 				},
 				{
-					icon: 'download',
+					image: '/content/dam/eaton/images/download_orange_icon.png',
 					title: 'Download list/firmware',
 					link: '#',
 					target: '_self',
 					text: 'Optimize performance with the latest patch.'
 				},
 				{
-					icon: 'help',
+					image: '/content/dam/eaton/images/faq_orange_icon.png',
 					title: 'Help center',
 					link: '#',
 					target: '_self',
@@ -106,21 +107,21 @@ use(function () {
 		data = {
 			items: [
 				{
-					icon: 'list-checkmark',
+					image: '/content/dam/eaton/images/edit_orange_icon.png',
 					title: 'Register product',
 					link: '#',
 					target: '_self',
 					text: 'Registering hepl us keep you up-to-date with your product.'
 				},
 				{
-					icon: 'download',
+					image: '/content/dam/eaton/images/download_orange_icon.png',
 					title: 'Download list/firmware',
 					link: '#',
 					target: '_self',
 					text: 'Optimize performance with the latest patch.'
 				},
 				{
-					icon: 'help',
+					image: '/content/dam/eaton/images/faq_orange_icon.png',
 					title: 'Help center',
 					link: '#',
 					target: '_self',
