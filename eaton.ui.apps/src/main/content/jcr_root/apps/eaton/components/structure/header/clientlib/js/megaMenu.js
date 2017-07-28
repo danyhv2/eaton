@@ -32,7 +32,6 @@ $('#megaMenuOption > li').on('click', function(e){
 	$('.'+$(this).attr('data-menu')).css('display','block');
 
 	$(this).closest('ul').find('li').removeClass('active');
-	
 
 	if($(window).width()<=tabletDeviceWidth)
 	{
@@ -138,12 +137,20 @@ $('.megaMenu .header').on('click', function(){
 
 
 function alignMegaMenu(){
+    var newHeight=null;
+
 	if($(window).width()<=tabletDeviceWidth)
 	{
-        var newHeight=$(window).outerHeight()-$('#header-navigation-bar').outerHeight()-$('#utility-nav-mob').outerHeight()-$('.megaMenu .header').outerHeight();
-        $('.megaMenu .listCntnt').css('height',newHeight-39);
-        $('.megaMenu').css('margin-top',$('#header-navigation-bar').outerHeight())
+		newHeight=$(window).outerHeight()-$('#header-navigation-bar').outerHeight()-$('#utility-nav-mob').outerHeight()-$('.megaMenu .header').outerHeight();		
+        //Commented due to extra margin in mobile view
+		//$('.megaMenu').css('margin-top',$('#header-navigation-bar').outerHeight());		
+         $('.megaMenu .listCntnt').css('height',newHeight-40);
 	}  
+	else
+    {    
+        newHeight=$(window).outerHeight()-$('#header-navigation-bar').outerHeight()-$('#utility-nav').outerHeight()-$('.megaMenu .header').outerHeight();
+    	$('.megaMenu .listCntnt').css('height',newHeight-50);
+    }    
 }
 
 function closeSearchBar(){

@@ -18,40 +18,52 @@
 </sly>
 <template data-sly-template.first>
 <sly data-sly-use.title="com.eaton.platform.core.helpers.TitleHelper">
-
-	<div class="container-full">
+<!--Title Component  -->
+	<div class="container-fixed container-padding">
 		<div class="aem-Grid aem-Grid--12">
-			<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-Grid aem-Grid--12">
+			<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-Grid aem-Grid--12 ">
 				<sly data-sly-test="${properties.view == 'header-with-line'}">
-					<article class="container-full container-padding">
+					<article class="container-full">
 						<div class="aem-Grid aem-Grid--12">
-							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-							<h2 class="${properties.alignment} extraLargeMarginTop" data-sly-element="${properties.headerType}">${properties.jcr:title} </h2>
+							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 ${properties.alignment}">
+								<div class="extraLargeMarginTop smallMarginBottom" data-sly-element="${properties.headerType}">${title.headerTitle} </div>
+								<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 blueLine mediumMarginTop"><span></span></div>
 							</div>
-							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 blueLine mediumMarginTop"><span></span></div>
-						</div>
+						</div>							
 					</article>
 				</sly>
-
-				<sly data-sly-test="${properties.view == 'header-with-by-line'}">
-					<article class="container-full container-padding primary_content_text_only">
+				
+				<sly data-sly-test="${properties.view == 'header-with-by-line'}"><!--Title Component  -->
+					<article class="extraLargeMarginTop primary_content_text_only">
 						<div class="aem-Grid aem-Grid--12">
-							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 eyeBrowSmall">${properties.transCatLabel}, ${title.dateByLine}</div>
+							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 eyeBrowSmall">${properties.transCatLabel}</div>
 							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 ">
-							<h2 class="h2-title header" data-sly-element="${properties.headerType}">${properties.jcr:title}</h2></div>
+							<div class="smallMarginTop smallMarginBottom" data-sly-element="${properties.headerType}">${title.headerTitle}</div>
+							</div>
 							<div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--1 aem-GridColumn--phone--2">
-								<div class="divider smallMarginBottom smallMarginTop"></div>
+								<div class="divider "></div>
 							</div>
 							<div class="clear"></div>
-							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 byLine smallMarginBottom">${properties.transByLineText}</div>
+							<sly data-sly-test="${title.byLineEmpty == 'false'}">
+							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 byLine smallMarginTop">
+								<sly data-sly-test="${title.textByLineEmpty == 'false'}">
+								${properties.transByLineText}, 
+								</sly>
+								<sly data-sly-test="${title.dateByLineEmpty == 'false'}">
+								${title.dateByLine}
+								</sly>
+							</div>
 							<div class="clear"></div>
+							</sly>
 						</div>
 					</article>
 				</sly>
 
-				<sly data-sly-test="${properties.view == 'header-only'}">
-					<div class="moreInfoTitle smallPaddingTop">
-					<div class="eyeBrowSmall" data-sly-element="${properties.headerType}">${properties.jcr:title} </div>
+				<sly data-sly-test="${properties.view == 'header-only'}"><!--Title Component  header only-->
+					<!--<div class="smallPaddingTop mediumMarginTop">
+					 <div class="eyeBrowSmall" data-sly-element="${properties.headerType}">${title.headerTitle} </div> -->
+					 <div class="mediumMarginTop TextComponent-header-only">
+					 <div data-sly-element="${properties.headerType}">${title.headerTitle}</div>
 					</div>
 				</sly>
 
@@ -64,7 +76,7 @@
 
 	<div data-sly-test="${properties.hidecomponent != 'hide-component'}">
 	
-		<sly data-sly-test="${wcmmode.disabled}">
+		<sly data-sly-test="${wcmmode.disabled || wcmmode.preview}"><!--Title Component  -->
 
 		<div data-sly-call="${first}"></div>
 		</sly>

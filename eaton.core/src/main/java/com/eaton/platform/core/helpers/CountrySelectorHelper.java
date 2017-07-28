@@ -20,26 +20,16 @@ import com.eaton.platform.core.services.AdminService;
 import com.eaton.platform.core.services.EatonConfigService;
 import com.eaton.platform.core.util.CommonUtil;
 
-/**
- * The Class CountrySelectorHelper.
- */
 public class CountrySelectorHelper extends EatonAbstractUseBean {
 	
 	/** The Constant LOGGER. */
     private static final Logger LOGGER = LoggerFactory.getLogger(CountrySelectorHelper.class);
-    
-    /** The country selector bean. */
     private CountrySelectorBean countrySelectorBean;
-    
-    /** The view. */
     private String view;
 
-	/* (non-Javadoc)
-	 * @see com.eaton.platform.core.bean.EatonAbstractUseBean#setComponentValues()
-	 */
 	@Override
 	public void setComponentValues() {
-		LOGGER.debug("CountrySelectorHelper :: setComponentValues() :: Start");		
+		LOGGER.debug("Entered into setComponentValues method");
 		countrySelectorBean = new CountrySelectorBean();
 		EatonConfigService configService = slingHelper.getService(EatonConfigService.class);
 		AdminService adminService = slingHelper.getService(AdminService.class);
@@ -73,24 +63,14 @@ public class CountrySelectorHelper extends EatonAbstractUseBean {
 		} catch (ParseException e) {
 			LOGGER.error("Parse Exception", e);
 		}
-		LOGGER.debug("CountrySelectorHelper :: setComponentValues() :: Exit");	
+		LOGGER.debug("Exit from setComponentValues method");
 		
 	}
 
-	/**
-	 * Gets the country selector bean.
-	 *
-	 * @return the country selector bean
-	 */
 	public CountrySelectorBean getCountrySelectorBean() {
 		return countrySelectorBean;
 	}
 
-	/**
-	 * Gets the view.
-	 *
-	 * @return the view
-	 */
 	public String getView() {
 		return view;
 	}

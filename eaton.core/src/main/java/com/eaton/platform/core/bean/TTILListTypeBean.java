@@ -13,8 +13,6 @@ public class TTILListTypeBean {
 
 	private String pagePath;
 	
-	private String newWindowManual;
-	
 	private String eyebrow;
 	
 	private String publicationDate;
@@ -211,13 +209,4 @@ public class TTILListTypeBean {
 		this.altTxt = altTxt;
 	}
 
-	public String getNewWindowManual() {
-		return newWindowManual;
-	}
-
-	public void setNewWindowManual(String newWindowManual) {
-		this.newWindowManual = newWindowManual;
-	}
-	
-	
 }

@@ -2,29 +2,39 @@
 
 .hero,
 .sec_hero,
-.sec_hero_with_description {
+.sec_hero_with_description,
+.hero-product-category{
     position: relative; 
     background-size: cover;
 
 }
 .hero .background-image,
 .sec_hero .background-image,
-.sec_hero_with_description .background-image {
-    min-height: 100% !important;
-    height: 100% !important;
-    width: 100% !important;
+.sec_hero_with_description .background-image,
+.hero-product-category .background-image
+{
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
 }
+.hero-product-category .h1Hero{
+            line-height:1.192em !important;
+			font-size:3.25em !important;
+            }
 .overlay {
     position: absolute;
-    color: #fff;
-    top: 10%;
+    color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
 }
 .sec_hero .overlay{
-top: 50%;
+	top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 .hero_button {
 	text-align:center;
     margin-left:auto;
@@ -44,61 +54,172 @@ top: 50%;
     margin-top: 10px;
     font-size: 1.25em;
 }
+.hero-product-category .hero-line{
+	height:3px;
+	background:#FFFFFF;  
+	width:13% !important;
+	margin-left:0px !important;
+	margin-right:0px !important;
+    
+}
 
-@media only screen and (max-width: 768px) {
-
-    .see_more {
-        display: block;
+.hero .hero-line,
+.sec_hero .hero-line{
+	height:3px;
+	background:#FFFFFF;  
+	width:13% !important;
+	margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-bottom:0px;
+    
+}
+ .hero-product-category-secondary-landing .hero-product-category .background-image{
+	    height: 359px;
+    	width: 100%;
+    	border:0;
     }
+ .hero-product-category-secondary-landing .hero-product-category .overlay a:hover{
+	color:#FFFFFF;
+}
+ .hero-product-category-secondary-landing .hero-line {
+	color:#FFFFFF;
+}
+.hero-product-category-secondary-landing .background-image-secondary-landing-desktop{
+	display:block;
+}
+.hero-product-category-secondary-landing .background-image-secondary-landing-mob{
+	display:none;
+}                                    
+    @media screen and  (max-width: 992px){
 
 
+       .hero-product-category .h1Hero{
+			margin-top:40px !important;
+            line-height:1.152em !important;
+			font-size:2.06em !important;
+            }
+            
+        .hero-product-category .hero-line{
+        	margin-top:40px !important;
+            }
+        .hero-product-category .hero-description-copy{
+        margin-top:40px !important;
+            }
+
+		.hero,
+            .sec_hero,
+            .sec_hero_with_description{
+                z-index:-1;
+            }
 
 
 }
 
 
 
+  @media only screen and (max-width: 600px) {
+		.hero-line{
+			display:none;		
+		}
+  }
 
-/* iPhone 4, 5, 5s landscape Style starts here */
-@media (max-width:767px) and (orientation: portrait)
+
+
+                       
+/*release3*/
+
+.cat-hero-title                                        
 {
-
-       .overlay {
-    top: 10%;
-    left: 0%;
-    transform: translate(0%,0%);
+	text-align:center;
 }
 
+.storyBoardOverlay .smallPaddingTop
+{
+	padding-top:30px !important;
+ }
+.cat-desc
+{
+	font-size: 1.25em;
+    line-height: 1.6em;
+	text-align:center;  
+	width: 100%;;
+    font-family: Arial                                    
 }
-@media (max-width: 767px) and (orientation: landscape) {
 
-    .hero-down-arrow {
-        display: none;
-        text-align: center;
-        margin-top: 184px;
-        font-size: 1.25em;
+ @media only screen and (min-width: 601px) and (max-width: 992px){
+
+.storyBoardOverlay .smallPaddingTop
+{
+	padding-top:60px !important;
+ }
+
+.cat-desc
+{
+	font-size: 1.750em;
+    line-height: 1.571em;                                    
+}                                        
+ }
+@media only screen and (max-width: 600px){
+.storyBoardOverlay .smallPaddingTop
+{
+	padding-top:60px !important;
+ }
+.cat-desc
+{
+	font-size: 1.750em;
+    line-height: 1.571em;                                  
+}                                             
+}
+/*release 3 career*/       
+
+
+
+.career-hero .hero-product-category .background-image{
+    height: auto;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+.career-hero .hero-product-category
+{
+	height:auto;
+}
+.hero-product-category-secondary-landing .hero-product-category .background-image{
+	    height: auto;
+
     }
-
+.hero-product-category-secondary-landing .background-image-secondary-landing-desktop{
+	display:none;
 }
-/* iPad portrait Style starts here */
-
-@media only screen and (min-width: 768px) and (max-width: 1000px) and (orientation: portrait) {
-
-.overlay {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.hero-product-category-secondary-landing .background-image-secondary-landing-mob{
+	display:block;
 }
 }
-/* iPad portrait Style ends here */
-/* iPad landscape Style starts here */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (max-width: 992px){
 
-    .hero,
-    .sec_hero,
-    .sec_hero_with_description {
-        /*height: 530px;*/
-    }
+	.career-hero .hero-product-category .hero-description-copy   
+	{
+	    margin-top: 40px !important;
+	 }   
+	.career-hero .smallMarginTop
+	{
+	    margin-top: 40px !important;
+	 }                     
+	.career-hero .hero-product-category .background-image{
+		    filter: brightness(80%);
+	}
+
 }
-/* iPad landscape Style ends here */
+
+
+@media only screen and (max-width: 375px){
+	.hero-description-copy   
+	{
+		padding-left:0 !important;
+		padding-right:0 !important;
+	}
+	
+}
+

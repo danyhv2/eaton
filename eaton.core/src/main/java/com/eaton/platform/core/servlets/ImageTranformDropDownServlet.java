@@ -35,39 +35,31 @@ import com.eaton.platform.core.services.AdminService;
 
 /**
  * This servlet pre-populates the Image Transformation Content Id drop-down field
- * author - TCS.
+ * author - TCS
  */
-@SlingServlet(resourceTypes = "/ecom/content/imageTransform", metatype = false)
+@SlingServlet(resourceTypes = "/eaton/content/imageTransform", metatype = false)
 
 public class ImageTranformDropDownServlet extends SlingSafeMethodsServlet {
 
-	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
-	
-	/** The Constant LOG. */
 	private static final Logger LOG = LoggerFactory.getLogger(BCContentIdDropDownServlet.class);
 	
-	/** The admin service. */
+	// AdminService reference
 	@Reference
 	AdminService adminService;
 	
-	/**  Service to get OSGi configurations. */
+	/** Service to get OSGi configurations */
     @Reference
     private ConfigurationAdmin configAdmin;
     
-    /** The Constant NAME_PROPERTY. */
     private static final String NAME_PROPERTY = "name";
     
-    /** The Constant CONFIG_PATH. */
     private static final String CONFIG_PATH = "/apps/system/config";
 		
-	/* (non-Javadoc)
-	 * @see org.apache.sling.api.servlets.SlingSafeMethodsServlet#doGet(org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)
-	 */
 	@Override
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
 
-		LOG.debug("ImageTranformDropDownServlet :: doGet() :: Start");
+		LOG.debug("******** ImageTranformDropDownServlet servlet execution started ***********");
 		// get admin resource resolver to resolve resource under /etc/cloudservices
 		ResourceResolver adminResourceResolver = adminService.getReadService();
 		// set fallback
@@ -134,7 +126,9 @@ public class ImageTranformDropDownServlet extends SlingSafeMethodsServlet {
 			request.setAttribute(DataSource.class.getName(), dataSource);
 			
 		}
-		LOG.debug("ImageTranformDropDownServlet :: doGet() :: Exit");
+		
+		LOG.debug("******** ImageTranformDropDownServlet servlet execution ended ***********");
 	}
+
 	
 }

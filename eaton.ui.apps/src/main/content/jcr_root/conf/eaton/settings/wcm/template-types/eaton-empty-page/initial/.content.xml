@@ -3,5 +3,5 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="eaton/components/structure/base/eaton-base-page"/>
+        sling:resourceType="eaton/components/structure/eaton-page"/>
 </jcr:root>

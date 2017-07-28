@@ -1,9 +1,0 @@
-.eaton-logo { padding: 0; }
-
-.eaton-logo__link { display: block; cursor: pointer; }
-
-.eaton-logo__image { height: 100%; }
-
-@media screen and (max-width: 991px) { .eaton-logo__link { width: 200px; height: 65px; } }
-
-@media screen and (min-width: 992px) { .eaton-logo__link { width: 181px; height: 57px; } }

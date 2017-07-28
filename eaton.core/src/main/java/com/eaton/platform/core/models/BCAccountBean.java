@@ -9,21 +9,15 @@ import java.util.List;
  */
 public class BCAccountBean  {
 	
-	/** The acc number. */
 	private String accNumber;
 	
-	/** The acc name. */
 	private String accName;
 	
-	/** The player details. */
 	private List<BCPlayerBean> playerDetails;
 	
-	/** The num of players. */
 	private int numOfPlayers;
 
 	/**
-	 * Gets the acc number.
-	 *
 	 * @return the accNumber
 	 */
 	public String getAccNumber() {
@@ -31,8 +25,6 @@ public class BCAccountBean  {
 	}
 
 	/**
-	 * Sets the acc number.
-	 *
 	 * @param accNumber the accNumber to set
 	 */
 	public void setAccNumber(String accNumber) {
@@ -40,8 +32,6 @@ public class BCAccountBean  {
 	}
 
 	/**
-	 * Gets the acc name.
-	 *
 	 * @return the accName
 	 */
 	public String getAccName() {
@@ -49,8 +39,6 @@ public class BCAccountBean  {
 	}
 
 	/**
-	 * Sets the acc name.
-	 *
 	 * @param accName the accName to set
 	 */
 	public void setAccName(String accName) {
@@ -58,8 +46,6 @@ public class BCAccountBean  {
 	}
 
 	/**
-	 * Gets the player details.
-	 *
 	 * @return the playerDetails
 	 */
 	public List<BCPlayerBean> getPlayerDetails() {
@@ -67,8 +53,6 @@ public class BCAccountBean  {
 	}
 
 	/**
-	 * Sets the player details.
-	 *
 	 * @param playerDetails the playerDetails to set
 	 */
 	public void setPlayerDetails(List<BCPlayerBean> playerDetails) {
@@ -76,8 +60,6 @@ public class BCAccountBean  {
 	}
 
 	/**
-	 * Gets the num of players.
-	 *
 	 * @return the numOfPlayers
 	 */
 	public int getNumOfPlayers() {
@@ -85,8 +67,6 @@ public class BCAccountBean  {
 	}
 
 	/**
-	 * Sets the num of players.
-	 *
 	 * @param numOfPlayers the numOfPlayers to set
 	 */
 	public void setNumOfPlayers(int numOfPlayers) {

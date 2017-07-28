@@ -17,37 +17,34 @@ import com.eaton.platform.core.constants.CommonConstants;
 public final class SocialShareConfigUtil {
 	/** The Constant LOGGER. */
     private static final Logger LOGGER = LoggerFactory.getLogger(SocialShareConfigUtil.class);
+	
     
-    /**
-     * Instantiates a new social share config util.
-     */
     private SocialShareConfigUtil() {
         LOGGER.debug("Inside SocialShareConfigUtil constructor");
     }
+
     
     /**
      * This method populates Brightcove account details like
      * account name, number and invokes populatePlayerList 
-     * method to fetch player list.
-     *
-     * @param ssConfigRes the ss config res
-     * @return the allowed templates
+     * method to fetch player list
+     * @param bcConfigJcrRes
+     * @return
      */
-    public static List<String> getAllowedTemplates(Resource ssConfigRes) throws NullPointerException {
-    	LOGGER.debug("SocialShareConfigUtil :: getAllowedTemplates() :: Start");
+    public static List<String> getAllowedTemplates(Resource ssConfigRes) {
+        LOGGER.debug("Entered into getAllowedTemplates method");
         // local variables
         String[] allowedTemplates = null;
         List<String> allowedTempList = new ArrayList<String>();
         
         Page ssConfigPage = null;
         // check if brightcove accounts are configured
-        try {
         if(null != ssConfigRes){
         	ssConfigPage = ssConfigRes.getParent().adaptTo(Page.class);
         	allowedTemplates = ssConfigPage.getProperties().get(CommonConstants.ALLOWED_TEMPLATE_PROPERTY, String[].class);
         }
         
-    	
+    	try {
     		if(allowedTemplates.length > 0){
             	for(String configuredTemp : allowedTemplates){
             		if(StringUtils.equalsIgnoreCase(configuredTemp, CommonConstants.PAGE_TYPE_HOME_PAGE)){
@@ -61,12 +58,13 @@ public final class SocialShareConfigUtil {
             		}
             	}
             }
-		} catch (NullPointerException e) {
+		} catch (Exception e) {
 			LOGGER.error("Exception occured while getting brightcove account details", e);
 		}
 
-    	LOGGER.debug("SocialShareConfigUtil :: getAllowedTemplates() :: Exit");
+        LOGGER.info("Exited from getAllowedTemplates method");
         return allowedTempList;
     }
     
+       
 }

@@ -17,9 +17,13 @@
     }
     
     
-    .default-text  li:first-child {
+   /*  .default-text  li:first-child {
     	margin-top:30px;    
-    }
+    } */
+
+	 .default-text  h1,h2,h3,h4 {
+    	margin-top:30px;    
+    }    
 
 .default-text  li::before {
     content:"";

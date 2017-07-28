@@ -10,10 +10,7 @@ public class BCPlayerBean  {
 	private String playerId;
 	/** playerName. */
 	private String playerName; 
-	
 	/**
-	 * Gets the player id.
-	 *
 	 * @return the playerId
 	 */
 	public String getPlayerId() {
@@ -21,8 +18,6 @@ public class BCPlayerBean  {
 	}
 
 	/**
-	 * Sets the player id.
-	 *
 	 * @param playerId the playerId to set
 	 */
 	public void setPlayerId(String playerId) {
@@ -30,8 +25,6 @@ public class BCPlayerBean  {
 	}
 
 	/**
-	 * Gets the player name.
-	 *
 	 * @return the playerName
 	 */
 	public String getPlayerName() {
@@ -39,8 +32,6 @@ public class BCPlayerBean  {
 	}
 
 	/**
-	 * Sets the player name.
-	 *
 	 * @param playerName the playerName to set
 	 */
 	public void setPlayerName(String playerName) {

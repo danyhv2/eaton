@@ -24,26 +24,13 @@ import com.day.cq.wcm.api.Page;
 import com.eaton.platform.core.constants.CommonConstants;
 import com.eaton.platform.core.util.CommonUtil;
 
-/**
- * The Class ReferenceHelper.
- */
 public class ReferenceHelper {
-
-	/** The Constant LOGGER. */
-	private static final Logger LOGGER = LoggerFactory.getLogger(ReferenceHelper.class);
 	
-	/** The Constant LIST_TYPE. */
+	private static final Logger LOGGER = LoggerFactory.getLogger(ReferenceHelper.class);
 	private static final String LIST_TYPE = "listType";
-
-	/**
-	 * Gets the mega menu reference.
-	 *
-	 * @param resourceResolver the resource resolver
-	 * @param currentPage the current page
-	 * @return the mega menu reference
-	 */
+	
 	public static List<String> getMegaMenuReference(ResourceResolver resourceResolver, Page currentPage) {
-		LOGGER.debug("ReferenceHelper :: getMegaMenuReference() :: Start");
+		LOGGER.debug("Entered into getMegaMenuReference method");
 		List<String> megaMenuReferenceList = new ArrayList<String>();
 		String homePagePath = CommonUtil.getHomePagePath(currentPage);
 		if(StringUtils.isNotBlank(homePagePath)){
@@ -60,21 +47,12 @@ public class ReferenceHelper {
 				}
 			}
 		}
-		LOGGER.debug("ReferenceHelper :: getMegaMenuReference() :: Exit");
+        LOGGER.debug("Exited from getMegaMenuReference method");
 		return megaMenuReferenceList;		
 	}
 
-	/**
-	 * Gets the reference from child nodes.
-	 *
-	 * @param resourceResolver the resource resolver
-	 * @param currentPage the current page
-	 * @param megaMenuReferenceList the mega menu reference list
-	 * @return the reference from child nodes
-	 */
 	private static void getReferenceFromChildNodes(ResourceResolver resourceResolver, Page currentPage,
 			List<String> megaMenuReferenceList) {
-		LOGGER.debug("ReferenceHelper :: getReferenceFromChildNodes() :: Start");
 		Page homePage = CommonUtil.getHomePage(currentPage);
 		if(homePage != null) {
 			ValueMap homepageVM = homePage.getProperties();
@@ -90,24 +68,24 @@ public class ReferenceHelper {
 							//TODO: This Query needs to be dynamic - Overlay root path to be dynamic
 							String queryNav = "SELECT * FROM [nt:base] AS s WHERE "
 									.concat("ISDESCENDANTNODE(s,'"+ languageOverlayPath +"') ")
-									.concat("AND s.[jcr:content/root/mega_menu/sling:resourceType]='eaton/components/structure/mega-menu' ")
-									.concat("AND s.[jcr:content/root/mega_menu/titlePath]='").concat(primaryNavPage.getPath()).concat("' ")
+									.concat("AND s.[jcr:content/menuoverlay/sling:resourceType]='eaton/components/structure/menu-overlay' ")
+									.concat("AND s.[jcr:content/menuoverlay/titlePath]='").concat(primaryNavPage.getPath()).concat("' ")
 									.concat("AND s.[jcr:content/hideInNav] IS NULL");
 							LOGGER.info("queryNav - " + queryNav);
 							Session session = resourceResolver.adaptTo(Session.class);
-							QueryManager queryManager = session.getWorkspace().getQueryManager();
-							Query query = queryManager.createQuery(queryNav, Query.JCR_SQL2);
-							QueryResult queryResult = query.execute();
-							if (queryResult != null) {
-								RowIterator rowIterator = queryResult.getRows(); // Iteration of the rows returned from the query.
-								String megaMenuRefPagePath = StringUtils.EMPTY;
-								while (rowIterator.hasNext()) {
-									Row row = rowIterator.nextRow();
-									String megaMenuPagePath = row.getPath();
-									megaMenuRefPagePath = megaMenuPagePath.concat("/jcr:content/root/mega_menu");			                        
-									megaMenuReferenceList.add(primaryNavPage.getName().concat(",").concat(megaMenuRefPagePath));
-								}
-							}
+				            QueryManager queryManager = session.getWorkspace().getQueryManager();
+				            Query query = queryManager.createQuery(queryNav, Query.JCR_SQL2);
+				            QueryResult queryResult = query.execute();
+				            if (queryResult != null) {
+			                    RowIterator rowIterator = queryResult.getRows(); // Iteration of the rows returned from the query.
+			                    String megaMenuRefPagePath = StringUtils.EMPTY;
+			                    while (rowIterator.hasNext()) {
+			                        Row row = rowIterator.nextRow();
+			                        String megaMenuPagePath = row.getPath();
+			                        megaMenuRefPagePath = megaMenuPagePath.concat("/_jcr_content/menuoverlay");			                        
+			    		            megaMenuReferenceList.add(primaryNavPage.getName().concat(",").concat(megaMenuRefPagePath));
+			                    }
+			                }
 						} catch (InvalidQueryException e) {
 							LOGGER.error("Query is not valid for this scenario.", e);
 						} catch (RepositoryException e) {
@@ -117,55 +95,36 @@ public class ReferenceHelper {
 				}
 			}
 		}
-		LOGGER.debug("ReferenceHelper :: getReferenceFromChildNodes() :: Exit");
 	}
 
-	/**
-	 * Gets the reference list from manual list.
-	 *
-	 * @param resourceResolver the resource resolver
-	 * @param megaMenuReferenceList the mega menu reference list
-	 * @param primaryNavRes the primary nav res
-	 * @return the reference list from manual list
-	 */
 	private static void getReferenceListFromManualList(ResourceResolver resourceResolver,
-			List<String> megaMenuReferenceList, Resource primaryNavRes) {		
-		LOGGER.debug("ReferenceHelper :: getReferenceListFromManualList() :: Start");
+			List<String> megaMenuReferenceList, Resource primaryNavRes) {
 		Resource manualLinksRes = primaryNavRes.getChild("/manualLinks");
 		if(manualLinksRes != null) {
 			Iterator<Resource> childManualLiksResList = manualLinksRes.listChildren();
 			if(childManualLiksResList != null) {
 				while (childManualLiksResList.hasNext()) {
-					Resource manualLinksResource = childManualLiksResList.next();
-					ValueMap manualLinksResourceVM = manualLinksResource.getValueMap();
-					String primaryNavPagePath  = CommonUtil.getStringProperty(manualLinksResourceVM, "pageLink");
-					String overlayPagePath  = CommonUtil.getStringProperty(manualLinksResourceVM, "overlayPath");
-					Resource navigationRes = resourceResolver.getResource(primaryNavPagePath);
-					Resource overlayPathRes = resourceResolver.getResource(overlayPagePath.concat("_jcr_content/menuoverlay"));
-					String css = StringUtils.EMPTY;
-					String ref = StringUtils.EMPTY;
-					if(navigationRes != null) {
-						css = navigationRes.getName();                                	
-					}
-					if(overlayPathRes != null) {
-						ref = overlayPathRes.getPath();
-					}
-					megaMenuReferenceList.add(css.concat(",").concat(ref));
+		            Resource manualLinksResource = childManualLiksResList.next();
+		            ValueMap manualLinksResourceVM = manualLinksResource.getValueMap();
+		            String primaryNavPagePath  = CommonUtil.getStringProperty(manualLinksResourceVM, "pageLink");
+		            String overlayPagePath  = CommonUtil.getStringProperty(manualLinksResourceVM, "overlayPath");
+		            Resource navigationRes = resourceResolver.getResource(primaryNavPagePath);
+		            Resource overlayPathRes = resourceResolver.getResource(overlayPagePath.concat("_jcr_content/menuoverlay"));
+		            String css = StringUtils.EMPTY;
+		            String ref = StringUtils.EMPTY;
+		            if(navigationRes != null) {
+		            	css = navigationRes.getName();                                	
+		            }
+		            if(overlayPathRes != null) {
+		            	ref = overlayPathRes.getPath();
+		            }
+		            megaMenuReferenceList.add(css.concat(",").concat(ref));
 				}
 			}						
 		}
-		LOGGER.debug("ReferenceHelper :: getReferenceListFromManualList() :: Exit");
 	}
-
-	/**
-	 * Gets the full page drawer reference.
-	 *
-	 * @param resourceResolver the resource resolver
-	 * @param currentPage the current page
-	 * @return the full page drawer reference
-	 */
+	
 	public static String getFullPageDrawerReference(ResourceResolver resourceResolver, Page currentPage) {
-		LOGGER.debug("ReferenceHelper :: getFullPageDrawerReference() :: Start");
 		String countrySelectorRefPath = StringUtils.EMPTY;
 		String fullPageDrawerResPath = getReference(resourceResolver, currentPage, "/jcr:content/root/header/full-page-drawer");
 		Resource fullPageDrawerResource = resourceResolver.getResource(fullPageDrawerResPath);
@@ -173,20 +132,10 @@ public class ReferenceHelper {
 			ValueMap fullPageDrawerResourceVM = fullPageDrawerResource.getValueMap();
 			countrySelectorRefPath = CommonUtil.getStringProperty(fullPageDrawerResourceVM, "reference");
 		}
-		LOGGER.debug("ReferenceHelper :: getFullPageDrawerReference() :: Exit");
 		return countrySelectorRefPath;
 	}
-
-	/**
-	 * Gets the reference.
-	 *
-	 * @param resourceResolver the resource resolver
-	 * @param currentPage the current page
-	 * @param nodePath the node path
-	 * @return the reference
-	 */
+	
 	public static String getReference(ResourceResolver resourceResolver, Page currentPage, String nodePath) {
-		LOGGER.debug("ReferenceHelper :: getReference() :: Start");
 		String reference = StringUtils.EMPTY;
 		String homePagePath = CommonUtil.getHomePagePath(currentPage);
 		if(StringUtils.isNotBlank(homePagePath)) {
@@ -196,7 +145,6 @@ public class ReferenceHelper {
 				reference = resourcePath;
 			}
 		}
-		LOGGER.debug("ReferenceHelper :: getReference() :: Exit");
 		return reference;
 	}
 }

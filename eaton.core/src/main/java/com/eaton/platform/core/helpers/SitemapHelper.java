@@ -8,47 +8,40 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.day.cq.wcm.api.Page;
-import com.eaton.platform.core.bean.EatonAbstractUseBean;
+import com.eaton.platform.core.BaseComponent;
 import com.eaton.platform.core.constants.CommonConstants;
-import com.eaton.platform.core.bean.sitemap.FifthNavigation;
-import com.eaton.platform.core.bean.sitemap.FourthNavigation;
-import com.eaton.platform.core.bean.sitemap.PrimaryNavigation;
-import com.eaton.platform.core.bean.sitemap.SecondaryNavigation;
-import com.eaton.platform.core.bean.sitemap.SitemapBean;
-import com.eaton.platform.core.bean.sitemap.TernaryNavigation;
+import com.eaton.platform.core.models.sitemap.FifthNavigation;
+import com.eaton.platform.core.models.sitemap.FourthNavigation;
+import com.eaton.platform.core.models.sitemap.PrimaryNavigation;
+import com.eaton.platform.core.models.sitemap.SecondaryNavigation;
+import com.eaton.platform.core.models.sitemap.SitemapBean;
+import com.eaton.platform.core.models.sitemap.TernaryNavigation;
 
 /**
  * <html> Description: This class is used in sightly to provide
- * list of sites for the display on presentation layer</html> .
- *
+ * list of sites for the display on presentation layer</html> 
  * @author TCS
  * @version 1.0
  * @since 2017
+ *
  */
-public class SitemapHelper extends EatonAbstractUseBean {
+public class SitemapHelper extends BaseComponent {
 
-	/** The primary nav list. */
 	private List<PrimaryNavigation> primaryNavList;
-	
-	/** The Constant LOG. */
 	private static final Logger LOG = LoggerFactory.getLogger(SitemapHelper.class);
 	
 	/**
-	 * Gets the primary nav list.
-	 *
+	 * 
 	 * @return sitemap List
 	 */
 	public List<PrimaryNavigation> getPrimaryNavList() {
 		return primaryNavList;
 	}
 	
-	/* (non-Javadoc)
-	 * @see com.eaton.platform.core.bean.EatonAbstractUseBean#setComponentValues()
-	 */
 	@Override
-	public void setComponentValues() {
+	public void activate() throws Exception {
 
-		LOG.debug("SitemapHelper :: setComponentValues() :: Started");
+		LOG.info("SitemapHelper Activated :::");
 		primaryNavList = new ArrayList<PrimaryNavigation>();
 	
 			final Page currentSitePage = getCurrentPage().getAbsoluteParent(CommonConstants.HOME_LEVEL);
@@ -82,35 +75,53 @@ public class SitemapHelper extends EatonAbstractUseBean {
 													while (sixthNavChildren.hasNext()) {
 														Page sixthNav = sixthNavChildren.next();
 														if (!sixthNav.isHideInNav()) {
-															sixthNavList.add(setBean(sixthNav));
+															SitemapBean sixthNavBean = new SitemapBean();
+															sixthNavBean.setLinkTitle(sixthNav.getTitle());
+															sixthNavBean.setLinkPath(sixthNav.getPath());
+															sixthNavList.add(sixthNavBean);
 														}
 													}
+													final SitemapBean fifthNavBean = new SitemapBean();
+													fifthNavBean.setLinkTitle(fifthNav.getTitle());
+													fifthNavBean.setLinkPath(fifthNav.getPath());
 													FifthNavigation fifthNavigationBean = new FifthNavigation();
-													fifthNavigationBean.setFifthNav(setBean(fifthNav));
+													fifthNavigationBean.setFifthNav(fifthNavBean);
 													fifthNavigationBean.setSixthNavList(sixthNavList);
 													fifthNavList.add(fifthNavigationBean);
 												}
 											}							
+											final SitemapBean fourthNavBean = new SitemapBean();
+											fourthNavBean.setLinkTitle(fourthNav.getTitle());
+											fourthNavBean.setLinkPath(fourthNav.getPath());
 											FourthNavigation fourthNavigationBean = new FourthNavigation();
-											fourthNavigationBean.setFourthNav(setBean(fourthNav));
+											fourthNavigationBean.setFourthNav(fourthNavBean);
 											fourthNavigationBean.setFifthNavList(fifthNavList);
 											fourthNavList.add(fourthNavigationBean);
 										}
 									}
+									final SitemapBean ternaryNavBean = new SitemapBean(); 
+									ternaryNavBean.setLinkPath(ternaryNav.getPath());
+									ternaryNavBean.setLinkTitle(ternaryNav.getTitle());
 									TernaryNavigation ternaryNavigationBean = new TernaryNavigation();
-									ternaryNavigationBean.setTernaryNav(setBean(ternaryNav));
+									ternaryNavigationBean.setTernaryNav(ternaryNavBean);
 									ternaryNavigationBean.setFourthNavList(fourthNavList);
 									ternaryNavList.add(ternaryNavigationBean);
 									}
 								}
+								final SitemapBean secondaryNavBean = new SitemapBean();
+								secondaryNavBean.setLinkTitle(secondaryNav.getTitle());
+								secondaryNavBean.setLinkPath(secondaryNav.getPath());
 								SecondaryNavigation secondaryNavigationBean = new SecondaryNavigation();
-								secondaryNavigationBean.setSecondaryNav(setBean(secondaryNav));
+								secondaryNavigationBean.setSecondaryNav(secondaryNavBean);
 								secondaryNavigationBean.setTernaryNavList(ternaryNavList);
 								secondaryNavList.add(secondaryNavigationBean);
 							}
 						}
+						final SitemapBean primaryNavBean = new SitemapBean();
+						primaryNavBean.setLinkTitle(primaryNav.getTitle());
+						primaryNavBean.setLinkPath(primaryNav.getPath());
 						PrimaryNavigation primaryNavigation = new PrimaryNavigation();
-						primaryNavigation.setPrimaryNav(setBean(primaryNav));
+						primaryNavigation.setPrimaryNav(primaryNavBean);
 						primaryNavigation.setSecondaryNavList(secondaryNavList);
 						primaryNavList.add(primaryNavigation);
 					}
@@ -118,22 +129,6 @@ public class SitemapHelper extends EatonAbstractUseBean {
 			
 		}
 	
-	LOG.debug("SitemapHelper :: setComponentValues() :: Exited");	
-	}
-
-	/**
-	 * Sets the bean.
-	 *
-	 * @param nav the nav
-	 * @return the sitemap bean
-	 */
-	public SitemapBean setBean(Page nav) {
-		LOG.debug("SitemapHelper :: setBean() :: Start");
-		SitemapBean navBean = new SitemapBean();
-		navBean.setLinkTitle(nav.getTitle());
-		navBean.setLinkPath(nav.getPath());
-		LOG.debug("SitemapHelper :: setBean() :: Exit");
-		return navBean;
-	}
-	
+		
+	}	
 }

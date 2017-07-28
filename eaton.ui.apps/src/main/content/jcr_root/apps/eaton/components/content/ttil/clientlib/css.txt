@@ -1,8 +1,11 @@
 #base=css
+components.css
 hero.css
+topiclink.css
+productfeature.css
 product-card.css
 proof-points.css
-topicLinkListWithIcon.css
+topic-link-list-with-icon.css
 product-highlights.css
-single-feature.css
-megaMenu.css
+category-highlight.css
+product-highlight.css

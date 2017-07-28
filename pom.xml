@@ -13,13 +13,12 @@
 	<groupId>com.aem.eaton.platform</groupId>
 	<artifactId>eaton_platform_parent</artifactId>
 	<packaging>pom</packaging>
-	<version>17.07.24-SNAPSHOT</version>
+	<version>17.07.06-SNAPSHOT</version>
 	<description>eaton_platform_parent</description>
 
 	<modules>
 		<module>eaton.core</module>
 		<module>eaton.ui.apps</module>
-		<module>eaton.ui.static</module>
 	</modules>
 
 	<properties>

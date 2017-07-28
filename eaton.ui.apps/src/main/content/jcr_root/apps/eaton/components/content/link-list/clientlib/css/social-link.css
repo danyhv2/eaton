@@ -1,110 +1,52 @@
 /* Desktop Style starts here */
-.footer-top .social-media-links{
-	white-space:nowrap;
-    display:inline;
-}
-.footer-top .social-media-facebook{
+.footer-top .social-media-links a{	
+	margin-top:20px;
+	width:33px;
+	height:33px;
+	border: none;
 	display: inline-block;
-    background: url(/content/dam/eaton/images/sprite-sheet.png) -2px -5248px no-repeat;
-    border: none;
-    width: 100px;
-    height: 100px;
-        zoom: 0.34;
-    margin-right: 30px;
 }
-.footer-top .social-media-twitter{
-	display: inline-block;
-    background: url(/content/dam/eaton/images/sprite-sheet.png) -151px -5248px no-repeat;
-    border: none;
-    width: 100px;
-    height: 100px;
-    zoom: 0.34;
-    margin-right: 30px;
+
+.footer-top .social-media-facebook {		
+    background: url(/content/dam/eaton/images/icons/facebook.png) no-repeat;	
 }
-.footer-top .social-media-pinterest{
-	display: inline-block;
-    background: url(/content/dam/eaton/images/sprite-sheet.png) -301px -5248px no-repeat;
-    border: none;
-    width: 100px;
-    height: 100px;
-     zoom: 0.34;
-    margin-right: 30px;
+
+.footer-top .social-media-twitter {	
+    background: url(/content/dam/eaton/images/icons/twitter.png) no-repeat;
 }
-.footer-top .social-media-googleplus{
-	display: inline-block;
-    background: url(/content/dam/eaton/images/sprite-sheet.png) -448px -5248px no-repeat;
-    border: none;
-    width: 100px;
-    height: 100px;
-     zoom: 0.34;
-    margin-right: 30px;
+
+.footer-top .social-media-pinterest {	
+    background: url(/content/dam/eaton/images/icons/pinterest.png) no-repeat;
 }
-.footer-top .social-media-linked-in{
-	display: inline-block;
-    background: url(/content/dam/eaton/images/sprite-sheet.png) -750px -5248px no-repeat;
-    border: none;
-    width: 100px;
-    height: 100px;
-     zoom: 0.34;
-   
-	margin-right: 30px;
+
+.footer-top .social-media-googleplus {	
+    background: url(/content/dam/eaton/images/icons/google.png) no-repeat;
+}
+
+.footer-top .social-media-linked-in {	
+    background: url(/content/dam/eaton/images/icons/linkedin.png) no-repeat;
 }
 
 /* Desktop Style ends here */
 
-/* iPhone 4, 5, 5s Style starts here */
 
-@media only screen and (max-width: 767px) {
 
-	.footer-top .social-media-links{
-		margin-top:30px;
-	}
-	
+
+/**********MOBILE TABLET ***********/
+@media only screen and (max-width: 600px) , screen and (min-width: 601px) and (max-width:992px) {
+
+		.footer-top .social-media-links {		
+			margin-top: 30px;			
+		}
+         .social-media-links{
+			/* margin-top:120px !important; */
+			margin:0;
+			margin-top:29px;
+    	}    
+    	
+    	.footer-top .social-media-links a{	
+			margin-right:20px !important;
+			
+		}
 }
-/* iPhone 4, 5, 5s Style ends here */
 
-/* iPhone 4, 5, 5s landscape Style starts here */
-@media (max-width: 767px) and (orientation: landscape){
-    
-}
-/* iPhone 4, 5, 5s landscape Style ends here */
-
-/*iPhone 6 Portrait Style starts here*/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {	
-    
-}
-/*iPhone 6 Portrait Style ends here*/
-
-/*iPhone 6 landscape starts here*/
-@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation : landscape) { 
-}
-/*iPhone 6 landscape ends here*/
-
-/*iPhone 6+ Portrait starts here*/
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
-	
-}
-/*iPhone 6+ Portrait ends here*/
-
-/*iPhone 6+ landscape starts here*/
-@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation : landscape) { 
-    
-}
-/*iPhone 6+ landscape ends here*/
-
-/* iPad portrait Style starts here */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-
-	.footer-top .social-media-links{
-		margin-top:30px;
-	}
-	
-}
-/* iPad portrait Style ends here */
-
-/* iPad landscape Style starts here */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    
-}
-/* iPad landscape Style ends here */

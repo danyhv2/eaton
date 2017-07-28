@@ -34,38 +34,30 @@ import com.eaton.platform.core.util.BrightcoveUtil;
 
 /**
  * This servlet pre-populate the player id drop-down field
- * author - TCS.
+ * author - TCS
  */
 @Component(immediate = true, description = "Brightcove Player Id Dropdown List")
 @Service(value = javax.servlet.Servlet.class)
 @Properties(value = {@Property(name = "sling.servlet.extensions", value = {"json"}),
         @Property(name = "sling.servlet.methods", value = {"GET"}),
-        @Property(name = "sling.servlet.paths", value = {"/ecom/dropdown/bcplayeridlist"})})
+        @Property(name = "sling.servlet.paths", value = {"/bin/dropdown/bcplayeridlist"})})
 public class BCPlayerIdDropDownServlet extends SlingSafeMethodsServlet {
 
-	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
-	
-	/** The Constant LOG. */
 	private static final Logger LOG = LoggerFactory.getLogger(BCPlayerIdDropDownServlet.class);
 	
-	/** The config manager fctry. */
 	// ConfigurationManagerFactory reference
 	@Reference
 	ConfigurationManagerFactory configManagerFctry;
 	
-	/** The admin service. */
 	// AdminService reference
 	@Reference
 	AdminService adminService;
 
-	/* (non-Javadoc)
-	 * @see org.apache.sling.api.servlets.SlingSafeMethodsServlet#doGet(org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)
-	 */
 	@Override
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
 
-		LOG.debug("BCPlayerIdDropDownServlet :: doGet() :: Start");
+		LOG.debug("******** BCPlayerIdDropDownServlet servlet execution started ***********");
 		//local variables
 		Resource brightcoveConfigRes = null;
 		// get admin resource resolver to resolve resource under /etc/cloudservices
@@ -84,12 +76,13 @@ public class BCPlayerIdDropDownServlet extends SlingSafeMethodsServlet {
 		
 		List<BCPlayerBean> bcPlayerBeanList = null;
 
+		ValueMap valueMap = null;
 		if(null != brightcoveConfigRes){
 				
 			bcPlayerBeanList = bcAcctBean.getPlayerDetails();
 			for(BCPlayerBean bcPlayerBean : bcPlayerBeanList){
 				// allocate memory to the Map instance
-				ValueMap valueMap = new ValueMapDecorator(new HashMap<String, Object>());
+				valueMap = new ValueMapDecorator(new HashMap<String, Object>());
 
 				// Specify the value and text values
 				String dropDownValue = bcPlayerBean.getPlayerId();
@@ -107,6 +100,7 @@ public class BCPlayerIdDropDownServlet extends SlingSafeMethodsServlet {
 			request.setAttribute(DataSource.class.getName(), dataSource);
 			
 		}
-		LOG.debug("BCPlayerIdDropDownServlet :: doGet() :: Exit");
+		
+		LOG.debug("******** BCContentIdDropDownServlet servlet execution ended ***********");
 	}
 }

@@ -30,23 +30,20 @@ public final class BrightcoveUtil {
     private static final Logger LOGGER = LoggerFactory.getLogger(BrightcoveUtil.class);
 	
     
-    /**
-     * Instantiates a new brightcove util.
-     */
     private BrightcoveUtil() {
         LOGGER.debug("Inside BrightcoveUtil constructor");
     }
+
     
     /**
      * This method populates Brightcove account details like
      * account name, number and invokes populatePlayerList 
-     * method to fetch player list.
-     *
-     * @param bcConfigRes the bc config res
-     * @return the BC accounts
+     * method to fetch player list
+     * @param bcConfigJcrRes
+     * @return
      */
     public static BCAccountBean getBCAccounts(Resource bcConfigRes) {
-    	LOGGER.debug("BrightcoveUtil :: getBCAccounts() :: Start");
+        LOGGER.debug("Entered into getBCAccounts method");
         // local variables
         BCAccountBean bcAccBean = new BCAccountBean();
         String[] bcPlayers = null;
@@ -69,19 +66,18 @@ public final class BrightcoveUtil {
     		}
         }
         
-        LOGGER.debug("BrightcoveUtil :: getBCAccounts() :: Exit");
+        LOGGER.debug("Exited from getBCAccounts method");
         return bcAccBean;
     }
     
     /**
-     * This method populates player id, player name for
-     * list of players configured under a Brightcove account.
-     *
-     * @param bcPlayers the bc players
-     * @param bcAccBean the bc acc bean
-     */
+	 * This method populates player id, player name for
+	 * list of players configured under a Brightcove account
+	 * @param accRes
+	 * @param bcAccBean
+	 */
     private static void populatePlayerList(String[] bcPlayers, BCAccountBean bcAccBean) {
-    	LOGGER.debug("BrightcoveUtil :: populatePlayerList() :: Start");
+		LOGGER.debug("Entered into populatePlayerList method");
 		List<BCPlayerBean> playerList = new ArrayList<BCPlayerBean>();
 		JSONObject playerObj = null;
 		BCPlayerBean bcPlayerBean = null;
@@ -114,33 +110,29 @@ public final class BrightcoveUtil {
 		} catch (JSONException e) {
 			LOGGER.error("JSONException occured while getting brightcove player details", e);
 		}
-		LOGGER.debug("BrightcoveUtil :: populatePlayerList() :: Exit");
+		
+		
     }
 
+    
     /**
      * This method returns the referer url from request header.
-     *
-     * @param request the request
-     * @return the referer URL
+     * @param request
+     * @return
      */
     public static String getRefererURL(final SlingHttpServletRequest request) {
-    	LOGGER.debug("BrightcoveUtil :: getRefererURL() :: Start");
         String refererURL;
         // get current page url from referer of the request header
         refererURL = request.getHeader(CommonConstants.REFERER_URL);
-        LOGGER.debug("BrightcoveUtil :: getRefererURL() :: Exit");
         return refererURL;
     }
     
     /**
      * This method gets the referer url from request header and returns the page path.
-     *
-     * @param resolver the resolver
      * @param refererURL the referer url
      * @return path
      */
     public static String getContentPath(ResourceResolver resolver, String refererURL) {
-    	LOGGER.debug("BrightcoveUtil :: getContentPath() :: Start");
         String path = null;
             try {
                 URL pageURL = new URL(refererURL);
@@ -153,22 +145,20 @@ public final class BrightcoveUtil {
             	LOGGER.error(
                         "Error in parsing the Referrer URL :: " + refererURL + " :: Exception :: " + ex.getMessage());
             }
-            LOGGER.debug("BrightcoveUtil :: getContentPath() :: Exit");
+
         return path;
     }
     
     /**
      * This method returns Brightcove cloud configuration
-     * page's jcr:content resource.
-     *
-     * @param configManagerFctry the config manager fctry
-     * @param resolver the resolver
-     * @param pageResource the page resource
-     * @return the BC config resource
+     * page's jcr:content resource
+     * @param configManagerFctry
+     * @param request
+     * @param resolver
+     * @return
      */
     public static Resource getBCConfigResource(ConfigurationManagerFactory configManagerFctry, 
     		ResourceResolver resolver, Resource pageResource) {
-    	LOGGER.debug("BrightcoveUtil :: getBCConfigResource() :: Start");
 		Resource brightcoveconfigJCRResource = null;
 		// get brightcove cloud configuration object
 		Configuration configObj = CommonUtil.getCloudConfigObj(configManagerFctry, resolver, pageResource, CommonConstants.BC_CLOUD_CONFIG_NODE_NAME);
@@ -177,23 +167,21 @@ public final class BrightcoveUtil {
 		if(null != configObj){
 			brightcoveconfigJCRResource = resolver.resolve(configObj.getPath().concat(CommonConstants.SLASH_STRING).concat(CommonConstants.JCR_CONTENT_STR));
 		}
-		LOGGER.debug("BrightcoveUtil :: getBCConfigResource() :: Exit");
 		return brightcoveconfigJCRResource;
 	}
     
     /**
      * This method returns Brightcove custom error message to be displayed
-     * when video id is invalid.
-     *
-     * @param brightcoveConfigRes the brightcove config res
-     * @return the BC error message
+     * when video id is invalid
+     * @param brightcoveConfigRes
+     * @return
      */
     public static String getBCErrorMessage(Resource brightcoveConfigRes){
-    	LOGGER.debug("BrightcoveUtil :: getBCErrorMessage() :: Start");
 		// get error message configured in brightcove config page
 		String errorMsg = CommonUtil.getStringProperty(brightcoveConfigRes.getValueMap(), CommonConstants.BC_ERROR_MSG_FIELD_NAME);
-		LOGGER.debug("BrightcoveUtil :: getBCErrorMessage() :: Exit");
+		
 		return errorMsg;
     }
+
     
 }

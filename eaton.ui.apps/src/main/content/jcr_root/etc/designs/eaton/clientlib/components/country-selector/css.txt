@@ -1,3 +1,0 @@
-#base=css
-
-country-selector.css

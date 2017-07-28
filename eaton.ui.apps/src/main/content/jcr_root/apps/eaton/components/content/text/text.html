@@ -16,24 +16,53 @@
 <sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
     <div>Text Component</div>
 </sly>
-<sly data-sly-test="${properties.view == 'text'}">
-    <div class="container-full text-comp">
+<!-- Text Component -->
+<sly data-sly-use.textHelper="com.eaton.platform.core.helpers.TextHelper"/>
+<sly data-sly-test="${textHelper.textModel.view == 'footer-text'}">
+    <div data-sly-test="${textHelper.textModel.text}" class="container-full text-comp">
         <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-                <div class="mediumPaddingTop body-copy bodyText"> 
-					${properties.text @context="html"}</div>
+            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 footer-description disable-user-selection">
+               	${textHelper.textModel.text @context="html"}
             </div>
         </div>
     </div>
 </sly>
 
-<sly data-sly-test="${properties.view == 'statement'}">
-    <div class="container-full statement-comp">
+<sly data-sly-test="${textHelper.textModel.view == 'statement'}">
+    <div class="container-full container-padding statement-comp smallMarginTop smallMarginBottom">
         <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 highlightedStatement">
-                <p>${properties.text @context="html"}
-                </p>
+            <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 highlightedStatement disable-user-selection">
+                ${textHelper.textModel.text @context="html"}
             </div>
+        </div>
+    </div>
+</sly>
+
+<sly data-sly-test="${textHelper.textModel.view == 'default'}">
+<div class="container-full container-padding  body-copy mediumPaddingTop default-text">
+	<div class="aem-Grid aem-Grid--12">
+		<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 default-text">
+               	${textHelper.textModel.text @context="html"}
+		</div>
+	</div>
+</div>
+</sly>
+
+<sly data-sly-test="${textHelper.textModel.view == 'more-info-text'}">
+    <div class="container-full container-padding  body-copy moreInfo mediumPaddingTop default-text">
+        <div class="aem-Grid aem-Grid--12">
+            <sly data-sly-test="${textHelper.textModel.topline == 'yes'}">
+                <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 moreInfoTitle">
+                    <div class="smallPaddingTop">
+                 		${textHelper.textModel.text @context="html"}
+                 	</div>
+            	</div>  
+            </sly>
+            <sly data-sly-test="${textHelper.textModel.topline != 'yes'}">
+                <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                ${textHelper.textModel.text @context="html"}
+            	</div>
+            </sly>
         </div>
     </div>
 </sly>

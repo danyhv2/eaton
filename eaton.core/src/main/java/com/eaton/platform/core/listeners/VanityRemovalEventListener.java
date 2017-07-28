@@ -27,17 +27,6 @@ import org.slf4j.LoggerFactory;
 import com.eaton.platform.core.constants.CommonConstants;
 import com.eaton.platform.core.services.AdminService;
 
-/**
- * The listener interface for receiving vanityRemovalEvent events.
- * The class that is interested in processing a vanityRemovalEvent
- * event implements this interface, and the object created
- * with that class is registered with a component using the
- * component's <code>addVanityRemovalEventListener<code> method. When
- * the vanityRemovalEvent event occurs, that object's appropriate
- * method is invoked.
- *
- * @see VanityRemovalEventEvent
- */
 @Component(metatype = false, immediate = true, policy = ConfigurationPolicy.REQUIRE)
 @Service(value = {EventListener.class})
 public class VanityRemovalEventListener implements EventListener {
@@ -45,31 +34,20 @@ public class VanityRemovalEventListener implements EventListener {
     /** The Constant LOGGER. */
     private static final Logger LOGGER = LoggerFactory.getLogger(VanityRemovalEventListener.class);
     
-    /** The admin service. */
     @Reference
     protected AdminService adminService;
     
-    /** The admin resource resolver. */
     private ResourceResolver adminResourceResolver;
     
-    /** The admin session. */
     private Session adminSession;
     
-    /**
-     * Instantiates a new vanity removal event listener.
-     */
     public VanityRemovalEventListener() {
         LOGGER.debug("Entry into VanityRemovalEventListener constructor method");
     }
 
-    /**
-     * Activate.
-     *
-     * @param context the context
-     */
     @Activate
     public void activate(ComponentContext context) {
-		LOGGER.debug("VanityRemovalEventListener :: activate() :: Start");
+        LOGGER.debug("Activating PageCreationObservation");
         try {
         	String[] nodetypes = {CommonConstants.NODE_TYPE};
         	adminResourceResolver = adminService.getWriteService();
@@ -84,7 +62,7 @@ public class VanityRemovalEventListener implements EventListener {
         } catch (RepositoryException e) {
             LOGGER.error("Unable to register session", e);
         }
-        LOGGER.debug("VanityRemovalEventListener :: activate() :: Exit");
+        LOGGER.debug("Exit Activate method");
     }
 
     /*
@@ -93,7 +71,6 @@ public class VanityRemovalEventListener implements EventListener {
      */
     @Override
     public void onEvent(EventIterator eventIterator) {
-    	LOGGER.debug("VanityRemovalEventListener :: onEvent() :: Start");
         LOGGER.debug("Enter onEvent method");
         while (eventIterator.hasNext()) {
             Event newEvent = eventIterator.nextEvent();
@@ -124,7 +101,7 @@ public class VanityRemovalEventListener implements EventListener {
                 LOGGER.error("RepositoryException", e);
             }
         }
-        LOGGER.debug("VanityRemovalEventListener :: onEvent() :: Exit");
+        LOGGER.debug("Exit onEvent method");
     }
 
     /**

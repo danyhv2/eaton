@@ -3,5 +3,4 @@
     jcr:description="TTIL Component"
     jcr:primaryType="cq:Component"
     jcr:title="TTIL"
-    allowedParents="*/parsys"
     componentGroup="Eaton Content"/>
