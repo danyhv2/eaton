@@ -1,0 +1,92 @@
+package com.eaton.platform.core.models.ttillist;
+
+import javax.inject.Inject;
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Model;
+
+import com.eaton.platform.core.constants.CommonConstants;
+import com.eaton.platform.core.util.CommonUtil;
+
+/**
+ * <html> Description: This is a Sling Model for Tile Links View.</html> .
+ *
+ * @author TCS
+ * @version 1.0
+ * @since 2017
+ */
+@Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+public class TtilListTileLinksModel {
+
+	/** The image path. */
+	@Inject
+	private String imagePath;
+
+	/** The image alt text. */
+	@Inject
+	private String imageAltText;
+	
+	/** The link destination. */
+	@Inject
+	private String linkDestination;
+	
+	/** The new window. */
+	@Inject
+	private String newWindow;
+	
+	/** The title text. */
+	@Inject
+	private String titleText;
+
+	/**
+	 * Gets the image alt text.
+	 *
+	 * @return the image alt text
+	 */
+	public String getImageAltText() {
+		return imageAltText;
+	}
+
+	/**
+	 * Gets the image path.
+	 *
+	 * @return the image path
+	 */
+	public String getImagePath() {
+		return imagePath;
+	}
+
+	/**
+	 * Gets the link destination.
+	 *
+	 * @return the link destination
+	 */
+	public String getLinkDestination() {
+		return CommonUtil.dotHtmlLink(linkDestination);
+	}
+
+	/**
+	 * Gets the new window.
+	 *
+	 * @return the new window
+	 */
+	public String getNewWindow() {
+		String newWindow = StringUtils.EMPTY;
+		if(StringUtils.equals(CommonConstants.TRUE, this.newWindow)) {
+			newWindow = CommonConstants.TARGET_BLANK;
+		}
+		return newWindow;
+	}
+
+	/**
+	 * Gets the title text.
+	 *
+	 * @return the title text
+	 */
+	public String getTitleText() {
+		return titleText;
+	}
+
+}

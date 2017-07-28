@@ -1,0 +1,19 @@
+<!--/*
+
+  Load Component Views:
+
+	Author may select one of the following views
+	- vertical
+	- horizontal
+
+*/-->
+
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Icon List Component</div>
+</sly>
+
+
+<sly data-sly-test="${ properties.view == 'icon-list-proof-points' }">
+  <sly data-sly-include="views/view-proof-points.html" data-sly-unwrap></sly>
+</sly>

@@ -8,4 +8,9 @@
     <filter root="/apps/eaton/templates"/>
     <filter root="/conf/eaton"/>
     <filter root="/etc/designs/eaton"/>
+    <filter root="/apps/system/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-88419768-9afc-4d3b-9750-4ab2d5e85fe8.config"/>
+    <filter root="/apps/system/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.config"/>
+    
+    <filter root="/apps/sling/servlet/errorhandler/404.jsp" />
+    <filter root="/apps/sling/servlet/errorhandler/default.jsp" />
 </workspaceFilter>

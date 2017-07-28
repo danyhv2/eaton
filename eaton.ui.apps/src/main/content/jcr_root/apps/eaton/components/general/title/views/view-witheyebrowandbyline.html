@@ -1,0 +1,27 @@
+<sly data-sly-use.titleObj="com.eaton.platform.core.helpers.TitleHelper">
+  <div class="eaton-title eaton-title--eyebrow-and-byline">
+
+    <!--/* If Grid Enabled */-->
+    <div data-sly-test="${ titleObj.titleBean.toggleInnerGrid }"
+      class="container">
+      <div class="eaton-title__eyebrow b-eyebrow-small">${ titleObj.titleBean.transCatLabel }</div>
+      <h2 class="eaton-title__headline b-heading-h1" data-sly-element="${titleObj.titleBean.type}">${ titleObj.headerTitle }</h2>
+      <div data-sly-test="${ titleObj.titleBean.transByLineText }"
+        class="eaton-title__byline b-body-copy-small">${ titleObj.titleBean.transByLineText }
+      	 <span data-sly-test="${ titleObj.dateByLine }">,${ titleObj.dateByLine } </span>   
+      </div>
+    </div>
+
+
+    <!--/* If Grid NOT-Enabled */-->
+    <sly data-sly-test="${ !titleObj.titleBean.toggleInnerGrid }">
+      <div class="eaton-title__eyebrow b-eyebrow-small">${ titleObj.titleBean.transCatLabel }</div>
+      <h2 class="eaton-title__headline b-heading-h1" data-sly-element="${titleObj.titleBean.type}">${ titleObj.headerTitle }</h2>
+      <div data-sly-test="${ titleObj.titleBean.transByLineText }"
+        class="eaton-title__byline b-body-copy-small">${ titleObj.titleBean.transByLineText } 
+        <span data-sly-test="${ titleObj.dateByLine }">,${ titleObj.dateByLine } </span> </div>
+    </sly>
+
+  </div>
+
+</sly>

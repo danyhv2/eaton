@@ -1,0 +1,26 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.ttillist.TtilListModel">
+    <div class="eaton-featured-list">
+
+      <!--/* If Header */-->
+      <div data-sly-test="${data.header}" class="eaton-featured-list__eyebrow b-eyebrow-small">${data.header}</div>
+
+      <!--/* List Items */-->
+      <div class="eaton-featured-list__cards" data-sly-list="${data.links}" >
+        <div class="eaton-featured-list__item">
+            <a href="${item.linkDestination}" aria-label="Go to ${item.titleText}" class="eaton-featured-list__link">
+                <div class="eaton-featured-list__image">
+                  <img src="${item.imagePath}" alt="${item.imageAltText}"/>
+                </div>
+
+                <div class="eaton-featured-list__body">
+                  <div class="eaton-featured-list__title">
+                    ${item.titleText}
+                    <i class="eaton-featured-list__icon glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+                  </div>
+                  <div class="eaton-featured-list__text">${item.description}</div>
+                </div>
+            </a>
+        </div>
+      </div>
+    </div>
+</sly>

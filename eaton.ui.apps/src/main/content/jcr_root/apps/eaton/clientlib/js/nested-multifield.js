@@ -8,8 +8,20 @@
         if(select){
             select.setValue(value);
         }
+
     }
 
+   function isDateField($field) {
+        return !_.isEmpty($field) && $field.prop("type") === "hidden" && $field.parent().hasClass("coral-DatePicker");
+   }
+
+   function setDateField($field, value) {
+        var date = moment(new Date(value));
+       var $parent = $field.parent();
+        $parent.find("input.coral-Textfield").val(date.format($parent.attr("data-displayed-format")));
+       $field.val(date.format($parent.attr("data-stored-format")));
+   }
+   
     function setCheckBox($field, value){
         $field.prop( "checked", $field.attr("value") == value);
     }
@@ -50,7 +62,9 @@
                     }
 
                     var $field = $multifield.find("[name='./" + fKey + "']").last(),
-                        type = $field.prop("type");
+                        type = $field.prop("type"),
+						name =  $field.prop("name");
+
 
                     if(_.isEmpty($field)){
                         return;
@@ -61,7 +75,10 @@
                         setSelect($field, fValue);
                     }else if( type == "checkbox"){
                         setCheckBox($field, fValue);
-                    }else{
+                    }else if (isDateField($field)) {
+                        setDateField($field, fValue);
+                    } 
+                    else{
                         $field.val(fValue);
                     }
                 });
@@ -107,6 +124,9 @@
 
             if( $field.prop("type") == "checkbox" ){
                 value = $field.prop("checked") ? $field.val() : "";
+            }
+            if( isDateField($field) ){
+                value = value;
             }
 
             $('<input />').attr('type', 'hidden')

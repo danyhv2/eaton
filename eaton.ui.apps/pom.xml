@@ -23,7 +23,7 @@
     <parent>
         <groupId>com.aem.eaton.platform</groupId>
         <artifactId>eaton_platform_parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>17.07.24-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -198,7 +198,7 @@
         <dependency>
             <groupId>com.aem.eaton.platform</groupId>
             <artifactId>eaton_platform.core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>17.07.24-SNAPSHOT</version>
         </dependency>
 
         <dependency>

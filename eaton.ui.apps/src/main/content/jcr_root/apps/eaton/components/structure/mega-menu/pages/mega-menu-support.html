@@ -1,0 +1,43 @@
+<div class="mega-menu__content" data-target="mega-menu-support">
+  <!--/* Include Level 1: Links *-->
+  <!--/*  Include: Mega-Menu-Title */-->
+  <div class="mega-menu-title">
+    <div class="container">
+      <a href="#" class="mega-menu-title__level1-link">
+        <i class="mega-menu-title__icon glyphicon glyphicon-menu-left" aria-hidden="true"></i>
+        <div>
+          <sly data-sly-resource="${'support-title' @ resourceType='/apps/eaton/components/general/title'}"></sly>
+        </div>
+        <i class="mega-menu-title__icon glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+      </a>
+      <button class="button--reset mega-menu-title__close-menu">
+        <span class="sr-only">Close Search</span>
+        <i class="mega-menu-title__icon icon icon-close" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+    <!--/* Include: Mega Menu Modules */ -->
+    <div class="mega-menu__category">
+      <div class="container">
+          <div class="mega-menu__row">
+            <!--/* Include: Column 1 - Flexible width */ -->
+            <div class="mega-menu__col mega-menu__col--flex">
+              <!--/* Include: List - Links */ -->
+              <div class="mega-menu__category-item">
+                <sly data-sly-resource="${'links-support' @ resourceType='/apps/eaton/components/content/list'}"></sly>
+              </div>
+            </div>
+
+            <!--/* Include: Column 2  */-->
+            <div class="mega-menu__col mega-menu__col--4">
+                <!--/* Include: TTIL - Download List */-->
+                <div class="mega-menu__category-item">
+                  <sly data-sly-resource="${'download-list-support' @ resourceType='/apps/eaton/components/content/link-list'}"></sly>
+                </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+</div>

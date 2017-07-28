@@ -1,0 +1,18 @@
+.next-steps .download-text{
+    margin-top:40px !important; 
+            position:relative;
+    }
+.next-steps .download-text .body-link img{
+position:absolute;
+left:0;                     
+}
+
+.next-steps .download-text  .h5-link{
+position:absolute;
+left:30px;
+top:-10px;
+    }
+
+.next-step-border{
+border-top: 8px solid #EEF0F2;
+}

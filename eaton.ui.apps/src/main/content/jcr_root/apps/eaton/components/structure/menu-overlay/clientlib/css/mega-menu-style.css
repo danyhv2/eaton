@@ -1,0 +1,201 @@
+.mega-menu-desktop{
+	background-color: #5a6770;
+}
+
+
+.mega-menu-desktop a{
+	color:white !important;	
+	display:block;
+}
+
+ .mega-menu-desktop .glyphicon-menu-right {	
+	color: white;
+    font-size: 13px;    	
+}
+    
+	.mega-menu-desktop li{	 
+	 
+	}  
+
+
+.mega-menu-desktop ul{
+	border-right: 1px solid #909090;
+	padding-right: 10px;
+	font-size: 1.125em;
+	font-family: Arial;
+    line-height: 1.333em;
+    color: #fff;
+}
+
+
+.mega-menu-desktop .search ul{
+	border: none !important;
+}
+
+
+.mega-menu-desktop .arrowAfter{
+	padding-right:10px;
+}
+
+.mega-menu-desktop .moreInfoTitle{
+	border:none !important;
+	margin-top: 0 !important;
+} 
+
+.mega-menu-desktop .moreInfoTitle div{
+	font-size: 1.125em !important;
+    font-family: Arial;
+    font-weight: bold;
+    line-height: 1.333em;
+    color:#fff;
+    margin: 0 !important;
+} 
+
+
+.mega-menu-desktop .info-quick-link p{
+	font-size: 1.125em !important;
+    font-family: Arial;
+    line-height: 1.333em;
+    color: #fff;
+} 
+
+.mega-menu-desktop .info-quick-link span{
+	font-size: 1.125rem !important;
+    font-family: Arial;
+    line-height: 1.333em;
+    color: #fff;
+}
+
+
+.mega-menu-desktop h3{
+	color: #fff;
+}
+
+
+.mega-menu-desktop .featuredList{
+	/* margin-top:30px !important; */
+}
+
+
+
+   
+.mega-menu-desktop .featuredList .small-body-copy-link-on-dark{
+	font-size: 1.125em;
+    font-family: Arial;
+    line-height: 1.333em;
+    color: #fff;
+}
+
+
+
+.mega-menu-desktop .featuredList .small-body-copy-link-on-dark-deviation{
+	font-size: 1.125em;
+    font-family: Arial;
+    line-height: 1.333em;
+    color: #fff;
+}
+
+.mega-menu-desktop .glyphicon-menu-right{
+	/* float:right; */
+}
+
+
+.mega-menu-desktop .footerLinks{
+	min-height:400px;	
+}
+
+.mega-menu-desktop .footer-link-heading{
+	font-size: 1.125em !important;
+    font-family: Arial;
+    font-weight: bold;
+    line-height: 1.333em;
+    color: #fff;
+    margin: 0 !important;
+}
+
+
+
+.mega-menu-desktop .moreInfoTitle{
+	padding:0 !important;
+} 
+
+
+.industry-solutionsPage .mega-menu-desktop .footerLinks li:first-child,
+.companyPage .mega-menu-desktop .footerLinks li:first-child,
+.productsPage .mega-menu-desktop .footerLinks li:first-child{
+	margin-top:0 !important;
+}
+
+ .industry-solutionsPage .mega-menu-desktop .footerLinks , 
+ .productsPage .mega-menu-desktop .footerLinks , 
+ .supportPage .mega-menu-desktop , 
+ .companyPage .mega-menu-desktop .footerLinks
+ {
+	margin-left:10px !important;
+} 
+
+
+.mega-menu-desktop .singleFeature .smallPaddingTop{
+	padding-top:0 !important;
+}
+
+
+.mega-menu-desktop .form-group > input{
+	margin-bottom:30px !important; 
+}
+
+.mega-menu-desktop .infoContainer .iconClass{
+	width: 22px;
+    height: 20px;
+    margin-right: 28px;    
+    float: left;
+    margin-bottom: 50px;
+    margin-top: 12px;	
+}
+        
+
+/*Mobile & Tablet  */
+
+@media only screen and (max-width: 600px),screen and (min-width: 601px)	and (max-width:992px) {
+
+			.mega-menu-desktop ul{
+				border-right: none;				
+			}
+			
+			.mega-menu-desktop .footerLinks li:first-child{
+				margin-top:0 !important;
+			} 
+			
+			.mega-menu-desktop .footerLinks li{
+				    padding-top: 20px;					
+					padding-bottom: 20px;
+					margin: 0 !important;
+			}
+			
+			.mega-menu-desktop .glyphicon-menu-right {
+				    float: right;
+				}
+				
+				
+			.megaMenu  .header{
+				margin:0 !important;
+				padding:0 !important;
+				padding-top:10px !important;
+				padding-bottom:10px !important;
+			}
+			
+			.megaMenu  .header .menuHeading{
+				text-align: left;
+    			padding-left: 20px;
+    			text-align: left;
+			    padding-left: 20px;
+			    font-family: Arial;
+			    font-size: 1.25rem;
+			}
+			
+			.megaMenu .footerLinks li .footerLinksTitle{
+				padding-right:10px;
+			}	
+	
+}
+

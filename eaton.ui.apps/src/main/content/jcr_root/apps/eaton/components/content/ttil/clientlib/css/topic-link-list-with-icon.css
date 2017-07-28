@@ -1,0 +1,91 @@
+.topic-link-list-with-icon,.topic-link-list-with-icon-sku{
+display:table;
+}
+.topic-link-list-with-icon .topic-image-holder{
+width:120px !important;
+}
+.topic-link-list-with-icon .topic-image-holder2{
+width:70px !important;
+}
+.topic-image-holder{
+display:table-cell;
+width:70px !important;
+}
+.topic-text-holder{
+display:table-cell;
+padding:0px 0px 0px 30px !important;    
+vertical-align:top;    
+}
+.topic-link-list-with-icon .topic-image {
+    width: 70px;
+    height: 70px;
+
+}
+.topic-link-list-with-icon-sku img {
+    width: 70px;
+    height: 70px;
+    margin-top:10px;
+}
+.topic-link-list-with-icon .topic-link-with-icon-image {
+    width: 70px;
+    height: 70px;
+    margin-top:10px;
+}
+.topic-link-with-icon-image-120{
+width: 120px;
+    height: 120px;
+    }
+.topic-link-with-icon-link{
+font-size:2em;
+        font-family:EatonBold;
+                }
+@media only screen and (max-width: 992px) {
+    .topic-link-list-with-icon{
+		display:block !important;
+	}
+.topic-link-list-with-icon .topic-image-holder{
+display:block !important;
+}
+.topic-link-list-with-icon .topic-text-holder{
+display:block !important;
+    margin-top:60px !important;
+    padding-left:0px !important;
+}
+.topic-link-list-with-icon .topic-text-holder .body-copy{
+margin-top:60px !important;
+}
+
+    .topic-link-list-with-icon .topicHead{
+		margin-top:60px !important;
+}
+            .topic-link-list-with-icon .body-copy{
+		margin-top:60px !important;
+}
+                .topic-link-with-icon-link{
+font-size:1.375em;
+                }
+
+.topic-link-list-with-icon .topic-image {
+    width: 120px;
+    height: 120px;
+}
+.topic-link-list-with-icon .smallScreenMarginTop{
+	margin-top:60px !important;
+    }
+.topic-link-list-with-icon-sku-2,.topic-link-list-with-icon-sku-1{
+padding-bottom:0px !important;
+}
+    .topic-link-list-with-icon-sku-3{
+padding-top:90px !important;
+padding-bottom:0px !important;
+}
+.topic-link-list-with-icon-sku-4{
+padding-top:90px !important;
+            }
+.topic-text-holder{
+padding:0px 0px 0px 60px !important; 
+
+
+}
+.topic-text-holder h2{margin-top:0px !important;}
+}
