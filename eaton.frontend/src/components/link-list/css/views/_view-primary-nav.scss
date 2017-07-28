@@ -60,6 +60,7 @@
         position: relative;
 
         span { flex: 1; }
+
         .icon {
           display: flex;
           font-size: 0.75em;
@@ -136,6 +137,7 @@
     }
 
     &--has-background {
+      // stylelint-disable declaration-no-important
       background: none !important;
     }
   }
