@@ -5,7 +5,7 @@
 	<div class="eaton-linklist-2column">
 		<div data-sly-list.link=${data.links}>
 			<div class="col-xs-12 col-md-6 eaton-linklist-2column__link">
-				<a href="${link.url}" title="${link.text}" data-sly-test="${link.url}">${link.text}</a>
+				<a href="${link.url}" title="${link.text}" target="${link.target}" data-sly-test="${link.url}">${link.text}</a>
 				<div class="b-body-copy" data-sly-test=${!link.url}>${link.text}</div> 
 			</div>
 		</div>

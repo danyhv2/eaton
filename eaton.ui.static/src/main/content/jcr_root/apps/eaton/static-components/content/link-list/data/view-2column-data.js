@@ -28,19 +28,23 @@ use(function () {
         links: [
           {
             text: 'Competitive cross reference tool',
-            url: '#'
+            url: '#',
+            target: '_self'
           },
           {
             text: 'Order a catalog',
-            url: '#'
+            url: '#',
+            target: '_self'
           },
           {
             text: 'Rack selection checklist',
-            url: '#'
+            url: '#',
+            target: '_self'
           },
           {
             text: 'Find a ditributor',
-            url: '#'
+            url: '#',
+            target: '_self'
           }
         ]
       };
