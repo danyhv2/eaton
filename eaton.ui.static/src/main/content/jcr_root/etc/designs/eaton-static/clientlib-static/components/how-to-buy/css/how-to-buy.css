@@ -1,4 +1,4 @@
-.eaton-how-to-buy { margin-top: 45px; overflow: hidden; }
+.eaton-how-to-buy { padding-top: 45px; overflow: hidden; background: #F8F8F8; }
 
 .eaton-how-to-buy__icon { color: #ED8B00; max-width: 60px; display: inline-block; }
 
@@ -8,7 +8,7 @@
 
 .eaton-how-to-buy__element { margin-bottom: 45px; }
 
-@media screen and (min-width: 992px) { .eaton-how-to-buy { margin-top: 90px; }
+@media screen and (min-width: 992px) { .eaton-how-to-buy { padding-top: 90px; }
   .eaton-how-to-buy__icon { max-width: 70px; }
   .eaton-how-to-buy__icon .icon { font-size: 70px; }
   .eaton-how-to-buy__text-wrapper { width: calc(100% - 100px); }

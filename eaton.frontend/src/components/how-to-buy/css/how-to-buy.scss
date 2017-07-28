@@ -6,8 +6,10 @@
 @import "../../../global/css/_config/sass";
 
 .eaton-how-to-buy {
-  margin-top: $spacing__lg / 2;
+  padding-top: $spacing__lg / 2;
   overflow: hidden;
+  background: $color__secondary-gray6;
+
   &__icon {
     color: $color__accent-orange;
     max-width: $spacing__md;
@@ -33,7 +35,7 @@
 
 
   @include media-desktop-and-up {
-    margin-top: $spacing__lg;
+    padding-top: $spacing__lg;
 
     &__icon {
       max-width: 70px;
@@ -57,6 +59,7 @@
       &.row {
         display: flex;
         flex-wrap: wrap;
+
         .row {
           margin: 0;
           display: flex;
