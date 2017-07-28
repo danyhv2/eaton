@@ -50,7 +50,7 @@
 
 .eaton-top-list-with-icon__icon { color: #ED8B00; max-width: 60px; display: inline-block; }
 
-.eaton-top-list-with-icon__icon .icon { font-size: 60px; padding: 0; }
+.eaton-top-list-with-icon__icon img { width: 100%; height: auto; }
 
 .eaton-top-list-with-icon__text-wrapper { width: calc(100% - 90px); display: inline-block; float: right; }
 

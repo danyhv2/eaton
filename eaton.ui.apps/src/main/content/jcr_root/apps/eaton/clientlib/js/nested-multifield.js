@@ -8,6 +8,7 @@
         if(select){
             select.setValue(value);
         }
+
     }
 
     function setCheckBox($field, value){
@@ -50,7 +51,9 @@
                     }
 
                     var $field = $multifield.find("[name='./" + fKey + "']").last(),
-                        type = $field.prop("type");
+                        type = $field.prop("type"),
+						name =  $field.prop("name");
+
 
                     if(_.isEmpty($field)){
                         return;
@@ -61,7 +64,16 @@
                         setSelect($field, fValue);
                     }else if( type == "checkbox"){
                         setCheckBox($field, fValue);
-                    }else{
+                    }else if((type == "hidden") && (name == "./publicationDate"))
+                    {
+                        if(fValue.lastIndexOf("-")>-1)
+                        {
+							var newDateVal= fValue.substr(0,fValue.lastIndexOf("-")+3 ) +" "+"00:00" ; //Length from - to T is 3
+							$field.siblings('input').val(newDateVal);
+                        }
+
+                    }
+                    else{
                         $field.val(fValue);
                     }
                 });

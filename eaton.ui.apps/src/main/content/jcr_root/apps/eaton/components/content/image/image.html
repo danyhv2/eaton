@@ -1,0 +1,37 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+    <div>Image Component</div>
+</sly>
+
+<sly data-sly-use.imageBean="com.eaton.platform.core.models.ImageBean">
+<sly data-sly-use.image="image.js">
+<sly data-sly-test="${image.hasImage != 'no'}">
+<a
+	data-sly-unwrap="${!image.linkUrl}"
+    href="${imageBean.linkURL}"
+    target="_blank">
+    
+  	<img
+        src="${image.src}"
+        alt="${imageBean.alt}"
+        title="${image.title}"
+        width="${image.width}"
+        height="${image.height}"
+        class="${image.cssClass} imageFile smallMarginTop"
+        data-emptytext="Image"
+        usemap="${image.imageMaps.hash}"/>
+</a>
+</sly>
+</sly>
+<small data-sly-test="${properties.jcr:description}">${properties.jcr:description}</small>
+<map
+    data-sly-list="${image.imageMaps.maps}"
+    name="${image.imageMaps.name}">
+    <area
+        shape="${item.type}"
+        coords="${item.coords}"
+        href="${item.href}"
+        target="${item.target}"
+        alt="${item.alt}" 
+        title="${item.title}"/>
+</map>
+</sly>

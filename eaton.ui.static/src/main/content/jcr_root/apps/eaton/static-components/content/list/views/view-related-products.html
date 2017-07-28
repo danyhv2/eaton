@@ -1,18 +1,20 @@
 <!--Desktop Carousel-->
-<div data-sly-use.data="${'../data/view-related-products-data.js'}" class="related-products-component carousel-component carousel slide container desktop-carousel hidden-xs" data-ride="carousel" data-pause="hover">
-
+<div data-sly-use.data="${'../data/view-related-products-data.js' @testdata=properties.testdata}" class="related-products-component carousel-component carousel slide container desktop-carousel hidden-xs" data-ride="carousel" data-pause="hover">
+<p>eaton ${@testdata=properties.testdata}</p>
     <!-- Indicators -->
-    <ol data-sly-list.slide="${data}" class="carousel-indicators">
-        <li data-target=".carousel-component"
-            data-slide-to="${slideList.index}"
-            class="carousel-component__dots carousel-component__dots--gray ${slideList.index == 0 ? 'active' : ''}"></li>
-    </ol>
+    <sly data-sly-test="${data.length > 1}">
+        <ol data-sly-list.slide="${data}" class="carousel-indicators">
+            <li data-target=".carousel-component"
+                data-slide-to="${slideList.index}"
+                class="carousel-component__dots carousel-component__dots--gray ${slideList.index == 0 ? 'active' : ''}"></li>
+        </ol>
+    </sly>
 
      <!--Carousel for Desktop -->
     <div data-sly-list="${data}" class="carousel-component-slide carousel-inner hidden-xs" role="listbox">
         <div class="item ${itemList.index == 0 ? 'active' : ''} hidden-xs">
             <div class="row" data-sly-list="${item.cards}">
-                <a href="${item.link}" role="link">
+                <a href="${item.link}" role="link" target="${item.target}">
                     <div class="col-sm-3">
                         <div class="col-xs-12 related-products-component__card">
                             <img class="carousel-component-slide__image" src="${item.image}" alt="${item.alt}">
@@ -28,20 +30,22 @@
     </div>
 
     <!--Controls -->
-    <button class="carousel-component__arrow related-products-component__arrow left carousel-control button--reset"
-            role="button">
-        <span class="icon icon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Go to Previous Slide</span>
-    </button>
-    <button class="carousel-component__arrow related-products-component__arrow right carousel-control button--reset"
-            role="button">
-        <span class="icon icon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Go to Next Slide</span>
-    </button>
+    <sly data-sly-test="${data.length > 1}">
+        <button class="carousel-component__arrow related-products-component__arrow left carousel-control button--reset"
+                role="button">
+            <span class="icon icon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Go to Previous Slide</span>
+        </button>
+        <button class="carousel-component__arrow related-products-component__arrow right carousel-control button--reset"
+                role="button">
+            <span class="icon icon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Go to Next Slide</span>
+        </button>
+    </sly>
 </div>
 
 <!--Mobile Carousel-->
-<div data-sly-use.data="${'../data/view-related-products-data.js'}" class="related-products-component carousel-component carousel-component1 carousel slide container mobile-carousel visible-xs" data-ride="carousel" data-pause="hover">
+<div data-sly-use.data="${'../data/view-related-products-data.js' @testdata=properties.testdata}" class="related-products-component carousel-component carousel-component1 carousel slide container mobile-carousel visible-xs" data-ride="carousel" data-pause="hover">
 
     <!-- Indicators -->
     <ol data-sly-list.data="${data}" class="carousel-indicators carousel-component--indicators">
@@ -56,7 +60,7 @@
     <div data-sly-list.data="${data}" class="carousel-component-slide carousel-inner visible-xs" role="listbox">
         <sly  data-sly-list.card="${data.cards}">
             <div class="item">
-                <a href="${card.link}" role="link">
+                <a href="${card.link}" role="link" target="${card.target}">
                     <div class="col-xs-12 related-products-component__card">
                         <img class="carousel-component-slide__image" src="${card.image}" alt="${card.alt}">
                     </div>

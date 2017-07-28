@@ -1,3 +1,0 @@
-#base=css
-
-back-to-search.css

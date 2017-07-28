@@ -13,14 +13,12 @@
 	<groupId>com.aem.eaton.platform</groupId>
 	<artifactId>eaton_platform_parent</artifactId>
 	<packaging>pom</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>17.07.06-SNAPSHOT</version>
 	<description>eaton_platform_parent</description>
 
 	<modules>
 		<module>eaton.core</module>
 		<module>eaton.ui.apps</module>
-		<module>eaton.ui.apps.html</module>
-		<module>eaton.ui.static</module>
 	</modules>
 
 	<properties>
@@ -121,6 +119,12 @@
 				<configuration>
 					<downloadSources>true</downloadSources>
 				</configuration>
+			</plugin>
+			<!-- Maven Versions Plugin -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+				<version>2.4</version>
 			</plugin>
 		</plugins>
 		<pluginManagement>
@@ -369,6 +373,18 @@
 						<enabled>false</enabled>
 					</snapshots>
 				</pluginRepository>
+				<pluginRepository>
+					<id>Codehaus Mojo</id>
+					<name>Codehaus Mojo</name>
+					<url>http://repo1.maven.org/maven2</url>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</pluginRepository>
 			</pluginRepositories>
 		</profile>
 	</profiles>
@@ -547,7 +563,16 @@
 				<version>4.4</version>
 				<scope>provided</scope>
 			</dependency>
-
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-mapper-asl</artifactId>
+				<version>1.9.13</version>
+			</dependency>
+			<dependency>
+				<groupId>com.googlecode.json-simple</groupId>
+				<artifactId>json-simple</artifactId>
+				<version>1.1.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

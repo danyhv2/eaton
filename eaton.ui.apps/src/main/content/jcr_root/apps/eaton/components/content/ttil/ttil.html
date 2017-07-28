@@ -7,16 +7,16 @@
 
 	<!-- SINGLE FEATURE VIEW -->
 	<sly data-sly-test="${ttilSlingModel.view == 'singleFeature'}">
-		<div class="container-full container-padding">
+		<div class="container-full container-padding singleFeature">
 			<div class="aem-Grid aem-Grid--12">
-				<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 singleFeatureBackground">
+				<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 search marginLeft15">
 					<div class="container-padding smallPaddingTop smallPaddingBottom">		 
 						<div class="eyeBrowSmall smallPaddingBottom uppercase light">  ${ttilSlingModel.transHeader}</div>
 						<div class='imgContainer smallPaddingBottom'>
 								<img src='${ttilSlingModel.image}' alt="${ttilSlingModel.transAlttxt}" />
 						</div>
 						<div class='desc'>
-	                        <span class="small-body-copy-link-on-dark light light arrowAfter">${ttilSlingModel.transEyebrow}</span>
+	                        <span data-sly-test="${ttilSlingModel.transEyebrow}" class="small-body-copy-link-on-dark light light arrowAfter">${ttilSlingModel.transEyebrow}</span>
 							<img src='/content/dam/eaton/images/Link-Arrow.png'/>							
 							<div data-sly-test="${ttilSlingModel.link}" class="smallMarginTop">
 		                       	<a class="small-body-copy-link-on-dark smallPaddingBottom" href="${ttilSlingModel.link}" target="${ttilSlingModel.newWindow ? '_blank' : ''}">${ttilSlingModel.transLinkTitle}</a>
@@ -30,81 +30,93 @@
 
 	<!-- DESCRIPTIVE FEATURE VIEW -->
 	<sly data-sly-test="${ttilSlingModel.view == 'descriptiveFeature'}">
-		<div class="container-full container-padding">
-			<div class="aem-Grid aem-Grid--12">
-				<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 singleFeatureBackground">
-					<div class="container-padding smallPaddingTop smallPaddingBottom">
-						<div class="eyeBrowSmall smallPaddingBottom uppercase light"> ${ttilSlingModel.transHeader} </div>
-						<div class='highLightContainer'>
-							<div>
-								<div class='imgContainer smallPaddingBottom'>
-									<img src='${ttilSlingModel.image}' alt="${ttilSlingModel.transAlttxt}" />
-								</div>
-								<div class='desc'>
-									<span class="small-body-copy-link-on-dark light light arrowAfter">${ttilSlingModel.transEyebrow}</span>
-									<img src='/content/dam/eaton/images/Link-Arrow.png'/>							
-									<div class="small-body-copy-link-on-dark smallPaddingBottom smallPaddingTop light megamenu-margin-deviation"> ${ttilSlingModel.transFeatureDesc}</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</sly>
+   <div class="container-full container-padding">
+      <div class="aem-Grid aem-Grid--12">
+         <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 singleFeatureBackground">
+            <div class="eyeBrowSmall smallPaddingBottom uppercase light"> ${ttilSlingModel.transHeader} </div>
+            <div class='highLightContainer'>
+               <div>
+                  <div class='imgContainer smallPaddingBottom'>
+                     <img src='${ttilSlingModel.image}' alt="${ttilSlingModel.transAlttxt}" />
+                  </div>
+                  <div class='desc'>
+                  	 <a href="${ttilSlingModel.link}" target="${ttilSlingModel.newWindow ? '_blank' : ''}">
+                     	<span class="small-body-copy-link-on-dark light light arrowAfter">${ttilSlingModel.transLinkTitle}</span>
+                  	 </a>
+                     <img src='/content/dam/eaton/images/Link-Arrow.png'/>							
+                     <div data-sly-test="${ttilSlingModel.transFeatureDesc}" class="small-body-copy-link-on-dark smallPaddingBottom light megamenu-margin-deviation"> ${ttilSlingModel.transFeatureDesc}</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</sly>
 
 	<!-- HOME PAGE HERO VIEW -->
-	<sly data-sly-test="${ttilSlingModel.view == 'hero'}">
-		<div class="container-full">
-			<div class="aem-Grid aem-Grid--12">
-				<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-					<div class="hero">
-						<img class="background-image show-desktop" src="${ttilSlingModel.image}" border="0" alt="${ttilSlingModel.transAlttxt}">
-						<img class="background-image show-mob" src="${ttilSlingModel.image}" border="0" alt="${ttilSlingModel.transAlttxt}">
-						<div class="overlay container-padding aem-Grid">
-							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-								<h1 class="h1Hero alignCenter">${ttilSlingModel.transHeader}</h1>
-							</div>
-							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 hero-line-holder aem-Grid aem-Grid--12">
-									<div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--2 aem-GridColumn--phone--2 hero-line smallMarginTop"></div>
-							</div>
-							<div class="clear"></div>
-							<div class="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn-margin-both-2 hero-description-copy alignCenter smallMarginBottom smallMarginTop">
-							   <p class="noMargin">${ttilSlingModel.transFeatureDesc}</p>
-							</div>
-							<div class="clear"></div>
-							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--10 aem-GridColumn--phone--10 hero_button smallMarginBottom">
-								<div data-sly-test.showMore="${ttilSlingModel.link}" data-sly-unwrap>
-									<button type="button" class="btn btn-default primary-button-light" onclick="location.href='${showMore @ context='uri'}'" target="_blank">${ttilSlingModel.transLinkTitle}</button>
-								</div>
-							</div>
-							<div class="clear"></div>
-							<div class="hero-down-arrow show-mob">
-								<span class="glyphicon glyphicon-menu-down"></span>
-							</div>
-						</div>
-					</div>			
-				</div>
-			</div>
-		</div>
-	</sly>
+<sly data-sly-test="${ttilSlingModel.view == 'hero'}">
+   <div class="container-full">
+      <div class="aem-Grid aem-Grid--12">
+         <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+            <div class="hero">
+               <img class="background-image show-desktop" src="${ttilSlingModel.image}" border="0" alt="${ttilSlingModel.transAlttxt}">
+
+                <sly data-sly-test="${ttilSlingModel.config}">
+               <img class="background-image show-mob" src="${ttilSlingModel.image}.transform/${ttilSlingModel.config @ context='html'}/image.jpg" border="0" alt="${ttilSlingModel.transAlttxt}">
+				</sly>
+                <sly data-sly-test="${!ttilSlingModel.config}">
+               <img class="background-image show-mob" src="${ttilSlingModel.image}" border="0" alt="${ttilSlingModel.transAlttxt}">
+				</sly>
+
+
+               <div class="overlay container-padding aem-Grid">
+                  <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
+                     <h1 class="h1Hero alignCenter">${ttilSlingModel.transHeader}</h1>
+                  </div>
+                  <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-Grid aem-Grid--12">
+                     <div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--2 aem-GridColumn--phone--2 hero-line smallMarginTop"></div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn-margin-both-2 hero-description-copy alignCenter smallMarginBottom smallMarginTop smallPaddingTop container-fixed container-padding">
+                     <p data-sly-test="${ttilSlingModel.transFeatureDesc}" class="noMargin">${ttilSlingModel.transFeatureDesc}</p>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--10 aem-GridColumn--phone--10 hero_button smallMarginBottom">
+                     <div data-sly-test.showMore="${ttilSlingModel.link}" data-sly-unwrap>
+                        <button type="button" class="btn btn-default primary-button-light" onclick="location.href='${showMore @ context='uri'}'" target="_blank">${ttilSlingModel.transLinkTitle}</button>
+                     </div>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="hero-down-arrow show-mob">
+                     <span class="glyphicon glyphicon-menu-down"></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</sly>
 
 	<!--  SECONDARY PAGE HERO VIEW -->
 	<sly data-sly-test="${ttilSlingModel.view == 'secondaryHero'}">
 		<div class="container-full">
 			<div class="aem-Grid aem-Grid--12">
 				<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-					<div class="sec_hero">
+				<div class="sec_hero">
 						<img class="background-image show-desktop" src="${ttilSlingModel.image}" border="0" alt="${ttilSlingModel.transAlttxt}">
-						<img class="background-image show-mob" src="${ttilSlingModel.image}" border="0" alt="${ttilSlingModel.transAlttxt}">
-						<div class="overlay aem-Grid">
+						<img class="background-image show-mob" src="${ttilSlingModel.image}.transform/${ttilSlingModel.config @ context='html'}/image.png" border="0" alt="${ttilSlingModel.transAlttxt}">
+					<div class="overlay container-padding aem-Grid">
 							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
-								<h1 class="h1Hero alignCenter">${ttilSlingModel.transHeader}</h1>
+								<h1 class="h1Hero alignCenter ">${ttilSlingModel.transHeader}</h1>
 							</div>
-							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 hero-line-holder aem-Grid aem-Grid--12">
+							<div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-Grid aem-Grid--12">
 								<div class="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--tablet--2 aem-GridColumn--phone--2 hero-line smallMarginTop"></div>
 							</div>
 							<div class="clear"></div>
+							<div class="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn-margin-both-2 hero-description-copy alignCenter smallMarginBottom smallMarginTop smallPaddingTop container-fixed container-padding">
+                     			 <p data-sly-test="${ttilSlingModel.transFeatureDesc}" class="noMargin">${ttilSlingModel.transFeatureDesc}</p>
+                 			</div>
+                  			<div class="clear"></div>
 						</div>
 					</div>			
 				</div>
@@ -112,18 +124,19 @@
 		</div>
 	</sly>
 
+
 	<!-- PRODUCT CARD VIEW -->
 	<sly data-sly-test="${ttilSlingModel.view == 'productCard'}">
-	    <div class='container-full container-padding noFeature'>
+    <div class='container-full smallPaddingLeft smallPaddingRight noFeature mediumMarginTop'>
 	        <div class="aem-Grid aem-Grid--12">
 	            <div class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12 residential'>
 	                <div class='main prod-card'>
-	                    <div class='container-full container-padding'>
+                    <div class='container-full smallPaddingBottom'>
 	                        <div class="aem-Grid aem-Grid--12">
 	                            <div class='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12'>
 	                                <img class='width100Perc' src='${ttilSlingModel.image}' alt='${ttilSlingModel.transAlttxt}'>
-	                                <div class="eyeBrowSmall">${ttilSlingModel.transHeader}</div>
-	                                <div data-sly-test="${ttilSlingModel.link}" class="body-link smallMarginTop">
+	                                <div data-sly-test="${ttilSlingModel.transEyebrow}" class="heading eyeBrowSmall smallPaddingLeft smallPaddingRight">${ttilSlingModel.transEyebrow}</div>
+	                                <div data-sly-test="${ttilSlingModel.link}" class="body-link smallMarginTop smallPaddingLeft smallPaddingRight">
 	                                		<a href="${ttilSlingModel.link}" target="${ttilSlingModel.newWindow ? '_blank' : ''}">${ttilSlingModel.transLinkTitle}</a>
 									</div>
 	                            </div>
@@ -135,18 +148,19 @@
 	    </div>
 	</sly>
 
+
 	<!-- PROOF POINTS VIEW -->
 	<sly data-sly-test="${ttilSlingModel.view == 'proofPoints'}">
-	    <div class="container-full container-padding primaryProofPointHolder largeMarginBottom">
+	    <div class="container-full primaryProofPointHolder largeMarginBottom">
 	        <div class="aem-Grid aem-Grid--12">
 	            <div class="proofpointHolder aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--tablet--12 aem-GridColumn--phone--12">
 	                <div class="aem-Grid aem-Grid--12">
-	                    <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--5 aem-GridColumn--phone--5">
-	                        <img class="proof_point_image2" src="${ttilSlingModel.graphic}">
+                    <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--5 aem-GridColumn--phone--5 proof-points-value">
+	                        <img class="proof_point_image1" src="${ttilSlingModel.graphic}">
 	                    </div>
 	                    <div class="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--7 aem-GridColumn--phone--7 np proof-points-value">
-	                        <h1 class="proof_point_data smallMarginBottom">${ttilSlingModel.transHeader}<sup data-sly-test="${ttilSlingModel.highlightType =='percentage'}">%</sup></h1>
-	                        <div class="small">${ttilSlingModel.transFeatureDesc}</div>
+	                        <h1 class="proof_point_data">${ttilSlingModel.transHeader}<sup data-sly-test="${ttilSlingModel.highlightType =='percentage'}">%</sup></h1>
+	                        <div data-sly-test="${ttilSlingModel.transFeatureDesc}" class="body-copy smallMarginTop">${ttilSlingModel.transFeatureDesc}</div>
 	                    </div>
 	                    <div class="clear"></div>
 	                </div>
@@ -155,11 +169,12 @@
 		</div>
 	    <div class="clear"></div>
 	</sly>
-</div>
-</template>
 
+</div>
+
+</template>
 <div data-sly-test="${properties.hidecomponent != 'hide-component'}">
-	<sly data-sly-test="${wcmmode.disabled}">
+	<sly data-sly-test="${wcmmode.disabled || wcmmode.preview}">
 		<div data-sly-call="${first}"></div>
 	</sly>
 </div>

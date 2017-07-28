@@ -1,3 +1,7 @@
+.eaton-tabbed-menu-list__title span::before { content: "\EA21"; }
+
+.eaton-tabbed-menu-list__title.collapsed span::before { content: "\EA22"; }
+
 .eaton-tabbed-menu-list__title { display: block; padding: 30px 0; }
 
 .eaton-tabbed-menu-list__title.mobile { display: block; }

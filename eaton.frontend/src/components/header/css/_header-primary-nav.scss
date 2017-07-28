@@ -38,9 +38,14 @@ $primary-nav-border: #EEF0F2;
     }
 
     &__open-search,
-    &__open-mobile-menu {
+    &__toggle-mobile-menu {
       display: inline-block;
-      padding: ($spacing__sm / 2);
+      padding: ($spacing__sm / 2) + 2;
+    }
+
+    .icon-close {
+      display: none;
+      color: $color__white;
     }
   }
 
@@ -89,7 +94,7 @@ $primary-nav-border: #EEF0F2;
       }
     }
 
-    &__open-mobile-menu {
+    &__toggle-mobile-menu {
       display: none;
     }
   }

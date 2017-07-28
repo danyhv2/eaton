@@ -411,6 +411,34 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/container">
                                 <items jcr:primaryType="nt:unstructured">
+                                    <page-type
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Page Type"
+                                        name="./page-type">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <select
+                                                jcr:primaryType="nt:unstructured"
+                                                text="(Please Select)"
+                                                value="select"/>
+                                            <home-page
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Home Page"
+                                                value="home-page"/>
+                                            <generic-page
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Generic Page"
+                                                value="generic-page"/>
+                                            <article-page
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Article Page"
+                                                value="article-page"/>
+                                            <sitemap-page
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Sitemap Page"
+                                                value="sitemap-page"/>
+                                        </items>
+                                    </page-type>
                                     <teaser-title
                                         cq:hideOnEdit="{Boolean}false"
                                         cq:showOnCreate="{Boolean}true"
@@ -442,8 +470,7 @@
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/foundation/form/textfield"
                                         fieldLabel="Eyebrow Title"
-                                        name="./eyebrow-title"
-                                        validation="foundation.jcr.name"/>
+                                        name="./eyebrow-title"/>
                                     <teaser-image-path
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
@@ -451,12 +478,20 @@
                                         fieldLabel="Teaser Image Path"
                                         name="./teaser-image-path"
                                         renderReadOnly="{Boolean}true"
-                                        rootPath="/content"/>
+                                        rootPath="/content/dam/eaton"/>
                                     <teaser-description
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/foundation/form/textarea"
                                         fieldLabel="Teaser Description"
                                         name="./teaser-description"/>
+                                    <overlay-path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        cq-msm-lockable="overlay-path"
+                                        fieldLabel="Overlay Path"
+                                        name="./overlay-path"
+                                        renderReadOnly="{Boolean}true"
+                                        rootPath="/content/eaton"/>
                                 </items>
                             </column>
                         </items>
@@ -899,6 +934,32 @@
                             </column>
                         </items>
                     </livecopy>
+                    
+                    <errorpages
+                        cq:showOnCreate="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Error"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <contextHubConfig
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Error Pages"
+                                        name="./errorPages"
+                                        rootPath="/content/eaton"/>
+                                    
+                                </items>
+                            </column>
+                        </items>
+                    </errorpages>
                 </items>
             </tabs>
         </items>
