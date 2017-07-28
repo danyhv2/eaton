@@ -1,92 +1,20 @@
 <sly data-sly-test="${ wcmmode.edit }">
-  <div class="alert alert-warning">Product Tabs Family</div>
+  <div class="alert alert-warning">Product tabs family</div>
 </sly>
 
-<!--/* BEGIN M-40.1 Product Tabs Family */ -->
-<sly data-sly-test="!${wcmmode.edit}" data-sly-use.data="data/product-tabs-family-data.js" >
-  <div class="eaton-product-tabs" >
+<sly data-sly-test="!${wcmmode.edit}" data-sly-use.viewData="data/product-tabs-family-data.js" >
 
-    <div class="container">
-      <input id="overview" type="radio" name="product-tab" checked>
-      <input id="specifications" type="radio" name="product-tab">
-      <input id="resources" type="radio" name="product-tab">
+  <sly data-sly-test="${ properties.view == 'toggle-graphic' }">
+    <!-- <sly data-sly-use.tpl="../../shared/templates/module-product-tab.html">
+      <sly data-sly-call="${ tpl.data @ data=viewData.toggleGraphic }"></sly>
+    </sly> -->
+  </sly>
 
-      <div class="row eaton-product-tabs__buttons">
-        <div class="col-md-4">
-          <div class="eaton-product-tabs__description">
-            <a href="${data.eyebrowCta.href}"
-               class="b-eyebrow-small"
-               aria-label="Go to ${data.eyebrowCta.title}" >
-              <i class="icon icon-chevron-left" aria-hidden="true"></i>
-                ${data.eyebrowCta.title}
-            </a>
-            <div class="b-heading-h5">
-              ${data.productName}
-            </div>
-          </div>
-        </div>
+  <!-- <sly data-sly-test="${ properties.view == 'links-navigation' }"> -->
+  <sly data-sly-test="${ properties.view == 'toggle-graphic' }">
+    <sly data-sly-use.tpl="../../shared/templates/module-product-tab.html">
+      <sly data-sly-call="${ tpl.data @ data=viewData.linkNavigation }"></sly>
+    </sly>
+  </sly>
 
-        <div class="col-md-5">
-          <div class="row">
-            <label for="overview">
-              <!-- <a href="#overview" > -->
-              <i class="icon icon-doc-text" aria-hidden="true"></i>
-              <span>${data.overviewTabLabel}</span>
-              <!-- </a> -->
-            </label>
-            <label for="specifications">
-              <!-- <a href="#" > -->
-              <i class="icon icon-tiles" aria-hidden="true"></i>
-              <span>${data.specificationsTabLabel}</span>
-              <!-- </a> -->
-            </label>
-            <label for="resources">
-              <!-- <a href="#resources" > -->
-              <i class="icon icon-doc-download" aria-hidden="true"></i>
-              <span>${data.resourcesTabLabel}</span>
-              <!-- </a> -->
-            </label>
-          </div>
-        </div>
-
-        <div class="col-md-3 u-text-center">
-          <button class="eaton-product-tabs__dropdown">
-            ${data.dropdown.label}
-            <i class="icon icon-chevron-down" aria-hidden="true"></i>
-            <div class="eaton-product-tabs__dropdown__content">
-              <ul data-sly-list="${ data.dropdown.options }">
-                <li>
-                  <a href="#1" aria-label="Go to ${item.title}" >
-                    <i class="icon icon-${item.icon}" aria-hidden="true"></i><span>${item.title}</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div
-          class="col-sm-12 eaton-product-tabs__tab-panel"
-          data-tab-name="overview" >
-          <h1>content overview</h1>
-          <h2>TODO: replace this with content overview</h2>
-        </div>
-        <div
-          class="col-sm-12 eaton-product-tabs__tab-panel"
-          data-tab-name="specifications" >
-          <h1>content specifications</h1>
-          <h2>TODO: replace this with content Specifications</h2>
-        </div>
-        <div
-          class="col-sm-12 eaton-product-tabs__tab-panel"
-          data-tab-name="resources" >
-          <h1>content resources</h1>
-          <h2>TODO: replace this with content resources</h2>
-        </div>
-      </div>
-    </div>
-  </div>
 </sly>
-<!--/* END M-40.1 Product Tabs Family */ -->

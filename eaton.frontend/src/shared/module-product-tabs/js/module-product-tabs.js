@@ -5,7 +5,7 @@
 
 let App = window.App || {};
 
-App.header = (function() {
+App.productTab = (function() {
 
   const $componentClass = $('.eaton-product-tabs');
   const isAEMAuthorMode = (window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode()) ? true : false;
