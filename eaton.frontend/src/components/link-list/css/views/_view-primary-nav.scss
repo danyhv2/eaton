@@ -34,8 +34,8 @@
       display: block;
       // padding: $spacing__sm ($spacing__sm / 2);
       padding: $spacing__sm 0;
-      font-size: 25px;
-      line-height: 30px;
+      font-size: 20px;
+      line-height: 24px;
       background: $color__primary-gray1;
       margin-bottom: 0;
       font-family: 'EatonMedium';
@@ -60,6 +60,7 @@
         position: relative;
 
         span { flex: 1; }
+
         .icon {
           display: flex;
           font-size: 0.75em;
@@ -136,6 +137,7 @@
     }
 
     &--has-background {
+      // stylelint-disable declaration-no-important
       background: none !important;
     }
   }

@@ -1,21 +1,23 @@
 //-----------------------------------
-// Component M-42: Top List with Icon
+// Component How to Buy
 //-----------------------------------
-// Import All SASS config files (Variables, Mixins, Functions etc...)
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
-
-.eaton-top-list-with-icon {
-  margin-top: $spacing__lg / 2;
+.eaton-how-to-buy {
+  padding-top: $spacing__lg / 2;
   overflow: hidden;
+  background: $color__secondary-gray6;
+
   &__icon {
     color: $color__accent-orange;
     max-width: $spacing__md;
     display: inline-block;
 
-    .icon {
-      font-size: 60px;
-      padding: 0;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -33,7 +35,7 @@
 
 
   @include media-desktop-and-up {
-    margin-top: $spacing__lg;
+    padding-top: $spacing__lg;
 
     &__icon {
       max-width: 70px;
@@ -57,8 +59,11 @@
       &.row {
         display: flex;
         flex-wrap: wrap;
+
         .row {
           margin: 0;
+          display: flex;
+          flex-wrap: wrap;
         }
       }
     }
