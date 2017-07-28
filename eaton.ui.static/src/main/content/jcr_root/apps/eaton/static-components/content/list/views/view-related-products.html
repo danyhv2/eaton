@@ -1,6 +1,6 @@
 <!--Desktop Carousel-->
-<div data-sly-use.data="${'../data/view-related-products-data.js'}" class="related-products-component carousel-component carousel slide container desktop-carousel hidden-xs" data-ride="carousel" data-pause="hover">
-
+<div data-sly-use.data="${'../data/view-related-products-data.js' @testdata=properties.testdata}" class="related-products-component carousel-component carousel slide container desktop-carousel hidden-xs" data-ride="carousel" data-pause="hover">
+<p>eaton ${@testdata=properties.testdata}</p>
     <!-- Indicators -->
     <sly data-sly-test="${data.length > 1}">
         <ol data-sly-list.slide="${data}" class="carousel-indicators">
@@ -45,7 +45,7 @@
 </div>
 
 <!--Mobile Carousel-->
-<div data-sly-use.data="${'../data/view-related-products-data.js'}" class="related-products-component carousel-component carousel-component1 carousel slide container mobile-carousel visible-xs" data-ride="carousel" data-pause="hover">
+<div data-sly-use.data="${'../data/view-related-products-data.js' @testdata=properties.testdata}" class="related-products-component carousel-component carousel-component1 carousel slide container mobile-carousel visible-xs" data-ride="carousel" data-pause="hover">
 
     <!-- Indicators -->
     <ol data-sly-list.data="${data}" class="carousel-indicators carousel-component--indicators">
