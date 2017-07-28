@@ -32,7 +32,7 @@
                 value="no-image-highlights"/>
               <top-list-with-icon
                 jcr:primaryType="nt:unstructured"
-                text="Defaul (3 column)"
+                text="Default (3 column)"
                 value="top-list-with-icon"/>
             </options>
           </view>
