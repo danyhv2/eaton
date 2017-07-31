@@ -23,12 +23,13 @@
 var App = App || {};
 App.global = function () {
 
-  // Accepts and strings/integers and logs them to console
-  var globalExample = function globalExample(value) {
-    console.log(value);
-  };
+  // // Accepts and strings/integers and logs them to console
+  // const globalExample = function(value) {
+  //   console.log(value);
+  // };
+  //
+  // return {
+  //   globalExample
+  // };
 
-  return {
-    globalExample: globalExample
-  };
 }();

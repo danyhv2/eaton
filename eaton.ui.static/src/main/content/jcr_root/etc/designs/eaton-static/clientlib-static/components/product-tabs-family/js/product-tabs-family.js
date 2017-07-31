@@ -22,10 +22,10 @@
 
 var App = window.App || {};
 
-App.header = function () {
+App.productTabsFamily = function () {
 
   var $componentClass = $('.eaton-product-tabs');
-  var isAEMAuthorMode = window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode() ? true : false;
+  var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
 
   var init = function init() {
     // return;
