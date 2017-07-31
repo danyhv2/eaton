@@ -5,10 +5,6 @@
 
 let App = window.App || {};
 
-function init() {
-
-}
-
 App.facets = (function() {
   const $componentClass = $('.faceted-navigation');
 
