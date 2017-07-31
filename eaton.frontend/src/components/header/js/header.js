@@ -19,8 +19,8 @@ App.header = (function() {
   const closeMegaMenuBtn = $componentClass.find('.mega-menu-title__close-menu');
   const toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
 
-  // Check AEM Author Mode - Touch + Classic UI
-  const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
+  // Check AEM Author Mode
+  const isAEMAuthorMode = (window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode()) ? true : false;
 
   /**
   * Init
