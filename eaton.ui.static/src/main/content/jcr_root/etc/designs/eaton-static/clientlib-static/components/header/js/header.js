@@ -66,7 +66,7 @@ App.header = function () {
     // Sticky Navigation Behaviors - Handle Scroll
     windowEl.on('scroll', function (event) {
       var scrollTop = windowEl.scrollTop();
-      var headerHeight = 144;
+      var headerHeight = 40;
 
       if (scrollTop > headerHeight) {
         $componentClass.addClass('eaton-header--fixed');

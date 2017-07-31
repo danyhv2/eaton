@@ -19,8 +19,6 @@
 
     i {
       font-size: 0.75em;
-      margin-right: ($spacing__sm / 3);
-      margin-top: 0.25em;
     }
 
     .dark-theme & {
@@ -38,10 +36,12 @@
       display: flex;
       padding: 20px 0;
       border-bottom: 1px solid rgba(238, 240, 242, 0.3);
+      align-items: center;
     }
 
     &__text {
       flex: 1;
+      margin-right: ($spacing__sm / 2);
     }
   }
 
