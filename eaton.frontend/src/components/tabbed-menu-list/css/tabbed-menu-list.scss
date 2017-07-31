@@ -113,6 +113,18 @@
 				&.secondary {
 					order: 3;
 				}
+
+				&.tertiary {
+					order: 5;
+				}
+
+				&.quaternary {
+					order: 7;
+				}
+
+				&.quinary {
+					order: 9;
+				}
     	}
     }
 
@@ -125,6 +137,18 @@
     		&.secondary {
     			order: 4;
     		}
+
+    		&.tertiary {
+					order: 6;
+				}
+
+				&.quaternary {
+					order: 8;
+				}
+
+				&.quinary {
+					order: 10;
+				}
     	}
     }
 

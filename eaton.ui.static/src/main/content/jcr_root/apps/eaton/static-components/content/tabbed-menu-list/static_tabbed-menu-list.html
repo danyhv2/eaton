@@ -27,14 +27,14 @@
 	</div>
 	<div class="container tab-container">
 		<sly data-sly-list.tab=${data.tabs}>
-					<div class="eaton-tabbed-menu-list__item b-body-copy col-md-4 desktop ${tabList.index >= 0 && tabList.index <= 2 ? 'primary' : ''} ${tabList.index >= 3 && tabList.index <= 5 ? 'secondary' : ''}" role="tablist">
+					<div class="eaton-tabbed-menu-list__item b-body-copy col-md-4 desktop ${tabList.index >= 0 && tabList.index <= 2 ? 'primary' : ''} ${tabList.index >= 3 && tabList.index <= 5 ? 'secondary' : ''} ${tabList.index >= 6 && tabList.index <= 8 ? 'tertiary' : ''} ${tabList.index >= 9 && tabList.index <= 11 ? 'quaternary' : ''} ${tabList.index >= 12 && tabList.index <= 14 ? 'quinary' : ''}"   role="tablist">
 						<a class="eaton-tabbed-menu-list__title desktop" data-toggle="tab" href="#tab${tabList.index}" data-index="${tabList.index}" role="tab" aria-selected="false">
 							${tab.title}
 						</a>
 					</div>
 			</sly>
 		<sly data-sly-list.tab=${data.tabs}>
-		<div class="tab-content desktop ${tabList.index >= 0 && tabList.index <= 2 ? 'primary' : ''} ${tabList.index >= 3 && tabList.index <= 5 ? 'secondary' : ''} eaton-tabbed-menu-list__tab desktop col-md-12" >
+		<div class="tab-content desktop ${tabList.index >= 0 && tabList.index <= 2 ? 'primary' : ''} ${tabList.index >= 3 && tabList.index <= 5 ? 'secondary' : ''} ${tabList.index >= 6 && tabList.index <= 8 ? 'tertiary' : ''} ${tabList.index >= 9 && tabList.index <= 11 ? 'quaternary' : ''} ${tabList.index >= 12 && tabList.index <= 14 ? 'quinary' : ''} eaton-tabbed-menu-list__tab desktop col-md-12" >
 			<div id="tab${tabList.index}" class="tab-pane fade eaton-tabbed-menu-list__item" >
 				<div class="container">
 					<div class="row">
