@@ -6,10 +6,13 @@
 
     <sly data-sly-list="${ data.facetItems }">
 
+      <!--/* Add Wrapper div used to toggle Facets Visiblity (View More) */-->
       <sly data-sly-test="${ itemList.index == data.config.facetItemsMinVisible }">
-        <sly data-sly-text="${ '<div class=\u0022u-hide faceted-navigation__more-facets\u0022>' @ context='unsafe' }"></sly>
+        <div class="u-hide faceted-navigation__more-facets">
       </sly>
 
+
+      <!--/* Print All Facets */-->
       <div class="faceted-navigation__group">
 
         <!--/* Facet Header */-->
@@ -72,8 +75,10 @@
 
       </div>
 
+
+      <!--/* Close Wrapper div used to toggle Facets Visiblity (View More) */-->
       <sly data-sly-test="${ itemList.index >= data.config.facetItemsMinVisible && itemList.last }">
-        <sly data-sly-text="${ '</div>' @ context='unsafe' }"></sly>
+        </div>
       </sly>
 
     </sly>
