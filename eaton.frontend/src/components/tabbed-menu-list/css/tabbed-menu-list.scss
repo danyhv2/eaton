@@ -1,118 +1,169 @@
 //-----------------------------------
 // Component M-46: Tabbed Menu List
 //-----------------------------------
-
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
 .eaton-tabbed-menu-list {
 
-	.mobile {
-		display: block;
-	}
+  .mobile {
+    display: block;
+  }
 
-	.desktop {
-		display: none;
-	}
+  .desktop {
+    display: none;
+  }
 
-	&__title {
+  &__title {
 
-		display: block;
-		padding: $spacing__md / 2 0;
+    display: block;
+    padding: $spacing__md / 2 0;
 
-		span {
+    span {
 
-			&::before {
-				@extend %glyphicon-sign-minus;
-			}
-		}
+      &::before {
+        @extend %glyphicon-sign-minus;
+      }
+    }
 
-		&.collapsed {
-			
-			span {
+    &.collapsed {
 
-				&::before {
-					@extend %glyphicon-sign-plus;
+      span {
+
+        &::before {
+          @extend %glyphicon-sign-plus;
+        }
+      }
+    }
+  }
+
+  &__item {
+    padding: 0;
+    border-bottom: 1px solid $color__secondary-gray6;
+
+    a {
+      display: block;
+      padding-bottom: $spacing__md / 2;
+    }
+
+    &>a {
+      color: $color__black;
+
+      span {
+        color: $color__primary-blue;
+      }
+
+      &.collapsed {
+        color: $color__primary-blue;
+      }
+    }
+  }
+
+  @include media-desktop-and-up {
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+
+    &__title {
+
+      padding: 50px 0;
+
+      &.active {
+        border-bottom: 2px solid $color__primary-blue;
+      }
+    }
+
+    &__item {
+      border-color: transparent;
+
+      &>a {
+        color: $color__primary-blue;
+
+        &.active {
+          color: $color__black;
+        }
+      }
+
+      a {
+        padding-bottom: 50px;
+      }
+    }
+
+    &__tab-links {
+      border-left: 1px solid $color__primary-gray3;
+    }
+
+    &__tabs {
+      display: block;
+      overflow: hidden;
+    }
+
+    &__item {
+    	&.desktop {
+    		flex:0 0 33%;
+				&.primary {
+					order: 1;
 				}
-			}
-		}
-	}
 
-	&__item {
-		padding: 0;
-		border-bottom: 1px solid $color__secondary-gray6;
-
-		a {
-			display: block;
-			padding-bottom: $spacing__md / 2;
-		}
-
-		& > a {
-			color: $color__black;
-
-			span {
-				color: $color__primary-blue;
-			}
-
-			&.collapsed {
-				color: $color__primary-blue;
-			}
-		}
-
-	}
-
-	@include media-desktop-and-up {
-		
-		.mobile {
-			display: none;
-		}
-
-		.desktop {
-			display: block;
-		}
-
-		&__title {
-			
-			padding: 50px 0;
-
-			&.active {
-				border-bottom: 2px solid $color__primary-blue;
-			}
-		}
-
-		&__item {
-			border-color: transparent;
-
-			& > a {
-				color: $color__primary-blue;
-
-				&.active {
-					color: $color__black;
+				&.secondary {
+					order: 3;
 				}
-			}
 
-			a {
-				padding-bottom: 50px;
-			}
-		}
+				&.tertiary {
+					order: 5;
+				}
 
-		&__tab-links {
-			border-left: 1px solid $color__primary-gray3;
-		}
+				&.quaternary {
+					order: 7;
+				}
 
-		&__tabs {
-			display: block;
-			overflow: hidden;
-		}
+				&.quinary {
+					order: 9;
+				}
+    	}
+    }
 
-		.tab-content {
-			background: $color__secondary-gray6;
-			// padding-top: 50px;	
-		}
-		
-		.tab-pane {
-			padding-top: 50px;
-		}
+    &__tab {
+    	&.desktop {
+    		&.primary {
+    			order: 2;
+    		}
 
-	}
+    		&.secondary {
+    			order: 4;
+    		}
+
+    		&.tertiary {
+					order: 6;
+				}
+
+				&.quaternary {
+					order: 8;
+				}
+
+				&.quinary {
+					order: 10;
+				}
+    	}
+    }
+
+    .tab-content {
+      background: $color__secondary-gray6; // padding-top: 50px;
+    }
+
+    .tab-pane {
+      padding-top: 50px;
+    }
+
+    .tab-container {
+    	display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: row;
+    }
+  }
 }
