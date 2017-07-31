@@ -31,6 +31,7 @@
     "gulp-babel": "6.1.2",
     "gulp-consolidate": "0.2.0",
     "gulp-eslint": "3.0.1",
+    "gulp-header": "1.8.9",
     "gulp-iconfont": "8.0.1",
     "gulp-if": "2.0.2",
     "gulp-plumber": "1.1.0",
