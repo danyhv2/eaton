@@ -20,7 +20,7 @@ App.demoComponent = (function() {
    */
   const addEventListeners = () => {
 
-    let mqDesktop;
+    let mqDesktop = null;
 
     $componentClass.find('.b-button').on('click', (event) => {
       console.log(event.target);
