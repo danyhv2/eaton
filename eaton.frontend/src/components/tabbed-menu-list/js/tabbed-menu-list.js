@@ -8,16 +8,21 @@ let App = App || window.App || {};
 App.TabbedMenuList = (function() {
   const $component = $('.eaton-tabbed-menu-list');
   const $titles = $component.find('.eaton-tabbed-menu-list__title');
-  // const $collapses = $component.find('.collapse');
-  // const $tabs = $component.find('.tab-pane');
+  const mediaquery = '(min-width: 992px)';
+  const matchmedia = window.matchMedia(mediaquery);
+  const $collapses = $component.find('.collapse');
+  const $tabsTitles = $component.find('.eaton-tabbed-menu-list__title.desktop');
+  const $tabs = $component.find('.tab-pane');
 
   const init = () => {
-    console.log('tabbed menu list');
     bindEvents();
+    matchFunction(matchmedia);
   };
 
   const bindEvents = () => {
     $titles.on('click', toogleTitles);
+    matchmedia.addListener(matchFunction);
+
   };
 
   const toogleTitles = (event) => {
@@ -35,13 +40,23 @@ App.TabbedMenuList = (function() {
         }
 
       }
-
-
     });
   };
 
+  const matchFunction = (matchmediaParam) => {
+    $titles.removeClass('active');
+    if (matchmediaParam.matches) {// to desktop
+      $collapses.collapse('hide');
+
+    } else {// to mobile
+      $tabsTitles.removeClass('active');
+      $tabs.removeClass('active');
+    }
+  };
+
   return {
-    init: init
+    init: init,
+    tabs: $tabs
   };
 }());
 
