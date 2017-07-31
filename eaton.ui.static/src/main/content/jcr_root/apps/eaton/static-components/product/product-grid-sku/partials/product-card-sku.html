@@ -35,7 +35,6 @@
 
       <!--/* Product Links */-->
       <ul class="product-card-sku__links-list">
-
         <li class="product-card-sku__link-item">
           <a href="${ data.contentItem.productLinks.specificationsURL @ context='uri' }"
             class="product-card-sku__link-item-link"
@@ -57,14 +56,12 @@
             <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
           </a>
         </li>
-
       </ul>
 
     </div>
 
 
-
-    <!--/* Content */-->
+    <!--/* Card Content */-->
     <div class="product-card-sku__content">
       <div class="product-card-sku__attrs-list"
         data-sly-list.attribute="${ data.contentItem.productAttributes }">
@@ -73,10 +70,8 @@
           <div class="product-card-sku__attr-value b-body-copy">${ attribute.value }</div>
         </div>
       </div>
-
       <div class="product-card-sku__description">${ data.contentItem.description }</div>
     </div>
-
 
   </div>
 

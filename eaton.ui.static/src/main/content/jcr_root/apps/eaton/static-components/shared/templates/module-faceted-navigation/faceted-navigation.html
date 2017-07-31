@@ -1,0 +1,89 @@
+<!--/* M-62: Faceted Navigation */-->
+<template data-sly-template.module="${ @ data }">
+  <div class="faceted-navigation eaton-form">
+
+    <h4>${ 'Narrow Results' @ i18n }</h4>
+
+    <sly data-sly-list="${ data.facetItems }">
+
+      <sly data-sly-test="${ itemList.index == data.config.facetItemsMinVisible }">
+        <sly data-sly-text="${ '<div class=\u0022u-hide faceted-navigation__more-facets\u0022>' @ context='unsafe' }"></sly>
+      </sly>
+
+      <div class="faceted-navigation__group">
+
+        <!--/* Facet Header */-->
+        <button class="faceted-navigation__header button--reset"
+          data-toggle="collapse"
+          data-target="#${ 'facet-{0}' @ format=[ item.facetId ] }"
+          aria-expanded="true"
+          aria-controls="${ 'facet-{0}' @ format=[ item.facetId ] }"
+        >
+          <span class="faceted-navigation__facet-name">${ item.facetName }</span>
+          <i class="icon icon-sign-minus" aria-hidden="true"></i>
+          <i class="icon icon-sign-plus u-hide" aria-hidden="true"></i>
+        </button>
+
+        <!--/* Facet Values */-->
+        <div class="collapse in" id="${ 'facet-{0}' @ format=[ item.facetId ] }">
+          <div data-sly-list.facetValue="${ item.facetValues }"
+            class="faceted-navigation__list">
+
+
+            <!--/* Type: Checkbox */-->
+            <sly data-sly-test="${ item.facetType == 'checkboxes' }">
+              <div class="faceted-navigation__list-item ">
+                <input
+                  name="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
+                  type="checkbox"
+                  id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
+                />
+                <label for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</label>
+
+                <!--/* View More Facet Values */-->
+                <div data-sly-test="${ facetValueList.count == data.config.facetValuesMinVisible }"
+                  class="faceted-navigation__view-more-values">
+                  <button class="button--reset" >${ 'View more' @ i18n }</button>
+                </div>
+              </div>
+            </sly>
+
+
+            <!--/* Type: Radio */-->
+            <sly data-sly-test="${ item.facetType == 'radios'}">
+              <div class="faceted-navigation__list-item ">
+                <input
+                  name="${ 'facet-{0}' @ format=[ item.facetId ] }"
+                  type="radio"
+                  id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
+                />
+                <label for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</label>
+
+                <!--/* View More Facet Values */-->
+                <div data-sly-test="${ facetValueList.count == data.config.facetValuesMinVisible }"
+                  class="faceted-navigation__view-more-values">
+                  <button class="button--reset" >${ 'View more' @ i18n }</button>
+                </div>
+              </div>
+            </sly>
+
+          </div>
+        </div>
+
+      </div>
+
+      <sly data-sly-test="${ itemList.index >= data.config.facetItemsMinVisible && itemList.last }">
+        <sly data-sly-text="${ '</div>' @ context='unsafe' }"></sly>
+      </sly>
+
+    </sly>
+
+
+    <!--/* View More Facet Items */-->
+    <div data-sly-test="${ data.facetItems.length > data.config.facetItemsMinVisible }"
+      class="faceted-navigation__view-more-facets">
+      <button id="view-more-facets" class="button--reset" >${ 'View more' @ i18n }</button>
+    </div>
+
+  </div>
+</template>

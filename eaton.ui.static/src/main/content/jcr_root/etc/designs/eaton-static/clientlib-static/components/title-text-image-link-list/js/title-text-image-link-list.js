@@ -12,9 +12,8 @@ App.carousel = function () {
   };
 
   /**
-   * @private
    * Initialize Bootstrap Carousel
-  */
+   */
   var initCarousels = function initCarousels() {
     $componentEl.carousel({
       interval: 3000,
@@ -23,9 +22,8 @@ App.carousel = function () {
   };
 
   /**
-   * @private
    * Bind All Event Listeners
-  */
+   */
   var addEventListeners = function addEventListeners() {
 
     // Go To Previous / Next Slide

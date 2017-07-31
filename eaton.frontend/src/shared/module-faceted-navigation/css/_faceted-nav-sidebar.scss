@@ -1,0 +1,26 @@
+//-----------------------------------
+// M-62: Faceted Navigation
+//-----------------------------------
+
+
+.faceted-navigation {
+
+
+
+  //-----------------------------------
+  // MediaQuery: Mobile & Tablet Only
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+  }
+
+
+
+  //-----------------------------------
+  // MediaQuery: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+  }
+
+}

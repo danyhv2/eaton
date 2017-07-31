@@ -1,9 +1,10 @@
 //-----------------------------------
-// Component Icon List
+// Component Search Results
 //-----------------------------------
 
 // Import All SASS config files (Variables, Mixins, Functions, etc)
 @import "../../../global/css/_config/sass";
 
-// Import SubViews
-@import "views/view-simple";
+// Import SubModules
+@import "results-list";
+@import "results-list-modules";
