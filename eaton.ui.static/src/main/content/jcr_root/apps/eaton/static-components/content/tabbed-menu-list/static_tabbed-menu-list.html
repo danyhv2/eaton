@@ -9,9 +9,6 @@
 				<a class="eaton-tabbed-menu-list__title mobile collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse${tabList.index}" data-index="${tabList.index}" aria-expanded="false">
 					${tab.title} <span class="icon icon-sign-plus pull-right" aria-hidden="true"></span>
 				</a>
-				<!-- <a class="eaton-tabbed-menu-list__title desktop" data-toggle="tab" href="#tab${tabList.index}" data-index="${tabList.index}">
-					${tab.title}	
-				</a> -->
 				<div id="collapse${tabList.index}" class="panel-collapse collapse" role="region" aria-labelledby="${tab.title}">
 					<div class="row">
 						<div class="col-xs-12">
@@ -26,33 +23,37 @@
 				</div>
 			</div>
 		</div>
-		<div class="eaton-tabbed-menu-list__tabs desktop" data-sly-list.tab=${data.tabs}>
-			<div class="eaton-tabbed-menu-list__item b-body-copy col-md-4" role="tablist">
-				<a class="eaton-tabbed-menu-list__title desktop" data-toggle="tab" href="#tab${tabList.index}" data-index="${tabList.index}" role="tab" aria-selected="false">
-					${tab.title}	
-				</a>
-			</div>
-		</div>
-		
+
 	</div>
-	<div class="tab-content desktop" data-sly-list.tab=${data.tabs}>
-		<div id="tab${tabList.index}" class="tab-pane fade eaton-tabbed-menu-list__item">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-3 eaton-tabbed-menu-list__tab-title">
-						<a class="b-body-copy" href="${tab.content.header.url}" title="${tab.content.header.text}">${tab.content.header.text}</a>
+	<div class="container tab-container">
+		<sly data-sly-list.tab=${data.tabs}>
+					<div class="eaton-tabbed-menu-list__item b-body-copy col-md-4 desktop ${tabList.index >= 0 && tabList.index <= 2 ? 'primary' : ''} ${tabList.index >= 3 && tabList.index <= 5 ? 'secondary' : ''}" role="tablist">
+						<a class="eaton-tabbed-menu-list__title desktop" data-toggle="tab" href="#tab${tabList.index}" data-index="${tabList.index}" role="tab" aria-selected="false">
+							${tab.title}
+						</a>
 					</div>
-					<div class="col-xs-12 col-md-9 eaton-tabbed-menu-list__tab-links">
-						<div class="row">
-							<sly data-sly-list.link="${tab.content.links}"> 
-								<div class="col-xs-12 col-md-4">
-									<a class="b-body-copy-small" href="${link.url}" title="${link.text}">${link.text}</a>
-								</div>
-							</sly>
+			</sly>
+		<sly data-sly-list.tab=${data.tabs}>
+		<div class="tab-content desktop ${tabList.index >= 0 && tabList.index <= 2 ? 'primary' : ''} ${tabList.index >= 3 && tabList.index <= 5 ? 'secondary' : ''} eaton-tabbed-menu-list__tab desktop col-md-12" >
+			<div id="tab${tabList.index}" class="tab-pane fade eaton-tabbed-menu-list__item" >
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-3 eaton-tabbed-menu-list__tab-title">
+							<a class="b-body-copy" href="${tab.content.header.url}" title="${tab.content.header.text}">${tab.content.header.text}</a>
+						</div>
+						<div class="col-xs-12 col-md-9 eaton-tabbed-menu-list__tab-links">
+							<div class="row">
+								<sly data-sly-list.link="${tab.content.links}">
+									<div class="col-xs-12 col-md-4">
+										<a class="b-body-copy-small" href="${link.url}" title="${link.text}">${link.text}</a>
+									</div>
+								</sly>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div >
+		</sly>
 	</div>
 </div>

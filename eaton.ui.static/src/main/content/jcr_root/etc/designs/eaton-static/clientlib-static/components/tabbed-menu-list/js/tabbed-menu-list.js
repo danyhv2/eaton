@@ -25,7 +25,7 @@ var App = App || window.App || {};
 App.TabbedMenuList = function () {
   var $component = $('.eaton-tabbed-menu-list');
   var $titles = $component.find('.eaton-tabbed-menu-list__title');
-  var mediaquery = '(min-width: 992px)';
+  var mediaquery = App.global.constants.MEDIA_QUERIES.DESKTOP;
   var matchmedia = window.matchMedia(mediaquery);
   var $collapses = $component.find('.collapse');
   var $tabsTitles = $component.find('.eaton-tabbed-menu-list__title.desktop');
@@ -45,14 +45,26 @@ App.TabbedMenuList = function () {
     var $this = $(event.target);
     var index = $this.data('index');
 
+    $tabs.removeClass('active');
     $titles.removeClass('active');
     $.each($titles, function (i, element) {
+      if ($(element).hasClass('desktop')) {
+
+        $(element).attr('aria-selected', 'false');
+      }
+
       if ($(element).data('index') === index) {
 
         if ($(element).hasClass('active')) {
+
           $(element).removeClass('active');
         } else {
+
           $(element).addClass('active');
+          if ($(element).hasClass('desktop')) {
+
+            $(element).attr('aria-selected', 'true');
+          }
         }
       }
     });
@@ -70,10 +82,7 @@ App.TabbedMenuList = function () {
     }
   };
 
-  return {
-    init: init,
-    tabs: $tabs
-  };
+  if ($component.length > 0) {
+    init();
+  }
 }();
-
-$(document).ready(App.TabbedMenuList.init);

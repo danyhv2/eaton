@@ -28,5 +28,11 @@
   .eaton-tabbed-menu-list__item a { padding-bottom: 50px; }
   .eaton-tabbed-menu-list__tab-links { border-left: 1px solid #98A4AE; }
   .eaton-tabbed-menu-list__tabs { display: block; overflow: hidden; }
+  .eaton-tabbed-menu-list__item.desktop { -webkit-box-flex: 0; -ms-flex: 0 0 33%; flex: 0 0 33%; }
+  .eaton-tabbed-menu-list__item.desktop.primary { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+  .eaton-tabbed-menu-list__item.desktop.secondary { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }
+  .eaton-tabbed-menu-list__tab.desktop.primary { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
+  .eaton-tabbed-menu-list__tab.desktop.secondary { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }
   .eaton-tabbed-menu-list .tab-content { background: #F8F8F8; }
-  .eaton-tabbed-menu-list .tab-pane { padding-top: 50px; } }
+  .eaton-tabbed-menu-list .tab-pane { padding-top: 50px; }
+  .eaton-tabbed-menu-list .tab-container { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; } }
