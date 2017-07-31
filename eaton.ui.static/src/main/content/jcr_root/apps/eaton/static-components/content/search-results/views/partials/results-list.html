@@ -1,0 +1,42 @@
+<!--/* M-60: Results List */-->
+<template data-sly-template.module="${ @ data }">
+
+<div class="results-list">
+  <div data-sly-list="${ data.results }"
+    class="results-list__content">
+
+    <sly data-sly-test="${ item.contentType == 'family' }">
+      <sly data-sly-use.tpl="views/partials/content-type--family.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+    </sly>
+
+    <sly data-sly-test="${ item.contentType == 'sku' }">
+      <sly data-sly-use.tpl="views/partials/content-type--family.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+    </sly>
+
+    <sly data-sly-test="${ item.contentType == 'article' }">
+      <sly data-sly-use.tpl="views/partials/content-type--article.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+    </sly>
+
+    <sly data-sly-test="${ item.contentType == 'resource' }">
+      <sly data-sly-use.tpl="views/partials/content-type--resource.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+    </sly>
+
+  </div>
+
+  <div class="results-list__bottom text-center">
+    <div class="results-list__actions text-center">
+      <button class="b-button b-button__primary b-button__primary--light" role="button">${ 'Load More' @ i18n }</button>
+    </div>
+  </div>
+
+</div>
+
+</template>
