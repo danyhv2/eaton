@@ -37,7 +37,7 @@ App.header = function () {
   var toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
 
   // Check AEM Author Mode
-  var isAEMAuthorMode = window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode() ? true : false;
+  var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
 
   /**
   * Init
