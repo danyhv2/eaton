@@ -189,7 +189,7 @@
     &__close-menu {
       display: inline;
       position: absolute;
-      right: 0;
+      right: ($spacing__sm / 2);
     }
   }
 }
