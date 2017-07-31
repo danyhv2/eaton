@@ -14,22 +14,18 @@
       margin-bottom: 30px;
     }
   }
+
   &__icon {
-    bottom: 110px;
+    top: 10px;
     position: absolute;
-    left: 25px;
+    left: -60px;
     font-size: 60px;
     color: $color__accent-orange;
 
-    @include media-tablet-only {
-      bottom: 15px;
-      left: -60px
+    @include media-mobile-only {
+      left: 25px;
+      top: -80px;
     }
-
-    @include media-desktop-large {
-      bottom: 112px;
-      left: -60px
-    };
   }
 
   &__info {
@@ -38,7 +34,7 @@
       margin-left: 50px;
     }
 
-    &--title{
+    &--title {
       margin-bottom: 25px;
     }
 
