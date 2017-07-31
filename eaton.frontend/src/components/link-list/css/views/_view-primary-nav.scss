@@ -67,6 +67,7 @@
         }
 
         &:first-child { margin-top: 0; }
+
         &:last-child { border-bottom: 0; }
       }
     }
@@ -137,8 +138,7 @@
     }
 
     &--has-background {
-      // stylelint-disable declaration-no-important
-      background: none !important;
+      background: none !important; // stylelint-disable-line declaration-no-important
     }
   }
 }

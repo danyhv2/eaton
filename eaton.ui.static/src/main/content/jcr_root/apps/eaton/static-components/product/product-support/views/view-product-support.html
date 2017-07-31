@@ -1,13 +1,18 @@
-<div class="feature-block-component" data-sly-use.data="../data/view-product-support-data.js">
-    <div class="row feature-block-component__container feature-block-component__container--white">
-        <div class="col-xs-12 ${data.imgSrc.length > 0 ? 'col-sm-7' : 'col-sm-12'} feature-block-component__copy" style="background-color: ${data.backgroundColor @ context='styleString'}">
-            <div class="feature-block-component__text">
-                <h2>${data.title}</h2>
-                <div class="feature-block-component__description">${data.text @ context = 'html'}</div>
+<div class="product-support-component" data-sly-use.data="${../data/view-product-support-data.js @testdata=properties.testdata}">
+    <div class="row">
+        <div class="product-support-component--left col-xs-12 col-sm-10 col-sm-offset-2 col-lg-4 col-lg-offset-2">
+            <div>
+                <i class="product-support-component__icon icon icon-help"></i>
+                <div class="product-support-component__text">
+                    <h2>${data.title}</h2>
+                    <p class="b-body-copy">${data.copy}</p>
+                </div>
             </div>
         </div>
-        <div data-sly-test="${data.imgSrc.length > 0}" class="col-xs-12 col-sm-5 feature-block-component__image feature-block-component__image--center">
-            <img class="img-responsive" src="${data.imgSrc}" alt="${data.imgAlt}">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-lg-5 col-lg-offset-0">
+            <div class="product-support-component__info">
+                <div class="product-support-component__info--text">${data.info @ context = 'html'}</div>
+            </div>
         </div>
     </div>
 </div>

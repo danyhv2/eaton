@@ -82,8 +82,6 @@
 
 @font-face { font-family: 'EatonBold'; src: url("fonts/EatonBold.woff") format("woff"); }
 
-@font-face { font-family: 'Arial'; src: url("fonts/Arial.woff"); }
-
 @font-face { font-family: "eaton-glyphicon"; font-style: normal; font-weight: normal; src: url("../css/fonts/eaton-glyphicon.eot"); src: url("../css/fonts/eaton-glyphicon.eot?#iefix") format("eot"), url("../css/fonts/eaton-glyphicon.woff") format("woff"), url("../css/fonts/eaton-glyphicon.ttf") format("truetype"); }
 
 .icon { font-size: 24px; line-height: 0; }
@@ -122,25 +120,25 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 h5 a, .b-heading-h5 a { color: #005EB8; }
 
-.b-h4-link { font-size: 1.375em; color: #005EB8; font-weight: bold; }
+.b-h4-link { font-size: 1.375em; font-family: Arial, "Arial", sans-serif; color: #005EB8; font-weight: bold; }
 
 .b-h4-link:hover, .b-h4-link:focus, .b-h4-link:active { text-decoration: none; color: #005EB8; }
 
 @media screen and (min-width: 992px) { .b-h4-link { font-size: 1.625em; } }
 
+.b-small-link { font-family: Arial, "Arial", sans-serif; color: #005EB8; font-size: 1.125em; }
+
+.b-small-link:hover, .b-small-link:focus, .b-small-link:active { text-decoration: none; color: #005EB8; }
+
 .b-body-copy { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
 
 .b-body-copy a { color: #005EB8; }
-
-.b-body-copy a:active { font-weight: bold; }
 
 @media screen and (min-width: 992px) { .b-body-copy { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
 
 .b-body-copy-small { font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
 
 .b-body-copy-small a { color: #005EB8; }
-
-.b-body-copy-small a:active { font-weight: bold; }
 
 @media screen and (min-width: 992px) { .b-body-copy-small { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; } }
 
@@ -153,6 +151,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 @media screen and (min-width: 992px) { .b-eyebrow-small { font-family: Arial, "Arial", sans-serif; font-size: 18px; line-height: 24px; text-transform: uppercase; } }
 
 .u-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.u-flex-1 { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
 .u-inline-flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
 
@@ -216,11 +216,11 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 992px) { .u-visible-desktop { display: block; } }
 
-[data-mobile-rendition] { min-width: 0 !important; }
+[data-mobile-rendition] { min-width: 2px; }
 
-@media all and (max-width: 979px) { [data-mobile-rendition] { min-width: 1px !important; } }
+@media all and (min-width: 768px) and (max-width: 991px) { [data-mobile-rendition] { min-width: 1px; } }
 
-@media all and (max-width: 767px) { [data-mobile-rendition] { min-width: 2px !important; } }
+@media all and (min-width: 992px) { [data-mobile-rendition] { min-width: 0; } }
 
 .button--reset { border: 0; background: none; padding: 0; }
 
@@ -234,7 +234,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .b-button__primary--dark { border-color: #FFF; color: #FFF; }
 
-.b-button__primary--dark:hover, .b-button__primary--dark:active, .b-button__primary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; text-shadow: none; }
+.b-button__primary--dark:hover, .b-button__primary--dark:active, .b-button__primary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; }
 
 .b-button__secondary { border-width: 3px; font-size: 0.875em; padding: 20px; }
 
@@ -245,6 +245,16 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 .b-button__secondary--dark { border-color: #FFF; color: #FFF; }
 
 .b-button__secondary--dark:hover, .b-button__secondary--dark:active, .b-button__secondary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; }
+
+.b-button__tertiary { border-width: 3px; font-size: 1.25em; padding: 20px 40px; }
+
+.b-button__tertiary--light { border-color: #005EB8; background-color: #005EB8; color: #FFF; }
+
+.b-button__tertiary--light:hover, .b-button__tertiary--light:active, .b-button__tertiary--light:focus { background: #FFF; color: #005EB8; text-decoration: none; }
+
+.b-button__tertiary--dark { border: 0; background-color: #005EB8; color: #FFF; }
+
+.b-button__tertiary--dark:hover, .b-button__tertiary--dark:active, .b-button__tertiary--dark:focus { background: #FFF; color: #005EB8; text-decoration: none; }
 
 @media screen and (max-width: 767px) { .b-button { max-width: 100%; }
   .b-button__secondary { font-size: 1em; } }
@@ -257,8 +267,6 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .rich-text-container a { color: #005EB8; }
 
-.rich-text-container a:active { font-weight: bold; }
-
 @media screen and (min-width: 992px) { .rich-text-container { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
 
 .rich-text-container b, .rich-text-container strong { font-weight: bold; }
@@ -270,8 +278,6 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 .rich-text-container p { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
 
 .rich-text-container p a { color: #005EB8; }
-
-.rich-text-container p a:active { font-weight: bold; }
 
 @media screen and (min-width: 992px) { .rich-text-container p { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
 
