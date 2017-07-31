@@ -5,6 +5,22 @@
 
 .faceted-navigation {
 
+ .faceted-navigation__header.button--reset{
+   width:100%;
+   text-align: left;
+
+   .icon::before{
+     position:absolute;
+     right:15px;
+     color: #005EB8;
+     font-size: 12px;
+   }
+ }
+
+ .faceted-navigation__facet-name{
+    font-size: 18px;
+ }
+
 
 
   //-----------------------------------

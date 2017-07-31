@@ -11,3 +11,9 @@
 .faceted-navigation-header__filter-link { -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -ms-flexbox; display: flex; margin-right: 2rem; }
 
 .faceted-navigation-header__filter-link .icon { font-size: 10px; margin-right: 1rem; }
+
+.faceted-navigation .faceted-navigation__header.button--reset { width: 100%; text-align: left; }
+
+.faceted-navigation .faceted-navigation__header.button--reset .icon::before { position: absolute; right: 15px; color: #005EB8; font-size: 12px; }
+
+.faceted-navigation .faceted-navigation__facet-name { font-size: 18px; }
