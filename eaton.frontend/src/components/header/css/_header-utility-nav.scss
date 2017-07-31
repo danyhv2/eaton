@@ -27,10 +27,6 @@
     top: 2px;
     font-size: 1em;
 
-    &.icon-globe {
-      margin-right: 5px;
-    }
-
     &.icon-chevron-down {
       font-size: 9px;
       top: 0;
@@ -80,6 +76,13 @@
 
     &__signin { display: none; }
 
+    .icon {
+      
+      &.icon-globe {
+        margin-right: 5px;
+      }
+    }
+
     .nav-open & {
       opacity: 1;
       visibility: visible;
@@ -97,6 +100,10 @@
 
     &__toggle-selector {
       flex: 1;
+    }
+
+    .icon {
+      margin-right: 5px;
     }
   }
 }
