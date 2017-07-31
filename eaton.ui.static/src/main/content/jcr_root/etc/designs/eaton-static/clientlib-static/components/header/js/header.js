@@ -37,7 +37,7 @@ App.header = function () {
   var toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
 
   // Check AEM Author Mode
-  var isAEMAuthorMode = window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode() ? true : false;
+  var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
 
   /**
   * Init
@@ -66,7 +66,7 @@ App.header = function () {
     // Sticky Navigation Behaviors - Handle Scroll
     windowEl.on('scroll', function (event) {
       var scrollTop = windowEl.scrollTop();
-      var headerHeight = 144;
+      var headerHeight = 40;
 
       if (scrollTop > headerHeight) {
         $componentClass.addClass('eaton-header--fixed');

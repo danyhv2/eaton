@@ -36,7 +36,9 @@ App.demoComponent = function () {
    */
   var addEventListeners = function addEventListeners() {
 
-    $componentClass.find('.c-button').on('click', function (event) {
+    var mqDesktop = null;
+
+    $componentClass.find('.b-button').on('click', function (event) {
       console.log(event.target);
     });
 
@@ -85,6 +87,7 @@ App.demoComponent = function () {
   if ($componentClass.lenght > 0) {
     init();
 
+    // Public Methods
     return {
       getDate: getDate
     };

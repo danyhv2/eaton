@@ -25,7 +25,6 @@
   .icon {
     position: relative;
     top: 2px;
-    margin-right: 5px;
     font-size: 1em;
 
     &.icon-chevron-down {
@@ -66,16 +65,23 @@
 
     &__toggle-selector {
       padding: 25px 0 25px 30px;
-      flex-basis: 75%;
+      flex-grow: 1;
       background: $color__primary-gray1;
     }
 
     &__sign-in {
-      flex: 1;
       text-align: center;
+      padding: 0 $spacing__sm;
     }
 
     &__signin { display: none; }
+
+    .icon {
+      
+      &.icon-globe {
+        margin-right: 5px;
+      }
+    }
 
     .nav-open & {
       opacity: 1;
@@ -94,6 +100,10 @@
 
     &__toggle-selector {
       flex: 1;
+    }
+
+    .icon {
+      margin-right: 5px;
     }
   }
 }

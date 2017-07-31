@@ -8,12 +8,12 @@ App.global = App.global || {};
 
 App.global.utils = (function() {
 
-  const isAEMTouchUI = (
-    getCookie('cq-editor-layer.page') === 'Edit'
-    && getCookie('cq-authoring-mode') === 'TOUCH'
-  )
-    ? true
-    : false;
+  // const isAEMTouchUI = (
+  //   getCookie('cq-editor-layer.page') === 'Edit'
+  //   && getCookie('cq-authoring-mode') === 'TOUCH'
+  // )
+  //   ? true
+  //   : false;
 
   const isAEMClassicUI = ( window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode() )
     ? true
@@ -36,7 +36,7 @@ App.global.utils = (function() {
   * AEM's Author mode
   */
   function isAEMAuthorMode() {
-    return (isAEMTouchUI || isAEMClassicUI) ? true : false;
+    return (isAEMClassicUI) ? true : false;
   }
 
 
