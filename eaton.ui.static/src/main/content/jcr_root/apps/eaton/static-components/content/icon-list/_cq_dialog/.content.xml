@@ -43,7 +43,7 @@
                     value="no-image-highlights"/>
                   <top-list-with-icon
                     jcr:primaryType="nt:unstructured"
-                    text="Topic List With Icon"
+                    text="Default (3 column)"
                     value="top-list-with-icon"/>
                 </items>
               </view>

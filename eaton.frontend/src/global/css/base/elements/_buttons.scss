@@ -17,6 +17,8 @@
   max-width: 600px;
 
 
+  // Primary Button
+  //--------------
   &__primary {
     border-width: 3px;
     font-size: 1.25em;
@@ -45,12 +47,14 @@
         color: $color__primary-blue;
         background: $color__white;
         text-decoration: none;
-        text-shadow: none;
       }
     }
 
   }
 
+
+  // Secondary Button
+  //--------------
   &__secondary {
     border-width: 3px;
     font-size: 0.875em;
@@ -81,6 +85,44 @@
         text-decoration: none;
       }
     }
+  }
+
+
+  // Tertiary Button
+  //--------------
+  &__tertiary {
+    border-width: 3px;
+    font-size: 1.25em;
+    padding: 20px 40px;
+
+    &--light {
+      border-color: $color__primary-blue;
+      background-color: $color__primary-blue;
+      color: $color__white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $color__white;
+        color: $color__primary-blue;
+        text-decoration: none;
+      }
+    }
+
+    &--dark {
+      border: 0;
+      background-color: $color__primary-blue;
+      color: $color__white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $color__white;
+        color: $color__primary-blue;
+        text-decoration: none;
+      }
+    }
+
   }
 }
 

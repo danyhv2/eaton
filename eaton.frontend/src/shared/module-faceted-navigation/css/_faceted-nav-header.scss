@@ -1,0 +1,74 @@
+//-----------------------------------
+// M-62: Faceted Navigation
+//-----------------------------------
+// NOTE: SASS is written "Mobile First" and there are media queries for Other Breakpoints
+
+
+.faceted-navigation-header {
+
+  margin-bottom: $spacing__md;
+
+  &__header-top,
+  &__header-bottom,
+  &__active-filters,
+  &__filter-link {
+    display: flex;
+  }
+
+  &__sort-options,
+  &__filters-actions {
+    margin-left: auto;
+  }
+
+
+  // Results: Header Title
+  //--------------
+  &__header-top {
+    border-bottom: 2px solid $color__secondary-gray6;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+  // Results: Header Filters
+  //--------------
+
+  &__filter-link {
+
+    align-items: center;
+    display: flex;
+    margin-right: 2rem;
+
+    .icon {
+      font-size: 10px;
+      margin-right: 1rem;
+    }
+
+  }
+
+  &__filter-label {
+    // Empty selector for future reference
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: Mobile & Tablet Only
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+  }
+
+
+
+  //-----------------------------------
+  // MediaQuery: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+  }
+
+
+}

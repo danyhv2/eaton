@@ -34,8 +34,8 @@
       display: block;
       // padding: $spacing__sm ($spacing__sm / 2);
       padding: $spacing__sm 0;
-      font-size: 25px;
-      line-height: 30px;
+      font-size: 20px;
+      line-height: 24px;
       background: $color__primary-gray1;
       margin-bottom: 0;
       font-family: 'EatonMedium';
@@ -67,6 +67,7 @@
         }
 
         &:first-child { margin-top: 0; }
+
         &:last-child { border-bottom: 0; }
       }
     }
@@ -137,8 +138,7 @@
     }
 
     &--has-background {
-      // stylelint-disable declaration-no-important
-      background: none !important;
+      background: none !important; // stylelint-disable-line declaration-no-important
     }
   }
 }

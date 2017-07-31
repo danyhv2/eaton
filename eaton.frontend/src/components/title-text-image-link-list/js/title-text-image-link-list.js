@@ -14,9 +14,8 @@ App.carousel = function () {
 
 
   /**
-   * @private
    * Initialize Bootstrap Carousel
-  */
+   */
   const initCarousels = () => {
     $componentEl.carousel({
       interval: 3000,
@@ -26,9 +25,8 @@ App.carousel = function () {
 
 
   /**
-   * @private
    * Bind All Event Listeners
-  */
+   */
   const addEventListeners = () => {
 
 

@@ -1,21 +1,3 @@
-.search-results-simple__header-top, .search-results-simple__header-bottom, .search-results-simple__active-filters, .search-results-simple__filter-link { display: -webkit-box; display: -ms-flexbox; display: flex; }
-
-.search-results-simple__sort-options, .search-results-simple__filters-actions { margin-left: auto; }
-
-.search-results-simple__header { margin-bottom: 60px; }
-
-.search-results-simple__header-top { border-bottom: 2px solid #F8F8F8; }
-
-.search-results-simple__title { font-size: 20px; font-weight: bold; }
-
-.search-results-simple__filter-link { -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -ms-flexbox; display: flex; margin-right: 2rem; }
-
-.search-results-simple__filter-link .icon { font-size: 10px; margin-right: 1rem; }
-
-.eaton-facets { border: 1px solid #CCD2D7; }
-
-@media screen and (max-width: 991px) { .eaton-facets { margin-bottom: 30px; } }
-
 .results-list { padding-bottom: 45px; }
 
 .results-list__disclaimer { border-top: 3px solid #EEF0F2; padding: 20px 0; }
