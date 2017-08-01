@@ -5,43 +5,66 @@
 @import "../../../global/css/_config/sass";
 
 @mixin product-tab($radioId) {
-  input[id="#{$radioId}"] {
-    display: none;
+  .eaton-product-tabs {
+    input[id="#{$radioId}"] {
+      display: none;
 
-    &:target,
-    &:checked {
-      ~ .row,
-      ~ .container {
-        label[for="#{$radioId}"] {
-          background-color: $color__secondary-gray5;
+      &:target,
+      &:checked {
+        ~ .row,
+        ~ .container {
+          label[for="#{$radioId}"] {
+            background-color: $color__secondary-gray5;
+          }
 
-          .dark-theme & {
-            background-color: $color__primary-gray2;
+          div[data-tab-name="#{$radioId}"] {
+            display: block;
           }
         }
+      }
+    }
 
-        div[data-tab-name="#{$radioId}"] {
-          display: block;
+    .dark-theme &,
+    &.dark-theme {
+      input[id="#{$radioId}"] {
+        &:target,
+        &:checked {
+          ~ .row,
+          ~ .container {
+            label[for="#{$radioId}"] {
+              background-color: $color__primary-gray2;
+            }
+          }
         }
       }
     }
   }
 }
 
+@include product-tab('tab-0');
+@include product-tab('tab-1');
+@include product-tab('tab-2');
+
 .eaton-product-tabs {
   background-color: $color__secondary-gray6;
 
-  .dark-theme & {
+  .dark-theme &,
+  &.dark-theme {
     background-color: $color__primary-gray1;
 
     &__buttons {
       background-color: $color__primary-gray1;
     }
 
+    &__tab-panel {
+      color: $color__white;
+    }
+
     label {
       &:hover,
       &:focus,
-      &:active {
+      &:active,
+      &.tab-active {
         background-color: $color__primary-gray2;
       }
 
@@ -58,7 +81,6 @@
         color: $color__white;
       }
     }
-
   }
 
   &__buttons {
@@ -77,15 +99,15 @@
       margin-left: 0;
       margin-right: 0;
 
-      &:after {
-          background-color: inherit;
-          content: '';
-          height: 149px; //size for desktop
-          left: -50%;
-          position: absolute;
-          top: 0;
-          width: 200%;
-          z-index: -1;
+      &::after {
+        background-color: inherit;
+        content: '';
+        height: 149px; //size for desktop
+        left: -50%;
+        position: absolute;
+        top: 0;
+        width: 200%;
+        z-index: -1;
       }
 
       .container {
@@ -117,6 +139,10 @@
 
   &__tab-panel {
     display: none;
+
+    &.panel-active {
+      display: block;
+    }
   }
 
   label {
@@ -141,7 +167,8 @@
 
     &:hover,
     &:focus,
-    &:active {
+    &:active,
+    &.tab-active {
       background-color: $color__secondary-gray5;
     }
 
@@ -227,11 +254,6 @@
       }
     }
   }
-
-  // light as the default theme
-  @include product-tab('overview');
-  @include product-tab('specifications');
-  @include product-tab('resources');
 
   @include media-mobile-and-tablet {
     &__description {
