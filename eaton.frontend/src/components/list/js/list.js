@@ -4,31 +4,48 @@ let App = window.App || {};
 
 App.carousel = function () {
 
-  const $component = $('.mobile-carousel');
-
+  const $carousel = $('.slick-carousel__slides');
 
   const init = () => {
-    addClass();
+    initCarousel();
   };
 
     /**
-     * @private
-     * Add .active class
+     * Initialize Slick Carousel
      */
-  const addClass = () => {
-    $component.find('.carousel-indicators li:first').addClass('active');
-    $component.find('.carousel-component-slide div:first').addClass('active');
-
-
+  const initCarousel = () => {
+    $carousel.slick({
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      autoplay: true,
+      dots: true,
+      dotsClass: 'slick-carousel__dots',
+      prevArrow: $('.slick-carousel__prev-arrow'),
+      nextArrow: $('.slick-carousel__next-arrow'),
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
   };
-
 
     /**
      * If containing DOM element is found, Initialize and Expose public methods
      */
-  if ($component.length > 0) {
+  if ($carousel.length > 0) {
     init();
   }
-
 
 }();
