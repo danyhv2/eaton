@@ -1,0 +1,36 @@
+//------------------------------------------
+// Component M-1: Header: Search
+//------------------------------------------
+
+$primary-nav-border: #EEF0F2;
+
+.header-search {
+  width: 100%;
+  z-index: 3;
+
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    width: 100%;
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 0.7s ease-in-out;
+
+    .search-open & {
+      max-height: 500px;
+    }
+  }
+}
