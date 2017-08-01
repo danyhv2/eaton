@@ -22,8 +22,6 @@
 
 var App = window.App || {};
 
-function init() {}
-
 App.facets = function () {
   var $componentClass = $('.faceted-navigation');
 

@@ -5,21 +5,49 @@
 
 .faceted-navigation {
 
- .faceted-navigation__header.button--reset{
+&__group{
+  border-bottom: 1px solid #e6e6e6;
+}
+
+&__list div:last-child{
+  padding-bottom: 12px;
+}
+
+ &__header.button--reset, &__view-more-facets button{
    width:100%;
    text-align: left;
+   margin: 14px 0;
+   cursor: pointer;
 
    .icon::before{
      position:absolute;
      right:15px;
      color: #005EB8;
      font-size: 12px;
+     margin-top: 6px;
    }
  }
 
- .faceted-navigation__facet-name{
+  &__view-more-facets button{
+    color: #005EB8;
+  }
+
+ &__facet-name{
     font-size: 18px;
  }
+
+ label, &__view-more-values button{
+    font-size: 14px;
+    font-weight: normal;
+    color: #005EB8;
+ }
+
+ h4{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 12px;
+ }
+
 
 
 
