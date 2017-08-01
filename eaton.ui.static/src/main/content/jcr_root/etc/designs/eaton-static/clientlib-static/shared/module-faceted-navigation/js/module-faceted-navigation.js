@@ -25,6 +25,7 @@ var App = window.App || {};
 App.facets = function () {
   var $componentClass = $('.faceted-navigation');
   var $mobileFacets = $('.faceted-navigation__mobile-facet-container');
+  var mobileEnabled = false;
 
   var init = function init() {
     $('.faceted-navigation__header.button--reset').on('click', function (e) {
@@ -37,9 +38,9 @@ App.facets = function () {
     }
 
     $(window).on('resize', function () {
-      if ($(window).width() < App.global.constants.GRID.MD && $mobileFacets.css('display') != 'block') {
+      if ($(window).width() < App.global.constants.GRID.MD && $('.faceted-navigation__mobile-facet-container').css('display') != 'block') {
         App.global.utils.throttle(mobileFacets(), 1000);
-      } else {
+      } else if ($(window).width() > App.global.constants.GRID.MD) {
         $componentClass.css('display', 'block');
         $mobileFacets.css('display', 'none');
       }
@@ -48,9 +49,15 @@ App.facets = function () {
 
   var mobileFacets = function mobileFacets() {
     // $mobileFacets.append($componentClass).css('display','block');
-    $componentClass.clone().appendTo($mobileFacets).css('display', 'block');
-    $componentClass.css('display', 'none');
-    $('.faceted-navigation__mobile-facet-container').css('display', 'block');
+    if (mobileEnabled == false) {
+      $componentClass.clone().appendTo($mobileFacets).css('display', 'block');
+      $('.faceted-navigation__mobile-facet-container').css('display', 'block');
+      $componentClass.css('display', 'none');
+      mobileEnabled = true;
+    } else {
+      $('.faceted-navigation__mobile-facet-container').css('display', 'block');
+      $componentClass.css('display', 'none');
+    }
   };
 
   if ($componentClass.length > 0) {
