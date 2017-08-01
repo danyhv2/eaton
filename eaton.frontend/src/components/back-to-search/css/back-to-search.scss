@@ -1,0 +1,15 @@
+//-----------------------------------
+// Component M-4.3: Search Box
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-product-back2search {
+  margin: $spacing__sm 0;
+
+  i {
+    font-size: 1.1rem;
+    padding-right: 5px;
+  }
+}
