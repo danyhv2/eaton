@@ -14,6 +14,8 @@
 
 .faceted-navigation-header__filter-link .icon { font-size: 10px; margin-right: 1rem; }
 
+.faceted-navigation__mobile-facet-container { display: none; }
+
 .faceted-navigation__group { border-bottom: 1px solid #e6e6e6; }
 
 .faceted-navigation__list div:last-child { padding-bottom: 12px; }
