@@ -3,283 +3,172 @@
     jcr:primaryType="nt:unstructured"
     jcr:title="TTIL List"
     sling:resourceType="cq/gui/components/authoring/dialog"
-    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    helpPath="en/cq/current/wcm/default_components.html#Carousel">
     <content
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/foundation/container">
         <layout
             jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-            margin="{Boolean}false"
             type="nav"/>
         <items jcr:primaryType="nt:unstructured">
-            <column
+            <herotext
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/foundation/container">
+                jcr:title="TTIL  List Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
                 <items jcr:primaryType="nt:unstructured">
-                    <view
+                    <column
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/select"
-                        class="cq-dialog-dropdown-showhide"
-                        cq-dialog-dropdown-showhide-target=".ttil-list-view-hide-show"
-                        fieldLabel="View"
-                        name="./view"
-                        required="{Boolean}true">
+                        sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <article-no-feature
+                            <view
                                 jcr:primaryType="nt:unstructured"
-                                text="Article List"
-                                value="no-feature"/>
-                            <single-feature
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Determine which variation of component to view"
+                                fieldLabel="View"
+                                name="./view"
+                                required="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <landing-hero
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Landing(L1) Hero"
+                                        value="landing-hero"/>
+                                    <category-hero
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Category(L2) Hero"
+                                        value="category-hero"/>
+                                    <featured-story
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Featured Story"
+                                        value="featured-story"/>
+                                    <quotes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Quotes"
+                                        value="quotes"/>
+                                    <tile-links
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Tile Links"
+                                        value="tile-link"/>
+                                    <image-only
+                                        jcr:primaryType="nt:unstructured"
+                                        text="6 Column Image Only"
+                                        value="image-only"/>
+                                    <featured-list
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Featured List"
+                                        value="featured-list"/>
+                                </items>
+                            </view>
+                            <header
                                 jcr:primaryType="nt:unstructured"
-                                text="Article List with Feature"
-                                value="single-feature"/>
-                            <related-items-text
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="This field stores the value for Header field."
+                                fieldLabel="Header"
+                                name="./header"/>
+                            <headerDescription
                                 jcr:primaryType="nt:unstructured"
-                                text="Related Items With Text"
-                                value="related-products-text-only"/>
-                            <related-items-images
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldDescription="This field stores the header description of the component"
+                                fieldLabel="Header Description"
+                                name="./headerDescription"/>
+                            <ttil-links
                                 jcr:primaryType="nt:unstructured"
-                                text="Related Items With Images"
-                                value="related-products-with-images"/>
-                            <feature-list
-                                jcr:primaryType="nt:unstructured"
-                                text="Feature List"
-                                value="fea-list"/>
-                            <feature-story
-                                jcr:primaryType="nt:unstructured"
-                                text="Featured Story"
-                                value="fea-story"/>
-                        </items>
-                    </view>
-                    <header
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/textfield"
-                        class="hide ttil-list-view-hide-show"
-                        fieldLabel="Header"
-                        name="./transHeader"
-                        required="{Boolean}true"
-                        showhidetargetvalue="no-feature,single-feature,related-products-text-only,related-products-with-images,fea-list"/>
-                    <header-link
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        class="hide ttil-list-view-hide-show"
-                        fieldLabel="Header Link"
-                        name="./headerLink"
-                        required="{Boolean}true"
-                        rootPath="/content/eaton"
-                        showhidetargetvalue="no-feature,single-feature"/>
-                    <newWindow
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                        class="hide ttil-list-view-hide-show"
-                        name="./newWindow"
-                        showhidetargetvalue="no-feature,single-feature"
-                        text="Open in New Window"
-                        value="true"/>
-                    <list-type
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/select"
-                        class="cq-dialog-dropdown-showhide "
-                        cq-dialog-dropdown-showhide-target=".ttil-list-hide-show"
-                        fieldLabel="List Type"
-                        name="./listType"
-                        required="{Boolean}true">
-                        <items jcr:primaryType="nt:unstructured">
-                            <child-pages
-                                jcr:primaryType="nt:unstructured"
-                                text="Child Pages"
-                                value="child-pages"/>
-                            <tags
-                                jcr:primaryType="nt:unstructured"
-                                text="Tags"
-                                value="tags"/>
-                            <fixed-list
-                                jcr:primaryType="nt:unstructured"
-                                text="Fixed List"
-                                value="fixed-list"/>
-                            <manual-list
-                                jcr:primaryType="nt:unstructured"
-                                text="Manual List"
-                                value="manual-list"/>
-                        </items>
-                    </list-type>
-                    <parent-page
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        class="hide ttil-list-hide-show"
-                        fieldLabel="Parent Page"
-                        name="./parentPage"
-                        rootPath="/content/eaton"
-                        showhidetargetvalue="child-pages"/>
-                    <tags
-                        cq:showOnCreate="{Boolean}true"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="cq/gui/components/common/tagspicker"
-                        allowBulkEdit="{Boolean}true"
-                        allowCreate="{Boolean}true"
-                        class="hide ttil-list-hide-show"
-                        cq-msm-lockable="tags"
-                        fieldLabel="Tags"
-                        name="./tags"
-                        showhidetargetvalue="tags"/>
-                    <fixed-links
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/multifield"
-                        class="full-width hide ttil-list-hide-show"
-                        eaem-nested=""
-                        fieldDescription="Click '+' to add more Links"
-                        fieldLabel="Fixed Links"
-                        showhidetargetvalue="fixed-list">
-                        <field
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
-                            name="./fixedLinks">
-                            <layout
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                                method="absolute"/>
-                            <items jcr:primaryType="nt:unstructured">
-                                <column
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                eaem-nested=""
+                                fieldDescription="Click '+' to add more TTIL Links"
+                                fieldLabel="TTIL List">
+                                <field
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/container">
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    name="./ttilList">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
                                     <items jcr:primaryType="nt:unstructured">
-                                        <link-path
+                                        <column
                                             jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                            fieldLabel="Link Path"
-                                            multiple="{Boolean}false"
-                                            name="./linkPath"
-                                            rootPath="/content/eaton"/>
-                                        <newWindo
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                                            name="./newWindowFixed"
-                                            text="Open Link in new Window"
-                                            value="true"/>
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <imagePath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldDescription="This field stores the bg image of TTIL. This option is not applicable for Tile link view with colour only option"
+                                                    fieldLabel="Image Path"
+                                                    name="./imagePath"
+                                                    rootPath="/content/dam/eaton"/>
+                                                <imageAltText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="TTIL List image Alt text. This option is not applicable for Tile link view with colour only option, Landing (L1) Hero, Category (L2) Hero"
+                                                    fieldLabel="Image Alt Text"
+                                                    name="./imageAltText"/>
+                                                <titleText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="Title of the List. This option is available for Landing (L1) Hero, Category (L2) Hero"
+                                                    fieldLabel="Title"
+                                                    name="./titleText"/>
+                                                <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                    fieldDescription="Description of the list. This option is available for Landing (L1) Hero, Category (L2) Hero, Quotes, Featured List"
+                                                    fieldLabel="Description"
+                                                    name="./description"/>
+                                                <linkTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="This field stores the value for Title field. This field is not applicable for Quote view"
+                                                    fieldLabel="Link Title"
+                                                    name="./linkTitle"/>
+                                                <linkDestination
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldDescription="This field stores the value for Link Destination field. This field is not applicable for Quote view"
+                                                    fieldLabel="Link Destination"
+                                                    name="./linkDestination"
+                                                    rootPath="/content/eaton"/>
+                                                <newWindow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                    fieldDescription="This field stores the value for newWindow field. This field is not applicable for Quote view"
+                                                    name="./newWindow"
+                                                    text="Open Link in New Window"
+                                                    value="true"/>
+                                                <author
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="This field stores the value for Author field. This field is applicable for Quote view"
+                                                    fieldLabel="Quote Author"
+                                                    name="./author"/>
+                                                <authorDesignation
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="This field stores the value for Author designation field. This field is applicable for Quote view"
+                                                    fieldLabel="Quote Author designation"
+                                                    name="./authorDesignation"/>
+                                                <configuration
+							                        jcr:primaryType="nt:unstructured"
+							                        sling:resourceType="granite/ui/components/foundation/form/select"
+							                        fieldLabel="Mobile Configuration"
+							                        name="./config">
+							                        <datasource
+							                            jcr:primaryType="nt:unstructured"
+							                            sling:resourceType="/ecom/content/imageTransform"
+							                            addNone="{Boolean}true"/>
+							                    </configuration>
+                                            </items>
+                                        </column>
                                     </items>
-                                </column>
-                            </items>
-                        </field>
-                    </fixed-links>
-                    <manual-links
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/multifield"
-                        class="full-width hide ttil-list-hide-show"
-                        eaem-nested=""
-                        fieldDescription="Click '+' to add more manual Links"
-                        fieldLabel="Manual Links"
-                        showhidetargetvalue="manual-list">
-                        <field
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
-                            name="./manualLinks">
-                            <layout
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                                method="absolute"/>
-                            <items jcr:primaryType="nt:unstructured">
-                                <column
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/container">
-                                    <items jcr:primaryType="nt:unstructured">
-                                        <eyebrow
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                            class="ttil-list-view-hide-show"
-                                            fieldLabel="Eyebrow"
-                                            name="./eyebrow"
-                                            showhidetargetvalue="no-feature,single-feature,related-products-text-only,related-products-with-images,fea-story"/>
-                                        <headline
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                            fieldLabel="Headline"
-                                            name="./transHeadline"/>
-                                        <link-destination
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                            fieldLabel="Link Destination"
-                                            name="./transLinkDestination"
-                                            rootPath="/content/eaton"/>
-                                        <newWindow
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                                            name="./newWindowManual"
-                                            text="Open in New Window"
-                                            value="true"/>
-                                        <publictn-date
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/datepicker"
-                                            class="ttil-list-hide-show"
-                                            fieldLabel="Publication Date"
-                                            name="./publicationDate"
-                                            showhidetargetvalue="no-feature,single-feature"/>
-                                        <featureImage
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                            class="ttil-list-view-hide-show"
-                                            fieldLabel="Feature Image"
-                                            name="./featureImage"
-                                            rootPath="/content/dam/eaton"
-                                            showhidetargetvalue="single-feature,related-products-with-images,fea-story,fea-list"/>
-                                        <altText
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                            class="ttil-list-view-hide-show"
-                                            fieldLabel="Alt Txt"
-                                            name="./transAltTxt"
-                                            showhidetargetvalue="single-feature,related-products-with-images,fea-story,fea-list"/>
-                                        <description
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/foundation/form/textarea"
-                                            class="ttil-list-view-hide-show"
-                                            fieldLabel="Description"
-                                            name="./transDescription"
-                                            showhidetargetvalue="fea-list"/>
-                                    </items>
-                                </column>
-                            </items>
-                        </field>
-                    </manual-links>
-                    <sort
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/select"
-                        class="hide ttil-list-hide-show"
-                        fieldLabel="Sort"
-                        name="./sort"
-                        showhidetargetvalue="child-pages,tags">
-                        <items jcr:primaryType="nt:unstructured">
-                            <pub-date
-                                jcr:primaryType="nt:unstructured"
-                                text="Publication Date"
-                                value="pub-date"/>
-                            <title
-                                jcr:primaryType="nt:unstructured"
-                                text="Title"
-                                value="title"/>
-                            <created-date
-                                jcr:primaryType="nt:unstructured"
-                                text="Created Date"
-                                value="created-date"/>
-                            <last-modified-date
-                                jcr:primaryType="nt:unstructured"
-                                text="Last Modified Date"
-                                value="last-modified-date"/>
-                            <template
-                                jcr:primaryType="nt:unstructured"
-                                text="Template"
-                                value="template"/>
+                                </field>
+                            </ttil-links>
                         </items>
-                    </sort>
-                    <no-of-result
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/numberfield"
-                        class="hide ttil-list-hide-show"
-                        fieldLabel="No. Of Results"
-                        name="./count"
-                        showhidetargetvalue="child-pages,tags"/>
+                    </column>
                 </items>
-            </column>
+            </herotext>
         </items>
     </content>
 </jcr:root>

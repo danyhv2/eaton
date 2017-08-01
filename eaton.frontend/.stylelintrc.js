@@ -36,7 +36,6 @@ module.exports = {
     'no-duplicate-selectors': true,
     'no-eol-whitespace': true,
     'no-missing-end-of-source-newline': true,
-    'number-no-trailing-zeros': true,
     'property-no-vendor-prefix': true,
     'rule-empty-line-before': ['always-multi-line', {
       'except': ['first-nested'],
@@ -58,6 +57,7 @@ module.exports = {
     'block-no-empty': null,
     'color-hex-case': null,
     'media-feature-parentheses-space-inside': null,
+    'number-no-trailing-zeros': null,
     'number-leading-zero': null,
     'string-quotes': null,
 

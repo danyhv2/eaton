@@ -4,8 +4,6 @@
 
 .eaton-footer-top .eaton-text-default__content a { color: #005EB8; }
 
-.eaton-footer-top .eaton-text-default__content a:active { font-weight: bold; }
-
 @media screen and (min-width: 992px) { .eaton-footer-top .eaton-text-default__content { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; } }
 
 .eaton-footer-top .eaton-text-default__content p { font-size: 1.7rem; line-height: 2.8rem; }

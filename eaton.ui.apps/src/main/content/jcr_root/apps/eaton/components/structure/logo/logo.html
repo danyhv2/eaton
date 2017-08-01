@@ -1,11 +1,4 @@
-<sly data-sly-test="${wcmmode.edit}">Logo Component</sly>
 
-<sly data-sly-use.logoHelper="com.eaton.platform.core.helpers.LogoHelper"></sly>
+<!-- Integrated code goes here -->
 
-<sly data-sly-test="${logoHelper.logoView == 'header'}">
-    <a class="navbar-brand" href="${logoHelper.logoLinkPath}.html"><img src="${logoHelper.logoImagePath}" title="${logoHelper.logoImageTitle}" alt="${logoHelper.logoImageAltText}" class="img-responsive"></a>
-</sly>
-
-<sly data-sly-test="${logoHelper.logoView == 'footer'}">
-    <p><img class="footer-logo" src="${logoHelper.logoImagePath}" alt="${logoHelper.logoImageAltText}" title="${logoHelper.logoImageTitle}"></p>
-</sly>
+<sly data-sly-include="static_logo.html"></sly>

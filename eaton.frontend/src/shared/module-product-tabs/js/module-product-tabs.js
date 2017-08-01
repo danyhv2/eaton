@@ -5,10 +5,10 @@
 
 let App = window.App || {};
 
-App.productTab = (function() {
+App.productTabsFamily = (function() {
 
   const $componentClass = $('.eaton-product-tabs');
-  const isAEMAuthorMode = (window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode()) ? true : false;
+  const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
 
   const init = () => {
     // return;

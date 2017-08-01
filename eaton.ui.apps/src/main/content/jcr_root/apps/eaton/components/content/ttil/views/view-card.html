@@ -1,0 +1,13 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.ttil.TTILModel">
+
+  <div class="eaton-ttil-card-view">
+    <div class="eaton-ttil-card-view__image">
+      <img src="${ data.image }" class="img-responsive" alt="${ data.alttxt }" />
+    </div>
+    <div class="eaton-ttil-card-view__title b-eyebrow-small text-uppercase">${ data.transEyebrow }</div>
+    <a href="${ data.link }" target="${ data.newWindow }">
+    	<div class="eaton-ttil-card-view__text b-heading-h5">${ data.linkTitle }</div>
+    </a>
+  </div>
+
+</sly>

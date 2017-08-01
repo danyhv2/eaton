@@ -1,0 +1,14 @@
+<div class="feature-block-component" data-sly-use.data="com.eaton.platform.core.models.ttil.TTILModel">
+    <div class="row feature-block-component__container">
+        <div class="col-xs-12 col-sm-7 feature-block-component__copy" style="background-color: ${data.color @ context='styleString'}">
+            <div class="feature-block-component__text">
+                <h2>${data.header}</h2>
+                <p class="feature-block-component__description">${data.description}</p>
+                <a class="b-button b-button__primary b-button__primary--dark feature-block-component__cta" href="${data.link}" role="button" data-sly-test="${data.link.length > 0}">${data.linkTitle}</a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-5 feature-block-component__image"
+             style="background:url('${data.image @ context='styleString'}') center no-repeat; background-size: cover">
+        </div>
+    </div>
+</div>
