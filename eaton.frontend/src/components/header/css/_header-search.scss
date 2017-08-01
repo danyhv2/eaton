@@ -6,7 +6,15 @@ $primary-nav-border: #EEF0F2;
 
 .header-search {
   width: 100%;
-  z-index: 3;
+  transform: translateY(-100%);
+  overflow: hidden;
+  visibility: hidden;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  .search-open & {
+    transform: translateY(0);
+    visibility: visible;
+  }
 
 
   //-----------------------------------
@@ -17,6 +25,11 @@ $primary-nav-border: #EEF0F2;
     top: 56px;
     bottom: 0;
     width: 100%;
+    z-index: 15;
+
+    .eaton-search-box {
+      height: 100%;
+    }
   }
 
   //-----------------------------------
@@ -24,13 +37,6 @@ $primary-nav-border: #EEF0F2;
   //-----------------------------------
   @include media-desktop-and-up {
     position: absolute;
-    max-height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    transition: max-height 0.7s ease-in-out;
-
-    .search-open & {
-      max-height: 500px;
-    }
+    z-index: 10;
   }
 }

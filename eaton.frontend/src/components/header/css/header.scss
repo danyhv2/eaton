@@ -110,6 +110,12 @@
       transition: transform 0.5s ease-in-out;
     }
   }
+
+  .search-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
 }
 
 
@@ -134,7 +140,8 @@
 .cq-wcm-edit {
 
   // stylelint-disable declaration-no-important
-  .mega-menu {
+  .mega-menu,
+  .header-search {
     position: relative !important;
     visibility: visible !important;
     opacity: 1 !important;
