@@ -1,0 +1,20 @@
+<div class="featured-story-component" data-sly-use.data="com.eaton.platform.core.models.ttillist.TtilListModel">
+    <div data-sly-list.component="${data.links}">
+        <div class="row featured-story-component__row">
+            <div class="col-xs-12 col-lg-11 featured-story-component__row--nopadding ${componentList.odd ? 'col-lg-pull-0' : 'col-lg-offset-1'}">
+                <div>
+                    <img class="img-responsive hidden-xs featured-story-component__image" src="${component.imagePath}" alt="${component.imageAltText}" />
+                    <img class="img-responsive visible-xs" src="${component.imagePath}" alt="${component.imageAltText}"/>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-lg-4 featured-story-component__blue ${componentList.odd ? 'featured-story-component__blue--right' : 'featured-story-component__blue--left'}">
+                    <div class="featured-story-component__content">
+                        <h2 class="featured-story-component__title">${component.titleText}</h2>
+                        <a data-sly-test="${component.linkTitle}" class="featured-story-component__link" href="${component.linkDestination}" target="${component.newWindow}">
+                            <p class="featured-story-component__text">${component.linkTitle}<i aria-hidden="true" class="featured-story-component__arrow glyphicon glyphicon-menu-right arrow"></i></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

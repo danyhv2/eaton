@@ -6,7 +6,7 @@
 
 .faceted-navigation-header {
 
-  margin-bottom: $spacing__md;
+  margin-bottom: 28px;
 
   &__header-top,
   &__header-bottom,
@@ -21,10 +21,15 @@
   }
 
 
+  &__header-bottom{
+    margin-top: 28px;
+  }
+
   // Results: Header Title
   //--------------
   &__header-top {
     border-bottom: 2px solid $color__secondary-gray6;
+    padding-bottom: 28px;
   }
 
   &__title {

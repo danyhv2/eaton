@@ -1,0 +1,32 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.ttillist.TtilListModel">
+    <div class="eaton-ttil-list-category-hero">
+        <div class="row">
+            <div class="col-xs-12" data-sly-list="${data.links}">
+            	<sly data-sly-test="${item.config}">
+                	<img src="${item.imagePath}.transform/${item.config @ context='html'}/image.jpg" class="visible-xs img-responsive category-hero__header-image" alt="${item.imageAltText}"/>
+                </sly>
+                <sly data-sly-test="${!item.config}">
+                	<img src="${item.imagePath}" class="visible-xs img-responsive category-hero__header-image" alt="${item.imageAltText}"/>
+                </sly>
+                <img src="${item.imagePath}" class="hidden-xs img-responsive category-hero__header-image" alt="${item.imageAltText}"/>
+                <div class="row category-hero__header-content">
+                    <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 text-left">
+                        <div data-sly-test="${item.linkTitle}" class="category-hero-eye-brown text-left">
+                            <i class="glyphicon glyphicon-menu-left"></i>
+                            <a class="category-hero__header-cta" target="${item.newWindow}" href="${item.linkDestination}">${item.linkTitle}</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-2 text-left">
+                        <div class="category-hero__header-title">
+                            <h2 class="eaton-title__headline">${item.titleText}</h2>
+                        </div>
+                        <div class="category-hero-bottomline"></div>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 category-hero-body-copy">
+						<p>${item.description}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>
