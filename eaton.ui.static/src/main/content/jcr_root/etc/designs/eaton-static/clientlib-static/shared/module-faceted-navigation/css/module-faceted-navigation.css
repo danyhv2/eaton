@@ -14,7 +14,13 @@
 
 .faceted-navigation-header__filter-link .icon { font-size: 10px; margin-right: 1rem; }
 
-.faceted-navigation__mobile-facet-container { display: none; position: absolute; top: 0; left: 0; }
+.faceted-navigation__mobile-facet-container { position: absolute; top: 0; left: 0; z-index: 9999; background-color: #fff; }
+
+.faceted-navigation__mobile-facet-container .b-button { width: 100%; text-align: center; }
+
+.faceted-navigation .hidden { display: none; }
+
+.faceted-navigation .visibile { display: block; }
 
 .faceted-navigation__group { border-bottom: 1px solid #e6e6e6; }
 

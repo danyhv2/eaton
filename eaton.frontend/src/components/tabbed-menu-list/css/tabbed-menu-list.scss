@@ -18,6 +18,7 @@
 
     display: block;
     padding: $spacing__md / 2 0;
+    font-weight: bold;
 
     span {
 
@@ -67,14 +68,16 @@
 
     .desktop {
       display: block;
+      padding-right: 30px;
     }
 
     &__title {
 
       padding: 50px 0;
+      border-bottom: 1px solid $color__secondary-gray6;
 
       &.active {
-        border-bottom: 2px solid $color__primary-blue;
+        border-bottom: 5px solid $color__primary-blue;
       }
     }
 
@@ -104,6 +107,7 @@
     }
 
     &__item {
+    	border-bottom: none;
     	&.desktop {
     		flex:0 0 33%;
 				&.primary {
@@ -129,6 +133,7 @@
     }
 
     &__tab {
+    	min-height: 0;
     	&.desktop {
     		&.primary {
     			order: 2;
@@ -157,7 +162,7 @@
     }
 
     .tab-pane {
-      padding-top: 50px;
+      padding: 50px 0;
     }
 
     .tab-container {
