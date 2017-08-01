@@ -1,0 +1,20 @@
+<sly data-sly-use.data="com.eaton.platform.core.helpers.ListHelper">
+  <!--/* Link Groups - Cols */-->
+  <div data-sly-list.columnList="${data.linkViewList}" class="eaton-list-links">
+      <ul data-sly-list="${columnList}" class="eaton-list-links__col">
+        <li class="eaton-list-links__item">
+          <a href="${item.pagePath}"
+            aria-label="Go to ${ item.eyebrow }"
+            class="eaton-list-links__link"
+            target="${ item.windowFixed }">
+            <span class="eaton-list-links__text">
+                ${ item.eyebrow }
+            </span>
+            <i class="eaton-list-links__icon glyphicon glyphicon-menu-right"
+              aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+  </div>
+</sly>
+
