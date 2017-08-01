@@ -72,12 +72,13 @@
     &__sign-in {
       text-align: center;
       padding: 0 $spacing__sm;
+      flex-basis: 100px;
     }
 
     &__signin { display: none; }
 
     .icon {
-      
+
       &.icon-globe {
         margin-right: 5px;
       }
