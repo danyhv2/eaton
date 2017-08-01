@@ -2,29 +2,41 @@ package com.eaton.platform.core.helpers;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.Resource;
-import org.apache.sling.api.resource.ValueMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.eaton.platform.core.bean.EatonAbstractUseBean;
+import com.eaton.platform.core.models.LogoModel;
 import com.eaton.platform.core.util.CommonUtil;
 
+/**
+ * <html> Description: This class is used in sightly to provide
+ * logo details from sling model for the display on presentation layer</html> .
+ *
+ * @author TCS
+ * @version 1.0
+ * @since 2017
+ */
 public class LogoHelper extends EatonAbstractUseBean {
 	
 	/** The Constant LOGGER. */
     private static final Logger LOGGER = LoggerFactory.getLogger(LogoHelper.class);
     
-    private String logoView;
-    private String logoImagePath;
-    private String logoImageAltText;
-    private String logoImageTitle;
+    /** The logoLinkPath. */
     private String logoLinkPath;
     
+    /** The LogoModel. */
+    private LogoModel logoModel;
+    
+    /** The Constant HEADER_LOGO_SELECTOR. */
     private static final String HEADER_LOGO_SELECTOR = "header-logo";
 
+	/* (non-Javadoc)
+	 * @see com.eaton.platform.core.bean.EatonAbstractUseBean#setComponentValues()
+	 */
 	@Override
 	public void setComponentValues() {
-		LOGGER.debug("Entered into setComponentValues method");
+		LOGGER.debug("LogoHelper :: setComponentValues() :: Start");
 		// local variables
 		String selector = null;
 		// get selector from header & footer passed while including linklist component
@@ -40,36 +52,30 @@ public class LogoHelper extends EatonAbstractUseBean {
 			
 			Resource logoRes = resourceResolver.getResource(logoResPath);
 			if(logoRes!= null) {
-				ValueMap logoResVM = logoRes.getValueMap();
-				logoView = CommonUtil.getStringProperty(logoResVM, "view");
-				logoImagePath = CommonUtil.getStringProperty(logoResVM, "logoReference");
-				logoImageAltText = "Eaton Logo";
-				logoImageTitle = CommonUtil.getStringProperty(logoResVM, "transLogoTitle");
+				logoModel = logoRes.adaptTo(LogoModel.class);
 				logoLinkPath = CommonUtil.getHomePagePath(currentPage);
 			}
 		}		
-		LOGGER.debug("Exoted from setComponentValues method");
+		LOGGER.debug("LogoHelper :: setComponentValues() :: Exit");
 		
 	}
 
-	public String getLogoView() {
-		return logoView;
-	}
-
-	public String getLogoImagePath() {
-		return logoImagePath;
-	}
-
-	public String getLogoImageAltText() {
-		return logoImageAltText;
-	}
-
-	public String getLogoImageTitle() {
-		return logoImageTitle;
-	}
-
+	/**
+	 * Gets the logo link path.
+	 *
+	 * @return the logoLinkPath.
+	 */
 	public String getLogoLinkPath() {
-		return logoLinkPath;
+		return CommonUtil.dotHtmlLink(logoLinkPath);
+	}
+
+	/**
+	 * Gets the logo model.
+	 *
+	 * @return the logoModel.
+	 */
+	public LogoModel getLogoModel() {
+		return logoModel;
 	}
 
 }

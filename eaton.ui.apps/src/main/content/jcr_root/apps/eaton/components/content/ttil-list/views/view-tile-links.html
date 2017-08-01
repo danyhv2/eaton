@@ -1,0 +1,17 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.ttillist.TtilListModel">
+    <div class="tile-link-component container">
+        <div class="row" data-sly-list.tile="${data.links}">
+            <a class="col-xs-12 col-md-3 tile-link-component__element tile-link-component__element--${tileList.index}" data-sly-test="${!tile.imagePath && !tile.icon}" href="${tile.linkDestination}">
+                <h2 class="tile-link-component__title">${tile.linkTitle} <span class="tile-link-component__arrow glyphicon glyphicon-menu-right arrow"></span></h2>
+            </a>
+            <a class="col-xs-12 col-md-3 tile-link-component__element tile-link-component__element--${tileList.index}" data-sly-test="${tile.imagePath}" href="${tile.linkDestination}"
+               style="background:url('${tile.imagePath @ context='styleString'}') center no-repeat; background-size: cover">
+                <h2 class="tile-link-component__title ${tile.imagePath != '' ? 'tile-link-component__title--background' : ''  }">${tile.linkTitle} <span class="tile-link-component__arrow glyphicon glyphicon-menu-right arrow"></span></h2>
+            </a>
+            <a class="col-xs-12 col-md-3 tile-link-component__element tile-link-component__element--${tileList.index}" data-sly-test="${tile.icon}" href="${tile.linkDestination}">
+                <img class="tile-link-component__icon" src="${tile.icon}" alt="">
+                <h2 class="tile-link-component__title">${tile.linkTitle} <i aria-hidden="true" class="tile-link-component__arrow glyphicon glyphicon-menu-right arrow"></i></h2>
+            </a>
+        </div>
+    </div>
+</sly>

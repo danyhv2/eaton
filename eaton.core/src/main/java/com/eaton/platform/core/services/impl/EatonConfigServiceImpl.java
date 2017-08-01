@@ -33,7 +33,6 @@ import com.eaton.platform.core.util.CommonUtil;
         @Property(unbounded = PropertyUnbounded.ARRAY, label = "LOV Icon List path",
         	description = "Icon LOVs List Path", name = "lov.icon.list.path", value = {})
 		})
-
 public class EatonConfigServiceImpl implements EatonConfigService {
 	
 	/** The Constant LOGGER. */
@@ -42,6 +41,12 @@ public class EatonConfigServiceImpl implements EatonConfigService {
 	/** The service reference. */
     ConfigServiceBean configServiceBean;
 
+    /**
+     * Activate.
+     *
+     * @param props the props
+     * @throws Exception the exception
+     */
     @Activate
     protected final void activate(final Map<String, Object> props) throws Exception {
         this.configServiceBean = new ConfigServiceBean();
@@ -66,8 +71,13 @@ public class EatonConfigServiceImpl implements EatonConfigService {
         this.configServiceBean = null;
     }
 
+    /**
+     * Initialize configurations.
+     *
+     * @param properties the properties
+     */
     private void initializeConfigurations(Map<String, Object> properties) {
-    	LOGGER.debug("Entered into initializeConfigurations method");
+    	LOGGER.debug("EatonConfigServiceImpl :: initializeConfigurations() :: Start");
         if (properties.containsKey(COUNTRYSELECTOR_FOLDER_PATH)) {
             String countrySelectorFolderPath =
                     PropertiesUtil.toString(properties.get(COUNTRYSELECTOR_FOLDER_PATH), "");
@@ -79,9 +89,12 @@ public class EatonConfigServiceImpl implements EatonConfigService {
             List<String> lovIconListPath = CommonUtil.getListFromStringArray(lovIconListPathArray);
             this.configServiceBean.setLovIconListPagePathList(lovIconListPath);
         }
-		
+        LOGGER.debug("EatonConfigServiceImpl :: initializeConfigurations() :: Exit");
 	}
 
+	/* (non-Javadoc)
+	 * @see com.eaton.platform.core.services.EatonConfigService#getConfigServiceBean()
+	 */
 	public ConfigServiceBean getConfigServiceBean() {
 		return configServiceBean;
 	}

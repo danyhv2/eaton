@@ -31,27 +31,32 @@ import com.eaton.platform.core.util.BrightcoveUtil;
 
 /**
  * This servlet pre-populates the Brightcove Content Id drop-down field
- * author - TCS
+ * author - TCS.
  */
-@SlingServlet(resourceTypes = "/bin/dropdown/bccontentid", metatype = false)
-
+@SlingServlet(resourceTypes = "/ecom/dropdown/bccontentid", metatype = false)
 public class BCContentIdDropDownServlet extends SlingSafeMethodsServlet {
 
+	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
+	
+	/** The Constant LOG. */
 	private static final Logger LOG = LoggerFactory.getLogger(BCContentIdDropDownServlet.class);
 	
-	// ConfigurationManagerFactory reference
+	/** The config manager fctry. */
 	@Reference
 	ConfigurationManagerFactory configManagerFctry;
 	
-	// AdminService reference
+	/** The admin service. */
 	@Reference
 	AdminService adminService;
 
+	/* (non-Javadoc)
+	 * @see org.apache.sling.api.servlets.SlingSafeMethodsServlet#doGet(org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)
+	 */
 	@Override
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
 
-		LOG.debug("******** BCContentIdDropDownServlet servlet execution started ***********");
+		LOG.debug("BCContentIdDropDownServlet :: doGet() :: Start");
 		//local variables
 		Resource brightcoveConfigRes = null;
 		// set fallback
@@ -72,11 +77,10 @@ public class BCContentIdDropDownServlet extends SlingSafeMethodsServlet {
 		// Create an ArrayList to hold data
 		List<Resource> bcAcctList = new ArrayList<Resource>();
 
-		ValueMap valueMap = null;
 		if(null != brightcoveConfigRes){
 				
 				// allocate memory to the Map instance
-				valueMap = new ValueMapDecorator(new HashMap<String, Object>());
+				ValueMap valueMap = new ValueMapDecorator(new HashMap<String, Object>());
 
 				// Specify the value and text values
 				String dropDownValue = bcAcctBean.getAccNumber();
@@ -93,9 +97,7 @@ public class BCContentIdDropDownServlet extends SlingSafeMethodsServlet {
 			request.setAttribute(DataSource.class.getName(), dataSource);
 			
 		}
-		
-		LOG.debug("******** BCContentIdDropDownServlet servlet execution ended ***********");
+		LOG.debug("BCContentIdDropDownServlet :: doGet() :: Exit");
 	}
-
 	
 }

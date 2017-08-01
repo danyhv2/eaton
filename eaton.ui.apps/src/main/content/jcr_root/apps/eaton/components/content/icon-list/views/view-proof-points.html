@@ -1,0 +1,22 @@
+<sly data-sly-use.iconListObj="com.eaton.platform.core.models.IconListModel">
+  <div class="icon-list-proof-points">
+    <div class="container">
+      <div class="row">
+          <!--/* Icon List */-->
+          <div data-sly-list="${ iconListObj.links }">
+            <div class="col-xs-12 col-md-4 icon-list-proof-points__item">
+              <div class="icon-list-proof-points__image">
+                <img src="${item.icon}" alt="${item.title} ${item.description}" />
+              </div>
+              
+              <div class="icon-list-proof-points__content">
+                <div class="icon-list-proof-points__facts">${item.title}</div>
+                <div data-sly-test="${item.additonalInfo != ' '}" class="icon-list-proof-points__symbol">${item.additonalInfo}</div>
+                <div class="icon-list-proof-points__related">${item.description}</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</sly>
