@@ -48,7 +48,7 @@
 
 .search-open .header-search { -webkit-transform: translateY(0); transform: translateY(0); visibility: visible; }
 
-@media screen and (max-width: 991px) { .header-search { position: fixed; top: 56px; bottom: 0; width: 100%; z-index: 15; }
+@media screen and (max-width: 991px) { .header-search { position: fixed; top: 56px; bottom: 0; width: 100%; z-index: 10; }
   .header-search .eaton-search-box { height: 100%; } }
 
 @media screen and (min-width: 992px) { .header-search { position: absolute; z-index: 10; } }
