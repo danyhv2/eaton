@@ -7,7 +7,7 @@ let App = window.App || {};
 
 App.facets = (function() {
   const $componentClass = $('.faceted-navigation');
-  const $mobileFacets = $('.faceted-navigation__mobile-facet-container');
+  let $mobileFacets = $('.faceted-navigation__mobile-facet-container');
   let mobileEnabled = false;
 
   const init = () => {
@@ -26,7 +26,8 @@ App.facets = (function() {
     	}
     	else if ($(window).width() > App.global.constants.GRID.MD) {
     		$componentClass.css('display','block');
-    		$mobileFacets.css('display','none');
+    		// $mobileFacets.css('display','none');
+    		$('.faceted-navigation__mobile-facet-container').css('display','none');
     	}
     });
   };
@@ -34,7 +35,11 @@ App.facets = (function() {
   const mobileFacets = () => {
   	// $mobileFacets.append($componentClass).css('display','block');
   	if (mobileEnabled == false) {
-  		$componentClass.clone().appendTo($mobileFacets).css('display','block');
+  		let $overlay = $('<div>', {id: 'mobile-overlay'});
+  		let temp = $componentClass.parent().parent();
+  		$("<div class='faceted-navigation__mobile-facet-container col-xs-12 col-md-3'></div>").appendTo(temp);
+  		$componentClass.clone().appendTo('.faceted-navigation__mobile-facet-container').css('display','block');
+
   		$('.faceted-navigation__mobile-facet-container').css('display','block');
   		$componentClass.css('display','none');
   		mobileEnabled = true;

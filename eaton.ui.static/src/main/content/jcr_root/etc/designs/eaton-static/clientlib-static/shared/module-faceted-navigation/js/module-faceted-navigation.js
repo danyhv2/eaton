@@ -42,7 +42,8 @@ App.facets = function () {
         App.global.utils.throttle(mobileFacets(), 1000);
       } else if ($(window).width() > App.global.constants.GRID.MD) {
         $componentClass.css('display', 'block');
-        $mobileFacets.css('display', 'none');
+        // $mobileFacets.css('display','none');
+        $('.faceted-navigation__mobile-facet-container').css('display', 'none');
       }
     });
   };
@@ -50,7 +51,11 @@ App.facets = function () {
   var mobileFacets = function mobileFacets() {
     // $mobileFacets.append($componentClass).css('display','block');
     if (mobileEnabled == false) {
-      $componentClass.clone().appendTo($mobileFacets).css('display', 'block');
+      var $overlay = $('<div>', { id: 'mobile-overlay' });
+      var temp = $componentClass.parent().parent();
+      $("<div class='faceted-navigation__mobile-facet-container col-xs-12 col-md-3'></div>").appendTo(temp);
+      $componentClass.clone().appendTo('.faceted-navigation__mobile-facet-container').css('display', 'block');
+
       $('.faceted-navigation__mobile-facet-container').css('display', 'block');
       $componentClass.css('display', 'none');
       mobileEnabled = true;
