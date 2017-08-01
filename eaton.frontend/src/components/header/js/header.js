@@ -58,6 +58,9 @@ App.header = (function() {
 
     event.preventDefault();
 
+    // Close Search if open
+    closeSearch(event);
+
     // Highlight only the active Link
     primaryLinks.removeClass('active');
     $(event.currentTarget).addClass('active');
@@ -120,13 +123,25 @@ App.header = (function() {
   };
 
   /**
-  * Handle Click behaviors - for Title - Desktop & Mobile
+  * Handle Click behaviors - for Search - Desktop & Mobile
   */
   const openSearch = (event) => {
 
     event.preventDefault();
+    closeMegaMenu(event);
 
     bodyEl.toggleClass('search-open');
+  };
+
+  /**
+  * Handle Click behaviors - for Search - Desktop & Mobile
+  */
+  const closeSearch = (event) => {
+
+    event.preventDefault();
+    closeMegaMenu(event);
+
+    bodyEl.removeClass('search-open');
   };
 
   /**
