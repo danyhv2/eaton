@@ -5,13 +5,12 @@
 <sly data-sly-test="!${wcmmode.edit}" data-sly-use.viewData="data/product-tabs-family-data.js" >
 
   <sly data-sly-test="${ properties.view == 'toggle-graphic' }">
-    <!-- <sly data-sly-use.tpl="../../shared/templates/module-product-tab.html">
+    <sly data-sly-use.tpl="../../shared/templates/module-product-tab.html">
       <sly data-sly-call="${ tpl.data @ data=viewData.toggleGraphic }"></sly>
-    </sly> -->
+    </sly>
   </sly>
 
-  <!-- <sly data-sly-test="${ properties.view == 'links-navigation' }"> -->
-  <sly data-sly-test="${ properties.view == 'toggle-graphic' }">
+  <sly data-sly-test="${ properties.view == 'links-navigation' }">
     <sly data-sly-use.tpl="../../shared/templates/module-product-tab.html">
       <sly data-sly-call="${ tpl.data @ data=viewData.linkNavigation }"></sly>
     </sly>
