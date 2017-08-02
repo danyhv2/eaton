@@ -1,0 +1,47 @@
+<sly data-sly-use.data="${ '../data/product-specifications-data.js' @testdata=properties.testdata }">
+
+  <div class="product-specifications">
+    <div class="container">
+      <div class="row">
+
+        <!--/* M-39: Anchor Links */-->
+        <div class="col-xs-12 col-md-3">
+          <div class="module-anchor-links">
+            <ul class="module-anchor-links__list">
+              <sly data-sly-list="${ data.anchors }">
+                <li class="module-anchor-links__list-item b-body-copy-small">
+                  <!--/* NOTE: data-scroll-to="#element-id" is a CSS Selector (Class, ID) */-->
+                  <button
+                    data-scroll-to="#${ item.anchorId }"
+                    class="module-anchor-links__list-link button--reset">
+                      <span>${ item.anchorTitle }</span>
+                      <i class="icon icon-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </li>
+              </sly>
+            </ul>
+          </div>
+        </div>
+
+        <!--/* M-45: Table */-->
+        <div class="col-xs-12 col-md-9">
+          <sly data-sly-list="${ data.anchors }">
+            <div class="module-table" id="${ item.anchorId }">
+              <h3 class="module-table__head b-eyebrow-large">${ item.anchorTitle }</h3>
+              <div class="module-table__body">
+                <sly data-sly-list.row="${ item.content.rows }">
+                  <div class="module-table__row">
+                    <div class="module-table__col b-eyebrow-small">${ row.label }</div>
+                    <div class="module-table__col b-body-copy-small">${ row.description }</div>
+                  </div>
+                </sly>
+              </div>
+            </div>
+          </sly>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</sly>
