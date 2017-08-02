@@ -48,6 +48,10 @@
   //--------------
   .dark-theme & {
 
+    .icon-chevron-right {
+      display: inline-block;
+    }
+
     &__eyebrow,
     &__list-link {
       color: $color__white;

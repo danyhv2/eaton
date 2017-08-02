@@ -12,6 +12,8 @@
 
 .eaton-link-list-vertical__download-text--description { color: #98A4AE; font-family: Arial, "Arial", sans-serif; }
 
+.dark-theme .eaton-link-list-vertical .icon-chevron-right { display: inline-block; }
+
 .dark-theme .eaton-link-list-vertical__eyebrow, .dark-theme .eaton-link-list-vertical__list-link { color: #FFF; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 60px; } }

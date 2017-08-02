@@ -21,7 +21,8 @@
             <i data-sly-test="${ item.document_download }" class="eaton-link-list-vertical__external-icon icon icon-download" aria-hidden="true"></i>
             ${ item.title }
           </span>
-          <i data-sly-test="${ !item.document_download }" class="eaton-link-list-vertical__list-icon icon icon-chevron-right" aria-hidden="true"></i>
+          <!--/* "Arrow-Right" icon should be displayed only when used over dark-themes (eg: Header & Footer) */-->
+          <i data-sly-test="${ !item.document_download }" class="eaton-link-list-vertical__list-icon icon icon-chevron-right u-hide" aria-hidden="true"></i>
         </a>
         <div class="eaton-link-list-vertical__download-text"
           data-sly-test="${ item.document_download }">
