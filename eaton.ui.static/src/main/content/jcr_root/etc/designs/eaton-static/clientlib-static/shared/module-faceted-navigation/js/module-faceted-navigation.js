@@ -44,7 +44,9 @@ App.facets = function () {
         App.global.utils.throttle(mobileFacets(), 1000);
       } else if ($(window).width() > App.global.constants.GRID.MD) {
         $componentClass.css('display', 'block');
-        $('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button').addClass('hidden');
+        mobileEnabled = false;
+        $('.faceted-navigation__mobile-facet-container .faceted-navigation').remove();
+        $('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button, .overlay-mask').remove();
       }
     });
   };
@@ -71,6 +73,7 @@ App.facets = function () {
       $($mobileFacets).append("<a href='#' target='_self' class='b-button b-button__primary b-button__primary--light' role='button'>Filters (X)</a>");
 
       $('.faceted-navigation__mobile-facet-container').removeClass('hidden');
+
       $componentClass.css('display', 'none');
       $('.faceted-navigation__mobile-facet-container .faceted-navigation').addClass('hidden');
       $('.faceted-navigation__mobile-facet-container .faceted-navigation').addClass('hidden');
@@ -101,7 +104,8 @@ App.facets = function () {
       });
     } else {
       $('.faceted-navigation__mobile-facet-container').removeClass('hidden');
-      $('.faceted-navigation__mobile-facet-container .faceted-navigation').addClass('hidden');
+      // $('.faceted-navigation__mobile-facet-container .faceted-navigation').addClass('hidden');
+      $('.faceted-navigation__mobile-facet-container .faceted-navigation').remove();
       $componentClass.css('display', 'none');
     }
   };

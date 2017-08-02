@@ -15,7 +15,7 @@
 
   &__filter-link, __active-filters {
     display: inline-block;
-    font-size:12px;
+    font-size:14px;
     color:#333f48;
   }
 
@@ -27,6 +27,7 @@
   &__filters-actions {
     margin-left: auto;
     min-width: 85px;
+    font-size: 14px;
   }
 
   &__sort-options{
@@ -80,6 +81,9 @@
   @include media-mobile-and-tablet {
     &__header-bottom{
       margin-top: 60px;
+    }
+    &__filter-link {
+      font-size:12px;
     }
   }
 

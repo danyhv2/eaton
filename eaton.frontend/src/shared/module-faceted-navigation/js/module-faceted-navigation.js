@@ -28,7 +28,9 @@ App.facets = (function() {
     	}
     	else if ($(window).width() > App.global.constants.GRID.MD) {
     		$componentClass.css('display','block');
-    		$('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button').addClass('hidden');
+    		mobileEnabled = false;
+    		$('.faceted-navigation__mobile-facet-container .faceted-navigation').remove();
+    		$('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button, .overlay-mask').remove();
 
     	}
     });
@@ -57,6 +59,8 @@ App.facets = (function() {
 
 
   		$('.faceted-navigation__mobile-facet-container').removeClass('hidden');
+
+
   		$componentClass.css('display','none');
   		$('.faceted-navigation__mobile-facet-container .faceted-navigation').addClass('hidden');
   		$('.faceted-navigation__mobile-facet-container .faceted-navigation').addClass('hidden');
@@ -88,7 +92,8 @@ App.facets = (function() {
   	}
   	else {
   		$('.faceted-navigation__mobile-facet-container').removeClass('hidden');
-  		$('.faceted-navigation__mobile-facet-container .faceted-navigation').addClass('hidden');
+  		// $('.faceted-navigation__mobile-facet-container .faceted-navigation').addClass('hidden');
+  		$('.faceted-navigation__mobile-facet-container .faceted-navigation').remove();
   		$componentClass.css('display','none');
   	}
   };

@@ -21,7 +21,7 @@
         <!--/* Facet Header */-->
         <button class="faceted-navigation__header button--reset"
           data-toggle="collapse"
-          data-target="#${ 'facet-{0}' @ format=[ item.facetId ] }"
+          data-target=".${ 'facet-{0}' @ format=[ item.facetId ] }"
           aria-expanded="true"
           aria-controls="${ 'facet-{0}' @ format=[ item.facetId ] }"
         >
@@ -31,7 +31,7 @@
         </button>
 
         <!--/* Facet Values */-->
-        <div class="collapse in" id="${ 'facet-{0}' @ format=[ item.facetId ] }">
+        <div class="collapse in" class="${ 'facet-{0}' @ format=[ item.facetId ] } collapse in">
           <div data-sly-list.facetValue="${ item.facetValues }"
             class="faceted-navigation__list">
 
