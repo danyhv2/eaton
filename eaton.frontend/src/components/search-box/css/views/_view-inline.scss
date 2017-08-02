@@ -24,18 +24,13 @@
   }
 
   &__form-input { // Styles for Form Elements
-    appearance: none;
-    border: 0;
     background: $color__white;
-    border-radius: 0;
     font-size: 1em;
-    height: auto;
+    padding: 10px 0 10px 10px;
   }
 
   &__form-submit { // Styles for Form Elements
-    appearance: none;
     background: $color__white;
-    border: 0;
     color: $color__primary-blue;
     padding: 10px 20px;
   }

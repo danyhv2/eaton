@@ -1,0 +1,38 @@
+//-------------------------------------------------
+// SearchBox Component: Primary Nav View (Default)
+//-------------------------------------------------
+
+.eaton-search--default {
+
+  padding: $spacing__sm 0 24px;
+  background: $color__primary-blue;
+
+  .form-group {
+    display: flex;
+    border-bottom: 1px solid $color__white;
+    margin-bottom: 0;
+  }
+
+  .icon-search {
+    font-size: 1.5em;
+    top: 2px;
+    position: relative;
+  }
+
+  &__form-input { // Styles for Form Elements
+    font-size: 1.5em;
+    color: $color__white;
+    background: transparent;
+    padding: 0;
+  }
+
+  &__form-submit { // Styles for Form Elements
+    color: $color__white;
+    background: transparent;
+    padding: 10px 20px;
+  }
+
+  .dark-theme & {
+    background: $color__primary-gray1;
+  }
+}
