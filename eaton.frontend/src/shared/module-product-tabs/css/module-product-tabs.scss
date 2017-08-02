@@ -328,3 +328,17 @@
     }
   }
 }
+
+//-----------------------------------
+// AEM Author Mode Styles
+//-----------------------------------
+
+// stylelint-disable selector-class-pattern
+.aem-AuthorLayer-Edit,
+.cq-wcm-edit {
+
+  // stylelint-disable declaration-no-important
+  .eaton-product-tabs__tab-panel {
+    display: block;
+  }
+}
