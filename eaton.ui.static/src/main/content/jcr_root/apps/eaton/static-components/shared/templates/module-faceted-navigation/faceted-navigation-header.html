@@ -1,11 +1,11 @@
 <template data-sly-template.module="${ @ data }">
   <sly data-sly-test="${ data.autoCorrect.enabled }">
     <div class="autocorrected-search">
-      <strong style="display:block">${ 'Showing results for' @ i18n } <em>${ data.keyword }</em> </strong>
+      <strong class="u-show-inline-block">${ 'Showing results for' @ i18n } <em>${ data.keyword }</em> </strong>
       <strong>${ 'Search instead for' @ i18n }</strong>
       <a href="${ data.autoCorrect.url }"
         class="autocorrected-search__link"
-        target="${ data.autoCorrect.target}">${ data.autoCorrect.keyword }</a>
+        target="${ data.autoCorrect.target}">${ data.autoCorrect.correctedKeyword }</a>
     </div>
   </sly>
 
@@ -30,6 +30,7 @@
         class="faceted-navigation-header__active-filters">
         <a class="faceted-navigation-header__filter-link"
           href="${ filter.url }"
+          target="${ filter.target }"
           aria-label="${ 'Remove filter {0}' @ i18n, format=[ filter.label ] }">
           <i class="icon icon-close" aria-hidden="true"></i>
           <span class="faceted-navigation-header__filter-label">${ filter.label }</span>
@@ -38,7 +39,7 @@
 
       <!--/* Clear Filters */-->
       <div class="faceted-navigation-header__filters-actions">
-        <a href="#clear-filters"
+        <a href="${ data.clearAllFiltersUrl }"
           class="faceted-navigation-header__action-link">${ 'Clear filters' @ i18n }</a>
       </div>
     </div>

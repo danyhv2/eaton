@@ -206,6 +206,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .u-show-ib { display: inline-block; }
 
+.u-show-inline-block { display: inline-block; }
+
 .u-hidden { visibility: hidden; }
 
 .u-visible { visibility: visible; }

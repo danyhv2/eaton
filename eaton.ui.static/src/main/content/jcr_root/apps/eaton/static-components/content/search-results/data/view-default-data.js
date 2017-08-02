@@ -274,24 +274,28 @@ use(function () {
     // Search Results
     //--------------
     data.search = {
+      "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/search-results--more-data.json",
+      "ajaxRequestNextPage": 2,
       "resultsCount": 184,
-      "currentPage": 2,
+      "currentPage": 1,
       "showLoadMore": false,
       "keyword": "bckup servre",
       "autoCorrect": {
         "enabled": true,
-        "keyword": "backup server",
+        "correctedKeyword": "backup server",
         "url": "#backup-server",
         "target": '_self'
       },
       "activeFilters": [
         {
           "label": "Products",
-          "url": "#remove-filter-products"
+          "url": "#remove-filter-products",
+          "target": "_self"
         },
         {
           "label": "News Release",
-          "url": "#remove-filter-news-release"
+          "url": "#remove-filter-news-release",
+          "target": "_self"
         }
       ],
       "sortBy": {
