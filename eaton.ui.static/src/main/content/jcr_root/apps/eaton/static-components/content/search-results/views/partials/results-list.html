@@ -1,7 +1,10 @@
 <!--/* M-60: Results List */-->
 <template data-sly-template.module="${ @ data }">
 
-<div class="results-list">
+<div class="results-list"
+  data-results-url="${ data.ajaxRequestUrl }"
+  data-results-next-page="${ data.ajaxRequestNextPage }"
+  >
   <div data-sly-list="${ data.results }"
     class="results-list__content">
 
@@ -33,7 +36,10 @@
 
   <div class="results-list__bottom text-center">
     <div class="results-list__actions text-center">
-      <button class="b-button b-button__primary b-button__primary--light" role="button">${ 'Load More' @ i18n }</button>
+      <button
+        class="b-button b-button__primary b-button__primary--light"
+        role="button"
+        data-load-more>${ 'Load More' @ i18n }</button>
     </div>
   </div>
 

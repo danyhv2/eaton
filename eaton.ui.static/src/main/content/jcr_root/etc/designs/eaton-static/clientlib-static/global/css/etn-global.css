@@ -214,6 +214,10 @@ a .b-eyebrow-small { color: #333F48; font-weight: bold; font-family: Arial, "Ari
 
 .u-show-ib { display: inline-block; }
 
+.u-inline { display: inline; }
+
+.u-inline-block { display: inline-block; }
+
 .u-hidden { visibility: hidden; }
 
 .u-visible { visibility: visible; }
