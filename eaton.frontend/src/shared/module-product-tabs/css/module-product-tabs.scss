@@ -46,18 +46,15 @@
 @include product-tab('tab-2');
 
 .eaton-product-tabs {
-  background-color: $color__secondary-gray6;
 
   .dark-theme &,
   &.dark-theme {
-    background-color: $color__primary-gray1;
-
     &__buttons {
       background-color: $color__primary-gray1;
-    }
 
-    &__tab-panel {
-      color: $color__white;
+      &::before {
+        background-color: $color__primary-gray1;
+      }
     }
 
     label {
@@ -85,6 +82,17 @@
 
   &__buttons {
     background-color: $color__secondary-gray6;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: $color__secondary-gray6;
+      position: absolute;
+      height: 100%;
+      width: 200%;
+      display: block;
+      left: -50%;
+    }
   }
 
   &--fixed {

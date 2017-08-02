@@ -1,26 +1,53 @@
-.faceted-navigation-header { margin-bottom: 28px; }
+.faceted-navigation-header { font-size: 14px; margin-bottom: 28px; }
 
-.faceted-navigation-header__header-top, .faceted-navigation-header__header-bottom, .faceted-navigation-header__active-filters, .faceted-navigation-header__filter-link { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.faceted-navigation-header__header-top, .faceted-navigation-header__header-bottom { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.faceted-navigation-header__sort-options, .faceted-navigation-header__filters-actions { margin-left: auto; }
+.faceted-navigation-header__filter-link, .faceted-navigation-header __active-filters { display: inline-block; font-size: 14px; color: #333f48; }
 
-.faceted-navigation-header__header-bottom { margin-top: 28px; }
+.faceted-navigation-header__active-filters { width: 100%; }
+
+.faceted-navigation-header__sort-options, .faceted-navigation-header__filters-actions { margin-left: auto; min-width: 85px; font-size: 14px; }
+
+.faceted-navigation-header__sort-options { margin-top: 4px; }
+
+.faceted-navigation-header__header-bottom { margin-top: 30px; }
 
 .faceted-navigation-header__header-top { border-bottom: 2px solid #F8F8F8; padding-bottom: 28px; }
 
 .faceted-navigation-header__title { font-size: 20px; font-weight: bold; }
 
-.faceted-navigation-header__filter-link { -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -ms-flexbox; display: flex; margin-right: 2rem; }
+.faceted-navigation-header__filter-link { -webkit-box-align: top; -ms-flex-align: top; align-items: top; /*display: flex;*/ margin-right: 12px; }
 
-.faceted-navigation-header__filter-link .icon { font-size: 10px; margin-right: 1rem; }
+.faceted-navigation-header__filter-link .icon { font-size: 10px; margin-right: 2px; margin-top: 5px; }
 
-.faceted-navigation__mobile-facet-container { position: absolute; top: 0; left: 0; z-index: 9999; background-color: #fff; }
+@media screen and (max-width: 991px) { .faceted-navigation-header__header-bottom { margin-top: 60px; }
+  .faceted-navigation-header__filter-link { font-size: 12px; } }
 
-.faceted-navigation__mobile-facet-container .b-button { width: 100%; text-align: center; }
+.faceted-navigation__mobile-facet-container .faceted-navigation { padding: 0 30px; }
+
+.autocorrected-search { margin-top: 20px; font-size: 20px; }
+
+.faceted-navigation { position: relative; }
+
+.faceted-navigation__mobile-facet-container { z-index: 9999; background-color: #fff; margin-top: 20px; }
+
+.faceted-navigation__mobile-facet-container.enabled { position: absolute; top: 0; left: 0; padding: 0; }
+
+.faceted-navigation__mobile-facet-container .b-button { width: 100%; text-align: center; max-width: initial; }
 
 .faceted-navigation .hidden { display: none; }
 
 .faceted-navigation .visibile { display: block; }
+
+.faceted-navigation .mobile-header { position: absolute; top: -80px; height: 53px; font-size: 18px; left: 0; color: #fff; background-color: #666; width: 100%; padding: 15px 30px 0 30px; }
+
+.faceted-navigation .mobile-header i { position: absolute; display: block; right: 30px; top: 17px; }
+
+.faceted-navigation .mobile-header a { color: #fff; }
+
+.faceted-navigation .mobile-done { width: 100%; background-color: #005EB8; position: absolute; bottom: -50px; height: 50px; left: 0; padding-top: 15px; }
+
+.faceted-navigation .mobile-done a { color: #fff; text-align: center; display: block; width: 100%; font-weight: bold; }
 
 .faceted-navigation__group { border-bottom: 1px solid #e6e6e6; }
 
@@ -28,7 +55,7 @@
 
 .faceted-navigation__header.button--reset, .faceted-navigation__view-more-facets button { width: 100%; text-align: left; margin: 14px 0; cursor: pointer; }
 
-.faceted-navigation__header.button--reset .icon::before, .faceted-navigation__view-more-facets button .icon::before { position: absolute; right: 15px; color: #005EB8; font-size: 12px; margin-top: 6px; }
+.faceted-navigation__header.button--reset .icon::before, .faceted-navigation__view-more-facets button .icon::before { position: absolute; right: 33px; color: #005EB8; font-size: 12px; margin-top: 6px; }
 
 .faceted-navigation__view-more-facets button { color: #005EB8; }
 

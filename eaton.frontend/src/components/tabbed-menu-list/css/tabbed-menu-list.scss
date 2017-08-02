@@ -1,5 +1,5 @@
 //-----------------------------------
-// Component M-46: Tabbed Menu List
+// Component M-46: Tabbed Menu List | Category Menu
 //-----------------------------------
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
@@ -47,7 +47,7 @@
       padding-bottom: $spacing__md / 2;
     }
 
-    &>a {
+    > a {
       color: $color__black;
 
       span {
@@ -84,7 +84,7 @@
     &__item {
       border-color: transparent;
 
-      &>a {
+      > a {
         color: $color__primary-blue;
 
         &.active {
@@ -107,54 +107,58 @@
     }
 
     &__item {
-    	border-bottom: none;
-    	&.desktop {
-    		flex:0 0 33%;
-				&.primary {
-					order: 1;
-				}
+      border-bottom: 0;
 
-				&.secondary {
-					order: 3;
-				}
+      &.desktop {
+        flex: 0 0 33%;
 
-				&.tertiary {
-					order: 5;
-				}
+        &.primary {
+          order: 1;
+        }
 
-				&.quaternary {
-					order: 7;
-				}
+        &.secondary {
+          order: 3;
+        }
 
-				&.quinary {
-					order: 9;
-				}
-    	}
+        &.tertiary {
+          order: 5;
+        }
+
+        &.quaternary {
+          order: 7;
+        }
+
+        &.quinary {
+          order: 9;
+        }
+      }
     }
 
     &__tab {
-    	min-height: 0;
-    	&.desktop {
-    		&.primary {
-    			order: 2;
-    		}
+      min-height: 0;
 
-    		&.secondary {
-    			order: 4;
-    		}
+      &.desktop {
 
-    		&.tertiary {
-					order: 6;
-				}
+        &.primary {
+          order: 2;
+        }
 
-				&.quaternary {
-					order: 8;
-				}
+        &.secondary {
+          order: 4;
+        }
 
-				&.quinary {
-					order: 10;
-				}
-    	}
+        &.tertiary {
+          order: 6;
+        }
+
+        &.quaternary {
+          order: 8;
+        }
+
+        &.quinary {
+          order: 10;
+        }
+      }
     }
 
     .tab-content {
@@ -166,9 +170,9 @@
     }
 
     .tab-container {
-    	display: flex;
-    	flex-wrap: wrap;
-    	flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
     }
   }
 }
