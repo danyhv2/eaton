@@ -395,7 +395,9 @@ use(function () {
     "icon-sign-plus",
     "icon-tiles",
     "icon-tree",
-    "icon-user"
+    "icon-user",
+    "icon-livechat",
+    "icon-share"
   ];
 
   return data;

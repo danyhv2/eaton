@@ -1,0 +1,8 @@
+.eaton-product-live-chat { margin: 30px; }
+
+.eaton-product-live-chat i { color: #5B6770; font-size: 3rem; display: inline-block; vertical-align: middle; padding-right: 10px; height: 12px; margin-top: -17px; }
+
+.eaton-product-live-chat a { color: #5B6770; }
+
+@media screen and (max-width: 991px) { .eaton-product-live-chat { margin: 15px; }
+  .eaton-product-live-chat i { font-size: 2rem; margin-top: -8px; } }
