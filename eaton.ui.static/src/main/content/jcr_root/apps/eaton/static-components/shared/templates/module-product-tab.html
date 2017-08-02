@@ -28,7 +28,7 @@
           </div>
         </div>
 
-        <div class="col-md-5">
+        <div class="col-md-5 eaton-product-tabs__buttons__center">
           <div class="row">
             <!-- graphicToggle without <a> -->
             <sly data-sly-test="${ data.graphicToggle }" >
@@ -54,7 +54,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 u-text-center">
+        <div class="col-md-3 u-text-center eaton-product-tabs__dropdown-container">
           <button class="eaton-product-tabs__dropdown button--reset">
             ${data.dropdown.label}
             <i class="icon icon-chevron-down" aria-hidden="true"></i>
@@ -71,8 +71,10 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row eaton-product-tabs__page-utility">
         <sly data-sly-resource="${'back-to-search' @ resourceType='/apps/eaton/static-components/product/back-to-search'}"></sly>
+        <sly data-sly-resource="${'share-cta' @ resourceType='/apps/eaton/static-components/product/share-cta'}"></sly>
+        <sly data-sly-resource="${'live-chat' @ resourceType='/apps/eaton/static-components/product/live-chat-cta'}"></sly>
       </div>
 
       <div class="row">
@@ -81,30 +83,29 @@
           <div
             class="col-sm-12 eaton-product-tabs__tab-panel"
             data-tab-name="tab-0" >
-            <h1>content overview</h1>
-            <h2>TODO: replace this with content overview</h2>
+            <sly data-sly-test="${ wcmmode.edit }">
+              <div class="alert alert-warning">Content on tab 1</div>
+            </sly>
+            <sly data-sly-resource="${'content-tab-0' @ resourceType='wcm/foundation/components/parsys'}"></sly>
           </div>
           <div
             class="col-sm-12 eaton-product-tabs__tab-panel"
             data-tab-name="tab-1" >
-            <h1>content specifications</h1>
-            <h2>TODO: replace this with content Specifications</h2>
+            <sly data-sly-test="${ wcmmode.edit }">
+              <div class="alert alert-warning">Content on tab 2</div>
+            </sly>
+            <sly data-sly-resource="${'content-tab-1' @ resourceType='wcm/foundation/components/parsys'}"></sly>
           </div>
           <div
             class="col-sm-12 eaton-product-tabs__tab-panel"
             data-tab-name="tab-2" >
-            <h1>content resources</h1>
-            <h2>TODO: replace this with content resources</h2>
+            <sly data-sly-test="${ wcmmode.edit }">
+              <div class="alert alert-warning">Content on tab 3</div>
+            </sly>
+            <sly data-sly-resource="${'content-tab-2' @ resourceType='wcm/foundation/components/parsys'}"></sly>
           </div>
         </sly>
 
-        <!-- link navigation just one panel that is always active -->
-        <sly data-sly-test="${ !data.graphicToggle }" >
-          <div
-            class="col-sm-12 eaton-product-tabs__tab-panel panel-active" >
-            <h2>TODO: replace this with parsys component</h2>
-          </div>
-        </sly>
       </div>
     </div>
   </div>
