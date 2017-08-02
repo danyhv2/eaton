@@ -18,7 +18,8 @@ use(function () {
           "id": "product",
           "isHiddenTab": false,
           "isActiveTab": false,
-          "resultsCount": 40,
+          "isADisabledTab": false,
+          "resultsCount": 36,
           "url": "#tab--product",
           "target": "_self"
         },
@@ -27,7 +28,8 @@ use(function () {
           "id": "news-insights",
           "isHiddenTab": false,
           "isActiveTab": false,
-          "resultsCount": 100,
+          "isADisabledTab": false,
+          "resultsCount": 97,
           "url": "#tab--news-insights",
           "target": "_self"
         },
@@ -36,7 +38,18 @@ use(function () {
           "id": "resources",
           "isHiddenTab": false,
           "isActiveTab": false,
-          "resultsCount": 52,
+          "isADisabledTab": true,
+          "resultsCount": 0,
+          "url": "#tab--resources",
+          "target": "_self"
+        },
+        {
+          "label": "This Tab Should be hidden",
+          "id": "resources",
+          "isHiddenTab": true,
+          "isActiveTab": false,
+          "isADisabledTab": false,
+          "resultsCount": 15,
           "url": "#tab--resources",
           "target": "_self"
         },
