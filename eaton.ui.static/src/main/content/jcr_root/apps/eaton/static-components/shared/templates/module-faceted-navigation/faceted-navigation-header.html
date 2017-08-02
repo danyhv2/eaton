@@ -1,47 +1,49 @@
 <template data-sly-template.module="${ @ data }">
   <sly data-sly-test="${ data.autoCorrect.enabled }">
-    <div class="autocorrected-search">
-      <strong style="display:block">${ 'Showing results for' @ i18n } <em>${ data.keyword }</em> </strong>
-      <strong>${ 'Search instead for' @ i18n }</strong>
-      <a href="${ data.autoCorrect.url }"
-        class="autocorrected-search__link"
-        target="${ data.autoCorrect.target}">${ data.autoCorrect.keyword }</a>
-    </div>
-  </sly>
-
-  <div class="faceted-navigation-header hidden-xs hidden-sm">
-    <div class="faceted-navigation-header__header-top">
-      <div class="faceted-navigation-header__title">${ '{0} results' @ i18n, format=[ data.resultsCount ] }</div>
-      <div class="faceted-navigation-header__sort-options">
-        ${ 'Sort by' @ i18n }
-        <select>
-          <sly data-sly-list.sort="${ data.sortBy.items }">
-            <option value="${ sort.url }">${ sort.label }</option>
-          </sly>
-        </select>
+    <div class="desktop-container hidden-xs hidden-sm">
+      <div class="autocorrected-search">
+        <strong style="display:block">${ 'Showing results for' @ i18n } <em>${ data.keyword }</em> </strong>
+        <strong>${ 'Search instead for' @ i18n }</strong>
+        <a href="${ data.autoCorrect.url }"
+          class="autocorrected-search__link"
+          target="${ data.autoCorrect.target}">${ data.autoCorrect.keyword }</a>
       </div>
-    </div>
+    </sly>
 
-    <div data-sly-test="${ data.activeFilters.length }"
-      class="faceted-navigation-header__header-bottom">
-
-      <!--/* If There Are Active Filters */-->
-      <div data-sly-list.filter="${ data.activeFilters }"
-        class="faceted-navigation-header__active-filters">
-        <a class="faceted-navigation-header__filter-link"
-          href="${ filter.url }"
-          aria-label="${ 'Remove filter {0}' @ i18n, format=[ filter.label ] }">
-          <i class="icon icon-close" aria-hidden="true"></i>
-          <span class="faceted-navigation-header__filter-label">${ filter.label }</span>
-        </a>
+    <div class="faceted-navigation-header">
+      <div class="faceted-navigation-header__header-top">
+        <div class="faceted-navigation-header__title">${ '{0} results' @ i18n, format=[ data.resultsCount ] }</div>
+        <div class="faceted-navigation-header__sort-options">
+          ${ 'Sort by' @ i18n }
+          <select>
+            <sly data-sly-list.sort="${ data.sortBy.items }">
+              <option value="${ sort.url }">${ sort.label }</option>
+            </sly>
+          </select>
+        </div>
       </div>
 
-      <!--/* Clear Filters */-->
-      <div class="faceted-navigation-header__filters-actions">
-        <a href="#clear-filters"
-          class="faceted-navigation-header__action-link">${ 'Clear filters' @ i18n }</a>
-      </div>
-    </div>
+      <div data-sly-test="${ data.activeFilters.length }"
+        class="faceted-navigation-header__header-bottom">
 
+        <!--/* If There Are Active Filters */-->
+        <div data-sly-list.filter="${ data.activeFilters }"
+          class="faceted-navigation-header__active-filters">
+          <a class="faceted-navigation-header__filter-link"
+            href="${ filter.url }"
+            aria-label="${ 'Remove filter {0}' @ i18n, format=[ filter.label ] }">
+            <i class="icon icon-close" aria-hidden="true"></i>
+            <span class="faceted-navigation-header__filter-label">${ filter.label }</span>
+          </a>
+        </div>
+
+        <!--/* Clear Filters */-->
+        <div class="faceted-navigation-header__filters-actions">
+          <a href="#clear-filters"
+            class="faceted-navigation-header__action-link">${ 'Clear filters' @ i18n }</a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </template>
