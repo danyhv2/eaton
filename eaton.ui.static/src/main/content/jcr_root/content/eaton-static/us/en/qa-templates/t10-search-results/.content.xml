@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-08-02T05:03:43.622Z"
+        cq:lastModifiedBy="etn-brian"
+        cq:lastReplicated="{Date}2017-08-02T05:03:48.792Z"
+        cq:lastReplicatedBy="etn-brian"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="t10-search-results"
+        jcr:uuid="d79f27d5-b03d-4ba4-8b29-014d08dc9ce6"
+        sling:resourceType="eaton/static-components/structure/eaton-content-page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <search_box
+                jcr:created="{Date}2017-08-02T05:03:31.185Z"
+                jcr:createdBy="etn-brian"
+                jcr:lastModified="{Date}2017-08-02T05:03:37.582Z"
+                jcr:lastModifiedBy="etn-brian"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/search-box"
+                view="search-box"/>
+            <search_results
+                jcr:created="{Date}2017-08-02T05:03:33.072Z"
+                jcr:createdBy="etn-brian"
+                jcr:lastModified="{Date}2017-08-02T05:03:43.617Z"
+                jcr:lastModifiedBy="etn-brian"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/search-results"
+                view="default"/>
+        </par>
+    </jcr:content>
+</jcr:root>
