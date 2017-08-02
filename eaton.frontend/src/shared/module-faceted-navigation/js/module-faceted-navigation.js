@@ -7,6 +7,7 @@ let App = window.App || {};
 
 App.facets = (function() {
   const $componentClass = $('.faceted-navigation');
+  const $mobileHeader = $('.faceted-navigation__mobile-facet-container .faceted-navigation-header');
   let $mobileFacets = $('.faceted-navigation__mobile-facet-container');
   let mobileEnabled = false;
 
@@ -50,7 +51,7 @@ App.facets = (function() {
 
   		$('.faceted-navigation__mobile-facet-container .faceted-navigation').prepend($('.faceted-navigation__mobile-facet-container .faceted-navigation-header__header-bottom'));
 
-  		$('.faceted-navigation__mobile-facet-container .faceted-navigation-header').removeClass('hidden-xs').removeClass('hidden-sm');
+  		$mobileHeader.removeClass('hidden-xs').removeClass('hidden-sm');
 
   		$('.faceted-navigation__mobile-facet-container .faceted-navigation-header__header-bottom').removeClass('hidden-xs').removeClass('hidden-sm');
 
@@ -71,7 +72,7 @@ App.facets = (function() {
   			$("<div class='overlay-mask hidden'></div>").appendTo($('body'));
   			$('.faceted-navigation__mobile-facet-container').addClass('enabled');
   			$('.faceted-navigation__mobile-facet-container .faceted-navigation').removeClass('hidden').addClass('visible');
-  			$('.faceted-navigation__mobile-facet-container .faceted-navigation-header').addClass('hidden');
+  			$mobileHeader.addClass('hidden');
   			$('.mobile-header').removeClass('hidden');
   			$(this).addClass('hidden');
   			$('.overlay-mask').css('height',winHeight).toggleClass('hidden');
