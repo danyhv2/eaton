@@ -12,3 +12,4 @@ etn-global.js
 etn-global-constants.js
 etn-global-utils.js
 etn-responsive-images.js
+etn-scroll-to.js

@@ -17,5 +17,4 @@
   .eaton-how-to-buy .container.row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
   .eaton-how-to-buy .container.row .col-md-4 { -webkit-box-flex: 0; -ms-flex: 0 0 33%; flex: 0 0 33%; }
   .eaton-how-to-buy .container.row .col-md-8 { -webkit-box-flex: 0; -ms-flex: 0 0 66%; flex: 0 0 66%; }
-  .eaton-how-to-buy .container.row .row { margin: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
-  .eaton-how-to-buy .container.row .col-md-4 { -webkit-box-flex: 0; -ms-flex: 0 0 33%; flex: 0 0 33%; } }
+  .eaton-how-to-buy .container.row .row { margin: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; } }
