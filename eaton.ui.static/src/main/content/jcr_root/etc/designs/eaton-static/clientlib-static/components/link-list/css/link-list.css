@@ -6,11 +6,13 @@
 
 .eaton-link-list-vertical__list-icon { font-size: 0.75em; margin-left: 0.25em; }
 
-.eaton-link-list-vertical__external-icon { padding-right: 10px; font-size: 0.75em; }
+.eaton-link-list-vertical__external-icon { padding-right: 10px; font-size: 1.5rem; }
 
 .eaton-link-list-vertical__download-text { width: 100%; margin-left: 30px; font-size: 0.9em; }
 
 .eaton-link-list-vertical__download-text--description { color: #98A4AE; font-family: Arial, "Arial", sans-serif; }
+
+.dark-theme .eaton-link-list-vertical .icon-chevron-right { display: inline-block; }
 
 .dark-theme .eaton-link-list-vertical__eyebrow, .dark-theme .eaton-link-list-vertical__list-link { color: #FFF; }
 
