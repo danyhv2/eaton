@@ -28,7 +28,7 @@
   .eaton-tabbed-menu-list__item a { padding-bottom: 50px; }
   .eaton-tabbed-menu-list__tab-links { border-left: 1px solid #98A4AE; }
   .eaton-tabbed-menu-list__tabs { display: block; overflow: hidden; }
-  .eaton-tabbed-menu-list__item { border-bottom: none; }
+  .eaton-tabbed-menu-list__item { border-bottom: 0; }
   .eaton-tabbed-menu-list__item.desktop { -webkit-box-flex: 0; -ms-flex: 0 0 33%; flex: 0 0 33%; }
   .eaton-tabbed-menu-list__item.desktop.primary { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
   .eaton-tabbed-menu-list__item.desktop.secondary { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }

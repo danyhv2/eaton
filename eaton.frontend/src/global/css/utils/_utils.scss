@@ -2,14 +2,14 @@
 //--------------
 .u-is-fixed { position: fixed; }
 
-.overlay-mask{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  opacity:.8;
+.overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .8;
   background-color: #fff;
-  z-index:9998;
+  z-index: 9998;
 }
 
 .u-absolute-fill {
