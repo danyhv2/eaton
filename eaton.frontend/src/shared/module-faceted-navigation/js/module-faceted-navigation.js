@@ -23,9 +23,11 @@ App.facets = (function() {
 
     $(window).on('resize', function() {
     	if ($(window).width() < App.global.constants.GRID.MD && $('.faceted-navigation__mobile-facet-container').css('display') != 'block') {
+    		//$('.faceted-navigation__mobile-facet-container .faceted-navigation-header').removeClass('hidden');
+    		$('.faceted-navigation__mobile-facet-container .faceted-navigation-header, .faceted-navigation__mobile-facet-container').removeClass('hidden');
     		$('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button').removeClass('hidden');
+
     		App.global.utils.throttle(mobileFacets(),1000);
-    		$('.faceted-navigation__mobile-facet-container .faceted-navigation-header, .faceted-navigation__mobile-facet-container').removeClass('hidden').removeClass('hidden-xs').removeClass('hidden-sm);
     	}
     	else if ($(window).width() > App.global.constants.GRID.MD) {
     		$componentClass.css('display','block');
