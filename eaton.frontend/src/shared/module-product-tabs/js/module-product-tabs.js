@@ -1,11 +1,11 @@
 //-----------------------------------
-// Component M-40: Product Tabs Family
+// Component M-40: Product Tabs shared module
 //-----------------------------------
 'use strict';
 
 let App = window.App || {};
 
-App.productTabsFamily = (function() {
+App.productTabs = (function() {
 
   const $componentClass = $('.eaton-product-tabs');
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
