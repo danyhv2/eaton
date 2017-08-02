@@ -2,4 +2,5 @@
 
 @media screen and (max-width: 991px) { .product-specifications .module-anchor-links { display: none; } }
 
-@media screen and (min-width: 992px) { .product-specifications { padding: 40px 0; } }
+@media screen and (min-width: 992px) { .product-specifications { padding: 40px 0; }
+  .product-specifications .module-anchor-links { margin-right: 20px; } }

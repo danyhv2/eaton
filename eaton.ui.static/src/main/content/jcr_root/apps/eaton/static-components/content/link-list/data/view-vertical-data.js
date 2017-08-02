@@ -279,7 +279,7 @@ use(function () {
 		                document_size: 'PDF 8MB',
 		                document_download: ''
 				  }
-			      
+
 			    ]
 	 }
   } else if ((typeof(testdata) != "undefined") && testdata == "megamenu-products") {
@@ -310,7 +310,7 @@ use(function () {
 		                document_size: 'PDF 8MB',
 		                document_download: ''
 				  }
-			      
+
 			    ]
 	 }
   } else if ((typeof(testdata) != "undefined") && testdata == "megamenu-company") {
@@ -341,10 +341,10 @@ use(function () {
 		                document_size: 'PDF 8MB',
 		                document_download: ''
 				  }
-			      
+
 			    ]
 	 }
-  } else {
+ } else if ((typeof(testdata) != "undefined") && testdata == "links-and-downloads") {
 	  data.view = {
 	    eyebrow: 'Eyebrow / Title',
 	    links: [
@@ -390,6 +390,42 @@ use(function () {
             }
 	    ]
 	  }
+  } else {
+    data.view = {
+      eyebrow: 'Link List eyebrow',
+      links: [
+        {
+          title: 'Link list item 1',
+          url: '#link-1',
+          target: '_self',
+          external_link: false
+        },
+        {
+          title: 'Link list item 2',
+          url: '#link-2',
+          target: '_self',
+          external_link: false
+        },
+        {
+          title: 'Link list item 3',
+          url: '#link-3',
+          target: '_self',
+          external_link: true
+        },
+        {
+          title: 'Link list item 4',
+          url: '#link-4',
+          target: '_self',
+          external_link: false
+        },
+        {
+          title: 'Link list item 5',
+          url: '#link-5',
+          target: '_self',
+          external_link: false
+        }
+      ]
+    }
   };
 
   return data;

@@ -29,7 +29,7 @@
 
   &__external-icon {
     padding-right: 10px;
-    font-size: 0.75em;
+    font-size: 1.5rem;
   }
 
   &__download-text {
@@ -47,6 +47,10 @@
   // Over DARK-Background
   //--------------
   .dark-theme & {
+
+    .icon-chevron-right {
+      display: inline-block;
+    }
 
     &__eyebrow,
     &__list-link {
