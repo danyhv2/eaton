@@ -73,5 +73,3 @@ App.TabbedMenuList = (function() {
   }
 
 }());
-
-

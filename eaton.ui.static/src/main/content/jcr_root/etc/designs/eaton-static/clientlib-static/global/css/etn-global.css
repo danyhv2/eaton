@@ -214,6 +214,10 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .u-show-ib { display: inline-block; }
 
+.u-inline { display: inline; }
+
+.u-inline-block { display: inline-block; }
+
 .u-hidden { visibility: hidden; }
 
 .u-visible { visibility: visible; }
