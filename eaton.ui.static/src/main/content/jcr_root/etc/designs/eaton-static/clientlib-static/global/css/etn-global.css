@@ -218,7 +218,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media all and (min-width: 992px) { [data-mobile-rendition] { min-width: 0; } }
 
-.button--reset { border: 0; background: none; padding: 0; }
+.button--reset { border: 0; border-radius: 0; background: none; padding: 0; }
 
 .b-button { background: none; border-radius: 0; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; }
 
