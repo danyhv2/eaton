@@ -79,3 +79,5 @@
 .aem-AuthorLayer-Edit .mega-menu, .aem-AuthorLayer-Edit .header-search, .cq-wcm-edit .mega-menu, .cq-wcm-edit .header-search { position: relative !important; visibility: visible !important; opacity: 1 !important; z-index: 99999 !important; }
 
 .aem-AuthorLayer-Edit .mega-menu__content, .aem-AuthorLayer-Edit .header-search__content, .cq-wcm-edit .mega-menu__content, .cq-wcm-edit .header-search__content { display: block !important; }
+
+.aem-AuthorLayer-Edit .header-search, .cq-wcm-edit .header-search { -webkit-transform: translateY(0) !important; transform: translateY(0) !important; -webkit-transition: none !important; transition: none !important; }
