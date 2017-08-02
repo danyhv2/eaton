@@ -74,6 +74,10 @@
 
 .icon-user::before { content: "\EA25"; }
 
+.icon-livechat::before { content: "\EA26"; }
+
+.icon-share::before { content: "\EA27"; }
+
 @media screen and (max-width: 991px) { .container { padding: 0 30px; } }
 
 @font-face { font-family: 'Eaton'; src: url("fonts/EatonRegular.woff") format("woff"); }
