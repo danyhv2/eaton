@@ -21,4 +21,13 @@
   a {
     color: $color__primary-gray2;
   }
+
+  @include media-mobile-and-tablet {
+    margin: 15px;
+
+    i {
+      font-size: 2rem;
+      margin-top: -8px;
+    }
+  }
 }

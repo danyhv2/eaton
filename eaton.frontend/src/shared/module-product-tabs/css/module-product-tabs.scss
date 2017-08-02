@@ -78,6 +78,12 @@
         color: $color__white;
       }
     }
+
+    @include media-mobile-and-tablet {
+      .eaton-product-tabs__buttons__center {
+        border-top: 2px solid $color__primary-gray2;
+      }
+    }
   }
 
   &__buttons {
@@ -272,10 +278,22 @@
       padding: 0;
     }
 
+    &__dropdown-container {
+      background-color: $color__white;
+    }
+
     .eaton-product-tabs__dropdown {
       width: 93%;
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+
+    &__page-utility {
+      padding: 0 15px;
+    }
+
+    .eaton-product-tabs__buttons__center {
+      border-top: 2px solid $color__secondary-gray5;
     }
 
     &--fixed {

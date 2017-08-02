@@ -17,4 +17,13 @@
     height: 12px;
     margin-top: -17px;
   }
+
+  @include media-mobile-and-tablet {
+    margin: 15px;
+
+    i {
+      font-size: 2rem;
+      margin-top: -8px;
+    }
+  }
 }
