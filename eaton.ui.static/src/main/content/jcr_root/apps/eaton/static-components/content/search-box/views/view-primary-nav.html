@@ -1,3 +1,31 @@
-<div class="eaton-search-primary-nav">
-  Primary View
+<div class="eaton-search eaton-search--default">
+  <div class="container">
+    <div class="row">
+
+      <!--/* Search Form */-->
+      <form class="eaton-search__form eaton-search--default__form" data-form-action="${data.form.searchResultsPath}">
+        <div class="form-group">
+          <label for="mega-menu-search" class="sr-only">${data.header}</label>
+          <input type="text"
+                  name="search-term"
+                  id="mega-menu-search"
+                  class="form-control eaton-search--default__form-input"
+                  placeholder="${data.form.placeholder}"
+                  required="required">
+          <button type="submit" class="eaton-search__submit eaton-search--default__form-submit">
+            <span class="sr-only">${data.form.submitLabel}</span>
+            <i class="icon icon-search" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="eaton-search__results">
+          <ul data-sly-list="${data.results}" class="eaton-search__result-list" >
+            <li class="eaton-search__result-item">
+              <a href="${item.href}" target=${ item.target}>${ item.title }</a>
+          </ul>
+        </div>
+      </form>
+
+    </div>
+  </div>
 </div>
