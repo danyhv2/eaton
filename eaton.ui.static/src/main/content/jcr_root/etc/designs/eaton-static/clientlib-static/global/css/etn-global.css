@@ -120,11 +120,15 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 h5 a, .b-heading-h5 a { color: #005EB8; }
 
-.b-h4-link { font-size: 1.375em; color: #005EB8; font-weight: bold; }
+.b-h4-link { font-size: 1.375em; font-family: Arial, "Arial", sans-serif; color: #005EB8; font-weight: bold; }
 
 .b-h4-link:hover, .b-h4-link:focus, .b-h4-link:active { text-decoration: none; color: #005EB8; }
 
 @media screen and (min-width: 992px) { .b-h4-link { font-size: 1.625em; } }
+
+.b-small-link { font-family: Arial, "Arial", sans-serif; color: #005EB8; font-size: 1.125em; }
+
+.b-small-link:hover, .b-small-link:focus, .b-small-link:active { text-decoration: none; color: #005EB8; }
 
 .b-body-copy { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
 
@@ -163,6 +167,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 .u-flex-justify-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 .u-is-fixed { position: fixed; }
+
+.overlay-mask { position: absolute; top: 0; left: 0; width: 100%; opacity: .8; background-color: #fff; z-index: 9998; }
 
 .u-absolute-fill { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 

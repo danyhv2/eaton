@@ -1,7 +1,7 @@
 <template data-sly-template.module="${ @ data }">
   <sly data-sly-test="${ data.autoCorrect.enabled }">
     <div class="autocorrected-search">
-      <strong>${ 'Showing results for' @ i18n } <em>${ data.keyword }</em> </strong>
+      <strong style="display:block">${ 'Showing results for' @ i18n } <em>${ data.keyword }</em> </strong>
       <strong>${ 'Search instead for' @ i18n }</strong>
       <a href="${ data.autoCorrect.url }"
         class="autocorrected-search__link"
@@ -9,14 +9,16 @@
     </div>
   </sly>
 
-  <div class="faceted-navigation-header">
+  <div class="faceted-navigation-header hidden-xs hidden-sm">
     <div class="faceted-navigation-header__header-top">
       <div class="faceted-navigation-header__title">${ '{0} results' @ i18n, format=[ data.resultsCount ] }</div>
       <div class="faceted-navigation-header__sort-options">
         ${ 'Sort by' @ i18n }
-        <sly data-sly-list.sort="${ data.sortBy.items }">
-          / <a href="${ sort.url }" target="${ sort.target }">${ sort.label }</a>
-        </sly>
+        <select>
+          <sly data-sly-list.sort="${ data.sortBy.items }">
+            <option value="${ sort.url }">${ sort.label }</option>
+          </sly>
+        </select>
       </div>
     </div>
 

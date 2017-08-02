@@ -59,11 +59,25 @@
       &.row {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+
+        .col-md-4 {
+          flex: 0 0 33%;
+        }
+
+        .col-md-8 {
+          flex: 0 0 66%
+        }
 
         .row {
           margin: 0;
           display: flex;
           flex-wrap: wrap;
+          flex-direction: row;
+        }
+
+        .col-md-4 {
+          flex: 0 0 33%;
         }
       }
     }

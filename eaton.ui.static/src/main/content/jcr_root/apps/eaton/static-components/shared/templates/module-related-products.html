@@ -1,0 +1,21 @@
+<template data-sly-template.module="${ @ data }">
+    <div class="slick-carousel">
+        <div class="slick-carousel__slides" data-sly-list="${data}">
+            <a href="${item.link}" target="${item.target}" class="col-xs-12 col-sm-3">
+                <div class="col-xs-12 related-products-component__card">
+                    <img class="carousel-component-slide__image" src="${item.image}" alt="${item.image_alt}">
+                </div>
+                <div class="col-xs-12">
+                    <p class="b-eyebrow-small related-products-component__title">${item.title}</p>
+                    <p class="b-h4-link">${item.text}</p>
+                </div>
+            </a>
+        </div>
+
+        <sly data-sly-test="${data.length > 4}">
+            <button class="slick-carousel__prev-arrow slick-carousel__arrows button--reset"><span class="icon icon-chevron-left"></span></button>
+            <button class="slick-carousel__next-arrow slick-carousel__arrows button--reset"><span class="icon icon-chevron-right"></span></button>
+        </sly>
+
+    </div>
+</template>

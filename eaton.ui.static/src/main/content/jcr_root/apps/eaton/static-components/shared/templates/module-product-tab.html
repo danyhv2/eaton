@@ -1,0 +1,111 @@
+<!--/* BEGIN M-40 Product Tabs (Family/SKU) */ -->
+<template data-sly-template.data="${ @ data }">
+  <div class="eaton-product-tabs ${ data.useDarktheme ? 'dark-theme' : '' }" >
+    <div class="container">
+      <sly data-sly-test="${ data.graphicToggle }" >
+        <!-- inputs neeeded for tab behavior -->
+        <input
+          data-sly-repeat="${data.tabs}"
+          id="tab-${itemList.index}"
+          data-sly-attribute.checked="${item.selected}"
+          type="radio"
+          name="product-tab"
+        >
+      </sly>
+
+      <div class="row eaton-product-tabs__buttons">
+        <div class="col-md-4">
+          <div class="eaton-product-tabs__description">
+            <a href="${data.eyebrowCta.href}"
+               class="b-eyebrow-small"
+               aria-label="Go to ${data.eyebrowCta.title}" >
+              <i class="icon icon-chevron-left" aria-hidden="true"></i>
+                ${data.eyebrowCta.title}
+            </a>
+            <div class="b-heading-h5">
+              ${data.productName}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="row">
+            <!-- graphicToggle without <a> -->
+            <sly data-sly-test="${ data.graphicToggle }" >
+              <label data-sly-repeat="${data.tabs}" for="tab-${itemList.index}" >
+                <i class="icon icon-${item.icon}" aria-hidden="true"></i>
+                <span>${item.title}</span>
+              </label>
+            </sly>
+
+            <!-- graphicToggle with <a> -->
+            <sly data-sly-test="${ !data.graphicToggle }" >
+              <a data-sly-repeat="${data.tabs}"
+                 href="${item.href}"
+                 target="${item.target}"
+                 aria-label="Go to ${item.title}"
+              >
+                <label for="tab-${itemList.index}" class="${item.selected ? 'tab-active' : ''}" >
+                    <i class="icon icon-${item.icon}" aria-hidden="true"></i>
+                    <span>${item.title}</span>
+                </label>
+              </a>
+            </sly>
+          </div>
+        </div>
+
+        <div class="col-md-3 u-text-center">
+          <button class="eaton-product-tabs__dropdown">
+            ${data.dropdown.label}
+            <i class="icon icon-chevron-down" aria-hidden="true"></i>
+            <div class="eaton-product-tabs__dropdown__content">
+              <ul data-sly-list="${ data.dropdown.options }">
+                <li>
+                  <a href="#1" aria-label="Go to ${item.title}" >
+                    <i class="icon icon-${item.icon}" aria-hidden="true"></i><span>${item.title}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <sly data-sly-resource="${'back-to-search' @ resourceType='/apps/eaton/static-components/product/back-to-search'}"></sly>
+      </div>
+
+      <div class="row">
+        <!-- graphic toggle use 3 panels that are hide/show via css -->
+        <sly data-sly-test="${ data.graphicToggle }" >
+          <div
+            class="col-sm-12 eaton-product-tabs__tab-panel"
+            data-tab-name="tab-0" >
+            <h1>content overview</h1>
+            <h2>TODO: replace this with content overview</h2>
+          </div>
+          <div
+            class="col-sm-12 eaton-product-tabs__tab-panel"
+            data-tab-name="tab-1" >
+            <h1>content specifications</h1>
+            <h2>TODO: replace this with content Specifications</h2>
+          </div>
+          <div
+            class="col-sm-12 eaton-product-tabs__tab-panel"
+            data-tab-name="tab-2" >
+            <h1>content resources</h1>
+            <h2>TODO: replace this with content resources</h2>
+          </div>
+        </sly>
+
+        <!-- link navigation just one panel that is always active -->
+        <sly data-sly-test="${ !data.graphicToggle }" >
+          <div
+            class="col-sm-12 eaton-product-tabs__tab-panel panel-active" >
+            <h2>TODO: replace this with parsys component</h2>
+          </div>
+        </sly>
+      </div>
+    </div>
+  </div>
+<template>

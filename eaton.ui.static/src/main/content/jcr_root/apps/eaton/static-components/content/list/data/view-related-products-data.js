@@ -39,11 +39,14 @@ use(function () {
                         link: 'http://www.eaton.com/',
                         target: '_blank'
                     }
-                ]
+                ],
+                header: 'Designed to work together',
+                description: 'Discover other Eaton products and accesories built to enhance this product.'
             }
+
         ]
     } else {
-        data = [
+        data =
             {
                 cards: [
                     {
@@ -77,11 +80,7 @@ use(function () {
                         image_alt: 'Image 4',
                         link: 'http://www.eaton.com/',
                         target: '_blank'
-                    }
-                ]
-            },
-            {
-                cards: [
+                    },
                     {
                         title: 'Eaton 9px Family',
                         text: 'Eaton S-Series Enlosure',
@@ -116,7 +115,6 @@ use(function () {
                     }
                 ]
             }
-        ]
     }
 
     return data;

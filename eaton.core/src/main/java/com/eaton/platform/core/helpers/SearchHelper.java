@@ -6,54 +6,63 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.eaton.platform.core.bean.EatonAbstractUseBean;
-import com.eaton.platform.core.models.SearchBean;
+import com.eaton.platform.core.models.SearchModel;
 import com.eaton.platform.core.util.CommonUtil;
 
+/**
+ * The Class SearchHelper.
+ */
 public class SearchHelper extends EatonAbstractUseBean {
 	
 	/** The Constant LOGGER. */
     private static final Logger LOGGER = LoggerFactory.getLogger(SearchHelper.class);
+    
+    /** The Constant SEARCH_HEADER_SELECTOR. */
     private static final String SEARCH_HEADER_SELECTOR = "search-header";
+    
+    /** The Constant SEARCH_HEADER_MOBILE_SELECTOR. */
     private static final String SEARCH_HEADER_MOBILE_SELECTOR = "search-mobile";
+    
+    /** The Constant SEARCH_HEADER_BAR_SELECTOR. */
     private static final String SEARCH_HEADER_BAR_SELECTOR = "search-bar";
+    
+    /** The Constant SEARCH_HEADER_COMPONENT. */
     private static final String SEARCH_HEADER_COMPONENT = "/jcr:content/root/header/search-comp";
     
-    private SearchBean searchModel;
+    /** The search model. */
+    private SearchModel searchModel;
 
+	/* 
+	 * @see com.eaton.platform.core.bean.EatonAbstractUseBean#setComponentValues()
+	 */
 	@Override
 	public void setComponentValues() {
 		LOGGER.debug("SearchHelper :: setComponentValues() :: Start");
 		Resource searchRes = null;
-		String searchResPath = null;
 		String selector = null;
 		String homePagePath = CommonUtil.getHomePagePath(currentPage);
-		Boolean isHomePage = CommonUtil.isHomePagePath(currentPage);
 		selector = slingRequest.getRequestPathInfo().getSelectorString();
 		
-		if(isHomePage){
-			searchResPath = homePagePath.concat(SEARCH_HEADER_COMPONENT);
-			searchRes = resourceResolver.getResource(searchResPath);
+		
+		if((null != selector && ( StringUtils.equalsIgnoreCase(selector, SEARCH_HEADER_SELECTOR) || StringUtils.equalsIgnoreCase(selector, SEARCH_HEADER_MOBILE_SELECTOR) || StringUtils.equalsIgnoreCase(selector, SEARCH_HEADER_BAR_SELECTOR) )) ){
+			searchRes = resourceResolver.getResource(homePagePath.concat(SEARCH_HEADER_COMPONENT));
 		} else {
 			searchRes = res;
 		}
-		
-		if(null != selector){
-			if( StringUtils.equalsIgnoreCase(selector, SEARCH_HEADER_SELECTOR) || StringUtils.equalsIgnoreCase(selector, SEARCH_HEADER_MOBILE_SELECTOR) || StringUtils.equalsIgnoreCase(selector, SEARCH_HEADER_BAR_SELECTOR) ){
-				searchRes = resourceResolver.getResource(homePagePath.concat(SEARCH_HEADER_COMPONENT));
-			}
-		} else {
-			searchRes = res;
-		}
-		
 		
 		if(null != searchRes) {
-			searchModel = searchRes.adaptTo(SearchBean.class);
+			searchModel = searchRes.adaptTo(SearchModel.class);
 		}
 		LOGGER.debug("SearchHelper :: setComponentValues() :: Exit");
 		
 	}
 
-	public SearchBean getSearchModel() {
+	/**
+	 * Gets the search model.
+	 *
+	 * @return the search model
+	 */
+	public SearchModel getSearchModel() {
 		return searchModel;
 	}
 }

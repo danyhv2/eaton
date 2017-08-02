@@ -5,34 +5,31 @@ import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
+/**
+ * The Class BCComponentModel.
+ */
 @Model(adaptables = Resource.class)
 public class BCComponentModel   {
 	
-	/**
-	 * contentType
-	 */
+	/** contentType. */
 	@Inject
 	private String  contentType;
 
-	/**
-	 * contentId
-	 */
+	/** contentId. */
 	@Inject
 	private String contentId;
 	
-	/**
-	 * contentRepository
-	 */
+	/** contentRepository. */
 	@Inject
 	private String contentRepository;
 	
-	/**
-	 * brightcovePlayerID
-	 */
+	/** brightcovePlayerID. */
 	@Inject
 	private String brightcovePlayerID;
 
 	/**
+	 * Gets the content type.
+	 *
 	 * @return the contentType
 	 */
 	public String getContentType() {
@@ -40,6 +37,8 @@ public class BCComponentModel   {
 	}
 
 	/**
+	 * Sets the content type.
+	 *
 	 * @param contentType the contentType to set
 	 */
 	public void setContentType(String contentType) {
@@ -47,6 +46,8 @@ public class BCComponentModel   {
 	}
 
 	/**
+	 * Gets the content id.
+	 *
 	 * @return the contentId
 	 */
 	public String getContentId() {
@@ -54,6 +55,8 @@ public class BCComponentModel   {
 	}
 
 	/**
+	 * Sets the content id.
+	 *
 	 * @param contentId the contentId to set
 	 */
 	public void setContentId(String contentId) {
@@ -61,6 +64,8 @@ public class BCComponentModel   {
 	}
 
 	/**
+	 * Gets the content repository.
+	 *
 	 * @return the contentRepository
 	 */
 	public String getContentRepository() {
@@ -68,6 +73,8 @@ public class BCComponentModel   {
 	}
 
 	/**
+	 * Sets the content repository.
+	 *
 	 * @param contentRepository the contentRepository to set
 	 */
 	public void setContentRepository(String contentRepository) {
@@ -75,6 +82,8 @@ public class BCComponentModel   {
 	}
 
 	/**
+	 * Gets the brightcove player ID.
+	 *
 	 * @return the brightcovePlayerID
 	 */
 	public String getBrightcovePlayerID() {
@@ -82,6 +91,8 @@ public class BCComponentModel   {
 	}
 
 	/**
+	 * Sets the brightcove player ID.
+	 *
 	 * @param brightcovePlayerID the brightcovePlayerID to set
 	 */
 	public void setBrightcovePlayerID(String brightcovePlayerID) {

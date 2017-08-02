@@ -29,18 +29,24 @@ import com.eaton.platform.core.constants.CommonConstants;
 
 /**
  * This servlet pre-populate the drop-down field,Graphic with a list of icon images 
- * author - TCS
+ * author - TCS.
  */
-@SlingServlet(resourceTypes = "/bin/dropdown/icons", metatype = false)
+@SlingServlet(resourceTypes = "/ecom/dropdown/icons", metatype = false)
 public class ProofPointDropDownServlet extends SlingSafeMethodsServlet {
 
+	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
+	
+	/** The Constant LOG. */
 	private static final Logger LOG = LoggerFactory.getLogger(ProofPointDropDownServlet.class);
 
+	/* (non-Javadoc)
+	 * @see org.apache.sling.api.servlets.SlingSafeMethodsServlet#doGet(org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)
+	 */
 	@Override
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) {
 
-		LOG.debug("******** ProofPointDropDownServlet servlet execution started ***********");
+		LOG.debug("ProofPointDropDownServlet :: doGet() :: Start");
 		// set fallback
 		request.setAttribute(DataSource.class.getName(), EmptyDataSource.instance());
 		ResourceResolver resolver = request.getResource().getResourceResolver();
@@ -48,7 +54,6 @@ public class ProofPointDropDownServlet extends SlingSafeMethodsServlet {
 		// Create an ArrayList to hold data
 		List<Resource> iconsResourceList = new ArrayList<Resource>();
 
-		ValueMap valueMap = null;
 		List<Resource> iconList = new ArrayList<Resource>();
 		Resource imageResource = resolver.getResource(CommonConstants.ICON_IMAGE_ROOT);
 			if(imageResource != null){
@@ -63,7 +68,7 @@ public class ProofPointDropDownServlet extends SlingSafeMethodsServlet {
 				for (Resource iconResource : iconList) {
 	
 					// allocate memory to the Map instance
-					valueMap = new ValueMapDecorator(new HashMap<String, Object>());
+					ValueMap valueMap = new ValueMapDecorator(new HashMap<String, Object>());
 	
 					// Specify the value and text values
 					String dropDownValue = iconResource.getPath();
@@ -86,7 +91,7 @@ public class ProofPointDropDownServlet extends SlingSafeMethodsServlet {
 				DataSource dataSource = new SimpleDataSource(iconsResourceList.iterator());
 				request.setAttribute(DataSource.class.getName(), dataSource);
 
-				LOG.debug("******** ProofPointDropDownServlet servlet execution ended ***********");
+				LOG.debug("ProofPointDropDownServlet :: doGet() :: Exit");
 			}
 	}
 }

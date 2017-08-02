@@ -1,0 +1,17 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Full Page Drawer Component</div>
+</sly>
+<!--/* Full Page Drawer */-->
+<div class="full-page-drawer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+              <p class="full-page-drawer__headline">Select your Location</p>
+              <!--/* Include: Country Selector */-->
+              <div class="full-page-drawer__country-selector">
+                  <sly data-sly-resource="${'country-selector' @ resourceType='eaton/components/content/country-selector'}"></sly>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

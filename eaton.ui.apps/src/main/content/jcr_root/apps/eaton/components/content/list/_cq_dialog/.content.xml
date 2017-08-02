@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="List"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <herotext
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Component Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <view
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="This field stores the value for List view."
+                                fieldLabel="View"
+                                name="./view">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <cards
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Default(Cards)"
+                                        value="cards"/>
+                                    <article-list-single-feature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Featured Article with Text"
+                                        value="article-list-single-feature"/>
+                                    <links
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Links"
+                                        value="links"/>
+                                    <text2columns
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Text Only(2 column)"
+                                        value="text2columns"/>
+                                    <related-products
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Related Products"
+                                        value="related-products"/>
+                                    <featuredArticleCards
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Featured Article with Cards"
+                                        value="nofeaturedarticle"/>
+                                    <text3columns
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Text Only (3 Column)"
+                                        value="featuredarticle"/>
+                                </items>
+                            </view>
+                            <header
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="This field stores the value for Header field."
+                                fieldLabel="Header"
+                                name="./header"/>
+                            <headerLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="This field stores the path of page to be linked."
+                                fieldLabel="Header Link"
+                                name="./headerLink"
+                                rootPath="/content/eaton"/>
+                            <newWindowHeader
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                fieldDescription="This field indicates if the url would open in new window or not. "
+                                name="./newWindow"
+                                text="Open in New Window"
+                                value="true"/>
+                            <list-type
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="This field stores the value for list type for article list. There are four options: Child page, Tags and Fixed."
+                                fieldLabel="List Type"
+                                name="./listType"
+                                required="true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <child-pages
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Child Page"
+                                        value="child-pages"/>
+                                    <tags
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Tags"
+                                        value="tags"/>
+                                    <fixed-list
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Fixed List"
+                                        value="fixed-list"/>
+                                </items>
+                            </list-type>
+                            <parentPage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="This field stores the value of parent page path. This field is applicable when List Type selected is “Child Page”."
+                                fieldLabel="Parent Page"
+                                name="./parentPage"
+                                rootPath="/content/eaton"/>
+                            <tags
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/common/tagspicker"
+                                fieldDescription="This field stores the value of tags field. This field is applicable when List Type selected is “Tags”."
+                                fieldLabel="Tags"
+                                name="./tags"/>
+                            <fixedLinks
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                eaem-nested=""
+                                fieldDescription="This field stores the various attributes of fixed link object. This field is applicable when List Type selected is “Fixed”"
+                                fieldLabel="Fixed Links">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    name="./fixedLinks">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <linkPath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldDescription="This field stores the path for Article page. This field is applicable when List Type selected is “Fixed”"
+                                                    fieldLabel="Link Path"
+                                                    name="./linkPath"
+                                                    rootPath="/content/eaton"/>
+                                                <newWindowFixed
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                    fieldDescription="This field stores the value for newWindow field. This field is applicable when List Type selected is “Fixed”"
+                                                    name="./newWindowFixed"
+                                                    text="Open in New Window"
+                                                    value="true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </fixedLinks>
+                            <sort
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="This field stores the value of sort field. There are four options: Publication Date, Title, Created Date, Last Modified and Template. This field is applicable when List Type selected is “Child Page” or “Tags”"
+                                fieldLabel="Sort"
+                                name="./sort"
+                                required="true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <publication-date
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Publication Date"
+                                        value="pub-date"/>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Title"
+                                        value="title"/>
+                                    <created-date
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Created Date"
+                                        value="created-date"/>
+                                    <last-modified
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Last Modified "
+                                        value="last-modified-date"/>
+                                    <template
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Template"
+                                        value="template"/>
+                                </items>
+                            </sort>
+                            <count
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                fieldDescription="This field stores the value for no of results field. This field is applicable when List Type selected is “Child Page” or “Tags”"
+                                fieldLabel="No of Results"
+                                min="{Long}0"
+                                name="./count"/>
+                        </items>
+                    </column>
+                </items>
+            </herotext>
+        </items>
+    </content>
+</jcr:root>

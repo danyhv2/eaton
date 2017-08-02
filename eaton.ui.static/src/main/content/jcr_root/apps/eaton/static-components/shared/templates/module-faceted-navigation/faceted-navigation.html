@@ -1,8 +1,11 @@
 <!--/* M-62: Faceted Navigation */-->
 <template data-sly-template.module="${ @ data }">
   <div class="faceted-navigation eaton-form">
+  <div class="mobile-header hidden hidden-lg hidden-md">
+    <span>Filters </span><i class="remove glyphicon glyphicon-remove glyphicon-white"></i>
+  </div>
 
-    <h4>${ 'Narrow Results' @ i18n }</h4>
+    <h4 class="hidden-sm hidden-xs">${ 'Narrow Results' @ i18n }</h4>
 
     <sly data-sly-list="${ data.facetItems }">
 
@@ -18,7 +21,7 @@
         <!--/* Facet Header */-->
         <button class="faceted-navigation__header button--reset"
           data-toggle="collapse"
-          data-target="#${ 'facet-{0}' @ format=[ item.facetId ] }"
+          data-target=".${ 'facet-{0}' @ format=[ item.facetId ] }"
           aria-expanded="true"
           aria-controls="${ 'facet-{0}' @ format=[ item.facetId ] }"
         >
@@ -28,7 +31,7 @@
         </button>
 
         <!--/* Facet Values */-->
-        <div class="collapse in" id="${ 'facet-{0}' @ format=[ item.facetId ] }">
+        <div class="collapse in" class="${ 'facet-{0}' @ format=[ item.facetId ] } collapse in">
           <div data-sly-list.facetValue="${ item.facetValues }"
             class="faceted-navigation__list">
 
@@ -87,8 +90,10 @@
     <!--/* View More Facet Items */-->
     <div data-sly-test="${ data.facetItems.length > data.config.facetItemsMinVisible }"
       class="faceted-navigation__view-more-facets">
-      <button id="view-more-facets" class="button--reset" >${ 'View more' @ i18n }</button>
+      <button id="view-more-facets" class="button--reset" ><strong>${ 'View more' @ i18n }</strong> </button>
     </div>
-
+    <div class="mobile-done hidden-lg hidden-md">
+      <a href="#" target="_self">Done</a>
+    </div>
   </div>
 </template>

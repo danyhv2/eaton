@@ -14,11 +14,22 @@
 			String[] parts = path.split(",");
 			css=parts[0];
 			overlayPath=parts[1];
+            
+
+			
 %>
 
-			<div class='megaMenu <%=css%>Page'>
-				<sling:include path='<%=overlayPath%>' />
-			</div>
+
+<section class="mega-menu dark-theme">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="mega-menu__content" data-target='mega-menu-<%=css%>'>
+           <sling:include path='<%=overlayPath%>' />
+           </div>
+        </div>
+    </div>    
+</section>
+
 <% 
         }
     }
