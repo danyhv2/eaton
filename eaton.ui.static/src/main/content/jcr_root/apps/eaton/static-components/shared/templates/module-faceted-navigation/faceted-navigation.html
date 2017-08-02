@@ -44,7 +44,7 @@
                   type="checkbox" 
                   id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
                 />
-                <a href="#" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
+                <a href="${ facetValue.url }" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
 
                 <!--/* View More Facet Values */-->
                 <div data-sly-test="${ facetValueList.count == data.config.facetValuesMinVisible }"
@@ -63,7 +63,7 @@
                   type="radio"
                   id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
                 />
-                <a href="#" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
+                <a href="${ facetValue.url }" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
 
                 <!--/* View More Facet Values */-->
                 <div data-sly-test="${ facetValueList.count == data.config.facetValuesMinVisible }"

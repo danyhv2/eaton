@@ -96,59 +96,63 @@ i { font-style: normal; }
 
 p { line-height: 1.3; }
 
+a:hover, a:focus { color: #23527c; text-decoration: none; }
+
 a { color: #005EB8; }
 
-h1, .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 35px; line-height: 40px; margin-top: 0; }
+a:link, a:visited, a:hover, a:active { color: #005EB8; text-decoration: none; }
 
-@media screen and (min-width: 992px) { h1, .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 54px; line-height: 68px; } }
+a h1, a .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 35px; line-height: 40px; margin-top: 0; }
 
-h2, .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 28px; line-height: 32px; margin-top: 0; }
+@media screen and (min-width: 992px) { a h1, a .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 54px; line-height: 68px; } }
 
-@media screen and (min-width: 992px) { h2, .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 40px; line-height: 50px; } }
+a h2, a .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 28px; line-height: 32px; margin-top: 0; }
 
-h3, .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 28px; line-height: 32px; margin-top: 0; }
+@media screen and (min-width: 992px) { a h2, a .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 40px; line-height: 50px; } }
 
-@media screen and (min-width: 992px) { h3, .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 40px; line-height: 50px; } }
+a h3, a .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 28px; line-height: 32px; margin-top: 0; }
 
-h4, .b-heading-h4 { font-family: Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 29px; margin-top: 0; }
+@media screen and (min-width: 992px) { a h3, a .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 40px; line-height: 50px; } }
 
-@media screen and (min-width: 992px) { h4, .b-heading-h4 { font-family: Arial, sans-serif; font-size: 30px; font-weight: bold; line-height: 42px; } }
+a h4, a .b-heading-h4 { font-family: Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 29px; margin-top: 0; }
 
-h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 30px; margin-top: 0; }
+@media screen and (min-width: 992px) { a h4, a .b-heading-h4 { font-family: Arial, sans-serif; font-size: 30px; font-weight: bold; line-height: 42px; } }
 
-@media screen and (min-width: 992px) { h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 40px; } }
+a h5, a .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 30px; margin-top: 0; }
 
-h5 a, .b-heading-h5 a { color: #005EB8; }
+@media screen and (min-width: 992px) { a h5, a .b-heading-h5 { font-family: Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 40px; } }
 
-.b-h4-link { font-size: 1.375em; font-family: Arial, "Arial", sans-serif; color: #005EB8; font-weight: bold; }
+a h5 a, a .b-heading-h5 a { color: #005EB8; }
 
-.b-h4-link:hover, .b-h4-link:focus, .b-h4-link:active { text-decoration: none; color: #005EB8; }
+a .b-h4-link { font-size: 1.375em; font-family: Arial, "Arial", sans-serif; color: #005EB8; font-weight: bold; }
 
-@media screen and (min-width: 992px) { .b-h4-link { font-size: 1.625em; } }
+a .b-h4-link:hover, a .b-h4-link:focus, a .b-h4-link:active { text-decoration: none; color: #005EB8; }
 
-.b-small-link { font-family: Arial, "Arial", sans-serif; color: #005EB8; font-size: 1.125em; }
+@media screen and (min-width: 992px) { a .b-h4-link { font-size: 1.625em; } }
 
-.b-small-link:hover, .b-small-link:focus, .b-small-link:active { text-decoration: none; color: #005EB8; }
+a .b-small-link { font-family: Arial, "Arial", sans-serif; color: #005EB8; font-size: 1.125em; }
 
-.b-body-copy { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
+a .b-small-link:hover, a .b-small-link:focus, a .b-small-link:active { text-decoration: none; color: #005EB8; }
 
-.b-body-copy a { color: #005EB8; }
+a .b-body-copy { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
 
-@media screen and (min-width: 992px) { .b-body-copy { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
+a .b-body-copy a { color: #005EB8; }
 
-.b-body-copy-small { font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
+@media screen and (min-width: 992px) { a .b-body-copy { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
 
-.b-body-copy-small a { color: #005EB8; }
+a .b-body-copy-small { font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
 
-@media screen and (min-width: 992px) { .b-body-copy-small { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; } }
+a .b-body-copy-small a { color: #005EB8; }
 
-.b-eyebrow-large { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 17px; line-height: 20px; text-transform: uppercase; }
+@media screen and (min-width: 992px) { a .b-body-copy-small { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; } }
 
-@media screen and (min-width: 992px) { .b-eyebrow-large { font-family: Arial, "Arial", sans-serif; font-size: 24px; line-height: 38px; text-transform: uppercase; } }
+a .b-eyebrow-large { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 17px; line-height: 20px; text-transform: uppercase; }
 
-.b-eyebrow-small { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 14px; line-height: 17px; text-transform: uppercase; }
+@media screen and (min-width: 992px) { a .b-eyebrow-large { font-family: Arial, "Arial", sans-serif; font-size: 24px; line-height: 38px; text-transform: uppercase; } }
 
-@media screen and (min-width: 992px) { .b-eyebrow-small { font-family: Arial, "Arial", sans-serif; font-size: 18px; line-height: 24px; text-transform: uppercase; } }
+a .b-eyebrow-small { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 14px; line-height: 17px; text-transform: uppercase; }
+
+@media screen and (min-width: 992px) { a .b-eyebrow-small { font-family: Arial, "Arial", sans-serif; font-size: 18px; line-height: 24px; text-transform: uppercase; } }
 
 .u-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
