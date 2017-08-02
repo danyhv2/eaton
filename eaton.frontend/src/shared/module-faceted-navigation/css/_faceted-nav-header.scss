@@ -5,24 +5,37 @@
 
 
 .faceted-navigation-header {
-
+  font-size: 14px;
   margin-bottom: 28px;
 
   &__header-top,
-  &__header-bottom,
-  &__active-filters,
-  &__filter-link {
+  &__header-bottom{
     display: flex;
+  }
+
+  &__filter-link, __active-filters {
+    display: inline-block;
+    font-size:12px;
+    color:#333f48;
+  }
+
+  &__active-filters {
+    width: 100%;
   }
 
   &__sort-options,
   &__filters-actions {
     margin-left: auto;
+    min-width: 85px;
+  }
+
+  &__sort-options{
+    margin-top:4px;
   }
 
 
   &__header-bottom{
-    margin-top: 28px;
+    margin-top: 30px;
   }
 
   // Results: Header Title
@@ -43,13 +56,15 @@
 
   &__filter-link {
 
-    align-items: center;
-    display: flex;
-    margin-right: 2rem;
+    align-items: top;
+    /*display: flex;*/
+    margin-right: 12px;
+
 
     .icon {
       font-size: 10px;
-      margin-right: 1rem;
+      margin-right: 2px;
+      margin-top: 5px;
     }
 
   }
@@ -63,7 +78,9 @@
   // MediaQuery: Mobile & Tablet Only
   //-----------------------------------
   @include media-mobile-and-tablet {
-
+    &__header-bottom{
+      margin-top: 60px;
+    }
   }
 
 
