@@ -286,6 +286,7 @@ use(function () {
         "url": "#backup-server",
         "target": '_self'
       },
+      "clearAllFiltersUrl": "#clear-all-filters",
       "activeFilters": [
         {
           "label": "Products",
