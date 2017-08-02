@@ -82,7 +82,7 @@ App.demoComponent = function () {
   /**
   * If containing DOM element is found, Initialize and Expose public methods
   */
-  if ($componentClass.lenght > 0) {
+  if ($componentClass.length > 0) {
     init();
 
     return {
