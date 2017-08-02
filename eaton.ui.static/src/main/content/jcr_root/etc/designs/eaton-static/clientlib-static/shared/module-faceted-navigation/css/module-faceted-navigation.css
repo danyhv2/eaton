@@ -1,14 +1,16 @@
-.faceted-navigation-header { margin-bottom: 28px; }
+.faceted-navigation-header { font-size: 14px; margin-bottom: 28px; }
 
 .faceted-navigation-header__header-top, .faceted-navigation-header__header-bottom { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.faceted-navigation-header__filter-link, .faceted-navigation-header __active-filters { display: inline-block; }
+.faceted-navigation-header__filter-link, .faceted-navigation-header __active-filters { display: inline-block; font-size: 12px; color: #333f48; }
 
 .faceted-navigation-header__active-filters { width: 100%; }
 
 .faceted-navigation-header__sort-options, .faceted-navigation-header__filters-actions { margin-left: auto; min-width: 85px; }
 
-.faceted-navigation-header__header-bottom { margin-top: 70px; }
+.faceted-navigation-header__sort-options { margin-top: 4px; }
+
+.faceted-navigation-header__header-bottom { margin-top: 30px; }
 
 .faceted-navigation-header__header-top { border-bottom: 2px solid #F8F8F8; padding-bottom: 28px; }
 
@@ -17,6 +19,8 @@
 .faceted-navigation-header__filter-link { -webkit-box-align: top; -ms-flex-align: top; align-items: top; /*display: flex;*/ margin-right: 12px; }
 
 .faceted-navigation-header__filter-link .icon { font-size: 10px; margin-right: 2px; margin-top: 5px; }
+
+@media screen and (max-width: 991px) { .faceted-navigation-header__header-bottom { margin-top: 60px; } }
 
 .faceted-navigation__mobile-facet-container .faceted-navigation { padding: 0 30px; }
 
@@ -34,13 +38,15 @@
 
 .faceted-navigation .visibile { display: block; }
 
-.faceted-navigation .mobile-header { position: absolute; top: -90px; height: 53px; font-size: 18px; left: 0; color: #fff; background-color: #666; width: 100%; padding: 15px 30px 0 30px; }
+.faceted-navigation .mobile-header { position: absolute; top: -80px; height: 53px; font-size: 18px; left: 0; color: #fff; background-color: #666; width: 100%; padding: 15px 30px 0 30px; }
 
 .faceted-navigation .mobile-header i { position: absolute; display: block; right: 30px; top: 17px; }
 
 .faceted-navigation .mobile-header a { color: #fff; }
 
-.faceted-navigation .mobile-done { width: 100%; background-color: #005EB8; position: absolute; bottom: 0; left: 0; }
+.faceted-navigation .mobile-done { width: 100%; background-color: #005EB8; position: absolute; bottom: -50px; height: 50px; left: 0; padding-top: 15px; }
+
+.faceted-navigation .mobile-done a { color: #fff; text-align: center; display: block; width: 100%; font-weight: bold; }
 
 .faceted-navigation__group { border-bottom: 1px solid #e6e6e6; }
 

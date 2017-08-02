@@ -38,7 +38,7 @@
 
 .mobile-header{
   position: absolute;
-  top: -90px;
+  top: -80px;
   height:53px;
   font-size: 18px;
   left: 0;
@@ -63,8 +63,18 @@
   width: 100%;
   background-color: #005EB8;
   position:absolute;
-  bottom:0;
-  left:0
+  bottom:-50px;
+  height:50px;
+  left:0;
+  padding-top: 15px;
+
+  a{
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight:bold;
+  }
 }
 
 &__group{

@@ -5,7 +5,7 @@
 
 
 .faceted-navigation-header {
-
+  font-size: 14px;
   margin-bottom: 28px;
 
   &__header-top,
@@ -15,6 +15,8 @@
 
   &__filter-link, __active-filters {
     display: inline-block;
+    font-size:12px;
+    color:#333f48;
   }
 
   &__active-filters {
@@ -27,9 +29,13 @@
     min-width: 85px;
   }
 
+  &__sort-options{
+    margin-top:4px;
+  }
+
 
   &__header-bottom{
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   // Results: Header Title
@@ -72,7 +78,9 @@
   // MediaQuery: Mobile & Tablet Only
   //-----------------------------------
   @include media-mobile-and-tablet {
-
+    &__header-bottom{
+      margin-top: 60px;
+    }
   }
 
 

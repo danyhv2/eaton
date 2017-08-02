@@ -54,6 +54,7 @@ App.facets = function () {
     if (mobileEnabled == false) {
       var $overlay = $('<div>', { id: 'mobile-overlay' });
       var temp = $componentClass.parent().parent();
+      var winHeight = $(document).innerHeight();
 
       $("<div class='faceted-navigation__mobile-facet-container hidden col-xs-12 col-md-3'></div>").prependTo(temp);
 
@@ -77,19 +78,21 @@ App.facets = function () {
 
       $('.faceted-navigation__mobile-facet-container .b-button').on('click', function (e) {
         e.preventDefault();
+        $("<div class='overlay-mask hidden'></div>").appendTo($('body'));
         $('.faceted-navigation__mobile-facet-container').addClass('enabled');
         $('.faceted-navigation__mobile-facet-container .faceted-navigation').removeClass('hidden').addClass('visible');
         $('.faceted-navigation__mobile-facet-container .faceted-navigation-header').addClass('hidden');
         $('.mobile-header').removeClass('hidden');
         $(this).addClass('hidden');
+        $('.overlay-mask').css('height', winHeight).toggleClass('hidden');
       });
 
-      $('.glyphicon-remove').on('click', function (e) {
-        console.log($mobileFacets);
+      $('.glyphicon-remove, .mobile-done').on('click', function (e) {
         $('.faceted-navigation__mobile-facet-container').removeClass('enabled');
         $('.faceted-navigation__mobile-facet-container .faceted-navigation').removeClass('visible').addClass('hidden');
         $('.faceted-navigation-header').removeClass('hidden');
         $('.faceted-navigation__mobile-facet-container .b-button').removeClass('hidden');
+        $('.overlay-mask').css('height', winHeight).toggleClass('hidden');
       });
 
       $('.faceted-navigation__mobile-facet-container .faceted-navigation__header.button--reset').on('click', function (e) {
