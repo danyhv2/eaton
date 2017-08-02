@@ -87,4 +87,6 @@
   .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #FFF; border-right: 1px solid #FFF; display: inline-block; float: left; padding: 20px 30px; }
   .eaton-link-list-section-navigation__nav-item:first-child { padding-left: 15px; } }
 
+.eaton-linklist-2column { overflow: hidden; }
+
 .eaton-linklist-2column__link { margin-bottom: 30px; }

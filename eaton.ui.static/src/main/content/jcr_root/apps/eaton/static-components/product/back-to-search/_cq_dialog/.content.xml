@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="Product Support Component"
+          jcr:title="Title Text Image Link Component"
           sling:resourceType="cq/gui/components/authoring/dialog"
           helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
     <content
@@ -31,10 +31,14 @@
                                     fieldLabel="View"
                                     name="./view">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <card
-                                        jcr:primaryType="nt:unstructured"
-                                        text="Product Support"
-                                        value="product-support"/>
+                                  <show-link
+                                      jcr:primaryType="nt:unstructured"
+                                      text="Show back to search"
+                                      value="show"/>
+                                  <hide-link
+                                      jcr:primaryType="nt:unstructured"
+                                      text="Hide back to search"
+                                      value="hide"/>
                                 </items>
                             </view>
                         </items>
