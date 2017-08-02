@@ -152,9 +152,8 @@
     }
   }
 
-  // stylelint-disable declaration-no-important
   .header-search {
-    transform: translateY(0)!important;
+    transform: translateY(0) !important;
     transition: none !important;
   }
 }
