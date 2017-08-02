@@ -106,6 +106,10 @@ App.header = function () {
   var mobileMenuInteractions = function mobileMenuInteractions(event) {
     // Close the mega menu
     event.preventDefault();
+
+    // Close Search if open
+    // closeSearch(event);
+
     if (bodyEl.hasClass('nav-open')) {
 
       // Check if Level 2 - open/close

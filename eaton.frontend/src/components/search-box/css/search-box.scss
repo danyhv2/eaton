@@ -32,16 +32,4 @@
     border: 0;
   }
 
-  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: $color__white;
-  }
-  ::-moz-placeholder { /* Firefox 19+ */
-    color: $color__white;
-  }
-  :-ms-input-placeholder { /* IE 10+ */
-    color: $color__white;
-  }
-  :-moz-placeholder { /* Firefox 18- */
-    color: $color__white;
-  }
 }

@@ -12,7 +12,7 @@
 
 .header-utility-nav .open-country-selector, .header-utility-nav .open-sign-in { color: #FFF; text-decoration: none; }
 
-@media screen and (max-width: 991px) { .header-utility-nav { position: fixed; bottom: 0; z-index: 5; width: 100%; right: 0; opacity: 0; visibility: hidden; -webkit-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; padding: 0; }
+@media screen and (max-width: 991px) { .header-utility-nav { position: fixed; bottom: 0; z-index: 13; /* Higher Stacking order than Primary Nav but Less than Search */ width: 100%; right: 0; opacity: 0; visibility: hidden; -webkit-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; padding: 0; }
   .header-utility-nav .container { padding: 0; }
   .header-utility-nav__row { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
   .header-utility-nav__toggle-selector { padding: 25px 0 25px 30px; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; background: #333F48; }
@@ -48,8 +48,7 @@
 
 .search-open .header-search { -webkit-transform: translateY(0); transform: translateY(0); visibility: visible; }
 
-@media screen and (max-width: 991px) { .header-search { position: fixed; top: 56px; bottom: 0; width: 100%; z-index: 10; }
-  .header-search .eaton-search-box { height: 100%; } }
+@media screen and (max-width: 991px) { .header-search { position: fixed; top: 56px; bottom: 0; width: 100%; z-index: 10; } }
 
 @media screen and (min-width: 992px) { .header-search { position: absolute; z-index: 10; } }
 
