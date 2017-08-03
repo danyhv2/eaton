@@ -33,15 +33,15 @@ p {
 a {
   color: $color__primary-blue;
 
-  &:link, 
-  &:visited, 
-  &:active{
+  &:link,
+  &:visited,
+  &:active {
     color: $color__primary-blue;
     text-decoration: none;
   }
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 

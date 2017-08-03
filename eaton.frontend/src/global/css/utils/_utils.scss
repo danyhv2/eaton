@@ -70,21 +70,20 @@
 //--------------
 .u-hide { display: none; }
 .u-show { display: block; }
-.u-show-inline { display: inline; }
-.u-show-ib { display: inline-block; }
-
 .u-inline { display: inline; }
 .u-inline-block { display: inline-block; }
 
 .u-hidden { visibility: hidden; }
 .u-visible { visibility: visible; }
 
+// Visible only from 0 to 991px | Hidden if >992px
 .u-visible-mobile {
   display: block;
 
   @include media-desktop-and-up { display: none; }
 }
 
+// Visible > 992px
 .u-visible-desktop {
   display: none;
 
