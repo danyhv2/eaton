@@ -259,11 +259,6 @@ use(function () {
               "id": "value4",
               "label": "Value 4",
               "url": "#facet-value4"
-            },
-            {
-              "id": "value5",
-              "label": "Value 5",
-              "url": "#facet-value5"
             }
           ]
         }

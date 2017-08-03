@@ -1,0 +1,7 @@
+.module-intra-tab-link { text-align: center; padding: 90px 0; }
+
+.module-intra-tab-link a { font-size: 3.6rem; font-family: "Eaton", Arial, sans-serif; }
+
+@media screen and (max-width: 991px) { .module-intra-tab-link { padding: 60px 0; }
+  .module-intra-tab-link a { font-size: 2rem; }
+  .module-intra-tab-link i { font-size: 1.2rem; } }

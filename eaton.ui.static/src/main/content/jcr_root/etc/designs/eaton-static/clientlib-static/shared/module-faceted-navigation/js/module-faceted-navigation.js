@@ -47,8 +47,9 @@ App.facets = function () {
 
     // View More Facets Behavior
     //--------------
-    $componentClass.find('[data-more-facets]').on('click', showAllFacetsGroups);
-    $componentClass.find('[data-more-facet-values]').on('click', showAllFacetsValues);
+    // Delegate Events on the Parent Component sinces some elements are being cloned with jQuery
+    $componentClass.on('click', '[data-more-facets]', showAllFacetsGroups);
+    $componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
 
     // Facet Behaviors for Mobile & Tablet
     //--------------
@@ -138,7 +139,7 @@ App.facets = function () {
   var showAllFacetsGroups = function showAllFacetsGroups(event) {
 
     // Show hidden facets
-    $componentClass.find('.faceted-navigation__more-facets').slideDown();
+    $componentClass.find('.faceted-navigation__more-facets').slideDown(200);
 
     // Hide "View more" <button>
     event.currentTarget.classList.add('u-hide');
@@ -153,7 +154,7 @@ App.facets = function () {
     var $parentGroup = $(event.currentTarget).closest('.faceted-navigation__group');
 
     // Show hidden facet-values
-    $parentGroup.find('.faceted-navigation__more-facet-values').slideDown();
+    $parentGroup.find('.faceted-navigation__more-facet-values').slideDown(200);
 
     // Hide "View more" <button>
     event.currentTarget.classList.add('u-hide');

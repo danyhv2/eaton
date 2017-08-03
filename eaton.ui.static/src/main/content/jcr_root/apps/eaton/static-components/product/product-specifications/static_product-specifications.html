@@ -34,14 +34,16 @@
                   <div class="module-table__row">
                     <div class="module-table__col b-eyebrow-small">${ row.label }</div>
                     <div class="module-table__col b-body-copy-small">
+
+                      <!--/* Print Table Content */-->
                       <sly data-sly-list.specValue="${ row.specValue }">
 
                         <!--/* if Type == Document */-->
-                        <div data-sly-test="${ specValue.type == 'document' }"
+                        <div data-sly-test.document="${ specValue.type == 'document' }"
                           class="module-table__value value-type-document">${ specValue.text }</div>
 
                         <!--/* if Type == Link */-->
-                        <div data-sly-test="${ specValue.type == 'link' }"
+                        <div data-sly-test.link="${ specValue.type == 'link' }"
                           class="module-table__value value-type-link">
                           <a href="${ specValue.link.url }" target="${ specValue.link.target }">
                             ${ specValue.text }
@@ -49,7 +51,7 @@
                         </div>
 
                         <!--/* if Type == Image */-->
-                        <div data-sly-test="${ specValue.type == 'image' }"
+                        <div data-sly-test.image="${ specValue.type == 'image' }"
                           class="module-table__value value-type-image">
                           <a href="${ specValue.link.url }" target="${ specValue.link.target }">
                             <img src="${ specValue.imageSrc }" alt="${ specValue.text }" />
@@ -57,10 +59,10 @@
                         </div>
 
                         <!--/* else Default */-->
-                        <div data-sly-test="${ specValue.type != 'document' && specValue.type != 'image' && specValue.type != 'link' }"
+                        <div data-sly-test="${ !document && !link && !image }"
                           class="module-table__value value-type-default">${ specValue.text }</div>
-
                       </sly>
+
                     </div>
                   </div>
                 </sly>
