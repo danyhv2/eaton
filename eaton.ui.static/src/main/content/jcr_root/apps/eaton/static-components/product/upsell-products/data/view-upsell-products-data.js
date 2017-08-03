@@ -29,14 +29,6 @@ use(function () {
                     image_alt: 'Image 3',
                     link: 'http://www.eaton.com/',
                     target: '_blank'
-                },
-                {
-                    title: 'Eaton 9px Family',
-                    text: 'Eaton FlexPDU& HotSwap MBP',
-                    image: '/content/dam/eaton/images/product2.png',
-                    image_alt: 'Image 4',
-                    link: 'http://www.eaton.com/',
-                    target: '_blank'
                 }
             ]
         }
