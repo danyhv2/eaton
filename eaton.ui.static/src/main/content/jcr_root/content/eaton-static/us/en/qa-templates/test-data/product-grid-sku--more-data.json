@@ -1,5 +1,161 @@
 {
   "search": {
-    "results": []
+    "results": [
+      {
+        "contentType": "sku-card",
+        "contentItem": {
+          "name": "New Product 1",
+          "imgSrc": "/content/dam/eaton/images/p1.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 2400,
+          "link": {
+            "url": "https://eaton.dev/products/pid-1213.html#overview",
+            "target": "_self"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "productAttributes": [
+            {
+              "label": "Voltage rating",
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
+            },
+            {
+              "label": "Input Plug",
+              "value": "2A-2B right pigtail auxiliary switch"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "110-127V right pigtail undervoltage release"
+            }
+          ]
+        }
+      },
+      {
+        "contentType": "sku-card",
+        "contentItem": {
+          "name": "New Product 2",
+          "imgSrc": "/content/dam/eaton/images/p2.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 3200,
+          "link": {
+            "url": "https://eaton.dev/products/pid-1213.html#overview",
+            "target": "_self"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "productAttributes": [
+            {
+              "label": "Voltage rating",
+              "value": "600V lorem ipsum dolor"
+            },
+            {
+              "label": "Input Plug",
+              "value": "309-532P6W"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "(18) C13 Outlet grip, (12) C19 Outlet grip"
+            }
+          ]
+        }
+      },
+      {
+        "contentType": "sku-card",
+        "contentItem": {
+          "name": "New Product 3",
+          "imgSrc": "/content/dam/eaton/images/p3.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 99500,
+          "link": {
+            "url": "https://eaton.dev/products/pid-1213.html#overview",
+            "target": "_self"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "productAttributes": [
+            {
+              "label": "Voltage rating",
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
+            },
+            {
+              "label": "Input Plug",
+              "value": "2A-2B right pigtail auxiliary switch"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "110-127V right pigtail undervoltage release"
+            }
+          ]
+        }
+      },
+      {
+        "contentType": "sku-card",
+        "contentItem": {
+          "name": "New Product 4",
+          "imgSrc": "/content/dam/eaton/images/p4.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 2400,
+          "link": {
+            "url": "https://eaton.dev/products/pid-1213.html#overview",
+            "target": "_self"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "productAttributes": [
+            {
+              "label": "Voltage rating",
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
+            },
+            {
+              "label": "Input Plug",
+              "value": "2A-2B right pigtail auxiliary switch"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "110-127V right pigtail undervoltage release"
+            }
+          ]
+        }
+      },
+      {
+        "contentType": "sku-card",
+        "contentItem": {
+          "name": "New Product 5",
+          "imgSrc": "/content/dam/eaton/images/p5.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 2400,
+          "link": {
+            "url": "https://eaton.dev/products/pid-1213.html#overview",
+            "target": "_self"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "productAttributes": [
+            {
+              "label": "Voltage rating",
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
+            },
+            {
+              "label": "Input Plug",
+              "value": "2A-2B right pigtail auxiliary switch"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "110-127V right pigtail undervoltage release"
+            }
+          ]
+        }
+      }
+    ]
   }
 }
