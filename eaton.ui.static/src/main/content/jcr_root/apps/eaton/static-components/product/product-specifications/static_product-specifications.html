@@ -13,6 +13,7 @@
                   <!--/* NOTE: data-scroll-to="#element-id" is a CSS Selector (Class, ID) */-->
                   <button
                     data-scroll-to="#${ item.anchorId }"
+                    data-scroll-to-offset-enabled="true"
                     class="module-anchor-links__list-link button--reset">
                       <span>${ item.anchorTitle }</span>
                       <i class="icon icon-chevron-right" aria-hidden="true"></i>
@@ -32,7 +33,35 @@
                 <sly data-sly-list.row="${ item.content.rows }">
                   <div class="module-table__row">
                     <div class="module-table__col b-eyebrow-small">${ row.label }</div>
-                    <div class="module-table__col b-body-copy-small">${ row.description }</div>
+                    <div class="module-table__col b-body-copy-small">
+                      <sly data-sly-list.specValue="${ row.specValue }">
+
+                        <!--/* if Type == Document */-->
+                        <div data-sly-test="${ specValue.type == 'document' }"
+                          class="module-table__value value-type-document">${ specValue.text }</div>
+
+                        <!--/* if Type == Link */-->
+                        <div data-sly-test="${ specValue.type == 'link' }"
+                          class="module-table__value value-type-link">
+                          <a href="${ specValue.link.url }" target="${ specValue.link.target }">
+                            ${ specValue.text }
+                          </a>
+                        </div>
+
+                        <!--/* if Type == Image */-->
+                        <div data-sly-test="${ specValue.type == 'image' }"
+                          class="module-table__value value-type-image">
+                          <a href="${ specValue.link.url }" target="${ specValue.link.target }">
+                            <img src="${ specValue.imageSrc }" alt="${ specValue.text }" />
+                          </a>
+                        </div>
+
+                        <!--/* else Default */-->
+                        <div data-sly-test="${ specValue.type != 'document' && specValue.type != 'image' && specValue.type != 'link' }"
+                          class="module-table__value value-type-default">${ specValue.text }</div>
+
+                      </sly>
+                    </div>
                   </div>
                 </sly>
               </div>
