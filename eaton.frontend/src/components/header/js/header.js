@@ -90,8 +90,12 @@ App.header = (function() {
   * Mobile Menu - Open Close Interactions
   */
   const mobileMenuInteractions = (event) => {
-    // Close the mega menu
+
     event.preventDefault();
+
+    // Close Search if open
+    closeSearch(event);
+
     if (bodyEl.hasClass('nav-open')) {
 
       // Check if Level 2 - open/close
@@ -139,8 +143,6 @@ App.header = (function() {
   const closeSearch = (event) => {
 
     event.preventDefault();
-    closeMegaMenu(event);
-
     bodyEl.removeClass('search-open');
   };
 

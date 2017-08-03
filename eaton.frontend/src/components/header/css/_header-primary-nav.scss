@@ -85,14 +85,33 @@ $primary-nav-border: #EEF0F2;
 
     &__open-search {
       display: flex;
-      justify-content: flex-end;
       height: 90px;
       padding: 30px; // Equidistant Spacing between menu & search icon
       margin-top: 10px;
 
+      .icon-close {
+        display: none;
+      }
+
       .eaton-header--fixed & {
         height: 70px;
         padding: 20px;
+      }
+
+      .search-open & {
+        transition: background 0.3s ease-in-out;
+        background: $color__primary-gray1;
+
+        .icon-search {
+          display: none;
+        }
+
+        .icon-close {
+          display: block;
+          top: -5px;
+          font-size: 18px;
+          color: $color__white;
+        }
       }
     }
 

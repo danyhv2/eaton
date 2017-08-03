@@ -1,6 +1,7 @@
 "use strict";
 use(function () {
     var data = {};
+    var testdata = this.testdata;
 
     data.toggleGraphic = {
       eyebrowCta:  {

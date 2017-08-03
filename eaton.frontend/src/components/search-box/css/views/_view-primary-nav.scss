@@ -82,6 +82,18 @@
     &__form-input,
     .icon-search {
       font-size: 1.5em;
+      left: 10px;
+
+      .eaton-header--fixed & {
+        left: 0;
+      }
     }
+
+    &__form-submit {
+      .eaton-header--fixed & {
+        padding-right: 0;
+      }
+    }
+
   }
 }

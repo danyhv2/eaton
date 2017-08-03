@@ -259,11 +259,6 @@ use(function () {
               "id": "value4",
               "label": "Value 4",
               "url": "#facet-value4"
-            },
-            {
-              "id": "value5",
-              "label": "Value 5",
-              "url": "#facet-value5"
             }
           ]
         }
@@ -278,7 +273,7 @@ use(function () {
       "ajaxRequestNextPage": 2,
       "resultsCount": 184,
       "currentPage": 1,
-      "showLoadMore": false,
+      "showLoadMore": true,
       "keyword": "bckup servre",
       "autoCorrect": {
         "enabled": true,
