@@ -37,11 +37,8 @@ App.facets = (function() {
     // View More Facets Behavior
     //--------------
     // Delegate Events on the Parent Component sinces some elements are being cloned with jQuery
-
-    if ($(window).width() > App.global.constants.GRID.MD) {
-      $componentClass.on('click', '[data-more-facets]', showAllFacetsGroups);
-    	$componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
-    }
+    $componentClass.on('click', '[data-more-facets]', showAllFacetsGroups);
+    $componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
 
     // Facet Behaviors for Mobile & Tablet
     //--------------
