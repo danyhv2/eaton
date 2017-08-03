@@ -24,8 +24,16 @@ var App = window.App || {};
 
 App.scroll = function () {
 
+  // Cached DOM Elements
+  //--------------
   var $componentSelector = $('[data-scroll-to]');
   var $htmlEl = $('html, body');
+  var headerEl = document.querySelector('.header');
+  var productTabsEl = document.querySelector('.eaton-product-tabs');
+
+  var headerHeightFix = 84;
+  var headerHeight = headerEl ? headerHeightFix : 0;
+  var productTabsHeight = productTabsEl ? productTabsEl.querySelector('.eaton-product-tabs__buttons').clientHeight : 0;
 
   var init = function init() {
     addEventListeners();
@@ -37,7 +45,7 @@ App.scroll = function () {
   var addEventListeners = function addEventListeners() {
 
     // Bind click behavior for all elements with data-attr
-    $componentSelector.on('click', toDataTarget);
+    $componentSelector.on('click', toClickedElement);
   };
 
   /**
@@ -46,24 +54,45 @@ App.scroll = function () {
   */
   var toElementSelector = function toElementSelector(cssSelector) {
     var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
+    var offsetFixedComponets = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
 
+    var positionTop = $(cssSelector).eq(0).offset().top;
+    var titleHeight = 150;
+
+    // NOTE: There are compnentes like the Header that can have "Position: Fixed".
+    // It adds these components height as an offset to the scroll behavior
+    if (offsetFixedComponets) {
+
+      // Offeset Header
+      positionTop -= headerHeight;
+
+      // Offset Product Tabs
+      positionTop -= productTabsHeight;
+    }
+
+    positionTop -= titleHeight;
+
+    // const fixedElements = titleHeight + headerHeight + productTabsHeight;
 
     $htmlEl.animate({
-      scrollTop: $(cssSelector).eq(0).offset().top
+      scrollTop: positionTop
     }, duration);
   };
 
   /**
-  * Scroll the window to the given selector
-  * @param { String } cssSelector element to scroll to
+  * Scroll the window to clicked element with a custom "data-attr"
+  * @param { Object } event - Click event object
   */
-  var toDataTarget = function toDataTarget(event) {
+  var toClickedElement = function toClickedElement(event) {
+
+    // Enable offset when The Header or other position fixed top components are in the current page
+    var offsetEnabled = event.currentTarget.dataset.scrollTo && event.currentTarget.dataset.scrollToOffsetEnabled === 'true' ? true : false;
 
     // If the current element is <a> instead of a <button>
     event.preventDefault();
 
     var cssSelector = event.currentTarget.dataset.scrollTo;
-    toElementSelector(cssSelector);
+    toElementSelector(cssSelector, 500, offsetEnabled);
   };
 
   /**
