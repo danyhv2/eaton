@@ -1,0 +1,69 @@
+//-----------------------------------
+// Template: T7-Product Family Models Grid
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+// Import SubModules
+.product-specifications {
+  padding: 20px 0;
+
+  .value-type-document,
+  .value-type-image,
+  .value-type-default {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  .value-type-document {
+
+  }
+
+  .value-type-link {
+    margin-right: 1rem;
+  }
+
+  .value-type-image {
+
+    a { display: block; }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 43px;
+      max-height: 43px;
+      vertical-align: middle;
+    }
+  }
+
+  .value-type-default {
+
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: Mobile & Tablet Only
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    .module-anchor-links {
+      display: none;
+    }
+
+  }
+
+
+
+  //-----------------------------------
+  // Media Query Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+    padding: 40px 0;
+
+    .module-anchor-links {
+      margin-right: 20px;
+    }
+  }
+}

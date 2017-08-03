@@ -9,6 +9,7 @@
 // Import Sub Components
 @import "header-utility-nav";
 @import "header-primary-nav";
+@import "header-search";
 
 // Base Styles
 .eaton-header {
@@ -109,6 +110,12 @@
       transition: transform 0.5s ease-in-out;
     }
   }
+
+  .search-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
 }
 
 
@@ -133,7 +140,8 @@
 .cq-wcm-edit {
 
   // stylelint-disable declaration-no-important
-  .mega-menu {
+  .mega-menu,
+  .header-search {
     position: relative !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -142,5 +150,10 @@
     &__content {
       display: block !important;
     }
+  }
+
+  .header-search {
+    transform: translateY(0) !important;
+    transition: none !important;
   }
 }

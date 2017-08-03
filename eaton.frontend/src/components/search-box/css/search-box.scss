@@ -7,4 +7,29 @@
 
 // Import SubViews
 @import "views/view-inline";
+@import "views/view-primary-nav";
 @import "views/view-secondary-search-box";
+
+
+.eaton-search {
+  .form-control { // Styles for Form Elements
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    height: auto;
+    box-shadow: none;
+    // background: transparent;
+    // padding: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__submit { // Styles for Form Elements
+    appearance: none;
+    // background: transparent;
+    border: 0;
+  }
+
+}

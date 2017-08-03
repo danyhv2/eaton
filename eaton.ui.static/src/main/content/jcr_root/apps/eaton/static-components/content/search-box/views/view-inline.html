@@ -1,14 +1,16 @@
 <sly data-sly-use.data="${'../data/view-inline-data.js' @testdata=properties.testdata}">
-  <div class="eaton-search-inline">
-    <!--/* If Headline */-->
-    <p class="eaton-search-inline__headline b-eyebrow-small">${data.headline}</p>
+  <div class="eaton-search eaton-search--inline">
+    <!--/* If Header */-->
+    <p class="eaton-search--inline__header b-eyebrow-small">${data.header}</p>
+    <!--/* If Subheader */-->
+    <p data-sly-test="${data.subheader}" class="eaton-search--inline__subheader">${data.subheader}</p>
 
-    <!--/* Search Box */-->
-    <form class="eaton-search-inline__form">
+    <!--/* Search Form */-->
+    <form class="eaton-search__form eaton-search--inline__form" data-form-action="${data.form.searchResultsPath}">
       <div class="form-group">
-        <label for="mega-menu-search" class="sr-only">${data.headline}</label>
-          <input type="email" class="form-control eaton-search-inline__form-input" id="mega-menu-search" placeholder="${data.form.placeholder}">
-          <button type="submit" class="eaton-search-inline__form-submit">
+        <label for="mega-menu-search" class="sr-only">${data.header}</label>
+          <input type="text" class="form-control eaton-search--inline__form-input" id="mega-menu-search" placeholder="${data.form.placeholder}">
+          <button type="submit" class="eaton-search__submit eaton-search--inline__form-submit">
             <span class="sr-only">${data.form.submitLabel}</span>
             <i class="icon icon-search" aria-hidden="true"></i>
           </button>

@@ -46,18 +46,15 @@
 @include product-tab('tab-2');
 
 .eaton-product-tabs {
-  background-color: $color__secondary-gray6;
 
   .dark-theme &,
   &.dark-theme {
-    background-color: $color__primary-gray1;
-
     &__buttons {
       background-color: $color__primary-gray1;
-    }
 
-    &__tab-panel {
-      color: $color__white;
+      &::before {
+        background-color: $color__primary-gray1;
+      }
     }
 
     label {
@@ -81,10 +78,27 @@
         color: $color__white;
       }
     }
+
+    @include media-mobile-and-tablet {
+      .eaton-product-tabs__buttons__center {
+        border-top: 2px solid $color__primary-gray2;
+      }
+    }
   }
 
   &__buttons {
     background-color: $color__secondary-gray6;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: $color__secondary-gray6;
+      position: absolute;
+      height: 100%;
+      width: 200%;
+      display: block;
+      left: -50%;
+    }
   }
 
   &--fixed {
@@ -264,10 +278,22 @@
       padding: 0;
     }
 
+    &__dropdown-container {
+      background-color: $color__white;
+    }
+
     .eaton-product-tabs__dropdown {
       width: 93%;
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+
+    &__page-utility {
+      padding: 0 15px;
+    }
+
+    .eaton-product-tabs__buttons__center {
+      border-top: 2px solid $color__secondary-gray5;
     }
 
     &--fixed {
@@ -318,5 +344,19 @@
         margin-right: -15px;
       }
     }
+  }
+}
+
+//-----------------------------------
+// AEM Author Mode Styles
+//-----------------------------------
+
+// stylelint-disable selector-class-pattern
+.aem-AuthorLayer-Edit,
+.cq-wcm-edit {
+
+  // stylelint-disable declaration-no-important
+  .eaton-product-tabs__tab-panel {
+    display: block;
   }
 }

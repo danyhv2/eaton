@@ -2,11 +2,11 @@
 
 .faceted-navigation-header__header-top, .faceted-navigation-header__header-bottom { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.faceted-navigation-header__filter-link, .faceted-navigation-header __active-filters { display: inline-block; font-size: 12px; color: #333f48; }
+.faceted-navigation-header__filter-link, .faceted-navigation-header __active-filters { display: inline-block; font-size: 14px; color: #333f48; }
 
 .faceted-navigation-header__active-filters { width: 100%; }
 
-.faceted-navigation-header__sort-options, .faceted-navigation-header__filters-actions { margin-left: auto; min-width: 85px; }
+.faceted-navigation-header__sort-options, .faceted-navigation-header__filters-actions { margin-left: auto; min-width: 85px; font-size: 14px; }
 
 .faceted-navigation-header__sort-options { margin-top: 4px; }
 
@@ -20,7 +20,8 @@
 
 .faceted-navigation-header__filter-link .icon { font-size: 10px; margin-right: 2px; margin-top: 5px; }
 
-@media screen and (max-width: 991px) { .faceted-navigation-header__header-bottom { margin-top: 60px; } }
+@media screen and (max-width: 991px) { .faceted-navigation-header__header-bottom { margin-top: 60px; }
+  .faceted-navigation-header__filter-link { font-size: 12px; } }
 
 .faceted-navigation__mobile-facet-container .faceted-navigation { padding: 0 30px; }
 

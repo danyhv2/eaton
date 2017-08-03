@@ -5,11 +5,15 @@
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
-.eaton-product-back2search {
+.eaton-product-back-to-search {
   margin: $spacing__sm 0;
 
   i {
     font-size: 1.1rem;
     padding-right: 5px;
+  }
+
+  @include media-mobile-and-tablet {
+    margin: 0;
   }
 }

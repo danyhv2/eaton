@@ -296,40 +296,46 @@
             </grid_2_column_contro>
             <featured_topic
                 jcr:created="{Date}2017-07-19T21:11:03.424Z"
-                jcr:createdBy="etn-supriya"
+                jcr:createdBy="admin"
                 jcr:lastModified="{Date}2017-07-19T21:11:03.424Z"
-                jcr:lastModifiedBy="etn-supriya"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/featured-topic"
                 testdata="primary-featuredtopic">
-                <featured-topic-title
+                <title
                     jcr:lastModified="{Date}2017-07-20T17:09:01.978Z"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/general/title"
                     testdata="primary-featuredtopic"
                     view="default"/>
-                <featured-topic-text
+                <text
                     jcr:lastModified="{Date}2017-07-19T21:11:17.863Z"
-                    jcr:lastModifiedBy="etn-supriya"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/general/text"
                     testdata="primary-featuredtopic"
                     view="default"/>
-                <eaton-featured-topic-link-list-left
+                <link-list-left
                     jcr:lastModified="{Date}2017-07-19T21:11:28.191Z"
-                    jcr:lastModifiedBy="etn-supriya"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/content/link-list"
                     testdata="primary-featuredtopic-list1"
                     view="vertical"/>
-                <eaton-featured-topic-link-list-right
+                <link-list-right
                     jcr:lastModified="{Date}2017-07-19T21:11:28.191Z"
-                    jcr:lastModifiedBy="etn-supriya"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/content/link-list"
                     testdata="primary-featuredtopic-list2"
                     view="vertical"/>
+                <cta
+                    jcr:lastModified="{Date}2017-07-20T17:12:34.153Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/ctabutton"
+                    view="default" />
             </featured_topic>
             <title
                 jcr:created="{Date}2017-07-21T00:20:39.931-05:00"

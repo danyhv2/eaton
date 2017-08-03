@@ -29,7 +29,7 @@
       <div class="results-list-module__document b-body-copy">${ '({0} {1})' @ format=[ data.contentItem.documentType, data.contentItem.documentSize ] }</div>
 
       <div class="results-list-module__link-url b-body-copy-small">
-        <a data-sly-attribute.href="${ data.contentItem.link.url @ context='uri' }"
+        <a href="${ data.contentItem.link.url @ context='uri' }"
           target="${ data.contentItem.link.target }"
           class="results-list-module__link"
           aria-label="${ 'Download' @i18n } ${ data.contentItem.documentName }"

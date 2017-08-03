@@ -4,12 +4,14 @@
 
 .button--reset {
   border: 0;
+  border-radius: 0;
   background: none;
   padding: 0;
 }
 
 .b-button {
   background: none;
+  text-shadow: none;
   border-radius: 0;
   border-style: solid;
   display: inline-block;
@@ -24,7 +26,8 @@
     font-size: 1.25em;
     padding: 20px 40px;
 
-    &--light {
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__primary--light {
       border-color: $color__primary-blue;
       color: $color__primary-blue;
 
@@ -37,7 +40,9 @@
       }
     }
 
-    &--dark {
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__primary--dark {
       border-color: $color__white;
       color: $color__white;
 
@@ -60,7 +65,8 @@
     font-size: 0.875em;
     padding: 20px;
 
-    &--light {
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__secondary--light {
       border-color: $color__primary-blue;
       color: $color__primary-blue;
 
@@ -73,7 +79,8 @@
       }
     }
 
-    &--dark {
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__secondary--dark {
       border-color: $color__white;
       color: $color__white;
 
@@ -95,7 +102,8 @@
     font-size: 1.25em;
     padding: 20px 40px;
 
-    &--light {
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__tertiary--light {
       border-color: $color__primary-blue;
       background-color: $color__primary-blue;
       color: $color__white;
@@ -109,7 +117,8 @@
       }
     }
 
-    &--dark {
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__tertiary--dark {
       border: 0;
       background-color: $color__primary-blue;
       color: $color__white;
