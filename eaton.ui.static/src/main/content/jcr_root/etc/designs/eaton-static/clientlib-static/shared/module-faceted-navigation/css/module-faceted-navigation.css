@@ -14,7 +14,7 @@
 
 .faceted-navigation-header__sort-options .styledDropdown dd { position: relative; }
 
-.faceted-navigation-header__sort-options .styledDropdown dd a, .faceted-navigation-header__sort-options .styledDropdown dd a:visited { color: #005EB8; outline: none; margin-left: 12px; }
+.faceted-navigation-header__sort-options .styledDropdown dd a, .faceted-navigation-header__sort-options .styledDropdown dd a:visited { color: #005EB8; outline: none; margin-left: 12px; font-size: 18px; }
 
 .faceted-navigation-header__sort-options .styledDropdown a:hover { text-decoration: underline; }
 
