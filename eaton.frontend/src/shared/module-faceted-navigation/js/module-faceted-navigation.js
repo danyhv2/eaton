@@ -149,7 +149,7 @@ App.facets = (function() {
         $("<div class='overlay-mask hidden'></div>").appendTo($('body'));
         $('.faceted-navigation__mobile-facet-container').addClass('enabled');
         $('.faceted-navigation__mobile-facet-container .faceted-navigation').removeClass('hidden').addClass('visible');
-        $mobileHeader.addClass('hidden');
+        $('.faceted-navigation__mobile-facet-container .faceted-navigation-header').addClass('hidden');
         $('.mobile-header').removeClass('hidden');
         $(this).addClass('hidden');
         $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
