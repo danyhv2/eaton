@@ -39,7 +39,7 @@
                     value="inline"/>
                   <primaryNav
                     jcr:primaryType="nt:unstructured"
-                    text="Primary Navigation View"
+                    text="Primary Navigation View (Default)"
                     value="primary-nav"/>
                   <searchBox
                     jcr:primaryType="nt:unstructured"

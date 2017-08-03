@@ -264,7 +264,7 @@ use(function () {
       },
       results: [
         {
-          "contentType": "sku",
+          "contentType": "familysku",
           "contentItem": {
             "name": "Fuse Disconnect ePDUs",
             "imgSrc": "/content/dam/eaton/images/p1.png",
@@ -295,7 +295,7 @@ use(function () {
           }
         },
         {
-          "contentType": "sku",
+          "contentType": "familysku",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
             "imgSrc": "/content/dam/eaton/images/p2.png",
@@ -326,7 +326,7 @@ use(function () {
           }
         },
         {
-          "contentType": "sku",
+          "contentType": "familysku",
           "contentItem": {
             "name": "Network, Server & Storage UPS this is a really long title used for testing purposes, text wraps in multiple lines",
             "imgSrc": "/content/dam/eaton/images/p3.png",
@@ -357,7 +357,7 @@ use(function () {
           }
         },
         {
-          "contentType": "sku",
+          "contentType": "familysku",
           "contentItem": {
             "name": "Fuse Disconnect ePDUs",
             "imgSrc": "/content/dam/eaton/images/p4.png",
@@ -388,7 +388,7 @@ use(function () {
           }
         },
         {
-          "contentType": "sku",
+          "contentType": "sku-card",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
             "imgSrc": "/content/dam/eaton/images/p5.png",

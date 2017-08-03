@@ -1,0 +1,87 @@
+//-------------------------------------------------
+// SearchBox Component: Primary Nav View (Default)
+//-------------------------------------------------
+
+.eaton-search--default {
+
+  padding: $spacing__sm 0 24px;
+  background: $color__primary-blue;
+
+  .form-group {
+    display: flex;
+    border-bottom: 1px solid $color__white;
+    margin-bottom: 0;
+  }
+
+  .icon-search {
+    top: 2px;
+    position: relative;
+  }
+
+  &__form-input { // Styles for Form Elements
+    color: $color__white;
+    background: transparent;
+    padding: 0;
+  }
+
+  &__form-submit { // Styles for Form Elements
+    color: $color__white;
+    background: transparent;
+    padding: 10px 20px;
+  }
+
+  .dark-theme & {
+    background: $color__primary-gray1;
+  }
+
+  //-----------------------------------
+  // Selector styles - Form Placeholder
+  //-----------------------------------
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $color__white;
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $color__white;
+  }
+
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $color__white;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: $color__white;
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__form-input {
+      font-size: 1em;
+    }
+
+    &__form-submit {
+      padding-right: 0;
+    }
+
+    .icon-search {
+      font-size: 1.25em;
+    }
+
+    .search-open & {
+      height: 100%;
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__form-input,
+    .icon-search {
+      font-size: 1.5em;
+    }
+  }
+}

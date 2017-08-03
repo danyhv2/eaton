@@ -18,6 +18,7 @@ App.header = (function() {
   const megaMenuTitle = componentClass.find('.mega-menu-title__level1-link');
   const closeMegaMenuBtn = componentClass.find('.mega-menu-title__close-menu');
   const toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
+  const openSearchDropdownBtn = $('.header-primary-nav__open-search');
 
   // Check AEM Author Mode
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -56,6 +57,9 @@ App.header = (function() {
     let activeCategory = '';
 
     event.preventDefault();
+
+    // Close Search if open
+    closeSearch(event);
 
     // Highlight only the active Link
     primaryLinks.removeClass('active');
@@ -119,6 +123,28 @@ App.header = (function() {
   };
 
   /**
+  * Handle Click behaviors - for Search - Desktop & Mobile
+  */
+  const openSearch = (event) => {
+
+    event.preventDefault();
+    closeMegaMenu(event);
+
+    bodyEl.toggleClass('search-open');
+  };
+
+  /**
+  * Handle Click behaviors - for Search - Desktop & Mobile
+  */
+  const closeSearch = (event) => {
+
+    event.preventDefault();
+    closeMegaMenu(event);
+
+    bodyEl.removeClass('search-open');
+  };
+
+  /**
    * Bind All Event Listeners
    */
   const addEventListeners = () => {
@@ -137,6 +163,9 @@ App.header = (function() {
 
     // Handle click on Mega Menu Title - across breakpoints
     megaMenuTitle.on('click', handleTitleClick);
+
+    // Handle click on Search Icon
+    openSearchDropdownBtn.on('click', openSearch);
   };
 
   /**
