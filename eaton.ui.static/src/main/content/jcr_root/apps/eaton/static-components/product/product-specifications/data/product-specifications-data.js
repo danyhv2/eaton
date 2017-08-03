@@ -12,35 +12,132 @@ use(function () {
         "rows": [
           {
             "label": "Connection",
-            "description": "(1) NEMA 5-15P"
+            "rowId": "connection",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "NEMA 5",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              },
+              {
+                "type": "image",
+                "text": "Alt Text",
+                "imageSrc": "/content/dam/eaton/images/product-specifications/product-specs-thumb.png",
+                "link": {
+                  "url": "/content/dam/eaton/images/product-specifications/product-specs-1000x1000.png",
+                  "target": "_blank"
+                }
+              }
+            ]
           },
           {
             "label": "Input Cord",
-            "description": "8 feet"
+            "rowId": "input-cord",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "8 feet",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
             "label": "Input Voltage range",
-            "description": "Full load: 100-144V, <30% load: 60-144V"
+            "rowId": "input-voltage-range",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Full load: 100-144V, <30% load: 60-144V",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
             "label": "Nominal Voltage",
-            "description": "120V default (100/110/120/125V)"
+            "rowId": "nominal-voltage",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "120V default (100/110/120/125V)",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
             "label": "Frequency",
-            "description": "50/60 Hz"
+            "rowId": "frequency",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "50/60 Hz",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
             "label": "Frequency Range",
-            "description": "60 Hz: 50-70 Hz, 50 Hz: 40-60 hz"
+            "rowId": "frequency-range",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "60 Hz: 50-70 Hz, 50 Hz: 40-60 hz",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
             "label": "Input Power Factor",
-            "description": ">.99"
+            "rowId": "input-power-factor",
+            "specValue": [
+              {
+                "type": "document",
+                "text": ">.99",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
             "label": "Input Current Distortion",
-            "description": "<5%"
+            "rowId": "input-current-distortion",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "<5%",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -52,35 +149,105 @@ use(function () {
         "rows": [
           {
             "label": "Connection",
-            "description": "(1) NEMA 5-15P"
-          },
-          {
-            "label": "Input Cord",
-            "description": "8 feet"
+            "rowId": "connection",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Type:document",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              },
+              {
+                "type": "image",
+                "text": "Alt Text",
+                "imageSrc": "/content/dam/eaton/images/product-specifications/product-specs-thumb.png",
+                "link": {
+                  "url": "/content/dam/eaton/images/product-specifications/product-specs-1000x1000.png",
+                  "target": "_blank"
+                }
+              },
+              {
+                "type": "link",
+                "text": "Type:link NEMA 5-15P",
+                "imageSrc": "",
+                "link": {
+                  "url": "http://eaton.dev/#document.pdf",
+                  "target": "_blank",
+                }
+              },
+              {
+                "type": "anotherUnknownValueType",
+                "text": "Type:default here goes the value",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": "",
+                }
+              }
+            ]
           },
           {
             "label": "Input Voltage range",
-            "description": "Full load: 100-144V, <30% load: 60-144V"
+            "rowId": "input-voltage-range",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Full load: 100-144V, <30% load: 60-144V",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
             "label": "Nominal Voltage",
-            "description": "120V default (100/110/120/125V)"
+            "rowId": "nominal-voltage",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "120V default (100/110/120/125V)",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
             "label": "Frequency",
-            "description": "50/60 Hz"
+            "rowId": "frequency",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "50/60 Hz",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
             "label": "Frequency Range",
-            "description": "60 Hz: 50-70 Hz, 50 Hz: 40-60 hz"
-          },
-          {
-            "label": "Input Power Factor",
-            "description": ">.99"
-          },
-          {
-            "label": "Input Current Distortion",
-            "description": "<5%"
+            "rowId": "frequency-range",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "60 Hz: 50-70 Hz, 50 Hz: 40-60 hz",
+                "imageSrc": "",
+                "link": {
+                  "url": "",
+                  "target": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -91,36 +258,88 @@ use(function () {
       "content": {
         "rows": [
           {
-            "label": "Connection",
-            "description": "(1) NEMA 5-15P"
+            "label": "Optional Extended Battery",
+            "rowId": "optional-extended-battery",
+            "specValue": [
+              {
+                "type": "link",
+                "text": "9PXEBM48RT",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": "_blank"
+                }
+              }
+            ]
           },
           {
-            "label": "Input Cord",
-            "description": "8 feet"
+            "label": "Battery Description",
+            "rowId": "battery-description",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Sealed, lead-acid; maintenance free",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
-            "label": "Input Voltage range",
-            "description": "Full load: 100-144V, <30% load: 60-144V"
+            "label": "Maximum number of extended battery modules (EBM)",
+            "rowId": "maximum-number-ebm",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Add up to 4 extended battery modules (EBM)",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
-            "label": "Nominal Voltage",
-            "description": "120V default (100/110/120/125V)"
+            "label": "Battery Management",
+            "rowId": "battery-management",
+            "specValue": [
+              {
+                "type": "link",
+                "text": "ABM technology",
+                "imageSrc": "",
+                "link": {
+                  "url": "#abm-technology",
+                  "target": ""
+                }
+              },
+              {
+                "type": "document",
+                "text": "3-stage charging extendsbattery service life by 50% and providesadvance warning for battery replacement",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
-            "label": "Frequency",
-            "description": "50/60 Hz"
-          },
-          {
-            "label": "Frequency Range",
-            "description": "60 Hz: 50-70 Hz, 50 Hz: 40-60 hz"
-          },
-          {
-            "label": "Input Power Factor",
-            "description": ">.99"
-          },
-          {
-            "label": "Input Current Distortion",
-            "description": "<5%"
+            "label": "Battery Replacement",
+            "rowId": "battery-replacement",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Replaceable internal batteries and extendedbattery modules (EBMs)",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -131,36 +350,88 @@ use(function () {
       "content": {
         "rows": [
           {
-            "label": "Connection",
-            "description": "(1) NEMA 5-15P"
+            "label": "Optional Extended Battery",
+            "rowId": "optional-extended-battery",
+            "specValue": [
+              {
+                "type": "link",
+                "text": "9PXEBM48RT",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": "_blank"
+                }
+              }
+            ]
           },
           {
-            "label": "Input Cord",
-            "description": "8 feet"
+            "label": "Battery Description",
+            "rowId": "battery-description",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Sealed, lead-acid; maintenance free",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
-            "label": "Input Voltage range",
-            "description": "Full load: 100-144V, <30% load: 60-144V"
+            "label": "Maximum number of extended battery modules (EBM)",
+            "rowId": "maximum-number-ebm",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Add up to 4 extended battery modules (EBM)",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
-            "label": "Nominal Voltage",
-            "description": "120V default (100/110/120/125V)"
+            "label": "Battery Management",
+            "rowId": "battery-management",
+            "specValue": [
+              {
+                "type": "link",
+                "text": "ABM technology",
+                "imageSrc": "",
+                "link": {
+                  "url": "#abm-technology",
+                  "target": ""
+                }
+              },
+              {
+                "type": "document",
+                "text": "3-stage charging extendsbattery service life by 50% and providesadvance warning for battery replacement",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
-            "label": "Frequency",
-            "description": "50/60 Hz"
-          },
-          {
-            "label": "Frequency Range",
-            "description": "60 Hz: 50-70 Hz, 50 Hz: 40-60 hz"
-          },
-          {
-            "label": "Input Power Factor",
-            "description": ">.99"
-          },
-          {
-            "label": "Input Current Distortion",
-            "description": "<5%"
+            "label": "Battery Replacement",
+            "rowId": "battery-replacement",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Replaceable internal batteries and extendedbattery modules (EBMs)",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           }
         ]
       }
@@ -171,41 +442,93 @@ use(function () {
       "content": {
         "rows": [
           {
-            "label": "Connection",
-            "description": "(1) NEMA 5-15P"
+            "label": "Optional Extended Battery",
+            "rowId": "optional-extended-battery",
+            "specValue": [
+              {
+                "type": "link",
+                "text": "9PXEBM48RT",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": "_blank"
+                }
+              }
+            ]
           },
           {
-            "label": "Input Cord",
-            "description": "8 feet"
+            "label": "Battery Description",
+            "rowId": "battery-description",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Sealed, lead-acid; maintenance free",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
-            "label": "Input Voltage range",
-            "description": "Full load: 100-144V, <30% load: 60-144V"
+            "label": "Maximum number of extended battery modules (EBM)",
+            "rowId": "maximum-number-ebm",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Add up to 4 extended battery modules (EBM)",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
-            "label": "Nominal Voltage",
-            "description": "120V default (100/110/120/125V)"
+            "label": "Battery Management",
+            "rowId": "battery-management",
+            "specValue": [
+              {
+                "type": "link",
+                "text": "ABM technology",
+                "imageSrc": "",
+                "link": {
+                  "url": "#abm-technology",
+                  "target": ""
+                }
+              },
+              {
+                "type": "document",
+                "text": "3-stage charging extendsbattery service life by 50% and providesadvance warning for battery replacement",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           },
           {
-            "label": "Frequency",
-            "description": "50/60 Hz"
-          },
-          {
-            "label": "Frequency Range",
-            "description": "60 Hz: 50-70 Hz, 50 Hz: 40-60 hz"
-          },
-          {
-            "label": "Input Power Factor",
-            "description": ">.99"
-          },
-          {
-            "label": "Input Current Distortion",
-            "description": "<5%"
+            "label": "Battery Replacement",
+            "rowId": "battery-replacement",
+            "specValue": [
+              {
+                "type": "document",
+                "text": "Replaceable internal batteries and extendedbattery modules (EBMs)",
+                "imageSrc": "",
+                "link": {
+                  "url": "#",
+                  "target": ""
+                }
+              }
+            ]
           }
         ]
       }
     }
-  ]
+  ];
 
   return data;
 });
