@@ -18,12 +18,48 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
             <featured_topic
-                jcr:created="{Date}2017-07-14T22:19:59.495Z"
-                jcr:createdBy="etn-eduardo"
-                jcr:lastModified="{Date}2017-07-14T22:19:59.495Z"
-                jcr:lastModifiedBy="etn-eduardo"
+                jcr:created="{Date}2017-07-19T21:11:03.424Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-07-19T21:11:03.424Z"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/featured-topic"/>
+                sling:resourceType="eaton/static-components/content/featured-topic"
+                testdata="primary-featuredtopic">
+                <title
+                    jcr:lastModified="{Date}2017-07-20T17:09:01.978Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/title"
+                    testdata="primary-featuredtopic"
+                    view="default"/>
+                <text
+                    jcr:lastModified="{Date}2017-07-19T21:11:17.863Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/text"
+                    testdata="primary-featuredtopic"
+                    view="default"/>
+                <link-list-left
+                    jcr:lastModified="{Date}2017-07-19T21:11:28.191Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/content/link-list"
+                    testdata="primary-featuredtopic-list1"
+                    view="vertical"/>
+                <link-list-right
+                    jcr:lastModified="{Date}2017-07-19T21:11:28.191Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/content/link-list"
+                    testdata="primary-featuredtopic-list2"
+                    view="vertical"/>
+                <cta
+                    jcr:lastModified="{Date}2017-07-20T17:12:34.153Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/ctabutton"
+                    view="default" />
+            </featured_topic>
         </par>
     </jcr:content>
 </jcr:root>

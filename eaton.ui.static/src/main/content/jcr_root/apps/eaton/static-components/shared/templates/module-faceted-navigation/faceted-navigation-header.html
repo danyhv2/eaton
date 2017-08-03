@@ -40,8 +40,9 @@
 
         <!--/* Clear Filters */-->
         <div class="faceted-navigation-header__filters-actions">
-          <a href="#clear-filters"
-            class="faceted-navigation-header__action-link">${ 'Clear filters' @ i18n }</a>
+          <a href="${ data.clearAllFiltersLink.url }"
+            target="${ data.clearAllFiltersLink.target }"
+            class="faceted-navigation-header__action-link">${ data.clearAllFiltersLink.text }</a>
         </div>
       </div>
 

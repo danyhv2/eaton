@@ -29,7 +29,14 @@ App.facets = function () {
   var mobileEnabled = false;
 
   var init = function init() {
-    $('.faceted-navigation__header.button--reset').on('click', function (e) {
+    addEventListeners();
+  };
+
+  var addEventListeners = function addEventListeners() {
+
+    // Facets Toggle update +/- Icons
+    //--------------
+    $('.faceted-navigation__header').on('click', function (e) {
       e.preventDefault;
       $(this).children('.icon-sign-plus').toggleClass('u-hide');
     });
@@ -38,26 +45,37 @@ App.facets = function () {
       mobileFacets();
     }
 
+    // View More Facets Behavior
+    //--------------
+    $componentClass.find('[data-more-facets]').on('click', showAllFacetsGroups);
+    $componentClass.find('[data-more-facet-values]').on('click', showAllFacetsValues);
+
+    // Facet Behaviors for Mobile & Tablet
+    //--------------
     $(window).on('resize', function () {
-      if ($(window).width() < App.global.constants.GRID.MD && $('.faceted-navigation__mobile-facet-container').css('display') != 'block') {
+      if ($(window).width() < App.global.constants.GRID.MD && $('.faceted-navigation__mobile-facet-container').css('display') !== 'block') {
         // $('.faceted-navigation__mobile-facet-container .faceted-navigation-header').removeClass('hidden');
         $('.faceted-navigation__mobile-facet-container .faceted-navigation-header, .faceted-navigation__mobile-facet-container').removeClass('hidden');
         $('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button').removeClass('hidden');
 
         App.global.utils.throttle(mobileFacets(), 1000);
-      } else if ($(window).width() > App.global.constants.GRID.MD) {
-        $componentClass.css('display', 'block');
-        mobileEnabled = false;
-        $('.faceted-navigation__mobile-facet-container .faceted-navigation').remove();
-        $('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button, .overlay-mask').remove();
       }
+
+      // Facet Behaviors for Desktop & Desktop Large
+      //--------------
+      else if ($(window).width() > App.global.constants.GRID.MD) {
+          $componentClass.css('display', 'block');
+          mobileEnabled = false;
+          $('.faceted-navigation__mobile-facet-container .faceted-navigation').remove();
+          $('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button, .overlay-mask').remove();
+        }
     });
   };
 
   var mobileFacets = function mobileFacets() {
     // $mobileFacets.append($componentClass).css('display','block');
-    if (mobileEnabled == false) {
-      var $overlay = $('<div>', { id: 'mobile-overlay' });
+    if (mobileEnabled === false) {
+      // let $overlay = $('<div>', {id: 'mobile-overlay'});
       var temp = $componentClass.parent().parent();
       var winHeight = $(document).innerHeight();
 
@@ -72,7 +90,7 @@ App.facets = function () {
 
       $('.faceted-navigation__mobile-facet-container .faceted-navigation-header__header-bottom').removeClass('hidden-xs').removeClass('hidden-sm');
 
-      $("<a href='#' target='_self' class='b-button b-button__primary b-button__primary--light hidden-lg' role='button'>Filters (X)</a>").appendTo($('.faceted-navigation__mobile-facet-container'));
+      $("<a target='_self' class='b-button b-button__primary b-button__primary--light hidden-lg' role='button'>Filters (X)</a>").appendTo($('.faceted-navigation__mobile-facet-container'));
       $($mobileFacets).append("<a href='#' target='_self' class='b-button b-button__primary b-button__primary--light' role='button'>Filters (X)</a>");
 
       $('.faceted-navigation__mobile-facet-container').removeClass('hidden');
@@ -101,7 +119,7 @@ App.facets = function () {
         $('.overlay-mask').css('height', winHeight).toggleClass('hidden');
       });
 
-      $('.faceted-navigation__mobile-facet-container .faceted-navigation__header.button--reset').on('click', function (e) {
+      $('.faceted-navigation__mobile-facet-container .faceted-navigation__header').on('click', function (e) {
         e.preventDefault;
         $(this).children('.icon-sign-plus').toggleClass('u-hide');
       });
@@ -111,6 +129,34 @@ App.facets = function () {
       $('.faceted-navigation__mobile-facet-container .faceted-navigation').remove();
       $componentClass.css('display', 'none');
     }
+  };
+
+  /**
+   * Show the remaining facets-groups thare were hidden on page load
+   * @param  { Object } event - the click event object
+   */
+  var showAllFacetsGroups = function showAllFacetsGroups(event) {
+
+    // Show hidden facets
+    $componentClass.find('.faceted-navigation__more-facets').slideDown();
+
+    // Hide "View more" <button>
+    event.currentTarget.classList.add('u-hide');
+  };
+
+  /**
+   * Show the remaining facets-values / options hidden in Each Group (eg: Checkboxes, radios)
+   * @param  { Object } event - the click event object
+   */
+  var showAllFacetsValues = function showAllFacetsValues(event) {
+
+    var $parentGroup = $(event.currentTarget).closest('.faceted-navigation__group');
+
+    // Show hidden facet-values
+    $parentGroup.find('.faceted-navigation__more-facet-values').slideDown();
+
+    // Hide "View more" <button>
+    event.currentTarget.classList.add('u-hide');
   };
 
   if ($componentClass.length > 0) {

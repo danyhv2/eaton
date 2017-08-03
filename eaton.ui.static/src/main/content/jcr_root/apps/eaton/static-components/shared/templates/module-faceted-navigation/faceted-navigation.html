@@ -31,9 +31,16 @@
         </button>
 
         <!--/* Facet Values */-->
-        <div class="collapse in" class="${ 'facet-{0}' @ format=[ item.facetId ] } collapse in">
+        <div class="collapse in ${ 'facet-{0}' @ format=[ item.facetId ] }">
+
           <div data-sly-list.facetValue="${ item.facetValues }"
             class="faceted-navigation__list">
+
+            <!--/* Open Wrapper div used to Hide Facet Values based on Backend Config */-->
+            <sly data-sly-test="${ facetValueList.index == data.config.facetValuesMinVisible }">
+              <!--/* TODO: Add opening div eg: <div class="u-hide faceted-navigation__more-facets-values"> */-->
+
+            </sly>
 
 
             <!--/* Type: Checkbox */-->
@@ -41,16 +48,10 @@
               <div class="faceted-navigation__list-item ">
                 <input
                   name="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
-                  type="checkbox" 
+                  type="checkbox"
                   id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
                 />
                 <a href="${ facetValue.url }" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
-
-                <!--/* View More Facet Values */-->
-                <div data-sly-test="${ facetValueList.count == data.config.facetValuesMinVisible }"
-                  class="faceted-navigation__view-more-values">
-                  <button class="button--reset" >${ 'View more' @ i18n }</button>
-                </div>
               </div>
             </sly>
 
@@ -64,13 +65,20 @@
                   id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
                 />
                 <a href="${ facetValue.url }" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
-
-                <!--/* View More Facet Values */-->
-                <div data-sly-test="${ facetValueList.count == data.config.facetValuesMinVisible }"
-                  class="faceted-navigation__view-more-values">
-                  <button class="button--reset" >${ 'View more' @ i18n }</button>
-                </div>
               </div>
+            </sly>
+
+            <!--/* View More Facet Values */-->
+            <div data-sly-test="${ facetValueList.count == data.config.facetValuesMinVisible }"
+              class="faceted-navigation__view-more-values">
+              <button class="button--reset" data-more-facet-values >${ 'View more' @ i18n }</button>
+            </div>
+
+
+            <!--/* Close Wrapper div used to Hide Facet Values based on Backend Config */-->
+            <sly data-sly-test="${ facetValueList.count == data.config.facetValuesMinVisible && facetValueList.last }">
+              <!--/* TODO: add closing div eg: '</div>' */-->
+
             </sly>
 
           </div>
@@ -80,7 +88,7 @@
 
 
       <!--/* Close Wrapper div used to toggle Facets Visiblity (View More) */-->
-      <sly data-sly-test="${ itemList.index >= data.config.facetItemsMinVisible && itemList.last }">
+      <sly data-sly-test="${ itemList.count == data.config.facetItemsMinVisible && itemList.last }">
         </div>
       </sly>
 
@@ -90,7 +98,7 @@
     <!--/* View More Facet Items */-->
     <div data-sly-test="${ data.facetItems.length > data.config.facetItemsMinVisible }"
       class="faceted-navigation__view-more-facets">
-      <button id="view-more-facets" class="button--reset" ><strong>${ 'View more' @ i18n }</strong> </button>
+      <button class="button--reset view-more-facets" data-more-facets ><strong>${ 'View more' @ i18n }</strong> </button>
     </div>
   </div>
 </template>

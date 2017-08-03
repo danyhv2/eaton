@@ -234,37 +234,37 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .button--reset { border: 0; border-radius: 0; background: none; padding: 0; }
 
-.b-button { background: none; border-radius: 0; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; }
+.b-button { background: none; text-shadow: none; border-radius: 0; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; }
 
 .b-button__primary { border-width: 3px; font-size: 1.25em; padding: 20px 40px; }
 
-.b-button__primary--light { border-color: #005EB8; color: #005EB8; }
+.b-button__primary.b-button__primary--light { border-color: #005EB8; color: #005EB8; }
 
-.b-button__primary--light:hover, .b-button__primary--light:active, .b-button__primary--light:focus { color: #FFF; background: #005EB8; text-decoration: none; }
+.b-button__primary.b-button__primary--light:hover, .b-button__primary.b-button__primary--light:active, .b-button__primary.b-button__primary--light:focus { color: #FFF; background: #005EB8; text-decoration: none; }
 
-.b-button__primary--dark { border-color: #FFF; color: #FFF; }
+.b-button__primary.b-button__primary--dark { border-color: #FFF; color: #FFF; }
 
-.b-button__primary--dark:hover, .b-button__primary--dark:active, .b-button__primary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; }
+.b-button__primary.b-button__primary--dark:hover, .b-button__primary.b-button__primary--dark:active, .b-button__primary.b-button__primary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; }
 
 .b-button__secondary { border-width: 3px; font-size: 0.875em; padding: 20px; }
 
-.b-button__secondary--light { border-color: #005EB8; color: #005EB8; }
+.b-button__secondary.b-button__secondary--light { border-color: #005EB8; color: #005EB8; }
 
-.b-button__secondary--light:hover, .b-button__secondary--light:active, .b-button__secondary--light:focus { color: #FFF; background: #005EB8; text-decoration: none; }
+.b-button__secondary.b-button__secondary--light:hover, .b-button__secondary.b-button__secondary--light:active, .b-button__secondary.b-button__secondary--light:focus { color: #FFF; background: #005EB8; text-decoration: none; }
 
-.b-button__secondary--dark { border-color: #FFF; color: #FFF; }
+.b-button__secondary.b-button__secondary--dark { border-color: #FFF; color: #FFF; }
 
-.b-button__secondary--dark:hover, .b-button__secondary--dark:active, .b-button__secondary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; }
+.b-button__secondary.b-button__secondary--dark:hover, .b-button__secondary.b-button__secondary--dark:active, .b-button__secondary.b-button__secondary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; }
 
 .b-button__tertiary { border-width: 3px; font-size: 1.25em; padding: 20px 40px; }
 
-.b-button__tertiary--light { border-color: #005EB8; background-color: #005EB8; color: #FFF; }
+.b-button__tertiary.b-button__tertiary--light { border-color: #005EB8; background-color: #005EB8; color: #FFF; }
 
-.b-button__tertiary--light:hover, .b-button__tertiary--light:active, .b-button__tertiary--light:focus { background: #FFF; color: #005EB8; text-decoration: none; }
+.b-button__tertiary.b-button__tertiary--light:hover, .b-button__tertiary.b-button__tertiary--light:active, .b-button__tertiary.b-button__tertiary--light:focus { background: #FFF; color: #005EB8; text-decoration: none; }
 
-.b-button__tertiary--dark { border: 0; background-color: #005EB8; color: #FFF; }
+.b-button__tertiary.b-button__tertiary--dark { border: 0; background-color: #005EB8; color: #FFF; }
 
-.b-button__tertiary--dark:hover, .b-button__tertiary--dark:active, .b-button__tertiary--dark:focus { background: #FFF; color: #005EB8; text-decoration: none; }
+.b-button__tertiary.b-button__tertiary--dark:hover, .b-button__tertiary.b-button__tertiary--dark:active, .b-button__tertiary.b-button__tertiary--dark:focus { background: #FFF; color: #005EB8; text-decoration: none; }
 
 @media screen and (max-width: 767px) { .b-button { max-width: 100%; }
   .b-button__secondary { font-size: 1em; } }

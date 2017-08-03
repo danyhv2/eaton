@@ -286,7 +286,11 @@ use(function () {
         "url": "#backup-server",
         "target": '_self'
       },
-      "clearAllFiltersUrl": "#clear-all-filters",
+      "clearAllFiltersLink": {
+        "text": "Clear filters",
+        "url": "#clear-all-filters",
+        "target": "_self"
+      },
       "activeFilters": [
         {
           "label": "Products",
