@@ -1,5 +1,7 @@
 {
   "search": {
+    "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/product-grid-sku--more-data.json",
+    "ajaxRequestNextPage": 3,
     "results": [
       {
         "contentType": "sku-card",
