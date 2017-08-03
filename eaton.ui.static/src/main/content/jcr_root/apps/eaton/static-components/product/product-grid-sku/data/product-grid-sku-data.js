@@ -224,20 +224,35 @@ use(function () {
     // Search Results
     //--------------
     data.search = {
+      "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/product-grid-sku--more-data.json",
+      "ajaxRequestNextPage": 2,
       "resultsCount": 89,
-      "currentPage": 2,
-      "showLoadMore": false,
+      "currentPage": 1,
+      "showLoadMore": true,
       "keyword": "bckup servre",
-      // "activeFilters": [
-      //   {
-      //     "label": "Products",
-      //     "url": "#remove-filter-products"
-      //   },
-      //   {
-      //     "label": "News Release",
-      //     "url": "#remove-filter-news-release"
-      //   }
-      // ],
+      "autoCorrect": {
+        "enabled": true,
+        "correctedKeyword": "backup server",
+        "url": "#backup-server",
+        "target": '_self'
+      },
+      "clearAllFiltersLink": {
+        "text": "Clear filters",
+        "url": "#clear-all-filters",
+        "target": "_self"
+      },
+      "activeFilters": [
+        // {
+        //   "label": "Products",
+        //   "url": "#remove-filter-products",
+        //   "target": "_self"
+        // },
+        // {
+        //   "label": "News Release",
+        //   "url": "#remove-filter-news-release",
+        //   "target": "_self"
+        // }
+      ],
       "sortBy": {
         "items": [
           {
@@ -264,7 +279,7 @@ use(function () {
       },
       results: [
         {
-          "contentType": "familysku",
+          "contentType": "sku-card",
           "contentItem": {
             "name": "Fuse Disconnect ePDUs",
             "imgSrc": "/content/dam/eaton/images/p1.png",
@@ -295,7 +310,7 @@ use(function () {
           }
         },
         {
-          "contentType": "familysku",
+          "contentType": "sku-card",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
             "imgSrc": "/content/dam/eaton/images/p2.png",
@@ -326,7 +341,7 @@ use(function () {
           }
         },
         {
-          "contentType": "familysku",
+          "contentType": "sku-card",
           "contentItem": {
             "name": "Network, Server & Storage UPS this is a really long title used for testing purposes, text wraps in multiple lines",
             "imgSrc": "/content/dam/eaton/images/p3.png",
@@ -357,7 +372,7 @@ use(function () {
           }
         },
         {
-          "contentType": "familysku",
+          "contentType": "sku-card",
           "contentItem": {
             "name": "Fuse Disconnect ePDUs",
             "imgSrc": "/content/dam/eaton/images/p4.png",

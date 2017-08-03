@@ -273,7 +273,7 @@ use(function () {
       "ajaxRequestNextPage": 2,
       "resultsCount": 184,
       "currentPage": 1,
-      "showLoadMore": false,
+      "showLoadMore": true,
       "keyword": "bckup servre",
       "autoCorrect": {
         "enabled": true,
