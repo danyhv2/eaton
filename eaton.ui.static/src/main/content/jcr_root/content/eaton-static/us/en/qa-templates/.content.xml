@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Page">
+    <t4-sitemap/>
+    <styleguide/>
+    <t10-search-results/>
+    <test-data/>
     <jcr:content
         cq:lastModified="{Date}2017-07-19T19:48:51.141Z"
         cq:lastModifiedBy="etn-supriya"
@@ -11,6 +15,6 @@
     <t2-primary-landing-template/>
     <t9-secondary-landing/>
     <t3-article-template/>
-    <t1-homepage/>
     <t1-homepage-template/>
+    <t7-product-family-template-resources-tab/>
 </jcr:root>

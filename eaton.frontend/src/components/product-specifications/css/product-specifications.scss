@@ -10,6 +10,38 @@
 .product-specifications {
   padding: 20px 0;
 
+  .value-type-document,
+  .value-type-image,
+  .value-type-default {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  .value-type-document {
+
+  }
+
+  .value-type-link {
+    margin-right: 1rem;
+  }
+
+  .value-type-image {
+
+    a { display: block; }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 43px;
+      max-height: 43px;
+      vertical-align: middle;
+    }
+  }
+
+  .value-type-default {
+
+  }
+
 
   //-----------------------------------
   // MediaQuery: Mobile & Tablet Only

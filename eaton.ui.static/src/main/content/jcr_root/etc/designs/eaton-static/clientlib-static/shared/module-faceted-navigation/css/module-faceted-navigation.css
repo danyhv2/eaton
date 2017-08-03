@@ -65,7 +65,11 @@
 
 .faceted-navigation { position: relative; }
 
-.faceted-navigation__mobile-facet-container { z-index: 9999; background-color: #fff; margin-top: 20px; }
+.faceted-navigation__list { list-style-type: none; padding: 0; }
+
+.faceted-navigation__list-item { padding-left: 4px; }
+
+.faceted-navigation__mobile-facet-container { z-index: 9999; background-color: #FFF; margin-top: 20px; }
 
 .faceted-navigation__mobile-facet-container.enabled { position: absolute; top: 0; left: 0; padding: 0; }
 
@@ -97,6 +101,6 @@
 
 .faceted-navigation__facet-name { font-size: 18px; }
 
-.faceted-navigation label, .faceted-navigation__view-more-values button { font-size: 14px; font-weight: normal; color: #005EB8; }
+.faceted-navigation label, .faceted-navigation__view-more-values { font-size: 14px; font-weight: normal; color: #005EB8; padding-left: 4px; }
 
 .faceted-navigation h4 { font-size: 26px; font-weight: bold; margin-bottom: 12px; }
