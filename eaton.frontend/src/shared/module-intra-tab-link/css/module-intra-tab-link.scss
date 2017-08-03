@@ -1,0 +1,27 @@
+//-----------------------------------
+// Component M-40 Product Tabs: Intra Tab Link
+//-----------------------------------
+
+@import "../../../global/css/_config/sass";
+
+.module-intra-tab-link {
+  text-align: center;
+  padding: $spacing__lg 0;
+
+  a {
+    font-size: 3.6rem;
+    font-family: $font-family__primary;
+  }
+
+  @include media-mobile-and-tablet {
+    padding: $spacing__md 0;
+
+    a {
+      font-size: 2rem;
+    }
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}
