@@ -37,7 +37,9 @@
   .eaton-search--default .icon-search { font-size: 1.25em; }
   .search-open .eaton-search--default { height: 100%; } }
 
-@media screen and (min-width: 992px) { .eaton-search--default__form-input, .eaton-search--default .icon-search { font-size: 1.5em; } }
+@media screen and (min-width: 992px) { .eaton-search--default__form-input, .eaton-search--default .icon-search { font-size: 1.5em; left: 10px; }
+  .eaton-header--fixed .eaton-search--default__form-input, .eaton-header--fixed .eaton-search--default .icon-search { left: 0; }
+  .eaton-header--fixed .eaton-search--default__form-submit { padding-right: 0; } }
 
 .eaton-search-box { background-color: #005EB8; padding: 30px; }
 

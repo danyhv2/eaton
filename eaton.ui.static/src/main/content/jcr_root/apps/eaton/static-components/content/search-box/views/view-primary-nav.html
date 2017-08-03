@@ -1,5 +1,5 @@
 <sly data-sly-use.data="${'../data/view-primary-nav-data.js' @testdata=properties.testdata}">
-  <div class="eaton-search eaton-search--default">
+  <div class="eaton-search eaton-search--default" data-predictive-search="${data.searchUrl}">
     <div class="container">
       <div class="row">
 
@@ -9,7 +9,7 @@
             <label for="mega-menu-search" class="sr-only">${data.header}</label>
             <input type="text"
                     name="search-term"
-                    id="mega-menu-search"
+                    id="primary-menu-search"
                     class="form-control eaton-search--default__form-input"
                     placeholder="${data.form.placeholder}"
                     required="required">
@@ -20,9 +20,8 @@
           </div>
 
           <div class="eaton-search__results">
-            <ul data-sly-list="${data.results}" class="eaton-search__result-list" >
-              <li class="eaton-search__result-item">
-                <a href="${item.href}" target="${item.target}">${ item.title }</a>
+            <ul class="eaton-search__result-list" >
+              <!--/* Result Links will be populated here via AJAX Request /* -->
             </ul>
           </div>
         </form>

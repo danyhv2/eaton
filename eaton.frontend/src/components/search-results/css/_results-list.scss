@@ -1,6 +1,12 @@
 //-----------------------------------
 // M-60: Results List Container
 //-----------------------------------
+
+.search-results{
+  position: relative;
+  z-index:1;
+}
+
 .results-list {
   padding-bottom: $spacing__lg / 2;
 

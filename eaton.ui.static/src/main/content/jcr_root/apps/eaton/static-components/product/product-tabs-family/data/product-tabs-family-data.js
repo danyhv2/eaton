@@ -68,12 +68,12 @@ use(function () {
           {
             icon: 'phone',
             title: 'Call toll-free 1 800 365 5794',
-            href: 'tel:18003655794',
+            href: '#18003655794',
             target: '_blank'
           },
           {
             icon: 'tiles',
-            title: 'live chat',
+            title: 'Live chat',
             href: '#live-chat',
             target: '_blank'
           }
@@ -147,12 +147,12 @@ use(function () {
           {
             icon: 'phone',
             title: 'Call toll-free 1 800 365 5794',
-            href: 'tel:18003655794',
+            href: '#18003655794',
             target: '_blank'
           },
           {
             icon: 'tiles',
-            title: 'live chat',
+            title: 'Live chat',
             href: '#live-chat',
             target: '_blank'
           }

@@ -283,6 +283,11 @@ use(function () {
           target: '_self'
         }
       ]
+    },
+    {
+      title: 'TAA UPS only link',
+      titlelink: '#',
+      titletarget: '_blank'
     }
   ];
 

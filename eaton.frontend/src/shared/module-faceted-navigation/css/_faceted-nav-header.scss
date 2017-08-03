@@ -8,6 +8,98 @@
   font-size: 14px;
   margin-bottom: 28px;
 
+  &__sort-options{
+    .desc { color:#6b6b6b;}
+    .desc a {color:#0092dd;}
+
+    select{ display:none; }
+    
+    .styledDropdown dd, .styledDropdown dt, .styledDropdown ul { margin:0px; padding:0px; },
+    .styledDropdown .glyphicon-chevron-down {
+      font-size: 12px;
+      color: #333f48;
+      font-weight: normal;
+      float: right;
+      margin: 5px 0 0 0;
+
+      &:before{
+        padding-right: 48px;
+        color: #005EB8;
+      }
+
+    }
+    .styledDropdown dd {
+      position:relative;
+    }
+
+    .styledDropdown dd a, .styledDropdown dd a:visited {
+      color:#005EB8;
+      outline:none;
+      margin-left:12px;
+      font-size: 18px;
+    }
+    .styledDropdown a:hover {
+      text-decoration: underline;
+    }
+    .styledDropdown dt a:hover {
+      color:#333f48;
+      border: 1px solid #ccc;
+    }
+    .styledDropdown dt a {
+      background:#fff no-repeat scroll right center;
+      display:block;
+      border:1px solid #ccc;
+      width:165px;
+      padding:11px 20px 15px 15px;
+      height:45px;
+      font-size: 18px;
+      color: #333f48;
+      font-weight: normal;
+      opacity: .7;
+      max-width:165px;
+    }
+    .styledDropdown dt a span {
+      color: #005EB8;
+      cursor:pointer;
+      display:block;
+    }
+    .styledDropdown dd ul {
+      background:#fff none repeat scroll 0 0;
+      border:1px solid #ccc;
+      border-top: 1px solid #fff;
+      color:#005EB8;
+      display:none;
+      left:0px; 
+      padding:5px 0px;
+      position:absolute;
+      top:-1px;
+      width:auto;
+      width: 165px;
+      max-width:165px;
+      list-style:none;
+    }
+    .styledDropdown span.value {
+      display:none;
+    }
+    .styledDropdown dd ul li a {
+      padding:5px;
+      display:block;
+    }
+    .styledDropdown dd ul li a:hover {
+      background-color:#fff;
+      font-weight: normal;
+    }
+    
+    .styledDropdown img.flag {
+      border:none;
+      vertical-align:middle;
+      margin-left:10px;
+    }
+    .flagvisibility {
+      display:none;
+    }
+  }
+
   &__header-top,
   &__header-bottom{
     display: flex;
@@ -28,6 +120,7 @@
     margin-left: auto;
     min-width: 85px;
     font-size: 14px;
+    z-index:10;
   }
 
   &__sort-options{

@@ -78,6 +78,10 @@
 
       &.active {
         border-bottom: 5px solid $color__primary-blue;
+
+        &.desktop.link {
+          border-bottom: 1px solid $color__secondary-gray6;
+        }
       }
     }
 
@@ -89,6 +93,10 @@
 
         &.active {
           color: $color__black;
+
+          &.desktop.link {
+            color: $color__primary-blue;
+          }
         }
       }
 
