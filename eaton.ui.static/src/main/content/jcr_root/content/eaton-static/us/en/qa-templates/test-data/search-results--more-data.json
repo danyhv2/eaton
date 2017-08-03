@@ -1,85 +1,109 @@
 {
-  "search": {
-    "results": [
-      {
-        "contentType": "family",
-        "contentItem": {
-          "name": "Network, Server & Storage UPS",
-          "imgSrc": "/content/dam/eaton/images/p1.png",
-          "imgAlt": "Network, Server & Storage UPS",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
-          "link": {
-            "text": "www.cooperindustries.com/.../product_updates.html",
-            "url": "http://www.cooperindustries.com/",
-            "target": "_blank"
-          },
-          "secondaryLinks": [
-            { "text": "Overview", "url": "#overview", "target": "_blank" },
-            { "text": "Models", "url": "#models", "target": "_blank" },
-            { "text": "Resources", "url": "#resources", "target": "_blank" }
-          ]
-        }
-      },
-      {
-        "contentType": "article",
-        "contentItem": {
-          "articleType": "external",
-          "name": "Eaton 9 Series Single-Phase UPS Visio Stencils",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
-          "link": {
-            "text": "www.cooperindustries.com/.../product_updates.html",
-            "url": "http://www.cooperindustries.com/",
-            "target": "_blank"
-          }
-        }
-      },
-      {
-        "contentType": "article",
-        "contentItem": {
-          "articleType": "internal",
-          "name": "Eaton 9-Speed Synchronized Transmissions Single “H” Shift Control Configuration article",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
-          "date": "November 27, 2015",
-          "link": {
-            "text": "www.cooperindustries.com/.../product_updates.html",
-            "url": "http://www.cooperindustries.com/",
-            "target": "_blank"
-          },
-        }
-      },
-      {
-        "contentType": "sku",
-        "contentItem": {
-          "name": "9E6Ki-Eaton 9E",
-          "imgSrc": "/content/dam/eaton/images/p2.png",
-          "imgAlt": "9E6Ki-Eaton 9E",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
-          "link": {
-            "text": "www.cooperindustries.com/.../product_updates.html",
-            "url": "http://www.cooperindustries.com/",
-            "target": "_blank"
-          },
-          "secondaryLinks": [
-            { "text": "Overview", "url": "#overview", "target": "_blank" },
-            { "text": "Models", "url": "#models", "target": "_blank" },
-            { "text": "Resources", "url": "#resources", "target": "_blank" }
-          ]
-        }
-      },
-      {
-        "contentType": "resource",
-        "contentItem": {
-          "name": "Eaton 9 Series Single-Phase UPS Visio Stencils",
-          "documentType": "PDF",
-          "documentSize": "4MB",
-          "documentName": "Specs-2017.pdf",
-          "link": {
-            "text": "www.eaton.co/.../specs.pdf",
-            "url": "https://eaton.dev/resources/specs.pdf?download=true",
-            "target": "_blank"
-          }
-        }
-      }
-    ]
-  }
+    "search": {
+        "results": [
+            {
+                "contentType": "family",
+                "contentItem": {
+                    "name": "Network, Server & Storage UPS",
+                    "imgSrc": "/content/dam/eaton/images/p1.png",
+                    "imgAlt": "Network, Server & Storage UPS",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+                    "link": {
+                        "text": "www.cooperindustries.com/.../product_updates.html",
+                        "url": "http://www.cooperindustries.com/",
+                        "target": "_blank"
+                    },
+                    "secondaryLinks": [
+                        {
+                            "text": "Overview",
+                            "url": "#overview",
+                            "target": "_blank"
+                        },
+                        {
+                            "text": "Models",
+                            "url": "#models",
+                            "target": "_blank"
+                        },
+                        {
+                            "text": "Resources",
+                            "url": "#resources",
+                            "target": "_blank"
+                        }
+                    ]
+                }
+            },
+            {
+                "contentType": "article",
+                "contentItem": {
+                    "articleType": "external",
+                    "name": "Eaton 9 Series Single-Phase UPS Visio Stencils",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+                    "link": {
+                        "text": "www.cooperindustries.com/.../product_updates.html",
+                        "url": "http://www.cooperindustries.com/",
+                        "target": "_blank"
+                    }
+                }
+            },
+            {
+                "contentType": "article",
+                "contentItem": {
+                    "articleType": "internal",
+                    "name": "Eaton 9-Speed Synchronized Transmissions Single “H” Shift Control Configuration article",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+                    "date": "November 27, 2015",
+                    "link": {
+                        "text": "www.cooperindustries.com/.../product_updates.html",
+                        "url": "http://www.cooperindustries.com/",
+                        "target": "_blank"
+                    }
+                }
+            },
+            {
+                "contentType": "sku",
+                "contentItem": {
+                    "name": "9E6Ki-Eaton 9E",
+                    "imgSrc": "/content/dam/eaton/images/p2.png",
+                    "imgAlt": "9E6Ki-Eaton 9E",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+                    "link": {
+                        "text": "www.cooperindustries.com/.../product_updates.html",
+                        "url": "http://www.cooperindustries.com/",
+                        "target": "_blank"
+                    },
+                    "secondaryLinks": [
+                        {
+                            "text": "Overview",
+                            "url": "#overview",
+                            "target": "_blank"
+                        },
+                        {
+                            "text": "Models",
+                            "url": "#models",
+                            "target": "_blank"
+                        },
+                        {
+                            "text": "Resources",
+                            "url": "#resources",
+                            "target": "_blank"
+                        }
+                    ]
+                }
+            },
+            {
+                "contentType": "resource",
+                "contentItem": {
+                    "name": "Eaton 9 Series Single-Phase UPS Visio Stencils",
+                    "documentType": "PDF",
+                    "documentSize": "4MB",
+                    "documentName": "Specs-2017.pdf",
+                    "link": {
+                        "text": "www.eaton.co/.../specs.pdf",
+                        "url": "https://eaton.dev/resources/specs.pdf?download=true",
+                        "target": "_blank"
+                    }
+                }
+            }
+        ]
+    }
 }
