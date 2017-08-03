@@ -25,11 +25,14 @@ var App = window.App || {};
 App.search = function () {
 
   // Variable Declarations
-  var $componentClass = $('.eaton-search');
+  var componentClass = '.eaton-search';
+  var $componentElement = $(componentClass);
+  var $searchInputEl = $componentElement.find('.eaton-search--default__form-input');
+  var $searchResultContainer = $componentElement.find('.eaton-search__result-list');
 
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
-  var componentExists = $componentClass.length > 0;
+  var componentExists = $componentElement.length > 0;
 
   /**
   * Init
@@ -43,14 +46,76 @@ App.search = function () {
   };
 
   /**
+  * Create Template - Markup for each predictive search result item
+  */
+  var linkTemplate = function linkTemplate(data) {
+    return '\n      <li class="eaton-search__result-item">\n        <a href="' + data.link + '" target="' + data.target + '">' + data.title + '</a>\n      </li>';
+  };
+
+  /**
+  * Handle Input Behaviors
+  */
+  var handleInputBehavior = function handleInputBehavior(event) {
+
+    // Check if the #of characters in the inputBox exceeds characterLimit - 3
+    if ($(event.target).val().length >= 3) {
+      // Request Search Results - AJAX
+      getSearchResults(event);
+    } else {
+      // Empty the contents of the result-list
+      $searchResultContainer.html('');
+    }
+  };
+
+  /**
+  * Load Predictive Search Results - AJAX
+  */
+  var getSearchResults = function getSearchResults(event) {
+
+    // Get the closest search component to avoid conflicts when multiple search elements on page
+    var $activeSearchComponent = $(event.currentTarget).closest(componentClass);
+    var searchResultsURL = $activeSearchComponent.attr('data-predictive-search');
+    var requestOptions = { format: 'json' };
+    var searchResultsList = '';
+    var ajaxReq = '';
+
+    // If URL path is configured
+    if (!searchResultsURL) {
+      return;
+    }
+
+    ajaxReq = $.getJSON(searchResultsURL, requestOptions);
+
+    ajaxReq
+    // Callback for Successful Request
+    .done(function (data) {
+
+      // Loop over all result items
+      $.each(data.results, function (index, item) {
+        searchResultsList += linkTemplate(item);
+      });
+
+      // Replace the contents of the list with the AJAX results
+      $searchResultContainer.html(searchResultsList);
+    })
+
+    // Callback for Failed Request
+    .fail(function (data) {
+      console.error('error', data);
+    });
+  };
+
+  /**
    * Bind All Event Listeners
    */
-  var addEventListeners = function addEventListeners() {};
+  var addEventListeners = function addEventListeners() {
+    $searchInputEl.on('keyup', handleInputBehavior);
+  };
 
   /**
   * If containing DOM element is found, Initialize and Expose public methods
   */
-  if ($componentClass.length > 0) {
+  if ($componentElement.length > 0) {
     init();
   }
 }();
