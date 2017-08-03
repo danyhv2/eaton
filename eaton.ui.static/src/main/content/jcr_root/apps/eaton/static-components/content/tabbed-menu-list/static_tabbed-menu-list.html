@@ -12,11 +12,11 @@
 				<div id="collapse${tabList.index}" class="panel-collapse collapse" role="region" aria-labelledby="${tab.title}">
 					<div class="row">
 						<div class="col-xs-12">
-							<a class="b-body-copy" href="${tab.content.header.url}" title="${tab.content.header.text}">${tab.content.header.text}</a>
+							<a class="b-body-copy" href="${tab.headerlink}" title="${tab.headertext}" target="${tab.headertarget}">${tab.headertext}</a>
 						</div>
-						<sly data-sly-list.link="${tab.content.links}">
+						<sly data-sly-list.link="${tab.links}">
 							<div class="col-xs-12">
-								<a class="b-body-copy-small" href="${link.url}" title="${link.text}">${link.text}</a>
+								<a class="b-body-copy-small" href="${link.link}" title="${link.text}" target="${link.target}">${link.text}</a>
 							</div>
 						</sly>
 					</div>
@@ -27,7 +27,7 @@
 	</div>
 	<div class="container tab-container">
 		<sly data-sly-list.tab=${data.tabs}>
-					<div class="eaton-tabbed-menu-list__item b-body-copy col-md-4 desktop ${tabList.index >= 0 && tabList.index <= 2 ? 'primary' : ''} ${tabList.index >= 3 && tabList.index <= 5 ? 'secondary' : ''} ${tabList.index >= 6 && tabList.index <= 8 ? 'tertiary' : ''} ${tabList.index >= 9 && tabList.index <= 11 ? 'quaternary' : ''} ${tabList.index >= 12 && tabList.index <= 14 ? 'quinary' : ''}"   role="tablist">
+					<div class="eaton-tabbed-menu-list__item b-body-copy col-md-4 desktop ${tabList.index >= 0 && tabList.index <= 2 ? 'primary' : ''} ${tabList.index >= 3 && tabList.index <= 5 ? 'secondary' : ''} ${tabList.index >= 6 && tabList.index <= 8 ? 'tertiary' : ''} ${tabList.index >= 9 && tabList.index <= 11 ? 'quaternary' : ''} ${tabList.index >= 12 && tabList.index <= 14 ? 'quinary' : ''}" >
 						<a class="eaton-tabbed-menu-list__title desktop" data-toggle="tab" href="#tab${tabList.index}" data-index="${tabList.index}" role="tab" aria-selected="false">
 							${tab.title}
 						</a>
@@ -39,13 +39,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-md-3 eaton-tabbed-menu-list__tab-title">
-							<a class="b-body-copy" href="${tab.content.header.url}" title="${tab.content.header.text}">${tab.content.header.text}</a>
+							<a class="b-body-copy" href="${tab.headerlink}" title="${tab.headertext}" target="${tab.headertarget}">${tab.headertext}</a>
 						</div>
 						<div class="col-xs-12 col-md-9 eaton-tabbed-menu-list__tab-links">
 							<div class="row">
-								<sly data-sly-list.link="${tab.content.links}">
+								<sly data-sly-list.link="${tab.links}">
 									<div class="col-xs-12 col-md-4">
-										<a class="b-body-copy-small" href="${link.url}" title="${link.text}">${link.text}</a>
+										<a class="b-body-copy-small" href="${link.link}" title="${link.text}" target="${link.target}">${link.text}</a>
 									</div>
 								</sly>
 							</div>
