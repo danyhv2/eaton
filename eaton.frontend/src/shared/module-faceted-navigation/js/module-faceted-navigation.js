@@ -13,7 +13,10 @@ App.facets = (function() {
 
 
   const init = () => {
-    addEventListeners();
+  	$(function() {
+  		addEventListeners();
+    	sortBy();
+  	});
   };
 
 
@@ -40,7 +43,6 @@ App.facets = (function() {
     //--------------
     $(window).on('resize', function() {
       if ($(window).width() < App.global.constants.GRID.MD && $('.faceted-navigation__mobile-facet-container').css('display') !== 'block') {
-        // $('.faceted-navigation__mobile-facet-container .faceted-navigation-header').removeClass('hidden');
         $('.faceted-navigation__mobile-facet-container .faceted-navigation-header, .faceted-navigation__mobile-facet-container').removeClass('hidden');
         $('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button').removeClass('hidden');
 
@@ -59,17 +61,69 @@ App.facets = (function() {
     });
   };
 
+  const sortBy = () => {
+  	let $ddul = $('.styledDropdown dd ul');
+  	const $source = $('.faceted-navigation-header__sort-options select');
+
+  	createDropDown();
+
+    $('.faceted-navigation-header__sort-options .styledDropdown dt a').click(function(e) {
+    	e.preventDefault();
+    	$('.styledDropdown dd ul').toggle();
+    });
+
+    $(document).bind('click', function(e) {
+      let $clicked = $(e.target);
+      if (!$clicked.parents().hasClass('styledDropdown'))
+        {$('.styledDropdown dd ul').hide();}
+    });
+
+    $('.styledDropdown dd ul li a').click(function() {
+      let text = $(this).html();
+      $('.styledDropdown dt a').html(text);
+      $('.styledDropdown dd ul').hide();
+
+        // var source = $("#source");
+      $source.val($(this).find('span.value').html());
+    });
+  };
+
+  function createDropDown() {
+  	const $condition = $('.faceted-navigation__mobile-facet-container').length > 0;
+    const $source = ($condition) ? $('.faceted-navigation__mobile-facet-container .faceted-navigation-header__sort-options select') : $('.faceted-navigation-header__sort-options select');
+    let selected = $source.find('option[selected]');
+    let options = $('option', $source);
+
+    if (!$condition) {
+    	$('.faceted-navigation-header__sort-options').append('<dl id="target" class="styledDropdown"></dl>');
+    }
+    else {
+    	$('.faceted-navigation__mobile-facet-container .faceted-navigation-header__sort-options').append('<dl id="target" class="styledDropdown"></dl>');
+    }
+    $('#target').append('<dt><a href="#">' + selected.text() +
+        '<span class="value">' + selected.val() +
+        '</span><span class="glyphicon glyphicon-chevron-down"></a></dt>');
+    $('#target').append('<dd><ul></ul></dd>');
+
+    options.each(function(i) {
+    	if (i != 0) {
+	    	$('#target dd ul').append('<li><a href="' + $(this).val() + '" target="_self">' +
+	    	$(this).text() + '<span class="value">' +
+	    	$(this).val() + '</span></a></li>');
+	    }
+    });
+  }
+
   const mobileFacets = () => {
-    // $mobileFacets.append($componentClass).css('display','block');
+
     if (mobileEnabled === false) {
-      // let $overlay = $('<div>', {id: 'mobile-overlay'});
       let temp = $componentClass.parent().parent();
       let winHeight = $(document).innerHeight();
 
       $("<div class='faceted-navigation__mobile-facet-container hidden col-xs-12 col-md-3'></div>").prependTo(temp);
 
-      $componentClass.clone().appendTo('.faceted-navigation__mobile-facet-container').addClass('visible');
-      $('.faceted-navigation-header').clone().prependTo('.faceted-navigation__mobile-facet-container');
+      $componentClass.clone(true, true).appendTo('.faceted-navigation__mobile-facet-container').addClass('visible');
+      $('.faceted-navigation-header').clone(true, true).prependTo('.faceted-navigation__mobile-facet-container');
 
       $('.faceted-navigation__mobile-facet-container .faceted-navigation').prepend($('.faceted-navigation__mobile-facet-container .faceted-navigation-header__header-bottom'));
 
@@ -115,7 +169,6 @@ App.facets = (function() {
     }
     else {
       $('.faceted-navigation__mobile-facet-container').removeClass('hidden');
-      // $('.faceted-navigation__mobile-facet-container .faceted-navigation').addClass('hidden');
       $('.faceted-navigation__mobile-facet-container .faceted-navigation').remove();
       $componentClass.css('display','none');
     }

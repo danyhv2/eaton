@@ -14,8 +14,8 @@
       <div class="faceted-navigation-header__header-top">
         <div class="faceted-navigation-header__title">${ '{0} results' @ i18n, format=[ data.resultsCount ] }</div>
         <div class="faceted-navigation-header__sort-options">
-          ${ 'Sort by' @ i18n }
           <select>
+              <option selected>${ 'Sort by' @ i18n }</option>
             <sly data-sly-list.sort="${ data.sortBy.items }">
               <option value="${ sort.url }">${ sort.label }</option>
             </sly>
