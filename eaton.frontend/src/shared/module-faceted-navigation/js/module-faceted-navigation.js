@@ -11,16 +11,33 @@ App.facets = (function() {
   let $mobileFacets = $('.faceted-navigation__mobile-facet-container');
   let mobileEnabled = false;
 
+
   const init = () => {
-    $('.faceted-navigation__header.button--reset').on('click', function(e) {
+    addEventListeners();
+  };
+
+
+  const addEventListeners = () => {
+
+    // Facets Toggle update +/- Icons
+    //--------------
+    $('.faceted-navigation__header').on('click', function(e) {
       e.preventDefault;
       $(this).children('.icon-sign-plus').toggleClass('u-hide');
     });
 
+
     if ($(window).width() < App.global.constants.GRID.MD) {
-    	mobileFacets();
+      mobileFacets();
     }
 
+    // View More Facets Behavior
+    //--------------
+    $componentClass.find('[data-more-facets]').on('click', showAllFacetsGroups);
+    $componentClass.find('[data-more-facet-values]').on('click', showAllFacetsValues);
+
+    // Facet Behaviors for Mobile & Tablet
+    //--------------
     $(window).on('resize', function() {
     	if ($(window).width() < App.global.constants.GRID.MD && $('.faceted-navigation__mobile-facet-container').css('display') != 'block') {
     		// $('.faceted-navigation__mobile-facet-container .faceted-navigation-header').removeClass('hidden');
@@ -100,6 +117,40 @@ App.facets = (function() {
   		$componentClass.css('display','none');
   	}
   };
+
+
+  /**
+   * Show the remaining facets-groups thare were hidden on page load
+   * @param  { Object } event - the click event object
+   */
+  const showAllFacetsGroups = (event) => {
+
+    // Show hidden facets
+    $componentClass.find('.faceted-navigation__more-facets').slideDown();
+
+    // Hide "View more" <button>
+    event.currentTarget.classList.add('u-hide');
+  };
+
+
+  /**
+   * Show the remaining facets-values / options hidden in Each Group (eg: Checkboxes, radios)
+   * @param  { Object } event - the click event object
+   */
+  const showAllFacetsValues = (event) => {
+
+    const $parentGroup = $(event.currentTarget).closest('.faceted-navigation__group');
+
+    // Show hidden facet-values
+    $parentGroup.find('.faceted-navigation__more-facet-values').slideDown();
+
+    // Hide "View more" <button>
+    event.currentTarget.classList.add('u-hide');
+
+  };
+
+
+
 
   if ($componentClass.length > 0) {
     init();
