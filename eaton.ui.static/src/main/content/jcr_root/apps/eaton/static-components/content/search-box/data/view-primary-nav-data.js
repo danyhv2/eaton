@@ -18,6 +18,7 @@ use(function () {
 	      'submitLabel': 'Search',
         'searchResultsPath': 'http://sr_dev.eaton.com'
 	    }
+      data.searchUrl = '/content/eaton-static/us/en/qa-templates/test-data/eaton-search-term--predictive-search.json'
     }
     return data;
 });
