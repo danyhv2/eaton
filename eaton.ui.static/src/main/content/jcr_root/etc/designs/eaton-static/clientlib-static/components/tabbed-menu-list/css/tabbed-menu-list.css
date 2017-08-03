@@ -22,9 +22,11 @@
   .eaton-tabbed-menu-list .desktop { display: block; padding-right: 30px; }
   .eaton-tabbed-menu-list__title { padding: 50px 0; border-bottom: 1px solid #F8F8F8; }
   .eaton-tabbed-menu-list__title.active { border-bottom: 5px solid #005EB8; }
+  .eaton-tabbed-menu-list__title.active.desktop.link { border-bottom: 1px solid #F8F8F8; }
   .eaton-tabbed-menu-list__item { border-color: transparent; }
   .eaton-tabbed-menu-list__item > a { color: #005EB8; }
   .eaton-tabbed-menu-list__item > a.active { color: #000; }
+  .eaton-tabbed-menu-list__item > a.active.desktop.link { color: #005EB8; }
   .eaton-tabbed-menu-list__item a { padding-bottom: 50px; }
   .eaton-tabbed-menu-list__tab-links { border-left: 1px solid #98A4AE; }
   .eaton-tabbed-menu-list__tabs { display: block; overflow: hidden; }
