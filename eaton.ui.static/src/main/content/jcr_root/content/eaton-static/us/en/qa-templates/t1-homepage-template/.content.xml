@@ -256,34 +256,40 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/featured-topic"
                 testdata="homepage">
-                <featured-topic-title
+                <title
                     jcr:lastModified="{Date}2017-07-20T17:09:01.978Z"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/general/title"
                     testdata="homepage-featuredtopic"
                     view="default"/>
-                <featured-topic-text
+                <text
                     jcr:lastModified="{Date}2017-07-20T17:09:01.978Z"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/general/text"
                     testdata="homepage-featuredtopic"
                     view="default"/>
-                <eaton-featured-topic-link-list-left
+                <link-list-left
                     jcr:lastModified="{Date}2017-07-20T17:12:34.153Z"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/content/link-list"
                     testdata="homepage-featuredtopic-list1"
                     view="vertical"/>
-                <eaton-featured-topic-link-list-right
+                <link-list-right
                     jcr:lastModified="{Date}2017-07-20T17:12:34.153Z"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/content/link-list"
                     testdata="homepage-featuredtopic-list2"
                     view="vertical"/>
+                <cta
+                    jcr:lastModified="{Date}2017-07-20T17:12:34.153Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/ctabutton"
+                    view="default" />
             </featured_topic>
             <category_highlight
                 jcr:created="{Date}2017-07-14T18:26:36.578Z"
