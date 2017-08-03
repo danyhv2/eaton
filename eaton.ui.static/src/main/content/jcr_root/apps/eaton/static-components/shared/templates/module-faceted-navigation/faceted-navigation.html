@@ -41,10 +41,10 @@
               <div class="faceted-navigation__list-item ">
                 <input
                   name="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
-                  type="checkbox"
+                  type="checkbox" 
                   id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
                 />
-                <label for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</label>
+                <a href="${ facetValue.url }" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
 
                 <!--/* View More Facet Values */-->
                 <div data-sly-test="${ facetValueList.count == data.config.facetValuesMinVisible }"
@@ -63,7 +63,7 @@
                   type="radio"
                   id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
                 />
-                <label for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</label>
+                <a href="${ facetValue.url }" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
 
                 <!--/* View More Facet Values */-->
                 <div data-sly-test="${ facetValueList.count == data.config.facetValuesMinVisible }"
@@ -91,9 +91,6 @@
     <div data-sly-test="${ data.facetItems.length > data.config.facetItemsMinVisible }"
       class="faceted-navigation__view-more-facets">
       <button id="view-more-facets" class="button--reset" ><strong>${ 'View more' @ i18n }</strong> </button>
-    </div>
-    <div class="mobile-done hidden-lg hidden-md">
-      <a href="#" target="_self">Done</a>
     </div>
   </div>
 </template>

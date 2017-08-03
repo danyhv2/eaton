@@ -40,8 +40,10 @@ App.facets = function () {
 
     $(window).on('resize', function () {
       if ($(window).width() < App.global.constants.GRID.MD && $('.faceted-navigation__mobile-facet-container').css('display') != 'block') {
+        // $('.faceted-navigation__mobile-facet-container .faceted-navigation-header').removeClass('hidden');
         $('.faceted-navigation__mobile-facet-container .faceted-navigation-header, .faceted-navigation__mobile-facet-container').removeClass('hidden');
         $('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button').removeClass('hidden');
+
         App.global.utils.throttle(mobileFacets(), 1000);
       } else if ($(window).width() > App.global.constants.GRID.MD) {
         $componentClass.css('display', 'block');
@@ -91,7 +93,7 @@ App.facets = function () {
         $('.overlay-mask').css('height', winHeight).toggleClass('hidden');
       });
 
-      $('.glyphicon-remove, .mobile-done').on('click', function (e) {
+      $('.glyphicon-remove').on('click', function (e) {
         $('.faceted-navigation__mobile-facet-container').removeClass('enabled');
         $('.faceted-navigation__mobile-facet-container .faceted-navigation').removeClass('visible').addClass('hidden');
         $('.faceted-navigation-header').removeClass('hidden');

@@ -18,7 +18,8 @@ use(function () {
           "id": "product",
           "isHiddenTab": false,
           "isActiveTab": false,
-          "resultsCount": 40,
+          "isADisabledTab": false,
+          "resultsCount": 36,
           "url": "#tab--product",
           "target": "_self"
         },
@@ -27,7 +28,8 @@ use(function () {
           "id": "news-insights",
           "isHiddenTab": false,
           "isActiveTab": false,
-          "resultsCount": 100,
+          "isADisabledTab": false,
+          "resultsCount": 97,
           "url": "#tab--news-insights",
           "target": "_self"
         },
@@ -36,7 +38,18 @@ use(function () {
           "id": "resources",
           "isHiddenTab": false,
           "isActiveTab": false,
-          "resultsCount": 52,
+          "isADisabledTab": true,
+          "resultsCount": 0,
+          "url": "#tab--resources",
+          "target": "_self"
+        },
+        {
+          "label": "This Tab Should be hidden",
+          "id": "resources",
+          "isHiddenTab": true,
+          "isActiveTab": false,
+          "isADisabledTab": false,
+          "resultsCount": 15,
           "url": "#tab--resources",
           "target": "_self"
         },
@@ -261,24 +274,29 @@ use(function () {
     // Search Results
     //--------------
     data.search = {
+      "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/search-results--more-data.json",
+      "ajaxRequestNextPage": 2,
       "resultsCount": 184,
-      "currentPage": 2,
+      "currentPage": 1,
       "showLoadMore": false,
       "keyword": "bckup servre",
       "autoCorrect": {
         "enabled": true,
-        "keyword": "backup server",
+        "correctedKeyword": "backup server",
         "url": "#backup-server",
         "target": '_self'
       },
+      "clearAllFiltersUrl": "#clear-all-filters",
       "activeFilters": [
         {
           "label": "Products",
-          "url": "#remove-filter-products"
+          "url": "#remove-filter-products",
+          "target": "_self"
         },
         {
           "label": "News Release",
-          "url": "#remove-filter-news-release"
+          "url": "#remove-filter-news-release",
+          "target": "_self"
         }
       ],
       "sortBy": {
