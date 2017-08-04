@@ -19,4 +19,6 @@
     <t7-product-family-template-resources-tab/>
     <t8-sku-template-resources-tab/>
     <t8-sku-template-specifications-tab/>
+    <t7-product-family-template-overview-tab/>
+    <t7-product-family-template-models-tab/>
 </jcr:root>
