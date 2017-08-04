@@ -22,6 +22,7 @@ var App = window.App || {};
 App.carousel = function () {
 
   var $carousel = $('.slick-carousel__slides');
+  var $slides = $('.slick-carousel__slides .slides').length > 4 ? 4 : 3;
 
   var init = function init() {
     initCarousel();
@@ -32,8 +33,8 @@ App.carousel = function () {
    */
   var initCarousel = function initCarousel() {
     $carousel.slick({
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToShow: $slides,
+      slidesToScroll: $slides,
       autoplay: true,
       dots: true,
       dotsClass: 'slick-carousel__dots',

@@ -1,0 +1,122 @@
+<sly data-sly-use.data="${ '../data/view-pdh-data.js' @testdata=properties.testdata }">
+
+    <div class="product-specifications">
+        <div class="container">
+            <div class="row">
+
+                <!--/* M-39: Anchor Links */-->
+                <div class="col-xs-12 col-md-3">
+                    <div class="module-anchor-links">
+                        <ul class="module-anchor-links__list">
+                            <sly data-sly-list="${ data.anchors }">
+                                <li class="module-anchor-links__list-item b-body-copy-small">
+                                    <!--/* NOTE: data-scroll-to="#element-id" is a CSS Selector (Class, ID) */-->
+                                    <button
+                                            data-scroll-to="#${ item.anchorId }"
+                                            data-scroll-to-offset-enabled="true"
+                                            class="module-anchor-links__list-link button--reset">
+                                        <span>${ item.anchorTitle }</span>
+                                        <i class="icon icon-chevron-right" aria-hidden="true"></i>
+                                    </button>
+                                </li>
+                            </sly>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--/* M-45: Table */-->
+                <div class="col-xs-12 col-md-9">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Collapsible Group Item #1
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Collapsible Group Item #2
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Collapsible Group Item #3
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<sly data-sly-list="${ data.anchors }">-->
+                        <!--<div class="module-table" id="${ item.anchorId }">-->
+                            <!--<h3 class="module-table__head b-eyebrow-large">${ item.anchorTitle }</h3>-->
+                            <!--<div class="module-table__body">-->
+                                <!--<sly data-sly-list.row="${ item.content.rows }">-->
+                                    <!--<div class="module-table__row">-->
+                                        <!--<div class="module-table__col b-eyebrow-small">${ row.label }</div>-->
+                                        <!--<div class="module-table__col b-body-copy-small">-->
+
+                                            <!--&lt;!&ndash;/* Print Table Content */&ndash;&gt;-->
+                                            <!--<sly data-sly-list.specValue="${ row.specValue }">-->
+
+                                                <!--&lt;!&ndash;/* if Type == Document */&ndash;&gt;-->
+                                                <!--<div data-sly-test.document="${ specValue.type == 'document' }"-->
+                                                     <!--class="module-table__value value-type-document">${ specValue.text }</div>-->
+
+                                                <!--&lt;!&ndash;/* if Type == Link */&ndash;&gt;-->
+                                                <!--<div data-sly-test.link="${ specValue.type == 'link' }"-->
+                                                     <!--class="module-table__value value-type-link">-->
+                                                    <!--<a href="${ specValue.link.url }" target="${ specValue.link.target }">-->
+                                                        <!--${ specValue.text }-->
+                                                    <!--</a>-->
+                                                <!--</div>-->
+
+                                                <!--&lt;!&ndash;/* if Type == Image */&ndash;&gt;-->
+                                                <!--<div data-sly-test.image="${ specValue.type == 'image' }"-->
+                                                     <!--class="module-table__value value-type-image">-->
+                                                    <!--<a href="${ specValue.link.url }" target="${ specValue.link.target }">-->
+                                                        <!--<img src="${ specValue.imageSrc }" alt="${ specValue.text }" />-->
+                                                    <!--</a>-->
+                                                <!--</div>-->
+
+                                                <!--&lt;!&ndash;/* else Default */&ndash;&gt;-->
+                                                <!--<div data-sly-test="${ !document && !link && !image }"-->
+                                                     <!--class="module-table__value value-type-default">${ specValue.text }</div>-->
+                                            <!--</sly>-->
+
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</sly>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</sly>-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</sly>

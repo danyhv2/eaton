@@ -1,4 +1,9 @@
-<sly data-sly-use.data="${ '../data/product-grid-sku-data.js' @testdata=properties.testdata }">
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Grid Component</div>
+</sly>
+
+
+<sly data-sly-use.data="${ '../data/product-grid-data.js' @testdata=properties.testdata }">
 
   <div class="product-grid-results">
     <div class="container">
@@ -24,9 +29,18 @@
 
         <!--/* M-60: Results List */-->
         <div class="col-xs-12 col-md-9">
-          <sly data-sly-use.tpl="partials/results-list-product-grid.html">
-            <sly data-sly-call="${ tpl.module @ data=data.search }"></sly>
+
+          <!--/* TODO: These views need to be reviewed */-->
+          <sly data-sly-test="${ properties.view == 'product-card-sku' }">
+            <sly data-sly-use.tpl="partials/results-list-product-grid.html">
+              <sly data-sly-call="${ tpl.module @ data=data.search }"></sly>
+            </sly>
           </sly>
+
+          <sly data-sly-test="${ properties.view == 'product-card-family' }">
+            TODO: This view needs to be created
+          </sly>
+
         </div>
       </div>
 

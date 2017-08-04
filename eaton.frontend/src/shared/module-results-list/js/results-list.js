@@ -170,7 +170,7 @@ App.resultsList = (function() {
 
   // SKU Card Template
   //--------------
-  templates.skuCard = function(data) {
+  templates.productCard = function(data) {
     return `
       <div class="product-card-sku">
 
@@ -247,7 +247,7 @@ App.resultsList = (function() {
 
 
   /**
-  * Fetch More results and add them to the DOM
+  * Fetch the next page of results and add them to the DOM
   * @param { Object } event - Click Event Object
   */
   const fetchMoreResults = (event) => {
@@ -256,7 +256,7 @@ App.resultsList = (function() {
     const requestURL = $currentComponent.attr('data-results-url');
     const requestNextPage = $currentComponent.attr('data-results-next-page');
 
-    // If the Request URL doesn't exists dont proceed
+    // If the Request URL doesn't exists don't proceed
     if (!requestURL) { return; }
 
     // Else Configure AJAX Request
@@ -275,7 +275,7 @@ App.resultsList = (function() {
         // Loop over all result items
         search.results.forEach((data, index) => {
 
-          // Based on the Content Type, use Right Template and Passing the received data
+          // Based on the Content Type, use the appropiate Template passing the received data
           //--------------
           if (data.contentType === 'family' || data.contentType === 'sku') {
             newElements += templates.family(data);
@@ -289,8 +289,8 @@ App.resultsList = (function() {
             newElements += templates.resource(data);
           }
 
-          else if (data.contentType === 'sku-card') {
-            newElements += templates.skuCard(data);
+          else if (data.contentType === 'product-card') {
+            newElements += templates.productCard(data);
           }
 
         });

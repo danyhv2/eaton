@@ -31,14 +31,14 @@
                 fieldLabel="View"
                 name="./view">
                 <items jcr:primaryType="nt:unstructured">
-                  <toggle-graphic
-                    jcr:primaryType="nt:unstructured"
-                    text="Toggle Graphic"
-                    value="toggle-graphic"/>
                   <links-navigation
                     jcr:primaryType="nt:unstructured"
                     text="Links Navigation"
                     value="links-navigation"/>
+                  <toggle-graphic
+                    jcr:primaryType="nt:unstructured"
+                    text="Toggle Graphic"
+                    value="toggle-graphic"/>
                 </items>
               </view>
             </items>
