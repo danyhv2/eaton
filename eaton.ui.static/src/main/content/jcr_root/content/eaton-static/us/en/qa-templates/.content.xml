@@ -22,4 +22,6 @@
     <t8-sku-template-overview-tab/>
     <t8-sku-template-specifications-tab/>
     <t8-sku-template-resources-tab/>
+    <t5-category-with-list/>
+    <t6-subcategory/>
 </jcr:root>
