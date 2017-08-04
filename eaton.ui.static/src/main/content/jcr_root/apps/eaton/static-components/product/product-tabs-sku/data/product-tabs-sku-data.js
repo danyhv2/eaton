@@ -82,7 +82,7 @@ use(function () {
     }
   };
 
-  if ((typeof(testdata) != "undefined") && (testdata == "tab-models")) {
+  if ((typeof(testdata) != "undefined") && (testdata == "tab-specifications")) {
     data.default.tabs[0].selected = false;
     data.default.tabs[1].selected = true;
     data.default.tabs[2].selected = false;
