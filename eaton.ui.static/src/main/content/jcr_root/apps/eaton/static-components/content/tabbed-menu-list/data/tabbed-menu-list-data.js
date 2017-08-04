@@ -64,61 +64,8 @@ use(function () {
     },
     {
       title: 'Network & server UPS',
-      headertext: 'View all Network & server UPS',
-      headerlink: '#',
-      headertarget: '_self',
-      links: [
-        {
-          text: 'Blade UPS (12-60 kW)',
-          link: '#',
-          target: '_self'
-        },
-        {
-          text: 'Blade UPS (12-60 kW)',
-          link: '#',
-          target: '_self'
-        },
-        {
-          text: 'Blade UPS (12-60 kW)',
-          link: '#',
-          target: '_self'
-        },
-        {
-          text: 'Blade UPS (12-60 kW)',
-          link: '#',
-          target: '_self'
-        },
-        {
-          text: 'Blade UPS (12-60 kW)',
-          link: '#',
-          target: '_self'
-        },
-        {
-          text: 'Blade UPS (12-60 kW)',
-          link: '#',
-          target: '_self'
-        },
-        {
-          text: 'Blade UPS (12-60 kW)',
-          link: '#',
-          target: '_self'
-        },
-        {
-          text: 'Blade UPS (12-60 kW)',
-          link: '#',
-          target: '_self'
-        },
-        {
-          text: 'Blade UPS (12-60 kW)',
-          link: '#',
-          target: '_self'
-        },
-        {
-          text: 'Blade UPS (12-60 kW)',
-          link: '#',
-          target: '_self'
-        }
-      ]
+      titlelink: '#',
+      titletarget: '_blank'
     },
     {
       title: 'Data center & facility UPS',
