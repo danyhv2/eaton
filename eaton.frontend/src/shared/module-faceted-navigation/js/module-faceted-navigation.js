@@ -69,12 +69,19 @@ App.facets = (function() {
   const sortBy = () => {
   	let $ddul = $('.styledDropdown dd ul');
   	const $source = $('.faceted-navigation-header__sort-options select');
+  	const $links = $('.faceted-navigation-header__sort-options .styledDropdown dt a');
 
   	createDropDown();
 
     $('.faceted-navigation-header__sort-options .styledDropdown dt a').click(function(e) {
     	e.preventDefault();
     	$('.styledDropdown dd ul').toggle();
+    });
+
+    $('.faceted-navigation-header__sort-options .styledDropdown dt a,.faceted-navigation-header__sort-options .styledDropdown dd a').on('focus', function() {
+    	$(this).css('text-decoration','underline');
+    }).on('blur',function() {
+    	$(this).css('text-decoration','none');
     });
 
     $(document).bind('click', function(e) {

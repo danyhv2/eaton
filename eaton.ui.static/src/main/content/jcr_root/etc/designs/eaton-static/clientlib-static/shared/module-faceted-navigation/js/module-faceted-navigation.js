@@ -82,12 +82,19 @@ App.facets = function () {
   var sortBy = function sortBy() {
     var $ddul = $('.styledDropdown dd ul');
     var $source = $('.faceted-navigation-header__sort-options select');
+    var $links = $('.faceted-navigation-header__sort-options .styledDropdown dt a');
 
     createDropDown();
 
     $('.faceted-navigation-header__sort-options .styledDropdown dt a').click(function (e) {
       e.preventDefault();
       $('.styledDropdown dd ul').toggle();
+    });
+
+    $('.faceted-navigation-header__sort-options .styledDropdown dt a,.faceted-navigation-header__sort-options .styledDropdown dd a').on('focus', function () {
+      $(this).css('text-decoration', 'underline');
+    }).on('blur', function () {
+      $(this).css('text-decoration', 'none');
     });
 
     $(document).bind('click', function (e) {
