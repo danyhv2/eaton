@@ -32,14 +32,13 @@ App.search = function () {
 
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
-  var componentExists = $componentElement.length > 0;
 
   /**
   * Init
   */
   var init = function init() {
     // If not in AEM Author Mode & component exists on page - initialize scripts
-    if (!isAEMAuthorMode && componentExists) {
+    if (!isAEMAuthorMode) {
       console.log('Initialize Search');
       addEventListeners();
     }
@@ -58,9 +57,9 @@ App.search = function () {
   var handleInputBehavior = function handleInputBehavior(event) {
 
     // Check if the #of characters in the inputBox exceeds characterLimit - 3
-    if ($(event.target).val().length >= 3) {
+    if (event.target.value.length >= 3) {
       // Request Search Results - AJAX
-      getSearchResults(event);
+      getSearchResults(event, event.target.value);
     } else {
       // Empty the contents of the result-list
       $searchResultContainer.html('');
@@ -70,12 +69,16 @@ App.search = function () {
   /**
   * Load Predictive Search Results - AJAX
   */
-  var getSearchResults = function getSearchResults(event) {
+  var getSearchResults = function getSearchResults(event, term) {
 
     // Get the closest search component to avoid conflicts when multiple search elements on page
     var $activeSearchComponent = $(event.currentTarget).closest(componentClass);
     var searchResultsURL = $activeSearchComponent.attr('data-predictive-search');
-    var requestOptions = { format: 'json' };
+    var requestOptions = {
+      searchTerm: term,
+      format: 'json'
+    };
+
     var searchResultsList = '';
     var ajaxReq = '';
 
@@ -84,6 +87,7 @@ App.search = function () {
       return;
     }
 
+    // Requests Static JSON file. To be replaced by service URL in final implementation
     ajaxReq = $.getJSON(searchResultsURL, requestOptions);
 
     ajaxReq

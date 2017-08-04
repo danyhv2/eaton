@@ -21,7 +21,8 @@
   .header-utility-nav .icon.icon-globe { margin-right: 5px; }
   .nav-open .header-utility-nav { opacity: 1; visibility: visible; } }
 
-@media screen and (min-width: 992px) { .header-utility-nav__row { padding: 0 15px; }
+@media screen and (min-width: 992px) { .header-utility-nav { position: relative; z-index: 12; }
+  .header-utility-nav__row { padding: 0 15px; }
   .header-utility-nav__toggle-selector { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
   .header-utility-nav .icon { margin-right: 5px; } }
 
