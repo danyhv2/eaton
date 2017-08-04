@@ -8,23 +8,70 @@ use(function () {
         {
             "anchorTitle": "Electrical Input",
             "anchorId": "electrical-input",
-            "content": {
-
-            }
+            "content": [
+                {
+                    title: 'Aerospace Warranty',
+                    description: 'White Paper Addresses Protection for the IE3 Revolution',
+                    type: 'PDF',
+                    size: '2MB',
+                    url: '#link-to-pdf',
+                    date: '5/17/17',
+                    isNew: true
+                },
+                {
+                    title: 'Product Name',
+                    description: 'White Paper Addresses Protection for the IE3 Revolution',
+                    type: 'PDF',
+                    size: '2MB',
+                    url: '#link-to-pdf',
+                    date: '5/17/17',
+                    isNew: true
+                },
+                {
+                    title: 'Product Manual',
+                    description: 'White Paper Addresses Protection for the IE3 Revolution',
+                    type: 'PDF',
+                    size: '2MB',
+                    url: '#link-to-pdf',
+                    date: '5/17/17',
+                    isNew: false
+                },
+                {
+                    title: 'Product Name Warranty',
+                    description: 'White Paper Addresses Protection for the IE3 Revolution',
+                    type: 'PDF',
+                    size: '2MB',
+                    url: '#link-to-pdf',
+                    date: '5/17/17',
+                    isNew: false
+                }
+            ]
         },
         {
             "anchorTitle": "Electrical Output",
             "anchorId": "electrical-output",
-            "content": {
-
-            }
+            "content": [
+                {
+                    title: 'Aerospace Warranty',
+                    description: 'White Paper Addresses Protection for the IE3 Revolution',
+                    type: 'PDF',
+                    size: '2MB',
+                    url: '#link-to-pdf'
+                },
+            ]
         },
         {
             "anchorTitle": "Battery",
             "anchorId": "battery",
-            "content": {
-
-            }
+            "content": [
+                {
+                    title: 'Aerospace Warranty',
+                    description: 'White Paper Addresses Protection for the IE3 Revolution',
+                    type: 'PDF',
+                    size: '2MB',
+                    url: '#link-to-pdf'
+                },
+            ]
         },
         {
             "anchorTitle": "Communications",

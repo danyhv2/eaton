@@ -1,7 +1,7 @@
-<div class="eaton-topic-link-white" data-sly-use.data="${'../data/view-topic-link-white-data.js' @testdata=properties.testdata}">
-  <sly data-sly-test="${data.ctaText}">
-    <div class="container">
-  </sly>
+<div class="eaton-topic-link-white ${data.ctaText ? '' : 'no-cta'}" data-sly-use.data="${'../data/view-topic-link-white-data.js' @testdata=properties.testdata}">
+
+    <div class="container ${data.ctaText ? '' : 'no-cta'}">
+
     <div class="eaton-topic-link-white__icon" data-sly-test=${data.icon}>
       <img src="${data.icon}" alt="" aria-hidden="true">
     </div>
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-  <sly data-sly-test="${data.ctaText}">
+
     </div>
-  </sly>
+
 </div>

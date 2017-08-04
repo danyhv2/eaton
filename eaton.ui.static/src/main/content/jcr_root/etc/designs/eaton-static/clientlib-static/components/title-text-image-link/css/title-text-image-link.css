@@ -114,6 +114,10 @@
 
 .eaton-topic-link-white { overflow: hidden; padding: 40px 0; }
 
+.eaton-topic-link-white.no-cta { padding: 0; }
+
+.eaton-topic-link-white.no-cta .container { width: 100%; padding: 0; }
+
 .eaton-topic-link-white__icon { width: 100%; margin-bottom: 30px; }
 
 .eaton-topic-link-white__icon img { width: 60px; height: auto; }

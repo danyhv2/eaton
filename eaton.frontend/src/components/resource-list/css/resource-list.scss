@@ -1,0 +1,36 @@
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.secondary-content-accordion{
+
+  position: relative;
+  
+  &__header {
+    padding-left: 0;
+  }
+
+  &__panel {
+    border-bottom: 4px solid $color__secondary-gray5;
+  }
+
+  &__badge {
+    background-color: $color__accent-orange;
+    color: $color__white;
+    padding: 6px 10px;
+    font-size: 1.125rem;
+    bottom: 7px;
+    position: relative;
+    left: 10px;
+  }
+
+  &__body {
+    padding-bottom: 50px;
+  }
+
+  &__icons {
+    position: absolute;
+    right: 0;
+    color: $color__primary-blue;
+    font-size: 2.25rem;
+  }
+}
