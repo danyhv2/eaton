@@ -138,7 +138,8 @@ App.header = (function() {
 
     // Reset search inputBox
     bodyEl.find('.eaton-search input').val('');
-    bodyEl.find('.eaton-search__result-list').html('');
+    bodyEl.find('.eaton-search--default__result-list').html('');
+    bodyEl.find('.eaton-search--default__results').removeClass('active');
   };
 
   /**

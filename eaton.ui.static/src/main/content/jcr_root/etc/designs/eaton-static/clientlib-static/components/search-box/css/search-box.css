@@ -22,6 +22,12 @@
 
 .eaton-search--default__form-submit { color: #FFF; background: transparent; padding: 10px 20px; }
 
+.eaton-search--default__results { padding: 30px 0; display: none; }
+
+.eaton-search--default__results.active { display: block; }
+
+.eaton-search--default__result-list { margin: 0; padding: 0; }
+
 .dark-theme .eaton-search--default { background: #333F48; }
 
 .eaton-search--default ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #FFF; }

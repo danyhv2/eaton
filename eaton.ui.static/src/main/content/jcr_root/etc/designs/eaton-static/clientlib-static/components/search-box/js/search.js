@@ -28,7 +28,8 @@ App.search = function () {
   var componentClass = '.eaton-search';
   var $componentElement = $(componentClass);
   var $searchInputEl = $componentElement.find('.eaton-search--default__form-input');
-  var $searchResultContainer = $componentElement.find('.eaton-search__result-list');
+  var $searchResultContainer = $componentElement.find('.eaton-search--default__results');
+  var $searchResultList = $searchResultContainer.find('.eaton-search--default__result-list');
 
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -62,7 +63,8 @@ App.search = function () {
       getSearchResults(event, event.target.value);
     } else {
       // Empty the contents of the result-list
-      $searchResultContainer.html('');
+      $searchResultContainer.removeClass('active');
+      $searchResultList.html('');
     }
   };
 
@@ -102,7 +104,8 @@ App.search = function () {
       });
 
       // Replace the contents of the list with the AJAX results
-      $searchResultContainer.html(searchResultsList);
+      $searchResultList.html(searchResultsList);
+      $searchResultContainer.addClass('active');
     })
 
     // Callback for Failed Request

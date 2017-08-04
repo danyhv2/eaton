@@ -30,6 +30,20 @@
     padding: 10px 20px;
   }
 
+  &__results {
+    padding: $spacing__sm 0;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__result-list {
+    margin: 0;
+    padding: 0;
+  }
+
   .dark-theme & {
     background: $color__primary-gray1;
   }
