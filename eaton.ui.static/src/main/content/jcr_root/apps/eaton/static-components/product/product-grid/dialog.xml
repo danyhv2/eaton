@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
   jcr:primaryType="cq:Dialog"
-  title="Choose a view"
   xtype="dialog">
   <items
     jcr:primaryType="cq:Widget"
@@ -9,27 +8,28 @@
     <items jcr:primaryType="cq:WidgetCollection">
       <tab1
         jcr:primaryType="cq:Panel"
-        title="Choose a view">
+        title="Component Properties - Classic UI"
+        xtype="panel">
         <items jcr:primaryType="cq:WidgetCollection">
           <view
             jcr:primaryType="cq:Widget"
             allowBlank="false"
-            defaultValue="links-navigation"
-            fieldDescription="Choose a view"
+            defaultValue="product-card-sku"
+            fieldDescription="Determine which variation of component to view"
             fieldLabel="View"
             fieldSubLabel=""
             name="./view"
             type="select"
             xtype="selection">
             <options jcr:primaryType="cq:WidgetCollection">
-              <links-navigation
+              <product-card-sku
                 jcr:primaryType="nt:unstructured"
-                text="Links Navigation"
-                value="links-navigation"/>
-              <toggle-graphic
+                text="Product Card: SKU"
+                value="product-card-sku"/>
+              <product-card-family
                 jcr:primaryType="nt:unstructured"
-                text="Toggle Graphic"
-                value="toggle-graphic"/>
+                text="Product Card: Family"
+                value="product-card-family"/>
             </options>
           </view>
         </items>

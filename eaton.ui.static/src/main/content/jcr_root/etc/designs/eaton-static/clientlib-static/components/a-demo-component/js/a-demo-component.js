@@ -47,7 +47,7 @@ App.demoComponent = function () {
     if (window.matchMedia) {
 
       // min-width 992px
-      mqDesktop = window.matchMedia(App.global.constants.MEDIA_QUERIES.DESKTOP),
+      mqDesktop = window.matchMedia(App.global.constants.MEDIA_QUERIES.DESKTOP);
 
       // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
       mqDesktop.addListener(onBreakpointChange);

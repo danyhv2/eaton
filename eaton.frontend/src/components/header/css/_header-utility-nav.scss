@@ -95,6 +95,9 @@
   // ----------------------------
 
   @include media-desktop-and-up {
+    position: relative;
+    z-index: 12;
+    
     &__row {
       padding: 0 15px;
     }

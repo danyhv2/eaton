@@ -22,6 +22,18 @@
 
 .eaton-search--default__form-submit { color: #FFF; background: transparent; padding: 10px 20px; }
 
+.eaton-search--default__results { padding: 30px 0 6px; display: none; }
+
+.eaton-search--default__results.active { display: block; }
+
+.eaton-search--default__result-list { margin: 0; padding: 0; }
+
+.eaton-search--default__result-item a { display: block; padding: 10px 0; color: #FFF; }
+
+.eaton-search--default__result-item a:hover, .eaton-search--default__result-item a:focus { color: #FFF; }
+
+.eaton-search--default__highlight-text { font-weight: bold; }
+
 .dark-theme .eaton-search--default { background: #333F48; }
 
 .eaton-search--default ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #FFF; }
@@ -35,11 +47,13 @@
 @media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1em; }
   .eaton-search--default__form-submit { padding-right: 0; }
   .eaton-search--default .icon-search { font-size: 1.25em; }
-  .search-open .eaton-search--default { height: 100%; } }
+  .eaton-search--default__result-item { font-size: 1em; }
+  .search-open .eaton-search--default { height: 100%; overflow-y: auto; } }
 
 @media screen and (min-width: 992px) { .eaton-search--default__form-input, .eaton-search--default .icon-search { font-size: 1.5em; left: 10px; }
   .eaton-header--fixed .eaton-search--default__form-input, .eaton-header--fixed .eaton-search--default .icon-search { left: 0; }
-  .eaton-header--fixed .eaton-search--default__form-submit { padding-right: 0; } }
+  .eaton-header--fixed .eaton-search--default__form-submit { padding-right: 0; }
+  .eaton-search--default__result-item { font-size: 1.5em; } }
 
 .eaton-search-box { background-color: #005EB8; padding: 30px; }
 

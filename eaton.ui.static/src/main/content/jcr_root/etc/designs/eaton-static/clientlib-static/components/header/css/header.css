@@ -21,7 +21,8 @@
   .header-utility-nav .icon.icon-globe { margin-right: 5px; }
   .nav-open .header-utility-nav { opacity: 1; visibility: visible; } }
 
-@media screen and (min-width: 992px) { .header-utility-nav__row { padding: 0 15px; }
+@media screen and (min-width: 992px) { .header-utility-nav { position: relative; z-index: 12; }
+  .header-utility-nav__row { padding: 0 15px; }
   .header-utility-nav__toggle-selector { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
   .header-utility-nav .icon { margin-right: 5px; } }
 
@@ -54,7 +55,7 @@
 
 @media screen and (max-width: 991px) { .header-search { position: fixed; top: 56px; bottom: 0; width: 100%; z-index: 10; } }
 
-@media screen and (min-width: 992px) { .header-search { position: absolute; z-index: 10; } }
+@media screen and (min-width: 992px) { .header-search { position: absolute; z-index: 10; -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.45); box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.45); } }
 
 .eaton-header { position: relative; z-index: 30; }
 

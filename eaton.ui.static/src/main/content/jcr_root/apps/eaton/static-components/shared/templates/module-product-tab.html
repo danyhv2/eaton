@@ -1,5 +1,6 @@
 <!--/* BEGIN M-40 Product Tabs (Family/SKU) */ -->
 <template data-sly-template.data="${ @ data }">
+
   <div class="eaton-product-tabs ${ data.useDarktheme ? 'dark-theme' : '' }" >
     <div class="container">
       <sly data-sly-test="${ data.graphicToggle }" >
@@ -86,9 +87,9 @@
         <sly data-sly-resource="${'live-chat' @ resourceType='/apps/eaton/static-components/product/live-chat-cta'}"></sly>
       </div>
 
-      <div class="row">
+      <sly data-sly-test="${ data.graphicToggle }">
         <!-- graphic toggle use 3 panels that are hide/show via css -->
-        <sly data-sly-test="${ data.graphicToggle }" >
+        <div class="row">
           <div
             class="col-sm-12 eaton-product-tabs__tab-panel"
             data-tab-name="tab-0" >
@@ -113,9 +114,8 @@
             </sly>
             <sly data-sly-resource="${'content-tab-2' @ resourceType='wcm/foundation/components/parsys'}"></sly>
           </div>
-        </sly>
-
-      </div>
+        </div>
+      </sly>
     </div>
   </div>
 </template>

@@ -69,14 +69,14 @@ App.resultsList = function () {
 
   // SKU Card Template
   //--------------
-  templates.skuCard = function (data) {
+  templates.productCard = function (data) {
     return '\n      <div class="product-card-sku">\n\n        <div class="product-card-sku__image-wrapper b-body-copy-small">\n          <a href="' + data.contentItem.link.url + '"\n            class="product-card-sku__image-link"\n            target="' + data.contentItem.link.target + '"\n          >\n            <img src="' + data.contentItem.imgSrc + '"\n              class="product-card-sku__image"\n              alt="' + data.contentItem.name + '" />\n          </a>\n        </div>\n\n        <div class="product-card-sku__header">\n\n          <div class="product-card-sku__title-wrapper">\n            <h3 class="product-card-sku__name">\n              <a href="' + data.contentItem.link.url + '"\n                target="' + data.contentItem.link.target + '"\n                class="product-card-sku__url-link"\n              >\n                <span class="name-label">' + data.contentItem.name + '</span>\n                <i class="icon icon-chevron-right" aria-hidden="true"></i>\n              </a>\n            </h3>\n            <div class="product-card-sku__price b-body-copy">' + data.contentItem.price + '*</div>\n          </div>\n\n          <ul class="product-card-sku__links-list">\n            <li class="product-card-sku__link-item">\n              <a href="' + data.contentItem.productLinks.specificationsURL + '"\n                class="product-card-sku__link-item-link"\n                target="_self"\n                aria-label="Go to Specifications"\n              >\n                <span class="link-label">Specifications</span>\n                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>\n              </a>\n            </li>\n\n            <li class="product-card-sku__link-item">\n              <a href="' + data.contentItem.productLinks.resourcesURL + '"\n                class="product-card-sku__link-item-link"\n                target="_self"\n                aria-label="Go to Resources"\n              >\n                <span class="link-label">Resources</span>\n                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>\n              </a>\n            </li>\n          </ul>\n\n        </div>\n\n        <div class="product-card-sku__content">\n          <div class="product-card-sku__attrs-list">\n\n            ' + data.contentItem.productAttributes.map(function (attribute) {
       return '<div class="product-card-sku__attrs-list-item">\n                  <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">' + attribute.label + '</div>\n                  <div class="product-card-sku__attr-value b-body-copy">' + attribute.value + '</div>\n                </div>';
     }).join('') + '\n\n          </div>\n          <div class="product-card-sku__description">' + data.contentItem.description + '</div>\n        </div>\n\n      </div>';
   };
 
   /**
-  * Fetch More results and add them to the DOM
+  * Fetch the next page of results and add them to the DOM
   * @param { Object } event - Click Event Object
   */
   var fetchMoreResults = function fetchMoreResults(event) {
@@ -85,7 +85,7 @@ App.resultsList = function () {
     var requestURL = $currentComponent.attr('data-results-url');
     var requestNextPage = $currentComponent.attr('data-results-next-page');
 
-    // If the Request URL doesn't exists dont proceed
+    // If the Request URL doesn't exists don't proceed
     if (!requestURL) {
       return;
     }
@@ -107,7 +107,7 @@ App.resultsList = function () {
       // Loop over all result items
       search.results.forEach(function (data, index) {
 
-        // Based on the Content Type, use Right Template and Passing the received data
+        // Based on the Content Type, use the appropiate Template passing the received data
         //--------------
         if (data.contentType === 'family' || data.contentType === 'sku') {
           newElements += templates.family(data);
@@ -115,8 +115,8 @@ App.resultsList = function () {
           newElements += templates.article(data);
         } else if (data.contentType === 'resource') {
           newElements += templates.resource(data);
-        } else if (data.contentType === 'sku-card') {
-          newElements += templates.skuCard(data);
+        } else if (data.contentType === 'product-card') {
+          newElements += templates.productCard(data);
         }
       });
 
