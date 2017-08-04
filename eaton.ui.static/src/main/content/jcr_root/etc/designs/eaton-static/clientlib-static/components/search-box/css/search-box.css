@@ -26,7 +26,7 @@
 
 .eaton-search--default__results.active { display: block; }
 
-.eaton-search--default__result-list { margin: 0; padding: 0; }
+.eaton-search--default__result-list { margin: 0; padding: 0; list-style-type: none; }
 
 .eaton-search--default__result-item a { display: block; padding: 10px 0; color: #FFF; }
 
