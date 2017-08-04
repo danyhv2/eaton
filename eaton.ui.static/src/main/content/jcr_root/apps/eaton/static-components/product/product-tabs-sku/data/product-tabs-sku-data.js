@@ -30,9 +30,9 @@ use(function () {
         selected: true
       },
       {
-        icon: 'tiles',
-        title: 'Models',
-        href: '#models',
+        icon: 'list-items',
+        title: 'Specifications',
+        href: '#specifications',
         target: '_blank',
         selected: false
       },
