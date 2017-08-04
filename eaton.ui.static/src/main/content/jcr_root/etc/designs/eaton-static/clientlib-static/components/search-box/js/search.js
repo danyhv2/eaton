@@ -96,7 +96,9 @@ App.search = function () {
 
       // Loop over all result items
       $.each(data.results, function (index, item) {
-        searchResultsList += linkTemplate(item);
+        var regX = new RegExp(term, 'ig');
+        var linkTemplateText = linkTemplate(item);
+        searchResultsList += linkTemplateText.replace(regX, '<span class="eaton-search__highlight-text">' + term + '</span>');
       });
 
       // Replace the contents of the list with the AJAX results
