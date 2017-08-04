@@ -32,6 +32,8 @@ App.global.utils = function () {
   //   ? true
   //   : false;
 
+  localStorage.setItem('backToSearch', 'false');
+
   var isAEMClassicUI = window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode() ? true : false;
 
   /**

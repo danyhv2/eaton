@@ -15,6 +15,8 @@ App.global.utils = (function() {
   //   ? true
   //   : false;
 
+  localStorage.setItem('backToSearch','false');
+
   const isAEMClassicUI = ( window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode() )
     ? true
     : false;
@@ -38,7 +40,6 @@ App.global.utils = (function() {
   function isAEMAuthorMode() {
     return (isAEMClassicUI) ? true : false;
   }
-
 
 
   /**

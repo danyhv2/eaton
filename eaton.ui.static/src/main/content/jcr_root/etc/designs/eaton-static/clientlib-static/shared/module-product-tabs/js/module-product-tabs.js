@@ -41,7 +41,8 @@ App.productTabs = function () {
 
     $(window).on('scroll', function (event) {
       var scrollTop = $(window).scrollTop();
-      var scrollOffset = 150;
+      var isMobile = $(window).innerWidth() < 991; // based on window width
+      var scrollOffset = isMobile ? 142 : 40;
       var componentFixedClass = 'eaton-product-tabs--fixed';
       var buttonsClass = '.eaton-product-tabs__buttons';
       var shouldBeFixed = scrollTop > scrollOffset;
