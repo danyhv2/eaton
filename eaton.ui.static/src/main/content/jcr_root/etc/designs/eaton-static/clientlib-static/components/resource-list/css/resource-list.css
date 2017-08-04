@@ -1,0 +1,11 @@
+.secondary-content-accordion { position: relative; }
+
+.secondary-content-accordion__header { padding-left: 0; }
+
+.secondary-content-accordion__panel { border-bottom: 4px solid #EEF0F2; }
+
+.secondary-content-accordion__badge { background-color: #ED8B00; color: #FFF; padding: 6px 10px; font-size: 1.125rem; bottom: 7px; position: relative; left: 10px; }
+
+.secondary-content-accordion__body { padding-bottom: 50px; }
+
+.secondary-content-accordion__icons { position: absolute; right: 0; color: #005EB8; font-size: 2.25rem; }
