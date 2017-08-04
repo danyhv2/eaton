@@ -14,7 +14,7 @@
           <view
             jcr:primaryType="cq:Widget"
             allowBlank="false"
-            defaultValue="toggle-graphic"
+            defaultValue="links-navigation"
             fieldDescription="Choose a view"
             fieldLabel="View"
             fieldSubLabel=""
@@ -22,14 +22,14 @@
             type="select"
             xtype="selection">
             <options jcr:primaryType="cq:WidgetCollection">
-              <toggle-graphic
-                jcr:primaryType="nt:unstructured"
-                text="Toggle Graphic"
-                value="toggle-graphic"/>
               <links-navigation
                 jcr:primaryType="nt:unstructured"
                 text="Links Navigation"
                 value="links-navigation"/>
+              <toggle-graphic
+                jcr:primaryType="nt:unstructured"
+                text="Toggle Graphic"
+                value="toggle-graphic"/>
             </options>
           </view>
         </items>
