@@ -16,6 +16,8 @@ App.facets = (function() {
   	$(function() {
   		addEventListeners();
     	sortBy();
+
+    	localStorage.setItem('backToSearch','true');
   	});
   };
 
