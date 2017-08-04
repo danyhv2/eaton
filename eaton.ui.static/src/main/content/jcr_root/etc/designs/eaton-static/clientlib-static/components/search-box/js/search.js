@@ -65,13 +65,15 @@ App.search = function () {
   var handleInputBehavior = function handleInputBehavior(event) {
 
     // Check if the #of characters in the inputBox exceeds characterLimit - 3
+    var $activeSearchComponent = $(event.currentTarget).closest(componentClass);
+
     if (event.target.value.length >= 3) {
       // Request Search Results - AJAX
       getSearchResults(event, event.target.value);
     } else {
       // Empty the contents of the result-list
-      $searchResultContainer.removeClass('active');
-      $searchResultList.html('');
+      $activeSearchComponent.find('.eaton-search--default__results').removeClass('active');
+      $activeSearchComponent.find('.eaton-search--default__result-list').html('');
     }
   };
 
@@ -109,8 +111,8 @@ App.search = function () {
       });
 
       // Replace the contents of the list with the AJAX results
-      $searchResultList.html(resultList);
-      $searchResultContainer.addClass('active');
+      $activeSearchComponent.find('.eaton-search--default__result-list').html(resultList);
+      $activeSearchComponent.find('.eaton-search--default__results').addClass('active');
     })
 
     // Callback for Failed Request
