@@ -12,10 +12,10 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="QA-templates"
         sling:resourceType="eaton/static-components/structure/eaton-home-page"/>
-    <t2-primary-landing-template/>
-    <t9-secondary-landing/>
-    <t3-article-template/>
     <t1-homepage-template/>
+    <t2-primary-landing-template/>
+    <t3-article-template/>
+    <t9-secondary-landing/>
     <t7-product-family-template-overview-tab/>
     <t7-product-family-template-models-tab/>
     <t7-product-family-template-resources-tab/>
