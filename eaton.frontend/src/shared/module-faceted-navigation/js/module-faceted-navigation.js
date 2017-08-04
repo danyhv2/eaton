@@ -33,12 +33,10 @@ App.facets = (function() {
     if ($(window).width() < App.global.constants.GRID.MD) {
       mobileFacets();
     }
-
-    // View More Facets Behavior
-    //--------------
-    // Delegate Events on the Parent Component sinces some elements are being cloned with jQuery
-    $componentClass.on('click', '[data-more-facets]', showAllFacetsGroups);
-    $componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
+    else {
+    	$componentClass.on('click', '[data-more-facets]', showAllFacetsGroups);
+    	$componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
+    }
 
     // Facet Behaviors for Mobile & Tablet
     //--------------
@@ -57,9 +55,15 @@ App.facets = (function() {
         mobileEnabled = false;
         $('.faceted-navigation__mobile-facet-container .faceted-navigation').remove();
         $('.faceted-navigation__mobile-facet-container, .faceted-navigation__mobile-facet-container a.b-button, .overlay-mask').remove();
-
+        $componentClass.on('click', '[data-more-facets]', showAllFacetsGroups);
+    	$componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
       }
     });
+    // View More Facets Behavior
+    //--------------
+    // Delegate Events on the Parent Component sinces some elements are being cloned with jQuery
+    $('.faceted-navigation__mobile-facet-container .view-more-facets').on('click', '[data-more-facets]', showAllFacetsGroups);
+    $('.faceted-navigation__mobile-facet-container').on('click', '[data-more-facet-values]', showAllFacetsValues);
   };
 
   const sortBy = () => {
@@ -120,7 +124,6 @@ App.facets = (function() {
     if (mobileEnabled === false) {
       let temp = $componentClass.parent().parent();
       let winHeight = $(document).innerHeight();
-
       $("<div class='faceted-navigation__mobile-facet-container hidden col-xs-12 col-md-3'></div>").prependTo(temp);
 
       $componentClass.clone(true, true).appendTo('.faceted-navigation__mobile-facet-container').addClass('visible');
@@ -153,6 +156,7 @@ App.facets = (function() {
         $('.mobile-header').removeClass('hidden');
         $(this).addClass('hidden');
         $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
+        $('.search-results').css({position: 'inherit','z-index': '1'});
       });
 
       $('.glyphicon-remove').on('click', function(e) {
@@ -161,16 +165,19 @@ App.facets = (function() {
         $('.faceted-navigation-header').removeClass('hidden');
         $('.faceted-navigation__mobile-facet-container .b-button').removeClass('hidden');
         $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
+        $('.search-results').css('position','relative');
       });
 
       $('.faceted-navigation__mobile-facet-container .faceted-navigation__header').on('click', function(e) {
         e.preventDefault;
         $(this).children('.icon-sign-plus').toggleClass('u-hide');
       });
+      $('.faceted-navigation__view-more-values').on('click', '[data-more-facet-values]', function() {alert('alert');});
     }
     else {
       $('.faceted-navigation__mobile-facet-container').removeClass('hidden');
       $('.faceted-navigation__mobile-facet-container .faceted-navigation').remove();
+      $('.search-results').css('position','relative');
       $componentClass.css('display','none');
     }
   };
