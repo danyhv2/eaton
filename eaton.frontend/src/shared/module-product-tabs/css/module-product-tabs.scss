@@ -207,6 +207,7 @@
     display: inline-block;
     font-family: $font-family__primary-bold;
     font-size: 16px;
+    font-size: 1.6rem;
     height: 57px;
     margin: 40px 0;
     width: 100%;
@@ -311,6 +312,7 @@
   @include media-desktop-and-up {
     &__dropdown {
       font-size: 18px;
+      font-size: 1.8rem;
       font-family: $font-family__secondary;
       font-weight: bold;
     }
