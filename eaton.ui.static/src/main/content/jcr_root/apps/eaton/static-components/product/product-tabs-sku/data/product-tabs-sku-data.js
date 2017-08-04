@@ -18,7 +18,7 @@ use(function () {
     graphicToggle: false,
 
     // SKU use dark teheme
-    useDarktheme: true,
+    useDarktheme: false,
 
     // min 1, max 3 tabs
     tabs: [
