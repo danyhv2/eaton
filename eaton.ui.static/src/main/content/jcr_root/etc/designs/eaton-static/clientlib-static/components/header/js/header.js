@@ -142,12 +142,16 @@ App.header = function () {
   /**
   * Handle Click behaviors - for Search - Desktop & Mobile
   */
-  var openSearch = function openSearch(event) {
+  var handleSearch = function handleSearch(event) {
 
     event.preventDefault();
     closeMegaMenu(event);
 
     bodyEl.toggleClass('search-open');
+
+    // Reset search inputBox
+    bodyEl.find('.eaton-search input').val('');
+    bodyEl.find('.eaton-search__result-list').html('');
   };
 
   /**
@@ -180,7 +184,7 @@ App.header = function () {
     megaMenuTitle.on('click', handleTitleClick);
 
     // Handle click on Search Icon
-    openSearchDropdownBtn.on('click', openSearch);
+    openSearchDropdownBtn.on('click', handleSearch);
   };
 
   /**
