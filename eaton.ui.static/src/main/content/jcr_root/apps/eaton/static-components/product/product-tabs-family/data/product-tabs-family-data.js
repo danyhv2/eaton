@@ -4,7 +4,7 @@ use(function () {
   var data = {};
   var testdata = this.testdata;
 
-  data.default = {
+  data = {
     eyebrowCta:  {
       title: 'NETWORK SERVER STORAGE UPS',
       href: '#take-me-somewhere',
@@ -83,21 +83,21 @@ use(function () {
   };
 
   if ((typeof(testdata) != "undefined") && (testdata == "tab-models")) {
-    data.default.tabs[0].selected = false;
-    data.default.tabs[1].selected = true;
-    data.default.tabs[2].selected = false;
+    data.tabs[0].selected = false;
+    data.tabs[1].selected = true;
+    data.tabs[2].selected = false;
   }
 
   if ((typeof(testdata) != "undefined") && (testdata == "tab-resources")) {
-    data.default.tabs[0].selected = false;
-    data.default.tabs[1].selected = false;
-    data.default.tabs[2].selected = true;
+    data.tabs[0].selected = false;
+    data.tabs[1].selected = false;
+    data.tabs[2].selected = true;
   }
 
-  // View Variation
-  // TODO: Review if the object is being cloned properly
-  data.graphicToggle = data.default;
-  data.graphicToggle.graphicToggle = true;
+  // Alternative View Data
+  if (properties.get('properties.view') == 'toggle-graphic') {
+    data.graphicToggle = true;
+  }
 
   return data;
 
