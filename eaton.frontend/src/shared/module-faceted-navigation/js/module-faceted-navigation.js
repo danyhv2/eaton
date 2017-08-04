@@ -16,6 +16,8 @@ App.facets = (function() {
   	$(function() {
   		addEventListeners();
     	sortBy();
+
+    	localStorage.setItem('backToSearch','true');
   	});
   };
 
@@ -59,11 +61,6 @@ App.facets = (function() {
     	$componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
       }
     });
-    // View More Facets Behavior
-    //--------------
-    // Delegate Events on the Parent Component sinces some elements are being cloned with jQuery
-    $('.faceted-navigation__mobile-facet-container .view-more-facets').on('click', '[data-more-facets]', showAllFacetsGroups);
-    $('.faceted-navigation__mobile-facet-container').on('click', '[data-more-facet-values]', showAllFacetsValues);
   };
 
   const sortBy = () => {
@@ -179,7 +176,18 @@ App.facets = (function() {
         e.preventDefault;
         $(this).children('.icon-sign-plus').toggleClass('u-hide');
       });
-      $('.faceted-navigation__view-more-values').on('click', '[data-more-facet-values]', function() {alert('alert');});
+      // View More Facets Behavior
+    //--------------
+    // Delegate Events on the Parent Component sinces some elements are being cloned with jQuery
+      $('.faceted-navigation__mobile-facet-container .view-more-facets').on('click', function(e) {
+      	e.preventDefault();
+      	$('.faceted-navigation__mobile-facet-container .faceted-navigation__more-facets').slideDown(200);
+
+	    // Hide "View more" <button>
+	    event.currentTarget.classList.add('u-hide');
+      });
+      $('.faceted-navigation__mobile-facet-container').on('click', '[data-more-facet-values]', showAllFacetsValues);
+      // $('.faceted-navigation__mobile-facet-container .view-more-facets').on('click', '[data-more-facets]', function() {alert('alert');});
     }
     else {
       $('.faceted-navigation__mobile-facet-container').removeClass('hidden');
