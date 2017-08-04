@@ -31,10 +31,17 @@ App.search = (function() {
   /**
   * Create Template - Markup for each predictive search result item
   */
-  const linkTemplate = (data) => {
+  const linkTemplate = (data, term) => {
+
+    const regX = new RegExp ('(' + term + ')', 'ig');
+    let linkTitleText = data.title;
+
+    // Search the title for the matched term and wrap it in required markup
+    linkTitleText = linkTitleText.replace(regX, '<strong>$1</strong>');
+
     return `
       <li class="eaton-search--default__result-item">
-        <a href="${ data.link }" target="${ data.target }">${ data.title }</a>
+        <a href="${ data.link }" target="${ data.target }"> ${ linkTitleText } </a>
       </li>`;
   };
 
@@ -67,7 +74,7 @@ App.search = (function() {
       format: 'json'
     };
 
-    let searchResultsList = '';
+    let resultList = '';
     let ajaxReq = '';
 
     // If URL path is configured
@@ -82,13 +89,11 @@ App.search = (function() {
 
         // Loop over all result items
         $.each(data.results, (index, item) => {
-          const regX = new RegExp (term, 'ig');
-          let linkTemplateText = linkTemplate(item);
-          searchResultsList += linkTemplateText.replace (regX, '<span class="eaton-search--default__highlight-text">' + term + '</span>');
+          resultList += linkTemplate(item, term);
         });
 
         // Replace the contents of the list with the AJAX results
-        $searchResultList.html(searchResultsList);
+        $searchResultList.html(resultList);
         $searchResultContainer.addClass('active');
       })
 
