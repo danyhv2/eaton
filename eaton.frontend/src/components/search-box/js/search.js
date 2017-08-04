@@ -33,7 +33,7 @@ App.search = (function() {
   */
   const linkTemplate = (data) => {
     return `
-      <li class="eaton-search__result-item">
+      <li class="eaton-search--default__result-item">
         <a href="${ data.link }" target="${ data.target }">${ data.title }</a>
       </li>`;
   };
@@ -84,7 +84,7 @@ App.search = (function() {
         $.each(data.results, (index, item) => {
           const regX = new RegExp (term, 'ig');
           let linkTemplateText = linkTemplate(item);
-          searchResultsList += linkTemplateText.replace (regX, '<span class="eaton-search__highlight-text">' + term + '</span>');
+          searchResultsList += linkTemplateText.replace (regX, '<span class="eaton-search--default__highlight-text">' + term + '</span>');
         });
 
         // Replace the contents of the list with the AJAX results

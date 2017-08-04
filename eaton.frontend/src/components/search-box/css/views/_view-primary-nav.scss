@@ -31,7 +31,7 @@
   }
 
   &__results {
-    padding: $spacing__sm 0;
+    padding: 30px 0 6px;
     display: none;
 
     &.active {
@@ -42,6 +42,21 @@
   &__result-list {
     margin: 0;
     padding: 0;
+  }
+
+  &__result-item {
+    a {
+      display: block;
+      padding: 10px 0;
+      color: $color__white;
+      &:hover, &:focus {
+        color: $color__white;
+      }
+    }
+  }
+
+  &__highlight-text {
+    font-weight: bold;
   }
 
   .dark-theme & {
@@ -84,6 +99,10 @@
       font-size: 1.25em;
     }
 
+    &__result-item {
+      font-size: 1em;
+    }
+
     .search-open & {
       height: 100%;
     }
@@ -107,6 +126,10 @@
       .eaton-header--fixed & {
         padding-right: 0;
       }
+    }
+
+    &__result-item {
+      font-size: 1.5em;
     }
 
   }

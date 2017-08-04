@@ -49,7 +49,7 @@ App.search = function () {
   * Create Template - Markup for each predictive search result item
   */
   var linkTemplate = function linkTemplate(data) {
-    return '\n      <li class="eaton-search__result-item">\n        <a href="' + data.link + '" target="' + data.target + '">' + data.title + '</a>\n      </li>';
+    return '\n      <li class="eaton-search--default__result-item">\n        <a href="' + data.link + '" target="' + data.target + '">' + data.title + '</a>\n      </li>';
   };
 
   /**
@@ -100,7 +100,7 @@ App.search = function () {
       $.each(data.results, function (index, item) {
         var regX = new RegExp(term, 'ig');
         var linkTemplateText = linkTemplate(item);
-        searchResultsList += linkTemplateText.replace(regX, '<span class="eaton-search__highlight-text">' + term + '</span>');
+        searchResultsList += linkTemplateText.replace(regX, '<span class="eaton-search--default__highlight-text">' + term + '</span>');
       });
 
       // Replace the contents of the list with the AJAX results
