@@ -3,6 +3,18 @@
   overflow: hidden;
   padding: 40px 0;
 
+  &.no-cta {
+
+    padding: 0;
+
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+
   &__icon {
     width: 100%;
     margin-bottom: $spacing__md / 2;
