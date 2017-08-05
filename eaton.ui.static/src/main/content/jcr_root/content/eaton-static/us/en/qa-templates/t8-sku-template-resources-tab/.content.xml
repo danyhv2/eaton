@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-03T19:07:50.287-06:00"
+        cq:lastModified="{Date}2017-08-04T20:09:41.037-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:primaryType="cq:PageContent"
@@ -223,11 +223,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/product/product-tabs-sku"
                 testdata="tab-resources"
-                view="links-navigation">
-                <content-tab-2
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wcm/foundation/components/parsys"/>
-            </product_tabs_sku>
+                view="links-navigation"/>
             <icon_list
                 jcr:created="{Date}2017-08-03T12:32:20.612-06:00"
                 jcr:createdBy="admin"
@@ -244,6 +240,14 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/product/product-support"
                 view="product-support"/>
+            <intra_tab_link
+                jcr:created="{Date}2017-08-04T20:09:34.788-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-04T20:09:41.034-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/general/intra-tab-link"
+                view="default"/>
             <how_to_buy
                 jcr:created="{Date}2017-08-03T15:18:41.511-06:00"
                 jcr:createdBy="admin"
