@@ -39,13 +39,13 @@
                                 <div class="secondary-content-accordion__body">
                                     <ul data-sly-list.document="${item.content}" class="eaton-download-list__links">
                                         <li>
-                                            <a href="${document.url}" class="eaton-download-list__item" aria-label="Download ${document.type} for ${ document.title }">
+                                            <div class="eaton-download-list__item secondary-content-accordion__download-icon">
                                                 <i class="icon icon-download" aria-hidden="true"></i>
                                                 <div class="eaton-download-list__document">
-                                                    <span class="eaton-download-list__title">${document.title}<span data-sly-test="${document.isNew}" class="secondary-content-accordion__badge">NEW</span></span>
-                                                    <span class="eaton-download-list__size">(${document.type} ${document.size}, ${document.date})</span>
+                                                    <a href="${document.url}" aria-label="Download ${document.type} for ${ document.title }" class="b-h5-link">${document.title}<span data-sly-test="${document.isNew}" class="secondary-content-accordion__badge">NEW</span></a>
+                                                    <span class="b-body-copy-small eaton-download-list__size">(${document.type} ${document.size}, ${document.date})</span>
                                                 </div>
-                                            </a>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>

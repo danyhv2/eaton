@@ -134,6 +134,12 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 992px) { .b-h4-link { font-size: 1.625em; } }
 
+.b-h5-link { font-size: 2.5rem; font-family: Arial, "Arial", sans-serif; color: #005EB8; font-weight: bold; }
+
+.b-h5-link:focus, .b-h5-link:active { text-decoration: none; color: #005EB8; }
+
+@media screen and (min-width: 992px) { .b-h5-link { font-size: 1.625rem; } }
+
 .b-small-link { font-family: Arial, "Arial", sans-serif; color: #005EB8; font-size: 1.125em; }
 
 .b-small-link:hover, .b-small-link:focus, .b-small-link:active { text-decoration: none; color: #005EB8; }
@@ -144,7 +150,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 992px) { .b-body-copy { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
 
-.b-body-copy-small { font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
+.b-body-copy-small { color: #333F48; font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
 
 .b-body-copy-small a { color: #005EB8; }
 
