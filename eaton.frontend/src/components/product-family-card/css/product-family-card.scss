@@ -1,0 +1,11 @@
+//-----------------------------------
+// EATON-109: Product Family Card
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.product-family-card {
+  border-top: 4px solid $color__primary-blue;
+}
