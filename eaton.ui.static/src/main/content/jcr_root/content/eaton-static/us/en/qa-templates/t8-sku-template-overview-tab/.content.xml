@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-04T19:28:01.804-06:00"
+        cq:lastModified="{Date}2017-08-04T22:57:06.945-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:primaryType="cq:PageContent"
@@ -223,6 +223,14 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/product/product-tabs-sku"
                 view="links-navigation"/>
+            <upsell_products
+                jcr:created="{Date}2017-08-04T22:57:03.375-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-04T22:57:06.943-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/product/upsell-products"
+                view="upsell-products"/>
             <intra_tab_link
                 jcr:created="{Date}2017-08-04T19:27:56.578-06:00"
                 jcr:createdBy="admin"
@@ -238,20 +246,10 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/how-to-buy"/>
-            <title
-                jcr:created="{Date}2017-08-03T12:36:35.803-06:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2017-08-03T12:37:10.516-06:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/general/title"
-                testdata="related-products"
-                toggleInnerGrid="true"
-                view="default"/>
             <list
-                jcr:created="{Date}2017-08-03T12:36:45.349-06:00"
+                jcr:created="{Date}2017-08-04T22:56:31.916-06:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2017-08-03T19:05:57.019-06:00"
+                jcr:lastModified="{Date}2017-08-04T22:56:43.280-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/list"

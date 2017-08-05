@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-04T20:09:41.037-06:00"
+        cq:lastModified="{Date}2017-08-04T22:05:53.193-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:primaryType="cq:PageContent"
@@ -232,6 +232,14 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/icon-list"
                 view="top-list-with-icon"/>
+            <resource_list
+                jcr:created="{Date}2017-08-04T22:05:46.384-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-04T22:05:53.191-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/product/resource-list"
+                view="pdh"/>
             <product_support
                 jcr:created="{Date}2017-08-03T12:33:05.612-06:00"
                 jcr:createdBy="admin"
