@@ -1,0 +1,24 @@
+<!--/* EATON-109: Product Family Card */-->
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Family Card Component</div>
+</sly>
+
+
+<sly data-sly-use.viewData="${ '../data/product-family-card-data.js' @testdata=properties.testdata }">
+
+  <div class="product-family-card">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8"> Text </div>
+        <div class="col-xs-12 col-md-4"> Image </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12"> CTA and Links </div>
+      </div>
+    </div>
+  </div>
+
+</sly>
