@@ -17,7 +17,8 @@ use(function () {
 	    data.form = {
 	      'placeholder': 'Search products, parts, documentations, support, etc',
 	      'submitLabel': 'Search',
-        'searchResultsPath': 'http://sr_dev.eaton.com'
+        'searchResultsPath': 'http://sr_dev.eaton.com',
+        'isExternal': true
 	    };
       data.searchUrl = '/content/eaton-static/us/en/qa-templates/test-data/eaton-search-term--predictive-search.json';
     }

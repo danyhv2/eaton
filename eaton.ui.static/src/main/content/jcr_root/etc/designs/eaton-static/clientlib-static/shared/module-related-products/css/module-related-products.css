@@ -4,9 +4,11 @@
 
 .slick-carousel__dots li { display: inline; padding-right: 10px; }
 
-.slick-carousel__dots button { height: 10px; width: 10px; border: 10px; line-height: 0; display: inline; padding: 5px; cursor: pointer; color: transparent; border-radius: 10px; }
+.slick-carousel__dots button { height: 10px; width: 10px; border: 10px; line-height: 0; display: inline; padding: 5px; cursor: pointer; color: transparent; border-radius: 10px; background-color: #EEF0F2; }
 
-.slick-carousel__arrows { position: absolute; top: 28%; color: #CCD2D7; display: none !important; }
+.slick-carousel__arrows { position: absolute; top: 25%; color: #CCD2D7; display: none !important; }
+
+.slick-carousel__arrows .icon { font-size: 37px; }
 
 .slick-carousel__prev-arrow { left: 42px; }
 

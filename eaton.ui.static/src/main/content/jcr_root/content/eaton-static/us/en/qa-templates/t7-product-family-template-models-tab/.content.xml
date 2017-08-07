@@ -211,6 +211,19 @@
                     testdata="default"
                     view="vertical"/>
             </mega-menu>
+            <header-links
+                jcr:lastModified="{Date}2017-08-07T22:41:29.649Z"
+                jcr:lastModifiedBy="etn-supriya"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/link-list"
+                view="primary-nav"/>
+            <primary-nav-search
+                jcr:lastModified="{Date}2017-08-07T22:45:02.140Z"
+                jcr:lastModifiedBy="etn-supriya"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/search-box"
+                testdata="primary-nav-search"
+                view="default"/>
         </eaton-header>
         <par
             jcr:primaryType="nt:unstructured"
@@ -255,7 +268,7 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/search-box"
-                view="search-box"/>
+                view="default"/>
             <title
                 jcr:created="{Date}2017-08-03T12:36:35.803-06:00"
                 jcr:createdBy="admin"

@@ -38,6 +38,7 @@
 
                             </div>
                             <div id="collapse-${itemList.index}" class="panel-collapse collapse ${itemList.index == 0 ? 'in' : ''}" role="tabpanel" aria-labelledby="${item.anchorId}">
+                                <p class="b-body-copy">${item.description}</p>
                                 <div class="secondary-content-accordion__body" data-sly-list.content="${item.content}">
                                     <ul data-sly-list.document="${content.documents}" class="eaton-download-list__links secondary-content-accordion__column">
                                         <li class="eaton-download-list__item secondary-content-accordion__download-icon">

@@ -8,6 +8,7 @@ use(function () {
         {
             "anchorTitle": "Product Literature",
             "anchorId": "product-literature",
+            "description": "",
             "content": [
                 {
                     documents: [
@@ -62,6 +63,7 @@ use(function () {
         {
             "anchorTitle": "Manuals",
             "anchorId": "manuals",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit massa nisl, at tincidunt urna tempus vel.",
             "content": [
                 {
                     documents: [
@@ -117,6 +119,7 @@ use(function () {
         {
             "anchorTitle": "Warranty, service agreement, terms and conditions",
             "anchorId": "warranty",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit massa nisl, at tincidunt urna tempus vel.",
             "content": [
                 {
                     documents: [
