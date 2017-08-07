@@ -23,14 +23,19 @@
       cursor: pointer;
       color: transparent;
       border-radius: 10px;
+      background-color: $color__secondary-gray5;
     }
   }
 
   &__arrows {
     position: absolute;
-    top: 28%;
+    top: 25%;
     color: $color__secondary-gray4;
     display: none !important;
+
+    .icon {
+      font-size: 37px;
+    }
   }
 
   &__prev-arrow {
