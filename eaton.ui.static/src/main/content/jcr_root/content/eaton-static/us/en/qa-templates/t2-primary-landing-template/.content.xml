@@ -2,10 +2,10 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-07-21T00:20:45.504-05:00"
-        cq:lastModifiedBy="admin"
-        cq:lastReplicated="{Date}2017-07-20T05:31:59.705Z"
-        cq:lastReplicatedBy="etn-marie"
+        cq:lastModified="{Date}2017-08-07T22:45:02.170Z"
+        cq:lastModifiedBy="etn-supriya"
+        cq:lastReplicated="{Date}2017-08-07T22:45:51.477Z"
+        cq:lastReplicatedBy="etn-supriya"
         cq:lastReplicationAction="Activate"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:isCheckedOut="{Boolean}true"
@@ -217,6 +217,19 @@
                     testdata="default"
                     view="vertical"/>
             </mega-menu>
+            <header-links
+                jcr:lastModified="{Date}2017-08-07T22:41:29.649Z"
+                jcr:lastModifiedBy="etn-supriya"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/link-list"
+                view="primary-nav"/>
+            <primary-nav-search
+                jcr:lastModified="{Date}2017-08-07T22:45:02.140Z"
+                jcr:lastModifiedBy="etn-supriya"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/search-box"
+                testdata="primary-nav-search"
+                view="default"/>
         </eaton-header>
         <par
             jcr:primaryType="nt:unstructured"
@@ -335,7 +348,7 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/general/ctabutton"
-                    view="default" />
+                    view="default"/>
             </featured_topic>
             <title
                 jcr:created="{Date}2017-07-21T00:20:39.931-05:00"
