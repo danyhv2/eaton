@@ -17,10 +17,11 @@
                     placeholder="${data.form.placeholder}"
                     required="required">
 
-            <button data-sly-test="${data.form.isExternal}" class="button--reset eaton-search--default__form-external">
-              <span class="sr-only">Open in new Tab</span>
+            <div data-sly-test="${data.form.isExternal}" class="eaton-search--default__form-external">
+              <span class="sr-only">Submit form in new Tab</span>
               <i class="icon icon-link-external" aria-hidden="true"></i>
-            </button>
+            </div>
+
             <button type="submit" class="button--reset eaton-search__submit eaton-search--default__form-submit">
               <span class="sr-only">${data.form.submitLabel}</span>
               <i class="icon icon-search" aria-hidden="true"></i>

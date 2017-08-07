@@ -20,6 +20,8 @@
 
 .eaton-search--default__form-input { color: #FFF; background: transparent; padding: 0; }
 
+.eaton-search--default__form-external { color: #FFF; -ms-flex-item-align: center; align-self: center; border-right: 1px solid #FFF; padding-right: 20px; }
+
 .eaton-search--default__form-submit { color: #FFF; background: transparent; padding: 10px 20px; }
 
 .eaton-search--default__results { padding: 30px 0 6px; display: none; }
@@ -44,7 +46,7 @@
 
 .eaton-search--default :-moz-placeholder { /* Firefox 18- */ color: #FFF; }
 
-@media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1em; }
+@media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1em; padding-right: 20px; }
   .eaton-search--default__form-submit { padding-right: 0; }
   .eaton-search--default .icon-search { font-size: 1.25em; }
   .eaton-search--default__result-item { font-size: 1em; }

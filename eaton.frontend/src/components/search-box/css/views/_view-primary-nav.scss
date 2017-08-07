@@ -24,6 +24,13 @@
     padding: 0;
   }
 
+  &__form-external {
+    color: $color__white;
+    align-self: center;
+    border-right: 1px solid $color__white;
+    padding-right: 20px;
+  }
+
   &__form-submit { // Styles for Form Elements
     color: $color__white;
     background: transparent;
@@ -92,6 +99,7 @@
   @include media-mobile-and-tablet {
     &__form-input {
       font-size: 1em;
+      padding-right: 20px;
     }
 
     &__form-submit {
