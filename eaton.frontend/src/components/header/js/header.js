@@ -63,7 +63,10 @@ App.header = (function() {
 
     // Highlight only the active Link
     primaryLinks.removeClass('active');
+    primaryLinks.attr('aria-expanded', false);
+
     $(event.currentTarget).addClass('active');
+    $(event.currentTarget).attr('aria-expanded', true);
     activeCategory = $(event.currentTarget).attr('data-menu-category');
     bodyEl.addClass('nav-open level-2-open nav-is-animating');
 
@@ -135,6 +138,12 @@ App.header = (function() {
     closeMegaMenu(event);
 
     bodyEl.toggleClass('search-open');
+
+    if ( $(event.currentTarget).attr('aria-expanded') ) {
+      $(event.currentTarget).attr('aria-expanded', false);
+    } else {
+      $(event.currentTarget).attr('aria-expanded', true);
+    }
 
     // Reset search inputBox
     bodyEl.find('.eaton-search input').val('');
