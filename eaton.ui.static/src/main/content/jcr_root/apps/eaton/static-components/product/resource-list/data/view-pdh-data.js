@@ -6,112 +6,162 @@ use(function () {
 
     data.anchors = [
         {
-            "anchorTitle": "Electrical Input",
-            "anchorId": "electrical-input",
+            "anchorTitle": "Product Literature",
+            "anchorId": "product-literature",
             "content": [
                 {
-                    title: 'Brochure',
-                    description: 'White Paper Addresses Protection for the IE3 Revolution',
-                    type: 'PDF',
-                    size: '2MB',
-                    url: '#link-to-pdf',
-                    date: '5/17/17',
-                    isNew: true
+                    documents: [
+                        {
+                            title: 'Brochure',
+                            description: 'White Paper Addresses Protection for the IE3 Revolution',
+                            type: 'PDF',
+                            size: '2MB',
+                            target: '_blank',
+                            url: 'http://www.eaton.com/ecm/groups/public/@pub/@eaton/@corp/documents/content/pct_3188515.pdf',
+                            date: '5/17/17',
+                            isNew: true
+                        },
+                        {
+                            title: 'Catalog',
+                            description: 'White Paper Addresses Protection for the IE3 Revolution',
+                            type: 'PDF',
+                            size: '2MB',
+                            target: '_blank',
+                            url: '#link-to-pdf',
+                            date: '5/17/17',
+                            isNew: true
+                        }
+                    ]
                 },
                 {
-                    title: 'Catalog',
-                    description: 'White Paper Addresses Protection for the IE3 Revolution',
-                    type: 'PDF',
-                    size: '2MB',
-                    url: '#link-to-pdf',
-                    date: '5/17/17',
-                    isNew: true
-                },
-                {
-                    title: 'Product Guide',
-                    description: 'White Paper Addresses Protection for the IE3 Revolution',
-                    type: 'PDF',
-                    size: '2MB',
-                    url: '#link-to-pdf',
-                    date: '5/17/17',
-                    isNew: false
-                },
-                {
-                    title: 'Family Document',
-                    description: 'White Paper Addresses Protection for the IE3 Revolution',
-                    type: 'PDF',
-                    size: '2MB',
-                    url: '#link-to-pdf',
-                    date: '5/17/17',
-                    isNew: false
+                    documents: [
+                        {
+                            title: 'Product Guide',
+                            description: 'White Paper Addresses Protection for the IE3 Revolution',
+                            type: 'PDF',
+                            size: '2MB',
+                            target: '_blank',
+                            url: '#link-to-pdf',
+                            date: '5/17/17',
+                            isNew: false
+                        },
+                        {
+                            title: 'Family Document',
+                            description: 'White Paper Addresses Protection for the IE3 Revolution',
+                            type: 'PDF',
+                            size: '2MB',
+                            target: '_blank',
+                            url: '#link-to-pdf',
+                            date: '5/17/17',
+                            isNew: false
+                        }
+                    ]
                 }
             ]
         },
         {
-            "anchorTitle": "Electrical Output",
-            "anchorId": "electrical-output",
+            "anchorTitle": "Manuals",
+            "anchorId": "manuals",
             "content": [
                 {
-                    title: 'Brochure',
-                    description: 'White Paper Addresses Protection for the IE3 Revolution',
-                    type: 'PDF',
-                    size: '2MB',
-                    url: '#link-to-pdf',
-                    date: '5/17/17',
-                    isNew: true
+                    documents: [
+                        {
+                            title: 'Brochure',
+                            description: 'White Paper Addresses Protection for the IE3 Revolution',
+                            type: 'PDF',
+                            size: '2MB',
+                            target: '_blank',
+                            url: '#link-to-pdf',
+                            date: '5/17/17',
+                            isNew: true
+                        },
+                        {
+                            title: 'Catalog',
+                            description: 'White Paper Addresses Protection for the IE3 Revolution',
+                            type: 'PDF',
+                            size: '2MB',
+                            target: '_blank',
+                            url: '#link-to-pdf',
+                            date: '5/17/17',
+                            isNew: true
+                        }
+                    ]
                 },
                 {
-                    title: 'Catalog',
-                    description: 'White Paper Addresses Protection for the IE3 Revolution',
-                    type: 'PDF',
-                    size: '2MB',
-                    url: '#link-to-pdf',
-                    date: '5/17/17',
-                    isNew: true
-                },
-                {
-                    title: 'Product Guide',
-                    description: 'White Paper Addresses Protection for the IE3 Revolution',
-                    type: 'PDF',
-                    size: '2MB',
-                    url: '#link-to-pdf',
-                    date: '5/17/17',
-                    isNew: false
-                },
-                {
-                    title: 'Family Document',
-                    description: 'White Paper Addresses Protection for the IE3 Revolution',
-                    type: 'PDF',
-                    size: '2MB',
-                    url: '#link-to-pdf',
-                    date: '5/17/17',
-                    isNew: false
+                    documents: [
+                        {
+                            title: 'Product Guide',
+                            description: 'White Paper Addresses Protection for the IE3 Revolution',
+                            type: 'PDF',
+                            target: '_blank',
+                            size: '2MB',
+                            url: '#link-to-pdf',
+                            date: '5/17/17',
+                            isNew: false
+                        },
+                        {
+                            title: 'Family Document',
+                            description: 'White Paper Addresses Protection for the IE3 Revolution',
+                            type: 'PDF',
+                            size: '2MB',
+                            target: '_blank',
+                            url: '#link-to-pdf',
+                            date: '5/17/17',
+                            isNew: false
+                        }
+                    ]
+
                 }
             ]
         },
         {
-            "anchorTitle": "Battery",
-            "anchorId": "battery",
+            "anchorTitle": "Warranty, service agreement, terms and conditions",
+            "anchorId": "warranty",
             "content": [
                 {
-                    title: 'Aerospace Warranty',
-                    description: 'White Paper Addresses Protection for the IE3 Revolution',
-                    type: 'PDF',
-                    size: '2MB',
-                    url: '#link-to-pdf'
-                },
+                    documents: [
+                        {
+                            title: 'Product Guide',
+                            description: 'White Paper Addresses Protection for the IE3 Revolution',
+                            type: 'PDF',
+                            target: '_blank',
+                            size: '2MB',
+                            url: '#link-to-pdf',
+                            date: '5/17/17',
+                            isNew: false
+                        },
+                        {
+                            title: 'Family Document',
+                            description: 'White Paper Addresses Protection for the IE3 Revolution',
+                            type: 'PDF',
+                            size: '2MB',
+                            target: '_blank',
+                            url: '#link-to-pdf',
+                            date: '5/17/17',
+                            isNew: false
+                        }
+                    ]
+
+                }
             ]
         },
         {
-            "anchorTitle": "Communications",
-            "anchorId": "communications",
+            "anchorTitle": "Application notes",
+            "anchorId": "application-notes",
             "content": {
 
             }
         },
         {
-            "anchorTitle": "Enviromental & Standards",
-            "anchorId": "enviromental-and-standards",
+            "anchorTitle": "Press Releases",
+            "anchorId": "press-releases",
+            "content": {
+
+            }
+        },
+        {
+            "anchorTitle": "Success Stories",
+            "anchorId": "success-stories",
             "content": {
 
             }
