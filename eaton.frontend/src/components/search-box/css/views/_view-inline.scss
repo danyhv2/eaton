@@ -15,9 +15,10 @@
 
   .form-group {
     display: flex;
+    background: $color__white;
   }
 
-  .icon-search {
+  .icon {
     font-size: 18px;
     top: 2px;
     position: relative;
@@ -26,11 +27,17 @@
   &__form-input { // Styles for Form Elements
     background: $color__white;
     font-size: 1em;
-    padding: 10px 0 10px 10px;
+    padding: 10px;
+  }
+
+  &__form-external { // Styles for Form Elements
+    border-right: 1px solid $color__primary-gray3;
+    padding-right: ($spacing__sm / 2);
+    color: $color__primary-blue;
+    align-self: center;
   }
 
   &__form-submit { // Styles for Form Elements
-    background: $color__white;
     color: $color__primary-blue;
     padding: 10px 20px;
   }

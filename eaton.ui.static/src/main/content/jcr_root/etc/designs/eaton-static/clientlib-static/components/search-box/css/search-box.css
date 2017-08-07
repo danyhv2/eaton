@@ -2,13 +2,15 @@
 
 .eaton-search--inline__header, .eaton-search--inline__subheader, .eaton-search--inline__form { margin-bottom: 30px; }
 
-.eaton-search--inline .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.eaton-search--inline .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; background: #FFF; }
 
-.eaton-search--inline .icon-search { font-size: 18px; top: 2px; position: relative; }
+.eaton-search--inline .icon { font-size: 18px; top: 2px; position: relative; }
 
-.eaton-search--inline__form-input { background: #FFF; font-size: 1em; padding: 10px 0 10px 10px; }
+.eaton-search--inline__form-input { background: #FFF; font-size: 1em; padding: 10px; }
 
-.eaton-search--inline__form-submit { background: #FFF; color: #005EB8; padding: 10px 20px; }
+.eaton-search--inline__form-external { border-right: 1px solid #98A4AE; padding-right: 15px; color: #005EB8; -ms-flex-item-align: center; align-self: center; }
+
+.eaton-search--inline__form-submit { color: #005EB8; padding: 10px 20px; }
 
 .dark-theme .eaton-search--inline__header { color: #FFF; }
 
