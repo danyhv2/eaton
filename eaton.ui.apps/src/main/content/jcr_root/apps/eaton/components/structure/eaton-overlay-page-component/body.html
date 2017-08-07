@@ -14,7 +14,12 @@
     limitations under the License.
 */-->
 
-
-<div class="container-full">
-    <sly data-sly-resource="${'menuoverlay' @ resourceType='eaton/components/structure/mega-menu'}"> </sly>
-</div>
+<section class="mega-menu dark-theme">
+    <div class="container-fluid">
+        <div class="row">
+        	<div class="mega-menu__content" data-target="mega-menu-company">
+            	<sly data-sly-resource="${'menuoverlay' @ resourceType='eaton/components/structure/mega-menu'}"> </sly>
+       		</div>
+        </div>
+    </div>
+</section>

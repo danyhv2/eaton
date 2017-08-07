@@ -24,6 +24,10 @@ public class LinkListModel {
 	@Inject
 	private String header;
 	
+	/** The list type. */
+	@Inject 
+	private String listType;
+	
     /**
      * Gets the view.
      *
@@ -41,5 +45,13 @@ public class LinkListModel {
 	public String getHeader() {
 		return this.header;
 	}
-	
+
+	/**
+	 * Gets the list type.
+	 *
+	 * @return the list type
+	 */
+	public String getListType() {
+		return listType;
+	}
 }

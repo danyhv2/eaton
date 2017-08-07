@@ -82,11 +82,11 @@ public class LinkListHelper extends EatonAbstractUseBean {
 					break;
 				} 
 				case FOOTER_LINK_LIST_1_SELECTOR : {
-					linkListRes = resourceResolver.getResource(homePage.getPath().concat("/jcr:content/root/footer/footer-link-list1"));
+					linkListRes = resourceResolver.getResource(homePage.getPath().concat("/jcr:content/root/footer/link-list-2nd-col"));
 					break;
 				} 
 				case FOOTER_LINK_LIST_2_SELECTOR : {
-					linkListRes = resourceResolver.getResource(homePage.getPath().concat("/jcr:content/root/footer/footer-link-list2"));
+					linkListRes = resourceResolver.getResource(homePage.getPath().concat("/jcr:content/root/footer/link-list-3rd-col"));
 					break;
 				} 
 				case FOOTER_PRIMARY_LINK_LIST_SELECTOR : {
@@ -111,7 +111,9 @@ public class LinkListHelper extends EatonAbstractUseBean {
 		
 		// Download View
 		if (StringUtils.equals(DOWNLOAD_LIST_VIEW_DESCRIPTION, viewType) || StringUtils.equals(DOWNLOAD_LIST_VIEW, viewType)) {
-			downloadListModel = linkListRes.adaptTo(DownloadListModel.class);
+			if(StringUtils.equals(CommonConstants.MANUAL_LIST, linkListModel.getListType())) {
+				downloadListModel = linkListRes.adaptTo(DownloadListModel.class);
+			}
 		}
 
 		LOGGER.debug("LinkListHelper :: setComponentValues() :: End");

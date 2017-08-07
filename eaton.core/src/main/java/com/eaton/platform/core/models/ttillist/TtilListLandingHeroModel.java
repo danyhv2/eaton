@@ -13,7 +13,7 @@ import com.eaton.platform.core.constants.CommonConstants;
 import com.eaton.platform.core.util.CommonUtil;
 
 /**
- * <html> Description: This is a Sling Model for Landing(L1) Hero, Category Hero,Featured List Views.</html> .
+ * <html> Description: This is a Sling Model for Landing(L1) Hero and Category Hero Views.</html> .
  *
  * @author TCS
  * @version 1.0

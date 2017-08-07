@@ -81,7 +81,17 @@ public class TtilListModel {
 		if (resource != null) {
 			Iterator<Resource> linkResources = resource.listChildren();
 				switch(this.view) {
-					case FEATURED_LIST :
+					case FEATURED_LIST : {
+						List<TtilListFeatureListModel> links = new ArrayList<TtilListFeatureListModel>();
+						while (linkResources.hasNext()) {
+							TtilListFeatureListModel ttilListLink = linkResources.next().adaptTo(TtilListFeatureListModel.class);
+							if (ttilListLink != null) {
+								links.add(ttilListLink);
+							}
+						}
+						this.links = links;
+						break;
+					}
 					case LANDING_HERO : {
 						List<TtilListLandingHeroModel> links = new ArrayList<TtilListLandingHeroModel>();
 						while (linkResources.hasNext()) {

@@ -31,6 +31,7 @@ import com.eaton.platform.core.models.BCAccountBean;
 import com.eaton.platform.core.models.BCPlayerBean;
 import com.eaton.platform.core.services.AdminService;
 import com.eaton.platform.core.util.BrightcoveUtil;
+import com.eaton.platform.core.util.CommonUtil;
 
 /**
  * This servlet pre-populate the player id drop-down field
@@ -71,9 +72,9 @@ public class BCPlayerIdDropDownServlet extends SlingSafeMethodsServlet {
 		// get admin resource resolver to resolve resource under /etc/cloudservices
 		ResourceResolver adminResourceResolver = adminService.getReadService();
 		// get refererURL from request since current page is not available in fixed path servelts
-		String refererURL = BrightcoveUtil.getRefererURL(request);
+		String refererURL = CommonUtil.getRefererURL(request);
 		//get content path
-		String resourcePath = BrightcoveUtil.getContentPath(adminResourceResolver, refererURL);
+		String resourcePath = CommonUtil.getContentPath(adminResourceResolver, refererURL);
 		Resource currentPageRes = adminResourceResolver.resolve(resourcePath);
 		brightcoveConfigRes = BrightcoveUtil.getBCConfigResource(configManagerFctry,
 				adminResourceResolver, currentPageRes);

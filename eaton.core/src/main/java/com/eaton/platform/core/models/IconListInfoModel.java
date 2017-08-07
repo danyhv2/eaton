@@ -1,12 +1,19 @@
 package com.eaton.platform.core.models;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.scripting.SlingScriptHelper;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.Source;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import com.eaton.platform.core.services.EatonConfigService;
 import com.eaton.platform.core.util.CommonUtil;
 
 /**
@@ -14,6 +21,8 @@ import com.eaton.platform.core.util.CommonUtil;
  */
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class IconListInfoModel {
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(IconListInfoModel.class);
 	
 	/** The icon. */
 	@Inject
@@ -34,6 +43,10 @@ public class IconListInfoModel {
 	/** The additonal info. */
 	@Inject
 	private String additonalInfo;
+	
+	 @Inject @Source("osgi-services") 
+	 EatonConfigService configService;
+    
 	/**
 	 * Gets the icon.
 	 *
@@ -70,6 +83,10 @@ public class IconListInfoModel {
 		return title;
 	}
 
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
 	/**
 	 * Gets the description.
 	 *
@@ -96,6 +113,13 @@ public class IconListInfoModel {
 	protected void init() {
 		if (getLinkPath() != null) {
 			setLinkPath(CommonUtil.dotHtmlLink(getLinkPath()));
+		}
+		List<String> proofPointSymbols = configService.getConfigServiceBean().getProofPointSymbols();
+		for (String proofPointSymbol : proofPointSymbols) {
+			 String proofPointSymbolHTML = "<div class='icon-list-proof-points__symbol'>" + proofPointSymbol + "</div>";
+			 if(getTitle() != null && getTitle().contains(proofPointSymbol)){
+				 setTitle(getTitle().replaceAll(proofPointSymbol, proofPointSymbolHTML));
+			 }
 		}
 	}
 

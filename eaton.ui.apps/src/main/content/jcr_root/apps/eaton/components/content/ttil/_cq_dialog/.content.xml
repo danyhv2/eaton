@@ -83,7 +83,6 @@
                                 fieldDescription="This field stores the path of the image from DAM."
                                 fieldLabel="Image"
                                 name="./image"
-                                required="true"
                                 rootPath="/content/dam/eaton"/>
                             <imageAlignment
                                 jcr:primaryType="nt:unstructured"

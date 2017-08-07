@@ -6,19 +6,65 @@
 
 .icon-list-proof-points__content { padding-left: 40px; }
 
-.icon-list-proof-points__facts, .icon-list-proof-points__symbol { font-weight: bold; display: inline-block; color: #00B2A9; }
+.icon-list-proof-points__text { font-weight: bold; color: #00B2A9; display: -webkit-box; display: -ms-flexbox; display: flex; margin-left: -3px; }
 
-.icon-list-proof-points__facts { line-height: 1; margin-left: -3px; }
-
-.icon-list-proof-points__symbol { position: relative; right: 0; font-size: 50px; top: -30px; }
+.icon-list-proof-points__symbol { position: relative; }
 
 @media screen and (max-width: 991px) { .icon-list-proof-points__item { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 40px; }
   .icon-list-proof-points__item:last-child { margin-bottom: 0; }
-  .icon-list-proof-points__facts { font-size: 83px; }
-  .icon-list-proof-points__related { font-size: 18px; } }
+  .icon-list-proof-points__text { font-size: 83px; }
+  .icon-list-proof-points__symbol { font-size: 40px; top: 13px; }
+  .icon-list-proof-points__title { font-size: 18px; } }
 
-@media screen and (min-width: 992px) { .icon-list-proof-points__facts { font-size: 75px; }
-  .icon-list-proof-points__symbol { font-size: 45px; top: -20px; }
-  .icon-list-proof-points__related { font-size: 24px; } }
+@media screen and (min-width: 992px) { .icon-list-proof-points__wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .icon-list-proof-points__text { font-size: 75px; }
+  .icon-list-proof-points__symbol { font-size: 45px; top: 8px; }
+  .icon-list-proof-points__title { font-size: 24px; } }
+
+.icon-list-no-image-highlights { background: #F8F8F8; }
+
+.icon-list-no-image-highlights__item { color: #5B6770; }
+
+.icon-list-no-image-highlights__content { text-align: center; }
+
+.icon-list-no-image-highlights__title { text-transform: uppercase; font-weight: bold; color: #5B6770; }
+
+.icon-list-no-image-highlights__text { word-wrap: break-word; }
+
+.icon-list-no-image-highlights__symbol { position: relative; }
+
+@media screen and (max-width: 991px) { .icon-list-no-image-highlights { padding: 30px 0; }
+  .icon-list-no-image-highlights__item { margin-bottom: 40px; }
+  .icon-list-no-image-highlights__item:last-child { margin-bottom: 0; }
+  .icon-list-no-image-highlights__text { font-size: 3.125em; line-height: 55px; }
+  .icon-list-no-image-highlights__symbol { font-size: 0.6em; top: -15px; }
+  .icon-list-no-image-highlights__title { font-size: 0.875em; margin-bottom: 5px; } }
+
+@media screen and (min-width: 992px) { .icon-list-no-image-highlights { padding: 60px 0; }
+  .icon-list-no-image-highlights__wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; }
+  .icon-list-no-image-highlights__text { font-size: 3.75em; line-height: 65px; }
+  .icon-list-no-image-highlights__symbol { font-size: 0.667em; top: -15px; }
+  .icon-list-no-image-highlights__title { font-size: 1.125em; margin-bottom: 15px; } }
+
+.eaton-top-list-with-icon { margin-top: 45px; overflow: hidden; }
+
+.eaton-top-list-with-icon__icon { color: #ED8B00; max-width: 60px; display: inline-block; }
+
+.eaton-top-list-with-icon__icon img { width: 100%; height: auto; }
+
+.eaton-top-list-with-icon__text-wrapper { width: calc(100% - 90px); display: inline-block; float: right; }
+
+.eaton-top-list-with-icon__element { margin-bottom: 45px; }
+
+@media screen and (min-width: 992px) { .eaton-top-list-with-icon { margin-top: 90px; }
+  .eaton-top-list-with-icon__icon { max-width: 70px; }
+  .eaton-top-list-with-icon__icon .icon { font-size: 70px; }
+  .eaton-top-list-with-icon__text-wrapper { width: calc(100% - 100px); }
+  .eaton-top-list-with-icon__element { margin-bottom: 90px; }
+  .eaton-top-list-with-icon .container { margin: 0 auto; }
+  .eaton-top-list-with-icon .container.row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+  .eaton-top-list-with-icon .container.row .col-md-4 { -webkit-box-flex: 0; -ms-flex: 0 0 33%; flex: 0 0 33%; }
+  .eaton-top-list-with-icon .container.row .row { margin: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+  .eaton-top-list-with-icon .container.row .col-md-4 { -webkit-box-flex: 0; -ms-flex: 0 0 33%; flex: 0 0 33%; } }
 
 .icon-list { padding: 30px 0; }

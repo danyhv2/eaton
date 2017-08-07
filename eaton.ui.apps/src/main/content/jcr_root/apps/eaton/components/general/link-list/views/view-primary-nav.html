@@ -1,12 +1,21 @@
 <sly data-sly-use.data="com.eaton.platform.core.helpers.LinkListHelper">
-    <div class="eaton-link-list-primary-nav ${data.backgroundImage ? 'eaton-link-list-primary-nav--has-background' : ''} ">
+    <div class="eaton-link-list-primary-nav ${data.backgroundImage ? 'eaton-link-list-primary-nav--has-background' : ''} " style="background-image: url('${data.backgroundImage @ context = 'uri'}')">
 
       <!--/* Headline: Visible only for Mobile Breakpoints */-->
-      <p data-sly-test="${data.headline}" class="eaton-link-list-primary-nav__headline">${data.headline}</p>
+	  <div data-sly-test="${data.viewContentListModel.header}" class="eaton-link-list-primary-nav__headline">
+        <div class="eaton-link-list-primary-nav__container container">
+        	${data.viewContentListModel.header}
+        </div>
+      </div>
 
       <!--/* List Links */-->
-      <nav data-sly-list.level1="${data.viewContentListModel.listTypeArray}" class="eaton-link-list-primary-nav__items" style="background-image: url('${data.backgroundImage @ context = 'uri'}')">
-          <a href="#" data-menu-category="mega-menu-${level1.navName}" aria-expanded="false">${ level1.linkTitle }</a>
-      </nav>
+	  <div class="eaton-link-list-primary-nav__container container">
+        <nav data-sly-list.level1="${data.viewContentListModel.listTypeArray}" class="eaton-link-list-primary-nav__items">
+            <a href="#" data-menu-category="mega-menu-${level1.navName}" aria-expanded="false">
+              <span>${ level1.linkTitle }</span>
+              <i class="icon icon-chevron-right" aria-hidden="true"></i>
+            </a>
+        </nav>
+      </div>
     </div>
 </sly>

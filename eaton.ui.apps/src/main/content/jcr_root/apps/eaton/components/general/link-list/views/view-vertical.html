@@ -21,7 +21,7 @@
               <i data-sly-test="${item.isAssetLink}" class="eaton-link-list-vertical__external-icon icon icon-download" aria-hidden="true"></i>
               ${ item.linkTitle }
           </span>
-          <i class="eaton-link-list-vertical__list-icon icon icon-chevron-right"
+          <i data-sly-test="${!item.isExternal && !item.isAssetLink}" class="eaton-link-list-vertical__list-icon icon icon-chevron-right"
             aria-hidden="true"></i>
         </a>
 		<sly data-sly-test="${item.isAssetLink}">
