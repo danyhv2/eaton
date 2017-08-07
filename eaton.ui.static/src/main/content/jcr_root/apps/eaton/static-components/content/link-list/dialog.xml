@@ -46,6 +46,10 @@
                   jcr:primaryType="nt:unstructured"
                   text="2 Column"
                   value="2column"/>
+              <primaryNav
+                  jcr:primaryType="nt:unstructured"
+                  text="Primary Navigation"
+                  value="primary-nav"/>
             </options>
           </view>
           <testdata
@@ -73,7 +77,7 @@
                 value="footer3"/>
             </options>
           </testdata>
-          
+
         </items>
       </tab1>
     </items>

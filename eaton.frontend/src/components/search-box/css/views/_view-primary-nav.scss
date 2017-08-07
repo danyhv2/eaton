@@ -50,7 +50,9 @@
       display: block;
       padding: 10px 0;
       color: $color__white;
-      &:hover, &:focus {
+
+      &:hover,
+      &:focus {
         color: $color__white;
       }
     }
