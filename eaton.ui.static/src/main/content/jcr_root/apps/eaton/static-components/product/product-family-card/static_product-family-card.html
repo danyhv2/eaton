@@ -5,18 +5,33 @@
 </sly>
 
 
-<sly data-sly-use.viewData="${ '../data/product-family-card-data.js' @testdata=properties.testdata }">
+<sly data-sly-use.data="${ '../data/product-family-card-data.js' @testdata=properties.testdata }">
 
-  <div class="product-family-card">
+  <div class="eaton-product-family-card">
     <div class="container">
 
       <div class="row">
-        <div class="col-xs-12 col-md-8"> Text </div>
-        <div class="col-xs-12 col-md-4"> Image </div>
+        <div class="col-xs-12 col-md-8">
+          <div class="eaton-product-family-card__header b-heading-h1">${data.header}</div>
+          <div class="eaton-product-family-card__separator"></div>
+          <div class="eaton-product-family-card__description b-body-copy">${data.description}</div>
+        </div>
+        <div class="col-xs-12 col-md-4 eaton-product-family-card__image-wrapper">
+          <img data-src="${data.imageSrcMobile}" data-mobile-rendition="${data.imageSrcMobile}" data-tablet-rendition="${data.imageSrcMobile}" data-desktop-rendition="${data.imageSrcDesktop}" alt="${data.imageAlt}">
+        </div>
       </div>
 
       <div class="row">
-        <div class="col-xs-12"> CTA and Links </div>
+        <div class="col-xs-12 col-md-8 eaton-product-family-card__link-wrapper">
+          <div class="row">
+            <div class="col-xs-12 col-md-6 eaton-product-family-card__cta">
+              <a href="${data.ctaLink}" class="b-button b-button__tertiary b-button__tertiary--light" title="${data.ctaText}" target="${data.ctaTarget}">${data.ctaText}</a>
+            </div>
+            <div class="col-xs-12 col-md-6 eaton-product-family-card__links" data-sly-list.link="${data.secondaryLinks}">
+              <a href="${link.link}" title="${link.text}" target="${link.target}"> <i class="icon icon-link-external" data-sly-test="${link.external}" aria-hidden="true"></i> ${link.text}</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
