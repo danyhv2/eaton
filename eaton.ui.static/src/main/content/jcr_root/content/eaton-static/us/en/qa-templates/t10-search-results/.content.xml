@@ -228,7 +228,7 @@
                 jcr:lastModifiedBy="etn-brian"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/search-box"
-                view="search-box"/>
+                view="default"/>
             <search_results
                 jcr:created="{Date}2017-08-02T05:03:33.072Z"
                 jcr:createdBy="etn-brian"
