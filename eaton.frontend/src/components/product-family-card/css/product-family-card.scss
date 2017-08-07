@@ -55,6 +55,7 @@
     }
 
     &__image-wrapper {
+      margin-bottom: 0;
 
       img {
         max-width: 360px;
@@ -62,7 +63,7 @@
     }
 
     &__link-wrapper {
-      margin-top: $spacing__lg;
+      margin-top: $spacing__md;
     }
 
     &__cta {
