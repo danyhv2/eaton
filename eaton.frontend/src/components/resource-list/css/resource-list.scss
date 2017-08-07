@@ -4,12 +4,29 @@
 .secondary-content-accordion{
   
   &__header {
-    padding: 30px 0 0;
     position: relative;
+    padding: 0;
+
+    &--title {
+      color: $color__primary-gray1;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+      }
+    }
   }
 
   &__panel {
     border-bottom: 3px solid $color__secondary-gray5;
+    padding: 30px 0 0;
+
+    &:first-child {
+      @include media-tablet-and-up {
+        padding-top: 0;
+      }
+    }
   }
 
   &__download-icon .icon {
@@ -28,8 +45,24 @@
     left: 10px;
   }
 
+  &__column {
+
+    &:first-child {
+      @include media-tablet-and-up {
+        padding-right: 35%;
+      }
+    }
+  }
+
   &__body {
     padding-bottom: 50px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+
+    @include media-tablet-and-up {
+      flex-direction: row;
+    }
   }
 
   &__icons {
