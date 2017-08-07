@@ -23,7 +23,8 @@ use(function () {
 	    data.form = {
 	      'placeholder': 'Jobs',
 	      'submitLabel': 'Search',
-        'searchResultsPath': 'http://sr_dev.eaton.com'
+        'searchResultsPath': 'http://sr_dev.eaton.com',
+        'isExternal': true
 	    }
 	} else {
 	    data.header = 'Headline';

@@ -18,18 +18,9 @@
     border-radius: 0;
     height: auto;
     box-shadow: none;
-    // background: transparent;
-    // padding: 0;
 
     &:focus {
       outline: none;
     }
   }
-
-  &__submit { // Styles for Form Elements
-    appearance: none;
-    // background: transparent;
-    border: 0;
-  }
-
 }

@@ -2,13 +2,15 @@
 
 .eaton-search--inline__header, .eaton-search--inline__subheader, .eaton-search--inline__form { margin-bottom: 30px; }
 
-.eaton-search--inline .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.eaton-search--inline .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; background: #FFF; }
 
-.eaton-search--inline .icon-search { font-size: 18px; top: 2px; position: relative; }
+.eaton-search--inline .icon { font-size: 18px; top: 2px; position: relative; }
 
-.eaton-search--inline__form-input { background: #FFF; font-size: 1em; padding: 10px 0 10px 10px; }
+.eaton-search--inline__form-input { background: #FFF; font-size: 1em; padding: 10px; }
 
-.eaton-search--inline__form-submit { background: #FFF; color: #005EB8; padding: 10px 20px; }
+.eaton-search--inline__form-external { border-right: 1px solid #98A4AE; padding-right: 15px; color: #005EB8; -ms-flex-item-align: center; align-self: center; }
+
+.eaton-search--inline__form-submit { color: #005EB8; padding: 10px 20px; }
 
 .dark-theme .eaton-search--inline__header { color: #FFF; }
 
@@ -19,6 +21,8 @@
 .eaton-search--default .icon-search { top: 2px; position: relative; }
 
 .eaton-search--default__form-input { color: #FFF; background: transparent; padding: 0; }
+
+.eaton-search--default__form-external { color: #FFF; -ms-flex-item-align: center; align-self: center; border-right: 1px solid #FFF; padding-right: 20px; }
 
 .eaton-search--default__form-submit { color: #FFF; background: transparent; padding: 10px 20px; }
 
@@ -44,7 +48,7 @@
 
 .eaton-search--default :-moz-placeholder { /* Firefox 18- */ color: #FFF; }
 
-@media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1em; }
+@media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1em; padding-right: 20px; }
   .eaton-search--default__form-submit { padding-right: 0; }
   .eaton-search--default .icon-search { font-size: 1.25em; }
   .eaton-search--default__result-item { font-size: 1em; }
@@ -115,5 +119,3 @@
 .eaton-search .form-control { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 0; border-radius: 0; height: auto; -webkit-box-shadow: none; box-shadow: none; }
 
 .eaton-search .form-control:focus { outline: none; }
-
-.eaton-search__submit { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 0; }
