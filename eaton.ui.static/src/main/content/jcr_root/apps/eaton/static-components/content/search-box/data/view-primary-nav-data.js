@@ -9,7 +9,8 @@ use(function () {
 	      'placeholder': 'Search',
 	      'submitLabel': 'Search',
         'searchResultsPath': 'http://sr_dev.eaton.com'
-	    }
+	    };
+      data.searchUrl = '/content/eaton-static/us/en/qa-templates/test-data/eaton-search-term--predictive-search.json';
 	} else {
 	    data.header = 'Headline';
       data.subheader = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet';
@@ -17,8 +18,8 @@ use(function () {
 	      'placeholder': 'Search products, parts, documentations, support, etc',
 	      'submitLabel': 'Search',
         'searchResultsPath': 'http://sr_dev.eaton.com'
-	    }
-      data.searchUrl = '/content/eaton-static/us/en/qa-templates/test-data/eaton-search-term--predictive-search.json'
+	    };
+      data.searchUrl = '/content/eaton-static/us/en/qa-templates/test-data/eaton-search-term--predictive-search.json';
     }
     return data;
 });

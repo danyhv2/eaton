@@ -21,27 +21,27 @@ var App = window.App || {};
 
 App.accordion = function () {
 
-    var $accordion = $('.panel-group');
-    var $component = $('.secondary-content-accordion');
+  var $accordion = $('.panel-group');
+  var $component = $('.secondary-content-accordion');
 
-    var init = function init() {
-        $accordion.on('hidden.bs.collapse', toggleIcon);
-        $accordion.on('shown.bs.collapse', toggleIcon);
-    };
+  var init = function init() {
+    $accordion.on('hidden.bs.collapse', toggleIcon);
+    $accordion.on('shown.bs.collapse', toggleIcon);
+  };
 
-    /**
-     * Toggle class icon
-     */
-    var toggleIcon = function toggleIcon(event) {
+  /**
+   * Toggle class icon
+   */
+  var toggleIcon = function toggleIcon(event) {
 
-        $(event.target).prev('.panel-heading').find('.icon').toggleClass('icon-sign-plus icon-sign-minus');
-    };
+    $(event.target).prev('.panel-heading').find('.icon').toggleClass('icon-sign-plus icon-sign-minus');
+  };
 
-    /**
-     * Initialize and Expose public methods
-     */
+  /**
+   * Initialize and Expose public methods
+   */
 
-    if ($component.length > 0) {
-        init();
-    }
+  if ($component.length > 0) {
+    init();
+  }
 }();
