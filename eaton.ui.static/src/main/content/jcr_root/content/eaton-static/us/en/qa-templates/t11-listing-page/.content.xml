@@ -222,6 +222,7 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/title-text-image-link-list"
+                testdata="t11-listing-page"
                 view="category-hero"/>
             <search_box
                 jcr:created="{Date}2017-08-03T20:48:07.650-06:00"
