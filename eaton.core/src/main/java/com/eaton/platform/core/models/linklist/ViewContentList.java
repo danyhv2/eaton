@@ -45,10 +45,6 @@ public class ViewContentList extends LinkListModel {
 	/** The child page links list. */
 	public List<LinkListTypeBean> childPageAndTagsLinksList;
 	
-	/** The list type. */
-	@Inject 
-	private String listType;
-	
 	/** The parent page. */
 	@Inject
 	private String parentPage;
@@ -86,7 +82,7 @@ public class ViewContentList extends LinkListModel {
 	 */
 	@PostConstruct
 	protected void init() {
-		switch(listType) {
+		switch(super.getListType()) {
 			case CommonConstants.CHILD_PAGES : {
 					childPageAndTagsLinksList = new ArrayList<LinkListTypeBean>();
 					if (null != this.parentPage) {
@@ -130,7 +126,7 @@ public class ViewContentList extends LinkListModel {
 	 * @return the list
 	 */
 	public List<LinkListTypeBean> populateParentModel(List<LinkListTypeBean> childPageAndTagsLinksList, String parentPagePath) {
-		if (StringUtils.equals(CommonConstants.CHILD_PAGES, listType)) {
+		if (StringUtils.equals(CommonConstants.CHILD_PAGES, super.getListType())) {
 			
 					PageManager pageManager = this.resourceResolver.adaptTo(PageManager.class);
 					Page parentPage = pageManager.getPage(parentPagePath);
@@ -154,7 +150,7 @@ public class ViewContentList extends LinkListModel {
 	 * @return the list
 	 */
 	public List<LinkListTypeBean> populateTagsModel(List<LinkListTypeBean> childPageAndTagsLinksList, String tags) {
-		if (StringUtils.equals(CommonConstants.TAGS, listType)) {
+		if (StringUtils.equals(CommonConstants.TAGS, super.getListType())) {
 
 			TagManager tagManager = this.resourceResolver.adaptTo(TagManager.class);
 			RangeIterator<Resource> tagsIterator = tagManager.find(tags);
@@ -281,16 +277,7 @@ public class ViewContentList extends LinkListModel {
 	 * @return the alignment
 	 */
 	public String getAlignment() {
-		return alignment;
-	}
-
-	/**
-	 * Gets the list type.
-	 *
-	 * @return the list type
-	 */
-	public String getListType() {
-		return listType;
+		return this.alignment;
 	}
 
 	/**
@@ -300,11 +287,11 @@ public class ViewContentList extends LinkListModel {
 	 */
 	public List<?> getListTypeArray() {
 		List<?> viewList = new ArrayList<>();
-		if(StringUtils.equals(CommonConstants.CHILD_PAGES, listType) || StringUtils.equals(CommonConstants.TAGS, listType)) {
+		if(StringUtils.equals(CommonConstants.CHILD_PAGES, super.getListType()) || StringUtils.equals(CommonConstants.TAGS, super.getListType())) {
 			viewList = childPageAndTagsLinksList;
-		} else if(StringUtils.equals(CommonConstants.FIXED_LIST, listType)) {
+		} else if(StringUtils.equals(CommonConstants.FIXED_LIST, super.getListType())) {
 			viewList = fixedLinksList;
-		} else if(StringUtils.equals(CommonConstants.MANUAL_LIST, listType)) {
+		} else if(StringUtils.equals(CommonConstants.MANUAL_LIST, super.getListType())) {
 			viewList = manualLinksList;
 		}
 		return viewList;

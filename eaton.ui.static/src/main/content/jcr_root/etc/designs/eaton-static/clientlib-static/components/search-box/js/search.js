@@ -28,18 +28,18 @@ App.search = function () {
   var componentClass = '.eaton-search';
   var $componentElement = $(componentClass);
   var $searchInputEl = $componentElement.find('.eaton-search--default__form-input');
-  var $searchResultContainer = $componentElement.find('.eaton-search__result-list');
+  var $searchResultContainer = $componentElement.find('.eaton-search--default__results');
+  var $searchResultList = $searchResultContainer.find('.eaton-search--default__result-list');
 
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
-  var componentExists = $componentElement.length > 0;
 
   /**
   * Init
   */
   var init = function init() {
     // If not in AEM Author Mode & component exists on page - initialize scripts
-    if (!isAEMAuthorMode && componentExists) {
+    if (!isAEMAuthorMode) {
       console.log('Initialize Search');
       addEventListeners();
     }
@@ -48,8 +48,15 @@ App.search = function () {
   /**
   * Create Template - Markup for each predictive search result item
   */
-  var linkTemplate = function linkTemplate(data) {
-    return '\n      <li class="eaton-search__result-item">\n        <a href="' + data.link + '" target="' + data.target + '">' + data.title + '</a>\n      </li>';
+  var linkTemplate = function linkTemplate(data, term) {
+
+    var regX = new RegExp('(' + term + ')', 'ig');
+    var linkTitleText = data.title;
+
+    // Search the title for the matched term and wrap it in required markup
+    linkTitleText = linkTitleText.replace(regX, '<strong>$1</strong>');
+
+    return '\n      <li class="eaton-search--default__result-item">\n        <a href="' + data.link + '" target="' + data.target + '"> ' + linkTitleText + ' </a>\n      </li>';
   };
 
   /**
@@ -58,25 +65,32 @@ App.search = function () {
   var handleInputBehavior = function handleInputBehavior(event) {
 
     // Check if the #of characters in the inputBox exceeds characterLimit - 3
-    if ($(event.target).val().length >= 3) {
+    var $activeSearchComponent = $(event.currentTarget).closest(componentClass);
+
+    if (event.target.value.length >= 3) {
       // Request Search Results - AJAX
-      getSearchResults(event);
+      getSearchResults(event, event.target.value);
     } else {
       // Empty the contents of the result-list
-      $searchResultContainer.html('');
+      $activeSearchComponent.find('.eaton-search--default__results').removeClass('active');
+      $activeSearchComponent.find('.eaton-search--default__result-list').html('');
     }
   };
 
   /**
   * Load Predictive Search Results - AJAX
   */
-  var getSearchResults = function getSearchResults(event) {
+  var getSearchResults = function getSearchResults(event, term) {
 
     // Get the closest search component to avoid conflicts when multiple search elements on page
     var $activeSearchComponent = $(event.currentTarget).closest(componentClass);
     var searchResultsURL = $activeSearchComponent.attr('data-predictive-search');
-    var requestOptions = { format: 'json' };
-    var searchResultsList = '';
+    var requestOptions = {
+      searchTerm: term,
+      format: 'json'
+    };
+
+    var resultList = '';
     var ajaxReq = '';
 
     // If URL path is configured
@@ -84,6 +98,7 @@ App.search = function () {
       return;
     }
 
+    // Requests Static JSON file. To be replaced by service URL in final implementation
     ajaxReq = $.getJSON(searchResultsURL, requestOptions);
 
     ajaxReq
@@ -92,11 +107,12 @@ App.search = function () {
 
       // Loop over all result items
       $.each(data.results, function (index, item) {
-        searchResultsList += linkTemplate(item);
+        resultList += linkTemplate(item, term);
       });
 
       // Replace the contents of the list with the AJAX results
-      $searchResultContainer.html(searchResultsList);
+      $activeSearchComponent.find('.eaton-search--default__result-list').html(resultList);
+      $activeSearchComponent.find('.eaton-search--default__results').addClass('active');
     })
 
     // Callback for Failed Request

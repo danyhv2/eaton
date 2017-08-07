@@ -171,7 +171,7 @@ public class ManualLinksModel {
 	public String getIsExternal() {
 		String isExternal = CommonConstants.FALSE;
 		if(null != this.pageLink) {
-			if(StringUtils.startsWith(this.pageLink, CommonConstants.HTTP) || StringUtils.startsWith(this.pageLink, CommonConstants.HTTPS)) {
+			if(StringUtils.startsWith(this.pageLink, CommonConstants.HTTP) || StringUtils.startsWith(this.pageLink, CommonConstants.HTTPS) || StringUtils.startsWith(this.pageLink, CommonConstants.WWW)) {
 				isExternal = CommonConstants.TRUE;
 			}
 		}

@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
@@ -714,11 +716,24 @@ public final class CommonUtil {
 	public static Configuration getCloudConfigObj(ConfigurationManagerFactory configManagerFctry, 
 			ResourceResolver resolver, Resource pageResource, String configName) {
 		LOGGER.debug("CommonUtil :: getCloudConfigObj() :: Start");
-		// inherited page properties of the current page.
-		InheritanceValueMap currentPageInheritedProp = new HierarchyNodeInheritanceValueMap(pageResource);
-		String[] services = getStringArrayInheritedProperty(currentPageInheritedProp,
-		                    CommonConstants.CLOUD_SERVICES);
+		String[] services = null;
+		Page currentPage = resolver.resolve(pageResource.getPath()).adaptTo(Page.class);
 		ConfigurationManager configMgr = configManagerFctry.getConfigurationManager(resolver);
+		// get cq:cloudservices property value from current page properties
+		services = getStringArrayProperty(currentPage.getProperties(), CommonConstants.CLOUD_SERVICES);
+		// if cloud services are not found at current page, then get inherited page properties of the current page.
+		if(services.length == 0){
+			InheritanceValueMap currentPageInheritedProp = new HierarchyNodeInheritanceValueMap(pageResource);
+			services = getStringArrayInheritedProperty(currentPageInheritedProp,
+			                    CommonConstants.CLOUD_SERVICES);
+		}
+		// if cloud services do not exist in inherited page properties, get cloud services from home page
+		if(services.length == 0){
+			Page homePage = getHomePage(currentPage);
+			services = getStringArrayProperty(homePage.getProperties(),
+                    CommonConstants.CLOUD_SERVICES);
+		}
+		
 		Configuration configObj = configMgr.getConfiguration(configName, services);
 		LOGGER.debug("CommonUtil :: getCloudConfigObj() :: Exit");
 		return configObj;
@@ -915,4 +930,44 @@ public final class CommonUtil {
 		}
 		return asset;
 	}
+    
+    /**
+     * This method returns the referer url from request header.
+     *
+     * @param request the request
+     * @return the referer URL
+     */
+    public static String getRefererURL(final SlingHttpServletRequest request) {
+    	LOGGER.debug("CommonUtil :: getRefererURL() :: Start");
+        String refererURL;
+        // get current page url from referer of the request header
+        refererURL = request.getHeader(CommonConstants.REFERER_URL);
+        LOGGER.debug("CommonUtil :: getRefererURL() :: Exit");
+        return refererURL;
+    }
+    
+    /**
+     * This method gets the referer url from request header and returns the page path.
+     *
+     * @param resolver the resolver
+     * @param refererURL the referer url
+     * @return path
+     */
+    public static String getContentPath(ResourceResolver resolver, String refererURL) {
+    	LOGGER.debug("CommonUtil :: getContentPath() :: Start");
+        String path = null;
+            try {
+                URL pageURL = new URL(refererURL);
+                path = StringUtils.remove(pageURL.getPath(), "/editor.html");
+                path = StringUtils.remove(path, ".html");
+                path = StringUtils.remove(path, ".htm");
+                Resource pageResource = resolver.resolve(path);
+                path = pageResource.getPath();
+            } catch (MalformedURLException ex) {
+            	LOGGER.error(
+                        "Error in parsing the Referrer URL :: " + refererURL + " :: Exception :: " + ex.getMessage());
+            }
+            LOGGER.debug("CommonUtil :: getContentPath() :: Exit");
+        return path;
+    }
 }

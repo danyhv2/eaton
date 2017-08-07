@@ -34,7 +34,11 @@ public class TTILModel {
 	/** The image. */
 	@Inject
 	private String image;
-
+	
+	/** The imageAlignment. */
+	@Inject
+	private String imageAlignment;
+	
 	/** The alttxt. */
 	@Inject
 	private String alttxt;
@@ -92,6 +96,15 @@ public class TTILModel {
      */
 	public String getImage() {
 		return image;
+	}
+
+	/**
+	 * Gets the image alignment.
+	 *
+	 * @return the image alignment
+	 */
+	public String getImageAlignment() {
+		return imageAlignment;
 	}
 
 	/**

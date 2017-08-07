@@ -95,12 +95,6 @@
                                                     fieldDescription="This field stores the Icon description."
                                                     fieldLabel="Description"
                                                     name="./description"/>
-                                                <additonalInfo
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                    fieldDescription="This field stores the additional Info "
-                                                    fieldLabel="Additional Info "
-                                                    name="./additonalInfo"/>
                                             </items>
                                         </column>
                                     </items>

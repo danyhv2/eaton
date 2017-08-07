@@ -50,7 +50,7 @@
                         required="true">
                         <datasource
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/bin/dropdown/bccontentid"
+                            sling:resourceType="/ecom/dropdown/bccontentid"
                             addNone="{Boolean}true"/>
                     </contentRepository>
                     <brightcovePlayerID
@@ -61,7 +61,7 @@
                         required="true">
                         <datasource
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/bin/dropdown/bcplayeridlist"
+                            sling:resourceType="/ecom/dropdown/bcplayeridlist"
                             addNone="{Boolean}true"/>
                     </brightcovePlayerID>
                 </items>

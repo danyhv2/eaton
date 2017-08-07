@@ -102,6 +102,23 @@ h5,
   }
 }
 
+.b-h5-link {
+  font-size: 2.5rem;
+  font-family: $font-family__secondary;
+  color: $color__primary-blue;
+  font-weight: bold;
+
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: $color__primary-blue;
+  }
+
+  @include media-desktop-and-up {
+    font-size: 1.625rem;
+  }
+}
+
 .b-small-link {
   font-family: $font-family__secondary;
   color: $color__primary-blue;
@@ -123,6 +140,7 @@ h5,
 }
 
 .b-body-copy-small {
+  color: $color__primary-gray1;
   @include body-copy-small;
 }
 

@@ -106,6 +106,7 @@
                     <toggleInnerGrid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        defaultChecked="true"
                         name="./toggleInnerGrid"
                         text="Enable Inner Grid"
                         value="true"/>

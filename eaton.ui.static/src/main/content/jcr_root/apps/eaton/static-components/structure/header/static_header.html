@@ -38,9 +38,7 @@
 
                     <!--/* Link List: Primary Navigation  */-->
                     <div class="header-primary-nav__menu">
-                        <sly data-sly-use.tpl="../../content/link-list/views/view-primary-nav.html">
-                          <sly data-sly-call="${ tpl.primaryNavigation @ data=header.primaryNavigation }"></sly>
-                        </sly>
+                        <sly data-sly-resource="${'header-links' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
                     </div>
 
                     <!--/* Search & Mobile Hamburger Menu  */-->

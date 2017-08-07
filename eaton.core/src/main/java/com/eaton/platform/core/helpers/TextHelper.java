@@ -46,7 +46,7 @@ public class TextHelper  extends EatonAbstractUseBean {
 		// in pages other than homepage, text component needs to be derived programmatically because text 
 		// resources are not present under page resources but inherited from home page
 		if(null != selector && StringUtils.equals(selector, FOOTER_DESC_SELECTOR)){
-			textRes = resourceResolver.getResource(homePage.getPath().concat("/jcr:content/root/footer/footer-desc"));
+			textRes = resourceResolver.getResource(homePage.getPath().concat("/jcr:content/root/footer/footer-text"));
 		} else {
 			textRes = res;
 		}

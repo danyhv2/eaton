@@ -1,47 +1,3 @@
-h1, .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 35px; line-height: 40px; }
-
-@media screen and (min-width: 992px) { h1, .b-heading-h1 { font-size: 54px; line-height: 68px; } }
-
-h2, .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 28px; line-height: 32px; }
-
-@media screen and (min-width: 992px) { h2, .b-heading-h2 { font-size: 40px; line-height: 50px; } }
-
-h3, .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 28px; line-height: 32px; }
-
-@media screen and (min-width: 992px) { h3, .b-heading-h3 { font-size: 40px; line-height: 50px; } }
-
-h4, .b-heading-h4 { font-family: Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 29px; }
-
-@media screen and (min-width: 992px) { h4, .b-heading-h4 { font-size: 30px; line-height: 42px; } }
-
-h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 30px; }
-
-@media screen and (min-width: 992px) { h5, .b-heading-h5 { font-size: 26px; line-height: 40px; } }
-
-.b-body-copy, .rich-text-container, .rich-text-container p { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
-
-.b-body-copy a, .rich-text-container a { color: #005EB8; }
-
-.b-body-copy a:active, .rich-text-container a:active { font-weight: bold; }
-
-@media screen and (min-width: 992px) { .b-body-copy, .rich-text-container, .rich-text-container p { font-size: 24px; line-height: 38px; } }
-
-.b-body-copy-small { font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
-
-.b-body-copy-small a { color: #005EB8; }
-
-.b-body-copy-small a:active { font-weight: bold; }
-
-@media screen and (min-width: 992px) { .b-body-copy-small { font-size: 18px; line-height: 24px; } }
-
-.b-eyebrow-large { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 17px; line-height: 20px; text-transform: uppercase; }
-
-@media screen and (min-width: 992px) { .b-eyebrow-large { font-size: 24px; line-height: 38px; } }
-
-.b-eyebrow-small { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 14px; line-height: 17px; text-transform: uppercase; }
-
-@media screen and (min-width: 992px) { .b-eyebrow-small { font-size: 18px; line-height: 24px; } }
-
 .icon::before { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; font-family: "eaton-glyphicon"; font-smoothing: antialiased; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; text-decoration: inherit; text-rendering: optimizeLegibility; text-transform: none; }
 
 .icon-badge::before { content: "\EA01"; }
@@ -84,7 +40,7 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 .icon-list-items::before { content: "\EA14"; }
 
-.icon-list::before { content: "\EA15"; }
+.icon-checklist::before { content: "\EA15"; }
 
 .icon-marker::before { content: "\EA16"; }
 
@@ -118,19 +74,19 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight
 
 .icon-user::before { content: "\EA25"; }
 
+@media screen and (max-width: 991px) { .container { padding: 0 30px; } }
+
 @font-face { font-family: 'Eaton'; src: url("fonts/EatonRegular.woff") format("woff"); }
 
 @font-face { font-family: 'EatonMedium'; src: url("fonts/EatonMedium.woff") format("woff"); }
 
 @font-face { font-family: 'EatonBold'; src: url("fonts/EatonBold.woff") format("woff"); }
 
-@font-face { font-family: 'Arial'; src: url("fonts/Arial.woff"); }
-
 @font-face { font-family: "eaton-glyphicon"; font-style: normal; font-weight: normal; src: url("../css/fonts/eaton-glyphicon.eot"); src: url("../css/fonts/eaton-glyphicon.eot?#iefix") format("eot"), url("../css/fonts/eaton-glyphicon.woff") format("woff"), url("../css/fonts/eaton-glyphicon.ttf") format("truetype"); }
 
 .icon { font-size: 24px; line-height: 0; }
 
-body { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 16px; }
+body { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 16px; overflow-x: hidden; }
 
 b, strong { font-weight: bold; }
 
@@ -140,21 +96,63 @@ i { font-style: normal; }
 
 p { line-height: 1.3; }
 
-h1, h2, h3, .b-heading-h1, .b-heading-h2, .b-heading-h3 { font-family: "Eaton", Arial, sans-serif; }
+a { color: #005EB8; }
 
-h4, h5, .b-heading-h5, .b-heading-h6 { font-family: Arial, "Arial", sans-serif; }
+h1, .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 35px; line-height: 40px; margin-top: 0; }
 
-h1, .b-heading-h1 { margin-top: 0; }
+@media screen and (min-width: 992px) { h1, .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 54px; line-height: 68px; } }
 
-h2, .b-heading-h2 { margin-top: 0; }
+h2, .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 28px; line-height: 32px; margin-top: 0; }
 
-h3, .b-heading-h3 { margin-top: 0; }
+@media screen and (min-width: 992px) { h2, .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 40px; line-height: 50px; } }
 
-h4, .b-heading-h4 { margin-top: 0; }
+h3, .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 28px; line-height: 32px; margin-top: 0; }
 
-h5, .b-heading-h5 { margin-top: 0; }
+@media screen and (min-width: 992px) { h3, .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 40px; line-height: 50px; } }
+
+h4, .b-heading-h4 { font-family: Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 29px; margin-top: 0; }
+
+@media screen and (min-width: 992px) { h4, .b-heading-h4 { font-family: Arial, sans-serif; font-size: 30px; font-weight: bold; line-height: 42px; } }
+
+h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 30px; margin-top: 0; }
+
+@media screen and (min-width: 992px) { h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 40px; } }
+
+h5 a, .b-heading-h5 a { color: #005EB8; }
+
+.b-h4-link { font-size: 1.375em; font-family: Arial, "Arial", sans-serif; color: #005EB8; font-weight: bold; }
+
+.b-h4-link:hover, .b-h4-link:focus, .b-h4-link:active { text-decoration: none; color: #005EB8; }
+
+@media screen and (min-width: 992px) { .b-h4-link { font-size: 1.625em; } }
+
+.b-small-link { font-family: Arial, "Arial", sans-serif; color: #005EB8; font-size: 1.125em; }
+
+.b-small-link:hover, .b-small-link:focus, .b-small-link:active { text-decoration: none; color: #005EB8; }
+
+.b-body-copy { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
+
+.b-body-copy a { color: #005EB8; }
+
+@media screen and (min-width: 992px) { .b-body-copy { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
+
+.b-body-copy-small { font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
+
+.b-body-copy-small a { color: #005EB8; }
+
+@media screen and (min-width: 992px) { .b-body-copy-small { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; } }
+
+.b-eyebrow-large { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 17px; line-height: 20px; text-transform: uppercase; }
+
+@media screen and (min-width: 992px) { .b-eyebrow-large { font-family: Arial, "Arial", sans-serif; font-size: 24px; line-height: 38px; text-transform: uppercase; } }
+
+.b-eyebrow-small { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 14px; line-height: 17px; text-transform: uppercase; }
+
+@media screen and (min-width: 992px) { .b-eyebrow-small { font-family: Arial, "Arial", sans-serif; font-size: 18px; line-height: 24px; text-transform: uppercase; } }
 
 .u-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.u-flex-1 { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
 .u-inline-flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
 
@@ -186,6 +184,8 @@ h5, .b-heading-h5 { margin-top: 0; }
 
 .u-clearfix::after { clear: both; }
 
+.u-list-inline { -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -ms-flexbox; display: flex; list-style-type: none; margin: 0; padding: 0; }
+
 .u-text-center { text-align: center; }
 
 .u-text-left { text-align: left; }
@@ -208,6 +208,20 @@ h5, .b-heading-h5 { margin-top: 0; }
 
 .u-visible { visibility: visible; }
 
+.u-visible-mobile { display: block; }
+
+@media screen and (min-width: 992px) { .u-visible-mobile { display: none; } }
+
+.u-visible-desktop { display: none; }
+
+@media screen and (min-width: 992px) { .u-visible-desktop { display: block; } }
+
+[data-mobile-rendition] { min-width: 2px; }
+
+@media all and (min-width: 768px) and (max-width: 991px) { [data-mobile-rendition] { min-width: 1px; } }
+
+@media all and (min-width: 992px) { [data-mobile-rendition] { min-width: 0; } }
+
 .button--reset { border: 0; background: none; padding: 0; }
 
 .b-button { background: none; border-radius: 0; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; }
@@ -220,7 +234,7 @@ h5, .b-heading-h5 { margin-top: 0; }
 
 .b-button__primary--dark { border-color: #FFF; color: #FFF; }
 
-.b-button__primary--dark:hover, .b-button__primary--dark:active, .b-button__primary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; text-shadow: none; }
+.b-button__primary--dark:hover, .b-button__primary--dark:active, .b-button__primary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; }
 
 .b-button__secondary { border-width: 3px; font-size: 0.875em; padding: 20px; }
 
@@ -232,6 +246,16 @@ h5, .b-heading-h5 { margin-top: 0; }
 
 .b-button__secondary--dark:hover, .b-button__secondary--dark:active, .b-button__secondary--dark:focus { color: #005EB8; background: #FFF; text-decoration: none; }
 
+.b-button__tertiary { border-width: 3px; font-size: 1.25em; padding: 20px 40px; }
+
+.b-button__tertiary--light { border-color: #005EB8; background-color: #005EB8; color: #FFF; }
+
+.b-button__tertiary--light:hover, .b-button__tertiary--light:active, .b-button__tertiary--light:focus { background: #FFF; color: #005EB8; text-decoration: none; }
+
+.b-button__tertiary--dark { border: 0; background-color: #005EB8; color: #FFF; }
+
+.b-button__tertiary--dark:hover, .b-button__tertiary--dark:active, .b-button__tertiary--dark:focus { background: #FFF; color: #005EB8; text-decoration: none; }
+
 @media screen and (max-width: 767px) { .b-button { max-width: 100%; }
   .b-button__secondary { font-size: 1em; } }
 
@@ -239,11 +263,23 @@ h5, .b-heading-h5 { margin-top: 0; }
 
 .b-list--no-bullets { list-style-type: none; padding-left: 0; }
 
+.rich-text-container { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
+
+.rich-text-container a { color: #005EB8; }
+
+@media screen and (min-width: 992px) { .rich-text-container { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
+
 .rich-text-container b, .rich-text-container strong { font-weight: bold; }
 
 .rich-text-container i, .rich-text-container em { font-style: italic; }
 
 .rich-text-container a { text-decoration: underline; }
+
+.rich-text-container p { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
+
+.rich-text-container p a { color: #005EB8; }
+
+@media screen and (min-width: 992px) { .rich-text-container p { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
 
 .rich-text-container ul { list-style-type: none; padding: 0; }
 

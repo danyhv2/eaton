@@ -1,12 +1,8 @@
 package com.eaton.platform.core.util;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.lang.StringUtils;
-import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ValueMap;
@@ -117,46 +113,6 @@ public final class BrightcoveUtil {
 		LOGGER.debug("BrightcoveUtil :: populatePlayerList() :: Exit");
     }
 
-    /**
-     * This method returns the referer url from request header.
-     *
-     * @param request the request
-     * @return the referer URL
-     */
-    public static String getRefererURL(final SlingHttpServletRequest request) {
-    	LOGGER.debug("BrightcoveUtil :: getRefererURL() :: Start");
-        String refererURL;
-        // get current page url from referer of the request header
-        refererURL = request.getHeader(CommonConstants.REFERER_URL);
-        LOGGER.debug("BrightcoveUtil :: getRefererURL() :: Exit");
-        return refererURL;
-    }
-    
-    /**
-     * This method gets the referer url from request header and returns the page path.
-     *
-     * @param resolver the resolver
-     * @param refererURL the referer url
-     * @return path
-     */
-    public static String getContentPath(ResourceResolver resolver, String refererURL) {
-    	LOGGER.debug("BrightcoveUtil :: getContentPath() :: Start");
-        String path = null;
-            try {
-                URL pageURL = new URL(refererURL);
-                path = StringUtils.remove(pageURL.getPath(), "editor.html");
-                path = StringUtils.remove(path, ".html");
-                path = StringUtils.remove(path, ".htm");
-                Resource pageResource = resolver.resolve(path);
-                path = pageResource.getPath();
-            } catch (MalformedURLException ex) {
-            	LOGGER.error(
-                        "Error in parsing the Referrer URL :: " + refererURL + " :: Exception :: " + ex.getMessage());
-            }
-            LOGGER.debug("BrightcoveUtil :: getContentPath() :: Exit");
-        return path;
-    }
-    
     /**
      * This method returns Brightcove cloud configuration
      * page's jcr:content resource.

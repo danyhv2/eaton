@@ -3,6 +3,11 @@
 %>
 <%@page import="java.util.List,java.util.ArrayList,java.util.Iterator,com.eaton.platform.core.helpers.ReferenceHelper" %>
 
+<section class="mega-menu dark-theme">
+    <div class="container-fluid">
+        <div class="row">
+
+
 <%
     String css=null;
 	String overlayPath=null;
@@ -16,21 +21,18 @@
 			overlayPath=parts[1];
             
 
-			
+
 %>
 
 
-<section class="mega-menu dark-theme">
-    <div class="container-fluid">
-        <div class="row">
-          <div class="mega-menu__content" data-target='mega-menu-<%=css%>'>
-           <sling:include path='<%=overlayPath%>' />
-           </div>
-        </div>
-    </div>    
-</section>
+			<div class="mega-menu__content" data-target='mega-menu-<%=css%>'>
+           		<sling:include path='<%=overlayPath%>' />
 
+            </div>
 <% 
         }
     }
 %>
+        </div>
+    </div>    
+</section>

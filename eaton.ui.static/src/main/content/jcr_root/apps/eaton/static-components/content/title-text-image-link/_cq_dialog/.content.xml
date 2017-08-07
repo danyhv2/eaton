@@ -59,6 +59,10 @@
                                         jcr:primaryType="nt:unstructured"
                                         text="Article Feature"
                                         value="article-feature"/>
+                                    <topic-link-white
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Topic Link, White"
+                                        value="topic-link-white"/>
                                 </items>
                             </view>
                         </items>

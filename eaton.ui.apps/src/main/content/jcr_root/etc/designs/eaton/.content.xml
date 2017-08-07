@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <clientlib/>
     <jcr:content
-        cq:lastModified="{Date}2017-07-22T12:15:24.777+05:30"
+        cq:lastModified="{Date}2017-08-03T20:21:37.903+05:30"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="Eaton Design"
@@ -36,15 +36,32 @@
                 <image/>
             </logo>
         </page>
-        <eaton-home-page jcr:primaryType="nt:unstructured">
-            <par
-                jcr:lastModified="{Date}2017-07-22T12:15:24.777+05:30"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                components="[group:Eaton Content,group:Eaton General,group:Eaton Layout,group:Eaton Structure]">
-                <section jcr:primaryType="nt:unstructured"/>
-            </par>
-        </eaton-home-page>
+        
+        <eaton-overlay-page-component jcr:primaryType="nt:unstructured">
+            <menuoverlay jcr:primaryType="nt:unstructured">
+                <par4
+                    jcr:lastModified="{Date}2017-08-03T20:21:37.900+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    components="[/apps/eaton/components/content/list,/apps/eaton/components/content/search-box,/apps/eaton/components/content/ttil,/apps/eaton/components/content/ttil-list,/apps/eaton/components/general/link-list]">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </par4>
+                <par1
+                    jcr:lastModified="{Date}2017-08-03T20:20:45.935+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    components="[/apps/eaton/components/content/list,/apps/eaton/components/content/search-box,/apps/eaton/components/content/ttil,/apps/eaton/components/content/ttil-list,/apps/eaton/components/general/link-list]">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </par1>
+                <par3
+                    jcr:lastModified="{Date}2017-08-03T20:21:09.431+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    components="[/apps/eaton/components/content/list,/apps/eaton/components/content/search-box,/apps/eaton/components/content/ttil,/apps/eaton/components/content/ttil-list]">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </par3>
+            </menuoverlay>
+        </eaton-overlay-page-component>
     </jcr:content>
     <favicon.ico/>
 </jcr:root>

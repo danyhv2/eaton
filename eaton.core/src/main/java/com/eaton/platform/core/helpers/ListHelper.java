@@ -47,6 +47,9 @@ public class ListHelper extends EatonAbstractUseBean {
 
 	/** The Constant ARTICLE_LIST_SINGLE_FEATURE_VIEW. */
 	private static final String ARTICLE_LIST_SINGLE_FEATURE_VIEW = "article-list-single-feature";
+
+	/** The Constant SIMPLE_DATE_FORMAT. */
+	private static final String SIMPLE_DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 	
 	/** The listModel bean. */
 	private ListModel listModel;
@@ -92,7 +95,7 @@ public class ListHelper extends EatonAbstractUseBean {
 	 */
 	private void setListContent(ResourceResolver resResolver, PageManager pageManager, String listType) {
 		LOG.debug("ListHelper :: setListContent() :: Started");
-		SimpleDateFormat simpleDate = new SimpleDateFormat();
+		SimpleDateFormat simpleDate = new SimpleDateFormat(SIMPLE_DATE_FORMAT);
 		SimpleDateFormat publicationDateFormat = new SimpleDateFormat(CommonConstants.DATE_FORMAT_PUBLISH);
 		
 		// based on the type of view set the bean elements in the typeList for presentation layer
@@ -108,8 +111,14 @@ public class ListHelper extends EatonAbstractUseBean {
 						Resource jcrResource = childResource.getChild(JcrConstants.JCR_CONTENT);
 						if(null != jcrResource) {
 							ValueMap pageProperties = jcrResource.getValueMap();
-							if(StringUtils.equals(StringUtils.EMPTY, CommonUtil.getStringProperty(pageProperties, NameConstants.PN_HIDE_IN_NAV)) && typeList.size() < listModel.getCount()) {
-								setFieldsInList(resResolver, simpleDate, publicationDateFormat, childResource, pageProperties, listType, pageProperties);
+							if(StringUtils.equals(LINKS_VIEW, listModel.getView())) {
+								if(StringUtils.equals(StringUtils.EMPTY, CommonUtil.getStringProperty(pageProperties, NameConstants.PN_HIDE_IN_NAV))) {
+									setFieldsInList(resResolver, simpleDate, publicationDateFormat, childResource, pageProperties, listType, pageProperties);
+								}
+							} else {
+								if(StringUtils.equals(StringUtils.EMPTY, CommonUtil.getStringProperty(pageProperties, NameConstants.PN_HIDE_IN_NAV)) && typeList.size() < listModel.getCount()) {
+									setFieldsInList(resResolver, simpleDate, publicationDateFormat, childResource, pageProperties, listType, pageProperties);
+								}
 							}
 						}
 					}
@@ -126,8 +135,14 @@ public class ListHelper extends EatonAbstractUseBean {
 	                Resource tagResource = (Resource)tagsIt.next(); 
 	    			if(null != tagResource && StringUtils.startsWith(tagResource.getPath(), CommonConstants.CONTENT_ROOT_FOLDER)){
 	    					ValueMap pageProperties = tagResource.getValueMap();
-	    					if(StringUtils.equals(StringUtils.EMPTY, CommonUtil.getStringProperty(pageProperties, NameConstants.PN_HIDE_IN_NAV)) && typeList.size() < listModel.getCount()){
-	    						setFieldsInList(resResolver, simpleDate, publicationDateFormat, tagResource, pageProperties, listType, pageProperties);
+	    					if(StringUtils.equals(LINKS_VIEW, listModel.getView())) {
+	    						if(StringUtils.equals(StringUtils.EMPTY, CommonUtil.getStringProperty(pageProperties, NameConstants.PN_HIDE_IN_NAV))){
+		    						setFieldsInList(resResolver, simpleDate, publicationDateFormat, tagResource, pageProperties, listType, pageProperties);
+		    					}
+	    					} else {
+		    					if(StringUtils.equals(StringUtils.EMPTY, CommonUtil.getStringProperty(pageProperties, NameConstants.PN_HIDE_IN_NAV)) && typeList.size() < listModel.getCount()){
+		    						setFieldsInList(resResolver, simpleDate, publicationDateFormat, tagResource, pageProperties, listType, pageProperties);
+		    					}
 	    					}
 	    			}
 	            }
@@ -181,7 +196,7 @@ public class ListHelper extends EatonAbstractUseBean {
 			listTypeBean.setDescriptionFeature(CommonUtil.getStringProperty(properties, CommonConstants.TEASER_DESCRIPTION));
 			listTypeBean.setAltTxt(CommonUtil.getAssetAltText(resResolver, imagePath));
 		} else if(StringUtils.equals(LINKS_VIEW, listModel.getView())) {
-			listTypeBean.setEyebrow(CommonUtil.getLinkTitle(null, StringUtils.removeEnd(pageResource.getPath(), JcrConstants.JCR_CONTENT), this.resourceResolver));
+			listTypeBean.setHeadline(CommonUtil.getLinkTitle(null, StringUtils.removeEnd(pageResource.getPath(), JcrConstants.JCR_CONTENT), this.resourceResolver));
 		}
 		if(StringUtils.equals(CommonConstants.FIXED_LIST, listType)) {
 			listTypeBean.setWindowFixed(StringUtils.equals(CommonUtil.getStringProperty(pageProperties, CommonConstants.NEW_WINDOW_FIXED), CommonConstants.TRUE) ? CommonConstants.TARGET_BLANK : StringUtils.EMPTY);
@@ -192,6 +207,7 @@ public class ListHelper extends EatonAbstractUseBean {
 		listTypeBean.setCreatedDate(CommonUtil.getDateProperty(properties, CommonConstants.JCR_CREATED, simpleDate).toString());
 		listTypeBean.setTemplateName(CommonUtil.getStringProperty(properties, CommonConstants.TEMPLATE_PROP_KEY));
 		typeList.add(listTypeBean);
+		
 	}
 
 	/**
@@ -207,12 +223,12 @@ public class ListHelper extends EatonAbstractUseBean {
 						int comparisonValue = 0;
 						switch(listModel.getSort()) {
 							case CommonConstants.TITLE : {
-								comparisonValue = list1.getEyebrow().compareToIgnoreCase(list2.getEyebrow());
+								comparisonValue = list1.getHeadline().compareToIgnoreCase(list2.getHeadline());
 								break;
 							}
 							case CommonConstants.PUBLISH_DATE : {
 								if(StringUtils.isNotBlank(list1.getPublicationDate()) && StringUtils.isNotBlank(list2.getPublicationDate())) {
-									DateFormat simpleDate = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
+									DateFormat simpleDate = new SimpleDateFormat(CommonConstants.DATE_FORMAT_PUBLISH, Locale.ENGLISH);
 									Date date1;
 									Date date2;
 									try {
@@ -254,25 +270,34 @@ public class ListHelper extends EatonAbstractUseBean {
 	 */
 	private void getColumnLinksList() {
 		linkViewList = new ArrayList<List<ListTypeBean>>();
-		int columnCount = typeList.size()/4;
-		if(columnCount < 11) {
-			columnCount = 10; 
+		int columnCount = listModel.getCount() == 0 ? 10 : listModel.getCount();
+		if(columnCount*4 < typeList.size()) {
+			if(typeList.size() % 4 == 0) {
+				columnCount = typeList.size()/4;
+			} else {
+				columnCount = (typeList.size()/4)+1;
+			}
 		}
+		int listColumnCount = 1;
 		if(typeList.size()< columnCount+1) {
 			linkViewList.add(typeList);
-		} else if(typeList.size() > columnCount && typeList.size() < 2*columnCount+1) {
+		} else if(typeList.size() > columnCount && typeList.size() < (2*columnCount)+1) {
 			linkViewList.add(typeList.subList(0, columnCount));
 			linkViewList.add(typeList.subList(columnCount, typeList.size()));
-		} else if((typeList.size()> 2*columnCount) && typeList.size() < 3*columnCount+1) {
+			listColumnCount = 2;
+		} else if((typeList.size()> 2*columnCount) && typeList.size() < (3*columnCount)+1) {
 			linkViewList.add(typeList.subList(0, columnCount));
 			linkViewList.add(typeList.subList(columnCount,2*columnCount));
 			linkViewList.add(typeList.subList(2*columnCount, typeList.size()));
+			listColumnCount = 3;
 		} else if(typeList.size()> 3*columnCount) {
 			linkViewList.add(typeList.subList(0, columnCount));
 			linkViewList.add(typeList.subList(columnCount,2*columnCount));
 			linkViewList.add(typeList.subList(2*columnCount,3*columnCount));
 			linkViewList.add(typeList.subList(3*columnCount, typeList.size()));
+			listColumnCount = 4;
 		}
+		slingRequest.setAttribute("listColumnCount", listColumnCount);
 	}
 	
 	/**

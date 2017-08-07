@@ -31,7 +31,8 @@ import com.eaton.platform.core.util.CommonUtil;
         @Property(name = "process.label", value = "EatonConfigServiceImpl"),
         @Property(label="Country Selector Folder Path", name = "countryselector.folder.path", value = ""),
         @Property(unbounded = PropertyUnbounded.ARRAY, label = "LOV Icon List path",
-        	description = "Icon LOVs List Path", name = "lov.icon.list.path", value = {})
+        	description = "Icon LOVs List Path", name = "lov.icon.list.path", value = {}),
+        @Property(unbounded = PropertyUnbounded.ARRAY, name = "linklist.dropdown.option", label = "Link List View Option", value = "", description="This defines text and value of view as dropdown option")
 		})
 public class EatonConfigServiceImpl implements EatonConfigService {
 	
@@ -88,6 +89,16 @@ public class EatonConfigServiceImpl implements EatonConfigService {
                     PropertiesUtil.toStringArray(properties.get(LOV_ICON_LIST_PATH_ARRAY));            
             List<String> lovIconListPath = CommonUtil.getListFromStringArray(lovIconListPathArray);
             this.configServiceBean.setLovIconListPagePathList(lovIconListPath);
+        }
+        if (properties.containsKey(DROPDOWN_OPTION_SELECT)) {
+            String[] dropDownNameArray = PropertiesUtil.toStringArray(properties.get(DROPDOWN_OPTION_SELECT));
+            List<String> dropDownName = CommonUtil.getListFromStringArray(dropDownNameArray);
+            this.configServiceBean.setLinkListViews(dropDownName);
+        }
+        if (properties.containsKey(ICONLIST_PROOFPOINT_SYMBOLS)) {
+            String[] proofPointSymbolsArray = PropertiesUtil.toStringArray(properties.get(ICONLIST_PROOFPOINT_SYMBOLS));
+            List<String> proofPointSymbols = CommonUtil.getListFromStringArray(proofPointSymbolsArray);
+            this.configServiceBean.setProofPointSymbols(proofPointSymbols);;
         }
         LOGGER.debug("EatonConfigServiceImpl :: initializeConfigurations() :: Exit");
 	}

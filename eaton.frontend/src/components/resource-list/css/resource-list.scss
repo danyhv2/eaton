@@ -1,0 +1,75 @@
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.secondary-content-accordion{
+  
+  &__header {
+    position: relative;
+    padding: 0;
+
+    &--title {
+      color: $color__primary-gray1;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__panel {
+    border-bottom: 3px solid $color__secondary-gray5;
+    padding: 30px 0 0;
+
+    &:first-child {
+      @include media-tablet-and-up {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &__download-icon .icon {
+    color: $color__primary-blue;
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+
+  &__badge {
+    background-color: $color__accent-orange;
+    color: $color__white;
+    padding: 6px 10px;
+    font-size: 1.125rem;
+    bottom: 7px;
+    position: relative;
+    left: 10px;
+  }
+
+  &__column {
+
+    &:first-child {
+      @include media-tablet-and-up {
+        padding-right: 35%;
+      }
+    }
+  }
+
+  &__body {
+    padding-bottom: 50px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+
+    @include media-tablet-and-up {
+      flex-direction: row;
+    }
+  }
+
+  &__icons {
+    position: absolute;
+    right: 0;
+    color: $color__primary-blue;
+    font-size: 2.25rem;
+    bottom: 10px;
+  }
+}

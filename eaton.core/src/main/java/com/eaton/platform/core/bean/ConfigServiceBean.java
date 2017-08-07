@@ -17,6 +17,12 @@ public class ConfigServiceBean implements Serializable {
 	/** The lov icon list page path list. */
 	private List<String> lovIconListPagePathList;
 	
+    /** The link list views. */
+	private List<String> linkListViews;
+	
+    /** The Icon List proof point symbols. */
+	private List<String> proofPointSymbols;
+    
 	/**
 	 * Gets the countryselector folder path.
 	 *
@@ -51,6 +57,32 @@ public class ConfigServiceBean implements Serializable {
 	 */
 	public void setLovIconListPagePathList(List<String> lovIconListPagePathList) {
 		this.lovIconListPagePathList = lovIconListPagePathList;
+	}
+
+	/**
+	 * Gets the link list views.
+	 *
+	 * @return the link list views
+	 */
+	public List<String> getLinkListViews() {
+		return linkListViews;
+	}
+
+	/**
+	 * Sets the link list views.
+	 *
+	 * @param linkListViews the new link list views
+	 */
+	public void setLinkListViews(List<String> linkListViews) {
+		this.linkListViews = linkListViews;
+	}
+
+	public List<String> getProofPointSymbols() {
+		return proofPointSymbols;
+	}
+
+	public void setProofPointSymbols(List<String> proofPointSymbols) {
+		this.proofPointSymbols = proofPointSymbols;
 	}
 	
 }
