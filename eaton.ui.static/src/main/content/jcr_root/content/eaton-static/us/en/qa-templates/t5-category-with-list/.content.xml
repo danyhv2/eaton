@@ -231,7 +231,7 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/search-box"
-                view="search-box"/>
+                view="default"/>
             <tabbed_menu_list
                 jcr:created="{Date}2017-08-03T20:49:08.085-06:00"
                 jcr:createdBy="admin"

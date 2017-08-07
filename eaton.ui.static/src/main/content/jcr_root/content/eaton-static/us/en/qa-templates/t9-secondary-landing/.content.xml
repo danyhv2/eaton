@@ -248,7 +248,7 @@
                 jcr:lastModifiedBy="etn-eduardo"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/search-box"
-                view="search-box"/>
+                view="default"/>
             <title_text_image_lin_708215571
                 jcr:created="{Date}2017-07-19T21:18:05.533Z"
                 jcr:createdBy="etn-eduardo"
