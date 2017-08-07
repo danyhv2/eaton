@@ -115,5 +115,3 @@
 .eaton-search .form-control { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 0; border-radius: 0; height: auto; -webkit-box-shadow: none; box-shadow: none; }
 
 .eaton-search .form-control:focus { outline: none; }
-
-.eaton-search__submit { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 0; }
