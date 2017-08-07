@@ -4,7 +4,10 @@
       <div class="row">
 
         <!--/* Search Form */-->
-        <form class="col-xs-12 eaton-search__form eaton-search--default__form" data-form-action="${data.form.searchResultsPath}">
+        <form class="col-xs-12 eaton-search__form eaton-search--default__form"
+              action="${data.form.searchResultsPath}"
+              autocomplete="off"
+              target="${data.form.isExternal == true ? '_blank' : '_self'}">
           <div class="form-group">
             <label for="mega-menu-search" class="sr-only">${data.header}</label>
             <input type="text"

@@ -6,7 +6,10 @@
     <p data-sly-test="${data.subheader}" class="eaton-search--inline__subheader">${data.subheader}</p>
 
     <!--/* Search Form */-->
-    <form class="eaton-search__form eaton-search--inline__form" data-form-action="${data.form.searchResultsPath}">
+    <form class="eaton-search__form eaton-search--inline__form"
+          action="${data.form.searchResultsPath}"
+          autocomplete="off"
+          target="${data.form.isExternal == true ? '_blank' : '_self'}">
       <div class="form-group">
         <label for="mega-menu-search" class="sr-only">${data.header}</label>
           <input type="text" name="search-term" class="form-control eaton-search--inline__form-input" id="mega-menu-search" placeholder="${data.form.placeholder}">
