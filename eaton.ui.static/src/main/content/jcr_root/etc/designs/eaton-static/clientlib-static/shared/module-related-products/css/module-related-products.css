@@ -1,5 +1,9 @@
 .module-related-products { position: relative; }
 
+.module-related-products__slides { padding: 0; }
+
+.module-related-products__slides .slides { position: relative; }
+
 .module-related-products__dots { text-align: center; }
 
 .module-related-products__dots li { display: inline; padding-right: 10px; }
