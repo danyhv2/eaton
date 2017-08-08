@@ -357,6 +357,7 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="eaton/static-components/general/text"
+                        testdata="t11-listing-page-3"
                         view="default"/>
                 </col1-par>
                 <col2-par
