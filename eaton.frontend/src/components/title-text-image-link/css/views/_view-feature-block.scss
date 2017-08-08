@@ -4,13 +4,13 @@
 
   &__container {
 
-    &--blue {
-      height: 600px;
+    &--height {
+      height: 665px;
       display: flex;
-    }
 
-    &--right {
-
+      @include media-mobile-only {
+        height: 750px;
+      }
     }
 
     &--white {
