@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-04T22:38:43.833-06:00"
+        cq:lastModified="{Date}2017-08-08T15:29:02.679-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:primaryType="cq:PageContent"
@@ -242,11 +242,25 @@
                 jcr:lastModified="{Date}2017-08-04T22:32:09.161-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/product/product-family-card"/>
+                sling:resourceType="eaton/static-components/product/product-family-card">
+                <icon-list
+                    jcr:lastModified="{Date}2017-08-08T15:28:44.098-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/content/icon-list"
+                    view="no-image-highlights"/>
+                <product-features
+                    jcr:lastModified="{Date}2017-08-08T15:29:02.677-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/product/product-features"
+                    testdata="t7-product-family-template-overview-tab"
+                    view="product-features"/>
+            </product_family_card>
             <intra_tab_link
                 jcr:created="{Date}2017-08-04T20:26:32.235-06:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2017-08-04T20:26:36.016-06:00"
+                jcr:lastModified="{Date}2017-08-08T15:28:51.876-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/general/intra-tab-link"
