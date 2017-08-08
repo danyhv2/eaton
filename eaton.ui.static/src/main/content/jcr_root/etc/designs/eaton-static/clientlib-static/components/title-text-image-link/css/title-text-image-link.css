@@ -132,6 +132,12 @@
 
 .eaton-topic-link-white__cta-wrapper { text-align: center; }
 
+.eaton-topic-link-white--grey { background: #F8F8F8; }
+
+.eaton-topic-link-white--blue { background: #005EB8; }
+
+.eaton-topic-link-white--blue .eaton-topic-link-white__header, .eaton-topic-link-white--blue .eaton-topic-link-white__description { color: #FFF; }
+
 @media screen and (min-width: 992px) { .eaton-topic-link-white__icon { width: 70px; margin-bottom: 0; margin-right: 30px; display: inline-block; }
   .eaton-topic-link-white__text-wrapper { width: calc(100% - 100px); display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; float: right; }
   .eaton-topic-link-white__text-wrapper.no-icon { width: 100%; }

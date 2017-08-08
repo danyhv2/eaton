@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-04T21:32:15.012-06:00"
+        cq:lastModified="{Date}2017-08-08T12:39:28.095-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:primaryType="cq:PageContent"
@@ -296,6 +296,13 @@
                     testdata="t11-listing-page-2"
                     view="2column"/>
             </featured_topic>
+            <title_1393607572
+                jcr:created="{Date}2017-08-08T12:34:55.496-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-08T12:34:55.496-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/general/title"/>
             <search_results
                 jcr:created="{Date}2017-08-04T21:24:07.224-06:00"
                 jcr:createdBy="admin"
@@ -304,6 +311,24 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/search-results"
                 view="simple"/>
+            <title
+                jcr:created="{Date}2017-08-08T12:34:51.375-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-08T12:35:03.384-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/general/title"
+                testdata="t11-listing-page-2"
+                view="default"/>
+            <text
+                jcr:created="{Date}2017-08-08T12:34:57.771-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-08T12:39:28.092-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/general/text"
+                testdata="t11-listing-page-2"
+                view="default"/>
             <title_text_image_lin_1456591728
                 jcr:created="{Date}2017-08-04T21:30:06.453-06:00"
                 jcr:createdBy="admin"
@@ -311,6 +336,7 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/title-text-image-link-list"
+                testdata="t11-listing-page-1"
                 view="tile-link"/>
             <grid_3_column_contro
                 jcr:created="{Date}2017-08-04T21:26:05.573-06:00"
