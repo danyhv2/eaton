@@ -35,7 +35,9 @@
 
 .feature-block-component { padding: 60px 0; }
 
-.feature-block-component__container--blue { height: 600px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.feature-block-component__container--height { height: 665px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+@media screen and (max-width: 767px) { .feature-block-component__container--height { height: 750px; } }
 
 .feature-block-component__container--white { height: 500px; }
 
