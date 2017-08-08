@@ -22,10 +22,10 @@
 
 var App = window.App || {};
 
-App.resultsList = function () {
+App.searchResults = function () {
 
-  var componentCSSClass = '.results-list';
-  var $componentElement = $(componentCSSClass);
+  var resultListCSSClass = '.results-list';
+  var $componentElement = $('.search-results').find(resultListCSSClass);
   var templates = {};
 
   /**
@@ -67,21 +67,13 @@ App.resultsList = function () {
     return '\n      <div class="results-list-module results-list-module--type-' + data.contentType + '">\n\n        <div class="results-list-module__icon-wrapper">\n          <a href="' + data.contentItem.link.url + '"\n            target="' + data.contentItem.link.target + '"\n            class="results-list-module__url-link"\n            aria-label="Download ' + data.contentItem.documentName + '"\n          >\n            <i class="icon icon-download" aria-hidden="true"></i>\n            <span class="sr-only">' + data.contentItem.link.text + '</span>\n          </a>\n        </div>\n\n        <div class="results-list-module__content-wrapper">\n\n          <h4 class="results-list-module__name b-heading-h5">\n            <a href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-module__name-link"\n            >' + data.contentItem.name + '</a>\n          </h4>\n\n          <div class="results-list-module__document b-body-copy">(' + data.contentItem.documentType + ' ' + data.contentItem.documentSize + ')</div>\n\n          <div class="results-list-module__link-url b-body-copy-small">\n            <a data-sly-attribute.href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-module__link"\n              aria-label="Download ' + data.contentItem.documentName + '"\n            >' + data.contentItem.link.text + '</a>\n          </div>\n\n        </div>\n      </div>\n    ';
   };
 
-  // SKU Card Template
-  //--------------
-  templates.productCard = function (data) {
-    return '\n      <div class="product-card-sku">\n\n        <div class="product-card-sku__image-wrapper b-body-copy-small">\n          <a href="' + data.contentItem.link.url + '"\n            class="product-card-sku__image-link"\n            target="' + data.contentItem.link.target + '"\n          >\n            <img src="' + data.contentItem.imgSrc + '"\n              class="product-card-sku__image"\n              alt="' + data.contentItem.name + '" />\n          </a>\n        </div>\n\n        <div class="product-card-sku__header">\n\n          <div class="product-card-sku__title-wrapper">\n            <h3 class="product-card-sku__name">\n              <a href="' + data.contentItem.link.url + '"\n                target="' + data.contentItem.link.target + '"\n                class="product-card-sku__url-link"\n              >\n                <span class="name-label">' + data.contentItem.name + '</span>\n                <i class="icon icon-chevron-right" aria-hidden="true"></i>\n              </a>\n            </h3>\n            <div class="product-card-sku__price b-body-copy">' + data.contentItem.price + '*</div>\n          </div>\n\n          <ul class="product-card-sku__links-list">\n            <li class="product-card-sku__link-item">\n              <a href="' + data.contentItem.productLinks.specificationsURL + '"\n                class="product-card-sku__link-item-link"\n                target="_self"\n                aria-label="Go to Specifications"\n              >\n                <span class="link-label">Specifications</span>\n                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>\n              </a>\n            </li>\n\n            <li class="product-card-sku__link-item">\n              <a href="' + data.contentItem.productLinks.resourcesURL + '"\n                class="product-card-sku__link-item-link"\n                target="_self"\n                aria-label="Go to Resources"\n              >\n                <span class="link-label">Resources</span>\n                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>\n              </a>\n            </li>\n          </ul>\n\n        </div>\n\n        <div class="product-card-sku__content">\n          <div class="product-card-sku__attrs-list">\n\n            ' + data.contentItem.productAttributes.map(function (attribute) {
-      return '<div class="product-card-sku__attrs-list-item">\n                  <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">' + attribute.label + '</div>\n                  <div class="product-card-sku__attr-value b-body-copy">' + attribute.value + '</div>\n                </div>';
-    }).join('') + '\n\n          </div>\n          <div class="product-card-sku__description">' + data.contentItem.description + '</div>\n        </div>\n\n      </div>';
-  };
-
   /**
   * Fetch the next page of results and add them to the DOM
   * @param { Object } event - Click Event Object
   */
   var fetchMoreResults = function fetchMoreResults(event) {
 
-    var $currentComponent = $(event.currentTarget).closest(componentCSSClass);
+    var $currentComponent = $(event.currentTarget).closest(resultListCSSClass);
     var requestURL = $currentComponent.attr('data-results-url');
     var requestNextPage = $currentComponent.attr('data-results-next-page');
 
@@ -115,22 +107,25 @@ App.resultsList = function () {
           newElements += templates.article(data);
         } else if (data.contentType === 'resource') {
           newElements += templates.resource(data);
-        } else if (data.contentType === 'product-card') {
-          newElements += templates.productCard(data);
         }
       });
 
       // Append the new List of Result Elements to the DOM
       $currentComponent.find('.results-list__content').append(newElements);
 
+      // if There are no more results, remove "Load More" button
+      if (!search.ajaxRequestNextPage) {
+        $currentComponent.find('[data-load-more]').remove();
+      }
+
       // Update Fetch URL for the next set of items / next AJAX Request
       $currentComponent.attr('data-results-url', search.ajaxRequestUrl);
       $currentComponent.attr('data-results-next-page', search.ajaxRequestNextPage);
     })
 
-    // If The AJAX Request couldn't be completed
+    // Callback for Failed Request
     .fail(function (data) {
-      console.error('error', data);
+      console.error('[Request-Error]', data);
     });
   };
 
@@ -139,7 +134,6 @@ App.resultsList = function () {
   */
   if ($componentElement.length > 0) {
     init();
-
     // Public methods
     // return { }
   }
