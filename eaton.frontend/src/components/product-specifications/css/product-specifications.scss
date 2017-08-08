@@ -10,15 +10,8 @@
 .product-specifications {
   padding: 20px 0;
 
-  .value-type-document,
-  .value-type-image,
-  .value-type-default {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-
   .value-type-document {
-
+    // empty selector for future reference
   }
 
   .value-type-link {
@@ -27,7 +20,7 @@
 
   .value-type-image {
 
-    a { display: block; }
+    a { display: inline-block; }
 
     img {
       width: 100%;
@@ -39,7 +32,7 @@
   }
 
   .value-type-default {
-
+    // empty selector for future reference
   }
 
 
