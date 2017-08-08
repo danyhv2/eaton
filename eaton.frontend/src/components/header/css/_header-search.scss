@@ -8,6 +8,7 @@
   overflow: hidden;
   visibility: hidden;
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 100;
 
   .search-open & {
     transform: translateY(0);
@@ -22,7 +23,6 @@
     top: 56px;
     bottom: 0;
     width: 100%;
-    z-index: 10;
   }
 
   //-----------------------------------
@@ -30,7 +30,6 @@
   //-----------------------------------
   @include media-desktop-and-up {
     position: absolute;
-    z-index: 10;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.45);
   }
 }

@@ -40,7 +40,7 @@
 
 .eaton-product-tabs--fixed .eaton-product-tabs__tab-panel { padding-top: 390px; }
 
-.eaton-product-tabs--fixed .eaton-product-tabs__buttons { position: fixed; z-index: 99999; padding: 0; margin-left: 0; margin-right: 0; }
+.eaton-product-tabs--fixed .eaton-product-tabs__buttons { position: fixed; z-index: 99; padding: 0; margin-left: 0; margin-right: 0; }
 
 .eaton-product-tabs--fixed .eaton-product-tabs__buttons::after { background-color: inherit; content: ''; height: 149px; left: -50%; position: absolute; top: 0; width: 200%; z-index: -1; }
 
