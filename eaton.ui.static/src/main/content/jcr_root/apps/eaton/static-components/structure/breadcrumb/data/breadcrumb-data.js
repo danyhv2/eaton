@@ -6,35 +6,43 @@ use(function () {
   data.links = [
   	{
   		text: 'level1',
-  		link: '#'
+  		url: '#level1',
+      target: "_self"
   	},
   	{
   		text: 'level2',
-  		link: '#'
+  		url: '#level2',
+      target: "_self"
   	},
   	{
   		text: 'level3',
-  		link: '#'
+  		url: '#level3',
+      target: "_self"
   	},
   	{
   		text: 'level4',
-  		link: '#'
+  		url: '#level4',
+      target: "_self"
   	},
   	{
   		text: 'level5',
-  		link: '#'
+  		url: '#level5',
+      target: "_self"
   	},
   	{
   		text: 'level6',
-  		link: '#'
+  		url: '#level6',
+      target: "_self"
   	},
   	{
   		text: 'level7',
-  		link: '#'
+  		url: '#level7',
+      target: "_self"
   	},
   	{
   		text: 'level8',
-  		link: '#'
+  		url: '',
+      target: ""
   	}
   ];
 
