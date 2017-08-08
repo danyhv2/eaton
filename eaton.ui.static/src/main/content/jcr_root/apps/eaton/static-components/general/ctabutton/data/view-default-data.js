@@ -9,7 +9,7 @@ use(function () {
     data.cta = {title: "View tools and downloads", url: "http://www.eaton.com",target: "_self"}
   } else if ((typeof(testdata) != "undefined") && (testdata == "primary-pageoverview")) {
     data.cta = {title: "Learn about our history", url: "http://www.eaton.com", target: "_self"}
-  } else if ((typeof(testdata) != "undefined") && ((testdata == "primary-pageoverview") || (testdata == "primary-featuredtopic"))) {
+  } else if ((typeof(testdata) != "undefined") && ((testdata == "primary-pageoverview") || (testdata == "primary-featuredtopic")|| (testdata == "t11-listing-page-1"))) {
     data.cta = {title: "View investor relations", url: "http://www.eaton.com", target: "_self"}
   } else if ((typeof(testdata) != "undefined") && (testdata == "primary-articlelist")) {
     data.cta = {title: "View all press releases", url: "http://www.eaton.com", target: "_self"}
