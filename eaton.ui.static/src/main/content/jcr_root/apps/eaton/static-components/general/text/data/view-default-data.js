@@ -30,7 +30,7 @@ use(function () {
       At Eaton, our vision is to deliver that power more efficiently, reliably and safely with innovative technologies that \
       improve people&apos;s lives, the communities where we live and work, and the planet our future generations depend upon. \
       To meet today&apos;s challenges, and tomorrow&apos;s. That&apos;s what really matters. And we&apos;re here to make sure it works.</p>";
-    } else if ((typeof(testdata) != "undefined") && (testdata == "primary-featuredtopic")) {
+    } else if ((typeof(testdata) != "undefined") && ( (testdata == "primary-featuredtopic") || (testdata == "t11-listing-page-1") ) ) {
       data.text = "<p>When you invest in Eaton, you help power energy solutions that improve the quality of life and the environment for all.</p>";
     } else if ((typeof(testdata) != "undefined") && (testdata == "article-primarycontent")) {
       data.text = "<h2>H2 subheading goes here</h2> \

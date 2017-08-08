@@ -1,4 +1,4 @@
-.module-table__head { margin-top: 0; margin-bottom: 22px; }
+.module-table__head { margin-top: 0; margin-bottom: 22px; padding-left: 20px; }
 
 .module-table__row:nth-child(odd) { background-color: #EEF0F2; }
 

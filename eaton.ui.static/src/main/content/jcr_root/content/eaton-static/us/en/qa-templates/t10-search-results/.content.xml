@@ -14,7 +14,7 @@
         jcr:title="t10-search-results"
         jcr:uuid="d79f27d5-b03d-4ba4-8b29-014d08dc9ce6"
         sling:resourceType="eaton/static-components/structure/eaton-content-page">
-         <eaton-header jcr:primaryType="nt:unstructured">
+        <eaton-header jcr:primaryType="nt:unstructured">
             <mega-menu jcr:primaryType="nt:unstructured">
                 <search-inline
                     jcr:lastModified="{Date}2017-07-17T13:24:07.679-07:00"
@@ -217,6 +217,19 @@
                     testdata="default"
                     view="vertical"/>
             </mega-menu>
+            <header-links
+                jcr:lastModified="{Date}2017-08-07T22:41:29.649Z"
+                jcr:lastModifiedBy="etn-supriya"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/link-list"
+                view="primary-nav"/>
+            <primary-nav-search
+                jcr:lastModified="{Date}2017-08-07T22:45:02.140Z"
+                jcr:lastModifiedBy="etn-supriya"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/search-box"
+                testdata="primary-nav-search"
+                view="default"/>
         </eaton-header>
         <par
             jcr:primaryType="nt:unstructured"
@@ -238,7 +251,7 @@
                 sling:resourceType="eaton/static-components/content/search-results"
                 view="default"/>
         </par>
-         <eaton-footer jcr:primaryType="nt:unstructured">
+        <eaton-footer jcr:primaryType="nt:unstructured">
             <footer-logo
                 jcr:lastModified="{Date}2017-07-20T17:30:17.906Z"
                 jcr:lastModifiedBy="admin"

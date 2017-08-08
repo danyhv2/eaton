@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Page">
-    <t4-sitemap/>
-    <styleguide/>
-    <t10-search-results/>
-    <test-data/>
     <jcr:content
         cq:lastModified="{Date}2017-07-19T19:48:51.141Z"
         cq:lastModifiedBy="etn-supriya"
@@ -12,17 +8,21 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="QA-templates"
         sling:resourceType="eaton/static-components/structure/eaton-home-page"/>
+    <test-data/>
+    <styleguide/>
     <t1-homepage-template/>
     <t2-primary-landing-template/>
     <t3-article-template/>
-    <t9-secondary-landing/>
+    <t4-sitemap/>
+    <t5-category-with-list/>
+    <t6-subcategory/>
     <t7-product-family-template-overview-tab/>
     <t7-product-family-template-models-tab/>
     <t7-product-family-template-resources-tab/>
     <t8-sku-template-overview-tab/>
     <t8-sku-template-specifications-tab/>
     <t8-sku-template-resources-tab/>
-    <t5-category-with-list/>
-    <t6-subcategory/>
+    <t9-secondary-landing/>
+    <t10-search-results/>
     <t11-listing-page/>
 </jcr:root>

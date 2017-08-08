@@ -59,6 +59,8 @@ module.exports = {
     'media-feature-parentheses-space-inside': null,
     'number-no-trailing-zeros': null,
     'number-leading-zero': null,
+    'length-zero-no-unit': null,
+    'shorthand-property-no-redundant-values': null,
     'string-quotes': null,
 
 

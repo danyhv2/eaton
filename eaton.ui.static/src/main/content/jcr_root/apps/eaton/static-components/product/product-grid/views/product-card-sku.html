@@ -1,0 +1,27 @@
+<!--/*
+  M-36 - Product Grid: SKU Results List
+*/-->
+<template data-sly-template.view="${ @ data }">
+
+  <!--/* Results Wrapper */-->
+  <div class="results-list results-list--card-sku"
+    data-results-url="${ data.ajaxRequestUrl }"
+    data-results-next-page="${ data.ajaxRequestNextPage }">
+
+    <!--/* Result Items - SKU */-->
+    <div class="results-list__content">
+      <sly data-sly-list="${ data.results }">
+        <sly data-sly-use.tpl="views/partials/product-card-sku-item.html">
+          <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+        </sly>
+      </sly>
+    </div>
+
+    <!--/* Results List - Disclaimer & Actions */-->
+    <sly data-sly-use.tpl="views/partials/results-list-bottom.html">
+      <sly data-sly-call="${ tpl.partial @ data=data }"></sly>
+    </sly>
+
+  </div>
+
+</template>

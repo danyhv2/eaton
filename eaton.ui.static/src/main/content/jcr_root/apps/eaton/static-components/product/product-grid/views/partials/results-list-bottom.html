@@ -1,0 +1,15 @@
+<!--/* Results List - Disclaimer & Actions */-->
+<template data-sly-template.partial="${ @ data }">
+
+  <div class="results-list__bottom">
+    <div data-sly-test="${ data.resultsOptions.disclaimerEnabled }"
+      class="results-list__disclaimer">${ '* List Prices are not a reflection of the actual product Stree Price. Check with your Eaton reseller or partner to get actual pricing.' @ i18n }</div>
+
+    <div class="results-list__actions text-center">
+      <button class="b-button b-button__primary b-button__primary--light"
+        role="button"
+        data-load-more>${ 'Load More' @ i18n }</button>
+    </div>
+  </div>
+
+</template>

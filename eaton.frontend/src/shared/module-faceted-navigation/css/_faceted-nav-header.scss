@@ -1,114 +1,146 @@
 //-----------------------------------
 // M-62: Faceted Navigation
 //-----------------------------------
-// NOTE: SASS is written "Mobile First" and there are media queries for Other Breakpoints
-
 
 .faceted-navigation-header {
   font-size: 14px;
   margin-bottom: 28px;
 
-  &__sort-options{
-    .desc { color:#6b6b6b;}
-    .desc a {color:#0092dd;}
 
-    select{ display:none; }
-    
-    .styledDropdown dd, .styledDropdown dt, .styledDropdown ul { margin:0px; padding:0px; },
-    .styledDropdown .glyphicon-chevron-down {
+  // SortBy - Custom Dropdown
+  //--------------
+  .styled-dropdown {
+    position: relative;
+    z-index: 1;
+
+    dd,
+    dt,
+    ul {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .icon {
       font-size: 12px;
-      color: #333f48;
+      color: $color__primary-gray1;
       font-weight: normal;
       float: right;
       margin: 5px 0 0 0;
+      width: 12px;
 
-      &:before{
+      &::before {
         padding-right: 48px;
-        color: #005EB8;
+        color: $color__primary-blue;
       }
-
-    }
-    .styledDropdown dd {
-      position:relative;
     }
 
-    .styledDropdown dd a, .styledDropdown dd a:visited {
-      color:#005EB8;
-      outline:none;
-      margin-left:12px;
+    dd {
+      position: relative;
+    }
+
+    dd a,
+    dd a:visited {
+      color: $color__primary-blue;
+      outline: none;
+      margin-left: 12px;
       font-size: 18px;
     }
-    .styledDropdown a:hover {
+
+    > dt > a {
+      color: $color__primary-gray1;
+
+      &:hover {
+        color: $color__primary-gray1;
+        text-decoration: none;
+      }
+    }
+
+    a:hover {
       text-decoration: underline;
     }
-    .styledDropdown dt a:hover {
-      color:#333f48;
-      border: 1px solid #ccc;
+
+    dt a:hover {
+      color: $color__primary-gray1;
+      border: 1px solid $color__secondary-gray4;
     }
-    .styledDropdown dt a {
-      background:#fff no-repeat scroll right center;
-      display:block;
-      border:1px solid #ccc;
-      width:165px;
-      padding:11px 20px 15px 15px;
-      height:45px;
+
+    dt a {
+      background: $color__white;
+      display: block;
+      border: 1px solid $color__secondary-gray4;
+      width: 165px;
+      padding: 11px 20px 15px 15px;
+      height: 45px;
       font-size: 18px;
-      color: #333f48;
       font-weight: normal;
       opacity: .7;
-      max-width:165px;
+      max-width: 165px;
     }
-    .styledDropdown dt a span {
-      color: #005EB8;
-      cursor:pointer;
-      display:block;
+
+    dt a span {
+      color: $color__primary-blue;
+      cursor: pointer;
+      display: block;
     }
-    .styledDropdown dd ul {
-      background:#fff none repeat scroll 0 0;
-      border:1px solid #ccc;
-      border-top: 1px solid #fff;
-      color:#005EB8;
-      display:none;
-      left:0px; 
-      padding:5px 0px;
-      position:absolute;
-      top:-1px;
-      width:auto;
+
+    dd ul {
+      background: $color__white none repeat scroll 0 0;
+      border: 1px solid $color__secondary-gray4;
+      border-top: 1px solid $color__white;
+      color: $color__primary-blue;
+      display: none;
+      left: 0px;
+      padding: 5px 0px;
+      position: absolute;
+      top: -1px;
+      // width: auto;
       width: 165px;
-      max-width:165px;
-      list-style:none;
+      max-width: 165px;
+      list-style: none;
     }
-    .styledDropdown span.value {
-      display:none;
+
+    span.value {
+      display: none;
     }
-    .styledDropdown dd ul li a {
-      padding:5px;
-      display:block;
+
+    dd ul li a {
+      padding: 5px;
+      display: block;
     }
-    .styledDropdown dd ul li a:hover {
-      background-color:#fff;
+
+    dd ul li a:hover {
+      background-color: $color__white;
       font-weight: normal;
     }
-    
-    .styledDropdown img.flag {
-      border:none;
-      vertical-align:middle;
-      margin-left:10px;
+
+    img.flag {
+      border: 0;
+      vertical-align: middle;
+      margin-left: 10px;
     }
+
+  }
+
+
+  &__sort-options {
+    margin-top: 4px;
+
+    .desc {
+      color: #6b6b6b;
+
+      a { color: #0092dd; }
+    }
+
+    select { display: none; }
+
     .flagvisibility {
-      display:none;
+      display: none;
     }
   }
 
   &__header-top,
-  &__header-bottom{
+  &__header-bottom {
     display: flex;
-  }
-
-  &__filter-link, __active-filters {
-    display: inline-block;
-    font-size:14px;
-    color:#333f48;
   }
 
   &__active-filters {
@@ -120,15 +152,10 @@
     margin-left: auto;
     min-width: 85px;
     font-size: 14px;
-    z-index:10;
+    // z-index: 5;
   }
 
-  &__sort-options{
-    margin-top:4px;
-  }
-
-
-  &__header-bottom{
+  &__header-bottom {
     margin-top: 30px;
   }
 
@@ -149,11 +176,9 @@
   //--------------
 
   &__filter-link {
-
-    align-items: top;
-    /*display: flex;*/
+    display: inline-block;
+    font-size: 14px;
     margin-right: 12px;
-
 
     .icon {
       font-size: 10px;
@@ -169,21 +194,22 @@
 
 
   //-----------------------------------
-  // MediaQuery: Mobile & Tablet Only
+  // MediaQuery: 0-991px
   //-----------------------------------
   @include media-mobile-and-tablet {
-    &__header-bottom{
+    &__header-bottom {
       margin-top: 60px;
     }
+
     &__filter-link {
-      font-size:12px;
+      font-size: 12px;
     }
   }
 
 
 
   //-----------------------------------
-  // MediaQuery: Desktop & Desktop Large
+  // MediaQuery: > 992 px
   //-----------------------------------
   @include media-desktop-and-up {
 

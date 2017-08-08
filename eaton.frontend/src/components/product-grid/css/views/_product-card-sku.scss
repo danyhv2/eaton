@@ -3,15 +3,19 @@
 //------------------------------------------
 // NOTE: SASS is written "Mobile First" and there are media queries for Other Breakpoints
 
+.results-list--card-sku {
+  // empty selector for future reference
+}
+
 .product-card-sku {
 
   // Local Variables
   //--------------
-  $color__image-border: #E9E9E9;
+  $color__image-border: $color__secondary-gray5;
   $grid-container-padding-mobile: 30px;
   $thumbnail-size-mobile: 54px;
   $thumbnail-size-desktop: 148px;
-  $carret-right-icon-size: 1rem;
+  $icon-arrow-right-size: 1rem;
 
   position: relative;
 
@@ -19,10 +23,7 @@
   // Styleguide Overrides
   //--------------
   &__name,
-  &__price {
-    color: $color__white;
-  }
-
+  &__price,
   &__name a {
     color: $color__white;
   }
@@ -33,14 +34,18 @@
   &__name,
   &__link-item {
 
-    // Carret Icon
-    .icon { font-size: $carret-right-icon-size; }
+    // Caret Icon
+    .icon { font-size: $icon-arrow-right-size; }
 
+  }
+
+  &__image-link {
+    display: block;
   }
 
   &__image-wrapper {
     position: absolute;
-    z-index: 5;
+    z-index: 2;
   }
 
   &__image {
@@ -90,9 +95,9 @@
       padding-top: 16px; // NOTE: Top-padding is reduced to compensate for Line-Height
 
       .icon {
-        @include square($carret-right-icon-size);
+        @include square($icon-arrow-right-size);
         // It centers the icon vertically
-        line-height: $carret-right-icon-size;
+        line-height: $icon-arrow-right-size;
         position: absolute;
         right: $grid-container-padding-mobile;
         top: 50%;

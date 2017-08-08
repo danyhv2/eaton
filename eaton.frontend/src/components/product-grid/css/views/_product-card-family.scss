@@ -1,0 +1,76 @@
+//------------------------------------------
+// Component M-37: Product Card Family
+//------------------------------------------
+// NOTE: SASS is written "Mobile First" and there are media queries for Other Breakpoints
+
+.results-list--card-family {
+  .results-list__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.product-card-family {
+
+  // Local Variables
+  //--------------
+  $color__image-border: $color__secondary-gray5;
+  $color__image-background: $color__secondary-gray6;
+
+  position: relative;
+  width: 100%;
+
+  &__link {
+    @include absolute-fill();
+    z-index: 1;
+
+    width: 20px; // NOTE: Debug Stlyes
+    background-color: rgba(#639, 0.5); // NOTE: Debug Stlyes
+  }
+
+  &__image-wrapper {
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    padding-top: 100%; // 1:1 Aspect Ratio
+  }
+
+  &__image {
+    position: absolute;
+    background-color: $color__image-background;
+    border: 1px solid $color__image-border;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+  //-----------------------------------
+  // MediaQuery: Mobile & Tablet Only
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+
+    // Remove Margin for each 3rd Item in the row
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+
+
+}
