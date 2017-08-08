@@ -273,10 +273,11 @@ use(function () {
       "ajaxRequestNextPage": 2,
       "resultsCount": 184,
       "currentPage": 1,
-      "keyword": "bckup servre",
+      "searchTerm": "bckup servre",
       "autoCorrect": {
         "enabled": true,
-        "correctedKeyword": "backup server",
+        "searchTerm": "bckup servre",
+        "correctedTerm": "backup server",
         "url": "#backup-server",
         "target": '_self'
       },
