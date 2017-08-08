@@ -81,6 +81,12 @@ use(function () {
     ';
   } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-2")) {
 	data.text = '<p>See what people are saying about Eaton.</p>';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-3")) {
+	    data.text = "<p><strong>FOR MORE INFORMATION</strong></p> \
+	    <p><b><i>Name</i></b></p> \
+	    <i>Title, sector & market</i><br/> \
+	    Country, Region<br/> \
+	    (555) 555-5555<br/><br/>";
   } else {
     data.text = '<p>Eaton is a power management company with 2016 sales of $19.7 billion. <em>We provide energy-efficient solutions</em> that help <b>our customers</b> effectively manage electrical, <i>hydraulic and mechanical</i> power more efficiently, safely and sustainably.</p> \
     <p>Eaton is dedicated to <a href="#">improving the quality of life and the environment</a> through the use of <strong>power management technologies</strong> and services.</p>';

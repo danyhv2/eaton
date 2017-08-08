@@ -3,7 +3,7 @@ use(function () {
     var data = {};
     var testdata = this.testdata;
 
-    if ((typeof(testdata) != "undefined") && (testdata == "single-carousel")) {
+    if ((typeof(testdata) != "undefined") && ( (testdata == "single-carousel") || (testdata == "t8-sku-template-overview-tab") ) ) {
         data = {
             cards: [
                 {

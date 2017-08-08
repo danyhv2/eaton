@@ -243,6 +243,7 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/product/upsell-products"
+                testdata="t8-sku-template-overview-tab"
                 view="upsell-products"/>
             <intra_tab_link
                 jcr:created="{Date}2017-08-04T19:27:56.578-06:00"

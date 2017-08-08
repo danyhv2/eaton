@@ -4,8 +4,13 @@
 
   &__container {
 
-    &--blue {
-      height: 600px;
+    &--height {
+      height: 665px;
+      display: flex;
+
+      @include media-mobile-only {
+        height: 750px;
+      }
     }
 
     &--white {
@@ -16,19 +21,6 @@
       }
     }
 
-    &--left {
-
-      .feature-block-component {
-
-        &__container {
-          display: flex;
-        }
-
-        &--copy {
-          order: 2;
-        }
-      }
-    }
   }
 
   &__copy {
@@ -39,6 +31,13 @@
 
     &--white-text {
       color: $color__white;
+    }
+
+    &--left {
+
+      @include media-tablet-and-up {
+        order: 2;
+      }
     }
   }
 

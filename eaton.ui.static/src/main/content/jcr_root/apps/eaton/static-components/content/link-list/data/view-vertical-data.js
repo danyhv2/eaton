@@ -133,7 +133,7 @@ use(function () {
 			      }
 			    ]
 	 }
-  } else if ((typeof(testdata) != "undefined") && testdata == "primary-featuredtopic-list1") {
+  } else if ((typeof(testdata) != "undefined") && ( (testdata == "primary-featuredtopic-list1") || (testdata == "t11-listing-page-1") ) ) {
 	  data.view = {
 			    eyebrow: 'Stock information',
 			    links: [
@@ -160,7 +160,7 @@ use(function () {
 			      }
 			    ]
 			  }
-  } else if ((typeof(testdata) != "undefined") && testdata == "primary-featuredtopic-list2") {
+  } else if ((typeof(testdata) != "undefined") && ( (testdata == "primary-featuredtopic-list2") || (testdata == "t11-listing-page-2") ) ) {
 	  data.view = {
 			    eyebrow: 'Financial reports',
 			    links: [
