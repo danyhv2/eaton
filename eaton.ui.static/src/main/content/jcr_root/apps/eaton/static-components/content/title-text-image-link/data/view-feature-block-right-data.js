@@ -10,9 +10,9 @@ use(function () {
         imgSrc: '/content/dam/eaton/images/Cityscape_mob.png',
         imgMobile:'/content/dam/eaton/images/Cityscape_mob.png',
         imgTablet:'/content/dam/eaton/images/Cityscape_mob.png',
-        imgAlignment:'left',
+        imgAlignment:'right',
         imgAlt: 'Test image',
-        backgroundColor: '#F8F8F8'
+        backgroundColor: '#005EB8'
     }
     return data;
 });
