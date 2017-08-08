@@ -4,6 +4,9 @@ use(function () {
   var data = {};
   var testdata = this.testdata;
 
+
+  // Product Detail Card M-35
+  //--------------
   data.productDetailCard = {
     "title": "",
     // TODO: Review if this component uses image-renditions
@@ -20,6 +23,10 @@ use(function () {
     }
   };
 
+
+
+  // Media Gallery-Dynamic M-48.1
+  //--------------
   data.mediaGallery = {
     "title": "Media-Gallery Title",
     "description": "Media-Gallery description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -29,6 +36,7 @@ use(function () {
         "description": "",
         "downloadEnabled": true,
         "zoomEnabled": true,
+        "imageAlt": "Image Alt Text",
         "images": {
           "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
           "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
@@ -39,6 +47,9 @@ use(function () {
   };
 
 
+
+  // Related Products M-41
+  //--------------
   data.relatedProducts = {
     "items": [
       {
