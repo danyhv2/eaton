@@ -16,4 +16,4 @@
 
 .module-related-products .slick-active button { background-color: #005EB8; }
 
-@media screen and (min-width: 1200px) { .module-related-products:hover .slick-carousel__arrows { display: block !important; } }
+@media screen and (min-width: 1200px) { .module-related-products:hover .module-related-products__arrows { display: block !important; } }
