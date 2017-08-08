@@ -7,7 +7,7 @@
         "contentType": "family",
         "contentItem": {
           "name": "New Family Item",
-          "imgSrc": "/content/dam/eaton/images/p1.png",
+          "imgSrc": "/content/dam/eaton/images/products/product-1-thumbnail.png",
           "imgAlt": "Network, `Server & Storage UPS",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
           "link": {
@@ -65,7 +65,7 @@
         "contentType": "sku",
         "contentItem": {
           "name": "New SKU Item",
-          "imgSrc": "/content/dam/eaton/images/p2.png",
+          "imgSrc": "/content/dam/eaton/images/products/product-3-thumbnail.png",
           "imgAlt": "9E6Ki-Eaton 9E",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
           "link": {
