@@ -25,21 +25,21 @@ use(function () {
       {
         icon: 'doc-text',
         title: 'Overview',
-        href: '#overview',
+        href: '/content/eaton-static/us/en/qa-templates/t8-sku-template-overview-tab.html',
         target: '_blank',
         selected: true
       },
       {
         icon: 'list-items',
         title: 'Specifications',
-        href: '#specifications',
+        href: '/content/eaton-static/us/en/qa-templates/t8-sku-template-specifications-tab.html',
         target: '_blank',
         selected: false
       },
       {
         icon: 'doc-download',
         title: 'Resources',
-        href: '#Resources',
+        href: '/content/eaton-static/us/en/qa-templates/t8-sku-template-resources-tab.html',
         target: '_blank',
         selected: false
       }
@@ -95,7 +95,7 @@ use(function () {
   }
 
   // Alternative View Data
-  if (properties.get('properties.view') == 'toggle-graphic') {
+  if (properties.get('view') == 'toggle-graphic') {
     data.graphicToggle = true;
   }
 

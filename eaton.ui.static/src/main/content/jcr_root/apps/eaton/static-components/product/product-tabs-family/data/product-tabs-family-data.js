@@ -17,7 +17,7 @@ use(function () {
     // setting graphicToggle to false adds regular <a>
     graphicToggle: false,
 
-    // SKU use dark teheme
+    // SKU uses dark theme
     useDarktheme: true,
 
     // min 1, max 3 tabs
@@ -25,21 +25,21 @@ use(function () {
       {
         icon: 'doc-text',
         title: 'Overview',
-        href: '#overview',
+        href: '/content/eaton-static/us/en/qa-templates/t7-product-family-template-overview-tab.html',
         target: '_blank',
         selected: true
       },
       {
         icon: 'tiles',
         title: 'Models',
-        href: '#models',
+        href: '/content/eaton-static/us/en/qa-templates/t7-product-family-template-models-tab.html',
         target: '_blank',
         selected: false
       },
       {
         icon: 'doc-download',
         title: 'Resources',
-        href: '#Resources',
+        href: '/content/eaton-static/us/en/qa-templates/t7-product-family-template-resources-tab.html',
         target: '_blank',
         selected: false
       }
@@ -95,7 +95,7 @@ use(function () {
   }
 
   // Alternative View Data
-  if (properties.get('properties.view') == 'toggle-graphic') {
+  if (properties.get('view') == 'toggle-graphic') {
     data.graphicToggle = true;
   }
 

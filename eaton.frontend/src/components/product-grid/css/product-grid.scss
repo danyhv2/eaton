@@ -6,5 +6,6 @@
 @import "../../../global/css/_config/sass";
 
 
-// Import SubModules
-@import "product-card-sku";
+// Import Sub Views
+@import "views/product-card-sku";
+@import "views/product-card-family";

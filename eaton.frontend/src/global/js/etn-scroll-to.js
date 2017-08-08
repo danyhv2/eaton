@@ -14,9 +14,14 @@ App.scroll = (function() {
   const headerEl = document.querySelector('.header');
   const productTabsEl = document.querySelector('.eaton-product-tabs');
 
-  const headerHeightFix = 84;
-  const headerHeight = (headerEl) ? headerHeightFix : 0;
-  const productTabsHeight = (productTabsEl) ? productTabsEl.querySelector('.eaton-product-tabs__buttons').clientHeight : 0;
+  const headerHeightFixed = 84;
+  const headerHeight = (headerEl)
+    ? headerHeightFixed
+    : 0;
+
+  const productTabsHeight = (productTabsEl)
+    ? productTabsEl.querySelector('.eaton-product-tabs__buttons').clientHeight
+    : 0;
 
   const init = () => {
     addEventListeners();
@@ -29,7 +34,7 @@ App.scroll = (function() {
   const addEventListeners = () => {
 
     // Bind click behavior for all elements with data-attr
-    $componentSelector.on('click', toClickedElement);
+    $componentSelector.on('click', fromClickedElement);
 
   };
 
@@ -41,9 +46,9 @@ App.scroll = (function() {
   */
   const toElementSelector = (cssSelector, duration = 500, offsetFixedComponets = true) => {
     let positionTop = $(cssSelector).eq(0).offset().top;
-    let titleHeight = 150;
+    const titleHeight = 120;
 
-    // NOTE: There are compnentes like the Header that can have "Position: Fixed".
+    // NOTE: There are components like the Header that can have "Position: Fixed".
     // It adds these components height as an offset to the scroll behavior
     if (offsetFixedComponets) {
 
@@ -52,11 +57,10 @@ App.scroll = (function() {
 
       // Offset Product Tabs
       positionTop -= productTabsHeight;
+
+      positionTop -= titleHeight;
+
     }
-
-    positionTop -= titleHeight;
-
-    // const fixedElements = titleHeight + headerHeight + productTabsHeight;
 
     $htmlEl.animate({
       scrollTop: positionTop
@@ -70,7 +74,7 @@ App.scroll = (function() {
   * Scroll the window to clicked element with a custom "data-attr"
   * @param { Object } event - Click event object
   */
-  const toClickedElement = (event) => {
+  const fromClickedElement = (event) => {
 
     // Enable offset when The Header or other position fixed top components are in the current page
     let offsetEnabled = (

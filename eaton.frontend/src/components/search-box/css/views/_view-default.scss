@@ -77,6 +77,7 @@
   // Selector styles - Form Placeholder
   //-----------------------------------
 
+  // stylelint-disable selector-no-vendor-prefix
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: $color__white;
   }
@@ -92,6 +93,7 @@
   :-moz-placeholder { /* Firefox 18- */
     color: $color__white;
   }
+  // stylelint-enable
 
   //-----------------------------------
   // Mobile Breakpoint

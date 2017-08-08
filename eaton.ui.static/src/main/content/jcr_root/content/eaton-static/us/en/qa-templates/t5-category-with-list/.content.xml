@@ -295,7 +295,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/category-highlight"
                 testdata="homepage">
-                <title-text-image-link
+                <ttil
                     jcr:lastModified="{Date}2017-07-20T18:21:25.836-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"

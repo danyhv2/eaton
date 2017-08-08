@@ -2,17 +2,17 @@
 // M-62: Faceted Navigation
 //-----------------------------------
 
-.faceted-navigation__mobile-facet-container .faceted-navigation {
+.faceted-navigation__mobile-container .faceted-navigation {
   padding: 0 30px;
 }
 
-.autocorrected-search{
+.autocorrected-search {
   margin-top: 20px;
   font-size: 20px;
 }
 
 .faceted-navigation {
-  position:relative;
+  position: relative;
 
   &__list {
     list-style-type: none;
@@ -23,112 +23,115 @@
     padding-left: 4px;
   }
 
-  &__mobile-facet-container {
+  &__mobile-container {
     z-index: 9999;
     background-color: $color__white;
-    margin: 20px 0 30px 0;
+    margin: 20px 0 30px;
 
     &.enabled {
       position: absolute;
       top: 0;
       left: 0;
-      padding:0;
+      padding: 0;
     }
 
     .b-button {
       width: 100%;
-      text-align:center;
+      text-align: center;
       max-width: initial;
     }
   }
 
-.hidden{display:none;}
-.visibile{display:block;}
+  .hidden { display: none; }
 
-.mobile-header{
-  position: absolute;
-  top: -80px;
-  height:53px;
-  font-size: 18px;
-  left: 0;
-  color: #fff;
-  background-color: #666;
-  width: 100%;
-  padding: 15px 30px 0 30px;
+  .visibile { display: block; }
 
-  i{
+  .mobile-header {
     position: absolute;
-    display:block;
-    right: 30px;
-    top: 17px;
-  }
-
-  a{
-    color: #fff;
-  }
-}
-
-.mobile-done{
-  width: 100%;
-  background-color: #005EB8;
-  position:absolute;
-  bottom:-50px;
-  height:50px;
-  left:0;
-  padding-top: 15px;
-
-  a{
-    color: #fff;
-    text-align: center;
-    display: block;
-    width: 100%;
-    font-weight:bold;
-  }
-}
-
-&__group{
-  border-bottom: 1px solid #e6e6e6;
-}
-
-&__list div:last-child{
-  padding-bottom: 12px;
-}
-
- &__header.button--reset, &__view-more-facets button{
-   width:100%;
-   text-align: left;
-   margin: 14px 0;
-   cursor: pointer;
-
-   .icon::before{
-     position:absolute;
-     right:33px;
-     color: #005EB8;
-     font-size: 12px;
-     margin-top: 6px;
-   }
- }
-
-  &__view-more-facets button{
-    color: #005EB8;
-  }
-
- &__facet-name{
+    top: -80px;
+    height: 53px;
     font-size: 18px;
- }
+    left: 0;
+    color: $color__white;
+    background-color: #666;
+    width: 100%;
+    padding: 15px 30px 0 30px;
 
- label, &__view-more-values {
+    i {
+      position: absolute;
+      display: block;
+      right: 30px;
+      top: 17px;
+    }
+
+    a {
+      color: $color__white;
+    }
+  }
+
+  .mobile-done {
+    width: 100%;
+    background-color: $color__primary-blue;
+    position: absolute;
+    bottom: -50px;
+    height: 50px;
+    left: 0;
+    padding-top: 15px;
+
+    a {
+      color: $color__white;
+      text-align: center;
+      display: block;
+      width: 100%;
+      font-weight: bold;
+    }
+  }
+
+  &__group {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  &__list div:last-child {
+    padding-bottom: 12px;
+  }
+
+  &__header.button--reset,
+  &__view-more-facets button {
+    cursor: pointer;
+    margin: 14px 0;
+    text-align: left;
+    width: 100%;
+
+    .icon::before {
+      position: absolute;
+      right: 33px;
+      color: $color__primary-blue;
+      font-size: 12px;
+      margin-top: 6px;
+    }
+  }
+
+  &__view-more-facets button {
+    color: $color__primary-blue;
+  }
+
+  &__facet-name {
+    font-size: 18px;
+  }
+
+  label,
+  &__view-more-values {
     font-size: 14px;
     font-weight: normal;
-    color: #005EB8;
+    color: $color__primary-blue;
     padding-left: 4px;
- }
+  }
 
- h4{
+  h4 {
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 12px;
- }
+  }
 
 
 

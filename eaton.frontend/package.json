@@ -9,9 +9,9 @@
     "lint-fix": "stylelint \"src/**/*.scss\" --syntax scss --fix --cache --cache-location \".stylelintcache/\" --quiet",
     "maven": "cd ../eaton.ui.static/ && mvn -PautoInstallPackage clean install",
     "aemsync": "node config/aemsync",
-    "aemdev": "gulp build:dev",
+    "aemdev": "gulp dev",
     "preaemprod": "npm install --no-optional",
-    "aemprod": "gulp build:prod"
+    "aemprod": "gulp prod"
   },
   "repository": {
     "type": "git",

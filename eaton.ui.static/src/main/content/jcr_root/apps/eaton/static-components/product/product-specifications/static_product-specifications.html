@@ -1,3 +1,8 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Specifications Component</div>
+</sly>
+
+
 <sly data-sly-use.data="${ '../data/product-specifications-data.js' @testdata=properties.testdata }">
 
   <div class="product-specifications">
@@ -53,6 +58,7 @@
                         <!--/* if Type == Image */-->
                         <div data-sly-test.image="${ specValue.type == 'image' }"
                           class="module-table__value value-type-image">
+                          <span>${ specValue.text }</span>
                           <a href="${ specValue.link.url }" target="${ specValue.link.target }">
                             <img src="${ specValue.imageSrc }" alt="${ specValue.text }" />
                           </a>

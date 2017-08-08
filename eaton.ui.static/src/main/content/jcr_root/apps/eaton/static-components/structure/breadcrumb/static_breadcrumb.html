@@ -7,9 +7,21 @@
 
   <div class="eaton-breadcrumb">
     <div class="container">
-      <ul class="eaton-breadcrumb__list" data-sly-list.link="${data.links}">
+      <ul data-sly-list.link="${data.links}" class="eaton-breadcrumb__list">
         <li class="eaton-breadcrumb__list-item" >
-        	<a href="${link.list}" title="Go back to ${link.text}">${link.text}</a> <span class="glyphicon glyphicon-chevron-right" data-sly-test="${linkList.index != data.links.length}"></span>
+
+          <!--/* If the Breadcrum item has a valid / non-empty url */-->
+        	<a data-sly-test.haslink="${ link.url }"
+            href="${ link.url }"
+            target="${ link.target }"
+            aria-label="Go back to ${ link.text }">${ link.text }</a>
+
+          <!--/* Else render just the label witout link */-->
+          <span data-sly-test="${ !haslink }">${ link.text }</span>
+
+          <!--/* Don't render the icon for the last link */-->
+          <i data-sly-test="${ linkList.index != data.links.length }"
+            class="icon icon-chevron-right"></i>
         </li>
       </ul>
     </div>
