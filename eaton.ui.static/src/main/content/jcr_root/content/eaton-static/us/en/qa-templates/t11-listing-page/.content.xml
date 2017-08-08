@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-08T14:15:57.327-06:00"
+        cq:lastModified="{Date}2017-08-08T14:25:14.029-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:primaryType="cq:PageContent"
@@ -261,11 +261,12 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/featured-topic">
                 <title
-                    jcr:lastModified="{Date}2017-08-04T21:18:48.000-06:00"
+                    jcr:lastModified="{Date}2017-08-08T14:25:00.922-06:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/general/title"
                     testdata="t11-listing-page-1"
+                    toggleInnerGrid="true"
                     view="default"/>
                 <cta
                     jcr:lastModified="{Date}2017-08-04T21:19:32.381-06:00"
@@ -275,11 +276,12 @@
                     testdata="t11-listing-page-1"
                     view="default"/>
                 <text
-                    jcr:lastModified="{Date}2017-08-04T21:21:13.994-06:00"
+                    jcr:lastModified="{Date}2017-08-08T14:25:14.026-06:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/general/text"
                     testdata="t11-listing-page-1"
+                    toggleInnerGrid="true"
                     view="default"/>
                 <link-list-left
                     jcr:lastModified="{Date}2017-08-08T14:15:35.671-06:00"
