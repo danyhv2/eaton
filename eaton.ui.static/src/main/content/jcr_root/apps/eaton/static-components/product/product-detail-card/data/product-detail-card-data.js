@@ -33,10 +33,82 @@ use(function () {
   data.relatedProducts = {
     "items": [
       {
-
+        title: 'Eaton 9px Family',
+        text: 'Eaton S-Series Enlosure',
+        image: '/content/dam/eaton/images/products/product-1-thumbnail.png',
+        mobile_image: '/content/dam/eaton/images/products/product-1-thumbnail.png',
+        image_alt: 'Image 1',
+        link: '#image-1',
+        target: '_self'
+      },
+      {
+        title: 'Eaton 9px Family',
+        text: 'Eaton FlexPDU& HotSwap MBP',
+        image: '/content/dam/eaton/images/products/product-2-thumbnail.png',
+        mobile_image: '/content/dam/eaton/images/products/product-2-thumbnail.png',
+        image_alt: 'Image 2',
+        link: '#image-2',
+        target: '_self'
+      },
+      {
+        title: 'Eaton 9px Family',
+        text: 'Eaton S-Series Enlosure',
+        image: '/content/dam/eaton/images/products/product-3-thumbnail.png',
+        mobile_image: '/content/dam/eaton/images/products/product-3-thumbnail.png',
+        image_alt: 'Image 3',
+        link: '#image-3',
+        target: '_self'
+      },
+      {
+        title: 'Eaton 9px Family',
+        text: 'Eaton S-Series Enlosure',
+        image: '/content/dam/eaton/images/products/product-4-thumbnail.png',
+        mobile_image: '/content/dam/eaton/images/products/product-4-thumbnail.png',
+        image_alt: 'Image 4',
+        link: '#image-4',
+        target: '_self'
+      },
+      {
+        title: 'Fuse Disconnect ePDUs',
+        text: 'Network, Server & Storage UPS',
+        image: '/content/dam/eaton/images/products/product-5-thumbnail.png',
+        mobile_image: '/content/dam/eaton/images/products/product-5-thumbnail.png',
+        image_alt: 'Image 5',
+        link: '#image-5',
+        target: '_self'
+      },
+      {
+        title: 'Eaton 9px Family long title used for testing purposes',
+        text: 'Network, Server & Storage UPS Long text used for testing purposes',
+        image: '/content/dam/eaton/images/products/product-6-thumbnail.png',
+        mobile_image: '/content/dam/eaton/images/products/product-6-thumbnail.png',
+        image_alt: 'Image 6',
+        link: '#image-6',
+        target: '_self'
+      },
+      {
+        title: 'Eaton 9px Family',
+        text: 'Eaton S-Series Enlosure',
+        image: '/content/dam/eaton/images/products/product-7-thumbnail.png',
+        mobile_image: '/content/dam/eaton/images/products/product-7-thumbnail.png',
+        image_alt: 'Image 7',
+        link: '#image-7',
+        target: '_self'
       }
     ]
   };
+
+  if ((typeof(testdata) != "undefined") && (testdata == "related-products-two-images")) {
+    data.relatedProducts.items = [];
+  }
+
+  if ((typeof(testdata) != "undefined") && (testdata == "related-products-three-images")) {
+    data.relatedProducts.items = [];
+  }
+
+  if ((typeof(testdata) != "undefined") && (testdata == "related-products-four-images")) {
+    data.relatedProducts.items = [];
+  }
 
   return data;
 
