@@ -5,6 +5,14 @@
 .module-related-products {
   position: relative;
 
+  &__slides {
+    padding: 0;
+
+    .slides {
+      position: relative;
+    }
+  }
+
   &__dots {
     text-align: center;
 
