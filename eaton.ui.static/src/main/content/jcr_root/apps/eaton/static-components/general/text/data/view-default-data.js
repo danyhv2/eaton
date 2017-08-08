@@ -87,6 +87,13 @@ use(function () {
 	    <i>Title, sector & market</i><br/> \
 	    Country, Region<br/> \
 	    (555) 555-5555<br/><br/>";
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-models-list-1")) {
+	    data.text = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla hendrerit, augure vel sollicitudin consectetur.</p>"
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-models-list-2")) {
+	    data.text = "<p><strong>NEED HELP ?</strong></p> \
+	    <p>800-356-5794</p> \
+	    <p>Monday-Friday</p> \
+	    <p>8:00am to 6:00pm ET</p><br/>";
   } else {
     data.text = '<p>Eaton is a power management company with 2016 sales of $19.7 billion. <em>We provide energy-efficient solutions</em> that help <b>our customers</b> effectively manage electrical, <i>hydraulic and mechanical</i> power more efficiently, safely and sustainably.</p> \
     <p>Eaton is dedicated to <a href="#">improving the quality of life and the environment</a> through the use of <strong>power management technologies</strong> and services.</p>';

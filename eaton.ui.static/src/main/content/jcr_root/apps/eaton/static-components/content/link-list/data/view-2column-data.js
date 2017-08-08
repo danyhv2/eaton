@@ -113,7 +113,94 @@ use(function () {
 	        }
 	      ]
 	    };
-    		
+    	
+    } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-models-list")) {
+  	  
+    	data = {
+	      links: [
+	        {
+	          text: '9PX700RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX1000RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX1500RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX1500RTN',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX2000RT' ,
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX700RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX1000RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX1500RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX700RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX1000RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX1500RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX1500RTN',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX2000RT' ,
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX700RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX1000RT',
+	          url: '',
+	          target: '_self'
+	        },
+	        {
+	          text: '9PX1500RT',
+	          url: '',
+	          target: '_self'
+	        }
+	      ]
+	    };
+      		
     } else {
 
 	    data = {
