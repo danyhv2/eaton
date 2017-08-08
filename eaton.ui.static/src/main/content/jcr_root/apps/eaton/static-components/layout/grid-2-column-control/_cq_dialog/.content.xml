@@ -42,9 +42,9 @@
                     text="Column (7/5)"
                     value="is-7"/>
                   <colTwoThird
-                      jcr:primaryType="nt:unstructured"
-                      text="Column (8/4)"
-                      value="is-two-third"/>
+                    jcr:primaryType="nt:unstructured"
+                    text="Column (8/4)"
+                    value="is-two-third"/>
                 </items>
               </view>
             </items>
