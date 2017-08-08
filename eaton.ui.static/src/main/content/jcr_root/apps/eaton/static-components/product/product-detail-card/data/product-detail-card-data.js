@@ -20,11 +20,20 @@ use(function () {
     }
   };
 
-
   data.mediaGallery = {
+    "title": "Media-Gallery Title",
+    "description": "Media-Gallery description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     "items": [
       {
-
+        "title": "",
+        "description": "",
+        "downloadEnabled": true,
+        "zoomEnabled": true,
+        "images": {
+          "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+          "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+          "download": "/content/dam/eaton/images/products/product-1-thumbnail.png"
+        }
       }
     ]
   };
