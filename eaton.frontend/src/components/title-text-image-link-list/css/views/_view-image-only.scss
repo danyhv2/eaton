@@ -1,0 +1,45 @@
+//-----------------------------------
+// TTIL List Component: Image Only
+//-----------------------------------
+
+.eaton-ttil-image-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__item {
+    flex-basis: 31%;
+    padding: 0 10px;
+    margin-bottom: ($spacing__sm * 2);
+  }
+
+  &__content {
+    display: block;
+  }
+
+  &__image-headline {
+    margin-top: ($spacing__sm);
+    color: $color__primary-blue;
+  }
+
+  //-----------------------------
+  // Mobile-Tablet Breakpoint
+  // ----------------------------
+  @include media-mobile-and-tablet {
+    flex-direction: column;
+
+    &__item {
+      flex-basis: 100%;
+      padding: 0 10px;
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__image {
+      width: 150px;
+      display: inline-block;
+    }
+  }
+}

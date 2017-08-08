@@ -1,38 +1,26 @@
 
-/* Product card  starts here*/
-.prod-card{
-    margin-bottom:32px;
-}
 .residential{
-	 font-family: Arial;
-	 border-top:8px solid #EEF0F2;
-	 margin-right: 20px;
-    /* padding-right: 0px; */
-	margin-bottom:15px;
-	border: 1px solid #98A4AE;
+	border: 3px solid #EEF0F2;
 }
-.residential h3{
-	font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    margin-top: 10px;
-	font-size: 16px;
-}
-.residential p{
-	font-family:'EatonBold';
-	color: #0067c6;
-    font-size: 26px;
-    line-height: 32px;
-}
+
 .residential .width100Perc{
 	width:100%;
 }
-/* Product card  ends here*/
-@media only screen and (max-width:768px){
-.residential {
 
-    margin-bottom: 70px;
-    margin-top: 50px;
-
+.residential .heading{
+	text-transform:uppercase;
 }
+
+.residential .heading + .body-link{
+	font-weight:bold;
+	font-size: 1.875em;
+}
+
+
+
+@media only screen and (max-width:992px){      
+   .noFeature .smallPaddingLeft .smallPaddingRight{
+    	padding-left:0px;
+    	padding-right:0px;
     }
+ }

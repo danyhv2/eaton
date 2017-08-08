@@ -1,0 +1,26 @@
+<sly data-sly-use.data="../data/view-featured-list-data.js">
+    <div class="eaton-featured-list">
+
+      <!--/* If Header */-->
+      <div data-sly-test="${ data.header }" class="eaton-featured-list__eyebrow b-eyebrow-small">${ data.header }</div>
+
+      <!--/* List Items */-->
+      <div class="eaton-featured-list__cards" data-sly-list="${ data.items }" >
+        <div class="eaton-featured-list__item">
+            <a href="${ item.link }" aria-label="Go to ${ item.title }" class="eaton-featured-list__link">
+                <div class="eaton-featured-list__image">
+                  <img src="${item.image}" alt="${item.altText}"/>
+                </div>
+
+                <div class="eaton-featured-list__body">
+                  <div class="eaton-featured-list__title">
+                    ${item.title}
+                    <i class="eaton-featured-list__icon glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+                  </div>
+                  <div class="eaton-featured-list__text">${item.text}</div>
+                </div>
+            </a>
+        </div>
+      </div>
+    </div>
+</sly>

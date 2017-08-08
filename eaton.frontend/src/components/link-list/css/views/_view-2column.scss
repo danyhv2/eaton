@@ -1,0 +1,13 @@
+.eaton-linklist-2column {
+  overflow: hidden;
+
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &__link {
+    margin-bottom: $spacing__sm;
+  }
+}

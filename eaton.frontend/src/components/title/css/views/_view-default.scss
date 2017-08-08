@@ -1,0 +1,34 @@
+//-----------------------------------
+// Component: Title - View: Default
+//-----------------------------------
+.eaton-title {
+
+  margin: 0;
+
+  &__eyebrow {
+    // Empty selector for future reference
+  }
+
+  &__headline { margin-bottom: 0; }
+
+  &__byline {
+
+    // Body-Copy-Small-Deviation Override
+    color: $color__primary-gray3;
+    font-family: $font-family__secondary;
+    font-size: 15px;
+    font-style: italic;
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    // Body-Copy-Small-Deviation Override
+    &__byline { font-size: 20px; }
+
+  }
+
+}

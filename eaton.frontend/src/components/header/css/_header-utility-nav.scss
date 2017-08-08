@@ -5,6 +5,11 @@
 .header-utility-nav {
   background: $color__primary-blue;
   padding: 10px 0;
+  font-size: 14px;
+
+  &__row {
+    display: flex;
+  }
 
   &__country {
     text-transform: uppercase;
@@ -15,6 +20,18 @@
 
   &__sign-in {
     text-align: right;
+  }
+
+  .icon {
+    position: relative;
+    top: 2px;
+    font-size: 1em;
+
+    &.icon-chevron-down {
+      font-size: 9px;
+      top: 0;
+      margin-left: 6px;
+    }
   }
 
   .open-country-selector,
@@ -30,16 +47,67 @@
   @include media-mobile-and-tablet {
     position: fixed;
     bottom: 0;
-    z-index: 1;
+    z-index: 13; /* Higher Stacking order than Primary Nav but Less than Search */
     width: 100%;
     right: 0;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-in-out;
+    padding: 0;
+
+    .container {
+      padding: 0;
+    }
+
+    &__row {
+      align-items: center;
+    }
+
+    &__toggle-selector {
+      padding: 25px 0 25px 30px;
+      flex-grow: 1;
+      background: $color__primary-gray1;
+    }
+
+    &__sign-in {
+      text-align: center;
+      padding: 0 $spacing__sm;
+      flex-basis: 100px;
+    }
+
+    &__signin { display: none; }
+
+    .icon {
+
+      &.icon-globe {
+        margin-right: 5px;
+      }
+    }
 
     .nav-open & {
       opacity: 1;
       visibility: visible;
+    }
+  }
+
+  //-----------------------------
+  // Desktop Breakpoints
+  // ----------------------------
+
+  @include media-desktop-and-up {
+    position: relative;
+    z-index: 12;
+
+    &__row {
+      padding: 0 15px;
+    }
+
+    &__toggle-selector {
+      flex: 1;
+    }
+
+    .icon {
+      margin-right: 5px;
     }
   }
 }

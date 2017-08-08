@@ -1,0 +1,46 @@
+//-----------------------------------
+// Component M-40: Product Tabs shared module
+//-----------------------------------
+'use strict';
+
+let App = window.App || {};
+
+App.productTabs = (function() {
+
+  const $componentClass = $('.eaton-product-tabs');
+  const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
+
+  const init = () => {
+    // return;
+    if (!isAEMAuthorMode) {
+      addEventListeners();
+    }
+  };
+
+  /**
+   * Bind All Event Listeners
+   */
+  const addEventListeners = () => {
+
+    $(window).on('scroll', (event) => {
+      const scrollTop = $(window).scrollTop();
+      const isMobile = $(window).innerWidth() < 991; // based on window width
+      const scrollOffset = isMobile ? 142 : 40;
+      const componentFixedClass = 'eaton-product-tabs--fixed';
+      const buttonsClass = '.eaton-product-tabs__buttons';
+      const shouldBeFixed = scrollTop > scrollOffset;
+
+      $componentClass.toggleClass(componentFixedClass, shouldBeFixed);
+      $componentClass.find(buttonsClass).toggleClass('row', !shouldBeFixed);
+      $componentClass.find(buttonsClass).toggleClass('container', shouldBeFixed);
+    });
+  };
+
+  /**
+  * If containing DOM element is found, Initialize and Expose public methods
+  */
+  if ($componentClass.length > 0) {
+    init();
+  }
+
+}());

@@ -1,0 +1,13 @@
+//-----------------------------------
+// Bootstrap Override Styles
+//-----------------------------------
+
+
+//-----------------------------------
+// Mobile Breakpoint
+//-----------------------------------
+@include media-mobile-and-tablet {
+  .container {
+    padding: 0 $spacing__sm;
+  }
+}

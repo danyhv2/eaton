@@ -1,59 +1,48 @@
-<sly data-sly-test="${wcmmode.edit}">Featured Topic</sly>
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Featured Topic</div>
+</sly>
 
 <!--/* BEGIN M-28 Featured Topic Component */ -->
 <sly data-sly-test="!${wcmmode.edit}" data-sly-use.featuredTopic="data/featured-topic-data.js" >
   <div class="eaton-featured-topic container" >
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="eaton-featured-topic__title">${featuredTopic.title}</h2>
-        <div class="eaton-featured-topic__paragraph body-copy">
-          ${featuredTopic.paragraph}
+        <div class="eaton-featured-topic__title">
+          <!--/* Component: Title */-->
+          <sly data-sly-resource="${'title' @ resourceType='/apps/eaton/static-components/general/title'}"></sly>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="eaton-featured-topic__text">
+          <!--/* Component: Text */-->
+          <sly data-sly-resource="${'text' @ resourceType='/apps/eaton/static-components/general/text'}"></sly>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-6 eaton-featured-topic__list-left">
-        <h4 class="eaton-featured-topic__list-title" >
-          ${featuredTopic.leftList.title}
-        </h4>
-        <ul
-          data-sly-list="${ featuredTopic.leftList.items }"
-          class="b-list--no-bullets"
-        >
-          <li>
-            <a class="heading-h5__link b-list__item"
-              aria-label="Go to ${ item.title }"
-              href="${item.href}"
-            >${item.title}</a>
-          </li>
-        </ul>
+        <div class="eaton-featured-topic__link-list">
+          <!--/* Component: LinkList */-->
+          <sly data-sly-resource="${'link-list-left' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+        </div>
       </div>
 
       <div class="col-sm-6 eaton-featured-topic__list-right">
-        <h4 class="eaton-featured-topic__list-title">
-          ${featuredTopic.rightList.title}
-        </h4>
-        <ul
-          data-sly-list="${featuredTopic.rightList.items}"
-          class="b-list--no-bullets"
-        >
-          <li>
-            <a class="heading-h5__link b-list__item"
-              aria-label="Go to ${ item.title }"
-              href="${item.href}"
-            >${item.title}</a>
-          </li>
-        </ul>
+        <div class="eaton-featured-topic__link-list">
+          <!--/* Component: LinkList */-->
+          <sly data-sly-resource="${'link-list-right' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+        </div>
       </div>
     </div>
 
     <div class="row eaton-featured-topic__button-container">
       <div class="col-sm-12 u-text-center">
-        <a href="${featuredTopic.ctaHref}"
-          aria-label="Go to ${ item.ctaText }"
-          class="b-button b-button--secondary b-button--light"
-        >${featuredTopic.ctaText}</a>
+        <!--/* Component: Cta button */-->
+        <sly data-sly-resource="${'cta' @ resourceType='/apps/eaton/static-components/general/ctabutton'}"></sly>
       </div>
     </div>
   </div>

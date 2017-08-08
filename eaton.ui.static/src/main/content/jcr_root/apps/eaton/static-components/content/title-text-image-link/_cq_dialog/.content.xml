@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Title Text Image Link Component"
+    jcr:title="TTIL Component"
     sling:resourceType="cq/gui/components/authoring/dialog"
     helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
     <content
@@ -31,10 +31,38 @@
                                 fieldLabel="View"
                                 name="./view">
                                 <items jcr:primaryType="nt:unstructured">
+                                    <card
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Card"
+                                        value="card"/>
+                                    <page-overview
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Page Overview"
+                                        value="page-overview"/>
                                     <l2-hero
                                         jcr:primaryType="nt:unstructured"
                                         text="L2 Hero"
                                         value="l2-hero"/>
+                                    <singleFeature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Single Feature"
+                                        value="single-feature"/>
+                                    <downloadList
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Download List"
+                                        value="download-list"/>
+                                    <downloadListDesc
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Download List with Descriptions"
+                                        value="download-list-desc"/>
+                                    <article-feature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Article Feature"
+                                        value="article-feature"/>
+                                    <topic-link-white
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Topic Link, White"
+                                        value="topic-link-white"/>
                                 </items>
                             </view>
                         </items>

@@ -1,0 +1,3 @@
+#base=js
+
+module-faceted-navigation.js

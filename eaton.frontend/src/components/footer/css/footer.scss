@@ -2,7 +2,7 @@
 // Component M-7: Global Footer
 //-----------------------------------
 
-// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+// Import All SASS config files (Variables, Mixins, Functions etc...)
 @import "../../../global/css/_config/sass";
 
 
@@ -17,16 +17,20 @@
   background: $color__primary-gray2;
   padding: 60px 0;
 
-  .eaton-text-default__description ,
-  .eaton-link-list-vertical__eyebrow,
-  .eaton-link-list-vertical__list-link,
-  .eaton-social-links__eyebrow {
-    color: $color__white;
+  .eaton-text-default__content {
+    @include body-copy-small;
+
+    // override the default font size for /text component
+    p {
+      font-size: 1.7rem;
+      line-height: 2.8rem;
+    }
   }
 
   .eaton-footer-top__link-list {
     margin-bottom: 40px;
   }
+
 }
 
 
@@ -35,12 +39,19 @@
 //--------------
 .eaton-footer-bottom {
   background: $color__primary-gray1;
+
+  // Over Dark Background: Make all text elements white
+  .dark-theme & {
+    color: $color__white;
+
+    a,
+    a:hover,
+    a:focus {
+      color: $color__white;
+    }
+  }
 }
 
-.eaton-footer-bottom__link-list a,
-.eaton-footer-bottom__copyright {
-  color: $color__white;
-}
 
 
 //-----------------------------------
@@ -48,21 +59,13 @@
 //-----------------------------------
 @include media-mobile-and-tablet {
 
-  .eaton-footer-top__logo {
-    margin-bottom: 60px;
-  }
+  .eaton-footer-top__logo { margin-bottom: 60px; }
 
-  .eaton-footer-top__text {
-    margin-bottom: 120px;
-  }
+  .eaton-footer-top__content { margin-bottom: 120px; }
 
-  .eaton-footer-top__link-list {
-    margin-bottom: 60px;
-  }
+  .eaton-footer-top__link-list { margin-bottom: 60px; }
 
-  .eaton-footer-bottom {
-    padding: 120px 0;
-  }
+  .eaton-footer-bottom { padding: 120px 0; }
 
   .eaton-footer-bottom__link-list {
 
@@ -76,23 +79,16 @@
 }
 
 //-----------------------------------
-// Media-Query: Tablet & Desktop
+// Media-Query: Desktop & Desktop Large
 //-----------------------------------
 @include media-desktop-and-up {
 
-  .eaton-footer-top__logo {
-    margin-bottom: 30px;
-  }
+  .eaton-footer-top__logo { margin-bottom: 30px; }
 
-  .eaton-footer-bottom {
-    padding: 40px 0;
-  }
+  .eaton-footer-bottom { padding: 40px 0; }
 
-  .eaton-footer-bottom__link-list {
-    float: left;
-  }
+  .eaton-footer-bottom__link-list { float: left; }
 
-  .eaton-footer-bottom__copyright {
-    float: right;
-  }
+  .eaton-footer-bottom__copyright { float: right; }
+
 }

@@ -1,0 +1,147 @@
+//-----------------------------------
+// List Component: View Deafult
+//-----------------------------------
+
+.eaton-list-component {
+
+  font-family: $font-family__primary;
+  margin-bottom: 60px;
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      color: $color__primary-blue;
+      text-decoration: none;
+    }
+  }
+
+  .carousel-indicators {
+    position: inherit;
+    margin: 40px auto 0;
+  }
+
+  .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    cursor: inherit;
+    background-color: $color__primary-gray3;
+    border: 0;
+    border-radius: 50%;
+    margin: 0 4px;
+  }
+
+  .carousel-indicators .active {
+    background-color: $color__primary-blue;
+    width: 15px;
+    height: 15px;
+    margin: 0 4px;
+  }
+
+
+  .category__image {
+    width: 100%;
+  }
+
+  .category__title--font,
+  .related-category__title--font {
+    font-size: 1em;
+    font-weight: bold;
+    color: $color__primary-gray1;
+    text-transform: uppercase;
+  }
+
+  .category__item--border {
+    border-left: 1px solid $color__secondary-gray4;
+    border-right: 1px solid $color__secondary-gray4;
+    border-bottom: 2px solid $color__secondary-gray4;
+  }
+
+  .category__link--font {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+
+  .category__item-innerpadding {
+    padding: 30px;
+  }
+
+  .category__title--bottompadding {
+    padding-bottom: 15px;
+  }
+
+  .header-text__topmargin {
+    margin-top: 5%;
+  }
+
+  .category__item {
+    min-height: 231px;
+  }
+
+  .category-item-date {
+    padding-top: 15px;
+    color: $color__primary-gray1;
+  }
+
+
+
+  @include media-mobile-only {
+    .category__item-innerpadding {
+      padding: 25px;
+    }
+
+    .carousel__item {
+      min-height: 233px;
+    }
+
+    .category__link--font {
+      font-size: 1.1em;
+      line-height: 1.2em;
+    }
+
+    .category__title--bottompadding {
+      padding-bottom: 10px;
+    }
+  }
+
+
+
+  @include media-tablet-only {
+    .related-category--tablet-left {
+      float: left;
+    }
+
+    .related-category--tablet-right {
+      float: right;
+    }
+
+    .category__item--border {
+      border-top: 1px solid $color__secondary-gray4;
+      background-color: $color__white;
+    }
+
+    .equal-height-row {
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+
+      > div {
+        width: 50%;
+        display: inline-block;
+      }
+    }
+
+    .category__item,
+    .category__image {
+      min-height: 263px;
+    }
+
+    .category__link--font {
+      font-size: 1.3em;
+    }
+  }
+}

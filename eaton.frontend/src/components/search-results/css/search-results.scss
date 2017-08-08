@@ -1,0 +1,10 @@
+//-----------------------------------
+// Component Search Results
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc)
+@import "../../../global/css/_config/sass";
+
+// Import SubModules
+@import "results-list";
+@import "results-list-modules";

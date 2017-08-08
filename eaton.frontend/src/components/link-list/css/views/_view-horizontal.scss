@@ -3,12 +3,21 @@
 //-----------------------------------
 .eaton-link-list-horizontal {
 
+  &__eyebrow {
+    text-transform: uppercase;
+  }
+
   &__list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
   }
 
   &__list-item {
+    // Empty Selector for future reference
+  }
+
+  &__list-link {
     // Empty Selector for future reference
   }
 

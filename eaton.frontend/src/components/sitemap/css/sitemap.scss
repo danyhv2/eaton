@@ -1,0 +1,82 @@
+//-----------------------------------
+// Component : Sitemap
+//-----------------------------------
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.eaton-sitemap {
+  padding: 30px 0;
+
+  &__levelone {
+    font-size: 50px;
+    color: $color__primary-blue;
+    margin-bottom: 30px;
+  }
+
+  &__leveltow {
+    font-size: 32px;
+    display: block;
+    color: $color__primary-blue;
+    margin-bottom: 15px;
+  }
+
+  .separator {
+    width: 100%;
+    height: 1px;
+    background: #dcdcdc;
+    margin-bottom: 25px;
+  }
+
+  &__levelthree {
+    font-size: 19px;
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  &__levelfour {
+    width: 100%;
+    font-size: 14px;
+    font-family: $font-family__secondary;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__levelfive,
+  &__levelsix {
+    font-size: 14px;
+    font-family: $font-family__secondary;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .last-wrapper {
+    padding-left: 20px;
+  }
+
+  @include media-desktop-and-up {
+    &__levelone {
+      font-size: 64px;
+      margin-bottom: 50px;
+    }
+
+    &__leveltow {
+      font-size: 40px;
+      margin-bottom: 25px;
+    }
+
+    &__levelthree {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    &__levelfour {
+      font-size: 18px;
+    }
+
+    &__levelfive {
+      font-size: 18px;
+    }
+  }
+}

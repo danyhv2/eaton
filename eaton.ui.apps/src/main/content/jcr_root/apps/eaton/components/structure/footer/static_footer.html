@@ -1,0 +1,64 @@
+<sly data-sly-use.headerHelper="com.eaton.platform.core.helpers.HeaderHelper" />
+<div class="eaton-footer dark-theme"
+  >
+
+  <!--/* Footer: Top */-->
+  <div class="eaton-footer-top">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="eaton-footer-top__logo">
+            <!--/* Component: Logo */-->
+            <sly data-sly-resource="${'footer-logo' @ resourceType='/apps/eaton/components/structure/logo', selectors='footer-logo', wcmmode=headerHelper.editMode}"></sly>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-12 col-md-6">
+          <div class="eaton-footer-top__content">
+            <!--/* Component: Text */-->
+            <sly data-sly-resource="${'footer-text' @ resourceType='/apps/eaton/components/general/text', selectors='footer-desc', wcmmode=headerHelper.editMode}"></sly>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+          <div class="eaton-footer-top__link-list">
+            <!--/* Component: LinkList */-->
+            <sly data-sly-resource="${'link-list-2nd-col' @ resourceType='eaton/components/general/link-list', selectors='footer-link-list1', wcmmode=headerHelper.editMode}"></sly>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+          <div class="eaton-footer-top__link-list">
+            <!--/* Component: LinkList */-->
+            <sly data-sly-resource="${'link-list-3rd-col' @ resourceType='/apps/eaton/components/general/link-list', selectors='footer-link-list2', wcmmode=headerHelper.editMode}"></sly>
+          </div>
+          <div class="eaton-footer-top__social-links">
+            <!--/* Component: Social Links */-->
+            <sly data-sly-resource="${'footer-social-links' @ resourceType='/apps/eaton/components/general/social-links', selectors='footer-social-links', wcmmode=headerHelper.editMode}"></sly>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--/* Footer: Bottom */-->
+  <div class="eaton-footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="eaton-footer-bottom__link-list">
+            <!--/* Component: LinkList */-->
+            <sly data-sly-resource="${'footer-primary-link-list' @ resourceType='/apps/eaton/components/general/link-list', selectors='footer-primary-link-list', wcmmode=headerHelper.editMode}"></sly>
+          </div>
+          <div class="eaton-footer-bottom__copyright"> ${ headerHelper.copyRightText } ${'copyright' @ i18n} </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

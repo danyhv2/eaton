@@ -1,0 +1,116 @@
+//-----------------------------------
+// M-60.1: Results List Modules
+//-----------------------------------
+.results-list-module {
+
+  // Local Variables
+  //--------------
+  $color__image-border: #E9E9E9;
+  $line-height-offset: 8px;
+
+  display: flex;
+  margin-bottom: $spacing__md / 2;
+
+  &__image {
+    border: 1px solid $color__image-border;
+    padding: 1rem;
+  }
+
+  &__date {
+    color: $color__primary-gray3;
+    font-style: italic;
+  }
+
+  &__secondary-links {
+    display: flex;
+  }
+
+  &__name {
+    margin-bottom: 5px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
+
+    // External Link Icon
+    .icon {
+      margin-left: 10px;
+    }
+  }
+
+  &__description,
+  &__url,
+  &__link-list {
+    margin-bottom: 12px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
+  }
+
+  &__link-item {
+    border-right: 1px solid $color__secondary-gray4;
+    margin-right: 16px;
+    padding-right: 16px;
+
+    // Remove Line / Reset Margins for last link in the list
+    &:last-child {
+      border-right: 0;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+
+
+
+
+  //-----------------------------------
+  // MediaQuery: Mobile & Tablet Only
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    // Force Image to be displayed Above the content
+    &--type-family,
+    &--type-sku {
+      flex-flow: column nowrap;
+    }
+
+    &__image-wrapper {
+      margin-bottom: 20px;
+    }
+
+    &__image {
+      min-width: 300px;
+      max-height: 200px;
+    }
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    margin-bottom: 40px; // Visually 60px Bottom Margin
+
+    // Product Item with Image (Thumbnail)
+    //--------------
+    &__image-wrapper {
+      flex-basis: 140px;
+      margin-right: $spacing__sm;
+      padding-top: $line-height-offset; // Used to align the Icon with the Result Title
+    }
+
+    &__image {
+      max-width: 140px;
+    }
+
+
+    // Resource Item with Download Icon
+    //--------------
+    &__icon-wrapper {
+      flex-basis: 48px;
+      margin-right: $spacing__sm;
+      padding-top: $line-height-offset; // Used to align the Icon with the Result Title
+
+      .icon {
+        color: $color__primary-blue;
+        font-size: 48px;
+      }
+    }
+
+
+  }
+}

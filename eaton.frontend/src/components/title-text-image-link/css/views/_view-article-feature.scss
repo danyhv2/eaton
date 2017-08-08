@@ -1,0 +1,74 @@
+.eaton-article-feature {
+
+  font-family: $font-family__primary;
+
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+  }
+
+  &__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: $color__primary-gray1;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  &__cta {
+    color: $color__primary-blue;
+    font-size: 2.5em;
+    font-family: Arial;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    a:hover,
+    a:active,
+    a:visited,
+    a:focus {
+      text-decoration: none;
+      color: $color__primary-blue;
+    }
+  }
+
+  &__date {
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+
+  &__body {
+    margin-bottom: 60px;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .article-feature {
+    &__image {
+      margin-top: 30px;
+    }
+
+    &__title {
+      font-size: 1.1em;
+      margin-top: 15px;
+    }
+
+    &__date {
+      margin-bottom: 15px;
+    }
+
+    &__body {
+      margin-bottom: 30px;
+      line-height: 1.5em;
+      font-size: 1.2em;
+    }
+
+    &__cta {
+      font-size: 1.5em;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}

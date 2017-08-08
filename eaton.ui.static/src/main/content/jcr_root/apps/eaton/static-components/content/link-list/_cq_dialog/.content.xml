@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
   xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
   jcr:primaryType="nt:unstructured"
-  jcr:title="Eaton - LinkList Component - Views"
+  jcr:title="LinkList Component"
   sling:resourceType="cq/gui/components/authoring/dialog"
   helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
   <content
@@ -41,8 +41,53 @@
                     jcr:primaryType="nt:unstructured"
                     text="Horizontal View"
                     value="horizontal"/>
+                  <downloadList
+                      jcr:primaryType="nt:unstructured"
+                      text="Download List"
+                      value="download-list"/>
+                  <downloadListDesc
+                      jcr:primaryType="nt:unstructured"
+                      text="Download List with Descriptions"
+                      value="download-list-desc"/>
+                  <sectionNavigation
+                      jcr:primaryType="nt:unstructured"
+                      text="Section Navigation"
+                      value="section-navigation"/>
+                  <towColumn
+                      jcr:primaryType="nt:unstructured"
+                      text="2 Column"
+                      value="2column"/>
+                  <primaryNav
+                      jcr:primaryType="nt:unstructured"
+                      text="Primary Navigation"
+                      value="primary-nav"/>
                 </items>
               </view>
+	          <testdata
+	            jcr:primaryType="cq:Widget"
+	            allowBlank="false"
+	            defaultValue="default"
+	            fieldDescription="Determine which test data to load"
+	            fieldLabel="Test Data"
+	            fieldSubLabel=""
+	            name="./testdata"
+	            type="select"
+	            xtype="selection">
+	            <options jcr:primaryType="cq:WidgetCollection">
+	              <default
+	                jcr:primaryType="nt:unstructured"
+	                text="Default"
+	                value="default"/>
+	              <footer1
+	                jcr:primaryType="nt:unstructured"
+	                text="Footer Column2"
+	                value="footer1"/>
+	              <footer2
+	                jcr:primaryType="nt:unstructured"
+	                text="Footer Column3"
+	                value="footer2"/>
+	            </options>
+	          </testdata>
             </items>
           </column>
         </items>

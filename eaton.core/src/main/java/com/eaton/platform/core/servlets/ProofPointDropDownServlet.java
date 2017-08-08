@@ -2,12 +2,10 @@ package com.eaton.platform.core.servlets;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 
-import javax.jcr.Node;
-import javax.jcr.NodeIterator;
-import javax.jcr.RepositoryException;
-
+import org.apache.commons.lang.StringUtils;
 import org.apache.felix.scr.annotations.sling.SlingServlet;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
@@ -25,22 +23,30 @@ import com.adobe.granite.ui.components.ds.EmptyDataSource;
 import com.adobe.granite.ui.components.ds.SimpleDataSource;
 import com.adobe.granite.ui.components.ds.ValueMapResource;
 import com.day.cq.commons.jcr.JcrConstants;
+import com.day.cq.dam.api.Asset;
+import com.day.cq.dam.api.DamConstants;
 import com.eaton.platform.core.constants.CommonConstants;
 
 /**
  * This servlet pre-populate the drop-down field,Graphic with a list of icon images 
- * author - TCS
+ * author - TCS.
  */
-@SlingServlet(resourceTypes = "/bin/dropdown/icons", metatype = false)
+@SlingServlet(resourceTypes = "/ecom/dropdown/icons", metatype = false)
 public class ProofPointDropDownServlet extends SlingSafeMethodsServlet {
 
+	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
+	
+	/** The Constant LOG. */
 	private static final Logger LOG = LoggerFactory.getLogger(ProofPointDropDownServlet.class);
 
+	/* (non-Javadoc)
+	 * @see org.apache.sling.api.servlets.SlingSafeMethodsServlet#doGet(org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)
+	 */
 	@Override
 	protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) {
 
-		LOG.debug("******** ProofPointDropDownServlet servlet execution started ***********");
+		LOG.debug("ProofPointDropDownServlet :: doGet() :: Start");
 		// set fallback
 		request.setAttribute(DataSource.class.getName(), EmptyDataSource.instance());
 		ResourceResolver resolver = request.getResource().getResourceResolver();
@@ -48,28 +54,31 @@ public class ProofPointDropDownServlet extends SlingSafeMethodsServlet {
 		// Create an ArrayList to hold data
 		List<Resource> iconsResourceList = new ArrayList<Resource>();
 
-		ValueMap valueMap = null;
-		List<Node> iconList = new ArrayList<Node>();
+		List<Resource> iconList = new ArrayList<Resource>();
 		Resource imageResource = resolver.getResource(CommonConstants.ICON_IMAGE_ROOT);
-		try {
 			if(imageResource != null){
-				Node imageNode = imageResource.adaptTo(Node.class);
-				NodeIterator allIcons = imageNode.getNodes();
-				iconList = new ArrayList<Node>();
+				Iterator<Resource> allIcons = imageResource.listChildren();
+				iconList = new ArrayList<Resource>();
 				while (allIcons.hasNext()) {
 					// add the icons images node names in the iconList
-					iconList.add(allIcons.nextNode());
+					iconList.add(allIcons.next());
 				}
 	
 				// Add icon path values to Graphic drop down!
-				for (int index = 0; index < iconList.size(); index++) {
+				for (Resource iconResource : iconList) {
 	
 					// allocate memory to the Map instance
-					valueMap = new ValueMapDecorator(new HashMap<String, Object>());
+					ValueMap valueMap = new ValueMapDecorator(new HashMap<String, Object>());
 	
 					// Specify the value and text values
-					String dropDownValue = iconList.get(index).getPath();
-					String dropDownText = iconList.get(index).getName();
+					String dropDownValue = iconResource.getPath();
+					String dropDownText = StringUtils.EMPTY;
+					
+					Asset iconAsset = iconResource.adaptTo(Asset.class);
+					if(iconAsset.getMetadata().containsKey(DamConstants.DC_TITLE))
+						dropDownText = iconAsset.getMetadataValue(DamConstants.DC_TITLE);
+					else
+						dropDownText = iconResource.getName();
 	
 					// populate the map
 					valueMap.put(CommonConstants.VALUE, dropDownValue);
@@ -82,10 +91,7 @@ public class ProofPointDropDownServlet extends SlingSafeMethodsServlet {
 				DataSource dataSource = new SimpleDataSource(iconsResourceList.iterator());
 				request.setAttribute(DataSource.class.getName(), dataSource);
 
-				LOG.debug("******** ProofPointDropDownServlet servlet execution ended ***********");
+				LOG.debug("ProofPointDropDownServlet :: doGet() :: Exit");
 			}
-		} catch (RepositoryException repositoryExcep) {
-			LOG.error("Exception occured as repository is not accessible -",	repositoryExcep);
-		}
 	}
 }

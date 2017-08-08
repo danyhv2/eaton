@@ -1,13 +1,20 @@
-<template data-sly-template.primaryNavigation="${ @ data }">
-    <div class="eaton-link-list-primary-nav ${data.backgroundImage ? 'eaton-link-list-primary-nav--has-background' : ''} ">
-
+<sly data-sly-use.data="${'../data/view-primary-nav-data.js' @testdata=properties.testdata}">
+    <div class="eaton-link-list-primary-nav ${data.backgroundImage ? 'eaton-link-list-primary-nav--has-background' : ''}"  style="background-image: url('${data.backgroundImage @ context = 'uri'}')">
       <!--/* Headline: Visible only for Mobile Breakpoints */-->
-      <p data-sly-test="${data.headline}" class="eaton-link-list-primary-nav__headline">${data.headline}</p>
+      <div data-sly-test="${data.headline}" class="eaton-link-list-primary-nav__headline">
+        <div class="eaton-link-list-primary-nav__container container">
+          ${data.headline}
+        </div>
+      </div>
 
       <!--/* List Links */-->
-      <!--/* TODO: BgImg + Markup Structure */-->
-      <nav data-sly-list.level1="${data.links}" class="eaton-link-list-primary-nav__items" style="background-image: url('${data.backgroundImage @ context = 'uri'}')">
-          <a href="#" data-menu-category="${level1.menuCategory}" aria-expanded="false">${ level1.title }</a>
-      </nav>
+      <div class="eaton-link-list-primary-nav__container container">
+        <nav data-sly-list.level1="${data.links}" class="eaton-link-list-primary-nav__items">
+            <a href="#" data-menu-category="${level1.menuCategory}" aria-expanded="false">
+              <span>${ level1.title }</span>
+              <i class="icon icon-chevron-right" aria-hidden="true"></i>
+            </a>
+        </nav>
+      </div>
     </div>
-</template>
+</sly>

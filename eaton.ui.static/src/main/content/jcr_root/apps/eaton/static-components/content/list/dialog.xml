@@ -14,7 +14,7 @@
                     <view
                         jcr:primaryType="cq:Widget"
                         allowBlank="false"
-                        defaultValue="default"
+                        defaultValue="nofeaturedarticle"
                         fieldDescription="Choose a view"
                         fieldLabel="View"
                         fieldSubLabel=""
@@ -22,10 +22,27 @@
                         type="select"
                         xtype="selection">
                         <options jcr:primaryType="cq:WidgetCollection">
-                            <default
+                            <nofeaturedarticle
                                 jcr:primaryType="nt:unstructured"
-                                text="Default"
-                                value="default"/>
+                                text="No Featured Article"
+                                value="nofeaturedarticle"/>
+                            <featuredarticle
+                                jcr:primaryType="nt:unstructured"
+                                text="Featured Article"
+                                value="featuredarticle"/>
+                            <article-list-single-feature
+                                jcr:primaryType="nt:unstructured"
+                                text="Article List: Single Feature"
+                                value="article-list-single-feature"/>
+                            <related-products
+                                jcr:primaryType="nt:unstructured"
+                                text="Related Products"
+                                value="related-products"/>
+                            <links
+                                jcr:primaryType="nt:unstructured"
+                                text="Links"
+                                value="links"/>
+                            
                         </options>
                     </view>
                 </items>

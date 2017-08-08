@@ -1,0 +1,81 @@
+//-----------------------------------
+// Component How to Buy
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-how-to-buy {
+  padding-top: $spacing__lg / 2;
+  overflow: hidden;
+  background: $color__secondary-gray6;
+
+  &__icon {
+    color: $color__accent-orange;
+    max-width: $spacing__md;
+    display: inline-block;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text-wrapper {
+    width: calc(100% - 90px);
+    display: inline-block;
+    float: right;
+  }
+
+  &__element {
+    margin-bottom: $spacing__lg / 2;
+  }
+
+
+
+
+  @include media-desktop-and-up {
+    padding-top: $spacing__lg;
+
+    &__icon {
+      max-width: 70px;
+
+      .icon {
+        font-size: 70px;
+      }
+    }
+
+    &__text-wrapper {
+      width: calc(100% - 100px);
+    }
+
+    &__element {
+      margin-bottom: $spacing__lg;
+    }
+
+    .container {
+      margin: 0 auto;
+
+      &.row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .col-md-4 {
+          flex: 0 0 33%;
+        }
+
+        .col-md-8 {
+          flex: 0 0 66%;
+        }
+
+        .row {
+          margin: 0;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}

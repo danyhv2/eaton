@@ -1,0 +1,39 @@
+//-----------------------------------
+// M-60: Results List Container
+//-----------------------------------
+
+.search-results{
+  position: relative;
+  z-index:1;
+}
+
+.results-list {
+  padding-bottom: $spacing__lg / 2;
+
+  &__disclaimer {
+    border-top: 3px solid $color__secondary-gray5;
+    padding: 20px 0;
+  }
+
+  &__actions {
+    margin-top: 40px;
+  }
+
+
+
+  //-----------------------------------
+  // MediaQuery: Mobile & Tablet Only
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+    padding-bottom: $spacing__lg;
+  }
+
+}

@@ -8,7 +8,6 @@ let App = window.App || {};
 App.demoComponent = (function() {
 
   const $componentClass = $('.a-demo-component');
-  console.log('a-demo-component-loaded');
 
   const init = () => {
     console.log(`component-demo - ${ window.location.host }`);
@@ -21,12 +20,22 @@ App.demoComponent = (function() {
    */
   const addEventListeners = () => {
 
-    $componentClass.find('.c-button').on('click', (event) => {
+    let mqDesktop = null;
+
+    $componentClass.find('.b-button').on('click', (event) => {
       console.log(event.target);
     });
 
-    window.matchMedia(`(min-width:${ App.global.constants.GRID.SM }px)`).onchange = onBreakpointChange;
+    // JavaScript MediaQueries
+    //--------------
+    if (window.matchMedia) {
 
+      // min-width 992px
+      mqDesktop = window.matchMedia(App.global.constants.MEDIA_QUERIES.DESKTOP);
+
+      // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
+      mqDesktop.addListener(onBreakpointChange);
+    }
   };
 
 
@@ -37,12 +46,12 @@ App.demoComponent = (function() {
   */
   const onBreakpointChange = (event) => {
 
-    // If Tablet Breakpoint and Up
+    // If Desktop Breakpoint and Up
     if (event.matches) {
-      console.log('Tablet BP');
+      console.log('Desktop BP');
     }
 
-    // Else is Mobile Breakpoint
+    // Else is Mobile/Tablet Breakpoint
     else {
       console.log('Mobile BP');
     }
@@ -50,18 +59,7 @@ App.demoComponent = (function() {
 
 
   /**
-   * Example of Public Method
-   *
-   * @return { Array } Test ES6
-   */
-  const publicMethodOne = (number) => {
-    const testES6 = [1, 2, 3];
-    return [...testES6, 'es6', 'aem'];
-  };
-
-
-  /**
-   * Custom Date Format
+   * Example of Public Method: Custom Date Format
    *
    * @return { String } Formated Date
    */
@@ -74,11 +72,11 @@ App.demoComponent = (function() {
   /**
   * If containing DOM element is found, Initialize and Expose public methods
   */
-  if ($componentClass.lenght > 0) {
+  if ($componentClass.length > 0) {
     init();
 
+    // Public Methods
     return {
-      publicMethodOne,
       getDate
     };
   }

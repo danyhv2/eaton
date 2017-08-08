@@ -1,0 +1,28 @@
+/* More Info card  starts here*/
+.moreInfo-iconClass{
+   	width: 31px;
+    margin-right: 15px;
+    vertical-align: -3px;
+ }
+.infoContainer .iconClass{
+   	width: 30px;
+    height: 27px;
+    margin-right: 20px;
+    vertical-align: -5px;
+    float: left;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    line-height: 32px;
+ }
+.quick-link-span-block{
+ display:block;
+    }
+.infoContainer .download-size, .infoContainer .download-desc{
+
+     margin-left: 50px;
+    }
+
+/* Release 3*/
+.info-quick-link-sec-landing .infoContainer .iconClass{
+      margin-top: 7px;
+        }

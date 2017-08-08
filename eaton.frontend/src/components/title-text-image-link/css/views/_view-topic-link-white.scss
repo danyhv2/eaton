@@ -1,0 +1,85 @@
+.eaton-topic-link-white {
+
+  overflow: hidden;
+  padding: 40px 0;
+
+  &.no-cta {
+
+    padding: 0;
+
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+
+  &__icon {
+    width: 100%;
+    margin-bottom: $spacing__md / 2;
+
+    img {
+      width: 60px;
+      height: auto;
+    }
+  }
+
+  &__text-wrapper {
+    width: 100%;
+  }
+
+  &__header {
+    margin-bottom: $spacing__md / 2;
+  }
+
+  &__description {
+    margin-bottom: $spacing__md / 2;
+  }
+
+  &__cta-wrapper {
+    text-align: center;
+  }
+
+  @include media-desktop-and-up {
+    &__icon {
+      width: 70px;
+      margin-bottom: 0;
+      margin-right: $spacing__sm;
+      display: inline-block;
+    }
+
+    &__text-wrapper {
+      width: calc(100% - 100px);
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      float: right;
+
+      &.no-icon {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      width: 70%;
+      flex: 0 0 70%;
+
+      &.no-cta {
+        width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+
+    &__cta-wrapper {
+      width: 30%;
+      flex: 0 0 30%;
+      text-align: right;
+
+      .b-button__primary {
+        text-align: center;
+      }
+    }
+  }
+}

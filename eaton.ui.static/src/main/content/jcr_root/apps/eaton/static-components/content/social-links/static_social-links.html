@@ -4,14 +4,13 @@
 </sly>
 
 
-
 <sly data-sly-use.data="data/social-links-data.js">
 
   <div class="eaton-social-links">
 
     <!--/* If Eyebrow */-->
     <sly data-sly-test="${ data.eyebrow }">
-      <h4 class="eaton-social-links__eyebrow eyebrow-small">${ data.eyebrow }</h4>
+      <h4 class="eaton-social-links__eyebrow b-eyebrow-small">${ data.eyebrow }</h4>
     </sly>
 
     <!--/* List Links */-->
@@ -35,7 +34,7 @@
     <div class="eaton-social-links__cta">
       <a href="${ data.pageLink.url }"
         aria-label="${ data.pageLink.titleA11y }"
-        class="eaton-social-links__page-link body-copy-small"
+        class="eaton-social-links__page-link b-body-copy-small"
         target="${ data.pageLink.target }">
         <span class="eaton-social-links__page-link-text">${ data.pageLink.title }</span>
         <i class="eaton-social-links__page-link-icon glyphicon glyphicon-menu-right"

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,cq.siteadmin.admin.properties]"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="cq-dialog-content-page">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container"
+                rel="cq-siteadmin-admin-properties-tabs">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Basic"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <view
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldDescription="This field stores the value for List view."
+                                        fieldLabel="View"
+                                        name="./view">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <generic
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Generic"
+                                                value="generic"/>
+                                            <homePage
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Home"
+                                                value="home_page"/>
+                                            <primaryLanding
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Landing"
+                                                value="primary_landing"/>
+                                            <article
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Article"
+                                                value="artical_page"/>
+                                            <siteMap
+                                                jcr:primaryType="nt:unstructured"
+                                                text="SiteMap"
+                                                value="siteMap"/>
+                                        </items>
+                                    </view>
+                                </items>
+                            </column>
+                        </items>
+                    </basic>
+                    <teaser
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Teaser"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                            margin="{Boolean}false"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <teaser-title
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Teaser Title"
+                                        name="./teaser-title"/>
+                                    <publication-date
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/datepicker"
+                                        allowBulkEdit="{Boolean}true"
+                                        cq-msm-lockable="publication-date"
+                                        displayedFormat="MMMM DD, YYYY hh:mm a"
+                                        displayTimezoneMessage="{Boolean}true"
+                                        fieldLabel="Publication Date"
+                                        name="./publication-date"
+                                        renderReadOnly="{Boolean}true"
+                                        type="datetime"/>
+                                    <eyebrow-title
+                                        cq:hideOnEdit="{Boolean}false"
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Eyebrow Title"
+                                        name="./eyebrow-title"
+                                        validation="foundation.jcr.name"/>
+                                    <teaser-image-path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        cq-msm-lockable="teaser-image-path"
+                                        fieldLabel="Teaser Image Path"
+                                        name="./teaser-image-path"
+                                        renderReadOnly="{Boolean}true"
+                                        rootPath="/content"/>
+                                    <teaser-description
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                        fieldLabel="Teaser Description"
+                                        name="./teaser-description"/>
+                                </items>
+                            </column>
+                        </items>
+                    </teaser>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

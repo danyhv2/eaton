@@ -7,5 +7,5 @@
         jcr:mixinTypes="[sling:Message]"
         jcr:primaryType="nt:folder"
         sling:key="copyright"
-        sling:message="@2017 Eaton. All Rights Reserved."/>
+        sling:message="Eaton, All Rights Reserved"/>
 </jcr:root>

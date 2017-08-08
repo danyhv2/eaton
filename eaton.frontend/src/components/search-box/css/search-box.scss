@@ -1,0 +1,24 @@
+//-----------------------------------
+// Component M-4.3: Search Box
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+// Import SubViews
+@import "views/view-inline";
+@import "views/view-default";
+
+.eaton-search {
+  .form-control { // Styles for Form Elements
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    height: auto;
+    box-shadow: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

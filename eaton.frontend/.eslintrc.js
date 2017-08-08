@@ -1,6 +1,6 @@
 module.exports = {
 
-  "env": {
+  'env': {
     'browser': true,
     'node': true,
     'es6': true,
@@ -76,8 +76,10 @@ module.exports = {
     'vars-on-top': 2 // allow var definitions anywhere - readability and security have priority over emulating interpreter hoisting
   },
 
+  /*
   'globals': [
 
   ]
+  */
 
 }

@@ -1,0 +1,19 @@
+.quote { padding: 30px 0; }
+
+.eaton-quote .container { padding: 100px 0 60px; border-top: 4px solid #EEF0F2; border-bottom: 4px solid #EEF0F2; position: relative; }
+
+.eaton-quote__image { color: #005EB8; position: absolute; top: 0; left: 0; right: 0; margin: -8px auto 0; }
+
+.eaton-quote__image .icon { font-size: 8rem; }
+
+.eaton-quote__text { font-size: 34px; font-style: italic; font-family: Arial; color: #98A4AE; margin-bottom: 60px; }
+
+.eaton-quote__author { font-size: 20px; font-family: Arial; font-style: italic; color: #333F48; }
+
+.eaton-quote__name { font-weight: bold; }
+
+@media screen and (max-width: 991px) { .eaton-quote .container { padding: 60px 15px 25px; }
+  .eaton-quote__image .icon { font-size: 6rem; line-height: .9; }
+  .eaton-quote__text { font-size: 23px; margin-bottom: 20px; }
+  .eaton-quote__author { font-size: 16px; }
+  .eaton-quote__name { display: block; } }

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Icon List"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <iconlist
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Component Properties - Touch UI"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <view
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Determine which variation of component to view"
+                                fieldLabel="View"
+                                name="./view">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Default (3 column grid) [image list]"
+                                        value="default"/>
+                                    <proofPoints
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Proof Points"
+                                        value="icon-list-proof-points"/>
+                                    <noimagehighlights
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No image highlights"
+                                        value="no-image-highlights"/>
+                                    <topiclinkwithicon
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Topic Link with Icon"
+                                        value="topic-link-with-icon"/>
+                                </items>
+                            </view>
+                            <IconInfoList
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                eaem-nested=""
+                                fieldDescription="Click '+' to add more Icon Info Links"
+                                fieldLabel="Icon Info List">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                    name="./iconInfoList">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                        method="absolute"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <icon
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldDescription="This field stores the path for Icon"
+                                                    fieldLabel="Icon"
+                                                    name="./icon"
+                                                    rootPath="/content/dam/eaton"/>
+                                                <linkPath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                    fieldDescription="This field stores the path for Icon"
+                                                    fieldLabel="Link Path"
+                                                    name="./linkPath"
+                                                    rootPath="/content"/>
+                                                <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                    fieldDescription="This field stores the Icon title"
+                                                    fieldLabel="Title"
+                                                    name="./title"/>
+                                                <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                    fieldDescription="This field stores the Icon description."
+                                                    fieldLabel="Description"
+                                                    name="./description"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </IconInfoList>
+                        </items>
+                    </column>
+                </items>
+            </iconlist>
+        </items>
+    </content>
+</jcr:root>

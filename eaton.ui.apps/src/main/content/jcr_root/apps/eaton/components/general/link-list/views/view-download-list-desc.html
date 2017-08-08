@@ -1,0 +1,19 @@
+<sly data-sly-use.data="com.eaton.platform.core.helpers.LinkListHelper">
+    <div class="eaton-download-list eaton-download-list--has-desc">
+      <p class="eaton-download-list__headline b-eyebrow-small">${data.downloadListModel.header}</p>
+
+      <!--/* List Links */-->
+      <ul data-sly-list="${data.downloadListModel.links}" class="eaton-download-list__links">
+        <li  data-sly-test="${item.isAssetLink}">
+          <span class="eaton-download-list__description">${item.description}</span>
+          <a href="${item.assetPath}" class="eaton-download-list__item" aria-label="Download ${item.type} for ${ item.assetLinkTitle }">
+            <i class="glyphicon glyphicon-download-alt" aria-hidden="true"></i>
+            <div class="eaton-download-list__document">
+                <span class="eaton-download-list__title">${item.assetLinkTitle}</span>
+                <span class="eaton-download-list__size">(${item.assetSize})</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+</sly>

@@ -1,0 +1,47 @@
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Sitemap Component</div>
+</sly>
+
+
+<sly data-sly-use.data="data/sitemap-data.js">
+
+  <div class="eaton-sitemap">
+    <div class="container" data-sly-list.level1element="${data.levels}">
+    	<a class="eaton-sitemap__levelone" href="${level1element.url}" title="${level1element.text}">
+    		${level1element.text}
+    	</a>
+    	<div class="eaton-sitemap__wrapper" data-sly-list.level2element="${level1element.levels}">
+    		<a class="eaton-sitemap__leveltow" href="${level2element.url}"  title="${level2element.text}">${level2element.text}</a>
+    		<div class="separator" data-sly-test="${level2element.levels}"></div>
+    		<div class="eaton-sitemap__wrapper" data-sly-test="${level2element.levels}" >
+    			<div data-sly-list.level3element="${level2element.levels}">
+    				<a class="eaton-sitemap__levelthree" href="${level3element.url}"  title="${level3element.text}">${level3element.text}</a>
+    				<div class="eaton-sitemap__wrapper" data-sly-test="${level3element.levels}" >
+		    			<div data-sly-list.level4element="${level3element.levels}">
+		    				<a class="eaton-sitemap__levelfour" href="${level4element.url}"  title="${level4element.text}">${level4element.text}</a>
+		    				<div class="eaton-sitemap__wrapper" data-sly-test="${level4element.levels}" >
+				    			<div class="row" data-sly-list.level5element="${level4element.levels}">
+				    				<div class="col-xs-12 col-md-4">
+				    					<a class="eaton-sitemap__levelfive" href="${level5element.url}"  title="${level5element.text}">${level5element.text}</a>
+				    					<div class="eaton-sitemap__wrapper" data-sly-test="${level5element.levels}" >
+							    			<div class="last-wrapper" data-sly-list.level6element="${level5element.levels}">
+						    					<a class="eaton-sitemap__levelsix" href="${level6element.url}"  title="${level6element.text}">${level6element.text}</a>
+							    			</div>
+							    			
+							    		</div>
+				    				</div>
+				    			</div>
+				    			
+				    		</div>
+		    			</div>
+		    			
+		    		</div>
+    			</div>
+    			
+    		</div>
+    	</div>
+    </div>
+  </div>
+
+</sly>

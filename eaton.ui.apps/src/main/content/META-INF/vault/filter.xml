@@ -2,10 +2,16 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/eaton/clientlib"/>
     <filter root="/apps/eaton/components"/>
-    <filter root="/apps/eaton/i18n"/>
+	<filter root="/apps/eaton/foundation"/>
+    <filter root="/apps/eaton/i18n/en.xml"/>
     <filter root="/apps/eaton/install"/>
     <filter root="/apps/eaton/runmodes"/>
     <filter root="/apps/eaton/templates"/>
-    <filter root="/conf/eaton"/>
+    <filter root="/conf/eaton/settings/wcm/template-types"/>
     <filter root="/etc/designs/eaton"/>
+    <filter root="/apps/system/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-88419768-9afc-4d3b-9750-4ab2d5e85fe8.config"/>
+    <filter root="/apps/system/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.config"/>
+    
+    <filter root="/apps/sling/servlet/errorhandler/404.jsp" />
+    <filter root="/apps/sling/servlet/errorhandler/default.jsp" />
 </workspaceFilter>

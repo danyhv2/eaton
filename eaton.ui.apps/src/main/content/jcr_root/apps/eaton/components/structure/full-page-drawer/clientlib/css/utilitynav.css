@@ -10,6 +10,7 @@
 	position: fixed;
     bottom: 0;
     width: 100%;
+	left:0;
 }
 .utility-nav .contry-language-selector, .utility-nav .sign-up-link {
     background: #005EB8;
@@ -19,6 +20,7 @@
 }
 #utility-nav-mob .contry-language-selector{
 	 border-bottom:1px solid #1b84e4; 
+	 
 }
 #utility-nav-mob .contry-language-selector, #utility-nav-mob .sign-up-link{
 	height: 35px;
@@ -39,6 +41,7 @@
     font-weight: 400;
     text-align: left;
     padding-top: 1px;
+    text-align: right;
 }
 .utility-nav .utility-icon {
     display: inline-block;
@@ -46,7 +49,8 @@
     border: none;
     width: 68px;
     height: 68px;
-    zoom: .2;
+    zoom:.2;
+    -moz-transform: scale(.2);
     margin-right: 25px;
 }
 .utility-nav .contry-language-selector ul li .caret {
@@ -55,7 +59,8 @@
     border: none;
     width: 68px;
     height: 68px;
-    zoom: .13;
+	zoom:.2;
+    -moz-transform: scale(.2);
     margin-left: 45px;
 }
 .utility-nav .user-icon{
@@ -64,11 +69,23 @@
     border: none;
     width: 67px;
     height: 67px;
-        zoom: 0.23;
+    zoom:.23;
+    -moz-transform: scale(.23);
+
     margin: 3px 19px 0 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px), screen and (min-width:601px) and (max-width:992px) {
+	
+	#utility-nav-mob .contry-language-selector, #utility-nav-mob .sign-up-link{
+		height: 50px;
+	    line-height: 50px;
+	} 
+	
+	#utility-nav-mob .contry-language-selector #selectRegion{
+		background:#333f48;		
+	}
+	
 	.utility-nav-mob-view .utility-nav-mob{
 		position: absolute;
 		bottom: 0;
@@ -84,4 +101,42 @@
 	
 	
 }
-	
+@-moz-document url-prefix() {
+    .utility-nav .user-icon{
+		position:absolute;
+        -moz-transform-origin: -26px 0px;        
+     }
+     .utility-nav .utility-icon{
+		position: absolute;
+        -moz-transform-origin: 0 3px;                
+     }
+     .utility-nav .contry-language-selector ul li .caret{
+		position: absolute;
+		transform-origin: -45px 6px;
+     }
+	 .utility-nav .utility-icon + span.usEng{
+		margin-left:22px;
+      }
+     .utility-nav-mob .utility-nav .utility-icon{
+		-moz-transform-origin: -22px 12px;
+      }
+     .utility-nav-mob .contry-language-selector ul li .caret{
+		transform-origin: -45px 16px;
+      }         
+      .utility-nav-mob .utility-nav .user-icon{
+        -moz-transform-origin: -26px 8px;        
+     }                  
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.utility-nav .user-icon{
+    	width:50px;
+     }                
+	.utility-nav .user-icon + span.signIn{
+		margin-left:-55px;
+	}
+    .utility-nav .contry-language-selector ul li .caret{
+		margin-left:10px;
+    }
+
+}

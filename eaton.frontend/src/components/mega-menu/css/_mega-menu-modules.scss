@@ -1,0 +1,27 @@
+//-----------------------------------
+// Component Overrides Specific to: Mega Menu
+//-----------------------------------
+
+.mega-menu {
+  // Link-List: Vertical
+  .eaton-title__headline {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  //-----------------------------------
+  // Media Query: Mobile/Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .eaton-link-list-vertical {
+      &__eyebrow {
+        margin-bottom: ($spacing__sm / 2);
+      }
+    }
+
+    .eaton-title__headline {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

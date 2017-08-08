@@ -5,19 +5,41 @@
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
+// Import Overrides
+@import "mega-menu-modules";
+
 .mega-menu {
-  background: $color__primary-gray1;
-  padding: 30px 0;
-  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 
   &__content {
-    padding: 20px;
-    margin-bottom: 20px;
     color: $color__white;
+    display: none;
 
     &--active {
       display: block;
     }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__col {
+
+    .mega-menu__category-item {
+      margin-bottom: $spacing__sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__category {
+    background: $color__primary-gray2;
   }
 
   //-----------------------------------
@@ -25,12 +47,149 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     position: fixed;
-    width: 100%;
-    top: 105px;
-    bottom: 42px;
-    transition: transform 0.7s ease-in-out;
+    top: 56px;
+    bottom: 0;
+    background: $color__primary-gray2;
     overflow: auto;
-    transform: translate(100%);
+    transform: translate(100%, 0);
+
+    &__row {
+      flex-direction: column;
+
+      .mega-menu__col {
+        display: none;
+
+        // Only display level-2 links in mobile
+        &.mega-menu__col--flex {
+          display: block;
+          margin-bottom: $spacing__sm;
+        }
+      }
+    }
+
+    &__content {
+
+      &--active {
+        margin-bottom: 100px;
+      }
+    }
+
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    opacity: 0;
     visibility: hidden;
+    transition: opacity 0.1s ease-in-out;
+    background: $color__primary-gray1;
+
+    &__col {
+      margin: 0 ($spacing__sm / 2 );
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      // Container for Flexible list-links
+      &--flex {
+        border-right: 1px solid $color__secondary-gray4;
+      }
+
+      // Container for 25% columns
+      &--4 {
+        flex-basis: 25%;
+      }
+
+      // Container for 50% columns
+      &--6 {
+        flex-basis: 50%;
+      }
+    }
+
+    &__category {
+      padding: $spacing__sm 0;
+    }
+  }
+}
+
+// Mega Menu Title
+.mega-menu-title {
+  font-size: 20px;
+  background: $color__primary-gray1;
+
+  .container {
+    display: flex;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+
+    .dark-theme & {
+      color: $color__white;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__white;
+    }
+  }
+
+  &__level1-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__close-menu {
+    display: none;
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    padding: 20px 0;
+
+    &__level1-link {
+      padding: 10px 10px 10px 0;
+
+      .glyphicon-menu-left {
+        display: inline;
+        margin-right: 10px;
+        font-size: 0.75em;
+      }
+
+      .glyphicon-menu-right {
+        display: none;
+      }
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    padding: 30px 0;
+
+    &__level1-link {
+      .glyphicon-menu-left {
+        display: none;
+      }
+
+      .glyphicon-menu-right {
+        display: inline;
+        margin-left: 10px;
+      }
+    }
+
+    &__close-menu {
+      display: inline;
+      position: absolute;
+      right: ($spacing__sm / 2);
+    }
   }
 }

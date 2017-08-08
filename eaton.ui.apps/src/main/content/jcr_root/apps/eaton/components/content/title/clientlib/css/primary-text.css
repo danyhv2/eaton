@@ -1,118 +1,58 @@
-/** Primary content Starts **/
-.page-title {
-    padding: 35px 0;
-    font-family: Eaton;
-    color: #333f48;
-    font-size: 54px;
-    font-weight: 700;
-    line-height: 34px;
-    margin: 0 0;
-}
-
-#col6_image{
-	margin-bottom: 25px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.primary_content_text_with_image{
-margin-top:10px;
-}
-.primary_content_text_only{
-margin-top:10px;
-}
-.secondary_with_statement{
-margin-top:10px;
-}
 .divider{
-background-color: #005eb8;
-height:4px;
-       margin-top: 0px;
-    margin-bottom: 30px;
+    background-color: #005EB8;
+    height:4px;
     width: 80px
-}
-
-.center-divider{
-background-color: #005eb8;
-height:4px;
-margin-bottom:10px;
-width: 60px;
-margin: auto;
-margin-top:15px;
-}
-
-
-
-.h1-title{
-    font-family: EatonBold;
-    font-size: 52px;
-    color: #333f48;
-           margin-top: 20px;
-    margin-bottom: 30px;
-}
-.h2-title{
-    font-family: EatonBold;
-    font-size: 40pt;
-    color: #333f48;
 }
 .byLine {
     font-family: Arial;
     color: #5b6770;
-    font-size: 19.99px;
+    font-size: 1.24em;
     font-style: italic;
-    line-height: 22.053px;
+    line-height: 22px;
     text-align: left;
-    transform: scaleX(1.0026);
-    
 }
-.moreInfoTitle{
-	 font-family: Arial;
-	 border-top:8px solid #EEF0F2;
-	 margin-right: 20px;
-    padding-right: 0px;
-	/*margin-bottom:15px;*/
-}
-    .moreInfoTitle h4{
-		font-size: 20px;
-}
-.eyeBrow{
-    font-family: Arial;
-    color:  #333f48;
-    font-size: 19.99px;/* Approximation due to font substitution */
-    font-weight: 700;
-    line-height: 22.053px;/* Approximation due to font substitution */
-    text-align: left;
-    transform: scaleX(1.0026);
-    }
+
 .divider-align{
 	text-align:center;
 }
 
-.placeLine,.articleText{
-	font-family:'Arial';
-}
-.highlightedStatement{
-/*border-left:4px solid #0266C6;*/
-padding:0px 15px;
-color:#b9b9b9;
-font-size:15px;
-font-family: Arial;
+/*Secondary landing Rel3 */
+.h1-entire-h4-a-dev{
+    font-size:2.5em;
+    font-family: ArialBold;
+    color:  #005EB8;
+    line-height:1.25em;
+
 }
 
-@media only screen and (max-width: 768px) {
-.primaryImageHolder{
-margin-top:10px;
+.title-right h1,.title-right h2, .title-right h3, .title-right h4, .title-right h5, .title-right h6 {
+    text-align:right;
 }
-.highlightedStatement{
-margin-top:10px;
+.title-right .blueLine>span{
+    float:right; 
+}    
+.title-left h1, .title-left h2, .title-left h3, .title-left h4, .title-left h5, .title-left h6{
+    text-align:left;
+}
+.title-left .blueLine>span{
+    float:left; 
+}
+.title-center h1, .title-center h2, .title-center h3, .title-center h4,.title-center h5, .title-center h6{
+    text-align:center;
+} 
+.title-center .blueLine>span{
+    clear:both; 
 }
 
+@media only screen and (max-width: 992px) {
 
- .moreInfoTitle {
-    font-family: Arial;
-    border-top: 8px solid #EEF0F2;
-    margin-right: 20px;
-    padding-right: 130px !important;
+
+ 
+.moreInfoTitle2-rel2.extraLargeMarginTop{
+	margin-top:60px !important;
 }
-
+.moreInfoTitle3-rel3.extraLargeMarginTop{
+	margin-top:60px !important;
+}
 
 }

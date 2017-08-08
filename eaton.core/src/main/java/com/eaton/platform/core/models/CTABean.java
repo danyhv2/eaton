@@ -7,15 +7,11 @@ import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 
-import com.day.cq.wcm.api.Page;
 import com.eaton.platform.core.util.CommonUtil;
 
 @Model(adaptables = Resource.class)
 public class CTABean   {
 
-	
-	Page page = null;
-	
 	@Inject
 	ResourceResolver resourceResolver;
 	
@@ -28,15 +24,26 @@ public class CTABean   {
 	@Inject @Optional
 	private String newWindow;
 	
-	
+	/**
+	 * 
+	 * @return ctaLink
+	 */
 	public String getCtaLink() {
 		return CommonUtil.dotHtmlLink(ctaLink) ;
 	}
 
+	/**
+	 * 
+	 * @return CTALabel
+	 */
 	public String getTransCTALabel() {
-		return CommonUtil.getLinkTitle(transCTALabel, ctaLink, resourceResolver);
+		return transCTALabel;
 	}
 
+	/**
+	 * 
+	 * @return newWindow
+	 */
 	public String getNewWindow(){
 		return newWindow;
 	}

@@ -1,49 +1,80 @@
 package com.eaton.platform.core.helpers;
 
+import java.util.Calendar;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.day.cq.wcm.api.Template;
-import com.eaton.platform.core.BaseComponent;
+import com.day.cq.wcm.api.WCMMode;
+import com.eaton.platform.core.bean.EatonAbstractUseBean;
 import com.eaton.platform.core.constants.CommonConstants;
-
+import com.eaton.platform.core.util.CommonUtil;
 
 /**
- * <html>This file check the level of the page and return the status of the page</html>
+ * <html> Description: This class is used in sightly to determine the edit Mode as edit for home page
+ *  and disabled for other pages</html>.
+ *
  * @author TCS
+ * @version 1.0
  * @since 2017
- * @version1.0
+ * 
  */
-public class HeaderHelper extends BaseComponent{
+public class HeaderHelper extends EatonAbstractUseBean {
 	
-	private static final Logger lOG = LoggerFactory.getLogger(HeaderHelper.class);
-	
+	/** The Constant LOGGER. */
+    private static final Logger LOGGER = LoggerFactory.getLogger(HeaderHelper.class);
+    
+    /** The Constant COPYRIGHT_ICON. */
+    private static final String COPYRIGHT_ICON = "\u00a9";
+    /** The homePage. */
+    private boolean homePage;
+    
+    /** The editMode. */
+    private String editMode;
+
+	/* (non-Javadoc)
+	 * @see com.eaton.platform.core.bean.EatonAbstractUseBean#setComponentValues()
+	 */
+	@Override
+	public void setComponentValues() {
+		LOGGER.debug("HeaderHelper :: setComponentValues() :: Start");	
+		homePage = CommonUtil.isHomePagePath(currentPage);
+		WCMMode currentMode = WCMMode.fromRequest(getRequest());
+		if(homePage && (WCMMode.EDIT == currentMode)){
+			editMode = CommonConstants.EDIT;
+		} else {
+			editMode = CommonConstants.DISABLED;
+		}
+			
+		LOGGER.debug("HeaderHelper :: setComponentValues() :: Exit");
+	}
+
+	/**
+	 * Checks if is home page.
+	 *
+	 * @return homePage.
+	 */
+	public boolean isHomePage() {
+		return homePage;
+	}
+
+	/**
+	 * Gets the edit mode.
+	 *
+	 * @return the editMode
+	 */
+	public String getEditMode() {
+		return editMode;
+	}
 	
 	/**
-	 * 
-	 * @return Boolean
-	 * @param void
-	 * This function checks the pages level and return true if page level is home page and return
-	 * false if page is not equal to home page.
+	 * Gets the copy right text.
+	 *
+	 * @return copyright text along with current year
 	 */
-	public boolean getHomePagelevel(){
-		lOG.debug("-----------------In HeaderHelper------------------" );
-		int depth = getCurrentPage().getDepth();
-		if(depth==4)
-			return true;
-		else
-			return false;
-	}
-	public boolean getTemplatePath(){
-		lOG.debug("-----------------In template------------------" );
-		String  template = getCurrentPage().getPath();
-		if(template.contains(CommonConstants.CQ_TEMPLATE_PROPERTY_INITIAL)|| template.contains(CommonConstants.CQ_TEMPLATE_PROPERTY_STRUCRTURE)){
-			return true;
-		}else{
-			return false;
-		}
-		
-			
+	public String getCopyRightText() {
+		Calendar currentDate = Calendar.getInstance();   // Gets the current date and time
+		return COPYRIGHT_ICON + CommonConstants.BLANK_SPACE + currentDate.get(Calendar.YEAR);
 	}
 
 }

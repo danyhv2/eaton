@@ -1,0 +1,17 @@
+<sly data-sly-use.data="${'../data/title-data.js' @testdata=properties.testdata}">
+
+  <div class="eaton-title eaton-title--default">
+
+    <!--/* If Grid Enabled */-->
+    <div data-sly-test="${ properties.toggleInnerGrid }" class="container">
+      <h2 class="eaton-title__headline">${ data.title }</h2>
+    </div>
+
+    <!--/* If Grid NOT-Enabled */-->
+    <sly data-sly-test="${ !properties.toggleInnerGrid }">
+      <h2 class="eaton-title__headline">${ data.title }</h2>
+    </sly>
+
+  </div>
+
+</sly>

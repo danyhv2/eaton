@@ -1,0 +1,11 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Resource List Component</div>
+</sly>
+
+<sly data-sly-test="${properties.view == 'tags'}">
+    <sly data-sly-include="views/view-tags.html"></sly>
+</sly>
+
+<sly data-sly-test="${properties.view == 'pdh'}">
+    <sly data-sly-include="views/view-pdh.html"></sly>
+</sly>

@@ -5,6 +5,8 @@
 $primary-nav-border: #EEF0F2;
 
 .header-primary-nav {
+  position: relative;
+  z-index: 12;
   background: $color__white;
   border-bottom: 4px solid $primary-nav-border;
   transition: height 0.3s ease-in-out;
@@ -14,15 +16,10 @@ $primary-nav-border: #EEF0F2;
   }
 
   &__links {
-    a {
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
-    }
-
     i {
       font-size: 20px;
+      color: $color__primary-blue;
+      position: relative;
     }
   }
 
@@ -30,6 +27,11 @@ $primary-nav-border: #EEF0F2;
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-and-tablet {
+
+    .row {
+      align-items: center;
+    }
+
     &__links {
       justify-content: flex-end;
       display: flex;
@@ -38,9 +40,14 @@ $primary-nav-border: #EEF0F2;
     }
 
     &__open-search,
-    &__open-mobile-menu {
+    &__toggle-mobile-menu {
       display: inline-block;
-      padding: 30px;
+      padding: ($spacing__sm / 2) + 2;
+    }
+
+    .icon-close {
+      display: none;
+      color: $color__white;
     }
   }
 
@@ -52,7 +59,7 @@ $primary-nav-border: #EEF0F2;
       flex-grow: 1;
       position: relative;
 
-      &:after {
+      &::after {
         content: '';
         height: 30px;
         width: 1px;
@@ -63,26 +70,52 @@ $primary-nav-border: #EEF0F2;
       }
 
       .eaton-header--fixed & {
-        top: 26px;
-        right: 7px;
+        &::after {
+          top: 26px;
+          right: 7px;
+        }
+      }
+    }
+
+    &__links {
+      i {
+        top: -5px;
       }
     }
 
     &__open-search {
       display: flex;
-      justify-content: flex-end;
       height: 90px;
       padding: 30px; // Equidistant Spacing between menu & search icon
-      display: flex;
       margin-top: 10px;
+
+      .icon-close {
+        display: none;
+      }
 
       .eaton-header--fixed & {
         height: 70px;
         padding: 20px;
       }
+
+      .search-open & {
+        transition: background 0.3s ease-in-out;
+        background: $color__primary-gray1;
+
+        .icon-search {
+          display: none;
+        }
+
+        .icon-close {
+          display: block;
+          top: -5px;
+          font-size: 18px;
+          color: $color__white;
+        }
+      }
     }
 
-    &__open-mobile-menu {
+    &__toggle-mobile-menu {
       display: none;
     }
   }

@@ -1,0 +1,80 @@
+//-----------------------------------
+// IconList Component: Proof Points
+//-----------------------------------
+
+.icon-list-proof-points {
+
+  &__item {
+    display: flex;
+  }
+
+  &__image {
+    margin-top: 20px;
+
+    img { width: 80px; }
+  }
+
+  &__content {
+    padding-left: 40px;
+  }
+
+  &__text {
+    font-weight: bold;
+    color: $color__accent-aqua;
+    display: flex;
+    margin-left: -3px;
+  }
+
+  &__symbol {
+    position: relative;
+  }
+
+  //-----------------------------------
+  // Media-Query: Mobile
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__item {
+      justify-content: center;
+      margin-bottom: ($spacing__sm ) + 10;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__text {
+      font-size: 83px;
+    }
+
+    &__symbol {
+      font-size: 40px;
+      top: 13px;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+  }
+
+  //-----------------------------------
+  // Media-Query: Desktop
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__wrapper {
+      display: flex;
+    }
+
+    &__text {
+      font-size: 75px;
+    }
+
+    &__symbol {
+      font-size: 45px;
+      top: 8px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+  }
+}

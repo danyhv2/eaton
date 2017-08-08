@@ -1,0 +1,77 @@
+//-----------------------------------
+// EATON-109: Product Family Card
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.eaton-product-family-card {
+
+  &__header {
+    padding-bottom: $spacing__sm / 2;
+  }
+
+  &__separator {
+    width: 10%;
+    height: 5px;
+    background: $color__primary-blue;
+    margin-bottom: $spacing__sm / 2;
+  }
+
+  &__image-wrapper {
+    margin: $spacing__md / 2 0;
+    text-align: center;
+
+    img {
+      max-width: 750px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__cta {
+    text-align: center;
+    margin-bottom: $spacing__md / 2;
+  }
+
+  &__links {
+    a {
+      display: block;
+      margin-bottom: $spacing__sm / 2;
+    }
+  }
+
+  @include media-desktop-and-up {
+
+    &__header {
+
+      padding-bottom: $spacing__sm;
+    }
+
+    &__separator {
+
+      margin-bottom: $spacing__sm;
+    }
+
+    &__image-wrapper {
+      margin-bottom: 0;
+
+      img {
+        max-width: 360px;
+      }
+    }
+
+    &__link-wrapper {
+      margin-top: $spacing__md;
+    }
+
+    &__cta {
+      text-align: left;
+    }
+
+    &__links {
+      margin-bottom: $spacing__sm;
+    }
+  }
+}
