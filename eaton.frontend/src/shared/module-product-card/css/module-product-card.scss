@@ -1,0 +1,10 @@
+//-----------------------------------
+// M-35: Product Detail Card
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+.module-product-detail-card {
+  border-top: 4px solid $color__primary-blue;
+}

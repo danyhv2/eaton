@@ -1,0 +1,10 @@
+//-----------------------------------
+// M-48: Media Gallery
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+.module-media-gallery {
+  border-top: 4px solid $color__primary-blue;
+}
