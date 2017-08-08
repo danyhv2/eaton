@@ -41,6 +41,20 @@
     text-align: center;
   }
 
+  &--grey {
+    background: $color__secondary-gray6;
+  }
+
+  &--blue {
+    background: $color__primary-blue;
+
+    .eaton-topic-link-white {
+      &__header, &__description {
+        color: $color__white;
+      }
+    }
+  }
+
   @include media-desktop-and-up {
     &__icon {
       width: 70px;
