@@ -15,17 +15,8 @@ use(function () {
             "rowId": "connection",
             "specValue": [
               {
-                "type": "document",
-                "text": "NEMA 5",
-                "imageSrc": "",
-                "link": {
-                  "url": "",
-                  "target": ""
-                }
-              },
-              {
                 "type": "image",
-                "text": "Alt Text",
+                "text": "NEMA 5",
                 "imageSrc": "/content/dam/eaton/images/product-specifications/product-specs-thumb.png",
                 "link": {
                   "url": "/content/dam/eaton/images/product-specifications/product-specs-1000x1000.png",
@@ -153,7 +144,7 @@ use(function () {
             "specValue": [
               {
                 "type": "document",
-                "text": "Type:document",
+                "text": "Type: document lorem ipsum",
                 "imageSrc": "",
                 "link": {
                   "url": "",
@@ -162,7 +153,7 @@ use(function () {
               },
               {
                 "type": "image",
-                "text": "Alt Text",
+                "text": "Type: image",
                 "imageSrc": "/content/dam/eaton/images/product-specifications/product-specs-thumb.png",
                 "link": {
                   "url": "/content/dam/eaton/images/product-specifications/product-specs-1000x1000.png",
@@ -171,7 +162,7 @@ use(function () {
               },
               {
                 "type": "link",
-                "text": "Type:link NEMA 5-15P",
+                "text": "Type: link NEMA 5-15P",
                 "imageSrc": "",
                 "link": {
                   "url": "http://eaton.dev/#document.pdf",
@@ -180,7 +171,7 @@ use(function () {
               },
               {
                 "type": "anotherUnknownValueType",
-                "text": "Type:default here goes the value",
+                "text": "Type: default lorem ipsum dolor",
                 "imageSrc": "",
                 "link": {
                   "url": "",

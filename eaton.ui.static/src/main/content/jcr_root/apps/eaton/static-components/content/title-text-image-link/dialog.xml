@@ -38,10 +38,14 @@
                                 jcr:primaryType="nt:unstructured"
                                 text="Single Feature"
                                 value="single-feature"/>
-                            <feature-block
+                            <feature-block-right
                                 jcr:primaryType="nt:unstructured"
-                                text="Feature Block"
-                                value="feature-block"/>
+                                text="Feature Block Right"
+                                value="feature-block-right"/>
+                            <feature-block-left
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Feature Block Left"
+                                    value="feature-block-left"/>
                             <article-feature
                                 jcr:primaryType="nt:unstructured"
                                 text="Article Feature"

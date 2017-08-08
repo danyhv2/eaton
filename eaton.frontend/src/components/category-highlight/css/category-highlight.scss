@@ -1,18 +1,47 @@
-// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+//-----------------------------------
+// M-49 Category Highlight
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
 @import "../../../global/css/_config/sass";
 
-.category-highlight-list-container {
-  margin-top: -5%;
-}
+.eaton-category-highlight {
 
-@media only screen and (max-width: 767px) {
-  .category-highlight-list-container {
-    margin-top: -15%;
+  @include media-mobile-only {
+    &__bottom {
+      margin-top: -15%;
+    }
   }
+
+  @include media-tablet-only {
+    &__bottom {
+      margin-top: -13%;
+    }
+  }
+
+  @include media-desktop-and-up {
+    &__bottom {
+      margin-top: -5%;
+    }
+  }
+
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .category-highlight-list-container {
-    margin-top: -13%;
+
+
+//-----------------------------------
+// AEM Author Mode Styles
+//-----------------------------------
+
+// stylelint-disable selector-class-pattern
+.aem-AuthorLayer-Edit,
+.cq-wcm-edit {
+
+  // stylelint-enable
+  .eaton-category-highlight {
+
+    &__bottom {
+      margin-top: 0;
+    }
   }
 }

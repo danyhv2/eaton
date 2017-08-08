@@ -6,7 +6,12 @@ use(function () {
   data.tabs = [
     {
       title: 'Workstation & home UPS',
-      headertext: 'View all Workstation & home UPS',
+      titlelink: '#',
+      titletarget: '_blank'
+    },
+    {
+      title: 'Network & server UPS',
+      headertext: 'View all Network & server UPS',
       headerlink: '#',
       headertarget: '_self',
       links: [
@@ -61,11 +66,6 @@ use(function () {
           target: '_self'
         }
       ]
-    },
-    {
-      title: 'Network & server UPS',
-      titlelink: '#',
-      titletarget: '_blank'
     },
     {
       title: 'Data center & facility UPS',

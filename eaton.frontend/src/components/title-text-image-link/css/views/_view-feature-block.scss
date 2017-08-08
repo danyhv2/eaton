@@ -15,6 +15,20 @@
         height: 750px;
       }
     }
+
+    &--left {
+
+      .feature-block-component {
+
+        &__container {
+          display: flex;
+        }
+
+        &--copy {
+          order: 2;
+        }
+      }
+    }
   }
 
   &__copy {

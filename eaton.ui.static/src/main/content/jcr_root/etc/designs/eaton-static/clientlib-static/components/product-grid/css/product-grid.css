@@ -1,14 +1,14 @@
 .product-card-sku { position: relative; }
 
-.product-card-sku__name, .product-card-sku__price { color: #FFF; }
-
-.product-card-sku__name a { color: #FFF; }
+.product-card-sku__name, .product-card-sku__price, .product-card-sku__name a { color: #FFF; }
 
 .product-card-sku__name .icon, .product-card-sku__link-item .icon { font-size: 1rem; }
 
-.product-card-sku__image-wrapper { position: absolute; z-index: 5; }
+.product-card-sku__image-link { display: block; }
 
-.product-card-sku__image { height: 54px; width: 54px; border: 1px solid #E9E9E9; background-color: #FFF; padding: 0.5rem; }
+.product-card-sku__image-wrapper { position: absolute; z-index: 2; }
+
+.product-card-sku__image { height: 54px; width: 54px; border: 1px solid #EEF0F2; background-color: #FFF; padding: 0.5rem; }
 
 .product-card-sku__links-list { list-style-type: none; margin: 0; padding: 0; }
 
@@ -44,3 +44,16 @@
   .product-card-sku__attrs-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; margin-bottom: 30px; }
   .product-card-sku__attrs-list-item { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
   .product-card-sku__description { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; } }
+
+.results-list--card-family .results-list__content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.product-card-family { position: relative; width: 100%; }
+
+.product-card-family__link { position: absolute; left: 0; top: 0; height: 100%; width: 100%; z-index: 1; width: 20px; background-color: rgba(102, 51, 153, 0.5); }
+
+.product-card-family__image-wrapper { text-align: center; padding: 0 20px; position: relative; padding-top: 100%; }
+
+.product-card-family__image { position: absolute; background-color: #F8F8F8; border: 1px solid #EEF0F2; max-width: 100%; top: 0; left: 0; padding: 20px; height: 100%; width: 100%; }
+
+@media screen and (min-width: 992px) { .product-card-family { width: 32%; margin-right: 2%; margin-bottom: 2%; }
+  .product-card-family:nth-child(3n+3) { margin-right: 0; } }

@@ -8,24 +8,23 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="QA-components"
         sling:resourceType="eaton/static-components/structure/eaton-home-page"/>
-    <m7-footer/>
-    <m49-category-highlight/>
-    <m24-featured-story/>
-    <m11-page-overview/>
-    <m28-featured-topic/>
-    <m8-landing-hero/>
-    <m61-section-navigation/>
-    <m9-category-hero/>
     <content-columns-2col/>
-    <m49-featured-article/>
-    <m47-search/>
-    <m9-category-hero0/>
-    <m49-no-featured-article-3-cards/>
-    <m25-proof-points/>
-    <m53-feature-block/>
-    <m27-article-list/>
-    <m55-tile-links/>
     <m1-header/>
+    <m7-footer/>
+    <m8-landing-hero/>
+    <m9-category-hero/>
+    <m9-category-hero0/>
+    <m11-page-overview/>
+    <m24-featured-story/>
+    <m25-proof-points/>
+    <m27-article-list/>
+    <m28-featured-topic/>
+    <m47-search/>
+    <m49-category-highlight/>
+    <m49-featured-article/>
+    <m49-no-featured-article-3-cards/>
+    <m53-feature-block/>
+    <m55-tile-links/>
     <m56-article-feature/>
-    <mega-menu/>
+    <m61-section-navigation/>
 </jcr:root>
