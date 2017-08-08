@@ -18,8 +18,12 @@
     <sly data-sly-include="views/view-single-feature.html" data-sly-unwrap></sly>
 </sly>
 
-<sly data-sly-test="${properties.view == 'feature-block'}">
+<sly data-sly-test="${properties.view == 'feature-block-right'}">
     <sly data-sly-include="views/view-feature-block.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${properties.view == 'feature-block-left'}">
+    <sly data-sly-include="views/view-feature-block-left.html" data-sly-unwrap></sly>
 </sly>
 
 <sly data-sly-test="${properties.view == 'article-feature'}">
