@@ -113,61 +113,7 @@ use(function () {
 	        }
 	      ]
 	    };
-    	
-    } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-1")) {
-  	  
-    	data = {
-	      links: [
-	        {
-	          text: 'Stock information',
-	          url: '',
-	          target: '_self'
-	        },
-	        {
-	          text: 'Stock information',
-	          url: '#',
-	          target: '_self'
-	        },
-	        {
-	          text: 'SEC filings',
-	          url: '#',
-	          target: '_self'
-	        },
-	        {
-	          text: 'Company profile',
-	          url: '#',
-	          target: '_self'
-	        }
-	      ]
-	    };
-    	
-    } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-2")) {
-    	  
-    	data = {
-	      links: [
-	        {
-	          text: 'Financial reports',
-	          url: '',
-	          target: '_self'
-	        },
-	        {
-	          text: '2016 annual and sustainability report',
-	          url: '#',
-	          target: '_self'
-	        },
-	        {
-	          text: '2016 Q4 quartely report',
-	          url: '#',
-	          target: '_self'
-	        },
-	        {
-	          text: 'Dividend report',
-	          url: '#',
-	          target: '_self'
-	        }
-	      ]
-	    };
-    	
+    		
     } else {
 
 	    data = {
