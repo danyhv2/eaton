@@ -14,6 +14,8 @@
 
 .module-anchor-links {
 
+  $anchor-padding: 20px;
+
   &__list {
     list-style-type: none;
     padding: 0;
@@ -35,13 +37,15 @@
     color: $color__primary-blue;
     display: flex;
     min-height: 75px;
-    padding: 0 20px;
+    padding: 0 $anchor-padding;
     position: relative;
     text-align: left;
     width: 100%;
 
-    &:active,
-    &:focus {
+    // TODO: Review Hover / Active State
+    // &:active,
+    // &:focus,
+    &:hover {
       background-color: $color__secondary-gray5;
       font-weight: bold;
       outline: 0;
@@ -49,13 +53,17 @@
 
     // Link Label
     span {
-      padding-right: 20px;
+      padding-right: $anchor-padding;
     }
 
     .icon {
       color: $color__primary-blue;
       font-size: 1rem;
-      margin-left: auto;
+      height: 10px;
+      position: absolute;
+      right: $anchor-padding;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
