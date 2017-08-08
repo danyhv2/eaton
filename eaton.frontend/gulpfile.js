@@ -13,7 +13,7 @@ gulp.task('clean',
 );
 
 
-// TASKS: Linting
+// TASKS: LINT Source Code
 //--------------
 
 // SASS-Lint
@@ -59,7 +59,7 @@ gulp.task('js', ['lint:js', 'js:build']);
 
 // Build For Local Development
 //--------------
-gulp.task('build:dev', [
+gulp.task('dev', [
   // 'clean',
   'css:build',
   'js:build',
@@ -70,9 +70,9 @@ gulp.task('build:dev', [
 
 
 // Build for Prod Servers
-// TODO: For production builds Add minifcation, hashes, cleanup folders etc
+// TODO: TBD: For production builds Add minifcation, hashes, cleanup folders etc
 //--------------
-gulp.task('build:prod', [
+gulp.task('prod', [
   // 'clean',
   'css:build',
   'js:build',
@@ -84,7 +84,7 @@ gulp.task('build:prod', [
 
 // Default Development Task
 //--------------
-gulp.task('default', ['build:dev'], () => {
+gulp.task('default', ['dev'], () => {
 
   // Watch for File Changes
   require('./config/gulp-tasks/gulp-watch')(gulp, CONFIG);

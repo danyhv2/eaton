@@ -30,15 +30,18 @@
         <!--/* M-60: Results List */-->
         <div class="col-xs-12 col-md-9">
 
-          <!--/* TODO: These views need to be reviewed */-->
-          <sly data-sly-test="${ properties.view == 'product-card-sku' }">
-            <sly data-sly-use.tpl="partials/results-list-product-grid.html">
-              <sly data-sly-call="${ tpl.module @ data=data.search }"></sly>
+          <!--/* View: Card-SKU */-->
+          <sly data-sly-test.isViewSKU="${ properties.view == 'product-card-sku' }">
+            <sly data-sly-use.tpl="views/product-card-sku.html">
+              <sly data-sly-call="${ tpl.view @ data=data.search }"></sly>
             </sly>
           </sly>
 
-          <sly data-sly-test="${ properties.view == 'product-card-family' }">
-            TODO: This view needs to be created
+          <!--/* View: Card-Family */-->
+          <sly data-sly-test="${ !isViewSKU }">
+            <sly data-sly-use.tpl="views/product-card-family.html">
+              <sly data-sly-call="${ tpl.view @ data=data.search }"></sly>
+            </sly>
           </sly>
 
         </div>

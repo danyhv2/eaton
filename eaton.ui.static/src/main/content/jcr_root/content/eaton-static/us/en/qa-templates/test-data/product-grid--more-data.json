@@ -1,13 +1,14 @@
 {
   "search": {
-    "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/product-grid-sku--more-data.json",
-    "ajaxRequestNextPage": 3,
+    "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/product-grid--more-data.json",
+    "ajaxRequestNextPage": null,
     "results": [
       {
         "contentType": "product-card",
         "contentItem": {
           "name": "New Product 1",
-          "imgSrc": "/content/dam/eaton/images/p1.png",
+          "eyebrow": "Network, Server & Storage UPS",
+          "imgSrc": "/content/dam/eaton/images/products/product-1-thumbnail.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 2400,
           "link": {
@@ -38,7 +39,8 @@
         "contentType": "product-card",
         "contentItem": {
           "name": "New Product 2",
-          "imgSrc": "/content/dam/eaton/images/p2.png",
+          "eyebrow": "Network, Server & Storage UPS",
+          "imgSrc": "/content/dam/eaton/images/products/product-2-thumbnail.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 3200,
           "link": {
@@ -69,7 +71,8 @@
         "contentType": "product-card",
         "contentItem": {
           "name": "New Product 3",
-          "imgSrc": "/content/dam/eaton/images/p3.png",
+          "eyebrow": "Network, Server & Storage UPS",
+          "imgSrc": "/content/dam/eaton/images/products/product-3-thumbnail.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 99500,
           "link": {
@@ -100,7 +103,8 @@
         "contentType": "product-card",
         "contentItem": {
           "name": "New Product 4",
-          "imgSrc": "/content/dam/eaton/images/p4.png",
+          "eyebrow": "Network, Server & Storage UPS",
+          "imgSrc": "/content/dam/eaton/images/products/product-4-thumbnail.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 2400,
           "link": {
@@ -131,7 +135,8 @@
         "contentType": "product-card",
         "contentItem": {
           "name": "New Product 5",
-          "imgSrc": "/content/dam/eaton/images/p5.png",
+          "eyebrow": "Network, Server & Storage UPS",
+          "imgSrc": "/content/dam/eaton/images/products/product-5-thumbnail.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 2400,
           "link": {

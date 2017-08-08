@@ -5,10 +5,10 @@
 
 let App = window.App || {};
 
-App.resultsList = (function() {
+App.searchResults = (function() {
 
-  const componentCSSClass = '.results-list';
-  const $componentElement = $(componentCSSClass);
+  const resultListCSSClass = '.results-list';
+  const $componentElement = $('.search-results').find(resultListCSSClass);
   const templates = {};
 
 
@@ -90,8 +90,8 @@ App.resultsList = (function() {
       : '';
 
     let articleExternalIconTPL = (data.contentItem.articleType === 'external')
-     ? '<i class="icon icon-link-external" aria-hidden="true"></i>'
-     : '';
+      ? '<i class="icon icon-link-external" aria-hidden="true"></i>'
+      : '';
 
     return `
       <div class="results-list-module results-list-module--type-${ data.contentType }">
@@ -168,83 +168,6 @@ App.resultsList = (function() {
   };
 
 
-  // SKU Card Template
-  //--------------
-  templates.productCard = function(data) {
-    return `
-      <div class="product-card-sku">
-
-        <div class="product-card-sku__image-wrapper b-body-copy-small">
-          <a href="${ data.contentItem.link.url }"
-            class="product-card-sku__image-link"
-            target="${ data.contentItem.link.target }"
-          >
-            <img src="${ data.contentItem.imgSrc }"
-              class="product-card-sku__image"
-              alt="${ data.contentItem.name }" />
-          </a>
-        </div>
-
-        <div class="product-card-sku__header">
-
-          <div class="product-card-sku__title-wrapper">
-            <h3 class="product-card-sku__name">
-              <a href="${ data.contentItem.link.url }"
-                target="${ data.contentItem.link.target }"
-                class="product-card-sku__url-link"
-              >
-                <span class="name-label">${ data.contentItem.name }</span>
-                <i class="icon icon-chevron-right" aria-hidden="true"></i>
-              </a>
-            </h3>
-            <div class="product-card-sku__price b-body-copy">${ data.contentItem.price }*</div>
-          </div>
-
-          <ul class="product-card-sku__links-list">
-            <li class="product-card-sku__link-item">
-              <a href="${ data.contentItem.productLinks.specificationsURL }"
-                class="product-card-sku__link-item-link"
-                target="_self"
-                aria-label="Go to Specifications"
-              >
-                <span class="link-label">Specifications</span>
-                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
-              </a>
-            </li>
-
-            <li class="product-card-sku__link-item">
-              <a href="${ data.contentItem.productLinks.resourcesURL }"
-                class="product-card-sku__link-item-link"
-                target="_self"
-                aria-label="Go to Resources"
-              >
-                <span class="link-label">Resources</span>
-                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-
-        </div>
-
-        <div class="product-card-sku__content">
-          <div class="product-card-sku__attrs-list">
-
-            ${ data.contentItem.productAttributes.map((attribute) => {
-              return `<div class="product-card-sku__attrs-list-item">
-                  <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">${ attribute.label }</div>
-                  <div class="product-card-sku__attr-value b-body-copy">${ attribute.value }</div>
-                </div>`;
-            }).join('')
-            }
-
-          </div>
-          <div class="product-card-sku__description">${ data.contentItem.description }</div>
-        </div>
-
-      </div>`;
-  };
-
-
 
   /**
   * Fetch the next page of results and add them to the DOM
@@ -252,7 +175,7 @@ App.resultsList = (function() {
   */
   const fetchMoreResults = (event) => {
 
-    const $currentComponent = $(event.currentTarget).closest(componentCSSClass);
+    const $currentComponent = $(event.currentTarget).closest(resultListCSSClass);
     const requestURL = $currentComponent.attr('data-results-url');
     const requestNextPage = $currentComponent.attr('data-results-next-page');
 
@@ -289,14 +212,15 @@ App.resultsList = (function() {
             newElements += templates.resource(data);
           }
 
-          else if (data.contentType === 'product-card') {
-            newElements += templates.productCard(data);
-          }
-
         });
 
         // Append the new List of Result Elements to the DOM
         $currentComponent.find('.results-list__content').append(newElements);
+
+        // if There are no more results, remove "Load More" button
+        if (!search.ajaxRequestNextPage) {
+          $currentComponent.find('[data-load-more]').remove();
+        }
 
         // Update Fetch URL for the next set of items / next AJAX Request
         $currentComponent.attr('data-results-url', search.ajaxRequestUrl);
@@ -304,9 +228,9 @@ App.resultsList = (function() {
 
       })
 
-      // If The AJAX Request couldn't be completed
+      // Callback for Failed Request
       .fail((data) => {
-        console.error('error', data);
+        console.error('[Request-Error]', data);
       });
 
   };
@@ -317,7 +241,6 @@ App.resultsList = (function() {
   */
   if ($componentElement.length > 0) {
     init();
-
     // Public methods
     // return { }
   }
