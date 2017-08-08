@@ -8,11 +8,16 @@ use(function () {
             title: 'Energy Efficiency',
             text: '<p>Built in energy metering.</p><p>Extends battery service life by 50% with ABM technology.</p>' +
             '<p>Maximizes availability with extended battery modules for more runtime and optional maintenance bypass.</p>' +
-            '<p>Help save money and protect the environment through energy efficiency operation.</p>' +
-            '<p><a href="http://www.eaton.com" class="b-h4-link">Learn more about ENERGY STAR<sup>®</sup></a></p>',
+            '<p>Help save money and protect the environment through energy efficiency operation.</p>',
             imgSrc: '',
+            imgMobile:'',
+            imgTablet:'',
             imgAlt: '',
             backgroundColor: '#FFFFFF',
+            cta: {
+                url: '',
+                text:''
+            }
 
         }
     } else {
@@ -23,9 +28,14 @@ use(function () {
             '<p>Help save money and protect the environment through energy efficiency operation.</p>' +
             '<p><a href="http://www.eaton.com" class="b-h4-link">Learn more about ENERGY STAR<sup>®</sup></a></p>',
             imgSrc: '/content/dam/eaton/images/energy.png',
+            imgMobile:'/content/dam/eaton/images/energy.png',
+            imgTablet:'/content/dam/eaton/images/energy.png',
             imgAlt: 'Alt Text goes here',
             backgroundColor: '#FFFFFF',
-
+            cta: {
+                url: '',
+                text:''
+            }
         }
     }
 
