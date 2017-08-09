@@ -2,16 +2,47 @@
   <div class="module-product-detail-card">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-5">Image Goes Here</div>
+        <div class="col-xs-12 col-md-5 module-product-detail-card--image-container">
+          <img class="img-responsive"
+              src="${data.image.desktop}"
+              data-src="${data.image.desktop}"
+              data-desktop-rendition="${data.item.desktop}"
+              data-tablet-rendition="${data.item.tablet}"
+              data-mobile-rendition="${data.item.mobile}" />
+        </div>
         <div class="col-xs-12 col-md-7">
-          <div class="module-product-detail-card__title">9PX1500RTN</div>
-          <div class="module-product-detail-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-          <div class="module-product-detail-card__price">US Price</div>
+          <h1 class="module-product-detail-card__title">
+            ${data.title}
+          </h1>
+          <div class="module-product-detail-card__description b-body-copy">
+            ${data.description}
+          </div>
+          <div class="module-product-detail-card__price b-body-copy-small">
+            <b>${data.priceLabel}</b>
+            <span>${data.price}</span>
+          </div>
           <div class="module-product-detail-card__actions">
-            <div class="b-button b-button__tertiary b-button_tertiary--light">Request a Quote</div>
+            <a href="${data.cta.url}"
+               aria-label="Go to ${ data.cta.title }"
+               target="${ tada.cta.target }"
+               class="b-button b-button__primary b-button__primary--light" >
+              ${ data.cta.title }
+            </a>
           </div>
           <div class="module-product-detail-card__links">
-            Link 1
+            <div>
+              <div class="module-product-detail-card__links--header b-body-copy-small">${ data.linksHeader }</div>
+
+              <ul data-sly-list="${data.links}">
+                <li>
+                  <a  href="${item.url}"
+                      aria-label="Go to ${ item.title }">
+                    <i class="icon icon-link-external" aria-hidden="true"></i>
+                    ${ item.title }
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

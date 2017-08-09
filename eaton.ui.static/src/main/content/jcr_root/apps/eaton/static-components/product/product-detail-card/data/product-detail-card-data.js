@@ -8,19 +8,34 @@ use(function () {
   // Product Detail Card M-35
   //--------------
   data.productDetailCard = {
-    "title": "",
+    "title": "9PX1500RTN",
     // TODO: Review if this component uses image-renditions
-    "imgSrc": {
-      "mobile": "http://mobile.png",
-      "tablet": "http://tablet.png",
-      "desktop": "http://desktop.png",
+    "image": {
+      "mobile": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
+      "tablet": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
+      "desktop": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
     },
-    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "link": {
-      "text": "Request a Quote",
+    "description": "Reliable. versatile. Powerful. Efficient. With double-conversion topology for constant power conditioning and up to 93% efficiency, the Eaton 9PX1500RTN supports your overall goal of bussiness continuity. It's built for scalable deployment, features a graphical LCD for local status updates and integrates with virtualized environments",
+    "priceLabel": 'LIST PRICE',
+    "price": "$9,169",
+    "cta": {
+      "title": "Request a Quote",
       "url": "http://eaton.dev/#request-a-quote",
       "target": "_blank"
-    }
+    },
+    linksHeader: 'Interact with the 9PX15000RTN',
+    links: [
+      {
+        "title": "View Spiceworks reviews",
+        "url": "#view-review-Spiceworks",
+        "target": "_blank"
+      },
+      {
+        "title": "View StorageReview.com reviews",
+        "url": "#view-review-StorageReview",
+        "target": "_blank"
+      }
+    ]
   };
 
 
