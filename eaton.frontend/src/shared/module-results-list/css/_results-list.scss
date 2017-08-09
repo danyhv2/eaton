@@ -2,21 +2,20 @@
 // M-60: Results List Container
 //-----------------------------------
 
-.search-results {
-  position: relative;
-  z-index: 1;
-}
-
 .results-list {
-  padding-bottom: $spacing__lg / 2;
+  margin-bottom: $spacing__lg / 2;
 
   &__disclaimer {
     border-top: 3px solid $color__secondary-gray5;
     padding: 20px 0;
   }
 
-  &__actions {
+  &__bottom {
     margin-top: 40px;
+  }
+
+  &__actions {
+
   }
 
 
@@ -33,7 +32,7 @@
   // MediaQuery: Desktop & Desktop Large
   //-----------------------------------
   @include media-desktop-and-up {
-    padding-bottom: $spacing__lg;
+    margin-bottom: $spacing__lg;
   }
 
 }

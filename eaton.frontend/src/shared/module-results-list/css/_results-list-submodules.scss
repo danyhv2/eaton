@@ -1,18 +1,24 @@
 //-----------------------------------
-// M-60.1: Results List Modules
+// M-60.1: Results List Sub-Modules
 //-----------------------------------
-.results-list-module {
+.results-list-submodule {
 
   // Local Variables
   //--------------
-  $color__image-border: #E9E9E9;
+  $color__image-border: $color__secondary-gray5;
+  $color__image-bg: $color__secondary-gray6;
   $line-height-offset: 8px;
 
   display: flex;
   margin-bottom: $spacing__md / 2;
 
+  &__image-link {
+    display: block;
+  }
+
   &__image {
     border: 1px solid $color__image-border;
+    background: $color__image-bg;
     padding: 1rem;
   }
 
@@ -40,6 +46,10 @@
     margin-bottom: 12px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
   }
 
+  &__url {
+    word-wrap: break-word;
+  }
+
   &__link-item {
     border-right: 1px solid $color__secondary-gray4;
     margin-right: 16px;
@@ -61,10 +71,12 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
 
+    flex-direction: column;
+
     // Force Image to be displayed Above the content
     &--type-family,
     &--type-sku {
-      flex-flow: column nowrap;
+      flex-direction: column;
     }
 
     &__image-wrapper {
@@ -72,8 +84,8 @@
     }
 
     &__image {
-      min-width: 300px;
-      max-height: 200px;
+      width: 100%;
+      max-width: 260px;
     }
   }
 
@@ -110,7 +122,6 @@
         font-size: 48px;
       }
     }
-
 
   }
 }

@@ -1,36 +1,25 @@
 <sly data-sly-use.data="${'../data/view-top-list-with-icon-data.js' @testdata=properties.testdata}">
   <div class="eaton-top-list-with-icon">
-    <sly data-sly-test="${data.headline}">
+
+
       <div class="container row" >
-        <div class="col-xs-12 col-md-4 eaton-top-list-with-icon__element" >
-          <div class="b-heading-h3">${data.headline}</div>
-        </div>
-      
-        <div class="col-xs-12 col-md-8">
-        <div class="row" >
-    </sly>
-    <sly data-sly-test="${!data.headline}">
-      <div class="container row" >
-    </sly>
+
     <sly data-sly-list.link="${data.items}">
 
-      <div class="col-xs-12 ${data.headline ? 'col-md-5' : 'col-md-4'} eaton-top-list-with-icon__element" data-sly-test=${link.image}>
+      <div class="col-xs-12 col-md-4 eaton-top-list-with-icon__element" data-sly-test=${link.image}>
         <div class="eaton-top-list-with-icon__icon">
           <img src="${link.image}">
         </div>
         <div class="eaton-top-list-with-icon__text-wrapper">
-          <a href="${link.linkl}" class="${data.headline ? 'b-heading-h4' : 'b-heading-h5'}" title="${link.title}" target="${link.target}">${link.title}</a>
+          <a href="${link.linkl}" class="b-h5-link-bold" title="${link.title}" target="${link.target}">${link.title}</a>
           <div class="p-body-copy">${link.text}</div>
         </div>
       </div>
       <div class="col-xs-12 col-md-4 eaton-top-list-with-icon__element" data-sly-test="${!link.image}">
-        <div class="b-heading-h4">${link.title}</div>
+        <div class="b-heading-h3">${link.title}</div>
       </div>
     </sly>
     </div>
-    <sly data-sly-test="${data.headline}">
-        </div>
-      </div>
-    </sly>
+
   </div>
 </sly>

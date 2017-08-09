@@ -87,7 +87,7 @@
 .eaton-product-tabs__dropdown__content li .icon { font-size: 25px; left: 0; padding: 0 10px 0 0; position: absolute; }
 
 @media screen and (max-width: 991px) { .eaton-product-tabs__description { padding: 10px 15px; }
-  .eaton-product-tabs .container { padding: 0; }
+  .eaton-product-tabs .container { padding: 0; width: 100%; }
   .eaton-product-tabs__dropdown-container { background-color: #FFF; }
   .eaton-product-tabs .eaton-product-tabs__dropdown { width: 93%; margin-top: 20px; margin-bottom: 20px; }
   .eaton-product-tabs__page-utility { padding: 0 15px; }

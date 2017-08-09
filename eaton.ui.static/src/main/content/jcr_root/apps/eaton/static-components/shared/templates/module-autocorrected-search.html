@@ -1,12 +1,16 @@
 <template data-sly-template.module="${ @ data }">
-  <!--/* .desktop-container.u-visible-desktop */-->
-  <div class="module-autocorrected-search">
+  <div class="autocorrected-search">
     <div class="container">
-      <strong class="u-inline-block">${ 'Showing results for' @ i18n } <em class="module-autocorrected-search__search-term">${ data.searchTerm }</em> </strong>
-      <strong>${ 'Search instead for' @ i18n }</strong>
-      <a href="${ data.url }"
-        class="module-autocorrected-search__corrected-term"
-        target="${ data.target }">${ data.correctedTerm }</a>
+      <div class="autocorrected-search__results">
+        <strong class="autocorrected-search__results-label">${ 'Showing results for' @ i18n }
+          <em class="autocorrected-search__results-term">${ data.correctedTerm }</em> </strong>
+      </div>
+      <div class="autocorrected-search__search-instead">
+        <strong class="autocorrected-search__search-instead-label">${ 'Search instead for' @ i18n }</strong>
+        <a href="${ data.url }"
+        class="autocorrected-search__search-instead-link"
+        target="${ data.target }">${ data.searchTerm }</a>
+      </div>
     </div>
   </div>
 </template>
