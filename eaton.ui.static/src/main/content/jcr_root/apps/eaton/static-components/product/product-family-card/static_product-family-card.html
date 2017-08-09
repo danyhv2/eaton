@@ -37,8 +37,11 @@
   </div>
 
   <!--  Include the Icon List component here (Highlights View) -->
-  <sly data-sly-resource="${'icon-list' @ resourceType='/apps/eaton/static-components/content/icon-list'}"></sly>
+  <div>
+    <sly data-sly-resource="${'icon-list' @ resourceType='/apps/eaton/static-components/content/icon-list'}"></sly>
+  </div>
   <!--  Add markup here to support the Core Features/Benefits content -->
-  <sly data-sly-resource="${'product-benefits' @ resourceType='/apps/eaton/static-components/product/product-features'}"></sly>
-  <sly data-sly-resource="${'product-features' @ resourceType='/apps/eaton/static-components/product/product-features'}"></sly>
+  <div>
+    <sly data-sly-resource="${'product-features' @ resourceType='/apps/eaton/static-components/product/product-features'}"></sly>
+  </div>
 </sly>

@@ -6,6 +6,13 @@
   </sly>
 
 
+  <!--/* M-64 - Autocorrected Search */-->
+  <sly data-sly-test="${ data.search.autoCorrect.enabled }">
+    <sly data-sly-use.tpl="../../shared/templates/module-autocorrected-search.html">
+      <sly data-sly-call="${ tpl.module @ data=data.search.autoCorrect }"></sly>
+    </sly>
+  </sly>
+
 
   <div class="search-results-default">
     <div class="container">
