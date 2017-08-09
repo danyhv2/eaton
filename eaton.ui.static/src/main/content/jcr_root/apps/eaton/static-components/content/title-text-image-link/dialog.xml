@@ -52,7 +52,7 @@
                                 value="article-feature"/>
                             <topic-link-white
                                 jcr:primaryType="nt:unstructured"
-                                text="Topic Link, White"
+                                text="Topic Link"
                                 value="topic-link-white"/>
                         </options>
                     </view>

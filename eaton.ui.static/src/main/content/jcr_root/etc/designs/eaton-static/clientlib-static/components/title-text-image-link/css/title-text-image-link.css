@@ -35,19 +35,19 @@
 
 .feature-block-component { padding: 60px 0; }
 
-.feature-block-component__container--blue { height: 600px; }
+.feature-block-component__container--height { height: 665px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+@media screen and (max-width: 767px) { .feature-block-component__container--height { height: 750px; } }
 
 .feature-block-component__container--white { height: 500px; }
 
 @media screen and (max-width: 767px) { .feature-block-component__container--white { height: 750px; } }
 
-.feature-block-component__container--left .feature-block-component__container { display: -webkit-box; display: -ms-flexbox; display: flex; }
-
-.feature-block-component__container--left .feature-block-component--copy { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
-
 .feature-block-component__copy { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 .feature-block-component__copy--white-text { color: #FFF; }
+
+@media screen and (min-width: 768px) { .feature-block-component__copy--left { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; } }
 
 .feature-block-component__link { display: block; }
 
@@ -133,6 +133,12 @@
 .eaton-topic-link-white__description { margin-bottom: 30px; }
 
 .eaton-topic-link-white__cta-wrapper { text-align: center; }
+
+.eaton-topic-link-white--grey { background: #F8F8F8; }
+
+.eaton-topic-link-white--blue { background: #005EB8; }
+
+.eaton-topic-link-white--blue .eaton-topic-link-white__header, .eaton-topic-link-white--blue .eaton-topic-link-white__description { color: #FFF; }
 
 @media screen and (min-width: 992px) { .eaton-topic-link-white__icon { width: 70px; margin-bottom: 0; margin-right: 30px; display: inline-block; }
   .eaton-topic-link-white__text-wrapper { width: calc(100% - 100px); display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; float: right; }

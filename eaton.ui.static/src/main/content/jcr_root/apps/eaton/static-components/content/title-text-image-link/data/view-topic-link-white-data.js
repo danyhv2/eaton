@@ -2,7 +2,7 @@
 use(function () {
   var data;
   var testdata=this.testdata;
-  
+
   if ((typeof(testdata) != "undefined") && (testdata == "t5-category-with-list-1")) {
     data = {
       header: 'The perfect solution is never one size fits all',
@@ -33,6 +33,7 @@ use(function () {
       header: 'Get digital delivery on proxy materials',
       icon: '/content/dam/eaton/images/faq_orange_icon.png',
       description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders',
+      color: 'white'
     };
   } else if ((typeof(testdata) != "undefined") && (testdata == "no-icon")) {
     data = {
@@ -40,7 +41,26 @@ use(function () {
       description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders',
       ctaText: 'Register for eDelivery',
       ctaLink: '#',
-      ctaTarget: '_blank'
+      ctaTarget: '_blank',
+      color: 'white'
+    };
+  } else if ((typeof(testdata) != "undefined") && (testdata == "no-icon-blue")) {
+    data = {
+      header: 'Get digital delivery on proxy materials',
+      description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders',
+      ctaText: 'Register for eDelivery',
+      ctaLink: '#',
+      ctaTarget: '_blank',
+      color: 'blue'
+    };
+  } else if ((typeof(testdata) != "undefined") && (testdata == "no-icon-grey")) {
+    data = {
+      header: 'Get digital delivery on proxy materials',
+      description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders',
+      ctaText: 'Register for eDelivery',
+      ctaLink: '#',
+      ctaTarget: '_blank',
+      color: 'grey'
     };
   } else {
     data = {
@@ -49,7 +69,8 @@ use(function () {
       description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders',
       ctaText: 'Register for eDelivery',
       ctaLink: '#',
-      ctaTarget: '_blank'
+      ctaTarget: '_blank',
+      color: 'white'
     };
   }
 
