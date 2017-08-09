@@ -11,16 +11,16 @@ use(function () {
     "title": "9PX1500RTN",
     // TODO: Review if this component uses image-renditions
     "image": {
-      "mobile": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
-      "tablet": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
-      "desktop": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
+      "mobile": "/content/dam/eaton/images/product.png",
+      "tablet": "/content/dam/eaton/images/product.png",
+      "desktop": "/content/dam/eaton/images/product.png",
     },
     "description": "Reliable. versatile. Powerful. Efficient. With double-conversion topology for constant power conditioning and up to 93% efficiency, the Eaton 9PX1500RTN supports your overall goal of bussiness continuity. It's built for scalable deployment, features a graphical LCD for local status updates and integrates with virtualized environments",
     "priceLabel": 'LIST PRICE',
     "price": "$9,169",
     "cta": {
       "title": "Request a Quote",
-      "url": "http://eaton.dev/#request-a-quote",
+      "url": "#request-a-quote",
       "target": "_blank"
     },
     linksHeader: 'Interact with the 9PX15000RTN',
