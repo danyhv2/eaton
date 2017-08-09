@@ -23,8 +23,8 @@ App.mediaGallery = function () {
 
   var componentClass = '.module-media-gallery';
   var $componentEl = $(componentClass);
-  var $slideCarousel = $componentEl.find('.module-media-gallery__slide-container');
-  var $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-container');
+  var $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
+  var $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
 
   /**
    * Initialize Media Gallery
@@ -38,37 +38,31 @@ App.mediaGallery = function () {
    * Configure Slick Carousel - Main Slide Container
    */
   var initializeSlideCarousel = function initializeSlideCarousel() {
-    for (var i = 0; i < $slideCarousel.length; i++) {
-
-      $slideCarousel.eq(i).slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        dots: false,
-        adaptiveHeight: true,
-        dotsClass: 'module-media-gallery__dots',
-        prevArrow: $('.module-media-gallery__prev-slide'),
-        nextArrow: $('.module-media-gallery__next-slide')
-      });
-    }
+    $slideCarousel.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      dots: false,
+      adaptiveHeight: true,
+      dotsClass: 'module-media-gallery__dots',
+      prevArrow: $('.module-media-gallery__prev-slide'),
+      nextArrow: $('.module-media-gallery__next-slide')
+    });
   };
 
   /**
    * Configure Slick Carousel - Thumbnail Container
    */
   var initializeThumbnailCarousel = function initializeThumbnailCarousel() {
-    for (var i = 0; i < $thumbnailCarousel.length; i++) {
-
-      $thumbnailCarousel.eq(i).slick({
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        autoplay: true,
-        dots: true,
-        dotsClass: 'module-media-gallery__dots',
-        prevArrow: $('.module-media-gallery__prev-thumbnail'),
-        nextArrow: $('.module-media-gallery__next-thumbnail')
-      });
-    }
+    $thumbnailCarousel.slick({
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      autoplay: false,
+      dots: true,
+      dotsClass: 'module-media-gallery__dots',
+      prevArrow: $('.module-media-gallery__prev-thumbnail'),
+      nextArrow: $('.module-media-gallery__next-thumbnail')
+    });
   };
 
   /**
