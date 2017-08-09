@@ -24,7 +24,7 @@ use(function () {
           "target": "_self"
         },
         {
-          "label": "News & Insights",
+          "label": "News & insights",
           "id": "news-insights",
           "isHiddenTab": false,
           "isActiveTab": false,
