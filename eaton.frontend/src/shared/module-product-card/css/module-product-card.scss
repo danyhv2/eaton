@@ -6,5 +6,27 @@
 @import "../../../global/css/_config/sass";
 
 .module-product-detail-card {
-  border-top: 4px solid $color__primary-blue;
+
+  &__title {
+    margin: 35px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: $color__primary-blue;
+      height: 4px;
+      width: 60px;
+      bottom: -15px;
+    }
+  }
+
+  &__price {
+    margin: $spacing__sm 0;
+
+    span {
+      color: $color__primary-gray2;
+      padding-left: 5px;
+    }
+  }
 }
