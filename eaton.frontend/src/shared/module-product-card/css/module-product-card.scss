@@ -6,9 +6,20 @@
 @import "../../../global/css/_config/sass";
 
 .module-product-detail-card {
+  padding: 35px 0;
+
+  &--image-container {
+    text-align: center;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      max-width: 553px;
+    }
+  }
 
   &__title {
-    margin: 35px 0;
+    margin: 0 0 35px 0;
     position: relative;
 
     &::before {
@@ -29,4 +40,33 @@
       padding-left: 5px;
     }
   }
+
+  &__links {
+    padding: 20px 0;
+
+    &--header {
+      color: $color__primary-blue;
+    }
+
+    ul {
+      list-style: none;
+      padding: 20px 0px;
+
+      li {
+          padding: 0;
+
+          a {
+            display: inline-block;
+            padding: 0 0 10px 0;
+          }
+      }
+
+      .icon {
+        vertical-align: middle;
+        padding-right: 10px;
+      }
+    }
+  }
+
+
 }

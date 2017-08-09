@@ -2,10 +2,12 @@
   <div class="module-product-detail-card">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-5">
-          <img src="${data.image.desktop}"
+        <div class="col-xs-12 col-md-5 module-product-detail-card--image-container">
+          <img class="img-responsive"
+              src="${data.image.desktop}"
               data-src="${data.image.desktop}"
               data-desktop-rendition="${data.item.desktop}"
+              data-tablet-rendition="${data.item.tablet}"
               data-mobile-rendition="${data.item.mobile}" />
         </div>
         <div class="col-xs-12 col-md-7">
@@ -16,7 +18,7 @@
             ${data.description}
           </div>
           <div class="module-product-detail-card__price b-body-copy-small">
-            <b>LIST PRICE</b>
+            <b>${data.priceLabel}</b>
             <span>${data.price}</span>
           </div>
           <div class="module-product-detail-card__actions">
@@ -28,15 +30,14 @@
             </a>
           </div>
           <div class="module-product-detail-card__links">
-            <div class="module-product-detail-card__links--header">
-              <div class="b-body-copy">${ data.linksHeader }</div>
+            <div>
+              <div class="module-product-detail-card__links--header b-body-copy-small">${ data.linksHeader }</div>
 
               <ul data-sly-list="${data.links}">
                 <li>
                   <a  href="${item.url}"
-                      class="eaton-download-list__item"
                       aria-label="Go to ${ item.title }">
-                    <i class="glyphicon glyphicon-link-external" aria-hidden="true"></i>
+                    <i class="icon icon-link-external" aria-hidden="true"></i>
                     ${ item.title }
                   </a>
                 </li>

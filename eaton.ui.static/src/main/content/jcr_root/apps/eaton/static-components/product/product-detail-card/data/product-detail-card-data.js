@@ -15,34 +15,24 @@ use(function () {
       "tablet": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
       "desktop": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
     },
-<<<<<<< HEAD
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "description": "Reliable. versatile. Powerful. Efficient. With double-conversion topology for constant power conditioning and up to 93% efficiency, the Eaton 9PX1500RTN supports your overall goal of bussiness continuity. It's built for scalable deployment, features a graphical LCD for local status updates and integrates with virtualized environments",
+    "priceLabel": 'LIST PRICE',
     "price": "$9,169",
     "cta": {
       "title": "Request a Quote",
-=======
-    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "link": {
-      "text": "Request a Quote",
->>>>>>> e96e1cc34f84744cff599cc6fae8476abbcf90bb
       "url": "http://eaton.dev/#request-a-quote",
       "target": "_blank"
     },
-    linksHeader: 'Interact with the 9pX15000RTN',
+    linksHeader: 'Interact with the 9PX15000RTN',
     links: [
       {
-        "title": "Request a Quote",
-        "url": "http://eaton.dev/#request-a-quote",
+        "title": "View Spiceworks reviews",
+        "url": "#view-review-Spiceworks",
         "target": "_blank"
       },
       {
-        "title": "Request a Quote",
-        "url": "http://eaton.dev/#request-a-quote",
-        "target": "_blank"
-      },
-      {
-        "title": "Request a Quote",
-        "url": "http://eaton.dev/#request-a-quote",
+        "title": "View StorageReview.com reviews",
+        "url": "#view-review-StorageReview",
         "target": "_blank"
       }
     ]
