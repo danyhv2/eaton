@@ -152,6 +152,14 @@ h5,
   @include eyebrow-small;
 }
 
+.b-h5-link-bold {
+  @include h5-link-bold;
+}
+
+.b-h4-link-bold {
+  @include h4-link-bold;
+}
+
 
 // Custom Text Elements
 //--------------
