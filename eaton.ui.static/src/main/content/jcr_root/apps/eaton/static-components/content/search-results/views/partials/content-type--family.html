@@ -1,46 +1,52 @@
 <!--/*
   Search Result Module - Type: Family (Product / SKU)
+
+  -
+  NOTE: If the HTML structure of this file changes, please also Update the file:
+  `/eaton.frontend/src/components/search-results/js/search-results.js`
+  Since that files contains a Javascript Template that is used when more results are loaded with AJAX
+
 */-->
 <template data-sly-template.item="${ @ data }">
 
-  <div class="results-list-module results-list-module--type-${ data.contentType }">
+  <div class="results-list-submodule results-list-submodule--type-${ data.contentType }">
 
     <!--/* Image */-->
-    <div class="results-list-module__image-wrapper b-body-copy-small">
+    <div class="results-list-submodule__image-wrapper b-body-copy-small">
       <a href="${ data.contentItem.link.url @ context='uri' }"
-        class="results-list-module__image-link"
+        class="results-list-submodule__image-link"
         target="${ data.contentItem.link.target }"
       >
         <img src="${ data.contentItem.imgSrc }"
-          class="results-list-module__image"
+          class="results-list-submodule__image"
           alt="${ data.contentItem.imgAlt }" />
         </a>
     </div>
 
     <!--/* Content */-->
-    <div class="results-list-module__content-wrapper">
+    <div class="results-list-submodule__content-wrapper">
 
-      <h4 class="results-list-module__name b-heading-h5">
+      <h4 class="results-list-submodule__name b-heading-h5">
         <a href="${ data.contentItem.link.url @ context='uri' }"
           target="${ data.contentItem.link.target }"
-          class="results-list-module__name-link"
+          class="results-list-submodule__name-link"
         >${ data.contentItem.name }</a>
       </h4>
 
-      <div class="results-list-module__description b-body-copy-small">${ data.contentItem.description }</div>
+      <div class="results-list-submodule__description b-body-copy-small">${ data.contentItem.description }</div>
 
-      <div class="results-list-module__url b-body-copy-small">
+      <div class="results-list-submodule__url b-body-copy-small">
         <a href="${ data.contentItem.link.url @ context='uri' }"
           target="${ data.contentItem.link.target }"
-          class="results-list-module__url-link"
+          class="results-list-submodule__url-link"
           aria-label="${ 'Go to' @i18n } ${ data.contentItem.link.text }"
         >${ data.contentItem.link.text }</a>
       </div>
 
       <ul data-sly-list.link="${ data.contentItem.secondaryLinks }"
-        class="results-list-module__link-list b-body-copy-small u-list-inline">
-        <li class="results-list-module__link-item">
-          <a class="results-list-module__link-item-link"
+        class="results-list-submodule__link-list b-body-copy-small u-list-inline">
+        <li class="results-list-submodule__link-item">
+          <a class="results-list-submodule__link-item-link"
             href="${ link.url @ context='uri' }"
             target="${ link.target }"
             aria-label="${ 'Go to' @i18n } ${ link.text }"
