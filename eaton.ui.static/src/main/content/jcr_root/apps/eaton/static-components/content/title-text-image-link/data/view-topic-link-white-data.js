@@ -24,6 +24,7 @@ use(function () {
     data = {
       header: 'We are with you from start to finish.',
       description: 'From ideation to implementation and beyond, Eaton is here to help.',
+      color: 'grey',
       ctaText: 'View support',
       ctaLink: '#',
       ctaTarget: '_blank'

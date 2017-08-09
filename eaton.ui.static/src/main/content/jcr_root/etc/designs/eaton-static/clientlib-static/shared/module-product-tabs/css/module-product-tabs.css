@@ -104,7 +104,7 @@
   .eaton-product-tabs label { padding: 4rem 0; }
   .eaton-product-tabs label .icon { font-size: 4rem; }
   .eaton-product-tabs label span { font-size: 1.4rem; }
-  .eaton-product-tabs--fixed .eaton-product-tabs__buttons { top: 84px; margin-left: -15px; margin-right: -15px; }
+  .eaton-product-tabs--fixed .eaton-product-tabs__buttons { top: 80px; margin-left: -15px; margin-right: -15px; }
   .eaton-product-tabs--fixed .eaton-product-tabs__page-utility { margin-top: 274px; } }
 
 .aem-AuthorLayer-Edit .eaton-product-tabs__tab-panel, .cq-wcm-edit .eaton-product-tabs__tab-panel { display: block; }
