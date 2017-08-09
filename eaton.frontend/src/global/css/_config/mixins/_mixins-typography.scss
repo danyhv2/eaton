@@ -246,6 +246,23 @@
   }
 }
 
+// links bold
+@mixin h5-link-bold {
+  @include h5;
+  font-family: $font-family__primary-bold;
+  @include media-desktop-and-up {
+    font-family: $font-family__primary-bold;
+  }
+}
+
+@mixin h4-link-bold {
+  @include h4;
+  font-family: $font-family__primary-bold;
+  @include media-desktop-and-up {
+    font-family: $font-family__primary-bold;
+  }
+}
+
 
 // Eyebrow Small
 //--------------
