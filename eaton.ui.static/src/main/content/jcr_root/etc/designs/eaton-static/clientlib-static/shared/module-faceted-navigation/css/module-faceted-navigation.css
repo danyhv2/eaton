@@ -73,7 +73,7 @@
 
 .faceted-navigation__list-item { padding-left: 4px; }
 
-.faceted-navigation__mobile-container { z-index: 9999; background-color: #FFF; margin: 20px 0 30px; }
+.faceted-navigation__mobile-container { z-index: 40; background-color: #FFF; margin: 20px 0 30px; }
 
 .faceted-navigation__mobile-container.enabled { position: absolute; top: 0; left: 0; padding: 0; }
 

@@ -47,7 +47,7 @@
   @include media-mobile-and-tablet {
     position: fixed;
     bottom: 0;
-    z-index: 13; /* Higher Stacking order than Primary Nav but Less than Search */
+    z-index: 113; /* Higher Stacking order than Primary Nav but Less than Search */
     width: 100%;
     right: 0;
     opacity: 0;
@@ -96,7 +96,7 @@
 
   @include media-desktop-and-up {
     position: relative;
-    z-index: 12;
+    z-index: 112;
 
     &__row {
       padding: 0 15px;

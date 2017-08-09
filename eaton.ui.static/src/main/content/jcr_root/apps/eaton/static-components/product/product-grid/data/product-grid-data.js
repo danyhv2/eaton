@@ -228,13 +228,14 @@ use(function () {
       "ajaxRequestNextPage": 2,
       "resultsCount": 89,
       "currentPage": 1,
-      "keyword": "bckup servre",
-      "autoCorrect": {
-        "enabled": true,
-        "correctedKeyword": "backup server",
-        "url": "#backup-server",
-        "target": '_self'
-      },
+      // "searchTerm": "bckup servre",
+      // "autoCorrect": {
+      //   "enabled": true,
+      //   "searchTerm": "bckup servre",
+      //   "correctedTerm": "backup server",
+      //   "url": "#backup-server",
+      //   "target": '_self'
+      // },
       "activeFilters": [
         // {
         //   "label": "Products",

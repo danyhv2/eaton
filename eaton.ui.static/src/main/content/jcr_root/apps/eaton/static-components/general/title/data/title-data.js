@@ -35,6 +35,10 @@ use(function () {
 	  data.title = 'More Eaton solutions';
   } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-1")) {
 	  data.title = 'Invest in something bigger';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-2")) {
+	  data.title = 'Media Resources';  
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-models-list")) {
+	  data.title = 'Lorem ipsum dolor sit amet';  
   } else {
 	  data.title = 'Eaton’s New 2-gang Switched Sockets with Usb ports Make It Easy to Stay Charged';
 	  data.eyebrow = 'CATEGORY';

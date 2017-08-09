@@ -1,4 +1,4 @@
-<div class="eaton-topic-link-white ${data.ctaText ? '' : 'no-cta'}" data-sly-use.data="${'../data/view-topic-link-white-data.js' @testdata=properties.testdata}">
+<div class="eaton-topic-link-white ${data.ctaText ? '' : 'no-cta'} eaton-topic-link-white--${data.color}" data-sly-use.data="${'../data/view-topic-link-white-data.js' @testdata=properties.testdata}">
 
     <div class="container ${data.ctaText ? '' : 'no-cta'}">
 
@@ -15,7 +15,7 @@
         </p>
       </div>
       <div class="eaton-topic-link-white__cta-wrapper" data-sly-test="${data.ctaText}">
-        <a href="${data.ctaLink}" class="b-button b-button__primary b-button__primary--light" target="${ctaTarget}">
+        <a href="${data.ctaLink}" class="b-button b-button__primary ${data.color == 'blue' ? 'b-button__primary--dark' : 'b-button__primary--light'}" target="${ctaTarget}">
           ${data.ctaText}
         </a>
       </div>

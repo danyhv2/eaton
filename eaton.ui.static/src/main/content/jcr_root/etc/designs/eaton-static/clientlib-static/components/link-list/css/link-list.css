@@ -51,7 +51,7 @@
   .eaton-link-list-primary-nav__items { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; font-family: 'EatonMedium'; }
   .eaton-link-list-primary-nav__items a { margin: 0 15px; padding-right: 5px; padding-left: 5px; color: #333F48; display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 20px; position: relative; }
   .eaton-link-list-primary-nav__items a .icon { display: none; }
-  .eaton-link-list-primary-nav__items a.active::after { content: ''; position: absolute; height: 4px; bottom: -4px; left: 5px; right: 5px; width: 90%; background: #005EB8; }
+  .eaton-link-list-primary-nav__items a.active::after { content: ''; position: absolute; height: 4px; bottom: 0; left: 5px; right: 5px; width: 90%; background: #005EB8; z-index: 1; }
   .eaton-header--fixed .eaton-link-list-primary-nav__items { height: 80px; }
   .eaton-link-list-primary-nav--has-background { background: none !important; } }
 

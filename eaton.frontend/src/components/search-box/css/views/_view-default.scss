@@ -112,10 +112,6 @@
       font-size: 1.25em;
     }
 
-    &__result-item {
-      font-size: 1em;
-    }
-
     .search-open & {
       height: 100%;
       overflow-y: auto;
@@ -141,10 +137,5 @@
         padding-right: 0;
       }
     }
-
-    &__result-item {
-      font-size: 1.5em;
-    }
-
   }
 }

@@ -3,26 +3,26 @@
 </sly>
 
 
-<sly data-sly-use.data="${ '../data/product-detail-card-data.js'}">
+<sly data-sly-use.viewData="${ 'data/product-detail-card-data.js' @testdata=properties.testdata }">
 
   <div class="eaton-product-detail-card">
 
     <!--/* M-35: Product Detail Card */-->
     <sly data-sly-use.tpl="../../shared/templates/module-product-detail-card.html">
-      <sly data-sly-call="${ tpl.module @ data=data.productDetailCard }"></sly>
+      <sly data-sly-call="${ tpl.module @ data=viewData.productDetailCard }"></sly>
     </sly>
 
 
     <!--/* M-48: Media Gallery */-->
     <sly data-sly-use.tpl="../../shared/templates/module-media-gallery.html">
-      <sly data-sly-call="${ tpl.module @ data=data.mediaGallery }"></sly>
+      <sly data-sly-call="${ tpl.module @ data=viewData.mediaGallery }"></sly>
     </sly>
 
 
     <!--/* M-41: Related Products */-->
-    <sly data-sly-use.tpl="../../shared/templates/module-related-products.html">
-      <sly data-sly-call="${ tpl.module @ data=data.relatedProducts }"></sly>
-    </sly>
+    sly data-sly-use.tpl="../../shared/templates/module-related-products.html">
+      sly data-sly-call="${ tpl.module @ data=viewData.relatedProducts }"></sly>
+    /sly>
 
   </div>
 
