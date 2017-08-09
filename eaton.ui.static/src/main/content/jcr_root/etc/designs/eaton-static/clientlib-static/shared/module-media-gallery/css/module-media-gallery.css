@@ -6,7 +6,9 @@
 
 .module-media-gallery__slide-container { position: relative; }
 
-.module-media-gallery__slide-image { position: relative; }
+.module-media-gallery__slide-image { position: relative; text-align: center; }
+
+.module-media-gallery__slide-image img { display: inline-block; }
 
 .module-media-gallery__slide-utility { position: absolute; bottom: 0; }
 

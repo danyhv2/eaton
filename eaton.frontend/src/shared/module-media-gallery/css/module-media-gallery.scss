@@ -25,6 +25,11 @@
 
   &__slide-image {
     position: relative;
+    text-align: center;
+
+    img {
+      display: inline-block;
+    }
   }
 
   &__slide-utility {
