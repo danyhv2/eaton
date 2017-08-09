@@ -6,7 +6,9 @@ App.mediaGallery = function () {
 
   const componentClass = '.module-media-gallery';
   const $componentEl = $(componentClass);
+  const $slideContainer = $componentEl.find('.module-media-gallery__slide-container');
   const $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
+  const $thumbnailContainer = $componentEl.find('.module-media-gallery__thumbnail-container');
   const $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
 
   /**
@@ -28,8 +30,8 @@ App.mediaGallery = function () {
       dots: false,
       adaptiveHeight: true,
       accessibility: true,
-      prevArrow: $('.module-media-gallery__prev-slide'),
-      nextArrow: $('.module-media-gallery__next-slide')
+      prevArrow: $slideContainer.find('.module-media-gallery__prev-arrow'),
+      nextArrow: $slideContainer.find('.module-media-gallery__next-arrow')
     });
   };
 
@@ -41,11 +43,11 @@ App.mediaGallery = function () {
       slidesToShow: 4,
       slidesToScroll: 4,
       autoplay: false,
-      dots: true,
+      dots: false,
       accessibility: true,
-      dotsClass: 'module-media-gallery__dots',
-      prevArrow: $('.module-media-gallery__prev-thumbnail'),
-      nextArrow: $('.module-media-gallery__next-thumbnail')
+        // dotsClass: 'module-media-gallery__dots',
+      prevArrow: $thumbnailContainer.find('.module-media-gallery__prev-arrow'),
+      nextArrow: $thumbnailContainer.find('.module-media-gallery__next-arrow')
         // asNavFor: '.module-media-gallery__slide-list'
     });
   };

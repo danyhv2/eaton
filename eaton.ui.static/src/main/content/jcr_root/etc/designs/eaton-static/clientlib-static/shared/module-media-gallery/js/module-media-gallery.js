@@ -23,7 +23,9 @@ App.mediaGallery = function () {
 
   var componentClass = '.module-media-gallery';
   var $componentEl = $(componentClass);
+  var $slideContainer = $componentEl.find('.module-media-gallery__slide-container');
   var $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
+  var $thumbnailContainer = $componentEl.find('.module-media-gallery__thumbnail-container');
   var $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
 
   /**
@@ -45,8 +47,8 @@ App.mediaGallery = function () {
       dots: false,
       adaptiveHeight: true,
       accessibility: true,
-      prevArrow: $('.module-media-gallery__prev-slide'),
-      nextArrow: $('.module-media-gallery__next-slide')
+      prevArrow: $slideContainer.find('.module-media-gallery__prev-arrow'),
+      nextArrow: $slideContainer.find('.module-media-gallery__next-arrow')
     });
   };
 
@@ -58,11 +60,11 @@ App.mediaGallery = function () {
       slidesToShow: 4,
       slidesToScroll: 4,
       autoplay: false,
-      dots: true,
+      dots: false,
       accessibility: true,
-      dotsClass: 'module-media-gallery__dots',
-      prevArrow: $('.module-media-gallery__prev-thumbnail'),
-      nextArrow: $('.module-media-gallery__next-thumbnail')
+      // dotsClass: 'module-media-gallery__dots',
+      prevArrow: $thumbnailContainer.find('.module-media-gallery__prev-arrow'),
+      nextArrow: $thumbnailContainer.find('.module-media-gallery__next-arrow')
       // asNavFor: '.module-media-gallery__slide-list'
     });
   };
