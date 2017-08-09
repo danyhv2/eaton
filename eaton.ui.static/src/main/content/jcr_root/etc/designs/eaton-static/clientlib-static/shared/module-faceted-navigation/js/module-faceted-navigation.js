@@ -232,6 +232,9 @@ App.facets = function () {
     event.currentTarget.classList.add('u-hide');
   };
 
+  /**
+  * If containing DOM element is found, Initialize and Expose public methods
+  */
   if ($componentClass.length > 0) {
     init();
   }

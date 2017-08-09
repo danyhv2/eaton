@@ -1,5 +1,11 @@
 <!--/*
   M-37 - Product Card: Family Item
+
+  -
+  NOTE: If the HTML structure of this file changes, please also Update the file:
+  `/eaton.frontend/src/components/product-grid/js/product-grid.js`
+  Since that files contains a Javascript Template that is used when more results are loaded with AJAX
+
 */-->
 <template data-sly-template.item="${ @ data }">
 
@@ -13,16 +19,15 @@
     </a>
 
     <!--/* Card Content */-->
-    <div class="product-card-family__content">
+    <div class="product-card-family__image-wrapper">
+      <img src="${ data.contentItem.imgSrc }"
+        class="product-card-family__image"
+        alt="${ data.contentItem.name }" />
+    </div>
 
-      <div class="product-card-family__image-wrapper">
-        <img src="${ data.contentItem.imgSrc }"
-          class="product-card-family__image"
-          alt="${ data.contentItem.name }" />
-      </div>
-
-      <div class="product-card-family__eyebrow b-eyebrow-small">${ data.contentItem.eyebrow }</div>
-      <h2 class="product-card-family__title b-heading-h5">${ data.contentItem.name }</h2>
+    <div class="product-card-family__content-wrapper">
+      <div class="product-card-family__subcategory b-eyebrow-small">${ data.contentItem.subcategory }</div>
+      <h2 class="product-card-family__name">${ data.contentItem.name }</h2>
     </div>
 
   </div>
