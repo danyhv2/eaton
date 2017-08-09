@@ -28,7 +28,7 @@ use(function () {
   //--------------
   data.mediaGallery = {
     "headline": "Media-Gallery Title",
-    "description": "Media-Gallery description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "Media-Gallery description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "items": [
       {
         "title": "This is a long active headline text - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -123,8 +123,6 @@ use(function () {
       }
     ]
   };
-
-
 
   // Related Products M-41
   //--------------

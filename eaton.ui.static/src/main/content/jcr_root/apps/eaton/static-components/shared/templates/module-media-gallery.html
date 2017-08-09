@@ -1,77 +1,83 @@
 <template data-sly-template.module="${ @ data }">
   <div class="module-media-gallery">
     <!--*/ Gallery - Title & Description */-->
-    <div class="module-media-gallery__text">
-      <p class="b-heading-h3">${data.title}</p>
-      <p class="b-body-copy">${data.description}</p>
+    <div class="module-media-gallery__text" data-sly-test="${data.headline} || ${data.description}">
+      <h3 data-sly-test="${data.headline}" class="b-heading-h3">${data.headline}</h3>
+      <p data-sly-test="${data.description}" class="b-body-copy">${data.description}</p>
     </div>
 
+    <!--*/ Slide Container */-->
     <div class="module-media-gallery__slide-container" data-sly-list="${data.items}">
+
       <!--*/ Slide Item - Preview */-->
       <div class="module-media-gallery__slide-item" data-slide-item="${isVideo == true ? 'image' : 'video'}">
 
           <!--*/ Slide Item - Image */-->
           <div class="module-media-gallery__slide-image">
             <img data-src="${item.images.preview}"
-                data-desktop-rendition="${item.images.previewDesktop}"
-                data-mobile-rendition="${item.images.mobileDesktop}"
+                data-desktop-rendition="${item.images.preview}"
+                data-mobile-rendition="${item.images.preview}"
                 alt="${item.imageAlt}" />
           </div>
 
           <!--*/ Slide Item - Title & Description */-->
-          <div class="module-media-gallery__slide-info">
-              <p class="b-heading-h5">${item.title}</p>
-              <p class="b-body-copy">${item.text}</p>
+          <div class="module-media-gallery__slide-info" data-sly-test="${item.title} || ${item.text}">
+              <h4 data-sly-test="${item.title}" class="b-heading-h5">${item.title}</h4>
+              <p data-sly-test="${item.text}" class="b-body-copy">${item.text}</p>
           </div>
 
           <!--*/ Slide Item - Utility - Zoom & Download */-->
           <div class="module-media-gallery__slide-utility">
-            <button class="button--reset">
+            <a href="${item.images.download}" download class="module-media-gallery__download">
               <span class="sr-only">Download</span>
               <i class="icon icon-download" aria-hidden="true"></i>
-            </button>
-            <button class="button--reset">
+            </a>
+
+            <button class="button--reset" class="module-media-gallery__zoom">
               <span class="sr-only">Zoom</span>
               <i class="icon icon-search" aria-hidden="true"></i>
             </button>
           </div>
-
       </div>
 
-      <!--*/ Slide Carousel Arrows - Preview */-->
+      <!--*/ Slide Preview Arrows */-->
       <sly data-sly-test="${data.items.length > 1}">
           <button class="module-media-gallery__prev-slide module-media-gallery__slide-arrows button--reset">
             <span class="sr-only">Prev</span>
-            <i class="icon icon-chevron-left"></i>
+            <i class="icon icon-chevron-left" aria-hidden="true"></i>
           </button>
 
           <button class="module-media-gallery__next-slide module-media-gallery__slide-arrows button--reset">
             <span class="sr-only">Next</span>
-            <i class="icon icon-chevron-right"></i>
+            <i class="icon icon-chevron-right" aria-hidden="true"></i>
           </button>
       </sly>
     </div>
 
-    <div class="module-media-gallery__thumbnail-container" data-sly-list="${data.items}">
-      <!--*/ Thumbnail Item - Preview */-->
-      <div class="module-media-gallery__thumbnail-item" data-thumbnail-item="${isVideo == true ? 'image' : 'video'}">
+    <!--*/ Thumbnail Container */-->
+    <div class="module-media-gallery__thumbnail-container" data-sly-test="${data.items.length > 1}">
 
-          <!--*/ Thumbnail Item - Image */-->
-          <div class="module-media-gallery__thumbnail-image">
-            <img data-src="${item.images.thumbnail}" alt="${item.imageAlt}" />
-          </div>
-      </div>
+      <!--*/ Thumbnail List */-->
+      <ul class="module-media-gallery__thumbnail-list" data-sly-list="${data.items}">
+        <!--*/ Thumbnail Item - Preview */-->
+        <li class="module-media-gallery__thumbnail-item" data-thumbnail-item="${isVideo == true ? 'image' : 'video'}">
+            <!--*/ Thumbnail Item - Image */-->
+            <div class="module-media-gallery__thumbnail-image">
+              <img src="${item.images.thumbnail}" alt="${item.imageAlt}" />
+            </div>
+        </li>
+      </ul>
 
-      <!--*/ Thumbnail Carousel Arrows - Preview */-->
+      <!--*/ Thumbnail Arrows */-->
       <sly data-sly-test="${data.items.length > 1}">
           <button class="module-media-gallery__prev-thumbnail module-media-gallery__thumbnail-arrows button--reset">
             <span class="sr-only">Prev</span>
-            <i class="icon icon-chevron-left"></i>
+            <i class="icon icon-chevron-left" aria-hidden="true"></i>
           </button>
 
           <button class="module-media-gallery__next-thumbnail module-media-gallery__thumbnail-arrows button--reset">
             <span class="sr-only">Next</span>
-            <i class="icon icon-chevron-right"></i>
+            <i class="icon icon-chevron-right" aria-hidden="true"></i>
           </button>
       </sly>
     </div>
