@@ -27,7 +27,7 @@ App.mediaGallery = function () {
       autoplay: false,
       dots: false,
       adaptiveHeight: true,
-      dotsClass: 'module-media-gallery__dots',
+      accessibility: true,
       prevArrow: $('.module-media-gallery__prev-slide'),
       nextArrow: $('.module-media-gallery__next-slide')
     });
@@ -42,9 +42,11 @@ App.mediaGallery = function () {
       slidesToScroll: 4,
       autoplay: false,
       dots: true,
+      accessibility: true,
       dotsClass: 'module-media-gallery__dots',
       prevArrow: $('.module-media-gallery__prev-thumbnail'),
       nextArrow: $('.module-media-gallery__next-thumbnail')
+        // asNavFor: '.module-media-gallery__slide-list'
     });
   };
 

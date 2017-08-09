@@ -6,5 +6,82 @@
 @import "../../../global/css/_config/sass";
 
 .module-media-gallery {
-  border-top: 4px solid $color__primary-blue;
+
+  &__text {
+    padding-bottom: ($spacing__md / 2);
+  }
+
+  &__headline {
+    margin-bottom: $spacing__sm;
+  }
+
+  &__description {
+    margin-bottom: ($spacing__md / 2);
+  }
+
+  &__slide-container {
+    position: relative;
+  }
+
+  &__slide-image {
+    position: relative;
+  }
+
+  &__slide-utility {
+    position: absolute;
+    bottom: 0;
+
+    .icon {
+      color: $color__primary-blue;
+    }
+  }
+
+  &__download {
+    left: 0;
+  }
+
+  &__zoom {
+    right: 0;
+  }
+
+  &__arrows-item {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color__secondary-gray4;
+  }
+
+  &__prev-slide {
+    left: 0;
+  }
+
+  &__next-slide {
+    right: 0;
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    padding: $spacing__md 0 $spacing__xl;
+
+    &__arrows-item {
+
+      .icon {
+        font-size: 37px;
+      }
+    }
+
+    &__slide-info {
+      margin: $spacing__sm 0 $spacing__sm;
+      padding-left: $spacing__sm;
+      border-left: 1px solid $color__primary-gray3;
+    }
+  }
 }
