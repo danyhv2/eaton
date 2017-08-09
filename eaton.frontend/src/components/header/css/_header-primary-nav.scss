@@ -1,21 +1,30 @@
 //------------------------------------------
 // Component M-1: Header: Primary Navigation
 //------------------------------------------
-
 $primary-nav-border: #EEF0F2;
 
 .header-primary-nav {
   position: relative;
   z-index: 112;
   background: $color__white;
-  border-bottom: 4px solid $primary-nav-border;
   transition: height 0.3s ease-in-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: $primary-nav-border;
+  }
 
   .row {
     display: flex;
   }
 
   &__links {
+    position: relative;
+    z-index: 1;
     i {
       font-size: 20px;
       color: $color__primary-blue;
@@ -36,7 +45,6 @@ $primary-nav-border: #EEF0F2;
       justify-content: flex-end;
       display: flex;
       flex-grow: 1;
-      align-items: center;
     }
 
     &__open-search,
