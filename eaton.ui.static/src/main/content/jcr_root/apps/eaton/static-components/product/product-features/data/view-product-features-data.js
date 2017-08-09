@@ -20,6 +20,23 @@ use(function () {
             }
 
         }
+    } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-overview-tab-no-feature-image")) {
+        data = {
+    		title: 'Core features',
+            text: '<p>Anti-static copper wire for reinforcement</p>' +
+            '<p>Abrasion, ozone, and weather resistant cover</p>' +
+            '<p>For suction & discharge of dry bulk materials, sand, gravel and dry cement</p>' +
+            '<p>Abrasion resistant tube</p>',
+            imgSrc: '',
+            imgMobile:'',
+            imgTablet:'',
+            imgAlt: '',
+            backgroundColor: '#FFFFFF',
+            cta: {
+                url: '',
+                text:''
+            }
+        }
     } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-overview-tab")) {
         data = {
     		title: 'Benefits',
