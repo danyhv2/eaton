@@ -1,5 +1,5 @@
 //-----------------------------------
-// M-60: Results List Container
+// Product Gird Component
 //-----------------------------------
 'use strict';
 
@@ -114,19 +114,20 @@ App.productGrid = (function() {
         <a href="${ data.contentItem.link.url }"
           target="${ data.contentItem.link.target }"
           class="product-card-family__link">
-          <span class="sr-only">${ 'Go to' } ${ data.contentItem.name }</span>
+          <span class="sr-only">Go to ${ data.contentItem.name }</span>
         </a>
 
-        <div class="product-card-family__content">
-          <div class="product-card-family__image-wrapper">
-            <img src="${ data.contentItem.imgSrc }"
-              class="product-card-family__image"
-              alt="${ data.contentItem.name }" />
-          </div>
-
-          <div class="product-card-family__eyebrow b-eyebrow-small">${ data.contentItem.eyebrow }</div>
-          <h2 class="product-card-family__title b-heading-h5">${ data.contentItem.name }</h2>
+        <div class="product-card-family__image-wrapper">
+          <img src="${ data.contentItem.imgSrc }"
+            class="product-card-family__image"
+            alt="${ data.contentItem.name }" />
         </div>
+
+        <div class="product-card-family__content-wrapper">
+          <div class="product-card-family__subcategory b-eyebrow-small">${ data.contentItem.subcategory }</div>
+          <h2 class="product-card-family__name">${ data.contentItem.name }</h2>
+        </div>
+
       </div>`;
   };
 
@@ -141,11 +142,14 @@ App.productGrid = (function() {
     const $currentComponent = $(event.currentTarget).closest(resultListCSSClass);
     const requestURL = $currentComponent.attr('data-results-url');
     const requestNextPage = $currentComponent.attr('data-results-next-page');
-
+    const resultsType = $currentComponent.attr('data-results-type');
     let templateType = '';
 
-    if ($currentComponent.hasClass('results-list--card-sku')) { templateType = 'card-sku'; }
-    else if ($currentComponent.hasClass('results-list--card-family')) { templateType = 'card-family'; }
+    // Use Template for Product-SKU Type
+    if (resultsType === 'product-card-sku') { templateType = 'card-sku'; }
+
+    // Else Use Template for Product-Family Type
+    else if (resultsType === 'product-card-family') { templateType = 'card-family'; }
 
     // If the Request URL doesn't exists don't proceed
     if (!requestURL) { return; }
@@ -182,7 +186,7 @@ App.productGrid = (function() {
         // Append the new List of Result Elements to the DOM
         $currentComponent.find('.results-list__content').append(newElements);
 
-        // if There are no more results, remove "Load More" button
+        // if the next page of results is "null" or empty, remove "Load More" button
         if (!search.ajaxRequestNextPage) {
           $currentComponent.find('[data-load-more]').remove();
         }

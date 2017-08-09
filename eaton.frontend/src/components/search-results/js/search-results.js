@@ -1,5 +1,5 @@
 //-----------------------------------
-// M-60: Results List Container
+// Search Results Component
 //-----------------------------------
 'use strict';
 
@@ -32,42 +32,42 @@ App.searchResults = (function() {
   //--------------
   templates.family = function(data) {
     return `
-      <div class="results-list-module results-list-module--type-${ data.contentType }">
-        <div class="results-list-module__image-wrapper b-body-copy-small">
+      <div class="results-list-submodule results-list-submodule--type-${ data.contentType }">
+        <div class="results-list-submodule__image-wrapper b-body-copy-small">
           <a href="${ data.contentItem.link.url }"
-            class="results-list-module__image-link"
+            class="results-list-submodule__image-link"
             target="${ data.contentItem.link.target }"
           >
             <img src="${ data.contentItem.imgSrc }"
-              class="results-list-module__image"
+              class="results-list-submodule__image"
               alt="${ data.contentItem.imgAlt }" />
             </a>
         </div>
-        <div class="results-list-module__content-wrapper">
+        <div class="results-list-submodule__content-wrapper">
 
-          <h4 class="results-list-module__name b-heading-h5">
+          <h4 class="results-list-submodule__name b-heading-h5">
             <a href="${ data.contentItem.link.url }"
               target="${ data.contentItem.link.target }"
-              class="results-list-module__name-link"
+              class="results-list-submodule__name-link"
             >${ data.contentItem.name }</a>
           </h4>
 
-          <div class="results-list-module__description b-body-copy-small">${ data.contentItem.description }</div>
+          <div class="results-list-submodule__description b-body-copy-small">${ data.contentItem.description }</div>
 
-          <div class="results-list-module__url b-body-copy-small">
+          <div class="results-list-submodule__url b-body-copy-small">
             <a href="${ data.contentItem.link.url }"
               target="${ data.contentItem.link.target }"
-              class="results-list-module__url-link"
+              class="results-list-submodule__url-link"
               aria-label="Go to ${ data.contentItem.link.text }"
             >${ data.contentItem.link.text }</a>
           </div>
 
-          <ul class="results-list-module__link-list b-body-copy-small u-list-inline">
+          <ul class="results-list-submodule__link-list b-body-copy-small u-list-inline">
 
             ${ data.contentItem.secondaryLinks.map((link) => {
               return `
-                <li class="results-list-module__link-item">
-                  <a class="results-list-module__link-item-link"
+                <li class="results-list-submodule__link-item">
+                  <a class="results-list-submodule__link-item-link"
                     href="${ link.url }"
                     target="${ link.target }"
                     aria-label="Go to ${ link.text }"
@@ -86,7 +86,7 @@ App.searchResults = (function() {
   templates.article = function(data) {
 
     let articleDateTPL = (data.contentItem.date)
-      ? `<div class="results-list-module__date b-body-copy-small">${ data.contentItem.date }</div>`
+      ? `<div class="results-list-submodule__date b-body-copy-small">${ data.contentItem.date }</div>`
       : '';
 
     let articleExternalIconTPL = (data.contentItem.articleType === 'external')
@@ -94,13 +94,13 @@ App.searchResults = (function() {
       : '';
 
     return `
-      <div class="results-list-module results-list-module--type-${ data.contentType }">
+      <div class="results-list-submodule results-list-submodule--type-${ data.contentType }">
 
-        <div class="results-list-module__content-wrapper">
+        <div class="results-list-submodule__content-wrapper">
 
-          <h4 class="results-list-module__name b-heading-h5">
+          <h4 class="results-list-submodule__name b-heading-h5">
             <a href="${ data.contentItem.link.url }"
-              class="results-list-module__name-link"
+              class="results-list-submodule__name-link"
               target="${ data.contentItem.link.target }"
             >
               <span class="name-label">${ data.contentItem.name }</span>
@@ -110,12 +110,12 @@ App.searchResults = (function() {
 
           ${ articleDateTPL }
 
-          <div class="results-list-module__description b-body-copy-small">${ data.contentItem.description }</div>
+          <div class="results-list-submodule__description b-body-copy-small">${ data.contentItem.description }</div>
 
-          <div class="results-list-module__url b-body-copy-small">
+          <div class="results-list-submodule__url b-body-copy-small">
             <a href="${ data.contentItem.link.url }"
               target="${ data.contentItem.link.target }"
-              class="results-list-module__url-link"
+              class="results-list-submodule__url-link"
               aria-label="Go to ${ data.contentItem.link.text }"
             >${ data.contentItem.link.text }</a>
           </div>
@@ -130,12 +130,12 @@ App.searchResults = (function() {
   //--------------
   templates.resource = function(data) {
     return `
-      <div class="results-list-module results-list-module--type-${ data.contentType }">
+      <div class="results-list-submodule results-list-submodule--type-${ data.contentType }">
 
-        <div class="results-list-module__icon-wrapper">
+        <div class="results-list-submodule__icon-wrapper">
           <a href="${ data.contentItem.link.url }"
             target="${ data.contentItem.link.target }"
-            class="results-list-module__url-link"
+            class="results-list-submodule__url-link"
             aria-label="Download ${ data.contentItem.documentName }"
           >
             <i class="icon icon-download" aria-hidden="true"></i>
@@ -143,21 +143,21 @@ App.searchResults = (function() {
           </a>
         </div>
 
-        <div class="results-list-module__content-wrapper">
+        <div class="results-list-submodule__content-wrapper">
 
-          <h4 class="results-list-module__name b-heading-h5">
+          <h4 class="results-list-submodule__name b-heading-h5">
             <a href="${ data.contentItem.link.url }"
               target="${ data.contentItem.link.target }"
-              class="results-list-module__name-link"
+              class="results-list-submodule__name-link"
             >${ data.contentItem.name }</a>
           </h4>
 
-          <div class="results-list-module__document b-body-copy">(${ data.contentItem.documentType } ${ data.contentItem.documentSize })</div>
+          <div class="results-list-submodule__document b-body-copy">(${ data.contentItem.documentType } ${ data.contentItem.documentSize })</div>
 
-          <div class="results-list-module__link-url b-body-copy-small">
+          <div class="results-list-submodule__link-url b-body-copy-small">
             <a data-sly-attribute.href="${ data.contentItem.link.url }"
               target="${ data.contentItem.link.target }"
-              class="results-list-module__link"
+              class="results-list-submodule__link"
               aria-label="Download ${ data.contentItem.documentName }"
             >${ data.contentItem.link.text }</a>
           </div>

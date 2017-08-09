@@ -197,6 +197,7 @@
   // MediaQuery: 0-991px
   //-----------------------------------
   @include media-mobile-and-tablet {
+
     &__header-bottom {
       margin-top: 60px;
     }

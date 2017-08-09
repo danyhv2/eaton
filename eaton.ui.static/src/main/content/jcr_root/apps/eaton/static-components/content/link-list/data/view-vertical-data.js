@@ -390,6 +390,24 @@ use(function () {
             }
 	    ]
 	  }
+  } else if ((typeof(testdata) != "undefined") && testdata == "t11-listing-page-3") {
+	    data.view = {
+	      eyebrow: '',
+	      links: [
+	        {
+	          title: 'www.microsite.com',
+	          url: '#link-1',
+	          target: '_self',
+	          external_link: true
+	        },
+	        {
+	          title: 'www.external.com',
+	          url: '#link-2',
+	          target: '_self',
+	          external_link: true
+	        }
+	      ]
+	    }
   } else {
     data.view = {
       eyebrow: 'Link List eyebrow',

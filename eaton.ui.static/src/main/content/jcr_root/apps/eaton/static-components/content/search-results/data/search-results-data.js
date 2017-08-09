@@ -293,8 +293,8 @@ use(function () {
           "target": "_self"
         },
         {
-          "label": "News Release",
-          "url": "#remove-filter-news-release",
+          "label": "1000 VA",
+          "url": "#remove-filter-1000-va",
           "target": "_self"
         }
       ],
@@ -331,7 +331,7 @@ use(function () {
           "contentType": "family",
           "contentItem": {
             "name": "Network, Server & Storage UPS",
-            "imgSrc": "/content/dam/eaton/images/p1.png",
+            "imgSrc": "/content/dam/eaton/images/products/product-1-thumbnail.png",
             "imgAlt": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "link": {
@@ -377,7 +377,7 @@ use(function () {
           "contentType": "sku",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "imgSrc": "/content/dam/eaton/images/p2.png",
+            "imgSrc": "/content/dam/eaton/images/products/product-2-thumbnail.png",
             "imgAlt": "9E6Ki-Eaton 9E",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "link": {
@@ -410,7 +410,7 @@ use(function () {
           "contentType": "family",
           "contentItem": {
             "name": "Network, Server & Storage UPS",
-            "imgSrc": "/content/dam/eaton/images/p3.png",
+            "imgSrc": "/content/dam/eaton/images/products/product-3-thumbnail.png",
             "imgAlt": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "link": {
@@ -457,7 +457,7 @@ use(function () {
           "contentType": "sku",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "imgSrc": "/content/dam/eaton/images/p4.png",
+            "imgSrc": "/content/dam/eaton/images/products/product-7-thumbnail.png",
             "imgAlt": "9E6Ki-Eaton 9E",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "link": {
@@ -504,7 +504,7 @@ use(function () {
           "contentType": "family",
           "contentItem": {
             "name": "Network, Server & Storage UPS",
-            "imgSrc": "/content/dam/eaton/images/p5.png",
+            "imgSrc": "/content/dam/eaton/images/products/product-5-thumbnail.png",
             "imgAlt": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "link": {
