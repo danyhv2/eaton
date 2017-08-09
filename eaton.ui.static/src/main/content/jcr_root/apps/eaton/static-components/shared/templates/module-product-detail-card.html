@@ -3,7 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-5">
-          <img data-src="${data.image.desktop}"
+          <img src="${data.image.desktop}"
+              data-src="${data.image.desktop}"
               data-desktop-rendition="${data.item.desktop}"
               data-mobile-rendition="${data.item.mobile}" />
         </div>
@@ -14,8 +15,8 @@
           <div class="module-product-detail-card__description b-body-copy">
             ${data.description}
           </div>
-          <div class="module-product-detail-card__price">
-            LIST PRICE
+          <div class="module-product-detail-card__price b-body-copy-small">
+            <b>LIST PRICE</b>
             <span>${data.price}</span>
           </div>
           <div class="module-product-detail-card__actions">
@@ -28,7 +29,7 @@
           </div>
           <div class="module-product-detail-card__links">
             <div class="module-product-detail-card__links--header">
-              <div class="b-body-copy">${ data.cta.linksHeader }</div>
+              <div class="b-body-copy">${ data.linksHeader }</div>
 
               <ul data-sly-list="${data.links}">
                 <li>

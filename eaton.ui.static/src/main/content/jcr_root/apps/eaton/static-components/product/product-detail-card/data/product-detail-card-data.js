@@ -8,9 +8,9 @@ use(function () {
     "title": "9PX1500RTN",
     // TODO: Review if this component uses image-renditions
     "image": {
-      "mobile": "/content/dam/eaton/images/intro_image.png",
-      "tablet": "/content/dam/eaton/images/intro_image.png",
-      "desktop": "/content/dam/eaton/images/intro_image.png",
+      "mobile": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
+      "tablet": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
+      "desktop": "http://sr_dev.eaton.com:4502/content/dam/eaton/images/product.png",
     },
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "price": "$9,169",
