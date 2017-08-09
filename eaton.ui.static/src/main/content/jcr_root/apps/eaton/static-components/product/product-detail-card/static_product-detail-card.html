@@ -19,10 +19,15 @@
     </sly>
 
 
+
     <!--/* M-41: Related Products */-->
-    sly data-sly-use.tpl="../../shared/templates/module-related-products.html">
-      sly data-sly-call="${ tpl.module @ data=viewData.relatedProducts }"></sly>
-    /sly>
+    <div class="eaton-product-detail-card__related-products">
+      <div class="container">
+        <sly data-sly-use.tpl="../../shared/templates/module-related-products.html">
+          <sly data-sly-call="${ tpl.module @ data=viewData.relatedProducts.items }"></sly>
+        </sly>
+      </div>
+    </div>
 
   </div>
 
