@@ -11,7 +11,7 @@ use(function () {
     data.facets = {
       "config": {
         "facetItemsMinVisible": 4,
-        "facetValuesMinVisible": 3
+        "facetValuesMinVisible": 4
       },
       "facetItems": [
         {
@@ -208,11 +208,6 @@ use(function () {
               "id": "value4",
               "label": "Value 4",
               "url": "#facet-value4"
-            },
-            {
-              "id": "value5",
-              "label": "Value 5",
-              "url": "#facet-value5"
             }
           ]
         }
@@ -243,8 +238,8 @@ use(function () {
         //   "target": "_self"
         // },
         // {
-        //   "label": "News Release",
-        //   "url": "#remove-filter-news-release",
+        //   "label": "1000 VA",
+        //   "url": "#remove-filter-1000-va",
         //   "target": "_self"
         // }
       ],
@@ -286,13 +281,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "Fuse Disconnect ePDUs",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-1-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-1.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -318,13 +313,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-2-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 3200,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-2.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -350,13 +345,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "Eaton 5P Tower UPS",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-3-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 99500,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-3.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -382,13 +377,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "Fuse Disconnect ePDUs",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-4-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-4.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -414,13 +409,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-5-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-5.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -446,13 +441,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "Fuse Disconnect ePDUs",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-6-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-6.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -478,13 +473,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-7-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 3200,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-7.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -509,14 +504,14 @@ use(function () {
         {
           "contentType": "product-card",
           "contentItem": {
-            "name": "Network, Server & Storage UPS this is a really long name used for testing purposes, text wraps in multiple lines",
-            "eyebrow": "Network, Server & Storage UPS",
+            "name": "Network, Server & Storage UPS long name used for testing purposes",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-1-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 99500,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-8.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -542,13 +537,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "Fuse Disconnect ePDUs",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-2-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-9.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -574,13 +569,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-3-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-10.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -606,13 +601,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "Fuse Disconnect ePDUs",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-4-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-11.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -638,13 +633,13 @@ use(function () {
           "contentType": "product-card",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "eyebrow": "Network, Server & Storage UPS",
+            "subcategory": "Network, Server & Storage UPS",
             "imgSrc": "/content/dam/eaton/images/products/product-5-thumbnail.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 3200,
             "link": {
-              "url": "https://eaton.dev/products/pid-1213.html#overview",
-              "target": "_self"
+              "url": "http://eaton.dev/products-pid-12.html",
+              "target": "_blank"
             },
             "productLinks": {
               "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",

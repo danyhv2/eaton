@@ -7,13 +7,13 @@
         "contentType": "product-card",
         "contentItem": {
           "name": "New Product 1",
-          "eyebrow": "Network, Server & Storage UPS",
+          "subcategory": "Network, Server & Storage UPS",
           "imgSrc": "/content/dam/eaton/images/products/product-1-thumbnail.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 2400,
           "link": {
-            "url": "https://eaton.dev/products/pid-1213.html#overview",
-            "target": "_self"
+            "url": "http://eaton.dev/product-pid-new-1.html",
+            "target": "_blank"
           },
           "productLinks": {
             "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -39,13 +39,13 @@
         "contentType": "product-card",
         "contentItem": {
           "name": "New Product 2",
-          "eyebrow": "Network, Server & Storage UPS",
+          "subcategory": "Network, Server & Storage UPS",
           "imgSrc": "/content/dam/eaton/images/products/product-2-thumbnail.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 3200,
           "link": {
-            "url": "https://eaton.dev/products/pid-1213.html#overview",
-            "target": "_self"
+            "url": "http://eaton.dev/product-pid-new-2.html",
+            "target": "_blank"
           },
           "productLinks": {
             "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -71,13 +71,13 @@
         "contentType": "product-card",
         "contentItem": {
           "name": "New Product 3",
-          "eyebrow": "Network, Server & Storage UPS",
+          "subcategory": "Network, Server & Storage UPS",
           "imgSrc": "/content/dam/eaton/images/products/product-3-thumbnail.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 99500,
           "link": {
-            "url": "https://eaton.dev/products/pid-1213.html#overview",
-            "target": "_self"
+            "url": "http://eaton.dev/product-pid-new-3.html",
+            "target": "_blank"
           },
           "productLinks": {
             "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -103,13 +103,13 @@
         "contentType": "product-card",
         "contentItem": {
           "name": "New Product 4",
-          "eyebrow": "Network, Server & Storage UPS",
+          "subcategory": "Network, Server & Storage UPS",
           "imgSrc": "/content/dam/eaton/images/products/product-4-thumbnail.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 2400,
           "link": {
-            "url": "https://eaton.dev/products/pid-1213.html#overview",
-            "target": "_self"
+            "url": "http://eaton.dev/product-pid-new-4.html",
+            "target": "_blank"
           },
           "productLinks": {
             "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
@@ -135,13 +135,13 @@
         "contentType": "product-card",
         "contentItem": {
           "name": "New Product 5",
-          "eyebrow": "Network, Server & Storage UPS",
+          "subcategory": "Network, Server & Storage UPS",
           "imgSrc": "/content/dam/eaton/images/products/product-5-thumbnail.png",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "price": 2400,
           "link": {
-            "url": "https://eaton.dev/products/pid-1213.html#overview",
-            "target": "_self"
+            "url": "http://eaton.dev/product-pid-new-5.html",
+            "target": "_blank"
           },
           "productLinks": {
             "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
