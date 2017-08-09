@@ -6,8 +6,8 @@
 
 .module-anchor-links__list-link { -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #FFF; color: #005EB8; display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 75px; padding: 0 20px; position: relative; text-align: left; width: 100%; }
 
-.module-anchor-links__list-link:active, .module-anchor-links__list-link:focus { background-color: #EEF0F2; font-weight: bold; outline: 0; }
+.module-anchor-links__list-link:hover { background-color: #EEF0F2; font-weight: bold; outline: 0; }
 
 .module-anchor-links__list-link span { padding-right: 20px; }
 
-.module-anchor-links__list-link .icon { color: #005EB8; font-size: 1rem; margin-left: auto; }
+.module-anchor-links__list-link .icon { color: #005EB8; font-size: 1rem; height: 10px; position: absolute; right: 20px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }

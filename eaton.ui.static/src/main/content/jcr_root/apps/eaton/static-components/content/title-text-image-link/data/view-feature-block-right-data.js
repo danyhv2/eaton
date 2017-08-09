@@ -3,7 +3,7 @@ use(function () {
     var data = {};
     var testdata = this.testdata;
 
-    if ((typeof(testdata) != "undefined") && (testdata == "left")) {
+    if ((typeof(testdata) != "undefined") && (testdata == "white")) {
         data = {
             title: 'We make big ideas work',
             text: 'Realize your full potential at Eaton, as you help solve some of the most critical issues.',
@@ -14,9 +14,9 @@ use(function () {
             imgSrc: '/content/dam/eaton/images/Cityscape_mob.png',
             imgMobile:'/content/dam/eaton/images/Cityscape_mob.png',
             imgTablet:'/content/dam/eaton/images/Cityscape_mob.png',
-            imgAlignment:'left',
+            imgAlignment:'right',
             imgAlt: 'Test image',
-            backgroundColor: '#005EB8'
+            backgroundColor: '#F8F8F8'
         }
     } else {
         data = {

@@ -1,0 +1,12 @@
+<template data-sly-template.module="${ @ data }">
+  <!--/* .desktop-container.u-visible-desktop */-->
+  <div class="module-autocorrected-search">
+    <div class="container">
+      <strong class="u-inline-block">${ 'Showing results for' @ i18n } <em class="module-autocorrected-search__search-term">${ data.searchTerm }</em> </strong>
+      <strong>${ 'Search instead for' @ i18n }</strong>
+      <a href="${ data.url }"
+        class="module-autocorrected-search__corrected-term"
+        target="${ data.target }">${ data.correctedTerm }</a>
+    </div>
+  </div>
+</template>
