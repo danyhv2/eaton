@@ -40,8 +40,6 @@
 
 .module-media-gallery__thumbnail-container .module-media-gallery__arrows { color: #005EB8; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
-.module-media-gallery__thumbnail-item:focus { outline: 0; }
-
 .module-media-gallery__thumbnail-image-wrapper { padding: 0; }
 
 .module-media-gallery__thumbnail-image-wrapper img { height: 100%; width: auto; margin-left: auto; margin-right: auto; }
