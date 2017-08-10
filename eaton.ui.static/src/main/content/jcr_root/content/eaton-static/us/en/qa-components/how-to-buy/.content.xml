@@ -23,7 +23,7 @@
                 jcr:lastModified="{Date}2017-07-28T17:26:42.193Z"
                 jcr:lastModifiedBy="etn-erick"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/how-to-buy"/>
+                sling:resourceType="eaton/static-components/product/how-to-buy"/>
         </par>
     </jcr:content>
 </jcr:root>

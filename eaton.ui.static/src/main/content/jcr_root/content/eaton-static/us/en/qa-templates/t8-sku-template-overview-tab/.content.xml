@@ -267,7 +267,7 @@
                 jcr:lastModified="{Date}2017-08-03T15:18:41.511-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/how-to-buy"/>
+                sling:resourceType="eaton/static-components/product/how-to-buy"/>
             <title
                 jcr:created="{Date}2017-08-03T12:36:35.803-06:00"
                 jcr:createdBy="admin"

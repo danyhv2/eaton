@@ -282,7 +282,7 @@
                 jcr:lastModified="{Date}2017-08-03T14:47:35.066-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/how-to-buy"/>
+                sling:resourceType="eaton/static-components/product/how-to-buy"/>
             <search_box
                 jcr:created="{Date}2017-08-03T12:33:30.838-06:00"
                 jcr:createdBy="admin"
