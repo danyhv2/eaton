@@ -57,9 +57,10 @@ App.mediaGallery = function () {
    * Configure Slick Carousel - Thumbnail Container
    */
   var initializeThumbnailCarousel = function initializeThumbnailCarousel() {
+    var numSlides = $componentEl.closest('.eaton-product-detail-card').length > 0 ? 5 : 4;
     $thumbnailCarousel.slick({
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToShow: numSlides,
+      slidesToScroll: numSlides,
       autoplay: false,
       dots: false,
       accessibility: true,
