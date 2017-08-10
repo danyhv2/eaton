@@ -14,8 +14,6 @@
 
   &__arrows { border: 1px solid mediumseagreen; }
 
-  &__thumbnail-container { border: 1px solid #639; }
-
 
   //-----------------------------------
   // Gallery Headline & Description
@@ -168,6 +166,10 @@
       }
     }
 
+    &__slide-info {
+      margin: $spacing__sm 0 $spacing__sm;
+    }
+
     &__thumbnail-container {
       .module-media-gallery__arrows {
         .icon {
@@ -176,8 +178,24 @@
       }
     }
 
-    &__slide-info {
-      margin: $spacing__sm 0 $spacing__sm;
+    &__thumbnail-image-wrapper {
+      padding: ($spacing__sm / 2);
+    }
+
+    &__thumbnail-item {
+      position: relative;
+
+      &.active {
+
+        &:after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          background: $color__primary-blue;
+          bottom: 0;
+        }
+      }
     }
   }
 }

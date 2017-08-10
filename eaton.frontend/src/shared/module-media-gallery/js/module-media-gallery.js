@@ -10,13 +10,38 @@ App.mediaGallery = function () {
   const $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
   const $thumbnailContainer = $componentEl.find('.module-media-gallery__thumbnail-container');
   const $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
+  const $slideItems = $slideContainer.find('.module-media-gallery__slide-item');
+  const $thumbnailItems = $thumbnailContainer.find('.module-media-gallery__thumbnail-item');
 
   /**
    * Initialize Media Gallery
    */
   const init = () => {
+    let activeSlideImage = '';
     initializeSlideCarousel();
     initializeThumbnailCarousel();
+
+    // On Carousel Init
+    $slideContainer.find('.module-media-gallery__arrows').css('top', $slideItems.eq(0).find('.module-media-gallery__image-wrapper').height() / 2 - 30 );
+
+    // Before SLide Change
+    $slideCarousel.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+      activeSlideImage = $slideItems.eq(nextSlide).find('.module-media-gallery__image-wrapper');
+      $slideContainer.find('.module-media-gallery__arrows').css('top', (activeSlideImage.height() / 2 - 30));
+    });
+
+    // Bind the thumbnail carousel to the preview carousel
+    $thumbnailItems.on('click', navigateSlideCarousel);
+  };
+
+  /**
+   * Determine the position of the thumbnail item and slide to the corresponding item in slide carousel
+   */
+  const navigateSlideCarousel = (event) => {
+    event.preventDefault();
+    $thumbnailItems.removeClass('active');
+    $(event.currentTarget).addClass('active');
+    $slideCarousel.slick('slickGoTo', $(event.currentTarget).data('slick-index'), true);
   };
 
   /**
