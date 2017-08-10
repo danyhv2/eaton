@@ -2,29 +2,29 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-07-14T21:05:18.486Z"
+        cq:lastModified="{Date}2017-08-01T00:39:52.268Z"
         cq:lastModifiedBy="etn-daniela"
-        cq:lastReplicated="{Date}2017-07-14T21:05:51.804Z"
+        cq:lastReplicated="{Date}2017-08-01T00:41:18.858Z"
         cq:lastReplicatedBy="etn-daniela"
         cq:lastReplicationAction="Activate"
-        cq:template="/apps/eaton/static-templates/eaton-homepage-template-html"
+        cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="m24-featured-story"
-        jcr:uuid="12dd547d-c0c2-4d2f-af8e-6167b6c2578d"
-        sling:resourceType="eaton/static-components/structure/eaton-home-page">
+        jcr:title="m66-topic-content-with-icon"
+        jcr:uuid="c78acc98-f36f-4800-8549-2f99e8b7654c"
+        sling:resourceType="eaton/static-components/structure/eaton-content-page">
         <par
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
-            <title_text_image_lin
-                jcr:created="{Date}2017-07-14T21:05:07.616Z"
+            <product_support
+                jcr:created="{Date}2017-08-01T00:39:46.541Z"
                 jcr:createdBy="etn-daniela"
-                jcr:lastModified="{Date}2017-07-14T21:05:18.481Z"
+                jcr:lastModified="{Date}2017-08-01T00:39:52.263Z"
                 jcr:lastModifiedBy="etn-daniela"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link-list"
-                view="featured-story"/>
+                sling:resourceType="eaton/static-components/product/product-support"
+                view="product-support"/>
         </par>
     </jcr:content>
 </jcr:root>

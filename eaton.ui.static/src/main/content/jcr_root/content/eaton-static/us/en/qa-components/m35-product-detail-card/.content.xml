@@ -2,29 +2,28 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-07-19T17:06:39.526Z"
+        cq:lastModified="{Date}2017-08-09T17:09:58.456Z"
         cq:lastModifiedBy="etn-eduardo"
-        cq:lastReplicated="{Date}2017-07-19T17:53:31.252Z"
-        cq:lastReplicatedBy="etn-jorge"
+        cq:lastReplicated="{Date}2017-08-09T17:10:16.085Z"
+        cq:lastReplicatedBy="etn-eduardo"
         cq:lastReplicationAction="Activate"
-        cq:template="/apps/eaton/static-templates/eaton-homepage-template-html"
+        cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="m47-search"
-        jcr:uuid="9fd6e9dc-31d3-4a94-813d-65e100075775"
-        sling:resourceType="eaton/static-components/structure/eaton-home-page">
+        jcr:title="m35-product-detail-card"
+        jcr:uuid="4c3a61cd-1c56-434b-9969-f89bec7f95b6"
+        sling:resourceType="eaton/static-components/structure/eaton-content-page">
         <par
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
-            <search_box
-                jcr:created="{Date}2017-07-19T17:06:24.428Z"
+            <product_detail_card
+                jcr:created="{Date}2017-08-09T17:09:58.450Z"
                 jcr:createdBy="etn-eduardo"
-                jcr:lastModified="{Date}2017-07-19T17:06:31.931Z"
+                jcr:lastModified="{Date}2017-08-09T17:09:58.450Z"
                 jcr:lastModifiedBy="etn-eduardo"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/search-box"
-                view="search-box"/>
+                sling:resourceType="eaton/static-components/product/product-detail-card"/>
         </par>
     </jcr:content>
 </jcr:root>
