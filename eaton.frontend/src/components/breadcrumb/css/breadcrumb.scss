@@ -25,16 +25,14 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: block;
   }
 
   &__list-item {
     align-items: center;
     font-size: 14px;
     margin-right: 5px;
-    display: flex;
-    flex-direction: row;
-    flex-flow: nowrap;
+    float: left;
 
     .icon {
       font-size: 10px;
