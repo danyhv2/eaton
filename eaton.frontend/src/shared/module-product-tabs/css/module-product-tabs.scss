@@ -58,6 +58,8 @@
     }
 
     label {
+      background-color: $color__primary-gray1;
+
       &:hover,
       &:focus,
       &:active,
@@ -166,6 +168,7 @@
     float: left;
     padding: 1.3rem 0;
     margin: 0;
+    background-color: $color__secondary-gray6;
 
     a {
       display: block;
@@ -294,18 +297,32 @@
 
     &--fixed {
       .eaton-product-tabs__buttons {
+        position: relative;
+        z-index: unset;
+
+        &::before {
+          height: 78px;
+        }
+      }
+
+      .eaton-product-tabs__buttons__center {
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
         margin: 0;
+        z-index: 99;
+        padding: 0;
       }
 
       .eaton-product-tabs__description {
         display: none;
       }
 
-      .eaton-product-tabs__page-utility {
-        margin-top: 274px;
+      .eaton-product-tabs__dropdown-container {
+        margin-top: 157px;
+        z-index: 1;
+        padding: 0;
       }
 
       .eaton-product-tabs__tab-panel {
