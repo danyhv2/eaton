@@ -381,8 +381,8 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="eaton/static-components/content/link-list"
-                        testdata="t11-listing-page-1"
-                        view="download-list"/>
+                        testdata="t11-listing-page-4"
+                        view="vertical"/>
                 </col2-par>
             </grid_3_column_contro>
             <breadcrumb
