@@ -72,14 +72,15 @@ App.mediaGallery = function () {
       nextArrow: $slideContainer.find('.module-media-gallery__next-arrow')
     });
 
+    /* ARROWS: Vertical Alignment
     // On Carousel Init
-    $slideContainer.find('.module-media-gallery__arrows').css('top', $slideItems.eq(0).find('.module-media-gallery__image-wrapper').height() / 2 - 30);
-
-    // Before SLide Change
-    $slideCarousel.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    $slideContainer.find('.module-media-gallery__arrows').css('top', $slideItems.eq(0).find('.module-media-gallery__image-wrapper').height() / 2 - 30 );
+     // Before SLide Change
+    $slideCarousel.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
       activeSlideImage = $slideItems.eq(nextSlide).find('.module-media-gallery__image-wrapper');
-      $slideContainer.find('.module-media-gallery__arrows').css('top', activeSlideImage.height() / 2 - 30);
+      $slideContainer.find('.module-media-gallery__arrows').css('top', (activeSlideImage.height() / 2 - 30));
     });
+    */
   };
 
   /**

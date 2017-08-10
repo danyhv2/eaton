@@ -55,6 +55,7 @@ App.mediaGallery = function () {
       nextArrow: $slideContainer.find('.module-media-gallery__next-arrow')
     });
 
+    /* ARROWS: Vertical Alignment
     // On Carousel Init
     $slideContainer.find('.module-media-gallery__arrows').css('top', $slideItems.eq(0).find('.module-media-gallery__image-wrapper').height() / 2 - 30 );
 
@@ -63,6 +64,7 @@ App.mediaGallery = function () {
       activeSlideImage = $slideItems.eq(nextSlide).find('.module-media-gallery__image-wrapper');
       $slideContainer.find('.module-media-gallery__arrows').css('top', (activeSlideImage.height() / 2 - 30));
     });
+    */
 
   };
 
