@@ -93,6 +93,12 @@ use(function () {
     data.tabs[1].selected = false;
     data.tabs[2].selected = true;
   }
+  
+  if ((typeof(testdata) != "undefined") && (testdata == "tab-models-list")) {
+    data.tabs[1].icon = 'list-items';
+    data.tabs[1].title = 'Specifications';
+    data.tabs[1].href = '/content/eaton-static/us/en/qa-templates/t7-product-family-template-models-list.html';
+  }
 
   // Alternative View Data
   if (properties.get('view') == 'toggle-graphic') {
