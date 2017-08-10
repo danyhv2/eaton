@@ -60,7 +60,7 @@
                     jcr:lastModified="{Date}2017-08-08T16:45:47.910Z"
                     jcr:lastModifiedBy="etn-jorge"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/general/ctabutton"
+                    sling:resourceType="eaton/static-components/general/cta"
                     title="View Investor relations"
                     view="default"/>
             </featured_topic>
