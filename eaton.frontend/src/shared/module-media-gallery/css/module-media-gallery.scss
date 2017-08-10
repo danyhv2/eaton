@@ -8,6 +8,16 @@
 .module-media-gallery {
 
   //-----------------------------------
+  // Debug Styles
+  //-----------------------------------
+  &__slide-preview { border: 1px solid indianred; }
+
+  &__arrows { border: 1px solid mediumseagreen; }
+
+  &__thumbnail-container { border: 1px solid #639; }
+
+
+  //-----------------------------------
   // Gallery Headline & Description
   //-----------------------------------
   &__header,
@@ -30,7 +40,7 @@
   &__slide-preview {
     position: relative;
     text-align: center;
-    border: 1px solid indianred;
+
   }
 
   // Wrapper Div used to maintain image aspect ratio
@@ -79,7 +89,6 @@
     position: absolute;
     top: 0;
     color: $color__secondary-gray4;
-    border: 1px solid mediumseagreen;
   }
 
   &__prev-arrow {
