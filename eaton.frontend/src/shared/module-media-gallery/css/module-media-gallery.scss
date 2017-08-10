@@ -8,13 +8,6 @@
 .module-media-gallery {
 
   //-----------------------------------
-  // Debug Styles
-  //-----------------------------------
-  &__slide-preview { border: 1px solid indianred; }
-
-  &__slide-container &__arrows { border: 1px solid mediumseagreen; }
-
-  //-----------------------------------
   // Gallery Headline & Description
   //-----------------------------------
   &__header,
@@ -49,7 +42,6 @@
   &__slide-preview {
     position: relative;
     text-align: center;
-
   }
 
   // Wrapper Div used to maintain image aspect ratio
@@ -122,12 +114,10 @@
     list-style-type: none;
   }
 
-  &__thumbnail-container {
-    .module-media-gallery__arrows {
-      color: $color__primary-blue;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+  &__thumbnail-container &__arrows {
+    color: $color__primary-blue;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__thumbnail-image-wrapper {
@@ -232,7 +222,7 @@
 
       &.active {
 
-        &:after {
+        &::after {
           content: '';
           position: absolute;
           height: 2px;
