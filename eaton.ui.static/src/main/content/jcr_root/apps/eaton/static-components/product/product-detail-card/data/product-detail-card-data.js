@@ -46,98 +46,105 @@ use(function () {
   // Media Gallery-Dynamic M-48.1
   //--------------
   data.mediaGallery = {
-    "headline": "Media-Gallery Title",
-    "description": "Media-Gallery description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "headline": "",
+    "description": "",
     "items": [
       {
         "title": "This is a long active headline text - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": true,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
+          "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
           "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+          "zoom": "",
           "download": "/content/dam/eaton/images/products/product-1-thumbnail.png"
         }
       },
       {
         "title": "",
         "text": "",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": false,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
-          "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "download": "/content/dam/eaton/images/products/product-1-thumbnail.png"
+          "altText": "Image Alt Text",
+          "thumbnail": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+          "preview": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+          "zoom": "",
+          "download": "/content/dam/eaton/images/products/product-2-thumbnail.png"
         }
       },
       {
         "title": "Eaton 9px Family - Item 3",
         "text": "",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": false,
         "zoomEnabled": false,
-        "imageAlt": "Image Alt Text",
         "images": {
-          "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "download": "/content/dam/eaton/images/products/product-1-thumbnail.png"
+          "altText": "Image Alt Text",
+          "thumbnail": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+          "preview": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+          "zoom": "",
+          "download": "/content/dam/eaton/images/products/product-3-thumbnail.png"
         }
       },
       {
         "title": "Eaton 9px Family - Item 4",
         "text": "",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": true,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
-          "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "download": "/content/dam/eaton/images/products/product-1-thumbnail.png"
+          "altText": "Image Alt Text",
+          "thumbnail": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+          "preview": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+          "zoom": "",
+          "download": "/content/dam/eaton/images/products/product-4-thumbnail.png"
         }
       },
       {
         "title": "",
         "text": "",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": true,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
-          "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "download": "/content/dam/eaton/images/products/product-1-thumbnail.png"
+          "altText": "Image Alt Text",
+          "thumbnail": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+          "preview": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+          "zoom": "",
+          "download": "/content/dam/eaton/images/products/product-5-thumbnail.png"
         }
       },
       {
         "title": "Eaton 9px Family - Item 6",
         "text": "Eaton FlexPDU& HotSwap MBP",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": true,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
-          "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "download": "/content/dam/eaton/images/products/product-1-thumbnail.png"
+          "altText": "Image Alt Text",
+          "thumbnail": "/content/dam/eaton/images/products/product-6-thumbnail.png",
+          "preview": "/content/dam/eaton/images/products/product-6-thumbnail.png",
+          "zoom": "",
+          "download": "/content/dam/eaton/images/products/product-6-thumbnail.png"
         }
       },
       {
         "title": "Eaton 9px Family - Item 7",
         "text": "Eaton FlexPDU& HotSwap MBP",
-        "isVideo": false,
+        "isVideo": false, // isVideo is currenly not supported. This propery is just a placeholder for future development
         "downloadEnabled": true,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
-          "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "download": "/content/dam/eaton/images/products/product-1-thumbnail.png"
+          "altText": "Image Alt Text",
+          "thumbnail": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+          "preview": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+          "zoom": "",
+          "download": "/content/dam/eaton/images/products/product-7-thumbnail.png"
         }
       }
     ]
