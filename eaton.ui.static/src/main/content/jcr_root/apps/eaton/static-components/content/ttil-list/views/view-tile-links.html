@@ -1,4 +1,4 @@
-<sly data-sly-use.data="${'../data/view-tile-links-icon-data.js' @testdata=properties.testdata}">
+<sly data-sly-use.data="${'../data/view-tile-links-data.js' @testdata=properties.testdata}">
     <div class="tile-link-component container">
         <div class="row" data-sly-list.tile="${data.element}">
             <a class="col-xs-12 col-md-3 tile-link-component__element tile-link-component__element--${tileList.index}" data-sly-test="${!tile.image && !tile.icon}" href="${tile.link}">

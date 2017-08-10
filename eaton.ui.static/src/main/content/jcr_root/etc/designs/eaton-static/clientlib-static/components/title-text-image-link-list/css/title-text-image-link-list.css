@@ -1,3 +1,5 @@
+.container-full { overflow-x: hidden; }
+
 .carousel-component-slide__caption { top: 0; }
 
 .carousel-component-slide__cta { margin-top: 30px; }

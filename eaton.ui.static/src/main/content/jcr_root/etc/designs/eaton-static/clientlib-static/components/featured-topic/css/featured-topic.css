@@ -2,13 +2,19 @@
 
 .eaton-featured-topic .glyphicon { display: none; }
 
-.eaton-featured-topic .eaton-link-list-vertical__list-link, .eaton-featured-topic .eaton-link-list-vertical__eyebrow { font-weight: bold; }
+.eaton-featured-topic .eaton-link-list-vertical__list-link, .eaton-featured-topic .eaton-link-list-vertical__eyebrow { font-weight: bold; text-transform: none; }
 
 .eaton-featured-topic__text { margin-bottom: 60px; }
 
 .eaton-featured-topic__button-container { margin-top: 60px; }
 
-@media screen and (max-width: 767px) { .eaton-featured-topic__list-title { margin-top: 30px; } }
+@media screen and (max-width: 767px) { .eaton-featured-topic__title { padding-bottom: 30px; }
+  .eaton-featured-topic__list-title { margin-top: 30px; }
+  .eaton-featured-topic__link-list { padding-bottom: 15px; }
+  .eaton-featured-topic__text { margin-bottom: 30px; }
+  .eaton-featured-topic__button-container { margin-top: 0; }
+  .eaton-featured-topic__button-container .b-button.b-button__primary { width: 100%; }
+  .eaton-featured-topic .eaton-link-list-vertical__eyebrow { margin-bottom: 10px; font-size: 18px; } }
 
 @media screen and (min-width: 992px) { .eaton-featured-topic__list-left::after { background: #F8F8F8; content: ''; height: 85%; position: absolute; right: 0; top: 5px; width: 2px; }
   .eaton-featured-topic__list-right { padding-left: 9%; } }
