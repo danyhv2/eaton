@@ -12,11 +12,13 @@
   //-----------------------------------
   &__slide-container {
     position: relative;
+    border: 2px solid mediumseagreen;
   }
 
   &__slide-image {
     position: relative;
     text-align: center;
+    border: 1px solid indianred;
 
     img {
       display: inline-block;
@@ -58,6 +60,7 @@
     top: 50%;
     transform: translateY(-50%);
     color: $color__secondary-gray4;
+    border: 1px solid red;
   }
 
   &__prev-arrow {

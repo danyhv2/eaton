@@ -1,6 +1,6 @@
-.module-media-gallery__slide-container { position: relative; }
+.module-media-gallery__slide-container { position: relative; border: 2px solid mediumseagreen; }
 
-.module-media-gallery__slide-image { position: relative; text-align: center; }
+.module-media-gallery__slide-image { position: relative; text-align: center; border: 1px solid indianred; }
 
 .module-media-gallery__slide-image img { display: inline-block; }
 
@@ -16,7 +16,7 @@
 
 .module-media-gallery__slide-text { margin-bottom: 0; }
 
-.module-media-gallery__arrows { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); color: #CCD2D7; }
+.module-media-gallery__arrows { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); color: #CCD2D7; border: 1px solid red; }
 
 .module-media-gallery__prev-arrow { left: 0; }
 
