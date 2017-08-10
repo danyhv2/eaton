@@ -27,11 +27,11 @@ App.mediaGallery = function () {
   const navigateSlideCarousel = (event) => {
     event.preventDefault();
 
-    const activeSlide = $(event.currentTarget);
-    const activeSlideIndex = activeSlide.data('slick-index');
+    const $activeSlide = $(event.currentTarget);
+    const activeSlideIndex = event.currentTarget.dataset.slickIndex;
 
     $thumbnailItems.removeClass('active');
-    activeSlide.addClass('active');
+    $activeSlide.addClass('active');
 
     $slideCarousel.slick('slickGoTo', activeSlideIndex, true);
   };
