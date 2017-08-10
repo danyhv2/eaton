@@ -2,6 +2,14 @@
   <div class="module-media-gallery">
     <div class="container">
       <div class="row">
+
+        <!--*/ Gallery - Title & Description */-->
+        <div class="module-media-gallery__header" data-sly-test="${ data.headline || data.description }">
+          <h3 data-sly-test="${data.headline}" class="module-media-gallery__headline b-heading-h3">${data.headline}</h3>
+          <p data-sly-test="${data.description}" class="module-media-gallery__description b-body-copy">${data.description}</p>
+        </div>
+
+
         <!--*/ Slide Container */-->
         <div class="module-media-gallery__slide-container">
 

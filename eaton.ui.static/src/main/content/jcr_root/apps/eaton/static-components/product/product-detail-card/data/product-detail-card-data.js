@@ -42,8 +42,8 @@ use(function () {
   // Media Gallery-Dynamic M-48.1
   //--------------
   data.mediaGallery = {
-    "headline": "Media-Gallery Title",
-    "description": "Media-Gallery description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "headline": "",
+    "description": "",
     "items": [
       {
         "title": "This is a long active headline text - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

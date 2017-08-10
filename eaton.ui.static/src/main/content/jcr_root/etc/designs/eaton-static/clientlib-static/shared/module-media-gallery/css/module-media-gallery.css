@@ -1,3 +1,7 @@
+.module-media-gallery__header, .module-media-gallery__description { margin-bottom: 30px; }
+
+.module-media-gallery__headline { margin-bottom: 30px; }
+
 .module-media-gallery__slide-container { position: relative; border: 2px solid mediumseagreen; }
 
 .module-media-gallery__slide-image { position: relative; text-align: center; border: 1px solid indianred; }
