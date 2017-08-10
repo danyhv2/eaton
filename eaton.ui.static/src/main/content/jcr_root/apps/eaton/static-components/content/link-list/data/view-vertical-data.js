@@ -419,9 +419,14 @@ use(function () {
 		        target: '_self',
                 external_link: false,
                 document_size: 'PDF 15MB',
-                document_download: 'http://www.eaton.com'	
-		        	
-	         }
+                document_download: 'http://www.eaton.com'
+	         },
+		     {
+		        title: 'Market 1',
+		        url: '#link-2',
+		        target: '_self',
+		        external_link: false
+		     }
 	      ]
 	    }
 		
