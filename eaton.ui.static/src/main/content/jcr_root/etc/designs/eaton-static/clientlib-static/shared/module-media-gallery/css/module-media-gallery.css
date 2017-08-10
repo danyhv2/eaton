@@ -20,7 +20,7 @@
 
 .module-media-gallery__slide-text { margin-bottom: 0; }
 
-.module-media-gallery__arrows { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); color: #CCD2D7; border: 1px solid red; }
+.module-media-gallery__arrows { position: absolute; top: 0; color: #CCD2D7; border: 1px solid red; }
 
 .module-media-gallery__prev-arrow { left: 0; }
 
