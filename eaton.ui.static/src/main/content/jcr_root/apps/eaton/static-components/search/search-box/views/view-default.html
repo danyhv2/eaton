@@ -17,6 +17,10 @@
                     placeholder="${data.form.placeholder}"
                     required="required">
 
+            <div class="eaton-search--default__form-mobile-label u-visible-mobile">
+              ${data.form.placeholder}
+            </div>
+
             <div data-sly-test="${data.form.isExternal}" class="eaton-search--default__form-external">
               <span class="sr-only">Submit form in new Tab</span>
               <i class="icon icon-link-external" aria-hidden="true"></i>

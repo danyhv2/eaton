@@ -11,6 +11,7 @@
     display: flex;
     border-bottom: 1px solid $color__white;
     margin-bottom: 0;
+    position: relative;
   }
 
   .icon-search {
@@ -45,7 +46,21 @@
         color: transparent;
       }
       // stylelint-enable
+
+      & ~ .eaton-search--default__form-mobile-label {
+        display: none;
+      }
     }
+  }
+
+  &__form-mobile-label {
+    position: absolute;
+    width: 100%;
+    padding-right: 32px;
+    color: $color__white;
+    pointer-events: none;
+    line-height: normal;
+    padding-top: 10px;
   }
 
   &__form-external {
@@ -140,6 +155,28 @@
       height: 100%;
       overflow-y: auto;
     }
+
+    //-----------------------------------
+    // Selector styles - Form Placeholder
+    //-----------------------------------
+
+    // stylelint-disable selector-no-vendor-prefix
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: transparent;
+    }
+
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: transparent;
+    }
+
+    :-ms-input-placeholder { /* IE 10+ */
+      color: transparent;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+      color: transparent;
+    }
+    // stylelint-enable
   }
 
   //-----------------------------------
