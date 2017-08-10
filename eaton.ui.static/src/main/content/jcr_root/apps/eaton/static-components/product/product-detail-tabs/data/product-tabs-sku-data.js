@@ -26,21 +26,21 @@ use(function () {
         icon: 'doc-text',
         title: 'Overview',
         href: '/content/eaton-static/us/en/qa-templates/t8-sku-template-overview-tab.html',
-        target: '_blank',
+        target: '_self',
         selected: true
       },
       {
         icon: 'list-items',
         title: 'Specifications',
         href: '/content/eaton-static/us/en/qa-templates/t8-sku-template-specifications-tab.html',
-        target: '_blank',
+        target: '_self',
         selected: false
       },
       {
         icon: 'doc-download',
         title: 'Resources',
         href: '/content/eaton-static/us/en/qa-templates/t8-sku-template-resources-tab.html',
-        target: '_blank',
+        target: '_self',
         selected: false
       }
     ],
