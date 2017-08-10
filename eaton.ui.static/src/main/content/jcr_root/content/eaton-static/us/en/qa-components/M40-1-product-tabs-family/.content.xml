@@ -23,7 +23,7 @@
                 jcr:lastModified="{Date}2017-08-08T16:37:16.486Z"
                 jcr:lastModifiedBy="etn-jorge"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/product/product-tabs-family"
+                sling:resourceType="eaton/static-components/product/product-tabs"
                 view="links-navigation"/>
         </par>
         <eaton-footer jcr:primaryType="nt:unstructured">
