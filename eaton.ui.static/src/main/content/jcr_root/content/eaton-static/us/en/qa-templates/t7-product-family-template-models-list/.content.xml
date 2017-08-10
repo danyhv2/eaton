@@ -243,7 +243,7 @@
                 jcr:lastModified="{Date}2017-08-09T17:56:37.637-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/layout/2-column-control"
+                sling:resourceType="eaton/static-components/layout/grid-2-column-control"
                 view="is-two-third">
                 <col1-par
                     jcr:primaryType="nt:unstructured"
