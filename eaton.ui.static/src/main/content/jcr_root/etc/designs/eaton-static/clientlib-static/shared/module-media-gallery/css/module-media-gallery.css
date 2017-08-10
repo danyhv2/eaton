@@ -14,13 +14,13 @@
 
 .module-media-gallery__image-wrapper img { height: 100%; width: auto; margin-left: auto; margin-right: auto; }
 
-.module-media-gallery__slide-utility { position: absolute; bottom: 0; }
+.module-media-gallery__slide-utility { position: absolute; bottom: 15px; }
 
 .module-media-gallery__slide-utility .icon { color: #005EB8; }
 
-.module-media-gallery__download { left: 0; }
+.module-media-gallery__download { left: 15px; }
 
-.module-media-gallery__zoom { right: 0; }
+.module-media-gallery__zoom { right: 15px; }
 
 .module-media-gallery__slide-info { padding: 30px 0 30px 30px; border-left: 1px solid #CCD2D7; }
 

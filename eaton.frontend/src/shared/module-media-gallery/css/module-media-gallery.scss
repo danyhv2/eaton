@@ -59,7 +59,7 @@
   // Zoom & Download Styles
   &__slide-utility {
     position: absolute;
-    bottom: 0;
+    bottom: $spacing__sm / 2;
 
     .icon {
       color: $color__primary-blue;
@@ -67,11 +67,11 @@
   }
 
   &__download {
-    left: 0;
+    left: $spacing__sm / 2;
   }
 
   &__zoom {
-    right: 0;
+    right: $spacing__sm / 2;
   }
 
   // Slide Item - Text & description
