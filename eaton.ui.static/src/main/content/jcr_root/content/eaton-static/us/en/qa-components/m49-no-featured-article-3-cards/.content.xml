@@ -28,7 +28,7 @@
                     jcr:lastModified="{Date}2017-07-19T17:13:04.583Z"
                     jcr:lastModifiedBy="etn-daniel"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/title-text-image-link"
+                    sling:resourceType="eaton/static-components/content/ttil"
                     view="l2-hero"/>
                 <list
                     jcr:lastModified="{Date}2017-07-19T17:13:36.867Z"
