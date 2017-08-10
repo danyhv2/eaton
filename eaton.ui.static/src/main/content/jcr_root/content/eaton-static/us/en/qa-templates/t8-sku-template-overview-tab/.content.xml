@@ -275,7 +275,7 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/general/title"
-                testdata="related-products"
+                testdata="t8-sku-template-overview-tab"
                 toggleInnerGrid="true"
                 view="default"/>
             <list
