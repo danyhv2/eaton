@@ -187,7 +187,7 @@
                     jcr:lastModified="{Date}2017-07-21T16:40:29.690-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/title-text-image-link-list"
+                    sling:resourceType="eaton/static-components/content/ttil-list"
                     view="featured-list"/>
                 <search-inline-company
                     jcr:lastModified="{Date}2017-07-21T16:41:04.476-05:00"
@@ -240,7 +240,7 @@
                 jcr:lastModified="{Date}2017-07-20T23:43:11.929-05:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link-list"
+                sling:resourceType="eaton/static-components/content/ttil-list"
                 showCta="true"
                 showSeparator="true"
                 testdata="l2-news"
