@@ -47,7 +47,7 @@
       }
       // stylelint-enable
 
-      & ~ .eaton-search--default__form-mobile-label {
+      ~ .eaton-search--default__form-mobile-label {
         display: none;
       }
     }
