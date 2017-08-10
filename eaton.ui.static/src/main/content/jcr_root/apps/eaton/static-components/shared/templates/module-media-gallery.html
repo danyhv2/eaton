@@ -30,12 +30,12 @@
 
                   <!--*/ Slide Item - Utility - Zoom & Download */-->
                   <a href="${item.images.download}" download class="module-media-gallery__download module-media-gallery__slide-utility">
-                    <span class="sr-only">Download</span>
+                    <span class="sr-only">${ 'Download' @ i18n }</span>
                     <i class="icon icon-download" aria-hidden="true"></i>
                   </a>
 
                   <button class="module-media-gallery__zoom module-media-gallery__slide-utility button--reset">
-                    <span class="sr-only">Zoom</span>
+                    <span class="sr-only">${ 'Zoom' @ i18n }</span>
                     <i class="icon icon-search-plus" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -51,12 +51,12 @@
           <!--*/ Slide Preview Arrows */-->
           <sly data-sly-test="${data.items.length > 1}">
             <button class="module-media-gallery__prev-arrow module-media-gallery__arrows button--reset">
-              <span class="sr-only">Prev</span>
+              <span class="sr-only">${ 'Previous' @ i18n }</span>
               <i class="icon icon-chevron-left" aria-hidden="true"></i>
             </button>
 
             <button class="module-media-gallery__next-arrow module-media-gallery__arrows button--reset">
-              <span class="sr-only">Next</span>
+              <span class="sr-only">${ 'Next' @ i18n }</span>
               <i class="icon icon-chevron-right" aria-hidden="true"></i>
             </button>
           </sly>
@@ -84,12 +84,12 @@
           <!--*/ Thumbnail Arrows */-->
           <sly data-sly-test="${data.items.length > 1}">
               <button class="module-media-gallery__prev-arrow module-media-gallery__arrows button--reset">
-                <span class="sr-only">Prev</span>
+                <span class="sr-only">${ 'Previous' @ i18n }</span>
                 <i class="icon icon-chevron-left" aria-hidden="true"></i>
               </button>
 
               <button class="module-media-gallery__next-arrow module-media-gallery__arrows button--reset">
-                <span class="sr-only">Next</span>
+                <span class="sr-only">${ 'Next' @ i18n }</span>
                 <i class="icon icon-chevron-right" aria-hidden="true"></i>
               </button>
           </sly>
