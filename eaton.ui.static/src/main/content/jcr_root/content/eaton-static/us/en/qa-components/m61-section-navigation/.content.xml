@@ -23,7 +23,7 @@
                 jcr:lastModified="{Date}2017-07-19T16:37:17.442Z"
                 jcr:lastModifiedBy="etn-eduardo"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/link-list"
+                sling:resourceType="eaton/static-components/general/link-list"
                 view="section-navigation"/>
         </par>
     </jcr:content>
