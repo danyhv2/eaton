@@ -17,43 +17,9 @@ App.mediaGallery = function () {
    * Initialize Media Gallery
    */
   const init = () => {
+    let activeSlideImage = '';
     initializeSlideCarousel();
     initializeThumbnailCarousel();
-  };
-
-  /**
-   * Determine the position of the thumbnail item and slide to the corresponding item in slide carousel
-   */
-  const navigateSlideCarousel = (event) => {
-    event.preventDefault();
-
-    const $activeSlide = $(event.currentTarget);
-    const activeSlideIndex = event.currentTarget.dataset.slickIndex;
-
-    $thumbnailItems.removeClass('active');
-    $activeSlide.addClass('active');
-
-    $slideCarousel.slick('slickGoTo', activeSlideIndex, true);
-  };
-
-  /**
-   * Configure Slick Carousel - Main Slide Container
-   */
-  const initializeSlideCarousel = () => {
-
-    let activeSlideImage = '';
-
-    $slideCarousel.slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: false,
-      dots: false,
-      adaptiveHeight: true,
-      accessibility: true,
-      lazyLoad: 'ondemand',
-      prevArrow: $slideContainer.find('.module-media-gallery__prev-arrow'),
-      nextArrow: $slideContainer.find('.module-media-gallery__next-arrow')
-    });
 
     // On Carousel Init
     $slideContainer.find('.module-media-gallery__arrows').css('top', $slideItems.eq(0).find('.module-media-gallery__image-wrapper').height() / 2 - 30 );
@@ -64,6 +30,53 @@ App.mediaGallery = function () {
       $slideContainer.find('.module-media-gallery__arrows').css('top', (activeSlideImage.height() / 2 - 30));
     });
 
+    // Bind the thumbnail carousel to the preview carousel
+    $thumbnailItems.on('click', navigateSlideCarousel);
+
+    // Determine the active thumbnail item on initialization
+    $thumbnailCarousel.on('init', function(event, slick) {
+      $thumbnailCarousel.find('[data-slick-index="0"]').addClass('active');
+    });
+  };
+
+  /**
+   * Determine the position of the thumbnail item and slide to the corresponding item in slide carousel
+   */
+  const navigateSlideCarousel = (event) => {
+    event.preventDefault();
+
+    const activeSlide = $(event.currentTarget);
+    const activeSlideIndex = activeSlide.data('slick-index');
+
+    $thumbnailItems.removeClass('active');
+    activeSlide.addClass('active');
+    $slideCarousel.slick('slickGoTo', activeSlideIndex, true);
+  };
+
+  /**
+   * Configure Slick Carousel - Main Slide Container
+   */
+  const initializeSlideCarousel = () => {
+    $slideCarousel.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      dots: false,
+      adaptiveHeight: true,
+      accessibility: true,
+      lazyLoad: 'ondemand',
+      prevArrow: $slideContainer.find('.module-media-gallery__prev-arrow'),
+      nextArrow: $slideContainer.find('.module-media-gallery__next-arrow'),
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            dots: true,
+            dotsClass: 'module-media-gallery__dots'
+          }
+        }
+      ]
+    });
   };
 
   /**
@@ -77,18 +90,8 @@ App.mediaGallery = function () {
       autoplay: false,
       dots: false,
       accessibility: true,
-        // dotsClass: 'module-media-gallery__dots',
       prevArrow: $thumbnailContainer.find('.module-media-gallery__prev-arrow'),
       nextArrow: $thumbnailContainer.find('.module-media-gallery__next-arrow')
-        // asNavFor: '.module-media-gallery__slide-list'
-    });
-
-    // Bind the thumbnail carousel to the preview carousel
-    $thumbnailItems.on('click', navigateSlideCarousel);
-
-    // Determine the active thumbnail item on initialization
-    $thumbnailCarousel.on('init', function(event, slick) {
-      $thumbnailCarousel.find('[data-slick-index="0"]').addClass('active');
     });
   };
 
