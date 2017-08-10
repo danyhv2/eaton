@@ -20,19 +20,19 @@
                     jcr:lastModified="{Date}2017-07-17T13:24:13.396-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     view="vertical"/>
                 <download-list-1
                     jcr:lastModified="{Date}2017-07-17T13:24:41.843-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     view="download-list"/>
                 <download-list-2
                     jcr:lastModified="{Date}2017-07-17T13:24:48.815-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     view="download-list-desc"/>
                 <single-feature
                     jcr:lastModified="{Date}2017-07-17T13:24:56.739-07:00"
@@ -44,7 +44,7 @@
                     jcr:lastModified="{Date}2017-07-17T13:25:04.160-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     view="vertical"/>
                 <search-inline-products
                     jcr:lastModified="{Date}2017-07-19T16:56:56.731-07:00"
@@ -57,14 +57,14 @@
                     jcr:lastModified="{Date}2017-07-19T16:57:18.717-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     testdata="megamenu-products"
                     view="vertical"/>
                 <download-list-products
                     jcr:lastModified="{Date}2017-07-19T16:57:35.292-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     view="vertical"/>
                 <single-feature-products
                     jcr:lastModified="{Date}2017-07-21T11:26:42.865-07:00"
@@ -77,7 +77,7 @@
                     jcr:lastModified="{Date}2017-07-19T17:02:24.364-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     view="download-list"/>
                 <search-inline-services
                     jcr:lastModified="{Date}2017-07-19T17:03:51.812-07:00"
@@ -97,7 +97,7 @@
                     jcr:lastModified="{Date}2017-07-21T16:43:53.435-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     testdata="default"
                     view="download-list"/>
                 <links-support
@@ -167,14 +167,14 @@
                     jcr:lastModified="{Date}2017-07-21T16:33:18.834-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     testdata="megamenu-company"
                     view="vertical"/>
                 <download-list-markets
                     jcr:lastModified="{Date}2017-07-21T16:40:10.724-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     testdata="default"
                     view="download-list"/>
                 <featured-list-markets
@@ -200,14 +200,14 @@
                     jcr:lastModified="{Date}2017-07-21T16:42:07.407-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     testdata="default"
                     view="download-list"/>
                 <link-list-services
                     jcr:lastModified="{Date}2017-07-21T16:43:37.431-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     testdata="default"
                     view="vertical"/>
             </mega-menu>
@@ -215,7 +215,7 @@
                 jcr:lastModified="{Date}2017-08-07T22:41:29.649Z"
                 jcr:lastModifiedBy="etn-supriya"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/link-list"
+                sling:resourceType="eaton/static-components/general/link-list"
                 view="primary-nav"/>
             <primary-nav-search
                 jcr:lastModified="{Date}2017-08-07T22:45:02.140Z"
@@ -287,14 +287,14 @@
                     jcr:lastModified="{Date}2017-08-08T14:15:35.671-06:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     testdata="t11-listing-page-1"
                     view="vertical"/>
                 <link-list-right
                     jcr:lastModified="{Date}2017-08-08T14:15:57.325-06:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     testdata="t11-listing-page-2"
                     view="vertical"/>
             </featured_topic>
@@ -367,7 +367,7 @@
                         jcr:lastModified="{Date}2017-08-08T19:06:39.009-06:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/content/link-list"
+                        sling:resourceType="eaton/static-components/general/link-list"
                         testdata="t11-listing-page-3"
                         view="vertical"/>
                 </col1-par>
@@ -380,7 +380,7 @@
                         jcr:lastModified="{Date}2017-08-08T15:09:11.998-06:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/content/link-list"
+                        sling:resourceType="eaton/static-components/general/link-list"
                         testdata="t11-listing-page-4"
                         view="vertical"/>
                 </col2-par>
@@ -412,21 +412,21 @@
                 jcr:lastModified="{Date}2017-07-20T17:30:24.785Z"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/link-list"
+                sling:resourceType="eaton/static-components/general/link-list"
                 testdata="footer1"
                 view="vertical"/>
             <link-list-3rd-col
                 jcr:lastModified="{Date}2017-07-20T17:30:30.293Z"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/link-list"
+                sling:resourceType="eaton/static-components/general/link-list"
                 testdata="footer2"
                 view="vertical"/>
             <link-list-bottom
                 jcr:lastModified="{Date}2017-07-20T17:30:42.115Z"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/link-list"
+                sling:resourceType="eaton/static-components/general/link-list"
                 view="horizontal"/>
         </eaton-footer>
     </jcr:content>

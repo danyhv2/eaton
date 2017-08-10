@@ -26,19 +26,19 @@
                     jcr:lastModified="{Date}2017-07-17T13:01:16.790-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     view="vertical"/>
                 <download-list-1
                     jcr:lastModified="{Date}2017-07-17T13:01:23.199-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     view="download-list"/>
                 <download-list-2
                     jcr:lastModified="{Date}2017-07-17T13:01:28.446-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     view="download-list-desc"/>
                 <single-feature
                     jcr:lastModified="{Date}2017-07-17T13:01:34.539-07:00"
@@ -50,7 +50,7 @@
                     jcr:lastModified="{Date}2017-07-17T13:01:43.681-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/link-list"
+                    sling:resourceType="eaton/static-components/general/link-list"
                     view="download-list-desc"/>
             </mega-menu>
         </eaton-header>
