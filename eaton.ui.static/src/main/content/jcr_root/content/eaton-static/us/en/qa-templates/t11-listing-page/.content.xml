@@ -348,7 +348,7 @@
                 jcr:lastModified="{Date}2017-08-04T21:26:05.573-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/layout/3-column-control">
+                sling:resourceType="eaton/static-components/layout/grid-3-column-control">
                 <col1-par
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/parsys">

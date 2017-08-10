@@ -23,7 +23,7 @@
                 jcr:lastModified="{Date}2017-07-19T17:00:41.845Z"
                 jcr:lastModifiedBy="etn-supriya"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/layout/2-column-control"
+                sling:resourceType="eaton/static-components/layout/grid-2-column-control"
                 view="is-half">
                 <col1-par
                     jcr:primaryType="nt:unstructured"
