@@ -227,7 +227,7 @@
                 jcr:lastModified="{Date}2017-08-01T19:30:50.921Z"
                 jcr:lastModifiedBy="etn-jorge"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/layout/grid-2-column-control"/>
+                sling:resourceType="eaton/static-components/layout/2-column-control"/>
             <styleguide
                 jcr:created="{Date}2017-08-01T19:31:02.094Z"
                 jcr:createdBy="etn-jorge"

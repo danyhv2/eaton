@@ -259,7 +259,7 @@
                 jcr:lastModified="{Date}2017-08-03T21:15:34.636-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/layout/grid-2-column-control"
+                sling:resourceType="eaton/static-components/layout/2-column-control"
                 view="is-half">
                 <col2-par
                     jcr:primaryType="nt:unstructured"
@@ -273,7 +273,7 @@
                         jcr:lastModified="{Date}2017-08-08T18:49:47.027-06:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/layout/grid-2-column-control"
+                        sling:resourceType="eaton/static-components/layout/2-column-control"
                         view="is-half">
                         <col1-par
                             jcr:primaryType="nt:unstructured"
@@ -308,7 +308,7 @@
                         jcr:lastModified="{Date}2017-08-08T18:57:36.260-06:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/layout/grid-2-column-control"
+                        sling:resourceType="eaton/static-components/layout/2-column-control"
                         view="is-half">
                         <col1-par
                             jcr:primaryType="nt:unstructured"
