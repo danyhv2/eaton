@@ -188,8 +188,12 @@
       }
     }
 
+    &__slide-preview {
+      margin: 0 0 $spacing__sm;
+    }
+
     &__slide-info {
-      margin: $spacing__sm 0 $spacing__sm;
+      margin: 0 0 $spacing__sm;
     }
 
     &__thumbnail-container {
