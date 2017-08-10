@@ -234,7 +234,7 @@
                 jcr:lastModified="{Date}2017-08-03T12:27:47.636-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/product/product-tabs-sku"
+                sling:resourceType="eaton/static-components/product/product-detail-tabs"
                 testdata="tab-resources"
                 view="links-navigation"/>
             <icon_list
