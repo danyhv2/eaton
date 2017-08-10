@@ -19,13 +19,14 @@
             <div class="module-media-gallery__slide-item" data-slide-item="${isVideo == true ? 'image' : 'video'}">
 
                 <!--*/ Slide Item - Image */-->
-                <div class="module-media-gallery__slide-image embed-responsive embed-responsive-16by9">
-                  <img class="embed-responsive-item"
-                      data-src="${item.images.preview}"
-                      data-desktop-rendition="${item.images.preview}"
-                      data-mobile-rendition="${item.images.preview}"
-                      alt="${item.images.altText}"
-                      data-lazy="${item.images.thumbnail}"/>
+                <div class="module-media-gallery__slide-preview embed-responsive embed-responsive-16by9">
+                  <div class="module-media-gallery__image-wrapper embed-responsive-item">
+                    <img data-src="${item.images.preview}"
+                        data-desktop-rendition="${item.images.preview}"
+                        data-mobile-rendition="${item.images.preview}"
+                        alt="${item.images.altText}"
+                        data-lazy="${item.images.thumbnail}" />
+                  </div>
 
                   <!--*/ Slide Item - Utility - Zoom & Download */-->
                   <a href="${item.images.download}" download class="module-media-gallery__download module-media-gallery__slide-utility">
