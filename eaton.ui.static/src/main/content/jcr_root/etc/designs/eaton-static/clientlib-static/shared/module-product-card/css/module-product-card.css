@@ -14,12 +14,10 @@
 
 .module-product-detail-card__links { padding: 20px 0; }
 
-.module-product-detail-card__links--header { color: #005EB8; }
-
 .module-product-detail-card__links ul { list-style: none; padding: 20px 0px; }
 
-.module-product-detail-card__links ul li { padding: 0; }
+.module-product-detail-card__links ul li { padding: 0; min-height: 36px; }
 
-.module-product-detail-card__links ul li a { display: inline-block; padding: 0 0 10px 0; }
+.module-product-detail-card__links ul li a { color: #005EB8; display: inline-block; padding: 0 0 10px 0; }
 
 .module-product-detail-card__links ul .icon { vertical-align: middle; padding-right: 10px; }
