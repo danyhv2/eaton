@@ -1,0 +1,22 @@
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+.upsell-products {
+
+  &__slides {
+    padding: 0;
+
+    .slides {
+      position: relative;
+    }
+
+    a {
+      z-index: 10;
+    }
+  }
+
+  .module-related-products__arrows {
+    top: 30%;
+  }
+}
