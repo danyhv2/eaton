@@ -131,17 +131,35 @@
   }
 
   //-----------------------------------
-  // Mobile Breakpoint
+  // Mobile Breakpoint: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
+
+    // Slide Container
+    //--------------
+    &__slide-container {
+      // empty selector for future reference
+    }
+
+    // Thumbnail Container
+    //--------------
+    &__thumbnail-container {
+      display: none;
+    }
+
   }
 
+
+
   //-----------------------------------
-  // Desktop Breakpoint
+  // Desktop Breakpoint: >992 px
   //-----------------------------------
   @include media-desktop-and-up {
     padding: $spacing__md 0 $spacing__xl;
 
+
+    // Slide Container
+    //--------------
     &__slide-container {
       .module-media-gallery__arrows {
         .icon {
