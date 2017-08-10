@@ -208,7 +208,7 @@
     border: 0;
     color: $color__white;
     display: inline-block;
-    font-family: $font-family__primary-bold;
+    font-family: $font-family__secondary;
     font-size: 16px;
     font-size: 1.6rem;
     height: 57px;
@@ -335,7 +335,6 @@
     &__dropdown {
       font-size: 18px;
       font-size: 1.8rem;
-      font-family: $font-family__secondary;
       font-weight: bold;
     }
 
