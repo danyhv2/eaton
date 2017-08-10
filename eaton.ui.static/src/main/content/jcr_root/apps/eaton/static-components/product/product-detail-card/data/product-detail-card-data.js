@@ -48,7 +48,7 @@ use(function () {
       {
         "title": "This is a long active headline text - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": true,
         "zoomEnabled": true,
         "images": {
@@ -61,7 +61,7 @@ use(function () {
       {
         "title": "",
         "text": "",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": false,
         "zoomEnabled": true,
         "images": {
@@ -74,7 +74,7 @@ use(function () {
       {
         "title": "Eaton 9px Family - Item 3",
         "text": "",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": false,
         "zoomEnabled": false,
         "images": {
@@ -87,7 +87,7 @@ use(function () {
       {
         "title": "Eaton 9px Family - Item 4",
         "text": "",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": true,
         "zoomEnabled": true,
         "images": {
@@ -100,7 +100,7 @@ use(function () {
       {
         "title": "",
         "text": "",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": true,
         "zoomEnabled": true,
         "images": {
@@ -113,7 +113,7 @@ use(function () {
       {
         "title": "Eaton 9px Family - Item 6",
         "text": "Eaton FlexPDU& HotSwap MBP",
-        "isVideo": false,
+        "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "downloadEnabled": true,
         "zoomEnabled": true,
         "images": {
@@ -126,7 +126,7 @@ use(function () {
       {
         "title": "Eaton 9px Family - Item 7",
         "text": "Eaton FlexPDU& HotSwap MBP",
-        "isVideo": false,
+        "isVideo": false, // isVideo is currenly not supported. This propery is just a placeholder for future development
         "downloadEnabled": true,
         "zoomEnabled": true,
         "images": {
