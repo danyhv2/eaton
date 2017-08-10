@@ -8,23 +8,45 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="QA-components"
         sling:resourceType="eaton/static-components/structure/eaton-home-page"/>
-    <content-columns-2col/>
-    <m1-header/>
     <m7-footer/>
-    <m8-landing-hero/>
-    <m9-category-hero/>
-    <m9-category-hero0/>
-    <m11-page-overview/>
-    <m24-featured-story/>
-    <m25-proof-points/>
-    <m27-article-list/>
-    <m28-featured-topic/>
-    <m47-search/>
     <m49-category-highlight/>
-    <m49-featured-article/>
-    <m49-no-featured-article-3-cards/>
-    <m53-feature-block/>
-    <m55-tile-links/>
-    <m56-article-feature/>
+    <m24-featured-story/>
+    <m11-page-overview/>
+    <m28-featured-topic/>
+    <m8-landing-hero/>
     <m61-section-navigation/>
+    <m9-category-hero/>
+    <content-columns-2col/>
+    <m49-featured-article/>
+    <m47-search/>
+    <m9-category-hero0/>
+    <m49-no-featured-article-3-cards/>
+    <m25-proof-points/>
+    <m53-feature-block/>
+    <m27-article-list/>
+    <m55-tile-links/>
+    <m1-header/>
+    <m56-article-feature/>
+    <mega-menu/>
+    <m52-highlights-module/>
+    <m42-topic-list-with-icon/>
+    <M40-1-product-tabs-family/>
+    <product-features/>
+    <m41-related-products/>
+    <m36-product-card-sku/>
+    <m60-results-list/>
+    <link-list-2column/>
+    <how-to-buy/>
+    <test-components/>
+    <m66-topic-content-with-icon/>
+    <m-46-tabbed-menu-list/>
+    <M40-1-product-tabs-family--links/>
+    <M40-2-product-tabs-sku--links/>
+    <upsell-products/>
+    <product-specifications/>
+    <m44-topic-link/>
+    <product-family-card/>
+    <m51-secondary-content/>
+    <resource-list/>
+    <m35-product-detail-card/>
 </jcr:root>
