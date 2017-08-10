@@ -17,14 +17,14 @@
                 jcr:lastModified="{Date}2017-07-19T22:40:02.304Z"
                 jcr:lastModifiedBy="etn-supriya"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/structure/mega-menu"/>
+                sling:resourceType="eaton/static-components/layout/mega-menu"/>
             <mega_menu_1786753245
                 jcr:created="{Date}2017-07-19T22:40:09.542Z"
                 jcr:createdBy="etn-supriya"
                 jcr:lastModified="{Date}2017-07-19T22:40:09.542Z"
                 jcr:lastModifiedBy="etn-supriya"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/structure/mega-menu"/>
+                sling:resourceType="eaton/static-components/layout/mega-menu"/>
         </par>
     </jcr:content>
 </jcr:root>
