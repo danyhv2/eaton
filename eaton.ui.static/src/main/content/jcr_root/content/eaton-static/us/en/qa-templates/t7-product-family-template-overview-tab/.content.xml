@@ -38,7 +38,7 @@
                     jcr:lastModified="{Date}2017-07-17T13:24:56.739-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/title-text-image-link"
+                    sling:resourceType="eaton/static-components/content/ttil"
                     view="single-feature"/>
                 <download-list-3
                     jcr:lastModified="{Date}2017-07-17T13:25:04.160-07:00"
@@ -70,7 +70,7 @@
                     jcr:lastModified="{Date}2017-07-21T11:26:42.865-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/title-text-image-link"
+                    sling:resourceType="eaton/static-components/content/ttil"
                     testdata="megamenu-products"
                     view="single-feature"/>
                 <download-list-support
@@ -194,7 +194,7 @@
                     jcr:lastModified="{Date}2017-07-21T16:41:43.954-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/title-text-image-link"
+                    sling:resourceType="eaton/static-components/content/ttil"
                     view="single-feature"/>
                 <download-descriptive-list
                     jcr:lastModified="{Date}2017-07-21T16:42:07.407-05:00"
@@ -263,7 +263,7 @@
                 jcr:lastModified="{Date}2017-08-08T17:03:28.258-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link"
+                sling:resourceType="eaton/static-components/content/ttil"
                 testdata="t7-product-family-template-overview-tab"
                 view="feature-block-left"/>
             <intra_tab_link

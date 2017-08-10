@@ -23,7 +23,7 @@
                 jcr:lastModified="{Date}2017-08-09T15:11:54.085Z"
                 jcr:lastModifiedBy="etn-daniela"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link"
+                sling:resourceType="eaton/static-components/content/ttil"
                 view="feature-block-left"/>
             <title_text_image_lin_845141480
                 cq:lastReplicated="{Date}2017-08-09T15:13:51.320Z"
@@ -35,7 +35,7 @@
                 jcr:lastModifiedBy="etn-daniela"
                 jcr:mixinTypes="[cq:ReplicationStatus]"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link"
+                sling:resourceType="eaton/static-components/content/ttil"
                 testdata="blue"
                 view="feature-block-left"/>
             <title_text_image_lin_901151430
@@ -44,7 +44,7 @@
                 jcr:lastModified="{Date}2017-08-09T15:22:11.454Z"
                 jcr:lastModifiedBy="etn-daniela"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link"
+                sling:resourceType="eaton/static-components/content/ttil"
                 view="feature-block-right"/>
         </par>
     </jcr:content>

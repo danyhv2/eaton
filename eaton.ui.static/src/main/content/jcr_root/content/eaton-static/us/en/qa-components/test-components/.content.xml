@@ -33,7 +33,7 @@
                         jcr:lastModified="{Date}2017-07-31T18:32:41.464Z"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/content/title-text-image-link"
+                        sling:resourceType="eaton/static-components/content/ttil"
                         view="card"/>
                 </col1-par>
             </grid_3_column_contro>
@@ -58,7 +58,7 @@
                 jcr:lastModified="{Date}2017-07-31T18:37:09.683Z"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link"
+                sling:resourceType="eaton/static-components/content/ttil"
                 view="article-feature"/>
             <title_text_image_lin_1406977674
                 jcr:created="{Date}2017-07-31T18:53:32.102Z"
@@ -66,7 +66,7 @@
                 jcr:lastModified="{Date}2017-07-31T18:53:32.102Z"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link"/>
+                sling:resourceType="eaton/static-components/content/ttil"/>
             <title_text_image_lin_1599922543
                 jcr:created="{Date}2017-07-31T18:40:20.987Z"
                 jcr:createdBy="admin"

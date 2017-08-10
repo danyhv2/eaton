@@ -44,7 +44,7 @@
                     jcr:lastModified="{Date}2017-07-17T13:24:56.739-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/title-text-image-link"
+                    sling:resourceType="eaton/static-components/content/ttil"
                     view="single-feature"/>
                 <download-list-3
                     jcr:lastModified="{Date}2017-07-17T13:25:04.160-07:00"
@@ -76,7 +76,7 @@
                     jcr:lastModified="{Date}2017-07-21T11:26:42.865-07:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/title-text-image-link"
+                    sling:resourceType="eaton/static-components/content/ttil"
                     testdata="megamenu-products"
                     view="single-feature"/>
                 <download-list-support
@@ -200,7 +200,7 @@
                     jcr:lastModified="{Date}2017-07-21T16:41:43.954-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/title-text-image-link"
+                    sling:resourceType="eaton/static-components/content/ttil"
                     view="single-feature"/>
                 <download-descriptive-list
                     jcr:lastModified="{Date}2017-07-21T16:42:07.407-05:00"
@@ -251,7 +251,7 @@
                 jcr:lastModified="{Date}2017-07-20T05:21:30.851Z"
                 jcr:lastModifiedBy="etn-marie"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link"
+                sling:resourceType="eaton/static-components/content/ttil"
                 testdata="primary-pageoverview"
                 view="page-overview"/>
             <icon_list
@@ -269,7 +269,7 @@
                 jcr:lastModified="{Date}2017-07-19T21:09:13.842Z"
                 jcr:lastModifiedBy="etn-supriya"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link"
+                sling:resourceType="eaton/static-components/content/ttil"
                 testdata="primary-featureblock"
                 view="feature-block"/>
             <grid_2_column_contro
