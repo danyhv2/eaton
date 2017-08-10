@@ -22,6 +22,30 @@
     color: $color__white;
     background: transparent;
     padding: 0;
+
+    &:focus {
+      //-----------------------------------
+      // Selector styles - Form Placeholder
+      //-----------------------------------
+
+      // stylelint-disable selector-no-vendor-prefix
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: transparent;
+      }
+
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: transparent;
+      }
+
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: transparent;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        color: transparent;
+      }
+      // stylelint-enable
+    }
   }
 
   &__form-external {
