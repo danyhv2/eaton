@@ -70,7 +70,7 @@
                     jcr:lastModified="{Date}2017-08-02T15:36:07.141Z"
                     jcr:lastModifiedBy="etn-jorge"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/general/ctabutton"
+                    sling:resourceType="eaton/static-components/general/cta"
                     view="default"/>
             </featured_topic>
         </par>
