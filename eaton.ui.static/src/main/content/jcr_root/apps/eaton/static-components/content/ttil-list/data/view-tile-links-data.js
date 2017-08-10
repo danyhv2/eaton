@@ -69,7 +69,7 @@ use(function () {
                     icon: '/content/dam/eaton/images/resource.png'
                 },
                 {
-                    title: 'Machine Bulding',
+                    title: 'Machine',
                     link: 'http://www.eaton.com',
                     image: '',
                     icon: '/content/dam/eaton/images/resource.png'
@@ -110,7 +110,7 @@ use(function () {
                               icon: ''
                           },
                           {
-                              title: 'Machine Bulding',
+                              title: 'Machine',
                               link: 'http://www.eaton.com',
                               image: '/content/dam/eaton/images/company-insight.png',
                               icon: ''
