@@ -23,7 +23,7 @@
                 jcr:lastModified="{Date}2017-07-19T22:39:11.967Z"
                 jcr:lastModifiedBy="etn-daniela"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link-list"
+                sling:resourceType="eaton/static-components/content/ttil-list"
                 view="landing-hero"/>
             <title_text_image_lin_1654756550
                 jcr:created="{Date}2017-07-24T17:18:22.413Z"
@@ -31,7 +31,7 @@
                 jcr:lastModified="{Date}2017-07-24T17:18:31.411Z"
                 jcr:lastModifiedBy="etn-jorge"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/title-text-image-link-list"
+                sling:resourceType="eaton/static-components/content/ttil-list"
                 showCta="true"
                 showSeparator="true"
                 view="landing-hero"/>
