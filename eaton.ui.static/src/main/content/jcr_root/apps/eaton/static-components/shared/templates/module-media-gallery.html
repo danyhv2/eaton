@@ -50,15 +50,17 @@
 
           <!--*/ Slide Preview Arrows */-->
           <sly data-sly-test="${data.items.length > 1}">
-            <button class="module-media-gallery__prev-arrow module-media-gallery__arrows button--reset">
-              <span class="sr-only">${ 'Previous' @ i18n }</span>
-              <i class="icon icon-chevron-left" aria-hidden="true"></i>
-            </button>
+            <div class="module-media-gallery__slide-arrows-container embed-responsive-16by9">
+              <button class="module-media-gallery__prev-arrow module-media-gallery__arrows button--reset">
+                <span class="sr-only">${ 'Previous' @ i18n }</span>
+                <i class="icon icon-chevron-left" aria-hidden="true"></i>
+              </button>
 
-            <button class="module-media-gallery__next-arrow module-media-gallery__arrows button--reset">
-              <span class="sr-only">${ 'Next' @ i18n }</span>
-              <i class="icon icon-chevron-right" aria-hidden="true"></i>
-            </button>
+              <button class="module-media-gallery__next-arrow module-media-gallery__arrows button--reset">
+                <span class="sr-only">${ 'Next' @ i18n }</span>
+                <i class="icon icon-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
           </sly>
         </div>
 
