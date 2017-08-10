@@ -17,26 +17,8 @@ App.mediaGallery = function () {
    * Initialize Media Gallery
    */
   const init = () => {
-    let activeSlideImage = '';
     initializeSlideCarousel();
     initializeThumbnailCarousel();
-
-    // On Carousel Init
-    $slideContainer.find('.module-media-gallery__arrows').css('top', $slideItems.eq(0).find('.module-media-gallery__image-wrapper').height() / 2 - 30 );
-
-    // Before SLide Change
-    $slideCarousel.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-      activeSlideImage = $slideItems.eq(nextSlide).find('.module-media-gallery__image-wrapper');
-      $slideContainer.find('.module-media-gallery__arrows').css('top', (activeSlideImage.height() / 2 - 30));
-    });
-
-    // Bind the thumbnail carousel to the preview carousel
-    $thumbnailItems.on('click', navigateSlideCarousel);
-
-    // Determine the active thumbnail item on initialization
-    $thumbnailCarousel.on('init', function(event, slick) {
-      $thumbnailCarousel.find('[data-slick-index="0"]').addClass('active');
-    });
   };
 
   /**
@@ -58,6 +40,9 @@ App.mediaGallery = function () {
    * Configure Slick Carousel - Main Slide Container
    */
   const initializeSlideCarousel = () => {
+
+    let activeSlideImage = '';
+
     $slideCarousel.slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -69,6 +54,16 @@ App.mediaGallery = function () {
       prevArrow: $slideContainer.find('.module-media-gallery__prev-arrow'),
       nextArrow: $slideContainer.find('.module-media-gallery__next-arrow')
     });
+
+    // On Carousel Init
+    $slideContainer.find('.module-media-gallery__arrows').css('top', $slideItems.eq(0).find('.module-media-gallery__image-wrapper').height() / 2 - 30 );
+
+    // Before SLide Change
+    $slideCarousel.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+      activeSlideImage = $slideItems.eq(nextSlide).find('.module-media-gallery__image-wrapper');
+      $slideContainer.find('.module-media-gallery__arrows').css('top', (activeSlideImage.height() / 2 - 30));
+    });
+
   };
 
   /**
@@ -86,6 +81,14 @@ App.mediaGallery = function () {
       prevArrow: $thumbnailContainer.find('.module-media-gallery__prev-arrow'),
       nextArrow: $thumbnailContainer.find('.module-media-gallery__next-arrow')
         // asNavFor: '.module-media-gallery__slide-list'
+    });
+
+    // Bind the thumbnail carousel to the preview carousel
+    $thumbnailItems.on('click', navigateSlideCarousel);
+
+    // Determine the active thumbnail item on initialization
+    $thumbnailCarousel.on('init', function(event, slick) {
+      $thumbnailCarousel.find('[data-slick-index="0"]').addClass('active');
     });
   };
 
