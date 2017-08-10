@@ -51,8 +51,8 @@ use(function () {
         "isVideo": false,
         "downloadEnabled": true,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
+          "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
           "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
           "download": "/content/dam/eaton/images/products/product-1-thumbnail.png"
@@ -64,8 +64,8 @@ use(function () {
         "isVideo": false,
         "downloadEnabled": false,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
+          "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/product-2-thumbnail.png",
           "preview": "/content/dam/eaton/images/products/product-2-thumbnail.png",
           "download": "/content/dam/eaton/images/products/product-2-thumbnail.png"
@@ -77,8 +77,8 @@ use(function () {
         "isVideo": false,
         "downloadEnabled": false,
         "zoomEnabled": false,
-        "imageAlt": "Image Alt Text",
         "images": {
+          "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/product-3-thumbnail.png",
           "preview": "/content/dam/eaton/images/products/product-3-thumbnail.png",
           "download": "/content/dam/eaton/images/products/product-3-thumbnail.png"
@@ -90,8 +90,8 @@ use(function () {
         "isVideo": false,
         "downloadEnabled": true,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
+          "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/product-4-thumbnail.png",
           "preview": "/content/dam/eaton/images/products/product-4-thumbnail.png",
           "download": "/content/dam/eaton/images/products/product-4-thumbnail.png"
@@ -103,8 +103,8 @@ use(function () {
         "isVideo": false,
         "downloadEnabled": true,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
+          "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/product-5-thumbnail.png",
           "preview": "/content/dam/eaton/images/products/product-5-thumbnail.png",
           "download": "/content/dam/eaton/images/products/product-5-thumbnail.png"
@@ -116,8 +116,8 @@ use(function () {
         "isVideo": false,
         "downloadEnabled": true,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
+          "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/product-6-thumbnail.png",
           "preview": "/content/dam/eaton/images/products/product-6-thumbnail.png",
           "download": "/content/dam/eaton/images/products/product-6-thumbnail.png"
@@ -129,8 +129,8 @@ use(function () {
         "isVideo": false,
         "downloadEnabled": true,
         "zoomEnabled": true,
-        "imageAlt": "Image Alt Text",
         "images": {
+          "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/product-7-thumbnail.png",
           "preview": "/content/dam/eaton/images/products/product-7-thumbnail.png",
           "download": "/content/dam/eaton/images/products/product-7-thumbnail.png"

@@ -8,18 +8,6 @@
 .module-media-gallery {
 
   //-----------------------------------
-  // Gallery Headline & Description
-  //-----------------------------------
-  &__text,
-  &__description {
-    margin-bottom: ($spacing__md / 2);
-  }
-
-  &__headline {
-    margin-bottom: $spacing__sm;
-  }
-
-  //-----------------------------------
   // Slide Container
   //-----------------------------------
   &__slide-container {

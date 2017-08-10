@@ -30,6 +30,7 @@ App.mediaGallery = function () {
       dots: false,
       adaptiveHeight: true,
       accessibility: true,
+      lazyLoad: 'ondemand',
       prevArrow: $slideContainer.find('.module-media-gallery__prev-arrow'),
       nextArrow: $slideContainer.find('.module-media-gallery__next-arrow')
     });
