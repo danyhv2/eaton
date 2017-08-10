@@ -32,7 +32,7 @@
                 </div>
 
                 <!--*/ Slide Item - Title & Description */-->
-                <div class="module-media-gallery__slide-info" data-sly-test="${item.title} || ${item.text}">
+                <div class="module-media-gallery__slide-info" data-sly-test="${item.title || item.text}">
                     <h4 data-sly-test="${item.title}" class="module-media-gallery__slide-title b-heading-h5">${item.title}</h4>
                     <p data-sly-test="${item.text}" class="module-media-gallery__slide-text b-body-copy">${item.text}</p>
                 </div>
