@@ -408,7 +408,41 @@ use(function () {
 	        }
 	      ]
 	    }
-  } else {
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-4")) {
+	        
+	  data.view = {
+	      eyebrow: 'Downloads & Related',
+	      links: [
+	         {  	
+	        	title: 'Download High Resoution Image',
+		        url: '#link-1',
+		        target: '_self',
+                external_link: false,
+                document_size: 'PDF 15MB',
+                document_download: 'http://www.eaton.com'	
+		        	
+	         }
+	      ]
+	    }
+		
+    } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-models-list")) {
+	        
+    	data.view = {
+	      eyebrow: '',
+	      links: [
+	         {	
+	        	title: 'SKU identification guide',
+		        url: '#link-1',
+		        target: '_self',
+                external_link: false,
+                document_size: 'PDF 4MB',
+                document_download: 'http://www.eaton.com'
+	         }
+	      ]
+	    }	
+		    
+    } else {
+    	
     data.view = {
       eyebrow: 'Link List eyebrow',
       links: [
