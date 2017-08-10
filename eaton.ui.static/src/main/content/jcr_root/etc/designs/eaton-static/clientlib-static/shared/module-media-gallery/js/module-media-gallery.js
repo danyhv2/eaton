@@ -23,11 +23,12 @@ App.mediaGallery = function () {
 
   var componentClass = '.module-media-gallery';
   var $componentEl = $(componentClass);
+
   var $slideContainer = $componentEl.find('.module-media-gallery__slide-container');
   var $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
+
   var $thumbnailContainer = $componentEl.find('.module-media-gallery__thumbnail-container');
   var $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
-  var $slideItems = $slideContainer.find('.module-media-gallery__slide-item');
   var $thumbnailItems = $thumbnailContainer.find('.module-media-gallery__thumbnail-item');
 
   /**

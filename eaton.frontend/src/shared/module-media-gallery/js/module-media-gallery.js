@@ -6,11 +6,12 @@ App.mediaGallery = function () {
 
   const componentClass = '.module-media-gallery';
   const $componentEl = $(componentClass);
+
   const $slideContainer = $componentEl.find('.module-media-gallery__slide-container');
   const $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
+
   const $thumbnailContainer = $componentEl.find('.module-media-gallery__thumbnail-container');
   const $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
-  const $slideItems = $slideContainer.find('.module-media-gallery__slide-item');
   const $thumbnailItems = $thumbnailContainer.find('.module-media-gallery__thumbnail-item');
 
   /**
