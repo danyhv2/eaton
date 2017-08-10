@@ -26,21 +26,21 @@ use(function () {
         icon: 'doc-text',
         title: 'Overview',
         href: '/content/eaton-static/us/en/qa-templates/t7-product-family-template-overview-tab.html',
-        target: '_blank',
+        target: '_self',
         selected: true
       },
       {
         icon: 'tiles',
         title: 'Models',
         href: '/content/eaton-static/us/en/qa-templates/t7-product-family-template-models-tab.html',
-        target: '_blank',
+        target: '_self',
         selected: false
       },
       {
         icon: 'doc-download',
         title: 'Resources',
         href: '/content/eaton-static/us/en/qa-templates/t7-product-family-template-resources-tab.html',
-        target: '_blank',
+        target: '_self',
         selected: false
       }
     ],
@@ -93,7 +93,7 @@ use(function () {
     data.tabs[1].selected = false;
     data.tabs[2].selected = true;
   }
-  
+
   if ((typeof(testdata) != "undefined") && (testdata == "tab-models-list")) {
     data.tabs[1].icon = 'list-items';
     data.tabs[1].title = 'Specifications';
