@@ -25,12 +25,9 @@ App.mediaGallery = function () {
   var $componentEl = $(componentClass);
 
   // Cached DOM Elements
-  var $slideContainer = $componentEl.find('.module-media-gallery__slide-container');
   var $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
-
-  var $thumbnailContainer = $componentEl.find('.module-media-gallery__thumbnail-container');
   var $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
-  var $thumbnailItems = $thumbnailContainer.find('.module-media-gallery__thumbnail-item');
+  var $thumbnailItems = $componentEl.find('.module-media-gallery__thumbnail-item');
 
   /**
    * Initialize Media Gallery
@@ -48,37 +45,42 @@ App.mediaGallery = function () {
 
     var $activeSlide = $(event.currentTarget);
     var activeSlideIndex = $activeSlide.data('slick-index');
+    var $activeMediaGallery = $(event.currentTarget).closest(componentClass);
 
     // Add Visual "active" state only to the clicked thumbnail
-    $thumbnailItems.removeClass('active');
+    $activeMediaGallery.find('.module-media-gallery__thumbnail-item').removeClass('active');
     $activeSlide.addClass('active');
 
     // Remove visual focus state
     $activeSlide.find('button').blur();
-    $slideCarousel.slick('slickGoTo', activeSlideIndex, true);
+    $activeMediaGallery.find('.module-media-gallery__slide-list').slick('slickGoTo', activeSlideIndex, true);
   };
 
   /**
    * Configure Slick Carousel - Main Slide Container
    */
   var initializeSlideCarousel = function initializeSlideCarousel() {
-    $slideCarousel.slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: false,
-      dots: false,
-      adaptiveHeight: true,
-      accessibility: true,
-      lazyLoad: 'ondemand',
-      prevArrow: $slideContainer.find('.module-media-gallery__prev-arrow'),
-      nextArrow: $slideContainer.find('.module-media-gallery__next-arrow'),
-      responsive: [{
-        breakpoint: 991,
-        settings: {
-          dots: true,
-          dotsClass: 'module-media-gallery__dots'
-        }
-      }]
+
+    $.each($slideCarousel, function (index, item) {
+
+      $(item).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: false,
+        adaptiveHeight: true,
+        accessibility: true,
+        lazyLoad: 'ondemand',
+        prevArrow: $(item).closest(componentClass).find('.module-media-gallery__slide-container .module-media-gallery__prev-arrow'),
+        nextArrow: $(item).closest(componentClass).find('.module-media-gallery__slide-container .module-media-gallery__next-arrow'),
+        responsive: [{
+          breakpoint: 991,
+          settings: {
+            dots: true,
+            dotsClass: 'module-media-gallery__dots'
+          }
+        }]
+      });
     });
   };
 
@@ -90,7 +92,7 @@ App.mediaGallery = function () {
     // If the Parent componet is Product card, show 5 thumbnails, else show 4 as default
     var numSlides = $componentEl.closest('.eaton-product-detail-card').length > 0 ? 5 : 4;
 
-    // Subscribe Event Listeners before the Carousel is initilized
+    // Subscribe Event Listeners before the Carousel is initialized
     //--------------
     // Bind the thumbnail carousel to the preview carousel
     $thumbnailItems.on('click', navigateSlideCarousel);
@@ -102,14 +104,16 @@ App.mediaGallery = function () {
 
     // Init SlickJS
     //--------------
-    $thumbnailCarousel.slick({
-      slidesToShow: numSlides,
-      slidesToScroll: numSlides,
-      autoplay: false,
-      dots: false,
-      accessibility: true,
-      prevArrow: $thumbnailContainer.find('.module-media-gallery__prev-arrow'),
-      nextArrow: $thumbnailContainer.find('.module-media-gallery__next-arrow')
+    $.each($thumbnailCarousel, function (index, item) {
+      $(item).slick({
+        slidesToShow: numSlides,
+        slidesToScroll: numSlides,
+        autoplay: false,
+        dots: false,
+        accessibility: true,
+        prevArrow: $(item).closest(componentClass).find('.module-media-gallery__thumbnail-container .module-media-gallery__prev-arrow'),
+        nextArrow: $(item).closest(componentClass).find('.module-media-gallery__thumbnail-container .module-media-gallery__next-arrow')
+      });
     });
   };
 
