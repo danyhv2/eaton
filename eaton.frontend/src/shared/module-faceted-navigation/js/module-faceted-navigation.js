@@ -169,7 +169,7 @@ App.facets = (function() {
         $('.search-results').css({position: 'inherit','z-index': '1'});
       });
 
-      $('.close-facets-mobile').on('click', function(e) {
+      $('.close-facets-mobile, .done-facets-mobile').on('click', function(e) {
         e.preventDefault();
         $('.faceted-navigation__mobile-container').removeClass('enabled');
         $('.faceted-navigation__mobile-container .faceted-navigation').removeClass('visible').addClass('hidden');

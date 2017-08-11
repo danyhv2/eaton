@@ -109,6 +109,13 @@
 
 .faceted-navigation h4 { font-size: 26px; font-weight: bold; margin-bottom: 12px; }
 
-@media screen and (max-width: 991px) { .faceted-navigation { padding: 60px 30px; } }
+@media screen and (max-width: 991px) { .faceted-navigation { padding: 60px 30px; }
+  .faceted-navigation .faceted-navigation__facet-value { padding-bottom: 0 !important; }
+  .faceted-navigation .faceted-navigation__view-more-values { padding-top: 8px; }
+  .faceted-navigation .faceted-navigation__header { margin: 9px 0; }
+  .faceted-navigation .faceted-navigation__mobile-container { margin: 30px 0 30px; }
+  .faceted-navigation .done-facets-mobile { position: fixed; bottom: 0; left: 0; width: 100%; } }
 
 .facets-open { position: fixed; width: 100%; overflow: hidden; }
+
+@media screen and (max-width: 991px) { .faceted-navigation__mobile-container .faceted-navigation { margin-bottom: 140px; } }
