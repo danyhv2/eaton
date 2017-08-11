@@ -12,9 +12,9 @@
 
 .eaton-tabbed-menu-list__item a { display: block; padding-bottom: 30px; }
 
-.eaton-tabbed-menu-list__item > a { color: #000; }
+.eaton-tabbed-menu-list__item > a { color: #333F48; }
 
-.eaton-tabbed-menu-list__item > a span { color: #005EB8; }
+.eaton-tabbed-menu-list__item > a span { color: #005EB8; font-size: 20px; }
 
 .eaton-tabbed-menu-list__item > a.collapsed { color: #005EB8; }
 

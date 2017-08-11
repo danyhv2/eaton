@@ -35,7 +35,6 @@ App.carousel = function () {
     $carousel.slick({
       slidesToShow: 3,
       slidesToScroll: 3,
-      autoplay: true,
       dots: true,
       dotsClass: 'module-related-products__dots',
       prevArrow: $('.module-related-products__prev-arrow'),
