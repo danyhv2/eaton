@@ -15,6 +15,7 @@ App.mediaGallery = function () {
   const $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
   const $thumbnailItems = $thumbnailContainer.find('.module-media-gallery__thumbnail-item');
 
+
   /**
    * Initialize Media Gallery
    */
@@ -41,6 +42,7 @@ App.mediaGallery = function () {
     $activeSlide.find('button').blur();
     $slideCarousel.slick('slickGoTo', activeSlideIndex, true);
   };
+
 
   /**
    * Configure Slick Carousel - Main Slide Container
@@ -72,7 +74,24 @@ App.mediaGallery = function () {
    * Configure Slick Carousel - Thumbnail Container
    */
   const initializeThumbnailCarousel = () => {
-    let numSlides = ($componentEl.closest('.eaton-product-detail-card').length > 0) ? 5 : 4;
+
+    // If the Parent componet is Product card, show 5 thumbnails, else show 4 as default
+    let numSlides = ($componentEl.closest('.eaton-product-detail-card').length > 0)
+      ? 5
+      : 4;
+
+    // Subscribe Event Listeners before the Carousel is initilized
+    //--------------
+    // Bind the thumbnail carousel to the preview carousel
+    $thumbnailItems.on('click', navigateSlideCarousel);
+
+    // Determine the active thumbnail item on initialization
+    $thumbnailCarousel.on('init', function(event, slick) {
+      $thumbnailCarousel.find('[data-slick-index="0"]').addClass('active');
+    });
+
+    // Init SlickJS
+    //--------------
     $thumbnailCarousel.slick({
       slidesToShow: numSlides,
       slidesToScroll: numSlides,
@@ -81,14 +100,6 @@ App.mediaGallery = function () {
       accessibility: true,
       prevArrow: $thumbnailContainer.find('.module-media-gallery__prev-arrow'),
       nextArrow: $thumbnailContainer.find('.module-media-gallery__next-arrow')
-    });
-
-    // Bind the thumbnail carousel to the preview carousel
-    $thumbnailItems.on('click', navigateSlideCarousel);
-
-    // Determine the active thumbnail item on initialization
-    $thumbnailCarousel.on('init', function(event, slick) {
-      $thumbnailCarousel.find('[data-slick-index="0"]').addClass('active');
     });
   };
 
