@@ -22,7 +22,6 @@ App.carousel = function () {
       $carousel.eq(i).slick({
         slidesToShow: $slides,
         slidesToScroll: $slides,
-        autoplay: true,
         dots: true,
         dotsClass: 'module-related-products__dots',
         prevArrow: $('.module-related-products__prev-arrow'),
