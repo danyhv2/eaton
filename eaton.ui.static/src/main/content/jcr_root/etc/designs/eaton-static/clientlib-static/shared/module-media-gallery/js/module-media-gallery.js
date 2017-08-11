@@ -45,14 +45,15 @@ App.mediaGallery = function () {
 
     var $activeSlide = $(event.currentTarget);
     var activeSlideIndex = $activeSlide.data('slick-index');
+    var $activeMediaGallery = $(event.currentTarget).closest(componentClass);
 
     // Add Visual "active" state only to the clicked thumbnail
-    $thumbnailItems.removeClass('active');
+    $activeMediaGallery.find('.module-media-gallery__thumbnail-item').removeClass('active');
     $activeSlide.addClass('active');
 
     // Remove visual focus state
     $activeSlide.find('button').blur();
-    $slideCarousel.slick('slickGoTo', activeSlideIndex, true);
+    $activeMediaGallery.find('.module-media-gallery__slide-list').slick('slickGoTo', activeSlideIndex, true);
   };
 
   /**
@@ -91,7 +92,7 @@ App.mediaGallery = function () {
     // If the Parent componet is Product card, show 5 thumbnails, else show 4 as default
     var numSlides = $componentEl.closest('.eaton-product-detail-card').length > 0 ? 5 : 4;
 
-    // Subscribe Event Listeners before the Carousel is initilized
+    // Subscribe Event Listeners before the Carousel is initialized
     //--------------
     // Bind the thumbnail carousel to the preview carousel
     $thumbnailItems.on('click', navigateSlideCarousel);
