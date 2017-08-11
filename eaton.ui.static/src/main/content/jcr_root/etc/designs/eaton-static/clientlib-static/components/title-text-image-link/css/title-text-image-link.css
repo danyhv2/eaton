@@ -35,11 +35,17 @@
 
 .feature-block-component__container--height { height: 665px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-@media screen and (max-width: 767px) { .feature-block-component__container--height { height: 750px; } }
+@media screen and (max-width: 767px) { .feature-block-component__container--height .feature-block-component__copy { padding-left: 30px; padding-right: 30px; } }
+
+.feature-block-component__container--height .feature-block-component__text { padding-left: 120px; padding-right: 40px; }
+
+@media screen and (max-width: 767px) { .feature-block-component__container--height .feature-block-component__text { padding: 0; } }
+
+@media screen and (max-width: 767px) { .feature-block-component__container--height { height: 900px; } }
 
 .feature-block-component__container--white { height: 500px; }
 
-@media screen and (max-width: 767px) { .feature-block-component__container--white { height: 750px; } }
+@media screen and (max-width: 767px) { .feature-block-component__container--white { height: 900px; } }
 
 .feature-block-component__copy { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -49,7 +55,7 @@
 
 .feature-block-component__link { display: block; }
 
-.feature-block-component__text { padding-left: 120px; padding-right: 40px; }
+.feature-block-component__text { padding-right: 120px; }
 
 .feature-block-component__description { padding-top: 30px; }
 
@@ -64,8 +70,8 @@
 .feature-block-component__cta { margin-top: 30px; }
 
 @media screen and (max-width: 767px) { .feature-block-component__container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 0; }
-  .feature-block-component__text { padding: 30px; }
-  .feature-block-component__copy { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; min-height: 380px; } }
+  .feature-block-component__text { padding-right: 0; }
+  .feature-block-component__copy { padding-top: 30px; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; min-height: 380px; } }
 
 @media screen and (min-width: 768px) and (max-width: 991px) { .feature-block-component__container { height: 400px; } }
 
