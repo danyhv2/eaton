@@ -7,6 +7,7 @@ App.mediaGallery = function () {
   const componentClass = '.module-media-gallery';
   const $componentEl = $(componentClass);
 
+  // Cached DOM Elements
   const $slideContainer = $componentEl.find('.module-media-gallery__slide-container');
   const $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
 
@@ -22,17 +23,22 @@ App.mediaGallery = function () {
     initializeThumbnailCarousel();
   };
 
+
   /**
    * Determine the position of the thumbnail item and slide to the corresponding item in slide carousel
    */
   const navigateSlideCarousel = (event) => {
     event.preventDefault();
 
-    const activeSlide = $(event.currentTarget);
-    const activeSlideIndex = activeSlide.data('slick-index');
+    const $activeSlide = $(event.currentTarget);
+    const activeSlideIndex = $activeSlide.data('slick-index');
 
+    // Add Visual "active" state only to the clicked thumbnail
     $thumbnailItems.removeClass('active');
-    activeSlide.addClass('active');
+    $activeSlide.addClass('active');
+
+    // Remove visual focus state
+    $activeSlide.find('button').blur();
     $slideCarousel.slick('slickGoTo', activeSlideIndex, true);
   };
 
