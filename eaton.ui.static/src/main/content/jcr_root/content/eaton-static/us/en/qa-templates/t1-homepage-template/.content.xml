@@ -327,6 +327,15 @@
                     testdata="homepage-categoryhighlight"
                     view="nofeaturedarticle"/>
             </category_highlight>
+            <icon_list
+                jcr:created="{Date}2017-08-03T12:32:20.612-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-03T12:32:28.563-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/icon-list"
+                testdata="t1-homepage-template"
+                view="top-list-with-icon"/>
         </par>
         <eaton-footer jcr:primaryType="nt:unstructured">
             <footer-logo
