@@ -129,7 +129,7 @@
 
 .category-hero-eye-brown a:hover, .category-hero-eye-brown a:active, .category-hero-eye-brown a:visited, .category-hero-eye-brown a:focus { color: #FFF; text-decoration: none; }
 
-.category-hero-body-copy { color: #FFF; font-size: 1.2em; margin-top: 30px; }
+.category-hero-body-copy { color: #FFF; font-size: 1.2em; margin-top: 30px; font-family: Arial, "Arial", sans-serif; }
 
 .category-hero__header-title h2 { font-size: 3.5em; margin-top: 30px; margin-bottom: 30px; }
 
