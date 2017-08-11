@@ -1,0 +1,15 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Media Gallery Component</div>
+</sly>
+
+
+<sly data-sly-use.viewData="${ 'data/media-gallery-data.js' @testdata=properties.testdata }">
+  <div class="eaton-media-gallery">
+
+    <!--/* M-48: Media Gallery */-->
+    <sly data-sly-use.tpl="../../shared/templates/module-media-gallery.html">
+      <sly data-sly-call="${ tpl.module @ data=viewData }"></sly>
+    </sly>
+
+  </div>
+</sly>

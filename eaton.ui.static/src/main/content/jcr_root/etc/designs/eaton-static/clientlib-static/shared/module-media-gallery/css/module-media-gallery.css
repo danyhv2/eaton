@@ -53,4 +53,4 @@
   .module-media-gallery__thumbnail-container .module-media-gallery__arrows .icon { font-size: 12px; }
   .module-media-gallery__thumbnail-item { position: relative; margin: 0 30px; padding-bottom: 10px; }
   .module-media-gallery__thumbnail-item.active::after { content: ''; position: absolute; height: 2px; width: 100%; background: #005EB8; bottom: 0; }
-  .module-media-gallery__thumbnail-aspect-ratio { margin: 0; border: 0; border-radius: 0; background: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; } }
+  .module-media-gallery__thumbnail-aspect-ratio { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: none; border-radius: 0; border: 0; margin: 0; width: 100%; } }

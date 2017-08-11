@@ -24,6 +24,7 @@ App.mediaGallery = function () {
   var componentClass = '.module-media-gallery';
   var $componentEl = $(componentClass);
 
+  // Cached DOM Elements
   var $slideContainer = $componentEl.find('.module-media-gallery__slide-container');
   var $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
 
@@ -45,11 +46,15 @@ App.mediaGallery = function () {
   var navigateSlideCarousel = function navigateSlideCarousel(event) {
     event.preventDefault();
 
-    var activeSlide = $(event.currentTarget);
-    var activeSlideIndex = activeSlide.data('slick-index');
+    var $activeSlide = $(event.currentTarget);
+    var activeSlideIndex = $activeSlide.data('slick-index');
 
+    // Add Visual "active" state only to the clicked thumbnail
     $thumbnailItems.removeClass('active');
-    activeSlide.addClass('active');
+    $activeSlide.addClass('active');
+
+    // Remove visual focus state
+    $activeSlide.find('button').blur();
     $slideCarousel.slick('slickGoTo', activeSlideIndex, true);
   };
 
@@ -81,7 +86,22 @@ App.mediaGallery = function () {
    * Configure Slick Carousel - Thumbnail Container
    */
   var initializeThumbnailCarousel = function initializeThumbnailCarousel() {
+
+    // If the Parent componet is Product card, show 5 thumbnails, else show 4 as default
     var numSlides = $componentEl.closest('.eaton-product-detail-card').length > 0 ? 5 : 4;
+
+    // Subscribe Event Listeners before the Carousel is initilized
+    //--------------
+    // Bind the thumbnail carousel to the preview carousel
+    $thumbnailItems.on('click', navigateSlideCarousel);
+
+    // Determine the active thumbnail item on initialization
+    $thumbnailCarousel.on('init', function (event, slick) {
+      $thumbnailCarousel.find('[data-slick-index="0"]').addClass('active');
+    });
+
+    // Init SlickJS
+    //--------------
     $thumbnailCarousel.slick({
       slidesToShow: numSlides,
       slidesToScroll: numSlides,
@@ -90,14 +110,6 @@ App.mediaGallery = function () {
       accessibility: true,
       prevArrow: $thumbnailContainer.find('.module-media-gallery__prev-arrow'),
       nextArrow: $thumbnailContainer.find('.module-media-gallery__next-arrow')
-    });
-
-    // Bind the thumbnail carousel to the preview carousel
-    $thumbnailItems.on('click', navigateSlideCarousel);
-
-    // Determine the active thumbnail item on initialization
-    $thumbnailCarousel.on('init', function (event, slick) {
-      $thumbnailCarousel.find('[data-slick-index="0"]').addClass('active');
     });
   };
 

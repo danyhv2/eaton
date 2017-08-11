@@ -178,7 +178,7 @@
       display: none;
     }
   }
-  
+
 
   //-----------------------------------
   // Desktop Breakpoint: >992 px
@@ -233,11 +233,12 @@
 
     // Thumbnail buttons
     &__thumbnail-aspect-ratio {
-      margin: 0;
-      border: 0;
-      border-radius: 0;
-      background: none;
       appearance: none;
+      background: none;
+      border-radius: 0;
+      border: 0;
+      margin: 0;
+      width: 100%;
     }
   }
 }

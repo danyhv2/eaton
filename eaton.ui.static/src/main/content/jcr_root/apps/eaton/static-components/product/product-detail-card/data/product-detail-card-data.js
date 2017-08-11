@@ -11,9 +11,9 @@ use(function () {
     "title": "9PX1500RTN",
     // TODO: Review if this component uses image-renditions
     "image": {
-      "mobile": "/content/dam/eaton/images/product.png",
-      "tablet": "/content/dam/eaton/images/product.png",
-      "desktop": "/content/dam/eaton/images/product.png",
+      "mobile": "/content/dam/eaton/images/products/media-gallery-products-01-preview.jpg",
+      "tablet": "/content/dam/eaton/images/products/media-gallery-products-01-preview.jpg",
+      "desktop": "/content/dam/eaton/images/products/media-gallery-products-01-preview.jpg",
       "altText": "Product 9PX1500RTN",
     },
     "description": "Reliable. versatile. Powerful. Efficient. With double-conversion topology for constant power conditioning and up to 93% efficiency, the Eaton 9PX1500RTN supports your overall goal of bussiness continuity. It's built for scalable deployment, features a graphical LCD for local status updates and integrates with virtualized environments",
@@ -57,10 +57,10 @@ use(function () {
         "zoomEnabled": true,
         "images": {
           "altText": "Image Alt Text",
-          "thumbnail": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "zoom": "",
-          "download": "/content/dam/eaton/images/products/product-1-thumbnail.png"
+          "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-01-thumb.jpg",
+          "preview": "/content/dam/eaton/images/products/media-gallery-products-01-preview.jpg",
+          "zoom": "/TBD.ext",
+          "download": "/content/dam/eaton/images/products/media-gallery-products-01-download.jpg"
         }
       },
       {
@@ -71,10 +71,10 @@ use(function () {
         "zoomEnabled": true,
         "images": {
           "altText": "Image Alt Text",
-          "thumbnail": "/content/dam/eaton/images/products/product-2-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-2-thumbnail.png",
-          "zoom": "",
-          "download": "/content/dam/eaton/images/products/product-2-thumbnail.png"
+          "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-02-thumb.jpg",
+          "preview": "/content/dam/eaton/images/products/media-gallery-products-02-preview.jpg",
+          "zoom": "/TBD.ext",
+          "download": "/content/dam/eaton/images/products/media-gallery-products-02-download.jpg"
         }
       },
       {
@@ -85,10 +85,10 @@ use(function () {
         "zoomEnabled": false,
         "images": {
           "altText": "Image Alt Text",
-          "thumbnail": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-          "zoom": "",
-          "download": "/content/dam/eaton/images/products/product-3-thumbnail.png"
+          "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-03-thumb.jpg",
+          "preview": "/content/dam/eaton/images/products/media-gallery-products-03-preview.jpg",
+          "zoom": "/TBD.ext",
+          "download": "/content/dam/eaton/images/products/media-gallery-products-03-download.jpg"
         }
       },
       {
@@ -99,10 +99,10 @@ use(function () {
         "zoomEnabled": true,
         "images": {
           "altText": "Image Alt Text",
-          "thumbnail": "/content/dam/eaton/images/products/product-4-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-4-thumbnail.png",
-          "zoom": "",
-          "download": "/content/dam/eaton/images/products/product-4-thumbnail.png"
+          "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-04-thumb.jpg",
+          "preview": "/content/dam/eaton/images/products/media-gallery-products-04-preview.jpg",
+          "zoom": "/TBD.ext",
+          "download": "/content/dam/eaton/images/products/media-gallery-products-04-download.jpg"
         }
       },
       {
@@ -113,10 +113,10 @@ use(function () {
         "zoomEnabled": true,
         "images": {
           "altText": "Image Alt Text",
-          "thumbnail": "/content/dam/eaton/images/products/product-5-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-5-thumbnail.png",
-          "zoom": "",
-          "download": "/content/dam/eaton/images/products/product-5-thumbnail.png"
+          "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-05-thumb.jpg",
+          "preview": "/content/dam/eaton/images/products/media-gallery-products-05-preview.jpg",
+          "zoom": "/TBD.ext",
+          "download": "/content/dam/eaton/images/products/media-gallery-products-05-download.jpg"
         }
       },
       {
@@ -127,24 +127,10 @@ use(function () {
         "zoomEnabled": true,
         "images": {
           "altText": "Image Alt Text",
-          "thumbnail": "/content/dam/eaton/images/products/product-6-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-6-thumbnail.png",
-          "zoom": "",
-          "download": "/content/dam/eaton/images/products/product-6-thumbnail.png"
-        }
-      },
-      {
-        "title": "Eaton 9px Family - Item 7",
-        "text": "Eaton FlexPDU& HotSwap MBP",
-        "isVideo": false, // isVideo is currenly not supported. This propery is just a placeholder for future development
-        "downloadEnabled": true,
-        "zoomEnabled": true,
-        "images": {
-          "altText": "Image Alt Text",
-          "thumbnail": "/content/dam/eaton/images/products/product-7-thumbnail.png",
-          "preview": "/content/dam/eaton/images/products/product-7-thumbnail.png",
-          "zoom": "",
-          "download": "/content/dam/eaton/images/products/product-7-thumbnail.png"
+          "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-06-thumb.jpg",
+          "preview": "/content/dam/eaton/images/products/media-gallery-products-06-preview.jpg",
+          "zoom": "/TBD.ext",
+          "download": "/content/dam/eaton/images/products/media-gallery-products-06-download.jpg"
         }
       }
     ]
@@ -224,13 +210,6 @@ use(function () {
     data.relatedProducts.items = [];
   }
 
-  if ((typeof(testdata) != "undefined") && (testdata == "related-products-three-images")) {
-    data.relatedProducts.items = [];
-  }
-
-  if ((typeof(testdata) != "undefined") && (testdata == "related-products-four-images")) {
-    data.relatedProducts.items = [];
-  }
 
   return data;
 
