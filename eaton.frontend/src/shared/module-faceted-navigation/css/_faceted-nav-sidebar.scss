@@ -154,8 +154,6 @@
     padding: 60px 30px;
 
 
-
-
     .faceted-navigation__facet-value {
       padding-bottom: 0 !important;
     }
@@ -192,6 +190,8 @@
   // MediaQuery: >992px
   //-----------------------------------
   @include media-desktop-and-up {
+
+    .done-facets-mobile { display: none; }
 
   }
 
