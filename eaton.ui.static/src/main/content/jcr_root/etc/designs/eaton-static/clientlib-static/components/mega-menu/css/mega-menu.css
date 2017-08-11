@@ -17,7 +17,7 @@
 
 .mega-menu__category { background: #5B6770; }
 
-@media screen and (max-width: 991px) { .mega-menu { position: fixed; top: 56px; bottom: 0; background: #5B6770; overflow: auto; -webkit-transform: translate(100%, 0); transform: translate(100%, 0); }
+@media screen and (max-width: 991px) { .mega-menu { position: fixed; top: 52px; bottom: 0; background: #5B6770; overflow: auto; -webkit-transform: translate(100%, 0); transform: translate(100%, 0); }
   .mega-menu__row { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .mega-menu__row .mega-menu__col { display: none; }
   .mega-menu__row .mega-menu__col.mega-menu__col--flex { display: block; margin-bottom: 30px; }

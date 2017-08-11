@@ -20,11 +20,10 @@ $primary-nav-border: #EEF0F2;
 
   .row {
     display: flex;
+    position: relative;
   }
 
   &__links {
-    position: relative;
-    z-index: 1;
 
     .icon {
       font-size: 20px;
@@ -43,15 +42,17 @@ $primary-nav-border: #EEF0F2;
     }
 
     &__links {
-      justify-content: flex-end;
-      display: flex;
-      flex-grow: 1;
+      position: absolute;
+      right: 0;
+      bottom: -6px;
     }
 
     &__open-search,
     &__toggle-mobile-menu {
       display: inline-block;
       padding: ($spacing__sm / 2) + 2;
+      position: relative;
+      z-index: 1;
     }
 
     .icon-close {
@@ -87,6 +88,9 @@ $primary-nav-border: #EEF0F2;
     }
 
     &__links {
+      position: relative;
+      z-index: 1;
+
       i {
         top: -5px;
       }
@@ -96,7 +100,8 @@ $primary-nav-border: #EEF0F2;
       display: flex;
       height: 90px;
       padding: 30px; // Equidistant Spacing between menu & search icon
-      margin-top: 10px;
+      top: 10px;
+      position: relative;
 
       .icon-close {
         display: none;

@@ -21,7 +21,7 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     .eaton-logo {
-      margin: 10px 15px; // 4px for bottom shadow - height
+      padding: 10px 15px; // 4px for bottom shadow - height
 
       &__link {
         width: 100px;
@@ -35,7 +35,7 @@
   //-----------------------------------
   @include media-desktop-and-up {
     .eaton-logo {
-      margin: 20px 15px 16px; // 4px for bottom shadow - height
+      padding: 20px 15px 16px; // 4px for bottom shadow - height
     }
 
     &--fixed {
