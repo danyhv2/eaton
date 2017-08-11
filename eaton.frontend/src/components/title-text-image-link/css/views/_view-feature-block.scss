@@ -8,6 +8,13 @@
       height: 665px;
       display: flex;
 
+      .feature-block-component__copy {
+
+        @include media-mobile-only {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      }
       @include media-mobile-only {
         height: 750px;
       }
@@ -17,7 +24,7 @@
       height: 500px;
 
       @include media-mobile-only {
-        height: 750px;
+        height: 900px;
       }
     }
 
@@ -46,8 +53,7 @@
   }
 
   &__text {
-    padding-left: 120px;
-    padding-right: 40px;
+    padding-right: 120px;
   }
 
   &__description {
@@ -84,10 +90,11 @@
     }
 
     &__text {
-      padding: 30px;
+      padding-right: 0;
     }
 
     &__copy {
+      padding-top: 30px;
       order: 1;
       min-height: 380px;
     }
