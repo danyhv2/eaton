@@ -161,23 +161,31 @@ App.facets = function () {
 
       $('.faceted-navigation__mobile-container .open-facets-mobile').on('click', function (e) {
         e.preventDefault();
-        $("<div class='overlay-mask hidden'></div>").appendTo($('body'));
+        $('body').addClass('facets-open');
+        // $('.faceted-navigation__mobile-container').addClass('facets-navigation-mobile-open');
+
+        // $("<div class='overlay-mask hidden'></div>").appendTo($('body'));
         $('.faceted-navigation__mobile-container').addClass('enabled');
         $('.faceted-navigation__mobile-container .faceted-navigation').removeClass('hidden').addClass('visible');
         $('.faceted-navigation__mobile-container .faceted-navigation-header').addClass('hidden');
         $('.mobile-header').removeClass('hidden');
         $(this).addClass('hidden');
-        $('.overlay-mask').css('height', winHeight).toggleClass('hidden');
+        // $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
         $('.search-results').css({ position: 'inherit', 'z-index': '1' });
       });
 
       $('.close-facets-mobile').on('click', function (e) {
+        e.preventDefault();
         $('.faceted-navigation__mobile-container').removeClass('enabled');
         $('.faceted-navigation__mobile-container .faceted-navigation').removeClass('visible').addClass('hidden');
         $('.faceted-navigation-header').removeClass('hidden');
         $('.faceted-navigation__mobile-container .b-button').removeClass('hidden');
-        $('.overlay-mask').css('height', winHeight).toggleClass('hidden');
+        // $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
         $('.search-results').css('position', 'relative');
+
+        $('body').removeClass('facets-open');
+        // $('.faceted-navigation__mobile-container').removeClass('facets-navigation-mobile-open');
+
       });
 
       $('.faceted-navigation__mobile-container .faceted-navigation__header').on('click', function (e) {
