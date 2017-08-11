@@ -25,7 +25,8 @@ $primary-nav-border: #EEF0F2;
   &__links {
     position: relative;
     z-index: 1;
-    i {
+
+    .icon {
       font-size: 20px;
       color: $color__primary-blue;
       position: relative;

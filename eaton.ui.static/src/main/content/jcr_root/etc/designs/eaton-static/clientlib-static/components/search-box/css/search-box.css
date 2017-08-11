@@ -16,11 +16,23 @@
 
 .eaton-search--default { padding: 30px 0 24px; background: #005EB8; }
 
-.eaton-search--default .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; border-bottom: 1px solid #FFF; margin-bottom: 0; }
+.eaton-search--default .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; border-bottom: 1px solid #FFF; margin-bottom: 0; position: relative; }
 
 .eaton-search--default .icon-search { top: 2px; position: relative; }
 
 .eaton-search--default__form-input { color: #FFF; background: transparent; padding: 0; }
+
+.eaton-search--default__form-input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: transparent; }
+
+.eaton-search--default__form-input:focus::-moz-placeholder { /* Firefox 19+ */ color: transparent; }
+
+.eaton-search--default__form-input:focus:-ms-input-placeholder { /* IE 10+ */ color: transparent; }
+
+.eaton-search--default__form-input:focus:-moz-placeholder { /* Firefox 18- */ color: transparent; }
+
+.eaton-search--default__form-input:focus ~ .eaton-search--default__form-mobile-label { display: none; }
+
+.eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; padding-top: 8px; left: 0; top: 0; }
 
 .eaton-search--default__form-external { color: #FFF; -ms-flex-item-align: center; align-self: center; border-right: 1px solid #FFF; padding-right: 20px; }
 
@@ -51,7 +63,11 @@
 @media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1em; padding-right: 20px; }
   .eaton-search--default__form-submit { padding-right: 0; }
   .eaton-search--default .icon-search { font-size: 1.25em; }
-  .search-open .eaton-search--default { height: 100%; overflow-y: auto; } }
+  .search-open .eaton-search--default { height: 100%; overflow-y: auto; }
+  .eaton-search--default ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: transparent; }
+  .eaton-search--default ::-moz-placeholder { /* Firefox 19+ */ color: transparent; }
+  .eaton-search--default :-ms-input-placeholder { /* IE 10+ */ color: transparent; }
+  .eaton-search--default :-moz-placeholder { /* Firefox 18- */ color: transparent; } }
 
 @media screen and (min-width: 992px) { .eaton-search--default__form-input, .eaton-search--default .icon-search { font-size: 1.5em; left: 10px; }
   .eaton-header--fixed .eaton-search--default__form-input, .eaton-header--fixed .eaton-search--default .icon-search { left: 0; }

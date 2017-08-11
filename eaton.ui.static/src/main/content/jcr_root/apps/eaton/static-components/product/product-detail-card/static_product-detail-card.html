@@ -15,13 +15,12 @@
 
     <!--/* M-48: Media Gallery */-->
     <sly data-sly-use.tpl="../../shared/templates/module-media-gallery.html">
-      <!-- <sly data-sly-call="${ tpl.module @ data=viewData.mediaGallery }"></sly> -->
-      <div class="container text-center" style="padding: 160px 0">M-48: Media Gallery</div>
+      <sly data-sly-call="${ tpl.module @ data=viewData.mediaGallery }"></sly>
     </sly>
 
 
-
     <!--/* M-41: Related Products */-->
+    <!--/* NOTE: It should behave as an Upsell Component: Carousel starts after 3 items */-->
     <div class="eaton-product-detail-card__related-products">
       <div class="container">
         <sly data-sly-use.tpl="../../shared/templates/module-related-products.html">
