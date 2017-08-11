@@ -34,7 +34,7 @@
 
 .faceted-navigation-header .styled-dropdown img.flag { border: 0; vertical-align: middle; margin-left: 10px; }
 
-.faceted-navigation-header__sort-options { margin-top: 4px; }
+.faceted-navigation-header__sort-options { margin-top: 4px; z-index: 2; }
 
 .faceted-navigation-header__sort-options .desc { color: #6b6b6b; }
 
@@ -52,7 +52,7 @@
 
 .faceted-navigation-header__header-bottom { margin-top: 30px; }
 
-.faceted-navigation-header__header-top { border-bottom: 2px solid #F8F8F8; padding-bottom: 28px; padding-top: 25px; }
+.faceted-navigation-header__header-top { border-bottom: 2px solid #F8F8F8; padding-bottom: 28px; padding-top: 55px; }
 
 .faceted-navigation-header__title { font-size: 20px; font-weight: bold; }
 
