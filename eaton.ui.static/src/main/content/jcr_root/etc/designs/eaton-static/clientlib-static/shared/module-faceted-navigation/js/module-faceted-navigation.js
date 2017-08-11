@@ -136,7 +136,7 @@ App.facets = function () {
 
     if (mobileEnabled === false) {
       var temp = $componentClass.parent().parent();
-      var winHeight = $(document).innerHeight();
+      // let winHeight = $(document).innerHeight();
       $("<div class='faceted-navigation__mobile-container u-visible-mobile hidden col-xs-12 col-md-3'></div>").prependTo(temp);
 
       $componentClass.clone(true, true).appendTo('.faceted-navigation__mobile-container').addClass('visible');
@@ -185,12 +185,11 @@ App.facets = function () {
 
         $('body').removeClass('facets-open');
         // $('.faceted-navigation__mobile-container').removeClass('facets-navigation-mobile-open');
-
       });
 
       $('.faceted-navigation__mobile-container .faceted-navigation__header').on('click', function (e) {
         e.preventDefault;
-        $(this).children('.icon-sign-plus').toggleClass('u-hide');
+        $(this).find('.icon-sign-minus').toggle();
       });
 
       // View More Facets Behavior
