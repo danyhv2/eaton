@@ -18,6 +18,25 @@ use(function () {
             imgAlt: 'Test image',
             backgroundColor: '#F8F8F8'
         }
+    } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-overview-tab")) {
+        data = {
+            title: 'Energy efficiency',
+            text: '<p>Built in energy metering</p>' +
+            '<p>Extends battery service life by 50% with ABM technology</p>' +
+            '<p>Maximizes avaibility with extended battery modules for more runtime and optional maintenance bypass</p>' +
+            '<p>Helps save money and protect the enviroment througth energy efficient operation (ENERGY STAR qualified UPS)</p>' +
+            '<p>Learn more about ENERGY STAR</p>',
+            cta: {
+                url: '',
+                text:''
+            },
+            imgSrc: '/content/dam/eaton/images/energy.png',
+            imgMobile:'/content/dam/eaton/images/energy.png',
+            imgTablet:'/content/dam/eaton/images/energy.png',
+            imgAlignment:'right',
+            imgAlt: 'Test image',
+            backgroundColor: '#FFFFFF'
+        }
     } else {
         data = {
             title: 'We make big ideas work',
