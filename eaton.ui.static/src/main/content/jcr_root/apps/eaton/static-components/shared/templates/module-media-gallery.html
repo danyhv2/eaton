@@ -21,15 +21,15 @@
                 <!--*/ Slide Item - Image */-->
                 <div class="module-media-gallery__slide-preview embed-responsive embed-responsive-16by9">
                   <div class="module-media-gallery__image-wrapper embed-responsive-item">
-                    <img data-src="${item.images.preview}"
-                        data-desktop-rendition="${item.images.preview}"
-                        data-mobile-rendition="${item.images.preview}"
+                    <img data-src="${ item.images.preview }"
+                        data-desktop-rendition="${ item.images.preview }"
+                        data-mobile-rendition="${ item.images.preview }"
                         alt="${item.images.altText}"
-                        data-lazy="${item.images.thumbnail}" />
+                        data-lazy="${ item.images.preview }" />
                   </div>
 
                   <!--*/ Slide Item - Utility - Zoom & Download */-->
-                  <a href="${item.images.download}" download class="module-media-gallery__download module-media-gallery__slide-utility">
+                  <a href="${ item.images.download }" download class="module-media-gallery__download module-media-gallery__slide-utility">
                     <span class="sr-only">${ 'Download' @ i18n }</span>
                     <i class="icon icon-download" aria-hidden="true"></i>
                   </a>
