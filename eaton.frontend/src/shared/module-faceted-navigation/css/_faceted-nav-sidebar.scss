@@ -3,7 +3,7 @@
 //-----------------------------------
 
 .faceted-navigation__mobile-container .faceted-navigation {
-  padding: 0 30px;
+  padding: 60px 30px;
 }
 
 .autocorrected-search {
@@ -26,7 +26,7 @@
   &__mobile-container {
     z-index: 40;
     background-color: $color__white;
-    margin: 60px 0 30px;
+    margin: 0;
 
     &.enabled {
       position: fixed;
@@ -143,15 +143,13 @@
     margin-bottom: 12px;
   }
 
- 
+
 
 
   //-----------------------------------
-  // MediaQuery: Mobile & Tablet Only
+  // MediaQuery: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
-
-
 
     padding: 60px 30px;
 
@@ -160,7 +158,7 @@
 
 
   //-----------------------------------
-  // MediaQuery: Desktop & Desktop Large
+  // MediaQuery: >992px
   //-----------------------------------
   @include media-desktop-and-up {
 
@@ -169,8 +167,13 @@
 }
 
 
-.facets-open {
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
+//-----------------------------------
+// MediaQuery: 0 to 991px
+//-----------------------------------
+@include media-mobile-and-tablet {
+  body.facets-open {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
 }
