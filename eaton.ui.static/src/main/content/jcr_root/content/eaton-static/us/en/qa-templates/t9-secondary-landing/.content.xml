@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-07-21T00:32:07.781-05:00"
+        cq:lastModified="{Date}2017-08-11T15:22:48.935-06:00"
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2017-07-20T05:44:47.544Z"
         cq:lastReplicatedBy="etn-marie"
@@ -350,6 +350,13 @@
                 <col2-par
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/parsys">
+                    <divider
+                        jcr:created="{Date}2017-08-11T15:22:46.875-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-11T15:22:46.875-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/divider"/>
                     <link_list
                         jcr:created="{Date}2017-07-20T05:43:29.756Z"
                         jcr:createdBy="etn-marie"
@@ -363,6 +370,13 @@
                 <col3-par
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/parsys">
+                    <divider
+                        jcr:created="{Date}2017-08-11T15:22:48.932-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-11T15:22:48.932-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/divider"/>
                     <link_list
                         jcr:created="{Date}2017-07-20T05:43:33.265Z"
                         jcr:createdBy="etn-marie"
@@ -376,6 +390,13 @@
                 <col1-par
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/parsys">
+                    <divider
+                        jcr:created="{Date}2017-08-11T15:22:44.150-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-11T15:22:44.150-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/divider"/>
                     <text
                         jcr:created="{Date}2017-07-20T05:43:38.685Z"
                         jcr:createdBy="etn-marie"
