@@ -4,4 +4,12 @@
 
 .upsell-products__slides a { z-index: 10; }
 
-.upsell-products .module-related-products__arrows { top: 30%; }
+.upsell-products__arrows { position: absolute; top: 30%; color: #CCD2D7; display: none !important; }
+
+.upsell-products__arrows .icon { font-size: 37px; }
+
+.upsell-products__prev-arrow { left: 42px; }
+
+.upsell-products__next-arrow { right: 42px; }
+
+@media screen and (min-width: 1200px) { .upsell-products:hover .upsell-products__arrows { display: block !important; } }
