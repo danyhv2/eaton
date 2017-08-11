@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-08T19:06:39.012-06:00"
+        cq:lastModified="{Date}2017-08-11T15:24:37.436-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:primaryType="cq:PageContent"
@@ -352,6 +352,13 @@
                 <col1-par
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/parsys">
+                    <divider
+                        jcr:created="{Date}2017-08-11T15:24:35.152-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-11T15:24:35.152-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/divider"/>
                     <text
                         jcr:created="{Date}2017-08-04T21:26:29.111-06:00"
                         jcr:createdBy="admin"
@@ -374,6 +381,13 @@
                 <col2-par
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/parsys">
+                    <divider
+                        jcr:created="{Date}2017-08-11T15:24:37.432-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-11T15:24:37.432-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/divider"/>
                     <link_list
                         jcr:created="{Date}2017-08-04T21:27:10.352-06:00"
                         jcr:createdBy="admin"
