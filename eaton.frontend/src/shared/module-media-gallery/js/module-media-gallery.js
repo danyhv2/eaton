@@ -48,25 +48,29 @@ App.mediaGallery = function () {
    * Configure Slick Carousel - Main Slide Container
    */
   const initializeSlideCarousel = () => {
-    $slideCarousel.slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: false,
-      dots: false,
-      adaptiveHeight: true,
-      accessibility: true,
-      lazyLoad: 'ondemand',
-      prevArrow: $slideContainer.find('.module-media-gallery__prev-arrow'),
-      nextArrow: $slideContainer.find('.module-media-gallery__next-arrow'),
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            dots: true,
-            dotsClass: 'module-media-gallery__dots'
+
+    $.each($slideCarousel, (index, item) => {
+
+      $(item).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: false,
+        adaptiveHeight: true,
+        accessibility: true,
+        lazyLoad: 'ondemand',
+        prevArrow: $(item).closest(componentClass).find('.module-media-gallery__slide-container .module-media-gallery__prev-arrow'),
+        nextArrow: $(item).closest(componentClass).find('.module-media-gallery__slide-container .module-media-gallery__next-arrow'),
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              dots: true,
+              dotsClass: 'module-media-gallery__dots'
+            }
           }
-        }
-      ]
+        ]
+      });
     });
   };
 
@@ -92,14 +96,16 @@ App.mediaGallery = function () {
 
     // Init SlickJS
     //--------------
-    $thumbnailCarousel.slick({
-      slidesToShow: numSlides,
-      slidesToScroll: numSlides,
-      autoplay: false,
-      dots: false,
-      accessibility: true,
-      prevArrow: $thumbnailContainer.find('.module-media-gallery__prev-arrow'),
-      nextArrow: $thumbnailContainer.find('.module-media-gallery__next-arrow')
+    $.each($thumbnailCarousel, (index, item) => {
+      $(item).slick({
+        slidesToShow: numSlides,
+        slidesToScroll: numSlides,
+        autoplay: false,
+        dots: false,
+        accessibility: true,
+        prevArrow: $(item).closest(componentClass).find('.module-media-gallery__thumbnail-container .module-media-gallery__prev-arrow'),
+        nextArrow: $(item).closest(componentClass).find('.module-media-gallery__thumbnail-container .module-media-gallery__next-arrow')
+      });
     });
   };
 
