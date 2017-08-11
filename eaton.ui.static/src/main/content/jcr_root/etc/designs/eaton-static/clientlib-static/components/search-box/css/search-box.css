@@ -32,7 +32,7 @@
 
 .eaton-search--default__form-input:focus ~ .eaton-search--default__form-mobile-label { display: none; }
 
-.eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; padding-top: 10px; }
+.eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; padding-top: 8px; left: 0; top: 0; }
 
 .eaton-search--default__form-external { color: #FFF; -ms-flex-item-align: center; align-self: center; border-right: 1px solid #FFF; padding-right: 20px; }
 
