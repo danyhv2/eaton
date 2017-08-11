@@ -232,16 +232,16 @@ use(function () {
       //   "target": '_self'
       // },
       "activeFilters": [
-        // {
-        //   "label": "Products",
-        //   "url": "#remove-filter-products",
-        //   "target": "_self"
-        // },
-        // {
-        //   "label": "1000 VA",
-        //   "url": "#remove-filter-1000-va",
-        //   "target": "_self"
-        // }
+        {
+          "label": "Products",
+          "url": "#remove-filter-products",
+          "target": "_self"
+        },
+        {
+          "label": "1000 VA",
+          "url": "#remove-filter-1000-va",
+          "target": "_self"
+        }
       ],
       "clearAllFiltersLink": {
         "text": "Clear filters",
