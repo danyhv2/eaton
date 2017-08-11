@@ -37,7 +37,11 @@
 
 @media screen and (max-width: 767px) { .feature-block-component__container--height .feature-block-component__copy { padding-left: 30px; padding-right: 30px; } }
 
-@media screen and (max-width: 767px) { .feature-block-component__container--height { height: 750px; } }
+.feature-block-component__container--height .feature-block-component__text { padding-left: 120px; padding-right: 40px; }
+
+@media screen and (max-width: 767px) { .feature-block-component__container--height .feature-block-component__text { padding: 0; } }
+
+@media screen and (max-width: 767px) { .feature-block-component__container--height { height: 900px; } }
 
 .feature-block-component__container--white { height: 500px; }
 

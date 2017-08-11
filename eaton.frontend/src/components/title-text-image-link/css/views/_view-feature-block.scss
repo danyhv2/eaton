@@ -15,8 +15,17 @@
           padding-right: 30px;
         }
       }
+
+      .feature-block-component__text {
+        padding-left: 120px;
+        padding-right: 40px;
+
+        @include media-mobile-only {
+          padding: 0;
+        }
+      }
       @include media-mobile-only {
-        height: 750px;
+        height: 900px;
       }
     }
 
