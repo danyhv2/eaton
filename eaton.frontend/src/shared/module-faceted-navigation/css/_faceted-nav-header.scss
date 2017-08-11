@@ -124,6 +124,7 @@
 
   &__sort-options {
     margin-top: 4px;
+    z-index: 2;
 
     .desc {
       color: #6b6b6b;
@@ -164,7 +165,7 @@
   &__header-top {
     border-bottom: 2px solid $color__secondary-gray6;
     padding-bottom: 28px;
-    padding-top: 25px;
+    padding-top: 55px;
   }
 
   &__title {
