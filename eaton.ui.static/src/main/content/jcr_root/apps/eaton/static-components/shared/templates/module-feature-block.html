@@ -5,7 +5,7 @@
                  class="col-xs-12 ${data.imgSrc.length > 0 ? 'col-sm-7' : 'col-sm-12'} feature-block-component__copy feature-block-component__copy--${data.imgAlignment} ${data.backgroundColor == '#005EB8' ? 'feature-block-component__copy--white-text' : ''}">
                 <div class="feature-block-component__text">
                     <h2>${data.title}</h2>
-                    <div class="feature-block-component__description">${data.text @ context = 'html'}</div>
+                    <div class="feature-block-component__description b-body-copy">${data.text @ context = 'html'}</div>
                     <a data-sly-test="${data.cta.url.length > 0}" class="b-button b-button__primary ${data.backgroundColor == '#005EB8' ? 'b-button__primary--dark' : 'b-button__primary--light'} feature-block-component__cta" href="${data.cta.url}" role="button" data-sly-test="${data.cta.url.length > 0}">${data.cta.text}</a>
                 </div>
             </div>
