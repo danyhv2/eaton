@@ -121,7 +121,7 @@
 
 .category-hero__header-content { position: absolute; top: 25%; color: #FFF; width: 100%; }
 
-.category-hero__header-cta { border: 0; font-size: 1.2em; color: #FFF; }
+.category-hero__header-cta { border: 0; font-size: 1.2em; color: #FFF; font-family: Arial, "Arial", sans-serif; }
 
 .category-hero-eye-brown { color: #FFF; }
 

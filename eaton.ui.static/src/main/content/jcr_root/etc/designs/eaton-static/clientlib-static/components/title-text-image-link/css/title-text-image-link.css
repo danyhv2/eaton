@@ -51,9 +51,7 @@
 
 .feature-block-component__text { padding-left: 120px; padding-right: 40px; }
 
-.feature-block-component__description { font-family: "Eaton", Arial, sans-serif; font-size: 1.125em; line-height: 1.5; padding-top: 30px; }
-
-.feature-block-component__description p { padding-bottom: 15px; }
+.feature-block-component__description { padding-top: 30px; }
 
 .feature-block-component__image { height: 100%; }
 
