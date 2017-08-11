@@ -8,13 +8,9 @@ App.mediaGallery = function () {
   const $componentEl = $(componentClass);
 
   // Cached DOM Elements
-  const $slideContainer = $componentEl.find('.module-media-gallery__slide-container');
   const $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
-
-  const $thumbnailContainer = $componentEl.find('.module-media-gallery__thumbnail-container');
   const $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
-  const $thumbnailItems = $thumbnailContainer.find('.module-media-gallery__thumbnail-item');
-
+  const $thumbnailItems = $componentEl.find('.module-media-gallery__thumbnail-item');
 
   /**
    * Initialize Media Gallery
