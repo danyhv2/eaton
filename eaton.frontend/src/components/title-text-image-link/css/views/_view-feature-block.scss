@@ -2,6 +2,8 @@
 
   padding: 60px 0;
 
+  &--theme-blue &__container { background-color: $color__primary-blue; }
+
   &__container {
 
     &--height {
