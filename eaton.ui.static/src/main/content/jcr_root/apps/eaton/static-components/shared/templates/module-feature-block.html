@@ -10,10 +10,9 @@
                 </div>
             </div>
             <div data-sly-test="${data.imgSrc.length > 0}" class="col-xs-12 col-sm-5 feature-block-component__image"
-                 style="background:url('${data.imgSrc @ context='styleString'}') center no-repeat; background-size: cover">
-            </div>
+                 style="background-image: url('${ data.imgSrc @ context='uri' }');"
+            ></div>
 
         </div>
     </div>
 </template>
-

@@ -59,7 +59,7 @@
 
 .feature-block-component__description { padding-top: 30px; }
 
-.feature-block-component__image { height: 100%; }
+.feature-block-component__image { height: 100%; background-repeat: no-repeat; background-position: center; }
 
 .feature-block-component__image--center { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
