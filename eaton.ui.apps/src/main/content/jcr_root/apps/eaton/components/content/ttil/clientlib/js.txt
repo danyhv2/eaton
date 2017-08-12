@@ -1,3 +1,0 @@
-#base=js
-product-family.js
-hero.js

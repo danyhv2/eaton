@@ -1,9 +1,22 @@
 <sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
     <div>Brightcove Page Component</div>
 </sly>
+
+
+
+
+<template data-sly-template.first>
 <sly data-sly-use.bcComponent="com.eaton.platform.core.helpers.configpage.BrightcoveHelper"></sly>
 
 <sly data-sly-test="${bcComponent.bcCompModel.contentRepository && bcComponent.bcCompModel.brightcovePlayerID && bcComponent.bcCompModel.contentId}">
+
+<h2>
+${bcComponent.bcCompModel.headLine}
+</h2>
+
+<h2>
+${bcComponent.bcCompModel.description}
+</h2>
 
     <div style="display: block; position: relative; width:100%">
         <div style="padding-top: 56.25%;">
@@ -38,8 +51,7 @@
     
         </div>
 	</div>
-
-    <script type="text/javascript">
+<script type="text/javascript">
     
         var myPlayer = videojs('${bcComponent.playerUniqueId @ context="scriptString"}');
         
@@ -66,11 +78,25 @@
                     "-1": {
                         "headline": '${bcComponent.errorMsg @ context="scriptString"}',
                             "type": "PLAYER_ERR_NO_SRC",
-                            "message": "This video could not be loaded, because video/playlist id is invalid"
+                            "message": "This video/playlist could not be loaded, because video/playlist id is invalid."
                     }
                 }
             });
     
     </script>
 </sly>
+
+
+</template>
+<sly data-sly-use.bcComponent="com.eaton.platform.core.helpers.configpage.BrightcoveHelper"></sly>
+
+<!--/* If Grid Enabled */-->
+<div data-sly-test="${ bcComponent.bcCompModel.toggleInnerGrid }" class="container">
+<div data-sly-call="${first}"></div>
+</div>
+
+ <!--/* If Grid NOT-Enabled */-->
+<div data-sly-test="${ !bcComponent.bcCompModel.toggleInnerGrid }" >
+<div data-sly-call="${first}"></div>
+</div>
 

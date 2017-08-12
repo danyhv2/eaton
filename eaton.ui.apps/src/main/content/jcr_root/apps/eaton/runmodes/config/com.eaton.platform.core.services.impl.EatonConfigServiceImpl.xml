@@ -3,4 +3,6 @@
     jcr:primaryType="sling:OsgiConfig"
     countryselector.folder.path="/content/dam/eaton/resources/country-selector"
     iconlist.proofpoint.symbols="[%,@]"
-    linklist.dropdown.option="[Default (Vertical)||vertical,Primary Navigation||primary-navigation,Section Navigation||section-navigation,2 Column||column,Horizontal||horizontal,Download List||download-list,Download List with Description||download-list-desc]"/>
+    linklist.dropdown.option="[Default (Vertical)||vertical,Primary Navigation||primary-navigation,Section Navigation||section-navigation,2 Column||column,Horizontal||horizontal,Download List||download-list,Download List with Description||download-list-desc]"
+	middle.tab.config="[Models,Services,Specifications]"
+	number.of.days.publish="5"/>

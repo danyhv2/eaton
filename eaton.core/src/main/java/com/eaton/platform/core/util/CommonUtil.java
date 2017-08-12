@@ -36,8 +36,6 @@ import com.day.cq.commons.inherit.InheritanceValueMap;
 import com.day.cq.commons.jcr.JcrConstants;
 import com.day.cq.dam.api.Asset;
 import com.day.cq.dam.api.DamConstants;
-import com.day.cq.dam.commons.handler.StandardImageHandler;
-import com.day.cq.dam.handler.standard.pdf.PdfHandler;
 import com.day.cq.i18n.I18n;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
@@ -122,8 +120,10 @@ public final class CommonUtil {
     public static String getStringProperty(final ValueMap valueMap, final String propKey) {
     	LOGGER.debug("CommonUtil :: getStringProperty() :: Start");
         String retVal = StringUtils.EMPTY;
-        if (valueMap.containsKey(propKey)) {
-            retVal = (String) valueMap.get(propKey);
+        if(null != valueMap){
+	        if (valueMap.containsKey(propKey)) {
+	            retVal = (String) valueMap.get(propKey);
+	        }
         }
         LOGGER.debug("CommonUtil :: getStringProperty() :: Exit");
         return retVal;
@@ -691,11 +691,14 @@ public final class CommonUtil {
 	 */
 	public static String getLinkTitle(String linkTitle, String link, ResourceResolver resourceResolver) {
 		LOGGER.debug("CommonUtil :: getLinkTitle() :: Start");
-		String titleValue = linkTitle;
+		String titleValue = ""; 
+		titleValue = linkTitle;
 		if(null == linkTitle){
 			if(null != link && StringUtils.startsWith(link, CommonConstants.CONTENT_ROOT_FOLDER)){
+				if((resourceResolver!=null) && (resourceResolver.getResource(link)!=null)) {
 					Page linkPage = resourceResolver.getResource(link).adaptTo(Page.class);
 					titleValue = null != linkPage.getNavigationTitle()? linkPage.getNavigationTitle() : null != linkPage.getPageTitle() ? linkPage.getPageTitle() : linkPage.getTitle();
+				}
 			} else {
 				titleValue = StringUtils.EMPTY;
 			}
@@ -848,15 +851,16 @@ public final class CommonUtil {
 		String assetAltText = StringUtils.EMPTY;
 		Resource assetResource = null;
 		try {
-			assetResource = resourceResolver.getResource(URLDecoder.decode(imagePath, CommonConstants.UTF_8));
-
-			if(null != assetResource) {
-				Resource jcrResource = assetResource.getChild(JcrConstants.JCR_CONTENT);
-				
-				if(null != jcrResource) {
-					Resource metaDataResource =  jcrResource.getChild(DamConstants.METADATA_FOLDER);
-					ValueMap properties = metaDataResource.getValueMap();
-					assetAltText = !StringUtils.equals(StringUtils.EMPTY, CommonUtil.getStringProperty(properties, DamConstants.DC_TITLE)) ? CommonUtil.getStringProperty(properties, DamConstants.DC_TITLE) : assetResource.getName();
+			if((resourceResolver!=null)&&(imagePath!=null)){
+				assetResource = resourceResolver.getResource(URLDecoder.decode(imagePath, CommonConstants.UTF_8));
+				if(null != assetResource) {
+					Resource jcrResource = assetResource.getChild(JcrConstants.JCR_CONTENT);
+					
+					if(null != jcrResource) {
+						Resource metaDataResource =  jcrResource.getChild(DamConstants.METADATA_FOLDER);
+						ValueMap properties = metaDataResource.getValueMap();
+						assetAltText = !StringUtils.equals(StringUtils.EMPTY, CommonUtil.getStringProperty(properties, DamConstants.DC_TITLE)) ? CommonUtil.getStringProperty(properties, DamConstants.DC_TITLE) : assetResource.getName();
+					}
 				}
 			}
 		} catch (UnsupportedEncodingException e) {
@@ -903,15 +907,12 @@ public final class CommonUtil {
 	 */
     public static String getType(Asset asset) {
 		String assetType = StringUtils.EMPTY;
-		if (StringUtils.equals(asset.getMetadata().get(DamConstants.DC_FORMAT).toString(),
-				PdfHandler.CONTENT_MIMETYPE))
-			assetType = CommonConstants.PDF;
-		else if (StringUtils.equals(asset.getMetadata().get(DamConstants.DC_FORMAT).toString(),
-				StandardImageHandler.JPEG_MIMETYPE))
-			assetType = CommonConstants.JPEG;
-		else if (StringUtils.equals(asset.getMetadata().get(DamConstants.DC_FORMAT).toString(),
-				DamConstants.THUMBNAIL_MIMETYPE))
-			assetType = CommonConstants.PNG;
+		if(null != asset) {
+			String assetName = asset.getName();
+			if(StringUtils.isNotBlank(assetName)) {
+				assetType = StringUtils.upperCase(StringUtils.substringAfterLast(assetName, CommonConstants.PERIOD));
+			}
+		}
 		return assetType;
 	}
 	
