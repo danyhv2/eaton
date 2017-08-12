@@ -24,8 +24,8 @@ use(function () {
             text: '<p>Built in energy metering</p>' +
             '<p>Extends battery service life by 50% with ABM technology</p>' +
             '<p>Maximizes avaibility with extended battery modules for more runtime and optional maintenance bypass</p>' +
-            '<p>Helps save money and protect the enviroment througth energy efficient operation (ENERGY STAR qualified UPS)</p>' +
-            '<p>Learn more about ENERGY STAR</p>',
+            '<p>Helps save money and protect the enviroment througth energy efficient operation (ENERGY STAR&reg; qualified UPS)</p>' +
+            '<p><a href="http://www.eaton.com">Learn more about ENERGY STAR&reg;</a></p>',
             cta: {
                 url: '',
                 text:''
