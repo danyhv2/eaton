@@ -90,7 +90,9 @@
 
 .icon { font-size: 24px; line-height: 0; }
 
-body { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 16px; overflow-x: hidden; }
+html { font-size: 10px; }
+
+body { color: #333F48; font-family: Arial, "Arial", sans-serif; font-size: 1.6rem; overflow-x: hidden; }
 
 b, strong { font-weight: bold; }
 
@@ -104,25 +106,25 @@ a:link, a:visited, a:active { text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
-h1, .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 35px; line-height: 40px; margin-top: 0; }
+h1, .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 3.5rem; line-height: 4rem; margin-top: 0; }
 
-@media screen and (min-width: 992px) { h1, .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 54px; line-height: 68px; } }
+@media screen and (min-width: 992px) { h1, .b-heading-h1 { font-family: 'EatonMedium', sans-serif; font-size: 5.4rem; line-height: 6.8rem; } }
 
-h2, .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 28px; line-height: 32px; margin-top: 0; }
+h2, .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 2.8rem; line-height: 3.2rem; margin-top: 0; }
 
-@media screen and (min-width: 992px) { h2, .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 40px; line-height: 50px; } }
+@media screen and (min-width: 992px) { h2, .b-heading-h2 { font-family: 'EatonMedium', sans-serif; font-size: 4rem; line-height: 5rem; } }
 
-h3, .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 28px; line-height: 32px; margin-top: 0; }
+h3, .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 2.8rem; line-height: 3.2rem; margin-top: 0; }
 
-@media screen and (min-width: 992px) { h3, .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 40px; line-height: 50px; } }
+@media screen and (min-width: 992px) { h3, .b-heading-h3 { font-family: 'EatonMedium', sans-serif; font-size: 4rem; line-height: 5rem; } }
 
-h4, .b-heading-h4 { font-family: Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 29px; margin-top: 0; }
+h4, .b-heading-h4 { font-family: Arial, sans-serif; font-size: 2.2rem; font-weight: bold; line-height: 2.9rem; margin-top: 0; }
 
-@media screen and (min-width: 992px) { h4, .b-heading-h4 { font-family: Arial, sans-serif; font-size: 30px; font-weight: bold; line-height: 42px; } }
+@media screen and (min-width: 992px) { h4, .b-heading-h4 { font-family: Arial, sans-serif; font-size: 3rem; font-weight: bold; line-height: 4.2rem; } }
 
-h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 30px; margin-top: 0; }
+h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 2rem; font-weight: bold; line-height: 3rem; margin-top: 0; }
 
-@media screen and (min-width: 992px) { h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 40px; } }
+@media screen and (min-width: 992px) { h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 2.6rem; font-weight: bold; line-height: 4rem; } }
 
 h5 a, .b-heading-h5 a { color: #005EB8; }
 
@@ -142,35 +144,35 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .b-small-link:hover, .b-small-link:focus, .b-small-link:active { text-decoration: none; color: #005EB8; }
 
-.b-body-copy { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
+.b-body-copy { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; }
 
 .b-body-copy a { color: #005EB8; }
 
-@media screen and (min-width: 992px) { .b-body-copy { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
+@media screen and (min-width: 992px) { .b-body-copy { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; } }
 
-.b-body-copy-small { color: #333F48; font-family: Arial, sans-serif; font-size: 13px; font-weight: normal; line-height: 17px; }
+.b-body-copy-small { color: #333F48; font-family: Arial, sans-serif; font-size: 1.3rem; font-weight: normal; line-height: 1.7rem; }
 
 .b-body-copy-small a { color: #005EB8; }
 
-@media screen and (min-width: 992px) { .b-body-copy-small { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; } }
+@media screen and (min-width: 992px) { .b-body-copy-small { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.4rem; } }
 
-.b-eyebrow-large { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 17px; line-height: 20px; text-transform: uppercase; }
+.b-eyebrow-large { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 1.7rem; line-height: 2rem; text-transform: uppercase; }
 
-@media screen and (min-width: 992px) { .b-eyebrow-large { font-family: Arial, "Arial", sans-serif; font-size: 24px; line-height: 38px; text-transform: uppercase; } }
+@media screen and (min-width: 992px) { .b-eyebrow-large { font-family: Arial, "Arial", sans-serif; font-size: 2.4rem; line-height: 3.8rem; text-transform: uppercase; } }
 
-.b-eyebrow-small { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 14px; line-height: 17px; text-transform: uppercase; }
+.b-eyebrow-small { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 1.4rem; line-height: 1.7rem; text-transform: uppercase; }
 
-@media screen and (min-width: 992px) { .b-eyebrow-small { font-family: Arial, "Arial", sans-serif; font-size: 18px; line-height: 24px; text-transform: uppercase; } }
+@media screen and (min-width: 992px) { .b-eyebrow-small { font-family: Arial, "Arial", sans-serif; font-size: 1.8rem; line-height: 2.4rem; text-transform: uppercase; } }
 
-.b-h5-link-bold { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 30px; font-family: "EatonBold", Arial, sans-serif; }
+.b-h5-link-bold { font-family: Arial, sans-serif; font-size: 2rem; font-weight: bold; line-height: 3rem; font-family: "EatonBold", Arial, sans-serif; }
 
-@media screen and (min-width: 992px) { .b-h5-link-bold { font-family: Arial, sans-serif; font-size: 26px; font-weight: bold; line-height: 40px; } }
+@media screen and (min-width: 992px) { .b-h5-link-bold { font-family: Arial, sans-serif; font-size: 2.6rem; font-weight: bold; line-height: 4rem; } }
 
 @media screen and (min-width: 992px) { .b-h5-link-bold { font-family: "EatonBold", Arial, sans-serif; } }
 
-.b-h4-link-bold { font-family: Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 29px; font-family: "EatonBold", Arial, sans-serif; }
+.b-h4-link-bold { font-family: Arial, sans-serif; font-size: 2.2rem; font-weight: bold; line-height: 2.9rem; font-family: "EatonBold", Arial, sans-serif; }
 
-@media screen and (min-width: 992px) { .b-h4-link-bold { font-family: Arial, sans-serif; font-size: 30px; font-weight: bold; line-height: 42px; } }
+@media screen and (min-width: 992px) { .b-h4-link-bold { font-family: Arial, sans-serif; font-size: 3rem; font-weight: bold; line-height: 4.2rem; } }
 
 @media screen and (min-width: 992px) { .b-h4-link-bold { font-family: "EatonBold", Arial, sans-serif; } }
 
@@ -192,7 +194,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .u-is-fixed { position: fixed; }
 
-.overlay-mask { position: absolute; top: 0; left: 0; width: 100%; opacity: .8; background-color: #fff; z-index: 500; }
+.overlay-mask { background-color: #FFF; left: 0; opacity: .8; position: absolute; top: 0; width: 100%; z-index: 300; }
 
 .u-absolute-fill { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
@@ -289,11 +291,11 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .b-list--no-bullets { list-style-type: none; padding-left: 0; }
 
-.rich-text-container { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
+.rich-text-container { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; }
 
 .rich-text-container a { color: #005EB8; }
 
-@media screen and (min-width: 992px) { .rich-text-container { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
+@media screen and (min-width: 992px) { .rich-text-container { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; } }
 
 .rich-text-container b, .rich-text-container strong { font-weight: bold; }
 
@@ -301,11 +303,11 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .rich-text-container a { text-decoration: underline; }
 
-.rich-text-container p { font-family: Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 28px; }
+.rich-text-container p { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; }
 
 .rich-text-container p a { color: #005EB8; }
 
-@media screen and (min-width: 992px) { .rich-text-container p { font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; line-height: 38px; } }
+@media screen and (min-width: 992px) { .rich-text-container p { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; } }
 
 .rich-text-container ul { list-style-type: none; padding: 0; }
 

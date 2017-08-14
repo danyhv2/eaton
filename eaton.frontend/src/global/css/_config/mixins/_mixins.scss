@@ -4,15 +4,17 @@
 
 // Typography
 //--------------
-@function calculate-rem($size) {
-  $rem-size: $size / 16px;
+$base-size: $base__font-size;
+
+@function rem($size) {
+  $rem-size: $size / $base-size;
   @return #{$rem-size}rem;
 }
 
-@mixin font-size($size) {
-  font-size: $size; // Fallback in px
-  font-size: calculate-rem($size);
-}
+// @mixin font-size($size) {
+//   font-size: $size; // Fallback in PX
+//   font-size: rem($size);
+// }
 
 
 // Size

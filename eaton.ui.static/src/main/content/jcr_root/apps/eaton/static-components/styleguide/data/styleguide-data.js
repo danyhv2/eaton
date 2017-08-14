@@ -128,15 +128,15 @@ use(function () {
         className: "b-heading-h1-hero",
         mobile: {
           fontFamily: "'EatonMedium', sans-serif",
-          fontSize: "35px",
+          fontSize: "3.5rem",
           fontWeight: "normal",
-          lineHeight: "40px"
+          lineHeight: "4.0rem"
         },
         desktop: {
           fontFamily: "'EatonMedium', sans-serif",
-          fontSize: "54px",
+          fontSize: "5.4rem",
           fontWeight: "normal",
-          lineHeight: "68px"
+          lineHeight: "6.8rem"
         }
       },
       {
@@ -145,15 +145,15 @@ use(function () {
         className: "b-heading-h1",
         mobile: {
           fontFamily: "'EatonMedium', sans-serif",
-          fontSize: "33px",
+          fontSize: "3.3rem",
           fontWeight: "normal",
-          lineHeight: "38px"
+          lineHeight: "3.8rem"
         },
         desktop: {
           fontFamily: "'EatonMedium', sans-serif",
-          fontSize: "52px",
+          fontSize: "5.2rem",
           fontWeight: "normal",
-          lineHeight: "62px"
+          lineHeight: "6.2rem"
         }
       },
       {
@@ -162,15 +162,15 @@ use(function () {
         className: "b-heading-h2",
         mobile: {
           fontFamily: "'EatonMedium', sans-serif",
-          fontSize: "28px",
+          fontSize: "2.8rem",
           fontWeight: "normal",
-          lineHeight: "32px"
+          lineHeight: "3.2rem"
         },
         desktop: {
           fontFamily: "'EatonMedium', sans-serif",
-          fontSize: "40px",
+          fontSize: "4.0rem",
           fontWeight: "normal",
-          lineHeight: "50px"
+          lineHeight: "5.0rem"
         }
       },
       {
@@ -179,15 +179,15 @@ use(function () {
         className: "b-heading-h3",
         mobile: {
           fontFamily: "'EatonMedium', sans-serif",
-          fontSize: "28px",
+          fontSize: "2.8rem",
           fontWeight: "normal",
-          lineHeight: "32px"
+          lineHeight: "3.2rem"
         },
         desktop: {
           fontFamily: "'EatonMedium', sans-serif",
-          fontSize: "40px",
+          fontSize: "4.0rem",
           fontWeight: "normal",
-          lineHeight: "50px"
+          lineHeight: "5.0rem"
         }
       },
       {
@@ -196,15 +196,15 @@ use(function () {
         className: "b-heading-h4",
         mobile: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "22px",
+          fontSize: "2.2rem",
           fontWeight: "bold",
-          lineHeight: "29px"
+          lineHeight: "2.9rem"
         },
         desktop: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "30px",
+          fontSize: "3.0rem",
           fontWeight: "bold",
-          lineHeight: "42px"
+          lineHeight: "4.2rem"
         }
       },
       {
@@ -213,15 +213,15 @@ use(function () {
         className: "b-heading-h5",
         mobile: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "20px",
+          fontSize: "2.0rem",
           fontWeight: "bold",
-          lineHeight: "30px"
+          lineHeight: "3.0rem"
         },
         desktop: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "26px",
+          fontSize: "2.6rem",
           fontWeight: "bold",
-          lineHeight: "40px"
+          lineHeight: "4.0rem"
         }
       }
     ],
@@ -233,15 +233,15 @@ use(function () {
         className: "b-body-copy",
         mobile: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "18px",
+          fontSize: "1.8rem",
           fontWeight: "normal",
-          lineHeight: "28px"
+          lineHeight: "2.8rem"
         },
         desktop: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "24px",
+          fontSize: "2.4rem",
           fontWeight: "normal",
-          lineHeight: "38px"
+          lineHeight: "3.8rem"
         }
       },
       {
@@ -250,15 +250,15 @@ use(function () {
         className: "b-body-copy-small",
         mobile: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "13px",
+          fontSize: "1.3rem",
           fontWeight: "normal",
-          lineHeight: "17px"
+          lineHeight: "1.7rem"
         },
         desktop: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "18px",
+          fontSize: "1.8rem",
           fontWeight: "normal",
-          lineHeight: "24px"
+          lineHeight: "2.4rem"
         }
       },
       {
@@ -267,15 +267,15 @@ use(function () {
         className: "b-hero-description",
         mobile: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "14px",
+          fontSize: "1.4rem",
           fontWeight: "normal",
-          lineHeight: "22px"
+          lineHeight: "2.2rem"
         },
         desktop: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "20px",
+          fontSize: "2.0rem",
           fontWeight: "normal",
-          lineHeight: "16px"
+          lineHeight: "1.6rem"
         }
       },
       {
@@ -284,15 +284,15 @@ use(function () {
         className: "b-eyebrow-large",
         mobile: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "17px",
+          fontSize: "1.7rem",
           fontWeight: "bold",
-          lineHeight: "20px"
+          lineHeight: "2.0rem"
         },
         desktop: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "24px",
+          fontSize: "2.4rem",
           fontWeight: "bold",
-          lineHeight: "38px"
+          lineHeight: "3.8rem"
         }
       },
       {
@@ -301,15 +301,15 @@ use(function () {
         className: "b-eyebrow-small",
         mobile: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "14px",
+          fontSize: "1.4rem",
           fontWeight: "bold",
-          lineHeight: "17px"
+          lineHeight: "1.7rem"
         },
         desktop: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "18px",
+          fontSize: "1.8rem",
           fontWeight: "bold",
-          lineHeight: "24px"
+          lineHeight: "2.4rem"
         }
       }
     ]
