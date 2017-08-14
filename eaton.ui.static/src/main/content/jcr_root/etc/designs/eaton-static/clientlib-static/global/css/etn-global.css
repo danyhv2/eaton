@@ -100,7 +100,7 @@ em { font-style: italic; }
 
 i { font-style: normal; }
 
-p { line-height: 1.3; }
+p { line-height: 1.4; }
 
 a:link, a:visited, a:active { text-decoration: none; }
 
@@ -194,7 +194,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .u-is-fixed { position: fixed; }
 
-.overlay-mask { background-color: #FFF; left: 0; opacity: .8; position: absolute; top: 0; width: 100%; z-index: 300; }
+.u-overlay-mask { background-color: #FFF; opacity: .8; position: absolute; left: 0; top: 0; width: 100%; z-index: 500; }
 
 .u-absolute-fill { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
