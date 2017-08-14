@@ -1,7 +1,7 @@
 .eaton-topic-link-white {
 
   overflow: hidden;
-  padding: 40px 0;
+  padding: 50px 0;
 
   &.no-cta {
 
@@ -39,6 +39,20 @@
 
   &__cta-wrapper {
     text-align: center;
+  }
+
+  &--grey {
+    background: $color__secondary-gray6;
+  }
+
+  &--blue {
+    background: $color__primary-blue;
+
+    .eaton-topic-link-white {
+      &__header, &__description {
+        color: $color__white;
+      }
+    }
   }
 
   @include media-desktop-and-up {

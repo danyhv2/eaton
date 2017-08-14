@@ -1,0 +1,70 @@
+//-----------------------------------
+// M-35: Product Detail Card
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+.module-product-detail-card {
+  padding: 30px 0;
+
+  &--image-container {
+    text-align: center;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      max-width: 553px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 35px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: $color__primary-blue;
+      height: 4px;
+      width: 60px;
+      bottom: -15px;
+    }
+  }
+
+  &__price {
+    margin: $spacing__sm 0;
+
+    span {
+      color: $color__primary-gray2;
+      padding-left: 5px;
+    }
+  }
+
+  &__links {
+    padding: 20px 0;
+
+    ul {
+      list-style: none;
+      padding: 20px 0px;
+
+      li {
+        padding: 0;
+        min-height: 36px;
+
+        a {
+          color: $color__primary-blue;
+          display: inline-block;
+          padding: 0 0 10px 0;
+        }
+      }
+
+      .icon {
+        vertical-align: middle;
+        padding-right: 10px;
+      }
+    }
+  }
+
+
+}

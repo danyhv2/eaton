@@ -58,6 +58,8 @@
     }
 
     label {
+      background-color: $color__primary-gray1;
+
       &:hover,
       &:focus,
       &:active,
@@ -108,8 +110,7 @@
 
     .eaton-product-tabs__buttons {
       position: fixed;
-      // z-index: 10;
-      z-index: 99999;
+      z-index: 99;
       padding: 0;
       margin-left: 0;
       margin-right: 0;
@@ -167,6 +168,7 @@
     float: left;
     padding: 1.3rem 0;
     margin: 0;
+    background-color: $color__secondary-gray6;
 
     a {
       display: block;
@@ -206,7 +208,7 @@
     border: 0;
     color: $color__white;
     display: inline-block;
-    font-family: $font-family__primary-bold;
+    font-family: $font-family__secondary;
     font-size: 16px;
     font-size: 1.6rem;
     height: 57px;
@@ -272,6 +274,7 @@
 
     .container {
       padding: 0;
+      width: 100%;
     }
 
     &__dropdown-container {
@@ -294,18 +297,32 @@
 
     &--fixed {
       .eaton-product-tabs__buttons {
+        position: relative;
+        z-index: unset;
+
+        &::before {
+          height: 78px;
+        }
+      }
+
+      .eaton-product-tabs__buttons__center {
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
         margin: 0;
+        z-index: 99;
+        padding: 0;
       }
 
       .eaton-product-tabs__description {
         display: none;
       }
 
-      .eaton-product-tabs__page-utility {
-        margin-top: 274px;
+      .eaton-product-tabs__dropdown-container {
+        margin-top: 157px;
+        z-index: 1;
+        padding: 0;
       }
 
       .eaton-product-tabs__tab-panel {
@@ -318,7 +335,6 @@
     &__dropdown {
       font-size: 18px;
       font-size: 1.8rem;
-      font-family: $font-family__secondary;
       font-weight: bold;
     }
 
@@ -353,7 +369,7 @@
 
     &--fixed {
       .eaton-product-tabs__buttons {
-        top: 84px; // header size
+        top: 80px; // header size
         margin-left: -15px;
         margin-right: -15px;
       }

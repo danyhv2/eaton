@@ -48,10 +48,11 @@
     }
 
     > a {
-      color: $color__black;
+      color: $color__primary-gray1;
 
       span {
         color: $color__primary-blue;
+        font-size: 20px;
       }
 
       &.collapsed {
@@ -102,6 +103,7 @@
 
       a {
         padding-bottom: 50px;
+        color: $color__primary-blue;
       }
     }
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-08-01T19:29:23.183Z"
+        cq:lastModifiedBy="etn-erick"
+        cq:lastReplicated="{Date}2017-08-01T21:05:37.490Z"
+        cq:lastReplicatedBy="etn-erick"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="link-list-2column"
+        jcr:uuid="7cf9e5c1-a3f1-4b37-81be-1b8a8f8f6104"
+        sling:resourceType="eaton/static-components/structure/eaton-content-page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <link_list
+                jcr:created="{Date}2017-07-27T16:15:31.169Z"
+                jcr:createdBy="etn-erick"
+                jcr:lastModified="{Date}2017-07-27T16:15:40.724Z"
+                jcr:lastModifiedBy="etn-erick"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/general/link-list"
+                view="2column"/>
+        </par>
+    </jcr:content>
+</jcr:root>

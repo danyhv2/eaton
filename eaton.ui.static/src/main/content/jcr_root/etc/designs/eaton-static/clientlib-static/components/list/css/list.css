@@ -1,4 +1,4 @@
-.eaton-list-component { font-family: "Eaton", Arial, sans-serif; margin-bottom: 60px; }
+.eaton-list-component { margin-bottom: 60px; }
 
 .eaton-list-component a { text-decoration: none; }
 
@@ -48,6 +48,8 @@
 .featured-category__cta-container { margin-top: 30px; }
 
 .featured-category__cta-container a:hover, .featured-category__cta-container a:active, .featured-category__cta-container a:focus { color: #FFF; }
+
+.featured-category__title { font-family: Arial, "Arial", sans-serif; color: #005EB8; font-size: 2.875rem; font-weight: bold; line-height: 50px; }
 
 @media only screen and (max-width: 767px) { .featured-category-container { padding: 0; margin-bottom: 30px; } }
 

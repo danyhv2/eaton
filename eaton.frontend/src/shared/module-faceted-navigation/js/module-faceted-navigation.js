@@ -36,7 +36,7 @@ App.facets = (function() {
       mobileFacets();
     }
     else {
-      $componentClass.on('click', '[data-more-facets]', showAllFacetsGroups);
+      $componentClass.on('click', '[data-more-facets]', showAllFacetsItems);
       $componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
     }
 
@@ -57,7 +57,7 @@ App.facets = (function() {
         mobileEnabled = false;
         $('.faceted-navigation__mobile-container .faceted-navigation').remove();
         $('.faceted-navigation__mobile-container, .faceted-navigation__mobile-container a.b-button, .overlay-mask').remove();
-        $componentClass.on('click', '[data-more-facets]', showAllFacetsGroups);
+        $componentClass.on('click', '[data-more-facets]', showAllFacetsItems);
         $componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
       }
     });
@@ -125,56 +125,66 @@ App.facets = (function() {
 
   const mobileFacets = () => {
 
+
+
     if (mobileEnabled === false) {
       let temp = $componentClass.parent().parent();
-      let winHeight = $(document).innerHeight();
-      $("<div class='faceted-navigation__mobile-container hidden col-xs-12 col-md-3'></div>").prependTo(temp);
+      // let winHeight = $(document).innerHeight();
+      $("<div class='faceted-navigation__mobile-container u-visible-mobile hidden col-xs-12 col-md-3'></div>").prependTo(temp);
 
       $componentClass.clone(true, true).appendTo('.faceted-navigation__mobile-container').addClass('visible');
-      $('.faceted-navigation-header').clone(true, true).prependTo('.faceted-navigation__mobile-container');
+      $('.faceted-navigation-header').addClass('u-visible-desktop').clone(true, true).prependTo('.faceted-navigation__mobile-container');
 
+      $('.faceted-navigation__mobile-container').find('.faceted-navigation-header').addClass('u-visible-mobile').removeClass('u-visible-desktop');
       $('.faceted-navigation__mobile-container .faceted-navigation').prepend($('.faceted-navigation__mobile-container .faceted-navigation-header__header-bottom'));
 
       $mobileHeader.removeClass('hidden-xs').removeClass('hidden-sm');
 
       $('.faceted-navigation__mobile-container .faceted-navigation-header__header-bottom').removeClass('hidden-xs').removeClass('hidden-sm');
 
-      $("<a target='_self' class='b-button b-button__primary b-button__primary--light hidden-lg' role='button'>Filters (X)</a>").appendTo($('.faceted-navigation__mobile-container'));
-      $($mobileFacets).append("<a href='#' target='_self' class='b-button b-button__primary b-button__primary--light' role='button'>Filters (X)</a>");
+      $("<a target='_self' class='open-facets-mobile b-button b-button__primary b-button__primary--light hidden-lg' role='button'>Filters (X)</a>").appendTo($('.faceted-navigation__mobile-container'));
+      $($mobileFacets).append("<a href='#' target='_self' class='open-facets-mobile b-button b-button__primary b-button__primary--light' role='button'>Filters (X)</a>");
 
 
       $('.faceted-navigation__mobile-container').removeClass('hidden');
 
-
       $componentClass.css('display','none');
-      $('.faceted-navigation__mobile-container .faceted-navigation').addClass('hidden');
+
       $('.faceted-navigation__mobile-container .faceted-navigation').addClass('hidden');
       mobileEnabled = true;
 
-      $('.faceted-navigation__mobile-container .b-button').on('click', function(e) {
+      $('.faceted-navigation__mobile-container .open-facets-mobile').on('click', function(e) {
         e.preventDefault();
-        $("<div class='overlay-mask hidden'></div>").appendTo($('body'));
+        $('body').addClass('facets-open');
+        // $('.faceted-navigation__mobile-container').addClass('facets-navigation-mobile-open');
+
+        // $("<div class='overlay-mask hidden'></div>").appendTo($('body'));
         $('.faceted-navigation__mobile-container').addClass('enabled');
         $('.faceted-navigation__mobile-container .faceted-navigation').removeClass('hidden').addClass('visible');
         $('.faceted-navigation__mobile-container .faceted-navigation-header').addClass('hidden');
         $('.mobile-header').removeClass('hidden');
         $(this).addClass('hidden');
-        $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
+        // $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
         $('.search-results').css({position: 'inherit','z-index': '1'});
       });
 
-      $('.glyphicon-remove').on('click', function(e) {
+      $('.close-facets-mobile, .done-facets-mobile').on('click', function(e) {
+        e.preventDefault();
         $('.faceted-navigation__mobile-container').removeClass('enabled');
         $('.faceted-navigation__mobile-container .faceted-navigation').removeClass('visible').addClass('hidden');
         $('.faceted-navigation-header').removeClass('hidden');
         $('.faceted-navigation__mobile-container .b-button').removeClass('hidden');
-        $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
+        // $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
         $('.search-results').css('position','relative');
+
+        $('body').removeClass('facets-open');
+        // $('.faceted-navigation__mobile-container').removeClass('facets-navigation-mobile-open');
+
       });
 
       $('.faceted-navigation__mobile-container .faceted-navigation__header').on('click', function(e) {
         e.preventDefault;
-        $(this).children('.icon-sign-plus').toggleClass('u-hide');
+        $(this).find('.icon-sign-minus').toggle();
       });
 
       // View More Facets Behavior
@@ -199,11 +209,14 @@ App.facets = (function() {
 
 
 
+
+
+
   /**
-  * Show the remaining facets-groups thare were hidden on page load
+  * Show the remaining facets-items/groups that were hidden on page load
   * @param  { Object } event - the click event object
   */
-  const showAllFacetsGroups = (event) => {
+  const showAllFacetsItems = (event) => {
 
     // Show hidden facets
     $componentClass.find('.faceted-navigation__more-facets').slideDown(200);
@@ -220,10 +233,10 @@ App.facets = (function() {
   */
   const showAllFacetsValues = (event) => {
 
-    const $parentGroup = $(event.currentTarget).closest('.faceted-navigation__group');
+    const $parentItem = $(event.currentTarget).closest('.faceted-navigation__facet-item');
 
     // Show hidden facet-values
-    $parentGroup.find('.faceted-navigation__more-facet-values').slideDown(200);
+    $parentItem.find('.faceted-navigation__list-item.u-hide').slideDown(200);
 
     // Hide "View more" <button>
     event.currentTarget.classList.add('u-hide');
@@ -232,7 +245,9 @@ App.facets = (function() {
 
 
 
-
+  /**
+  * If containing DOM element is found, Initialize and Expose public methods
+  */
   if ($componentClass.length > 0) {
     init();
   }

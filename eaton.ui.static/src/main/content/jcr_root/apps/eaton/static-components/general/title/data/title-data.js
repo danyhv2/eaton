@@ -33,6 +33,14 @@ use(function () {
 	  data.style = "h1";
   } else if ((typeof(testdata) != "undefined") && (testdata == "related-products")) {
 	  data.title = 'More Eaton solutions';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-1")) {
+	  data.title = 'Invest in something bigger';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-2")) {
+	  data.title = 'Media Resources';  
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-models-list")) {
+	  data.title = 'Lorem ipsum dolor sit amet';  
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t8-sku-template-overview-tab")) {
+	  data.title = 'More 9PX models';  
   } else {
 	  data.title = 'Eaton’s New 2-gang Switched Sockets with Usb ports Make It Easy to Stay Charged';
 	  data.eyebrow = 'CATEGORY';

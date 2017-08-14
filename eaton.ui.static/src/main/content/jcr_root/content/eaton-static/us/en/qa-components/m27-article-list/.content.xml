@@ -23,7 +23,7 @@
                 jcr:lastModified="{Date}2017-07-19T21:15:17.575Z"
                 jcr:lastModifiedBy="etn-daniela"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/general/ctabutton"/>
+                sling:resourceType="eaton/static-components/general/cta"/>
             <list
                 jcr:created="{Date}2017-07-19T18:28:52.869Z"
                 jcr:createdBy="etn-daniela"
@@ -41,7 +41,7 @@
                         jcr:lastModified="{Date}2017-07-19T21:16:20.696Z"
                         jcr:lastModifiedBy="etn-daniela"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/general/ctabutton"
+                        sling:resourceType="eaton/static-components/general/cta"
                         view="default"/>
                 </col2-par>
             </list>

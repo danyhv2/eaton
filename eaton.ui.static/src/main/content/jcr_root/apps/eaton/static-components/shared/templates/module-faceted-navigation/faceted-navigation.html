@@ -1,22 +1,27 @@
 <!--/* M-62: Faceted Navigation */-->
 <template data-sly-template.module="${ @ data }">
   <div class="faceted-navigation eaton-form">
-  <div class="mobile-header hidden hidden-lg hidden-md">
-    <span>Filters </span><i class="remove glyphicon glyphicon-remove glyphicon-white"></i>
-  </div>
+    <div class="mobile-header u-visible-mobile">
+      <span>Filters </span>
+
+      <button class="close-facets-mobile button--reset">
+        <span class="sr-only">${ 'Close Filters' @ i18n }</span>
+        <i class="icon icon-close" aria-hidden="true"></i>
+      </button>
+    </div>
 
     <h4 class="hidden-sm hidden-xs">${ 'Narrow Results' @ i18n }</h4>
 
     <sly data-sly-list="${ data.facetItems }">
 
-      <!--/* Add Wrapper div used to toggle Facets Visiblity (View More) */-->
+      <!--/* Open/Add Wrapper div used to toggle Facets Visiblity (View More) */-->
       <sly data-sly-test="${ itemList.index == data.config.facetItemsMinVisible }">
         <div class="u-hide faceted-navigation__more-facets">
       </sly>
 
 
       <!--/* Print All Facets */-->
-      <div class="faceted-navigation__group">
+      <div class="faceted-navigation__facet-item">
 
         <!--/* Facet Header */-->
         <button class="faceted-navigation__header button--reset"
@@ -33,96 +38,41 @@
         <!--/* Facet Values */-->
         <div class="collapse in ${ 'facet-{0}' @ format=[ item.facetId ] }">
 
-          <ul class="faceted-navigation__list">
-            <sly data-sly-list.facetValue="${ item.facetValues }">
+          <ul data-sly-list.facetValue="${ item.facetValues }" class="faceted-navigation__list">
 
-              <!--/* Open Wrapper Element used to Hide Facet Values based on Backend Config */-->
-              <sly data-sly-test="${ facetValueList.index == data.config.facetValuesMinVisible }">
-                <li class="u-hide faceted-navigation__more-facet-values faceted-navigation__list-item">
+            <li class="faceted-navigation__list-item ${
+              facetValueList.count > data.config.facetValuesMinVisible
+                ? 'u-hide'
+                : ''
+              }">
+              <!--/* Type: Checkbox */-->
+              <sly data-sly-test.typeCheckboxes="${ item.facetType == 'checkboxes' }">
+                <div class="faceted-navigation__facet-value">
+                  <input
+                    name="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
+                    type="checkbox"
+                  />
+                  <a target="_self" href="${ facetValue.url }">${ facetValue.label }</a>
+                </div>
               </sly>
 
-              <!--/* Inital Facet Values Visible */-->
-              <div data-sly-test.valuesMinVisible="${ !(facetValueList.count > data.config.facetValuesMinVisible) }"
-                data-sly-element="${'li'}" data-sly-attribute.class="faceted-navigation__list-item">
-
-                <!--/*
-                  TODO: Create a Reusable Template
-                */-->
-
-
-                <!--/* Type: Checkbox */-->
-                <sly data-sly-test="${ item.facetType == 'checkboxes' }">
-                  <div class="faceted-navigation__list-item ">
-                    <input
-                      name="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
-                      type="checkbox"
-                      id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
-                    />
-                    <a target="_self" href="${ facetValue.url }" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
-                  </div>
-                </sly>
-
-                <!--/* Type: Radio */-->
-                <sly data-sly-test="${ item.facetType == 'radios'}">
-                  <div class="faceted-navigation__list-item ">
-                    <input
-                      name="${ 'facet-{0}' @ format=[ item.facetId ] }"
-                      type="radio"
-                      id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
-                    />
-                    <a target="_self" href="${ facetValue.url }" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
-                  </div>
-                </sly>
-              </div>
-
-
-
-              <!--/* Additional Facet Values that are hidden based based on Backend Config (View-more) */-->
-              <div data-sly-test="${ !valuesMinVisible }">
-
-
-                <!--/*
-                  TODO: Create a Reusable Template
-                */-->
-
-
-                <!--/* Type Checkbox */-->
-                <sly data-sly-test="${ item.facetType == 'checkboxes' }">
-                  <div class="faceted-navigation__list-item ">
-                    <input
-                      name="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
-                      type="checkbox"
-                      id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
-                    />
-                    <a target="_self" href="${ facetValue.url }" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
-                  </div>
-                </sly>
-
-
-                <!--/* Type: Radio */-->
-                <sly data-sly-test="${ item.facetType == 'radios'}">
-                  <div class="faceted-navigation__list-item ">
-                    <input
-                      name="${ 'facet-{0}' @ format=[ item.facetId ] }"
-                      type="radio"
-                      id="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
-                    />
-                    <a target="_self" href="${ facetValue.url }" for="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }">${ facetValue.label }</a>
-                  </div>
-                </sly>
-              </div>
-
-
-              <!--/* Close Wrapper Element used to Hide Facet Values based on Backend Config */-->
-              <sly data-sly-test="${ item.facetValues.length > data.config.facetValuesMinVisible && facetValueList.last }">
-                </li>
-
-                <!--/* View More Facet Values */-->
-                <button class="button--reset faceted-navigation__view-more-values"
-                  data-more-facet-values >${ 'View more' @ i18n }</button>
-
+              <!--/* Type: Radio */-->
+              <sly data-sly-test.typeRadios="${ item.facetType == 'radios'}">
+                <div class="faceted-navigation__facet-value">
+                  <input
+                    name="${ 'facet-{0}' @ format=[ item.facetId ] }"
+                    type="radio"
+                  />
+                  <a target="_self" href="${ facetValue.url }">${ facetValue.label }</a>
+                </div>
               </sly>
+            </li>
 
+
+            <!--/* If there are more Facet Values than the configured amount, show "View More" button */-->
+            <sly data-sly-test="${ item.facetValues.length > data.config.facetValuesMinVisible && facetValueList.last }">
+              <button class="button--reset faceted-navigation__view-more-values"
+                data-more-facet-values >${ 'View more' @ i18n }</button>
             </sly>
           </ul>
         </div>
@@ -130,18 +80,20 @@
       </div>
 
 
-      <!--/* Close Wrapper div used to toggle Facets Visiblity (View More) */-->
+      <!--/* Close Wrapper <div> that hides additional facet-items, and Add Button that shows more Facet Items */-->
       <sly data-sly-test="${ itemList.count == data.config.facetItemsMinVisible && itemList.last }">
+        </div>
+
+        <div class="faceted-navigation__view-more-facets">
+          <button class="button--reset view-more-facets" data-more-facets ><strong>${ 'View more' @ i18n }</strong> </button>
         </div>
       </sly>
 
     </sly>
 
 
-    <!--/* View More Facet Items */-->
-    <div data-sly-test="${ data.facetItems.length > data.config.facetItemsMinVisible }"
-      class="faceted-navigation__view-more-facets">
-      <button class="button--reset view-more-facets" data-more-facets ><strong>${ 'View more' @ i18n }</strong> </button>
-    </div>
+    <button class="b-button b-button__tertiary b-button__tertiary--light done-facets-mobile u-visible-mobile">Done</button>
+
+
   </div>
 </template>

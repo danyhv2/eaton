@@ -28,8 +28,6 @@ App.search = function () {
   var componentClass = '.eaton-search';
   var $componentElement = $(componentClass);
   var $searchInputEl = $componentElement.find('.eaton-search--default__form-input');
-  var $searchResultContainer = $componentElement.find('.eaton-search--default__results');
-  var $searchResultList = $searchResultContainer.find('.eaton-search--default__result-list');
 
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -40,7 +38,7 @@ App.search = function () {
   var init = function init() {
     // If not in AEM Author Mode & component exists on page - initialize scripts
     if (!isAEMAuthorMode) {
-      console.log('Initialize Search');
+      // console.log('Initialize Search');
       addEventListeners();
     }
   };
@@ -56,7 +54,7 @@ App.search = function () {
     // Search the title for the matched term and wrap it in required markup
     linkTitleText = linkTitleText.replace(regX, '<strong>$1</strong>');
 
-    return '\n      <li class="eaton-search--default__result-item">\n        <a href="' + data.link + '" target="' + data.target + '"> ' + linkTitleText + ' </a>\n      </li>';
+    return '\n      <li class="eaton-search--default__result-item b-body-copy">\n        <a href="' + data.link + '" target="' + data.target + '"> ' + linkTitleText + ' </a>\n      </li>';
   };
 
   /**

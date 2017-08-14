@@ -4,6 +4,7 @@ import javax.inject.Inject;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.Optional;
 
 /**
  * The Class BCComponentModel.
@@ -26,6 +27,41 @@ public class BCComponentModel   {
 	/** brightcovePlayerID. */
 	@Inject
 	private String brightcovePlayerID;
+	
+	/** headLine. */
+	@Inject @Optional
+	private String headLine;
+	
+	/** toggleInnerGrid. */
+	@Inject @Optional
+	private String toggleInnerGrid;
+	
+	
+	
+	/**
+	 * @return the toggleInnerGrid
+	 */
+	public String getToggleInnerGrid() {
+		return toggleInnerGrid;
+	}
+
+	/**
+	 * @return the headLine
+	 */
+	public String getHeadLine() {
+		return headLine;
+	}
+
+	/**
+	 * @return the description
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+	/** description. */
+	@Inject @Optional
+	private String description;
 
 	/**
 	 * Gets the content type.

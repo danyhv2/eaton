@@ -15,6 +15,12 @@ public interface EatonConfigService {
 	
 	/** The Constant DROPDOWN_OPTION_SELECT. */
     public static final String DROPDOWN_OPTION_SELECT = "linklist.dropdown.option";
+    
+    /** The Constant NUMBER_OF_DAYS_TO_PUBLISH. */
+    public static final String NUMBER_OF_DAYS_TO_PUBLISH = "number.of.days.publish";
+    
+    /** The Constant MIDDLE_TAB_PATH_ARRAY. */
+    public static final String MIDDLE_TAB_PATH_ARRAY = "middle.tab.config";
 
     /** The Constant ICONLIST_PROOFPOINT_SYMBOLS. */
     public static final String ICONLIST_PROOFPOINT_SYMBOLS = "iconlist.proofpoint.symbols";

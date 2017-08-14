@@ -1,21 +1,31 @@
 <template data-sly-template.module="${ @ data }">
-    <div class="slick-carousel">
-        <div class="slick-carousel__slides" data-sly-list="${data}">
-            <a href="${item.link}" target="${item.target}" class="slides col-xs-12 ${data.length < 4 ? 'col-sm-4' : 'col-sm-3'}">
+    <div class="module-related-products">
+        <ul class="module-related-products__slides" data-sly-list="${data}">
+            <li class="slides col-xs-12 ${data.length < 4 ? 'col-sm-4' : 'col-sm-3'}">
+                <a href="${item.link}" target="${item.target}" class="u-absolute-fill">
+                <span class="sr-only">
+                    ${item.title}
+                </span>
+                </a>
                 <div class="col-xs-12 related-products-component__card">
-                    <img class="carousel-component-slide__image" data-src="${item.image}" data-desktop-rendition="${item.image}" data-mobile-rendition="${item.mobile_image}"/>
-
+                    <img class="carousel-component-slide__image" data-src="${item.image}" data-desktop-rendition="${item.image}" data-mobile-rendition="${item.mobile_image}" data-tablet-rendition="${item.tablet_image}" alt="${item.image_alt}"/>
                 </div>
                 <div class="col-xs-12">
                     <p class="b-eyebrow-small related-products-component__title">${item.title}</p>
                     <p class="b-h4-link">${item.text}</p>
                 </div>
-            </a>
-        </div>
+            </li>
+        </ul>
 
         <sly data-sly-test="${data.length > 4}">
-            <button class="slick-carousel__prev-arrow slick-carousel__arrows button--reset"><span class="icon icon-chevron-left"></span></button>
-            <button class="slick-carousel__next-arrow slick-carousel__arrows button--reset"><span class="icon icon-chevron-right"></span></button>
+            <button class="module-related-products__prev-arrow module-related-products__arrows button--reset">
+                <span class="icon icon-chevron-left"></span>
+                <span class="sr-only">Go to Previous Item</span>
+            </button>
+            <button class="module-related-products__next-arrow module-related-products__arrows button--reset">
+                <span class="icon icon-chevron-right"></span>
+                <span class="sr-only">Go to Next Item</span>
+            </button>
         </sly>
 
     </div>

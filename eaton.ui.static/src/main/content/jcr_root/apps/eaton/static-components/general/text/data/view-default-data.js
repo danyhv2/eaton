@@ -30,7 +30,7 @@ use(function () {
       At Eaton, our vision is to deliver that power more efficiently, reliably and safely with innovative technologies that \
       improve people&apos;s lives, the communities where we live and work, and the planet our future generations depend upon. \
       To meet today&apos;s challenges, and tomorrow&apos;s. That&apos;s what really matters. And we&apos;re here to make sure it works.</p>";
-    } else if ((typeof(testdata) != "undefined") && (testdata == "primary-featuredtopic")) {
+    } else if ((typeof(testdata) != "undefined") && ( (testdata == "primary-featuredtopic") || (testdata == "t11-listing-page-1") ) ) {
       data.text = "<p>When you invest in Eaton, you help power energy solutions that improve the quality of life and the environment for all.</p>";
     } else if ((typeof(testdata) != "undefined") && (testdata == "article-primarycontent")) {
       data.text = "<h2>H2 subheading goes here</h2> \
@@ -79,6 +79,21 @@ use(function () {
     <h4>H4 subheading goes here</h4> \
     <ul><li>UL List item 1</li><li>UL List item 2</li><li>UL List item 3</li></ul> \
     ';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-2")) {
+	data.text = '<p>See what people are saying about Eaton.</p>';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-3")) {
+	    data.text = "<p><strong>FOR MORE INFORMATION</strong></p> \
+	    <p><b><i>Name</i></b></p> \
+	    <i>Title, sector & market</i><br/> \
+	    Country, Region<br/> \
+	    (555) 555-5555<br/><br/>";
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-models-list-1")) {
+	    data.text = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla hendrerit, augure vel sollicitudin consectetur.</p>"
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-models-list-2")) {
+	    data.text = "<p><strong>NEED HELP ?</strong></p> \
+	    <p>800-356-5794</p> \
+	    <p>Monday-Friday</p> \
+	    <p>8:00am to 6:00pm ET</p><br/>";
   } else {
     data.text = '<p>Eaton is a power management company with 2016 sales of $19.7 billion. <em>We provide energy-efficient solutions</em> that help <b>our customers</b> effectively manage electrical, <i>hydraulic and mechanical</i> power more efficiently, safely and sustainably.</p> \
     <p>Eaton is dedicated to <a href="#">improving the quality of life and the environment</a> through the use of <strong>power management technologies</strong> and services.</p>';

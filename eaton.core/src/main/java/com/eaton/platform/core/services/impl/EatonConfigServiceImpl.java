@@ -32,7 +32,9 @@ import com.eaton.platform.core.util.CommonUtil;
         @Property(label="Country Selector Folder Path", name = "countryselector.folder.path", value = ""),
         @Property(unbounded = PropertyUnbounded.ARRAY, label = "LOV Icon List path",
         	description = "Icon LOVs List Path", name = "lov.icon.list.path", value = {}),
-        @Property(unbounded = PropertyUnbounded.ARRAY, name = "linklist.dropdown.option", label = "Link List View Option", value = "", description="This defines text and value of view as dropdown option")
+        @Property(unbounded = PropertyUnbounded.ARRAY, name = "linklist.dropdown.option", label = "Link List View Option", value = "", description="This defines text and value of view as dropdown option"),
+        @Property(label="Number Of Days To Publish", name =  "number.of.days.publish", value = ""),
+        @Property(unbounded = PropertyUnbounded.ARRAY, label = "Middle Tab list path",description = "Middle Tab list path", name = "middle.tab.config", value = {})
 		})
 public class EatonConfigServiceImpl implements EatonConfigService {
 	
@@ -99,6 +101,16 @@ public class EatonConfigServiceImpl implements EatonConfigService {
             String[] proofPointSymbolsArray = PropertiesUtil.toStringArray(properties.get(ICONLIST_PROOFPOINT_SYMBOLS));
             List<String> proofPointSymbols = CommonUtil.getListFromStringArray(proofPointSymbolsArray);
             this.configServiceBean.setProofPointSymbols(proofPointSymbols);;
+        }
+        if (properties.containsKey(NUMBER_OF_DAYS_TO_PUBLISH)) {
+            String numberOfDaysToPublish =
+                    PropertiesUtil.toString(properties.get(NUMBER_OF_DAYS_TO_PUBLISH), "");
+            this.configServiceBean.setNumofDaysToPublish(numberOfDaysToPublish);
+        }
+        if(properties.containsKey(MIDDLE_TAB_PATH_ARRAY)){
+        	String[] middleTabListPathArray =  PropertiesUtil.toStringArray(properties.get(MIDDLE_TAB_PATH_ARRAY));
+        	 List<String> middleTabList = CommonUtil.getListFromStringArray(middleTabListPathArray);
+        	this.configServiceBean.setMiddleTabListPagePathList(middleTabList);        	
         }
         LOGGER.debug("EatonConfigServiceImpl :: initializeConfigurations() :: Exit");
 	}

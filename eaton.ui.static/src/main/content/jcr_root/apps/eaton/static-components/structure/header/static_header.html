@@ -38,7 +38,7 @@
 
                     <!--/* Link List: Primary Navigation  */-->
                     <div class="header-primary-nav__menu">
-                        <sly data-sly-resource="${'header-links' @ resourceType='/apps/eaton/static-components/content/link-list'}"></sly>
+                        <sly data-sly-resource="${'header-links' @ resourceType='/apps/eaton/static-components/general/link-list'}"></sly>
                     </div>
 
                     <!--/* Search & Mobile Hamburger Menu  */-->
@@ -61,13 +61,13 @@
         <!--/* Include: Primary Nav Search */-->
         <div data-sly-unwrap="${!wcmmode.edit}">
           <div class="header-search dark-theme">
-            <sly data-sly-resource="${'primary-nav-search' @ resourceType='eaton/static-components/content/search-box'}"></sly>
+            <sly data-sly-resource="${'primary-nav-search' @ resourceType='eaton/static-components/search/search-box'}"></sly>
           </div>
         </div>
 
         <!--/* Include: Mega Menu */-->
         <div data-sly-unwrap="${!wcmmode.edit}">
-          <sly data-sly-resource="${'mega-menu' @ resourceType='eaton/static-components/structure/mega-menu'}"></sly>
+          <sly data-sly-resource="${'mega-menu' @ resourceType='eaton/static-components/layout/mega-menu'}"></sly>
         </div>
 
     </div>

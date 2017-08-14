@@ -1,0 +1,43 @@
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+.upsell-products {
+
+  &__slides {
+    padding: 0;
+
+    .slides {
+      position: relative;
+    }
+
+    a {
+      z-index: 10;
+    }
+  }
+
+  &__arrows {
+    position: absolute;
+    top: 30%;
+    color: $color__secondary-gray4;
+    display: none !important;
+
+    .icon {
+      font-size: 37px;
+    }
+  }
+
+  &__prev-arrow {
+    left: 42px;
+  }
+
+  &__next-arrow {
+    right: 42px;
+  }
+
+  @include media-desktop-large {
+    &:hover .upsell-products__arrows {
+      display: block !important;
+    }
+  }
+}

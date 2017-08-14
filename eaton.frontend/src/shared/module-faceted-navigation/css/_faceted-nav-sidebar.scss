@@ -3,7 +3,7 @@
 //-----------------------------------
 
 .faceted-navigation__mobile-container .faceted-navigation {
-  padding: 0 30px;
+  padding: 60px 30px;
 }
 
 .autocorrected-search {
@@ -24,15 +24,18 @@
   }
 
   &__mobile-container {
-    z-index: 9999;
+    z-index: 40;
     background-color: $color__white;
-    margin: 20px 0 30px;
+    margin: 0;
 
     &.enabled {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       padding: 0;
+      z-index: 300;
+      overflow: auto;
+      height: 100%;
     }
 
     .b-button {
@@ -47,26 +50,33 @@
   .visibile { display: block; }
 
   .mobile-header {
-    position: absolute;
-    top: -80px;
+    position: fixed;
+    top: 0;
     height: 53px;
     font-size: 18px;
     left: 0;
     color: $color__white;
-    background-color: #666;
+    background-color: $color__primary-gray1;
     width: 100%;
     padding: 15px 30px 0 30px;
+    z-index: 510;
 
-    i {
+    .close-facets-mobile {
       position: absolute;
       display: block;
-      right: 30px;
-      top: 17px;
+      right: 20px;
+      top: 50%;
+      width: 48px;
+      height: 48px;
+      transform: translateY(-50%);
     }
 
-    a {
-      color: $color__white;
+    .icon {
+      font-size: 16px;
+      position: relative;
+      top: 4px;
     }
+
   }
 
   .mobile-done {
@@ -87,7 +97,7 @@
     }
   }
 
-  &__group {
+  &__facet-item {
     border-bottom: 1px solid #e6e6e6;
   }
 
@@ -137,19 +147,72 @@
 
 
   //-----------------------------------
-  // MediaQuery: Mobile & Tablet Only
+  // MediaQuery: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
+
+    padding: 60px 30px;
+
+
+    .faceted-navigation__facet-value {
+      padding-bottom: 0 !important;
+    }
+
+
+    .faceted-navigation__view-more-values {
+      padding-top: 8px;
+    }
+
+
+    .faceted-navigation__header {
+      margin: 9px 0;
+    }
+
+
+    .faceted-navigation__mobile-container {
+        margin: 30px 0 30px;
+    }
+
+
+    .done-facets-mobile {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
 
   }
 
 
 
   //-----------------------------------
-  // MediaQuery: Desktop & Desktop Large
+  // MediaQuery: >992px
   //-----------------------------------
   @include media-desktop-and-up {
+
+    .done-facets-mobile { display: none; }
 
   }
 
 }
+
+
+//-----------------------------------
+// MediaQuery: 0 to 991px
+//-----------------------------------
+@include media-mobile-and-tablet {
+  body.facets-open {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+
+
+  @include media-mobile-and-tablet {
+       .faceted-navigation__mobile-container .faceted-navigation {
+        margin-bottom: 30px;
+    }
+  }

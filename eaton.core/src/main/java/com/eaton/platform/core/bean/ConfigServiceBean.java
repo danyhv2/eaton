@@ -22,6 +22,12 @@ public class ConfigServiceBean implements Serializable {
 	
     /** The Icon List proof point symbols. */
 	private List<String> proofPointSymbols;
+	
+	/** The numof days to publish. */
+	private String numofDaysToPublish;
+	
+	/** The middle tab list page path list. */
+	private List<String> middleTabListPagePathList;
     
 	/**
 	 * Gets the countryselector folder path.
@@ -77,12 +83,50 @@ public class ConfigServiceBean implements Serializable {
 		this.linkListViews = linkListViews;
 	}
 
+	/**
+	 * Gets the proof point symbols.
+	 *
+	 * @return the proof point symbols
+	 */
 	public List<String> getProofPointSymbols() {
 		return proofPointSymbols;
 	}
 
+	/**
+	 * Sets the proof point symbols.
+	 *
+	 * @param proofPointSymbols the new proof point symbols
+	 */
 	public void setProofPointSymbols(List<String> proofPointSymbols) {
 		this.proofPointSymbols = proofPointSymbols;
+	}
+
+	/**
+	 * @return the numofDaysToPublish
+	 */
+	public String getNumofDaysToPublish() {
+		return numofDaysToPublish;
+	}
+
+	/**
+	 * @param numofDaysToPublish the numofDaysToPublish to set
+	 */
+	public void setNumofDaysToPublish(String numofDaysToPublish) {
+		this.numofDaysToPublish = numofDaysToPublish;
+	}
+
+	/**
+	 * @return the middleTabListPagePathList
+	 */
+	public List<String> getMiddleTabListPagePathList() {
+		return middleTabListPagePathList;
+	}
+
+	/**
+	 * @param middleTabListPagePathList the middleTabListPagePathList to set
+	 */
+	public void setMiddleTabListPagePathList(List<String> middleTabListPagePathList) {
+		this.middleTabListPagePathList = middleTabListPagePathList;
 	}
 	
 }

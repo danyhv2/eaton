@@ -2,8 +2,20 @@
 // Import All SASS config files (Variables, Mixins, functions... etc)
 @import "../../../global/css/_config/sass";
 
-.slick-carousel {
+.module-related-products {
   position: relative;
+
+  &__slides {
+    padding: 0;
+
+    .slides {
+      position: relative;
+    }
+
+    a {
+      z-index: 10;
+    }
+  }
 
   &__dots {
     text-align: center;
@@ -51,7 +63,7 @@
   }
 
   @include media-desktop-large {
-    &:hover .slick-carousel__arrows {
+    &:hover .module-related-products__arrows {
       display: block !important;
     }
   }

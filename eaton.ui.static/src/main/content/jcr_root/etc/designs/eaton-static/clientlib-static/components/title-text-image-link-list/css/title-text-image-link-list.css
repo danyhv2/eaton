@@ -1,3 +1,5 @@
+.container-full { overflow-x: hidden; }
+
 .carousel-component-slide__caption { top: 0; }
 
 .carousel-component-slide__cta { margin-top: 30px; }
@@ -9,6 +11,8 @@
 .carousel-component-slide__title { font-size: 3.25em; line-height: 1.192em; margin: 0; }
 
 .carousel-component__arrow { display: none; }
+
+.carousel-component__arrow .icon { font-size: 37px; }
 
 .carousel-component__dots:only-child { display: none; }
 
@@ -66,6 +70,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) { .featured-story-component__text { padding-top: 15px; font-size: 1.6em; } }
 
+@media screen and (min-width: 768px) { .tile-link-component__container { padding: 0 15px; } }
+
 .tile-link-component__copy { padding: 60px 0; }
 
 .tile-link-component__element { color: #FFF; margin-left: 30px; margin-bottom: 60px; height: 240px; position: relative; padding: 0; }
@@ -84,11 +90,13 @@
 
 .tile-link-component__element--5 { background-color: #333F48; }
 
-.tile-link-component__icon { position: absolute; bottom: 70px; color: #FFF; width: 20%; left: 15px; }
+.tile-link-component__icon { position: absolute; bottom: 80px; color: #FFF; width: 20%; left: 20px; }
 
 .tile-link-component__image { width: 100%; }
 
-.tile-link-component__title { position: absolute; bottom: 0; width: 100%; margin: 0; padding: 10px 15px; font-size: 2.25em; }
+.tile-link-component__title { position: absolute; bottom: 0; width: 100%; margin: 0; padding: 20px; font-size: 1.875em; }
+
+@media screen and (min-width: 768px) { .tile-link-component__title { font-size: 2em; } }
 
 .tile-link-component__title--background { background-color: #333F48; opacity: 0.7; }
 
@@ -119,13 +127,13 @@
 
 .category-hero__header-content { position: absolute; top: 25%; color: #FFF; width: 100%; }
 
-.category-hero__header-cta { border: 0; font-size: 1.2em; color: #FFF; }
+.category-hero__header-cta { border: 0; font-size: 1.2em; color: #FFF; font-family: Arial, "Arial", sans-serif; }
 
 .category-hero-eye-brown { color: #FFF; }
 
 .category-hero-eye-brown a:hover, .category-hero-eye-brown a:active, .category-hero-eye-brown a:visited, .category-hero-eye-brown a:focus { color: #FFF; text-decoration: none; }
 
-.category-hero-body-copy { color: #FFF; font-size: 1.2em; margin-top: 30px; }
+.category-hero-body-copy { color: #FFF; font-size: 1.2em; margin-top: 30px; font-family: Arial, "Arial", sans-serif; }
 
 .category-hero__header-title h2 { font-size: 3.5em; margin-top: 30px; margin-bottom: 30px; }
 

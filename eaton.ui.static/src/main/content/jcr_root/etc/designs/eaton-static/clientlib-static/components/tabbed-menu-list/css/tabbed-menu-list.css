@@ -12,9 +12,9 @@
 
 .eaton-tabbed-menu-list__item a { display: block; padding-bottom: 30px; }
 
-.eaton-tabbed-menu-list__item > a { color: #000; }
+.eaton-tabbed-menu-list__item > a { color: #333F48; }
 
-.eaton-tabbed-menu-list__item > a span { color: #005EB8; }
+.eaton-tabbed-menu-list__item > a span { color: #005EB8; font-size: 20px; }
 
 .eaton-tabbed-menu-list__item > a.collapsed { color: #005EB8; }
 
@@ -27,7 +27,7 @@
   .eaton-tabbed-menu-list__item > a { color: #005EB8; }
   .eaton-tabbed-menu-list__item > a.active { color: #000; }
   .eaton-tabbed-menu-list__item > a.active.desktop.link { color: #005EB8; }
-  .eaton-tabbed-menu-list__item a { padding-bottom: 50px; }
+  .eaton-tabbed-menu-list__item a { padding-bottom: 50px; color: #005EB8; }
   .eaton-tabbed-menu-list__tab-links { border-left: 1px solid #98A4AE; }
   .eaton-tabbed-menu-list__tabs { display: block; overflow: hidden; }
   .eaton-tabbed-menu-list__item { border-bottom: 0; }

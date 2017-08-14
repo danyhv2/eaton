@@ -4,7 +4,7 @@ let App = window.App || {};
 
 App.carousel = function () {
 
-  const $carousel = $('.slick-carousel__slides');
+  const $carousel = $('.module-related-products__slides');
 
   const init = () => {
     initCarousel();
@@ -16,17 +16,16 @@ App.carousel = function () {
   const initCarousel = () => {
     for (let i = 0; i < $carousel.length; i++) {
 
-      $carousel.eq(i).addClass('slick-carousel__slides--' + i);
-      let $slides = $('.slick-carousel__slides--' + i + ' .slides').length > 4 ? 4 : 3;
+      $carousel.eq(i).addClass('module-related-products__slides--' + i);
+      let $slides = $('.module-related-products__slides--' + i + ' .slides').length > 4 ? 4 : 3;
 
       $carousel.eq(i).slick({
         slidesToShow: $slides,
         slidesToScroll: $slides,
-        autoplay: true,
         dots: true,
-        dotsClass: 'slick-carousel__dots',
-        prevArrow: $('.slick-carousel__prev-arrow'),
-        nextArrow: $('.slick-carousel__next-arrow'),
+        dotsClass: 'module-related-products__dots',
+        prevArrow: $('.module-related-products__prev-arrow'),
+        nextArrow: $('.module-related-products__next-arrow'),
         responsive: [
           {
             breakpoint: 991,

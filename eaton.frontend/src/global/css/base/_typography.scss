@@ -31,12 +31,10 @@ p {
 }
 
 a {
-  color: $color__primary-blue;
 
   &:link,
   &:visited,
   &:active {
-    color: $color__primary-blue;
     text-decoration: none;
   }
 }
@@ -152,6 +150,14 @@ h5,
 .b-eyebrow-small {
   color: $color__primary-gray1;
   @include eyebrow-small;
+}
+
+.b-h5-link-bold {
+  @include h5-link-bold;
+}
+
+.b-h4-link-bold {
+  @include h4-link-bold;
 }
 
 

@@ -1,0 +1,45 @@
+<sly data-sly-use.data="${'../data/view-default-data.js' @testdata=properties.testdata}">
+  <div class="eaton-search eaton-search--default" data-predictive-search="${data.searchUrl}">
+    <div class="container">
+      <div class="row">
+
+        <!--/* Search Form */-->
+        <form class="col-xs-12 eaton-search__form eaton-search--default__form"
+              action="${data.form.searchResultsPath}"
+              autocomplete="off"
+              target="${data.form.isExternal == true ? '_blank' : '_self'}">
+          <div class="form-group">
+            <label for="mega-menu-search" class="sr-only">${data.header}</label>
+            <input type="text"
+                    name="search-term"
+                    id="primary-menu-search"
+                    class="form-control eaton-search--default__form-input"
+                    placeholder="${data.form.placeholder}"
+                    required="required">
+
+            <div class="eaton-search--default__form-mobile-label u-visible-mobile">
+              ${data.form.placeholder}
+            </div>
+
+            <div data-sly-test="${data.form.isExternal}" class="eaton-search--default__form-external">
+              <span class="sr-only">Submit form in new Tab</span>
+              <i class="icon icon-link-external" aria-hidden="true"></i>
+            </div>
+
+            <button type="submit" class="button--reset eaton-search__submit eaton-search--default__form-submit">
+              <span class="sr-only">${data.form.submitLabel}</span>
+              <i class="icon icon-search" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="eaton-search--default__results">
+            <ul class="eaton-search--default__result-list" >
+              <!--/* Result Links will be populated here via AJAX Request /* -->
+            </ul>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</sly>

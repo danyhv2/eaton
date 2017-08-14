@@ -36,7 +36,7 @@ let targets = [
 
 
 let exclude = '**/*.orig';
-let pushInterval = 300;
+let pushInterval = 700;
 
 
 //-----------------------------------

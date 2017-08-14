@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-27T03:19:24.459Z"
+        cq:lastModifiedBy="etn-daniela"
+        cq:lastReplicated="{Date}2017-07-27T03:21:32.630Z"
+        cq:lastReplicatedBy="etn-daniela"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="m41-related-products"
+        jcr:uuid="65b541e5-5d73-49f9-bcaa-9ec773016cef"
+        sling:resourceType="eaton/static-components/structure/eaton-content-page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <list
+                jcr:created="{Date}2017-07-27T03:19:16.244Z"
+                jcr:createdBy="etn-daniela"
+                jcr:lastModified="{Date}2017-07-27T03:19:24.454Z"
+                jcr:lastModifiedBy="etn-daniela"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/list"
+                view="related-products"/>
+        </par>
+    </jcr:content>
+</jcr:root>

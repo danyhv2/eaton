@@ -82,6 +82,9 @@ App.header = function () {
     // Highlight the active mega-menu section
     megaMenu.find('[data-target="' + activeCategory + '"]').addClass('mega-menu__content--active').siblings().removeClass('mega-menu__content--active');
     megaMenu.find('[data-target="' + activeCategory + '"]').find('a').eq(0).focus();
+    megaMenu.parent().find('.mega-menu.dark-theme').addClass('primaryLinks-Clicked');
+    megaMenuSections.find('.mega-menu.dark-theme').removeClass('primaryLinks-Clicked');  
+
   };
 
   /**
@@ -94,6 +97,7 @@ App.header = function () {
     primaryLinks.removeClass('active');
     megaMenuSections.removeClass('mega-menu__content--active');
     bodyEl.removeClass('nav-open level-2-open nav-is-animating');
+    megaMenu.removeClass('primaryLinks-Clicked');
   };
 
   /**

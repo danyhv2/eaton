@@ -16,7 +16,7 @@
 
 
 //-----------------------------------
-// M-60: Results List Container
+// Product Gird Component
 //-----------------------------------
 'use strict';
 
@@ -53,7 +53,7 @@ App.productGrid = function () {
   // M-37: Family Card Template
   //--------------
   templates.productCardFamily = function (data) {
-    return '\n      <div class="product-card-family">\n\n        <a href="' + data.contentItem.link.url + '"\n          target="' + data.contentItem.link.target + '"\n          class="product-card-family__link">\n          <span class="sr-only">' + 'Go to' + ' ' + data.contentItem.name + '</span>\n        </a>\n\n        <div class="product-card-family__content">\n          <div class="product-card-family__image-wrapper">\n            <img src="' + data.contentItem.imgSrc + '"\n              class="product-card-family__image"\n              alt="' + data.contentItem.name + '" />\n          </div>\n\n          <div class="product-card-family__eyebrow b-eyebrow-small">' + data.contentItem.eyebrow + '</div>\n          <h2 class="product-card-family__title b-heading-h5">' + data.contentItem.name + '</h2>\n        </div>\n      </div>';
+    return '\n      <div class="product-card-family">\n\n        <a href="' + data.contentItem.link.url + '"\n          target="' + data.contentItem.link.target + '"\n          class="product-card-family__link">\n          <span class="sr-only">Go to ' + data.contentItem.name + '</span>\n        </a>\n\n        <div class="product-card-family__image-wrapper">\n          <img src="' + data.contentItem.imgSrc + '"\n            class="product-card-family__image"\n            alt="' + data.contentItem.name + '" />\n        </div>\n\n        <div class="product-card-family__content-wrapper">\n          <div class="product-card-family__subcategory b-eyebrow-small">' + data.contentItem.subcategory + '</div>\n          <h2 class="product-card-family__name">' + data.contentItem.name + '</h2>\n        </div>\n\n      </div>';
   };
 
   /**
@@ -65,14 +65,18 @@ App.productGrid = function () {
     var $currentComponent = $(event.currentTarget).closest(resultListCSSClass);
     var requestURL = $currentComponent.attr('data-results-url');
     var requestNextPage = $currentComponent.attr('data-results-next-page');
-
+    var resultsType = $currentComponent.attr('data-results-type');
     var templateType = '';
 
-    if ($currentComponent.hasClass('results-list--card-sku')) {
+    // Use Template for Product-SKU Type
+    if (resultsType === 'product-card-sku') {
       templateType = 'card-sku';
-    } else if ($currentComponent.hasClass('results-list--card-family')) {
-      templateType = 'card-family';
     }
+
+    // Else Use Template for Product-Family Type
+    else if (resultsType === 'product-card-family') {
+        templateType = 'card-family';
+      }
 
     // If the Request URL doesn't exists don't proceed
     if (!requestURL) {
@@ -109,7 +113,7 @@ App.productGrid = function () {
       // Append the new List of Result Elements to the DOM
       $currentComponent.find('.results-list__content').append(newElements);
 
-      // if There are no more results, remove "Load More" button
+      // if the next page of results is "null" or empty, remove "Load More" button
       if (!search.ajaxRequestNextPage) {
         $currentComponent.find('[data-load-more]').remove();
       }

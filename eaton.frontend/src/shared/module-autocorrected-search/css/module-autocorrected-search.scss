@@ -1,0 +1,47 @@
+//-----------------------------------
+// Module - M-64: Autocorrected Search
+//
+//
+// NOTE: This module is being used by these AEM-Components:
+//  - Search Results - Default View
+//-----------------------------------
+
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+.autocorrected-search {
+
+  // Empty selector for future reference
+
+
+
+  //-----------------------------------
+  // MediaQuery: 0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__search-instead {
+      display: block;
+    }
+  }
+
+
+
+  //-----------------------------------
+  // Media Query: > 992px
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__results {
+      display: inline-block;
+    }
+
+    &__search-instead {
+      display: inline-block;
+      margin-left: 16px;
+    }
+
+  }
+
+}
