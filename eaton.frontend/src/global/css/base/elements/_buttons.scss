@@ -24,7 +24,7 @@
   //--------------
   &__primary {
     border-width: 3px;
-    font-size: 1.25em;
+    font-size: 1.9rem; // Mobile Size
     padding: 20px 40px;
 
     // Use chained selectors in order to override default <a> tag styles
@@ -56,6 +56,10 @@
       }
     }
 
+    @include media-desktop-and-up {
+      font-size: 2rem; // Desktop size
+    }
+
   }
 
 
@@ -63,7 +67,7 @@
   //--------------
   &__secondary {
     border-width: 3px;
-    font-size: 0.875em;
+    font-size: 1.6rem; // Mobile Size
     padding: 20px;
 
     // Use chained selectors in order to override default <a> tag styles
@@ -93,6 +97,11 @@
         text-decoration: none;
       }
     }
+
+
+    @include media-desktop-and-up {
+      font-size: 1.4rem; // Desktop size
+    }
   }
 
 
@@ -100,7 +109,7 @@
   //--------------
   &__tertiary {
     border-width: 3px;
-    font-size: 1.25em;
+    font-size: 1.9rem; // Mobile Size
     padding: 20px 40px;
 
     // Use chained selectors in order to override default <a> tag styles
@@ -131,6 +140,11 @@
         color: $color__primary-blue;
         text-decoration: none;
       }
+    }
+
+
+    @include media-desktop-and-up {
+      font-size: 2rem; // Desktop size
     }
 
   }
