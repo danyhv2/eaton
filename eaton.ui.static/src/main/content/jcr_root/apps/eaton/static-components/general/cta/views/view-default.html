@@ -1,5 +1,10 @@
 <sly data-sly-use.data="${'../data/view-default-data.js' @testdata=properties.testdata}">
 
-<a data-sly-test="${data.cta}" href="${data.cta.url}" target="${data.cta.target}" class="b-button b-button__primary b-button__primary--light" role="button">${data.cta.title}</a>
+  <a data-sly-test="${ data.cta }"
+    href="${ data.cta.url }"
+    target="${ data.cta.target }"
+    class="b-button b-button__primary b-button__primary--light"
+    role="button"
+  >${ data.cta.title }</a>
 
 </sly>
