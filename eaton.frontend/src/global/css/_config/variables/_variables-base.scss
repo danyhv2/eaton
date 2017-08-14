@@ -1,8 +1,10 @@
+//-----------------------------------
+// EATON: SASS Variables
+//-----------------------------------
 
-// EATON: Breakpoints
-//--------------
 
 // Grid Breakpoints / Media Queries (Also used By Bootstrap)
+//--------------
 $grid__xs: 480px;
 $grid__sm: 768px;
 $grid__md: 992px;
@@ -28,13 +30,14 @@ $spacing__xl: 120px;
 
 // Typography
 //--------------
-$base__font-size: 16px;
-$base__line-height: 1.5;
+$base__font-size: 10px;
+$base__line-height: 1.4;
 
-// TODO: Sass function has some issues when is compiled, needs to be reviewd
+
+// TODO: Sass function has some issues when is compiled, It needs to be reviewed
 // $font-family__primary: get-locale-font();
 // $font-family__secondary: get-locale-font('font__secondary');
 $font-family__primary: 'Eaton', Arial, sans-serif;
-$font-family__secondary: Arial, 'Arial', sans-serif;
-
 $font-family__primary-bold: 'EatonBold', Arial, sans-serif;
+$font-family__primary-medium: 'EatonMedium', Arial, sans-serif;
+$font-family__secondary: Arial, 'Arial', sans-serif;

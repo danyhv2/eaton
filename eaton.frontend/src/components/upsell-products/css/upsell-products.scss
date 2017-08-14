@@ -20,7 +20,7 @@
     position: absolute;
     top: 30%;
     color: $color__secondary-gray4;
-    display: none !important;
+    display: none !important; // stylelint-disable-line declaration-no-important
 
     .icon {
       font-size: 37px;
@@ -37,7 +37,7 @@
 
   @include media-desktop-large {
     &:hover .upsell-products__arrows {
-      display: block !important;
+      display: block !important; // stylelint-disable-line declaration-no-important
     }
   }
 }
