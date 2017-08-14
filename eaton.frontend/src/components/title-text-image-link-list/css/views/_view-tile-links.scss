@@ -1,5 +1,12 @@
 .tile-link-component {
 
+  &__container {
+
+    @include media-tablet-and-up {
+      padding: 0 15px;
+    }
+  }
+
   &__copy {
     padding: 60px 0;
   }
@@ -50,10 +57,10 @@
 
   &__icon {
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
     color: $color__white;
     width: 20%;
-    left: 15px;
+    left: 20px;
   }
 
   &__image {
@@ -65,7 +72,7 @@
     bottom: 0;
     width: 100%;
     margin: 0;
-    padding: 10px 15px;
+    padding: 20px;
     font-size: 2.25em;
 
     &--background {
