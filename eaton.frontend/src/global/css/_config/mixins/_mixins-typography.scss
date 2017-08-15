@@ -153,6 +153,25 @@
   }
 }
 
+// links bold
+@mixin h5-link-bold {
+  @include h5;
+  font-family: $font-family__primary-bold;
+
+  @include media-desktop-and-up {
+    font-family: $font-family__primary-bold;
+  }
+}
+
+@mixin h4-link-bold {
+  @include h4;
+  font-family: $font-family__primary-bold;
+
+  @include media-desktop-and-up {
+    font-family: $font-family__primary-bold;
+  }
+}
+
 
 // Body Copy
 //--------------
@@ -240,25 +259,6 @@
 
   @include media-desktop-and-up {
     @include eyebrow-large--desktop;
-  }
-}
-
-// links bold
-@mixin h5-link-bold {
-  @include h5;
-  font-family: $font-family__primary-bold;
-
-  @include media-desktop-and-up {
-    font-family: $font-family__primary-bold;
-  }
-}
-
-@mixin h4-link-bold {
-  @include h4;
-  font-family: $font-family__primary-bold;
-
-  @include media-desktop-and-up {
-    font-family: $font-family__primary-bold;
   }
 }
 

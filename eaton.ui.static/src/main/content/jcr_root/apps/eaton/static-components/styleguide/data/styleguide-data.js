@@ -130,7 +130,7 @@ use(function () {
           fontFamily: "'EatonMedium', sans-serif",
           fontSize: "3.5rem",
           fontWeight: "normal",
-          lineHeight: "4.0rem"
+          lineHeight: "4rem"
         },
         desktop: {
           fontFamily: "'EatonMedium', sans-serif",
@@ -170,7 +170,7 @@ use(function () {
           fontFamily: "'EatonMedium', sans-serif",
           fontSize: "4.0rem",
           fontWeight: "normal",
-          lineHeight: "5.0rem"
+          lineHeight: "5rem"
         }
       },
       {
@@ -187,7 +187,7 @@ use(function () {
           fontFamily: "'EatonMedium', sans-serif",
           fontSize: "4.0rem",
           fontWeight: "normal",
-          lineHeight: "5.0rem"
+          lineHeight: "5rem"
         }
       },
       {
@@ -273,7 +273,7 @@ use(function () {
         },
         desktop: {
           fontFamily: "Arial, sans-serif",
-          fontSize: "2.0rem",
+          fontSize: "2rem",
           fontWeight: "normal",
           lineHeight: "1.6rem"
         }
@@ -286,7 +286,7 @@ use(function () {
           fontFamily: "Arial, sans-serif",
           fontSize: "1.7rem",
           fontWeight: "bold",
-          lineHeight: "2.0rem"
+          lineHeight: "2rem"
         },
         desktop: {
           fontFamily: "Arial, sans-serif",

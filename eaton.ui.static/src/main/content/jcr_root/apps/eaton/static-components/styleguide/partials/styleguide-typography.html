@@ -59,6 +59,8 @@
     <hr />
     <p class="b-body-copy-small"><strong>Example:</strong> <code>body-copy-small</code> Power Management Company Eaton has upgraded its wiring accessories offering for residential and commercial buildings with the launch of a switched socket with USB ports. The <strong>PREMERA and COPA 2-gang</strong> switched sockets have two USB ports to provide a convenient and safe charging solution for tablets, mobile phones and other electronic devices. <a href="#">This is a Link element.</a> <em>This sentence uses italic font.</em></p>
     <hr />
+    <p class="b-hero-description"><strong>Example:</strong> <code>hero-description</code> Power Management Company Eaton has upgraded its wiring accessories offering for residential and commercial buildings with the launch of a switched socket with USB ports. The <strong>PREMERA and COPA 2-gang</strong> switched sockets have two USB ports to provide a convenient and safe charging solution for tablets, mobile phones and other electronic devices. <a href="#">This is a Link element.</a> <em>This sentence uses italic font.</em></p>
+    <hr />
 
     <table class="sg-table b-body-copy-small">
       <thead>
@@ -73,8 +75,10 @@
           <td>${ style.name }</td>
           <td>
             <div class="sg-${ style.id }-mobile sg-typography-style u-flex u-flex-align-center">
+
               <!--/* If Style is "Eyebrow" example text should be Uppercase */-->
-              <span class="${ (style.id == 'eyebrow-large' || style.id == 'eyebrow-small') ? 'text-uppercase' : '' }"
+              <span data-sly-unwrap="${ !(style.id == 'eyebrow-large' || style.id == 'eyebrow-small') }"
+                class="${ (style.id == 'eyebrow-large' || style.id == 'eyebrow-small') ? 'text-uppercase' : '' }"
               >${ style.name} example mobile
               </span>
             </div>
@@ -87,8 +91,10 @@
           </td>
           <td>
             <div class="sg-${ style.id }-desktop sg-typography-style u-flex u-flex-align-center">
+
               <!--/* If Style is "Eyebrow" example text should be Uppercase */-->
-              <span class="${ (style.id == 'eyebrow-large' || style.id == 'eyebrow-small') ? 'text-uppercase' : '' }"
+              <span data-sly-unwrap="${ !(style.id == 'eyebrow-large' || style.id == 'eyebrow-small') }"
+                class="${ (style.id == 'eyebrow-large' || style.id == 'eyebrow-small') ? 'text-uppercase' : '' }"
               >${ style.name} example desktop
               </span>
             </div>
