@@ -1,1 +1,13 @@
-.country-selector--drawer { height: 240px; background: #98A4AE; border: 1px solid #005EB8; padding: 30px 20px; color: #FFF; }
+.country-selector__item { border-bottom: 2px solid #EEF0F2; border-radius: 0; }
+
+.country-selector__item-header { padding: 15px 0; }
+
+.country-selector__item-link { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.country-selector__item-title { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+
+.country-selector__item-body { padding: 30px 0; }
+
+.country-selector__item-list { display: block; margin: 0; padding: 0; list-style: none; overflow: hidden; }
+
+.country-selector__item-country { padding: 15px; }

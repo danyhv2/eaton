@@ -1,0 +1,40 @@
+//-----------------------------------
+// Component T-12
+// First Time Country/Language Selection
+//-----------------------------------
+
+.country-selector {
+  &__item {
+    border-bottom: 2px solid $color__secondary-gray5;
+    border-radius: 0;
+  }
+
+  &__item-header {
+    padding: ($spacing__sm / 2) 0;
+  }
+
+  &__item-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-title {
+    flex-grow: 1;
+  }
+
+  &__item-body {
+    padding: $spacing__sm 0;
+  }
+
+  &__item-list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  &__item-country {
+    padding: ($spacing__sm / 2);
+  }
+}
