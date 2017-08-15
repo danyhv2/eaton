@@ -11,15 +11,17 @@
 
   &__item-header {
     padding: ($spacing__sm / 2) 0;
-  }
-
-  &__item-link {
+    position: relative;
     display: flex;
     align-items: center;
   }
 
   &__item-title {
     flex-grow: 1;
+  }
+
+  &__item-icon {
+    color: $color__primary-blue;
   }
 
   &__item-body {

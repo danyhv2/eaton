@@ -7,13 +7,14 @@
             <div data-sly-list="${data.locations}" class="panel-group country-selector__list" role="tablist" aria-multiselectable="true">
                 <div class="panel country-selector__item">
                     <div class="panel-heading country-selector__item-header" role="tab" id="${item.regionId}">
-                        <a href="#collapse-${itemList.index}" aria-expanded="false" aria-controls="collapse-${itemList.index}" class="country-selector__item-link"
-                           data-toggle="collapse" data-parent="country-selector__item">
-                            <h3 class="country-selector__item-title b-heading-h3" role="button">
-                                ${item.region}
-                            </h3>
-                            <i class="country-selector__item-icon icon icon-sign-minus" aria-hidden="true"></i>
+                        <a href="#collapse-${itemList.index}" aria-expanded="false" aria-controls="collapse-${itemList.index}" class="country-selector__item-link u-absolute-fill"
+                           data-toggle="collapse" data-parent="country-selector__item" role="button">
+                            <span class="sr-only">Select your location</span>
                         </a>
+                        <h3 class="country-selector__item-title b-heading-h3">${item.region}</h3>
+                        <i class="country-selector__item-icon icon icon-sign-minus" aria-hidden="true">
+                          <span class="sr-only"></span>
+                        </i>
                     </div>
 
                     <div id="collapse-${itemList.index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="${item.regionId}">
