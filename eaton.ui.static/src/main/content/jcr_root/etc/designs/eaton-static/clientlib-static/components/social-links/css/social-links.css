@@ -4,6 +4,16 @@
 
 .eaton-social-links__list-item { display: inline-block; margin-right: 18px; }
 
+.eaton-social-links .icon-facebook { color: #2C578F; }
+
+.eaton-social-links .icon-twitter { color: #0FA9D0; }
+
+.eaton-social-links .icon-googleplus { color: #D44A3A; }
+
+.eaton-social-links .icon-linked-in { color: #3699C6; }
+
+.eaton-social-links .icon-pinterest { color: #D02127; }
+
 .eaton-social-links__page-link { font-size: 18px; }
 
 .eaton-social-links__page-link-icon { font-size: 0.7em; }
