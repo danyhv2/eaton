@@ -10,6 +10,7 @@
         sling:resourceType="eaton/static-components/structure/eaton-home-page"/>
     <test-data/>
     <styleguide/>
+    <templates/>
     <t1-homepage-template/>
     <t2-primary-landing-template/>
     <t3-article-template/>
