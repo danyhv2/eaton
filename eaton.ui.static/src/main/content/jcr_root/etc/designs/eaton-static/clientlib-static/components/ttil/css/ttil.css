@@ -1,17 +1,10 @@
-.category-hightlight-header__text { font-size: 1.5em; color: #FFF; }
+.l2-hero { position: relative; height: 400px; }
 
-.category-hightlight-header__title { font-size: 3.5em; line-height: 1.192em; color: #FFF; }
+.l2-hero--vertical-align { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.category-hightlight-header__image { background-size: cover; height: 450px; }
+.l2-hero__title, .l2-hero__text { color: #FFF; }
 
-.category-hightlight-header--vertical-align { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-@media only screen and (max-width: 767px) { .category-hightlight-header__image { height: 400px; }
-  .category-hightlight-header__title { font-size: 2.5em; }
-  .category-hightlight-header__text { font-size: 1.3em; } }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) { .category-hightlight-header-header__image { height: 300px; }
-  .category-hightlight-header__title { font-size: 3em; } }
+@media screen and (min-width: 992px) { .l2-hero { height: 450px; } }
 
 .eaton-single-feature__headline, .eaton-single-feature__image { margin-bottom: 30px; }
 

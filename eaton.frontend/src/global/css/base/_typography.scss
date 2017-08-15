@@ -34,17 +34,21 @@ p {
 }
 
 a {
+  color: $color__primary-blue;
 
-  &:link,
   &:visited,
   &:active {
     text-decoration: none;
   }
+
+  &:hover,
+  &:focus {
+    color: $color__primary-blue;
+    text-decoration: underline;
+  }
 }
 
-a:hover {
-  text-decoration: underline;
-}
+
 
 
 // Headings

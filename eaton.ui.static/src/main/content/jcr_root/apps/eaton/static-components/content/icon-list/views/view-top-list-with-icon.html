@@ -1,17 +1,16 @@
 <sly data-sly-use.data="${'../data/view-top-list-with-icon-data.js' @testdata=properties.testdata}">
   <div class="eaton-top-list-with-icon">
 
-
-      <div class="container row" >
+    <div class="container row" >
 
     <sly data-sly-list.link="${data.items}">
 
-      <div class="col-xs-12 col-md-4 eaton-top-list-with-icon__element" data-sly-test=${link.image}>
+      <div class="col-xs-12 col-md-4 eaton-top-list-with-icon__element" data-sly-test="${ link.image }">
         <div class="eaton-top-list-with-icon__icon">
           <img src="${link.image}">
         </div>
         <div class="eaton-top-list-with-icon__text-wrapper">
-          <a href="${link.linkl}" class="b-h5-link-bold" title="${link.title}" target="${link.target}">${link.title}</a>
+          <a href="${ link.link }" class="b-h5-link-bold" target="${link.target}">${link.title}</a>
           <div class="p-body-copy">${link.text}</div>
         </div>
       </div>

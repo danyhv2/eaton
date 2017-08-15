@@ -1,11 +1,17 @@
-<sly data-sly-use.data="${'../data/view-l2-hero-data.js' @tesdata=properties.testdata}">
-    <div class="resp-bg eaton-title-text-image container-fluid category-hightlight-header__image category-hightlight-header--vertical-align"
-        style="background-image:url('${data.imgSrc @ context='uri'}')" data-src="${data.imgSrcMobile}" data-desktop-rendition="${data.imgSrcDesktop}" data-mobile-rendition="${data.imgSrcMobile}" data-tablet-rendition="${data.imgSrcTablet}">
-        <div class="row text-center center-block">
-            <div class="col-xs-12" data-testdata="${data.testdata}">
-                <h1 class="category-hightlight-header__title">${data.title}</h1>
-                <p class="category-hightlight-header__text">${data.text}</p>
-            </div>
-        </div>
+<sly data-sly-use.data="${'../data/view-l2-hero-data.js' @tesdata=properties.testdata }">
+  <div class="l2-hero l2-hero--vertical-align">
+
+    <!--/* Start: Rendition Background Component */-->
+    <sly data-sly-use.tpl="../../../shared/templates/rendition-background.html">
+      <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
+    </sly>
+    <!--/* End: Rendition Background Component */-->
+
+    <div class="row text-center center-block">
+      <div class="col-xs-12">
+        <h2 class="l2-hero__title b-heading-h1">${ data.title }</h2>
+        <p class="l2-hero__text b-body-copy">${ data.text }</p>
+      </div>
     </div>
+  </div>
 </sly>
