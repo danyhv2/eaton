@@ -143,6 +143,10 @@ h5,
 
 // BodyCopy
 //--------------
+.b-hero-description {
+  @include hero-description;
+}
+
 .b-body-copy {
   @include body-copy;
 }
