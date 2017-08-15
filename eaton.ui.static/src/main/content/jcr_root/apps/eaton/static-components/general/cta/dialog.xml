@@ -28,26 +28,25 @@
                 value="default"/>
             </options>
           </view>
-          <theme
+          <color
             jcr:primaryType="cq:Widget"
             allowBlank="false"
-            defaultValue="primary-light"
-            fieldDescription="Determine Theme"
-            fieldLabel="Theme"
-            name="./theme"
+            defaultValue="light"
+            fieldLabel="Color"
+            name="./color"
             type="select"
             xtype="selection">
             <options jcr:primaryType="cq:WidgetCollection">
-              <primary-light
+              <white
                 jcr:primaryType="nt:unstructured"
-                text="Theme 1 - Primary Light"
-                value="primary-light"/>
-              <tertiary-light
+                text="White"
+                value="light"/>
+              <blue
                 jcr:primaryType="nt:unstructured"
-                text="Theme 2 - Tertiary Light"
-                value="tertiary-light"/>
+                text="Blue"
+                value="dark"/>
             </options>
-          </theme>
+          </color>
           <title
             jcr:primaryType="cq:Widget"
             allowBlank="true"
