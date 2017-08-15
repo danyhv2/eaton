@@ -1,10 +1,33 @@
 <!--/* Country Selector: Accordion */-->
-<div class="country-selector--accordion">
+<sly data-sly-use.data="${'../data/view-data.js' @testdata=properties.testdata}">
+  <div class="country-selector--accordion">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                Country Selector -- View Accordion
+            <h2 class="b-heading-h2">${data.header}</h2>
+            <div data-sly-list="${data.locations}" class="panel-group country-selector-item" role="tablist" aria-multiselectable="true">
+                <div class="panel country-selector-item__panel">
+                    <div class="panel-heading country-selector-item__header" role="tab" id="${item.regionId}">
+                        <a href="#collapse-${itemList.index}" aria-expanded="false" aria-controls="collapse-${itemList.index}" class="country-selector-item__header--title"
+                           data-toggle="collapse" data-parent="country-selector-item">
+                            <i class="country-selector-item__icons icon icon-sign-minus"></i>
+                            <h3 class="country-selector-item__header--title b-heading-h3" role="button">
+                                ${item.region}
+                            </h3>
+                        </a>
+                    </div>
+
+                    <div id="collapse-${itemList.index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="${item.regionId}">
+                        <div class="country-selector-item__body">
+                            <ul data-sly-list.country="${item.countries}">
+                                <li class="col-xs-12 col-sm-3">
+                                    <div>${country.country}</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+</sly>
