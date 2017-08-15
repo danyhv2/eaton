@@ -13,6 +13,7 @@ node_modules
 .idea
 nbproject
 .vscode
+.brackets.json
 
 
 ##### Auto Generated Files
