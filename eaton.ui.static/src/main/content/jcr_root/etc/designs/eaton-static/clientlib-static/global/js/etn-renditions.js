@@ -23,7 +23,7 @@
 var App = App || {};
 
 App.global = App.global || {};
-App.global.responsiveImg = function () {
+App.global.renditions = function () {
 
   var responsiveImg = function responsiveImg() {
 
@@ -31,8 +31,8 @@ App.global.responsiveImg = function () {
 
     function replaceImgSrcs() {
 
-      var $respImgs = $('img[data-mobile-rendition]');
-      var $respBGs = $('.resp-bg');
+      var $respImgs = $('.rendition img');
+      var $respBGs = $('.rendition-bg');
       var $combo = $.merge($respImgs, $respBGs);
       var checkVal = parseInt($respImgs.first().css('min-width'), 10);
       var mq = 'desktop';
