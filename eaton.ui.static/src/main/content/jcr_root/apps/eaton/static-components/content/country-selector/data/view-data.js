@@ -17,7 +17,7 @@ use(function () {
                 languageList: [
                   {
                     languageName: 'English',
-                    languagePath: '#Egypt-English-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   }
                 ]
@@ -28,7 +28,7 @@ use(function () {
                 languageList: [
                   {
                     languageName: 'English',
-                    languagePath: '#SA-English-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   }
                 ]
@@ -45,12 +45,12 @@ use(function () {
                 languageList: [
                   {
                     languageName: 'Chinese',
-                    languagePath: '#Chinese-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   },
                   {
                     languageName: 'English',
-                    languagePath: '#China-English-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   }
                 ]
@@ -61,7 +61,7 @@ use(function () {
                 languageList: [
                   {
                     languageName: 'English',
-                    languagePath: '#India-English-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   }
                 ]
@@ -72,12 +72,12 @@ use(function () {
                 languageList: [
                   {
                     languageName: 'Japanese',
-                    languagePath: '#japanese-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   },
                   {
                     languageName: 'English',
-                    languagePath: '#Japan-English-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   }
                 ]
@@ -88,12 +88,12 @@ use(function () {
                 languageList: [
                   {
                     languageName: 'Korean',
-                    languagePath: '#korean-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   },
                   {
                     languageName: 'English',
-                    languagePath: '#Korea-English-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   }
                 ]
@@ -104,17 +104,17 @@ use(function () {
                 languageList: [
                   {
                     languageName: 'Thai',
-                    languagePath: '#Thai-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   },
                   {
                     languageName: 'Vietnamese',
-                    languagePath: '#Vietnamese-English-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   },
                   {
                     languageName: 'English',
-                    languagePath: '#Thailand-English-Site',
+                    languagePath: '#link-to-site',
                     target: '_blank'
                   }
                 ]
