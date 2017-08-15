@@ -12,9 +12,6 @@
   &__item-header {
     padding: ($spacing__sm / 2) 0;
     position: relative;
-  }
-
-  &__item-label {
     display: flex;
     align-items: center;
   }
@@ -49,7 +46,7 @@
   }
 
   // Manage icon-states based on accordion is expanded / collapses
-  &__item-link[aria-expanded="true"] + &__item-label &__item-icon {
+  &__item-link[aria-expanded="true"] ~ &__item-icon {
     &::after {
       @extend %icon-sign-minus;
     }
