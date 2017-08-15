@@ -12,6 +12,9 @@
   &__item-header {
     padding: ($spacing__sm / 2) 0;
     position: relative;
+  }
+
+  &__item-label {
     display: flex;
     align-items: center;
   }
@@ -22,6 +25,11 @@
 
   &__item-icon {
     color: $color__primary-blue;
+
+    &::after {
+      @extend %font-family-glyphicon;
+      @extend %icon-sign-plus;
+    }
   }
 
   &__item-body {
@@ -38,5 +46,12 @@
 
   &__item-country {
     padding: ($spacing__sm / 2);
+  }
+
+  // Manage icon-states based on accordion is expanded / collapses
+  &__item-link[aria-expanded="true"] + &__item-label &__item-icon {
+    &::after {
+      @extend %icon-sign-minus;
+    }
   }
 }
