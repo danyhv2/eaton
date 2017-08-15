@@ -302,6 +302,7 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/general/cta"
+                    testdata="homepage-featuredtopic"
                     view="default"/>
             </featured_topic>
             <category_highlight
