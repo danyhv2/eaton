@@ -23,7 +23,7 @@
 var App = App || {};
 
 App.global = App.global || {};
-App.global.responsiveImg = function () {
+App.global.renditions = function () {
 
   var responsiveImg = function responsiveImg() {
 
@@ -31,16 +31,18 @@ App.global.responsiveImg = function () {
 
     function replaceImgSrcs() {
 
-      var $respImgs = $('img[data-mobile-rendition]');
-      var $respBGs = $('.resp-bg');
+      var $respImgs = $('.rendition img');
+      var $respBGs = $('.rendition-bg');
       var $combo = $.merge($respImgs, $respBGs);
-      var checkVal = parseInt($respImgs.first().css('min-width'), 10);
+      // let checkVal = parseInt($respImgs.first().css('min-width'), 10);
       var mq = 'desktop';
 
-      if (checkVal === 1) {
-        mq = 'tablet';
-      } else if (checkVal === 2) {
+      // Determine Current Breakpoint
+      //--------------
+      if (window.matchMedia && window.matchMedia(App.global.constants.MEDIA_QUERIES.MOBILE).matches) {
         mq = 'mobile';
+      } else if (window.matchMedia && window.matchMedia(App.global.constants.MEDIA_QUERIES.TABLET).matches) {
+        mq = 'tablet';
       }
 
       $combo.each(function () {

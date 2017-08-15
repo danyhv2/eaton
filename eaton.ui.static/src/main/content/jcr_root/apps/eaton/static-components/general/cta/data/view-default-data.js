@@ -28,20 +28,18 @@ use(function () {
   var THEME_PRIMARY_LIGHT = 'b-button b-button__primary b-button__primary--light';
   var THEME_TERTIARY_LIGHT = 'b-button b-button__tertiary b-button__tertiary--light';
 
-  // if Primary Light
-  if (properties.get('theme') && (properties.get('theme') == 'primary-light')) {
+  // If Color value is Light
+  if (properties.get('color') && (properties.get('color') == 'light')) {
     data.cta.cssClasses = THEME_PRIMARY_LIGHT;
   }
 
-  // if Tertiary Light
-  else if (properties.get('theme') && (properties.get('theme') == 'tertiary-light')) {
+  // If Color value is Dark
+  else if (properties.get('color') && (properties.get('color') == 'dark')) {
     data.cta.cssClasses = THEME_TERTIARY_LIGHT;
   }
 
-  // Default CTA Theme (Primary Light)
+  // Else default CTA Theme (Primary Light)
   else { data.cta.cssClasses = THEME_PRIMARY_LIGHT; }
-
-
 
 
   return data;

@@ -39,23 +39,22 @@
                     value="default"/>
                 </items>
               </view>
-              <theme
+              <color
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/form/select"
-                fieldLabel="Theme"
-                fieldDescription="Determine Theme"
-                name="./theme">
+                fieldLabel="Color"
+                name="./color">
                 <items jcr:primaryType="nt:unstructured">
-                  <primary-light
+                  <white
                     jcr:primaryType="nt:unstructured"
-                    text="Theme 1 - Primary Light"
-                    value="primary-light" />
-                  <tertiary-light
+                    text="White"
+                    value="light"/>
+                  <blue
                     jcr:primaryType="nt:unstructured"
-                    text="Theme 2 - Tertiary Light"
-                    value="tertiary-light"/>
+                    text="Blue"
+                    value="dark"/>
                 </items>
-              </theme>
+              </color>
               <title
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/form/textfield"
