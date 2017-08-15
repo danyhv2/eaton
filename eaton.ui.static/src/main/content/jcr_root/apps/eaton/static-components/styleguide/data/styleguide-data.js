@@ -342,12 +342,12 @@ use(function () {
       cssClasses: "b-button b-button__secondary b-button__secondary--dark"
     },
     {
-      name: "Tertiary Light (TBD)",
+      name: "Tertiary Light",
       theme: "",
       cssClasses: "b-button b-button__tertiary b-button__tertiary--light"
     },
     {
-      name: "Tertiary Dark (TBD)",
+      name: "Tertiary Dark",
       theme: "dark",
       cssClasses: "b-button b-button__tertiary b-button__tertiary--dark"
     }
