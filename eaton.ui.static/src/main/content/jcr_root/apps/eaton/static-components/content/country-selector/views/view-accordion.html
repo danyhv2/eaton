@@ -4,14 +4,14 @@
     <div class="container">
         <div class="row">
             <h2 class="b-heading-h2">${data.header}</h2>
-            <div data-sly-list="${data.locations}" class="panel-group country-selector__list" role="tablist" aria-multiselectable="true">
+            <div data-sly-list="${data.regionList}" class="panel-group country-selector__list" role="tablist" aria-multiselectable="true">
                 <div class="panel country-selector__item">
                     <div class="panel-heading country-selector__item-header" role="tab" id="${item.regionId}">
                         <a href="#collapse-${itemList.index}" aria-expanded="false" aria-controls="collapse-${itemList.index}" class="country-selector__item-link u-absolute-fill"
                            data-toggle="collapse" data-parent="country-selector__item" role="button">
                             <span class="sr-only">Select your location</span>
                         </a>
-                        <h3 class="country-selector__item-title b-heading-h3">${item.region}</h3>
+                        <h3 class="country-selector__item-title b-heading-h3">${item.regionName}</h3>
                         <i class="country-selector__item-icon icon icon-sign-minus" aria-hidden="true">
                           <span class="sr-only"></span>
                         </i>
@@ -19,9 +19,12 @@
 
                     <div id="collapse-${itemList.index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="${item.regionId}">
                         <div class="country-selector__item-body">
-                            <ul data-sly-list.item="${item.countries}" class="country-selector__item-list">
+                            <ul data-sly-list.country="${item.countryList}" class="country-selector__item-list">
                                 <li class="col-xs-12 col-sm-3 country-selector__item-country">
-                                    <div>${item.country}</div>
+                                    <div>${country.countryName}</div>
+                                    <div data-sly-list.language="${country.languageList}">
+                                        <a href="${language.languagePath}" target="{language.target}">${language.languageName}</a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>

@@ -6,27 +6,27 @@ use(function () {
 
     data = {
       header: 'Select your location',
-      locations : [
+      regionList : [
         {
-          region: 'Africa',
+          regionName: 'Africa',
           regionId: 'africa',
-          countries: [
+          countryList: [
               {
-                country: 'Egypt',
-                languages: [
+                countryName: 'Egypt',
+                languageList: [
                   {
-                    title: 'English',
-                    url: '#Egypt-English-Site',
+                    languageName: 'English',
+                    languagePath: '#Egypt-English-Site',
                     target: '_blank'
                   }
                 ]
               },
               {
-                country: 'South Aftrica',
-                languages: [
+                countryName: 'South Aftrica',
+                languageList: [
                   {
-                    title: 'English',
-                    url: '#SA-English-Site',
+                    languageName: 'English',
+                    languagePath: '#SA-English-Site',
                     target: '_blank'
                   }
                 ]
@@ -34,80 +34,80 @@ use(function () {
             ]
           },
           {
-            region: 'Asia',
+            regionName: 'Asia',
             regionId: 'asia',
-            countries: [
+            countryList: [
               {
-                country: 'China',
-                languages: [
+                countryName: 'China',
+                languageList: [
                   {
-                    title: 'Chinese',
-                    url: '#Chinese-Site',
+                    languageName: 'Chinese',
+                    languagePath: '#Chinese-Site',
                     target: '_blank'
                   },
                   {
-                    title: 'English',
-                    url: '#China-English-Site',
+                    languageName: 'English',
+                    languagePath: '#China-English-Site',
                     target: '_blank'
                   }
                 ]
               },
               {
-                country: 'India',
-                languages: [
+                countryName: 'India',
+                languageList: [
                   {
-                    title: 'English',
-                    url: '#India-English-Site',
+                    languageName: 'English',
+                    languagePath: '#India-English-Site',
                     target: '_blank'
                   }
                 ]
               },
               {
-                country: 'Japan',
-                languages: [
+                countryName: 'Japan',
+                languageList: [
                   {
-                    title: 'Japanese',
-                    url: '#japanese-Site',
+                    languageName: 'Japanese',
+                    languagePath: '#japanese-Site',
                     target: '_blank'
                   },
                   {
-                    title: 'English',
-                    url: '#Japan-English-Site',
+                    languageName: 'English',
+                    languagePath: '#Japan-English-Site',
                     target: '_blank'
                   }
                 ]
               },
               {
-                country: 'Korea',
-                languages: [
+                countryName: 'Korea',
+                languageList: [
                   {
-                    title: 'Korean',
-                    url: '#korean-Site',
+                    languageName: 'Korean',
+                    languagePath: '#korean-Site',
                     target: '_blank'
                   },
                   {
-                    title: 'English',
-                    url: '#Korea-English-Site',
+                    languageName: 'English',
+                    languagePath: '#Korea-English-Site',
                     target: '_blank'
                   }
                 ]
               },
               {
-                country: 'Thailand',
-                languages: [
+                countryName: 'Thailand',
+                languageList: [
                   {
-                    title: 'Thai',
-                    url: '#Thai-Site',
+                    languageName: 'Thai',
+                    languagePath: '#Thai-Site',
                     target: '_blank'
                   },
                   {
-                    title: 'Vietnamese',
-                    url: '#Vietnamese-English-Site',
+                    languageName: 'Vietnamese',
+                    languagePath: '#Vietnamese-English-Site',
                     target: '_blank'
                   },
                   {
-                    title: 'English',
-                    url: '#Thailand-English-Site',
+                    languageName: 'English',
+                    languagePath: '#Thailand-English-Site',
                     target: '_blank'
                   }
                 ]
