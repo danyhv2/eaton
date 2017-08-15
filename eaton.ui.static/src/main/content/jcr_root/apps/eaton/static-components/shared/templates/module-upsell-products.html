@@ -2,7 +2,7 @@
     <div class="related-products-component container">
         <div class="related-products-component__text">
             <h3>${'Designated to work together' @ i18N}</h3>
-            <p>${'Discover other Eaton products and accesories built to enhance this product.' @ i18N}</p>
+            <p class="related-products-component__description">${'Discover other Eaton products and accesories built to enhance this product.' @ i18N}</p>
         </div>
         <div class="module-related-products upsell-products">
             <ul class="upsell-products__slides" data-sly-list="${data}">
@@ -13,7 +13,7 @@
                     <div class="col-xs-12 related-products-component__card">
                         <img class="carousel-component-slide__image" data-src="${item.image}" data-desktop-rendition="${item.image}" data-mobile-rendition="${item.mobile_image}" data-tablet-rendition="${item.tablet_image}" alt="${item.image_alt}"/>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 related-products-component__info">
                         <p class="b-eyebrow-small related-products-component__title">${item.title}</p>
                         <p class="b-h4-link">${item.text}</p>
                     </div>

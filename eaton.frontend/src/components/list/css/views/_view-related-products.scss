@@ -4,7 +4,19 @@
 
   &__text {
     padding-left: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+
+    @include media-mobile-only {
+      padding-bottom: 25px;
+    }
+  }
+
+  &__description {
+    padding-top: 10px;
+
+    @include media-mobile-only {
+      padding-top: 5px;
+    }
   }
 
   &__card {
@@ -14,8 +26,17 @@
     border: 1px solid $color__secondary-gray5;
   }
 
+  &__info {
+    padding: 0 15px;
+
+    @include media-tablet-and-up {
+      padding: 0 30px;
+    }
+  }
+
   &__title {
     padding-top: 15px;
+    padding-bottom: 5px;
   }
 
   &__arrow {
@@ -25,6 +46,7 @@
   @include media-desktop-and-up {
     &__title {
       padding-top: 30px;
+      padding-bottom: 10px;
     }
   }
 }

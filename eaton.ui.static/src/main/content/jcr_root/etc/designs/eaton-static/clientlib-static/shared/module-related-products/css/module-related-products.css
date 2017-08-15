@@ -6,7 +6,9 @@
 
 .module-related-products__slides a { z-index: 10; }
 
-.module-related-products__dots { text-align: center; }
+.module-related-products__dots { text-align: center; padding-top: 20px; }
+
+@media screen and (min-width: 768px) { .module-related-products__dots { padding-top: 40px; } }
 
 .module-related-products__dots li { display: inline; padding-right: 10px; }
 
