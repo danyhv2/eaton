@@ -21,7 +21,7 @@
 @mixin h1-hero--desktop {
   font-family: 'EatonMedium', sans-serif;
   font-size: rem(54px);
-  line-height: rem(68px);
+  line-height: rem(63px);
 }
 
 @mixin h1-hero {
@@ -43,8 +43,8 @@
 
 @mixin h1--desktop {
   font-family: 'EatonMedium', sans-serif;
-  font-size: rem(54px);
-  line-height: rem(68px);
+  font-size: rem(50px);
+  line-height: rem(60px);
 }
 
 @mixin h1 {
@@ -173,6 +173,33 @@
 }
 
 
+// Body Copy - Hero Description
+//--------------
+@mixin hero-description--mobile {
+  font-family: Arial, sans-serif;
+  font-size: rem(14px);
+  font-weight: normal;
+  line-height: rem(22px);
+}
+
+
+@mixin hero-description--desktop {
+  font-family: Arial, sans-serif;
+  font-size: rem(20px);
+  font-weight: normal;
+  line-height: rem(32px);
+}
+
+
+@mixin hero-description {
+  @include hero-description--mobile;
+
+  @include media-desktop-and-up {
+    @include hero-description--desktop;
+  }
+}
+
+
 // Body Copy
 //--------------
 @mixin body-copy--mobile {
@@ -248,7 +275,7 @@
 @mixin eyebrow-large--desktop {
   font-family: $font-family__secondary;
   font-size: rem(24px);
-  line-height: rem(38px);
+  line-height: rem(28px);
   text-transform: uppercase;
 }
 
@@ -275,7 +302,7 @@
 @mixin eyebrow-small--desktop {
   font-family: $font-family__secondary;
   font-size: rem(18px);
-  line-height: rem(24px);
+  line-height: rem(20px);
   text-transform: uppercase;
 }
 
