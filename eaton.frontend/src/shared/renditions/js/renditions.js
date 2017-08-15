@@ -17,15 +17,17 @@ App.global.renditions = function () {
       let $respImgs = $('.rendition img');
       let $respBGs = $('.rendition-bg');
       let $combo = $.merge($respImgs, $respBGs);
-      let checkVal = parseInt($respImgs.first().css('min-width'), 10);
+      // let checkVal = parseInt($respImgs.first().css('min-width'), 10);
       let mq = 'desktop';
 
-      if (checkVal === 1) {
-        mq = 'tablet';
+      // Determine Current Breakpoint
+      //--------------
+      if (window.matchMedia && window.matchMedia(App.global.constants.MEDIA_QUERIES.MOBILE).matches) {
+        mq = 'mobile';
       }
 
-      else if (checkVal === 2) {
-        mq = 'mobile';
+      else if (window.matchMedia && window.matchMedia(App.global.constants.MEDIA_QUERIES.TABLET).matches) {
+        mq = 'tablet';
       }
 
       $combo.each(function() {
