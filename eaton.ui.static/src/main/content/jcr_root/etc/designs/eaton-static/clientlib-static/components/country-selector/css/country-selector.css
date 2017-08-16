@@ -8,21 +8,17 @@
 
 .country-selector__header { margin-bottom: 0; }
 
-.country-selector__item { border-bottom: 2px solid #EEF0F2; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; }
+.country-selector__item { border-bottom: 4px solid #EEF0F2; border-radius: 0; -webkit-box-shadow: none; box-shadow: none; }
 
-.country-selector__item-header { padding: 30px 0 10px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.country-selector__item-header { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .country-selector__item-title { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin-bottom: 0; padding-right: 20px; }
 
 .country-selector__item-icon { color: #005EB8; }
 
-.country-selector__item-body { padding-bottom: 10px; }
+.country-selector__item-list { display: block; padding: 0; list-style: none; overflow: hidden; margin-bottom: 0; }
 
-.country-selector__item-list { display: block; padding: 0; list-style: none; overflow: hidden; }
-
-.country-selector__item-country-flag { margin-right: 10px; }
-
-.country-selector__item-country-name { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-bottom: 15px; }
+.country-selector__item-country-name { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .country-selector__item-country-label { text-transform: uppercase; font-weight: bold; }
 
@@ -35,8 +31,10 @@
 @media screen and (max-width: 991px) { .country-selector__header { font-size: 3.3rem; line-height: 4.3rem; } }
 
 @media screen and (min-width: 992px) { .country-selector__header { font-size: 5rem; line-height: 6rem; }
-  .country-selector__item-list { margin-left: -25px; margin-right: -25px; }
-  .country-selector__item-country { padding: 20px 25px; }
+  .country-selector__item-header { padding: 50px 0 15px; }
+  .country-selector__item-body { padding-bottom: 30px; }
+  .country-selector__item-country { padding: 0 15px 30px; }
+  .country-selector__item-country-name { padding-bottom: 8px; }
   .country-selector__item-language { display: inline-block; padding: 0 8px; border-right: 1px solid #333; }
   .country-selector__item-language:first-child { padding-left: 0; }
   .country-selector__item-language:last-child { border: 0; } }

@@ -14,13 +14,19 @@
   // Region Item - General Styles
   //-----------------------------------
   &__item {
-    border-bottom: 2px solid $color__secondary-gray5;
+    border-bottom: 4px solid $color__secondary-gray5;
     border-radius: 0;
     box-shadow: none;
   }
 
+  &__item-link {
+
+    &:focus {
+      // outline: none; //TODO: Remove / keep?
+    }
+  }
+
   &__item-header {
-    padding: $spacing__sm 0 ($spacing__sm / 3);
     position: relative;
     display: flex;
     align-items: center;
@@ -51,7 +57,7 @@
   // Content Styles - Region
   //-----------------------------------
   &__item-body {
-    padding-bottom: ($spacing__sm / 3);
+    // padding-bottom: ($spacing__sm / 3);
   }
 
   &__item-list {
@@ -59,6 +65,7 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
+    margin-bottom: 0;
   }
 
   // Country Styles
@@ -68,13 +75,12 @@
   }
 
   &__item-country-flag {
-    margin-right: ($spacing__sm / 3);
+    // margin-right: ($spacing__sm / 3); //TODO: Enable
   }
 
   &__item-country-name {
     display: flex;
     align-items: center;
-    padding-bottom: 15px; // TODO: 30px?
   }
 
   &__item-country-label {
@@ -120,13 +126,20 @@
       line-height: 6rem;
     }
 
-    &__item-list {
-      margin-left: -25px;
-      margin-right: -25px;
+    &__item-header {
+      padding: 50px 0 ($spacing__sm / 2);
+    }
+
+    &__item-body {
+      padding-bottom: $spacing__sm;
     }
 
     &__item-country {
-      padding: ($spacing__md / 3) 25px;
+      padding: 0 ($spacing__sm / 2) $spacing__sm;
+    }
+
+    &__item-country-name {
+      padding-bottom: 8px;
     }
 
     &__item-language {
