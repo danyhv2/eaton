@@ -240,7 +240,7 @@
                 sling:resourceType="eaton/static-components/content/ttil-list"
                 showCta="true"
                 showSeparator="true"
-                testdata="l2-news"
+                testdata="t9-secondary-landing-investors"
                 view="category-hero"/>
             <link_list
                 jcr:created="{Date}2017-07-19T21:16:15.239Z"
@@ -249,7 +249,7 @@
                 jcr:lastModifiedBy="etn-eduardo"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/general/link-list"
-                testdata="l2-news"
+                testdata="t9-secondary-landing-investors"
                 view="section-navigation"/>
             <search_box
                 jcr:created="{Date}2017-07-19T21:16:36.788Z"

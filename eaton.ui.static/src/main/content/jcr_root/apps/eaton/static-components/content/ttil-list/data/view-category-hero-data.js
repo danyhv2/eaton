@@ -40,6 +40,30 @@ use(function () {
             target: "_self"
         };
   	  
+    } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors")) {
+    	  
+    	data.title = "Investor relations";
+        data.text = "Our shareholders invest in us with the intention of benefiting from our long-term success. We take strategic action, create next-generation innovations, and deliver on commitments.";
+        data.image = "/content/dam/eaton/images/Hero_image_Secondary_Landing_Investors.png";
+        data.mobile_image = "/content/dam/eaton/images/Hero_image_Secondary_Landing_Investors.png";
+        data.cta = {
+            title: "COMPANY",
+            url: "http://www.eaton.com",
+            target: "_self"
+        };
+        
+    } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-careers")) {
+  	  
+    	data.title = "Global careers";
+        data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";
+        data.image = "/content/dam/eaton/images/Hero_image_Secondary_Landing_Careers.png";
+        data.mobile_image = "/content/dam/eaton/images/Hero_image_Secondary_Landing_Careers.png";
+        data.cta = {
+            title: "COMPANY",
+            url: "http://www.eaton.com",
+            target: "_self"
+        };
+  	  
     } else {
     
 	    data.title = "News and Media";
