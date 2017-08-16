@@ -11,6 +11,25 @@
   margin: $spacing__md 0;
 
   //-----------------------------------
+  // Theme colors
+  //-----------------------------------
+  &--theme-white {
+    background: $color__white;
+  }
+
+  &--theme-blue {
+    background: $color__primary-blue;
+    padding: $spacing__md 0;
+    margin: 0;
+  }
+
+  &--theme-grey {
+    background: $color__secondary-gray6;
+    padding: $spacing__md 0;
+    margin: 0;
+  }
+
+  //-----------------------------------
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-and-tablet {
