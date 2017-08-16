@@ -5,23 +5,23 @@
 
 
 //-----------------------------------
-// NOTE: There 3 Mixins for each heading tag since there are some use cases where a Heading
-// should look like an H4 in mobile but like an H5 in desktop breakpoints. EG: M-36 Product Card SKU
+// NOTE: There are 3 Mixins for each heading tag since there are some use cases
+// where a Heading should look like an H4 in mobile but like an H5 in desktop breakpoints.
+// EG: M-36 Product Card SKU
 //-----------------------------------
-
 
 // H1 Heading
 //--------------
 @mixin h1-hero--mobile {
   font-family: 'EatonMedium', sans-serif;
-  font-size: rem(35px);
-  line-height: rem(40px);
+  font-size: 3.5rem;
+  line-height: 4.0rem;
 }
 
 @mixin h1-hero--desktop {
   font-family: 'EatonMedium', sans-serif;
-  font-size: rem(54px);
-  line-height: rem(63px);
+  font-size: 5.4rem;
+  line-height: 6.3rem;
 }
 
 @mixin h1-hero {
@@ -37,14 +37,14 @@
 //--------------
 @mixin h1--mobile {
   font-family: 'EatonMedium', sans-serif;
-  font-size: rem(35px);
-  line-height: rem(40px);
+  font-size: 3.5rem;
+  line-height: 4.0rem;
 }
 
 @mixin h1--desktop {
   font-family: 'EatonMedium', sans-serif;
-  font-size: rem(50px);
-  line-height: rem(60px);
+  font-size: 5.0rem;
+  line-height: 6.0rem;
 }
 
 @mixin h1 {
@@ -60,14 +60,14 @@
 //--------------
 @mixin h2--mobile {
   font-family: 'EatonMedium', sans-serif;
-  font-size: rem(28px);
-  line-height: rem(32px);
+  font-size: 2.8rem;
+  line-height: 3.2rem;
 }
 
 @mixin h2--desktop {
   font-family: 'EatonMedium', sans-serif;
-  font-size: rem(40px);
-  line-height: rem(50px);
+  font-size: 4.0rem;
+  line-height: 5.0rem;
 }
 
 @mixin h2 {
@@ -84,14 +84,14 @@
 //--------------
 @mixin h3--mobile {
   font-family: 'EatonMedium', sans-serif;
-  font-size: rem(28px);
-  line-height: rem(32px);
+  font-size: 2.8rem;
+  line-height: 3.2rem;
 }
 
 @mixin h3--desktop {
   font-family: 'EatonMedium', sans-serif;
-  font-size: rem(40px);
-  line-height: rem(50px);
+  font-size: 4.0rem;
+  line-height: 5.0rem;
 }
 
 @mixin h3 {
@@ -108,16 +108,16 @@
 //--------------
 @mixin h4--mobile {
   font-family: Arial, sans-serif;
-  font-size: rem(22px);
+  font-size: 2.2rem;
   font-weight: bold;
-  line-height: rem(29px);
+  line-height: 2.9rem;
 }
 
 @mixin h4--desktop {
   font-family: Arial, sans-serif;
-  font-size: rem(30px);
+  font-size: 3.0rem;
   font-weight: bold;
-  line-height: rem(42px);
+  line-height: 4.2rem;
 }
 
 @mixin h4 {
@@ -133,16 +133,16 @@
 //--------------
 @mixin h5--mobile {
   font-family: Arial, sans-serif;
-  font-size: rem(20px);
+  font-size: 2.0rem;
   font-weight: bold;
-  line-height: rem(30px);
+  line-height: 3.0rem;
 }
 
 @mixin h5--desktop {
   font-family: Arial, sans-serif;
-  font-size: rem(26px);
+  font-size: 2.6rem;
   font-weight: bold;
-  line-height: rem(40px);
+  line-height: 4.0rem;
 }
 
 @mixin h5 {
@@ -177,17 +177,17 @@
 //--------------
 @mixin hero-description--mobile {
   font-family: Arial, sans-serif;
-  font-size: rem(14px);
+  font-size: 1.4rem;
   font-weight: normal;
-  line-height: rem(22px);
+  line-height: 2.2rem;
 }
 
 
 @mixin hero-description--desktop {
   font-family: Arial, sans-serif;
-  font-size: rem(20px);
+  font-size: 2.0rem;
   font-weight: normal;
-  line-height: rem(32px);
+  line-height: 3.2rem;
 }
 
 
@@ -204,17 +204,17 @@
 //--------------
 @mixin body-copy--mobile {
   font-family: Arial, sans-serif;
-  font-size: rem(18px);
+  font-size: 1.8rem;
   font-weight: normal;
-  line-height: rem(28px);
+  line-height: 2.8rem;
 }
 
 
 @mixin body-copy--desktop {
   font-family: Arial, sans-serif;
-  font-size: rem(24px);
+  font-size: 2.4rem;
   font-weight: normal;
-  line-height: rem(38px);
+  line-height: 3.8rem;
 }
 
 
@@ -237,16 +237,16 @@
 //--------------
 @mixin body-copy-small--mobile {
   font-family: Arial, sans-serif;
-  font-size: rem(13px);
+  font-size: 1.3rem;
   font-weight: normal;
-  line-height: rem(17px);
+  line-height: 1.7rem;
 }
 
 @mixin body-copy-small--desktop {
   font-family: Arial, sans-serif;
-  font-size: rem(18px);
+  font-size: 1.8rem;
   font-weight: normal;
-  line-height: rem(24px);
+  line-height: 2.4rem;
 }
 
 @mixin body-copy-small {
@@ -267,15 +267,15 @@
 //--------------
 @mixin eyebrow-large--mobile {
   font-family: $font-family__secondary;
-  font-size: rem(17px);
-  line-height: rem(20px);
+  font-size: 1.7rem;
+  line-height: 2.0rem;
   text-transform: uppercase;
 }
 
 @mixin eyebrow-large--desktop {
   font-family: $font-family__secondary;
-  font-size: rem(24px);
-  line-height: rem(28px);
+  font-size: 2.4rem;
+  line-height: 2.8rem;
   text-transform: uppercase;
 }
 
@@ -294,15 +294,15 @@
 //--------------
 @mixin eyebrow-small--mobile {
   font-family: $font-family__secondary;
-  font-size: rem(14px);
-  line-height: rem(17px);
+  font-size: 1.4rem;
+  line-height: 1.7rem;
   text-transform: uppercase;
 }
 
 @mixin eyebrow-small--desktop {
   font-family: $font-family__secondary;
-  font-size: rem(18px);
-  line-height: rem(20px);
+  font-size: 1.8rem;
+  line-height: 2.0rem;
   text-transform: uppercase;
 }
 
