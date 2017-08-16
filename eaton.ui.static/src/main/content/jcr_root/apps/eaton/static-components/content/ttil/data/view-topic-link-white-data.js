@@ -29,6 +29,16 @@ use(function () {
       ctaLink: '#',
       ctaTarget: '_blank'
     };
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors")) {
+    data = {
+      icon: '/content/dam/eaton/images/calendar-icon.png',
+      header: 'First quarter earnings',
+      description: 'Eaton to announce first quarter 2017 earnings on May 2, 2017',
+      color: 'white',
+      ctaText: 'View event',
+      ctaLink: '#',
+      ctaTarget: '_blank'
+    };
   } else if ((typeof(testdata) != "undefined") && (testdata == "no-cta")) {
     data = {
       header: 'Get digital delivery on proxy materials',
