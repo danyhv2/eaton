@@ -12,7 +12,7 @@
 
 .country-selector__item-header { padding: 30px 0 10px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.country-selector__item-title { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin-bottom: 0; }
+.country-selector__item-title { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin-bottom: 0; padding-right: 20px; }
 
 .country-selector__item-icon { color: #005EB8; }
 

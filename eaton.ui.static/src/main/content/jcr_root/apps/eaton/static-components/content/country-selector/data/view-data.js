@@ -120,6 +120,30 @@ use(function () {
                 ]
               }
             ]
+          },
+          {
+            regionName: 'Central America and Caribbean',
+            regionId: 'central-america-caribbean'
+          },
+          {
+            regionName: 'Europe',
+            regionId: 'europe'
+          },
+          {
+            regionName: 'Middle East',
+            regionId: 'middle-east'
+          },
+          {
+            regionName: 'North America',
+            regionId: 'north-america'
+          },
+          {
+            regionName: 'Oceania',
+            regionId: 'oceania'
+          },
+          {
+            regionName: 'South America',
+            regionId: 'south-america'
           }
         ]
     };
