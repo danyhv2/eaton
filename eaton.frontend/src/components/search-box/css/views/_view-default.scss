@@ -4,7 +4,7 @@
 
 .eaton-search--default {
 
-  padding: $spacing__sm 0 24px;
+  padding: $spacing__sm 0;
   background: $color__primary-blue;
 
   .form-group {
@@ -54,15 +54,7 @@
   }
 
   &__form-mobile-label {
-    position: absolute;
-    width: 100%;
-    padding-right: 32px;
-    color: $color__white;
-    pointer-events: none;
-    line-height: normal;
-    padding-top: 8px;
-    left: 0;
-    top: 0;
+    display: none;
   }
 
   &__form-external {
@@ -136,26 +128,21 @@
   }
   // stylelint-enable
 
+
   //-----------------------------------
   // Mobile Breakpoint
   //-----------------------------------
-  @include media-mobile-and-tablet {
-    &__form-input {
-      font-size: 1em;
-      padding-right: 20px;
-    }
-
-    &__form-submit {
-      padding-right: 0;
-    }
-
-    .icon-search {
-      font-size: 1.25em;
-    }
-
-    .search-open & {
-      height: 100%;
-      overflow-y: auto;
+  @include media-mobile-portrait {
+    &__form-mobile-label {
+      position: absolute;
+      width: 100%;
+      padding-right: 32px;
+      color: $color__white;
+      pointer-events: none;
+      line-height: normal;
+      left: 0;
+      top: 0;
+      display: inline-block;
     }
 
     //-----------------------------------
@@ -179,6 +166,31 @@
       color: transparent;
     }
     // stylelint-enable
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__form-input {
+      font-size: 1em;
+      padding-right: 20px;
+    }
+
+    &__form-submit {
+      padding-right: 0;
+    }
+
+    .icon-search {
+      font-size: 1.25em;
+    }
+
+    .search-open & {
+      height: 100%;
+      overflow-y: auto;
+    }
+
+
   }
 
   //-----------------------------------
