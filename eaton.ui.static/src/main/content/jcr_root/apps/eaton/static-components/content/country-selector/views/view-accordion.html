@@ -3,7 +3,7 @@
   <div class="country-selector--accordion">
     <div class="container">
         <div class="row">
-            <h2 class="b-heading-h2">${data.header}</h2>
+            <h2 class="country-selector__header b-heading-h2">${data.header}</h2>
             <div data-sly-list="${data.regionList}" class="panel-group country-selector__list" role="tablist" aria-multiselectable="true">
                 <div class="panel country-selector__item">
                     <div class="panel-heading country-selector__item-header" role="tab" id="${item.regionId}">
@@ -24,7 +24,7 @@
 
                     <div id="collapse-${itemList.index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="${item.regionId}">
                         <div class="country-selector__item-body">
-                            <ul data-sly-list.country="${item.countryList}" class="country-selector__item-list">
+                            <ul data-sly-list.country="${item.countryList}" class="row country-selector__item-list">
                                 <li class="col-xs-12 col-sm-3 country-selector__item-country">
                                     <div>${country.countryName}</div>
                                     <div data-sly-list.language="${country.languageList}">
