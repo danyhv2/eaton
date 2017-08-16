@@ -1,6 +1,6 @@
 
 <!--/* Include Header Component */-->
-<header>
+<header data-sly-test="${properties.testdata != 'no-header-no-footer'}">
   <sly data-sly-resource="${'eaton-header' @ resourceType='eaton/static-components/structure/header'}"></sly>
 </header>
 
@@ -10,6 +10,6 @@
 </div>
 
 <!--/* Include Footer Component */-->
-<footer>
+<footer data-sly-test="${properties.testdata != 'no-header-no-footer'}">
   <sly data-sly-resource="${'eaton-footer' @ resourceType='eaton/static-components/structure/footer'}"></sly>
 </footer>
