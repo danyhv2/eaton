@@ -26,7 +26,7 @@
 
 .dark-theme .eaton-product-tabs__buttons::before, .eaton-product-tabs.dark-theme__buttons::before { background-color: #333F48; }
 
-.dark-theme .eaton-product-tabs label, .eaton-product-tabs.dark-theme label { background-color: #333F48; }
+.dark-theme .eaton-product-tabs label, .eaton-product-tabs.dark-theme label { background-color: #333F48; font-weight: normal; }
 
 .dark-theme .eaton-product-tabs label:hover, .dark-theme .eaton-product-tabs label:focus, .dark-theme .eaton-product-tabs label:active, .dark-theme .eaton-product-tabs label.tab-active, .eaton-product-tabs.dark-theme label:hover, .eaton-product-tabs.dark-theme label:focus, .eaton-product-tabs.dark-theme label:active, .eaton-product-tabs.dark-theme label.tab-active { background-color: #5B6770; }
 
