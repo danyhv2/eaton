@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-16T15:02:14.098-06:00"
+        cq:lastModified="{Date}2017-08-16T17:03:01.186-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:isCheckedOut="{Boolean}true"
@@ -292,6 +292,48 @@
                         view="default"/>
                 </col1-par>
             </grid_2_column_contro>
+            <icon_list
+                jcr:created="{Date}2017-08-16T16:59:37.210-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-16T16:59:47.843-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/icon-list"
+                view="no-image-highlights"/>
+            <grid_2_column_contro_1204322960
+                jcr:created="{Date}2017-08-16T17:00:25.502-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-16T17:00:32.398-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/layout/grid-2-column-control"
+                view="is-half">
+                <col1-par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <ttil
+                        jcr:created="{Date}2017-08-16T17:01:34.316-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-16T17:02:08.295-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/content/ttil"
+                        view="topic-link-white"/>
+                </col1-par>
+                <col2-par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <link_list
+                        jcr:created="{Date}2017-08-16T17:01:50.536-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-16T17:02:26.613-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/link-list"
+                        testdata="default"
+                        view="2column"/>
+                </col2-par>
+            </grid_2_column_contro_1204322960>
             <list
                 jcr:created="{Date}2017-07-21T00:23:38.821-05:00"
                 jcr:createdBy="admin"
