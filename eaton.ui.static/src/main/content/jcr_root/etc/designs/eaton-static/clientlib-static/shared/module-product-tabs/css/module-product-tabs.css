@@ -26,7 +26,7 @@
 
 .dark-theme .eaton-product-tabs__buttons::before, .eaton-product-tabs.dark-theme__buttons::before { background-color: #333F48; }
 
-.dark-theme .eaton-product-tabs label, .eaton-product-tabs.dark-theme label { background-color: #333F48; font-weight: normal; }
+.dark-theme .eaton-product-tabs label, .eaton-product-tabs.dark-theme label { background-color: #333F48; }
 
 .dark-theme .eaton-product-tabs label:hover, .dark-theme .eaton-product-tabs label:focus, .dark-theme .eaton-product-tabs label:active, .dark-theme .eaton-product-tabs label.tab-active, .eaton-product-tabs.dark-theme label:hover, .eaton-product-tabs.dark-theme label:focus, .eaton-product-tabs.dark-theme label:active, .eaton-product-tabs.dark-theme label.tab-active { background-color: #5B6770; }
 
@@ -60,7 +60,7 @@
 
 .eaton-product-tabs__tab-panel.panel-active { display: block; }
 
-.eaton-product-tabs label { cursor: pointer; width: 33.333%; text-align: center; float: left; padding: 1.3rem 0; margin: 0; background-color: #F8F8F8; }
+.eaton-product-tabs label { cursor: pointer; width: 33.333%; text-align: center; float: left; padding: 1.3rem 0; margin: 0; background-color: #F8F8F8; font-weight: normal; }
 
 .eaton-product-tabs label a { display: block; width: 100%; height: 100%; }
 

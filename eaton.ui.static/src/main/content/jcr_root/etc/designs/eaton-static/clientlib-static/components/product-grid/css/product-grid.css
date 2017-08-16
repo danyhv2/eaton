@@ -32,7 +32,7 @@
 @media screen and (min-width: 992px) { .product-card-sku__image-wrapper { left: 20px; top: 20px; }
   .product-card-sku__image { height: 148px; width: 148px; padding: 1rem; }
   .product-card-sku__header { background-color: #005EB8; padding: 20px 120px 20px 188px; position: relative; }
-  .product-card-sku__name { font-family: Arial, sans-serif; font-size: 2.6rem; font-weight: bold; line-height: 4rem; }
+  .product-card-sku__name { font-family: Arial, sans-serif; font-size: 2.6rem; font-weight: bold; line-height: 4.0rem; }
   .product-card-sku__name .icon { font-size: 26px; position: relative; top: 4px; }
   .product-card-sku__price { position: absolute; top: 50%; right: 20px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
   .product-card-sku__links-list { -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; }
