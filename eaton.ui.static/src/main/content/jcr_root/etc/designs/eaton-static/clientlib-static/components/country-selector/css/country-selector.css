@@ -20,16 +20,20 @@
 
 .country-selector__item-list { display: block; padding: 0; list-style: none; overflow: hidden; }
 
-.country-selector__item-country { padding: 5px 15px 15px; }
+.country-selector__item-country-flag { margin-right: 10px; }
 
-.country-selector__item-country-name { display: -webkit-box; display: -ms-flexbox; display: flex; padding-bottom: 5px; }
+.country-selector__item-country-name { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-bottom: 15px; }
 
 .country-selector__item-country-label { text-transform: uppercase; font-weight: bold; }
 
 .country-selector__item-language-list { padding: 0; margin: 0; list-style: none; }
 
-@media screen and (min-width: 992px) { .country-selector__item-language { display: inline-block; }
-  .country-selector__item-language a { color: #333; border-right: 1px solid #333; padding: 0 8px; }
-  .country-selector__item-language a:hover, .country-selector__item-language a:focus { color: #333; }
-  .country-selector__item-list__item-language:first-child a { padding-left: 0; }
-  .country-selector__item-list__item-language:last-child a { border: 0; } }
+.country-selector__item-language a { color: #333F48; }
+
+.country-selector__item-language a:hover, .country-selector__item-language a:focus { color: #333F48; }
+
+@media screen and (min-width: 992px) { .country-selector__item-list { margin-left: -25px; margin-right: -25px; }
+  .country-selector__item-country { padding: 20px 25px; }
+  .country-selector__item-language { display: inline-block; padding: 0 8px; border-right: 1px solid #333; }
+  .country-selector__item-language:first-child { padding-left: 0; }
+  .country-selector__item-language:last-child { border: 0; } }

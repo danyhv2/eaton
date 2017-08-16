@@ -62,12 +62,17 @@
   // Country Styles
   //-----------------------------------
   &__item-country {
-    padding: 5px ($spacing__sm / 2) ($spacing__sm / 2);
+    // padding: ($spacing__md / 3) 15px;
+  }
+
+  &__item-country-flag {
+    margin-right: ($spacing__sm / 3);
   }
 
   &__item-country-name {
     display: flex;
-    padding-bottom: 5px;
+    align-items: center;
+    padding-bottom: 15px; // TODO: 30px?
   }
 
   &__item-country-label {
@@ -83,8 +88,15 @@
     list-style: none;
   }
 
-  &__language {
+  &__item-language {
+    a {
+      color: $color__primary-gray1;
 
+      &:hover,
+      &:focus {
+        color: $color__primary-gray1;
+      }
+    }
   }
 
   //-----------------------------------
@@ -96,31 +108,26 @@
   // Desktop Breakpoint: >992 px
   //-----------------------------------
   @include media-desktop-and-up {
-    &__item-language {
-      display: inline-block;
-
-      a {
-        color: #333;
-        border-right: 1px solid #333;
-        padding: 0 8px;
-
-        &:hover,
-        &:focus {
-          color: #333;
-        }
-      }
+    &__item-list {
+      margin-left: -25px;
+      margin-right: -25px;
     }
 
-    &__item-list {
-      &__item-language {
+    &__item-country {
+      padding: ($spacing__md / 3) 25px;
+    }
 
-        &:first-child {
-          a { padding-left: 0; }
-        }
+    &__item-language {
+      display: inline-block;
+      padding: 0 8px;
+      border-right: 1px solid #333;
 
-        &:last-child {
-          a { border: 0; }
-        }
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border: 0;
       }
     }
   }
