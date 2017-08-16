@@ -2,14 +2,14 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-16T10:49:55.092-06:00"
+        cq:lastModified="{Date}2017-08-16T10:40:26.557-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="templates"
-        jcr:uuid="2b6d8860-4283-40f1-bbde-a071daa0079f"
+        jcr:title="t9-secondary-careers"
+        jcr:uuid="a223d8df-c211-4c78-a172-daeb9fce3efa"
         sling:resourceType="eaton/static-components/structure/eaton-content-page">
         <eaton-header jcr:primaryType="nt:unstructured">
             <mega-menu jcr:primaryType="nt:unstructured">
@@ -231,34 +231,187 @@
         <par
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
-            <grid_2_column_contro
-                jcr:created="{Date}2017-08-15T10:43:41.004-05:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2017-08-15T10:43:49.372-05:00"
+            <title_text_image_lin
+                jcr:created="{Date}2017-07-19T21:15:48.729Z"
+                jcr:createdBy="etn-eduardo"
+                jcr:lastModified="{Date}2017-07-20T23:43:11.929-05:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/layout/grid-2-column-control"
-                view="is-two-third">
-                <col1-par jcr:primaryType="nt:unstructured">
-                    <title
-                        jcr:created="{Date}2017-08-15T10:35:38.324-05:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2017-08-15T10:43:27.443-05:00"
+                sling:resourceType="eaton/static-components/content/ttil-list"
+                showCta="true"
+                showSeparator="true"
+                testdata="l2-news"
+                view="category-hero"/>
+            <link_list
+                jcr:created="{Date}2017-07-19T21:16:15.239Z"
+                jcr:createdBy="etn-eduardo"
+                jcr:lastModified="{Date}2017-07-19T21:16:22.502Z"
+                jcr:lastModifiedBy="etn-eduardo"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/general/link-list"
+                testdata="l2-news"
+                view="section-navigation"/>
+            <search_box
+                jcr:created="{Date}2017-07-19T21:16:36.788Z"
+                jcr:createdBy="etn-eduardo"
+                jcr:lastModified="{Date}2017-07-19T21:16:43.514Z"
+                jcr:lastModifiedBy="etn-eduardo"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/search/search-box"
+                view="default"/>
+            <title_text_image_lin_708215571
+                jcr:created="{Date}2017-07-19T21:18:05.533Z"
+                jcr:createdBy="etn-eduardo"
+                jcr:lastModified="{Date}2017-07-19T21:18:16.675Z"
+                jcr:lastModifiedBy="etn-eduardo"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/ttil"
+                view="article-feature"/>
+            <list
+                jcr:created="{Date}2017-07-21T00:23:38.821-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-07-21T00:23:59.130-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/list"
+                view="article-list-single-feature">
+                <featured-article-ctabutton
+                    jcr:lastModified="{Date}2017-07-21T00:24:15.564-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    testdata="primary-articlelist"
+                    view="default"/>
+            </list>
+            <category_highlight
+                jcr:created="{Date}2017-07-19T21:21:07.589Z"
+                jcr:createdBy="etn-eduardo"
+                jcr:lastModified="{Date}2017-07-19T21:21:07.589Z"
+                jcr:lastModifiedBy="etn-eduardo"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/category-highlight"
+                testdata="l2-news-leadingtheway">
+                <ttil
+                    jcr:lastModified="{Date}2017-07-19T21:22:58.725Z"
+                    jcr:lastModifiedBy="etn-eduardo"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/content/ttil"
+                    testdata="l2-news-leadingtheway"
+                    view="l2-hero"/>
+                <list
+                    jcr:lastModified="{Date}2017-07-19T21:23:45.332Z"
+                    jcr:lastModifiedBy="etn-eduardo"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/content/list"
+                    testdata="l2-news-leadingtheway"
+                    view="featuredarticle">
+                    <featured-article-ctabutton
+                        jcr:lastModified="{Date}2017-07-21T00:24:15.564-05:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Template Pages"
-                        sling:resourceType="foundation/components/title"/>
+                        sling:resourceType="eaton/static-components/general/cta"
+                        testdata="l2-news-viewthoughtleadership"
+                        view="default"/>
+                </list>
+            </category_highlight>
+            <category_highlight_645900121
+                jcr:created="{Date}2017-07-19T21:25:05.317Z"
+                jcr:createdBy="etn-eduardo"
+                jcr:lastModified="{Date}2017-07-19T21:25:05.317Z"
+                jcr:lastModifiedBy="etn-eduardo"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/category-highlight"
+                testdata="l2-news-eatoninthenews">
+                <ttil
+                    jcr:lastModified="{Date}2017-07-21T00:32:07.779-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/content/ttil"
+                    testdata="l2-news-eatoninthenews"
+                    view="l2-hero"/>
+                <list
+                    jcr:lastModified="{Date}2017-07-19T21:25:35.395Z"
+                    jcr:lastModifiedBy="etn-eduardo"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/content/list"
+                    testdata="l2-news-eatoninthenews"
+                    view="nofeaturedarticle"/>
+            </category_highlight_645900121>
+            <grid_3_column_contro
+                jcr:created="{Date}2017-07-20T05:42:54.831Z"
+                jcr:createdBy="etn-marie"
+                jcr:lastModified="{Date}2017-07-20T05:42:54.831Z"
+                jcr:lastModifiedBy="etn-marie"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/layout/grid-3-column-control">
+                <col2-par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <divider
+                        jcr:created="{Date}2017-08-11T15:22:46.875-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-11T15:22:46.875-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/divider"/>
+                    <link_list
+                        jcr:created="{Date}2017-07-20T05:43:29.756Z"
+                        jcr:createdBy="etn-marie"
+                        jcr:lastModified="{Date}2017-07-20T05:43:57.535Z"
+                        jcr:lastModifiedBy="etn-marie"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/link-list"
+                        testdata="l2-news-nextsteps1"
+                        view="vertical"/>
+                </col2-par>
+                <col3-par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <divider
+                        jcr:created="{Date}2017-08-11T15:22:48.932-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-11T15:22:48.932-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/divider"/>
+                    <link_list
+                        jcr:created="{Date}2017-07-20T05:43:33.265Z"
+                        jcr:createdBy="etn-marie"
+                        jcr:lastModified="{Date}2017-07-20T05:44:08.857Z"
+                        jcr:lastModifiedBy="etn-marie"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/link-list"
+                        testdata="l2-news-nextsteps2"
+                        view="vertical"/>
+                </col3-par>
+                <col1-par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <divider
+                        jcr:created="{Date}2017-08-11T15:22:44.150-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-11T15:22:44.150-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/divider"/>
                     <text
-                        jcr:created="{Date}2017-08-15T10:35:33.024-05:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2017-08-16T10:49:55.088-06:00"
-                        jcr:lastModifiedBy="admin"
+                        jcr:created="{Date}2017-07-20T05:43:38.685Z"
+                        jcr:createdBy="etn-marie"
+                        jcr:lastModified="{Date}2017-07-20T05:43:43.380Z"
+                        jcr:lastModifiedBy="etn-marie"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="foundation/components/text"
-                        text="&lt;ul>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/styleguide.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>Eaton Styleguide&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t1-homepage-template.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T1 - Home Page&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t2-primary-landing-template.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T2 - Primary Landing&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t3-article-template.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T3 - Article&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t4-sitemap.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T4 - SiteMap&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t5-category-with-list.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T5 - Category&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t6-subcategory.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T6 - Subcategory&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t7-product-family-template-overview-tab.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T7 - Product Family Overview&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t7-product-family-template-overview-tab-no-feature-image.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T7 - Product Family Overview (No featured Image)&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t7-product-family-template-models-tab.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T7 - Product Family Models&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t7-product-family-template-models-list.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T7 - Product Family Models (List)&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t7-product-family-template-resources-tab.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T7 - Product Family Resources&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t8-sku-template-overview-tab.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T8 - SKU Overview&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t8-sku-template-specifications-tab.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T8 - SKU Specifications&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t8-sku-template-resources-tab.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T8 - SKU Resources&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t9-secondary-landing.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T9 - Secondary Landing&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a adhocenable=&quot;false&quot; href=&quot;/content/eaton-static/us/en/qa-templates/t9-secondary-landing-careers.html&quot; target=&quot;_blank&quot;>T9 - Secondary Landing (Careers)&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a adhocenable=&quot;false&quot; href=&quot;/content/eaton-static/us/en/qa-templates/t9-secondary-landing-investors.html&quot; target=&quot;_blank&quot;>T9 - Secondary Landing (Investors)&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t10-search-results.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T10 - Search Results&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a href=&quot;/content/eaton-static/us/en/qa-templates/t11-listing-page.html&quot; target=&quot;_blank&quot; adhocenable=&quot;false&quot;>T11 - Listing Page&lt;/a>&lt;/li>&#xa;&lt;li>&lt;a adhocenable=&quot;false&quot; href=&quot;/content/eaton-static/us/en/qa-templates/t12-first-time-country-language-selection.html&quot; target=&quot;_blank&quot;>T12 - First Time Country/Language Selection&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;"
-                        textIsRich="true"/>
+                        sling:resourceType="eaton/static-components/general/text"
+                        testdata="l2-news-nextsteps"
+                        view="default"/>
                 </col1-par>
-            </grid_2_column_contro>
+            </grid_3_column_contro>
+            <breadcrumb
+                jcr:created="{Date}2017-07-19T21:27:05.182Z"
+                jcr:createdBy="etn-eduardo"
+                jcr:lastModified="{Date}2017-07-19T21:27:05.182Z"
+                jcr:lastModifiedBy="etn-eduardo"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/structure/breadcrumb"/>
         </par>
         <eaton-footer jcr:primaryType="nt:unstructured">
             <footer-logo
