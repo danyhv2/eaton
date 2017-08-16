@@ -16,6 +16,7 @@
   &__item {
     border-bottom: 2px solid $color__secondary-gray5;
     border-radius: 0;
+    box-shadow: none;
   }
 
   &__item-header {
@@ -102,12 +103,22 @@
   //-----------------------------------
   // Mobile Breakpoint: 0 to 991px
   //-----------------------------------
-  @include media-mobile-and-tablet {}
+  @include media-mobile-and-tablet {
+    &__header {
+      font-size: 3.3rem;
+      line-height: 4.3rem;
+    }
+  }
 
   //-----------------------------------
   // Desktop Breakpoint: >992 px
   //-----------------------------------
   @include media-desktop-and-up {
+    &__header {
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
     &__item-list {
       margin-left: -25px;
       margin-right: -25px;
