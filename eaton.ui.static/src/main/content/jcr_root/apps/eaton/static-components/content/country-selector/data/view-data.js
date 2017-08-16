@@ -23,7 +23,7 @@ use(function () {
                 ]
               },
               {
-                countryName: 'South Aftrica',
+                countryName: 'South Africa',
                 countryId: 'south-africa',
                 languageList: [
                   {

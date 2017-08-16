@@ -10,17 +10,16 @@
     margin-bottom: 0;
   }
 
-  &__list {
-    padding: ($spacing__sm / 2) 0;
-  }
-
+  //-----------------------------------
+  // Region Item - General Styles
+  //-----------------------------------
   &__item {
     border-bottom: 2px solid $color__secondary-gray5;
     border-radius: 0;
   }
 
   &__item-header {
-    padding: ($spacing__md / 3) 0 ($spacing__sm / 3);
+    padding: $spacing__sm 0 ($spacing__sm / 3);
     position: relative;
     display: flex;
     align-items: center;
@@ -40,8 +39,17 @@
     }
   }
 
+  // Manage icon-states based on accordion is expanded / collapses
+  &__item-link[aria-expanded="true"] ~ &__item-icon {
+    &::after {
+      @extend %icon-sign-minus;
+    }
+  }
+
+  // Content Styles - Region
+  //-----------------------------------
   &__item-body {
-    // padding: $spacing__sm 0;
+    padding-bottom: ($spacing__sm / 3);
   }
 
   &__item-list {
@@ -51,14 +59,69 @@
     overflow: hidden;
   }
 
+  // Country Styles
+  //-----------------------------------
   &__item-country {
-    padding: ($spacing__sm / 2);
+    padding: 5px ($spacing__sm / 2) ($spacing__sm / 2);
   }
 
-  // Manage icon-states based on accordion is expanded / collapses
-  &__item-link[aria-expanded="true"] ~ &__item-icon {
-    &::after {
-      @extend %icon-sign-minus;
+  &__item-country-name {
+    display: flex;
+    padding-bottom: 5px;
+  }
+
+  &__item-country-label {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  // Language Styles
+  //-----------------------------------
+  &__item-language-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__language {
+
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint: 0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {}
+
+  //-----------------------------------
+  // Desktop Breakpoint: >992 px
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__item-language {
+      display: inline-block;
+
+      a {
+        color: #333;
+        border-right: 1px solid #333;
+        padding: 0 8px;
+
+        &:hover,
+        &:focus {
+          color: #333;
+        }
+      }
+    }
+
+    &__item-list {
+      &__item-language {
+
+        &:first-child {
+          a { padding-left: 0; }
+        }
+
+        &:last-child {
+          a { border: 0; }
+        }
+      }
     }
   }
 }
