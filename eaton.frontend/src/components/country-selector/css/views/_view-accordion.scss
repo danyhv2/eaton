@@ -4,7 +4,6 @@
 //-----------------------------------
 
 .country-selector {
-  padding: $spacing__md 0;
 
   &__header {
     margin-bottom: 0;
@@ -111,9 +110,29 @@
   // Mobile Breakpoint: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
+    padding: $spacing__sm 0;
+
     &__header {
       font-size: 3.3rem;
       line-height: 4.3rem;
+    }
+
+    &__item-header {
+      padding: 30px 0 ($spacing__sm / 2);
+    }
+
+    &__item-country {
+      padding: 25px 0;
+      margin: 0 ($spacing__sm / 2);
+      border-bottom: 1px solid $color__secondary-gray5;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    &__item-language-list {
+      padding-top: 20px;
     }
   }
 
@@ -121,6 +140,8 @@
   // Desktop Breakpoint: >992 px
   //-----------------------------------
   @include media-desktop-and-up {
+    padding: $spacing__md 0;
+
     &__header {
       font-size: 5rem;
       line-height: 6rem;
