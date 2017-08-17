@@ -267,7 +267,6 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/layout/grid-2-column-control"
-                testdata="white"
                 view="is-half">
                 <col1-par
                     jcr:primaryType="nt:unstructured"

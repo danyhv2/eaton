@@ -8,7 +8,7 @@
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="t9-secondary-careers"
+        jcr:title="t9-secondary-landing-careers"
         jcr:uuid="a223d8df-c211-4c78-a172-daeb9fce3efa"
         sling:resourceType="eaton/static-components/structure/eaton-content-page">
         <eaton-header jcr:primaryType="nt:unstructured">
