@@ -114,8 +114,7 @@
     }
 
     &__item-country {
-      padding: $spacing__sm 0 ($spacing__md / 3);
-      margin: 0 ($spacing__sm / 2);
+      padding: $spacing__sm 0;
       border-bottom: 1px solid $color__secondary-gray5;
 
       &:first-child {
