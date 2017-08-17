@@ -127,7 +127,356 @@ use(function () {
           },
           {
             regionName: 'Europe',
-            regionId: 'europe'
+            regionId: 'europe',
+            countryList: [
+              {
+                countryName: 'Austria',
+                countryId: 'austria',
+                languageList: [
+                  {
+                    languageName: 'Deustch',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Belgium',
+                countryId: 'belgium',
+                languageList: [
+                  {
+                    languageName: 'Français',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Czech Republic',
+                countryId: 'czech-republic',
+                languageList: [
+                  {
+                    languageName: 'čeština ',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Denmark',
+                countryId: 'denmark',
+                languageList: [
+                  {
+                    languageName: 'Dansk',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Estonia',
+                countryId: 'estonia',
+                languageList: [
+                  {
+                    languageName: 'Eesti',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Finland',
+                countryId: 'finland',
+                languageList: [
+                  {
+                    languageName: 'Finnish',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'France',
+                countryId: 'france',
+                languageList: [
+                  {
+                    languageName: 'Français',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Germany',
+                countryId: 'germany',
+                languageList: [
+                  {
+                    languageName: 'Deustch',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Italy',
+                countryId: 'italy',
+                languageList: [
+                  {
+                    languageName: 'Italiano',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Latvia',
+                countryId: 'latvia',
+                languageList: [
+                  {
+                    languageName: 'Latvijā',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Lithuania',
+                countryId: 'lithuania',
+                languageList: [
+                  {
+                    languageName: 'Lithuanian',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Netherlands',
+                countryId: 'netherlands',
+                languageList: [
+                  {
+                    languageName: 'Nederlands',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Norway',
+                countryId: 'norway',
+                languageList: [
+                  {
+                    languageName: 'Norsk',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Poland',
+                countryId: 'poland',
+                languageList: [
+                  {
+                    languageName: 'Polski',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Portugal',
+                countryId: 'portugal',
+                languageList: [
+                  {
+                    languageName: 'Português',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Russia',
+                countryId: 'russia',
+                languageList: [
+                  {
+                    languageName: 'Русский',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Slovakia',
+                countryId: 'slovakia',
+                languageList: [
+                  {
+                    languageName: 'slovenský',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Spain',
+                countryId: 'spain',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Sweden',
+                countryId: 'sweden',
+                languageList: [
+                  {
+                    languageName: 'Svenska',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Switzerland',
+                countryId: 'switzerland',
+                languageList: [
+                  {
+                    languageName: 'Deustch',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Turkey',
+                countryId: 'turkey',
+                languageList: [
+                  {
+                    languageName: 'Türkiye',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'United Kingdom',
+                countryId: 'united-kingdom',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              }
+            ]
           },
           {
             regionName: 'Middle East',
