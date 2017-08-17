@@ -47,6 +47,11 @@ gulp.task('iconfont',
   require('./config/gulp-tasks/gulp-glyphicon-font')(gulp, CONFIG)
 );
 
+// TASK: Build Image Sprite - Flags
+//--------------
+gulp.task('sprite',
+  require('./config/gulp-tasks/gulp-sprites')(gulp, CONFIG)
+);
 
 // Shortcuts for Common Tasks
 //--------------

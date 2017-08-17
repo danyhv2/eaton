@@ -39,6 +39,7 @@
     "gulp-stylelint": "4.0.0",
     "gulp-util": "^3.0.8",
     "gulp.spritesmith": "6.5.1",
+    "merge-stream": "1.0.1",
     "node-sass": "^4.5.3",
     "node-sass-globbing": "^0.0.23",
     "stylelint": "8.0.0",
