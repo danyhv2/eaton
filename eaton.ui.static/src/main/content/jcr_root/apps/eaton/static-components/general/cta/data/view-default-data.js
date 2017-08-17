@@ -15,6 +15,10 @@ use(function () {
     data.cta = { title: "View all press releases", url: "http://www.eaton.com", target: "_self" }
   } else if ((typeof(testdata) != "undefined") && (testdata == "l2-news-viewthoughtleadership")) {
     data.cta = { title: "View all thought leadership articles", url: "http://www.eaton.com", target: "_self"}
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-1")) {
+	data.cta = { title: "View all documents", url: "http://www.eaton.com", target: "_self"}
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-2")) {
+	data.cta = { title: "See how megatrends spur innovation", url: "http://www.eaton.com", target: "_self"}
   } else {
     data.cta = {
       title: (properties.get('title')) ? properties.get('title') : 'CTA Button',
