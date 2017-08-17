@@ -23,6 +23,16 @@ use(function () {
   	    };
         data.searchUrl = '/content/eaton-static/us/en/qa-templates/test-data/eaton-search-term--predictive-search.json';
   	
+	} else if ((typeof(testdata) != "undefined") && testdata == "t9-secondary-landing-careers") {
+		
+  	    data.form = {
+  	      'placeholder': 'Search job opportunities by keyword or location',
+  	      'submitLabel': 'Search',
+          'searchResultsPath': 'http://sr_dev.eaton.com',
+          'isExternal': true
+  	    };
+        data.searchUrl = '/content/eaton-static/us/en/qa-templates/test-data/eaton-search-term--predictive-search.json';
+  	
 	} else {
 		
 	    data.header = 'Headline';
