@@ -50,6 +50,10 @@
                 jcr:primaryType="nt:unstructured"
                 text="Featured List"
                 value="featured-list"/>
+              <quote
+                jcr:primaryType="nt:unstructured"
+                text="Quotes"
+                value="quote"/>
             </options>
           </view>
           <showCta

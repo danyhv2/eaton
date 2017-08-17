@@ -1,0 +1,24 @@
+<div class="eaton-ttil-quotes" data-sly-use.data="${'../data/view-quotes-data.js' @testdata=properties.testdata}">
+
+  <sly data-sly-list.quote=${data.items}>
+  <div class="eaton-ttil-quote eaton-ttil-quote__${quote.alignment}">
+      <div class="eaton-ttil-quote__image">
+        <!-- Start: Rendition Image Component -->
+        <sly data-sly-use.tpl="../../../shared/templates/rendition-image.html">
+          <sly data-sly-call="${ tpl.module @ data=quote.image }"></sly>
+        </sly>
+        <!-- End: Rendition Image Component -->
+        <img src="/content/dam/eaton/images/Quote_icon.png" alt="" class="eaton-ttil-quote__image__icon" aria-hidden="true">
+      </div>
+
+      <div class="eaton-ttil-quote__text-container">
+        <div class="eaton-ttil-quote__quote">
+          ${quote.description}
+        </div>
+        <div class="eaton-ttil-quote__author">
+          <span class="author">${quote.quoteAuthor}</span>, <span class="designation">${quote.quoteAuthorDesignation}</span>
+        </div>
+      </div>
+  </div>
+  </sly>
+</div>
