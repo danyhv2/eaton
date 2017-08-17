@@ -99,6 +99,15 @@ use(function () {
       ctaTarget: '_blank',
       color: 'grey'
     };
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-careers-1")) {
+	    data = {
+	      header: 'Join our talent network',
+	      description: 'Stay informed about news, events and opportunities at Eaton.',
+	      ctaText: 'Join now',
+	      ctaLink: '#',
+	      ctaTarget: '_blank',
+	      color: 'white'
+	    };
   } else {
     data = {
       header: 'Get digital delivery on proxy materials',
