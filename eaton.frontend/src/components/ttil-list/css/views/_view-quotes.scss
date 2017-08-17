@@ -48,6 +48,7 @@
   @include media-desktop-and-up {
     width: calc(60% + 484px);
     display: flex;
+    align-items: center;
 
     &__image {
       display: inline-block;
@@ -73,11 +74,13 @@
     &__text-container {
       width: calc(100% - 484px);
       order: 2;
+      padding: 0 70px;
     }
 
     &__quote {
       font-size: 30px;
       line-height: 48px;
+      padding-bottom: $spacing__md;
     }
 
     &__author {
@@ -101,6 +104,12 @@
         &__text-container {
           order: 1;
         }
+      }
+    }
+
+    &__right {
+      .eaton-ttil-quote__text-container {
+        text-align: left;
       }
     }
   }
