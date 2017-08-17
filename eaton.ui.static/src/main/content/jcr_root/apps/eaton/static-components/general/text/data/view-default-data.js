@@ -79,7 +79,7 @@ use(function () {
     <h4>H4 subheading goes here</h4> \
     <ul><li>UL List item 1</li><li>UL List item 2</li><li>UL List item 3</li></ul> \
     ';
-  } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-2")) {
+  } else if ((typeof(testdata) != "undefined") && ( (testdata == "t11-listing-page-2") || (testdata == "t9-secondary-landing-careers-1") ) ) {
 	data.text = '<p>See what people are saying about Eaton.</p>';
   } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page-3")) {
 	    data.text = "<p><strong>FOR MORE INFORMATION</strong></p> \
