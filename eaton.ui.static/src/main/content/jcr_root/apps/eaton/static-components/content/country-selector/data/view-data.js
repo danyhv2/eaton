@@ -44,7 +44,7 @@ use(function () {
                 countryId: 'china',
                 languageList: [
                   {
-                    languageName: 'Chinese',
+                    languageName: '中文	',
                     languagePath: '#link-to-site',
                     target: '_blank'
                   },
@@ -71,7 +71,7 @@ use(function () {
                 countryId: 'japan',
                 languageList: [
                   {
-                    languageName: 'Japanese',
+                    languageName: '日本語',
                     languagePath: '#link-to-site',
                     target: '_blank'
                   },
@@ -123,7 +123,137 @@ use(function () {
           },
           {
             regionName: 'Central America and Caribbean',
-            regionId: 'central-america-caribbean'
+            regionId: 'central-america-caribbean',
+            countryList: [
+              {
+                countryName: 'Costa Rica',
+                countryId: 'costa-rica',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Dominican Republic',
+                countryId: 'dominican-republic',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'El Salvador',
+                countryId: 'el-salvador',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Guatemala',
+                countryId: 'guatemala',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Honduras',
+                countryId: 'honduras',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Nicaragua',
+                countryId: 'nicaragua',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Panama',
+                countryId: 'panama',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Trinidad and tobago',
+                countryId: 'trinidad-tobago',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              }
+            ]
           },
           {
             regionName: 'Europe',

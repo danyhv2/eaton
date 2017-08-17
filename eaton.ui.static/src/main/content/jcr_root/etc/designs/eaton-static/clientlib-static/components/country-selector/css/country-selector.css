@@ -40,7 +40,7 @@
   .country-selector__header { font-size: 5rem; line-height: 6rem; }
   .country-selector__item-header { padding: 50px 0 15px; }
   .country-selector__item-body { padding-bottom: 30px; }
-  .country-selector__item-country { padding: 0 15px 30px; }
+  .country-selector__item-country { padding: 0 0 30px; }
   .country-selector__item-country-name { padding-bottom: 8px; }
   .country-selector__item-language { display: inline-block; padding: 0 8px; border-right: 1px solid #333; }
   .country-selector__item-language:first-child { padding-left: 0; }
