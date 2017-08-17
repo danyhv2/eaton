@@ -73,17 +73,20 @@ use(function () {
             {
               "id": "product",
               "label": "Products",
-              "url": "http://eaton.dev/results.html?facetvalue=products"
+              "url": "http://eaton.dev/results.html?facetvalue=products",
+              "active": false
             },
             {
               "id": "news",
               "label": "News & Insights",
-              "url": "http://eaton.dev/results.html?facetvalue=news"
+              "url": "http://eaton.dev/results.html?facetvalue=news",
+              "active": false
             },
             {
               "id": "resources",
               "label": "Resources",
-              "url": "http://eaton.dev/results.html?facetvalue=resources"
+              "url": "http://eaton.dev/results.html?facetvalue=resources",
+              "active": false
             }
           ]
         },
@@ -100,7 +103,8 @@ use(function () {
             {
               "id": "1000va",
               "label": "1000 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=1000va"
+              "url": "http://eaton.dev/results.html?facetvalue=1000va",
+              "active": true
             },
             {
               "id": "1500va",
