@@ -71,6 +71,10 @@
 
 .faceted-navigation__list-item { padding-left: 4px; }
 
+.faceted-navigation__input-checkboxes { display: inline-block; height: 1rem; width: 1rem; background: red; }
+
+.faceted-navigation__input-radios { display: inline-block; height: 1rem; width: 1rem; background: blue; }
+
 .faceted-navigation__mobile-container { z-index: 40; background-color: #FFF; margin: 0; }
 
 .faceted-navigation__mobile-container.enabled { position: fixed; top: 0; left: 0; padding: 0; z-index: 300; overflow: auto; height: 100%; }

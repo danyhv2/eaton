@@ -41,34 +41,16 @@
 
           <ul data-sly-list.facetValue="${ item.facetValues }" class="faceted-navigation__list">
 
-            <li class="faceted-navigation__list-item ${
-              facetValueList.count > data.config.facetValuesMinVisible
-                ? 'u-hide'
-                : ''
-              }">
-              <!--/* Type: Checkbox */-->
-              <sly data-sly-test.typeCheckboxes="${ item.facetType == 'checkboxes' }">
-                <div class="faceted-navigation__facet-value">
-                  <input
-                    name="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
-                    type="checkbox"
-                  />
-                  <a target="_self" href="${ facetValue.url }">${ facetValue.label }</a>
-                </div>
-              </sly>
-
-              <!--/* Type: Radio */-->
-              <sly data-sly-test.typeRadios="${ item.facetType == 'radios'}">
-                <div class="faceted-navigation__facet-value">
-                  <input
-                    name="${ 'facet-{0}' @ format=[ item.facetId ] }"
-                    type="radio"
-                  />
-                  <a target="_self" href="${ facetValue.url }">${ facetValue.label }</a>
-                </div>
-              </sly>
+            <li class="faceted-navigation__list-item
+              ${ facetValueList.count > data.config.facetValuesMinVisible ? 'u-hide' : '' }" >
+              <div class="faceted-navigation__facet-value">
+                <!-- TODO: add the target attribute -->
+                <a target="_self" href="${ facetValue.url }">
+                  <span class="faceted-navigation__input-${ item.facetType }" ></span>
+                  ${ facetValue.label }
+                </a>
+              </div>
             </li>
-
 
             <!--/* If there are more Facet Values than the configured amount, show "View More" button */-->
             <sly data-sly-test="${ item.facetValues.length > data.config.facetValuesMinVisible && facetValueList.last }">

@@ -18,6 +18,20 @@
     padding-left: 4px;
   }
 
+  &__input-checkboxes {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    background: red;
+  }
+
+  &__input-radios {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    background: blue;
+  }
+
   &__mobile-container {
     z-index: 40;
     background-color: $color__white;

@@ -6,10 +6,13 @@
 let App = window.App || {};
 
 App.facets = (function() {
-  const $componentClass = $('.faceted-navigation');
-  const $mobileHeader = $('.faceted-navigation__mobile-container .faceted-navigation-header');
   let $mobileFacets = $('.faceted-navigation__mobile-container');
   let mobileEnabled = false;
+  const $componentClass = $('.faceted-navigation');
+  const $mobileHeader = $mobileFacets.find('.faceted-navigation-header');
+  const $sortOptions = $('.faceted-navigation-header__sort-options');
+  const $sortOptionsMobile = $mobileFacets.find('.faceted-navigation-header__sort-options');
+  const isMobile = $(window).width() < App.global.constants.GRID.MD;
 
 
   const init = () => {
@@ -32,7 +35,7 @@ App.facets = (function() {
     });
 
 
-    if ($(window).width() < App.global.constants.GRID.MD) {
+    if (isMobile) {
       mobileFacets();
     }
     else {
@@ -43,9 +46,11 @@ App.facets = (function() {
     // Facet Behaviors for Mobile & Tablet
     //--------------
     $(window).on('resize', function() {
-      if ($(window).width() < App.global.constants.GRID.MD && $('.faceted-navigation__mobile-container').css('display') !== 'block') {
-        $('.faceted-navigation__mobile-container .faceted-navigation-header, .faceted-navigation__mobile-container').removeClass('hidden');
-        $('.faceted-navigation__mobile-container, .faceted-navigation__mobile-container a.b-button').removeClass('hidden');
+      const facetsIsHidden = $mobileFacets.css('display') !== 'block';
+      if (isMobile && facetsIsHidden) {
+        $mobileFacets.removeClass('hidden');
+        $mobileHeader.removeClass('hidden');
+        $mobileFacets.find('a.b-button').removeClass('hidden');
 
         App.global.utils.throttle(mobileFacets(),1000);
       }
@@ -55,8 +60,10 @@ App.facets = (function() {
       else if ($(window).width() > App.global.constants.GRID.MD) {
         $componentClass.css('display','block');
         mobileEnabled = false;
-        $('.faceted-navigation__mobile-container .faceted-navigation').remove();
-        $('.faceted-navigation__mobile-container, .faceted-navigation__mobile-container a.b-button, .overlay-mask').remove();
+        $mobileFacets.remove();
+        // $mobileFacets.find('.faceted-navigation').remove();
+        // $mobileFacets.find('a.b-button').remove();
+        $mobileFacets.find('a.b-button, .overlay-mask').remove();
         $componentClass.on('click', '[data-facets-more-groups]', showAllFacetsGroups);
         $componentClass.on('click', '[data-facets-more-values]', showAllFacetsValues);
       }
@@ -65,17 +72,17 @@ App.facets = (function() {
 
   const sortBy = () => {
     // let $ddul = $('.styled-dropdown dd ul');
-    const $source = $('.faceted-navigation-header__sort-options select');
-    // const $links = $('.faceted-navigation-header__sort-options .styled-dropdown dt a');
+    const $source = $sortOptions.find('select');
 
     createDropDown();
 
-    $('.faceted-navigation-header__sort-options .styled-dropdown dt a').click(function(e) {
+    $sortOptions.find('.styled-dropdown dt a').click(function(e) {
       e.preventDefault();
       $('.styled-dropdown dd ul').toggle();
     });
 
-    $('.faceted-navigation-header__sort-options .styled-dropdown dt a,.faceted-navigation-header__sort-options .styled-dropdown dd a').on('focus', function() {
+    // TODO: move to CSS
+    $sortOptions.find('dt a, dd a').on('focus', function() {
       $(this).css('text-decoration','underline');
     }).on('blur',function() {
       $(this).css('text-decoration','none');
@@ -98,22 +105,28 @@ App.facets = (function() {
   };
 
   function createDropDown() {
-    const $condition = $('.faceted-navigation__mobile-container').length > 0;
-    const $source = ($condition) ? $('.faceted-navigation__mobile-container .faceted-navigation-header__sort-options select') : $('.faceted-navigation-header__sort-options select');
+    // TODO: refactor
+    const hasMobileFacets = $mobileFacets.length > 0;
+    // TODO: unify the mobile and desktop DOM
+    const $source = ($condition) ? $sortOptionsMobile.find('select') : $sortOptions.find('select');
     let selected = $source.find('option[selected]');
     let options = $('option', $source);
 
-    if (!$condition) {
-      $('.faceted-navigation-header__sort-options').append('<dl id="target" class="styled-dropdown"></dl>');
+    // TODO: unify mobile and desktop DOM
+    if (hasMobileFacets) {
+      $sortOptionsMobile.append('<dl id="target" class="styled-dropdown"></dl>');
+    } else {
+      $sortOptions.append('<dl id="target" class="styled-dropdown"></dl>');
     }
-    else {
-      $('.faceted-navigation__mobile-container .faceted-navigation-header__sort-options').append('<dl id="target" class="styled-dropdown"></dl>');
-    }
+
+    // TODO: refactor
+    // TODO: refactor - what the heck #target is ?
     $('#target').append('<dt><a href="#">' + selected.text() +
-    '<span class="value">' + selected.val() +
-    '</span><span class="icon icon-chevron-down"></a></dt>');
+      '<span class="value">' + selected.val() +
+      '</span><span class="icon icon-chevron-down"></a></dt>');
     $('#target').append('<dd><ul></ul></dd>');
 
+    // TODO: refactor
     options.each(function(i) {
       if (i !== 0) {
         $('#target dd ul').append('<li><a href="' + $(this).val() + '" target="_self">' +
@@ -125,43 +138,42 @@ App.facets = (function() {
 
   const mobileFacets = () => {
 
-
-
+    // TODO: Move mobile condition to CSS
     if (mobileEnabled === false) {
       let temp = $componentClass.parent().parent();
       // let winHeight = $(document).innerHeight();
       $("<div class='faceted-navigation__mobile-container u-visible-mobile hidden col-xs-12 col-md-3'></div>").prependTo(temp);
 
-      $componentClass.clone(true, true).appendTo('.faceted-navigation__mobile-container').addClass('visible');
-      $('.faceted-navigation-header').addClass('u-visible-desktop').clone(true, true).prependTo('.faceted-navigation__mobile-container');
+      $componentClass.clone(true, true).appendTo($mobileFacets).addClass('visible');
+      $mobileHeader.addClass('u-visible-desktop').clone(true, true).prependTo($mobileFacets);
 
-      $('.faceted-navigation__mobile-container').find('.faceted-navigation-header').addClass('u-visible-mobile').removeClass('u-visible-desktop');
-      $('.faceted-navigation__mobile-container .faceted-navigation').prepend($('.faceted-navigation__mobile-container .faceted-navigation-header__header-bottom'));
+      $mobileHeader.addClass('u-visible-mobile').removeClass('u-visible-desktop');
+      $mobileFacets.find('.faceted-navigation').prepend($mobileFacets.find('.faceted-navigation-header__header-bottom'));
 
       $mobileHeader.removeClass('hidden-xs').removeClass('hidden-sm');
 
-      $('.faceted-navigation__mobile-container .faceted-navigation-header__header-bottom').removeClass('hidden-xs').removeClass('hidden-sm');
+      $mobileFacets.find('.faceted-navigation-header__header-bottom').removeClass('hidden-xs').removeClass('hidden-sm');
 
-      $("<a target='_self' class='open-facets-mobile b-button b-button__primary b-button__primary--light hidden-lg' role='button'>Filters (X)</a>").appendTo($('.faceted-navigation__mobile-container'));
-      $($mobileFacets).append("<a href='#' target='_self' class='open-facets-mobile b-button b-button__primary b-button__primary--light' role='button'>Filters (X)</a>");
+      // TODO: refactor
+      $("<a target='_self' class='open-facets-mobile b-button b-button__primary b-button__primary--light hidden-lg' role='button'>Filters (X)</a>").appendTo($mobileFacets);
+      $mobileFacets.append("<a href='#' target='_self' class='open-facets-mobile b-button b-button__primary b-button__primary--light' role='button'>Filters (X)</a>");
 
 
-      $('.faceted-navigation__mobile-container').removeClass('hidden');
+      $mobileFacets.removeClass('hidden');
 
       $componentClass.css('display','none');
 
-      $('.faceted-navigation__mobile-container .faceted-navigation').addClass('hidden');
+      $mobileFacets.find('.faceted-navigation').addClass('hidden');
       mobileEnabled = true;
 
-      $('.faceted-navigation__mobile-container .open-facets-mobile').on('click', function(e) {
+      $mobileFacets.find('.open-facets-mobile').on('click', function(e) {
         e.preventDefault();
         $('body').addClass('facets-open');
-        // $('.faceted-navigation__mobile-container').addClass('facets-navigation-mobile-open');
 
         // $("<div class='overlay-mask hidden'></div>").appendTo($('body'));
-        $('.faceted-navigation__mobile-container').addClass('enabled');
-        $('.faceted-navigation__mobile-container .faceted-navigation').removeClass('hidden').addClass('visible');
-        $('.faceted-navigation__mobile-container .faceted-navigation-header').addClass('hidden');
+        $mobileFacets.addClass('enabled');
+        $mobileFacets.find('.faceted-navigation').removeClass('hidden').addClass('visible');
+        $mobileHeader.addClass('hidden');
         $('.mobile-header').removeClass('hidden');
         $(this).addClass('hidden');
         // $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
@@ -170,38 +182,34 @@ App.facets = (function() {
 
       $('.close-facets-mobile, [data-facets-apply]').on('click', function(e) {
         e.preventDefault();
-        $('.faceted-navigation__mobile-container').removeClass('enabled');
-        $('.faceted-navigation__mobile-container .faceted-navigation').removeClass('visible').addClass('hidden');
-        $('.faceted-navigation-header').removeClass('hidden');
-        $('.faceted-navigation__mobile-container .b-button').removeClass('hidden');
+        $mobileFacets.removeClass('enabled');
+        $mobileFacets.find('.faceted-navigation').removeClass('visible').addClass('hidden');
+        $mobileHeader.removeClass('hidden');
+        $mobileFacets.find('.b-button').removeClass('hidden');
         // $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
         $('.search-results').css('position','relative');
 
         $('body').removeClass('facets-open');
-        // $('.faceted-navigation__mobile-container').removeClass('facets-navigation-mobile-open');
-
       });
 
-      $('.faceted-navigation__mobile-container .faceted-navigation__header').on('click', function(e) {
-        e.preventDefault;
+      $mobileFacets.find('.faceted-navigation__header').on('click', function(e) {
+        e.preventDefault();
         $(this).find('.icon-sign-minus').toggle();
       });
 
       // View More Facets Behavior
       //--------------
-      $('.faceted-navigation__mobile-container [data-facets-more-groups]').on('click', function(event) {
+      $mobileFacets.find('[data-facets-more-groups]').on('click', function(event) {
         event.preventDefault();
-        $('.faceted-navigation__mobile-container .faceted-navigation__more-facets').slideDown(200);
+        $mobileFacets.find('.faceted-navigation__more-facets').slideDown(200);
 
         // Hide "View more" <button>
         event.currentTarget.classList.add('u-hide');
       });
-      $('.faceted-navigation__mobile-container').on('click', '[data-facets-more-values]', showAllFacetsValues);
-      // $('.faceted-navigation__mobile-container [data-facets-more-groups]').on('click', '[data-facets-more-groups]', function() {alert('alert');});
-    }
-    else {
-      $('.faceted-navigation__mobile-container').removeClass('hidden');
-      $('.faceted-navigation__mobile-container .faceted-navigation').remove();
+      $mobileFacets.on('click', '[data-facets-more-values]', showAllFacetsValues);
+    } else {
+      $mobileFacets.removeClass('hidden');
+      $mobileFacets.find('.faceted-navigation').remove();
       $('.search-results').css('position','relative');
       $componentClass.css('display','none');
     }
