@@ -59,7 +59,6 @@
 
     label {
       background-color: $color__primary-gray1;
-      font-weight: normal;
 
       &:hover,
       &:focus,
@@ -170,6 +169,7 @@
     padding: 1.3rem 0;
     margin: 0;
     background-color: $color__secondary-gray6;
+    font-weight: normal;
 
     a {
       display: block;

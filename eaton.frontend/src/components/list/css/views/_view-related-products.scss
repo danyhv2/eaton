@@ -4,7 +4,7 @@
 
   &__text {
     padding-left: 15px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
 
     @include media-mobile-only {
       padding-bottom: 25px;
@@ -35,18 +35,20 @@
   }
 
   &__title {
-    padding-top: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+
+    @include media-tablet-only {
+      padding-top: 60px;
+    }
+
+    @include media-desktop-and-up {
+      padding-bottom: 10px;
+    }
   }
 
   &__arrow {
     bottom: 35%;
   }
 
-  @include media-desktop-and-up {
-    &__title {
-      padding-top: 30px;
-      padding-bottom: 10px;
-    }
-  }
 }

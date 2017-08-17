@@ -41,6 +41,19 @@ use(function () {
       }
     };
   }
+  
+  else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors")) {
+    data = {
+      title: "The power of Eaton",
+      text: "Megatrends spur innovation at Eaton. Our focus brings drive and urgency to our work as we develop innovations that help our customers find ways to use power more efficiently, reliable, safely and sustainnably.",
+      image: {
+        mobile: "/content/dam/eaton/images/the-power-of-eaton.png",
+        tablet: "/content/dam/eaton/images/the-power-of-eaton.png",
+        desktop: "/content/dam/eaton/images/the-power-of-eaton.png",
+        altText: ""
+      }
+    };
+  }
 
   else {
     data = {

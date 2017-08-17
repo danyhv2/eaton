@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-16T10:38:01.776-06:00"
+        cq:lastModified="{Date}2017-08-16T17:13:33.594-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:isCheckedOut="{Boolean}true"
@@ -240,7 +240,7 @@
                 sling:resourceType="eaton/static-components/content/ttil-list"
                 showCta="true"
                 showSeparator="true"
-                testdata="l2-news"
+                testdata="t9-secondary-landing-investors"
                 view="category-hero"/>
             <link_list
                 jcr:created="{Date}2017-07-19T21:16:15.239Z"
@@ -249,40 +249,93 @@
                 jcr:lastModifiedBy="etn-eduardo"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/general/link-list"
-                testdata="l2-news"
+                testdata="t9-secondary-landing-investors"
                 view="section-navigation"/>
-            <search_box
-                jcr:created="{Date}2017-07-19T21:16:36.788Z"
-                jcr:createdBy="etn-eduardo"
-                jcr:lastModified="{Date}2017-07-19T21:16:43.514Z"
-                jcr:lastModifiedBy="etn-eduardo"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/search/search-box"
-                view="default"/>
             <title_text_image_lin_708215571
                 jcr:created="{Date}2017-07-19T21:18:05.533Z"
                 jcr:createdBy="etn-eduardo"
-                jcr:lastModified="{Date}2017-07-19T21:18:16.675Z"
-                jcr:lastModifiedBy="etn-eduardo"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/ttil"
-                view="article-feature"/>
-            <list
-                jcr:created="{Date}2017-07-21T00:23:38.821-05:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2017-07-21T00:23:59.130-05:00"
+                jcr:lastModified="{Date}2017-08-16T14:44:56.401-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/list"
-                view="article-list-single-feature">
-                <featured-article-ctabutton
-                    jcr:lastModified="{Date}2017-07-21T00:24:15.564-05:00"
-                    jcr:lastModifiedBy="admin"
+                sling:resourceType="eaton/static-components/content/ttil"
+                testdata="t9-secondary-landing-investors-1"
+                view="topic-link-white"/>
+            <grid_2_column_contro
+                jcr:created="{Date}2017-08-16T14:59:01.602-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-16T14:59:25.528-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/layout/grid-2-column-control"
+                view="is-half">
+                <col1-par
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/general/cta"
-                    testdata="primary-articlelist"
-                    view="default"/>
-            </list>
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <link_list
+                        jcr:created="{Date}2017-08-16T15:00:09.207-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-16T15:02:14.095-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/link-list"
+                        testdata="t9-secondary-landing-investors"
+                        view="download-list"/>
+                    <cta
+                        jcr:created="{Date}2017-08-16T15:00:44.124-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-16T15:01:27.470-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/cta"
+                        testdata="t9-secondary-landing-investors-1"
+                        color="dark"
+                        view="default"/>
+                </col1-par>
+            </grid_2_column_contro>
+            <icon_list
+                jcr:created="{Date}2017-08-16T16:59:37.210-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-16T16:59:47.843-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/icon-list"
+                testdata="no-image-highlights-1"
+                view="no-image-highlights"/>
+            <grid_2_column_contro_1204322960
+                jcr:created="{Date}2017-08-16T17:00:25.502-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-16T17:00:32.398-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/layout/grid-2-column-control"
+                view="is-half">
+                <col1-par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <ttil
+                        jcr:created="{Date}2017-08-16T17:01:34.316-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-16T17:02:08.295-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/content/ttil"
+                        testdata="t9-secondary-landing-investors-2"
+                        view="topic-link-white"/>
+                </col1-par>
+                <col2-par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <link_list
+                        jcr:created="{Date}2017-08-16T17:01:50.536-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-16T17:02:26.613-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/link-list"
+                        testdata="t9-secondary-landing-investors-1"
+                        view="2column"/>
+                </col2-par>
+            </grid_2_column_contro_1204322960>
             <category_highlight
                 jcr:created="{Date}2017-07-19T21:21:07.589Z"
                 jcr:createdBy="etn-eduardo"
@@ -290,121 +343,75 @@
                 jcr:lastModifiedBy="etn-eduardo"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/category-highlight"
-                testdata="l2-news-leadingtheway">
+                testdata="t9-secondary-landing-investors">
                 <ttil
                     jcr:lastModified="{Date}2017-07-19T21:22:58.725Z"
                     jcr:lastModifiedBy="etn-eduardo"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/content/ttil"
-                    testdata="l2-news-leadingtheway"
+                    testdata="t9-secondary-landing-investors"
                     view="l2-hero"/>
                 <list
                     jcr:lastModified="{Date}2017-07-19T21:23:45.332Z"
                     jcr:lastModifiedBy="etn-eduardo"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/content/list"
-                    testdata="l2-news-leadingtheway"
+                    testdata="t9-secondary-landing-investors"
                     view="featuredarticle">
                     <featured-article-ctabutton
                         jcr:lastModified="{Date}2017-07-21T00:24:15.564-05:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="eaton/static-components/general/cta"
-                        testdata="l2-news-viewthoughtleadership"
+                        testdata="t9-secondary-landing-investors-2"
                         view="default"/>
                 </list>
             </category_highlight>
-            <category_highlight_645900121
-                jcr:created="{Date}2017-07-19T21:25:05.317Z"
+            <ttil
+                jcr:created="{Date}2017-08-16T17:08:04.865-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-16T17:08:58.263-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/ttil"
+                testdata="t9-secondary-landing-investors-3"
+                view="topic-link-white"/>
+            <list
+                jcr:created="{Date}2017-07-21T00:23:38.821-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-07-21T00:23:59.130-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/list"
+                testdata="t9-secondary-landing-investors"
+                view="article-list-single-feature"/>
+            <ttil_1919482490
+                jcr:created="{Date}2017-08-16T17:09:33.081-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-16T17:09:39.787-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/ttil"
+                testdata="t9-secondary-landing-investors-4"
+                view="topic-link-white"/>
+            <icon_list_821654168
+                jcr:created="{Date}2017-08-16T17:13:00.338-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-16T17:13:33.592-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/icon-list"
+                testdata="t9-secondary-landing-investors"
+                view="top-list-with-icon"/>
+            <search_box
+                jcr:created="{Date}2017-07-19T21:16:36.788Z"
                 jcr:createdBy="etn-eduardo"
-                jcr:lastModified="{Date}2017-07-19T21:25:05.317Z"
+                jcr:lastModified="{Date}2017-07-19T21:16:43.514Z"
                 jcr:lastModifiedBy="etn-eduardo"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/category-highlight"
-                testdata="l2-news-eatoninthenews">
-                <ttil
-                    jcr:lastModified="{Date}2017-07-21T00:32:07.779-05:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/ttil"
-                    testdata="l2-news-eatoninthenews"
-                    view="l2-hero"/>
-                <list
-                    jcr:lastModified="{Date}2017-07-19T21:25:35.395Z"
-                    jcr:lastModifiedBy="etn-eduardo"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/content/list"
-                    testdata="l2-news-eatoninthenews"
-                    view="nofeaturedarticle"/>
-            </category_highlight_645900121>
-            <grid_3_column_contro
-                jcr:created="{Date}2017-07-20T05:42:54.831Z"
-                jcr:createdBy="etn-marie"
-                jcr:lastModified="{Date}2017-07-20T05:42:54.831Z"
-                jcr:lastModifiedBy="etn-marie"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/layout/grid-3-column-control">
-                <col2-par
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wcm/foundation/components/parsys">
-                    <divider
-                        jcr:created="{Date}2017-08-11T15:22:46.875-06:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2017-08-11T15:22:46.875-06:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/general/divider"/>
-                    <link_list
-                        jcr:created="{Date}2017-07-20T05:43:29.756Z"
-                        jcr:createdBy="etn-marie"
-                        jcr:lastModified="{Date}2017-07-20T05:43:57.535Z"
-                        jcr:lastModifiedBy="etn-marie"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/general/link-list"
-                        testdata="l2-news-nextsteps1"
-                        view="vertical"/>
-                </col2-par>
-                <col3-par
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wcm/foundation/components/parsys">
-                    <divider
-                        jcr:created="{Date}2017-08-11T15:22:48.932-06:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2017-08-11T15:22:48.932-06:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/general/divider"/>
-                    <link_list
-                        jcr:created="{Date}2017-07-20T05:43:33.265Z"
-                        jcr:createdBy="etn-marie"
-                        jcr:lastModified="{Date}2017-07-20T05:44:08.857Z"
-                        jcr:lastModifiedBy="etn-marie"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/general/link-list"
-                        testdata="l2-news-nextsteps2"
-                        view="vertical"/>
-                </col3-par>
-                <col1-par
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wcm/foundation/components/parsys">
-                    <divider
-                        jcr:created="{Date}2017-08-11T15:22:44.150-06:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2017-08-11T15:22:44.150-06:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/general/divider"/>
-                    <text
-                        jcr:created="{Date}2017-07-20T05:43:38.685Z"
-                        jcr:createdBy="etn-marie"
-                        jcr:lastModified="{Date}2017-07-20T05:43:43.380Z"
-                        jcr:lastModifiedBy="etn-marie"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/general/text"
-                        testdata="l2-news-nextsteps"
-                        view="default"/>
-                </col1-par>
-            </grid_3_column_contro>
+                sling:resourceType="eaton/static-components/search/search-box"
+                testdata="t9-secondary-landing-investors"
+                view="default"/>
             <breadcrumb
                 jcr:created="{Date}2017-07-19T21:27:05.182Z"
                 jcr:createdBy="etn-eduardo"

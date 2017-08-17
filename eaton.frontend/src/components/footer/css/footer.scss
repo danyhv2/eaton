@@ -57,6 +57,37 @@
   }
 }
 
+// Footer Back to top button
+//--------------
+.eaton-footer-back-to-top {
+  position: fixed;
+  bottom: 6rem;
+  height: 5.8rem;
+  width: 5.8rem;
+  background-color: $color__white;
+  right: 3rem;
+  box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, .15);
+  cursor: pointer;
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+
+  .icon {
+    font-size: 3rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: $color__primary-blue;
+    line-height: 6.5rem;
+
+    &::before {
+      transform: rotateX(180deg);
+    }
+  }
+}
 
 
 //-----------------------------------

@@ -37,6 +37,21 @@ use(function () {
             imgAlt: 'Test image',
             backgroundColor: '#FFFFFF'
         }
+    } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-careers-1")) {
+        data = {
+            title: 'Campus opportunities',
+            text: 'Explore your potential throught development opportunities',
+            cta: {
+            	url: 'http://www.eaton.com',
+                text:'Learn more'
+            },
+            imgSrc: '/content/dam/eaton/images/T9-Careers-FeatureBlockRight-1.png',
+            imgMobile:'/content/dam/eaton/images/T9-Careers-FeatureBlockRight-1.png',
+            imgTablet:'/content/dam/eaton/images/T9-Careers-FeatureBlockRight-1.png',
+            imgAlignment:'right',
+            imgAlt: 'Test image',
+            backgroundColor: '#FFFFFF'
+        }
     } else {
         data = {
             title: 'We make big ideas work',

@@ -4,13 +4,29 @@
 //-----------------------------------
 
 .country-selector {
+  padding: $spacing__md 0;
+
+  &__header {
+    margin-bottom: 0;
+  }
+
+  //-----------------------------------
+  // Region Item - General Styles
+  //-----------------------------------
   &__item {
-    border-bottom: 2px solid $color__secondary-gray5;
+    border-bottom: 4px solid $color__secondary-gray5;
     border-radius: 0;
+    box-shadow: none;
+  }
+
+  &__item-link {
+
+    &:focus {
+      // outline: none; //TODO: Remove / keep?
+    }
   }
 
   &__item-header {
-    padding: ($spacing__sm / 2) 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -18,6 +34,8 @@
 
   &__item-title {
     flex-grow: 1;
+    margin-bottom: 0;
+    padding-right: 20px;
   }
 
   &__item-icon {
@@ -29,26 +47,113 @@
     }
   }
 
-  &__item-body {
-    padding: $spacing__sm 0;
-  }
-
-  &__item-list {
-    display: block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-  }
-
-  &__item-country {
-    padding: ($spacing__sm / 2);
-  }
-
   // Manage icon-states based on accordion is expanded / collapses
   &__item-link[aria-expanded="true"] ~ &__item-icon {
     &::after {
       @extend %icon-sign-minus;
+    }
+  }
+
+  // Content Styles - Region
+  //-----------------------------------
+  &__item-body {
+    // padding-bottom: ($spacing__sm / 3);
+  }
+
+  &__item-list {
+    display: block;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  // Country Styles
+  //-----------------------------------
+  &__item-country {
+    // padding: ($spacing__md / 3) 15px;
+  }
+
+  &__item-country-flag {
+    // margin-right: ($spacing__sm / 3); //TODO: Enable
+  }
+
+  &__item-country-name {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-country-label {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  // Language Styles
+  //-----------------------------------
+  &__item-language-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item-language {
+    a {
+      color: $color__primary-gray1;
+
+      &:hover,
+      &:focus {
+        color: $color__primary-gray1;
+      }
+    }
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint: 0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__header {
+      font-size: 3.3rem;
+      line-height: 4.3rem;
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint: >992 px
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__header {
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    &__item-header {
+      padding: 50px 0 ($spacing__sm / 2);
+    }
+
+    &__item-body {
+      padding-bottom: $spacing__sm;
+    }
+
+    &__item-country {
+      padding: 0 ($spacing__sm / 2) $spacing__sm;
+    }
+
+    &__item-country-name {
+      padding-bottom: 8px;
+    }
+
+    &__item-language {
+      display: inline-block;
+      padding: 0 8px;
+      border-right: 1px solid #333;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border: 0;
+      }
     }
   }
 }
