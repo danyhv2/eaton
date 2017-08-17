@@ -29,7 +29,7 @@ use(function () {
       ctaLink: '#',
       ctaTarget: '_blank'
     };
-  } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors")) {
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-1")) {
     data = {
       icon: '/content/dam/eaton/images/calendar-icon.png',
       header: 'First quarter earnings',
@@ -38,6 +38,32 @@ use(function () {
       ctaText: 'View event',
       ctaLink: '#',
       ctaTarget: '_blank'
+    };
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-2")) {
+    data = {
+      icon: '/content/dam/eaton/images/cat_icon.png',
+      header: 'Investor toolkit',
+      description: 'Get the very latest description how we drive for our shareholders.',
+      color: 'white'
+    };
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-3")) {
+    data = {
+      header: 'Driven to doing bussines right',
+      description: 'Eaton success is tied directly to our long-standing commitment to the highest ethical standards.',
+      color: 'blue',
+      ctaText: 'Corporate governance',
+      ctaLink: '#',
+      ctaTarget: '_blank'
+    };
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-4")) {
+    data = {
+	  header: 'Get digital delivery on proxy materials',
+      icon: '/content/dam/eaton/images/laptop-icon.png',
+      description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders.',
+      ctaText: 'Register for eDelivery',
+      ctaLink: '#',
+      ctaTarget: '_blank',
+      color: 'grey'
     };
   } else if ((typeof(testdata) != "undefined") && (testdata == "no-cta")) {
     data = {
@@ -67,7 +93,7 @@ use(function () {
   } else if ((typeof(testdata) != "undefined") && (testdata == "no-icon-grey")) {
     data = {
       header: 'Get digital delivery on proxy materials',
-      description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders',
+      description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders.',
       ctaText: 'Register for eDelivery',
       ctaLink: '#',
       ctaTarget: '_blank',
