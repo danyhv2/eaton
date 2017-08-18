@@ -1,0 +1,9 @@
+<sly data-sly-use.data="${'../data/view-link-data.js' @testdata=properties.testdata}">
+
+  <a data-sly-test="${ data.cta }"
+    href="${ data.cta.url }"
+    target="${ data.cta.target }"
+    class="cta-link"
+  >${ data.cta.title }</a>
+
+</sly>
