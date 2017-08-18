@@ -16,7 +16,7 @@
 
 .country-selector__item-list { display: block; padding: 0; list-style: none; overflow: hidden; margin-bottom: 0; }
 
-.country-selector__item-country-flag { margin-right: 10px; width: 25px; height: 25px; background: #D02127; }
+.country-selector__item-country-flag { margin-right: 10px; width: 25px; height: 25px; }
 
 .country-selector__item-country-name { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 

@@ -2,13 +2,13 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-17T15:31:29.525-06:00"
+        cq:lastModified="{Date}2017-08-18T11:41:00.778-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="t9-secondary-careers"
+        jcr:title="t9-secondary-landing-careers"
         jcr:uuid="a223d8df-c211-4c78-a172-daeb9fce3efa"
         sling:resourceType="eaton/static-components/structure/eaton-content-page">
         <eaton-header jcr:primaryType="nt:unstructured">
@@ -213,6 +213,46 @@
                     sling:resourceType="eaton/static-components/general/link-list"
                     testdata="default"
                     view="vertical"/>
+                <products-cta-link
+                    jcr:lastModified="{Date}2017-08-18T11:56:17.316-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    color="light"
+                    testdata="megamenu-products"
+                    view="link"/>
+                <services-cta-link
+                    jcr:lastModified="{Date}2017-08-18T11:56:45.692-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    color="light"
+                    testdata="megamenu-services"
+                    view="link"/>
+                <support-cta-link
+                    jcr:lastModified="{Date}2017-08-18T11:59:18.812-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    color="light"
+                    testdata="megamenu-support"
+                    view="link"/>
+                <company-cta-link
+                    jcr:lastModified="{Date}2017-08-18T11:59:26.398-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    color="light"
+                    testdata="megamenu-company"
+                    view="link"/>
+                <markets-cta-link
+                    jcr:lastModified="{Date}2017-08-18T11:59:34.055-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    color="light"
+                    testdata="megamenu-markets"
+                    view="link"/>
             </mega-menu>
             <header-links
                 jcr:lastModified="{Date}2017-08-07T22:41:29.649Z"
@@ -305,6 +345,15 @@
                 sling:resourceType="eaton/static-components/general/text"
                 testdata="t9-secondary-landing-careers-1"
                 view="default"/>
+            <ttil_list_415404717
+                jcr:created="{Date}2017-08-18T11:35:22.938-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-08-18T11:35:37.031-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/ttil-list"
+                testdata="t9-secondary-landing-careers"
+                view="image-only"/>
             <media_gallery
                 jcr:created="{Date}2017-08-17T11:19:43.617-06:00"
                 jcr:createdBy="admin"

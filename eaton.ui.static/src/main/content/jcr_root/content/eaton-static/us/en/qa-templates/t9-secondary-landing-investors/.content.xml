@@ -213,6 +213,46 @@
                     sling:resourceType="eaton/static-components/general/link-list"
                     testdata="default"
                     view="vertical"/>
+                <products-cta-link
+                    jcr:lastModified="{Date}2017-08-18T11:56:17.316-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    color="light"
+                    testdata="megamenu-products"
+                    view="link"/>
+                <services-cta-link
+                    jcr:lastModified="{Date}2017-08-18T11:56:45.692-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    color="light"
+                    testdata="megamenu-services"
+                    view="link"/>
+                <support-cta-link
+                    jcr:lastModified="{Date}2017-08-18T11:59:18.812-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    color="light"
+                    testdata="megamenu-support"
+                    view="link"/>
+                <company-cta-link
+                    jcr:lastModified="{Date}2017-08-18T11:59:26.398-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    color="light"
+                    testdata="megamenu-company"
+                    view="link"/>
+                <markets-cta-link
+                    jcr:lastModified="{Date}2017-08-18T11:59:34.055-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/general/cta"
+                    color="light"
+                    testdata="megamenu-markets"
+                    view="link"/>
             </mega-menu>
             <header-links
                 jcr:lastModified="{Date}2017-08-07T22:41:29.649Z"
@@ -267,7 +307,6 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/layout/grid-2-column-control"
-                testdata="white"
                 view="is-half">
                 <col1-par
                     jcr:primaryType="nt:unstructured"

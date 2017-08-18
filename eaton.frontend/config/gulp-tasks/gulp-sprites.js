@@ -5,7 +5,7 @@
 
 const spritesmith = require('gulp.spritesmith');
 const path = require('path');
-var merge = require('merge-stream');
+const merge = require('merge-stream');
 
 const buildImageSprite = function(gulp, CONFIG) {
   return function() {
@@ -14,7 +14,7 @@ const buildImageSprite = function(gulp, CONFIG) {
       .pipe(spritesmith({
         imgName: 'flags-sprite.png',
         cssName: '_eaton-flags-sprite.scss',
-        imgPath: '/images'
+        imgPath: 'images/flags-sprite.png'
       }));
 
     // Pipe image stream to be generated in clientLibs folder
@@ -28,7 +28,7 @@ const buildImageSprite = function(gulp, CONFIG) {
     // Return a merged stream to handle both `end` events
     return merge(imgStream, cssStream);
 
-  }
+  };
 };
 
 module.exports = buildImageSprite;
