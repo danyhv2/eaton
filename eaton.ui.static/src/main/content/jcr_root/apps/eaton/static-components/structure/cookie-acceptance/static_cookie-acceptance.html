@@ -5,7 +5,7 @@
 
 <sly data-sly-use.data="data/cookie-acceptance-data.js">
 
-  <div class="cookie-acceptance">
+  <div class="cookie-acceptancebox">
 
 
 
@@ -14,14 +14,14 @@
 
 
             <div class="col-sm-12 col-md-9">
-              <div class="cookie-acceptance__agreement b-body-copy-small">
+              <div class="cookie-acceptancebox__agreement b-body-copy-small">
                  ${data.cookieText @context='html'} 
              </div>
             </div>
 
 
             <div class="col-sm-12 col-md-3 text-center">
-              <a href="${data.link.url}" class="b-button b-button__secondary b-button__secondary--dark cookie-acceptance__cta" role="button" target="${data.link.target}">${data.link.title}</a>
+              <a href="${data.link.url}" class="b-button b-button__secondary b-button__secondary--dark cookie-acceptancebox__cta" role="button" target="${data.link.target}">${data.link.title}</a>
             </div>
           </div>
         </div>

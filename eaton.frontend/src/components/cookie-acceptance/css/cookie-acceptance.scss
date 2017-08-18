@@ -7,7 +7,7 @@
 
 
 
-.cookie-acceptance {
+.cookie-acceptancebox {
     background-color: $color__primary-gray1;
     color: $color__white;
     //position: fixed;
@@ -31,15 +31,31 @@
 
       @include media-mobile-only {
 
-        padding: 10px 0 15px;
+        padding: 15px 0 15px;
 
 
         &__cta {
             width: 100%;
-            margin-top: 5px;
+            margin-top: 15px;
         }
 
       }
+
+
+
+      @include media-tablet-only {
+
+        padding: 15px 0 15px;
+
+
+        &__cta {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+      }
+
+
 
 
 }

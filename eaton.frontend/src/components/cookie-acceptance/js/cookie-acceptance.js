@@ -8,7 +8,7 @@ let App = window.App || {};
 App.cookieAcceptance = (function() {
 
   // Variable Declarations
-  const componentClass = '.cookie-acceptance';
+  const componentClass = '.cookie-acceptancebox';
   const $componentElement = $(componentClass);
   const $componentToPadding = $('body');
 
@@ -28,9 +28,8 @@ App.cookieAcceptance = (function() {
 
 
   const readStatus = () => {
-    console.log ('check cookies......');
-    if (window.localStorage.getItem('eatoncookies') == null) {
-      // $componentToPadding.css('padding-top', $componentElement.height() - 8 );
+    // console.log ('check cookies......');
+    if (window.localStorage.getItem('eatoncookies') === null) {
       $componentElement.prependTo('header');
       $componentElement.show();
     } else {
@@ -54,7 +53,6 @@ App.cookieAcceptance = (function() {
       e.preventDefault();
       // alert ('Cookies Accepted!');
       window.localStorage.setItem('eatoncookies', 'yes');
-      $componentToPadding.css('padding-top', '');
       $componentElement.hide();
     });
 

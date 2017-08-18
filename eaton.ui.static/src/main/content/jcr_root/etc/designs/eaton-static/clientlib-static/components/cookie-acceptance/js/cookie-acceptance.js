@@ -25,7 +25,7 @@ var App = window.App || {};
 App.cookieAcceptance = function () {
 
   // Variable Declarations
-  var componentClass = '.cookie-acceptance';
+  var componentClass = '.cookie-acceptancebox';
   var $componentElement = $(componentClass);
   var $componentToPadding = $('body');
 
@@ -44,9 +44,8 @@ App.cookieAcceptance = function () {
   };
 
   var readStatus = function readStatus() {
-    console.log('check cookies......');
-    if (window.localStorage.getItem('eatoncookies') == null) {
-      // $componentToPadding.css('padding-top', $componentElement.height() - 8 );
+    // console.log ('check cookies......');
+    if (window.localStorage.getItem('eatoncookies') === null) {
       $componentElement.prependTo('header');
       $componentElement.show();
     } else {
@@ -68,7 +67,6 @@ App.cookieAcceptance = function () {
       e.preventDefault();
       // alert ('Cookies Accepted!');
       window.localStorage.setItem('eatoncookies', 'yes');
-      $componentToPadding.css('padding-top', '');
       $componentElement.hide();
     });
   };
