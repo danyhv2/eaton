@@ -15,8 +15,7 @@ use(function(){
         },
         description: 'We focus on doing business right everyday. Regarless of the market conditions or challenges',
         quoteAuthor: 'Bourkay',
-        quoteAuthorDesignation: 'Master designer',
-        alignment: 'left'
+        quoteAuthorDesignation: 'Master designer'
       },
       {
         image: {
@@ -27,8 +26,7 @@ use(function(){
         },
         description: 'I joined Eaton because it is global and diversified company with more than 100,000 employees. Lorem ipsum the most characters here will be, lorem ipsum et al, plorium uno. And the count will be this 214',
         quoteAuthor: 'Sarah',
-        quoteAuthorDesignation: 'System engineer',
-        alignment: 'right'
+        quoteAuthorDesignation: 'System engineer'
       }
     ]
   };
