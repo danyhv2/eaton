@@ -6,29 +6,40 @@
 @import "../../../global/css/_config/sass";
 
 
-h1 {
-background-color: red;
-}
 
-
-.eaton-cookie-acceptance {
+.cookie-acceptance {
     background-color: $color__primary-gray1;
     color: $color__white;
-    position: fixed;
+    //position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 0;
+    padding: 30px 0 20px;
     z-index: 99999;
+    display: none;
 
-    p.agreement {
-    max-width: 1170px;
+    &__agreement {
+        color: $color__white;
+
     }
 
-    p.agreement a, p.agreement a:hover{
-    color: #fff;
-    text-decoration: underline;
+    &__agreement a, 
+    &__agreement a:hover{
+        color: #fff;
+        text-decoration: underline;
     }
+
+      @include media-mobile-only {
+
+        padding: 10px 0 15px;
+
+
+        &__cta {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+      }
 
 
 }

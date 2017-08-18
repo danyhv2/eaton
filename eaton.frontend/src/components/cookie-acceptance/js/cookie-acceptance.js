@@ -8,8 +8,9 @@ let App = window.App || {};
 App.cookieAcceptance = (function() {
 
   // Variable Declarations
-  const componentClass = '.eaton-cookie-acceptance';
+  const componentClass = '.cookie-acceptance';
   const $componentElement = $(componentClass);
+  const $componentToPadding = $('body');
 
   // Check AEM Author Mode
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -27,7 +28,10 @@ App.cookieAcceptance = (function() {
 
 
   const readStatus = () => {
+    console.log ('check cookies......');
     if (window.localStorage.getItem('eatoncookies') == null) {
+      // $componentToPadding.css('padding-top', $componentElement.height() - 8 );
+      $componentElement.prependTo('header');
       $componentElement.show();
     } else {
       $componentElement.hide();
@@ -41,13 +45,16 @@ App.cookieAcceptance = (function() {
    */
   const addEventListeners = () => {
 
-    console.log ('inicio de cookies');
-    // localStorage.clear('eatoncookies');
+  // localStorage.clear('eatoncookies');
 
-    $componentElement.find('.acceptbutton').on('click',function(e) {
+
+    readStatus();
+
+    $componentElement.find('.cookie-acceptance__cta').on('click',function(e) {
       e.preventDefault();
-      alert ('Cookies Accepted!');
+      // alert ('Cookies Accepted!');
       window.localStorage.setItem('eatoncookies', 'yes');
+      $componentToPadding.css('padding-top', '');
       $componentElement.hide();
     });
 

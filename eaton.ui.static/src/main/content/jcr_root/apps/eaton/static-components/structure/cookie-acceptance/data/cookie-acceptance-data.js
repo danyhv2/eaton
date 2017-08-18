@@ -3,48 +3,20 @@ use(function () {
 
   var data = {};
 
-  data.links = [
+
+ data.cookieText = 'Eaton uses cookies to help us give you the best experience on our website. To find out more about the cookies we use and how to control them, please visit our <a href="#" target="_blank">privacy, cookies and data protection page.</a>';
+
+
+ //<a href="#" target="_blank">privacy, cookies and data protection page.</a>";
+
+
+  data.link = 
   	{
-  		text: 'level1',
-  		url: '#level1',
+  		title: 'Accept cookies',
+  		url: 'http://www.eaton.com',
       target: "_self"
-  	},
-  	{
-  		text: 'level2',
-  		url: '#level2',
-      target: "_self"
-  	},
-  	{
-  		text: 'level3',
-  		url: '#level3',
-      target: "_self"
-  	},
-  	{
-  		text: 'level4',
-  		url: '#level4',
-      target: "_self"
-  	},
-  	{
-  		text: 'level5',
-  		url: '#level5',
-      target: "_self"
-  	},
-  	{
-  		text: 'level6',
-  		url: '#level6',
-      target: "_self"
-  	},
-  	{
-  		text: 'level7',
-  		url: '#level7',
-      target: "_self"
-  	},
-  	{
-  		text: 'level8',
-  		url: '',
-      target: ""
   	}
-  ];
+  ;
 
   return data;
 

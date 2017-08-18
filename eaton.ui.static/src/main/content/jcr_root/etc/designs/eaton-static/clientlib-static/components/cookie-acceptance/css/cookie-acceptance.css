@@ -1,7 +1,8 @@
-h1 { background-color: red; }
+.cookie-acceptance { background-color: #333F48; color: #FFF; top: 0; left: 0; width: 100%; padding: 30px 0 20px; z-index: 99999; display: none; }
 
-.eaton-cookie-acceptance { background-color: #333F48; color: #FFF; position: fixed; top: 0; left: 0; width: 100%; padding: 30px 0; z-index: 99999; }
+.cookie-acceptance__agreement { color: #FFF; }
 
-.eaton-cookie-acceptance p.agreement { max-width: 1170px; }
+.cookie-acceptance__agreement a, .cookie-acceptance__agreement a:hover { color: #fff; text-decoration: underline; }
 
-.eaton-cookie-acceptance p.agreement a, .eaton-cookie-acceptance p.agreement a:hover { color: #fff; text-decoration: underline; }
+@media screen and (max-width: 767px) { .cookie-acceptance { padding: 10px 0 15px; }
+  .cookie-acceptance__cta { width: 100%; margin-top: 5px; } }

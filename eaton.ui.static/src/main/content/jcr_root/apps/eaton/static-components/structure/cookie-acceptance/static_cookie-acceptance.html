@@ -5,7 +5,7 @@
 
 <sly data-sly-use.data="data/cookie-acceptance-data.js">
 
-  <div class="eaton-cookie-acceptance">
+  <div class="cookie-acceptance">
 
 
 
@@ -14,14 +14,14 @@
 
 
             <div class="col-sm-12 col-md-9">
-              <p class="agreement body-copy-small">
-                  Eaton uses cookies to help us give you the best experience on our website. To find out more about the cookies we use and how to control them, please visit our <a href="#">privacy, cookies and data protection page.</a>
-             </p>
+              <div class="cookie-acceptance__agreement b-body-copy-small">
+                 ${data.cookieText @context='html'} 
+             </div>
             </div>
 
 
-            <div class="col-sm-12 col-md-3">
-              <button class="b-button b-button__secondary b-button__secondary--dark acceptbutton" role="button" target="_self">Accept cookies</button>
+            <div class="col-sm-12 col-md-3 text-center">
+              <a href="${data.link.url}" class="b-button b-button__secondary b-button__secondary--dark cookie-acceptance__cta" role="button" target="${data.link.target}">${data.link.title}</a>
             </div>
           </div>
         </div>
