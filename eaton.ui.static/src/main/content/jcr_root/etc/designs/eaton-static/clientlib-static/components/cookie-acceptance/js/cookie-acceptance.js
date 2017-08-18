@@ -63,7 +63,7 @@ App.cookieAcceptance = function () {
 
     readStatus();
 
-    $componentElement.find('.cookie-acceptance__cta').on('click', function (e) {
+    $componentElement.find('.cookie-acceptancebox__cta').on('click', function (e) {
       e.preventDefault();
       // alert ('Cookies Accepted!');
       window.localStorage.setItem('eatoncookies', 'yes');
