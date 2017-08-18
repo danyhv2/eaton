@@ -239,7 +239,7 @@ use(function () {
               },
               {
                 countryName: 'Trinidad and tobago',
-                countryId: 'trinidad-tobago',
+                countryId: 'trinidad-and-tobago',
                 languageList: [
                   {
                     languageName: 'Español',
@@ -740,7 +740,7 @@ use(function () {
               },
               {
                 countryName: 'United States',
-                countryId: 'united-states',
+                countryId: 'united-states-of-america',
                 languageList: [
                   {
                     languageName: 'Español',
@@ -912,8 +912,8 @@ use(function () {
                 ]
               },
               {
-                countryName: 'Venezuala',
-                countryId: 'venezuala',
+                countryName: 'Venezuela',
+                countryId: 'venezuela',
                 languageList: [
                   {
                     languageName: 'Español',
