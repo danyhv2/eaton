@@ -1,0 +1,7 @@
+h1 { background-color: red; }
+
+.eaton-cookie-acceptance { background-color: #333F48; color: #FFF; position: fixed; top: 0; left: 0; width: 100%; padding: 30px 0; z-index: 99999; }
+
+.eaton-cookie-acceptance p.agreement { max-width: 1170px; }
+
+.eaton-cookie-acceptance p.agreement a, .eaton-cookie-acceptance p.agreement a:hover { color: #fff; text-decoration: underline; }

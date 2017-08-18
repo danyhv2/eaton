@@ -1,0 +1,34 @@
+//-----------------------------------
+// Component M-65: Cookie Acceptance
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+h1 {
+background-color: red;
+}
+
+
+.eaton-cookie-acceptance {
+    background-color: $color__primary-gray1;
+    color: $color__white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 99999;
+
+    p.agreement {
+    max-width: 1170px;
+    }
+
+    p.agreement a, p.agreement a:hover{
+    color: #fff;
+    text-decoration: underline;
+    }
+
+
+}
