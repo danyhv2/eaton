@@ -1,6 +1,6 @@
 'use strict';
 /**
-* TASK: Create MSL-Glyphicon Font
+* TASK: Create Glyphicon Font
 */
 
 const async = require('async');

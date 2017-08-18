@@ -7,9 +7,16 @@
               alt="${data.image.altText}"
               src="${data.image.desktop}"
               data-src="${data.image.desktop}"
-              data-desktop-rendition="${data.item.desktop}"
-              data-tablet-rendition="${data.item.tablet}"
-              data-mobile-rendition="${data.item.mobile}" />
+              data-desktop-rendition="${data.image.desktop}"
+              data-tablet-rendition="${data.image.tablet}"
+              data-mobile-rendition="${data.image.mobile}" />
+
+          <!-- Start: Rendition Image Component -->
+          <!-- <sly data-sly-use.tpl="../../shared/templates/rendition-image.html">
+            <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
+          </sly> -->
+          <!-- End: Rendition Image Component -->
+
         </div>
         <div class="col-xs-12 col-md-6">
           <h1 class="module-product-detail-card__title">

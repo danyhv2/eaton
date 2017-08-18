@@ -65,8 +65,6 @@
 
 .faceted-navigation__mobile-container .faceted-navigation { padding: 60px 30px; }
 
-.autocorrected-search { margin-top: 20px; font-size: 20px; }
-
 .faceted-navigation { position: relative; }
 
 .faceted-navigation__list { list-style-type: none; padding: 0; }
@@ -93,15 +91,15 @@
 
 .faceted-navigation .mobile-done a { color: #FFF; text-align: center; display: block; width: 100%; font-weight: bold; }
 
-.faceted-navigation__facet-item { border-bottom: 1px solid #e6e6e6; }
+.faceted-navigation__facet-group { border-bottom: 1px solid #e6e6e6; }
 
 .faceted-navigation__list div:last-child { padding-bottom: 12px; }
 
-.faceted-navigation__header.button--reset, .faceted-navigation__view-more-facets button { cursor: pointer; margin: 14px 0; text-align: left; width: 100%; }
+.faceted-navigation__header.button--reset, .faceted-navigation__view-more-groups { cursor: pointer; margin: 14px 0; text-align: left; width: 100%; }
 
-.faceted-navigation__header.button--reset .icon::before, .faceted-navigation__view-more-facets button .icon::before { position: absolute; right: 33px; color: #005EB8; font-size: 12px; margin-top: 6px; }
+.faceted-navigation__header.button--reset .icon::before, .faceted-navigation__view-more-groups .icon::before { position: absolute; right: 33px; color: #005EB8; font-size: 12px; margin-top: 6px; }
 
-.faceted-navigation__view-more-facets button { color: #005EB8; }
+.faceted-navigation__view-more-groups { color: #005EB8; }
 
 .faceted-navigation__facet-name { font-size: 18px; }
 
@@ -110,13 +108,11 @@
 .faceted-navigation h4 { font-size: 26px; font-weight: bold; margin-bottom: 12px; }
 
 @media screen and (max-width: 991px) { .faceted-navigation { padding: 60px 30px; }
-  .faceted-navigation .faceted-navigation__facet-value { padding-bottom: 0 !important; }
-  .faceted-navigation .faceted-navigation__view-more-values { padding-top: 8px; }
-  .faceted-navigation .faceted-navigation__header { margin: 9px 0; }
-  .faceted-navigation .faceted-navigation__mobile-container { margin: 30px 0 30px; }
-  .faceted-navigation .done-facets-mobile { position: fixed; bottom: 0; left: 0; width: 100%; } }
-
-@media screen and (min-width: 992px) { .faceted-navigation .done-facets-mobile { display: none; } }
+  .faceted-navigation__facet-value { padding-bottom: 0 !important; }
+  .faceted-navigation__view-more-values { padding-top: 8px; }
+  .faceted-navigation__header { margin: 9px 0; }
+  .faceted-navigation__mobile-container { margin: 30px 0 30px; }
+  .faceted-navigation__apply { position: fixed; bottom: 0; left: 0; width: 100%; } }
 
 @media screen and (max-width: 991px) { body.facets-open { position: fixed; width: 100%; overflow: hidden; } }
 

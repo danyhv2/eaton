@@ -19,9 +19,10 @@
         <div class="u-hide faceted-navigation__more-facets">
       </sly>
 
+      <sly data-sly-test.isGroupExpanded="${ itemList.index < data.config.facetItemsMinVisible }"></sly>
 
       <!--/* Print All Facets */-->
-      <div class="faceted-navigation__facet-item">
+      <div class="faceted-navigation__facet-group">
 
         <!--/* Facet Header */-->
         <button class="faceted-navigation__header button--reset"
@@ -36,7 +37,7 @@
         </button>
 
         <!--/* Facet Values */-->
-        <div class="collapse in ${ 'facet-{0}' @ format=[ item.facetId ] }">
+        <div class="collapse ${ isGroupExpanded ? 'in' : '' } ${ 'facet-{0}' @ format=[ item.facetId ] }">
 
           <ul data-sly-list.facetValue="${ item.facetValues }" class="faceted-navigation__list">
 
@@ -72,7 +73,7 @@
             <!--/* If there are more Facet Values than the configured amount, show "View More" button */-->
             <sly data-sly-test="${ item.facetValues.length > data.config.facetValuesMinVisible && facetValueList.last }">
               <button class="button--reset faceted-navigation__view-more-values"
-                data-more-facet-values >${ 'View more' @ i18n }</button>
+                data-facets-more-values >${ 'View more' @ i18n }</button>
             </sly>
           </ul>
         </div>
@@ -84,16 +85,16 @@
       <sly data-sly-test="${ itemList.count == data.config.facetItemsMinVisible && itemList.last }">
         </div>
 
-        <div class="faceted-navigation__view-more-facets">
-          <button class="button--reset view-more-facets" data-more-facets ><strong>${ 'View more' @ i18n }</strong> </button>
-        </div>
+        <button class="faceted-navigation__view-more-groups button--reset" data-facets-more-groups>
+          <strong>${ 'View more' @ i18n }</strong>
+        </button>
       </sly>
 
     </sly>
 
-
-    <button class="b-button b-button__tertiary b-button__tertiary--light done-facets-mobile u-visible-mobile">Done</button>
-
+    <div class="faceted-navigation__apply u-visible-mobile">
+      <button class="b-button b-button__tertiary b-button__tertiary--light" data-facets-apply>Done</button>
+    </div>
 
   </div>
 </template>

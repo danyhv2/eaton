@@ -1,3 +1,5 @@
+.autocorrected-search { margin-top: 20px; }
+
 @media screen and (max-width: 991px) { .autocorrected-search__search-instead { display: block; } }
 
 @media screen and (min-width: 992px) { .autocorrected-search__results { display: inline-block; }
