@@ -10,9 +10,13 @@
 // NOTE: Bootstrap 3 provides a 'normalize/reset' module.
 @import "base/fonts";
 @import "base/eaton-glyphicon-font";
+@import "base/eaton-flags-sprite";
 @import "base/typography";
 
 
 // Import Utilites and base Elements
 @import "utils/**/*.scss";
 @import "base/elements/**/*.scss";
+
+// Generate Styles for Flags-Sprite
+@include sprites($spritesheet-sprites);

@@ -239,7 +239,7 @@ use(function () {
               },
               {
                 countryName: 'Trinidad and tobago',
-                countryId: 'trinidad-tobago',
+                countryId: 'trinidad-and-tobago',
                 languageList: [
                   {
                     languageName: 'Español',
@@ -610,19 +610,324 @@ use(function () {
           },
           {
             regionName: 'Middle East',
-            regionId: 'middle-east'
+            regionId: 'middle-east',
+            countryList: [
+              {
+                countryName: 'Iraq',
+                countryId: 'iraq',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Jordan',
+                countryId: 'jordan',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Kuwait',
+                countryId: 'kuwait',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Lebanon',
+                countryId: 'lebanon',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Oman',
+                countryId: 'oman',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Qatar',
+                countryId: 'qatar',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Saudi Arabia',
+                countryId: 'saudi-arabia',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'United Arab Emirates',
+                countryId: 'united-arab-emirates',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              }
+            ]
           },
           {
             regionName: 'North America',
-            regionId: 'north-america'
+            regionId: 'north-america',
+            countryList: [
+              {
+                countryName: 'Canada',
+                countryId: 'canada',
+                languageList: [
+                  {
+                    languageName: 'Français',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Mexico',
+                countryId: 'mexico',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'United States',
+                countryId: 'united-states-of-america',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              }
+            ]
           },
           {
             regionName: 'Oceania',
-            regionId: 'oceania'
+            regionId: 'oceania',
+            countryList: [
+              {
+                countryName: 'Australia',
+                countryId: 'australia',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'New Zealand',
+                countryId: 'new-zealand',
+                languageList: [
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              }
+            ]
           },
           {
             regionName: 'South America',
-            regionId: 'south-america'
+            regionId: 'south-america',
+            countryList: [
+              {
+                countryName: 'Bolivia',
+                countryId: 'bolivia',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Brazil',
+                countryId: 'brazil',
+                languageList: [
+                  {
+                    languageName: 'Português',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Chile',
+                countryId: 'chile',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Colombia',
+                countryId: 'colombia',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Ecuador',
+                countryId: 'ecuador',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Paraguay',
+                countryId: 'paraguay',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Peru',
+                countryId: 'peru',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Uruguay',
+                countryId: 'uruguay',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              },
+              {
+                countryName: 'Venezuela',
+                countryId: 'venezuela',
+                languageList: [
+                  {
+                    languageName: 'Español',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  },
+                  {
+                    languageName: 'English',
+                    languagePath: '#link-to-site',
+                    target: '_blank'
+                  }
+                ]
+              }
+            ]
           }
         ]
     };
