@@ -1,0 +1,48 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Responsive Table</div>
+</sly>
+
+
+<sly data-sly-use.data="${ 'data/responsive-table-data.js' @testdata=properties.testdata }">
+
+  <div class="responsive-table">
+    <div class="container">
+
+      <h2>${ data.sectionTitle }</h2>
+
+      <div class="responsive-table__content">
+
+        <div class="responsive-table__group responsive-table--visible-desktop">
+          <div class="responsive-table__group-item">
+            <div class="responsive-table__cell"></div>
+          </div>
+
+          <sly data-sly-list.attributes="${ data.attributes }">
+            <sly data-sly-test="${ attributesList.index < 1 }"
+              data-sly-list.items="${ attributes.items }">
+              <div class="responsive-table__group-item" >
+                <div class="responsive-table__cell">${ items.itemLabel }</div>
+              </div>
+            </sly>
+          </sly>
+        </div>
+
+        <sly data-sly-list.attributes="${ data.attributes }">
+          <div class="responsive-table__group">
+            <div class="responsive-table__group-item">
+              <div class="responsive-table__cell">${ attributes.attributeLabel }</div>
+            </div>
+            <sly data-sly-list.items="${ attributes.items }">
+              <div class="responsive-table__group-item" >
+                <div class="responsive-table__cell responsive-table--visible-mobile">${ items.itemLabel }</div>
+                <div class="responsive-table__cell">${ items.itemValue }</div>
+              </div>
+            </sly>
+          </div>
+        </sly>
+
+      </div>
+    </div>
+  </div>
+
+</sly>
