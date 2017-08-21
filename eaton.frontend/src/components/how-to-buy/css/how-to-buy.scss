@@ -88,3 +88,18 @@
     }
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .eaton-how-to-buy {
+    .container {
+      &.row {
+        .col-md-8 {
+
+          > .row .col-md-6 {
+            flex: 0 0 41%;
+          }
+        }
+      }
+    }
+  }
+}
