@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-08-21T12:49:07.717-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="QA-components-2"
+        sling:resourceType="eaton/static-components/structure/eaton-content-page"/>
+    <eaton-479/>
+    <eaton-478/>
+    <eaton-477/>
+    <eaton-264/>
+    <eaton-263/>
+    <eaton-262/>
+    <eaton-115/>
+    <eaton-254/>
+</jcr:root>
