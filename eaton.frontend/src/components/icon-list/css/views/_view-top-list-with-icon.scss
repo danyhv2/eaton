@@ -76,3 +76,15 @@
     }
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .eaton-top-list-with-icon {
+    .container {
+      &.row {
+        .col-md-4 {
+          flex: 0 0 30%;
+        }
+      }
+    }
+  }
+}
