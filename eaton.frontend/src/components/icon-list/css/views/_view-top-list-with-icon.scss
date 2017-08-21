@@ -15,8 +15,8 @@
     display: inline-block;
 
     img {
-      width: 100%;
-      height: auto;
+      width: $spacing__md;
+      height: $spacing__md;
     }
   }
 
@@ -39,8 +39,9 @@
     &__icon {
       max-width: 70px;
 
-      .icon {
-        font-size: 70px;
+      img {
+        width: 70px;
+        height: 70px;
       }
     }
 
@@ -71,6 +72,18 @@
           flex-direction: row;
         }
 
+      }
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .eaton-top-list-with-icon {
+    .container {
+      &.row {
+        .col-md-4 {
+          flex: 0 0 30%;
+        }
       }
     }
   }

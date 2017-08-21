@@ -21,7 +21,7 @@
 
     img {
       width: 60px;
-      height: auto;
+      height: 60px;
     }
   }
 
@@ -61,6 +61,11 @@
       margin-bottom: 0;
       margin-right: $spacing__sm;
       display: inline-block;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
     }
 
     &__text-wrapper {

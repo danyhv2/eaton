@@ -8,7 +8,7 @@ use(function(){
     items : [
       {
         image: {
-          mobile: '/content/dam/eaton/images/guy.png',
+          mobile: '/content/dam/eaton/images/guy-m.png',
           tablet: '/content/dam/eaton/images/guy.png',
           desktop: '/content/dam/eaton/images/guy.png',
           altText: 'Alt Text'
@@ -19,7 +19,7 @@ use(function(){
       },
       {
         image: {
-          mobile: '/content/dam/eaton/images/Women_image.png',
+          mobile: '/content/dam/eaton/images/girl-m.png',
           tablet: '/content/dam/eaton/images/Women_image.png',
           desktop: '/content/dam/eaton/images/Women_image.png',
           altText: 'Alt Text'

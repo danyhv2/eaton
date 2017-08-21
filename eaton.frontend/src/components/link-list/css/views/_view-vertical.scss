@@ -65,7 +65,7 @@
   @include media-mobile-and-tablet {
 
     &__eyebrow {
-      margin-bottom: 60px;
+      margin-bottom: $spacing__md / 2;
     }
   }
 

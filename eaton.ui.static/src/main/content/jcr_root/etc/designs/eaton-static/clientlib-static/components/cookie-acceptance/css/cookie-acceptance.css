@@ -1,0 +1,11 @@
+.cookie-acceptancebox { background-color: #333F48; color: #FFF; top: 0; left: 0; width: 100%; padding: 30px 0 20px; z-index: 99999; display: none; }
+
+.cookie-acceptancebox__agreement { color: #FFF; }
+
+.cookie-acceptancebox__agreement a, .cookie-acceptancebox__agreement a:hover { color: #fff; text-decoration: underline; }
+
+@media screen and (max-width: 767px) { .cookie-acceptancebox { padding: 15px 0 15px; }
+  .cookie-acceptancebox__cta { width: 100%; margin-top: 15px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) { .cookie-acceptancebox { padding: 15px 0 15px; }
+  .cookie-acceptancebox__cta { width: 100%; margin-top: 15px; } }

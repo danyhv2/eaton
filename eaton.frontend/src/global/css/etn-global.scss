@@ -19,4 +19,13 @@
 @import "base/elements/**/*.scss";
 
 // Generate Styles for Flags-Sprite
-@include sprites($spritesheet-sprites);
+@mixin sprites-flag($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .flag-#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+@include sprites-flag($spritesheet-sprites);

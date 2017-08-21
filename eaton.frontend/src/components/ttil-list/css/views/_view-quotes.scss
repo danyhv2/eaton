@@ -115,10 +115,10 @@
   }
 
   @include media-desktop-large {
-    width: calc(60% + 484px);
+    width: calc((100% - 1140px) / 2 + 1140px);
 
     &__left {
-      margin-left: calc(100% - (60% + 484px));
+      margin-left: calc((100% - 1140px) / 2);
     }
   }
 }

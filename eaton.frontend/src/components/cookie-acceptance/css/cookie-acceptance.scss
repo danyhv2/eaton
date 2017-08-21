@@ -1,0 +1,61 @@
+//-----------------------------------
+// Component M-65: Cookie Acceptance
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+
+.cookie-acceptancebox {
+    background-color: $color__primary-gray1;
+    color: $color__white;
+    //position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0 20px;
+    z-index: 99999;
+    display: none;
+
+    &__agreement {
+        color: $color__white;
+
+    }
+
+    &__agreement a, 
+    &__agreement a:hover{
+        color: #fff;
+        text-decoration: underline;
+    }
+
+      @include media-mobile-only {
+
+        padding: 15px 0 15px;
+
+
+        &__cta {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+      }
+
+
+
+      @include media-tablet-only {
+
+        padding: 15px 0 15px;
+
+
+        &__cta {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+      }
+
+
+
+
+}

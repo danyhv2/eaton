@@ -26,6 +26,10 @@
                 jcr:primaryType="nt:unstructured"
                 text="Default View"
                 value="default"/>
+              <link
+                jcr:primaryType="nt:unstructured"
+                text="Link View"
+                value="link"/>
             </options>
           </view>
           <color
