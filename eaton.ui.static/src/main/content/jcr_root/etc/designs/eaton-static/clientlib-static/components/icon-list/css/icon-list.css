@@ -50,7 +50,7 @@
 
 .eaton-top-list-with-icon__icon { color: #ED8B00; max-width: 60px; display: inline-block; }
 
-.eaton-top-list-with-icon__icon img { width: 100%; height: auto; }
+.eaton-top-list-with-icon__icon img { width: 60px; height: 60px; }
 
 .eaton-top-list-with-icon__text-wrapper { width: calc(100% - 90px); display: inline-block; float: right; }
 
@@ -58,7 +58,7 @@
 
 @media screen and (min-width: 992px) { .eaton-top-list-with-icon { margin-top: 90px; }
   .eaton-top-list-with-icon__icon { max-width: 70px; }
-  .eaton-top-list-with-icon__icon .icon { font-size: 70px; }
+  .eaton-top-list-with-icon__icon img { width: 70px; height: 70px; }
   .eaton-top-list-with-icon__text-wrapper { width: calc(100% - 100px); }
   .eaton-top-list-with-icon__element { margin-bottom: 90px; }
   .eaton-top-list-with-icon .container { margin: 0 auto; }

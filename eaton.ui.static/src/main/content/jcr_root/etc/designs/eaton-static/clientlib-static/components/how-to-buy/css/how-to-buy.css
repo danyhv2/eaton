@@ -2,7 +2,7 @@
 
 .eaton-how-to-buy__icon { color: #ED8B00; max-width: 60px; display: inline-block; }
 
-.eaton-how-to-buy__icon img { width: 100%; height: auto; }
+.eaton-how-to-buy__icon img { width: 60px; height: 60px; }
 
 .eaton-how-to-buy__text-wrapper { width: calc(100% - 90px); display: inline-block; float: right; }
 
@@ -10,11 +10,12 @@
 
 @media screen and (min-width: 992px) { .eaton-how-to-buy { padding-top: 90px; }
   .eaton-how-to-buy__icon { max-width: 70px; }
-  .eaton-how-to-buy__icon .icon { font-size: 70px; }
+  .eaton-how-to-buy__icon img { width: 70px; height: 70px; }
   .eaton-how-to-buy__text-wrapper { width: calc(100% - 100px); }
   .eaton-how-to-buy__element { margin-bottom: 90px; }
   .eaton-how-to-buy .container { margin: 0 auto; }
   .eaton-how-to-buy .container.row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
-  .eaton-how-to-buy .container.row .col-md-4 { -webkit-box-flex: 0; -ms-flex: 0 0 33%; flex: 0 0 33%; }
-  .eaton-how-to-buy .container.row .col-md-8 { -webkit-box-flex: 0; -ms-flex: 0 0 66%; flex: 0 0 66%; }
+  .eaton-how-to-buy .container.row .col-md-4 { -webkit-box-flex: 0; -ms-flex: 0 0 33%; flex: 0 0 33%; padding: 0; }
+  .eaton-how-to-buy .container.row .col-md-8 { -webkit-box-flex: 0; -ms-flex: 0 0 66%; flex: 0 0 66%; padding: 0; }
+  .eaton-how-to-buy .container.row .col-md-8 > .row .col-md-6 { -webkit-box-flex: 0; -ms-flex: 0 0 49%; flex: 0 0 49%; }
   .eaton-how-to-buy .container.row .row { margin: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; } }
