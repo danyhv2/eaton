@@ -330,17 +330,45 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form { font-family: Arial, 'Arial', sans-serif; }
 
+.eaton-form form { width: 100%; max-width: 870px; }
+
 .eaton-form .field-p { margin-bottom: 30px; }
 
-.eaton-form .LV_validation_message { font-size: 14px; font-weight: 100; font-style: italic; margin: 0; position: relative; top: 10px; }
+.eaton-form .LV_validation_message { font-size: 14px; font-weight: 100; font-style: italic; margin: 0; position: relative; top: 10px; width: 100%; }
 
-.eaton-form .radio-option.field-size-top-large { float: left; }
+.eaton-form .label-position { display: block; font-size: 15px; }
+
+.eaton-form .field-group .label { width: 100%; float: left; color: #333f48; font-size: 20px; text-align: left; padding: 0; margin-bottom: 30px; }
+
+.eaton-form .field-group ._100 { float: left; width: 100%; }
+
+.eaton-form .field-group ._50 { width: 100%; float: left; }
+
+@media screen and (min-width: 768px) { .eaton-form .field-group ._50 { width: 45%; } }
+
+@media screen and (min-width: 768px) { .eaton-form .field-group div:first-child { margin-right: 10%; } }
+
+.eaton-form .field-p label:not(.label):not(.label-position) { font-weight: 100; font-style: italic; font-size: 14px; color: #333f48; padding-top: 10px; width: 100%; }
+
+.eaton-form ._50_left { width: 100%; float: left; }
+
+@media screen and (min-width: 768px) { .eaton-form ._50_left { margin-right: 10%; width: 45%; } }
+
+.eaton-form .radio-option.field-size-top-large, .eaton-form .radio-option.field-size-left-large { float: left; width: 100%; margin-top: 10px; }
 
 .eaton-form .radio-option .inner { vertical-align: middle; color: #000; }
 
 .eaton-form .radio-option .list-order.twoColumn { padding-bottom: 20px; float: left; width: 35%; }
 
-.eaton-form input[type="text"] { width: 195px; height: 34px; display: block; margin-top: 10px; }
+@media screen and (max-width: 767px) { .eaton-form .radio-option .list-order.twoColumn { width: 50%; } }
+
+.eaton-form .radio-option .list-order.twoColumnLeft { padding-bottom: 30px; float: left; width: 20%; }
+
+.eaton-form input[type="text"] { width: 100%; height: 50px; display: block; margin-top: 10px; padding: 10px; border: 1px solid #8c9aa5; }
+
+@media screen and (min-width: 768px) and (max-width: 991px) { .eaton-form input[type="text"] { width: 310px; } }
+
+@media screen and (min-width: 992px) { .eaton-form input[type="text"] { width: 392px; } }
 
 .eaton-form [type="checkbox"]:not(:checked), .eaton-form [type="checkbox"]:checked { position: absolute; left: -100%; }
 
@@ -360,9 +388,23 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form input[type="submit"] { background: none; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; padding: 15px 100px; color: #005EB8; border-color: #005EB8; }
 
-.eaton-form textarea { display: block; margin-top: 10px; width: 500px; height: 225px; }
+.eaton-form textarea { display: block; margin-top: 10px; width: 100%; height: 225px; border: 1px solid #8c9aa5; }
 
-.eaton-form select { width: 195px; height: 34px; -webkit-appearance: none; -moz-appearance: none; appearance: none; position: relative; border-radius: 0; display: block; margin-top: 10px; background: #fff url("/content/dam/eaton/images/down_arrow.png") no-repeat; background-size: 10px; background-position: right 10px center; padding-left: 24px; }
+.eaton-form .choices { width: 100%; height: 50px; }
+
+.eaton-form .choices__inner { background: #fff url("/content/dam/eaton/images/down_arrow.png") no-repeat; background-position: 98%; background-size: 12px; border-radius: 0; border: 1px solid #8c9aa5; }
+
+.eaton-form .choices__list .is-highlighted { background-color: #fff; }
+
+.eaton-form .choices__list--dropdown { position: relative; top: 0; }
+
+.eaton-form .choices__input { border-bottom: 0; }
+
+.eaton-form .choices__item[role="option"] { color: #005EB8; }
+
+.eaton-form .choices[data-type*=select-one]::after { border-style: none; }
+
+.eaton-form .field-wrapper.individual { float: left; width: 100%; clear: both; }
 
 .Cambodia { background-image: url(images/flags-sprite.png); background-position: -48px -144px; width: 24px; height: 24px; }
 

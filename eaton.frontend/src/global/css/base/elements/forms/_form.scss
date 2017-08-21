@@ -2,6 +2,11 @@
 
   font-family: Arial, 'Arial', sans-serif;
 
+  form {
+    width: 100%;
+    max-width: 870px;
+  }
+
   .field-p {
     margin-bottom: 30px;
   }
@@ -13,12 +18,79 @@
     margin: 0;
     position: relative;
     top: 10px;
+    width: 100%;
+  }
+
+  .label-position {
+    display: block;
+    font-size: 15px;
+  }
+
+  .field-group {
+
+    .label {
+      width: 100%;
+      float: left;
+      color: #333f48;
+      font-size: 20px;
+      text-align: left;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    ._100 {
+      float:left;
+      width: 100%;
+    }
+    // TWO COLUMN
+
+    ._50 {
+      width: 100%;
+      float: left;
+
+      @include media-tablet-and-up {
+        width: 45%;
+      }
+    }
+
+    div:first-child {
+
+      @include media-tablet-and-up {
+        margin-right: 10%;
+      }
+    }
+
+  }
+
+
+  .field-p label:not(.label, .label-position) {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 14px;
+    color: #333f48;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  // TWO COLUMN
+
+  ._50_left {
+    width: 100%;
+    float: left;
+
+    @include media-tablet-and-up {
+      margin-right: 10%;
+      width: 45%;
+    }
   }
 
   .radio-option {
 
-    &.field-size-top-large {
+    &.field-size-top-large,
+    &.field-size-left-large {
       float: left;
+      width: 100%;
+      margin-top: 10px;
     }
 
     .inner {
@@ -32,6 +104,16 @@
         padding-bottom: 20px;
         float: left;
         width: 35%;
+
+        @include media-mobile-only {
+          width: 50%;
+        }
+      }
+
+      &.twoColumnLeft {
+        padding-bottom: 30px;
+        float: left;
+        width: 20%;
       }
     }
   }
@@ -39,10 +121,20 @@
   // INPUT
 
   input[type="text"] {
-    width: 195px;
-    height: 34px;
+    width: 100%;
+    height: 50px;
     display: block;
     margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #8c9aa5;
+
+    @include media-tablet-only {
+      width: 310px;
+    }
+
+    @include media-desktop-and-up {
+      width: 392px;
+    }
   }
 
   // CHECKBOX
@@ -141,24 +233,55 @@
   textarea {
     display: block;
     margin-top: 10px;
-    width: 500px;
+    width: 100%;
     height: 225px;
+    border: 1px solid #8c9aa5;
+
   }
 
   // SELECT
 
-  select {
-    width: 195px;
-    height: 34px;
-    appearance: none;
-    position: relative;
-    border-radius: 0;
-    display: block;
-    margin-top: 10px;
-    background: #fff url('/content/dam/eaton/images/down_arrow.png') no-repeat;
-    background-size: 10px;
-    background-position: right 10px center;
-    padding-left: 24px;
+  .choices {
+    width: 100%;
+    height: 50px;
 
+    &__inner {
+      background: #fff url('/content/dam/eaton/images/down_arrow.png') no-repeat;
+      background-position: 98%;
+      background-size: 12px;
+      border-radius: 0;
+      border: 1px solid #8c9aa5;
+
+    }
+
+    &__list {
+
+      .is-highlighted {
+        background-color: #fff;
+      }
+
+      &--dropdown {
+        position: relative;
+        top: 0;
+      }
+    }
+
+    &__input {
+      border-bottom: 0;
+    }
+
+    &__item[role="option"] {
+      color: #005EB8;
+    }
+
+    &[data-type*=select-one]::after {
+      border-style: none;
+    }
+  }
+
+  .field-wrapper.individual {
+    float: left;
+    width: 100%;
+    clear: both;
   }
 }
