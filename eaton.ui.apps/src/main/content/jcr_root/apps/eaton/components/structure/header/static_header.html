@@ -2,9 +2,9 @@
     <div class="eaton-header">
         <!--/* Include: Full Page Drawer */*/-->
          <!--/* Outer div is added because full page drawer was taking whole component as one */-->
-        <div data-sly-unwrap="${!wcmmode.edit}">
-			<sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/components/structure/full-page-drawer'}"></sly>
-		</div>
+        <sly data-sly-unwrap="${!wcmmode.edit}">
+        	<sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/components/structure/full-page-drawer'}"></sly>
+        </sly>
         <!--/* Utility Navigation */-->
         <div class="header-utility-nav">
             <div class="container">
