@@ -446,6 +446,38 @@ use(function () {
 	      ]
 	    }	
 		    
+    } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-1")) {
+        
+    	data.view = {
+	      eyebrow: 'Eaton bussines highlights',
+	      links: [
+		      {  
+		        title: '2016 annual report',
+		        url: '#link-1',
+		        target: '_self',
+                external_link: false,
+                document_size: 'PDF 4MB',
+                document_download: 'http://www.eaton.com'
+		      },
+		      {
+		        title: '2016 Q4 quarterly report',
+		        url: '#link-2',
+		        target: '_self',
+                external_link: false,
+                document_size: 'PDF 2MB',
+                document_download: 'http://www.eaton.com'
+		      },
+		      {
+		        title: 'Dividend report',
+		        url: '#link-3',
+		        target: '_self',
+                external_link: false,
+                document_size: 'PDF 3MB',
+                document_download: 'http://www.eaton.com'
+		      }
+		    ]
+	    }	
+    
     } else {
     	
     data.view = {
