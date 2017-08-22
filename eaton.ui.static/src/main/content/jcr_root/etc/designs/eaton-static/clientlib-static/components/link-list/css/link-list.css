@@ -91,4 +91,6 @@
 
 .eaton-linklist-2column > div { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
 
+.eaton-linklist-2column > div .col-xs-12 { padding: 0; }
+
 .eaton-linklist-2column__link { margin-bottom: 30px; }
