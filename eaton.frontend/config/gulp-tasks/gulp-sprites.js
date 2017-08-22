@@ -32,7 +32,8 @@ const buildImageSprite = function(gulp, CONFIG) {
       .pipe(spritesmith({
         imgName: 'flags-sprite.png',
         cssName: '_eaton-flags-sprite.scss',
-        imgPath: 'images/flags-sprite.png'
+        imgPath: 'images/flags-sprite.png',
+        padding: 4
       }));
 
     // Pipe image stream to be generated in clientLibs folder
