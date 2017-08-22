@@ -74,7 +74,7 @@ use(function () {
               "id": "product",
               "label": "Products",
               "url": "http://eaton.dev/results.html?facetvalue=products",
-              "active": false
+              "active": true
             },
             {
               "id": "news",

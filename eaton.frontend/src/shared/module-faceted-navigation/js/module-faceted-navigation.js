@@ -108,7 +108,7 @@ App.facets = (function() {
     // TODO: refactor
     const hasMobileFacets = $mobileFacets.length > 0;
     // TODO: unify the mobile and desktop DOM
-    const $source = ($condition) ? $sortOptionsMobile.find('select') : $sortOptions.find('select');
+    const $source = (hasMobileFacets) ? $sortOptionsMobile.find('select') : $sortOptions.find('select');
     let selected = $source.find('option[selected]');
     let options = $('option', $source);
 

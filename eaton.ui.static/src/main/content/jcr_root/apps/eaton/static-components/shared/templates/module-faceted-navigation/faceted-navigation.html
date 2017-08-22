@@ -19,17 +19,22 @@
         <div class="u-hide faceted-navigation__more-facets">
       </sly>
 
-      <sly data-sly-test.isGroupExpanded="${ itemList.index < data.config.facetItemsMinVisible }"></sly>
 
       <!--/* Print All Facets */-->
       <div class="faceted-navigation__facet-group">
 
+        <!--/* Loop variables - facet gruop */-->
+        <sly data-sly-test.isGroupExpanded="${ itemList.index < data.config.facetItemsMinVisible }" />
+        <sly data-sly-test.facetGroupID="${ 'facet-{0}' @ format=[ item.facetId ] }" />
+        <sly data-sly-test.groupExpandedClass="${ isGroupExpanded ? 'in' : '' }" />
+        <sly data-sly-test.facetInputType="${ item.facetType == 'radios' ? 'radio' : 'checkbox' }" />
+
         <!--/* Facet Header */-->
         <button class="faceted-navigation__header button--reset"
           data-toggle="collapse"
-          data-target=".${ 'facet-{0}' @ format=[ item.facetId ] }"
+          data-target=".${ facetGroupID }"
           aria-expanded="true"
-          aria-controls="${ 'facet-{0}' @ format=[ item.facetId ] }"
+          aria-controls="${ facetGroupID }"
         >
           <span class="faceted-navigation__facet-name">${ item.facetName }</span>
           <i class="icon icon-sign-minus" aria-hidden="true"></i>
@@ -37,23 +42,35 @@
         </button>
 
         <!--/* Facet Values */-->
-        <div class="collapse ${ isGroupExpanded ? 'in' : '' } ${ 'facet-{0}' @ format=[ item.facetId ] }">
+        <div class="collapse eaton-form ${ facetGroupID } ${ groupExpandedClass } ">
 
           <ul data-sly-list.facetValue="${ item.facetValues }" class="faceted-navigation__list">
 
-            <li class="faceted-navigation__list-item
-              ${ facetValueList.count > data.config.facetValuesMinVisible ? 'u-hide' : '' }" >
+            <!--/* Loop variables - facet valu*/-->
+            <sly data-sly-test.facetItemID="${ '{0}-{1}' @ format=[ facetGroupID, facetValue.id ] }" />
+            <sly data-sly-test.hiddenFacetClass="${ facetValueList.count > data.config.facetValuesMinVisible ? 'u-hide' : '' }" />
+            <sly data-sly-test.showViewMore="${ item.facetValues.length > data.config.facetValuesMinVisible && facetValueList.last }" />
+
+            <li class="faceted-navigation__list-item ${ hiddenFacetClass }" >
               <div class="faceted-navigation__facet-value">
                 <!-- TODO: add the target attribute -->
-                <a target="_self" href="${ facetValue.url }">
-                  <span class="faceted-navigation__input-${ item.facetType }" ></span>
-                  ${ facetValue.label }
-                </a>
+                <label class="label" for="${ facetItemID }">
+                  <a target="_self" href="${ facetValue.url }">
+                    <input id="${ facetItemID }" class="input input--small"
+                      data-sly-attribute.checked="${ facetvalue.active }"
+                      value="${ facetItemID }"
+                      type="${ facetInputType }"
+                    >
+                    <span class="inner">
+                      ${ facetValue.label }
+                    </span>
+                  </a>
+                </label>
               </div>
             </li>
 
             <!--/* If there are more Facet Values than the configured amount, show "View More" button */-->
-            <sly data-sly-test="${ item.facetValues.length > data.config.facetValuesMinVisible && facetValueList.last }">
+            <sly data-sly-test="${ showViewMore }">
               <button class="button--reset faceted-navigation__view-more-values"
                 data-facets-more-values >${ 'View more' @ i18n }</button>
             </sly>
