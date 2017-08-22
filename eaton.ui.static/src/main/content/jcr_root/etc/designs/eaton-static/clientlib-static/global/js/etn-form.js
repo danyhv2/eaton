@@ -31,18 +31,13 @@ App.form = function () {
    * Initialize Choices Dropdown
    */
   var initDropdown = function initDropdown() {
-    //for (var i = 0; i < $selectElement.length; i++) {
-      new Choices($selectElement[0], {
+    for (var i = 0; i < $selectElement.length; i++) {
+      new Choices($selectElement.eq(i), {
         placeholder: false,
         itemSelectText: '',
         searchEnabled: false
       });
-        new Choices($selectElement[1], {
-            placeholder: false,
-            itemSelectText: '',
-            searchEnabled: false
-        });
-    //}
+    }
   };
 
   /**

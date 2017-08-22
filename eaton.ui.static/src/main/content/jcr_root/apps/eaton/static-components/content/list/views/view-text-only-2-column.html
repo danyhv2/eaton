@@ -1,0 +1,33 @@
+<div class="eaton-list-component text-only-2-column container" data-sly-use.data="${'../data/view-text-only-2-column.js' @testdata=properties.testdata}">
+    <div class="row">
+
+
+<h2>${data.title}</h2>
+<p class="text-only-2-column__description">${data.description}</p>
+
+        <div class="text-only-2-column__card" data-sly-list.card="${data.cards}">
+<div class="col-xs-12 col-md-6 text-only-2-column__article">
+
+            <a href="${data.single_feature_card.cta.url}" target="${data.single_feature_card.cta.target}" class="article-list-single-feature__link">
+                <span class="article-list-single-feature--border"></span>
+                <div class="article-list-single-feature__article--copy">
+                    <p class="b-eyebrow-small">${card.title}</p>
+                    <p class="b-h4-link">${card.text}</p>
+                    <p class="category-item-date"><em>${card.date_text}</em></p>
+                </div>
+            </a>
+
+
+        </div>
+
+        </div>
+    </div>
+
+
+    <!--/* Bottom CTA */-->
+    <div class="row">
+        <div class="col-xs-12 text-center featured-category__cta-container">
+            <sly data-sly-resource="${'featured-article-ctabutton' @ resourceType='/apps/eaton/static-components/general/cta'}"></sly>
+        </div>
+    </div>
+</div>
