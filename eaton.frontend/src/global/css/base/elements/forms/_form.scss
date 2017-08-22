@@ -180,6 +180,15 @@
       top: 2px;
       left: 5px;
     }
+
+    &:focus {
+
+      + span::before {
+        border-color: #5a99db;
+        box-shadow: 0 1px 12px #85bffd;
+        outline: 0 none;
+      }
+    }
   }
 
   // RADIO BUTTON
@@ -202,7 +211,7 @@
       content: '';
       position: absolute;
       left: -12px;
-      top: -12px;
+      top: -10px;
       width: 2.5em;
       height: 2.5em;
       border: 1px solid #ddd;
@@ -216,9 +225,18 @@
       height: 18px;
       background: $color__primary-blue;
       position: absolute;
-      top: -6px;
+      top: -4px;
       left: -6px;
       border-radius: 100%;
+    }
+
+    &:focus {
+
+      + span::before {
+        border-color: #5a99db;
+        box-shadow: 0 1px 12px #85bffd;
+        outline: 0 none;
+      }
     }
   }
 
@@ -233,6 +251,12 @@
     padding: 15px 100px;
     color: $color__primary-blue;
     border-color: $color__primary-blue;
+
+    &:hover {
+      color: $color__white;
+      background: $color__primary-blue;
+      text-decoration: none;
+    }
   }
 
   // TEXTAREA
@@ -250,7 +274,6 @@
 
   .choices {
     width: 100%;
-    height: 50px;
     margin-top: 10px;
 
     &__inner {
@@ -259,7 +282,6 @@
       background-size: 12px;
       border-radius: 0;
       border: 1px solid #8c9aa5;
-
     }
 
     &__list {
@@ -284,6 +306,12 @@
 
     &[data-type*=select-one]::after {
       border: 0;
+    }
+
+    &:focus {
+      border-color: #5a99db;
+      box-shadow: 0 1px 12px #85bffd;
+      outline: 0 none;
     }
   }
 
