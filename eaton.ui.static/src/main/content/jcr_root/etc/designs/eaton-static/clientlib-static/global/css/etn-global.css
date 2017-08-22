@@ -1,5 +1,6 @@
-@charset "UTF-8";
 .icon::before { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; font-family: "eaton-glyphicon"; font-smoothing: antialiased; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; text-decoration: inherit; text-rendering: optimizeLegibility; text-transform: none; }
+
+.icon-checkmark::before { content: "\E900"; }
 
 .icon-badge::before { content: "\EA01"; }
 
@@ -376,7 +377,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form [type="checkbox"]:not(:checked) + span::before, .eaton-form [type="checkbox"]:checked + span::before { display: block; content: ''; position: absolute; left: 0; top: -8px; width: 2.5em; height: 2.5em; background-color: #eef0f2; }
 
-.eaton-form [type="checkbox"]:checked + span::after { content: '✔'; font-size: 2.6em; line-height: 0.8; color: #005bbb; position: absolute; top: 2px; left: 2px; }
+.eaton-form [type="checkbox"]:checked + span::after { content: '\E900'; font-size: 1.4em; font-family: 'eaton-glyphicon'; line-height: 0.8; color: #005EB8; position: absolute; top: 2px; left: 5px; }
 
 .eaton-form input[type="radio"]:not(:checked), .eaton-form input[type="radio"]:checked { position: absolute; display: inline-block; left: -100%; }
 
@@ -384,13 +385,13 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form input[type="radio"]:not(:checked) + span::before, .eaton-form input[type="radio"]:checked + span::before { content: ''; position: absolute; left: -12px; top: -12px; width: 2.5em; height: 2.5em; border: 1px solid #ddd; border-radius: 100%; background: #fff; }
 
-.eaton-form input[type="radio"]:checked + span::after { content: ''; width: 18px; height: 18px; background: #005eb8; position: absolute; top: -6px; left: -6px; border-radius: 100%; }
+.eaton-form input[type="radio"]:checked + span::after { content: ''; width: 18px; height: 18px; background: #005EB8; position: absolute; top: -6px; left: -6px; border-radius: 100%; }
 
 .eaton-form input[type="submit"] { background: none; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; padding: 15px 100px; color: #005EB8; border-color: #005EB8; }
 
 .eaton-form textarea { display: block; margin-top: 10px; width: 100%; height: 225px; border: 1px solid #8c9aa5; }
 
-.eaton-form .choices { width: 100%; height: 50px; }
+.eaton-form .choices { width: 100%; height: 50px; margin-top: 10px; }
 
 .eaton-form .choices__inner { background: #fff url("/content/dam/eaton/images/down_arrow.png") no-repeat; background-position: 98%; background-size: 12px; border-radius: 0; border: 1px solid #8c9aa5; }
 
@@ -402,7 +403,13 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form .choices__item[role="option"] { color: #005EB8; }
 
-.eaton-form .choices[data-type*=select-one]::after { border-style: none; }
+.eaton-form .choices[data-type*=select-one]::after { border: 0; }
+
+.eaton-form select[name="multipleSelectMenu"] { width: 100%; margin-top: 10px; color: #005EB8; }
+
+.eaton-form select[name="multipleSelectMenu"] option { padding: 10px 20px; }
+
+.eaton-form select[name="multipleSelectMenu"] option[selected="selected"] { background-color: #EEF0F2; }
 
 .eaton-form .field-wrapper.individual { float: left; width: 100%; clear: both; }
 
