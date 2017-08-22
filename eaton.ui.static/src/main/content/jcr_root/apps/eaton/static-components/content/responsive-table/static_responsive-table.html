@@ -7,37 +7,47 @@
 
   <div class="responsive-table">
     <div class="container">
-
-      <h2>${ data.sectionTitle }</h2>
-
+      <h2 class="responsive-table__title b-heading-h3">${ data.sectionTitle }</h2>
+      <h3>${ data.l }</h3>
       <div class="responsive-table__content">
 
+
+        <!--/* Table Header For Desktop Breakpoint Only */-->
         <div class="responsive-table__group responsive-table--visible-desktop">
+
+          <!--/* Render First Empty Cell */-->
           <div class="responsive-table__group-item">
             <div class="responsive-table__cell"></div>
           </div>
 
-          <sly data-sly-list.attributes="${ data.attributes }">
-            <sly data-sly-test="${ attributesList.index < 1 }"
-              data-sly-list.items="${ attributes.items }">
-              <div class="responsive-table__group-item" >
-                <div class="responsive-table__cell">${ items.itemLabel }</div>
-              </div>
-            </sly>
+          <!--/* Render All Table Headers */-->
+          <sly data-sly-list.tableHeader="${ data.tableHeader.columns }">
+            <div class="responsive-table__group-item">
+              <div class="responsive-table__cell">${ tableHeader }</div>
+            </div>
           </sly>
         </div>
 
-        <sly data-sly-list.attributes="${ data.attributes }">
+
+        <sly data-sly-list.row="${ data.tableRows }">
           <div class="responsive-table__group">
+
+            <!--/* Render Column #1 - Row Label */-->
             <div class="responsive-table__group-item">
-              <div class="responsive-table__cell">${ attributes.attributeLabel }</div>
+              <div class="responsive-table__cell">${ row.rowLabel }</div>
             </div>
-            <sly data-sly-list.items="${ attributes.items }">
-              <div class="responsive-table__group-item" >
-                <div class="responsive-table__cell responsive-table--visible-mobile">${ items.itemLabel }</div>
-                <div class="responsive-table__cell">${ items.itemValue }</div>
+
+            <!--/* Render All the Other Columns */-->
+            <sly data-sly-list.column="${ row.columns }">
+              <!--/*
+                NOTE: This component only supports 6 Columns MAX (The Label Column + Other 5 Columns)
+              */-->
+              <div class="responsive-table__group-item" data-sly-test="${ columnList.count < 6 }">
+                <div class="responsive-table__cell responsive-table--visible-mobile">${ data.tableHeader.columns[ columnList.index ] }</div>
+                <div class="responsive-table__cell">${ column }</div>
               </div>
             </sly>
+
           </div>
         </sly>
 
