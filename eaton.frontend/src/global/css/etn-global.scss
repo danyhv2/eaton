@@ -10,7 +10,6 @@
 // NOTE: Bootstrap 3 provides a 'normalize/reset' module.
 @import "base/fonts";
 @import "base/eaton-glyphicon-font";
-@import "base/eaton-flags-sprite";
 @import "base/typography";
 
 
@@ -18,12 +17,24 @@
 @import "utils/**/*.scss";
 @import "base/elements/**/*.scss";
 
+
 // Generate Styles for Flags-Sprite
+//--------------
+@import "base/eaton-flags-sprite";
+
+.sprite-flags {
+  background-image: url($spritesheet-image);
+}
+
 @mixin sprites-flag($sprites) {
   @each $sprite in $sprites {
     $sprite-name: nth($sprite, 10);
+
     .flag-#{$sprite-name} {
       @include sprite($sprite);
+      // @include sprite-position($sprite);
+      // @include sprite-width($sprite);
+      // @include sprite-height($sprite);
     }
   }
 }

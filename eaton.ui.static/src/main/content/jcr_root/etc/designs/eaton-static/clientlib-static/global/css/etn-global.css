@@ -421,6 +421,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form .field-wrapper.individual { float: left; width: 100%; clear: both; }
 
+.sprite-flags { background-image: url("images/flags-sprite.png"); }
+
 .flag-afghanistan { background-image: url(images/flags-sprite.png); background-position: -192px -112px; width: 24px; height: 24px; }
 
 .flag-albania { background-image: url(images/flags-sprite.png); background-position: -84px -276px; width: 24px; height: 24px; }
