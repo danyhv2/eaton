@@ -16,7 +16,7 @@ use(function () {
     ]
   };
 
-  // Default Data with 4 Columns
+  // Default Data with 6 Columns
   //--------------
   data.tableRows = [
     {
