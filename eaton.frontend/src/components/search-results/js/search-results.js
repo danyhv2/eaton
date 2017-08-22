@@ -10,6 +10,7 @@ App.searchResults = (function() {
   const resultListCSSClass = '.results-list';
   const $componentElement = $('.search-results').find(resultListCSSClass);
   const templates = {};
+  let i18n = {};
 
 
   /**
@@ -17,6 +18,7 @@ App.searchResults = (function() {
   */
   const init = () => {
     addEventListeners();
+    loadI18NStrings();
   };
 
 
@@ -28,9 +30,24 @@ App.searchResults = (function() {
   };
 
 
+  /**
+   * Get i18n String from a HTML data-attribute
+   * @return {[type]} [description]
+   */
+  const loadI18NStrings = function() {
+
+    let i18nData = $componentElement[0].dataset.i18n;
+
+    // Save i18n Strings as an Object in a global variable
+    i18n = (JSON.parse(i18nData))
+      ? JSON.parse(i18nData)
+      : {};
+  };
+
+
   // Product Family Template
   //--------------
-  templates.family = function(data) {
+  templates.family = function(data, i18n) {
     return `
       <div class="results-list-submodule results-list-submodule--type-${ data.contentType }">
         <div class="results-list-submodule__image-wrapper b-body-copy-small">
@@ -58,7 +75,7 @@ App.searchResults = (function() {
             <a href="${ data.contentItem.link.url }"
               target="${ data.contentItem.link.target }"
               class="results-list-submodule__url-link"
-              aria-label="Go to ${ data.contentItem.link.text }"
+              aria-label="${ i18n.goTo } ${ data.contentItem.link.text }"
             >${ data.contentItem.link.text }</a>
           </div>
 
@@ -70,7 +87,7 @@ App.searchResults = (function() {
                   <a class="results-list-submodule__link-item-link"
                     href="${ link.url }"
                     target="${ link.target }"
-                    aria-label="Go to ${ link.text }"
+                    aria-label="${ i18n.goTo } ${ link.text }"
                   >${ link.text }</a>
                 </li>`;
             }).join('')
@@ -83,7 +100,7 @@ App.searchResults = (function() {
 
   // Article Template
   //--------------
-  templates.article = function(data) {
+  templates.article = function(data, i18n) {
 
     let articleDateTPL = (data.contentItem.date)
       ? `<div class="results-list-submodule__date b-body-copy-small">${ data.contentItem.date }</div>`
@@ -116,7 +133,7 @@ App.searchResults = (function() {
             <a href="${ data.contentItem.link.url }"
               target="${ data.contentItem.link.target }"
               class="results-list-submodule__url-link"
-              aria-label="Go to ${ data.contentItem.link.text }"
+              aria-label="${ i18n.goTo } ${ data.contentItem.link.text }"
             >${ data.contentItem.link.text }</a>
           </div>
 
@@ -128,7 +145,7 @@ App.searchResults = (function() {
 
   // Resource Template
   //--------------
-  templates.resource = function(data) {
+  templates.resource = function(data, i18n) {
     return `
       <div class="results-list-submodule results-list-submodule--type-${ data.contentType }">
 
@@ -136,7 +153,7 @@ App.searchResults = (function() {
           <a href="${ data.contentItem.link.url }"
             target="${ data.contentItem.link.target }"
             class="results-list-submodule__url-link"
-            aria-label="Download ${ data.contentItem.documentName }"
+            aria-label="${ i18n.download } ${ data.contentItem.documentName }"
           >
             <i class="icon icon-download" aria-hidden="true"></i>
             <span class="sr-only">${ data.contentItem.link.text }</span>
@@ -158,7 +175,7 @@ App.searchResults = (function() {
             <a data-sly-attribute.href="${ data.contentItem.link.url }"
               target="${ data.contentItem.link.target }"
               class="results-list-submodule__link"
-              aria-label="Download ${ data.contentItem.documentName }"
+              aria-label="${ i18n.download } ${ data.contentItem.documentName }"
             >${ data.contentItem.link.text }</a>
           </div>
 
@@ -166,7 +183,6 @@ App.searchResults = (function() {
       </div>
     `;
   };
-
 
 
   /**
@@ -201,15 +217,15 @@ App.searchResults = (function() {
           // Based on the Content Type, use the appropiate Template passing the received data
           //--------------
           if (data.contentType === 'family' || data.contentType === 'sku') {
-            newElements += templates.family(data);
+            newElements += templates.family(data, i18n);
           }
 
           else if (data.contentType === 'article') {
-            newElements += templates.article(data);
+            newElements += templates.article(data, i18n);
           }
 
           else if (data.contentType === 'resource') {
-            newElements += templates.resource(data);
+            newElements += templates.resource(data, i18n);
           }
 
         });

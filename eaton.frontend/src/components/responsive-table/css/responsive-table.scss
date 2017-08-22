@@ -39,6 +39,8 @@ $bem-selector: 'responsive-table';
   //-----------------------------------
   @include media-mobile-and-tablet {
 
+    margin: ($spacing__xl / 2) 0;
+
     // Override Bootstrap's Grid in order to make the component "full-width"
     &__content {
       margin-left: (-$grid__gutter-width); // Negative Value
@@ -86,6 +88,8 @@ $bem-selector: 'responsive-table';
   //-----------------------------------
   @include media-desktop-and-up {
 
+    margin: ($spacing__xl) 0;
+
     // NOTE: Selector With higher Hierarchy / Specificity
     .#{$bem-selector}--visible-desktop {
       display: flex;
@@ -116,8 +120,6 @@ $bem-selector: 'responsive-table';
     &__cell {
       padding: $spacing__sm;
     }
-
-
 
   }
 }

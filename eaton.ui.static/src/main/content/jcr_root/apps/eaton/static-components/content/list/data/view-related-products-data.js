@@ -137,7 +137,9 @@ use(function () {
                         link: 'http://www.eaton.com/',
                         target: '_blank'
                     }
-                ]
+                ],
+                header: 'Designed to work together',
+                description: 'Discover other Eaton products and accesories built to enhance this product.'
             }
     }
 

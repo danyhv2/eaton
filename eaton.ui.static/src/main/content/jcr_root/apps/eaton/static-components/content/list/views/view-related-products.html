@@ -1,5 +1,9 @@
 <sly data-sly-use.data="${ '../data/view-related-products-data.js' @testdata=properties.testdata }">
     <div class="related-products-component container">
+        <div class="related-products-component__text">
+            <h3>${data.header}</h3>
+            <p class="related-products-component__description">${data.description}</p>
+        </div>
         <sly data-sly-use.tpl="../../shared/templates/module-related-products.html">
             <sly data-sly-call="${ tpl.module @data=data.cards }"></sly>
         </sly>
