@@ -6,6 +6,11 @@
   font-size: 14px;
   margin-bottom: 28px;
 
+  a.open-facets-mobile {
+    width: 100%;
+    text-align: center;
+  }
+
 
   // SortBy - Custom Dropdown
   //--------------
@@ -123,8 +128,10 @@
 
 
   &__sort-options {
-    margin-top: 4px;
-    z-index: 2;
+    // margin-top: -1rem;
+    // z-index: 2;
+    // top: .5rem;
+    // position: relative;
 
     .desc {
       color: #6b6b6b;
@@ -139,8 +146,7 @@
     }
   }
 
-  &__header-top,
-  &__header-bottom {
+  &__header-top {
     display: flex;
   }
 
@@ -154,22 +160,25 @@
     min-width: 85px;
     font-size: 14px;
     // z-index: 5;
+    height: 3.5rem;
+    margin-top: -5px;
   }
 
-  &__header-bottom {
+  .faceted-navigation-filters {
     margin-top: 30px;
+    display: flex;
   }
 
   // Results: Header Title
   //--------------
   &__header-top {
-    border-bottom: 2px solid $color__secondary-gray6;
-    padding-bottom: 28px;
-    padding-top: 55px;
+    border-bottom: .2rem solid $color__secondary-gray6;
+    padding-bottom: 3rem;
+    padding-top: 5.5rem;
   }
 
   &__title {
-    font-size: 20px;
+    font-size: 2.4rem;
     font-weight: bold;
   }
 
@@ -190,18 +199,15 @@
 
   }
 
-  &__filter-label {
-    // Empty selector for future reference
-  }
-
 
   //-----------------------------------
   // MediaQuery: 0-991px
   //-----------------------------------
   @include media-mobile-and-tablet {
 
-    &__header-bottom {
-      margin-top: 20px;
+    //filters on header are not visible in mobile
+    .faceted-navigation-filters {
+      display: none;
     }
 
     &__filter-link {
@@ -215,7 +221,9 @@
   // MediaQuery: > 992 px
   //-----------------------------------
   @include media-desktop-and-up {
-
+    .open-facets-mobile {
+      display: none;
+    }
   }
 
 

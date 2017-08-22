@@ -1,14 +1,18 @@
 <!--/* M-62: Faceted Navigation */-->
-<template data-sly-template.module="${ @ data }">
+<template data-sly-template.module="${ @ data, search }">
   <div class="faceted-navigation eaton-form">
-    <div class="mobile-header u-visible-mobile">
-      <span>Filters </span>
+    <div class="mobile-header">
+      <span>${ 'Filters' @ i18n } </span>
 
-      <button class="close-facets-mobile button--reset">
+      <button data-toggle-modal-facet class="close-facets-mobile button--reset">
         <span class="sr-only">${ 'Close Filters' @ i18n }</span>
         <i class="icon icon-close" aria-hidden="true"></i>
       </button>
     </div>
+
+    <sly data-sly-use.tpl="../../shared/templates/module-faceted-navigation/faceted-navigation-filters.html">
+      <sly data-sly-call="${ tpl.module @ activeFilters=search.activeFilters }"></sly>
+    </sly>
 
     <h4 class="hidden-sm hidden-xs">${ 'Narrow Results' @ i18n }</h4>
 
@@ -53,10 +57,10 @@
 
             <li class="faceted-navigation__list-item ${ hiddenFacetClass }" >
               <div class="faceted-navigation__facet-value">
-                <!-- TODO: add the target attribute -->
                 <label class="label" for="${ facetItemID }">
-                  <a target="_self" href="${ facetValue.url }">
-                    <input id="${ facetItemID }" class="input input--small"
+                  <a target="${ facetvalue.target }" href="${ facetValue.url }">
+                    <input id="${ facetItemID }"
+                      class="input input--small"
                       data-sly-attribute.checked="${ facetvalue.active }"
                       value="${ facetItemID }"
                       type="${ facetInputType }"
@@ -92,7 +96,10 @@
     </sly>
 
     <div class="faceted-navigation__apply u-visible-mobile">
-      <button class="b-button b-button__tertiary b-button__tertiary--light" data-facets-apply>Done</button>
+      <button
+          data-toggle-modal-facet
+          class="b-button-facets-apply b-button b-button__tertiary b-button__tertiary--light"
+          data-facets-apply>Done</button>
     </div>
 
   </div>
