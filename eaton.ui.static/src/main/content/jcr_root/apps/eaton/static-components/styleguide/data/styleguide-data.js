@@ -365,6 +365,7 @@ use(function () {
     "icon-calendar",
     "icon-checklist",
     "icon-checkmark",
+    "icon-chevron-up",
     "icon-chevron-down",
     "icon-chevron-left",
     "icon-chevron-right",

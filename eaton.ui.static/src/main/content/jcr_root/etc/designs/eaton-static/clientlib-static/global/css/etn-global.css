@@ -8,7 +8,7 @@
 
 .icon-bulb::before { content: "\EA03"; }
 
-.icon-calendar::before { content: "\EA04"; }
+.icon-chevron-up::before { content: "\EA04"; }
 
 .icon-chevron-down::before { content: "\EA05"; }
 
@@ -79,6 +79,8 @@
 .icon-livechat::before { content: "\EA26"; }
 
 .icon-share::before { content: "\EA27"; }
+
+.icon-calendar::before { content: "\EA28"; }
 
 @media screen and (max-width: 991px) { .container { padding: 0 30px; } }
 
