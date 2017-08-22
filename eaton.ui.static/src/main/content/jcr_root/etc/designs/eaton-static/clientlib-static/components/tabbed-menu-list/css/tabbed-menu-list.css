@@ -25,7 +25,7 @@
   .eaton-tabbed-menu-list__title.active.desktop.link { border-bottom: 1px solid #F8F8F8; }
   .eaton-tabbed-menu-list__item { border-color: transparent; }
   .eaton-tabbed-menu-list__item > a { color: #005EB8; }
-  .eaton-tabbed-menu-list__item > a.active { color: #000; }
+  .eaton-tabbed-menu-list__item > a.active { color: #333F48; }
   .eaton-tabbed-menu-list__item > a.active.desktop.link { color: #005EB8; }
   .eaton-tabbed-menu-list__item a { padding-bottom: 50px; color: #005EB8; }
   .eaton-tabbed-menu-list__tab-links { border-left: 1px solid #98A4AE; }
