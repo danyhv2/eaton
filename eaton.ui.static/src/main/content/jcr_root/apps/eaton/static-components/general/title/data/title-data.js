@@ -43,6 +43,10 @@ use(function () {
 	  data.title = 'More 9PX models';  
   } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-careers-1")) {
 	  data.title = 'Innovation gets noticed';  
+  } else if ((typeof(testdata) != "undefined") && (testdata == "article-headline")) {
+	  data.eyebrow = 'CATEGORY LABEL';
+	  data.title = 'H1 Page Title or Article Headline That Flows to a Second Line';  
+	  data.byline = 'Byline (optional), November 27, 2015';
   } else {
 	  data.title = 'Eaton’s New 2-gang Switched Sockets with Usb ports Make It Easy to Stay Charged';
 	  data.eyebrow = 'CATEGORY';
