@@ -26,7 +26,7 @@ App.TabbedMenuList = (function() {
   const bindEvents = () => {
     $titles.on('click', toogleTitles);
     matchmedia.addListener(matchFunction);
-
+    matchmedialg.addListener(matchFunctionLg);
   };
 
   const toogleTitles = (event) => {
