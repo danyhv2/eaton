@@ -86,7 +86,6 @@ App.TabbedMenuList = function () {
         if (windowWidth >= App.global.constants.GRID.LG) {
           diffWidth = windowWidth - 1140;
         } else {
-          console.log('tab');
           diffWidth = windowWidth - 940;
         }
 
@@ -95,7 +94,6 @@ App.TabbedMenuList = function () {
           'margin-right': Math.floor(-1 * diffWidth / 2 - 10) + 'px',
           width: 'calc( 100% + ' + (diffWidth + 20) + 'px)'
         });
-        console.log('++++' + windowWidth);
       }
     } else {
       // to mobile
@@ -112,7 +110,6 @@ App.TabbedMenuList = function () {
         if (windowWidth >= App.global.constants.GRID.LG) {
           diffWidth = windowWidth - 1140;
         } else {
-          console.log('tab');
           diffWidth = windowWidth - 940;
         }
 
@@ -121,7 +118,6 @@ App.TabbedMenuList = function () {
           'margin-right': Math.floor(-1 * diffWidth / 2 - 10) + 'px',
           width: 'calc( 100% + ' + (diffWidth + 20) + 'px)'
         });
-        console.log('++++' + windowWidth);
       }
     }
   };
