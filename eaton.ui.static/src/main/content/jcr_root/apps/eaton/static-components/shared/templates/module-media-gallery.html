@@ -15,26 +15,30 @@
 
           <!--*/ Slide List - Preview */-->
           <div class="module-media-gallery__slide-list" data-sly-list="${data.items}">
+
             <!--*/ Slide Item - Preview */-->
-            <div class="module-media-gallery__slide-item" data-slide-item="${isVideo == true ? 'image' : 'video'}">
+            <div class="module-media-gallery__slide-item" data-slide-type="${isVideo == true ? 'image' : 'video'}">
 
                 <!--*/ Slide Item - Image */-->
                 <div class="module-media-gallery__slide-preview embed-responsive embed-responsive-16by9">
                   <div class="module-media-gallery__image-wrapper embed-responsive-item">
-                    <img alt="${item.images.altText}"
-                        data-lazy="${ item.images.preview }" />
+                    <img alt="${item.images.altText}" data-lazy="${ item.images.preview }" />
                   </div>
 
                   <!--*/ Slide Item - Utility - Zoom & Download */-->
-                  <a href="${ item.images.download }" download class="module-media-gallery__download module-media-gallery__slide-utility">
-                    <span class="sr-only">${ 'Download' @ i18n }</span>
-                    <i class="icon icon-download" aria-hidden="true"></i>
-                  </a>
+                  <sly data-sly-test="${ item.images.download }">
+                    <a href="${ item.images.download }" download class="module-media-gallery__download module-media-gallery__slide-utility">
+                      <span class="sr-only">${ 'Download' @ i18n }</span>
+                      <i class="icon icon-download" aria-hidden="true"></i>
+                    </a>
+                  </sly>
 
-                  <button class="module-media-gallery__zoom module-media-gallery__slide-utility button--reset">
-                    <span class="sr-only">${ 'Zoom' @ i18n }</span>
-                    <i class="icon icon-search-plus" aria-hidden="true"></i>
-                  </button>
+                  <sly data-sly-test="${ data.isZoomEnabled }">
+                    <button class="module-media-gallery__zoom module-media-gallery__slide-utility button--reset">
+                      <span class="sr-only">${ 'Zoom' @ i18n }</span>
+                      <i class="icon icon-search-plus" aria-hidden="true"></i>
+                    </button>
+                  </sly>
                 </div>
 
                 <!--*/ Slide Item - Title & Description */-->
@@ -68,7 +72,7 @@
           <ul class="module-media-gallery__thumbnail-list" data-sly-list="${data.items}">
             <!--*/ Thumbnail Item - Preview */-->
             <li class="module-media-gallery__thumbnail-item"
-              data-thumbnail-item="${isVideo == true ? 'image' : 'video'}">
+              data-thumbnail-type="${isVideo == true ? 'image' : 'video'}">
 
               <!--*/ Thumbnail Item - Image */-->
               <button class="module-media-gallery__thumbnail-aspect-ratio embed-responsive embed-responsive-16by9">
