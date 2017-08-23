@@ -45,7 +45,7 @@ App.mediaGallery = function () {
 
     var $activeSlide = $(event.currentTarget);
     var activeSlideIndex = $activeSlide.data('slick-index');
-    var $activeMediaGallery = $(event.currentTarget).closest(componentClass);
+    var $activeMediaGallery = $activeSlide.closest(componentClass);
 
     // Add Visual "active" state only to the clicked thumbnail
     $activeMediaGallery.find('.module-media-gallery__thumbnail-item').removeClass('active');
@@ -61,7 +61,10 @@ App.mediaGallery = function () {
 
     $.each($slideCarousel, function (index, item) {
 
-      $(item).slick({
+      var $currentSlider = $(item);
+      var $slideContainer = $currentSlider.closest(componentClass).find('.module-media-gallery__slide-container');
+
+      $currentSlider.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
@@ -69,8 +72,8 @@ App.mediaGallery = function () {
         adaptiveHeight: true,
         accessibility: true,
         lazyLoad: 'ondemand',
-        prevArrow: $(item).closest(componentClass).find('.module-media-gallery__slide-container .module-media-gallery__prev-arrow'),
-        nextArrow: $(item).closest(componentClass).find('.module-media-gallery__slide-container .module-media-gallery__next-arrow'),
+        prevArrow: $slideContainer.find('.module-media-gallery__prev-arrow'),
+        nextArrow: $slideContainer.find('.module-media-gallery__next-arrow'),
         responsive: [{
           breakpoint: 991,
           settings: {
@@ -103,14 +106,18 @@ App.mediaGallery = function () {
     // Init SlickJS
     //--------------
     $.each($thumbnailCarousel, function (index, item) {
-      $(item).slick({
+
+      var $currentSlider = $(item);
+      var $thumbnailContainer = $currentSlider.closest(componentClass).find('.module-media-gallery__thumbnail-container');
+
+      $currentSlider.slick({
         slidesToShow: numSlides,
         slidesToScroll: numSlides,
         autoplay: false,
         dots: false,
         accessibility: true,
-        prevArrow: $(item).closest(componentClass).find('.module-media-gallery__thumbnail-container .module-media-gallery__prev-arrow'),
-        nextArrow: $(item).closest(componentClass).find('.module-media-gallery__thumbnail-container .module-media-gallery__next-arrow')
+        prevArrow: $thumbnailContainer.find('.module-media-gallery__prev-arrow'),
+        nextArrow: $thumbnailContainer.find('.module-media-gallery__next-arrow')
       });
     });
   };
