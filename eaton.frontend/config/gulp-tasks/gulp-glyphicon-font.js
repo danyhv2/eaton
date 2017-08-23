@@ -1,6 +1,6 @@
 'use strict';
 /**
-* TASK: Create MSL-Glyphicon Font
+* TASK: Create Glyphicon Font
 */
 
 const async = require('async');
@@ -47,6 +47,20 @@ const buildIconfont = function(gulp, CONFIG) {
         iconStream
           .pipe(gulp.dest(CONFIG.paths.destAEM.clientlibStatic + '/global/css/fonts'))
           .on('finish', cb);
+      },
+
+
+      // Create "testdata" for AEM's Styleguide Page
+      function handleStyleguide(cb) {
+        iconStream.on('glyphs', function (glyphs, options) {
+          gulp.src('./config/glyphicon-font/*.js')
+            .pipe(consolidate('lodash', {
+              glyphs: glyphs,
+              className: 'icon'
+            }))
+            .pipe(gulp.dest(path.join(CONFIG.paths.destAEM.staticComponents, '/styleguide/data/')))
+            .on('finish', cb);
+        });
       }
 
     ]);

@@ -18,7 +18,7 @@
       <br /><br /><br />
 
 
-      <div class="alert alert-info"><strong>Example:</strong>When used as a Button / Link:</div>
+      <div class="alert alert-info"><strong>Example:</strong> When used as a Button / Link:</div>
       <pre>HTML:
 ------------
 &lt;button class="mobile-nav-toggle"&gt;
@@ -35,8 +35,8 @@
 .a-sample-component {
 
   &::after {
-    @extend %glyphicon-font-family;
-    @extend %glyphicon-badge;
+    @extend %font-family-glyphicon;
+    @extend %icon-hamburger;
     font-size: 20px;
   }
 }     </pre>
@@ -47,7 +47,7 @@
 
     <div class="b-heading-h5">Icon Library:</div>
     <ul class="sg-glyphicons__list">
-      <sly data-sly-list="${ data }">
+      <sly data-sly-list="${ data.icons }">
         <div class="sg-glyphicons__list-item text-center">
           <div class="sg-glyphicons__icon-sample">
             <i class="icon ${ item }" aria-hidden="true"></i>

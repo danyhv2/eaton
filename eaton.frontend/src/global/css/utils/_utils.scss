@@ -2,13 +2,13 @@
 //--------------
 .u-is-fixed { position: fixed; }
 
-.overlay-mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.u-overlay-mask {
+  background-color: $color__white;
   opacity: .8;
-  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   z-index: 500;
 }
 
@@ -88,24 +88,4 @@
   display: none;
 
   @include media-desktop-and-up { display: block; }
-}
-
-
-// Responsive Images
-//-------------
-// NOTE: These values are used as helpers in JavaScript to determine the current Breakpoint
-[data-mobile-rendition] {
-
-  // Default Value Mobile
-  min-width: 2px;
-
-  // If Tablet ( Between 768px and 991px )
-  @media all and (min-width: $grid__sm) and (max-width: $grid__sm-max) {
-    min-width: 1px;
-  }
-
-  // If Desktop & Desktop Large ( Greater than 992px )
-  @media all and (min-width: $grid__md) {
-    min-width: 0;
-  }
 }

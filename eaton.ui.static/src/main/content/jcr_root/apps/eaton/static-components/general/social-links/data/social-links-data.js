@@ -15,32 +15,32 @@ use(function () {
   data.links = [
     {
       title: 'Facebook',
-      url: '#facebook',
       icon: '/content/dam/eaton/images/sociallinks/facebook.png',
+      url: 'https://facebook.com',
       target: '_blank'
     },
     {
       title: 'Twitter',
-      url: '#twitter',
       icon: '/content/dam/eaton/images/sociallinks/twitter.png',
+      url: 'https://twitter.com',
       target: '_blank'
     },
     {
       title: 'Google+',
-      url: '#google-plus',
       icon: '/content/dam/eaton/images/sociallinks/google-plus.png',
+      url: 'https://plus.google.com',
       target: '_blank'
     },
     {
       title: 'LinkedIn',
-      url: '#linked-in',
       icon: '/content/dam/eaton/images/sociallinks/linked-in.png',
+      url: 'https://linkedin.com',
       target: '_blank'
     },
     {
       title: 'Pinterest',
-      url: '#pinterest',
       icon: '/content/dam/eaton/images/sociallinks/pinterest.png',
+      url: 'https://pinterest.com',
       target: '_blank'
     }
   ];

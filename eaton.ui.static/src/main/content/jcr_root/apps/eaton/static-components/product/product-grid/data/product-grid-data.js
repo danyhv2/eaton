@@ -22,17 +22,17 @@ use(function () {
             {
               "id": "product",
               "label": "Products",
-              "url": "#facet-products"
+              "url": "http://eaton.dev/results.html?facetvalue=products"
             },
             {
               "id": "news",
               "label": "News & Insights",
-              "url": "#facet-news"
+              "url": "http://eaton.dev/results.html?facetvalue=news"
             },
             {
               "id": "resources",
               "label": "Resources",
-              "url": "#facet-resources"
+              "url": "http://eaton.dev/results.html?facetvalue=resources"
             }
           ]
         },
@@ -44,27 +44,27 @@ use(function () {
             {
               "id": "700va",
               "label": "700 VA",
-              "url": "#facet-700va"
+              "url": "http://eaton.dev/results.html?facetvalue=700va"
             },
             {
               "id": "1000va",
               "label": "1000 VA",
-              "url": "#facet-1000va"
+              "url": "http://eaton.dev/results.html?facetvalue=1000va"
             },
             {
               "id": "1500va",
               "label": "1500 VA",
-              "url": "#facet-1500va"
+              "url": "http://eaton.dev/results.html?facetvalue=1500va"
             },
             {
               "id": "2000va",
               "label": "2000 VA",
-              "url": "#facet-2000va"
+              "url": "http://eaton.dev/results.html?facetvalue=2000va"
             },
             {
               "id": "3000va",
               "label": "3000 VA",
-              "url": "#facet-3000va"
+              "url": "http://eaton.dev/results.html?facetvalue=3000va"
             }
           ]
         },
@@ -76,42 +76,42 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "#facet-value1"
+              "url": "http://eaton.dev/results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "#facet-value2"
+              "url": "http://eaton.dev/results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "#facet-value3"
+              "url": "http://eaton.dev/results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "#facet-value4"
+              "url": "http://eaton.dev/results.html?facetvalue=value4"
             },
             {
               "id": "value5",
               "label": "Value 5",
-              "url": "#facet-value5"
+              "url": "http://eaton.dev/results.html?facetvalue=value5"
             },
             {
               "id": "value6",
               "label": "Value 6",
-              "url": "#facet-value6"
+              "url": "http://eaton.dev/results.html?facetvalue=value6"
             },
             {
               "id": "value7",
               "label": "Value 7",
-              "url": "#facet-value7"
+              "url": "http://eaton.dev/results.html?facetvalue=value7"
             },
             {
               "id": "value8",
               "label": "Value 8",
-              "url": "#facet-value8"
+              "url": "http://eaton.dev/results.html?facetvalue=value8"
             }
           ]
         },
@@ -123,32 +123,32 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "#facet-value1"
+              "url": "http://eaton.dev/results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "#facet-value2"
+              "url": "http://eaton.dev/results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "#facet-value3"
+              "url": "http://eaton.dev/results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "#facet-value4"
+              "url": "http://eaton.dev/results.html?facetvalue=value4"
             },
             {
               "id": "value5",
               "label": "Value 5",
-              "url": "#facet-value5"
+              "url": "http://eaton.dev/results.html?facetvalue=value5"
             },
             {
               "id": "value6",
               "label": "Value 6",
-              "url": "#facet-value6"
+              "url": "http://eaton.dev/results.html?facetvalue=value6"
             }
           ]
         },
@@ -160,27 +160,27 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "#facet-value1"
+              "url": "http://eaton.dev/results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "#facet-value2"
+              "url": "http://eaton.dev/results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "#facet-value3"
+              "url": "http://eaton.dev/results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "#facet-value4"
+              "url": "http://eaton.dev/results.html?facetvalue=value4"
             },
             {
               "id": "value5",
               "label": "Value 5",
-              "url": "#facet-value5"
+              "url": "http://eaton.dev/results.html?facetvalue=value5"
             }
           ]
         },
@@ -192,22 +192,22 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "#facet-value1"
+              "url": "http://eaton.dev/results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "#facet-value2"
+              "url": "http://eaton.dev/results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "#facet-value3"
+              "url": "http://eaton.dev/results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "#facet-value4"
+              "url": "http://eaton.dev/results.html?facetvalue=value4"
             }
           ]
         }
@@ -222,59 +222,56 @@ use(function () {
       "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/product-grid--more-data.json",
       "ajaxRequestNextPage": 2,
       "resultsCount": 89,
+      "resultsLabel": 'results',
       "currentPage": 1,
-      // "searchTerm": "bckup servre",
-      // "autoCorrect": {
-      //   "enabled": true,
-      //   "searchTerm": "bckup servre",
-      //   "correctedTerm": "backup server",
-      //   "url": "#backup-server",
-      //   "target": '_self'
-      // },
-      "activeFilters": [
-        // {
-        //   "label": "Products",
-        //   "url": "#remove-filter-products",
-        //   "target": "_self"
-        // },
-        // {
-        //   "label": "1000 VA",
-        //   "url": "#remove-filter-1000-va",
-        //   "target": "_self"
-        // }
-      ],
-      "clearAllFiltersLink": {
-        "text": "Clear filters",
-        "url": "#clear-all-filters",
-        "target": "_self"
+      "resultsOptions": {
+        "showLoadMore": true,
+        "disclaimerEnabled": true,
+      },
+      "activeFilters": {
+        "removeFilterLabel": "Remove Filter",
+        "clearAllFilters": {
+          "label": "Clear filters",
+          "url": "http://eaton.dev/results.html?clear-all-filters=true",
+          "target": "_self"
+        },
+        "items": [
+          {
+            "label": "Products",
+            "url": "http://eaton.dev/results.html?remove-filter=products",
+            "target": "_self"
+          },
+          {
+            "label": "1000 VA",
+            "url": "http://eaton.dev/results.html?remove-filter=1000-va",
+            "target": "_self"
+          }
+        ]
       },
       "sortBy": {
+        "sortByLabel": "Sort by",
         "items": [
           {
             "label": "Relevance",
-            "url": '#sortby-relevance',
+            "url": 'http://eaton.dev/results.html?sortby=relevance',
             "target": '_self'
           },
           {
             "label": "Newest",
-            "url": '#sortby-newest',
+            "url": 'http://eaton.dev/results.html?sortby=newest',
             "target": '_self'
           },
           {
             "label": "A to Z",
-            "url": '#sortby-a-z',
+            "url": 'http://eaton.dev/results.html?sortby=a-z',
             "target": '_self'
           },
           {
             "label": "Z to A",
-            "url": '#sortby-z-a',
+            "url": 'http://eaton.dev/results.html?sortby=z-a',
             "target": '_self'
           }
         ]
-      },
-      "resultsOptions": {
-        "showLoadMore": true,
-        "disclaimerEnabled": true,
       },
       "results": [
         {
@@ -286,12 +283,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "http://eaton.dev/products-pid-1.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -318,12 +315,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 3200,
             "link": {
-              "url": "http://eaton.dev/products-pid-2.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -350,12 +347,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 99500,
             "link": {
-              "url": "http://eaton.dev/products-pid-3.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -382,12 +379,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "http://eaton.dev/products-pid-4.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -414,12 +411,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "http://eaton.dev/products-pid-5.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -446,12 +443,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "http://eaton.dev/products-pid-6.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -478,12 +475,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 3200,
             "link": {
-              "url": "http://eaton.dev/products-pid-7.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -510,12 +507,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 99500,
             "link": {
-              "url": "http://eaton.dev/products-pid-8.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -542,12 +539,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "http://eaton.dev/products-pid-9.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -574,12 +571,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "http://eaton.dev/products-pid-10.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -606,12 +603,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 2400,
             "link": {
-              "url": "http://eaton.dev/products-pid-11.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {
@@ -638,12 +635,12 @@ use(function () {
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
             "price": 3200,
             "link": {
-              "url": "http://eaton.dev/products-pid-12.html",
+              "url": "http://eaton.dev/products/pid-1.overview.html",
               "target": "_blank"
             },
             "productLinks": {
-              "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
-              "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+              "specificationsURL": "https://eaton.dev/products/pid-1.specifications.html",
+              "resourcesURL": "https://eaton.dev/products/pid-1.resources.html"
             },
             "productAttributes": [
               {

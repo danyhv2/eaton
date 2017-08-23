@@ -1,5 +1,5 @@
 <template data-sly-template.module="${ @ data}">
-    <div class="feature-block-component">
+    <div class="feature-block-component ${data.backgroundColor == '#005EB8' ? 'feature-block-component--theme-blue' : 'feature-block-component--theme-white'}">
         <div class="row feature-block-component__container feature-block-component__container--height">
             <div style="background-color: ${data.backgroundColor @ context='styleString'}"
                  class="col-xs-12 ${data.imgSrc.length > 0 ? 'col-sm-7' : 'col-sm-12'} feature-block-component__copy feature-block-component__copy--${data.imgAlignment} ${data.backgroundColor == '#005EB8' ? 'feature-block-component__copy--white-text' : ''}">
@@ -10,10 +10,9 @@
                 </div>
             </div>
             <div data-sly-test="${data.imgSrc.length > 0}" class="col-xs-12 col-sm-5 feature-block-component__image"
-                 style="background:url('${data.imgSrc @ context='styleString'}') center no-repeat; background-size: cover">
-            </div>
+                 style="background-image: url('${ data.imgSrc @ context='uri' }');"
+            ></div>
 
         </div>
     </div>
 </template>
-

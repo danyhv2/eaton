@@ -1,0 +1,19 @@
+.l2-hero {
+  position: relative;
+  height: 400px;
+
+  &--vertical-align {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title,
+  &__text {
+    color: $color__white;
+  }
+
+  @include media-desktop-and-up {
+    height: 450px;
+  }
+
+}

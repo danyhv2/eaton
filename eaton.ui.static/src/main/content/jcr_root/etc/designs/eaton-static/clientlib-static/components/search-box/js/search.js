@@ -38,7 +38,7 @@ App.search = function () {
   var init = function init() {
     // If not in AEM Author Mode & component exists on page - initialize scripts
     if (!isAEMAuthorMode) {
-      console.log('Initialize Search');
+      // console.log('Initialize Search');
       addEventListeners();
     }
   };

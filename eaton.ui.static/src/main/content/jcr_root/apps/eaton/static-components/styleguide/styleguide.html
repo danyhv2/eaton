@@ -53,8 +53,10 @@ Component used to showcase different UI Elements
       </sly>
 
       <!--/* Section: Glyphicon-Font */-->
-      <sly data-sly-use.tpl="partials/styleguide-glyphicon-font.html">
-        <sly data-sly-call="${ tpl.section @ data=data.glyphiconFont }"></sly>
+      <sly data-sly-use.glyphicons="${ 'data/glyphicons-data.js' }">
+        <sly data-sly-use.tpl="partials/styleguide-glyphicon-font.html">
+          <sly data-sly-call="${ tpl.section @ data=glyphicons }"></sly>
+        </sly>
       </sly>
 
     </div>
@@ -92,6 +94,11 @@ Component used to showcase different UI Elements
 
     .sg-section td {
       padding: 1rem;
+    }
+
+    .sg-list--no-bullets {
+      list-style-type: none;
+      padding: 0;
     }
 
     .sg-caption {

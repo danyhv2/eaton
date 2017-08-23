@@ -14,8 +14,7 @@
         <a href="${item.pageLink}"
           aria-label="Go to ${ item.linkTitle }"
           class="eaton-link-list-vertical__list-link"
-          target="${ item.newWindow ? '_blank' : '_self' }"
-                data-sly-attribute.download="${item.document_download}">
+          target="${ item.newWindow ? '_blank' : '_self' }">
           <span class="eaton-link-list-vertical__list-text">
               <i data-sly-test="${item.isExternal}" class="eaton-link-list-vertical__external-icon icon icon-link-external" aria-hidden="true"></i>
               <i data-sly-test="${item.isAssetLink}" class="eaton-link-list-vertical__external-icon icon icon-download" aria-hidden="true"></i>

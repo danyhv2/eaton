@@ -1,11 +1,7 @@
 //-----------------------------------
 // LinkList Component: Horizontal View
 //-----------------------------------
-.eaton-link-list-horizontal {
-
-  &__eyebrow {
-    text-transform: uppercase;
-  }
+.link-list-horizontal {
 
   &__list {
     margin: 0;
@@ -23,7 +19,7 @@
 
 
   //-----------------------------------
-  // Media-Query: Mobile
+  // Media-Query: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__list-item {
@@ -34,7 +30,7 @@
 
 
   //-----------------------------------
-  // Media-Query: Tablet & Desktop
+  // Media-Query: 992px and up
   //-----------------------------------
   @include media-desktop-and-up {
 
@@ -67,6 +63,5 @@
     }
 
   }
-
 
 }

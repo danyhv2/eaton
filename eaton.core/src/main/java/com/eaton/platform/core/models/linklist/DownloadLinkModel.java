@@ -46,6 +46,10 @@ public class DownloadLinkModel {
 	@Inject @Named("path")
 	private String assetPath;
 	
+	/** The new window. */
+	@Inject
+	private String newWindow;
+
     /** The resource resolver. */
     @Inject @Source("sling-object")
     private ResourceResolver resourceResolver;
@@ -92,12 +96,25 @@ public class DownloadLinkModel {
 	 */
 	public String getAssetPath() {
 		String assetLinkPath = StringUtils.EMPTY;
-		if (StringUtils.equals(CommonUtil.getStringProperty(getAssetResource().getValueMap(), CommonConstants.JCR_PRIMARY_TYPE), DamConstants.NT_DAM_ASSET)) {
-			assetLinkPath = this.assetPath;
+		LOGGER.debug("DonwloadLinkModel :: getAssetPath() :: Start");
+		if((null != getAssetResource()) && (null != getAssetResource().getValueMap())){
+			if (StringUtils.equals(CommonUtil.getStringProperty(getAssetResource().getValueMap(), CommonConstants.JCR_PRIMARY_TYPE), DamConstants.NT_DAM_ASSET)) {
+				assetLinkPath = this.assetPath;
+			}
 		}
+		LOGGER.debug("DonwloadLinkModel :: getAssetPath() :: End");
 		return assetLinkPath;
 	}
 	
+	/**
+	 * Gets the new window.
+	 *
+	 * @return the new window
+	 */
+	public String getNewWindow() {
+		return newWindow;
+	}
+
 	/**
 	 * Gets the asset size.
 	 *
@@ -114,6 +131,15 @@ public class DownloadLinkModel {
 	 */
 	private Asset getAsset() {
 		return CommonUtil.getAsset(getAssetResource());
+	}
+
+	/**
+	 * Gets the asset type.
+	 *
+	 * @return the asset type
+	 */
+	public String getType() {
+		return CommonUtil.getType(getAsset());
 	}
 
 	/**

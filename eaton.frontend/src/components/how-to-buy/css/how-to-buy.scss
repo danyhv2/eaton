@@ -16,8 +16,8 @@
     display: inline-block;
 
     img {
-      width: 100%;
-      height: auto;
+      width: $spacing__md;
+      height: $spacing__md;
     }
   }
 
@@ -32,17 +32,17 @@
   }
 
 
-
-
   @include media-desktop-and-up {
     padding-top: $spacing__lg;
 
     &__icon {
       max-width: 70px;
 
-      .icon {
-        font-size: 70px;
+      img {
+        width: 70px;
+        height: 70px;
       }
+
     }
 
     &__text-wrapper {
@@ -61,12 +61,30 @@
         flex-wrap: wrap;
         flex-direction: row;
 
-        .col-md-4 {
-          flex: 0 0 33%;
+        .col-md-3 {
+          flex: 0 0 24%;
+          padding: 0;
         }
 
-        .col-md-8 {
-          flex: 0 0 66%;
+        .col-md-9 {
+          flex: 0 0 75%;
+          padding: 0;
+
+          > .row {
+
+            .col-md-6 {
+              flex: 0 0 49%;
+
+              &:nth-child(2n) {
+                padding-left: 60px;
+                padding-right: 0;
+              }
+
+              &:nth-child(2n+1) {
+                padding-left: 30px;
+              }
+            }
+          }
         }
 
         .row {
@@ -74,6 +92,21 @@
           display: flex;
           flex-wrap: wrap;
           flex-direction: row;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .eaton-how-to-buy {
+    .container {
+      &.row {
+        .col-md-9 {
+
+          > .row .col-md-6 {
+            flex: 0 0 41%;
+          }
         }
       }
     }

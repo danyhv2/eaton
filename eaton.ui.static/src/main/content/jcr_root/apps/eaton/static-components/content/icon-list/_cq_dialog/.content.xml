@@ -45,6 +45,10 @@
                     jcr:primaryType="nt:unstructured"
                     text="Default (3 column)"
                     value="top-list-with-icon"/>
+                  <tile-links
+                    jcr:primaryType="nt:unstructured"
+                    text="Tile links with Icon"
+                    value="tile-links"/>
                 </items>
               </view>
             </items>

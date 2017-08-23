@@ -16,25 +16,23 @@
 
 .dark-theme .eaton-link-list-vertical__eyebrow, .dark-theme .eaton-link-list-vertical__list-link { color: #FFF; }
 
-@media screen and (max-width: 991px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 60px; } }
+@media screen and (max-width: 991px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 30px; } }
 
 @media screen and (min-width: 992px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; }
   .eaton-link-list-vertical__download-text { width: auto; } }
 
-.eaton-link-list-horizontal__eyebrow { text-transform: uppercase; }
+.link-list-horizontal__list { margin: 0; padding: 0; list-style-type: none; }
 
-.eaton-link-list-horizontal__list { margin: 0; padding: 0; list-style-type: none; }
+@media screen and (max-width: 991px) { .link-list-horizontal__list-item { padding: 0; width: 100%; } }
 
-@media screen and (max-width: 991px) { .eaton-link-list-horizontal__list-item { padding: 0; width: 100%; } }
-
-@media screen and (min-width: 992px) { .eaton-link-list-horizontal__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; }
-  .eaton-link-list-horizontal__list-item { position: relative; margin: 0 1.8em 0 0; padding: 0 1.8em 0 0; }
-  .eaton-link-list-horizontal__list-item::after { content: ''; background-color: #5B6770; height: 1em; position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1px; }
-  .eaton-link-list-horizontal__list-item:last-child::after { display: none; } }
+@media screen and (min-width: 992px) { .link-list-horizontal__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; }
+  .link-list-horizontal__list-item { position: relative; margin: 0 1.8em 0 0; padding: 0 1.8em 0 0; }
+  .link-list-horizontal__list-item::after { content: ''; background-color: #5B6770; height: 1em; position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1px; }
+  .link-list-horizontal__list-item:last-child::after { display: none; } }
 
 .eaton-link-list-primary-nav__items a { text-decoration: none; }
 
-@media screen and (max-width: 991px) { .eaton-link-list-primary-nav { position: fixed; top: 56px; left: 0; bottom: 0; width: 100%; height: 100%; -webkit-transform: translate(0, 0); transform: translate(0, 0); overflow: hidden; background: #5B6770; color: #FFF; margin-bottom: 80px; opacity: 0; visibility: hidden; -webkit-transition: -webkit-transform 0.5s ease-in-out; transition: -webkit-transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out; }
+@media screen and (max-width: 991px) { .eaton-link-list-primary-nav { position: fixed; top: 52px; left: 0; bottom: 0; width: 100%; height: 100%; -webkit-transform: translate(0, 0); transform: translate(0, 0); overflow: hidden; background: #5B6770; color: #FFF; margin-bottom: 80px; opacity: 0; visibility: hidden; -webkit-transition: -webkit-transform 0.5s ease-in-out; transition: -webkit-transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out; }
   .eaton-link-list-primary-nav__headline { display: block; padding: 30px 0; font-size: 20px; line-height: 24px; background: #333F48; margin-bottom: 0; font-family: 'EatonMedium'; }
   .eaton-link-list-primary-nav__items { height: 100%; width: 100%; padding: 0; font-family: Arial; min-height: 600px; }
   .eaton-link-list-primary-nav__items a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 20px 0; color: #FFF; cursor: pointer; border-bottom: 1px solid rgba(238, 240, 242, 0.5); font-size: 20px; position: relative; }
@@ -92,5 +90,7 @@
 .eaton-linklist-2column { overflow: hidden; }
 
 .eaton-linklist-2column > div { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+
+.eaton-linklist-2column > div .col-xs-12 { padding: 0; }
 
 .eaton-linklist-2column__link { margin-bottom: 30px; }

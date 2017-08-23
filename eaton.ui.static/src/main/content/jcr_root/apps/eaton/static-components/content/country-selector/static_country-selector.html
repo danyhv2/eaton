@@ -1,4 +1,24 @@
 
-<!-- CONTENT VIEWS -->
-<!-- View: Drawer -->
-<sly data-sly-unwrap data-sly-include="views/drawer.html"></sly>
+<!--/*
+
+  Load Component Views:
+
+	Author may select one of the following views
+	- accordion
+	- drawer
+
+*/-->
+
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Country Selector Component</div>
+</sly>
+
+
+<sly data-sly-test="${ properties.view == 'accordion' }">
+  <sly data-sly-include="views/view-accordion.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'drawer' }">
+  <sly data-sly-include="views/view-drawer.html" data-sly-unwrap></sly>
+</sly>

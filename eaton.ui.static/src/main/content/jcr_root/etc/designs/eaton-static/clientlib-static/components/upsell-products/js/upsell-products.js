@@ -37,8 +37,8 @@ App.carousel = function () {
       slidesToScroll: 3,
       dots: true,
       dotsClass: 'module-related-products__dots',
-      prevArrow: $('.module-related-products__prev-arrow'),
-      nextArrow: $('.module-related-products__next-arrow'),
+      prevArrow: $('.upsell-products__prev-arrow'),
+      nextArrow: $('.upsell-products__next-arrow'),
       responsive: [{
         breakpoint: 991,
         settings: {

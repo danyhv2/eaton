@@ -49,8 +49,8 @@ App.facets = function () {
     if ($(window).width() < App.global.constants.GRID.MD) {
       mobileFacets();
     } else {
-      $componentClass.on('click', '[data-more-facets]', showAllFacetsItems);
-      $componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
+      $componentClass.on('click', '[data-facets-more-groups]', showAllFacetsGroups);
+      $componentClass.on('click', '[data-facets-more-values]', showAllFacetsValues);
     }
 
     // Facet Behaviors for Mobile & Tablet
@@ -70,8 +70,8 @@ App.facets = function () {
           mobileEnabled = false;
           $('.faceted-navigation__mobile-container .faceted-navigation').remove();
           $('.faceted-navigation__mobile-container, .faceted-navigation__mobile-container a.b-button, .overlay-mask').remove();
-          $componentClass.on('click', '[data-more-facets]', showAllFacetsItems);
-          $componentClass.on('click', '[data-more-facet-values]', showAllFacetsValues);
+          $componentClass.on('click', '[data-facets-more-groups]', showAllFacetsGroups);
+          $componentClass.on('click', '[data-facets-more-values]', showAllFacetsValues);
         }
     });
   };
@@ -136,7 +136,7 @@ App.facets = function () {
 
     if (mobileEnabled === false) {
       var temp = $componentClass.parent().parent();
-      var winHeight = $(document).innerHeight();
+      // let winHeight = $(document).innerHeight();
       $("<div class='faceted-navigation__mobile-container u-visible-mobile hidden col-xs-12 col-md-3'></div>").prependTo(temp);
 
       $componentClass.clone(true, true).appendTo('.faceted-navigation__mobile-container').addClass('visible');
@@ -174,7 +174,7 @@ App.facets = function () {
         $('.search-results').css({ position: 'inherit', 'z-index': '1' });
       });
 
-      $('.close-facets-mobile').on('click', function (e) {
+      $('.close-facets-mobile, [data-facets-apply]').on('click', function (e) {
         e.preventDefault();
         $('.faceted-navigation__mobile-container').removeClass('enabled');
         $('.faceted-navigation__mobile-container .faceted-navigation').removeClass('visible').addClass('hidden');
@@ -185,25 +185,24 @@ App.facets = function () {
 
         $('body').removeClass('facets-open');
         // $('.faceted-navigation__mobile-container').removeClass('facets-navigation-mobile-open');
-
       });
 
       $('.faceted-navigation__mobile-container .faceted-navigation__header').on('click', function (e) {
         e.preventDefault;
-        $(this).children('.icon-sign-plus').toggleClass('u-hide');
+        $(this).find('.icon-sign-minus').toggle();
       });
 
       // View More Facets Behavior
       //--------------
-      $('.faceted-navigation__mobile-container .view-more-facets').on('click', function (event) {
+      $('.faceted-navigation__mobile-container [data-facets-more-groups]').on('click', function (event) {
         event.preventDefault();
         $('.faceted-navigation__mobile-container .faceted-navigation__more-facets').slideDown(200);
 
         // Hide "View more" <button>
         event.currentTarget.classList.add('u-hide');
       });
-      $('.faceted-navigation__mobile-container').on('click', '[data-more-facet-values]', showAllFacetsValues);
-      // $('.faceted-navigation__mobile-container .view-more-facets').on('click', '[data-more-facets]', function() {alert('alert');});
+      $('.faceted-navigation__mobile-container').on('click', '[data-facets-more-values]', showAllFacetsValues);
+      // $('.faceted-navigation__mobile-container [data-facets-more-groups]').on('click', '[data-facets-more-groups]', function() {alert('alert');});
     } else {
       $('.faceted-navigation__mobile-container').removeClass('hidden');
       $('.faceted-navigation__mobile-container .faceted-navigation').remove();
@@ -216,7 +215,7 @@ App.facets = function () {
   * Show the remaining facets-items/groups that were hidden on page load
   * @param  { Object } event - the click event object
   */
-  var showAllFacetsItems = function showAllFacetsItems(event) {
+  var showAllFacetsGroups = function showAllFacetsGroups(event) {
 
     // Show hidden facets
     $componentClass.find('.faceted-navigation__more-facets').slideDown(200);
@@ -231,7 +230,7 @@ App.facets = function () {
   */
   var showAllFacetsValues = function showAllFacetsValues(event) {
 
-    var $parentItem = $(event.currentTarget).closest('.faceted-navigation__facet-item');
+    var $parentItem = $(event.currentTarget).closest('.faceted-navigation__facet-group');
 
     // Show hidden facet-values
     $parentItem.find('.faceted-navigation__list-item.u-hide').slideDown(200);

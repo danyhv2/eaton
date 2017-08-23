@@ -390,7 +390,7 @@ use(function () {
             }
 	    ]
 	  }
-  } else if ((typeof(testdata) != "undefined") && testdata == "t11-listing-page-3") {
+  } else if ((typeof(testdata) != "undefined") && ( (testdata == "t11-listing-page-3") || (testdata == "m17") ) ) {
 	    data.view = {
 	      eyebrow: '',
 	      links: [
@@ -446,6 +446,80 @@ use(function () {
 	      ]
 	    }	
 		    
+    } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-1")) {
+        
+    	data.view = {
+	      eyebrow: 'Eaton bussines highlights',
+	      links: [
+		      {  
+		        title: '2016 annual report',
+		        url: '#link-1',
+		        target: '_self',
+                external_link: false,
+                document_size: 'PDF 4MB',
+                document_download: 'http://www.eaton.com'
+		      },
+		      {
+		        title: '2016 Q4 quarterly report',
+		        url: '#link-2',
+		        target: '_self',
+                external_link: false,
+                document_size: 'PDF 2MB',
+                document_download: 'http://www.eaton.com'
+		      },
+		      {
+		        title: 'Dividend report',
+		        url: '#link-3',
+		        target: '_self',
+                external_link: false,
+                document_size: 'PDF 3MB',
+                document_download: 'http://www.eaton.com'
+		      }
+		    ]
+	    }	
+    	
+    } else if ((typeof(testdata) != "undefined") && (testdata == "m18")) {
+        
+  	  data.view = {
+  	      eyebrow: 'Downloads & Related links',
+  	      links: [
+  	         {  	
+  	        	title: 'Download High Resoution Image',
+  		        url: '#link-1',
+  		        target: '_self',
+                external_link: false,
+                document_size: 'PNG 8MB',
+                document_download: 'http://www.eaton.com'
+  	         },
+  	         {  	
+   	        	title: 'Download High Resoution Image',
+   		        url: '#link-2',
+   		        target: '_self',
+                external_link: false,
+                document_size: 'PDF 15MB',
+                document_download: 'http://www.eaton.com'
+   	         },
+  		     {
+  		        title: 'Market 1',
+  		        url: '#link-3',
+  		        target: '_self',
+  		        external_link: false
+  		     },
+  		     {
+  		        title: 'Market 2',
+  		        url: '#link-4',
+  		        target: '_self',
+  		        external_link: false
+  		     },
+  		     {
+   		        title: 'Sector/Application',
+   		        url: '#link-5',
+   		        target: '_self',
+   		        external_link: false
+   		     }
+  	      ]
+  	    }
+  	  
     } else {
     	
     data.view = {

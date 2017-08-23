@@ -4,7 +4,6 @@ use(function () {
   var data = {};
 
   data.view = {
-    // eyebrow: 'Eyebrow / Title',
     links: [
       {
         title: 'Terms & Conditions',
@@ -25,4 +24,5 @@ use(function () {
   };
 
   return data;
+
 });

@@ -5,7 +5,7 @@
 // Import All SASS config files (Variables, Mixins, Functions etc...)
 @import "../../../global/css/_config/sass";
 
-.eaton-category-highlight {
+.category-highlight {
 
   @include media-mobile-only {
     &__bottom {
@@ -38,7 +38,7 @@
 .cq-wcm-edit {
 
   // stylelint-enable
-  .eaton-category-highlight {
+  .category-highlight {
 
     &__bottom {
       margin-top: 0;

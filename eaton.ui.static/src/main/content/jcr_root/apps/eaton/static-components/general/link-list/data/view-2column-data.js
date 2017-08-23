@@ -96,7 +96,39 @@ use(function () {
 	        }
 	      ]
 	    };
-  	  
+    
+    } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-1")) {
+    	  
+    	data = {
+	      links: [
+	        {
+	          text: 'Price history',
+	          url: '#',
+	          target: '_self'
+	        },
+	        {
+	          text: 'Quote chart',
+	          url: '#',
+	          target: '_self'
+	        },
+	        {
+	          text: 'Calculators',
+	          url: '#',
+	          target: '_self'
+	        },
+	        {
+	          text: 'Request materials',
+	          url: '#',
+	          target: '_self'
+	        },
+	        {
+	          text: 'Share performance',
+	          url: '#',
+	          target: '_self'
+	        }
+	      ]
+	    };
+  	    	  
     } else if ((typeof(testdata) != "undefined") && (testdata == "t6-subcategory-2")) {
     	  
     	data = {
@@ -125,7 +157,7 @@ use(function () {
 	        },
 	        {
 	          text: '9PX1000RT',
-	          url: '#',
+	          url: '',
 	          target: '_self'
 	        },
 	        {
@@ -135,7 +167,7 @@ use(function () {
 	        },
 	        {
 	          text: '9PX1500RTN',
-	          url: '#',
+	          url: '',
 	          target: '_self'
 	        },
 	        {
@@ -145,7 +177,7 @@ use(function () {
 	        },
 	        {
 	          text: '9PX700RT',
-	          url: '#',
+	          url: '',
 	          target: '_self'
 	        },
 	        {
@@ -155,7 +187,7 @@ use(function () {
 	        },
 	        {
 	          text: '9PX1500RT',
-	          url: '#',
+	          url: '',
 	          target: '_self'
 	        },
 	        {
@@ -165,7 +197,7 @@ use(function () {
 	        },
 	        {
 	          text: '9PX1000RT',
-	          url: '#',
+	          url: '',
 	          target: '_self'
 	        },
 	        {
@@ -175,7 +207,7 @@ use(function () {
 	        },
 	        {
 	          text: '9PX1500RTN',
-	          url: '#',
+	          url: '',
 	          target: '_self'
 	        },
 	        {
@@ -185,7 +217,7 @@ use(function () {
 	        },
 	        {
 	          text: '9PX700RT',
-	          url: '#',
+	          url: '',
 	          target: '_self'
 	        },
 	        {
@@ -195,7 +227,7 @@ use(function () {
 	        },
 	        {
 	          text: '9PX1500RT',
-	          url: '#',
+	          url: '',
 	          target: '_self'
 	        }
 	      ]

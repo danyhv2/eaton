@@ -16,3 +16,27 @@
 // Import Utilites and base Elements
 @import "utils/**/*.scss";
 @import "base/elements/**/*.scss";
+
+
+// Generate Styles for Flags-Sprite
+//--------------
+@import "base/eaton-flags-sprite";
+
+.sprite-flags {
+  background-image: url($spritesheet-image);
+}
+
+@mixin sprites-flag($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+
+    .flag-#{$sprite-name} {
+      @include sprite($sprite);
+      // @include sprite-position($sprite);
+      // @include sprite-width($sprite);
+      // @include sprite-height($sprite);
+    }
+  }
+}
+
+@include sprites-flag($spritesheet-sprites);

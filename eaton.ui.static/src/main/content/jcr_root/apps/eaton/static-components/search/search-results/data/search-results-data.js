@@ -20,7 +20,7 @@ use(function () {
           "isActiveTab": false,
           "isADisabledTab": false,
           "resultsCount": 36,
-          "url": "#tab--product",
+          "url": "http://eaton.dev/results.tab.product.html",
           "target": "_self"
         },
         {
@@ -30,7 +30,7 @@ use(function () {
           "isActiveTab": false,
           "isADisabledTab": false,
           "resultsCount": 97,
-          "url": "#tab--news-insights",
+          "url": "http://eaton.dev/results.tab.news-insights.html",
           "target": "_self"
         },
         {
@@ -40,7 +40,7 @@ use(function () {
           "isActiveTab": false,
           "isADisabledTab": true,
           "resultsCount": 0,
-          "url": "#tab--resources",
+          "url": "http://eaton.dev/results.tab.resources.html",
           "target": "_self"
         },
         {
@@ -50,7 +50,7 @@ use(function () {
           "isActiveTab": false,
           "isADisabledTab": false,
           "resultsCount": 15,
-          "url": "#tab--resources",
+          "url": "http://eaton.dev/results.tab.hidden.html",
           "target": "_self"
         },
       ]
@@ -73,17 +73,20 @@ use(function () {
             {
               "id": "product",
               "label": "Products",
-              "url": "#facet-products"
+              "url": "http://eaton.dev/results.html?facetvalue=products",
+              "active": false
             },
             {
               "id": "news",
               "label": "News & Insights",
-              "url": "#facet-news"
+              "url": "http://eaton.dev/results.html?facetvalue=news",
+              "active": false
             },
             {
               "id": "resources",
               "label": "Resources",
-              "url": "#facet-resources"
+              "url": "http://eaton.dev/results.html?facetvalue=resources",
+              "active": false
             }
           ]
         },
@@ -95,27 +98,28 @@ use(function () {
             {
               "id": "700va",
               "label": "700 VA",
-              "url": "#facet-700va"
+              "url": "http://eaton.dev/results.html?facetvalue=700va"
             },
             {
               "id": "1000va",
               "label": "1000 VA",
-              "url": "#facet-1000va"
+              "url": "http://eaton.dev/results.html?facetvalue=1000va",
+              "active": true
             },
             {
               "id": "1500va",
               "label": "1500 VA",
-              "url": "#facet-1500va"
+              "url": "http://eaton.dev/results.html?facetvalue=1500va"
             },
             {
               "id": "2000va",
               "label": "2000 VA",
-              "url": "#facet-2000va"
+              "url": "http://eaton.dev/results.html?facetvalue=2000va"
             },
             {
               "id": "3000va",
               "label": "3000 VA",
-              "url": "#facet-3000va"
+              "url": "http://eaton.dev/results.html?facetvalue=3000va"
             }
           ]
         },
@@ -127,42 +131,42 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "#facet-value1"
+              "url": "http://eaton.dev/results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "#facet-value2"
+              "url": "http://eaton.dev/results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "#facet-value3"
+              "url": "http://eaton.dev/results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "#facet-value4"
+              "url": "http://eaton.dev/results.html?facetvalue=value4"
             },
             {
               "id": "value5",
               "label": "Value 5",
-              "url": "#facet-value5"
+              "url": "http://eaton.dev/results.html?facetvalue=value5"
             },
             {
               "id": "value6",
               "label": "Value 6",
-              "url": "#facet-value6"
+              "url": "http://eaton.dev/results.html?facetvalue=value6"
             },
             {
               "id": "value7",
               "label": "Value 7",
-              "url": "#facet-value7"
+              "url": "http://eaton.dev/results.html?facetvalue=value7"
             },
             {
               "id": "value8",
               "label": "Value 8",
-              "url": "#facet-value8"
+              "url": "http://eaton.dev/results.html?facetvalue=value8"
             }
           ]
         },
@@ -174,32 +178,32 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "#facet-value1"
+              "url": "http://eaton.dev/results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "#facet-value2"
+              "url": "http://eaton.dev/results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "#facet-value3"
+              "url": "http://eaton.dev/results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "#facet-value4"
+              "url": "http://eaton.dev/results.html?facetvalue=value4"
             },
             {
               "id": "value5",
               "label": "Value 5",
-              "url": "#facet-value5"
+              "url": "http://eaton.dev/results.html?facetvalue=value5"
             },
             {
               "id": "value6",
               "label": "Value 6",
-              "url": "#facet-value6"
+              "url": "http://eaton.dev/results.html?facetvalue=value6"
             }
           ]
         },
@@ -211,27 +215,27 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "#facet-value1"
+              "url": "http://eaton.dev/results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "#facet-value2"
+              "url": "http://eaton.dev/results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "#facet-value3"
+              "url": "http://eaton.dev/results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "#facet-value4"
+              "url": "http://eaton.dev/results.html?facetvalue=value4"
             },
             {
               "id": "value5",
               "label": "Value 5",
-              "url": "#facet-value5"
+              "url": "http://eaton.dev/results.html?facetvalue=value5"
             }
           ]
         },
@@ -243,22 +247,22 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "#facet-value1"
+              "url": "http://eaton.dev/results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "#facet-value2"
+              "url": "http://eaton.dev/results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "#facet-value3"
+              "url": "http://eaton.dev/results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "#facet-value4"
+              "url": "http://eaton.dev/results.html?facetvalue=value4"
             }
           ]
         }
@@ -272,7 +276,12 @@ use(function () {
       "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/search-results--more-data.json",
       "ajaxRequestNextPage": 2,
       "resultsCount": 184,
+      "resultsLabel": 'results',
       "currentPage": 1,
+      "resultsOptions": {
+        "showLoadMore": true,
+        "disclaimerEnabled": true,
+      },
       "searchTerm": "bckup servre",
       "autoCorrect": {
         "enabled": true,
@@ -281,50 +290,50 @@ use(function () {
         "url": "#backup-server",
         "target": '_self'
       },
-      "clearAllFiltersLink": {
-        "text": "Clear filters",
-        "url": "#clear-all-filters",
-        "target": "_self"
-      },
-      "activeFilters": [
-        {
-          "label": "Products",
-          "url": "#remove-filter-products",
+      "activeFilters": {
+        "removeFilterLabel": "Remove Filter",
+        "clearAllFilters": {
+          "label": "Clear filters",
+          "url": "http://eaton.dev/results.html?clear-all-filters=true",
           "target": "_self"
         },
-        {
-          "label": "1000 VA",
-          "url": "#remove-filter-1000-va",
-          "target": "_self"
-        }
-      ],
+        "items": [
+          {
+            "label": "Products",
+            "url": "http://eaton.dev/results.html?remove-filter=products",
+            "target": "_self"
+          },
+          {
+            "label": "1000 VA",
+            "url": "http://eaton.dev/results.html?remove-filter=1000-va",
+            "target": "_self"
+          }
+        ]
+      },
       "sortBy": {
+        "sortByLabel": "Sort by",
         "items": [
           {
             "label": "Relevance",
-            "url": '#sortby-relevance',
+            "url": 'http://eaton.dev/results.html?sortby=relevance',
             "target": '_self'
           },
           {
             "label": "Newest",
-            "url": '#sortby-newest',
+            "url": 'http://eaton.dev/results.html?sortby=newest',
             "target": '_self'
           },
           {
             "label": "A to Z",
-            "url": '#sortby-a-z',
+            "url": 'http://eaton.dev/results.html?sortby=a-z',
             "target": '_self'
           },
           {
             "label": "Z to A",
-            "url": '#sortby-z-a',
+            "url": 'http://eaton.dev/results.html?sortby=z-a',
             "target": '_self'
           }
         ]
-      },
-      "resultsOptions": {
-        "showLoadMore": true,
-        "disclaimerEnabled": true,
       },
       "results": [
         {
@@ -340,9 +349,9 @@ use(function () {
               "target": "_blank"
             },
             "secondaryLinks": [
-              { "text": "Overview", "url": "#overview", "target": "_blank" },
-              { "text": "Models", "url": "#models", "target": "_blank" },
-              { "text": "Resources", "url": "#resources", "target": "_blank" }
+              { "text": "Overview", "url": "http://eaton.dev/product.overview.html", "target": "_blank" },
+              { "text": "Models", "url": "http://eaton.dev/product.models.html", "target": "_blank" },
+              { "text": "Resources", "url": "http://eaton.dev/product.resources.html", "target": "_blank" }
             ]
           }
         },
@@ -386,9 +395,9 @@ use(function () {
               "target": "_blank"
             },
             "secondaryLinks": [
-              { "text": "Overview", "url": "#overview", "target": "_blank" },
-              { "text": "Models", "url": "#models", "target": "_blank" },
-              { "text": "Resources", "url": "#resources", "target": "_blank" }
+              { "text": "Overview", "url": "http://eaton.dev/product.overview.html", "target": "_blank" },
+              { "text": "Models", "url": "http://eaton.dev/product.models.html", "target": "_blank" },
+              { "text": "Resources", "url": "http://eaton.dev/product.resources.html", "target": "_blank" }
             ]
           }
         },
@@ -419,9 +428,9 @@ use(function () {
               "target": "_blank"
             },
             "secondaryLinks": [
-              { "text": "Overview", "url": "#overview", "target": "_blank" },
-              { "text": "Models", "url": "#models", "target": "_blank" },
-              { "text": "Resources", "url": "#resources", "target": "_blank" }
+              { "text": "Overview", "url": "http://eaton.dev/product.overview.html", "target": "_blank" },
+              { "text": "Models", "url": "http://eaton.dev/product.models.html", "target": "_blank" },
+              { "text": "Resources", "url": "http://eaton.dev/product.resources.html", "target": "_blank" }
             ]
           }
         },
@@ -466,9 +475,9 @@ use(function () {
               "target": "_blank"
             },
             "secondaryLinks": [
-              { "text": "Overview", "url": "#overview", "target": "_blank" },
-              { "text": "Models", "url": "#models", "target": "_blank" },
-              { "text": "Resources", "url": "#resources", "target": "_blank" }
+              { "text": "Overview", "url": "http://eaton.dev/product.overview.html", "target": "_blank" },
+              { "text": "Models", "url": "http://eaton.dev/product.models.html", "target": "_blank" },
+              { "text": "Resources", "url": "http://eaton.dev/product.resources.html", "target": "_blank" }
             ]
           }
         },
@@ -513,9 +522,9 @@ use(function () {
               "target": "_blank"
             },
             "secondaryLinks": [
-              { "text": "Overview", "url": "#overview", "target": "_blank" },
-              { "text": "Models", "url": "#models", "target": "_blank" },
-              { "text": "Resources", "url": "#resources", "target": "_blank" }
+              { "text": "Overview", "url": "http://eaton.dev/product.overview.html", "target": "_blank" },
+              { "text": "Models", "url": "http://eaton.dev/product.models.html", "target": "_blank" },
+              { "text": "Resources", "url": "http://eaton.dev/product.resources.html", "target": "_blank" }
             ]
           }
         }

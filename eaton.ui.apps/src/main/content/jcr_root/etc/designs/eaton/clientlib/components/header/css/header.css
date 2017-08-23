@@ -66,6 +66,27 @@
 
 @media screen and (min-width: 992px) { .level-2-open .mega-menu { visibility: visible; opacity: 1; } }
 
-.aem-AuthorLayer-Edit .mega-menu, .cq-wcm-edit .mega-menu { position: relative !important; visibility: visible !important; opacity: 1 !important; z-index: 99999 !important; }
+ .aem-AuthorLayer-Edit .mega-menu,.cq-wcm-edit .mega-menu { position: relative !important; visibility: visible !important; opacity: 1 !important; z-index: 99999 !important; }
 
-.aem-AuthorLayer-Edit .mega-menu__content, .cq-wcm-edit .mega-menu__content { display: block !important; }
+ .aem-AuthorLayer-Edit .mega-menu,.cq-wcm-edit .mega-menu__content { display: block !important; }
+
+ .header-primary-nav ~ div> .mega-menu.dark-theme, .header-primary-nav ~ .mega-menu.dark-theme{
+	opacity: 0 !important;
+    visibility: hidden;  
+ }
+.header-primary-nav ~ div> .mega-menu.dark-theme.primaryLinks-Clicked, .header-primary-nav ~ .mega-menu.dark-theme.primaryLinks-Clicked{
+	opacity: 1 !important;
+    visibility: visible;  
+ }
+
+ .header-primary-nav ~ div> .mega-menu .mega-menu__content, .header-primary-nav ~ .mega-menu .mega-menu__content:not('.mega-menu__content--active'){
+	display:none;
+}
+.mega-menu{
+	opacity: 1 !important;
+    visibility: visible;   
+ }
+
+.mega-menu__content.mega-menu__content--active{
+	display:block;
+ }

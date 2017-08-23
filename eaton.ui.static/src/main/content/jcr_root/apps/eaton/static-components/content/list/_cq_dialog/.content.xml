@@ -51,6 +51,10 @@
                     jcr:primaryType="nt:unstructured"
                     text="Links"
                     value="links"/>
+                  <text-only-2-column
+                    jcr:primaryType="nt:unstructured"
+                    text="Text only 2 column"
+                    value="text-only-2-column"/>
                 </items>
               </view>
             </items>

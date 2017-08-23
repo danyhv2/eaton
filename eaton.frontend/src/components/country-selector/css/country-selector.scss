@@ -5,11 +5,5 @@
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
-
-.country-selector--drawer {
-  height: 240px;
-  background: $color__primary-gray3;
-  border: 1px solid $color__primary-blue;
-  padding: 30px 20px;
-  color: $color__white;
-}
+// Import SubViews
+@import "views/view-accordion";

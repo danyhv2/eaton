@@ -1,15 +1,15 @@
 
 <!--/* Include Header Component */-->
-<header>
+<header data-sly-test="${properties.testdata != 'no-header-no-footer'}">
   <sly data-sly-resource="${'eaton-header' @ resourceType='eaton/static-components/structure/header'}"></sly>
 </header>
 
 <!--/* Include Page Content */-->
-<div class="container-full">
-    <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/parsys'}"></sly>
-</div>
+<main class="container-full">
+  <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/parsys'}"></sly>
+</main>
 
 <!--/* Include Footer Component */-->
-<footer>
+<footer data-sly-test="${properties.testdata != 'no-header-no-footer'}">
   <sly data-sly-resource="${'eaton-footer' @ resourceType='eaton/static-components/structure/footer'}"></sly>
 </footer>

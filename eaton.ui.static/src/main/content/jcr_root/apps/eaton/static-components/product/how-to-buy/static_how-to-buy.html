@@ -6,11 +6,11 @@
   <div class="eaton-how-to-buy">
     <sly data-sly-test="${data.headline}">
       <div class="container row" >
-        <div class="col-xs-12 col-md-4 eaton-how-to-buy__element" >
+        <div class="col-xs-12 col-md-3 eaton-how-to-buy__element" >
           <div class="b-heading-h3">${data.headline}</div>
         </div>
 
-        <div class="col-xs-12 col-md-8">
+        <div class="col-xs-12 col-md-9">
         <div class="row" >
     </sly>
     <sly data-sly-test="${!data.headline}">
@@ -18,7 +18,7 @@
     </sly>
     <sly data-sly-list.link="${data.items}">
 
-      <div class="col-xs-12 ${data.headline ? 'col-md-5' : 'col-md-4'} eaton-how-to-buy__element" data-sly-test=${link.image}>
+      <div class="col-xs-12 ${data.headline ? 'col-md-6' : 'col-md-4'} eaton-how-to-buy__element" data-sly-test=${link.image}>
         <div class="eaton-how-to-buy__icon">
           <img src="${link.image}">
         </div>

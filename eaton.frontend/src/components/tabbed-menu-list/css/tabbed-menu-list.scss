@@ -23,7 +23,7 @@
     span {
 
       &::before {
-        @extend %glyphicon-sign-minus;
+        @extend %icon-sign-minus;
       }
     }
 
@@ -32,7 +32,7 @@
       span {
 
         &::before {
-          @extend %glyphicon-sign-plus;
+          @extend %icon-sign-plus;
         }
       }
     }
@@ -93,7 +93,7 @@
         color: $color__primary-blue;
 
         &.active {
-          color: $color__black;
+          color: $color__primary-gray1;
 
           &.desktop.link {
             color: $color__primary-blue;
@@ -103,6 +103,7 @@
 
       a {
         padding-bottom: 50px;
+        color: $color__primary-blue;
       }
     }
 

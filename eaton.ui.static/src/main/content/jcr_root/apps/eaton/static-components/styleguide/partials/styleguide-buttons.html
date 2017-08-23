@@ -6,13 +6,16 @@
 
   <div class="sg-section sg-buttons" id="sg-buttons">
     <h2>Buttons</h2>
-    <p>Buttons can be used as:
-      <ul>
-        <li><code>&lt;a&gt;</code> tags for regular links. eg: <code>&lt;a href="#" role="button"&gt;See how&lt;/a&gt;</code></li>
-        <li><code>&lt;button&gt;</code> tags when used for JavaScript Behaviors. eg: <code>&lt;button&gt;Load More&lt;/button&gt;</code></li>
-      </ul>
-
-    </p>
+    <ul class="sg-list--no-bullets">
+      <li>
+        <div class="alert alert-info"><strong>Example:</strong> When used a &lt;a&gt; tags for regular links. eg:</div>
+        <code>&lt;a href="https://eaton.com/" class="..." role="button"&gt;See how&lt;/a&gt;</code> <br /><br /><br />
+      </li>
+      <li>
+        <div class="alert alert-info"><strong>Example:</strong> When used as &lt;button&gt; tags for JavaScript Behaviors. eg:</div>
+        <code>&lt;button class="..."&gt;Load More&lt;/button&gt;</code> <br /><br /><br />
+      </li>
+    </ul>
 
     <div class="sg-buttons__demos u-flex u-flex-wrap" data-sly-list.button="${ data }">
       <div class="${ button.theme == 'dark' ? 'theme-dark sg-background-sample' : 'theme-light' } sg-button-sample u-flex u-flex-align-center u-flex-justify-center">

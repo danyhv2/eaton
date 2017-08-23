@@ -10,6 +10,8 @@
         sling:resourceType="eaton/static-components/structure/eaton-home-page"/>
     <test-data/>
     <styleguide/>
+    <forms-page/>
+    <templates/>
     <t1-homepage-template/>
     <t2-primary-landing-template/>
     <t3-article-template/>
@@ -25,6 +27,9 @@
     <t8-sku-template-specifications-tab/>
     <t8-sku-template-resources-tab/>
     <t9-secondary-landing/>
+    <t9-secondary-landing-careers/>
+    <t9-secondary-landing-investors/>
     <t10-search-results/>
     <t11-listing-page/>
+    <t12-first-time-country-language-selection/>
 </jcr:root>

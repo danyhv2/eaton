@@ -5,7 +5,7 @@
       <!--/* List Links */-->
       <ul data-sly-list="${data.downloadListModel.links}" class="eaton-download-list__links">
         <li data-sly-test="${item.isAssetLink}">
-          <a href="${item.assetPath}" class="eaton-download-list__item" aria-label="Download ${item.type} for ${ item.assetLinkTitle }">
+          <a href="${item.assetPath}" class="eaton-download-list__item" aria-label="Download ${item.type} for ${ item.assetLinkTitle }" target="${ item.newWindow ? '_blank' : '_self' }">
             <i class="icon icon-download" aria-hidden="true"></i>
             <div class="eaton-download-list__document">
                 <span class="eaton-download-list__title">${item.assetLinkTitle}</span>

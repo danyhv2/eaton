@@ -3,12 +3,7 @@
 //-----------------------------------
 
 .faceted-navigation__mobile-container .faceted-navigation {
-  padding: 0 30px;
-}
-
-.autocorrected-search {
-  margin-top: 20px;
-  font-size: 20px;
+  padding: 60px 30px;
 }
 
 .faceted-navigation {
@@ -26,7 +21,7 @@
   &__mobile-container {
     z-index: 40;
     background-color: $color__white;
-    margin: 60px 0 30px;
+    margin: 0;
 
     &.enabled {
       position: fixed;
@@ -97,7 +92,7 @@
     }
   }
 
-  &__facet-item {
+  &__facet-group {
     border-bottom: 1px solid #e6e6e6;
   }
 
@@ -106,7 +101,7 @@
   }
 
   &__header.button--reset,
-  &__view-more-facets button {
+  &__view-more-groups {
     cursor: pointer;
     margin: 14px 0;
     text-align: left;
@@ -121,7 +116,7 @@
     }
   }
 
-  &__view-more-facets button {
+  &__view-more-groups {
     color: $color__primary-blue;
   }
 
@@ -143,34 +138,73 @@
     margin-bottom: 12px;
   }
 
- 
+
 
 
   //-----------------------------------
-  // MediaQuery: Mobile & Tablet Only
+  // MediaQuery: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
 
-
-
     padding: 60px 30px;
+
+
+    &__facet-value {
+      padding-bottom: 0 !important;
+    }
+
+
+    &__view-more-values {
+      padding-top: 8px;
+    }
+
+
+    &__header {
+      margin: 9px 0;
+    }
+
+
+    &__mobile-container {
+      margin: 30px 0 30px;
+    }
+
+    &__apply {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
 
   }
 
 
 
   //-----------------------------------
-  // MediaQuery: Desktop & Desktop Large
+  // MediaQuery: >992px
   //-----------------------------------
   @include media-desktop-and-up {
+
 
   }
 
 }
 
 
-.facets-open {
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
+//-----------------------------------
+// MediaQuery: 0 to 991px
+//-----------------------------------
+@include media-mobile-and-tablet {
+  body.facets-open {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+
+
+@include media-mobile-and-tablet {
+  .faceted-navigation__mobile-container .faceted-navigation {
+    margin-bottom: 30px;
+  }
 }

@@ -35,8 +35,6 @@ App.mediaGallery = function () {
     $activeMediaGallery.find('.module-media-gallery__thumbnail-item').removeClass('active');
     $activeSlide.addClass('active');
 
-    // Remove visual focus state
-    $activeSlide.find('button').blur();
     $activeMediaGallery.find('.module-media-gallery__slide-list').slick('slickGoTo', activeSlideIndex, true);
   };
 

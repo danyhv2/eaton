@@ -10,9 +10,12 @@ node_modules
 
 
 ##### IDE's Folders
-.idea
 nbproject
 .vscode
+.brackets.json
+# IntelliJ Config Files
+.idea
+*.iml
 
 
 ##### Auto Generated Files
