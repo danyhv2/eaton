@@ -5,11 +5,52 @@
 // View: Drawer
 //-----------------------------------
 
-.country-selector {
+.country-selector-drawer {
 
-  &--drawer {
     &__header {
       background: $color__primary-gray1;
     }
-  }
+
+    &__item {
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    &__item-header {
+      position: relative;
+    }
+
+    &__item-list {
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+
+    //-----------------------------------
+    // Desktop Breakpoint: >992 px
+    //-----------------------------------
+    @include media-desktop-and-up {
+      &__item-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__item {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      &__item-header {
+        display: none;
+      }
+
+      &__item-country {
+        flex-basis: 25%;
+        padding: 0 0 $spacing__sm;
+      }
+    }
 }
