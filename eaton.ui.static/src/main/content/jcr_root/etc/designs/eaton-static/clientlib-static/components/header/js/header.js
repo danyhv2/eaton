@@ -36,6 +36,7 @@ App.header = function () {
   var closeMegaMenuBtn = componentClass.find('.mega-menu-title__close-menu');
   var toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
   var openSearchDropdownBtn = $('.header-primary-nav__open-search');
+  var openDrawerDesktopBtn = $('.open-country-selector');
 
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -179,6 +180,22 @@ App.header = function () {
   };
 
   /**
+  * Handle Click behaviors - for Selector Drawer - Desktop
+  */
+  var openDrawerDesktop = function openDrawerDesktop(event) {
+
+    event.preventDefault();
+    // Close Search & Mega Menu if open
+    closeMegaMenu(event);
+    closeSearch(event);
+
+    console.log('Open The Drawer');
+    bodyEl.addClass('drawer-open drawer-is-animating');
+
+    $(event.currentTarget).attr('aria-expanded', true);
+  };
+
+  /**
    * Bind All Event Listeners
    */
   var addEventListeners = function addEventListeners() {
@@ -200,6 +217,9 @@ App.header = function () {
 
     // Handle click on Search Icon
     openSearchDropdownBtn.on('click', handleSearch);
+
+    // Handle click on Country Selector button
+    openDrawerDesktopBtn.on('click', openDrawerDesktop);
   };
 
   /**
