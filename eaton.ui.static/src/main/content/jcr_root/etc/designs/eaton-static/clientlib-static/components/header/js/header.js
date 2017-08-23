@@ -56,9 +56,12 @@ App.header = function () {
   var handleScroll = function handleScroll(event) {
 
     var scrollTop = windowEl.scrollTop();
-    var headerHeight = 40;
+    var utilityNavOffset = $('.header-utility-nav').offset().top;
+    var utilityNavHeight = $('.header-utility-nav').outerHeight();
 
-    if (scrollTop > headerHeight) {
+    console.log('Nav Offset & Height', utilityNavOffset, utilityNavHeight);
+
+    if (scrollTop > utilityNavOffset + utilityNavHeight) {
       componentClass.addClass('eaton-header--fixed');
     } else {
       componentClass.removeClass('eaton-header--fixed');

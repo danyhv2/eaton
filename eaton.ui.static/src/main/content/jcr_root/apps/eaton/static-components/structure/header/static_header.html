@@ -1,9 +1,7 @@
 <sly data-sly-use.header="data/header-data.js">
     <div class="eaton-header">
         <!--/* Include: Full Page Drawer */*/-->
-        <div data-sly-unwrap="${!wcmmode.edit}">
-          <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/static-components/structure/full-page-drawer'}"></sly>
-        </div>
+        <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/static-components/structure/full-page-drawer'}"></sly>
 
         <!--/* Utility Navigation */-->
         <div class="header-utility-nav">
