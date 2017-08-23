@@ -44,27 +44,27 @@
             <options jcr:primaryType="cq:WidgetCollection">
               <primary-light
                 jcr:primaryType="nt:unstructured"
-                text="Primary theme over Light background"
+                text="White Button over Light background"
                 value="primary-light"/>
               <primary-dark
                 jcr:primaryType="nt:unstructured"
-                text="Primary theme over Dark background"
+                text="White Button over Dark background"
                 value="primary-dark"/>
               <secondary-light
                 jcr:primaryType="nt:unstructured"
-                text="Secondary theme over Light background"
+                text="Small White Button over Light background"
                 value="secondary-light"/>
               <secondary-dark
                 jcr:primaryType="nt:unstructured"
-                text="Secondary theme over Dark background"
+                text="Small White Button over Dark background"
                 value="secondary-dark"/>
               <tertiary-light
                 jcr:primaryType="nt:unstructured"
-                text="Tertiary theme over Light background"
+                text="Blue Button over Light background"
                 value="tertiary-light"/>
               <tertiary-dark
                 jcr:primaryType="nt:unstructured"
-                text="Tertiary theme over Dark background"
+                text="Blue Button over Dark background"
                 value="tertiary-dark"/>
             </options>
           </theme>

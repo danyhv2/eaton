@@ -5,6 +5,9 @@ use(function () {
   var data = {};
 
   data.sectionTitle = 'UPS models';
+  // NOTE: "maxAllowedColumns" should include the rowLabel Column + 5 content Columns
+  // Is not recommended to use more than 6 columns since there might not be enough space available in Desktop Breakpoint
+  data.maxAllowedColumns = 6;
 
   data.tableHeader = {
     columns: [
