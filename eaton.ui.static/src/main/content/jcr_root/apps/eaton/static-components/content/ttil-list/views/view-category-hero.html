@@ -2,23 +2,34 @@
     <div class="eaton-ttil-list-category-hero">
         <div class="row">
             <div class="col-xs-12">
-                <img src="${data.image}" class="visible-xs img-responsive category-hero__header-image" />
-                <img src="${data.mobile_image}" class="hidden-xs img-responsive category-hero__header-image" />
-                <div class="row category-hero__header-content">
-                    <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 text-left">
-                        <div class="category-hero-eye-brown text-left">
-                            <i class="glyphicon glyphicon-menu-left"></i>
-                            <a class="category-hero__header-cta" target="${data.cta._target}" href="${data.cta.url}">${data.cta.title}</a>
+                <!-- <img src="${data.mobile_image}" class="visible-xs img-responsive category-hero__header-image" />
+                <img src="${data.image}" class="hidden-xs img-responsive category-hero__header-image" /> -->
+                <div class="category-hero__header img-responsive">
+                    <!-- Start: Rendition Image Component -->
+                    <sly data-sly-use.tpl="../../../shared/templates/rendition-image.html">
+                    <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
+                    </sly>
+                    <!-- End: Rendition Image Component -->
+                </div>
+                <div class="row category-hero__header-content container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 text-left">
+                            <div class="category-hero-eye-brown text-left b-eyebrow-small">
+
+                                <a class="category-hero__header-cta" target="${data.cta._target}" href="${data.cta.url}"><i class="glyphicon glyphicon-menu-left" aria-hidden=true></i> ${data.cta.title}</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-2 text-left">
-                        <div class="category-hero__header-title">
-                            <h2 class="eaton-title__headline">${ data.title }</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 text-left">
+                            <div class="category-hero__header-title">
+                                <h2 class="eaton-title__headline b-heading-h1">${ data.title }</h2>
+                            </div>
+                            <div class="category-hero-bottomline"></div>
                         </div>
-                        <div class="category-hero-bottomline"></div>
-                    </div>
-                    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 category-hero-body-copy">
-                        <p>${data.text}</p>
+                        <div class="col-xs-12 col-md-6 category-hero-body-copy b-body-copy">
+                            <p>${data.text}</p>
+                        </div>
                     </div>
                 </div>
             </div>

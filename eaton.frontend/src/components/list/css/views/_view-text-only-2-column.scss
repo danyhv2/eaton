@@ -13,7 +13,7 @@
   }
 
   .category-item-date {
-      padding-top: 0;
+    padding-top: 0;
   }
 
   &__article {
@@ -27,25 +27,25 @@
 
 
   &__card {
-           display: flex;
-          flex-wrap: wrap;
-          flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
   }
 
   &__cta-container {
-      margin-top: 3px;
+    margin-top: 3px;
   }
 
 
 
-@include media-mobile-only {
+  @include media-mobile-only {
 
-    &__cta-container a{
+    &__cta-container a {
       width: 100%;
     }
 
-}
+  }
 
 
   @include media-desktop-and-up {
@@ -64,20 +64,20 @@
     }
 
     .category-item-date {
-        padding-top: 8px;
+      padding-top: 8px;
     }
 
-   &__description {
+    &__description {
       padding-bottom: 15px;
     }
 
-   &__article {
+    &__article {
       padding-top: 30px;
     }
 
 
     &__cta-container {
-        margin-top: 30px;
+      margin-top: 30px;
     }
 
   }
