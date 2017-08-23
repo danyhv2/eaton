@@ -57,8 +57,11 @@
 
 .country-selector-drawer__item-list { padding: 0; list-style: none; overflow: hidden; margin-bottom: 0; }
 
-@media screen and (min-width: 992px) { .country-selector-drawer__item-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .country-selector-drawer__item { display: none; }
-  .country-selector-drawer__item.active { display: block; }
+@media screen and (min-width: 992px) { .country-selector-drawer__header { margin-bottom: 30px; }
+  .country-selector-drawer__regions-list { list-style: none; }
+  .country-selector-drawer__regions-list li { margin-bottom: 30px; }
+  .country-selector-drawer__regions-list a { color: #FFF; }
+  .country-selector-drawer__item-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .country-selector-drawer__item { border: 0; }
   .country-selector-drawer__item-header { display: none; }
   .country-selector-drawer__item-country { -ms-flex-preferred-size: 25%; flex-basis: 25%; padding: 0 0 30px; } }

@@ -14,9 +14,20 @@
     <!--/* List of Regions & Countries/ Languages *-->
     <div class="container">
       <div class="row">
-        <div class="u-visible-desktop col-md-3 country-selector-drawer__regions">
-          List of regions goes here
-        </div>
+        <ul class="u-visible-desktop col-md-3 country-selector-drawer__regions-list" data-sly-list="${data.regionList}">
+          <li>
+            <a href="#drawer-collapse-${itemList.index}"
+            class="country-selector-drawer__item-link"
+            role="button"
+            aria-expanded="false"
+            aria-controls="drawer-collapse-${itemList.index}"
+            data-toggle="collapse"
+            data-parent="country-selector-drawer__item">
+                <span class="sr-only">Select your location</span>
+                ${item.regionName}
+            </a>
+            </li>
+        </ul>
 
         <div data-sly-list="${data.regionList}" class="col-sm-12 col-md-9 panel-group country-selector-drawer__list" role="tablist" aria-multiselectable="true">
                 <div class="panel country-selector-drawer__item">
