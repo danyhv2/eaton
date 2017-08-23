@@ -355,6 +355,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form .field-p label:not(.label):not(.label-position) { font-weight: 100; font-style: italic; font-size: 14px; color: #333f48; padding-top: 10px; width: 100%; }
 
+.eaton-form .field-p .label .inner { font-weight: 100; }
+
 .eaton-form ._50_left { width: 100%; float: left; }
 
 @media screen and (min-width: 768px) { .eaton-form ._50_left { margin-right: 10%; width: 45%; } }
