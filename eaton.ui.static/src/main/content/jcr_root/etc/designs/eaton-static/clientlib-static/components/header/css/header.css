@@ -74,7 +74,8 @@
   .search-open .header-primary-nav__open-search .icon-search { display: none; }
   .search-open .header-primary-nav__open-search .icon-close { display: block; top: -3px; font-size: 18px; } }
 
-@media screen and (min-width: 992px) { .level-2-open .mega-menu { visibility: visible; opacity: 1; } }
+@media screen and (min-width: 992px) { .level-2-open .mega-menu { visibility: visible; opacity: 1; }
+  .drawer-open { max-height: 2000; visibility: visible; } }
 
 .aem-AuthorLayer-Edit .mega-menu, .aem-AuthorLayer-Edit .header-search, .cq-wcm-edit .mega-menu, .cq-wcm-edit .header-search { position: relative !important; visibility: visible !important; opacity: 1 !important; z-index: 99999 !important; }
 

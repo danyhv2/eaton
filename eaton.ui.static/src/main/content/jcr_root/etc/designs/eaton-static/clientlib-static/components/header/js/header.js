@@ -63,6 +63,8 @@ App.header = function () {
 
     if (scrollTop > utilityNavOffset + utilityNavHeight) {
       componentClass.addClass('eaton-header--fixed');
+      // Close the drawer if open - Country Selector
+      bodyEl.removeClass('drawer-open');
     } else {
       componentClass.removeClass('eaton-header--fixed');
     }

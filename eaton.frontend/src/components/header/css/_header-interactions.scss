@@ -95,6 +95,11 @@
       opacity: 1;
     }
   }
+
+  .drawer-open {
+    max-height: 2000;
+    visibility: visible;
+  }
 }
 
 //-----------------------------------
