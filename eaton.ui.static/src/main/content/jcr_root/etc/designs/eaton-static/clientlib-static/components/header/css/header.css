@@ -82,7 +82,7 @@
 
 .aem-AuthorLayer-Edit .full-page-drawer__content, .aem-AuthorLayer-Edit .mega-menu__content, .aem-AuthorLayer-Edit .header-search__content, .cq-wcm-edit .full-page-drawer__content, .cq-wcm-edit .mega-menu__content, .cq-wcm-edit .header-search__content { display: block !important; }
 
-.aem-AuthorLayer-Edit .full-page-drawer, .cq-wcm-edit .full-page-drawer { max-height: 1000px !important; }
+.aem-AuthorLayer-Edit .full-page-drawer, .cq-wcm-edit .full-page-drawer { -webkit-transition: none; transition: none; max-height: 1000px !important; }
 
 .aem-AuthorLayer-Edit .header-search, .cq-wcm-edit .header-search { -webkit-transform: translateY(0) !important; transform: translateY(0) !important; -webkit-transition: none !important; transition: none !important; }
 
