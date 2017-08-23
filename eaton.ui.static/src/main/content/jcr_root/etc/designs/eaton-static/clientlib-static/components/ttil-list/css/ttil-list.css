@@ -12,7 +12,7 @@
 
 .carousel-component__arrow { display: none; }
 
-.carousel-component__arrow .icon { font-size: 37px; }
+.carousel-component__arrow .icon { font-size: 6.0rem; }
 
 .carousel-component__dots:only-child { display: none; }
 

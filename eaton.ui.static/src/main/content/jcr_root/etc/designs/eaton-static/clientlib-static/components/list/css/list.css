@@ -24,9 +24,9 @@
 
 .eaton-list-component .header-text__topmargin { margin-top: 5%; }
 
-.eaton-list-component .category__item { min-height: 231px; }
+.eaton-list-component .category__item { min-height: 310px; }
 
-.eaton-list-component .category-item-date { padding-top: 15px; color: #333F48; }
+.eaton-list-component .category-item-date { padding-top: 15px; }
 
 @media screen and (max-width: 767px) { .eaton-list-component .category__item-innerpadding { padding: 25px; }
   .eaton-list-component .carousel__item { min-height: 233px; }
