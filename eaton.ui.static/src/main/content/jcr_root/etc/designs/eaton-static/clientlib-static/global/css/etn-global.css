@@ -331,6 +331,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .dark-theme .rich-text-container ul li::before { background-color: #FFF; }
 
+.eaton-form-container { padding-top: 60px; }
+
 .eaton-form { font-family: Arial, 'Arial', sans-serif; }
 
 .eaton-form form { width: 100%; max-width: 870px; }
