@@ -487,17 +487,17 @@ use(function () {
   	        	title: 'Download High Resoution Image',
   		        url: '#link-1',
   		        target: '_self',
-                  external_link: false,
-                  document_size: 'PNG 8MB',
-                  document_download: 'http://www.eaton.com'
+                external_link: false,
+                document_size: 'PNG 8MB',
+                document_download: 'http://www.eaton.com'
   	         },
   	         {  	
    	        	title: 'Download High Resoution Image',
    		        url: '#link-2',
    		        target: '_self',
-                   external_link: false,
-                   document_size: 'PDF 15MB',
-                   document_download: 'http://www.eaton.com'
+                external_link: false,
+                document_size: 'PDF 15MB',
+                document_download: 'http://www.eaton.com'
    	         },
   		     {
   		        title: 'Market 1',
