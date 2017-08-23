@@ -69,17 +69,24 @@
 
 .text-only-2-column { padding-top: 60px; padding-bottom: 60px; }
 
-.text-only-2-column h2 { padding-bottom: 35px; }
+.text-only-2-column h2 { padding-bottom: 10px; }
 
-.text-only-2-column .b-eyebrow-small { padding: 15px 0 10px 0; }
+.text-only-2-column .b-eyebrow-small { padding: 0; }
 
-.text-only-2-column .category-item-date { padding-top: 8px; }
+.text-only-2-column .category-item-date { padding-top: 0; }
 
-.text-only-2-column__article { padding-top: 30px; }
+.text-only-2-column__article { padding-top: 0; }
+
+.text-only-2-column__description { padding-bottom: 15px; }
 
 .text-only-2-column__card { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
 
-@media screen and (min-width: 992px) { .text-only-2-column { padding-top: 120px; padding-bottom: 120px; } }
+@media screen and (min-width: 992px) { .text-only-2-column { padding-top: 120px; padding-bottom: 120px; }
+  .text-only-2-column h2 { padding-bottom: 35px; }
+  .text-only-2-column .b-eyebrow-small { padding: 15px 0 10px 0; }
+  .text-only-2-column .category-item-date { padding-top: 8px; }
+  .text-only-2-column__description { padding-bottom: 15px; }
+  .text-only-2-column__article { padding-top: 30px; } }
 
 .eaton-list-links { display: -webkit-box; display: -ms-flexbox; display: flex; }
 

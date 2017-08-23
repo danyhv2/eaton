@@ -5,19 +5,24 @@
 
 
   h2 {
-    padding-bottom: 35px;
+    padding-bottom: 10px;
   }
 
   .b-eyebrow-small {
-    padding: 15px 0 10px 0;
+    padding: 0;
   }
 
   .category-item-date {
-      padding-top: 8px;
+      padding-top: 0;
   }
 
   &__article {
-    padding-top: 30px;
+    padding-top: 0;
+  }
+
+
+  &__description {
+    padding-bottom: 15px;
   }
 
 
@@ -37,15 +42,29 @@
     padding-bottom: 120px;
 
 
+  h2 {
+    padding-bottom: 35px;
+  }
+
+
+  .b-eyebrow-small {
+    padding: 15px 0 10px 0;
+  }
+
+  .category-item-date {
+      padding-top: 8px;
+  }
+
+ &__description {
+    padding-bottom: 15px;
+  }
+
+ &__article {
+    padding-top: 30px;
+  }
+
 
   }
 
 
-
-
-
-
 }
-
-
-
