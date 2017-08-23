@@ -4,6 +4,8 @@
 
 .l2-hero__title, .l2-hero__text { color: #FFF; }
 
+.l2-hero__text { font-size: 2.0rem; line-height: 3.2rem; }
+
 @media screen and (min-width: 992px) { .l2-hero { height: 450px; } }
 
 .eaton-single-feature__headline, .eaton-single-feature__image { margin-bottom: 30px; }
