@@ -14,7 +14,7 @@
 
 .eaton-tabbed-menu-list__item > a { color: #333F48; }
 
-.eaton-tabbed-menu-list__item > a span { color: #005EB8; font-size: 20px; }
+.eaton-tabbed-menu-list__item > a span { color: #005EB8; font-size: 2.0rem; }
 
 .eaton-tabbed-menu-list__item > a.collapsed { color: #005EB8; }
 
