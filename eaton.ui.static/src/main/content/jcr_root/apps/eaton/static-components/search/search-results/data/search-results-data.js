@@ -319,7 +319,7 @@ use(function () {
         ]
       },
       "sortBy": {
-        "sortByLabel": "Sort by",
+        "sortByLabel": "Sort By",
         "items": [
           {
             "label": "Relevance",

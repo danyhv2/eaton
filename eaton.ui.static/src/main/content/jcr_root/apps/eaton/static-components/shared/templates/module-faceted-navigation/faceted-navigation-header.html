@@ -2,14 +2,32 @@
 
   <div class="faceted-navigation-header">
     <div class="faceted-navigation-header__header-top">
-      <div class="faceted-navigation-header__title">${ '{0} {1}' @ i18n, format=[ data.resultsCount, data.resultsLabel ] }</div>
+      <div class="faceted-navigation-header__title">
+        ${ '{0} {1}' @ i18n, format=[ data.resultsCount, data.resultsLabel ] }
+      </div>
       <div class="faceted-navigation-header__sort-options">
-        <select>
-            <option selected>${ data.sortBy.sortByLabel }</option>
-          <sly data-sly-list.sort="${ data.sortBy.items }">
-            <option value="${ sort.url }">${ sort.label }</option>
-          </sly>
-        </select>
+        <div class="dropdown">
+          <button id="dSortFacets"
+            class=""
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false" >
+            ${ data.sortBy.sortByLabel }
+            <i class="icon icon-chevron-down" aria-hidden="true"></i>
+          </button>
+          <ul data-sly-list="${ data.sortBy.items }"
+              class="dropdown-menu "
+              aria-labelledby="dSortFacets" >
+            <li>
+              <a href="${item.url}"
+               target="${item.target}"
+               aria-label="Go to ${item.label}" >
+               ${item.label}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
