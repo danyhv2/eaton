@@ -1,14 +1,23 @@
 <!--/* Country Selector: Drawer */-->
 <sly data-sly-use.data="${'../data/view-data.js' @testdata=properties.testdata}">
   <div class="country-selector--drawer">
-    <div class="container">
-        <div class="row">
-            <h2 class="col-sm-12 country-selector__header">${data.header}</h2>
 
-            <div class="u-visible-desktop col-md-3 country-selector__regions">
-              List of regions goes here
-            </div>
-            <div data-sly-list="${data.regionList}" class="col-sm-12 col-md-9 panel-group country-selector__list" role="tablist" aria-multiselectable="true">
+    <!--/* Header *-->
+    <div class="col-sm-12 country-selector__header">
+      <div class="container">
+        <div class="row">
+          <h2>${data.header}</h2>
+        </div>
+      </div>
+    </div>
+
+    <!--/* List of Regions & Countries/ Languages *-->
+    <div class="container">
+      <div class="row">
+        <div class="u-visible-desktop col-md-3 country-selector__regions">
+          List of regions goes here
+        </div>
+        <div data-sly-list="${data.regionList}" class="col-sm-12 col-md-9 panel-group country-selector__list" role="tablist" aria-multiselectable="true">
                 <div class="panel country-selector__item">
                     <div class="panel-heading country-selector__item-header" role="tab" id="${item.regionId}">
                         <a href="#collapse-${itemList.index}"
@@ -45,7 +54,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+      </div>
     </div>
  </div>
 </sly>
