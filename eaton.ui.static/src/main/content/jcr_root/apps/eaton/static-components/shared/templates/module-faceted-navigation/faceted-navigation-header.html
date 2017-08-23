@@ -2,39 +2,45 @@
 
   <div class="faceted-navigation-header">
     <div class="faceted-navigation-header__header-top">
-      <div class="faceted-navigation-header__title">${ '{0} {1}' @ i18n, format=[ data.resultsCount, data.resultsLabel ] }</div>
+      <div class="faceted-navigation-header__title">
+        ${ '{0} {1}' @ i18n, format=[ data.resultsCount, data.resultsLabel ] }
+      </div>
       <div class="faceted-navigation-header__sort-options">
-        <select>
-            <option selected>${ data.sortBy.sortByLabel }</option>
-          <sly data-sly-list.sort="${ data.sortBy.items }">
-            <option value="${ sort.url }">${ sort.label }</option>
-          </sly>
-        </select>
+        <div class="dropdown">
+          <button id="dSortFacets"
+            class=""
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false" >
+            ${ data.sortBy.sortByLabel }
+            <i class="icon icon-chevron-down" aria-hidden="true"></i>
+          </button>
+          <ul data-sly-list="${ data.sortBy.items }"
+              class="dropdown-menu "
+              aria-labelledby="dSortFacets" >
+            <li>
+              <a href="${item.url}"
+               target="${item.target}"
+               aria-label="Go to ${item.label}" >
+               ${item.label}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div data-sly-test="${ data.activeFilters.items.length }"
-      class="faceted-navigation-header__header-bottom">
+    <sly data-sly-use.tpl="../../shared/templates/module-faceted-navigation/faceted-navigation-filters.html">
+      <sly data-sly-call="${ tpl.module @ activeFilters=data.activeFilters }"></sly>
+    </sly>
 
-      <!--/* If There Are Active Filters */-->
-      <div data-sly-list.filter="${ data.activeFilters.items }"
-        class="faceted-navigation-header__active-filters">
-        <a class="faceted-navigation-header__filter-link"
-          href="${ filter.url }"
-          target="${ filter.target }"
-          aria-label="${ '{0} {1}' @ format=[ data.activeFilters.removeFilterLabel, filter.label ] }">
-          <i class="icon icon-close" aria-hidden="true"></i>
-          <span class="faceted-navigation-header__filter-label">${ filter.label }</span>
-        </a>
-      </div>
-
-      <!--/* Clear Filters */-->
-      <div class="faceted-navigation-header__filters-actions">
-        <a href="${ data.activeFilters.clearAllFilters.url }"
-          target="${ data.activeFilters.clearAllFilters.target }"
-          class="faceted-navigation-header__action-link">${ data.activeFilters.clearAllFilters.label }</a>
-      </div>
-    </div>
+    <a data-sly-test="${ data.activeFilters.items.length }"
+      target="_self"
+      data-toggle-modal-facet
+      class="open-facets-mobile b-button b-button__primary b-button__primary--light"
+      role="button">
+      ${ '{0} ({1})' @ i18n, format=[ 'Filters', data.activeFilters.items.length ] }
+    </a>
   </div>
-
 </template>
