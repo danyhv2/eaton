@@ -3,7 +3,7 @@
 
 
 <div class="col-xs-12">
-<h2>${data.title}</h2>
+<h2 class="b-heading-h2">${data.title}</h2>
 <p class="text-only-2-column__description">${data.description}</p>
 </div>
 </div>
@@ -24,10 +24,14 @@
     </div>
 
 
-    <!--/* Bottom CTA */-->
+   <!--/* Bottom CTA */-->
     <div class="row">
         <div class="col-xs-12 text-center text-only-2-column__cta-container">
-            <a href="${data.readmore_cta.url}" target="${data.readmore_cta.target}" class="b-button b-button__primary b-button__primary--light">${data.readmore_cta.title}</a>
+            <sly data-sly-resource="${'cta' @ resourceType='/apps/eaton/static-components/general/cta'}"></sly>
         </div>
     </div>
-</div>
+
+
+    </div>
+
+

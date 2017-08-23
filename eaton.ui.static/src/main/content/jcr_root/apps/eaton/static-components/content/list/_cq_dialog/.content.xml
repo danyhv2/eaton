@@ -55,6 +55,10 @@
                     jcr:primaryType="nt:unstructured"
                     text="Text only 2 column"
                     value="text-only-2-column"/>
+                  <text-only-3-column
+                    jcr:primaryType="nt:unstructured"
+                    text="Text only 3 column"
+                    value="text-only-3-column"/>
                 </items>
               </view>
             </items>
