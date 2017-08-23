@@ -33,7 +33,19 @@
 
   }
 
+  &__cta-container {
+      margin-top: 3px;
+  }
 
+
+
+@include media-mobile-only {
+
+    &__cta-container a{
+      width: 100%;
+    }
+
+}
 
 
   @include media-desktop-and-up {
@@ -42,27 +54,31 @@
     padding-bottom: 120px;
 
 
-  h2 {
-    padding-bottom: 35px;
-  }
+    h2 {
+      padding-bottom: 35px;
+    }
 
 
-  .b-eyebrow-small {
-    padding: 15px 0 10px 0;
-  }
+    .b-eyebrow-small {
+      padding: 15px 0 10px 0;
+    }
 
-  .category-item-date {
-      padding-top: 8px;
-  }
+    .category-item-date {
+        padding-top: 8px;
+    }
 
- &__description {
-    padding-bottom: 15px;
-  }
+   &__description {
+      padding-bottom: 15px;
+    }
 
- &__article {
-    padding-top: 30px;
-  }
+   &__article {
+      padding-top: 30px;
+    }
 
+
+    &__cta-container {
+        margin-top: 30px;
+    }
 
   }
 

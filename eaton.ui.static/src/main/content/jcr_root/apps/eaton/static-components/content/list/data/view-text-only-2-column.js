@@ -8,6 +8,7 @@ use(function () {
 
 			title: "In the news",
 			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat, est ut egestas ultricies, est nisi viverra odio, quis convallis neque tortor a diam. Mauris fermentum eu ante eu posuere. Sed in lacus at neque bibendum suscipit quis eu massa. Phasellus viverra massa in accumsan congue.",
+			readmore_cta: {url: 'http://www.eaton.com', target: '_blank', title:'View all press releases'},
 
 	        cards: [
 	            {
