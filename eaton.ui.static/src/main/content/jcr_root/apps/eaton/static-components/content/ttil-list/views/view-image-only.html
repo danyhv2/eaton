@@ -1,7 +1,7 @@
 <sly data-sly-use.data="${'../data/view-image-only-data.js' @testdata=properties.testdata}">
-    <div class="eaton-ttil-image-list" data-sly-list="${ data.items }">
+    <div class="eaton-ttil-image-list">
       <!--/* Check if Grid is enabled */-->
-      <div class="${ properties.toggleInnerGrid } ? 'container' : 'eaton-ttil-image-list_container'">
+      <div data-sly-list="${ data.items }" class="${properties.toggleInnerGrid ? 'container' : ''} eaton-ttil-image-list__container">
         <div class="eaton-ttil-image-list__item">
             <!--/* When Image has Headline & No Url */-->
             <div data-sly-test="${!item.url && item.headline}" class="eaton-ttil-image-list__content">

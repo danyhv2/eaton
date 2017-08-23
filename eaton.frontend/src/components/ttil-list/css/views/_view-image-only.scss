@@ -3,9 +3,12 @@
 //-----------------------------------
 
 .eaton-ttil-image-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
   &__item {
     flex-basis: 31%;
@@ -26,7 +29,9 @@
   // Mobile-Tablet Breakpoint
   // ----------------------------
   @include media-mobile-and-tablet {
-    flex-direction: column;
+    &__container {
+      flex-direction: column;
+    }
 
     &__item {
       flex-basis: 100%;
