@@ -363,6 +363,9 @@ use(function () {
     "icon-book",
     "icon-bulb",
     "icon-calendar",
+    "icon-checklist",
+    "icon-checkmark",
+    "icon-chevron-up",
     "icon-chevron-down",
     "icon-chevron-left",
     "icon-chevron-right",
@@ -379,7 +382,7 @@ use(function () {
     "icon-link-external",
     "icon-list-checkmark",
     "icon-list-items",
-    "icon-checklist",
+    "icon-livechat",
     "icon-marker",
     "icon-phone",
     "icon-plane",
@@ -390,14 +393,13 @@ use(function () {
     "icon-search-minus",
     "icon-search-plus",
     "icon-search",
+    "icon-share",
     "icon-shopping-cart",
     "icon-sign-minus",
     "icon-sign-plus",
     "icon-tiles",
     "icon-tree",
-    "icon-user",
-    "icon-livechat",
-    "icon-share"
+    "icon-user"
   ];
 
   return data;
