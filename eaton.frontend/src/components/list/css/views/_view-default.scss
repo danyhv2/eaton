@@ -78,15 +78,12 @@
   }
 
   .category__item {
-    min-height: 231px;
+    min-height: 310px;
   }
 
   .category-item-date {
     padding-top: 15px;
-    color: $color__primary-gray1;
   }
-
-
 
   @include media-mobile-only {
     .category__item-innerpadding {
