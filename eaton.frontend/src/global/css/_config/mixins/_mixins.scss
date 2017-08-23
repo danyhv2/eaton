@@ -4,15 +4,17 @@
 
 // Typography
 //--------------
-@function calculate-rem($size) {
-  $rem-size: $size / 16px;
+$base-size: $base__font-size;
+
+@function rem($size) {
+  $rem-size: $size / $base-size;
   @return #{$rem-size}rem;
 }
 
-@mixin font-size($size) {
-  font-size: $size; // Fallback in px
-  font-size: calculate-rem($size);
-}
+// @mixin font-size($size) {
+//   font-size: $size; // Fallback in PX
+//   font-size: rem($size);
+// }
 
 
 // Size
@@ -27,9 +29,22 @@
   @include size($size, $size);
 }
 
+// Size
+//--------------
+@mixin component-spacing($spacing: $spacing__sm) {
+  padding: $spacing 0;
+}
+
 
 // Layout Mixins
 //--------------
+@mixin absolute-fill() {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
 
 // Clearfix (from Bootstrap v3.3.7)
 //

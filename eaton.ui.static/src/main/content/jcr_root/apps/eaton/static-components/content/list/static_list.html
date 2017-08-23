@@ -1,11 +1,23 @@
 <sly data-sly-test="${ wcmmode.edit }">
-    <div class="alert alert-warning">List Component - Edit Start</div>
+    <div class="alert alert-warning">List Component</div>
 </sly>
 
-<sly data-sly-test="${properties.view == 'default'}">
-    <sly data-sly-include="views/view-default.html" data-sly-unwrap></sly>    
+<sly data-sly-test="${properties.view == 'nofeaturedarticle'}">
+    <sly data-sly-include="views/view-default.html" data-sly-unwrap></sly>
 </sly>
 
-<sly data-sly-test="${ wcmmode.edit }">
-    <div class="alert alert-warning">List Component - Edit End</div>
+<sly data-sly-test="${properties.view == 'featuredarticle'}">
+    <sly data-sly-include="views/view-featured-article.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${properties.view == 'article-list-single-feature'}">
+    <sly data-sly-include="views/view-article-list-single-feature.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${properties.view == 'links'}">
+    <sly data-sly-include="views/view-links.html"></sly>
+</sly>
+
+<sly data-sly-test="${properties.view == 'related-products'}">
+    <sly data-sly-include="views/view-related-products.html"></sly>
 </sly>

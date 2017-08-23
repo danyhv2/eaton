@@ -1,0 +1,142 @@
+//------------------------------------------
+// Component M-37: Product Card Family
+//------------------------------------------
+
+
+// Results Grid Wrapper
+//-----------------------------------
+.product-grid-results--family {
+
+  .results-list__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: 0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .container { width: 100%; }
+
+    .results-list {
+      // Override Bootstrap's grid gutter so the Image goes from edge to edge of the screen
+      margin-left: ($grid__gutter-width * -1); // Negative Margin
+      margin-right: ($grid__gutter-width * -1); // Negative Margin
+    }
+
+    .results-list__bottom {
+      margin-top: 0;
+    }
+  }
+
+}
+
+
+
+//-----------------------------------
+// Each Grid Item
+//-----------------------------------
+.product-card-family {
+
+  // Local Variables
+  //--------------
+  $color__image-border: $color__secondary-gray5;
+  $color__image-bg: $color__secondary-gray6;
+
+  position: relative;
+  width: 100%;
+  margin-bottom: 42px;
+
+  &__link {
+    @include absolute-fill();
+    z-index: 1;
+
+    // height: 20px; top: 20px; left: 20px; width: 20px; background-color: rgba(#639, 0.5); // TODO: Delete these Debug Stlyes
+  }
+
+  &__image-wrapper {
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    padding-top: 100%; // 1:1 Aspect Ratio
+    margin-bottom: 22px;
+  }
+
+  &__image {
+    position: absolute;
+    background-color: $color__image-bg;
+    border: 1px solid $color__image-border;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__content-wrapper {
+    // Empty selector for future reference
+  }
+
+
+  &__name {
+    color: $color__primary-blue;
+    font-family: $font-family__secondary;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-top: 18px;
+    margin-bottom: 0;
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: 0 to 767px
+  //-----------------------------------
+  @include media-mobile-only {
+    width: 100%;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__content-wrapper {
+      // It Adds extra padding since Bootstrap Grid container paddings were overriten for this component
+      padding: 0 $grid__gutter-width;
+    }
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: 768px to 991px
+  //-----------------------------------
+  @include media-tablet-only {
+    width: 50%;
+
+    &__content-wrapper {
+      // It Adds extra padding since Bootstrap Grid container paddings were overriten for this component
+      padding: 0 $grid__gutter-width;
+    }
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: >992 px
+  //-----------------------------------
+  @include media-desktop-and-up {
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 52px;
+
+    // Remove Margin for every 3rd Item in the row
+    &:nth-child(3n+3) { margin-right: 0; }
+
+    &__name {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+
+}

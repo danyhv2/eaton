@@ -17,10 +17,12 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <text
+                    <transQuote
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
-                        name="./quote"
+                        sling:resourceType="/apps/eaton/foundation/cq/gui/components/authoring/dialog/richtext"
+                        fieldLabel="Quote"
+                        name="./transQuote"
+                        required="true"
                         useFixedInlineToolbar="{Boolean}true">
                         <uiSettings jcr:primaryType="nt:unstructured">
                             <cui jcr:primaryType="nt:unstructured">
@@ -36,17 +38,19 @@
                                 </inline>
                             </cui>
                         </uiSettings>
-                    </text>
+                    </transQuote>
                     <transAuthorName
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/textfield"
                         fieldLabel="Author Name"
-                        name="./transAuthorName"/>
+                        name="./transAuthorName"
+                        required="true"/>
                     <transDesignation
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/textfield"
                         fieldLabel="Designation"
-                        name="./transDesignation"/>
+                        name="./transDesignation"
+                        required="true"/>
                 </items>
             </column>
         </items>

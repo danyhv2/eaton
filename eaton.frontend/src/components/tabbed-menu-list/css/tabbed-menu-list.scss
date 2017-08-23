@@ -1,0 +1,188 @@
+//-----------------------------------
+// Component M-46: Tabbed Menu List | Category Menu
+//-----------------------------------
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-tabbed-menu-list {
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  &__title {
+
+    display: block;
+    padding: $spacing__md / 2 0;
+    font-weight: bold;
+
+    span {
+
+      &::before {
+        @extend %icon-sign-minus;
+      }
+    }
+
+    &.collapsed {
+
+      span {
+
+        &::before {
+          @extend %icon-sign-plus;
+        }
+      }
+    }
+  }
+
+  &__item {
+    padding: 0;
+    border-bottom: 1px solid $color__secondary-gray6;
+
+    a {
+      display: block;
+      padding-bottom: $spacing__md / 2;
+    }
+
+    > a {
+      color: $color__primary-gray1;
+
+      span {
+        color: $color__primary-blue;
+        font-size: 20px;
+      }
+
+      &.collapsed {
+        color: $color__primary-blue;
+      }
+    }
+  }
+
+  @include media-desktop-and-up {
+
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+      padding-right: 30px;
+    }
+
+    &__title {
+
+      padding: 50px 0;
+      border-bottom: 1px solid $color__secondary-gray6;
+
+      &.active {
+        border-bottom: 5px solid $color__primary-blue;
+
+        &.desktop.link {
+          border-bottom: 1px solid $color__secondary-gray6;
+        }
+      }
+    }
+
+    &__item {
+      border-color: transparent;
+
+      > a {
+        color: $color__primary-blue;
+
+        &.active {
+          color: $color__primary-gray1;
+
+          &.desktop.link {
+            color: $color__primary-blue;
+          }
+        }
+      }
+
+      a {
+        padding-bottom: 50px;
+        color: $color__primary-blue;
+      }
+    }
+
+    &__tab-links {
+      border-left: 1px solid $color__primary-gray3;
+    }
+
+    &__tabs {
+      display: block;
+      overflow: hidden;
+    }
+
+    &__item {
+      border-bottom: 0;
+
+      &.desktop {
+        flex: 0 0 33%;
+
+        &.primary {
+          order: 1;
+        }
+
+        &.secondary {
+          order: 3;
+        }
+
+        &.tertiary {
+          order: 5;
+        }
+
+        &.quaternary {
+          order: 7;
+        }
+
+        &.quinary {
+          order: 9;
+        }
+      }
+    }
+
+    &__tab {
+      min-height: 0;
+
+      &.desktop {
+
+        &.primary {
+          order: 2;
+        }
+
+        &.secondary {
+          order: 4;
+        }
+
+        &.tertiary {
+          order: 6;
+        }
+
+        &.quaternary {
+          order: 8;
+        }
+
+        &.quinary {
+          order: 10;
+        }
+      }
+    }
+
+    .tab-content {
+      background: $color__secondary-gray6; // padding-top: 50px;
+    }
+
+    .tab-pane {
+      padding: 50px 0;
+    }
+
+    .tab-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+}

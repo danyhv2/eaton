@@ -1,0 +1,19 @@
+<sly data-sly-use.data="../data/view-horizontal-data.js">
+
+  <!--/* Link List Horizontal */-->
+  <div class="link-list-horizontal">
+    <ul
+      data-sly-list="${ data.view.links }"
+      class="link-list-horizontal__list"
+    >
+      <li class="link-list-horizontal__list-item">
+        <a href="${ item.url }"
+          aria-label="Go to ${ item.title }"
+          class="link-list-horizontal__list-link"
+          target="${ item.target }"
+        >${ item.title }</a>
+      </li>
+    </ul>
+  </div>
+
+</sly>

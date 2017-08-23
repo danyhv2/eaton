@@ -1,0 +1,17 @@
+<sly data-sly-use.data="${'../data/view-tile-links-data.js' @testdata=properties.testdata}">
+    <div class="tile-link-component container">
+        <div class="tile-link-component__container">
+            <div class="row" data-sly-list.tile="${data.element}">
+                <a class="col-xs-12 col-md-3 tile-link-component__element tile-link-component__element--${tileList.index}" data-sly-test="${!tile.image}" href="${tile.link}"
+                   target="${tile.openNewWindow ? '_blank' : '_self'}">
+                    <h2 class="tile-link-component__title">${tile.title} <span class="tile-link-component__arrow glyphicon glyphicon-menu-right arrow"></span></h2>
+                </a>
+                <a class="col-xs-12 col-md-3 tile-link-component__element tile-link-component__element--${tileList.index}" data-sly-test="${tile.image}" href="${tile.link}"
+                   target="${tile.openNewWindow ? '_blank' : '_self'}"
+                   style="background:url('${tile.image @ context='styleString'}') center no-repeat; background-size: cover">
+                    <h2 class="tile-link-component__title ${tile.image != '' ? 'tile-link-component__title--background' : ''  }">${tile.title} <span class="tile-link-component__arrow glyphicon glyphicon-menu-right arrow"></span></h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</sly>

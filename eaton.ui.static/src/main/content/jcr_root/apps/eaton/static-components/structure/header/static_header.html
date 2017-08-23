@@ -1,21 +1,27 @@
-
-<sly data-sly-use.header="header-data.js">
+<sly data-sly-use.header="data/header-data.js">
     <div class="eaton-header">
         <!--/* Include: Full Page Drawer */*/-->
-        <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/static-components/structure/full-page-drawer'}"></sly>
+        <div data-sly-unwrap="${!wcmmode.edit}">
+          <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/static-components/structure/full-page-drawer'}"></sly>
+        </div>
 
         <!--/* Utility Navigation */-->
         <div class="header-utility-nav">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-9 header-utility-nav__toggle-selector">
+                <div class="row header-utility-nav__row">
+                    <div class="header-utility-nav__toggle-selector">
                         <a href="#" class="open-country-selector">
+                            <i class="icon icon-globe" aria-hidden="true"></i>
                             <span class='header-utility-nav__country'>${header.defaultLabels.country}</span>
                             <span class='header-utility-nav__language'>${header.defaultLabels.language}</span>
+                            <i class="icon icon-chevron-down" aria-hidden="true"></i>
                         </a>
                     </div>
-                    <div class="col-xs-3 header-utility-nav__sign-in">
-                        <a href="#" class='open-sign-in'>${header.defaultLabels.signIn}</a>
+                    <div class="header-utility-nav__sign-in">
+                        <a href="#" class='open-sign-in'>
+                          <i class="icon icon-user" aria-hidden="true"></i>
+                          <span class='header-utility-nav__signin'>${header.defaultLabels.signIn}</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -32,27 +38,37 @@
 
                     <!--/* Link List: Primary Navigation  */-->
                     <div class="header-primary-nav__menu">
-                        <sly data-sly-use.tpl="../../content/link-list/views/view-primary-nav.html">
-                          <sly data-sly-call="${ tpl.primaryNavigation @ data=header.primaryNavigation }"></sly>
-                        </sly>
+                        <sly data-sly-resource="${'header-links' @ resourceType='/apps/eaton/static-components/general/link-list'}"></sly>
                     </div>
 
                     <!--/* Search & Mobile Hamburger Menu  */-->
                     <div class="header-primary-nav__links">
-                        <a href="#" class="header-primary-nav__open-search">
+                        <button class="button--reset header-primary-nav__open-search">
                           <span class="sr-only">Search</span>
-                          <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="header-primary-nav__open-mobile-menu">
-                          <span class="sr-only">Open Mobile Menu</span>
-                          <i class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></i>
-                        </a>
+                          <i class="icon icon-search" aria-hidden="true"></i>
+                          <i class="icon icon-close" aria-hidden="true"></i>
+                        </button>
+                        <button class="button--reset header-primary-nav__toggle-mobile-menu">
+                          <span class="sr-only">Toggle Mobile Menu</span>
+                          <i class="icon icon-hamburger" aria-hidden="true"></i>
+                          <i class="icon icon-close" aria-hidden="true"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!--/* Include: Primary Nav Search */-->
+        <div data-sly-unwrap="${!wcmmode.edit}">
+          <div class="header-search dark-theme">
+            <sly data-sly-resource="${'primary-nav-search' @ resourceType='eaton/static-components/search/search-box'}"></sly>
+          </div>
+        </div>
+
         <!--/* Include: Mega Menu */-->
-        <sly data-sly-resource="${'mega-menu' @ resourceType='eaton/static-components/structure/mega-menu'}"></sly>
+        <div data-sly-unwrap="${!wcmmode.edit}">
+          <sly data-sly-resource="${'mega-menu' @ resourceType='eaton/static-components/layout/mega-menu'}"></sly>
+        </div>
+
     </div>
 </sly>

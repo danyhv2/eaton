@@ -1,0 +1,60 @@
+<template data-sly-template.module="${ @ data }">
+  <div class="module-product-detail-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 module-product-detail-card--image-container">
+          <img class="img-responsive"
+              alt="${data.image.altText}"
+              src="${data.image.desktop}"
+              data-src="${data.image.desktop}"
+              data-desktop-rendition="${data.image.desktop}"
+              data-tablet-rendition="${data.image.tablet}"
+              data-mobile-rendition="${data.image.mobile}" />
+
+          <!-- Start: Rendition Image Component -->
+          <!-- <sly data-sly-use.tpl="../../shared/templates/rendition-image.html">
+            <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
+          </sly> -->
+          <!-- End: Rendition Image Component -->
+
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h1 class="module-product-detail-card__title">
+            ${ data.title }
+          </h1>
+          <div class="module-product-detail-card__description b-body-copy">
+            ${ data.description }
+          </div>
+          <div data-sly-test="${ data.price }"
+               class="module-product-detail-card__price b-body-copy-small">
+            <b>${ 'LIST PRICE' @ i18n }</b>
+            <span>${data.price}</span>
+          </div>
+          <div class="module-product-detail-card__actions">
+            <a href="${data.cta.url}"
+               aria-label="Go to ${ data.cta.title }"
+               target="${ tada.cta.target }"
+               class="b-button b-button__tertiary b-button__tertiary--light" >
+              ${ data.cta.title }
+            </a>
+          </div>
+          <div class="module-product-detail-card__links">
+            <div>
+              <ul data-sly-list="${data.links}">
+                <li>
+                  <a  href="${item.url}"
+                      aria-label="Go to ${ item.title }"
+                  ><i data-sly-test="${item.target == '_blank'}"
+                      class="icon icon-link-external"
+                      aria-hidden="true"></i>
+                    ${ item.title }
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

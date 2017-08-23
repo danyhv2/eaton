@@ -2,69 +2,162 @@
 // Styleguide - Buttons
 //-----------------------------------
 
+.button--reset {
+  border: 0;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  appearance: none;
+}
+
 .b-button {
   background: none;
+  text-shadow: none;
   border-radius: 0;
   border-style: solid;
   display: inline-block;
   font-weight: bold;
   max-width: 600px;
 
-  &--with-icon {
 
-    .icon {
-      margin-left: 1rem;
-    }
-  }
-
-  &--primary {
+  // Primary Button
+  //--------------
+  &__primary {
     border-width: 3px;
-    font-size: 1.6em;
+    font-size: 1.9rem; // Mobile Size
     padding: 20px 40px;
 
-  }
-
-  &--secondary {
-    border-width: 3px;
-    font-size: 1.4em;
-    padding: 20px;
-  }
-
-  &--light {
-    border-color: $color__primary-blue;
-    color: $color__primary-blue;
-    padding: 20px 40px;
-    font-size: 1.6em;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: $color__white;
-      background: $color__primary-blue;
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__primary--light {
       border-color: $color__primary-blue;
-      text-decoration: none;
+      color: $color__primary-blue;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color__white;
+        background: $color__primary-blue;
+        text-decoration: none;
+      }
+    }
+
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__primary--dark {
+      border-color: $color__white;
+      color: $color__white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color__primary-blue;
+        background: $color__white;
+        text-decoration: none;
+      }
+    }
+
+    @include media-desktop-and-up {
+      font-size: 2rem; // Desktop size
+    }
+
+  }
+
+
+  // Secondary Button
+  //--------------
+  &__secondary {
+    border-width: 3px;
+    font-size: 1.6rem; // Mobile Size
+    padding: 20px;
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__secondary--light {
+      border-color: $color__primary-blue;
+      color: $color__primary-blue;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color__white;
+        background: $color__primary-blue;
+        text-decoration: none;
+      }
+    }
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__secondary--dark {
+      border-color: $color__white;
+      color: $color__white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color__primary-blue;
+        background: $color__white;
+        text-decoration: none;
+      }
+    }
+
+
+    @include media-desktop-and-up {
+      font-size: 1.4rem; // Desktop size
     }
   }
 
-  &--dark {
-    border-color: $color__white;
-    color: $color__white;
 
-    &:hover,
-    &:active,
-    &:focus {
-      color: $color__primary-blue;
-      background: $color__white;
-      border-color: $color__white;
-      text-decoration: none;
+  // Tertiary Button
+  //--------------
+  &__tertiary {
+    border-width: 3px;
+    font-size: 1.9rem; // Mobile Size
+    padding: 20px 40px;
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__tertiary--light {
+      border-color: $color__primary-blue;
+      background-color: $color__primary-blue;
+      color: $color__white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $color__white;
+        color: $color__primary-blue;
+        text-decoration: none;
+      }
     }
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__tertiary--dark {
+      border: 0;
+      background-color: $color__primary-blue;
+      color: $color__white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $color__white;
+        color: $color__primary-blue;
+        text-decoration: none;
+      }
+    }
+
+
+    @include media-desktop-and-up {
+      font-size: 2rem; // Desktop size
+    }
+
   }
 }
 
 @include media-mobile-only {
 
   .b-button {
-    width: 100%;
+    max-width: 100%;
+
+    &__secondary {
+      font-size: 1em;
+    }
   }
 
 }

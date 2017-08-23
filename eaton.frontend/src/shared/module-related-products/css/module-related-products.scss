@@ -1,0 +1,75 @@
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+.module-related-products {
+  position: relative;
+
+  &__slides {
+    padding: 0;
+
+    .slides {
+      position: relative;
+    }
+
+    a {
+      z-index: 10;
+    }
+  }
+
+  &__dots {
+    text-align: center;
+    padding-top: 10px;
+
+    @include media-tablet-and-up {
+      padding-top: 40px;
+    }
+
+    li {
+      display: inline;
+      padding-right: 10px;
+    }
+
+    button {
+      height: 10px;
+      width: 10px;
+      border: 10px;
+      line-height: 0;
+      display: inline;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border-radius: 10px;
+      background-color: $color__secondary-gray5;
+    }
+  }
+
+  &__arrows {
+    position: absolute;
+    top: 25%;
+    color: $color__secondary-gray4;
+    display: none !important; // stylelint-disable-line declaration-no-important
+
+    .icon {
+      font-size: 37px;
+    }
+  }
+
+  &__prev-arrow {
+    left: 42px;
+  }
+
+  &__next-arrow {
+    right: 42px;
+  }
+
+  .slick-active button {
+    background-color: $color__primary-blue;
+  }
+
+  @include media-desktop-large {
+    &:hover .module-related-products__arrows {
+      display: block !important; // stylelint-disable-line declaration-no-important
+    }
+  }
+}

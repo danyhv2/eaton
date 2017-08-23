@@ -1,0 +1,22 @@
+<sly data-sly-use.data="${'../data/view-single-feature-data.js' @testdata=properties.testdata}">
+  <div class="eaton-single-feature">
+    <p class="eaton-single-feature__headline b-eyebrow-small">${data.title}</p>
+    <div class="eaton-single-feature__image">
+      <img class="img-responsive" src="${data.imgSrc}" alt=${data.title} />
+    </div>
+    <div class="eaton-single-feature__content">
+      <!--/* Eyebrow */-->
+      <div class="eaton-single-feature__eyebrow b-eyebrow-small">${ data.text }</div>
+
+      <!--/* List Links */-->
+      <ul data-sly-list="${ data.cta }" class="eaton-single-feature__links">
+        <li>
+          <a href="${ item.url }" class="eaton-single-feature__item" aria-label="Go to ${ item.text }" target="${ item.target }">
+            <span>${ item.text }</span>
+            <i class="icon icon-chevron-right" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</sly>

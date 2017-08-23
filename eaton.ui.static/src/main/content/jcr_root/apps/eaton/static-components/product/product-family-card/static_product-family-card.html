@@ -1,0 +1,51 @@
+<!--/* EATON-109: Product Family Card */-->
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Family Card Component</div>
+</sly>
+
+
+<sly data-sly-use.data="${ '../data/product-family-card-data.js' @testdata=properties.testdata }">
+
+  <div class="eaton-product-family-card">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <div class="eaton-product-family-card__header b-heading-h1">${data.header}</div>
+          <div class="eaton-product-family-card__separator"></div>
+          <div class="eaton-product-family-card__description b-body-copy">${data.description}</div>
+        </div>
+        <div class="col-xs-12 col-md-4 eaton-product-family-card__image-wrapper">
+          <!-- Start: Rendition Image Component -->
+          <sly data-sly-use.tpl="../../shared/templates/rendition-image.html">
+            <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
+          </sly>
+          <!-- End: Rendition Image Component -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8 eaton-product-family-card__link-wrapper">
+          <div class="row">
+            <div class="col-xs-12 col-md-6 eaton-product-family-card__cta">
+              <a href="${data.ctaLink}" class="b-button b-button__tertiary b-button__tertiary--light" title="${data.ctaText}" target="${data.ctaTarget}">${data.ctaText}</a>
+            </div>
+            <div class="col-xs-12 col-md-6 eaton-product-family-card__links" data-sly-list.link="${data.secondaryLinks}">
+              <a href="${link.link}" title="${link.text}" target="${link.target}"> <i class="icon icon-link-external" data-sly-test="${link.external}" aria-hidden="true"></i> ${link.text}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Include the Icon List component here (Highlights View) -->
+  <div>
+    <sly data-sly-resource="${'icon-list' @ resourceType='/apps/eaton/static-components/content/icon-list'}"></sly>
+  </div>
+  <!--  Add markup here to support the Core Features/Benefits content -->
+  <div>
+    <sly data-sly-resource="${'product-features' @ resourceType='/apps/eaton/static-components/product/product-features'}"></sly>
+  </div>
+</sly>

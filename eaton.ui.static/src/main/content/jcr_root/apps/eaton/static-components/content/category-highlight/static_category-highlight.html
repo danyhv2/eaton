@@ -1,7 +1,15 @@
 <sly data-sly-test="${ wcmmode.edit }">
-    <div class="alert alert-info">Category Highlight Component</div>
+  <div class="alert alert-info">Category Highlight Component</div>
 </sly>
 
-<sly data-sly-resource="${'title-text-image-link' @ resourceType='eaton/static-components/content/title-text-image-link'}"></sly>
+<div class="category-highlight">
 
-<sly data-sly-resource="${'list' @ resourceType='eaton/static-components/content/list'}"></sly>
+  <div class="category-highlight__top">
+    <sly data-sly-resource="${'ttil' @ resourceType='eaton/static-components/content/ttil'}"></sly>
+  </div>
+
+  <div class="category-highlight__bottom">
+    <sly data-sly-resource="${'list' @ resourceType='eaton/static-components/content/list'}"></sly>
+  </div>
+
+</div>

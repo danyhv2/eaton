@@ -6,7 +6,7 @@
 //--------------
 @mixin media-mobile-only {
   @media screen
-  and ( max-width: $grid__xs-max ) {
+    and ( max-width: $grid__xs-max ) {
 
     @content;
 
@@ -18,7 +18,7 @@
 //--------------
 @mixin media-mobile-portrait {
   @media screen
-  and (max-width: $grid__xs - 1 ) {
+    and ( max-width: $grid__xs - 1 ) {
 
     @content;
 
@@ -30,8 +30,8 @@
 //--------------
 @mixin media-mobile-landscape {
   @media screen
-  and (min-width: $grid__xs )
-  and (max-width: $grid__xs-max ) {
+    and ( min-width: $grid__xs )
+    and ( max-width: $grid__xs-max ) {
 
     @content;
 
@@ -43,7 +43,7 @@
 //--------------
 @mixin media-mobile-landscape-and-up {
   @media screen
-  and (min-width: $grid__xs ) {
+    and ( min-width: $grid__xs ) {
 
     @content;
 
@@ -55,7 +55,7 @@
 //--------------
 @mixin media-mobile-and-tablet {
   @media screen
-  and (max-width: $grid__sm-max ) {
+    and ( max-width: $grid__sm-max ) {
 
     @content;
 
@@ -70,7 +70,7 @@
 //--------------
 @mixin media-tablet-and-up {
   @media screen
-  and (min-width: $grid__sm ) {
+    and ( min-width: $grid__sm ) {
 
     @content;
 
@@ -81,8 +81,8 @@
 //--------------
 @mixin media-tablet-only {
   @media screen
-  and (min-width: $grid__sm )
-  and (max-width: $grid__sm-max) {
+    and ( min-width: $grid__sm )
+    and ( max-width: $grid__sm-max) {
 
     @content;
 
@@ -99,7 +99,7 @@
 //--------------
 @mixin media-desktop-and-up {
   @media screen
-  and (min-width: $grid__md ) {
+    and ( min-width: $grid__md ) {
 
     @content;
 
@@ -110,8 +110,8 @@
 //--------------
 @mixin media-desktop-only {
   @media screen
-  and (min-width: $grid__md )
-  and (max-width: $grid__md-max) {
+    and ( min-width: $grid__md )
+    and ( max-width: $grid__md-max ) {
 
     @content;
 
@@ -130,7 +130,7 @@
 //--------------
 @mixin media-desktop-large {
   @media screen
-  and (min-width: $grid__lg ) {
+    and ( min-width: $grid__lg ) {
 
     @content;
 

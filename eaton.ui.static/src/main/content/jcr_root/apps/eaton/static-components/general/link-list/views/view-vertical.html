@@ -1,0 +1,36 @@
+<sly data-sly-use.data="${'../data/view-vertical-data.js' @testdata=properties.testdata}">
+
+  <div class="eaton-link-list-vertical">
+
+    <!--/* If Eyebrow */-->
+    <div data-sly-test="${ data.view.eyebrow }" class="eaton-link-list-vertical__eyebrow b-eyebrow-small">${ data.view.eyebrow }</div>
+
+    <!--/* List Links */-->
+    <ul
+      data-sly-list="${ data.view.links }"
+      class="eaton-link-list-vertical__list"
+    >
+      <li class="eaton-link-list-vertical__list-item">
+        <a href="${item.document_download ? item.document_download : item.url}"
+          aria-label="Go to ${ item.title }"
+          class="eaton-link-list-vertical__list-link"
+          target="${ item.external_link ? '_blank' : '_self' }"
+          data-sly-attribute.download="${ item.document_download}">
+          <span class="eaton-link-list-vertical__list-text">
+            <i data-sly-test="${item.external_link}" class="eaton-link-list-vertical__external-icon icon icon-link-external" aria-hidden="true"></i>
+            <i data-sly-test="${ item.document_download }" class="eaton-link-list-vertical__external-icon icon icon-download" aria-hidden="true"></i>
+            ${ item.title }
+          </span>
+          <!--/* "Arrow-Right" icon should be displayed only when used over dark-themes (eg: Header & Footer) */-->
+          <i data-sly-test="${ !item.document_download }" class="eaton-link-list-vertical__list-icon icon icon-chevron-right u-hide" aria-hidden="true"></i>
+        </a>
+        <div class="eaton-link-list-vertical__download-text"
+          data-sly-test="${ item.document_download }">
+            <p>(${item.document_size})</p>
+            <p class="eaton-link-list-vertical__download-text--description">${item.document_description}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</sly>

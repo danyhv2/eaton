@@ -2,6 +2,16 @@
 //--------------
 .u-is-fixed { position: fixed; }
 
+.u-overlay-mask {
+  background-color: $color__white;
+  opacity: .8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+
 .u-absolute-fill {
   position: absolute;
   left: 0;
@@ -27,6 +37,14 @@
   @include clearfix();
 }
 
+.u-list-inline {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 
 // Text Utils
 //--------------
@@ -47,12 +65,27 @@
   width: 1px;
 }
 
+
 // Visibility
 //--------------
 .u-hide { display: none; }
 .u-show { display: block; }
-.u-show-inline { display: inline; }
-.u-show-ib { display: inline-block; }
+.u-inline { display: inline; }
+.u-inline-block { display: inline-block; }
 
 .u-hidden { visibility: hidden; }
 .u-visible { visibility: visible; }
+
+// Visible only from 0 to 991px | Hidden if >992px
+.u-visible-mobile {
+  display: block;
+
+  @include media-desktop-and-up { display: none; }
+}
+
+// Visible > 992px
+.u-visible-desktop {
+  display: none;
+
+  @include media-desktop-and-up { display: block; }
+}

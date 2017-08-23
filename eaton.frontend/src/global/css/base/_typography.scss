@@ -4,133 +4,172 @@
 
 // Typography
 //--------------
+html {
+  font-size: $base__font-size;
+}
 
 body {
   color: $color__primary-gray1;
   font-family: $font-family__secondary;
-
-  // .dark-theme & {
-  //   color: $color__white;
-  // }
+  font-size: rem(16px);
+  overflow-x: hidden;
 }
 
-// Headings
-//----------------
-// sizes based on root font size (10px) 10px = 1rem
-
-h1,
-h2,
-h3,
-.heading-h1,
-.heading-h2,
-.heading-h3 {
-  font-family: $font-family__primary;
+b,
+strong {
+  font-weight: bold;
 }
 
-h4,
-h5,
-.heading-h5,
-.heading-h6 {
-  font-family: $font-family__secondary;
+em {
+  font-style: italic;
 }
 
-h1,
-.heading-h1 {
-  margin-top: 0;
+// NOTE: <i> tag is being used for Glyphicon-fonts elements
+i {
+  font-style: normal;
 }
 
-h2,
-.heading-h2 {
-  margin-top: 0;
+p {
+  line-height: $base__line-height;
 }
 
-h3,
-.heading-h3 {
-  margin-top: 0;
-}
+a {
+  color: $color__primary-blue;
 
-h4,
-.heading-h4 {
-  margin-top: 0;
-}
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
 
-h5,
-.heading-h5 {
-  margin-top: 0;
-
-  &__link {
-    font-size: 2.4rem;
-    font-weight: bold;
+  &:hover,
+  &:focus {
+    color: $color__primary-blue;
+    text-decoration: underline;
   }
 }
 
 
-// Custom Text Elements
-//--------------
 
-// Body Link
-// Used with various typography elements  for link styles
-// Eg: <a href="#" class="body-link body-small-link">...</a>
-// Eg: <a href="#" class="body-link heading-h5">...</a>
-//---------------------
 
-.body-link {
+// Headings
+//----------------
+h1,
+.b-heading-h1 {
+  @include h1;
+  margin-top: 0;
+}
+
+h2,
+.b-heading-h2 {
+  @include h2;
+  margin-top: 0;
+}
+
+h3,
+.b-heading-h3 {
+  @include h3;
+  margin-top: 0;
+}
+
+h4,
+.b-heading-h4 {
+  @include h4;
+  margin-top: 0;
+}
+
+h5,
+.b-heading-h5 {
+  @include h5;
+  margin-top: 0;
+
+  a {
+    color: $color__primary-blue;
+  }
+}
+
+//links
+
+.b-h4-link {
+  font-size: 1.375em;
+  font-family: $font-family__secondary;
   color: $color__primary-blue;
+  font-weight: bold;
 
   &:hover,
   &:focus,
   &:active {
-    color: $color__accent-darkblue; //TBD
+    text-decoration: none;
+    color: $color__primary-blue;
   }
 
-  .dark-theme & {
-    color: $color__white;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: $color__white; //TBD
-    }
+  @include media-desktop-and-up {
+    // TODO: Review this font size after CRUX Feedback
+    font-size: 1.625em;
   }
 }
 
-.body-copy {
-  background: inherit;
-  font-size: 2.2rem;
-  line-height: 3.5rem;
-  color: $color__primary-gray1;
-}
-
-.body-copy-small {
-  color: $color__primary-gray1;
+.b-h5-link {
+  font-size: rem(25px);
   font-family: $font-family__secondary;
-  font-size: 26px;
-  line-height: 34px;
-}
-
-.eyebrow-small {
-  color: $color__primary-gray1;
-  font-family: $font-family__secondary;
-  font-size: 28px;
+  color: $color__primary-blue;
   font-weight: bold;
-  line-height: 34px;
+
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: $color__primary-blue;
+  }
+
+  @include media-desktop-and-up {
+    // TODO: Review this font size after CRUX Feedback
+    font-size: 1.625rem;
+  }
+}
+
+.b-small-link {
+  font-family: $font-family__secondary;
+  color: $color__primary-blue;
+  // TODO: Review this font size after CRUX Feedback
+  font-size: 1.125em;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: $color__primary-blue;
+  }
 }
 
 
+// BodyCopy
+//--------------
+.b-hero-description {
+  @include hero-description;
+}
 
-//-----------------------------------
-// Media-Query: Desktop
-//-----------------------------------
-@include media-desktop-and-up {
+.b-body-copy {
+  @include body-copy;
+}
 
-  .body-copy-small {
-    font-size: 18px;
-    line-height: 24px;
-  }
+.b-body-copy-small {
+  color: $color__primary-gray1;
+  @include body-copy-small;
+}
 
-  .eyebrow-small {
-    font-size: 18px;
-    line-height: 24px;
-  }
+.b-eyebrow-large {
+  color: $color__primary-gray1;
+  @include eyebrow-large;
+}
 
+.b-eyebrow-small {
+  color: $color__primary-gray1;
+  @include eyebrow-small;
+}
+
+.b-h5-link-bold {
+  @include h5-link-bold;
+}
+
+.b-h4-link-bold {
+  @include h4-link-bold;
 }

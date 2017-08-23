@@ -53,18 +53,21 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/html-components/structure/logo"
+                    testdata="footer"
                     view="footer"/>
                 <footer-desc
                     jcr:lastModified="{Date}2017-05-23T12:52:11.999+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/html-components/content/text"
+                    testdata="footer"
                     view="text"/>
                 <footer-link-list1
                     jcr:lastModified="{Date}2017-05-23T12:52:16.152+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/html-components/content/link-list"
+                    testdata="footer"
                     view="footer-our-company"/>
                 <footer-link-list2
                     jcr:lastModified="{Date}2017-05-23T12:52:20.782+05:30"

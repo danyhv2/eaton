@@ -1,0 +1,36 @@
+<sly data-sly-use.data="com.eaton.platform.core.helpers.LinkListHelper">
+
+  <div class="eaton-link-list-vertical">
+
+    <!--/* If Eyebrow */-->
+    <div data-sly-test="${ data.viewContentListModel.header }" class="eaton-link-list-vertical__eyebrow b-eyebrow-small">${ data.viewContentListModel.header }</div>
+
+    <!--/* List Links */-->
+    <ul
+      data-sly-list="${ data.viewContentListModel.listTypeArray }"
+      class="eaton-link-list-vertical__list"
+    >
+      <li data-sly-test="${item.linkTitle}" class="eaton-link-list-vertical__list-item">
+        <a href="${item.pageLink}"
+          aria-label="Go to ${ item.linkTitle }"
+          class="eaton-link-list-vertical__list-link"
+          target="${ item.newWindow ? '_blank' : '_self' }">
+          <span class="eaton-link-list-vertical__list-text">
+              <i data-sly-test="${item.isExternal}" class="eaton-link-list-vertical__external-icon icon icon-link-external" aria-hidden="true"></i>
+              <i data-sly-test="${item.isAssetLink}" class="eaton-link-list-vertical__external-icon icon icon-download" aria-hidden="true"></i>
+              ${ item.linkTitle }
+          </span>
+          <i data-sly-test="${!item.isExternal && !item.isAssetLink}" class="eaton-link-list-vertical__list-icon icon icon-chevron-right"
+            aria-hidden="true"></i>
+        </a>
+		<sly data-sly-test="${item.isAssetLink}">
+            <div class="eaton-link-list-vertical__download-text">
+                <p>(${item.assetSize})</p>
+                <p class="eaton-link-list-vertical__download-text--description">${item.description}</p>
+            </div>
+        </sly>
+      </li>
+    </ul>
+  </div>
+
+</sly>

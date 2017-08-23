@@ -7,9 +7,7 @@
 
 .eaton-social-links {
 
-  &__eyebrow {
-    margin-bottom: 18px;
-  }
+  &__eyebrow { margin-bottom: 18px; }
 
   &__list {
     font-size: 0; // Remove spacing between elements when using "display: inline-block"
@@ -23,19 +21,38 @@
     margin-right: 18px;
   }
 
-  &__page-link {
+  // Icon Color - Social Networks
+  // .icon-facebook { color: $color__social-facebook; }
 
-    font-size: 18px;
+  // .icon-twitter { color: $color__social-twitter; }
 
-    &,
-    &:hover,
-    &:active {
-      color: $color__white;
+  // .icon-googleplus { color: $color__social-googleplus; }
+
+  // .icon-linked-in { color: $color__social-linked-in; }
+
+  // .icon-pinterest { color: $color__social-pinterest; }
+
+  // Page Link
+  &__page-link { font-size: 18px; }
+
+  &__page-link-icon { font-size: 0.7em; }
+
+
+  // Over DARK-Background
+  //--------------
+  .dark-theme & {
+
+    &__eyebrow { color: $color__white; }
+
+    &__page-link {
+      &,
+      &:hover,
+      &:active {
+        color: $color__white;
+      }
     }
+
   }
 
-  &__page-link-icon {
-    font-size: 0.7em;
-  }
 
 }

@@ -1,0 +1,76 @@
+//-----------------------------------
+// Module - M-45: Table
+//
+// NOTE: This module is being used by these AEM-Components:
+//  - Product Specifications (PDH) Component
+//-----------------------------------
+
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+.module-table {
+
+  &__head {
+    margin-top: 0;
+    margin-bottom: 22px;
+    padding-left: 20px;
+  }
+
+  &__body {
+    // Empty selector for future reference
+  }
+
+
+  &__row {
+
+    &:nth-child(odd) {
+      background-color: $color__secondary-gray5;
+    }
+  }
+
+  &__col {
+    flex-basis: 100%;
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: Mobile & Tablet Only
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    margin-bottom: ($spacing__md / 2);
+
+    &__row {
+      padding: 12px 15px;
+    }
+
+  }
+
+
+
+  //-----------------------------------
+  // Media Query Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    margin-bottom: $spacing__md;
+
+    &__head {
+      margin-bottom: 48px;
+    }
+
+    &__row {
+      align-items: flex-start;
+      display: flex;
+      padding: 26px 20px;
+    }
+
+    &__col {
+      flex-basis: 50%;
+    }
+
+  }
+
+}

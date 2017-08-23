@@ -20,13 +20,22 @@ App.demoComponent = (function() {
    */
   const addEventListeners = () => {
 
-    $componentClass.find('.c-button').on('click', (event) => {
+    let mqDesktop = null;
+
+    $componentClass.find('.b-button').on('click', (event) => {
       console.log(event.target);
     });
 
-    // window.matchMedia('(min-width:992px)').onchange = onBreakpointChange;
-    window.matchMedia(`(min-width:${ App.global.constants.GRID.SM }px)`).onchange = onBreakpointChange;
+    // JavaScript MediaQueries
+    //--------------
+    if (window.matchMedia) {
 
+      // min-width 992px
+      mqDesktop = window.matchMedia(App.global.constants.MEDIA_QUERIES.DESKTOP);
+
+      // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
+      mqDesktop.addListener(onBreakpointChange);
+    }
   };
 
 
@@ -37,12 +46,12 @@ App.demoComponent = (function() {
   */
   const onBreakpointChange = (event) => {
 
-    // If Tablet Breakpoint and Up
+    // If Desktop Breakpoint and Up
     if (event.matches) {
-      console.log('Tablet BP');
+      console.log('Desktop BP');
     }
 
-    // Else is Mobile Breakpoint
+    // Else is Mobile/Tablet Breakpoint
     else {
       console.log('Mobile BP');
     }
@@ -63,9 +72,10 @@ App.demoComponent = (function() {
   /**
   * If containing DOM element is found, Initialize and Expose public methods
   */
-  if ($componentClass.lenght > 0) {
+  if ($componentClass.length > 0) {
     init();
 
+    // Public Methods
     return {
       getDate
     };

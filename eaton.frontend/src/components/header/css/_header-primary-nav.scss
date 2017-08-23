@@ -1,28 +1,34 @@
 //------------------------------------------
 // Component M-1: Header: Primary Navigation
 //------------------------------------------
-
 $primary-nav-border: #EEF0F2;
 
 .header-primary-nav {
+  position: relative;
+  z-index: 112;
   background: $color__white;
-  border-bottom: 4px solid $primary-nav-border;
   transition: height 0.3s ease-in-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: $primary-nav-border;
+  }
 
   .row {
     display: flex;
+    position: relative;
   }
 
   &__links {
-    a {
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
-    }
 
-    i {
+    .icon {
       font-size: 20px;
+      color: $color__primary-blue;
+      position: relative;
     }
   }
 
@@ -30,17 +36,28 @@ $primary-nav-border: #EEF0F2;
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-and-tablet {
-    &__links {
-      justify-content: flex-end;
-      display: flex;
-      flex-grow: 1;
+
+    .row {
       align-items: center;
     }
 
+    &__links {
+      position: absolute;
+      right: 0;
+      bottom: -6px;
+    }
+
     &__open-search,
-    &__open-mobile-menu {
+    &__toggle-mobile-menu {
       display: inline-block;
-      padding: 30px;
+      padding: ($spacing__sm / 2) + 2;
+      position: relative;
+      z-index: 1;
+    }
+
+    .icon-close {
+      display: none;
+      color: $color__white;
     }
   }
 
@@ -70,20 +87,49 @@ $primary-nav-border: #EEF0F2;
       }
     }
 
+    &__links {
+      position: relative;
+      z-index: 1;
+
+      i {
+        top: -5px;
+      }
+    }
+
     &__open-search {
       display: flex;
-      justify-content: flex-end;
       height: 90px;
       padding: 30px; // Equidistant Spacing between menu & search icon
-      margin-top: 10px;
+      top: 10px;
+      position: relative;
+
+      .icon-close {
+        display: none;
+      }
 
       .eaton-header--fixed & {
         height: 70px;
         padding: 20px;
       }
+
+      .search-open & {
+        transition: background 0.3s ease-in-out;
+        background: $color__primary-gray1;
+
+        .icon-search {
+          display: none;
+        }
+
+        .icon-close {
+          display: block;
+          top: -5px;
+          font-size: 18px;
+          color: $color__white;
+        }
+      }
     }
 
-    &__open-mobile-menu {
+    &__toggle-mobile-menu {
       display: none;
     }
   }

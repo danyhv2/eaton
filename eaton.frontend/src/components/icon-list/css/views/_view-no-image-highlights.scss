@@ -1,0 +1,85 @@
+//-----------------------------------
+// IconList Component: No Image Highlights
+//-----------------------------------
+
+.icon-list-no-image-highlights {
+  background: $color__secondary-gray6;
+
+  &__item {
+    color: $color__primary-gray2;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color__primary-gray2;
+  }
+
+  &__text {
+    word-wrap: break-word;
+  }
+
+  &__symbol {
+    position: relative;
+  }
+
+  //-----------------------------------
+  // Media-Query: Mobile
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    padding: $spacing__sm 0;
+
+    &__item {
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__text {
+      font-size: 3.125em;
+      line-height: 55px;
+    }
+
+    &__symbol {
+      font-size: 0.6em;
+      top: -15px;
+    }
+
+    &__title {
+      font-size: 0.875em;
+      margin-bottom: 5px;
+    }
+  }
+
+  //-----------------------------------
+  // Media-Query: Desktop
+  //-----------------------------------
+  @include media-desktop-and-up {
+    padding: ($spacing__sm * 2) 0;
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__text {
+      font-size: 3.75em;
+      line-height: 65px;
+    }
+
+    &__symbol {
+      font-size: 0.667em;
+      top: -15px;
+    }
+
+    &__title {
+      font-size: 1.125em;
+      margin-bottom: ($spacing__sm / 2);
+    }
+  }
+}

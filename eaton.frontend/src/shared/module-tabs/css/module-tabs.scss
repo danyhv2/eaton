@@ -1,0 +1,84 @@
+//-----------------------------------
+// M-59: Tabs
+//-----------------------------------
+
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+.module-tabs {
+  $module-class: ".module-tabs"; // CSS-BEM-Name
+
+  background-color: $color__secondary-gray5;
+
+  &__list {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list-item {
+    border-right: 1px solid $color__white;
+    flex: 1 0 auto;
+
+    &:first-child { border-left: 1px solid $color__white; }
+
+  }
+
+  &__list-link {
+    background-color: transparent;
+    display: block;
+    padding: 2rem;
+    text-align: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+
+  }
+
+  // Active Tab
+  //--------------
+  &__list-item--active {
+    #{$module-class}__list-link {
+      background-color: $color__white;
+      color: $color__primary-gray1;
+    }
+  }
+
+
+  // Themes: DARK
+  //--------------
+  &.dark-theme {
+
+    &__list {
+      // TBD
+    }
+
+  }
+
+
+
+  //-----------------------------------
+  // MediaQuery: Mobile & Tablet Only
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+  }
+
+
+
+  //-----------------------------------
+  // Media Query Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+  }
+
+
+}

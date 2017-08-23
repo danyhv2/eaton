@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     var showSharePanel = false
-//$(".at4-share").hide();
+	$(".at4-share").hide();
 
     	$("#shareThisIcon").click(function(){
             if(showSharePanel == false){

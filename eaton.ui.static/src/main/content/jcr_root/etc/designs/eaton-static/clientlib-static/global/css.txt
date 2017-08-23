@@ -1,4 +1,11 @@
 #base=css
 
+##----- Load Vendor Libs
 vendors/bootstrap.css
+vendors/slick.css
+vendors/accessibility-focus-ring.css
+vendors/choices.min.css
+
+
+##----- Load Custom Global Styles
 etn-global.css

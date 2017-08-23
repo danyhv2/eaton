@@ -1,0 +1,27 @@
+<sly data-sly-use.data="${ '../data/view-featured-story-data.js' @testdata=properties.testdata }">
+  <div class="featured-story-component">
+
+    <div data-sly-list.component="${ data }">
+      <div class="row featured-story-component__row">
+        <div class="col-xs-12 col-lg-11 featured-story-component__row--nopadding ${ componentList.odd ? 'col-lg-pull-0' : 'col-lg-offset-1' }">
+
+          <!-- Start: Rendition Image Component -->
+          <sly data-sly-use.tpl="../../../shared/templates/rendition-image.html">
+            <sly data-sly-call="${ tpl.module @ data=component.image }"></sly>
+          </sly>
+          <!-- End: Rendition Image Component -->
+
+          <div class="col-xs-12 col-sm-5 col-lg-4 featured-story-component__blue ${componentList.odd ? 'featured-story-component__blue--right' : 'featured-story-component__blue--left'}">
+            <div class="featured-story-component__content">
+              <h2 class="featured-story-component__title">${component.title}</h2>
+              <a class="featured-story-component__link" href="${component.link}">
+                <p class="featured-story-component__text">${component.text}
+                  <i aria-hidden="true" class="featured-story-component__arrow glyphicon glyphicon-menu-right arrow"></i></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

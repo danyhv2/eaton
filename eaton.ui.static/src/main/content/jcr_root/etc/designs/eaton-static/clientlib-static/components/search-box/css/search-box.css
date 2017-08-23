@@ -1,11 +1,80 @@
-.eaton-search-inline__headline { text-transform: uppercase; margin-bottom: 30px; }
+.eaton-search--inline__header { text-transform: uppercase; }
 
-.eaton-search-inline__form { margin-bottom: 30px; }
+.eaton-search--inline__header, .eaton-search--inline__subheader, .eaton-search--inline__form { margin-bottom: 30px; }
 
-.eaton-search-inline .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.eaton-search--inline .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; background: #FFF; }
 
-.eaton-search-inline__form-input { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 0; background: #FFF; border-radius: 0; font-size: 1em; height: auto; }
+.eaton-search--inline .icon { font-size: 18px; top: 2px; position: relative; }
 
-.eaton-search-inline__form-submit { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: #FFF; border: 0; color: #005EB8; padding: 10px 20px; }
+.eaton-search--inline__form-input { background: #FFF; font-size: 1em; padding: 10px; }
 
-.dark-theme .eaton-search-inline__headline { color: #FFF; }
+.eaton-search--inline__form-external { border-right: 1px solid #98A4AE; padding-right: 15px; color: #005EB8; -ms-flex-item-align: center; align-self: center; }
+
+.eaton-search--inline__form-submit { color: #005EB8; padding: 10px 20px; }
+
+.dark-theme .eaton-search--inline__header { color: #FFF; }
+
+.eaton-search--default { padding: 30px 0; background: #005EB8; }
+
+.eaton-search--default .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; border-bottom: 1px solid #FFF; margin-bottom: 0; position: relative; }
+
+.eaton-search--default .icon-search { top: 2px; position: relative; }
+
+.eaton-search--default__form-input { color: #FFF; background: transparent; padding: 0; }
+
+.eaton-search--default__form-input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: transparent; }
+
+.eaton-search--default__form-input:focus::-moz-placeholder { /* Firefox 19+ */ color: transparent; }
+
+.eaton-search--default__form-input:focus:-ms-input-placeholder { /* IE 10+ */ color: transparent; }
+
+.eaton-search--default__form-input:focus:-moz-placeholder { /* Firefox 18- */ color: transparent; }
+
+.eaton-search--default__form-input:focus ~ .eaton-search--default__form-mobile-label { display: none; }
+
+.eaton-search--default__form-mobile-label { display: none; }
+
+.eaton-search--default__form-external { color: #FFF; -ms-flex-item-align: center; align-self: center; border-right: 1px solid #FFF; padding-right: 20px; }
+
+.eaton-search--default__form-submit { color: #FFF; background: transparent; padding: 10px 20px; }
+
+.eaton-search--default__results { padding: 30px 0 6px; display: none; }
+
+.eaton-search--default__results.active { display: block; }
+
+.eaton-search--default__result-list { margin: 0; padding: 0; list-style-type: none; }
+
+.eaton-search--default__result-item a { display: block; padding: 10px 0; color: #FFF; }
+
+.eaton-search--default__result-item a:hover, .eaton-search--default__result-item a:focus { color: #FFF; }
+
+.eaton-search--default__highlight-text { font-weight: bold; }
+
+.dark-theme .eaton-search--default { background: #333F48; }
+
+.eaton-search--default ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #FFF; }
+
+.eaton-search--default ::-moz-placeholder { /* Firefox 19+ */ color: #FFF; }
+
+.eaton-search--default :-ms-input-placeholder { /* IE 10+ */ color: #FFF; }
+
+.eaton-search--default :-moz-placeholder { /* Firefox 18- */ color: #FFF; }
+
+@media screen and (max-width: 479px) { .eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; left: 0; top: 0; display: inline-block; }
+  .eaton-search--default ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: transparent; }
+  .eaton-search--default ::-moz-placeholder { /* Firefox 19+ */ color: transparent; }
+  .eaton-search--default :-ms-input-placeholder { /* IE 10+ */ color: transparent; }
+  .eaton-search--default :-moz-placeholder { /* Firefox 18- */ color: transparent; } }
+
+@media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1em; padding-right: 20px; }
+  .eaton-search--default__form-submit { padding-right: 0; }
+  .eaton-search--default .icon-search { font-size: 1.25em; }
+  .search-open .eaton-search--default { height: 100%; overflow-y: auto; } }
+
+@media screen and (min-width: 992px) { .eaton-search--default__form-input, .eaton-search--default .icon-search { font-size: 1.5em; left: 10px; }
+  .eaton-header--fixed .eaton-search--default__form-input, .eaton-header--fixed .eaton-search--default .icon-search { left: 0; }
+  .eaton-header--fixed .eaton-search--default__form-submit { padding-right: 0; } }
+
+.eaton-search .form-control { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 0; border-radius: 0; height: auto; -webkit-box-shadow: none; box-shadow: none; }
+
+.eaton-search .form-control:focus { outline: none; }

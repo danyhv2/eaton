@@ -1,0 +1,42 @@
+<!--/* M-59: Tabs */-->
+<template data-sly-template.module="${ @ data }">
+
+  <div class="module-tabs u-visible-desktop">
+    <div class="container">
+      <ul class="module-tabs__list">
+
+        <!--/* Default Tab */-->
+        <!--/*
+          NOTE: If the user is not in the "All Results" page,
+          the class "module-tabs__list-item--active" needs to be removed in the first item
+        */-->
+        <li class="module-tabs__list-item module-tabs__list-item--active">
+          <a href="#all-results" class="module-tabs__list-link">${ 'All results' @ i18n }</a>
+        </li>
+
+        <sly data-sly-list.tab="${ data.items }">
+          <li data-sly-test="${ !tab.isHiddenTab }"
+            class="module-tabs__list-item ${ tab.activeTab ? 'module-tabs__list-item--active' : '' }">
+
+            <!--/* If TAB Is enabled - Behave as a link */-->
+            <a data-sly-test="${ !tab.isADisabledTab }"
+              href="${ tab.url }"
+              target="${ tab.target }"
+              aria-label="${ 'Go to {0}' @ i18n, format=[ tab.label ] }"
+              class="module-tabs__list-link"
+            >${ '{0} ({1})' @ format=[tab.label, tab.resultsCount] }</a>
+
+            <!--/* If TAB is disabled: Render only text */-->
+            <div
+              data-sly-test="${ tab.isADisabledTab }"
+              class="module-tabs__list-link"
+            >${ '{0} ({1})' @ format=[tab.label, tab.resultsCount] }
+            </div>
+          </li>
+        </sly>
+
+      </ul>
+    </div>
+  </div>
+
+</template>

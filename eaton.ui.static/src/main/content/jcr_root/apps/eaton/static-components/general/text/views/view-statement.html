@@ -1,7 +1,7 @@
-<sly data-sly-use.data="../data/view-statement-data.js">
+<sly data-sly-use.data="${'../data/view-statement-data.js' @testdata=properties.testdata}">
 
   <div class="eaton-text-statement">
-    <p class="eaton-text-statement__description body-copy-small">${ data.text }</p>
+    <p class="eaton-text-statement__content rich-text-container">${ data.text }</p>
   </div>
 
 </sly>

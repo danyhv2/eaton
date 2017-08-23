@@ -1,0 +1,88 @@
+//-----------------------------------
+// Styleguide - Rich Text Elements
+//-----------------------------------
+
+.rich-text-container {
+
+  @include body-copy;
+
+  // stylelint-disable selector-max-compound-selectors
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  i,
+  em {
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  p {
+    @include body-copy;
+  }
+
+
+  // Unordered lists
+  //--------------
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      position: relative;
+      padding-left: 40px;
+
+      &::before {
+        @include square(6px); // Width & Height
+
+        content: '';
+        background-color: $color__primary-blue;
+        border-radius: 50%;
+        left: 20px;
+        position: absolute;
+        top: 0.6em;
+
+      }
+    }
+  }
+
+
+  // Over DARK-Background
+  //--------------
+  .dark-theme & {
+
+    color: $color__white;
+
+    // Headings
+    //--------------
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color__white;
+    }
+
+    // Ordered Lists
+    //--------------
+    ol {
+
+    }
+
+    // Unordered lists
+    //--------------
+    ul {
+      li {
+        &::before {
+          background-color: $color__white;
+        }
+      }
+    }
+
+
+  }
+}

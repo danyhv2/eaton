@@ -1,0 +1,84 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Specifications Component</div>
+</sly>
+
+
+<sly data-sly-use.data="${ '../data/product-specifications-data.js' @testdata=properties.testdata }">
+
+  <div class="product-specifications">
+    <div class="container">
+      <div class="row">
+
+        <!--/* M-39: Anchor Links */-->
+        <div class="col-xs-12 col-md-3">
+          <div class="module-anchor-links">
+            <ul class="module-anchor-links__list">
+              <sly data-sly-list="${ data.anchors }">
+                <li class="module-anchor-links__list-item b-body-copy-small">
+                  <!--/* NOTE: data-scroll-to="#element-id" is a CSS Selector (Element, Class, ID) */-->
+                  <button
+                    data-scroll-to="#${ item.anchorId }"
+                    data-scroll-to-offset-enabled="true"
+                    class="module-anchor-links__list-link button--reset">
+                    <span>${ item.anchorTitle }</span>
+                    <i class="icon icon-chevron-right" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </sly>
+            </ul>
+          </div>
+        </div>
+
+        <!--/* M-45: Table */-->
+        <div class="col-xs-12 col-md-9">
+          <sly data-sly-list="${ data.anchors }">
+            <div class="module-table" id="${ item.anchorId }">
+              <h3 class="module-table__head b-eyebrow-large">${ item.anchorTitle }</h3>
+              <div class="module-table__body">
+                <sly data-sly-list.row="${ item.content.rows }">
+                  <div class="module-table__row">
+                    <div class="module-table__col b-eyebrow-small">${ row.label }</div>
+                    <div class="module-table__col b-body-copy-small">
+
+                      <!--/* Print Table Content */-->
+                      <sly data-sly-list.specValue="${ row.specValue }">
+
+                        <!--/* if Type == Document */-->
+                        <div data-sly-test.document="${ specValue.type == 'document' }"
+                          class="module-table__value value-type-document">${ specValue.text }</div>
+
+                        <!--/* if Type == Link */-->
+                        <div data-sly-test.link="${ specValue.type == 'link' }"
+                          class="module-table__value value-type-link">
+                          <a href="${ specValue.link.url }" target="${ specValue.link.target }">
+                            ${ specValue.text }
+                          </a>
+                        </div>
+
+                        <!--/* if Type == Image */-->
+                        <div data-sly-test.image="${ specValue.type == 'image' }"
+                          class="module-table__value value-type-image">
+                          <span>${ specValue.text }</span>
+                          <a href="${ specValue.link.url }" target="${ specValue.link.target }">
+                            <img src="${ specValue.imageSrc }" alt="${ specValue.text }" />
+                          </a>
+                        </div>
+
+                        <!--/* else Default */-->
+                        <div data-sly-test="${ !document && !link && !image }"
+                          class="module-table__value value-type-default">${ specValue.text }</div>
+                      </sly>
+
+                    </div>
+                  </div>
+                </sly>
+              </div>
+            </div>
+          </sly>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</sly>

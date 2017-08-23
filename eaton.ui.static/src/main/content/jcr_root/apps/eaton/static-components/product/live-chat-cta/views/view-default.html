@@ -1,0 +1,11 @@
+<sly data-sly-use.data="../data/live-chat-cta-data.js">
+  <!--/* Live chat CTA */-->
+  <div class="eaton-product-live-chat pull-right">
+    <a  data-sly-test="${ data.cta }"
+        href="${ data.cta.href }"
+        target="${ data.cta.target }"
+        aria-label="${ data.cta.title }">
+      <i class="icon icon-livechat" aria-hidden="true"></i><span>${ data.cta.title }</span>
+    </a>
+  </div>
+</sly>

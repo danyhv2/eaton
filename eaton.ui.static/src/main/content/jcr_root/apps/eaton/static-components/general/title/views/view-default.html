@@ -1,12 +1,17 @@
-<sly data-sly-use.data="../data/view-default-data.js">
+<sly data-sly-use.data="${'../data/title-data.js' @testdata=properties.testdata}">
 
+  <div class="eaton-title eaton-title--default ${properties.toggleInnerGrid == 'true' ? 'eaton-title--inset' : ''}">
 
+    <!--/* If Grid Enabled */-->
+    <div data-sly-test="${ properties.toggleInnerGrid }" class="container">
+      <h2 class="eaton-title__headline">${ data.title }</h2>
+    </div>
 
-   <div class="eaton-title">
-            <h2 class="eaton-title__eyebrow">${data.eyebrow}</h2>
-            <div class="eaton-title__dash"></div>
-   </div>
+    <!--/* If Grid NOT-Enabled */-->
+    <sly data-sly-test="${ !properties.toggleInnerGrid }">
+      <h2 class="eaton-title__headline">${ data.title }</h2>
+    </sly>
 
-
+  </div>
 
 </sly>

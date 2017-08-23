@@ -2,15 +2,29 @@
     <div>Brightcove Page Component</div>
 </sly>
 
-<sly data-sly-test="${properties.contentRepository && properties.brightcovePlayerID && properties.contentId}">
-    <sly data-sly-use.bcComponent="com.eaton.platform.core.helpers.BrightcoveHelper"></sly>
+
+
+
+<template data-sly-template.first>
+<sly data-sly-use.bcComponent="com.eaton.platform.core.helpers.configpage.BrightcoveHelper"></sly>
+
+<sly data-sly-test="${bcComponent.bcCompModel.contentRepository && bcComponent.bcCompModel.brightcovePlayerID && bcComponent.bcCompModel.contentId}">
+
+<h2>
+${bcComponent.bcCompModel.headLine}
+</h2>
+
+<h2>
+${bcComponent.bcCompModel.description}
+</h2>
+
     <div style="display: block; position: relative; width:100%">
         <div style="padding-top: 56.25%;">
-            <sly data-sly-test="${properties.contentType == 'video'}">
+            <sly data-sly-test="${bcComponent.bcCompModel.contentType == 'video'}">
 	            <video id="${bcComponent.playerUniqueId}" 
-	              data-video-id="${properties.contentId}" 
-	              data-account="${properties.contentRepository}" 
-	              data-player="${properties.brightcovePlayerID}" 
+	              data-video-id="${bcComponent.bcCompModel.contentId}" 
+	              data-account="${bcComponent.bcCompModel.contentRepository}" 
+	              data-player="${bcComponent.bcCompModel.brightcovePlayerID}" 
 	              data-embed="default" 
 	              data-application-id 
 	              class="video-js" 
@@ -18,11 +32,11 @@
 	              controls></video>
             </sly>
     
-            <sly data-sly-test="${properties.contentType == 'playlist'}">            
+            <sly data-sly-test="${bcComponent.bcCompModel.contentType == 'playlist'}">            
 	            <video id="${bcComponent.playerUniqueId}" 
-	              data-playlist-id="${properties.contentId}" 
-	              data-account="${properties.contentRepository}" 
-	              data-player="${properties.brightcovePlayerID}" 
+	              data-playlist-id="${bcComponent.bcCompModel.contentId}" 
+	              data-account="${bcComponent.bcCompModel.contentRepository}" 
+	              data-player="${bcComponent.bcCompModel.brightcovePlayerID}" 
 	              data-embed="default" 
 	              data-application-id 
 	              class="video-js" 
@@ -31,20 +45,19 @@
 	              <ol class="vjs-playlist"></ol>
             </sly>
 
-            <sly data-sly-test="${properties.contentRepository && properties.brightcovePlayerID}">
-            	<script src="//players.brightcove.net/${properties.contentRepository}/${properties.brightcovePlayerID}_default/index.min.js"></script>
+            <sly data-sly-test="${bcComponent.bcCompModel.contentRepository && bcComponent.bcCompModel.brightcovePlayerID}">
+            	<script src="//players.brightcove.net/${bcComponent.bcCompModel.contentRepository}/${bcComponent.bcCompModel.brightcovePlayerID}_default/index.min.js"></script>
             </sly>
     
         </div>
 	</div>
-
-    <script type="text/javascript">
+<script type="text/javascript">
     
         var myPlayer = videojs('${bcComponent.playerUniqueId @ context="scriptString"}');
         
         if('${properties.contentType @context="scriptString"}' == 'video'){
-        
-            myPlayer.catalog.getVideo('${properties.contentId @ context="scriptString"}', function(error, video){
+
+            myPlayer.catalog.getVideo('${bcComponent.bcCompModel.contentId @ context="scriptString"}', function(error, video){
         
               if(error !== null) {
                 myPlayer.error({code:'-1'});
@@ -52,7 +65,7 @@
             });
         } else {
         
-            myPlayer.catalog.getPlaylist('${properties.contentId @ context="scriptString"}', function(error, video){
+            myPlayer.catalog.getPlaylist('${bcComponent.bcCompModel.contentId @ context="scriptString"}', function(error, video){
         
               if(error !== null) {
                 myPlayer.error({code:'-1'});
@@ -65,11 +78,25 @@
                     "-1": {
                         "headline": '${bcComponent.errorMsg @ context="scriptString"}',
                             "type": "PLAYER_ERR_NO_SRC",
-                            "message": "This video could not be loaded, because video/playlist id is invalid"
+                            "message": "This video/playlist could not be loaded, because video/playlist id is invalid."
                     }
                 }
             });
     
     </script>
 </sly>
+
+
+</template>
+<sly data-sly-use.bcComponent="com.eaton.platform.core.helpers.configpage.BrightcoveHelper"></sly>
+
+<!--/* If Grid Enabled */-->
+<div data-sly-test="${ bcComponent.bcCompModel.toggleInnerGrid }" class="container">
+<div data-sly-call="${first}"></div>
+</div>
+
+ <!--/* If Grid NOT-Enabled */-->
+<div data-sly-test="${ !bcComponent.bcCompModel.toggleInnerGrid }" >
+<div data-sly-call="${first}"></div>
+</div>
 

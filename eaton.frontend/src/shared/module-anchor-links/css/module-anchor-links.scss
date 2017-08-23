@@ -1,0 +1,91 @@
+//-----------------------------------
+// M-39: Anchor Links
+//
+//
+// NOTE: This module is being used by these AEM-Components:
+//  - Product Specifications (PDH) Component
+//  - Resource List (PDH) Component
+//  - Resource List (Tags) Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+.module-anchor-links {
+
+  $anchor-padding: 20px;
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__list-item {
+    border-bottom: 1px solid $color__secondary-gray4;
+    padding: 2px 0;
+    width: 100%;
+
+    &:first-child {
+      border-top: 1px solid $color__secondary-gray4;
+    }
+  }
+
+  &__list-link {
+    align-items: center;
+    background-color: $color__white;
+    color: $color__primary-blue;
+    display: flex;
+    min-height: 75px;
+    padding: 0 $anchor-padding;
+    position: relative;
+    text-align: left;
+    width: 100%;
+
+    // TODO: Review Hover / Active State
+    // &:active,
+    // &:focus,
+    &:hover {
+      background-color: $color__secondary-gray5;
+      font-weight: bold;
+      outline: 0;
+    }
+
+    // Link Label
+    span {
+      padding-right: $anchor-padding;
+    }
+
+    .icon {
+      color: $color__primary-blue;
+      font-size: 1rem;
+      height: 10px;
+      position: absolute;
+      right: $anchor-padding;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+
+  // Themes: DARK
+  //--------------
+  &.dark-theme {
+
+    &__list {
+      // TBD
+    }
+
+  }
+
+
+
+  //-----------------------------------
+  // Media Query Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+  }
+
+
+}

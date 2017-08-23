@@ -27,7 +27,30 @@
     margin-left: 0.25em;
   }
 
+  &__external-icon {
+    padding-right: 10px;
+    font-size: 1.5rem;
+  }
+
+  &__download-text {
+    width: 100%;
+    margin-left: 30px;
+    font-size: 0.9em;
+
+    &--description {
+      color: $color__primary-gray3;
+      font-family: $font-family__secondary;
+    }
+  }
+
+
+  // Over DARK-Background
+  //--------------
   .dark-theme & {
+
+    .icon-chevron-right {
+      display: inline-block;
+    }
 
     &__eyebrow,
     &__list-link {
@@ -42,7 +65,7 @@
   @include media-mobile-and-tablet {
 
     &__eyebrow {
-      margin-bottom: 60px;
+      margin-bottom: $spacing__md / 2;
     }
   }
 
@@ -54,6 +77,10 @@
 
     &__eyebrow {
       margin-bottom: ($spacing__sm / 2);
+    }
+
+    &__download-text {
+      width: auto;
     }
 
   }

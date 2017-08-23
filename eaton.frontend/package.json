@@ -6,11 +6,12 @@
   "author": "Razorfish",
   "scripts": {
     "start": "gulp",
-    "maven": "cd ../ && mvn -PautoInstallPackage clean install",
+    "lint-fix": "stylelint \"src/**/*.scss\" --syntax scss --fix --cache --cache-location \".stylelintcache/\" --quiet",
+    "maven": "cd ../eaton.ui.static/ && mvn -PautoInstallPackage clean install",
     "aemsync": "node config/aemsync",
-    "aemdev": "gulp build:dev",
+    "aemdev": "gulp dev",
     "preaemprod": "npm install --no-optional",
-    "aemprod": "gulp build:prod"
+    "aemprod": "gulp prod"
   },
   "repository": {
     "type": "git",
@@ -28,14 +29,25 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "4.0.0",
     "gulp-babel": "6.1.2",
+    "gulp-consolidate": "0.2.0",
     "gulp-eslint": "3.0.1",
+    "gulp-header": "1.8.9",
+    "gulp-iconfont": "8.0.1",
     "gulp-if": "2.0.2",
     "gulp-plumber": "1.1.0",
     "gulp-sass": "^3.1.0",
-    "gulp-sass-lint": "1.3.2",
+    "gulp-stylelint": "4.0.0",
     "gulp-util": "^3.0.8",
+    "gulp.spritesmith": "6.5.1",
+    "merge-stream": "1.0.1",
     "node-sass": "^4.5.3",
-    "node-sass-globbing": "^0.0.23"
+    "node-sass-globbing": "^0.0.23",
+    "stylelint": "8.0.0",
+    "stylelint-config-sass-guidelines": "2.2.0",
+    "stylelint-scss": "1.5.1",
+    "stylelint-selector-bem-pattern": "1.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "4.17.4"
+  }
 }

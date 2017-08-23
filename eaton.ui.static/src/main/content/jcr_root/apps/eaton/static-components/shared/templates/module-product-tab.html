@@ -1,0 +1,133 @@
+<!--/* BEGIN M-40 Product Tabs (Family/SKU) */ -->
+<template data-sly-template.data="${ @ data }">
+
+  <div class="eaton-product-tabs ${ data.useDarktheme ? 'dark-theme' : '' }" >
+    <div class="container">
+      <sly data-sly-test="${ data.graphicToggle }" >
+        <!-- inputs neeeded for tab behavior -->
+        <input
+          id="tab-${itemList.index}"
+          data-sly-repeat="${data.tabs}"
+          data-sly-attribute.checked="${item.selected}"
+          type="radio"
+          name="product-tab"
+        >
+      </sly>
+
+      <div class="row eaton-product-tabs__buttons">
+        <div class="col-md-4">
+          <div class="eaton-product-tabs__description">
+            <a href="${data.eyebrowCta.href}"
+              class="b-eyebrow-small"
+              aria-label="Go to ${data.eyebrowCta.title}" >
+              <i class="icon icon-chevron-left" aria-hidden="true"></i>
+                ${data.eyebrowCta.title}
+            </a>
+            <div class="b-heading-h5">
+              ${data.productName}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 eaton-product-tabs__buttons__center">
+          <div class="row">
+            <!-- graphicToggle without <a> -->
+            <sly data-sly-test="${ data.graphicToggle }" >
+              <label data-sly-repeat="${data.tabs}" for="tab-${itemList.index}" >
+                <i class="icon icon-${item.icon}" aria-hidden="true"></i>
+                <span>${item.title}</span>
+              </label>
+            </sly>
+
+            <!-- graphicToggle with <a> -->
+            <sly data-sly-test="${ !data.graphicToggle }" >
+              <a data-sly-repeat="${data.tabs}"
+                href="${item.href}"
+                target="${item.target}"
+                aria-label="Go to ${item.title}"
+              >
+                <label for="tab-${itemList.index}" class="${item.selected ? 'tab-active' : ''}" >
+                  <i class="icon icon-${item.icon}" aria-hidden="true"></i>
+                  <span>${item.title}</span>
+                </label>
+              </a>
+            </sly>
+          </div>
+        </div>
+
+        <div class="col-md-3 u-text-center eaton-product-tabs__dropdown-container">
+          <div class="dropdown">
+            <button id="dHowtoBuy"
+              class="eaton-product-tabs__dropdown button--reset"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false" >
+              ${data.dropdown.label}
+              <i class="icon icon-chevron-down" aria-hidden="true"></i>
+            </button>
+            <ul data-sly-list="${ data.dropdown.options }"
+                class="dropdown-menu eaton-product-tabs__dropdown__content"
+                aria-labelledby="dHowtoBuy" >
+              <li>
+                <a href="${item.href}"
+                 target="${item.target}"
+                 aria-label="Go to ${item.title}" >
+                <i class="icon icon-${item.icon}" aria-hidden="true"></i><span>${item.title}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row eaton-product-tabs__page-utility">
+        <div data-sly-unwrap="${!wcmmode.edit}">
+          <sly data-sly-resource="${'back-to-search' @ resourceType='/apps/eaton/static-components/product/back-to-search'}"></sly>
+        </div>
+        <div data-sly-unwrap="${!wcmmode.edit}">
+          <sly data-sly-resource="${'share-cta' @ resourceType='/apps/eaton/static-components/product/share-cta'}"></sly>
+        </div>
+        <div data-sly-unwrap="${!wcmmode.edit}">
+          <sly data-sly-resource="${'live-chat' @ resourceType='/apps/eaton/static-components/product/live-chat-cta'}"></sly>
+        </div>
+      </div>
+
+      <sly data-sly-test="${ data.graphicToggle }">
+        <!-- graphic toggle use 3 panels that are hide/show via css -->
+        <div class="row">
+          <div
+            class="col-sm-12 eaton-product-tabs__tab-panel"
+            data-tab-name="tab-0" >
+            <sly data-sly-test="${ wcmmode.edit }">
+              <div class="alert alert-warning">Content on tab 1</div>
+            </sly>
+            <div data-sly-unwrap="${!wcmmode.edit}">
+              <sly data-sly-resource="${'content-tab-1' @ resourceType='wcm/foundation/components/parsys'}"></sly>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 eaton-product-tabs__tab-panel"
+            data-tab-name="tab-1" >
+            <sly data-sly-test="${ wcmmode.edit }">
+              <div class="alert alert-warning">Content on tab 2</div>
+            </sly>
+            <div data-sly-unwrap="${!wcmmode.edit}">
+              <sly data-sly-resource="${'content-tab-2' @ resourceType='wcm/foundation/components/parsys'}"></sly>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 eaton-product-tabs__tab-panel"
+            data-tab-name="tab-2" >
+            <sly data-sly-test="${ wcmmode.edit }">
+              <div class="alert alert-warning">Content on tab 3</div>
+            </sly>
+            <div data-sly-unwrap="${!wcmmode.edit}">
+              <sly data-sly-resource="${'content-tab-3' @ resourceType='wcm/foundation/components/parsys'}"></sly>
+            </div>
+          </div>
+        </div>
+      </sly>
+    </div>
+  </div>
+</template>

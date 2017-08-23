@@ -1,20 +1,25 @@
 //-----------------------------------
 // LinkList Component: Horizontal View
 //-----------------------------------
-.eaton-link-list-horizontal {
+.link-list-horizontal {
 
   &__list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
   }
 
   &__list-item {
     // Empty Selector for future reference
   }
 
+  &__list-link {
+    // Empty Selector for future reference
+  }
+
 
   //-----------------------------------
-  // Media-Query: Mobile
+  // Media-Query: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__list-item {
@@ -25,7 +30,7 @@
 
 
   //-----------------------------------
-  // Media-Query: Tablet & Desktop
+  // Media-Query: 992px and up
   //-----------------------------------
   @include media-desktop-and-up {
 
@@ -58,6 +63,5 @@
     }
 
   }
-
 
 }

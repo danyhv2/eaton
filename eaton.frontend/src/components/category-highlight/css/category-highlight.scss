@@ -1,0 +1,47 @@
+//-----------------------------------
+// M-49 Category Highlight
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.category-highlight {
+
+  @include media-mobile-only {
+    &__bottom {
+      margin-top: -15%;
+    }
+  }
+
+  @include media-tablet-only {
+    &__bottom {
+      margin-top: -13%;
+    }
+  }
+
+  @include media-desktop-and-up {
+    &__bottom {
+      margin-top: -5%;
+    }
+  }
+
+}
+
+
+
+//-----------------------------------
+// AEM Author Mode Styles
+//-----------------------------------
+
+// stylelint-disable selector-class-pattern
+.aem-AuthorLayer-Edit,
+.cq-wcm-edit {
+
+  // stylelint-enable
+  .category-highlight {
+
+    &__bottom {
+      margin-top: 0;
+    }
+  }
+}

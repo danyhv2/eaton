@@ -32,7 +32,7 @@ const lintJS = function(gulp, CONFIG, bundle) {
     // Lint JavaScript - Source Code
     //--------------
     gulp.src([
-      CONFIG.paths.srcRoot + '/**/*.js',
+      path.resolve(CONFIG.paths.srcRoot) + '/**/*.js',
 
       // Ignore Vendor Libs
       '!' + CONFIG.paths.srcRoot + '/**/vendors/**/*.js'
@@ -54,7 +54,7 @@ const lintJS = function(gulp, CONFIG, bundle) {
 
     // Lint Gulp Tasks And Config Files
     //--------------
-    gulp.src(path.resolve('./config/**/*.js'))
+    gulp.src(path.resolve('./config') + '/**/*.js')
       .pipe(gulpEslint(configEslint))
       .pipe(gulpEslint.format());
 

@@ -1,0 +1,17 @@
+<sly data-sly-use.data="${'../data/view-l2-hero-data.js' @testdata=properties.testdata}">
+  <div class="l2-hero l2-hero--vertical-align">
+
+    <!-- Start: Rendition Background Component -->
+    <sly data-sly-use.tpl="../../../shared/templates/rendition-background.html">
+      <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
+    </sly>
+    <!-- End: Rendition Background Component -->
+
+    <div class="row text-center center-block">
+      <div class="col-xs-12">
+        <h2 class="l2-hero__title b-heading-h1">${ data.title }</h2>
+        <p class="l2-hero__text b-body-copy">${ data.text }</p>
+      </div>
+    </div>
+  </div>
+</sly>

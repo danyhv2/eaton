@@ -1,0 +1,14 @@
+    <!--/* List Links */-->
+    <nav class="eaton-link-list-section-navigation">
+      <div class="container">
+        <div class="row">
+          <a
+            data-sly-repeat="${data.links}"
+            aria-label="Go to ${ item.title }"
+            class="eaton-link-list-section-navigation__nav-item"
+            target="${ item.target }"
+            href="${ item.url }"
+          >${ item.title }</a>
+        </div>
+      </div>
+    </nav>

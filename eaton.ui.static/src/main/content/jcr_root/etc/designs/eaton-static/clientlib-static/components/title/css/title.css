@@ -1,0 +1,11 @@
+.eaton-title { margin: 0; }
+
+.eaton-title__headline { margin-bottom: 0; }
+
+.eaton-title__byline { color: #98A4AE; font-family: Arial, "Arial", sans-serif; font-size: 15px; font-style: italic; }
+
+.eaton-title--inset .eaton-title__headline { padding-top: 30px; }
+
+@media screen and (min-width: 992px) { .eaton-title__byline { font-size: 20px; } }
+
+.eaton-title--eyebrow-and-byline { margin-top: 90px; margin-bottom: 30px; }

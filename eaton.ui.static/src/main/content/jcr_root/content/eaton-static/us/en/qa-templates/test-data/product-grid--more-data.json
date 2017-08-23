@@ -1,0 +1,168 @@
+{
+  "search": {
+    "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/product-grid--more-data.json",
+    "ajaxRequestNextPage": null,
+    "results": [
+      {
+        "contentType": "product-card",
+        "contentItem": {
+          "name": "New Product 1",
+          "subcategory": "Network, Server & Storage UPS",
+          "imgSrc": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 2400,
+          "link": {
+            "url": "http://eaton.dev/product-pid-new-1.html",
+            "target": "_blank"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "productAttributes": [
+            {
+              "label": "Voltage rating",
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
+            },
+            {
+              "label": "Input Plug",
+              "value": "2A-2B right pigtail auxiliary switch"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "110-127V right pigtail undervoltage release"
+            }
+          ]
+        }
+      },
+      {
+        "contentType": "product-card",
+        "contentItem": {
+          "name": "New Product 2",
+          "subcategory": "Network, Server & Storage UPS",
+          "imgSrc": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 3200,
+          "link": {
+            "url": "http://eaton.dev/product-pid-new-2.html",
+            "target": "_blank"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "productAttributes": [
+            {
+              "label": "Voltage rating",
+              "value": "600V lorem ipsum dolor"
+            },
+            {
+              "label": "Input Plug",
+              "value": "309-532P6W"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "(18) C13 Outlet grip, (12) C19 Outlet grip"
+            }
+          ]
+        }
+      },
+      {
+        "contentType": "product-card",
+        "contentItem": {
+          "name": "New Product 3",
+          "subcategory": "Network, Server & Storage UPS",
+          "imgSrc": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 99500,
+          "link": {
+            "url": "http://eaton.dev/product-pid-new-3.html",
+            "target": "_blank"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "productAttributes": [
+            {
+              "label": "Voltage rating",
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
+            },
+            {
+              "label": "Input Plug",
+              "value": "2A-2B right pigtail auxiliary switch"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "110-127V right pigtail undervoltage release"
+            }
+          ]
+        }
+      },
+      {
+        "contentType": "product-card",
+        "contentItem": {
+          "name": "New Product 4",
+          "subcategory": "Network, Server & Storage UPS",
+          "imgSrc": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 2400,
+          "link": {
+            "url": "http://eaton.dev/product-pid-new-4.html",
+            "target": "_blank"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "productAttributes": [
+            {
+              "label": "Voltage rating",
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
+            },
+            {
+              "label": "Input Plug",
+              "value": "2A-2B right pigtail auxiliary switch"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "110-127V right pigtail undervoltage release"
+            }
+          ]
+        }
+      },
+      {
+        "contentType": "product-card",
+        "contentItem": {
+          "name": "New Product 5",
+          "subcategory": "Network, Server & Storage UPS",
+          "imgSrc": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+          "price": 2400,
+          "link": {
+            "url": "http://eaton.dev/product-pid-new-5.html",
+            "target": "_blank"
+          },
+          "productLinks": {
+            "specificationsURL": "https://eaton.dev/products/pid-1213.html#specifications",
+            "resourcesURL": "https://eaton.dev/products/pid-1213.html#resources"
+          },
+          "productAttributes": [
+            {
+              "label": "Voltage rating",
+              "value": "65 KAIC at 240V, 10kAIC at 250 Vdc"
+            },
+            {
+              "label": "Input Plug",
+              "value": "2A-2B right pigtail auxiliary switch"
+            },
+            {
+              "label": "Output Recepticles",
+              "value": "110-127V right pigtail undervoltage release"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

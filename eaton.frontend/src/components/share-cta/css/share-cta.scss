@@ -1,0 +1,29 @@
+//-----------------------------------
+// Component M-6 Page Utility Module - share cta
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-product-share-cta {
+  margin: $spacing__sm $spacing__sm $spacing__sm 0;
+
+  i {
+    color: $color__primary-gray2;
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+    height: 12px;
+    margin-top: -17px;
+  }
+
+  @include media-mobile-and-tablet {
+    margin: 15px;
+
+    i {
+      font-size: 2rem;
+      margin-top: -8px;
+    }
+  }
+}

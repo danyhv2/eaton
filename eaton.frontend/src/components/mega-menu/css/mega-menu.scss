@@ -9,7 +9,6 @@
 @import "mega-menu-modules";
 
 .mega-menu {
-  background: $color__primary-gray1;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -29,7 +28,6 @@
   }
 
   &__col {
-    margin: 0 ($spacing__sm / 2 );
 
     .mega-menu__category-item {
       margin-bottom: $spacing__sm;
@@ -42,7 +40,6 @@
 
   &__category {
     background: $color__primary-gray2;
-    padding: $spacing__sm 0;
   }
 
   //-----------------------------------
@@ -50,24 +47,33 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     position: fixed;
-    top: 109px;
-    bottom: 40px;
-    transition: transform 0.7s ease-in-out;
+    top: 52px;
+    bottom: 0;
+    background: $color__primary-gray2;
     overflow: auto;
-    transform: translate(100%);
-    visibility: hidden;
+    transform: translate(100%, 0);
 
     &__row {
       flex-direction: column;
 
       .mega-menu__col {
-        margin-bottom: $spacing__sm;
+        display: none;
 
-        &:last-child {
-          margin-bottom: 0;
+        // Only display level-2 links in mobile
+        &.mega-menu__col--flex {
+          display: block;
+          margin-bottom: $spacing__sm;
         }
       }
     }
+
+    &__content {
+
+      &--active {
+        margin-bottom: 100px;
+      }
+    }
+
   }
 
   //-----------------------------------
@@ -77,22 +83,46 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.1s ease-in-out;
+    background: $color__primary-gray1;
 
     &__col {
+      margin: 0 ($spacing__sm / 2 );
 
+      &:first-child {
+        margin-left: 0;
+      }
+
+      // Container for Flexible list-links
+      &--flex {
+        border-right: 1px solid $color__secondary-gray4;
+      }
+
+      // Container for 25% columns
       &--4 {
         flex-basis: 25%;
       }
+
+      // Container for 50% columns
+      &--6 {
+        flex-basis: 50%;
+      }
+    }
+
+    &__category {
+      padding: $spacing__sm 0;
     }
   }
 }
 
-// Move to Title View
-.eaton-title {
-  position: relative;
-  padding: 30px 0;
+// Mega Menu Title
+.mega-menu-title {
   font-size: 20px;
-  display: flex;
+  background: $color__primary-gray1;
+
+  .container {
+    display: flex;
+    position: relative;
+  }
 
   a {
     text-decoration: none;
@@ -122,10 +152,15 @@
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-and-tablet {
+    padding: 20px 0;
+
     &__level1-link {
+      padding: 10px 10px 10px 0;
+
       .glyphicon-menu-left {
         display: inline;
         margin-right: 10px;
+        font-size: 0.75em;
       }
 
       .glyphicon-menu-right {
@@ -138,6 +173,8 @@
   // Desktop Breakpoint
   //-----------------------------------
   @include media-desktop-and-up {
+    padding: 30px 0;
+
     &__level1-link {
       .glyphicon-menu-left {
         display: none;
@@ -152,7 +189,7 @@
     &__close-menu {
       display: inline;
       position: absolute;
-      right: 0;
+      right: ($spacing__sm / 2);
     }
   }
 }

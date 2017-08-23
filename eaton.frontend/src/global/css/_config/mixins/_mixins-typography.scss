@@ -1,0 +1,317 @@
+//-----------------------------------
+// SASS: Typography Mixins
+// EATON - Styleguide
+//-----------------------------------
+
+
+//-----------------------------------
+// NOTE: There are 3 Mixins for each heading tag since there are some use cases
+// where a Heading should look like an H4 in mobile but like an H5 in desktop breakpoints.
+// EG: M-36 Product Card SKU
+//-----------------------------------
+
+// H1 Heading
+//--------------
+@mixin h1-hero--mobile {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+@mixin h1-hero--desktop {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 5.4rem;
+  line-height: 6.3rem;
+}
+
+@mixin h1-hero {
+  @include h1-hero--mobile;
+
+  @include media-desktop-and-up {
+    @include h1-hero--desktop;
+  }
+}
+
+
+// H1 Heading
+//--------------
+@mixin h1--mobile {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+@mixin h1--desktop {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+@mixin h1 {
+  @include h1--mobile;
+
+  @include media-desktop-and-up {
+    @include h1--desktop;
+  }
+}
+
+
+// H2 Heading
+//--------------
+@mixin h2--mobile {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+}
+
+@mixin h2--desktop {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+@mixin h2 {
+  @include h2--mobile;
+
+  @include media-desktop-and-up {
+    @include h2--desktop;
+  }
+}
+
+
+
+// H3 Heading
+//--------------
+@mixin h3--mobile {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+}
+
+@mixin h3--desktop {
+  font-family: 'EatonMedium', sans-serif;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+@mixin h3 {
+  @include h3--mobile;
+
+  @include media-desktop-and-up {
+    @include h3--desktop;
+  }
+}
+
+
+
+// H4 Heading
+//--------------
+@mixin h4--mobile {
+  font-family: Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 2.9rem;
+}
+
+@mixin h4--desktop {
+  font-family: Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 4.2rem;
+}
+
+@mixin h4 {
+  @include h4--mobile;
+
+  @include media-desktop-and-up {
+    @include h4--desktop;
+  }
+}
+
+
+// H5 Heading
+//--------------
+@mixin h5--mobile {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+@mixin h5--desktop {
+  font-family: Arial, sans-serif;
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+@mixin h5 {
+  @include h5--mobile;
+
+  @include media-desktop-and-up {
+    @include h5--desktop;
+  }
+}
+
+// links bold
+@mixin h5-link-bold {
+  @include h5;
+  font-family: $font-family__primary-bold;
+
+  @include media-desktop-and-up {
+    font-family: $font-family__primary-bold;
+  }
+}
+
+@mixin h4-link-bold {
+  @include h4;
+  font-family: $font-family__primary-bold;
+
+  @include media-desktop-and-up {
+    font-family: $font-family__primary-bold;
+  }
+}
+
+
+// Body Copy - Hero Description
+//--------------
+@mixin hero-description--mobile {
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2.2rem;
+}
+
+
+@mixin hero-description--desktop {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 3.2rem;
+}
+
+
+@mixin hero-description {
+  @include hero-description--mobile;
+
+  @include media-desktop-and-up {
+    @include hero-description--desktop;
+  }
+}
+
+
+// Body Copy
+//--------------
+@mixin body-copy--mobile {
+  font-family: Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 2.8rem;
+}
+
+
+@mixin body-copy--desktop {
+  font-family: Arial, sans-serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 3.8rem;
+}
+
+
+
+@mixin body-copy {
+  @include body-copy--mobile;
+
+  a {
+    color: $color__primary-blue;
+  }
+
+  @include media-desktop-and-up {
+    @include body-copy--desktop;
+  }
+
+}
+
+
+// Body Copy Small
+//--------------
+@mixin body-copy-small--mobile {
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+}
+
+@mixin body-copy-small--desktop {
+  font-family: Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 2.4rem;
+}
+
+@mixin body-copy-small {
+  @include body-copy-small--mobile;
+
+  a {
+    color: $color__primary-blue;
+  }
+
+  @include media-desktop-and-up {
+    @include body-copy-small--desktop;
+  }
+
+}
+
+
+// Eyebrow Large
+//--------------
+@mixin eyebrow-large--mobile {
+  font-family: $font-family__secondary;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+@mixin eyebrow-large--desktop {
+  font-family: $font-family__secondary;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+}
+
+@mixin eyebrow-large {
+  font-weight: bold;
+
+  @include eyebrow-large--mobile;
+
+  @include media-desktop-and-up {
+    @include eyebrow-large--desktop;
+  }
+}
+
+
+// Eyebrow Small
+//--------------
+@mixin eyebrow-small--mobile {
+  font-family: $font-family__secondary;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+}
+
+@mixin eyebrow-small--desktop {
+  font-family: $font-family__secondary;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+@mixin eyebrow-small {
+  font-weight: bold;
+
+  @include eyebrow-small--mobile;
+
+  @include media-desktop-and-up {
+    @include eyebrow-small--desktop;
+  }
+}

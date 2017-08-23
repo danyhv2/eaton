@@ -1,0 +1,58 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Grid Component</div>
+</sly>
+
+
+<sly data-sly-use.data="${ '../data/product-grid-data.js' @testdata=properties.testdata }">
+
+  <!--/* It Adds a custom class to the grid container based on the Type of results */-->
+  <div class="product-grid-results ${
+    properties.view == 'product-card-sku'
+      ? 'product-grid-results--sku'
+      : 'product-grid-results--family'
+    }">
+    <div class="container">
+
+      <!--/* Results Header */-->
+      <div class="row">
+        <div class="col-xs-12">
+          <sly data-sly-use.tpl="../../shared/templates/module-faceted-navigation/faceted-navigation-header.html">
+            <sly data-sly-call="${ tpl.module @ data=data.search }"></sly>
+          </sly>
+        </div>
+      </div>
+
+
+      <div class="row">
+
+        <!--/* M-62: Faceted Navigation */-->
+        <div class="col-xs-12 col-md-3">
+          <sly data-sly-use.tpl="../../shared/templates/module-faceted-navigation/faceted-navigation.html">
+            <sly data-sly-call="${ tpl.module @ data=data.facets }"></sly>
+          </sly>
+        </div>
+
+        <!--/* Results List */-->
+        <div class="col-xs-12 col-md-9">
+
+          <!--/* View: Card-SKU */-->
+          <sly data-sly-test.isViewSKU="${ properties.view == 'product-card-sku' }">
+            <sly data-sly-use.tpl="views/product-card-sku.html">
+              <sly data-sly-call="${ tpl.view @ data=data.search }"></sly>
+            </sly>
+          </sly>
+
+          <!--/* View: Card-Family */-->
+          <sly data-sly-test="${ !isViewSKU }">
+            <sly data-sly-use.tpl="views/product-card-family.html">
+              <sly data-sly-call="${ tpl.view @ data=data.search }"></sly>
+            </sly>
+          </sly>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</sly>

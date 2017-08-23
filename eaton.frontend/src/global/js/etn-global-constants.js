@@ -8,12 +8,19 @@ App.global = App.global || {};
 
 App.global.constants = (function() {
 
-  // Private Behaviors go here...
+  // Private Methods go here...
 
 
   // Public Constants
-  // NOTE: Constants Names should be Written in Uppercase
   return {
+
+    MEDIA_QUERIES: {
+      MOBILE: '(max-width: 767px)',
+      TABLET: '(min-width: 768px) and (max-width: 991px)',
+      MOBILE_AND_TABLET: '(max-width: 991px)',
+      DESKTOP: '(min-width: 992px)',
+      DESKTOP_LG: '(min-width: 1200px)'
+    },
 
     // Breakpoints
     GRID: {
@@ -22,7 +29,6 @@ App.global.constants = (function() {
       MD: 992,  // pixels
       LG: 1200  // pixels
     }
-
 
 
   };

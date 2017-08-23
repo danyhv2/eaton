@@ -1,0 +1,40 @@
+<template data-sly-template.module="${ @ data }">
+
+  <div class="faceted-navigation-header">
+    <div class="faceted-navigation-header__header-top">
+      <div class="faceted-navigation-header__title">${ '{0} {1}' @ i18n, format=[ data.resultsCount, data.resultsLabel ] }</div>
+      <div class="faceted-navigation-header__sort-options">
+        <select>
+            <option selected>${ data.sortBy.sortByLabel }</option>
+          <sly data-sly-list.sort="${ data.sortBy.items }">
+            <option value="${ sort.url }">${ sort.label }</option>
+          </sly>
+        </select>
+      </div>
+    </div>
+
+    <div data-sly-test="${ data.activeFilters.items.length }"
+      class="faceted-navigation-header__header-bottom">
+
+      <!--/* If There Are Active Filters */-->
+      <div data-sly-list.filter="${ data.activeFilters.items }"
+        class="faceted-navigation-header__active-filters">
+        <a class="faceted-navigation-header__filter-link"
+          href="${ filter.url }"
+          target="${ filter.target }"
+          aria-label="${ '{0} {1}' @ format=[ data.activeFilters.removeFilterLabel, filter.label ] }">
+          <i class="icon icon-close" aria-hidden="true"></i>
+          <span class="faceted-navigation-header__filter-label">${ filter.label }</span>
+        </a>
+      </div>
+
+      <!--/* Clear Filters */-->
+      <div class="faceted-navigation-header__filters-actions">
+        <a href="${ data.activeFilters.clearAllFilters.url }"
+          target="${ data.activeFilters.clearAllFilters.target }"
+          class="faceted-navigation-header__action-link">${ data.activeFilters.clearAllFilters.label }</a>
+      </div>
+    </div>
+  </div>
+
+</template>

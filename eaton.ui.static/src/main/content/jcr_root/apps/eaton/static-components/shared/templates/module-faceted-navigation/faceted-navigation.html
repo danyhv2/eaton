@@ -1,0 +1,100 @@
+<!--/* M-62: Faceted Navigation */-->
+<template data-sly-template.module="${ @ data }">
+  <div class="faceted-navigation eaton-form">
+    <div class="mobile-header u-visible-mobile">
+      <span>Filters </span>
+
+      <button class="close-facets-mobile button--reset">
+        <span class="sr-only">${ 'Close Filters' @ i18n }</span>
+        <i class="icon icon-close" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <h4 class="hidden-sm hidden-xs">${ 'Narrow Results' @ i18n }</h4>
+
+    <sly data-sly-list="${ data.facetItems }">
+
+      <!--/* Open/Add Wrapper div used to toggle Facets Visiblity (View More) */-->
+      <sly data-sly-test="${ itemList.index == data.config.facetItemsMinVisible }">
+        <div class="u-hide faceted-navigation__more-facets">
+      </sly>
+
+      <sly data-sly-test.isGroupExpanded="${ itemList.index < data.config.facetItemsMinVisible }"></sly>
+
+      <!--/* Print All Facets */-->
+      <div class="faceted-navigation__facet-group">
+
+        <!--/* Facet Header */-->
+        <button class="faceted-navigation__header button--reset"
+          data-toggle="collapse"
+          data-target=".${ 'facet-{0}' @ format=[ item.facetId ] }"
+          aria-expanded="true"
+          aria-controls="${ 'facet-{0}' @ format=[ item.facetId ] }"
+        >
+          <span class="faceted-navigation__facet-name">${ item.facetName }</span>
+          <i class="icon icon-sign-minus" aria-hidden="true"></i>
+          <i class="icon icon-sign-plus u-hide" aria-hidden="true"></i>
+        </button>
+
+        <!--/* Facet Values */-->
+        <div class="collapse ${ isGroupExpanded ? 'in' : '' } ${ 'facet-{0}' @ format=[ item.facetId ] }">
+
+          <ul data-sly-list.facetValue="${ item.facetValues }" class="faceted-navigation__list">
+
+            <li class="faceted-navigation__list-item ${
+              facetValueList.count > data.config.facetValuesMinVisible
+                ? 'u-hide'
+                : ''
+              }">
+              <!--/* Type: Checkbox */-->
+              <sly data-sly-test.typeCheckboxes="${ item.facetType == 'checkboxes' }">
+                <div class="faceted-navigation__facet-value">
+                  <input
+                    name="${ 'facet-{0}__{1}' @ format=[ item.facetId, facetValue.id ] }"
+                    type="checkbox"
+                  />
+                  <a target="_self" href="${ facetValue.url }">${ facetValue.label }</a>
+                </div>
+              </sly>
+
+              <!--/* Type: Radio */-->
+              <sly data-sly-test.typeRadios="${ item.facetType == 'radios'}">
+                <div class="faceted-navigation__facet-value">
+                  <input
+                    name="${ 'facet-{0}' @ format=[ item.facetId ] }"
+                    type="radio"
+                  />
+                  <a target="_self" href="${ facetValue.url }">${ facetValue.label }</a>
+                </div>
+              </sly>
+            </li>
+
+
+            <!--/* If there are more Facet Values than the configured amount, show "View More" button */-->
+            <sly data-sly-test="${ item.facetValues.length > data.config.facetValuesMinVisible && facetValueList.last }">
+              <button class="button--reset faceted-navigation__view-more-values"
+                data-facets-more-values >${ 'View more' @ i18n }</button>
+            </sly>
+          </ul>
+        </div>
+
+      </div>
+
+
+      <!--/* Close Wrapper <div> that hides additional facet-items, and Add Button that shows more Facet Items */-->
+      <sly data-sly-test="${ itemList.count == data.config.facetItemsMinVisible && itemList.last }">
+        </div>
+
+        <button class="faceted-navigation__view-more-groups button--reset" data-facets-more-groups>
+          <strong>${ 'View more' @ i18n }</strong>
+        </button>
+      </sly>
+
+    </sly>
+
+    <div class="faceted-navigation__apply u-visible-mobile">
+      <button class="b-button b-button__tertiary b-button__tertiary--light" data-facets-apply>Done</button>
+    </div>
+
+  </div>
+</template>

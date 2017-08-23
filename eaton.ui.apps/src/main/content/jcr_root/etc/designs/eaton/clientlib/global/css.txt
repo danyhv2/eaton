@@ -1,0 +1,9 @@
+#base=css
+
+##----- Load Vendor Libs
+vendors/bootstrap.css
+vendors/slick.css
+
+
+##----- Load Custom Global Styles
+etn-global.css

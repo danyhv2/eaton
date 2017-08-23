@@ -1,0 +1,63 @@
+//-----------------------------------
+// Component 4.2: Header - Mega Menu
+// List - View - Links
+//-----------------------------------
+
+.eaton-list-links {
+  display: flex;
+
+  &__col {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &__link {
+    padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
+    text-decoration: none;
+    display: inline-block;
+
+    i {
+      font-size: 0.75em;
+    }
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  //-----------------------------
+  // Mobile-Tablet Breakpoint
+  // ----------------------------
+  @include media-mobile-and-tablet {
+    flex-direction: column;
+
+    &__link {
+      display: flex;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(238, 240, 242, 0.3);
+      align-items: center;
+    }
+
+    &__text {
+      flex: 1;
+      margin-right: ($spacing__sm / 2);
+    }
+  }
+
+  //-----------------------------
+  // Desktop Breakpoint
+  // ----------------------------
+  @include media-desktop-and-up {
+    flex-wrap: nowrap;
+
+    &__col {
+      width: 100%;
+      margin: 0 ($spacing__sm / 2 );
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

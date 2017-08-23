@@ -1,0 +1,10 @@
+<sly data-sly-use.data="${'../data/view-2column-data.js' @testdata=properties.testdata}">
+	<div class="eaton-linklist-2column">
+		<div data-sly-list.link=${data.links}>
+			<div class="col-xs-12 col-md-6 eaton-linklist-2column__link b-body-copy">
+				<a href="${link.url}" title="${link.text}" target="${link.target}" data-sly-test="${link.url}">${link.text}</a>
+				<div data-sly-test=${!link.url}>${link.text}</div>
+			</div>
+		</div>
+	</div>
+</sly>

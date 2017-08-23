@@ -1,0 +1,3 @@
+#base=js
+
+module-media-gallery.js

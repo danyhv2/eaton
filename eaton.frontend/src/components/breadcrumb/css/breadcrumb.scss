@@ -1,0 +1,55 @@
+//-----------------------------------
+// Component M-5: Breadcrumb
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+// Override Bootstrap's Breadcrumb component
+.breadcrumb {
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+
+.eaton-breadcrumb {
+  background: $color__secondary-gray5;
+  padding: 1rem 0;
+
+
+
+  &__list {
+    @include clearfix();
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  &__list-item {
+    align-items: center;
+    font-size: 14px;
+    margin-right: 5px;
+    float: left;
+
+    .icon {
+      font-size: 10px;
+      padding: 0 4px;
+    }
+
+    &:last-child {
+      a {
+        color: $color__black;
+      }
+
+      .icon {
+        display: none;
+      }
+    }
+  }
+
+}

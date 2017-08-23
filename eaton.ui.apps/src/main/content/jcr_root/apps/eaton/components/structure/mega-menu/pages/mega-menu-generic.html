@@ -1,0 +1,64 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.MegaMenuModel">
+    <!--/* Include Level 1: Links *-->
+    <!--/*  Include: Mega-Menu-Title */-->
+    <div class="mega-menu-title">
+        <div class="container">
+            <a href="#" class="mega-menu-title__level1-link">
+                <i class="mega-menu-title__icon glyphicon glyphicon-menu-left" aria-hidden="true"></i>
+                <div>
+                    ${data.transTitleText}
+                </div>
+                <i class="mega-menu-title__icon glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+            </a>
+            <button class="button--reset mega-menu-title__close-menu">
+            <span class="sr-only">Close Search</span>
+            <i class="mega-menu-title__icon icon icon-close" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <!--/* Include: Mega Menu Modules */ -->
+    <div class="mega-menu__category">
+        <div class="container">
+            <div class="mega-menu__row">
+
+                <!--/* Include: Column 1 - Flexible width */ -->
+                <div class="mega-menu__col mega-menu__col--flex mega-menu__col--4">
+                    <!--/* Include: List - Links */ -->
+                    <div class="mega-menu__category-item">
+                    	<sly data-sly-resource="${'links-products' @ resourceType='/apps/eaton/components/content/list'}"></sly>
+                    </div>
+                </div>
+
+            <sly data-sly-use.megaMenuHelper="com.eaton.platform.core.helpers.MegaMenuHelper"></sly>
+                <sly data-sly-test="${!megaMenuHelper.hideSecondCol}">
+                	<!--/* Include: Column 2  */-->
+                    <div class="mega-menu__col ${megaMenuHelper.secondColCSS}">
+                        <!--/* Include: Search Box - Inline */ -->
+                        <div class="mega-menu__category-item">
+                            <sly data-sly-resource="${'par1' @ resourceType='wcm/foundation/components/parsys'}"></sly>
+                        </div>
+                    </div>
+                </sly>
+                <sly data-sly-test="${!megaMenuHelper.hideThirdCol}">
+                    <!--/* Include: Column 3  */-->
+                    <div class="mega-menu__col ${megaMenuHelper.thridColCSS}">
+                        <!--/* Include: TTIL - Single Feature */ -->
+                        <div class="mega-menu__category-item">
+                            <sly data-sly-resource="${'par3' @ resourceType='wcm/foundation/components/parsys'}"></sly>
+                        </div>
+                    </div>
+				</sly>
+				<sly data-sly-test="${!megaMenuHelper.hideFourthCol}">
+                    <!--/* Include: Column 4  */-->
+                    <div class="mega-menu__col ${megaMenuHelper.fourthColCSS}">
+                        <!--/* Include: TTIL - Single Feature */ -->
+                        <div class="mega-menu__category-item">
+                            <sly data-sly-resource="${'par4' @ resourceType='wcm/foundation/components/parsys'}"></sly>
+                        </div>
+                    </div>
+                </sly>
+            </div>
+        </div>
+    </div>
+</sly>

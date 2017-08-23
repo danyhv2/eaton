@@ -1,0 +1,40 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">How To Buy Component</div>
+</sly>
+
+<sly data-sly-use.data="${'../data/how-to-buy-data.js'}">
+  <div class="eaton-how-to-buy">
+    <sly data-sly-test="${data.headline}">
+      <div class="container row" >
+        <div class="col-xs-12 col-md-4 eaton-how-to-buy__element" >
+          <div class="b-heading-h3">${data.headline}</div>
+        </div>
+
+        <div class="col-xs-12 col-md-8">
+        <div class="row" >
+    </sly>
+    <sly data-sly-test="${!data.headline}">
+      <div class="container row" >
+    </sly>
+    <sly data-sly-list.link="${data.items}">
+
+      <div class="col-xs-12 ${data.headline ? 'col-md-6' : 'col-md-4'} eaton-how-to-buy__element" data-sly-test=${link.image}>
+        <div class="eaton-how-to-buy__icon">
+          <img src="${link.image}">
+        </div>
+        <div class="eaton-how-to-buy__text-wrapper">
+          <a href="${link.linkl}" class="${data.headline ? 'b-h4-link-bold' : 'b-h5-link-bold'}" title="${link.title}" target="${link.target}">${link.title}</a>
+          <div class="p-body-copy">${link.text}</div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 eaton-how-to-buy__element" data-sly-test="${!link.image}">
+        <div class="b-heading-h4">${link.title}</div>
+      </div>
+    </sly>
+    </div>
+    <sly data-sly-test="${data.headline}">
+        </div>
+      </div>
+    </sly>
+  </div>
+</sly>
