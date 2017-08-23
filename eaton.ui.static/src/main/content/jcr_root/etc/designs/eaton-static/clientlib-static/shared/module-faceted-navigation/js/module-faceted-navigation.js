@@ -23,8 +23,6 @@
 var App = window.App || {};
 
 App.facets = function () {
-  var _this = this;
-
   var $componentClass = $('.faceted-navigation');
 
   var init = function init() {
@@ -45,9 +43,9 @@ App.facets = function () {
   * toggle the mobile factes modal
   * @param  { Object } event - the click event object
   */
-  var toggleIcons = function toggleIcons(event) {
+  var toggleIcons = function toggleIcons(e) {
     e.preventDefault();
-    $(_this).children('.icon-sign-plus').toggleClass('u-hide');
+    $(this).children('.icon-sign-plus').toggleClass('u-hide');
   };
 
   /**

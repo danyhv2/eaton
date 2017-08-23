@@ -27,7 +27,7 @@ App.facets = (function() {
   * toggle the mobile factes modal
   * @param  { Object } event - the click event object
   */
-  const toggleIcons = (event) => {
+  const toggleIcons = function(e) {
     e.preventDefault();
     $(this).children('.icon-sign-plus').toggleClass('u-hide');
   };

@@ -49,9 +49,13 @@
 
 .faceted-navigation__list-item label.label { padding: 0; font-weight: normal; font-size: 1.3rem; }
 
+.faceted-navigation__list-item input[type="radio"].input--small, .faceted-navigation__list-item input[type="checkbox"].input--small { display: none; }
+
+.faceted-navigation__list-item input[type="radio"].input--small + span, .faceted-navigation__list-item input[type="checkbox"].input--small + span { padding-left: 35px; }
+
 .faceted-navigation__list-item input[type="radio"].input--small + span::before, .faceted-navigation__list-item input[type="checkbox"].input--small + span::before { width: 2rem; height: 2rem; left: 0; top: -.3rem; }
 
-.faceted-navigation__list-item input[type="radio"].input--small:checked + span::after, .faceted-navigation__list-item input[type="checkbox"].input--small:checked + span::after { width: 1.2rem; height: 1.2rem; top: .1rem; left: .4rem; font-size: 1.5rem; }
+.faceted-navigation__list-item input[type="radio"].input--small:checked + span::after, .faceted-navigation__list-item input[type="checkbox"].input--small:checked + span::after { width: 1.2rem; height: 1.2rem; top: .1rem; left: .4rem; font-size: 1rem; line-height: 1.4rem; }
 
 .faceted-navigation .hidden { display: none; }
 

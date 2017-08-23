@@ -37,11 +37,17 @@
     input[type="radio"],
     input[type="checkbox"] {
       &.input--small {
-        + span::before {
-          width: 2rem;
-          height: 2rem;
-          left: 0;
-          top: -.3rem;
+        display: none;
+
+        + span {
+          padding-left: 35px;
+
+          &::before {
+            width: 2rem;
+            height: 2rem;
+            left: 0;
+            top: -.3rem;
+          }
         }
 
         &:checked + span::after {
@@ -49,7 +55,8 @@
           height: 1.2rem;
           top: .1rem;
           left: .4rem;
-          font-size: 1.5rem;
+          font-size: 1rem;
+          line-height: 1.4rem;
         }
       }
     }
