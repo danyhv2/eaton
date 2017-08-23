@@ -14,11 +14,15 @@
     position: relative !important;
     visibility: visible !important;
     opacity: 1 !important;
-    z-index: 99999 !important;
+    z-index: 999 !important;
 
     &__content {
       display: block !important;
     }
+  }
+
+  .full-page-drawer {
+    max-height: 1000px !important;
   }
 
   .header-search {

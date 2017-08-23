@@ -60,8 +60,6 @@ App.header = function () {
     var utilityNavOffset = $('.header-utility-nav').offset().top;
     var utilityNavHeight = $('.header-utility-nav').outerHeight();
 
-    console.log('Nav Offset & Height', utilityNavOffset, utilityNavHeight);
-
     if (scrollTop > utilityNavOffset + utilityNavHeight) {
       componentClass.addClass('eaton-header--fixed');
       // Close the drawer if open - Country Selector
