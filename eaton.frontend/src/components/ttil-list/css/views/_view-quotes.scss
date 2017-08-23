@@ -25,13 +25,13 @@
 
   &__quote {
     padding-bottom: $spacing__md / 2;
-    font-size: 23px;
+    font-size: 2.3rem;
     line-height: 38px;
     font-style: italic;
   }
 
   &__author {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-style: italic;
 
     .author {
@@ -78,13 +78,13 @@
     }
 
     &__quote {
-      font-size: 30px;
+      font-size: 3.0rem;
       line-height: 48px;
       padding-bottom: $spacing__md;
     }
 
     &__author {
-      font-size: 20px;
+      font-size: 2.0rem;
     }
 
     &__left {

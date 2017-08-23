@@ -35,7 +35,8 @@ App.global.constants = function () {
       MOBILE: '(max-width: 767px)',
       TABLET: '(min-width: 768px) and (max-width: 991px)',
       MOBILE_AND_TABLET: '(max-width: 991px)',
-      DESKTOP: '(min-width: 992px)'
+      DESKTOP: '(min-width: 992px)',
+      DESKTOP_LG: '(min-width: 1200px)'
     },
 
     // Breakpoints

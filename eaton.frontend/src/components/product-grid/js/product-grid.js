@@ -10,12 +10,14 @@ App.productGrid = (function() {
   const resultListCSSClass = '.results-list';
   const $componentElement = $('.product-grid').find(resultListCSSClass);
   const templates = {};
+  let i18n = {};
 
   /**
   * Initialize
   */
   const init = () => {
     addEventListeners();
+    loadI18NStrings();
   };
 
 
@@ -27,9 +29,24 @@ App.productGrid = (function() {
   };
 
 
+  /**
+   * Get i18n String from a HTML data-attribute
+   * @return {[type]} [description]
+   */
+  const loadI18NStrings = function() {
+
+    let i18nData = $componentElement[0].dataset.i18n;
+
+    // Save i18n Strings as an Object in a global variable
+    i18n = (JSON.parse(i18nData))
+      ? JSON.parse(i18nData)
+      : {};
+  };
+
+
   // M-36: SKU Card Template
   //--------------
-  templates.productCardSKU = function(data) {
+  templates.productCardSKU = function(data, i18n) {
     return `
       <div class="product-card-sku">
 
@@ -64,7 +81,7 @@ App.productGrid = (function() {
               <a href="${ data.contentItem.productLinks.specificationsURL }"
                 class="product-card-sku__link-item-link"
                 target="_self"
-                aria-label="Go to Specifications"
+                aria-label="${ i18n.goTo } Specifications"
               >
                 <span class="link-label">Specifications</span>
                 <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
@@ -75,7 +92,7 @@ App.productGrid = (function() {
               <a href="${ data.contentItem.productLinks.resourcesURL }"
                 class="product-card-sku__link-item-link"
                 target="_self"
-                aria-label="Go to Resources"
+                aria-label="${ i18n.goTo } Resources"
               >
                 <span class="link-label">Resources</span>
                 <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
@@ -107,14 +124,14 @@ App.productGrid = (function() {
 
   // M-37: Family Card Template
   //--------------
-  templates.productCardFamily = function(data) {
+  templates.productCardFamily = function(data, i18n) {
     return `
       <div class="product-card-family">
 
         <a href="${ data.contentItem.link.url }"
           target="${ data.contentItem.link.target }"
           class="product-card-family__link">
-          <span class="sr-only">Go to ${ data.contentItem.name }</span>
+          <span class="sr-only">${ i18n.goTo } ${ data.contentItem.name }</span>
         </a>
 
         <div class="product-card-family__image-wrapper">
@@ -174,11 +191,11 @@ App.productGrid = (function() {
           // Based on the Content Type, use the appropiate Template passing the received data
           //--------------
           if (data.contentType === 'product-card' && templateType === 'card-sku') {
-            newElements += templates.productCardSKU(data);
+            newElements += templates.productCardSKU(data, i18n);
           }
 
           else if (data.contentType === 'product-card' && templateType === 'card-family') {
-            newElements += templates.productCardFamily(data);
+            newElements += templates.productCardFamily(data, i18n);
           }
 
         });

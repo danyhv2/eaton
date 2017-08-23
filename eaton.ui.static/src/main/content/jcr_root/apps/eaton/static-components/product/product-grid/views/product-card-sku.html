@@ -4,10 +4,16 @@
 <template data-sly-template.view="${ @ data }">
 
   <!--/* Results Wrapper */-->
+  <!--/*
+    NOTE: data-i18n is a JSON object that contains a list i18n strings used in this View
+    - These strings are used by a JavaScript template when the user clicks "Load More"
+  */-->
   <div class="results-list"
     data-results-url="${ data.ajaxRequestUrl }"
     data-results-next-page="${ data.ajaxRequestNextPage }"
-    data-results-type="product-card-sku">
+    data-results-type="product-card-sku"
+    data-i18n='{ "goTo": "${ "Go to" @ i18n }" }'
+  >
 
     <!--/* Result Items - SKU */-->
     <div class="results-list__content">

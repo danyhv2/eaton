@@ -43,22 +43,39 @@
                     value="link"/>
                 </items>
               </view>
-              <color
+              <theme
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/form/select"
-                fieldLabel="Color"
-                name="./color">
+                fieldLabel="Theme"
+                fieldDescription="Determine the appearance of the CTA"
+                name="./theme">
                 <items jcr:primaryType="nt:unstructured">
-                  <white
+                  <primary-light
                     jcr:primaryType="nt:unstructured"
-                    text="White"
-                    value="light"/>
-                  <blue
+                    text="Primary theme over Light background"
+                    value="primary-light"/>
+                  <primary-dark
                     jcr:primaryType="nt:unstructured"
-                    text="Blue"
-                    value="dark"/>
+                    text="Primary theme over Dark background"
+                    value="primary-dark"/>
+                  <secondary-light
+                    jcr:primaryType="nt:unstructured"
+                    text="Secondary theme over Light background"
+                    value="secondary-light"/>
+                  <secondary-dark
+                    jcr:primaryType="nt:unstructured"
+                    text="Secondary theme over Dark background"
+                    value="secondary-dark"/>
+                  <tertiary-light
+                    jcr:primaryType="nt:unstructured"
+                    text="Tertiary theme over Light background"
+                    value="tertiary-light"/>
+                  <tertiary-dark
+                    jcr:primaryType="nt:unstructured"
+                    text="Tertiary theme over Dark background"
+                    value="tertiary-dark"/>
                 </items>
-              </color>
+              </theme>
               <title
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/form/textfield"

@@ -27,12 +27,14 @@ App.productGrid = function () {
   var resultListCSSClass = '.results-list';
   var $componentElement = $('.product-grid').find(resultListCSSClass);
   var templates = {};
+  var i18n = {};
 
   /**
   * Initialize
   */
   var init = function init() {
     addEventListeners();
+    loadI18NStrings();
   };
 
   /**
@@ -42,18 +44,30 @@ App.productGrid = function () {
     $componentElement.find('[data-load-more]').on('click', fetchMoreResults);
   };
 
+  /**
+   * Get i18n String from a HTML data-attribute
+   * @return {[type]} [description]
+   */
+  var loadI18NStrings = function loadI18NStrings() {
+
+    var i18nData = $componentElement[0].dataset.i18n;
+
+    // Save i18n Strings as an Object in a global variable
+    i18n = JSON.parse(i18nData) ? JSON.parse(i18nData) : {};
+  };
+
   // M-36: SKU Card Template
   //--------------
-  templates.productCardSKU = function (data) {
-    return '\n      <div class="product-card-sku">\n\n        <div class="product-card-sku__image-wrapper b-body-copy-small">\n          <a href="' + data.contentItem.link.url + '"\n            class="product-card-sku__image-link"\n            target="' + data.contentItem.link.target + '"\n          >\n            <img src="' + data.contentItem.imgSrc + '"\n              class="product-card-sku__image"\n              alt="' + data.contentItem.name + '" />\n          </a>\n        </div>\n\n        <div class="product-card-sku__header">\n\n          <div class="product-card-sku__title-wrapper">\n            <h3 class="product-card-sku__name">\n              <a href="' + data.contentItem.link.url + '"\n                target="' + data.contentItem.link.target + '"\n                class="product-card-sku__url-link"\n              >\n                <span class="name-label">' + data.contentItem.name + '</span>\n                <i class="icon icon-chevron-right" aria-hidden="true"></i>\n              </a>\n            </h3>\n            <div class="product-card-sku__price b-body-copy">' + data.contentItem.price + '*</div>\n          </div>\n\n          <ul class="product-card-sku__links-list">\n            <li class="product-card-sku__link-item">\n              <a href="' + data.contentItem.productLinks.specificationsURL + '"\n                class="product-card-sku__link-item-link"\n                target="_self"\n                aria-label="Go to Specifications"\n              >\n                <span class="link-label">Specifications</span>\n                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>\n              </a>\n            </li>\n\n            <li class="product-card-sku__link-item">\n              <a href="' + data.contentItem.productLinks.resourcesURL + '"\n                class="product-card-sku__link-item-link"\n                target="_self"\n                aria-label="Go to Resources"\n              >\n                <span class="link-label">Resources</span>\n                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>\n              </a>\n            </li>\n          </ul>\n\n        </div>\n\n        <div class="product-card-sku__content">\n          <div class="product-card-sku__attrs-list">\n\n            ' + data.contentItem.productAttributes.map(function (attribute) {
+  templates.productCardSKU = function (data, i18n) {
+    return '\n      <div class="product-card-sku">\n\n        <div class="product-card-sku__image-wrapper b-body-copy-small">\n          <a href="' + data.contentItem.link.url + '"\n            class="product-card-sku__image-link"\n            target="' + data.contentItem.link.target + '"\n          >\n            <img src="' + data.contentItem.imgSrc + '"\n              class="product-card-sku__image"\n              alt="' + data.contentItem.name + '" />\n          </a>\n        </div>\n\n        <div class="product-card-sku__header">\n\n          <div class="product-card-sku__title-wrapper">\n            <h3 class="product-card-sku__name">\n              <a href="' + data.contentItem.link.url + '"\n                target="' + data.contentItem.link.target + '"\n                class="product-card-sku__url-link"\n              >\n                <span class="name-label">' + data.contentItem.name + '</span>\n                <i class="icon icon-chevron-right" aria-hidden="true"></i>\n              </a>\n            </h3>\n            <div class="product-card-sku__price b-body-copy">' + data.contentItem.price + '*</div>\n          </div>\n\n          <ul class="product-card-sku__links-list">\n            <li class="product-card-sku__link-item">\n              <a href="' + data.contentItem.productLinks.specificationsURL + '"\n                class="product-card-sku__link-item-link"\n                target="_self"\n                aria-label="' + i18n.goTo + ' Specifications"\n              >\n                <span class="link-label">Specifications</span>\n                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>\n              </a>\n            </li>\n\n            <li class="product-card-sku__link-item">\n              <a href="' + data.contentItem.productLinks.resourcesURL + '"\n                class="product-card-sku__link-item-link"\n                target="_self"\n                aria-label="' + i18n.goTo + ' Resources"\n              >\n                <span class="link-label">Resources</span>\n                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>\n              </a>\n            </li>\n          </ul>\n\n        </div>\n\n        <div class="product-card-sku__content">\n          <div class="product-card-sku__attrs-list">\n\n            ' + data.contentItem.productAttributes.map(function (attribute) {
       return '\n                <div class="product-card-sku__attrs-list-item">\n                  <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">' + attribute.label + '</div>\n                  <div class="product-card-sku__attr-value b-body-copy">' + attribute.value + '</div>\n                </div>';
     }).join('') + '\n\n          </div>\n          <div class="product-card-sku__description">' + data.contentItem.description + '</div>\n        </div>\n\n      </div>';
   };
 
   // M-37: Family Card Template
   //--------------
-  templates.productCardFamily = function (data) {
-    return '\n      <div class="product-card-family">\n\n        <a href="' + data.contentItem.link.url + '"\n          target="' + data.contentItem.link.target + '"\n          class="product-card-family__link">\n          <span class="sr-only">Go to ' + data.contentItem.name + '</span>\n        </a>\n\n        <div class="product-card-family__image-wrapper">\n          <img src="' + data.contentItem.imgSrc + '"\n            class="product-card-family__image"\n            alt="' + data.contentItem.name + '" />\n        </div>\n\n        <div class="product-card-family__content-wrapper">\n          <div class="product-card-family__subcategory b-eyebrow-small">' + data.contentItem.subcategory + '</div>\n          <h2 class="product-card-family__name">' + data.contentItem.name + '</h2>\n        </div>\n\n      </div>';
+  templates.productCardFamily = function (data, i18n) {
+    return '\n      <div class="product-card-family">\n\n        <a href="' + data.contentItem.link.url + '"\n          target="' + data.contentItem.link.target + '"\n          class="product-card-family__link">\n          <span class="sr-only">' + i18n.goTo + ' ' + data.contentItem.name + '</span>\n        </a>\n\n        <div class="product-card-family__image-wrapper">\n          <img src="' + data.contentItem.imgSrc + '"\n            class="product-card-family__image"\n            alt="' + data.contentItem.name + '" />\n        </div>\n\n        <div class="product-card-family__content-wrapper">\n          <div class="product-card-family__subcategory b-eyebrow-small">' + data.contentItem.subcategory + '</div>\n          <h2 class="product-card-family__name">' + data.contentItem.name + '</h2>\n        </div>\n\n      </div>';
   };
 
   /**
@@ -104,9 +118,9 @@ App.productGrid = function () {
         // Based on the Content Type, use the appropiate Template passing the received data
         //--------------
         if (data.contentType === 'product-card' && templateType === 'card-sku') {
-          newElements += templates.productCardSKU(data);
+          newElements += templates.productCardSKU(data, i18n);
         } else if (data.contentType === 'product-card' && templateType === 'card-family') {
-          newElements += templates.productCardFamily(data);
+          newElements += templates.productCardFamily(data, i18n);
         }
       });
 

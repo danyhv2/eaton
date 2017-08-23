@@ -354,52 +354,6 @@ use(function () {
   ]
 
 
-
-  //-----------------------------------
-  // IconFont
-  //-----------------------------------
-  data.glyphiconFont = [
-    "icon-badge",
-    "icon-book",
-    "icon-bulb",
-    "icon-calendar",
-    "icon-chevron-down",
-    "icon-chevron-left",
-    "icon-chevron-right",
-    "icon-close",
-    "icon-doc-badge",
-    "icon-doc-download",
-    "icon-doc-text",
-    "icon-download",
-    "icon-globe",
-    "icon-hamburger",
-    "icon-headset",
-    "icon-help",
-    "icon-info",
-    "icon-link-external",
-    "icon-list-checkmark",
-    "icon-list-items",
-    "icon-checklist",
-    "icon-marker",
-    "icon-phone",
-    "icon-plane",
-    "icon-player-pause",
-    "icon-player-play",
-    "icon-quote-dark",
-    "icon-quote-light",
-    "icon-search-minus",
-    "icon-search-plus",
-    "icon-search",
-    "icon-shopping-cart",
-    "icon-sign-minus",
-    "icon-sign-plus",
-    "icon-tiles",
-    "icon-tree",
-    "icon-user",
-    "icon-livechat",
-    "icon-share"
-  ];
-
   return data;
 
 });

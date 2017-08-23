@@ -27,12 +27,14 @@ App.searchResults = function () {
   var resultListCSSClass = '.results-list';
   var $componentElement = $('.search-results').find(resultListCSSClass);
   var templates = {};
+  var i18n = {};
 
   /**
   * Initialize
   */
   var init = function init() {
     addEventListeners();
+    loadI18NStrings();
   };
 
   /**
@@ -42,29 +44,41 @@ App.searchResults = function () {
     $componentElement.find('[data-load-more]').on('click', fetchMoreResults);
   };
 
+  /**
+   * Get i18n String from a HTML data-attribute
+   * @return {[type]} [description]
+   */
+  var loadI18NStrings = function loadI18NStrings() {
+
+    var i18nData = $componentElement[0].dataset.i18n;
+
+    // Save i18n Strings as an Object in a global variable
+    i18n = JSON.parse(i18nData) ? JSON.parse(i18nData) : {};
+  };
+
   // Product Family Template
   //--------------
-  templates.family = function (data) {
-    return '\n      <div class="results-list-submodule results-list-submodule--type-' + data.contentType + '">\n        <div class="results-list-submodule__image-wrapper b-body-copy-small">\n          <a href="' + data.contentItem.link.url + '"\n            class="results-list-submodule__image-link"\n            target="' + data.contentItem.link.target + '"\n          >\n            <img src="' + data.contentItem.imgSrc + '"\n              class="results-list-submodule__image"\n              alt="' + data.contentItem.imgAlt + '" />\n            </a>\n        </div>\n        <div class="results-list-submodule__content-wrapper">\n\n          <h4 class="results-list-submodule__name b-heading-h5">\n            <a href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-submodule__name-link"\n            >' + data.contentItem.name + '</a>\n          </h4>\n\n          <div class="results-list-submodule__description b-body-copy-small">' + data.contentItem.description + '</div>\n\n          <div class="results-list-submodule__url b-body-copy-small">\n            <a href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-submodule__url-link"\n              aria-label="Go to ' + data.contentItem.link.text + '"\n            >' + data.contentItem.link.text + '</a>\n          </div>\n\n          <ul class="results-list-submodule__link-list b-body-copy-small u-list-inline">\n\n            ' + data.contentItem.secondaryLinks.map(function (link) {
-      return '\n                <li class="results-list-submodule__link-item">\n                  <a class="results-list-submodule__link-item-link"\n                    href="' + link.url + '"\n                    target="' + link.target + '"\n                    aria-label="Go to ' + link.text + '"\n                  >' + link.text + '</a>\n                </li>';
+  templates.family = function (data, i18n) {
+    return '\n      <div class="results-list-submodule results-list-submodule--type-' + data.contentType + '">\n        <div class="results-list-submodule__image-wrapper b-body-copy-small">\n          <a href="' + data.contentItem.link.url + '"\n            class="results-list-submodule__image-link"\n            target="' + data.contentItem.link.target + '"\n          >\n            <img src="' + data.contentItem.imgSrc + '"\n              class="results-list-submodule__image"\n              alt="' + data.contentItem.imgAlt + '" />\n            </a>\n        </div>\n        <div class="results-list-submodule__content-wrapper">\n\n          <h4 class="results-list-submodule__name b-heading-h5">\n            <a href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-submodule__name-link"\n            >' + data.contentItem.name + '</a>\n          </h4>\n\n          <div class="results-list-submodule__description b-body-copy-small">' + data.contentItem.description + '</div>\n\n          <div class="results-list-submodule__url b-body-copy-small">\n            <a href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-submodule__url-link"\n              aria-label="' + i18n.goTo + ' ' + data.contentItem.link.text + '"\n            >' + data.contentItem.link.text + '</a>\n          </div>\n\n          <ul class="results-list-submodule__link-list b-body-copy-small u-list-inline">\n\n            ' + data.contentItem.secondaryLinks.map(function (link) {
+      return '\n                <li class="results-list-submodule__link-item">\n                  <a class="results-list-submodule__link-item-link"\n                    href="' + link.url + '"\n                    target="' + link.target + '"\n                    aria-label="' + i18n.goTo + ' ' + link.text + '"\n                  >' + link.text + '</a>\n                </li>';
     }).join('') + '\n          </ul>\n        </div>\n      </div>';
   };
 
   // Article Template
   //--------------
-  templates.article = function (data) {
+  templates.article = function (data, i18n) {
 
     var articleDateTPL = data.contentItem.date ? '<div class="results-list-submodule__date b-body-copy-small">' + data.contentItem.date + '</div>' : '';
 
     var articleExternalIconTPL = data.contentItem.articleType === 'external' ? '<i class="icon icon-link-external" aria-hidden="true"></i>' : '';
 
-    return '\n      <div class="results-list-submodule results-list-submodule--type-' + data.contentType + '">\n\n        <div class="results-list-submodule__content-wrapper">\n\n          <h4 class="results-list-submodule__name b-heading-h5">\n            <a href="' + data.contentItem.link.url + '"\n              class="results-list-submodule__name-link"\n              target="' + data.contentItem.link.target + '"\n            >\n              <span class="name-label">' + data.contentItem.name + '</span>\n              ' + articleExternalIconTPL + '\n            </a>\n          </h4>\n\n          ' + articleDateTPL + '\n\n          <div class="results-list-submodule__description b-body-copy-small">' + data.contentItem.description + '</div>\n\n          <div class="results-list-submodule__url b-body-copy-small">\n            <a href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-submodule__url-link"\n              aria-label="Go to ' + data.contentItem.link.text + '"\n            >' + data.contentItem.link.text + '</a>\n          </div>\n\n        </div>\n      </div>\n    ';
+    return '\n      <div class="results-list-submodule results-list-submodule--type-' + data.contentType + '">\n\n        <div class="results-list-submodule__content-wrapper">\n\n          <h4 class="results-list-submodule__name b-heading-h5">\n            <a href="' + data.contentItem.link.url + '"\n              class="results-list-submodule__name-link"\n              target="' + data.contentItem.link.target + '"\n            >\n              <span class="name-label">' + data.contentItem.name + '</span>\n              ' + articleExternalIconTPL + '\n            </a>\n          </h4>\n\n          ' + articleDateTPL + '\n\n          <div class="results-list-submodule__description b-body-copy-small">' + data.contentItem.description + '</div>\n\n          <div class="results-list-submodule__url b-body-copy-small">\n            <a href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-submodule__url-link"\n              aria-label="' + i18n.goTo + ' ' + data.contentItem.link.text + '"\n            >' + data.contentItem.link.text + '</a>\n          </div>\n\n        </div>\n      </div>\n    ';
   };
 
   // Resource Template
   //--------------
-  templates.resource = function (data) {
-    return '\n      <div class="results-list-submodule results-list-submodule--type-' + data.contentType + '">\n\n        <div class="results-list-submodule__icon-wrapper">\n          <a href="' + data.contentItem.link.url + '"\n            target="' + data.contentItem.link.target + '"\n            class="results-list-submodule__url-link"\n            aria-label="Download ' + data.contentItem.documentName + '"\n          >\n            <i class="icon icon-download" aria-hidden="true"></i>\n            <span class="sr-only">' + data.contentItem.link.text + '</span>\n          </a>\n        </div>\n\n        <div class="results-list-submodule__content-wrapper">\n\n          <h4 class="results-list-submodule__name b-heading-h5">\n            <a href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-submodule__name-link"\n            >' + data.contentItem.name + '</a>\n          </h4>\n\n          <div class="results-list-submodule__document b-body-copy">(' + data.contentItem.documentType + ' ' + data.contentItem.documentSize + ')</div>\n\n          <div class="results-list-submodule__link-url b-body-copy-small">\n            <a data-sly-attribute.href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-submodule__link"\n              aria-label="Download ' + data.contentItem.documentName + '"\n            >' + data.contentItem.link.text + '</a>\n          </div>\n\n        </div>\n      </div>\n    ';
+  templates.resource = function (data, i18n) {
+    return '\n      <div class="results-list-submodule results-list-submodule--type-' + data.contentType + '">\n\n        <div class="results-list-submodule__icon-wrapper">\n          <a href="' + data.contentItem.link.url + '"\n            target="' + data.contentItem.link.target + '"\n            class="results-list-submodule__url-link"\n            aria-label="' + i18n.download + ' ' + data.contentItem.documentName + '"\n          >\n            <i class="icon icon-download" aria-hidden="true"></i>\n            <span class="sr-only">' + data.contentItem.link.text + '</span>\n          </a>\n        </div>\n\n        <div class="results-list-submodule__content-wrapper">\n\n          <h4 class="results-list-submodule__name b-heading-h5">\n            <a href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-submodule__name-link"\n            >' + data.contentItem.name + '</a>\n          </h4>\n\n          <div class="results-list-submodule__document b-body-copy">(' + data.contentItem.documentType + ' ' + data.contentItem.documentSize + ')</div>\n\n          <div class="results-list-submodule__link-url b-body-copy-small">\n            <a data-sly-attribute.href="' + data.contentItem.link.url + '"\n              target="' + data.contentItem.link.target + '"\n              class="results-list-submodule__link"\n              aria-label="' + i18n.download + ' ' + data.contentItem.documentName + '"\n            >' + data.contentItem.link.text + '</a>\n          </div>\n\n        </div>\n      </div>\n    ';
   };
 
   /**
@@ -102,11 +116,11 @@ App.searchResults = function () {
         // Based on the Content Type, use the appropiate Template passing the received data
         //--------------
         if (data.contentType === 'family' || data.contentType === 'sku') {
-          newElements += templates.family(data);
+          newElements += templates.family(data, i18n);
         } else if (data.contentType === 'article') {
-          newElements += templates.article(data);
+          newElements += templates.article(data, i18n);
         } else if (data.contentType === 'resource') {
-          newElements += templates.resource(data);
+          newElements += templates.resource(data, i18n);
         }
       });
 

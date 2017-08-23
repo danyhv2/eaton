@@ -27,24 +27,29 @@ use(function () {
     }
   }
 
-  // CTA Themes & Constants
+  // CTA Themes Constants
   //--------------
-  var THEME_PRIMARY_LIGHT = 'b-button b-button__primary b-button__primary--light';
-  var THEME_TERTIARY_LIGHT = 'b-button b-button__tertiary b-button__tertiary--light';
+  var THEMES = {
+    'primary-light'   : 'b-button b-button__primary b-button__primary--light',
+    'primary-dark'    : 'b-button b-button__primary b-button__primary--dark',
+    'secondary-light' : 'b-button b-button__secondary b-button__secondary--light',
+    'secondary-dark'  : 'b-button b-button__secondary b-button__secondary--dark',
+    'tertiary-light'  : 'b-button b-button__tertiary b-button__tertiary--light',
+    'tertiary-dark'   : 'b-button b-button__tertiary b-button__tertiary--dark'
+  };
 
-  // If Color value is Light
-  if (properties.get('color') && (properties.get('color') == 'light')) {
-    data.cta.cssClasses = THEME_PRIMARY_LIGHT;
+  // Assign Default Value
+  data.cta.cssClasses = THEMES['primary-light'];
+
+  // If Theme Property is Defined in the Dialog
+  if (properties.get('theme')) {
+    var currentTheme = properties.get('theme');
+
+    if (currentTheme in THEMES) {
+      data.cta.cssClasses = THEMES[currentTheme];
+    }
   }
-
-  // If Color value is Dark
-  else if (properties.get('color') && (properties.get('color') == 'dark')) {
-    data.cta.cssClasses = THEME_TERTIARY_LIGHT;
-  }
-
-  // Else default CTA Theme (Primary Light)
-  else { data.cta.cssClasses = THEME_PRIMARY_LIGHT; }
-
 
   return data;
+
 });

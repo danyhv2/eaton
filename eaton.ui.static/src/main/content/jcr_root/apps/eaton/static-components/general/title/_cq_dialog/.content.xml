@@ -43,6 +43,11 @@
                     value="witheyebrowandbyline"/>
                 </items>
               </view>
+              <title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                fieldLabel="Title"
+                name="./title"/>
               <toggleInnerGrid
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/form/checkbox"

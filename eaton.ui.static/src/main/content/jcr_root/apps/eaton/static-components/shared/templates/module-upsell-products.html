@@ -1,34 +1,28 @@
 <template data-sly-template.module="${ @ data}">
-    <div class="related-products-component container">
-        <div class="related-products-component__text">
-            <h3>${'Designated to work together' @ i18N}</h3>
-            <p class="related-products-component__description">${'Discover other Eaton products and accesories built to enhance this product.' @ i18N}</p>
-        </div>
-        <div class="module-related-products upsell-products">
-            <ul class="upsell-products__slides" data-sly-list="${data}">
-                <li class="slides col-xs-12 ${data.length < 3 ? 'col-sm-4' : 'col-sm-3'}">
-                    <a href="${item.link}" target="${item.target}" class="u-absolute-fill">
-                      <span class="sr-only">${item.title}</span>
-                    </a>
-                    <div class="col-xs-12 related-products-component__card rendition">
-                        <img class="carousel-component-slide__image" data-src="${item.image}" data-desktop-rendition="${item.image}" data-mobile-rendition="${item.mobile_image}" data-tablet-rendition="${item.tablet_image}" alt="${item.image_alt}"/>
-                    </div>
-                    <div class="col-xs-12 related-products-component__info">
-                        <p class="b-eyebrow-small related-products-component__title">${item.title}</p>
-                        <p class="b-h4-link">${item.text}</p>
-                    </div>
-                </li>
-            </ul>
-            <sly data-sly-test="${data.length > 3}">
-                <button class="upsell-products__prev-arrow upsell-products__arrows button--reset">
-                    <i class="icon icon-chevron-left"></i>
-                    <span class="sr-only">Go to Previous Item</span>
-                </button>
-                <button class="upsell-products__next-arrow upsell-products__arrows button--reset">
-                    <i class="icon icon-chevron-right"></i>
-                    <span class="sr-only">Go to Next Item</span>
-                </button>
-            </sly>
-        </div>
+    <div class="module-related-products upsell-products">
+        <ul class="upsell-products__slides" data-sly-list="${data}">
+            <li class="slides col-xs-12 ${data.length < 3 ? 'col-sm-4' : 'col-sm-3'}">
+                <a href="${item.link}" target="${item.target}" class="u-absolute-fill">
+                  <span class="sr-only">${item.title}</span>
+                </a>
+                <div class="col-xs-12 related-products-component__card rendition">
+                    <img class="carousel-component-slide__image" data-src="${item.image}" data-desktop-rendition="${item.image}" data-mobile-rendition="${item.mobile_image}" data-tablet-rendition="${item.tablet_image}" alt="${item.image_alt}"/>
+                </div>
+                <div class="col-xs-12 related-products-component__info">
+                    <p class="b-eyebrow-small related-products-component__title">${item.title}</p>
+                    <p class="b-h4-link">${item.text}</p>
+                </div>
+            </li>
+        </ul>
+        <sly data-sly-test="${data.length > 3}">
+            <button class="upsell-products__prev-arrow upsell-products__arrows button--reset">
+                <i class="icon icon-chevron-left"></i>
+                <span class="sr-only">Go to Previous Item</span>
+            </button>
+            <button class="upsell-products__next-arrow upsell-products__arrows button--reset">
+                <i class="icon icon-chevron-right"></i>
+                <span class="sr-only">Go to Next Item</span>
+            </button>
+        </sly>
     </div>
 </template>

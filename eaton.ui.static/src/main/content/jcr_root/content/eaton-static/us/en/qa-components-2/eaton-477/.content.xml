@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-21T15:00:31.995-06:00"
+        cq:lastModified="{Date}2017-08-22T17:49:08.018-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:primaryType="cq:PageContent"
@@ -41,6 +41,7 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="eaton/static-components/general/text"
+                        testdata="m20"
                         view="default"/>
                 </col2-par>
             </grid_2_column_contro>
@@ -62,6 +63,7 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="eaton/static-components/general/text"
+                        testdata="m20"
                         view="default"/>
                 </col1-par>
                 <col2-par
@@ -80,11 +82,11 @@
             <grid_2_column_contro_3
                 jcr:created="{Date}2017-08-21T14:46:17.707-06:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2017-08-21T14:46:24.151-06:00"
+                jcr:lastModified="{Date}2017-08-22T17:49:08.016-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/layout/grid-2-column-control"
-                view="is-half">
+                view="is-two-third">
                 <col1-par
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/parsys">
@@ -95,6 +97,7 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="eaton/static-components/general/text"
+                        testdata="m21"
                         view="default"/>
                 </col1-par>
                 <col2-par
@@ -107,6 +110,7 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="eaton/static-components/general/text"
+                        testdata="placera"
                         view="statement"/>
                 </col2-par>
             </grid_2_column_contro_3>
