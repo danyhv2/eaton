@@ -1,8 +1,8 @@
-
-
 .text-only-2-column {
 
-  padding: 120px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 
   h2 {
     padding-bottom: 35px;
@@ -12,29 +12,40 @@
     padding: 15px 0 10px 0;
   }
 
-
-
-  &__description {
-    padding-bottom: 15px;
+  .category-item-date {
+      padding-top: 8px;
   }
+
   &__article {
     padding-top: 30px;
   }
 
 
-.category-item-date {
-    padding-top: 8px;
+  &__card {
+           display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+
   }
 
-&__card {
-         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+
+
+
+  @include media-desktop-and-up {
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+
+
+  }
+
+
+
+
+
 
 }
 
-
-
-}
 
 

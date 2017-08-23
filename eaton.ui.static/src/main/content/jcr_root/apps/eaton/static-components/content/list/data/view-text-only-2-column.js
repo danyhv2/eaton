@@ -48,16 +48,7 @@ use(function () {
 	            }
 
 
-	        ],
-	        single_feature_card: {
-	            title: 'Featured Category',
-	            text: 'Why reality is the innovation challenge',
-	            image: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
-	            mobile_image: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
-	            image_alt: 'Featured image',
-	            cta: {url: 'http://www.eaton.com', target: '_self'},
-	            date_text: 'September 23, 2013'
-	        }
+	        ]
 	    };
 
 
