@@ -32,6 +32,13 @@
                 value="witheyebrowandbyline"/>
             </options>
           </view>
+          <title
+            jcr:primaryType="cq:Widget"
+            allowBlank="true"
+            fieldLabel="Title"
+            name="./title"
+            xtype="textfield"
+            inputType="text"/>
           <toggleInnerGrid
             jcr:primaryType="cq:Widget"
             fieldDescription=""

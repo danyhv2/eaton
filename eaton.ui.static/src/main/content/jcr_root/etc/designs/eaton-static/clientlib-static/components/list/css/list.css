@@ -89,7 +89,7 @@
 
 .related-products-component__text { padding-left: 15px; padding-bottom: 45px; }
 
-@media screen and (max-width: 767px) { .related-products-component__text { padding-bottom: 25px; } }
+@media screen and (max-width: 767px) { .related-products-component__text { padding-bottom: 15px; } }
 
 .related-products-component__description { padding-top: 10px; }
 
