@@ -45,7 +45,7 @@ App.facets = (function() {
   * Show the remaining facets-items/groups that were hidden on page load
   * @param  { Object } event - the click event object
   */
-  const showAllFacetsGroups = (event) => {
+  const showAllFacetsGroups = function(event) {
     // Show hidden facets
     $componentClass
       .find('.faceted-navigation__more-facets')

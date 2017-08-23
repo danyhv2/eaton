@@ -20,7 +20,9 @@
 
 .faceted-navigation-header__sort-options .dropdown li a { color: #005EB8; display: inline-block; width: 100%; text-align: left; margin: 0; padding: 0; }
 
-.faceted-navigation-header__header-top { border-bottom: 0.2rem solid #F8F8F8; padding-bottom: 3rem; padding-top: 5.5rem; }
+.faceted-navigation-header__sort-options .dropdown li a:hover { background-color: #FFF; text-decoration: underline; }
+
+.faceted-navigation-header__header-top { border-bottom: 0.2rem solid #F8F8F8; padding-bottom: 3rem; padding-top: 6rem; }
 
 .faceted-navigation-header__title { font-size: 2.4rem; font-weight: bold; display: inline-block; }
 
@@ -33,7 +35,7 @@
 .faceted-navigation-header .faceted-navigation-filters { margin-top: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 @media screen and (max-width: 991px) { .faceted-navigation-header .faceted-navigation-filters { display: none; }
-  .faceted-navigation-header__filter-link { font-size: 12px; } }
+  .faceted-navigation-header__filter-link, .faceted-navigation-header__filters-actions { font-size: 12px; } }
 
 @media screen and (min-width: 992px) { .faceted-navigation-header .open-facets-mobile { display: none; } }
 
@@ -71,7 +73,7 @@
 
 .faceted-navigation__header.button--reset, .faceted-navigation__view-more-groups { cursor: pointer; margin: 1.5rem 0; text-align: left; width: 100%; }
 
-.faceted-navigation__header.button--reset .icon::before, .faceted-navigation__view-more-groups .icon::before { position: absolute; right: 33px; color: #005EB8; font-size: 12px; margin-top: 6px; }
+.faceted-navigation__header.button--reset .icon::before, .faceted-navigation__view-more-groups .icon::before { position: absolute; right: 0; color: #005EB8; font-size: 12px; margin-top: 6px; }
 
 .faceted-navigation__view-more-groups { color: #005EB8; }
 

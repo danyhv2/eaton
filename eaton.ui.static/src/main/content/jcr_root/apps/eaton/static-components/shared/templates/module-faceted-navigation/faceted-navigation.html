@@ -42,7 +42,9 @@
         >
           <span class="faceted-navigation__facet-name">${ item.facetName }</span>
           <i class="icon icon-sign-minus" aria-hidden="true"></i>
-          <i class="icon icon-sign-plus u-hide" aria-hidden="true"></i>
+          <i class="icon icon-sign-plus
+                    ${ itemList.index < data.config.facetItemsMinVisible ? 'u-hide' : '' }"
+             aria-hidden="true"></i>
         </button>
 
         <!--/* Facet Values */-->
