@@ -17,14 +17,15 @@
         <div class="u-visible-desktop col-md-3 country-selector__regions">
           List of regions goes here
         </div>
+
         <div data-sly-list="${data.regionList}" class="col-sm-12 col-md-9 panel-group country-selector__list" role="tablist" aria-multiselectable="true">
                 <div class="panel country-selector__item">
-                    <div class="panel-heading country-selector__item-header" role="tab" id="${item.regionId}">
-                        <a href="#collapse-${itemList.index}"
+                    <div class="panel-heading country-selector__item-header" role="tab" id="drawer-${item.regionId}">
+                        <a href="#drawer-collapse-${itemList.index}"
                         class="country-selector__item-link u-absolute-fill"
                         role="button"
                         aria-expanded="false"
-                        aria-controls="collapse-${itemList.index}"
+                        aria-controls="drawer-collapse-${itemList.index}"
                         data-toggle="collapse"
                         data-parent="country-selector__item">
                             <span class="sr-only">Select your location</span>
@@ -35,7 +36,7 @@
                         </i>
                     </div>
 
-                    <div id="collapse-${itemList.index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="${item.regionId}">
+                    <div id="drawer-collapse-${itemList.index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="drawer-${item.regionId}">
                         <div class="country-selector__item-body">
                             <ul data-sly-list.country="${item.countryList}" class="country-selector__item-list">
                                 <li class="col-xs-12 col-md-3 country-selector__item-country">
