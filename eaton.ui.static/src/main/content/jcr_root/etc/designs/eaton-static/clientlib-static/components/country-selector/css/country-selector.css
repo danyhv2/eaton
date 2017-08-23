@@ -47,3 +47,5 @@
   .country-selector__item-language { display: inline-block; padding: 0 8px; border-right: 1px solid #333; }
   .country-selector__item-language:first-child { padding-left: 0; }
   .country-selector__item-language:last-child { border: 0; } }
+
+.country-selector--drawer__header { background: #333F48; }

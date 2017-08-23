@@ -1,0 +1,15 @@
+//-----------------------------------
+// Component M-3.1
+// Header: Utility Navigation
+// Module: Country/ Language Selector
+// View: Drawer
+//-----------------------------------
+
+.country-selector {
+
+  &--drawer {
+    &__header {
+      background: $color__primary-gray1;
+    }
+  }
+}

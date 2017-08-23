@@ -8,7 +8,6 @@
 .full-page-drawer {
   background: $color__primary-gray2;
   color: $color__white;
-  // display: none;
 
   &__headline {
     background: $color__primary-gray1;
@@ -26,5 +25,15 @@
     position: fixed;
     top: 100%;
     width: 100%;
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
 }
