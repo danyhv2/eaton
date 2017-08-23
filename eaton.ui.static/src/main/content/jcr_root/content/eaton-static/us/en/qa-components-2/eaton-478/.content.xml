@@ -59,6 +59,7 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="eaton/static-components/general/link-list"
+                        testdata="m18"
                         view="vertical"/>
                 </col2-par>
             </grid_2_column_contro>
