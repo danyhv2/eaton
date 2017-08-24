@@ -22,7 +22,7 @@
 
 .faceted-navigation-header__sort-options .dropdown li a:hover { background-color: #FFF; text-decoration: underline; }
 
-.faceted-navigation-header__header-top { border-bottom: 0.2rem solid #F8F8F8; padding-bottom: 3rem; padding-top: 6rem; }
+.faceted-navigation-header__header-top { border-bottom: 0.2rem solid #F8F8F8; padding-bottom: 3rem; padding-top: 5rem; }
 
 .faceted-navigation-header__title { font-size: 2.4rem; font-weight: bold; display: inline-block; }
 
