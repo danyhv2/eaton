@@ -24,191 +24,37 @@ var App = window.App || {};
 
 App.facets = function () {
   var $componentClass = $('.faceted-navigation');
-  var $mobileHeader = $('.faceted-navigation__mobile-container .faceted-navigation-header');
-  var $mobileFacets = $('.faceted-navigation__mobile-container');
-  var mobileEnabled = false;
 
   var init = function init() {
     $(function () {
       addEventListeners();
-      sortBy();
-
       localStorage.setItem('backToSearch', 'true');
     });
   };
 
   var addEventListeners = function addEventListeners() {
-
-    // Facets Toggle update +/- Icons
-    //--------------
-    $('.faceted-navigation__header').on('click', function (e) {
-      e.preventDefault;
-      $(this).children('.icon-sign-plus').toggleClass('u-hide');
-    });
-
-    if ($(window).width() < App.global.constants.GRID.MD) {
-      mobileFacets();
-    } else {
-      $componentClass.on('click', '[data-facets-more-groups]', showAllFacetsGroups);
-      $componentClass.on('click', '[data-facets-more-values]', showAllFacetsValues);
-    }
-
-    // Facet Behaviors for Mobile & Tablet
-    //--------------
-    $(window).on('resize', function () {
-      if ($(window).width() < App.global.constants.GRID.MD && $('.faceted-navigation__mobile-container').css('display') !== 'block') {
-        $('.faceted-navigation__mobile-container .faceted-navigation-header, .faceted-navigation__mobile-container').removeClass('hidden');
-        $('.faceted-navigation__mobile-container, .faceted-navigation__mobile-container a.b-button').removeClass('hidden');
-
-        App.global.utils.throttle(mobileFacets(), 1000);
-      }
-
-      // Facet Behaviors for Desktop & Desktop Large
-      //--------------
-      else if ($(window).width() > App.global.constants.GRID.MD) {
-          $componentClass.css('display', 'block');
-          mobileEnabled = false;
-          $('.faceted-navigation__mobile-container .faceted-navigation').remove();
-          $('.faceted-navigation__mobile-container, .faceted-navigation__mobile-container a.b-button, .overlay-mask').remove();
-          $componentClass.on('click', '[data-facets-more-groups]', showAllFacetsGroups);
-          $componentClass.on('click', '[data-facets-more-values]', showAllFacetsValues);
-        }
-    });
+    $componentClass.on('click', '[data-facets-more-groups]', showAllFacetsGroups);
+    $componentClass.on('click', '[data-facets-more-values]', showAllFacetsValues);
+    $componentClass.find('.faceted-navigation__header').on('click', toggleIcons);
+    $('[data-toggle-modal-facet]').on('click', toggleModal);
   };
 
-  var sortBy = function sortBy() {
-    // let $ddul = $('.styled-dropdown dd ul');
-    var $source = $('.faceted-navigation-header__sort-options select');
-    // const $links = $('.faceted-navigation-header__sort-options .styled-dropdown dt a');
-
-    createDropDown();
-
-    $('.faceted-navigation-header__sort-options .styled-dropdown dt a').click(function (e) {
-      e.preventDefault();
-      $('.styled-dropdown dd ul').toggle();
-    });
-
-    $('.faceted-navigation-header__sort-options .styled-dropdown dt a,.faceted-navigation-header__sort-options .styled-dropdown dd a').on('focus', function () {
-      $(this).css('text-decoration', 'underline');
-    }).on('blur', function () {
-      $(this).css('text-decoration', 'none');
-    });
-
-    $(document).bind('click', function (e) {
-      var $clicked = $(e.target);
-      if (!$clicked.parents().hasClass('styled-dropdown')) {
-        $('.styled-dropdown dd ul').hide();
-      }
-    });
-
-    $('.styled-dropdown dd ul li a').click(function () {
-      var text = $(this).html();
-      $('.styled-dropdown dt a').html(text);
-      $('.styled-dropdown dd ul').hide();
-
-      // var source = $("#source");
-      $source.val($(this).find('span.value').html());
-    });
+  /**
+  * toggle the mobile factes modal
+  * @param  { Object } event - the click event object
+  */
+  var toggleIcons = function toggleIcons(e) {
+    e.preventDefault();
+    $(this).children('.icon-sign-plus').toggleClass('u-hide');
   };
 
-  function createDropDown() {
-    var $condition = $('.faceted-navigation__mobile-container').length > 0;
-    var $source = $condition ? $('.faceted-navigation__mobile-container .faceted-navigation-header__sort-options select') : $('.faceted-navigation-header__sort-options select');
-    var selected = $source.find('option[selected]');
-    var options = $('option', $source);
-
-    if (!$condition) {
-      $('.faceted-navigation-header__sort-options').append('<dl id="target" class="styled-dropdown"></dl>');
-    } else {
-      $('.faceted-navigation__mobile-container .faceted-navigation-header__sort-options').append('<dl id="target" class="styled-dropdown"></dl>');
-    }
-    $('#target').append('<dt><a href="#">' + selected.text() + '<span class="value">' + selected.val() + '</span><span class="icon icon-chevron-down"></a></dt>');
-    $('#target').append('<dd><ul></ul></dd>');
-
-    options.each(function (i) {
-      if (i !== 0) {
-        $('#target dd ul').append('<li><a href="' + $(this).val() + '" target="_self">' + $(this).text() + '<span class="value">' + $(this).val() + '</span></a></li>');
-      }
-    });
-  }
-
-  var mobileFacets = function mobileFacets() {
-
-    if (mobileEnabled === false) {
-      var temp = $componentClass.parent().parent();
-      // let winHeight = $(document).innerHeight();
-      $("<div class='faceted-navigation__mobile-container u-visible-mobile hidden col-xs-12 col-md-3'></div>").prependTo(temp);
-
-      $componentClass.clone(true, true).appendTo('.faceted-navigation__mobile-container').addClass('visible');
-      $('.faceted-navigation-header').addClass('u-visible-desktop').clone(true, true).prependTo('.faceted-navigation__mobile-container');
-
-      $('.faceted-navigation__mobile-container').find('.faceted-navigation-header').addClass('u-visible-mobile').removeClass('u-visible-desktop');
-      $('.faceted-navigation__mobile-container .faceted-navigation').prepend($('.faceted-navigation__mobile-container .faceted-navigation-header__header-bottom'));
-
-      $mobileHeader.removeClass('hidden-xs').removeClass('hidden-sm');
-
-      $('.faceted-navigation__mobile-container .faceted-navigation-header__header-bottom').removeClass('hidden-xs').removeClass('hidden-sm');
-
-      $("<a target='_self' class='open-facets-mobile b-button b-button__primary b-button__primary--light hidden-lg' role='button'>Filters (X)</a>").appendTo($('.faceted-navigation__mobile-container'));
-      $($mobileFacets).append("<a href='#' target='_self' class='open-facets-mobile b-button b-button__primary b-button__primary--light' role='button'>Filters (X)</a>");
-
-      $('.faceted-navigation__mobile-container').removeClass('hidden');
-
-      $componentClass.css('display', 'none');
-
-      $('.faceted-navigation__mobile-container .faceted-navigation').addClass('hidden');
-      mobileEnabled = true;
-
-      $('.faceted-navigation__mobile-container .open-facets-mobile').on('click', function (e) {
-        e.preventDefault();
-        $('body').addClass('facets-open');
-        // $('.faceted-navigation__mobile-container').addClass('facets-navigation-mobile-open');
-
-        // $("<div class='overlay-mask hidden'></div>").appendTo($('body'));
-        $('.faceted-navigation__mobile-container').addClass('enabled');
-        $('.faceted-navigation__mobile-container .faceted-navigation').removeClass('hidden').addClass('visible');
-        $('.faceted-navigation__mobile-container .faceted-navigation-header').addClass('hidden');
-        $('.mobile-header').removeClass('hidden');
-        $(this).addClass('hidden');
-        // $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
-        $('.search-results').css({ position: 'inherit', 'z-index': '1' });
-      });
-
-      $('.close-facets-mobile, [data-facets-apply]').on('click', function (e) {
-        e.preventDefault();
-        $('.faceted-navigation__mobile-container').removeClass('enabled');
-        $('.faceted-navigation__mobile-container .faceted-navigation').removeClass('visible').addClass('hidden');
-        $('.faceted-navigation-header').removeClass('hidden');
-        $('.faceted-navigation__mobile-container .b-button').removeClass('hidden');
-        // $('.overlay-mask').css('height',winHeight).toggleClass('hidden');
-        $('.search-results').css('position', 'relative');
-
-        $('body').removeClass('facets-open');
-        // $('.faceted-navigation__mobile-container').removeClass('facets-navigation-mobile-open');
-      });
-
-      $('.faceted-navigation__mobile-container .faceted-navigation__header').on('click', function (e) {
-        e.preventDefault;
-        $(this).find('.icon-sign-minus').toggle();
-      });
-
-      // View More Facets Behavior
-      //--------------
-      $('.faceted-navigation__mobile-container [data-facets-more-groups]').on('click', function (event) {
-        event.preventDefault();
-        $('.faceted-navigation__mobile-container .faceted-navigation__more-facets').slideDown(200);
-
-        // Hide "View more" <button>
-        event.currentTarget.classList.add('u-hide');
-      });
-      $('.faceted-navigation__mobile-container').on('click', '[data-facets-more-values]', showAllFacetsValues);
-      // $('.faceted-navigation__mobile-container [data-facets-more-groups]').on('click', '[data-facets-more-groups]', function() {alert('alert');});
-    } else {
-      $('.faceted-navigation__mobile-container').removeClass('hidden');
-      $('.faceted-navigation__mobile-container .faceted-navigation').remove();
-      $('.search-results').css('position', 'relative');
-      $componentClass.css('display', 'none');
-    }
+  /**
+  * toggle the mobile factes modal
+  * @param  { Object } event - the click event object
+  */
+  var toggleModal = function toggleModal(event) {
+    event.preventDefault();
+    $('body').toggleClass('facets-open');
   };
 
   /**
@@ -216,7 +62,6 @@ App.facets = function () {
   * @param  { Object } event - the click event object
   */
   var showAllFacetsGroups = function showAllFacetsGroups(event) {
-
     // Show hidden facets
     $componentClass.find('.faceted-navigation__more-facets').slideDown(200);
 

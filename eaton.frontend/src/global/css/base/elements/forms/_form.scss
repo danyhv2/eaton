@@ -1,3 +1,8 @@
+
+.eaton-form-container {
+  padding-top: 60px;
+}
+
 .eaton-form {
 
   font-family: Arial, 'Arial', sans-serif;
@@ -73,6 +78,10 @@
     color: #333f48;
     padding-top: 10px;
     width: 100%;
+  }
+
+  .field-p .label .inner {
+    font-weight: 100;
   }
 
   // TWO COLUMN

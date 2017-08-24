@@ -52,9 +52,16 @@ const lintJS = function(gulp, CONFIG, bundle) {
       }));
 
 
+
     // Lint Gulp Tasks And Config Files
     //--------------
-    gulp.src(path.resolve('./config') + '/**/*.js')
+    gulp.src([
+      path.resolve('./config') + '/**/*.js',
+
+      // Ignore These folders
+      '!' + path.resolve('./config/glyphicon-font/**/*.js')
+
+    ])
       .pipe(gulpEslint(configEslint))
       .pipe(gulpEslint.format());
 

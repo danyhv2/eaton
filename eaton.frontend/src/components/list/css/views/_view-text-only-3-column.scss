@@ -1,4 +1,4 @@
-.text-only-2-column {
+.text-only-3-column {
 
   padding-top: 60px;
   padding-bottom: 60px;
@@ -19,12 +19,6 @@
   &__article {
     padding-top: 0;
   }
-
-
-  &__description {
-    padding-bottom: 15px;
-  }
-
 
   &__card {
     display: flex;
@@ -48,19 +42,19 @@
   }
 
 
-  @include media-desktop-and-up {
+  @include media-tablet-and-up {
 
     padding-top: 120px;
     padding-bottom: 120px;
 
 
     h2 {
-      padding-bottom: 35px;
+      padding-bottom: 10px;
     }
 
 
     .b-eyebrow-small {
-      padding: 15px 0 10px 0;
+      padding: 15px 0 40px 0;
     }
 
     .category-item-date {
@@ -84,3 +78,4 @@
 
 
 }
+

@@ -3,15 +3,13 @@
 
 
 <div class="col-xs-12">
-<h2>${data.title}</h2>
+<h2 class="b-heading-h2">${data.title}</h2>
 <p class="text-only-2-column__description">${data.description}</p>
 </div>
 </div>
     <div class="row">
-
-
         <div class="text-only-2-column__card" data-sly-list.card="${data.cards}">
-<div class="col-xs-12 col-md-6 text-only-2-column__article">
+            <div class="col-xs-12 col-md-6 text-only-2-column__article">
 
             <a href="${data.single_feature_card.cta.url}" target="${data.single_feature_card.cta.target}" class="article-list-single-feature__link">
                 <span class="article-list-single-feature--border"></span>
@@ -21,18 +19,19 @@
                     <p class="category-item-date"><em>${card.date_text}</em></p>
                 </div>
             </a>
-
-
         </div>
-
         </div>
     </div>
 
 
-    <!--/* Bottom CTA */-->
+   <!--/* Bottom CTA */-->
     <div class="row">
-        <div class="col-xs-12 text-center featured-category__cta-container">
-            <sly data-sly-resource="${'featured-article-ctabutton' @ resourceType='/apps/eaton/static-components/general/cta'}"></sly>
+        <div class="col-xs-12 text-center text-only-2-column__cta-container">
+            <sly data-sly-resource="${'cta' @ resourceType='/apps/eaton/static-components/general/cta'}"></sly>
         </div>
     </div>
-</div>
+
+
+    </div>
+
+

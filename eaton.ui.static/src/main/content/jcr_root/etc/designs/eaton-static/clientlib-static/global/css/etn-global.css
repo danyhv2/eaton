@@ -331,6 +331,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .dark-theme .rich-text-container ul li::before { background-color: #FFF; }
 
+.eaton-form-container { padding-top: 60px; }
+
 .eaton-form { font-family: Arial, 'Arial', sans-serif; }
 
 .eaton-form form { width: 100%; max-width: 870px; }
@@ -352,6 +354,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 @media screen and (min-width: 768px) { .eaton-form .field-group div:first-child { margin-right: 10%; } }
 
 .eaton-form .field-p label:not(.label):not(.label-position) { font-weight: 100; font-style: italic; font-size: 14px; color: #333f48; padding-top: 10px; width: 100%; }
+
+.eaton-form .field-p .label .inner { font-weight: 100; }
 
 .eaton-form ._50_left { width: 100%; float: left; }
 
