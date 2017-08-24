@@ -33,21 +33,22 @@ App.countrySelector = (function() {
   * Handle click on region links. Show/ Hide panels
   */
   const handleRegionPanels = (event) => {
-    let activePanel = '';
+    const activeLink = $(event.currentTarget);
 
     event.preventDefault();
+    if (activeLink.hasClass('active')) {
+      return false;
+    }
 
     // Highlight only the active Link
     regionDesktopLinks.removeClass('active');
     regionDesktopLinks.attr('aria-expanded', false);
-    // $('.panel-collapse').collapse('hide');
     $('.panel-collapse').removeClass('in');
 
-    $(event.currentTarget).addClass('active');
-    $(event.currentTarget).attr('aria-expanded', true);
-
-    activePanel = $(event.currentTarget).attr('href');
-    console.log('Clicked on link', activePanel);
+    if (!activeLink.hasClass('active')) {
+      activeLink.addClass('active');
+      activeLink.attr('aria-expanded', true);
+    }
   };
 
   /**
