@@ -180,6 +180,7 @@ App.header = (function() {
     // If Desktop Breakpoint, activate the first region-panel
     if (windowEl.width() >= 992) {
       console.log('Activate the first Panel on desktop - Init');
+      $('.panel-collapse').removeClass('in');
       $('#drawer-collapse-0').addClass('in');
     }
 
