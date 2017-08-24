@@ -30,7 +30,7 @@
 
 .faceted-navigation-header__filter-link .icon { font-size: 10px; margin-right: 2px; margin-top: 5px; }
 
-.faceted-navigation-header a.open-facets-mobile { width: 100%; text-align: center; }
+.faceted-navigation-header a.open-facets-mobile { width: 100%; text-align: center; max-width: unset; }
 
 .faceted-navigation-header .faceted-navigation-filters { margin-top: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -81,11 +81,12 @@
 
 .faceted-navigation__view-more-values { font-size: 1.4rem; font-weight: normal; color: #005EB8; padding: 0; }
 
-.faceted-navigation .b-button-facets-apply { width: 100%; }
+.faceted-navigation .b-button-facets-apply { width: 100%; max-width: unset; }
 
 @media screen and (max-width: 991px) { .faceted-navigation { display: none; padding: 6rem 3rem; }
   .facets-open .faceted-navigation { position: fixed; top: 0; display: block; width: 100%; left: 0; padding-top: 5.2rem; bottom: 0px; padding-bottom: 7.3rem; z-index: 10; overflow-y: auto; background-color: #FFF; }
   .facets-open .faceted-navigation .mobile-header { display: block; }
+  .faceted-navigation__header.button--reset .icon::before, .faceted-navigation__view-more-groups .icon::before { right: 30px; }
   .faceted-navigation .mobile-header { display: none; }
   .faceted-navigation__view-more-values { padding-top: 8px; }
   .faceted-navigation__header { margin: .9rem 0; }

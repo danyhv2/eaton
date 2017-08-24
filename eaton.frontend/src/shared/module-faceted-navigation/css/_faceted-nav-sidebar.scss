@@ -135,6 +135,7 @@
 
   .b-button-facets-apply {
     width: 100%;
+    max-width: unset;
   }
 
   //-----------------------------------
@@ -159,6 +160,13 @@
 
       .mobile-header {
         display: block;
+      }
+    }
+
+    &__header.button--reset,
+    &__view-more-groups {
+      .icon::before {
+        right: 30px;
       }
     }
 
