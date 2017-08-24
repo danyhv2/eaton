@@ -14,8 +14,9 @@
       <!-- Wrapper for slides -->
       <div data-sly-list.slide="${data.hero}" class="carousel-component-slide carousel-inner" role="listbox">
         <div class="item ${slideList.index == 0 ? 'active' : ''}">
-          <img class="carousel-component-slide__image visible-lg visible-md " src="${slide.image}" alt="${slide.alt}">
-          <img class="carousel-component-slide__image carousel-component-slide__image--mobile visible-xs visible-sm" src="${slide.mobile_image}" alt="${slide.alt}">
+            <sly data-sly-use.tpl="../../shared/templates/rendition-image.html">
+                <sly data-sly-call="${ tpl.module @ data=slide.image }"></sly>
+            </sly>
           <div class="carousel-component-slide__caption carousel-caption">
             <h2 class="carousel-component-slide__title">${slide.title}</h2>
             <p class="carousel-component-slide__text">${slide.text @ context = 'html'}</p>

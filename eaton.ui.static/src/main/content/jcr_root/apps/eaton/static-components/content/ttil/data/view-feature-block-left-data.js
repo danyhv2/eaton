@@ -11,11 +11,13 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'Make a bigger difference'
             },
-            imgSrc: '/content/dam/eaton/images/feature_block_desktop.png',
-            imgMobile:'/content/dam/eaton/images/feature_block_desktop.png',
-            imgTablet:'/content/dam/eaton/images/feature_block_desktop.png',
+            image: {
+                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
+                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                desktop: '/content/dam/eaton/images/feature_block_desktop.png',
+                altText: ''
+            },
             imgAlignment:'left',
-            imgAlt: 'Test image',
             backgroundColor: '#005EB8'
         }
    
@@ -27,11 +29,13 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'Make a bigger difference'
             },
-            imgSrc: '/content/dam/eaton/images/feature_block_desktop.png',
-            imgMobile:'/content/dam/eaton/images/feature_block_desktop.png',
-            imgTablet:'/content/dam/eaton/images/feature_block_desktop.png',
+            image: {
+                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
+                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                desktop: '/content/dam/eaton/images/feature_block_desktop.png',
+                altText: ''
+            },
             imgAlignment:'left',
-            imgAlt: 'Test image',
             backgroundColor: '#005EB8'
         }
         
@@ -43,11 +47,13 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'View all job opportunities'
             },
-            imgSrc: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-1.png',
-            imgMobile:'/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-1.png',
-            imgTablet:'/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-1.png',
+            image: {
+                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
+                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                desktop: '/content/dam/eaton/images/feature_block_desktop.png',
+                altText: ''
+            },
             imgAlignment:'left',
-            imgAlt: 'Test image',
             backgroundColor: '#FFFFFF'
         }
         
@@ -59,11 +65,13 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'Find career'
             },
-            imgSrc: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-2.png',
-            imgMobile:'/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-2.png',
-            imgTablet:'/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-2.png',
+            image: {
+                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
+                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                desktop: '/content/dam/eaton/images/feature_block_desktop.png',
+                altText: ''
+            },
             imgAlignment:'left',
-            imgAlt: 'Test image',
             backgroundColor: '#FFFFFF'
         }
                 
@@ -75,11 +83,13 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'Make a bigger difference'
             },
-            imgSrc: '/content/dam/eaton/images/feature_block_desktop.png',
-            imgMobile:'/content/dam/eaton/images/feature_block_desktop.png',
-            imgTablet:'/content/dam/eaton/images/feature_block_desktop.png',
+            image: {
+                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
+                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                desktop: '/content/dam/eaton/images/feature_block_desktop.png',
+                altText: ''
+            },
             imgAlignment:'left',
-            imgAlt: 'Test image',
             backgroundColor: '#F8F8F8'
         }
     }

@@ -2,11 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-21T15:33:51.389-06:00"
+        cq:lastModified="{Date}2017-08-22T17:01:35.825-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:primaryType="cq:PageContent"
-        jcr:title="EATON-262"
+        jcr:title="m15-eaton-264"
         sling:resourceType="eaton/static-components/structure/eaton-content-page">
         <par
             jcr:primaryType="nt:unstructured"
@@ -22,9 +22,9 @@
                 toggleInnerGrid="true"
                 view="witheyebrowandbyline"/>
             <grid_2_column_contro
-                jcr:created="{Date}2017-08-21T15:33:20.726-06:00"
+                jcr:created="{Date}2017-08-21T15:18:29.494-06:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2017-08-21T15:33:31.344-06:00"
+                jcr:lastModified="{Date}2017-08-22T17:01:35.823-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/layout/grid-2-column-control"
@@ -42,6 +42,18 @@
                         testdata="placeline"
                         view="default"/>
                 </col1-par>
+                <col2-par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <icon_list
+                        jcr:created="{Date}2017-08-21T15:20:51.485-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-21T15:20:56.971-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/content/icon-list"
+                        view="proof-points"/>
+                </col2-par>
             </grid_2_column_contro>
         </par>
     </jcr:content>

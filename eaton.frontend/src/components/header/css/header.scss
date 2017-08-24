@@ -10,6 +10,8 @@
 @import "header-utility-nav";
 @import "header-primary-nav";
 @import "header-search";
+@import "header-interactions";
+@import "header-aem-authoring";
 
 // Base Styles
 .eaton-header {
@@ -21,7 +23,7 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     .eaton-logo {
-      padding: 10px 15px; // 4px for bottom shadow - height
+      padding: 10px 15px;
 
       &__link {
         width: 100px;
@@ -35,7 +37,7 @@
   //-----------------------------------
   @include media-desktop-and-up {
     .eaton-logo {
-      padding: 20px 15px 16px; // 4px for bottom shadow - height
+      padding: 20px 15px 16px;
     }
 
     &--fixed {
@@ -44,7 +46,6 @@
       z-index: 250;
       top: 0;
 
-      .full-page-drawer,
       .header-utility-nav {
         display: none;
       }
@@ -52,123 +53,7 @@
       .eaton-logo__link {
         width: 126px;
         height: 40px;
-        // transition: height 0.3s ease-in-out, width 0.3s ease-in-out; // Add transition only when fixed
       }
     }
-  }
-}
-
-//-----------------------------------
-// Mobile Breakpoint
-//-----------------------------------
-@include media-mobile-and-tablet {
-  .nav-open {
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-
-    .eaton-link-list-primary-nav {
-      overflow: auto;
-      visibility: visible;
-      opacity: 1;
-      // transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.5s ease-in-out;
-    }
-
-    .header-primary-nav__toggle-mobile-menu {
-      transition: background 0.3s ease-in-out;
-      background: $color__primary-gray1;
-
-      .icon-hamburger {
-        display: none;
-      }
-
-      .icon-close {
-        display: block;
-        top: -3px;
-        font-size: 18px;
-      }
-    }
-  }
-
-  .level-2-open {
-    // Styles on Body while the nav is open
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-
-    .eaton-link-list-primary-nav {
-      transform: translate(-100%, 0);
-    }
-
-    .mega-menu {
-      transform: translate(0, 0);
-    }
-  }
-
-  .nav-is-animating {
-    .mega-menu {
-      transition: transform 0.5s ease-in-out;
-    }
-  }
-
-  .search-open {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-
-    .header-primary-nav__open-search {
-      transition: background 0.3s ease-in-out;
-      background: $color__primary-gray1;
-
-      .icon-search {
-        display: none;
-      }
-
-      .icon-close {
-        display: block;
-        top: -3px;
-        font-size: 18px;
-      }
-    }
-  }
-}
-
-
-//-----------------------------------
-// Desktop Breakpoint
-//-----------------------------------
-@include media-desktop-and-up {
-  .level-2-open {
-    .mega-menu {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-}
-
-//-----------------------------------
-// AEM Author Mode Styles
-//-----------------------------------
-
-// stylelint-disable selector-class-pattern
-.aem-AuthorLayer-Edit,
-.cq-wcm-edit {
-
-  // stylelint-disable declaration-no-important
-  .mega-menu,
-  .header-search {
-    position: relative !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    z-index: 99999 !important;
-
-    &__content {
-      display: block !important;
-    }
-  }
-
-  .header-search {
-    transform: translateY(0) !important;
-    transition: none !important;
   }
 }

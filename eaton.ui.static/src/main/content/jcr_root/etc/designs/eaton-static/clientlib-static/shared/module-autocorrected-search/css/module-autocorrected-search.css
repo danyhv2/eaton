@@ -1,4 +1,4 @@
-.autocorrected-search { margin-top: 20px; }
+.autocorrected-search { margin-top: 50px; }
 
 @media screen and (max-width: 991px) { .autocorrected-search__search-instead { display: block; } }
 

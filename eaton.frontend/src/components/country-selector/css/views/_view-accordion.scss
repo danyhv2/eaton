@@ -3,7 +3,7 @@
 // First Time Country/Language Selection
 //-----------------------------------
 
-.country-selector {
+.country-selector-accordion {
 
   &__header {
     margin-bottom: 0;
@@ -56,7 +56,6 @@
   // Content Styles - Region
   //-----------------------------------
   &__item-list {
-    display: block;
     padding: 0;
     list-style: none;
     overflow: hidden;
@@ -156,6 +155,11 @@
       line-height: 6rem;
     }
 
+    &__item-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     &__item-header {
       padding: 50px 0 ($spacing__sm / 2);
     }
@@ -165,6 +169,7 @@
     }
 
     &__item-country {
+      flex-basis: 25%;
       padding: 0 0 $spacing__sm;
     }
 

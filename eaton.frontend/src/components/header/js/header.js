@@ -19,6 +19,10 @@ App.header = (function() {
   const closeMegaMenuBtn = componentClass.find('.mega-menu-title__close-menu');
   const toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
   const openSearchDropdownBtn = $('.header-primary-nav__open-search');
+  const openDrawerBtn = $('.open-country-selector');
+
+  // Media Breakpoint
+  let mediumScreenWidth = App.global.constants.GRID.MD;
 
   // Check AEM Author Mode
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -40,10 +44,13 @@ App.header = (function() {
   const handleScroll = (event) => {
 
     const scrollTop = windowEl.scrollTop();
-    const headerHeight = 40;
+    const utilityNavOffset = $('.header-utility-nav').offset().top;
+    const utilityNavHeight = $('.header-utility-nav').outerHeight();
 
-    if ( scrollTop > (headerHeight)) {
+    if ( scrollTop > ((utilityNavOffset + utilityNavHeight))) {
       componentClass.addClass('eaton-header--fixed');
+      // Close the drawer if open - Country Selector
+      bodyEl.removeClass('drawer-open drawer-is-animating');
     } else {
       componentClass.removeClass('eaton-header--fixed');
     }
@@ -121,7 +128,7 @@ App.header = (function() {
   */
   const handleTitleClick = (event) => {
     const activeLink = primaryLinks.filter('.active');
-    if (windowEl.width() <= 991) {
+    if (windowEl.width() < mediumScreenWidth) {
       event.preventDefault();
 
       bodyEl.removeClass('level-2-open');
@@ -161,6 +168,28 @@ App.header = (function() {
   };
 
   /**
+  * Handle Click behaviors - for Selector Drawer - Desktop
+  */
+  const openDrawer = (event) => {
+
+    event.preventDefault();
+
+    // Check for window-width.
+    // If Desktop Breakpoint, activate the first region-panel
+    // Close Search & Mega Menu if open
+    if (windowEl.width() >= mediumScreenWidth) {
+      $('.panel-collapse').removeClass('in');
+      $('#drawer-collapse-0').addClass('in');
+
+      closeMegaMenu(event);
+      closeSearch(event);
+    }
+
+    bodyEl.addClass('drawer-open drawer-is-animating');
+    $(event.currentTarget).attr('aria-expanded', true);
+  };
+
+  /**
    * Bind All Event Listeners
    */
   const addEventListeners = () => {
@@ -182,6 +211,9 @@ App.header = (function() {
 
     // Handle click on Search Icon
     openSearchDropdownBtn.on('click', handleSearch);
+
+    // Handle click on Country Selector button
+    openDrawerBtn.on('click', openDrawer);
   };
 
   /**

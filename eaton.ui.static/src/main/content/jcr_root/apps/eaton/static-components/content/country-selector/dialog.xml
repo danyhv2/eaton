@@ -14,7 +14,7 @@
           <view
             jcr:primaryType="cq:Widget"
             allowBlank="false"
-            defaultValue="accordion"
+            defaultValue="drawer"
             fieldDescription="Determine which variation of component to view"
             fieldLabel="View"
             fieldSubLabel=""
