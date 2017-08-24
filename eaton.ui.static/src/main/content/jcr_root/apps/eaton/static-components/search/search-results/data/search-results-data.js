@@ -73,21 +73,21 @@ use(function () {
             {
               "id": "product",
               "label": "Products",
-              "url": "http://eaton.dev/results.html?facetvalue=products",
+              "url": "t10-search-results.html",
               "active": true,
               "target": "_self"
             },
             {
               "id": "news",
               "label": "News & Insights",
-              "url": "http://eaton.dev/results.html?facetvalue=news",
+              "url": "t10-search-results.html",
               "active": false,
               "target": "_self"
             },
             {
               "id": "resources",
               "label": "Resources",
-              "url": "http://eaton.dev/results.html?facetvalue=resources",
+              "url": "t10-search-results.html",
               "active": false,
               "target": "_self"
             }
@@ -101,33 +101,33 @@ use(function () {
             {
               "id": "700va",
               "label": "700 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=700va"
+              "url": "t10-search-results.html?facetvalue=700va"
             },
             {
               "id": "1000va",
               "label": "1000 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=1000va",
+              "url": "t10-search-results.html?facetvalue=1000va",
               "active": true
             },
             {
               "id": "1500va",
               "label": "1500 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=1500va"
+              "url": "t10-search-results.html?facetvalue=1500va"
             },
             {
               "id": "2000va",
               "label": "2000 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=2000va"
+              "url": "t10-search-results.html?facetvalue=2000va"
             },
             {
               "id": "3000va",
               "label": "3000 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=3000va"
+              "url": "t10-search-results.html?facetvalue=3000va"
             },
             {
               "id": "5000va",
               "label": "3500 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=3500va"
+              "url": "t10-search-results.html?facetvalue=3500va"
             }
           ]
         },
@@ -139,42 +139,42 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "http://eaton.dev/results.html?facetvalue=value1"
+              "url": "t10-search-results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "http://eaton.dev/results.html?facetvalue=value2"
+              "url": "t10-search-results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "http://eaton.dev/results.html?facetvalue=value3"
+              "url": "t10-search-results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "http://eaton.dev/results.html?facetvalue=value4"
+              "url": "t10-search-results.html?facetvalue=value4"
             },
             {
               "id": "value5",
               "label": "Value 5",
-              "url": "http://eaton.dev/results.html?facetvalue=value5"
+              "url": "t10-search-results.html?facetvalue=value5"
             },
             {
               "id": "value6",
               "label": "Value 6",
-              "url": "http://eaton.dev/results.html?facetvalue=value6"
+              "url": "t10-search-results.html?facetvalue=value6"
             },
             {
               "id": "value7",
               "label": "Value 7",
-              "url": "http://eaton.dev/results.html?facetvalue=value7"
+              "url": "t10-search-results.html?facetvalue=value7"
             },
             {
               "id": "value8",
               "label": "Value 8",
-              "url": "http://eaton.dev/results.html?facetvalue=value8"
+              "url": "t10-search-results.html?facetvalue=value8"
             }
           ]
         },
@@ -186,32 +186,32 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "http://eaton.dev/results.html?facetvalue=value1"
+              "url": "t10-search-results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "http://eaton.dev/results.html?facetvalue=value2"
+              "url": "t10-search-results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "http://eaton.dev/results.html?facetvalue=value3"
+              "url": "t10-search-results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "http://eaton.dev/results.html?facetvalue=value4"
+              "url": "t10-search-results.html?facetvalue=value4"
             },
             {
               "id": "value5",
               "label": "Value 5",
-              "url": "http://eaton.dev/results.html?facetvalue=value5"
+              "url": "t10-search-results.html?facetvalue=value5"
             },
             {
               "id": "value6",
               "label": "Value 6",
-              "url": "http://eaton.dev/results.html?facetvalue=value6"
+              "url": "t10-search-results.html?facetvalue=value6"
             }
           ]
         },
@@ -223,27 +223,27 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "http://eaton.dev/results.html?facetvalue=value1"
+              "url": "t10-search-results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "http://eaton.dev/results.html?facetvalue=value2"
+              "url": "t10-search-results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "http://eaton.dev/results.html?facetvalue=value3"
+              "url": "t10-search-results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "http://eaton.dev/results.html?facetvalue=value4"
+              "url": "t10-search-results.html?facetvalue=value4"
             },
             {
               "id": "value5",
               "label": "Value 5",
-              "url": "http://eaton.dev/results.html?facetvalue=value5"
+              "url": "t10-search-results.html?facetvalue=value5"
             }
           ]
         },
@@ -255,22 +255,22 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "http://eaton.dev/results.html?facetvalue=value1"
+              "url": "t10-search-results.html?facetvalue=value1"
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "http://eaton.dev/results.html?facetvalue=value2"
+              "url": "t10-search-results.html?facetvalue=value2"
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "http://eaton.dev/results.html?facetvalue=value3"
+              "url": "t10-search-results.html?facetvalue=value3"
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "http://eaton.dev/results.html?facetvalue=value4"
+              "url": "t10-search-results.html?facetvalue=value4"
             }
           ]
         }
@@ -302,18 +302,18 @@ use(function () {
         "removeFilterLabel": "Remove Filter",
         "clearAllFilters": {
           "label": "Clear filters",
-          "url": "http://eaton.dev/results.html?clear-all-filters=true",
+          "url": "t10-search-results.html?clear-all-filters=true",
           "target": "_self"
         },
         "items": [
           {
             "label": "Products",
-            "url": "http://eaton.dev/results.html?remove-filter=products",
+            "url": "t10-search-results.html?remove-filter=products",
             "target": "_self"
           },
           {
             "label": "1000 VA",
-            "url": "http://eaton.dev/results.html?remove-filter=1000-va",
+            "url": "t10-search-results.html?remove-filter=1000-va",
             "target": "_self"
           }
         ]
@@ -323,22 +323,22 @@ use(function () {
         "items": [
           {
             "label": "Relevance",
-            "url": 'http://eaton.dev/results.html?sortby=relevance',
+            "url": 't10-search-results.html?sortby=relevance',
             "target": '_self'
           },
           {
             "label": "Newest",
-            "url": 'http://eaton.dev/results.html?sortby=newest',
+            "url": 't10-search-results.html?sortby=newest',
             "target": '_self'
           },
           {
             "label": "A to Z",
-            "url": 'http://eaton.dev/results.html?sortby=a-z',
+            "url": 't10-search-results.html?sortby=a-z',
             "target": '_self'
           },
           {
             "label": "Z to A",
-            "url": 'http://eaton.dev/results.html?sortby=z-a',
+            "url": 't10-search-results.html?sortby=z-a',
             "target": '_self'
           }
         ]
