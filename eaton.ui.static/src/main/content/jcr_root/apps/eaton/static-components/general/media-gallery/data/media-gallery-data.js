@@ -48,10 +48,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 4",
-          "thumbnail": "http://lorempixel.com/220/220/technics/9/220x220/",
-          "preview": "http://lorempixel.com/1000/1000/technics/9/1000x1000/",
-          "zoom": "http://lorempixel.com/1500/1500/technics/9/2000x2000/",
-          "download": "http://lorempixel.com/1500/1500/technics/9/2000x2000/"
+          "thumbnail": "http://lorempixel.com/220/220/business/1/220x220/",
+          "preview": "http://lorempixel.com/1000/1000/business/1/1000x1000/",
+          "zoom": "http://lorempixel.com/1500/1500/business/1/2000x2000/",
+          "download": "http://lorempixel.com/1500/1500/business/1/2000x2000/"
         }
       },
       {
