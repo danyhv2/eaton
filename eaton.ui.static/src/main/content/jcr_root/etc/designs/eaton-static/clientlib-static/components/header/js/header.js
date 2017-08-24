@@ -36,7 +36,7 @@ App.header = function () {
   var closeMegaMenuBtn = componentClass.find('.mega-menu-title__close-menu');
   var toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
   var openSearchDropdownBtn = $('.header-primary-nav__open-search');
-  var openDrawerDesktopBtn = $('.open-country-selector');
+  var openDrawerBtn = $('.open-country-selector');
 
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -187,8 +187,14 @@ App.header = function () {
     closeMegaMenu(event);
     closeSearch(event);
 
-    console.log('Open The Drawer');
     bodyEl.addClass('drawer-open drawer-is-animating');
+
+    // Check for window-width.
+    // If Desktop Breakpoint, activate the first region-panel
+    if (windowEl.width() >= 992) {
+      console.log('Activate the first Panel on desktop - Init');
+      $('#drawer-collapse-0').collapse('show');
+    }
 
     $(event.currentTarget).attr('aria-expanded', true);
   };
@@ -217,7 +223,7 @@ App.header = function () {
     openSearchDropdownBtn.on('click', handleSearch);
 
     // Handle click on Country Selector button
-    openDrawerDesktopBtn.on('click', openDrawerDesktop);
+    openDrawerBtn.on('click', openDrawerDesktop);
   };
 
   /**
