@@ -11,11 +11,7 @@ App.countrySelector = (function() {
   // Variable Declarations
   const componentClass = '.country-selector-drawer';
   const componentEl = $(componentClass);
-  // const bodyEl = $('body');
-  // const windowEl = $(window);
-
   const regionDesktopLinks = componentEl.find('.country-selector-drawer__region-list a');
-
   // Check AEM Author Mode
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
 
@@ -60,8 +56,7 @@ App.countrySelector = (function() {
     regionDesktopLinks.on('click', handleRegionPanels);
 
     // Handle Mega Menu Behaviors - Close Mega-Menu (Desktop)
-    // closeMegaMenuBtn.on('click', closeMegaMenu);
-
+    closeDrawerBtn.on('click', closeDrawer);
   };
 
   /**

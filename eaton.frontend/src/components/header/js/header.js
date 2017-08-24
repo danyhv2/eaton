@@ -167,7 +167,7 @@ App.header = (function() {
   /**
   * Handle Click behaviors - for Selector Drawer - Desktop
   */
-  const openDrawerDesktop = (event) => {
+  const openDrawer = (event) => {
 
     event.preventDefault();
 
@@ -210,7 +210,7 @@ App.header = (function() {
     openSearchDropdownBtn.on('click', handleSearch);
 
     // Handle click on Country Selector button
-    openDrawerBtn.on('click', openDrawerDesktop);
+    openDrawerBtn.on('click', openDrawer);
   };
 
   /**
