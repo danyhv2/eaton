@@ -9,6 +9,16 @@
 
     &__header {
       background: $color__primary-gray1;
+
+      .row {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__title {
+      flex-grow: 1;
+      padding-right: 20px;
     }
 
     &__item {
@@ -31,6 +41,11 @@
     // Desktop Breakpoint: >992 px
     //-----------------------------------
     @include media-desktop-and-up {
+
+      // .collapsing {
+      //   transition: none;
+      //   display: none;
+      // }
 
       &__header {
         margin-bottom: $spacing__sm;

@@ -73,21 +73,21 @@ use(function () {
             {
               "id": "product",
               "label": "Products",
-              "url": "t10-search-results.html",
+              "url": "t10-search-results.html?facetvalue=product",
               "active": true,
               "target": "_self"
             },
             {
               "id": "news",
               "label": "News & Insights",
-              "url": "t10-search-results.html",
+              "url": "t10-search-results.html?facetvalue=news",
               "active": false,
               "target": "_self"
             },
             {
               "id": "resources",
               "label": "Resources",
-              "url": "t10-search-results.html",
+              "url": "t10-search-results.html?facetvalue=resources",
               "active": false,
               "target": "_self"
             }
@@ -184,34 +184,34 @@ use(function () {
           "facetType": "checkboxes",
           "facetValues": [
             {
-              "id": "value1",
+              "id": "f2value1",
               "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=value1"
+              "url": "t10-search-results.html?facetvalue=f2value1"
             },
             {
-              "id": "value2",
+              "id": "f2value2",
               "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=value2"
+              "url": "t10-search-results.html?facetvalue=f2value2"
             },
             {
-              "id": "value3",
+              "id": "f2value3",
               "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=value3"
+              "url": "t10-search-results.html?facetvalue=f2value3"
             },
             {
-              "id": "value4",
+              "id": "f2value4",
               "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=value4"
+              "url": "t10-search-results.html?facetvalue=f2value4"
             },
             {
-              "id": "value5",
+              "id": "f2value5",
               "label": "Value 5",
-              "url": "t10-search-results.html?facetvalue=value5"
+              "url": "t10-search-results.html?facetvalue=f2value5"
             },
             {
-              "id": "value6",
+              "id": "f2value6",
               "label": "Value 6",
-              "url": "t10-search-results.html?facetvalue=value6"
+              "url": "t10-search-results.html?facetvalue=f2value6"
             }
           ]
         },
@@ -221,29 +221,29 @@ use(function () {
           "facetType": "radios",
           "facetValues": [
             {
-              "id": "value1",
+              "id": "f3value1",
               "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=value1"
+              "url": "t10-search-results.html?facetvalue=f3value1"
             },
             {
-              "id": "value2",
+              "id": "f3value2",
               "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=value2"
+              "url": "t10-search-results.html?facetvalue=f3value2"
             },
             {
-              "id": "value3",
+              "id": "f3value3",
               "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=value3"
+              "url": "t10-search-results.html?facetvalue=f3value3"
             },
             {
-              "id": "value4",
+              "id": "f3value4",
               "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=value4"
+              "url": "t10-search-results.html?facetvalue=f3value4"
             },
             {
-              "id": "value5",
+              "id": "f3value5",
               "label": "Value 5",
-              "url": "t10-search-results.html?facetvalue=value5"
+              "url": "t10-search-results.html?facetvalue=f3value5"
             }
           ]
         },
@@ -253,24 +253,24 @@ use(function () {
           "facetType": "checkboxes",
           "facetValues": [
             {
-              "id": "value1",
+              "id": "f4value1",
               "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=value1"
+              "url": "t10-search-results.html?facetvalue=f4value1"
             },
             {
-              "id": "value2",
+              "id": "f4value2",
               "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=value2"
+              "url": "t10-search-results.html?facetvalue=f4value2"
             },
             {
-              "id": "value3",
+              "id": "f4value3",
               "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=value3"
+              "url": "t10-search-results.html?facetvalue=f4value3"
             },
             {
-              "id": "value4",
+              "id": "f4value4",
               "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=value4"
+              "url": "t10-search-results.html?facetvalue=f4value4"
             }
           ]
         }
@@ -547,6 +547,62 @@ use(function () {
     data.search.activeFilters = [];
     data.search.resultsCount = 56;
   }
+
+  // REMOVE for integration and production, only for test porpouses
+  // logic for toogle radios and checkbox based on facetvalue url parameter
+  var facetvaluesArr = request.getRequestParameters('facetvalue');
+  if(facetvaluesArr) {
+    var activeFiltersArr = [];
+    var activeFiltersObjArr = [];
+    data.facets.facetItems[0].facetName = "Yeahh "; //+ facetvalues.join(',');
+
+    // each query string parameter
+    for (var p = 0; p < facetvaluesArr.length; p++) {
+      var facetvalue = facetvaluesArr[p];
+      data.facets.facetItems[0].facetName += facetvalue;
+
+      // ecach facet group
+      for (var f = 0; f < data.facets.facetItems.length; f++) {
+        for (var i = 0; i < data.facets.facetItems[0].facetValues.length; i++) {
+          var facetId = data.facets.facetItems[f].facetValues[i].id;
+
+          // activate the link
+          // data.facets.facetItems[0].facetName += '('+facetId+'-'+facetvaluesArr+') ';
+          if(facetvaluesArr.join(',').indexOf(facetId) >= 0) {
+            data.facets.facetItems[f].facetValues[i].active = true;
+          }
+
+          // add the active facets to array later we'll add it to the URL
+          if(data.facets.facetItems[f].facetValues[i].active){
+            activeFiltersArr.push(facetId);
+            activeFiltersObjArr.push(data.facets.facetItems[f].facetValues[i]);
+          }
+        }
+      }
+    }
+
+    // change the url params dynamically
+    for (var f = 0; f < data.facets.facetItems.length; f++) {
+      for (var i = 0; i < data.facets.facetItems[0].facetValues.length; i++) {
+        var facetId = data.facets.facetItems[f].facetValues[i].id;
+        var isFacedChecked = data.facets.facetItems[f].facetValues[i].active;
+        var disableactiveFiltersArr = activeFiltersArr.filter(function(f){return f!=facetId});
+        var enablectiveFiltersArr = activeFiltersArr.concat([facetId]);
+
+        data.facets.facetItems[f].facetValues[i].url =
+          request.requestURL + '?facetvalue=' +
+            ( isFacedChecked ?
+              disableactiveFiltersArr.join(',') :
+              enablectiveFiltersArr.join(','))
+      }
+    }
+
+    data.search.activeFilters.items = activeFiltersObjArr;
+  }
+  // REMOVE for integration and production, only for test porpouses
+  // END: logic for toogle radios and checkbox.
+
+
 
   return data;
 
