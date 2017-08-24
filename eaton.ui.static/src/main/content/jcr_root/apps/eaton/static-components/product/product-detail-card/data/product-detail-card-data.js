@@ -58,7 +58,7 @@ use(function () {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-01-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-01-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-01-download.jpg",
           "download": "/content/dam/eaton/images/products/media-gallery-products-01-download.jpg"
         }
       },
@@ -70,7 +70,7 @@ use(function () {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-02-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-02-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-02-download.jpg",
           "download": "/content/dam/eaton/images/products/media-gallery-products-02-download.jpg"
         }
       },
@@ -82,7 +82,7 @@ use(function () {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-03-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-03-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-03-download.jpg",
           "download": "/content/dam/eaton/images/products/media-gallery-products-03-download.jpg"
         }
       },
@@ -94,7 +94,7 @@ use(function () {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-04-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-04-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-04-download.jpg",
           "download": ""
         }
       },
@@ -106,7 +106,7 @@ use(function () {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-05-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-05-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-05-download.jpg",
           "download": "/content/dam/eaton/images/products/media-gallery-products-05-download.jpg"
         }
       },
@@ -118,7 +118,7 @@ use(function () {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-06-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-06-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-06-download.jpg",
           "download": "/content/dam/eaton/images/products/media-gallery-products-06-download.jpg"
         }
       }

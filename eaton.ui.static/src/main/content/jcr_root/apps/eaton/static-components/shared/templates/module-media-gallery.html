@@ -22,7 +22,12 @@
                 <!--*/ Slide Item - Image */-->
                 <div class="module-media-gallery__slide-preview embed-responsive embed-responsive-16by9">
                   <div class="module-media-gallery__image-wrapper embed-responsive-item">
-                    <img alt="${item.images.altText}" data-lazy="${ item.images.preview }" />
+                    <img
+                      class="module-media-gallery__image"
+                      alt="${item.images.altText}"
+                      data-lazy="${ item.images.preview }"
+                      data-zoom-url="${ item.images.zoom }"
+                    />
                   </div>
 
                   <!--*/ Slide Item - Utility - Zoom & Download */-->
