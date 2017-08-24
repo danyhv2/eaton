@@ -56,6 +56,14 @@
                 value="quote"/>
             </options>
           </view>
+          <toggleInnerGrid
+            jcr:primaryType="cq:Widget"
+            fieldDescription=""
+            fieldLabel="Enable Inner Grid"
+            inputValue="true"
+            name="./toggleInnerGrid"
+            type="checkbox"
+            xtype="selection" />
           <showCta
             jcr:primaryType="cq:Widget"
             fieldDescription="Show or hide the cta"
