@@ -19,6 +19,7 @@ App.header = (function() {
   const closeMegaMenuBtn = componentClass.find('.mega-menu-title__close-menu');
   const toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
   const openSearchDropdownBtn = $('.header-primary-nav__open-search');
+  const openDrawerBtn = $('.open-country-selector');
 
   // Check AEM Author Mode
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -40,10 +41,13 @@ App.header = (function() {
   const handleScroll = (event) => {
 
     const scrollTop = windowEl.scrollTop();
-    const headerHeight = 40;
+    const utilityNavOffset = $('.header-utility-nav').offset().top;
+    const utilityNavHeight = $('.header-utility-nav').outerHeight();
 
-    if ( scrollTop > (headerHeight)) {
+    if ( scrollTop > ((utilityNavOffset + utilityNavHeight))) {
       componentClass.addClass('eaton-header--fixed');
+      // Close the drawer if open - Country Selector
+      bodyEl.removeClass('drawer-open');
     } else {
       componentClass.removeClass('eaton-header--fixed');
     }
@@ -161,6 +165,28 @@ App.header = (function() {
   };
 
   /**
+  * Handle Click behaviors - for Selector Drawer - Desktop
+  */
+  const openDrawerDesktop = (event) => {
+
+    event.preventDefault();
+    // Close Search & Mega Menu if open
+    closeMegaMenu(event);
+    closeSearch(event);
+
+    bodyEl.addClass('drawer-open drawer-is-animating');
+
+    // Check for window-width.
+    // If Desktop Breakpoint, activate the first region-panel
+    if (windowEl.width() >= 992) {
+      console.log('Activate the first Panel on desktop - Init');
+      $('#drawer-collapse-0').collapse('show');
+    }
+
+    $(event.currentTarget).attr('aria-expanded', true);
+  };
+
+  /**
    * Bind All Event Listeners
    */
   const addEventListeners = () => {
@@ -182,6 +208,9 @@ App.header = (function() {
 
     // Handle click on Search Icon
     openSearchDropdownBtn.on('click', handleSearch);
+
+    // Handle click on Country Selector button
+    openDrawerBtn.on('click', openDrawerDesktop);
   };
 
   /**
