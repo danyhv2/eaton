@@ -12,10 +12,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 1",
-          "thumbnail": "/content/dam/eaton/images/story_03.png",
-          "preview": "/content/dam/eaton/images/story_03.png",
-          "zoom": "/TBD.ext",
-          "download": "/content/dam/eaton/images/story_03.png"
+          "thumbnail": "http://lorempixel.com/220/220/business/4/220x220/",
+          "preview": "http://lorempixel.com/1000/1000/business/4/1000x1000/",
+          "zoom": "http://lorempixel.com/1500/1500/business/4/2000x2000/",
+          "download": "http://lorempixel.com/1500/1500/business/4/2000x2000/"
         }
       },
       {
@@ -24,9 +24,9 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 2",
-          "thumbnail": "/content/dam/eaton/images/video.png",
-          "preview": "/content/dam/eaton/images/video.png",
-          "zoom": "/TBD.ext",
+          "thumbnail": "http://lorempixel.com/220/220/business/5/220x220/",
+          "preview": "http://lorempixel.com/1000/1000/business/5/1000x1000/",
+          "zoom": "",
           "download": ""
         }
       },
@@ -36,10 +36,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 3",
-          "thumbnail": "/content/dam/eaton/images/Hero_image_Secondary_Landing.png",
-          "preview": "/content/dam/eaton/images/Hero_image_Secondary_Landing.png",
-          "zoom": "/TBD.ext",
-          "download": "/content/dam/eaton/images/Hero_image_Secondary_Landing.png"
+          "thumbnail": "http://lorempixel.com/220/220/business/6/220x220/",
+          "preview": "http://lorempixel.com/1000/1000/business/6/1000x1000/",
+          "zoom": "http://lorempixel.com/1500/1500/business/6/2000x2000/",
+          "download": "http://lorempixel.com/1500/1500/business/6/2000x2000/"
         }
       },
       {
@@ -48,10 +48,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 4",
-          "thumbnail": "/content/dam/eaton/images/hero_05.png",
-          "preview": "/content/dam/eaton/images/hero_05.png",
-          "zoom": "/TBD.ext",
-          "download": "/content/dam/eaton/images/hero_05.png"
+          "thumbnail": "http://lorempixel.com/220/220/technics/9/220x220/",
+          "preview": "http://lorempixel.com/1000/1000/technics/9/1000x1000/",
+          "zoom": "http://lorempixel.com/1500/1500/technics/9/2000x2000/",
+          "download": "http://lorempixel.com/1500/1500/technics/9/2000x2000/"
         }
       },
       {
@@ -60,10 +60,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 5",
-          "thumbnail": "/content/dam/eaton/images/story_02.png",
-          "preview": "/content/dam/eaton/images/story_02.png",
-          "zoom": "/TBD.ext",
-          "download": "/content/dam/eaton/images/story_02.png"
+          "thumbnail": "http://lorempixel.com/220/220/business/9/220x220/",
+          "preview": "http://lorempixel.com/1000/1000/business/9/1000x1000/",
+          "zoom": "http://lorempixel.com/1500/1500/business/9/2000x2000/",
+          "download": "http://lorempixel.com/1500/1500/business/9/2000x2000/"
         }
       },
       {
@@ -72,10 +72,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 6",
-          "thumbnail": "/content/dam/eaton/images/Cityscape_mob.png",
-          "preview": "/content/dam/eaton/images/Cityscape_mob.png",
-          "zoom": "/TBD.ext",
-          "download": "/content/dam/eaton/images/Cityscape_mob.png"
+          "thumbnail": "http://lorempixel.com/220/220/business/8/220x220/",
+          "preview": "http://lorempixel.com/1000/1000/business/8/1000x1000/",
+          "zoom": "http://lorempixel.com/1500/1500/business/8/2000x2000/",
+          "download": "http://lorempixel.com/1500/1500/business/8/2000x2000/"
         }
       }
     ]
