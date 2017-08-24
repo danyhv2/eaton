@@ -1,6 +1,12 @@
 .article-list-single-feature {
 
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  padding-top: 25px;
+
+  @include media-tablet-and-up {
+    padding-bottom: 60px;
+    padding-top: 50px;
+  }
 
   &--border {
     border-top: 4px solid;

@@ -4,7 +4,7 @@ let App = window.App || {};
 
 App.form = (function() {
 
-  const $selectElement = ($('.eaton-form select'));
+  const $selectElement = '.eaton-form select[name="dropdownMenu"]';
 
   const init = () => {
     initDropdown();
@@ -15,13 +15,7 @@ App.form = (function() {
      * Initialize Choices Dropdown
      */
   const initDropdown = () => {
-    new Choices($selectElement[0], {
-      placeholder: false,
-      itemSelectText: '',
-      searchEnabled: false
-    });
-
-    new Choices($selectElement[1], {
+    new Choices($selectElement, {
       placeholder: false,
       itemSelectText: '',
       searchEnabled: false

@@ -4,7 +4,9 @@
 
 .l2-hero__title, .l2-hero__text { color: #FFF; }
 
-.l2-hero__text { font-size: 2.0rem; line-height: 3.2rem; }
+.l2-hero__text { font-size: 2.8rem; line-height: 4.4rem; }
+
+@media screen and (min-width: 768px) { .l2-hero__text { font-size: 2.0rem; line-height: 3.2rem; } }
 
 @media screen and (min-width: 992px) { .l2-hero { height: 450px; } }
 
