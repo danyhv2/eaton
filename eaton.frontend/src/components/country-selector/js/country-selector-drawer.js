@@ -11,7 +11,9 @@ App.countrySelector = (function() {
   // Variable Declarations
   const componentClass = '.country-selector-drawer';
   const componentEl = $(componentClass);
+  const bodyEl = $('body');
   const regionDesktopLinks = componentEl.find('.country-selector-drawer__region-list a');
+  const closeDrawerBtn = componentEl.find('.country-selector-drawer__close-menu');
   // Check AEM Author Mode
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
 
@@ -45,6 +47,11 @@ App.countrySelector = (function() {
       activeLink.addClass('active');
       activeLink.attr('aria-expanded', true);
     }
+  };
+
+  const closeDrawer = (event) => {
+    // Close the drawer if open - Country Selector
+    bodyEl.removeClass('drawer-open');
   };
 
   /**

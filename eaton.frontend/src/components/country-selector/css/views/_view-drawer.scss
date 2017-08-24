@@ -9,6 +9,16 @@
 
     &__header {
       background: $color__primary-gray1;
+
+      .row {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__title {
+      flex-grow: 1;
+      padding-right: 20px;
     }
 
     &__item {
