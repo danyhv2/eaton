@@ -37,6 +37,7 @@ App.header = function () {
   var toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
   var openSearchDropdownBtn = $('.header-primary-nav__open-search');
   var openDrawerBtn = $('.open-country-selector');
+  var regionDesktopList = $('.country-selector-drawer__region-list');
 
   // Media Breakpoint
   var mediumScreenWidth = App.global.constants.GRID.MD;
@@ -192,7 +193,10 @@ App.header = function () {
     // Close Search & Mega Menu if open
     if (windowEl.width() >= mediumScreenWidth) {
       $('.panel-collapse').removeClass('in');
-      $('#drawer-collapse-0').addClass('in');
+      $('#drawer-collapse-0').addClass('in'); // TODO: No Hardcode
+
+      regionDesktopList.find('a').removeClass('active');
+      regionDesktopList.find('a').eq(0).addClass('active');
 
       closeMegaMenu(event);
       closeSearch(event);

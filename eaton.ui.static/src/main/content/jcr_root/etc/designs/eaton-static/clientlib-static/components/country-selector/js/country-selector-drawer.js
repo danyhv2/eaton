@@ -93,17 +93,9 @@ App.countrySelector = function () {
   * @param { Object} event - MatchMedia Event Object
   */
   var onBreakpointChange = function onBreakpointChange(event) {
-
-    // If Desktop Breakpoint and Up
-    if (event.matches) {
-      console.log('Desktop BP');
-    }
-    // Else is Mobile/Tablet Breakpoint
-    else {
-        // Close the drawer & reset all panels & active links
-        closeDrawer();
-        resetDrawer();
-      }
+    // Close & Reset the Drawer
+    closeDrawer();
+    resetDrawer();
   };
 
   /**

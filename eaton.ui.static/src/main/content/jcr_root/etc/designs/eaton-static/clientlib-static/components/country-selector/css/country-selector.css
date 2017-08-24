@@ -64,7 +64,8 @@
 @media screen and (min-width: 992px) { .country-selector-drawer__header { margin-bottom: 30px; }
   .country-selector-drawer__region-list { list-style: none; }
   .country-selector-drawer__region-list li { margin-bottom: 30px; }
-  .country-selector-drawer__region-list a { color: #FFF; }
+  .country-selector-drawer__region-list a { color: #FFF; padding: 10px 0; }
+  .country-selector-drawer__region-list a.active { color: #005EB8; background: #EEF0F2; }
   .country-selector-drawer__item-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .country-selector-drawer__item { border: 0; }
   .country-selector-drawer__item-header { display: none; }

@@ -60,6 +60,11 @@
 
         a {
           color: $color__white;
+          padding: 10px 0;
+          &.active {
+            color: $color__primary-blue;
+            background: $color__secondary-gray5;
+          }
         }
       }
 
