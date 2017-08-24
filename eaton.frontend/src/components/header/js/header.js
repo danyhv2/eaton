@@ -170,20 +170,19 @@ App.header = (function() {
   const openDrawerDesktop = (event) => {
 
     event.preventDefault();
-    // Close Search & Mega Menu if open
-    closeMegaMenu(event);
-    closeSearch(event);
-
-    bodyEl.addClass('drawer-open drawer-is-animating');
 
     // Check for window-width.
     // If Desktop Breakpoint, activate the first region-panel
+    // Close Search & Mega Menu if open
     if (windowEl.width() >= 992) {
-      console.log('Activate the first Panel on desktop - Init');
       $('.panel-collapse').removeClass('in');
       $('#drawer-collapse-0').addClass('in');
+
+      closeMegaMenu(event);
+      closeSearch(event);
     }
 
+    bodyEl.addClass('drawer-open drawer-is-animating');
     $(event.currentTarget).attr('aria-expanded', true);
   };
 
