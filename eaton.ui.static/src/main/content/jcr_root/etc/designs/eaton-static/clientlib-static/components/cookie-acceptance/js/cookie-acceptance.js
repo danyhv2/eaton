@@ -27,7 +27,6 @@ App.cookieAcceptance = function () {
   // Variable Declarations
   var componentClass = '.cookie-acceptancebox';
   var $componentElement = $(componentClass);
-  var $componentToPadding = $('body');
 
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
