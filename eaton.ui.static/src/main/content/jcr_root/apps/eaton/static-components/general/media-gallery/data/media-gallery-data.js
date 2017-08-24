@@ -26,7 +26,7 @@ use(function () {
           "altText": "Gallery Item 2",
           "thumbnail": "http://lorempixel.com/220/220/business/5/220x220/",
           "preview": "http://lorempixel.com/1000/1000/business/5/1000x1000/",
-          "zoom": "",
+          "zoom": "http://lorempixel.com/1500/1500/business/5/1000x1000/",
           "download": ""
         }
       },
