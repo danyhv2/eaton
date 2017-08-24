@@ -38,6 +38,9 @@ App.header = function () {
   var openSearchDropdownBtn = $('.header-primary-nav__open-search');
   var openDrawerBtn = $('.open-country-selector');
 
+  // Media Breakpoint
+  var mediumScreenWidth = App.global.constants.GRID.MD;
+
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
 
@@ -138,7 +141,7 @@ App.header = function () {
   */
   var handleTitleClick = function handleTitleClick(event) {
     var activeLink = primaryLinks.filter('.active');
-    if (windowEl.width() <= 991) {
+    if (windowEl.width() < mediumScreenWidth) {
       event.preventDefault();
 
       bodyEl.removeClass('level-2-open');
@@ -187,7 +190,7 @@ App.header = function () {
     // Check for window-width.
     // If Desktop Breakpoint, activate the first region-panel
     // Close Search & Mega Menu if open
-    if (windowEl.width() >= 992) {
+    if (windowEl.width() >= mediumScreenWidth) {
       $('.panel-collapse').removeClass('in');
       $('#drawer-collapse-0').addClass('in');
 
