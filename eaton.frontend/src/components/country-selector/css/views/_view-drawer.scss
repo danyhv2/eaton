@@ -32,6 +32,11 @@
     //-----------------------------------
     @include media-desktop-and-up {
 
+      // .collapsing {
+      //   transition: none;
+      //   display: none;
+      // }
+
       &__header {
         margin-bottom: $spacing__sm;
       }
