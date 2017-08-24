@@ -63,7 +63,7 @@ App.header = function () {
     if (scrollTop > utilityNavOffset + utilityNavHeight) {
       componentClass.addClass('eaton-header--fixed');
       // Close the drawer if open - Country Selector
-      bodyEl.removeClass('drawer-open');
+      bodyEl.removeClass('drawer-open drawer-is-animating');
     } else {
       componentClass.removeClass('eaton-header--fixed');
     }
@@ -180,22 +180,22 @@ App.header = function () {
   /**
   * Handle Click behaviors - for Selector Drawer - Desktop
   */
-  var openDrawerDesktop = function openDrawerDesktop(event) {
+  var openDrawer = function openDrawer(event) {
 
     event.preventDefault();
-    // Close Search & Mega Menu if open
-    closeMegaMenu(event);
-    closeSearch(event);
-
-    bodyEl.addClass('drawer-open drawer-is-animating');
 
     // Check for window-width.
     // If Desktop Breakpoint, activate the first region-panel
+    // Close Search & Mega Menu if open
     if (windowEl.width() >= 992) {
-      console.log('Activate the first Panel on desktop - Init');
-      $('#drawer-collapse-0').collapse('show');
+      $('.panel-collapse').removeClass('in');
+      $('#drawer-collapse-0').addClass('in');
+
+      closeMegaMenu(event);
+      closeSearch(event);
     }
 
+    bodyEl.addClass('drawer-open drawer-is-animating');
     $(event.currentTarget).attr('aria-expanded', true);
   };
 
@@ -223,7 +223,7 @@ App.header = function () {
     openSearchDropdownBtn.on('click', handleSearch);
 
     // Handle click on Country Selector button
-    openDrawerBtn.on('click', openDrawerDesktop);
+    openDrawerBtn.on('click', openDrawer);
   };
 
   /**

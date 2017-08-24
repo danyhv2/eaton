@@ -83,6 +83,23 @@
       }
     }
   }
+
+  .drawer-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+
+    .full-page-drawer {
+      transform: translate(0, 0);
+      visibility: visible;
+    }
+  }
+
+  .drawer-is-animating {
+    .full-page-drawer {
+      transition: transform 0.5s ease-in-out, visibility 0.3s ease-in-out;
+    }
+  }
 }
 
 //-----------------------------------
