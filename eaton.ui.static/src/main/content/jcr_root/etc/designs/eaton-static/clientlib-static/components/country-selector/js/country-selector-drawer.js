@@ -29,8 +29,10 @@ App.countrySelector = function () {
   var componentClass = '.country-selector-drawer';
   var componentEl = $(componentClass);
   var bodyEl = $('body');
-  var regionDesktopLinks = componentEl.find('.country-selector-drawer__region-list a');
+  var regionDesktopList = componentEl.find('.country-selector-drawer__region-list');
+  var regionDesktopLinks = regionDesktopList.find('a');
   var closeDrawerBtn = componentEl.find('.country-selector-drawer__close-menu');
+
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
 
@@ -46,6 +48,7 @@ App.countrySelector = function () {
 
   /**
   * Handle click on region links. Show/ Hide panels
+  * @param { Object} event - Click Event Object
   */
   var handleRegionPanels = function handleRegionPanels(event) {
     var activeLink = $(event.currentTarget);
@@ -66,9 +69,41 @@ App.countrySelector = function () {
     }
   };
 
+  /**
+  * Close the Drawer
+  * @param { Object} event - Click Event Object
+  */
   var closeDrawer = function closeDrawer(event) {
     // Close the drawer if open - Country Selector
-    bodyEl.removeClass('drawer-open');
+    bodyEl.removeClass('drawer-open drawer-is-animating');
+    resetDrawer();
+  };
+
+  /**
+  * Reset Drawer
+  */
+  var resetDrawer = function resetDrawer() {
+    // reset the drawer
+    $('.panel-collapse').removeClass('in');
+    regionDesktopLinks.removeClass('active');
+  };
+
+  /**
+  * Breakpoint Change Callback Function
+  * @param { Object} event - MatchMedia Event Object
+  */
+  var onBreakpointChange = function onBreakpointChange(event) {
+
+    // If Desktop Breakpoint and Up
+    if (event.matches) {
+      console.log('Desktop BP');
+    }
+    // Else is Mobile/Tablet Breakpoint
+    else {
+        // Close the drawer & reset all panels & active links
+        closeDrawer();
+        resetDrawer();
+      }
   };
 
   /**
@@ -76,11 +111,24 @@ App.countrySelector = function () {
    */
   var addEventListeners = function addEventListeners() {
 
+    var mqDesktop = null;
+
     // Handle Mega Menu Behaviors - Open Mega-Menu
     regionDesktopLinks.on('click', handleRegionPanels);
 
     // Handle Mega Menu Behaviors - Close Mega-Menu (Desktop)
     closeDrawerBtn.on('click', closeDrawer);
+
+    // JavaScript MediaQueries
+    //--------------
+    if (window.matchMedia) {
+
+      // min-width 992px
+      mqDesktop = window.matchMedia(App.global.constants.MEDIA_QUERIES.DESKTOP);
+
+      // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
+      mqDesktop.addListener(onBreakpointChange);
+    }
   };
 
   /**
