@@ -45,8 +45,7 @@ App.searchResults = function () {
   };
 
   /**
-   * Get i18n String from a HTML data-attribute
-   * @return {[type]} [description]
+   * Get i18n Strings from a HTML data-attribute
    */
   var loadI18NStrings = function loadI18NStrings() {
 
