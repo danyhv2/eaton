@@ -24,7 +24,7 @@
 
 .carousel-component .carousel-component--indicators { bottom: 20px; }
 
-@media screen and (max-width: 767px) { .carousel-component-slide__image--mobile { min-height: 750px; }
+@media screen and (max-width: 767px) { .carousel-component-slide img { min-height: 780px; }
   .carousel-indicators { bottom: 56px; } }
 
 @media screen and (min-width: 768px) { .carousel-indicators { bottom: 20px; } }
