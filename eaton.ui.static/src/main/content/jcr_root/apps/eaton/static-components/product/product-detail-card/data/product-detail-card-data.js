@@ -48,88 +48,77 @@ use(function () {
   data.mediaGallery = {
     "headline": "",
     "description": "",
+    "isZoomEnabled": true,
     "items": [
       {
-        "title": "This is a long active headline text - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "title": "Gallery Slide # 1",
+        "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
-        "downloadEnabled": true,
-        "zoomEnabled": true,
         "images": {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-01-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-01-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-01-download.jpg",
           "download": "/content/dam/eaton/images/products/media-gallery-products-01-download.jpg"
         }
       },
       {
         "title": "",
-        "text": "",
+        "text": "This Slide has no title, only description",
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
-        "downloadEnabled": false,
-        "zoomEnabled": true,
         "images": {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-02-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-02-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-02-download.jpg",
           "download": "/content/dam/eaton/images/products/media-gallery-products-02-download.jpg"
         }
       },
       {
-        "title": "Eaton 9px Family - Item 3",
+        "title": "Eaton 9px Family - Item 3 This is a long active headline text - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "text": "",
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
-        "downloadEnabled": false,
-        "zoomEnabled": false,
         "images": {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-03-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-03-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-03-download.jpg",
           "download": "/content/dam/eaton/images/products/media-gallery-products-03-download.jpg"
         }
       },
       {
-        "title": "Eaton 9px Family - Item 4",
-        "text": "",
+        "title": "Gallery Slide # 4",
+        "text": "This slide has the download feature disabled",
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
-        "downloadEnabled": true,
-        "zoomEnabled": true,
         "images": {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-04-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-04-preview.jpg",
-          "zoom": "/TBD.ext",
-          "download": "/content/dam/eaton/images/products/media-gallery-products-04-download.jpg"
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-04-download.jpg",
+          "download": ""
         }
       },
       {
         "title": "",
         "text": "",
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
-        "downloadEnabled": true,
-        "zoomEnabled": true,
         "images": {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-05-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-05-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-05-download.jpg",
           "download": "/content/dam/eaton/images/products/media-gallery-products-05-download.jpg"
         }
       },
       {
         "title": "Eaton 9px Family - Item 6",
-        "text": "Eaton FlexPDU& HotSwap MBP",
+        "text": "Eaton FlexPDU& HotSwap MBP Sint consectetur totam adipisci autem repellat unde modi nobis, fugiat saepe neque ut, corrupti vero dolor enim. Officiis, magnam! Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
-        "downloadEnabled": true,
-        "zoomEnabled": true,
         "images": {
           "altText": "Image Alt Text",
           "thumbnail": "/content/dam/eaton/images/products/media-gallery-products-06-thumb.jpg",
           "preview": "/content/dam/eaton/images/products/media-gallery-products-06-preview.jpg",
-          "zoom": "/TBD.ext",
+          "zoom": "/content/dam/eaton/images/products/media-gallery-products-06-download.jpg",
           "download": "/content/dam/eaton/images/products/media-gallery-products-06-download.jpg"
         }
       }
@@ -206,8 +195,11 @@ use(function () {
     ]
   };
 
+
+  // Additional Testdata
+  //--------------
   if ((typeof(testdata) != "undefined") && (testdata == "related-products-two-images")) {
-    data.relatedProducts.items = [];
+    // TBD
   }
 
 
