@@ -21,12 +21,17 @@
   &__panel {
     border-bottom: 3px solid $color__secondary-gray5;
     padding: 30px 0 0;
+    box-shadow: none;
 
     &:first-child {
       @include media-tablet-and-up {
         padding-top: 0;
       }
     }
+  }
+
+  .panel {
+    border-radius: 0;
   }
 
   &__download-icon .icon {
