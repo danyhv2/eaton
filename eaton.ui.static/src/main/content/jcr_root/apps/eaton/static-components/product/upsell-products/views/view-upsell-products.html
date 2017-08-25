@@ -4,7 +4,7 @@
             <h3>${data.header}</h3>
             <p class="related-products-component__description">${data.description}</p>
         </div>
-        <sly data-sly-use.tpl="../../shared/templates/module-upsell-products.html">
+        <sly data-sly-use.tpl="eaton/static-components/shared/templates/module-upsell-products.html">
             <sly data-sly-call="${ tpl.module @data=data.cards }"></sly>
         </sly>
     </div>
