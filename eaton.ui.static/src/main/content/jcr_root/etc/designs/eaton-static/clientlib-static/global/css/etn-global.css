@@ -397,7 +397,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form input[type="radio"]:focus + span::before { border-color: #5a99db; -webkit-box-shadow: 0 1px 12px #85bffd; box-shadow: 0 1px 12px #85bffd; outline: 0 none; }
 
-.eaton-form input[type="submit"] { background: none; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; padding: 15px 100px; color: #005EB8; border-color: #005EB8; }
+.eaton-form input[type="submit"] { background: none; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; padding: 15px 100px; color: #005EB8; border-color: #005EB8; border-radius: 0; }
 
 .eaton-form input[type="submit"]:hover { color: #FFF; background: #005EB8; text-decoration: none; }
 
