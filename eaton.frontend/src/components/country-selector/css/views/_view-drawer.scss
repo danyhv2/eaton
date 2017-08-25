@@ -36,17 +36,57 @@ $border-color: rgba($color__secondary-gray4, 0.5);
   &__item {
     border-radius: 0;
     box-shadow: none;
+    background: transparent;
   }
 
   &__item-header {
     position: relative;
   }
 
+  // Content Styles - Region
+  //-----------------------------------
   &__item-list {
     padding: 0;
     list-style: none;
     overflow: hidden;
     margin-bottom: 0;
+  }
+
+  // Country Styles
+  //-----------------------------------
+  &__item-country-flag {
+    margin-right: ($spacing__sm / 3); //TODO: Enable
+    width: 25px;
+    height: 25px;
+  }
+
+  &__item-country-name {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-country-label {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  // Language Styles
+  //-----------------------------------
+  &__item-language-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item-language {
+    a {
+      color: $color__primary-gray1;
+
+      &:hover,
+      &:focus {
+        color: $color__primary-gray1;
+      }
+    }
   }
 
   //-----------------------------------
