@@ -21,6 +21,7 @@ App.header = (function() {
   const openSearchDropdownBtn = $('.header-primary-nav__open-search');
   const openDrawerBtn = $('.open-country-selector');
   const regionDesktopList = $('.country-selector-drawer__region-list');
+  const regionPanels = $('.country-selector-drawer .panel-collapse');
 
   // Media Breakpoint
   let mediumScreenWidth = App.global.constants.GRID.MD;
@@ -179,8 +180,8 @@ App.header = (function() {
     // If Desktop Breakpoint, activate the first region-panel
     // Close Search & Mega Menu if open
     if (windowEl.width() >= mediumScreenWidth) {
-      $('.panel-collapse').removeClass('in'); // TODO: No Hardcode
-      $('#drawer-collapse-0').addClass('in'); // TODO: No Hardcode
+      regionPanels.removeClass('in');
+      regionPanels.filter('#drawer-collapse-0').addClass('in');
 
       regionDesktopList.find('a').removeClass('active');
       regionDesktopList.find('a').eq(0).addClass('active');
