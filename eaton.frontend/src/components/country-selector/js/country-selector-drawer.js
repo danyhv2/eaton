@@ -67,12 +67,17 @@ App.countrySelector = (function() {
   */
   const closeDrawer = (event) => {
     // Close the drawer if open - Country Selector
+    bodyEl.addClass('drawer-is-animating');
     bodyEl.removeClass('drawer-open');
 
-    // reset the drawers on mobile
-    if (windowEl.width() < mediumScreenWidth) {
-      resetDrawer();
-    }
+    // After the drawer transition is completed
+    document.querySelector('.full-page-drawer').addEventListener('transitionend', function(event) {
+      bodyEl.removeClass('drawer-is-animating');
+      // reset the drawers on mobile
+      if (windowEl.width() < mediumScreenWidth) {
+        resetDrawer();
+      }
+    }, false);
   };
 
   /**
@@ -90,7 +95,8 @@ App.countrySelector = (function() {
   */
   const onBreakpointChange = (event) => {
     // Close & Reset the Drawer
-    closeDrawer();
+    bodyEl.removeClass('drawer-open');
+    resetDrawer();
   };
 
   /**

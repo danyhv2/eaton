@@ -195,6 +195,11 @@ App.header = (function() {
 
     bodyEl.addClass('drawer-open drawer-is-animating');
     $(event.currentTarget).attr('aria-expanded', true);
+
+    // After the drawer transition is completed
+    document.querySelector('.full-page-drawer').addEventListener('transitionend', function(event) {
+      bodyEl.removeClass('drawer-is-animating');
+    }, false);
   };
 
   /**
