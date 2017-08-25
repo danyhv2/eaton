@@ -216,7 +216,7 @@ App.mediaGallery = function () {
           url: item.dataset.zoomUrl,
           callback() {
             const $currentImage = $(this);
-            $currentImage.on('touchstart mouseover', zoomHandleImageEvent);
+            $currentImage.on('touchstart mouseover click', zoomHandleImageEvent);
 
             $currentImage.swipe({ // Event provided by "jquery.touch-swipe" Library
               tap(event) {
@@ -283,7 +283,8 @@ App.mediaGallery = function () {
     const disabledEvents = {
       mouseover: null,
       touchstart: null,
-      tap: null
+      tap: null,
+      click: null
     };
 
     // If Mobile/Tablet Breakpoint
