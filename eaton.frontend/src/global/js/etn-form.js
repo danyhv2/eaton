@@ -2,7 +2,7 @@
 
 let App = window.App || {};
 
-App.form = (function() {
+App.form = (function(Choices) {
 
   const $selectElement = '.eaton-form select:not([multiple])';
 
@@ -30,4 +30,4 @@ App.form = (function() {
     init();
   }
 
-}());
+}(window.Choices));

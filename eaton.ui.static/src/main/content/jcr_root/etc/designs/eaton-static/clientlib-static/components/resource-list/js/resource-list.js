@@ -23,10 +23,13 @@ App.accordion = function () {
 
   var $accordion = $('.panel-group');
   var $component = $('.secondary-content-accordion');
+  var $link = $('[data-scroll-to]');
 
   var init = function init() {
     $accordion.on('hidden.bs.collapse', toggleIcon);
     $accordion.on('shown.bs.collapse', toggleIcon);
+
+    $link.on('click', expand);
   };
 
   /**
@@ -35,6 +38,15 @@ App.accordion = function () {
   var toggleIcon = function toggleIcon(event) {
 
     $(event.target).prev('.panel-heading').find('.icon').toggleClass('icon-sign-plus icon-sign-minus');
+  };
+
+  /**
+   * Expand accordion when link is clicked
+   */
+  var expand = function expand(event) {
+
+    var idHeading = $(event.target).closest('.module-anchor-links__list-link').attr('data-scroll-to');
+    $accordion.find($(idHeading)).next().collapse('show');
   };
 
   /**
