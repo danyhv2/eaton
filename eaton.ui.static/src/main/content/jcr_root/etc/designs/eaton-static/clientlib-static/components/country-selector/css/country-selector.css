@@ -82,13 +82,12 @@
   .country-selector-drawer__region-list a:focus, .country-selector-drawer__region-list a:active { text-decoration: none; }
   .country-selector-drawer__region-list a.active { background: #333F48; border-left: 5px solid #005EB8; }
   .country-selector-drawer__region-icon { font-size: 0.75em; }
-  .country-selector-drawer__panel-list { border-left: 1px solid rgba(204, 210, 215, 0.5); padding-left: 30px; min-height: 420px; }
+  .country-selector-drawer__panel-list { border-left: 1px solid rgba(204, 210, 215, 0.5); padding-left: 5px; min-height: 420px; }
   .country-selector-drawer__item-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .country-selector-drawer__item { border: 0; }
   .country-selector-drawer__item-header { display: none; }
-  .country-selector-drawer__item-body { padding-bottom: 30px; }
-  .country-selector-drawer__item-country { -ms-flex-preferred-size: 33.33%; flex-basis: 33.33%; padding: 0 0 30px; }
-  .country-selector-drawer__item-country-name { padding-bottom: 8px; }
-  .country-selector-drawer__item-language { display: inline-block; padding: 0 8px; border-right: 1px solid #333; }
+  .country-selector-drawer__item-country { -ms-flex-preferred-size: 33.33%; flex-basis: 33.33%; padding: 0 25px 40px 25px; }
+  .country-selector-drawer__item-country-name { padding-bottom: 30px; }
+  .country-selector-drawer__item-language { display: inline-block; padding: 0 8px; border-right: 1px solid #FFF; }
   .country-selector-drawer__item-language:first-child { padding-left: 0; }
   .country-selector-drawer__item-language:last-child { border: 0; } }
