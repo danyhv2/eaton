@@ -8,6 +8,8 @@ $border-color: rgba($color__secondary-gray4, 0.5);
 
 .country-selector-drawer {
 
+  // Header Styles - Title
+  //-----------------------------------
   &__header {
     background: $color__primary-gray1;
 
@@ -23,6 +25,14 @@ $border-color: rgba($color__secondary-gray4, 0.5);
     margin-bottom: 0;
   }
 
+  // Container Styles - Panel
+  //-----------------------------------
+  &__panel-list {
+    margin-bottom: 0;
+  }
+
+  // Panel Styles - List of Countries
+  //-----------------------------------
   &__item {
     border-radius: 0;
     box-shadow: none;
@@ -43,31 +53,33 @@ $border-color: rgba($color__secondary-gray4, 0.5);
   // Desktop Breakpoint: >992 px
   //-----------------------------------
   @include media-desktop-and-up {
-
-    &__header {
-      margin-bottom: $spacing__sm;
-    }
-
     &__title {
       font-size: 2.6rem;
       line-height: 3.4rem;
       padding: $spacing__sm 0;
     }
 
+    &__container {
+      margin-top: $spacing__sm;
+      margin-bottom: 50px; // Avoid overwriting container default margins -left/right
+    }
+
     &__region-list {
       list-style: none;
-
-      li {
-        margin-bottom: $spacing__sm;
-      }
+      padding: 0;
 
       a {
         color: $color__white;
-        padding: 10px 0;
+        padding: ($spacing__sm / 2) 0 ($spacing__sm / 2) $spacing__sm;
+        display: block;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        position: relative;
 
         &.active {
-          color: $color__primary-blue;
-          background: $color__secondary-gray5;
+          background: $color__primary-gray1;
+          border-left: 5px solid $color__primary-blue;
         }
       }
     }
