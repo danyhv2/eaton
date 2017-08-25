@@ -42,7 +42,10 @@
 
 
   .category__image {
-    width: 100%;
+    img {
+      width: 100%;
+    }
+
   }
 
   .category__title--font,
