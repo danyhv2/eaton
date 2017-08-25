@@ -5,6 +5,11 @@
 // Import All SASS config files (Variables, Mixins, functions... etc)
 @import "../../../global/css/_config/sass";
 
+// Import Sub-Modules
+@import "media-gallery-zoom";
+
+
+
 .module-media-gallery {
 
   //-----------------------------------
@@ -48,6 +53,7 @@
   &__image-wrapper {
 
     img {
+      display: block;
       height: 100%;
       width: auto;
       margin-left: auto;
