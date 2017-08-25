@@ -52,6 +52,7 @@ App.countrySelector = function () {
   */
   var handleRegionPanels = function handleRegionPanels(event) {
     var activeLink = $(event.currentTarget);
+    var activePanel = '';
 
     event.preventDefault();
 
@@ -67,6 +68,8 @@ App.countrySelector = function () {
     if (!activeLink.hasClass('active')) {
       activeLink.addClass('active');
       activeLink.attr('aria-expanded', true);
+      activePanel = activeLink.attr('href');
+      $(activePanel).find('a').eq(0).focus();
     }
   };
 

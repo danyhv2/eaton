@@ -35,7 +35,7 @@ App.countrySelector = (function() {
   */
   const handleRegionPanels = (event) => {
     const activeLink = $(event.currentTarget);
-    const activePanel = '';
+    let activePanel = '';
 
     event.preventDefault();
 
