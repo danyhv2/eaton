@@ -31,8 +31,12 @@
 
   &__download-icon .icon {
     color: $color__primary-blue;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-right: 20px;
+
+    @include media-mobile-only {
+      font-size: 2rem;
+    }
   }
 
   &__badge {
@@ -55,8 +59,7 @@
   }
 
   &__body {
-    padding-bottom: 50px;
-    padding-top: 25px;
+    padding: 25px 0;
     display: flex;
     flex-direction: column;
 
