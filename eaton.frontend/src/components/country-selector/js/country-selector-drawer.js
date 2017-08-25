@@ -35,8 +35,10 @@ App.countrySelector = (function() {
   */
   const handleRegionPanels = (event) => {
     const activeLink = $(event.currentTarget);
+    let activePanel = '';
 
     event.preventDefault();
+
     if (activeLink.hasClass('active')) {
       return false;
     }
@@ -49,6 +51,8 @@ App.countrySelector = (function() {
     if (!activeLink.hasClass('active')) {
       activeLink.addClass('active');
       activeLink.attr('aria-expanded', true);
+      activePanel = activeLink.attr('href');
+      $(activePanel).find('a').eq(0).focus();
     }
   };
 
@@ -58,8 +62,8 @@ App.countrySelector = (function() {
   */
   const closeDrawer = (event) => {
     // Close the drawer if open - Country Selector
-    bodyEl.removeClass('drawer-open drawer-is-animating');
-    resetDrawer();
+    bodyEl.removeClass('drawer-open');
+    resetDrawer(); // TODO: only on mobile?
   };
 
   /**
@@ -76,17 +80,9 @@ App.countrySelector = (function() {
   * @param { Object} event - MatchMedia Event Object
   */
   const onBreakpointChange = (event) => {
-
-    // If Desktop Breakpoint and Up
-    if (event.matches) {
-      console.log('Desktop BP');
-    }
-    // Else is Mobile/Tablet Breakpoint
-    else {
-      // Close the drawer & reset all panels & active links
-      closeDrawer();
-      resetDrawer();
-    }
+    // Close & Reset the Drawer
+    closeDrawer();
+    resetDrawer();
   };
 
   /**
