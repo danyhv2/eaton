@@ -151,7 +151,7 @@ App.mediaGallery = function () {
     // Default Settings
     //--------------
     zoom = {
-      eventDesktop: 'mouseover',
+      eventDesktop: 'click',
       // eventMobile: 'overlay',
       scaleMobile: 2, // It Means that the image will be scale at 2x (200%)
       scaleDesktop: 1, // The default value is 1, meaning the zoomed image should be at 100% of its natural width and height.
