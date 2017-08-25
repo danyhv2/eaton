@@ -75,11 +75,11 @@
   .search-open .header-primary-nav__open-search .icon-close { display: block; top: -3px; font-size: 18px; }
   .drawer-open { overflow: hidden; position: fixed; width: 100%; }
   .drawer-open .full-page-drawer { -webkit-transform: translate(0, 0); transform: translate(0, 0); visibility: visible; }
-  .drawer-is-animating .full-page-drawer { -webkit-transition: visibility 0.3s ease-in-out, -webkit-transform 0.5s ease-in-out; transition: visibility 0.3s ease-in-out, -webkit-transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out, visibility 0.3s ease-in-out; transition: transform 0.5s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.5s ease-in-out; } }
+  .drawer-is-animating .full-page-drawer { -webkit-transition: visibility 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out; transition: visibility 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out, visibility 0.8s ease-in-out; transition: transform 0.5s ease-in-out, visibility 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out; } }
 
 @media screen and (min-width: 992px) { .level-2-open .mega-menu { visibility: visible; opacity: 1; }
   .drawer-open .full-page-drawer { visibility: visible; max-height: 2000px; }
-  .drawer-is-animating .full-page-drawer { -webkit-transition: max-height 0.7s ease-in-out, visibility 0.3s ease-in-out; transition: max-height 0.7s ease-in-out, visibility 0.3s ease-in-out; } }
+  .drawer-is-animating .full-page-drawer { -webkit-transition: max-height 0.5s ease-in-out, visibility 0.8s ease-in-out; transition: max-height 0.5s ease-in-out, visibility 0.8s ease-in-out; } }
 
 .aem-AuthorLayer-Edit .full-page-drawer, .aem-AuthorLayer-Edit .mega-menu, .aem-AuthorLayer-Edit .header-search, .cq-wcm-edit .full-page-drawer, .cq-wcm-edit .mega-menu, .cq-wcm-edit .header-search { position: relative !important; visibility: visible !important; opacity: 1 !important; z-index: 999 !important; }
 
