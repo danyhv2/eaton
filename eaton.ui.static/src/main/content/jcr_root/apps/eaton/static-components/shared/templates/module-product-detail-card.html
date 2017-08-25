@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-6 module-product-detail-card--image-container">
           <!-- Start: Rendition Image Component -->
-          <sly data-sly-use.tpl="../../shared/templates/rendition-image.html">
+          <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
             <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
           </sly>
           <!-- End: Rendition Image Component -->
@@ -33,11 +33,12 @@
             <div>
               <ul data-sly-list="${data.links}">
                 <li>
-                  <a  href="${item.url}"
-                      aria-label="Go to ${ item.title }"
-                  ><i data-sly-test="${item.target == '_blank'}"
-                      class="icon icon-link-external"
-                      aria-hidden="true"></i>
+                  <a href="${item.url}"
+                    aria-label="Go to ${ item.title }"
+                  >
+                  <i data-sly-test="${item.target == '_blank'}"
+                    class="icon icon-link-external"
+                    aria-hidden="true"></i>
                     ${ item.title }
                   </a>
                 </li>

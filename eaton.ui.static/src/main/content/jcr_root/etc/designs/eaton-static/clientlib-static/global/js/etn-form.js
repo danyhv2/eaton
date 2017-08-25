@@ -21,7 +21,7 @@ var App = window.App || {};
 
 App.form = function () {
 
-  var $selectElement = '.eaton-form select[name="dropdownMenu"]';
+  var $selectElement = '.eaton-form select:not([multiple])';
 
   var init = function init() {
     initDropdown();

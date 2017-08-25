@@ -54,6 +54,19 @@ App.global.utils = function () {
     return isAEMClassicUI ? true : false;
   }
 
+  /*
+  * Helper forEach
+  * eg: App.global.utils.forEach( document.querySelectorAll('.cards'), (index, element) { ... } )
+  * ----
+  * NOTE: What you get back from querySelectorAll() isn't an array,
+  * it's a (non-live) NodeList, and not all browsers support the method .forEach on NodeList's
+  */
+  function forEach(array, callback, scope) {
+    for (var i = 0; i < array.length; i++) {
+      callback.call(scope, i, array[i]);
+    }
+  }
+
   /**
   * Helper: Throttle Functions
   */
@@ -84,6 +97,7 @@ App.global.utils = function () {
   // Public Methods
   return {
     getCookie: getCookie,
+    forEach: forEach,
     isAEMAuthorMode: isAEMAuthorMode,
     throttle: throttle
   };
