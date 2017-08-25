@@ -68,6 +68,7 @@ $border-color: rgba($color__secondary-gray4, 0.5);
   &__item-country-label {
     text-transform: uppercase;
     font-weight: bold;
+    color: $color__white;
   }
 
   // Language Styles
@@ -80,11 +81,11 @@ $border-color: rgba($color__secondary-gray4, 0.5);
 
   &__item-language {
     a {
-      color: $color__primary-gray1;
+      color: $color__white;
 
       &:hover,
       &:focus {
-        color: $color__primary-gray1;
+        color: $color__white;
       }
     }
   }
@@ -153,9 +154,31 @@ $border-color: rgba($color__secondary-gray4, 0.5);
       display: none;
     }
 
+    &__item-body {
+      padding-bottom: $spacing__sm;
+    }
+
     &__item-country {
       flex-basis: 33.33%;
       padding: 0 0 $spacing__sm;
+    }
+
+    &__item-country-name {
+      padding-bottom: 8px;
+    }
+
+    &__item-language {
+      display: inline-block;
+      padding: 0 8px;
+      border-right: 1px solid #333;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border: 0;
+      }
     }
   }
 }
