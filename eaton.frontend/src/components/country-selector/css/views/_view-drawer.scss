@@ -70,12 +70,14 @@ $border-color: rgba($color__secondary-gray4, 0.5);
 
       a {
         color: $color__white;
-        padding: ($spacing__sm / 2) 0 ($spacing__sm / 2) $spacing__sm;
+        padding: ($spacing__sm / 2) $spacing__sm ($spacing__sm / 2) 25px; // Account for the border-width
         display: block;
         font-weight: bold;
         font-size: 1.6rem;
         line-height: 2.2rem;
         position: relative;
+        z-index: 5;
+        border-left: 5px solid $color__primary-gray2;
 
         &:focus, &:active {
           text-decoration: none;

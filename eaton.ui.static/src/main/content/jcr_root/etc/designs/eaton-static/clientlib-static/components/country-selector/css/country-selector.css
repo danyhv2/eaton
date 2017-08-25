@@ -66,7 +66,7 @@
 @media screen and (min-width: 992px) { .country-selector-drawer__title { font-size: 2.6rem; line-height: 3.4rem; padding: 30px 0; }
   .country-selector-drawer__container { margin-top: 30px; margin-bottom: 50px; }
   .country-selector-drawer__region-list { list-style: none; padding: 0; }
-  .country-selector-drawer__region-list a { color: #FFF; padding: 15px 0 15px 30px; display: block; font-weight: bold; font-size: 1.6rem; line-height: 2.2rem; position: relative; }
+  .country-selector-drawer__region-list a { color: #FFF; padding: 15px 30px 15px 25px; display: block; font-weight: bold; font-size: 1.6rem; line-height: 2.2rem; position: relative; z-index: 5; border-left: 5px solid #5B6770; }
   .country-selector-drawer__region-list a:focus, .country-selector-drawer__region-list a:active { text-decoration: none; }
   .country-selector-drawer__region-list a.active { background: #333F48; border-left: 5px solid #005EB8; }
   .country-selector-drawer__region-icon { font-size: 0.75em; }
