@@ -16,7 +16,7 @@
 
 .dark-theme .eaton-link-list-vertical__eyebrow, .dark-theme .eaton-link-list-vertical__list-link { color: #FFF; }
 
-@media screen and (max-width: 991px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 30px; } }
+@media screen and (max-width: 991px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; } }
 
 @media screen and (min-width: 992px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; }
   .eaton-link-list-vertical__download-text { width: auto; } }
