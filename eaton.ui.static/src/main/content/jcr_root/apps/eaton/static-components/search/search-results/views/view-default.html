@@ -1,14 +1,14 @@
 <sly data-sly-use.data="${ '../data/search-results-data.js' @testdata=properties.testdata }">
 
   <!--/* Results Tabs */-->
-  <sly data-sly-use.tpl="../../shared/templates/module-tabs.html">
+  <sly data-sly-use.tpl="eaton/static-components/shared/templates/module-tabs.html">
     <sly data-sly-call="${ tpl.module @ data=data.tabs }"></sly>
   </sly>
 
 
   <!--/* M-64 - Autocorrected Search */-->
   <sly data-sly-test="${ data.search.autoCorrect.enabled }">
-    <sly data-sly-use.tpl="../../shared/templates/module-autocorrected-search.html">
+    <sly data-sly-use.tpl="eaton/static-components/shared/templates/module-autocorrected-search.html">
       <sly data-sly-call="${ tpl.module @ data=data.search.autoCorrect }"></sly>
     </sly>
   </sly>
@@ -20,7 +20,7 @@
       <!--/* Results Header */-->
       <div class="row">
         <div class="col-xs-12">
-          <sly data-sly-use.tpl="../../shared/templates/module-faceted-navigation/faceted-navigation-header.html">
+          <sly data-sly-use.tpl="eaton/static-components/shared/templates/module-faceted-navigation/faceted-navigation-header.html">
             <sly data-sly-call="${ tpl.module @ data=data.search }"></sly>
           </sly>
         </div>
@@ -31,7 +31,7 @@
 
         <!--/* M-62: Faceted Navigation */-->
         <div class="col-xs-12 col-md-3">
-          <sly data-sly-use.tpl="../../shared/templates/module-faceted-navigation/faceted-navigation.html">
+          <sly data-sly-use.tpl="eaton/static-components/shared/templates/module-faceted-navigation/faceted-navigation.html">
             <sly data-sly-call="${ tpl.module @ data=data.facets, search=data.search }"></sly>
           </sly>
         </div>

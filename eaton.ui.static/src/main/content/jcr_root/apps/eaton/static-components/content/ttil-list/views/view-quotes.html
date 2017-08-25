@@ -4,7 +4,7 @@
   <div class="eaton-ttil-quote ${quoteList.even ? 'eaton-ttil-quote__right' : 'eaton-ttil-quote__left'}">
       <div class="eaton-ttil-quote__image">
         <!-- Start: Rendition Image Component -->
-        <sly data-sly-use.tpl="../../../shared/templates/rendition-image.html">
+        <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
           <sly data-sly-call="${ tpl.module @ data=quote.image }"></sly>
         </sly>
         <!-- End: Rendition Image Component -->
