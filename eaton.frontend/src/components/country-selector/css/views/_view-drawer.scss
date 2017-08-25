@@ -4,6 +4,7 @@
 // Module: Country/ Language Selector
 // View: Drawer
 //-----------------------------------
+$border-color: rgba($color__secondary-gray4, 0.5);
 
 .country-selector-drawer {
 
@@ -19,6 +20,7 @@
   &__title {
     flex-grow: 1;
     padding-right: 20px;
+    margin-bottom: 0;
   }
 
   &__item {
@@ -42,13 +44,14 @@
   //-----------------------------------
   @include media-desktop-and-up {
 
-    // .collapsing {
-    //   transition: none;
-    //   display: none;
-    // }
-
     &__header {
       margin-bottom: $spacing__sm;
+    }
+
+    &__title {
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      padding: $spacing__sm 0;
     }
 
     &__region-list {
@@ -67,6 +70,12 @@
           background: $color__secondary-gray5;
         }
       }
+    }
+
+    &__panel-list {
+      border-left: 1px solid $border-color;
+      padding-left: $spacing__sm;
+      min-height: 420px;
     }
 
     &__item-list {

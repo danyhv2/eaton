@@ -75,7 +75,7 @@ App.countrySelector = function () {
   */
   var closeDrawer = function closeDrawer(event) {
     // Close the drawer if open - Country Selector
-    bodyEl.removeClass('drawer-open drawer-is-animating');
+    bodyEl.removeClass('drawer-open');
     resetDrawer();
   };
 
