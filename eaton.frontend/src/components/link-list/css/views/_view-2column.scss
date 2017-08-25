@@ -1,7 +1,7 @@
 .eaton-linklist-2column {
   overflow: hidden;
 
-  & > div {
+  > div {
 
     .col-xs-12 {
       padding: 0;
@@ -14,7 +14,7 @@
 
   @include media-desktop-and-up {
 
-    & > div {
+    > div {
 
       display: flex;
       flex-wrap: wrap;
