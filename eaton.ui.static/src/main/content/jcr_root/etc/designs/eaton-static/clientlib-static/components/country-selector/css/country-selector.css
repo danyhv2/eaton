@@ -67,7 +67,9 @@
   .country-selector-drawer__container { margin-top: 30px; margin-bottom: 50px; }
   .country-selector-drawer__region-list { list-style: none; padding: 0; }
   .country-selector-drawer__region-list a { color: #FFF; padding: 15px 0 15px 30px; display: block; font-weight: bold; font-size: 1.6rem; line-height: 2.2rem; position: relative; }
+  .country-selector-drawer__region-list a:focus, .country-selector-drawer__region-list a:active { text-decoration: none; }
   .country-selector-drawer__region-list a.active { background: #333F48; border-left: 5px solid #005EB8; }
+  .country-selector-drawer__region-icon { font-size: 0.75em; }
   .country-selector-drawer__panel-list { border-left: 1px solid rgba(204, 210, 215, 0.5); padding-left: 30px; min-height: 420px; }
   .country-selector-drawer__item-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .country-selector-drawer__item { border: 0; }

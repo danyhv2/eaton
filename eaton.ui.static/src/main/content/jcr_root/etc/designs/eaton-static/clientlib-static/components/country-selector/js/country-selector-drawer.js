@@ -54,6 +54,7 @@ App.countrySelector = function () {
     var activeLink = $(event.currentTarget);
 
     event.preventDefault();
+
     if (activeLink.hasClass('active')) {
       return false;
     }
@@ -76,7 +77,7 @@ App.countrySelector = function () {
   var closeDrawer = function closeDrawer(event) {
     // Close the drawer if open - Country Selector
     bodyEl.removeClass('drawer-open');
-    resetDrawer();
+    resetDrawer(); // TODO: only on mobile?
   };
 
   /**

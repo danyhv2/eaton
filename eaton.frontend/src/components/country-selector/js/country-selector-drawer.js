@@ -35,8 +35,10 @@ App.countrySelector = (function() {
   */
   const handleRegionPanels = (event) => {
     const activeLink = $(event.currentTarget);
+    const activePanel = '';
 
     event.preventDefault();
+
     if (activeLink.hasClass('active')) {
       return false;
     }
@@ -49,6 +51,8 @@ App.countrySelector = (function() {
     if (!activeLink.hasClass('active')) {
       activeLink.addClass('active');
       activeLink.attr('aria-expanded', true);
+      activePanel = activeLink.attr('href');
+      $(activePanel).find('a').eq(0).focus();
     }
   };
 
@@ -59,7 +63,7 @@ App.countrySelector = (function() {
   const closeDrawer = (event) => {
     // Close the drawer if open - Country Selector
     bodyEl.removeClass('drawer-open');
-    resetDrawer();
+    resetDrawer(); // TODO: only on mobile?
   };
 
   /**

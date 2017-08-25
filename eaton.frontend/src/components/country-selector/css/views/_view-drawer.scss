@@ -77,11 +77,19 @@ $border-color: rgba($color__secondary-gray4, 0.5);
         line-height: 2.2rem;
         position: relative;
 
+        &:focus, &:active {
+          text-decoration: none;
+        }
+
         &.active {
           background: $color__primary-gray1;
           border-left: 5px solid $color__primary-blue;
         }
       }
+    }
+
+    &__region-icon {
+      font-size: 0.75em;
     }
 
     &__panel-list {
