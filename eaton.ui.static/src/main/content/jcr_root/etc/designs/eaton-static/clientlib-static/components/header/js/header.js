@@ -192,11 +192,15 @@ App.header = function () {
     // If Desktop Breakpoint, activate the first region-panel
     // Close Search & Mega Menu if open
     if (windowEl.width() >= mediumScreenWidth) {
-      $('.panel-collapse').removeClass('in');
+      $('.panel-collapse').removeClass('in'); // TODO: No Hardcode
       $('#drawer-collapse-0').addClass('in'); // TODO: No Hardcode
 
       regionDesktopList.find('a').removeClass('active');
       regionDesktopList.find('a').eq(0).addClass('active');
+
+      setTimeout(function () {
+        $('.country-selector-drawer__close-menu').focus();
+      }, 10);
 
       closeMegaMenu(event);
       closeSearch(event);

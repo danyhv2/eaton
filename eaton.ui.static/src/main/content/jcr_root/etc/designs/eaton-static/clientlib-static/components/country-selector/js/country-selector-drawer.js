@@ -29,9 +29,14 @@ App.countrySelector = function () {
   var componentClass = '.country-selector-drawer';
   var componentEl = $(componentClass);
   var bodyEl = $('body');
+  var windowEl = $(window);
+
   var regionDesktopList = componentEl.find('.country-selector-drawer__region-list');
   var regionDesktopLinks = regionDesktopList.find('a');
   var closeDrawerBtn = componentEl.find('.country-selector-drawer__close-menu');
+
+  // Media Breakpoint
+  var mediumScreenWidth = App.global.constants.GRID.MD;
 
   // Check AEM Author Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -80,7 +85,11 @@ App.countrySelector = function () {
   var closeDrawer = function closeDrawer(event) {
     // Close the drawer if open - Country Selector
     bodyEl.removeClass('drawer-open');
-    resetDrawer(); // TODO: only on mobile?
+
+    // reset the drawers on mobile
+    if (windowEl.width() < mediumScreenWidth) {
+      resetDrawer();
+    }
   };
 
   /**
