@@ -211,9 +211,21 @@ App.header = function () {
   };
 
   /**
+  * Breakpoint Change Callback Function
+  * @param { Object} event - MatchMedia Event Object
+  */
+  var onBreakpointChange = function onBreakpointChange(event) {
+    // Close Menu & Search
+    closeMegaMenu(event);
+    closeSearch(event);
+  };
+
+  /**
    * Bind All Event Listeners
    */
   var addEventListeners = function addEventListeners() {
+
+    var mqDesktop = null;
 
     // Handle Scroll - Sticky Navigation Behaviors
     windowEl.on('scroll', handleScroll);
@@ -235,6 +247,17 @@ App.header = function () {
 
     // Handle click on Country Selector button
     openDrawerBtn.on('click', openDrawer);
+
+    // JavaScript MediaQueries
+    //--------------
+    if (window.matchMedia) {
+
+      // min-width 992px
+      mqDesktop = window.matchMedia(App.global.constants.MEDIA_QUERIES.DESKTOP);
+
+      // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
+      mqDesktop.addListener(onBreakpointChange);
+    }
   };
 
   /**

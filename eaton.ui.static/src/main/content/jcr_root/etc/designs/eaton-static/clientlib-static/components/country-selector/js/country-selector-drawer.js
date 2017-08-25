@@ -108,7 +108,6 @@ App.countrySelector = function () {
   var onBreakpointChange = function onBreakpointChange(event) {
     // Close & Reset the Drawer
     closeDrawer();
-    resetDrawer();
   };
 
   /**
