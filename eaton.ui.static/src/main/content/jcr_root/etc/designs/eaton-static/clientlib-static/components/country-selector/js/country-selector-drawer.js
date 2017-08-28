@@ -111,7 +111,7 @@ App.countrySelector = function () {
   */
   var resetDrawer = function resetDrawer() {
     // reset the drawer
-    regionPanels.removeClass('in');
+    regionPanels.collapse('hide');
     regionDesktopLinks.removeClass('active');
   };
 
