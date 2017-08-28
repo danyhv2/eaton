@@ -17,9 +17,7 @@
 'use strict';
 
 var App = App || {};
-
-App.global = App.global || {};
-App.global.renditions = function () {
+App.renditions = function () {
 
   var responsiveImg = function responsiveImg() {
 
