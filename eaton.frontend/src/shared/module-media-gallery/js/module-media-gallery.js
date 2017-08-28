@@ -204,9 +204,11 @@ App.mediaGallery = function () {
           url: item.dataset.zoomUrl,
           callback() {
             const $currentImage = $(this);
+
             $currentImage.on('touchstart mouseover click', zoomHandleImageEvent);
 
-            $currentImage.swipe({ // Event provided by "jquery.touch-swipe" Library
+            // "Swipe" Event provided by "jquery.touch-swipe" Library
+            $currentImage.swipe({
               tap(event) {
                 zoomHandleImageEvent(event);
               },
