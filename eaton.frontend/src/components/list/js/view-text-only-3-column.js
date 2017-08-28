@@ -35,11 +35,61 @@ App.carousel3ColumnText = function () {
 
 
     if (event.matches) {
-      console.log('es tablet');
+      console.log('IS tablet, lets unslick');
+      $carousel.slick('unslick');
 
     }
     else {
-      console.log('NO es tablet......');
+      console.log('NO  tablet.... make slider great again !');
+       
+
+
+
+
+
+
+  $carousel.slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      dots: true,
+      dotsClass: 'module-related-products__dots',
+      prevArrow: $('.text-only-3-column__prev-arrow'),
+      nextArrow: $('.text-only-3-column__next-arrow'),
+      responsive: [
+
+
+
+
+
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 
@@ -63,6 +113,19 @@ App.carousel3ColumnText = function () {
 
 
 
+    {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        }
+
+
+        {
+          breakpoint: 991,
+          settings: "unslick"
+        }
 
 
 
