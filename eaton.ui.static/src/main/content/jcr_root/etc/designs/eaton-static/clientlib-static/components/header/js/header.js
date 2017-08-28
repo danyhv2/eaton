@@ -49,6 +49,24 @@ App.header = function () {
     // If not in AEM Author Mode - initialize scripts
     if (!isAEMAuthorMode) {
       addEventListeners();
+      $(document).on(App.global.constants.HEADER.COOKIE_SET, function () {
+        updateHeaderLayoutMobile();
+      });
+    }
+  };
+
+  /**
+  * Handle height updation of Header Modules / components
+  * Includes Top offset - Mega Menu, Links container, Search
+  */
+  var updateHeaderLayoutMobile = function updateHeaderLayoutMobile() {
+    var headerEl = $('header');
+    var headerHeight = headerEl.height() + 'px';
+
+    if (windowEl.width() < mediumScreenWidth) {
+      headerEl.find('.mega-menu').css('top', headerHeight);
+      headerEl.find('.eaton-link-list-primary-nav').css('top', headerHeight);
+      headerEl.find('.header-search').css('top', headerHeight);
     }
   };
 
@@ -81,6 +99,7 @@ App.header = function () {
 
     // Close Search if open
     closeSearch(event);
+    updateHeaderLayoutMobile();
 
     // Highlight only the active Link
     primaryLinks.removeClass('active');
@@ -118,6 +137,8 @@ App.header = function () {
     // Close Search if open
     closeSearch(event);
 
+    updateHeaderLayoutMobile();
+
     if (bodyEl.hasClass('nav-open')) {
 
       // Check if Level 2 - open/close
@@ -154,6 +175,7 @@ App.header = function () {
 
     event.preventDefault();
     closeMegaMenu(event);
+    updateHeaderLayoutMobile();
 
     bodyEl.toggleClass('search-open');
 
