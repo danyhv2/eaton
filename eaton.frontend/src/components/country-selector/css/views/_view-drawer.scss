@@ -127,7 +127,7 @@ $border-color: rgba($color__secondary-gray4, 0.5);
     }
 
     &__item-header {
-      padding: ($spacing__sm / 2) $spacing__sm;
+      padding: 20px $spacing__sm;
       background: $color__primary-gray1;
     }
 
@@ -135,6 +135,33 @@ $border-color: rgba($color__secondary-gray4, 0.5);
       font-size: 1.4rem;
       line-height: 1.8rem;
       margin-bottom: 0;
+    }
+
+    &__item-body {
+      padding: 0 $spacing__sm;
+    }
+
+    &__item-country {
+      border-bottom: 1px solid $border-color;
+      padding: 25px 0;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    &__item-country-name {
+      margin-bottom: 20px;
+    }
+
+    &__item-language-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: $spacing__sm + 5;
+    }
+
+    &__item-language {
+      flex-basis: 50%;
     }
   }
 
