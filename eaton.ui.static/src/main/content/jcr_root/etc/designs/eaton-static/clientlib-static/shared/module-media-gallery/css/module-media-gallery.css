@@ -13,6 +13,10 @@
 
 .module-media-gallery__image-wrapper { position: relative; }
 
+.module-media-gallery__slide-arrows-container, .module-media-gallery__slide-utility { -webkit-transition: opacity 250ms ease-out, visibility 250ms ease-out; transition: opacity 250ms ease-out, visibility 250ms ease-out; opacity: 1; visibility: visible; }
+
+.module-media-gallery.zoom-inline-open .module-media-gallery__slide-arrows-container, .module-media-gallery.zoom-inline-open .module-media-gallery__slide-utility { opacity: 0; visibility: hidden; }
+
 .zoom-inline { position: absolute; left: 0; top: 0; height: 100%; width: 100%; }
 
 body.zoom-overlay-open { overflow: hidden; }
