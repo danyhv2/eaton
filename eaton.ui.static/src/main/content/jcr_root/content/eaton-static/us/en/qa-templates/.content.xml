@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Page">
+    <m13-eaton-262/>
+    <m14-eaton-263/>
+    <m15-eaton-264/>
+    <m16-eaton-254/>
+    <m17-eaton-479/>
+    <m18-eaton-478/>
+    <m20-eaton-477/>
+    <m21-eaton-477/>
     <jcr:content
         cq:lastModified="{Date}2017-07-19T19:48:51.141Z"
         cq:lastModifiedBy="etn-supriya"
