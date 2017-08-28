@@ -22,14 +22,14 @@
             type="select"
             xtype="selection">
             <options jcr:primaryType="cq:WidgetCollection">
-              <accordion
-                jcr:primaryType="nt:unstructured"
-                text="Accordion View"
-                value="accordion"/>
               <drawer
                 jcr:primaryType="nt:unstructured"
                 text="Drawer View"
                 value="drawer"/>
+              <accordion
+                jcr:primaryType="nt:unstructured"
+                text="Accordion View"
+                value="accordion"/>
             </options>
           </view>
         </items>

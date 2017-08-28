@@ -88,6 +88,7 @@
 
     &__item {
       border-color: transparent;
+      border-bottom: 0;
 
       > a {
         color: $color__primary-blue;
@@ -105,19 +106,6 @@
         padding-bottom: 50px;
         color: $color__primary-blue;
       }
-    }
-
-    &__tab-links {
-      border-left: 1px solid $color__primary-gray3;
-    }
-
-    &__tabs {
-      display: block;
-      overflow: hidden;
-    }
-
-    &__item {
-      border-bottom: 0;
 
       &.desktop {
         flex: 0 0 33%;
@@ -142,6 +130,15 @@
           order: 9;
         }
       }
+    }
+
+    &__tab-links {
+      border-left: 1px solid $color__primary-gray3;
+    }
+
+    &__tabs {
+      display: block;
+      overflow: hidden;
     }
 
     &__tab {

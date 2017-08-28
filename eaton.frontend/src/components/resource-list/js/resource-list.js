@@ -1,15 +1,20 @@
+//-----------------------------------
+// Resources List
+//-----------------------------------
 'use strict';
 
 let App = window.App || {};
-
-App.accordion = function () {
+App.resourceList = function () {
 
   const $accordion = $('.panel-group');
   const $component = $('.secondary-content-accordion');
+  const $link = $('[data-scroll-to]');
 
   const init = () => {
     $accordion.on('hidden.bs.collapse', toggleIcon);
     $accordion.on('shown.bs.collapse', toggleIcon);
+
+    $link.on('click', expand);
   };
 
     /**
@@ -21,6 +26,16 @@ App.accordion = function () {
         .prev('.panel-heading')
         .find('.icon')
         .toggleClass('icon-sign-plus icon-sign-minus');
+
+  };
+
+    /**
+     * Expand accordion when link is clicked
+     */
+  const expand = (event) => {
+
+    let idHeading = $(event.target).closest('.module-anchor-links__list-link').attr('data-scroll-to');
+    $accordion.find($(idHeading )).next().collapse('show');
 
   };
 

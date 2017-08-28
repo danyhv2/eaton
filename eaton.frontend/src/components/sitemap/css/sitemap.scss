@@ -9,13 +9,13 @@
   padding: 30px 0;
 
   &__levelone {
-    font-size: 50px;
+    font-size: 5.0rem;
     color: $color__primary-blue;
     margin-bottom: 30px;
   }
 
   &__leveltow {
-    font-size: 32px;
+    font-size: 3.2rem;
     display: block;
     color: $color__primary-blue;
     margin-bottom: 15px;
@@ -29,14 +29,14 @@
   }
 
   &__levelthree {
-    font-size: 19px;
+    font-size: 1.9rem;
     display: block;
     margin-bottom: 25px;
   }
 
   &__levelfour {
     width: 100%;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-family: $font-family__secondary;
     font-weight: bold;
     display: block;
@@ -45,7 +45,7 @@
 
   &__levelfive,
   &__levelsix {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-family: $font-family__secondary;
     display: block;
     margin-bottom: 15px;
@@ -57,26 +57,26 @@
 
   @include media-desktop-and-up {
     &__levelone {
-      font-size: 64px;
+      font-size: 6.4rem;
       margin-bottom: 50px;
     }
 
     &__leveltow {
-      font-size: 40px;
+      font-size: 4.0rem;
       margin-bottom: 25px;
     }
 
     &__levelthree {
-      font-size: 26px;
+      font-size: 2.6rem;
       margin-bottom: 30px;
     }
 
     &__levelfour {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
 
     &__levelfive {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
   }
 }

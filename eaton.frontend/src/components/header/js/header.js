@@ -20,6 +20,8 @@ App.header = (function() {
   const toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
   const openSearchDropdownBtn = $('.header-primary-nav__open-search');
   const openDrawerBtn = $('.open-country-selector');
+  const regionDesktopList = $('.country-selector-drawer__region-list');
+  const regionPanels = $('.country-selector-drawer .panel-collapse');
 
   // Media Breakpoint
   let mediumScreenWidth = App.global.constants.GRID.MD;
@@ -178,8 +180,15 @@ App.header = (function() {
     // If Desktop Breakpoint, activate the first region-panel
     // Close Search & Mega Menu if open
     if (windowEl.width() >= mediumScreenWidth) {
-      $('.panel-collapse').removeClass('in');
-      $('#drawer-collapse-0').addClass('in');
+      regionPanels.removeClass('in');
+      regionPanels.filter('#drawer-collapse-0').addClass('in');
+
+      regionDesktopList.find('a').removeClass('active');
+      regionDesktopList.find('a').eq(0).addClass('active');
+
+      setTimeout(function() {
+        $('.country-selector-drawer__close-menu').focus();
+      }, 10);
 
       closeMegaMenu(event);
       closeSearch(event);
@@ -187,12 +196,29 @@ App.header = (function() {
 
     bodyEl.addClass('drawer-open drawer-is-animating');
     $(event.currentTarget).attr('aria-expanded', true);
+
+    // After the drawer transition is completed
+    document.querySelector('.full-page-drawer').addEventListener('transitionend', function(event) {
+      bodyEl.removeClass('drawer-is-animating');
+    }, false);
+  };
+
+  /**
+  * Breakpoint Change Callback Function
+  * @param { Object} event - MatchMedia Event Object
+  */
+  const onBreakpointChange = (event) => {
+    // Close Menu & Search
+    closeMegaMenu(event);
+    closeSearch(event);
   };
 
   /**
    * Bind All Event Listeners
    */
   const addEventListeners = () => {
+
+    let mqDesktop = null;
 
     // Handle Scroll - Sticky Navigation Behaviors
     windowEl.on('scroll', handleScroll);
@@ -214,6 +240,17 @@ App.header = (function() {
 
     // Handle click on Country Selector button
     openDrawerBtn.on('click', openDrawer);
+
+    // JavaScript MediaQueries
+    //--------------
+    if (window.matchMedia) {
+
+      // min-width 992px
+      mqDesktop = window.matchMedia(App.global.constants.MEDIA_QUERIES.DESKTOP);
+
+      // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
+      mqDesktop.addListener(onBreakpointChange);
+    }
   };
 
   /**

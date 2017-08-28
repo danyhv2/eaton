@@ -75,9 +75,10 @@
 
 @include media-mobile-only {
   .carousel-component-slide {
-    &__image--mobile {
-      min-height: 750px;
+    img {
+      min-height: 780px;
     }
+
   }
 
   .carousel-indicators {

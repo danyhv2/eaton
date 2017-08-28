@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
   xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
   jcr:primaryType="nt:unstructured"
-  jcr:title="Icon List Component"
+  jcr:title="Country Selector Component"
   sling:resourceType="cq/gui/components/authoring/dialog"
   helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
   <content
@@ -33,14 +33,14 @@
                 fieldDescription="Determine which variation of component to view"
                 name="./view">
                 <items jcr:primaryType="nt:unstructured">
-                  <accordion
-                    jcr:primaryType="nt:unstructured"
-                    text="Accordion View"
-                    value="accordion"/>
                   <drawer
                     jcr:primaryType="nt:unstructured"
                     text="Drawer View"
                     value="drawer"/>
+                  <accordion
+                    jcr:primaryType="nt:unstructured"
+                    text="Accordion View"
+                    value="accordion"/>
                 </items>
               </view>
             </items>
