@@ -1,7 +1,9 @@
+//-----------------------------------
+// Eaton: Global Forms
+//-----------------------------------
 'use strict';
 
 let App = window.App || {};
-
 App.form = (function(Choices) {
 
   const $componentEl = $('.eaton-form');

@@ -1,7 +1,9 @@
+//-----------------------------------
+// M-48: Module Media Gallery
+//-----------------------------------
 'use strict';
 
 let App = window.App || {};
-
 App.mediaGallery = function () {
 
   const componentClass = '.module-media-gallery';
@@ -13,8 +15,7 @@ App.mediaGallery = function () {
   const $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
   const $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
   const $thumbnailItems = $componentEl.find('.module-media-gallery__thumbnail-item');
-
-  let i18n = {};
+  let i18nStrings = {};
 
   // Zoom Behavior
   //--------------
@@ -25,25 +26,10 @@ App.mediaGallery = function () {
    * Initialize Media Gallery
    */
   const init = () => {
-    loadI18NStrings();
+    i18nStrings = App.global.utils.loadI18NStrings($componentEl);
     initializeSlideCarousel();
     initializeThumbnailCarousel();
     zoomInitialize();
-  };
-
-
-
-  /**
-   * Get i18n String from a HTML data-attribute
-   */
-  const loadI18NStrings = function() {
-
-    let i18nData = $componentEl[0].dataset.i18n;
-
-    // Save i18n Strings as an Object in a global variable
-    i18n = (JSON.parse(i18nData))
-      ? JSON.parse(i18nData)
-      : {};
   };
 
 
@@ -175,7 +161,7 @@ App.mediaGallery = function () {
         zoomInline: '<div class="zoom-inline"></div>',
         zoomOverlay: `<div class="zoom-overlay">
           <button class="zoom-overlay__close button--reset">
-            <span class="sr-only">${ i18n.closeOverlay }</span>
+            <span class="sr-only">${ i18nStrings.closeOverlay }</span>
             <i class="icon icon-close" aria-hidden="true"></i>
           </button>
           <div class="zoom-overlay__image"></div>

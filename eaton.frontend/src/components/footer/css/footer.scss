@@ -69,6 +69,7 @@
   box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, .15);
   cursor: pointer;
   display: none;
+  z-index: 1; // Fixes issue the button can't be clicked / The content overlaps this button
 
   &.visible {
     display: block;

@@ -1,8 +1,10 @@
+//-----------------------------------
+// Resources List
+//-----------------------------------
 'use strict';
 
 let App = window.App || {};
-
-App.accordion = function () {
+App.resourceList = function () {
 
   const $accordion = $('.panel-group');
   const $component = $('.secondary-content-accordion');

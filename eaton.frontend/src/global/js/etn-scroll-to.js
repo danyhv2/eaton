@@ -4,7 +4,6 @@
 'use strict';
 
 let App = window.App || {};
-
 App.scroll = (function() {
 
   // Cached DOM Elements
