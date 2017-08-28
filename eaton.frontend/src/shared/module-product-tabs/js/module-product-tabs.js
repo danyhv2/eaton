@@ -10,7 +10,6 @@ App.productTabs = (function() {
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
 
   const init = () => {
-    // return;
     if (!isAEMAuthorMode) {
       addEventListeners();
     }
@@ -23,16 +22,16 @@ App.productTabs = (function() {
 
     $(window).on('scroll', (event) => {
       const scrollTop = $(window).scrollTop();
-      const isMobile = $(window).innerWidth() < 991; // based on window width
-      const isCookieBoxVisible = $('.cookie-acceptancebox:visible').length !== 0;
-      const cookieBoxVisibleHeight = $('.cookie-acceptancebox').outerHeight();
+      const isMobile = $(window).innerWidth() < App.global.constants.GRID.MD;
       const componentFixedClass = 'eaton-product-tabs--fixed';
       const buttonsClass = '.eaton-product-tabs__buttons';
+      const headerHeight = $('header').outerHeight();
+      const tabsDescriptionHeight = $('.eaton-product-tabs__description').outerHeight();
       const isHeaderFixed = $('.eaton-header').hasClass('eaton-header--fixed');
 
-      const scrollOffset = (isMobile ? 138 : 40) +
-                           (isCookieBoxVisible ? cookieBoxVisibleHeight : 0);
-      const shouldBeFixed = isHeaderFixed || scrollTop > scrollOffset;
+      // if Mobile add the tabsDescriptionHeight
+      const scrollOffset = headerHeight + (isMobile ? tabsDescriptionHeight : 0);
+      const shouldBeFixed = isHeaderFixed || (scrollTop > scrollOffset);
 
       $componentClass.toggleClass(componentFixedClass, shouldBeFixed);
       $componentClass.find(buttonsClass).toggleClass('row', !shouldBeFixed);

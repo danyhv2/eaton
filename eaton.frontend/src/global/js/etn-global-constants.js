@@ -30,9 +30,13 @@ App.global.constants = (function() {
       LG: 1200  // pixels
     },
 
-    HEADER: {
-      COOKIE_SET: 'eaton.cookie.set'
+   // Events
+    EVENTS: {
+      HEADER: {
+        COOKIE_SET: 'eaton.cookie.set'
+      }
     }
+
 
 
   };
