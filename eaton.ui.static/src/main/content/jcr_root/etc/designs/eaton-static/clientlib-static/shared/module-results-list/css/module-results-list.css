@@ -47,7 +47,8 @@
   .results-list-submodule__image { width: 100%; max-width: 260px; } }
 
 @media screen and (min-width: 992px) { .results-list-submodule { margin-bottom: 40px; }
-  .results-list-submodule__image-wrapper { -ms-flex-preferred-size: 140px; flex-basis: 140px; margin-right: 30px; padding-top: 8px; }
+  .results-list-submodule__image-wrapper { min-width: 140px; margin-right: 30px; padding-top: 8px; }
   .results-list-submodule__image { max-width: 140px; }
-  .results-list-submodule__icon-wrapper { -ms-flex-preferred-size: 48px; flex-basis: 48px; margin-right: 30px; padding-top: 8px; }
+  .results-list-submodule__content-wrapper { width: 100%; }
+  .results-list-submodule__icon-wrapper { width: 48px; margin-right: 30px; padding-top: 8px; }
   .results-list-submodule__icon-wrapper .icon { color: #005EB8; font-size: 48px; } }
