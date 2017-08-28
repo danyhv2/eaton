@@ -1,7 +1,7 @@
 <!--/* M-62: Faceted Navigation */-->
 <template data-sly-template.module="${ @ data, search }">
   <div class="faceted-navigation eaton-form">
-    <div class="mobile-header">
+    <div class="mobile-header b-body-copy">
       <span>${ 'Filters' @ i18n } </span>
 
       <button data-toggle-modal-facet class="close-facets-mobile button--reset">
@@ -40,7 +40,7 @@
           aria-expanded="true"
           aria-controls="${ facetGroupID }"
         >
-          <span class="faceted-navigation__facet-name">${ item.facetName }</span>
+          <span class="b-body-copy-small">${ item.facetName }</span>
           <i class="icon icon-sign-minus" aria-hidden="true"></i>
           <i class="icon icon-sign-plus
                     ${ itemList.index < data.config.facetItemsMinVisible ? 'u-hide' : '' }"
