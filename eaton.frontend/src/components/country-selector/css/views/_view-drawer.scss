@@ -45,6 +45,23 @@ $border-color: rgba($color__secondary-gray4, 0.5);
     position: relative;
   }
 
+  &__item-icon {
+    color: $color__white;
+    font-size: 1.8rem;
+
+    &::after {
+      @extend %font-family-glyphicon;
+      @extend %icon-sign-plus;
+    }
+  }
+
+  // Manage icon-states based on accordion is expanded / collapses
+  &__item-link[aria-expanded="true"] ~ &__item-icon {
+    &::after {
+      @extend %icon-sign-minus;
+    }
+  }
+
   // Content Styles - Region
   //-----------------------------------
   &__item-list {
@@ -129,12 +146,15 @@ $border-color: rgba($color__secondary-gray4, 0.5);
     &__item-header {
       padding: 20px $spacing__sm;
       background: $color__primary-gray1;
+      display: flex;
     }
 
     &__item-title {
       font-size: 1.4rem;
       line-height: 1.8rem;
       margin-bottom: 0;
+      padding-left: 20px;
+      flex-grow: 1;
     }
 
     &__item-body {
