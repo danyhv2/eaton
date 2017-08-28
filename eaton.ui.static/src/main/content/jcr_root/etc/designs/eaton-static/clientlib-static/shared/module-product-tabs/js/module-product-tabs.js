@@ -37,10 +37,14 @@ App.productTabs = function () {
     $(window).on('scroll', function (event) {
       var scrollTop = $(window).scrollTop();
       var isMobile = $(window).innerWidth() < 991; // based on window width
-      var scrollOffset = isMobile ? 138 : 40;
+      var isCookieBoxVisible = $('.cookie-acceptancebox:visible').length !== 0;
+      var cookieBoxVisibleHeight = $('.cookie-acceptancebox').outerHeight();
       var componentFixedClass = 'eaton-product-tabs--fixed';
       var buttonsClass = '.eaton-product-tabs__buttons';
-      var shouldBeFixed = scrollTop > scrollOffset;
+      var isHeaderFixed = $('.eaton-header').hasClass('eaton-header--fixed');
+
+      var scrollOffset = (isMobile ? 138 : 40) + (isCookieBoxVisible ? cookieBoxVisibleHeight : 0);
+      var shouldBeFixed = isHeaderFixed || scrollTop > scrollOffset;
 
       $componentClass.toggleClass(componentFixedClass, shouldBeFixed);
       $componentClass.find(buttonsClass).toggleClass('row', !shouldBeFixed);

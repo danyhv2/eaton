@@ -106,7 +106,7 @@ use(function () {
 	      ctaText: 'Join now',
 	      ctaLink: '#',
 	      ctaTarget: '_blank',
-	      color: 'white'
+	      color: 'grey'
 	    };
   } else {
     data = {

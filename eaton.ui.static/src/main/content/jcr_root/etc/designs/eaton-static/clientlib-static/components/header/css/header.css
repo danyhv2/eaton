@@ -91,7 +91,7 @@
   .drawer-is-animating .full-page-drawer { -webkit-transition: visibility 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out; transition: visibility 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out, visibility 0.8s ease-in-out; transition: transform 0.5s ease-in-out, visibility 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out; } }
 
 @media screen and (min-width: 992px) { .level-2-open .mega-menu { visibility: visible; opacity: 1; }
-  .drawer-open .full-page-drawer { visibility: visible; max-height: 1000px; }
+  .drawer-open .full-page-drawer { visibility: visible; max-height: 1200px; }
   .drawer-is-animating .full-page-drawer { -webkit-transition: max-height 0.5s ease-in-out, visibility 0.8s ease-in-out; transition: max-height 0.5s ease-in-out, visibility 0.8s ease-in-out; } }
 
 .aem-AuthorLayer-Edit .full-page-drawer, .aem-AuthorLayer-Edit .mega-menu, .aem-AuthorLayer-Edit .header-search, .cq-wcm-edit .full-page-drawer, .cq-wcm-edit .mega-menu, .cq-wcm-edit .header-search { position: relative !important; visibility: visible !important; opacity: 1 !important; z-index: 999 !important; }
