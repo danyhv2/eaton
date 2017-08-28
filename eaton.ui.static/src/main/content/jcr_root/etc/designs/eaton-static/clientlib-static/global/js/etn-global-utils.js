@@ -28,6 +28,7 @@ App.global.utils = function () {
   //   ? true
   //   : false;
 
+  // TODO: Move This behavior to its own "Back to Search Module
   localStorage.setItem('backToSearch', 'false');
 
   var isAEMClassicUI = window.CQ && window.CQ.WCM && window.CQ.WCM.isEditMode() ? true : false;
