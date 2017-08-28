@@ -46,6 +46,12 @@ App.countrySelector = function () {
     // If not in AEM Author Mode - initialize scripts
     if (!isAEMAuthorMode) {
       addEventListeners();
+
+      $(document).keyup(function (e) {
+        if (e.keyCode === 27) {
+          closeDrawer();
+        } // esc
+      });
     }
   };
 
