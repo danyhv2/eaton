@@ -8,7 +8,7 @@
 </sly>
 
 <!--/* Component Markup */-->
-<sly data-sly-use.data="data/image-data.js">
+<sly data-sly-use.data="${'data/image-data.js' @testdata=properties.testdata}">
   <div class="eaton-image">
     <div class="${properties.toggleInnerGrid ? 'container' : ''} eaton-image__container">
       <!-- Start: Rendition Image Component -->

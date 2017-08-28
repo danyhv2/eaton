@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-17T15:29:04.462-06:00"
+        cq:lastModified="{Date}2017-08-28T17:30:35.333-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:isCheckedOut="{Boolean}true"
@@ -340,6 +340,18 @@
                         testdata="t9-secondary-landing-investors-1"
                         view="default"/>
                 </col1-par>
+                <col2-par
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <image
+                        jcr:created="{Date}2017-08-28T17:30:10.477-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-28T17:30:10.477-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        testdata="t9-secondary-landing-investors-1"
+                        sling:resourceType="eaton/static-components/general/image"/>
+                </col2-par>
             </grid_2_column_contro>
             <icon_list
                 jcr:created="{Date}2017-08-16T16:59:37.210-06:00"
@@ -422,8 +434,8 @@
                 jcr:lastModified="{Date}2017-08-17T15:29:04.458-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                testdata="t9-secondary-landing-investors"
-                sling:resourceType="eaton/static-components/content/quote"/>
+                sling:resourceType="eaton/static-components/content/quote"
+                testdata="t9-secondary-landing-investors"/>
             <ttil
                 jcr:created="{Date}2017-08-16T17:08:04.865-06:00"
                 jcr:createdBy="admin"
