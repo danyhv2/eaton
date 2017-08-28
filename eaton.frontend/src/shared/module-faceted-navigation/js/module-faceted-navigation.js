@@ -29,7 +29,7 @@ App.facets = (function() {
   */
   const toggleIcons = function(e) {
     e.preventDefault();
-    $(this).children('.icon-sign-plus').toggleClass('u-hide');
+    $(this).find('.icon-sign-plus').toggleClass('u-hide');
   };
 
   /**
@@ -63,8 +63,7 @@ App.facets = (function() {
   */
   const showAllFacetsValues = (event) => {
 
-    const $parentItem = $(event.currentTarget)
-                        .closest('.faceted-navigation__facet-group');
+    const $parentItem = $(event.currentTarget).closest('.faceted-navigation__facet-group');
 
     // Show hidden facet-values
     $parentItem

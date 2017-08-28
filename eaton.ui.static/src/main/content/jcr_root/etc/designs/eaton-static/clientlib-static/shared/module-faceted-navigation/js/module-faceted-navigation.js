@@ -41,7 +41,7 @@ App.facets = function () {
   */
   var toggleIcons = function toggleIcons(e) {
     e.preventDefault();
-    $(this).children('.icon-sign-plus').toggleClass('u-hide');
+    $(this).find('.icon-sign-plus').toggleClass('u-hide');
   };
 
   /**

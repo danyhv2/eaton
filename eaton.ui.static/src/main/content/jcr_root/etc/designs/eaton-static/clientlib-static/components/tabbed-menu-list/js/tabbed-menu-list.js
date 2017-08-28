@@ -49,6 +49,7 @@ App.tabbedMenuList = function () {
     $tabs.removeClass('active');
     $titles.removeClass('active');
     $.each($titles, function (i, element) {
+
       if ($(element).hasClass('desktop')) {
 
         $(element).attr('aria-selected', 'false');
