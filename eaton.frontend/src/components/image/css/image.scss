@@ -1,0 +1,18 @@
+//-----------------------------------
+// Component - Image
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-image {
+
+  // Make the rendition image to occupy 100% of width available
+  .rendition {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
