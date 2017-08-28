@@ -45,7 +45,7 @@
 
 .faceted-navigation-header a.open-facets-mobile { width: 100%; text-align: center; max-width: unset; }
 
-.faceted-navigation-header .faceted-navigation-filters { margin-top: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.faceted-navigation-header .faceted-navigation-filters { margin-top: 30px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
 @media screen and (max-width: 991px) { .faceted-navigation-header .faceted-navigation-filters { display: none; }
   .faceted-navigation-header__filter-link, .faceted-navigation-header__filters-actions { font-size: 12px; } }

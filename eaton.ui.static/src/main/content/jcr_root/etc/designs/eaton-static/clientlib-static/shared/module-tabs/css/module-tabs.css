@@ -13,9 +13,9 @@
 
 .module-tabs { background-color: #EEF0F2; }
 
-.module-tabs__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; list-style-type: none; padding: 0; margin: 0; }
+.module-tabs__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-flow: row nowrap; -ms-flex-flow: row nowrap; flex-flow: row nowrap; list-style-type: none; padding: 0; margin: 0; }
 
-.module-tabs__list-item { border-right: 1px solid #FFF; -webkit-box-flex: 1; -ms-flex: 1 0 auto; flex: 1 0 auto; }
+.module-tabs__list-item { border-right: 1px solid #FFF; -webkit-box-flex: 1; -webkit-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto; }
 
 .module-tabs__list-item:first-child { border-left: 1px solid #FFF; }
 

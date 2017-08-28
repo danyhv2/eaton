@@ -199,21 +199,21 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 992px) { .b-h4-link-bold { font-family: "EatonBold", Arial, sans-serif; } }
 
-.u-flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.u-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
-.u-flex-1 { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+.u-flex-1 { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
 
-.u-inline-flex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
+.u-inline-flex { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
 
-.u-flex-wrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.u-flex-wrap { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.u-flex-column { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.u-flex-column { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 
-.u-flex-row { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+.u-flex-row { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
 
-.u-flex-align-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.u-flex-align-center { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
-.u-flex-justify-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.u-flex-justify-center { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
 .u-is-fixed { position: fixed; }
 
@@ -235,7 +235,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .u-clearfix::after { clear: both; }
 
-.u-list-inline { -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -ms-flexbox; display: flex; list-style-type: none; margin: 0; padding: 0; }
+.u-list-inline { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; list-style-type: none; margin: 0; padding: 0; }
 
 .u-text-center { text-align: center; }
 

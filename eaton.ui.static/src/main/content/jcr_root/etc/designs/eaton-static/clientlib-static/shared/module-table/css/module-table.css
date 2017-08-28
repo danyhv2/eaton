@@ -15,12 +15,12 @@
 
 .module-table__row:nth-child(odd) { background-color: #EEF0F2; }
 
-.module-table__col { -ms-flex-preferred-size: 100%; flex-basis: 100%; }
+.module-table__col { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
 
 @media screen and (max-width: 991px) { .module-table { margin-bottom: 30px; }
   .module-table__row { padding: 12px 15px; } }
 
 @media screen and (min-width: 992px) { .module-table { margin-bottom: 60px; }
   .module-table__head { margin-bottom: 48px; }
-  .module-table__row { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 26px 20px; }
-  .module-table__col { -ms-flex-preferred-size: 50%; flex-basis: 50%; } }
+  .module-table__row { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; padding: 26px 20px; }
+  .module-table__col { -webkit-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; } }
