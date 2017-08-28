@@ -49,7 +49,9 @@ App.header = function () {
     // If not in AEM Author Mode - initialize scripts
     if (!isAEMAuthorMode) {
       addEventListeners();
-      $(document).on(App.global.constants.HEADER.COOKIE_SET, function () {
+
+      // Subscribe - Cookie Acceptance
+      $(document).on(App.global.constants.EVENTS.HEADER.COOKIE_SET, function () {
         updateHeaderLayoutMobile();
       });
     }
@@ -64,9 +66,7 @@ App.header = function () {
     var headerHeight = headerEl.height() + 'px';
 
     if (windowEl.width() < mediumScreenWidth) {
-      headerEl.find('.mega-menu').css('top', headerHeight);
-      headerEl.find('.eaton-link-list-primary-nav').css('top', headerHeight);
-      headerEl.find('.header-search').css('top', headerHeight);
+      headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', headerHeight);
     }
   };
 
