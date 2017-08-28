@@ -7,6 +7,20 @@
     position: relative;
   }
 
+  // Toggle Carousel UI (Arrows and Buttons) when the Zoom is enabled/disabled (Desktop BP)
+  &__slide-arrows-container,
+  &__slide-utility {
+    transition: opacity 250ms ease-out, visibility 250ms ease-out;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.zoom-inline-open &__slide-arrows-container,
+  &.zoom-inline-open &__slide-utility {
+    opacity: 0;
+    visibility: hidden;
+  }
+
 }
 
 
