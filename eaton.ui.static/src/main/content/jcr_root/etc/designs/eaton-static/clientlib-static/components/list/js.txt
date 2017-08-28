@@ -1,3 +1,4 @@
 #base=js
 
 list.js
+view-text-only-3-column.js
