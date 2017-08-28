@@ -8,26 +8,16 @@
 </div>
     <div class="row">
 
-
-
         <ul class="text-only-3-column__slides" data-sly-list.card="${data.cards}">
             <li class="slides text-only-3-column__card">
-        
-
-       <a href="${data.single_feature_card.cta.url}" target="${data.single_feature_card.cta.target}" class="article-list-single-feature__link">
-                <span class="article-list-single-feature--border"></span>
-                <div class="article-list-single-feature__article--copy">
-                    <p class="b-eyebrow-small">${card.title}</p>
-                    <p class="b-h5-link">${card.text}</p>
-                    
-                </div>
-            </a>
-
-
-
-
-
-
+               <a href="${data.single_feature_card.cta.url}" target="${data.single_feature_card.cta.target}" class="article-list-single-feature__link">
+                        <span class="article-list-single-feature--border"></span>
+                        <div class="article-list-single-feature__article--copy">
+                            <p class="b-eyebrow-small">${card.title}</p>
+                            <p class="b-h5-link">${card.text}</p>
+                            <p class="category-item-date"><em>${card.date_text}</em></p>
+                        </div>
+                </a>
             </li>
         </ul>
         
@@ -39,17 +29,9 @@
                 <i class="icon icon-chevron-right"></i>
                 <span class="sr-only">Go to Next Item</span>
             </button>
-       
     
-
-
-
-
-
-
-
 
     </div>
 
-
+    
 </div>
