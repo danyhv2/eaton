@@ -23,7 +23,7 @@
 
 .eaton-list-component .carousel-indicators .active { background-color: #005EB8; width: 15px; height: 15px; margin: 0 4px; }
 
-.eaton-list-component .category__image img { width: 100%; }
+.eaton-list-component .category__image { width: 100%; }
 
 .eaton-list-component .category__title--font, .eaton-list-component .related-category__title--font { font-size: 1em; font-weight: bold; color: #333F48; text-transform: uppercase; }
 
