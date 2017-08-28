@@ -149,7 +149,8 @@ App.mediaGallery = function () {
       $imagesEl: null,
 
       cssClasses: {
-        zoomOverlayOpen: 'zoom-overlay-open'
+        zoomOverlayOpen: 'zoom-overlay-open',
+        zoomInlineOpen: 'zoom-inline-open'
       },
 
       // Keyboard Codes (event.which)
@@ -196,6 +197,7 @@ App.mediaGallery = function () {
       $currentItem
         .wrap(zoom.templates.zoomInline)
         .parent()
+        // Documentation: http://www.jacklmoore.com/zoom/
         .zoom({
           on: zoom.eventDesktop,
           magnify: zoom.scaleDesktop,
@@ -212,6 +214,12 @@ App.mediaGallery = function () {
                 // Do nothing, Let the Carousel Library control the swipe behavior
               }
             });
+          },
+          onZoomIn() {
+            $(this).closest(componentClass).addClass(zoom.cssClasses.zoomInlineOpen);
+          },
+          onZoomOut() {
+            $(this).closest(componentClass).removeClass(zoom.cssClasses.zoomInlineOpen);
           }
         });
     });

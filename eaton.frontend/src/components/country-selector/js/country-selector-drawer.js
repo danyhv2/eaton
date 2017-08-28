@@ -33,6 +33,10 @@ App.countrySelector = (function() {
     // If not in AEM Author Mode - initialize scripts
     if (!isAEMAuthorMode) {
       addEventListeners();
+
+      $(document).keyup(function(e) {
+        if (e.keyCode === 27) { closeDrawer(); }   // esc
+      });
     }
   };
 
@@ -96,6 +100,8 @@ App.countrySelector = (function() {
     // reset the drawer
     regionPanels.collapse('hide');
     regionDesktopLinks.removeClass('active');
+    // Collapse only hides the content. Reset the State for the header/link
+    $('.country-selector-drawer__item-link').attr('aria-expanded', false);
   };
 
   /**
