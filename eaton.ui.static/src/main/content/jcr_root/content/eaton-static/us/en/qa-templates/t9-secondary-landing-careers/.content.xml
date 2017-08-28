@@ -397,6 +397,7 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/content/list"
+                testdata="t9-secondary-landing-careers"
                 view="text-only-3-column"/>
             <search_box_2
                 jcr:created="{Date}2017-07-19T21:16:36.788Z"
