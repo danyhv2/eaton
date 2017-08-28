@@ -11,11 +11,13 @@
  */
 
 
+//-----------------------------------
+// Compnent: TTIL
+//-----------------------------------
 'use strict';
 
 var App = window.App || {};
-
-App.carousel = function () {
+App.ttilList = function () {
 
   var $componentEl = $('.carousel');
 

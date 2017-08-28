@@ -4,8 +4,8 @@
 'use strict';
 
 let App = window.App || {};
-
 App.facets = (function() {
+
   const $componentClass = $('.faceted-navigation');
 
   const init = () => {

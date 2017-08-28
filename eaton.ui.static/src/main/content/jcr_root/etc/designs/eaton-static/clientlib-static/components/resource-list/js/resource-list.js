@@ -11,11 +11,13 @@
  */
 
 
+//-----------------------------------
+// Resources List
+//-----------------------------------
 'use strict';
 
 var App = window.App || {};
-
-App.accordion = function () {
+App.resourceList = function () {
 
   var $accordion = $('.panel-group');
   var $component = $('.secondary-content-accordion');

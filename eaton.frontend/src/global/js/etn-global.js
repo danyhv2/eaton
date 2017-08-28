@@ -3,7 +3,7 @@
 //-----------------------------------
 'use strict';
 
-const App = App || {};
+let App = App || {};
 App.global = (function() {
 
   // const globalExample = (value) => { };

@@ -1,8 +1,10 @@
+//-----------------------------------
+// TTIL: Upsell Products
+//-----------------------------------
 'use strict';
 
 let App = window.App || {};
-
-App.carousel = function () {
+App.upSellProducts = function () {
 
   const $carousel = $('.upsell-products__slides');
 

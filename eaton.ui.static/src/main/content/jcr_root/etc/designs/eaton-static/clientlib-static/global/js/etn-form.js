@@ -11,10 +11,12 @@
  */
 
 
+//-----------------------------------
+// Eaton: Global Forms
+//-----------------------------------
 'use strict';
 
 var App = window.App || {};
-
 App.form = function (Choices) {
 
   var $componentEl = $('.eaton-form');

@@ -11,11 +11,13 @@
  */
 
 
+//-----------------------------------
+// List Component - Related Products
+//-----------------------------------
 'use strict';
 
 var App = window.App || {};
-
-App.carousel = function () {
+App.listComponent = function () {
 
   var $carousel = $('.module-related-products__slides');
 

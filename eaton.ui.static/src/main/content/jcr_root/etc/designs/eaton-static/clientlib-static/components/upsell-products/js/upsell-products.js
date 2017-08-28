@@ -11,11 +11,13 @@
  */
 
 
+//-----------------------------------
+// TTIL: Upsell Products
+//-----------------------------------
 'use strict';
 
 var App = window.App || {};
-
-App.carousel = function () {
+App.upSellProducts = function () {
 
   var $carousel = $('.upsell-products__slides');
 

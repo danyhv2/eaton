@@ -1,11 +1,12 @@
+//-----------------------------------
+// Compnent: TTIL
+//-----------------------------------
 'use strict';
 
 let App = window.App || {};
-
-App.carousel = function () {
+App.ttilList = function () {
 
   const $componentEl = $('.carousel');
-
 
   const init = () => {
     initCarousels();

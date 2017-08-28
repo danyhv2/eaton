@@ -17,7 +17,6 @@
 'use strict';
 
 var App = window.App || {};
-
 App.scroll = function () {
 
   // Cached DOM Elements
