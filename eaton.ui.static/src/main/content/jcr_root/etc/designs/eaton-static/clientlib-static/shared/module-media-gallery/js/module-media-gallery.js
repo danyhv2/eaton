@@ -25,8 +25,7 @@ App.mediaGallery = function () {
   var $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
   var $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
   var $thumbnailItems = $componentEl.find('.module-media-gallery__thumbnail-item');
-
-  var i18n = {};
+  var i18nStrings = {};
 
   // Zoom Behavior
   //--------------
@@ -36,21 +35,10 @@ App.mediaGallery = function () {
    * Initialize Media Gallery
    */
   var init = function init() {
-    loadI18NStrings();
+    i18nStrings = App.global.utils.loadI18NStrings($componentEl);
     initializeSlideCarousel();
     initializeThumbnailCarousel();
     zoomInitialize();
-  };
-
-  /**
-   * Get i18n String from a HTML data-attribute
-   */
-  var loadI18NStrings = function loadI18NStrings() {
-
-    var i18nData = $componentEl[0].dataset.i18n;
-
-    // Save i18n Strings as an Object in a global variable
-    i18n = JSON.parse(i18nData) ? JSON.parse(i18nData) : {};
   };
 
   /**
@@ -172,7 +160,7 @@ App.mediaGallery = function () {
 
       templates: {
         zoomInline: '<div class="zoom-inline"></div>',
-        zoomOverlay: '<div class="zoom-overlay">\n          <button class="zoom-overlay__close button--reset">\n            <span class="sr-only">' + i18n.closeOverlay + '</span>\n            <i class="icon icon-close" aria-hidden="true"></i>\n          </button>\n          <div class="zoom-overlay__image"></div>\n        </div>'
+        zoomOverlay: '<div class="zoom-overlay">\n          <button class="zoom-overlay__close button--reset">\n            <span class="sr-only">' + i18nStrings.closeOverlay + '</span>\n            <i class="icon icon-close" aria-hidden="true"></i>\n          </button>\n          <div class="zoom-overlay__image"></div>\n        </div>'
       }
     };
 
