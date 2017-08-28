@@ -1,8 +1,10 @@
+//-----------------------------------
+// List Component - Related Products
+//-----------------------------------
 'use strict';
 
 let App = window.App || {};
-
-App.carousel = function () {
+App.listComponent = function () {
 
   const $carousel = $('.module-related-products__slides');
 

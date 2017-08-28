@@ -1,10 +1,14 @@
+//-----------------------------------
+// Eaton: Global Forms
+//-----------------------------------
 'use strict';
 
 let App = window.App || {};
+App.form = (function(Choices) {
 
-App.form = (function() {
-
-  const $selectElement = '.eaton-form select:not([multiple])';
+  const $componentEl = $('.eaton-form');
+  const selectorDropdowns = '.eaton-form select:not([multiple])';
+  const $selectEl = $(selectorDropdowns);
 
   const init = () => {
     initDropdown();
@@ -15,19 +19,23 @@ App.form = (function() {
      * Initialize Choices Dropdown
      */
   const initDropdown = () => {
-    new Choices($selectElement, {
-      placeholder: false,
-      itemSelectText: '',
-      searchEnabled: false
-    });
+
+    // Init Choices Library Only if the current ".eaton-form" has <select> elements
+    if ($selectEl.length > 0) {
+      new Choices(selectorDropdowns, {
+        placeholder: false,
+        itemSelectText: '',
+        searchEnabled: false
+      });
+    }
   };
 
 
     /**
      * If containing DOM element is found, Initialize and Expose public methods
      */
-  if ($selectElement.length > 0) {
+  if ($componentEl.length > 0) {
     init();
   }
 
-}());
+}(window.Choices));

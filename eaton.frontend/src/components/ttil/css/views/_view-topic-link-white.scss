@@ -69,6 +69,11 @@
       }
     }
 
+    &__header,
+    &__description {
+      margin-bottom: 0;
+    }
+
     &__text-wrapper {
       width: calc(100% - 100px);
       display: flex;

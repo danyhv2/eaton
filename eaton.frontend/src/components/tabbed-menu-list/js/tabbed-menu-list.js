@@ -1,11 +1,11 @@
 //-----------------------------------
-// Component M-1: Header
+// Module M-46: Tabbed Menu List / Category Menu
 //-----------------------------------
 'use strict';
 
 let App = App || window.App || {};
 
-App.TabbedMenuList = (function() {
+App.tabbedMenuList = (function() {
   const $component = $('.eaton-tabbed-menu-list');
   const $titles = $component.find('.eaton-tabbed-menu-list__title');
   const mediaquery = App.global.constants.MEDIA_QUERIES.DESKTOP;
@@ -36,6 +36,7 @@ App.TabbedMenuList = (function() {
     $tabs.removeClass('active');
     $titles.removeClass('active');
     $.each($titles, function(i, element) {
+
       if ($(element).hasClass('desktop')) {
 
         $(element).attr('aria-selected', 'false');
