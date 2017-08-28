@@ -74,21 +74,21 @@ use(function () {
               "id": "product",
               "label": "Products",
               "url": "t10-search-results.html?facetvalue=product",
-              "active": true,
+              "isChecked": true,
               "target": "_self"
             },
             {
               "id": "news",
               "label": "News & Insights",
               "url": "t10-search-results.html?facetvalue=news",
-              "active": false,
+              "isChecked": false,
               "target": "_self"
             },
             {
               "id": "resources",
               "label": "Resources",
               "url": "t10-search-results.html?facetvalue=resources",
-              "active": false,
+              "isChecked": false,
               "target": "_self"
             }
           ]
@@ -101,33 +101,38 @@ use(function () {
             {
               "id": "700va",
               "label": "700 VA",
-              "url": "t10-search-results.html?facetvalue=700va"
+              "url": "t10-search-results.html?facetvalue=700va",
+              "isChecked": true
             },
             {
               "id": "1000va",
               "label": "1000 VA",
               "url": "t10-search-results.html?facetvalue=1000va",
-              "active": true
+              "isChecked": true
             },
             {
               "id": "1500va",
               "label": "1500 VA",
-              "url": "t10-search-results.html?facetvalue=1500va"
+              "url": "t10-search-results.html?facetvalue=1500va",
+              "isChecked": false
             },
             {
               "id": "2000va",
               "label": "2000 VA",
-              "url": "t10-search-results.html?facetvalue=2000va"
+              "url": "t10-search-results.html?facetvalue=2000va",
+              "isChecked": true
             },
             {
               "id": "3000va",
               "label": "3000 VA",
-              "url": "t10-search-results.html?facetvalue=3000va"
+              "url": "t10-search-results.html?facetvalue=3000va",
+              "isChecked": true,
             },
             {
               "id": "5000va",
               "label": "3500 VA",
-              "url": "t10-search-results.html?facetvalue=3500va"
+              "url": "t10-search-results.html?facetvalue=3500va",
+              "isChecked": true,
             }
           ]
         },
@@ -139,42 +144,50 @@ use(function () {
             {
               "id": "value1",
               "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=value1"
+              "url": "t10-search-results.html?facetvalue=value1",
+              "isChecked": false
             },
             {
               "id": "value2",
               "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=value2"
+              "url": "t10-search-results.html?facetvalue=value2",
+              "isChecked": false
             },
             {
               "id": "value3",
               "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=value3"
+              "url": "t10-search-results.html?facetvalue=value3",
+              "isChecked": false
             },
             {
               "id": "value4",
               "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=value4"
+              "url": "t10-search-results.html?facetvalue=value4",
+              "isChecked": false
             },
             {
               "id": "value5",
               "label": "Value 5",
-              "url": "t10-search-results.html?facetvalue=value5"
+              "url": "t10-search-results.html?facetvalue=value5",
+              "isChecked": false
             },
             {
               "id": "value6",
               "label": "Value 6",
-              "url": "t10-search-results.html?facetvalue=value6"
+              "url": "t10-search-results.html?facetvalue=value6",
+              "isChecked": false
             },
             {
               "id": "value7",
               "label": "Value 7",
-              "url": "t10-search-results.html?facetvalue=value7"
+              "url": "t10-search-results.html?facetvalue=value7",
+              "isChecked": false
             },
             {
               "id": "value8",
               "label": "Value 8",
-              "url": "t10-search-results.html?facetvalue=value8"
+              "url": "t10-search-results.html?facetvalue=value8",
+              "isChecked": false
             }
           ]
         },
@@ -186,32 +199,38 @@ use(function () {
             {
               "id": "f2value1",
               "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=f2value1"
+              "url": "t10-search-results.html?facetvalue=f2value1",
+              "isChecked": false
             },
             {
               "id": "f2value2",
               "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=f2value2"
+              "url": "t10-search-results.html?facetvalue=f2value2",
+              "isChecked": false
             },
             {
               "id": "f2value3",
               "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=f2value3"
+              "url": "t10-search-results.html?facetvalue=f2value3",
+              "isChecked": false
             },
             {
               "id": "f2value4",
               "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=f2value4"
+              "url": "t10-search-results.html?facetvalue=f2value4",
+              "isChecked": false
             },
             {
               "id": "f2value5",
               "label": "Value 5",
-              "url": "t10-search-results.html?facetvalue=f2value5"
+              "url": "t10-search-results.html?facetvalue=f2value5",
+              "isChecked": false
             },
             {
               "id": "f2value6",
               "label": "Value 6",
-              "url": "t10-search-results.html?facetvalue=f2value6"
+              "url": "t10-search-results.html?facetvalue=f2value6",
+              "isChecked": false
             }
           ]
         },
@@ -223,27 +242,32 @@ use(function () {
             {
               "id": "f3value1",
               "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=f3value1"
+              "url": "t10-search-results.html?facetvalue=f3value1",
+              "isChecked": true
             },
             {
               "id": "f3value2",
               "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=f3value2"
+              "url": "t10-search-results.html?facetvalue=f3value2",
+              "isChecked": true
             },
             {
               "id": "f3value3",
               "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=f3value3"
+              "url": "t10-search-results.html?facetvalue=f3value3",
+              "isChecked": true
             },
             {
               "id": "f3value4",
               "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=f3value4"
+              "url": "t10-search-results.html?facetvalue=f3value4",
+              "isChecked": true
             },
             {
               "id": "f3value5",
               "label": "Value 5",
-              "url": "t10-search-results.html?facetvalue=f3value5"
+              "url": "t10-search-results.html?facetvalue=f3value5",
+              "isChecked": true
             }
           ]
         },
@@ -255,22 +279,26 @@ use(function () {
             {
               "id": "f4value1",
               "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=f4value1"
+              "url": "t10-search-results.html?facetvalue=f4value1",
+              "isChecked": true
             },
             {
               "id": "f4value2",
               "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=f4value2"
+              "url": "t10-search-results.html?facetvalue=f4value2",
+              "isChecked": true
             },
             {
               "id": "f4value3",
               "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=f4value3"
+              "url": "t10-search-results.html?facetvalue=f4value3",
+              "isChecked": true
             },
             {
               "id": "f4value4",
               "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=f4value4"
+              "url": "t10-search-results.html?facetvalue=f4value4",
+              "isChecked": true
             }
           ]
         }
@@ -312,8 +340,28 @@ use(function () {
             "target": "_self"
           },
           {
+            "label": "700 VA",
+            "url": "t10-search-results.html?remove-filter=700-va",
+            "target": "_self"
+          },
+          {
             "label": "1000 VA",
             "url": "t10-search-results.html?remove-filter=1000-va",
+            "target": "_self"
+          },
+          {
+            "label": "2000 VA",
+            "url": "t10-search-results.html?remove-filter=2000-va",
+            "target": "_self"
+          },
+          {
+            "label": "3000 VA",
+            "url": "t10-search-results.html?remove-filter=3000-va",
+            "target": "_self"
+          },
+          {
+            "label": "3500 VA",
+            "url": "t10-search-results.html?remove-filter=3500-va",
             "target": "_self"
           }
         ]
