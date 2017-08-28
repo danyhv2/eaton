@@ -27,6 +27,7 @@ App.carousel3ColumnText = function () {
   };
 
 
+
 /**
   * Breakpoint Change Callback Function
   * @param { Object} event - MatchMedia Event Object
@@ -35,61 +36,46 @@ App.carousel3ColumnText = function () {
 
 
     if (event.matches) {
-      console.log('IS tablet, lets unslick');
       $carousel.slick('unslick');
 
     }
     else {
-      console.log('NO  tablet.... make slider great again !');
-       
 
 
 
+      $carousel.slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        dotsClass: 'module-related-products__dots',
+        prevArrow: $('.text-only-3-column__prev-arrow'),
+        nextArrow: $('.text-only-3-column__next-arrow'),
+        responsive: [
+
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
 
 
-
-  $carousel.slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots: true,
-      dotsClass: 'module-related-products__dots',
-      prevArrow: $('.text-only-3-column__prev-arrow'),
-      nextArrow: $('.text-only-3-column__next-arrow'),
-      responsive: [
+          {
+            breakpoint: 991,
+            settings: 'unslick'
+          },
 
 
-
-
-
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
           }
-        }
-      ]
-    });
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        ]
+      });
     }
 
 
@@ -113,19 +99,19 @@ App.carousel3ColumnText = function () {
 
 
 
-    {
+        {
           breakpoint: 1200,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3
           }
-        }
+        },
 
 
         {
           breakpoint: 991,
-          settings: "unslick"
-        }
+          settings: 'unslick'
+        },
 
 
 
