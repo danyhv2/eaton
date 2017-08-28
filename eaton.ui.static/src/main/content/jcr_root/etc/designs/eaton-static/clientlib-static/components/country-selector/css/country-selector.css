@@ -85,7 +85,7 @@
   .country-selector-drawer__panel-list { padding: 0; }
   .country-selector-drawer__panel-list .country-selector-drawer__item { margin-top: 3px !important; }
   .country-selector-drawer__item-header { padding: 20px 30px; background: #333F48; display: -webkit-box; display: -ms-flexbox; display: flex; }
-  .country-selector-drawer__item-title { font-size: 1.4rem; line-height: 1.8rem; margin-bottom: 0; padding-left: 20px; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+  .country-selector-drawer__item-title { font-size: 1.4rem; line-height: 1.8rem; margin-bottom: 0; padding-right: 20px; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
   .country-selector-drawer__item-body { padding: 0 30px; }
   .country-selector-drawer__item-country { border-bottom: 1px solid rgba(204, 210, 215, 0.5); padding: 25px 0; }
   .country-selector-drawer__item-country:last-child { border-bottom: 0; }
