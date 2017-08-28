@@ -4,81 +4,274 @@
 // Module: Country/ Language Selector
 // View: Drawer
 //-----------------------------------
+$border-color: rgba($color__secondary-gray4, 0.5);
 
 .country-selector-drawer {
 
-    &__header {
-      background: $color__primary-gray1;
+  // Header Styles - Title
+  //-----------------------------------
+  &__header {
+    background: $color__primary-gray1;
+
+    .row {
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    flex-grow: 1;
+    padding-right: 20px;
+    margin-bottom: 0;
+  }
+
+  // Container Styles - Panel
+  //-----------------------------------
+  &__panel-list {
+    margin-bottom: 0;
+  }
+
+  // Panel Styles - List of Countries
+  //-----------------------------------
+  &__item {
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  &__item-header {
+    position: relative;
+  }
+
+  &__item-icon {
+    color: $color__white;
+    font-size: 1.8rem;
+
+    &::after {
+      @extend %font-family-glyphicon;
+      @extend %icon-sign-plus;
+    }
+  }
+
+  // Manage icon-states based on accordion is expanded / collapses
+  &__item-link[aria-expanded="true"] ~ &__item-icon {
+    &::after {
+      @extend %icon-sign-minus;
+    }
+  }
+
+  // Content Styles - Region
+  //-----------------------------------
+  &__item-list {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  // Country Styles
+  //-----------------------------------
+  &__item-country-flag {
+    margin-right: ($spacing__sm / 3); //TODO: Enable
+    width: 25px;
+    height: 25px;
+  }
+
+  &__item-country-name {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-country-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color__white;
+  }
+
+  // Language Styles
+  //-----------------------------------
+  &__item-language-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item-language {
+    a {
+      color: $color__white;
+
+      &:hover,
+      &:focus {
+        color: $color__white;
+      }
+    }
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint: <992 px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .container {
+      width: auto;
+      padding: 0;
 
       .row {
-        display: flex;
-        align-items: center;
+        margin: 0;
       }
+    }
+
+    &__header {
+      padding: ($spacing__sm / 2) $spacing__sm;
     }
 
     &__title {
-      flex-grow: 1;
-      padding-right: 20px;
+      font-size: 1.6rem;
+      line-height: 2.0rem;
     }
 
-    &__item {
-      border-radius: 0;
-      box-shadow: none;
+    &__icon {
+      font-size: 1.8rem;
+    }
+
+    &__panel-list {
+      padding: 0;
+    }
+
+    // stylelint-disable declaration-no-important
+    &__panel-list &__item { // To overwrite bootstrap default
+      margin-top: 3px !important;
     }
 
     &__item-header {
-      position: relative;
+      padding: 20px $spacing__sm;
+      background: $color__primary-gray1;
+      display: flex;
+    }
+
+    &__item-title {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      margin-bottom: 0;
+      padding-right: 20px;
+      flex-grow: 1;
+    }
+
+    &__item-body {
+      padding: 0 $spacing__sm;
+    }
+
+    &__item-country {
+      border-bottom: 1px solid $border-color;
+      padding: 25px 0;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    &__item-country-name {
+      margin-bottom: 20px;
+    }
+
+    &__item-language-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: $spacing__sm + 5;
+    }
+
+    &__item-language {
+      flex-basis: 50%;
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint: >992 px
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__title {
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      padding: $spacing__sm 0;
+    }
+
+    &__container {
+      margin-top: $spacing__sm;
+      margin-bottom: 50px; // Avoid overwriting container default margins -left/right
+    }
+
+    &__region-list {
+      list-style: none;
+      padding: 0;
+
+      a {
+        color: $color__white;
+        padding: ($spacing__sm / 2) $spacing__sm ($spacing__sm / 2) 25px; // Account for the border-width
+        display: block;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        position: relative;
+        z-index: 5;
+        border-left: 5px solid $color__primary-gray2;
+
+        &:focus,
+        &:active {
+          text-decoration: none;
+        }
+
+        &.active {
+          background: $color__primary-gray1;
+          border-left: 5px solid $color__primary-blue;
+        }
+      }
+    }
+
+    &__region-icon {
+      font-size: 0.75em;
+    }
+
+    &__panel-list {
+      border-left: 1px solid $border-color;
+      padding-left: 5px;
+      min-height: 420px;
     }
 
     &__item-list {
-      padding: 0;
-      list-style: none;
-      overflow: hidden;
-      margin-bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
     }
 
-    //-----------------------------------
-    // Desktop Breakpoint: >992 px
-    //-----------------------------------
-    @include media-desktop-and-up {
+    &__item {
+      border: 0;
+    }
 
-      // .collapsing {
-      //   transition: none;
-      //   display: none;
-      // }
+    &__item-header {
+      display: none;
+    }
 
-      &__header {
-        margin-bottom: $spacing__sm;
+    &__item-country {
+      flex-basis: 33.33%;
+      padding: 0 25px 40px 25px;
+    }
+
+    &__item-country-name {
+      padding-bottom: $spacing__sm;
+    }
+
+    &__item-language {
+      display: inline-block;
+      padding: 0 8px;
+      border-right: 1px solid $color__white;
+
+      &:first-child {
+        padding-left: 0;
       }
 
-      &__region-list {
-        list-style: none;
-
-        li {
-          margin-bottom: $spacing__sm;
-        }
-
-        a {
-          color: $color__white;
-        }
-      }
-
-      &__item-list {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      &__item {
+      &:last-child {
         border: 0;
       }
-
-      &__item-header {
-        display: none;
-      }
-
-      &__item-country {
-        flex-basis: 25%;
-        padding: 0 0 $spacing__sm;
-      }
     }
+  }
 }

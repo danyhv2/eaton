@@ -4,7 +4,6 @@
 'use strict';
 
 let App = window.App || {};
-
 App.productTabs = (function() {
 
   const $componentClass = $('.eaton-product-tabs');

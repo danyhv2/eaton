@@ -4,9 +4,7 @@
 'use strict';
 
 let App = App || {};
-
-App.global = App.global || {};
-App.global.renditions = function () {
+App.renditions = function () {
 
   let responsiveImg = function () {
 

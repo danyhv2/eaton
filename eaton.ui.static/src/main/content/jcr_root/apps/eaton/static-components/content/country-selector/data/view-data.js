@@ -296,7 +296,7 @@ use(function () {
                 countryId: 'czech-republic',
                 languageList: [
                   {
-                    languageName: 'čeština ',
+                    languageName: 'Ceština',
                     languagePath: '#link-to-site',
                     target: '_blank'
                   },
@@ -520,7 +520,7 @@ use(function () {
                 countryId: 'slovakia',
                 languageList: [
                   {
-                    languageName: 'slovenský',
+                    languageName: 'Slovenský',
                     languagePath: '#link-to-site',
                     target: '_blank'
                   },

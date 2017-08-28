@@ -2,8 +2,10 @@
     <div class="row article-list-single-feature__container">
         <div class="col-xs-12 col-md-6 article-list-single-feature__single">
             <a href="${data.single_feature_card.cta.url}" target="${data.single_feature_card.cta.target}" class="article-list-single-feature__link equal-height-row tablet-card">
-                <div class="related-category--tablet-left">
-                    <img src="${data.single_feature_card.image}" class="img-responsive category__image" alt="${data.single_feature_card.image_alt}"/>
+                <div class="related-category--tablet-left category__image">
+                    <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+                        <sly data-sly-call="${ tpl.module @ data=data.single_feature_card.image }"></sly>
+                    </sly>
                 </div>
                 <div class="category__item--border category__item-innerpadding related-category--tablet-right">
                     <p class="b-eyebrow-large category__title--bottompadding">${data.single_feature_card.title}</p>

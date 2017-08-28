@@ -12,9 +12,16 @@ App.countrySelector = (function() {
   const componentClass = '.country-selector-drawer';
   const componentEl = $(componentClass);
   const bodyEl = $('body');
+  const windowEl = $(window);
+
   const regionDesktopList = componentEl.find('.country-selector-drawer__region-list');
   const regionDesktopLinks = regionDesktopList.find('a');
+  const regionPanels = componentEl.find('.panel-collapse');
   const closeDrawerBtn = componentEl.find('.country-selector-drawer__close-menu');
+  const drawerEl = bodyEl.find('.full-page-drawer');
+
+  // Media Breakpoint
+  let mediumScreenWidth = App.global.constants.GRID.MD;
 
   // Check AEM Author Mode
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -26,6 +33,10 @@ App.countrySelector = (function() {
     // If not in AEM Author Mode - initialize scripts
     if (!isAEMAuthorMode) {
       addEventListeners();
+
+      $(document).keyup(function(e) {
+        if (e.keyCode === 27) { closeDrawer(); }   // esc
+      });
     }
   };
 
@@ -35,8 +46,10 @@ App.countrySelector = (function() {
   */
   const handleRegionPanels = (event) => {
     const activeLink = $(event.currentTarget);
+    let activePanel = '';
 
     event.preventDefault();
+
     if (activeLink.hasClass('active')) {
       return false;
     }
@@ -44,11 +57,13 @@ App.countrySelector = (function() {
     // Highlight only the active Link
     regionDesktopLinks.removeClass('active');
     regionDesktopLinks.attr('aria-expanded', false);
-    $('.panel-collapse').removeClass('in');
+    regionPanels.removeClass('in');
 
     if (!activeLink.hasClass('active')) {
       activeLink.addClass('active');
       activeLink.attr('aria-expanded', true);
+      activePanel = activeLink.attr('href');
+      $(activePanel).find('a').eq(0).focus();
     }
   };
 
@@ -58,8 +73,24 @@ App.countrySelector = (function() {
   */
   const closeDrawer = (event) => {
     // Close the drawer if open - Country Selector
-    bodyEl.removeClass('drawer-open drawer-is-animating');
-    resetDrawer();
+    bodyEl.addClass('drawer-is-animating');
+    bodyEl.removeClass('drawer-open');
+
+    // After the drawer transition is completed
+    drawerEl.on('transitionend', onTransitionEnd);
+  };
+
+  /**
+  * Handle on transition end - full page drawer
+  * @param { Object} event - transitionend Event Object
+  */
+  const onTransitionEnd = (event) => {
+    bodyEl.removeClass('drawer-is-animating');
+    if (windowEl.width() < mediumScreenWidth) {
+      resetDrawer();
+    }
+    // Remove Event Listener post completion
+    drawerEl.off('transitionend', onTransitionEnd);
   };
 
   /**
@@ -67,8 +98,10 @@ App.countrySelector = (function() {
   */
   const resetDrawer = () => {
     // reset the drawer
-    $('.panel-collapse').removeClass('in');
+    regionPanels.collapse('hide');
     regionDesktopLinks.removeClass('active');
+    // Collapse only hides the content. Reset the State for the header/link
+    $('.country-selector-drawer__item-link').attr('aria-expanded', false);
   };
 
   /**
@@ -76,17 +109,9 @@ App.countrySelector = (function() {
   * @param { Object} event - MatchMedia Event Object
   */
   const onBreakpointChange = (event) => {
-
-    // If Desktop Breakpoint and Up
-    if (event.matches) {
-      console.log('Desktop BP');
-    }
-    // Else is Mobile/Tablet Breakpoint
-    else {
-      // Close the drawer & reset all panels & active links
-      closeDrawer();
-      resetDrawer();
-    }
+    // Close & Reset the Drawer
+    bodyEl.removeClass('drawer-open');
+    resetDrawer();
   };
 
   /**

@@ -67,7 +67,7 @@
 
 
   //-----------------------------------
-  // MediaQuery: Mobile & Tablet Only
+  // MediaQuery: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
 
@@ -91,7 +91,7 @@
 
 
   //-----------------------------------
-  // Media-Query: Desktop & Desktop Large
+  // Media-Query: > 992px
   //-----------------------------------
   @include media-desktop-and-up {
 
@@ -100,7 +100,10 @@
     // Product Item with Image (Thumbnail)
     //--------------
     &__image-wrapper {
-      flex-basis: 140px;
+
+      // NOTE: "flex-basis" was replaced with "width" due to issues in old versions of Android & iOS
+      // flex-basis: 140px;
+      min-width: 140px;
       margin-right: $spacing__sm;
       padding-top: $line-height-offset; // Used to align the Icon with the Result Title
     }
@@ -109,11 +112,18 @@
       max-width: 140px;
     }
 
+    &__content-wrapper {
+      width: 100%;
+    }
+
 
     // Resource Item with Download Icon
     //--------------
     &__icon-wrapper {
-      flex-basis: 48px;
+
+      // NOTE: "flex-basis" was replaced with "width" due to issues in old versions of Android & iOS
+      // flex-basis: 48px;
+      width: 48px;
       margin-right: $spacing__sm;
       padding-top: $line-height-offset; // Used to align the Icon with the Result Title
 

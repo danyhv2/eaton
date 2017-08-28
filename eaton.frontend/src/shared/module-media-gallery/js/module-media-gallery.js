@@ -1,7 +1,9 @@
+//-----------------------------------
+// M-48: Module Media Gallery
+//-----------------------------------
 'use strict';
 
 let App = window.App || {};
-
 App.mediaGallery = function () {
 
   const componentClass = '.module-media-gallery';
@@ -13,8 +15,7 @@ App.mediaGallery = function () {
   const $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
   const $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
   const $thumbnailItems = $componentEl.find('.module-media-gallery__thumbnail-item');
-
-  let i18n = {};
+  let i18nStrings = {};
 
   // Zoom Behavior
   //--------------
@@ -25,25 +26,10 @@ App.mediaGallery = function () {
    * Initialize Media Gallery
    */
   const init = () => {
-    loadI18NStrings();
+    i18nStrings = App.global.utils.loadI18NStrings($componentEl);
     initializeSlideCarousel();
     initializeThumbnailCarousel();
     zoomInitialize();
-  };
-
-
-
-  /**
-   * Get i18n String from a HTML data-attribute
-   */
-  const loadI18NStrings = function() {
-
-    let i18nData = $componentEl[0].dataset.i18n;
-
-    // Save i18n Strings as an Object in a global variable
-    i18n = (JSON.parse(i18nData))
-      ? JSON.parse(i18nData)
-      : {};
   };
 
 
@@ -147,7 +133,7 @@ App.mediaGallery = function () {
     // Default Settings
     //--------------
     zoom = {
-      eventDesktop: 'mouseover',
+      eventDesktop: 'click',
       // eventMobile: 'overlay',
       scaleMobile: 2,  // It Means that the image will be scale at 2x (200%)
       scaleDesktop: 1, // The default value is 1, meaning the zoomed image should be at 100% of its natural width and height.
@@ -175,7 +161,7 @@ App.mediaGallery = function () {
         zoomInline: '<div class="zoom-inline"></div>',
         zoomOverlay: `<div class="zoom-overlay">
           <button class="zoom-overlay__close button--reset">
-            <span class="sr-only">${ i18n.closeOverlay }</span>
+            <span class="sr-only">${ i18nStrings.closeOverlay }</span>
             <i class="icon icon-close" aria-hidden="true"></i>
           </button>
           <div class="zoom-overlay__image"></div>
@@ -216,7 +202,7 @@ App.mediaGallery = function () {
           url: item.dataset.zoomUrl,
           callback() {
             const $currentImage = $(this);
-            $currentImage.on('touchstart mouseover', zoomHandleImageEvent);
+            $currentImage.on('touchstart mouseover click', zoomHandleImageEvent);
 
             $currentImage.swipe({ // Event provided by "jquery.touch-swipe" Library
               tap(event) {
@@ -283,7 +269,8 @@ App.mediaGallery = function () {
     const disabledEvents = {
       mouseover: null,
       touchstart: null,
-      tap: null
+      tap: null,
+      click: null
     };
 
     // If Mobile/Tablet Breakpoint

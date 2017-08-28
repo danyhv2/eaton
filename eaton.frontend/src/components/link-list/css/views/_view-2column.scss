@@ -1,10 +1,7 @@
 .eaton-linklist-2column {
   overflow: hidden;
 
-  & > div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  > div {
 
     .col-xs-12 {
       padding: 0;
@@ -13,5 +10,15 @@
 
   &__link {
     margin-bottom: $spacing__sm;
+  }
+
+  @include media-desktop-and-up {
+
+    > div {
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
   }
 }
