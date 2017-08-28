@@ -16,6 +16,7 @@ $border-color: rgba($color__secondary-gray4, 0.5);
     .row {
       display: flex;
       align-items: center;
+      margin: 0;
     }
   }
 
@@ -35,6 +36,7 @@ $border-color: rgba($color__secondary-gray4, 0.5);
   //-----------------------------------
   &__item {
     border-radius: 0;
+    border: 0;
     box-shadow: none;
     background: transparent;
   }
@@ -87,6 +89,52 @@ $border-color: rgba($color__secondary-gray4, 0.5);
       &:focus {
         color: $color__white;
       }
+    }
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint: <992 px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .container {
+      width: auto;
+      padding: 0;
+
+      .row {
+        margin: 0;
+      }
+    }
+
+    &__header {
+      padding: ($spacing__sm / 2) $spacing__sm;
+    }
+
+    &__title {
+      font-size: 1.6rem;
+      line-height: 2.0rem;
+    }
+
+    &__icon {
+      font-size: 1.8rem;
+    }
+
+    &__panel-list {
+      padding: 0;
+    }
+
+    &__panel-list &__item { // To overwrite bootstrap default
+      margin-top: 3px !important;
+    }
+
+    &__item-header {
+      padding: ($spacing__sm / 2) $spacing__sm;
+      background: $color__primary-gray1;
+    }
+
+    &__item-title {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      margin-bottom: 0;
     }
   }
 

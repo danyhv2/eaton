@@ -14,10 +14,6 @@
     padding: 30px 0;
   }
 
-  &__country-selector {
-    // Future reference
-  }
-
   //-----------------------------------
   // Mobile Breakpoint
   //-----------------------------------
@@ -30,6 +26,10 @@
     visibility: hidden;
     transform: translateY(100%);
     z-index: 220;
+
+    &__country-selector {
+      padding-bottom: ($spacing__sm / 2);
+    }
   }
 
   //-----------------------------------
