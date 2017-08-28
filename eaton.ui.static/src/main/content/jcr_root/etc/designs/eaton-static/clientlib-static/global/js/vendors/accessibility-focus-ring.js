@@ -14,8 +14,6 @@
 	(factory());
 }(this, (function () {
 
-  // 'use strict';
-
 /**
  * Module export
  *
