@@ -7,12 +7,12 @@
 
 .eaton-image {
 
-  // Make the rendition image to occupy 100% of width available
+  // Center the rendition image
   .rendition {
-    width: 100%;
+    text-align: center;
 
     img {
-      width: 100%;
+      display: inline;
     }
   }
 }

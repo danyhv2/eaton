@@ -11,6 +11,6 @@
  */
 
 
-.eaton-image .rendition { width: 100%; }
+.eaton-image .rendition { text-align: center; }
 
-.eaton-image .rendition img { width: 100%; }
+.eaton-image .rendition img { display: inline; }
