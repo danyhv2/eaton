@@ -7,6 +7,13 @@
     position: relative;
   }
 
+  // Magnifiying-glass icon
+  &__zoom {
+
+    // The entire image is clickable, the zoom icon is a UI element with no behaviors
+    pointer-events: none;
+  }
+
   // Toggle Carousel UI (Arrows and Buttons) when the Zoom is enabled/disabled (Desktop BP)
   &__slide-arrows-container,
   &__slide-utility {
@@ -79,6 +86,7 @@ body.zoom-overlay-open {
   //-----------------------------------
   @include media-desktop-and-up {
 
+    // Important is used due to inline styles added by Javascript
     display: none !important; // stylelint-disable-line declaration-no-important
 
   }
