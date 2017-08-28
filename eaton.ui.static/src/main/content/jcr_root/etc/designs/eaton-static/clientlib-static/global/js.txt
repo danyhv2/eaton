@@ -15,5 +15,6 @@ vendors/choices.min.js
 etn-global.js
 etn-global-constants.js
 etn-global-utils.js
+etn-global-templates.js
 etn-scroll-to.js
 etn-form.js
