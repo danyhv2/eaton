@@ -75,6 +75,10 @@
       .eaton-grid-control & {
         flex-basis: 100%;
         margin-bottom: ($spacing__sm ) + 10;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
 
