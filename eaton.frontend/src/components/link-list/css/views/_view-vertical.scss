@@ -2,9 +2,21 @@
 // LinkList Component: Vertical View
 //-----------------------------------
 .eaton-link-list-vertical {
-
+  font-size: 2.4rem;
   &__eyebrow {
     text-transform: uppercase;
+  }
+
+  &__eyebrow.heading {
+    font-size: 2.4rem;
+    line-height: 2.8px;
+  }
+
+  @include media-desktop-and-up {
+    font-size: 1.8rem;
+    &__eyebrow.heading {
+      font-size: 1.8rem;
+    }
   }
 
   &__list {

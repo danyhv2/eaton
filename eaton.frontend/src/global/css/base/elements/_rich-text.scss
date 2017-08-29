@@ -2,14 +2,24 @@
 // Styleguide - Rich Text Elements
 //-----------------------------------
 
-.rich-text-container {
+.eaton-text-default .rich-text-container {
 
   @include body-copy;
+
+  font-family: Arial, sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.8rem; 
 
   // stylelint-disable selector-max-compound-selectors
   b,
   strong {
     font-weight: bold;
+  }
+
+  h3 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
   }
 
   i,
@@ -21,8 +31,10 @@
     text-decoration: underline;
   }
 
-  p {
-    @include body-copy;
+  p{
+    font-family: Arial, sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.8rem;
   }
 
 
@@ -84,5 +96,19 @@
     }
 
 
+  }
+}
+
+
+@include media-desktop-and-up {
+  .eaton-text-default .rich-text-container {
+    h3{
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 1.8rem;
+      padding:0;
+      margin-bottom: 15px;
+      line-height: 2.4rem;
+    }
   }
 }
