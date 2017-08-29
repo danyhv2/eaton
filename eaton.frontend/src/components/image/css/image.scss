@@ -1,0 +1,18 @@
+//-----------------------------------
+// Component - Image
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-image {
+
+  // Center the rendition image
+  .rendition {
+    text-align: center;
+
+    img {
+      display: inline;
+    }
+  }
+}

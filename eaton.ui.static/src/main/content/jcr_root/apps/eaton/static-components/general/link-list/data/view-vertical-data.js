@@ -449,7 +449,7 @@ use(function () {
     } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-1")) {
         
     	data.view = {
-	      eyebrow: 'Eaton bussines highlights',
+	      eyebrow: '',
 	      links: [
 		      {  
 		        title: '2016 annual report',

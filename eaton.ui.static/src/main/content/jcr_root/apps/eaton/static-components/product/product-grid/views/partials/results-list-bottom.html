@@ -6,7 +6,11 @@
       class="results-list__disclaimer">${ '* List Prices are not a reflection of the actual product Stree Price. Check with your Eaton reseller or partner to get actual pricing.' @ i18n }</div>
 
     <div class="results-list__actions text-center">
-      <button class="b-button b-button__primary b-button__primary--light"
+
+      <!--/* Render Button "Load More" results only if the property 'ajaxRequestUrl' is not empty */-->
+      <button
+        data-sly-test="${ data.ajaxRequestUrl }"
+        class="b-button b-button__primary b-button__primary--light"
         role="button"
         data-load-more>${ 'Load More' @ i18n }</button>
     </div>

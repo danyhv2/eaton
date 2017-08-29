@@ -47,6 +47,8 @@ use(function () {
 	  data.eyebrow = 'CATEGORY LABEL';
 	  data.title = 'H1 Page Title or Article Headline That Flows to a Second Line';  
 	  data.byline = 'Byline (optional), November 27, 2015';
+  } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-1")) {
+	  data.title = 'Eaton bussines highligths';  
   } else {
 	  data.title = (properties.get('title'))
       ? properties.get('title')

@@ -1,0 +1,21 @@
+<!--/*
+  Load Component
+*/-->
+
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Image Component</div>
+</sly>
+
+<!--/* Component Markup */-->
+<sly data-sly-use.data="${'data/image-data.js' @testdata=properties.testdata}">
+  <div class="eaton-image">
+    <div class="${properties.toggleInnerGrid ? 'container' : ''} eaton-image__container">
+      <!-- Start: Rendition Image Component -->
+      <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+        <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
+      </sly>
+      <!-- End: Rendition Image Component -->
+    </div>
+  </div>
+</sly>
