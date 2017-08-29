@@ -61,7 +61,7 @@ use(function () {
     Galesburg, MI 40053<br/> \
     1-800-826-HELP (4357)";
   } else if ((typeof(testdata) != "undefined") && (testdata == "l2-news-nextsteps")) {
-    data.text = "<p><strong>MEDIA CONTACTS</strong></p> \
+    data.text = "<h3>MEDIA CONTACTS</h3> \
     <p><b>Scott Schroeder</b></p> \
     ScottRSchroeder@eaton.com<br/> \
     (440) 523-5150<br/><br/> \

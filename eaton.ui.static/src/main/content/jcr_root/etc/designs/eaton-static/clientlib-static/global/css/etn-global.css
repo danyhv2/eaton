@@ -314,35 +314,35 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .b-list--no-bullets { list-style-type: none; padding-left: 0; }
 
-.rich-text-container { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; }
+.eaton-text-default .rich-text-container { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; font-family: Arial, sans-serif; font-size: 2.4rem; line-height: 3.8rem; }
 
-.rich-text-container a { color: #005EB8; }
+.eaton-text-default .rich-text-container a { color: #005EB8; }
 
-@media screen and (min-width: 992px) { .rich-text-container { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; } }
+@media screen and (min-width: 992px) { .eaton-text-default .rich-text-container { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; } }
 
-.rich-text-container b, .rich-text-container strong { font-weight: bold; }
+.eaton-text-default .rich-text-container b, .eaton-text-default .rich-text-container strong { font-weight: bold; }
 
-.rich-text-container i, .rich-text-container em { font-style: italic; }
+.eaton-text-default .rich-text-container h3 { font-family: Arial, sans-serif; font-weight: bold; font-size: 2.4rem; }
 
-.rich-text-container a { text-decoration: underline; }
+.eaton-text-default .rich-text-container i, .eaton-text-default .rich-text-container em { font-style: italic; }
 
-.rich-text-container p { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; }
+.eaton-text-default .rich-text-container a { text-decoration: underline; }
 
-.rich-text-container p a { color: #005EB8; }
+.eaton-text-default .rich-text-container p { font-family: Arial, sans-serif; font-size: 2.4rem; line-height: 3.8rem; }
 
-@media screen and (min-width: 992px) { .rich-text-container p { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; } }
+.eaton-text-default .rich-text-container ul { list-style-type: none; padding: 0; }
 
-.rich-text-container ul { list-style-type: none; padding: 0; }
+.eaton-text-default .rich-text-container ul li { position: relative; padding-left: 40px; }
 
-.rich-text-container ul li { position: relative; padding-left: 40px; }
+.eaton-text-default .rich-text-container ul li::before { height: 6px; width: 6px; content: ''; background-color: #005EB8; border-radius: 50%; left: 20px; position: absolute; top: 0.6em; }
 
-.rich-text-container ul li::before { height: 6px; width: 6px; content: ''; background-color: #005EB8; border-radius: 50%; left: 20px; position: absolute; top: 0.6em; }
+.dark-theme .eaton-text-default .rich-text-container { color: #FFF; }
 
-.dark-theme .rich-text-container { color: #FFF; }
+.dark-theme .eaton-text-default .rich-text-container h2, .dark-theme .eaton-text-default .rich-text-container h3, .dark-theme .eaton-text-default .rich-text-container h4, .dark-theme .eaton-text-default .rich-text-container h5, .dark-theme .eaton-text-default .rich-text-container h6 { color: #FFF; }
 
-.dark-theme .rich-text-container h2, .dark-theme .rich-text-container h3, .dark-theme .rich-text-container h4, .dark-theme .rich-text-container h5, .dark-theme .rich-text-container h6 { color: #FFF; }
+.dark-theme .eaton-text-default .rich-text-container ul li::before { background-color: #FFF; }
 
-.dark-theme .rich-text-container ul li::before { background-color: #FFF; }
+@media screen and (min-width: 992px) { .eaton-text-default .rich-text-container h3 { font-family: Arial, sans-serif; font-weight: bold; font-size: 1.8rem; padding: 0; margin-bottom: 15px; line-height: 2.4rem; } }
 
 .eaton-form-container { padding-top: 60px; }
 
