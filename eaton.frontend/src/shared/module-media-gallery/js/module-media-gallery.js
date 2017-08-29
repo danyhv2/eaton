@@ -328,8 +328,8 @@ App.mediaGallery = function () {
 
       // getBoundingClientReact gives us various information about the position of the element.
       let dimentions = zoomedImage.getBoundingClientRect();
-      let eventX = event.clientX || event.touches[0].clientX;
-      let eventY = event.clientY || event.touches[0].clientY;
+      let eventX = event.clientX || (event.touches && event.touches[0].clientX);
+      let eventY = event.clientY || (event.touches && event.touches[0].clientY);
 
       // Calculate the position of the cursor inside the element (in pixels).
       let x = eventX - dimentions.left;
