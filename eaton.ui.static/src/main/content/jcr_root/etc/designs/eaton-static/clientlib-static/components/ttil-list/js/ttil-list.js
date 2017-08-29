@@ -45,7 +45,6 @@ App.ttilList = function () {
    * If containing DOM element is found, Initialize and Expose public methods
    */
   if ($componentEl.length > 0) {
-      console.log('init');
     init();
   }
 }();
