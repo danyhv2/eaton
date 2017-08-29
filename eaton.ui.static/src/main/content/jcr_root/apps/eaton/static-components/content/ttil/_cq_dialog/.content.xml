@@ -47,14 +47,14 @@
                     jcr:primaryType="nt:unstructured"
                     text="Single Feature"
                     value="single-feature"/>
-                  <downloadList
+                  <feature-block-right
                     jcr:primaryType="nt:unstructured"
-                    text="Download List"
-                    value="download-list"/>
-                  <downloadListDesc
+                    text="Feature Block Right"
+                    value="feature-block-right"/>
+                  <feature-block-left
                     jcr:primaryType="nt:unstructured"
-                    text="Download List with Descriptions"
-                    value="download-list-desc"/>
+                    text="Feature Block Left"
+                    value="feature-block-left"/>
                   <article-feature
                     jcr:primaryType="nt:unstructured"
                     text="Article Feature"
