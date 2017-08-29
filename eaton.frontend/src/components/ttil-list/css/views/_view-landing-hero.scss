@@ -4,10 +4,19 @@
 
 .carousel-component {
 
+  position: relative;
+
   &-slide {
 
+    padding: 0;
+
     &__caption {
+      position: absolute;
+      right: 20%;
+      left: 20%;
+      text-align: center;
       top: 0;
+      color: $color__white;
     }
 
     &__cta {
@@ -15,6 +24,7 @@
     }
 
     &__image {
+      position: relative;
 
       img {
         width: 100%;
@@ -33,17 +43,44 @@
   }
 
   &__arrow {
-    display: none;
+    display: none !important; // stylelint-disable-line declaration-no-important
+    position: absolute;
+    top: 45%;
 
     .icon {
       font-size: 6.0rem;
+      color: $color__secondary-gray4;
+    }
+
+    &--next {
+      right: 130px;
+    }
+
+    &--prev {
+      left: 130px;
     }
   }
 
   &__dots {
 
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+
+    @include media-tablet-and-up {
+      bottom: 20px;
+    }
+
     &:only-child {
       display: none;
+    }
+
+    button {
+      background-color: transparent;
+      border: 1px solid $color__secondary-gray5;
     }
   }
 
@@ -57,24 +94,18 @@
     text-align: center;
   }
 
-  .carousel-indicators .carousel-component__dots--gray {
-    background-color: $color__secondary-gray5;
-    border: 1px solid $color__secondary-gray5;
-    width: 12px;
-    height: 12px;
-    margin: 2px;
+  @include media-desktop-large {
+    &:hover .carousel-component__arrow {
+      display: block !important; // stylelint-disable-line declaration-no-important
+    }
   }
 
-  .carousel-indicators .active {
+  .slick-active button {
     background-color: $color__primary-blue;
     border: 1px solid $color__primary-blue;
   }
 }
 
-.carousel-component .carousel-component--indicators {
-  bottom: 20px;
-
-}
 
 @include media-mobile-only {
   .carousel-component-slide {
@@ -84,17 +115,8 @@
 
   }
 
-  .carousel-indicators {
-    bottom: 56px;
-  }
 }
 
-
-@include  media-tablet-and-up {
-  .carousel-indicators {
-    bottom: 20px;
-  }
-}
 
 
 @include media-desktop-large {
@@ -109,11 +131,6 @@
       &__cta {
         margin-top: 60px;
       }
-    }
-
-    &:hover .carousel-component__arrow {
-      display: block;
-      background-image: none;
     }
   }
 }

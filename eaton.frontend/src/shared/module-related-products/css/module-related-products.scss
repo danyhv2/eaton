@@ -18,28 +18,13 @@
   }
 
   &__dots {
-    text-align: center;
     padding-top: 10px;
 
     @include media-tablet-and-up {
       padding-top: 40px;
     }
 
-    li {
-      display: inline;
-      padding-right: 10px;
-    }
-
     button {
-      height: 10px;
-      width: 10px;
-      border: 10px;
-      line-height: 0;
-      display: inline;
-      padding: 5px;
-      cursor: pointer;
-      color: transparent;
-      border-radius: 10px;
       background-color: $color__secondary-gray5;
     }
   }

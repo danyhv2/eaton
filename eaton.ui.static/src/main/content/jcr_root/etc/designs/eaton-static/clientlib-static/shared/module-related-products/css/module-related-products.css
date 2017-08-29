@@ -19,13 +19,11 @@
 
 .module-related-products__slides a { z-index: 10; }
 
-.module-related-products__dots { text-align: center; padding-top: 10px; }
+.module-related-products__dots { padding-top: 10px; }
 
 @media screen and (min-width: 768px) { .module-related-products__dots { padding-top: 40px; } }
 
-.module-related-products__dots li { display: inline; padding-right: 10px; }
-
-.module-related-products__dots button { height: 10px; width: 10px; border: 10px; line-height: 0; display: inline; padding: 5px; cursor: pointer; color: transparent; border-radius: 10px; background-color: #EEF0F2; }
+.module-related-products__dots button { background-color: #EEF0F2; }
 
 .module-related-products__arrows { position: absolute; top: 25%; color: #CCD2D7; display: none !important; }
 
