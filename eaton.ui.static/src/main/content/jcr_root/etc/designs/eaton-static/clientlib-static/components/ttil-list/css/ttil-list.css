@@ -109,7 +109,7 @@
 
 .tile-link-component__image { width: 100%; }
 
-.tile-link-component__title { position: absolute; bottom: 0; width: 100%; margin: 0; padding: 10px 15px; font-size: 1.875em; }
+.tile-link-component__title { position: absolute; bottom: 0; width: 100%; margin: 0; padding: 10px 15px 30px; font-size: 1.875em; }
 
 @media screen and (min-width: 992px) { .tile-link-component__title { font-size: 2em; padding: 20px 30px; } }
 
