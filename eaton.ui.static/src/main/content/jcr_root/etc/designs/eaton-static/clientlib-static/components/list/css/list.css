@@ -179,3 +179,5 @@
   .text-only-3-column__cta-container { margin-top: 30px; } }
 
 .text-only-3-column__slides { padding-left: 15px; }
+
+.text-only-3-column__slides .slick-active button { background-color: #005EB8; }
