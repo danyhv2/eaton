@@ -52,13 +52,11 @@
                 </items>
               </view>
               <toggleInnerGrid
-                jcr:primaryType="cq:Widget"
-                fieldDescription=""
-                fieldLabel="Enable Inner Grid"
-                inputValue="true"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                text="Enable Inner Grid"
                 name="./toggleInnerGrid"
-                type="checkbox"
-                xtype="selection"/>
+                value="true" />
             </items>
           </column>
         </items>

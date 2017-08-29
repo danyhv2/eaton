@@ -29,7 +29,10 @@
   .icon-list-proof-points__symbol { font-size: 40px; top: 13px; }
   .icon-list-proof-points__title { font-size: 18px; } }
 
-@media screen and (min-width: 992px) { .icon-list-proof-points__wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+@media screen and (min-width: 992px) { .icon-list-proof-points__wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+  .eaton-grid-control .icon-list-proof-points__wrapper { display: block; }
+  .icon-list-proof-points__item { -webkit-flex-basis: 33.33%; -ms-flex-preferred-size: 33.33%; flex-basis: 33.33%; }
+  .eaton-grid-control .icon-list-proof-points__item { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; margin-bottom: 20px; }
   .icon-list-proof-points__text { font-size: 75px; }
   .icon-list-proof-points__symbol { font-size: 45px; top: 8px; }
   .icon-list-proof-points__title { font-size: 24px; } }
