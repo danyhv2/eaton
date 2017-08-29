@@ -14,9 +14,9 @@
       <!-- Wrapper for slides -->
       <div data-sly-list.slide="${data.hero}" class="carousel-component-slide carousel-inner" role="listbox">
         <div class="item ${slideList.index == 0 ? 'active' : ''}">
-            <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+            <div class="carousel-component-slide__image" data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
                 <sly data-sly-call="${ tpl.module @ data=slide.image }"></sly>
-            </sly>
+            </div>
           <div class="carousel-component-slide__caption carousel-caption">
             <h2 class="carousel-component-slide__title">${slide.title}</h2>
             <p class="carousel-component-slide__text">${slide.text @ context = 'html'}</p>

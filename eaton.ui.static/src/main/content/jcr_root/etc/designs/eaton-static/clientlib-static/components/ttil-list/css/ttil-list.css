@@ -17,7 +17,7 @@
 
 .carousel-component-slide__cta { margin-top: 30px; }
 
-.carousel-component-slide__image { width: 100%; }
+.carousel-component-slide__image img { width: 100%; }
 
 .carousel-component-slide__text { margin-top: 20px; }
 
