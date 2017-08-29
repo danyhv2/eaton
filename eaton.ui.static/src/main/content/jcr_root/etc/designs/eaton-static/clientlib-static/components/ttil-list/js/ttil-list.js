@@ -31,7 +31,7 @@ App.ttilList = function () {
    */
   var initCarousels = function initCarousels() {
     $componentEl.carousel({
-      interval: 3000,
+      interval: 5000,
       keyboard: true
     });
   };
