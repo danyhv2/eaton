@@ -63,8 +63,23 @@
   @include media-desktop-and-up {
     padding: ($spacing__sm * 2) 0;
 
+    .eaton-grid-control & {
+      padding: $spacing__sm 0;
+    }
+
     &__wrapper {
       display: flex;
+      flex-wrap: nowrap;
+
+      .eaton-grid-control & {
+        display: block;
+      }
+    }
+
+    &__item {
+      .eaton-grid-control & {
+        margin-bottom: 40px;
+      }
     }
 
     &__text {
