@@ -23,7 +23,6 @@ App.productTabs = function () {
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
 
   var init = function init() {
-    // return;
     if (!isAEMAuthorMode) {
       addEventListeners();
     }
@@ -36,11 +35,16 @@ App.productTabs = function () {
 
     $(window).on('scroll', function (event) {
       var scrollTop = $(window).scrollTop();
-      var isMobile = $(window).innerWidth() < 991; // based on window width
-      var scrollOffset = isMobile ? 138 : 40;
+      var isMobile = $(window).innerWidth() < App.global.constants.GRID.MD;
       var componentFixedClass = 'eaton-product-tabs--fixed';
       var buttonsClass = '.eaton-product-tabs__buttons';
-      var shouldBeFixed = scrollTop > scrollOffset;
+      var headerHeight = $('header').outerHeight();
+      var tabsDescriptionHeight = $('.eaton-product-tabs__description').outerHeight();
+      var isHeaderFixed = $('.eaton-header').hasClass('eaton-header--fixed');
+
+      // if Mobile add the tabsDescriptionHeight
+      var scrollOffset = headerHeight + (isMobile ? tabsDescriptionHeight : 0);
+      var shouldBeFixed = isHeaderFixed || scrollTop > scrollOffset;
 
       $componentClass.toggleClass(componentFixedClass, shouldBeFixed);
       $componentClass.find(buttonsClass).toggleClass('row', !shouldBeFixed);

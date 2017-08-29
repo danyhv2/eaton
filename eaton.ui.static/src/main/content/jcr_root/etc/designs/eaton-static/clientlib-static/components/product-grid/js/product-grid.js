@@ -17,110 +17,90 @@
 'use strict';
 
 var App = window.App || {};
-
 App.productGrid = function () {
 
   var resultListCSSClass = '.results-list';
-  var $componentElement = $('.product-grid').find(resultListCSSClass);
-  var templates = {};
-  var i18n = {};
+  var $componentEl = $('.product-grid').find(resultListCSSClass);
+  var i18nStrings = {};
 
   /**
   * Initialize
   */
   var init = function init() {
+    i18nStrings = App.global.utils.loadI18NStrings($componentEl);
     addEventListeners();
-    loadI18NStrings();
   };
 
   /**
    * Bind All Event Listeners
    */
   var addEventListeners = function addEventListeners() {
-    $componentElement.find('[data-load-more]').on('click', fetchMoreResults);
+    $componentEl.find('[data-load-more]').on('click', loadMoreResults);
   };
 
   /**
-   * Get i18n Strings from a HTML data-attribute
-   */
-  var loadI18NStrings = function loadI18NStrings() {
+  * Configure AJAX Request
+  * @param { Object } options - description
+  * @return { Promise }
+  */
+  var fetchData = function fetchData(url, nextPage) {
+    var requestOptions = {
+      page: nextPage,
+      format: 'json'
+    };
 
-    var i18nData = $componentElement[0].dataset.i18n;
-
-    // Save i18n Strings as an Object in a global variable
-    i18n = JSON.parse(i18nData) ? JSON.parse(i18nData) : {};
+    return $.getJSON(url, requestOptions);
   };
 
-  // M-36: SKU Card Template
-  //--------------
-  templates.productCardSKU = function (data, i18n) {
-    return '\n      <div class="product-card-sku">\n\n        <div class="product-card-sku__image-wrapper b-body-copy-small">\n          <a href="' + data.contentItem.link.url + '"\n            class="product-card-sku__image-link"\n            target="' + data.contentItem.link.target + '"\n          >\n            <img src="' + data.contentItem.imgSrc + '"\n              class="product-card-sku__image"\n              alt="' + data.contentItem.name + '" />\n          </a>\n        </div>\n\n        <div class="product-card-sku__header">\n\n          <div class="product-card-sku__title-wrapper">\n            <h3 class="product-card-sku__name">\n              <a href="' + data.contentItem.link.url + '"\n                target="' + data.contentItem.link.target + '"\n                class="product-card-sku__url-link"\n              >\n                <span class="name-label">' + data.contentItem.name + '</span>\n                <i class="icon icon-chevron-right" aria-hidden="true"></i>\n              </a>\n            </h3>\n            <div class="product-card-sku__price b-body-copy">' + data.contentItem.price + '*</div>\n          </div>\n\n          <ul class="product-card-sku__links-list">\n            <li class="product-card-sku__link-item">\n              <a href="' + data.contentItem.productLinks.specificationsURL + '"\n                class="product-card-sku__link-item-link"\n                target="_self"\n                aria-label="' + i18n.goTo + ' Specifications"\n              >\n                <span class="link-label">Specifications</span>\n                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>\n              </a>\n            </li>\n\n            <li class="product-card-sku__link-item">\n              <a href="' + data.contentItem.productLinks.resourcesURL + '"\n                class="product-card-sku__link-item-link"\n                target="_self"\n                aria-label="' + i18n.goTo + ' Resources"\n              >\n                <span class="link-label">Resources</span>\n                <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>\n              </a>\n            </li>\n          </ul>\n\n        </div>\n\n        <div class="product-card-sku__content">\n          <div class="product-card-sku__attrs-list">\n\n            ' + data.contentItem.productAttributes.map(function (attribute) {
-      return '\n                <div class="product-card-sku__attrs-list-item">\n                  <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">' + attribute.label + '</div>\n                  <div class="product-card-sku__attr-value b-body-copy">' + attribute.value + '</div>\n                </div>';
-    }).join('') + '\n\n          </div>\n          <div class="product-card-sku__description">' + data.contentItem.description + '</div>\n        </div>\n\n      </div>';
-  };
-
-  // M-37: Family Card Template
-  //--------------
-  templates.productCardFamily = function (data, i18n) {
-    return '\n      <div class="product-card-family">\n\n        <a href="' + data.contentItem.link.url + '"\n          target="' + data.contentItem.link.target + '"\n          class="product-card-family__link">\n          <span class="sr-only">' + i18n.goTo + ' ' + data.contentItem.name + '</span>\n        </a>\n\n        <div class="product-card-family__image-wrapper">\n          <img src="' + data.contentItem.imgSrc + '"\n            class="product-card-family__image"\n            alt="' + data.contentItem.name + '" />\n        </div>\n\n        <div class="product-card-family__content-wrapper">\n          <div class="product-card-family__subcategory b-eyebrow-small">' + data.contentItem.subcategory + '</div>\n          <h2 class="product-card-family__name">' + data.contentItem.name + '</h2>\n        </div>\n\n      </div>';
+  /**
+  * It Returns the HTML Markup for the given Result Item
+  * @param { Object } item
+  * @param { Object } i18n
+  * @param { String } gridType
+  * @return { String } String with HTML code
+  */
+  var getItemTemplate = function getItemTemplate(item, i18n, gridType) {
+    if (item.contentType === 'product-card' && gridType === 'product-card-sku') {
+      return App.global.templates.productGridSKU(item, i18n);
+    } else if (item.contentType === 'product-card' && gridType === 'product-card-family') {
+      return App.global.templates.productGridFamily(item, i18n);
+    }
   };
 
   /**
   * Fetch the next page of results and add them to the DOM
   * @param { Object } event - Click Event Object
   */
-  var fetchMoreResults = function fetchMoreResults(event) {
+  var loadMoreResults = function loadMoreResults(event) {
 
+    event.preventDefault();
     var $currentComponent = $(event.currentTarget).closest(resultListCSSClass);
     var requestURL = $currentComponent.attr('data-results-url');
     var requestNextPage = $currentComponent.attr('data-results-next-page');
-    var resultsType = $currentComponent.attr('data-results-type');
-    var templateType = '';
+    var gridType = $currentComponent.attr('data-results-type');
 
-    // Use Template for Product-SKU Type
-    if (resultsType === 'product-card-sku') {
-      templateType = 'card-sku';
-    }
-
-    // Else Use Template for Product-Family Type
-    else if (resultsType === 'product-card-family') {
-        templateType = 'card-family';
-      }
-
-    // If the Request URL doesn't exists don't proceed
+    // If the Request URL doesn't exists Remove the Load More Button and don't proceed
     if (!requestURL) {
+      $currentComponent.find('[data-load-more]').remove();
       return;
     }
 
-    // Else Configure AJAX Request
-    var newElements = '';
-
-    var requestOptions = {
-      page: requestNextPage,
-      format: 'json'
-    };
-
-    var fetch = $.getJSON(requestURL, requestOptions);
-
-    // Once the AJAX Request is completed
-    fetch.done(function (_ref) {
+    // Else Fetch New Results
+    fetchData(requestURL, requestNextPage).done(function (_ref) {
       var search = _ref.search;
 
 
       // Loop over all result items
-      search.results.forEach(function (data, index) {
+      var newResults = search.results.reduce(function (items, currentItem) {
 
-        // Based on the Content Type, use the appropiate Template passing the received data
-        //--------------
-        if (data.contentType === 'product-card' && templateType === 'card-sku') {
-          newElements += templates.productCardSKU(data, i18n);
-        } else if (data.contentType === 'product-card' && templateType === 'card-family') {
-          newElements += templates.productCardFamily(data, i18n);
-        }
-      });
+        // Get the HTML Template for the current Result Item
+        return items += getItemTemplate(currentItem, i18nStrings, gridType);
+      }, '');
 
-      // Append the new List of Result Elements to the DOM
-      $currentComponent.find('.results-list__content').append(newElements);
+      // Append the new Result Elements to the DOM
+      var $newResults = $(newResults).hide();
+      $currentComponent.find('.results-list__content').append($newResults);
+      $newResults.fadeIn(300);
 
       // if the next page of results is "null" or empty, remove "Load More" button
       if (!search.ajaxRequestNextPage) {
@@ -141,7 +121,7 @@ App.productGrid = function () {
   /**
   * If containing DOM element is found, Initialize and Expose public methods
   */
-  if ($componentElement.length > 0) {
+  if ($componentEl.length > 0) {
     init();
     // Public methods
     // return { }

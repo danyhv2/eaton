@@ -153,7 +153,8 @@ App.mediaGallery = function () {
       $imagesEl: null,
 
       cssClasses: {
-        zoomOverlayOpen: 'zoom-overlay-open'
+        zoomOverlayOpen: 'zoom-overlay-open',
+        zoomInlineOpen: 'zoom-inline-open'
       },
 
       // Keyboard Codes (event.which)
@@ -188,16 +189,19 @@ App.mediaGallery = function () {
 
       var $currentItem = $(item);
 
-      $currentItem.wrap(zoom.templates.zoomInline).parent().zoom({
+      $currentItem.wrap(zoom.templates.zoomInline).parent()
+      // Documentation: http://www.jacklmoore.com/zoom/
+      .zoom({
         on: zoom.eventDesktop,
         magnify: zoom.scaleDesktop,
         url: item.dataset.zoomUrl,
         callback: function callback() {
           var $currentImage = $(this);
+
           $currentImage.on('touchstart mouseover click', zoomHandleImageEvent);
 
+          // "Swipe" Event provided by "jquery.touch-swipe" Library
           $currentImage.swipe({
-            // Event provided by "jquery.touch-swipe" Library
             tap: function tap(event) {
               zoomHandleImageEvent(event);
             },
@@ -205,6 +209,12 @@ App.mediaGallery = function () {
               // Do nothing, Let the Carousel Library control the swipe behavior
             }
           });
+        },
+        onZoomIn: function onZoomIn() {
+          $(this).closest(componentClass).addClass(zoom.cssClasses.zoomInlineOpen);
+        },
+        onZoomOut: function onZoomOut() {
+          $(this).closest(componentClass).removeClass(zoom.cssClasses.zoomInlineOpen);
         }
       });
     });

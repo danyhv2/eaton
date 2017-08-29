@@ -14,6 +14,7 @@
 
   .category-item-date {
     padding-top: 0;
+    color: $color__primary-gray3;
   }
 
   &__article {
@@ -79,3 +80,6 @@
 
 }
 
+.text-only-3-column__slides {
+  padding-left: 15px;
+}

@@ -59,7 +59,7 @@
 
     .eaton-link-list-vertical__eyebrow {
       margin-bottom: 10px;
-      font-size: 18px;
+      @include h4;
     }
   }
 

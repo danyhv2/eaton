@@ -210,7 +210,6 @@
     color: $color__white;
     display: inline-block;
     font-family: $font-family__secondary;
-    font-size: 16px;
     font-size: 1.6rem;
     height: 57px;
     margin: 40px 0;
@@ -219,7 +218,7 @@
 
     .icon {
       display: inline-block;
-      font-size: 14px;
+      font-size: 1.4rem;
       padding-left: 10px;
       vertical-align: middle;
     }
@@ -260,7 +259,7 @@
         }
 
         .icon {
-          font-size: 25px;
+          font-size: 2.5rem;
           left: 0;
           padding: 0 10px 0 0;
           position: absolute;
@@ -335,7 +334,6 @@
 
   @include media-desktop-and-up {
     &__dropdown {
-      font-size: 18px;
       font-size: 1.8rem;
       font-weight: bold;
     }

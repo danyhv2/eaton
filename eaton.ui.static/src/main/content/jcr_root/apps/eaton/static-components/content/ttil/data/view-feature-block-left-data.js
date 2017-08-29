@@ -50,7 +50,7 @@ use(function () {
             image: {
                 mobile: 'http://lorempixel.com/750/750/technics/750x750/',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
-                desktop: '/content/dam/eaton/images/feature_block_desktop.png',
+                desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-1.png',
                 altText: ''
             },
             imgAlignment:'left',
@@ -68,7 +68,7 @@ use(function () {
             image: {
                 mobile: 'http://lorempixel.com/750/750/technics/750x750/',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
-                desktop: '/content/dam/eaton/images/feature_block_desktop.png',
+                desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-2.png',
                 altText: ''
             },
             imgAlignment:'left',
