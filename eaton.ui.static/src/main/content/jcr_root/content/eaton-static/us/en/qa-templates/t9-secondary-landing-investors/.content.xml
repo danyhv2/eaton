@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-08-28T17:30:35.333-06:00"
+        cq:lastModified="{Date}2017-08-28T18:38:32.589-06:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
         jcr:isCheckedOut="{Boolean}true"
@@ -320,6 +320,15 @@
                 <col1-par
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/parsys">
+                    <title
+                        jcr:created="{Date}2017-08-28T18:38:25.501-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2017-08-28T18:38:32.586-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/static-components/general/title"
+                        testdata="t9-secondary-landing-investors-1"
+                        view="default"/>
                     <link_list
                         jcr:created="{Date}2017-08-16T15:00:09.207-06:00"
                         jcr:createdBy="admin"
@@ -332,12 +341,13 @@
                     <cta
                         jcr:created="{Date}2017-08-16T15:00:44.124-06:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2017-08-16T15:01:27.470-06:00"
+                        jcr:lastModified="{Date}2017-08-28T18:36:57.819-06:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="eaton/static-components/general/cta"
                         color="dark"
                         testdata="t9-secondary-landing-investors-1"
+                        theme="primary-dark"
                         view="default"/>
                 </col1-par>
                 <col2-par
@@ -349,8 +359,8 @@
                         jcr:lastModified="{Date}2017-08-28T17:30:10.477-06:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        testdata="t9-secondary-landing-investors-1"
-                        sling:resourceType="eaton/static-components/general/image"/>
+                        sling:resourceType="eaton/static-components/general/image"
+                        testdata="t9-secondary-landing-investors-1"/>
                 </col2-par>
             </grid_2_column_contro>
             <icon_list
