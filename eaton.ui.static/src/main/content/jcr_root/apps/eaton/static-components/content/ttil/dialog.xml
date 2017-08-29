@@ -43,9 +43,9 @@
                                 text="Feature Block Right"
                                 value="feature-block-right"/>
                             <feature-block-left
-                                    jcr:primaryType="nt:unstructured"
-                                    text="Feature Block Left"
-                                    value="feature-block-left"/>
+                                jcr:primaryType="nt:unstructured"
+                                text="Feature Block Left"
+                                value="feature-block-left"/>
                             <article-feature
                                 jcr:primaryType="nt:unstructured"
                                 text="Article Feature"
