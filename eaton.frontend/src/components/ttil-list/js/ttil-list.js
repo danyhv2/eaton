@@ -19,7 +19,7 @@ App.ttilList = function () {
    */
   const initCarousels = () => {
     $componentEl.carousel({
-      interval: 3000,
+      interval: 5000,
       keyboard: true
     });
   };
