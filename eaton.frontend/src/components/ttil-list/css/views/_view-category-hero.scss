@@ -1,64 +1,118 @@
-.eaton-ttil-list-category-hero {
-  overflow: hidden;
-}
+.eaton-category-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
 
-.category-hero {
-  &__header-image {
-    img {
-      width: 100%;
-      height: auto;
-    }
-
+  &__image {
+    z-index: 1;
+    @include absolute-fill();
   }
 
-  &__header-content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: $color__white;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+  &__content {
+    position: relative;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 5;
   }
 
-  &__header-cta {
-    border: 0;
-    color: $color__white;
-  }
-
-  &-eye-brown {
-    color: $color__white;
-
-    a:hover,
-    a:active,
-    a:visited,
-    a:focus {
-      color: $color__white;
+  &__cta {
+    &:hover,
+    &:visited {
       text-decoration: underline;
     }
-  }
 
-  &-body-copy {
-    color: $color__white;
-    margin-top: 20px;
-  }
-
-  &__header-title {
-    margin: 20px 0;
-  }
-
-  &-bottomline {
-    background-color: $color__white;
-    height: 0.3em;
-    width: 4em;
-  }
-}
-
-@media only screen and (min-width: 991px) {
-  .category-hero {
-
-    &__header-title {
-      margin: 30px 0;
+    .icon {
+      font-size: 1.4rem;
+      position: relative;
+      top: 1px;
     }
   }
+
+  &__title {
+    margin: 0;
+    position: relative;
+
+    &::after {
+      background: $color__white;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: .5rem;
+      width: 6rem;
+    }
+  }
+
+  .image-mask & {
+    &__image::before {
+      @include absolute-fill;
+
+      content: '';
+      background: #000;
+      opacity: 0.5;
+      z-index: 2;
+    }
+  }
+
+
+  //-----------------------------------
+  // Add Support For DarkTheme (White Text Over Dark Background)
+  //-----------------------------------
+  .dark-theme & {
+    &__title,
+    &__text {
+      color: $color__white;
+    }
+
+    &__cta {
+      &,
+      &:hover,
+      &:visited {
+        color: $color__white;
+      }
+    }
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: >0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    min-height: 92.6666vw; // Mobile and Tablet Aspect Ratio
+
+    &__eyebrow {
+      margin-bottom: 1.2rem;
+    }
+
+    &__title {
+      padding-bottom: 2.4rem;
+    }
+
+    &__text {
+      margin-top: 1.5rem;
+    }
+
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: >992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+    min-height: 25vw; // Desktop Aspect Ratio
+
+    &__content {
+      padding: 30px 0;
+    }
+
+    &__eyebrow {
+      margin-bottom: 1.2rem;
+    }
+
+    &__title {
+      padding-bottom: 3.2rem;
+    }
+  }
+
+
 }

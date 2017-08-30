@@ -9,16 +9,18 @@ use(function () {
     	data.title = "Backup Power UPS";
         data.text = "Eaton is a leading provider of quality backup power UPS, Uninterruptable Power Supply. Eaton UPSs are designed to deliver high quality backup power from desktop PCs to large data centers.";
         data.image = {
-            mobile: 'http://lorempixel.com/750/677/business/1/750x677/',
-            tablet: 'http://lorempixel.com/750/677/business/1/750x677/',
+            mobile: 'http://lorempixel.com/750/677/city/3/750x677/',
+            tablet: 'http://lorempixel.com/750/677/city/3/750x677/',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
-            altText: ''
+            altText: '',
+            alignment: 'center'
         };
         data.cta = {
-            title: "PRODUCTS",
+            title: "Products",
             url: "http://www.eaton.com",
             target: "_self"
         };
+        data.imageMaskEnabled = true;
 
     } else if ((typeof(testdata) != "undefined") && (testdata == "t6-subcategory")) {
 
@@ -31,7 +33,7 @@ use(function () {
             altText: ''
         };
         data.cta = {
-            title: "BACKUP POWER UPS",
+            title: "Backup Power Ups",
             url: "http://www.eaton.com",
             target: "_self"
         };
@@ -47,7 +49,7 @@ use(function () {
             altText: ''
         };
         data.cta = {
-            title: "NEWS AND MEDIA",
+            title: "News and Media",
             url: "http://www.eaton.com",
             target: "_self"
         };
@@ -63,7 +65,7 @@ use(function () {
             altText: ''
         };
         data.cta = {
-            title: "COMPANY",
+            title: "Company",
             url: "http://www.eaton.com",
             target: "_self"
         };
@@ -79,7 +81,58 @@ use(function () {
             altText: ''
         };
         data.cta = {
-            title: "COMPANY",
+            title: "Company",
+            url: "http://www.eaton.com",
+            target: "_self"
+        };
+
+    } else if ((typeof(testdata) != "undefined") && (testdata == "alignment-center")) {
+
+    	data.title = "Global careers";
+        data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";
+        data.image = {
+            mobile: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
+            tablet: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
+            desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
+            altText: '',
+            alignment: 'center'
+        };
+        data.cta = {
+            title: "Company",
+            url: "http://www.eaton.com",
+            target: "_self"
+        };
+
+    } else if ((typeof(testdata) != "undefined") && (testdata == "alignment-left")) {
+
+    	data.title = "Global careers";
+        data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";
+        data.image = {
+            mobile: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
+            tablet: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
+            desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
+            altText: '',
+            alignment: 'left'
+        };
+        data.cta = {
+            title: "Company",
+            url: "http://www.eaton.com",
+            target: "_self"
+        };
+
+    } else if ((typeof(testdata) != "undefined") && (testdata == "alignment-right")) {
+
+    	data.title = "Global careers";
+        data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";
+        data.image = {
+            mobile: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
+            tablet: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
+            desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
+            altText: '',
+            alignment: 'right'
+        };
+        data.cta = {
+            title: "Company",
             url: "http://www.eaton.com",
             target: "_self"
         };
@@ -92,13 +145,16 @@ use(function () {
             mobile: 'http://lorempixel.com/750/677/business/10/750x677/',
             tablet: 'http://lorempixel.com/750/677/business/10/750x677/',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
-            altText: ''
+            altText: '',
+            alignment: 'center'
         };
         data.cta = {
 	        title: "Company",
 	        url: "http://www.eaton.com",
 	        target: "_self"
 	    };
+
+        data.imageMaskEnabled = true;
     }
 
     return data;
