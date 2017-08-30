@@ -15,20 +15,19 @@
 
 .eaton-link-list-vertical__eyebrow { text-transform: uppercase; }
 
-.eaton-link-list-vertical__eyebrow.heading { font-size: 2.4rem; line-height: 2.8px; }
+.eaton-link-list-vertical__eyebrow.heading { font-size: 2.4rem; line-height: 2.8rem; }
 
-@media screen and (min-width: 992px) { .eaton-link-list-vertical { font-size: 1.8rem; }
-  .eaton-link-list-vertical__eyebrow.heading { font-size: 1.8rem; } }
+@media screen and (min-width: 992px) { .eaton-link-list-vertical { font-size: 1.8rem; } }
 
 .eaton-link-list-vertical__list { padding: 0; margin: 0; list-style-type: none; }
 
 .eaton-link-list-vertical__list-link { display: inline-block; padding: 10px 0; }
 
-.eaton-link-list-vertical__list-icon { font-size: 0.75em; margin-left: 0.25em; }
+.eaton-link-list-vertical__list-icon { font-size: 1.4rem; margin-left: 0.4rem; }
 
 .eaton-link-list-vertical__external-icon { padding-right: 10px; font-size: 1.5rem; }
 
-.eaton-link-list-vertical__download-text { width: 100%; margin-left: 30px; font-size: 0.9em; }
+.eaton-link-list-vertical__download-text { width: 100%; margin-left: 30px; font-size: 1.6rem; }
 
 .eaton-link-list-vertical__download-text--description { color: #98A4AE; font-family: Arial, "Arial", sans-serif; }
 
