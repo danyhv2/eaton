@@ -295,15 +295,18 @@
 @mixin eyebrow-small--mobile {
   font-family: $font-family__secondary;
   font-size: 1.4rem;
-  line-height: 1.7rem;
+  line-height: normal;
+  margin-bottom:19px;
   text-transform: uppercase;
 }
 
 @mixin eyebrow-small--desktop {
   font-family: $font-family__secondary;
   font-size: 1.8rem;
-  line-height: 2.4rem;
+  /* line-height: 2.4rem; */
+  line-height: normal;
   text-transform: uppercase;
+  margin-bottom:19px;
 }
 
 @mixin eyebrow-small {

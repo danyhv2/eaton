@@ -21,4 +21,6 @@
 
 @media screen and (min-width: 992px) { .eaton-title__byline { font-size: 20px; } }
 
-.eaton-title--eyebrow-and-byline { margin-top: 90px; margin-bottom: 30px; }
+h2.eaton-title__eyebrow-and-byline { margin-top: 0; margin-bottom: 15px; }
+
+.eaton-title--eyebrow-and-byline .article-list-single-feature--border { margin-bottom: 30px; }

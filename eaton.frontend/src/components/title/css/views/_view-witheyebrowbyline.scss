@@ -1,9 +1,13 @@
 //-----------------------------------
 // Component: Title - View: With Eyebrow and Byline
 //-----------------------------------
-.eaton-title--eyebrow-and-byline {
+h2.eaton-title__eyebrow-and-byline {
 
-  margin-top: $spacing__lg;
-  margin-bottom: $spacing__sm;
+  margin-top: 0;
+  margin-bottom: 15px;
 
+}
+
+.eaton-title--eyebrow-and-byline .article-list-single-feature--border{
+	margin-bottom: 30px;
 }
