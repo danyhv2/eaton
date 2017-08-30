@@ -116,7 +116,7 @@
 
 // Mega Menu Title
 .mega-menu-title {
-  font-size: 2rem;
+  font-size: 2.6rem;
   background: $color__primary-gray1;
 
   .container {
@@ -153,6 +153,7 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     padding: 20px 0;
+    font-size: 2rem;
 
     &__level1-link {
       padding: 10px 10px 10px 0;
