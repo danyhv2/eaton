@@ -147,6 +147,10 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 2rem; font-weight
 
 h5 a, .b-heading-h5 a { color: #005EB8; }
 
+.b-heading-h1-hero { font-family: 'EatonMedium', sans-serif; font-size: 7.0rem; line-height: 8.0rem; margin-top: 0; }
+
+@media screen and (min-width: 992px) { .b-heading-h1-hero { font-family: 'EatonMedium', sans-serif; font-size: 5.4rem; line-height: 6.8rem; } }
+
 .b-h4-link { font-size: 1.375em; font-family: Arial, "Arial", sans-serif; color: #005EB8; font-weight: bold; }
 
 .b-h4-link:hover, .b-h4-link:focus, .b-h4-link:active { text-decoration: none; color: #005EB8; }
