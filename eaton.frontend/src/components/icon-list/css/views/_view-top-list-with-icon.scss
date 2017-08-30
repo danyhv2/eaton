@@ -88,6 +88,16 @@
       }
     }
   }
+
+  .eaton-grid-control.dark-theme & {
+    &__text-wrapper {
+      color: $color__white;
+
+      a {
+        color: $color__white;
+      }
+    }
+  }
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
