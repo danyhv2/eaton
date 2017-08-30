@@ -17,7 +17,8 @@
 
 .eaton-link-list-vertical__eyebrow.heading { font-size: 2.4rem; line-height: 2.8rem; }
 
-@media screen and (min-width: 992px) { .eaton-link-list-vertical { font-size: 1.8rem; } }
+@media screen and (min-width: 992px) { .eaton-link-list-vertical { font-size: 1.8rem; }
+  .eaton-link-list-vertical__eyebrow.heading { font-size: 1.8rem; } }
 
 .eaton-link-list-vertical__list { padding: 0; margin: 0; list-style-type: none; }
 
