@@ -206,6 +206,8 @@
 
 .dark-theme .eaton-featured-list__body { color: #FFF; }
 
+.dark-theme .eaton-featured-list__title, .dark-theme .eaton-featured-list__text { color: #FFF; }
+
 .eaton-featured-list__title { margin-bottom: 20px; }
 
 .eaton-featured-list__icon { font-size: 0.75em; margin-left: 0.25em; }
