@@ -28,7 +28,8 @@ use(function () {
             mobile: 'http://lorempixel.com/750/677/business/2/750x677/',
             tablet: 'http://lorempixel.com/750/677/business/2/750x677/',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
-            altText: ''
+            altText: '',
+            alignment: 'center'
         };
         data.cta = {
             title: "Backup Power Ups",
@@ -44,7 +45,8 @@ use(function () {
             mobile: 'http://lorempixel.com/750/677/business/9/750x677/',
             tablet: 'http://lorempixel.com/750/677/business/9/750x677/',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
-            altText: ''
+            altText: '',
+            alignment: 'center'
         };
         data.cta = {
             title: "News and Media",
@@ -60,7 +62,8 @@ use(function () {
             mobile: 'http://lorempixel.com/750/677/business/4/750x677/',
             tablet: 'http://lorempixel.com/750/677/business/4/750x677/',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing_Investors.png',
-            altText: ''
+            altText: '',
+            alignment: 'center'
         };
         data.cta = {
             title: "Company",
@@ -76,7 +79,8 @@ use(function () {
             mobile: 'http://lorempixel.com/750/677/business/5/750x677/',
             tablet: 'http://lorempixel.com/750/677/business/5/750x677/',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing_Careers.png',
-            altText: ''
+            altText: '',
+            alignment: 'center'
         };
         data.cta = {
             title: "Company",
@@ -159,9 +163,9 @@ use(function () {
 	    data.title = "News and Media";
 	    data.text = "We're behind some of the biggest innovations improving safety efficiency and sustainability in ways that matter to customers, businessess and communities. And sometimes that gets people talking.";
 	    data.image = {
-            mobile: 'http://lorempixel.com/750/677/business/10/750x677/',
-            tablet: 'http://lorempixel.com/750/677/business/10/750x677/',
-            desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
+            mobile: '/content/dam/eaton/images/category-hero-light--mobile.jpg',
+            tablet: '/content/dam/eaton/images/category-hero-light--mobile.jpg',
+            desktop: '/content/dam/eaton/images/category-hero-light--desktop.jpg',
             altText: '',
             alignment: 'center'
         };
