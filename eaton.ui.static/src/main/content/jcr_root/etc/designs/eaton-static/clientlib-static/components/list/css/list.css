@@ -92,7 +92,7 @@
 
 .eaton-list-links__link { padding: 10px 0; text-decoration: none; display: inline-block; }
 
-.eaton-list-links__link i { font-size: 0.75em; }
+.eaton-list-links__link i { font-size: 1.4rem; }
 
 .dark-theme .eaton-list-links__link { color: #FFF; }
 
