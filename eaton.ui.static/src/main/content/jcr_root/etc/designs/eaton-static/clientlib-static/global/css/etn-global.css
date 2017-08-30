@@ -147,6 +147,10 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 2rem; font-weight
 
 h5 a, .b-heading-h5 a { color: #005EB8; }
 
+.b-heading-h1-hero { font-family: 'EatonMedium', sans-serif; font-size: 7.0rem; line-height: 8.0rem; margin-top: 0; }
+
+@media screen and (min-width: 992px) { .b-heading-h1-hero { font-family: 'EatonMedium', sans-serif; font-size: 5.4rem; line-height: 6.8rem; } }
+
 .b-h4-link { font-size: 1.375em; font-family: Arial, "Arial", sans-serif; color: #005EB8; font-weight: bold; }
 
 .b-h4-link:hover, .b-h4-link:focus, .b-h4-link:active { text-decoration: none; color: #005EB8; }
@@ -269,7 +273,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .button--reset { border: 0; border-radius: 0; background: none; padding: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
-.b-button { background: none; text-shadow: none; border-radius: 0; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; }
+.b-button { background: none; text-shadow: none; border-radius: 0; border-style: solid; display: inline-block; font-weight: bold; max-width: 600px; width: 100%; }
 
 .b-button__primary { border-width: 3px; font-size: 1.9rem; padding: 20px 40px; }
 
@@ -307,7 +311,9 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 992px) { .b-button__tertiary { font-size: 2rem; } }
 
-@media screen and (max-width: 767px) { .b-button { max-width: 100%; }
+@media screen and (min-width: 992px) { .b-button { width: auto; } }
+
+@media screen and (max-width: 767px) { .b-button { width: 100%; }
   .b-button__secondary { font-size: 1em; } }
 
 .b-list__item { display: inline-block; padding-bottom: 2rem; }

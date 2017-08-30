@@ -14,14 +14,14 @@
 //--------------
 @mixin h1-hero--mobile {
   font-family: 'EatonMedium', sans-serif;
-  font-size: 3.5rem;
-  line-height: 4rem;
+  font-size: 7.0rem;
+  line-height: 8.0rem;
 }
 
 @mixin h1-hero--desktop {
   font-family: 'EatonMedium', sans-serif;
   font-size: 5.4rem;
-  line-height: 6.3rem;
+  line-height: 6.8rem;
 }
 
 @mixin h1-hero {

@@ -12,3 +12,11 @@
 
 
 .rendition-bg { background-size: cover; position: absolute; bottom: 0; left: 0; right: 0; top: 0; }
+
+.bg-alignment .rendition-bg { background-size: cover; background-repeat: no-repeat; }
+
+.bg-alignment-left .rendition-bg { background-position: center left; }
+
+.bg-alignment-center .rendition-bg { background-position: center center; }
+
+.bg-alignment-right .rendition-bg { background-position: center right; }

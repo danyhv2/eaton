@@ -3,13 +3,18 @@
   <div class="eaton-title eaton-title--default ${properties.toggleInnerGrid == 'true' ? 'eaton-title--inset' : ''}">
 
     <!--/* If Grid Enabled */-->
-    <div data-sly-test="${ properties.toggleInnerGrid }" class="container">
-      <h2 class="eaton-title__headline">${ data.title }</h2>
-    </div>
-
-    <!--/* If Grid NOT-Enabled */-->
-    <sly data-sly-test="${ !properties.toggleInnerGrid }">
-      <h2 class="eaton-title__headline">${ data.title }</h2>
+    <sly data-sly-test="${ properties.toggleInnerGrid }" >
+      <div class="container">
+    </sly>
+      <sly data-sly-test=${data.style}>
+        <div data-sly-element="${data.style}" class="eaton-title__headline">${ data.title }</div>
+      </sly>
+      </sly>
+      <sly data-sly-test=${!data.style}>
+        <h2 class="eaton-title__headline">${ data.title }</h2>
+      </sly>
+    <sly data-sly-test="${ properties.toggleInnerGrid }" >
+      </div>
     </sly>
 
   </div>

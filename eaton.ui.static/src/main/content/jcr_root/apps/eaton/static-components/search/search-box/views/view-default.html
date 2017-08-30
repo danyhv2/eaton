@@ -17,7 +17,8 @@
                     placeholder="${data.form.placeholder}"
                     required="required">
 
-            <div class="eaton-search--default__form-mobile-label u-visible-mobile">
+            <div class="eaton-search--default__form-mobile-label u-visible-mobile
+                        ${ data.form.isExternal ? ' with-external ' : '' }">
               ${data.form.placeholder}
             </div>
 
