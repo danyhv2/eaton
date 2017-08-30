@@ -303,7 +303,7 @@
 @mixin eyebrow-small--desktop {
   font-family: $font-family__secondary;
   font-size: 1.8rem;
-  /* line-height: 2.4rem; */
+  line-height: 2rem;  // updated as per CRUX feedback 2017-08-14  https://lion.app.box.com/notes/210357592212
   line-height: normal;
   text-transform: uppercase;
   margin-bottom:19px;
