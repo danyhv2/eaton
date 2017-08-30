@@ -37,7 +37,7 @@
 
 .carousel-component__arrow--prev { left: 130px; }
 
-.carousel-component__dots { position: absolute; bottom: 56px; left: 50%; width: 60%; padding-left: 0; margin-left: -30%; }
+.carousel-component__dots { position: absolute; bottom: 70px; left: 50%; width: 60%; padding-left: 0; margin-left: -30%; }
 
 @media screen and (min-width: 768px) { .carousel-component__dots { bottom: 20px; } }
 
@@ -131,7 +131,19 @@
 
 @media screen and (max-width: 767px) { .tile-link-component { margin: 0 15px; } }
 
-@media screen and (min-width: 992px) { .tile-link-component__element { width: 31%; } }
+@media screen and (min-width: 992px) { .tile-link-component__element { width: 31.555%; } }
+
+.eaton-grid-control .tile-link-component { margin: 0; }
+
+.eaton-grid-control .tile-link-component.container { width: 100%; }
+
+@media screen and (max-width: 991px) { .eaton-grid-control .tile-link-component.container { padding: 0 15px; } }
+
+.eaton-grid-control .tile-link-component__container { padding: 0; }
+
+.eaton-grid-control .tile-link-component__element { margin-left: 0; }
+
+.eaton-grid-control .tile-link-component .col-md-3 { width: 100%; }
 
 .eaton-ttil-image-list__container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
