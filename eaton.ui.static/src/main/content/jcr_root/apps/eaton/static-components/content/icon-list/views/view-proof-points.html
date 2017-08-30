@@ -1,11 +1,11 @@
 <sly data-sly-use.data="../data/view-proof-points-data.js">
 
   <div class="icon-list-proof-points">
-    <div class="container">
-      <div class="row">
+    <div class="${properties.toggleInnerGrid ? 'container' : ''} icon-list-proof-points__container">
+      <div class="${properties.toggleInnerGrid ? 'row' : ''} icon-list-proof-points__row">
           <!--/* Icon List */-->
           <div class="icon-list-proof-points__wrapper" data-sly-list="${ data.items }">
-            <div class="col-xs-12 col-md-4 icon-list-proof-points__item">
+            <div class="icon-list-proof-points__item">
               <div class="icon-list-proof-points__image">
                 <img src="${item.image}" alt="${item.title}" />
               </div>
