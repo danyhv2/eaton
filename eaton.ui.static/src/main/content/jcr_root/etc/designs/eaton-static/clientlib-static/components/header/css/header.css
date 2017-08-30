@@ -11,7 +11,7 @@
  */
 
 
-.header-utility-nav { background: #005EB8; padding: 10px 0; font-size: 14px; }
+.header-utility-nav { background: #005EB8; padding: 10px 0; font-size: 1.4rem; }
 
 .header-utility-nav__row { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
@@ -19,9 +19,9 @@
 
 .header-utility-nav__sign-in { text-align: right; }
 
-.header-utility-nav .icon { position: relative; top: 2px; font-size: 1em; }
+.header-utility-nav .icon { position: relative; top: 2px; font-size: 1.4rem; }
 
-.header-utility-nav .icon.icon-chevron-down { font-size: 9px; top: 0; margin-left: 6px; }
+.header-utility-nav .icon.icon-chevron-down { font-size: 0.9rem; top: 0; margin-left: 6px; }
 
 .header-utility-nav .open-country-selector, .header-utility-nav .open-sign-in { color: #FFF; text-decoration: none; }
 
