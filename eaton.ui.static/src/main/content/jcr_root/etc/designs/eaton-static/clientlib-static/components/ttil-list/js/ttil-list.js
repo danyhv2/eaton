@@ -33,6 +33,7 @@ App.ttilList = function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
+      autoplaySpeed: 5000,
       dots: true,
       dotsClass: 'carousel-component__dots',
       prevArrow: $('.carousel-component__arrow--prev'),
