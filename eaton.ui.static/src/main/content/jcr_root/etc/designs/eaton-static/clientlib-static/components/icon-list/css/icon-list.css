@@ -87,4 +87,10 @@
   .eaton-top-list-with-icon .container.row .col-md-4 { -webkit-box-flex: 0; -webkit-flex: 0 0 33%; -ms-flex: 0 0 33%; flex: 0 0 33%; }
   .eaton-top-list-with-icon .container.row .row { margin: 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; } }
 
+.eaton-grid-control .eaton-top-list-with-icon { margin-top: 0; }
+
+.eaton-grid-control .eaton-top-list-with-icon .container { width: 100%; }
+
+.eaton-grid-control .eaton-top-list-with-icon .container .col-md-4 { -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .eaton-top-list-with-icon .container.row .col-md-4 { -webkit-box-flex: 0; -webkit-flex: 0 0 30%; -ms-flex: 0 0 30%; flex: 0 0 30%; } }
