@@ -133,6 +133,12 @@
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-portrait {
+    .eaton-search--default__form-input {
+      &:valid + .eaton-search--default__form-mobile-label {
+        display: none;
+      }
+    }
+
     &__form-mobile-label {
       position: absolute;
       width: 100%;
