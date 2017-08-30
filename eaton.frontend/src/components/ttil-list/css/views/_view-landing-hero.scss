@@ -15,7 +15,8 @@
       right: 20%;
       left: 20%;
       text-align: center;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
       color: $color__white;
     }
 
@@ -79,8 +80,7 @@
     }
 
     button {
-      background-color: transparent;
-      border: 1px solid $color__secondary-gray5;
+      background-color: $color__secondary-gray5;
     }
   }
 
@@ -110,24 +110,16 @@
 @include media-mobile-only {
   .carousel-component-slide {
     img {
-      min-height: 780px;
+      min-height: 920px;
     }
-
   }
-
 }
-
 
 
 @include media-desktop-large {
   .carousel-component {
 
     &-slide {
-
-      &__caption {
-        top: 10%;
-      }
-
       &__cta {
         margin-top: 60px;
       }
