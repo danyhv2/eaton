@@ -5,7 +5,7 @@ use(function () {
     var testdata = this.testdata;
 
     if ((typeof(testdata) != "undefined") && (testdata == "t5-category-with-list")) {
-        data.imageMaskEnabled = false;
+        data.imageMaskEnabled = true;
     	data.title = "Backup Power UPS";
         data.text = "Eaton is a leading provider of quality backup power UPS, Uninterruptable Power Supply. Eaton UPSs are designed to deliver high quality backup power from desktop PCs to large data centers.";
         data.image = {
@@ -21,7 +21,7 @@ use(function () {
             target: "_self"
         };
     } else if ((typeof(testdata) != "undefined") && (testdata == "t6-subcategory")) {
-        data.imageMaskEnabled = false;
+        data.imageMaskEnabled = true;
     	data.title = "Network, server & storage UPS";
         data.text = "Networks, servers and storage systems are the central nerve center for bussines today, and it is critical that they are protected by an uninterruptible power supply (UPS).";
         data.image = {
@@ -37,7 +37,7 @@ use(function () {
         };
 
     } else if ((typeof(testdata) != "undefined") && (testdata == "t11-listing-page")) {
-        data.imageMaskEnabled = false;
+        data.imageMaskEnabled = true;
     	data.title = "News Releases";
         data.text = "";
         data.image = {
@@ -53,7 +53,7 @@ use(function () {
         };
 
     } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors")) {
-        data.imageMaskEnabled = false;
+        data.imageMaskEnabled = true;
     	data.title = "Investor relations";
         data.text = "Our shareholders invest in us with the intention of benefiting from our long-term success. We take strategic action, create next-generation innovations, and deliver on commitments.";
         data.image = {
@@ -69,7 +69,7 @@ use(function () {
         };
 
     } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-careers")) {
-        data.imageMaskEnabled = false;
+        data.imageMaskEnabled = true;
     	data.title = "Global careers";
         data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";
         data.image = {
