@@ -76,7 +76,7 @@
     bottom: 0;
     width: 100%;
     margin: 0;
-    padding: 10px 15px;
+    padding: 10px 15px 30px;
     font-size: 1.875em;
 
 
@@ -115,7 +115,34 @@
   .tile-link-component {
 
     &__element {
-      width: 31%;
+      width: 31.555%;
+    }
+  }
+}
+
+//override column width
+.eaton-grid-control {
+  .tile-link-component {
+    margin: 0;
+
+    &.container {
+      width: 100%;
+
+      @include media-mobile-and-tablet {
+        padding: 0 15px;
+      }
+    }
+
+    &__container {
+      padding: 0;
+    }
+
+    &__element {
+      margin-left: 0;
+    }
+
+    .col-md-3 {
+      width: 100%;
     }
   }
 }

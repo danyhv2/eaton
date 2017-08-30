@@ -1,43 +1,40 @@
 <template data-sly-template.multiple="${@ param}">
-    <div data-sly-use.data="${'../data/view-landing-hero-multiple-data.js' @testdata=param.testdata}" class="eaton-landing-hero carousel-component carousel slide" data-ride="carousel" data-pause="hover" data-sly-test="${param.hero.length > 1}">
+    <div data-sly-use.data="${'../data/view-landing-hero-multiple-data.js' @testdata=param.testdata}" class="eaton-landing-hero carousel-component" data-ride="carousel" data-sly-test="${param.hero.length > 1}">
 
-      <!-- Indicators -->
-      <ol data-sly-list.slide="${data.hero}" class="carousel-indicators">
-        <li data-target=".carousel-component"
-          data-slide-to="${slideList.index}"
-          class="carousel-component__dots ${slideList.index == 0 ? 'active' : ''}"></li>
-      </ol>
-      <div class="carousel-component__down-arrow visible-xs">
-        <span class="icon icon-chevron-down"></span>
-      </div>
+        <ul class="carousel-component-slide" data-sly-list.slide="${data.hero}">
+            <li>
+                <div class="carousel-component-slide__image">
+                    <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+                        <sly data-sly-call="${ tpl.module @ data=slide.image }"></sly>
+                    </sly>
+                    <div class="carousel-component-slide__caption">
+                        <div class="row">
+                            <div>
+                                <h2 class="carousel-component-slide__title">${slide.title}</h2>
+                                <p class="carousel-component-slide__text">${slide.text @ context = 'html'}</p>
+                                <a class="carousel-component-slide__cta b-button b-button__primary b-button__primary--dark" href="${slide.cta.url}" role="button" data-sly-test="${slide.cta.text.length > 0}">${slide.cta.text}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
 
-      <!-- Wrapper for slides -->
-      <div data-sly-list.slide="${data.hero}" class="carousel-component-slide carousel-inner" role="listbox">
-        <div class="item ${slideList.index == 0 ? 'active' : ''}">
-            <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
-                <sly data-sly-call="${ tpl.module @ data=slide.image }"></sly>
-            </sly>
-          <div class="carousel-component-slide__caption carousel-caption">
-            <h2 class="carousel-component-slide__title">${slide.title}</h2>
-            <p class="carousel-component-slide__text">${slide.text @ context = 'html'}</p>
-            <a class="carousel-component-slide__cta b-button b-button__primary b-button__primary--dark" href="${slide.cta.url}" role="button" data-sly-test="${slide.cta.text.length > 0}">${slide.cta.text}</a>
-          </div>
+        <div class="carousel-component__down-arrow visible-xs">
+            <span class="icon icon-chevron-down"></span>
         </div>
 
-        <!-- Controls -->
-        <button data-sly-test="${slideList.count > 1}"
-          class="carousel-component__arrow left carousel-control button--reset"
-          role="button">
-          <span class="icon icon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Go to Previous Slide</span>
-        </button>
-        <button data-sly-test="${slideList.count > 1}"
-          class="carousel-component__arrow right carousel-control button--reset"
-          role="button">
-          <span class="icon icon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Go to Next Slide</span>
-        </button>
-      </div>
+        <sly data-sly-test="${data.hero.length > 1}">
+            <button class="carousel-component__arrow--prev carousel-component__arrow button--reset">
+                <span class="icon icon-chevron-left"></span>
+                <span class="sr-only">Go to Previous Item</span>
+            </button>
+            <button class="carousel-component__arrow--next carousel-component__arrow button--reset">
+                <span class="icon icon-chevron-right"></span>
+                <span class="sr-only">Go to Next Item</span>
+            </button>
+        </sly>
+
     </div>
 </template>
 

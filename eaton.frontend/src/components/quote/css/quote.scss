@@ -83,3 +83,25 @@
     }
   }
 }
+
+@include media-desktop-and-up {
+  .eaton-grid-control {
+    .eaton-quote {
+      .container {
+        width: 100%;
+      }
+    }
+
+    .quote {
+      padding-top: 0;
+    }
+
+    &.dark-theme {
+      .eaton-quote {
+        &__image, &__text, &__author {
+          color: $color__white;
+        }
+      }
+    }
+  }
+}

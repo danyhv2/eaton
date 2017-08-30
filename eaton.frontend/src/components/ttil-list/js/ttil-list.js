@@ -6,11 +6,10 @@
 let App = window.App || {};
 App.ttilList = function () {
 
-  const $componentEl = $('.carousel');
+  const $componentEl = $('.carousel-component-slide');
 
   const init = () => {
     initCarousels();
-    addEventListeners();
   };
 
 
@@ -18,65 +17,18 @@ App.ttilList = function () {
    * Initialize Bootstrap Carousel
    */
   const initCarousels = () => {
-    $componentEl.carousel({
-      interval: 5000,
-      keyboard: true
-    });
-  };
-
-
-  /**
-   * Bind All Event Listeners
-   */
-  const addEventListeners = () => {
-
-
-    // Go To Previous / Next Slide
-    //--------------
-    $componentEl.on('click', '.carousel-control', function (event) {
-
-      // Carousel Context
-      const $carousel = $(event.delegateTarget);
-
-      // Go To Previous slide
-      if (this.classList.contains('left')) {
-        $carousel.carousel('prev');
-      }
-
-      // Go to Next slide
-      else if (this.classList.contains('right')) {
-        $carousel.carousel('next');
-      }
-
-    });
-
-
-    // Enable Swipe Behaviors
-    //--------------
-    $componentEl.on('touchstart', function(event) {
-
-      let xClick = event.originalEvent.touches[0].pageX;
-      let $carousel = $(this);
-
-      $carousel.one('touchmove', function(event) {
-        let xMove = event.originalEvent.touches[0].pageX;
-
-        if ( Math.floor(xClick - xMove) > 5 ) {
-          $carousel.carousel('next');
-        }
-
-        else if ( Math.floor(xClick - xMove) < -5 ) {
-          $carousel.carousel('prev');
-        }
-
-      });
-
-      $carousel.on('touchend', function() {
-        $(this).off('touchmove');
-      });
+    $componentEl.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      dots: true,
+      dotsClass: 'carousel-component__dots',
+      prevArrow: $('.carousel-component__arrow--prev'),
+      nextArrow: $('.carousel-component__arrow--next')
 
     });
   };
+
 
 
   /**
