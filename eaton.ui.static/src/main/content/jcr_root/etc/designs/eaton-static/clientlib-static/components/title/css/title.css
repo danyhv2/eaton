@@ -25,4 +25,8 @@ h2.eaton-title__eyebrow-and-byline { margin-top: 0; margin-bottom: 15px; }
 
 .eaton-title--eyebrow-and-byline { margin-top: 90px; }
 
-.eaton-title--eyebrow-and-byline .article-list-single-feature--border { margin-bottom: 30px; }
+.eaton-title__line { border-top: 4px solid #005EB8; width: 60px; display: block; margin: 20px 0 25px; }
+
+.dark-theme .eaton-title__headline, .dark-theme .eaton-title__eyebrow, .dark-theme .eaton-title__byline { color: #FFF; }
+
+.dark-theme .eaton-title__line { border-color: #FFF; }
