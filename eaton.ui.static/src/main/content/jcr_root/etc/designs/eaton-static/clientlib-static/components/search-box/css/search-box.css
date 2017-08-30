@@ -73,7 +73,8 @@
 
 .eaton-search--default :-moz-placeholder { /* Firefox 18- */ color: #FFF; }
 
-@media screen and (max-width: 479px) { .eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; left: 0; top: 0; display: inline-block; }
+@media screen and (max-width: 479px) { .eaton-search--default .eaton-search--default__form-input:valid + .eaton-search--default__form-mobile-label { display: none; }
+  .eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; left: 0; top: 0; display: inline-block; }
   .eaton-search--default__form-mobile-label.with-external { padding-right: 95px; }
   .eaton-search--default ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: transparent; }
   .eaton-search--default ::-moz-placeholder { /* Firefox 19+ */ color: transparent; }
