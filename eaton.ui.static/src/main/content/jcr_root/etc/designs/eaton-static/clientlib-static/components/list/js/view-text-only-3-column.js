@@ -45,31 +45,7 @@ App.carousel3ColumnText = function () {
     if (event.matches) {
       $carousel.slick('unslick');
     } else {
-
-      $carousel.slick({
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: true,
-        dotsClass: 'module-related-products__dots',
-        prevArrow: $('.text-only-3-column__prev-arrow'),
-        nextArrow: $('.text-only-3-column__next-arrow'),
-        responsive: [{
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        }, {
-          breakpoint: 991,
-          settings: 'unslick'
-        }, {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }]
-      });
+      initCarousel();
     }
   };
 
