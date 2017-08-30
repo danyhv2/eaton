@@ -113,7 +113,7 @@
 
 .tile-link-component__element--5 { background-color: #333F48; }
 
-.tile-link-component__icon { position: absolute; bottom: 80px; color: #FFF; width: 20%; left: 15px; }
+.tile-link-component__icon { position: absolute; width: 72px; bottom: 80px; color: #FFF; left: 15px; }
 
 @media screen and (min-width: 992px) { .tile-link-component__icon { left: 30px; } }
 
@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 767px) { .tile-link-component { margin: 0 15px; } }
 
-@media screen and (min-width: 992px) { .tile-link-component__element { width: 31.555%; } }
+@media screen and (min-width: 992px) { .tile-link-component__element { width: 31%; } }
 
 .eaton-grid-control .tile-link-component { margin: 0; }
 

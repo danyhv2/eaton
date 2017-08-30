@@ -57,9 +57,9 @@
 
   &__icon {
     position: absolute;
+    width: 72px;
     bottom: 80px;
     color: $color__white;
-    width: 20%;
     left: 15px;
 
     @include media-desktop-and-up {
@@ -115,7 +115,7 @@
   .tile-link-component {
 
     &__element {
-      width: 31.555%;
+      width: 31%;
     }
   }
 }
