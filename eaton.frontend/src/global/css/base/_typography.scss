@@ -87,6 +87,11 @@ h5,
   }
 }
 
+.b-heading-h1-hero {
+  @include h1-hero;
+  margin-top: 0;
+}
+
 //links
 
 .b-h4-link {

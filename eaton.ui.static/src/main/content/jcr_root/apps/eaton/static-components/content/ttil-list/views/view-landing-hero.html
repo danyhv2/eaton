@@ -10,8 +10,8 @@
                     <div class="carousel-component-slide__caption">
                         <div class="row">
                             <div>
-                                <h2 class="carousel-component-slide__title">${slide.title}</h2>
-                                <p class="carousel-component-slide__text">${slide.text @ context = 'html'}</p>
+                                <span class="b-heading-h1-hero">${slide.title}</span>
+                                <p class="carousel-component-slide__text b-hero-description">${slide.text @ context = 'html'}</p>
                                 <a class="carousel-component-slide__cta b-button b-button__primary b-button__primary--dark" href="${slide.cta.url}" role="button" data-sly-test="${slide.cta.text.length > 0}">${slide.cta.text}</a>
                             </div>
                         </div>
@@ -24,7 +24,7 @@
             <span class="icon icon-chevron-down"></span>
         </div>
 
-        <sly data-sly-test="${data.hero.length > 1}">
+        <sly data-sly-test="${data.hero.length > 1 }">
             <button class="carousel-component__arrow--prev carousel-component__arrow button--reset">
                 <span class="icon icon-chevron-left"></span>
                 <span class="sr-only">Go to Previous Item</span>
