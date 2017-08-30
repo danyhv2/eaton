@@ -17,9 +17,9 @@
 
 .eaton-search--inline .form-group { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; background: #FFF; }
 
-.eaton-search--inline .icon { font-size: 18px; top: 2px; position: relative; }
+.eaton-search--inline .icon { font-size: 1.8rem; top: 2px; position: relative; }
 
-.eaton-search--inline__form-input { background: #FFF; font-size: 1em; padding: 10px; }
+.eaton-search--inline__form-input { background: #FFF; font-size: 1.6rem; padding: 10px; }
 
 .eaton-search--inline__form-external { border-right: 1px solid #98A4AE; padding-right: 15px; color: #005EB8; -webkit-align-self: center; -ms-flex-item-align: center; align-self: center; }
 

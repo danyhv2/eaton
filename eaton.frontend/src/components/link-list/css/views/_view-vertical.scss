@@ -9,11 +9,12 @@
 
   &__eyebrow.heading {
     font-size: 2.4rem;
-    line-height: 2.8px;
+    line-height: 2.8rem;
   }
 
   @include media-desktop-and-up {
     font-size: 1.8rem;
+
     &__eyebrow.heading {
       font-size: 1.8rem;
     }
@@ -35,8 +36,7 @@
   }
 
   &__list-icon {
-    font-size: 0.75em;
-    margin-left: 0.25em;
+    font-size: 1.4rem;
   }
 
   &__external-icon {
@@ -47,7 +47,7 @@
   &__download-text {
     width: 100%;
     margin-left: 30px;
-    font-size: 0.9em;
+    font-size: 1.6rem;
 
     &--description {
       color: $color__primary-gray3;
