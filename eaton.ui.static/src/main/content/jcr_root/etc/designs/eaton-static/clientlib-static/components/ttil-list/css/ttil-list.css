@@ -173,7 +173,7 @@
 
 .eaton-category-hero__title::after { background: #FFF; content: ''; position: absolute; bottom: 0; left: 0; height: .5rem; width: 6rem; }
 
-.image-mask .eaton-category-hero__image::before { position: absolute; left: 0; top: 0; height: 100%; width: 100%; content: ''; background: #000; opacity: 0.5; z-index: 2; }
+.image-mask .eaton-category-hero__image::before { position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(15%, rgba(0, 0, 0, 0.75)), to(transparent)); background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 15%, transparent 100%); content: ''; z-index: 2; }
 
 .dark-theme .eaton-category-hero__title, .dark-theme .eaton-category-hero__text { color: #FFF; }
 
