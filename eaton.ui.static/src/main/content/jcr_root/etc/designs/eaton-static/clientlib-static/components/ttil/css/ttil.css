@@ -35,9 +35,9 @@
 
 .eaton-single-feature__links { padding: 0; margin: 0; list-style-type: none; }
 
-.eaton-single-feature__item { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 10px 0; text-decoration: none; }
+.eaton-single-feature__item { padding: 10px 0; text-decoration: none; display: block; }
 
-.eaton-single-feature__item i { font-size: 0.75em; margin-left: 0.25em; }
+.eaton-single-feature__item i { font-size: 1.4rem; margin-left: 0.4rem; }
 
 .dark-theme .eaton-single-feature__item { color: #FFF; }
 
