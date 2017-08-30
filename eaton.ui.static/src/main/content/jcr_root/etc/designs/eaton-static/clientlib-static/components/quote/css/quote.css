@@ -32,4 +32,5 @@
   .eaton-quote__name { display: block; } }
 
 @media screen and (min-width: 992px) { .eaton-grid-control .eaton-quote .container { width: 100%; }
-  .eaton-grid-control .quote { padding-top: 0; } }
+  .eaton-grid-control .quote { padding-top: 0; }
+  .eaton-grid-control.dark-theme .eaton-quote__image, .eaton-grid-control.dark-theme .eaton-quote__text, .eaton-grid-control.dark-theme .eaton-quote__author { color: #FFF; } }

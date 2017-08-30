@@ -93,4 +93,8 @@
 
 .eaton-grid-control .eaton-top-list-with-icon .container .col-md-4 { -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
 
+.eaton-grid-control.dark-theme .eaton-top-list-with-icon__text-wrapper { color: #FFF; }
+
+.eaton-grid-control.dark-theme .eaton-top-list-with-icon__text-wrapper a { color: #FFF; }
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .eaton-top-list-with-icon .container.row .col-md-4 { -webkit-box-flex: 0; -webkit-flex: 0 0 30%; -ms-flex: 0 0 30%; flex: 0 0 30%; } }

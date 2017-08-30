@@ -95,5 +95,13 @@
     .quote {
       padding-top: 0;
     }
+
+    &.dark-theme {
+      .eaton-quote {
+        &__image, &__text, &__author {
+          color: $color__white;
+        }
+      }
+    }
   }
 }

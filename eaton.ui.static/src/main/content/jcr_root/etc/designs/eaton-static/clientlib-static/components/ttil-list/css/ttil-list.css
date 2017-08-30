@@ -37,7 +37,7 @@
 
 .carousel-component__arrow--prev { left: 130px; }
 
-.carousel-component__dots { position: absolute; bottom: 56px; left: 50%; width: 60%; padding-left: 0; margin-left: -30%; }
+.carousel-component__dots { position: absolute; bottom: 70px; left: 50%; width: 60%; padding-left: 0; margin-left: -30%; }
 
 @media screen and (min-width: 768px) { .carousel-component__dots { bottom: 20px; } }
 
