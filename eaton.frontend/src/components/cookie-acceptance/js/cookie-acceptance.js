@@ -54,7 +54,7 @@ App.cookieAcceptance = (function() {
       window.localStorage.setItem('eatoncookies', 'yes');
       $componentElement.hide();
       // Publish - Cookie Set
-      $(document).trigger( App.global.constants.HEADER.COOKIE_SET);
+      $(document).trigger( App.global.constants.EVENTS.HEADER.COOKIE_SET);
     });
 
 

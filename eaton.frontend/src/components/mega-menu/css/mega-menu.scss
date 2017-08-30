@@ -116,7 +116,7 @@
 
 // Mega Menu Title
 .mega-menu-title {
-  font-size: 20px;
+  font-size: 2rem;
   background: $color__primary-gray1;
 
   .container {
@@ -160,7 +160,7 @@
       .glyphicon-menu-left {
         display: inline;
         margin-right: 10px;
-        font-size: 0.75em;
+        font-size: 1.4rem;
       }
 
       .glyphicon-menu-right {
@@ -183,6 +183,7 @@
       .glyphicon-menu-right {
         display: inline;
         margin-left: 10px;
+        font-size: 1.4rem;
       }
     }
 
@@ -190,6 +191,10 @@
       display: inline;
       position: absolute;
       right: ($spacing__sm / 2);
+
+      .icon {
+        font-size: 2.1rem;
+      }
     }
   }
 }
