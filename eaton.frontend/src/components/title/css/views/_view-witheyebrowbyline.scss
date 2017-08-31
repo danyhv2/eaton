@@ -8,8 +8,8 @@ h2.eaton-title__eyebrow-and-byline {
 
 }
 
-.eaton-title--eyebrow-and-byline{
-	margin-top: $spacing__lg;
+.eaton-title--eyebrow-and-byline {
+  margin-top: $spacing__lg;
 }
 
 // .eaton-title--eyebrow-and-byline .article-list-single-feature--border{
@@ -29,7 +29,9 @@ h2.eaton-title__eyebrow-and-byline {
   }
 
   .dark-theme & {
-    &__headline, &__eyebrow, &__byline {
+    &__headline,
+    &__eyebrow,
+    &__byline {
       color: $color__white;
     }
 
