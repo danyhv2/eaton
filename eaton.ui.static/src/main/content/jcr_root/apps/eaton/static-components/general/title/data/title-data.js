@@ -4,11 +4,11 @@ use(function () {
   var data = {};
   var testdata = this.testdata;
 
-  /*
-    NOTE: "data.style" should have a value of "h1, h2, h3, h4, h5, or h6"
-    This option allows the author to select the HTML tag for SEO purposes / Semantics
-    Its important to keep the css class "b-heading-h1" since the appearance of the title should always be the same regardless of the HTML Tag
-  */
+  /**
+   * NOTE: "data.style" should have a value of "h1, h2, h3, h4, h5, or h6"
+   * This option allows the author to select the HTML tag for SEO purposes / Semantics
+   * Its important to keep the css class "b-heading-h1" since the appearance of the title should always be the same regardless of the HTML Tag
+   */
   if ((typeof(testdata) != "undefined") && (testdata == "homepage-pageoverview")) {
 	  data.title = 'Eaton powers solutions for businesses worldwide';
     data.style = 'h2';
