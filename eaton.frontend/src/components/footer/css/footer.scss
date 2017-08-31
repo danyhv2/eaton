@@ -71,6 +71,10 @@
   display: none;
   z-index: 1; // Fixes issue the button can't be clicked / The content overlaps this button
 
+  @include media-mobile-only {
+    bottom: 3rem;
+  }
+
   &.visible {
     display: block;
   }
