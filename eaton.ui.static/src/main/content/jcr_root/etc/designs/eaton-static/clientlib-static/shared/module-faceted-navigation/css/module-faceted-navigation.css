@@ -21,7 +21,7 @@
 
 .faceted-navigation-header__sort-options .dropdown { font-family: Arial, "Arial", sans-serif; font-size: 1.8rem; width: 100%; position: relative; }
 
-.faceted-navigation-header__sort-options .dropdown [data-toggle="dropdown"] { background: #FFF; color: #5B6770; width: 100%; text-align: left; padding-left: 2rem; padding-top: 2rem; border: 1px solid #FFF; }
+.faceted-navigation-header__sort-options .dropdown [data-toggle="dropdown"] { background: #FFF; color: #5B6770; width: 100%; text-align: left; padding-left: 2rem; padding-top: 2.5rem; border: 1px solid #FFF; }
 
 .faceted-navigation-header__sort-options .dropdown [data-toggle="dropdown"][aria-expanded="true"] { border-color: #EEF0F2; border-bottom-color: #FFF; }
 
