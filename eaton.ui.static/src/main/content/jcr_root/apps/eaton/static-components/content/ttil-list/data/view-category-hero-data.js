@@ -76,8 +76,8 @@ use(function () {
     	data.title = "Global careers";
         data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";
         data.image = {
-            mobile: '/content/dam/eaton/images/Hero_image_Secondary_Landing_Careers.png',
-            tablet: '/content/dam/eaton/images/Hero_image_Secondary_Landing_Careers.png',
+            mobile: 'http://lorempixel.com/750/677/business/5/750x677/',
+            tablet: 'http://lorempixel.com/750/677/business/5/750x677/',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing_Careers.png',
             altText: '',
             alignment: 'center'
