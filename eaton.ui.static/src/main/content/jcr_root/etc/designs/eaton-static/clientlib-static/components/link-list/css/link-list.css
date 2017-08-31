@@ -103,7 +103,7 @@
 
 .eaton-link-list-section-navigation__nav-item:last-child { border-right: 0; }
 
-.eaton-link-list-section-navigation__nav-item:hover, .eaton-link-list-section-navigation__nav-item:active, .eaton-link-list-section-navigation__nav-item:focus { color: #005EB8; }
+.eaton-link-list-section-navigation__nav-item:hover, .eaton-link-list-section-navigation__nav-item:active, .eaton-link-list-section-navigation__nav-item:focus { color: #FFF; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-section-navigation { padding: 10px 0; }
   .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; margin: 0 15px; display: block; padding: 20px 0; font-size: 1.8rem; } }
