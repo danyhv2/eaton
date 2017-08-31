@@ -25,6 +25,11 @@
   &__date {
     color: $color__primary-gray3;
     font-style: italic;
+    margin-bottom: 3px;
+  }
+
+  &__document{
+    margin-bottom: 1px;
   }
 
   &__secondary-links {
@@ -43,7 +48,7 @@
   &__description,
   &__url,
   &__link-list {
-    margin-bottom: 12px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
+    margin-bottom: 10px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
   }
 
   &__url {
@@ -95,7 +100,7 @@
   //-----------------------------------
   @include media-desktop-and-up {
 
-    margin-bottom: 40px; // Visually 60px Bottom Margin
+    margin-bottom: 38px; // Visually 60px Bottom Margin
 
     // Product Item with Image (Thumbnail)
     //--------------
@@ -114,6 +119,10 @@
 
     &__content-wrapper {
       width: 100%;
+    }
+
+    &.results-list-submodule--type-resource{
+      margin-bottom: 44px;
     }
 
 
