@@ -21,6 +21,6 @@
 
 .module-tabs__list-link { background-color: transparent; display: block; padding: 2rem; text-align: center; }
 
-.module-tabs__list-link:hover, .module-tabs__list-link:focus, .module-tabs__list-link:active { text-decoration: none; }
+.module-tabs__list-link:hover, .module-tabs__list-link:focus, .module-tabs__list-link:active { text-decoration: underline; }
 
 .module-tabs__list-item--active .module-tabs__list-link { background-color: #FFF; color: #333F48; }
