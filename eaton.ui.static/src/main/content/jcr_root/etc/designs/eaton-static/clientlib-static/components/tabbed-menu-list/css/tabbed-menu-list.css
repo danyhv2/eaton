@@ -40,7 +40,7 @@
   .eaton-tabbed-menu-list__item > a { color: #005EB8; }
   .eaton-tabbed-menu-list__item > a.active { color: #333F48; }
   .eaton-tabbed-menu-list__item > a.active.desktop.link { color: #005EB8; }
-  .eaton-tabbed-menu-list__item a { padding-bottom: 50px; color: #005EB8; }
+  .eaton-tabbed-menu-list__item a { padding-bottom: 30px; color: #005EB8; }
   .eaton-tabbed-menu-list__item.desktop { -webkit-box-flex: 0; -webkit-flex: 0 0 33%; -ms-flex: 0 0 33%; flex: 0 0 33%; }
   .eaton-tabbed-menu-list__item.desktop.primary { -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
   .eaton-tabbed-menu-list__item.desktop.secondary { -webkit-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3; }
