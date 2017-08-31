@@ -344,6 +344,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .dark-theme .eaton-text-default .rich-text-container { color: #FFF; }
 
+.dark-theme .eaton-text-default .rich-text-container a, .dark-theme .eaton-text-default .rich-text-container a:visited { text-decoration: underline; color: #FFF; }
+
 .dark-theme .eaton-text-default .rich-text-container h2, .dark-theme .eaton-text-default .rich-text-container h3, .dark-theme .eaton-text-default .rich-text-container h4, .dark-theme .eaton-text-default .rich-text-container h5, .dark-theme .eaton-text-default .rich-text-container h6 { color: #FFF; }
 
 .dark-theme .eaton-text-default .rich-text-container ul li::before { background-color: #FFF; }
