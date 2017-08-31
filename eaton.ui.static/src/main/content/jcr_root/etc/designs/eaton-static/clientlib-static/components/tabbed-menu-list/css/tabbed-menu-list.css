@@ -56,5 +56,5 @@
   .eaton-tabbed-menu-list__tab.desktop.quaternary { -webkit-box-ordinal-group: 9; -webkit-order: 8; -ms-flex-order: 8; order: 8; }
   .eaton-tabbed-menu-list__tab.desktop.quinary { -webkit-box-ordinal-group: 11; -webkit-order: 10; -ms-flex-order: 10; order: 10; }
   .eaton-tabbed-menu-list .tab-content { background: #F8F8F8; }
-  .eaton-tabbed-menu-list .tab-pane { padding: 50px 0; }
+  .eaton-tabbed-menu-list .tab-pane { padding: 50px 0 30px; }
   .eaton-tabbed-menu-list .tab-container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; } }
