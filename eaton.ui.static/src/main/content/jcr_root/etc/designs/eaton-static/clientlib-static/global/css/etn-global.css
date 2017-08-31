@@ -189,7 +189,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .b-eyebrow-small { color: #333F48; font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 1.4rem; line-height: normal; margin-bottom: 20px; text-transform: uppercase; }
 
-@media screen and (min-width: 992px) { .b-eyebrow-small { font-family: Arial, "Arial", sans-serif; font-size: 1.8rem; line-height: 2rem; line-height: normal; text-transform: uppercase; margin-bottom: 20px; } }
+@media screen and (min-width: 992px) { .b-eyebrow-small { font-family: Arial, "Arial", sans-serif; font-size: 1.8rem; line-height: 2rem; text-transform: uppercase; margin-bottom: 20px; } }
 
 .b-h5-link-bold { font-family: Arial, sans-serif; font-size: 2rem; font-weight: bold; line-height: 3rem; font-family: "EatonBold", Arial, sans-serif; }
 

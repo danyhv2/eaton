@@ -138,19 +138,20 @@
 
 .eaton-grid-control .tile-link-component .col-md-3 { width: 100%; }
 
-.eaton-ttil-image-list__container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
-
-.eaton-ttil-image-list__item { -webkit-flex-basis: 31%; -ms-flex-preferred-size: 31%; flex-basis: 31%; padding: 0 10px; margin-bottom: 60px; }
+.eaton-ttil-image-list__item { padding: 0 10px; }
 
 .eaton-ttil-image-list__content { display: block; }
 
 .eaton-ttil-image-list__image-headline { margin-top: 30px; color: #005EB8; font-weight: bold; }
 
-@media screen and (max-width: 991px) { .eaton-ttil-image-list__container { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
-  .eaton-ttil-image-list__item { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 0 10px; }
+@media screen and (max-width: 991px) { .eaton-ttil-image-list__container { display: block; }
+  .eaton-ttil-image-list__item { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 0 10px; margin-bottom: 30px; }
   .eaton-ttil-image-list__item:last-child { margin-bottom: 0; }
   .eaton-ttil-image-list__content { text-align: center; }
   .eaton-ttil-image-list__image { width: 150px; display: inline-block; } }
+
+@media screen and (min-width: 992px) { .eaton-ttil-image-list__container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  .eaton-ttil-image-list__item { -webkit-flex-basis: 31%; -ms-flex-preferred-size: 31%; flex-basis: 31%; margin-bottom: 60px; } }
 
 .eaton-category-hero { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
