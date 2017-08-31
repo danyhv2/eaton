@@ -19,7 +19,7 @@
 
 .module-tabs__list-item:first-child { border-left: 1px solid #FFF; }
 
-.module-tabs__list-link { background-color: transparent; display: block; padding: 2rem; text-align: center; font-size: 18px; }
+.module-tabs__list-link { background-color: transparent; display: block; padding: 2rem 6rem; text-align: center; font-size: 18px; }
 
 .module-tabs__list-link:hover, .module-tabs__list-link:focus, .module-tabs__list-link:active { text-decoration: underline; }
 
