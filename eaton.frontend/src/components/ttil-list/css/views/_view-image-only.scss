@@ -60,6 +60,11 @@
     &__item {
       flex-basis: 31%;
       margin-bottom: ($spacing__sm * 2);
+
+      // Only 2 images should display when used in two column grid
+      .eaton-grid-control & {
+        flex-basis: 50%;
+      }
     }
   }
 }
