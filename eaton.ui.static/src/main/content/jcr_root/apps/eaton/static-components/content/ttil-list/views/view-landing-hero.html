@@ -1,5 +1,5 @@
 <template data-sly-template.multiple="${@ param}">
-    <div data-sly-use.data="${'../data/view-landing-hero-multiple-data.js' @testdata=param.testdata}" class="eaton-landing-hero carousel-component" data-ride="carousel" data-sly-test="${param.hero.length > 1}">
+    <div data-sly-use.data="${'../data/view-landing-hero-multiple-data.js' @testdata=param.testdata}" class="eaton-landing-hero carousel-component" data-sly-test="${param.hero.length > 1}">
 
         <ul class="carousel-component-slide" data-sly-list.slide="${data.hero}">
             <li>
@@ -42,26 +42,31 @@
 <template data-sly-template.single="${@ param}">
   <div data-sly-use.data="${'../data/view-landing-hero-single-data.js' @testdata=param.testdata}"
     data-sly-test="${param.hero.length == 1}"
-    class="eaton-landing-hero eaton-landing-hero--single carousel-component carousel slide"
+    class="eaton-landing-hero eaton-landing-hero--single carousel-component"
     data-ride="carousel"
     data-pause="hover">
 
     <div class="carousel-component-slide carousel-inner"
       data-sly-list.slide="${data.hero}"
       role="listbox">
-      <div class="item ${slideList.index == 0 ? 'active' : ''}">
-        <img class="carousel-component-slide__image visible-lg visible-md " src="${slide.image}" alt="${slide.alt}" />
-        <img class="carousel-component-slide__image carousel-component-slide__image--mobile visible-xs visible-sm" src="${slide.mobile_image}" alt="${slide.alt}" />
+      <div class="carousel-component-slide__image item ${slideList.index == 0 ? 'active' : ''}">
+          <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+              <sly data-sly-call="${ tpl.module @ data=slide.image }"></sly>
+          </sly>
         <div class="carousel-component-slide__caption carousel-caption">
-          <h2 class="landing-hero-single__title">${slide.title}</h2>
+          <span class="b-heading-h1-hero">${slide.title}</span>
           <div class="carousel-component-slide__separator" data-sly-test="${properties.showSeparator}"></div>
-          <p class="carousel-component-slide__text">${slide.text @ context = 'html'}</p>
+          <p class="carousel-component-slide__text b-hero-description">${slide.text @ context = 'html'}</p>
           <a data-sly-test="${properties.showCta}"
             class="carousel-component-slide__cta b-button b-button__primary b-button__primary--dark"
             href="${slide.cta.url}" role="button">${slide.cta.text}</a>
         </div>
       </div>
     </div>
+
+      <div class="carousel-component__down-arrow visible-xs">
+          <span class="icon icon-chevron-down"></span>
+      </div>
 
   </div>
 </template>
