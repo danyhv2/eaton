@@ -23,7 +23,9 @@
 
 .icon-list-proof-points__symbol { position: relative; }
 
-@media screen and (max-width: 991px) { .icon-list-proof-points__item { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-bottom: 40px; }
+.icon-list-proof-points__title { margin-top: 10px; }
+
+@media screen and (max-width: 991px) { .icon-list-proof-points__item { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 40px; }
   .icon-list-proof-points__item:last-child { margin-bottom: 0; }
   .icon-list-proof-points__text { font-size: 8.3rem; line-height: 8.5rem; }
   .icon-list-proof-points__symbol { font-size: 4rem; line-height: 4rem; top: 13px; }

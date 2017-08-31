@@ -29,13 +29,16 @@
     position: relative;
   }
 
+  &__title {
+    margin-top: 10px;
+  }
+
   //-----------------------------------
   // Media-Query: Mobile
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__item {
       justify-content: center;
-      align-items: center;
       margin-bottom: ($spacing__sm ) + 10;
 
       &:last-child {
