@@ -46,20 +46,20 @@
       color: $color__white;
     }
   }
+  &__description {
+    margin-bottom: 10px;
+  }
 
   &__size {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
 
-  &--has-desc {
+  &--has-desc &__item {
+    margin-bottom: ($spacing__md / 3);
+  }
 
-    &__item {
-      margin-bottom: ($spacing__sm / 2);
-    }
-
-    &__headline {
-      margin-bottom: ($spacing__sm);
-    }
+  &--has-desc &__headline {
+    margin-bottom: ($spacing__sm);
   }
 }

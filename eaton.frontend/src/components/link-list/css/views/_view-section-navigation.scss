@@ -2,7 +2,7 @@
 // LinkList Component: Horizontal View
 //-----------------------------------
 .eaton-link-list-section-navigation {
-  background-color: $color__primary-gray2;
+  background-color: $color__primary-gray1;
 
   &__nav-item {
     color: $color__white;
@@ -16,7 +16,7 @@
     &:hover,
     &:active,
     &:focus {
-      color: $color__primary-blue;
+      color: $color__white;
     }
   }
 

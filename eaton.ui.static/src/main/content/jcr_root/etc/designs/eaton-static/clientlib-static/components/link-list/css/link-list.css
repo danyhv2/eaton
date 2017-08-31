@@ -89,19 +89,21 @@
 
 .dark-theme .eaton-download-list__description, .dark-theme .eaton-download-list__title, .dark-theme .eaton-download-list__size { color: #FFF; }
 
+.eaton-download-list__description { margin-bottom: 10px; }
+
 .eaton-download-list__size { font-size: 1.4rem; line-height: 1.8rem; }
 
-.eaton-download-list--has-desc__item { margin-bottom: 15px; }
+.eaton-download-list--has-desc .eaton-download-list__item { margin-bottom: 20px; }
 
-.eaton-download-list--has-desc__headline { margin-bottom: 30px; }
+.eaton-download-list--has-desc .eaton-download-list__headline { margin-bottom: 30px; }
 
-.eaton-link-list-section-navigation { background-color: #5B6770; }
+.eaton-link-list-section-navigation { background-color: #333F48; }
 
 .eaton-link-list-section-navigation__nav-item { color: #FFF; font-family: Arial; font-weight: bold; }
 
 .eaton-link-list-section-navigation__nav-item:last-child { border-right: 0; }
 
-.eaton-link-list-section-navigation__nav-item:hover, .eaton-link-list-section-navigation__nav-item:active, .eaton-link-list-section-navigation__nav-item:focus { color: #005EB8; }
+.eaton-link-list-section-navigation__nav-item:hover, .eaton-link-list-section-navigation__nav-item:active, .eaton-link-list-section-navigation__nav-item:focus { color: #FFF; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-section-navigation { padding: 10px 0; }
   .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; margin: 0 15px; display: block; padding: 20px 0; font-size: 1.8rem; } }

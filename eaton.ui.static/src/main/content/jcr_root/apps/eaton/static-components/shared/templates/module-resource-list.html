@@ -10,10 +10,9 @@
                             <sly data-sly-list="${ data.anchors }">
                                 <li class="module-anchor-links__list-item b-body-copy-small">
                                     <!--/* NOTE: data-scroll-to="#element-id" is a CSS Selector (Class, ID) */-->
-                                    <button
-                                            data-scroll-to="#${ item.anchorId }"
-                                            data-scroll-to-offset-enabled="true"
-                                            class="module-anchor-links__list-link button--reset">
+                                    <button data-scroll-to="#${ item.anchorId }"
+                                      data-scroll-to-offset-enabled="true"
+                                      class="module-anchor-links__list-link button--reset">
                                         <span>${ item.anchorTitle }</span>
                                         <i class="icon icon-chevron-right" aria-hidden="true"></i>
                                     </button>

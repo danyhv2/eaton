@@ -183,7 +183,7 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__form-input {
-      font-size: 1em;
+      font-size: 1.8rem;
       padding-right: 20px;
     }
 
@@ -207,9 +207,12 @@
   // Desktop Breakpoint
   //-----------------------------------
   @include media-desktop-and-up {
-    &__form-input,
+    &__form-input {
+      font-size: 2.4rem;
+    }
+
     .icon-search {
-      font-size: 1.5em;
+      font-size: 2.1rem;
       left: 10px;
 
       .eaton-header--fixed & {
@@ -221,6 +224,10 @@
       .eaton-header--fixed & {
         padding-right: 0;
       }
+    }
+
+    &__result-item {
+      line-height: 3rem;
     }
   }
 }

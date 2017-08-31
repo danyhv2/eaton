@@ -88,7 +88,7 @@ use(function () {
             target: "_self"
         };
 
-    } else if ((typeof(testdata) != "undefined") && (testdata == "with-image-gradient")) {
+    } else if ((typeof(testdata) != "undefined") && (testdata == "example-with-image-gradient")) {
         data.imageMaskEnabled = true;
     	data.title = "Global careers";
         data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";
@@ -107,7 +107,7 @@ use(function () {
 
     }
 
-    else if ((typeof(testdata) != "undefined") && (testdata == "alignment-center")) {
+    else if ((typeof(testdata) != "undefined") && (testdata == "example-alignment-center")) {
         data.imageMaskEnabled = true;
     	data.title = "Global careers";
         data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";
@@ -124,7 +124,7 @@ use(function () {
             target: "_self"
         };
 
-    } else if ((typeof(testdata) != "undefined") && (testdata == "alignment-left")) {
+    } else if ((typeof(testdata) != "undefined") && (testdata == "example-alignment-left")) {
         data.imageMaskEnabled = true;
     	data.title = "Global careers";
         data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";
@@ -141,7 +141,7 @@ use(function () {
             target: "_self"
         };
 
-    } else if ((typeof(testdata) != "undefined") && (testdata == "alignment-right")) {
+    } else if ((typeof(testdata) != "undefined") && (testdata == "example-alignment-right")) {
         data.imageMaskEnabled = true;
     	data.title = "Global careers";
         data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";

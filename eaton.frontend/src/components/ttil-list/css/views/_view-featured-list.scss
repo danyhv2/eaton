@@ -45,6 +45,14 @@
     }
   }
 
+  &__title,
+  &__text {
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
   &__title {
     margin-bottom: 20px;
   }
