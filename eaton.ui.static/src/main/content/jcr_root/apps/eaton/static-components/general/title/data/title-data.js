@@ -42,6 +42,7 @@ use(function () {
   } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-careers-1")) {
 	  data.title = 'Innovation gets noticed';
   } else if ((typeof(testdata) != "undefined") && (testdata == "article-headline")) {
+	  data.style = 'h1';
 	  data.eyebrow = 'CATEGORY LABEL';
 	  data.title = 'H1 Page Title or Article Headline That Flows to a Second Line';
 	  data.byline = 'Byline (optional), November 27, 2015';
