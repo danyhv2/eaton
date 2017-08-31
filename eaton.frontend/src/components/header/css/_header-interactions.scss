@@ -4,6 +4,23 @@
 // Visual state when the search is open (default)
 // Visual state when the drawer is open (default)
 //------------------------------------------
+.search-open {
+
+  .header-primary-nav__open-search {
+    transition: background 0.3s ease-in-out;
+    background: $color__primary-gray1;
+
+    .icon-search {
+      display: none;
+    }
+
+    .icon-close {
+      display: block;
+      font-size: 1.8rem;
+      color: $color__white;
+    }
+  }
+}
 
 //-----------------------------------
 // Mobile Breakpoint
@@ -69,17 +86,9 @@
     width: 100%;
 
     .header-primary-nav__open-search {
-      transition: background 0.3s ease-in-out;
-      background: $color__primary-gray1;
-
-      .icon-search {
-        display: none;
-      }
 
       .icon-close {
-        display: block;
         top: -3px;
-        font-size: 1.8rem;
       }
     }
   }
@@ -110,6 +119,16 @@
     .mega-menu {
       visibility: visible;
       opacity: 1;
+    }
+  }
+
+  .search-open {
+
+    .header-primary-nav__open-search {
+
+      .icon-close {
+        top: -5px;
+      }
     }
   }
 

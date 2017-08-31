@@ -69,6 +69,12 @@
 
 @media screen and (min-width: 992px) { .header-search { position: absolute; -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.45); box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.45); } }
 
+.search-open .header-primary-nav__open-search { -webkit-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; background: #333F48; }
+
+.search-open .header-primary-nav__open-search .icon-search { display: none; }
+
+.search-open .header-primary-nav__open-search .icon-close { display: block; font-size: 1.8rem; color: #FFF; }
+
 @media screen and (max-width: 991px) { .nav-open { position: fixed; width: 100%; overflow: hidden; }
   .nav-open .eaton-link-list-primary-nav { overflow: auto; visibility: visible; opacity: 1; }
   .nav-open .header-primary-nav__toggle-mobile-menu { -webkit-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; background: #333F48; }
@@ -80,14 +86,13 @@
   .level-2-open .mega-menu { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
   .nav-is-animating .mega-menu { -webkit-transition: -webkit-transform 0.5s ease-in-out; transition: -webkit-transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out; }
   .search-open { overflow: hidden; position: fixed; width: 100%; }
-  .search-open .header-primary-nav__open-search { -webkit-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; background: #333F48; }
-  .search-open .header-primary-nav__open-search .icon-search { display: none; }
-  .search-open .header-primary-nav__open-search .icon-close { display: block; top: -3px; font-size: 1.8rem; }
+  .search-open .header-primary-nav__open-search .icon-close { top: -3px; }
   .drawer-open { overflow: hidden; position: fixed; width: 100%; }
   .drawer-open .full-page-drawer { -webkit-transform: translate(0, 0); transform: translate(0, 0); visibility: visible; }
   .drawer-is-animating .full-page-drawer { -webkit-transition: visibility 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out; transition: visibility 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out; transition: transform 0.5s ease-in-out, visibility 0.8s ease-in-out; transition: transform 0.5s ease-in-out, visibility 0.8s ease-in-out, -webkit-transform 0.5s ease-in-out; } }
 
 @media screen and (min-width: 992px) { .level-2-open .mega-menu { visibility: visible; opacity: 1; }
+  .search-open .header-primary-nav__open-search .icon-close { top: -5px; }
   .drawer-open .full-page-drawer { visibility: visible; max-height: 1200px; }
   .drawer-is-animating .full-page-drawer { -webkit-transition: max-height 0.5s ease-in-out, visibility 0.8s ease-in-out; transition: max-height 0.5s ease-in-out, visibility 0.8s ease-in-out; } }
 

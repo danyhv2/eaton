@@ -73,21 +73,24 @@
 
 .eaton-search--default :-moz-placeholder { /* Firefox 18- */ color: #FFF; }
 
-@media screen and (max-width: 479px) { .eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; left: 0; top: 0; display: inline-block; }
+@media screen and (max-width: 479px) { .eaton-search--default .eaton-search--default__form-input:valid + .eaton-search--default__form-mobile-label { display: none; }
+  .eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; left: 0; top: 0; display: inline-block; }
   .eaton-search--default__form-mobile-label.with-external { padding-right: 95px; }
   .eaton-search--default ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: transparent; }
   .eaton-search--default ::-moz-placeholder { /* Firefox 19+ */ color: transparent; }
   .eaton-search--default :-ms-input-placeholder { /* IE 10+ */ color: transparent; }
   .eaton-search--default :-moz-placeholder { /* Firefox 18- */ color: transparent; } }
 
-@media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1em; padding-right: 20px; }
+@media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1.8rem; padding-right: 20px; }
   .eaton-search--default__form-submit { padding-right: 0; }
   .eaton-search--default .icon-search { font-size: 1.25em; }
   .search-open .eaton-search--default { height: 100%; overflow-y: auto; } }
 
-@media screen and (min-width: 992px) { .eaton-search--default__form-input, .eaton-search--default .icon-search { font-size: 1.5em; left: 10px; }
-  .eaton-header--fixed .eaton-search--default__form-input, .eaton-header--fixed .eaton-search--default .icon-search { left: 0; }
-  .eaton-header--fixed .eaton-search--default__form-submit { padding-right: 0; } }
+@media screen and (min-width: 992px) { .eaton-search--default__form-input { font-size: 2.4rem; }
+  .eaton-search--default .icon-search { font-size: 2.1rem; left: 10px; }
+  .eaton-header--fixed .eaton-search--default .icon-search { left: 0; }
+  .eaton-header--fixed .eaton-search--default__form-submit { padding-right: 0; }
+  .eaton-search--default__result-item { line-height: 3rem; } }
 
 .eaton-search .form-control { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 0; border-radius: 0; height: auto; -webkit-box-shadow: none; box-shadow: none; }
 

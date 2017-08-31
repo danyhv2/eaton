@@ -47,7 +47,7 @@
   .eaton-tabbed-menu-list__item.desktop.tertiary { -webkit-box-ordinal-group: 6; -webkit-order: 5; -ms-flex-order: 5; order: 5; }
   .eaton-tabbed-menu-list__item.desktop.quaternary { -webkit-box-ordinal-group: 8; -webkit-order: 7; -ms-flex-order: 7; order: 7; }
   .eaton-tabbed-menu-list__item.desktop.quinary { -webkit-box-ordinal-group: 10; -webkit-order: 9; -ms-flex-order: 9; order: 9; }
-  .eaton-tabbed-menu-list__tab-links { border-left: 1px solid #98A4AE; }
+  .eaton-tabbed-menu-list__tab-links { border-left: 1px solid #98A4AE; padding-left: 40px; }
   .eaton-tabbed-menu-list__tabs { display: block; overflow: hidden; }
   .eaton-tabbed-menu-list__tab { min-height: 0; }
   .eaton-tabbed-menu-list__tab.desktop.primary { -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; }

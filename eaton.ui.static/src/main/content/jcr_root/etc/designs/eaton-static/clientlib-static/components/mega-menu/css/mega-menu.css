@@ -41,7 +41,7 @@
   .mega-menu__col--6 { -webkit-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; }
   .mega-menu__category { padding: 30px 0; } }
 
-.mega-menu-title { font-size: 2rem; background: #333F48; }
+.mega-menu-title { font-size: 2.6rem; background: #333F48; }
 
 .mega-menu-title .container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; position: relative; }
 
@@ -55,7 +55,7 @@
 
 .mega-menu-title__close-menu { display: none; }
 
-@media screen and (max-width: 991px) { .mega-menu-title { padding: 20px 0; }
+@media screen and (max-width: 991px) { .mega-menu-title { padding: 20px 0; font-size: 2rem; }
   .mega-menu-title__level1-link { padding: 10px 10px 10px 0; }
   .mega-menu-title__level1-link .glyphicon-menu-left { display: inline; margin-right: 10px; font-size: 1.4rem; }
   .mega-menu-title__level1-link .glyphicon-menu-right { display: none; } }

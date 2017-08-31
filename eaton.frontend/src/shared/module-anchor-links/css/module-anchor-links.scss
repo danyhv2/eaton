@@ -23,8 +23,13 @@
 
   &__list-item {
     border-bottom: 1px solid $color__secondary-gray4;
-    padding: 2px 0;
-    width: 100%;
+    align-items: center;
+    // NOTE: Flexbox issue: https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items
+    display: flex;
+    flex-direction: column;
+    min-height: 75px;
+    min-width: 100%;
+    padding: 0;
 
     &:first-child {
       border-top: 1px solid $color__secondary-gray4;
@@ -36,15 +41,12 @@
     background-color: $color__white;
     color: $color__primary-blue;
     display: flex;
-    min-height: 75px;
-    padding: 0 $anchor-padding;
+    flex-grow: 1;
     position: relative;
     text-align: left;
+    padding: 20px;
     width: 100%;
 
-    // TODO: Review Hover / Active State
-    // &:active,
-    // &:focus,
     &:hover {
       background-color: $color__secondary-gray5;
       font-weight: bold;
@@ -87,5 +89,20 @@
 
   }
 
+
+  //-----------------------------------
+  // IE11 Hack - http://browserhacks.com/
+  //-----------------------------------
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE11 and Up */
+
+    // EATON-349 - FIX: IE11 - Archor links not vertically centered
+    // NOTE: Flexbox Issue: https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
 
 }

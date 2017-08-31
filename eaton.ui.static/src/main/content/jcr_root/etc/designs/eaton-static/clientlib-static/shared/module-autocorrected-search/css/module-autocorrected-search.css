@@ -11,7 +11,7 @@
  */
 
 
-.autocorrected-search { margin-top: 50px; }
+.autocorrected-search { margin-top: 50px; font-size: 24px; }
 
 @media screen and (max-width: 991px) { .autocorrected-search__search-instead { display: block; } }
 

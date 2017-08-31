@@ -31,13 +31,14 @@
   &__list-link {
     background-color: transparent;
     display: block;
-    padding: 2rem;
+    padding: 2rem 6rem;
     text-align: center;
+    font-size: 1.8rem;
 
     &:hover,
     &:focus,
     &:active {
-      text-decoration: none;
+      text-decoration: underline;
     }
 
   }
