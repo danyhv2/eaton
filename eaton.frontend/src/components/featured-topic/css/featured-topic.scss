@@ -5,18 +5,18 @@
 @import "../../../global/css/_config/sass";
 
 .eaton-featured-topic {
-  padding-top: $spacing__md / 2;
+  padding-top: 20px;
   padding-bottom: $spacing__md / 2;
 
   .glyphicon {
     display: none;
   }
 
-  .eaton-link-list-vertical__list-link,
-  .eaton-link-list-vertical__eyebrow {
-    font-weight: bold;
-    text-transform: none;
-  }
+  // .eaton-link-list-vertical__list-link,
+  // .eaton-link-list-vertical__eyebrow {
+  //   font-weight: bold;
+  //   text-transform: none;
+  // }
 
   &__text {
     margin-bottom: $spacing__md;
@@ -24,6 +24,15 @@
 
   &__button-container {
     margin-top: $spacing__md;
+  }
+
+  .eaton-link-list-vertical__eyebrow {
+    @include h4;
+  }
+
+  .eaton-link-list-vertical__list-link {
+    @include h5-link-bold;
+    color: $color__primary-blue;
   }
 
   // &__list-title {
@@ -59,7 +68,6 @@
 
     .eaton-link-list-vertical__eyebrow {
       margin-bottom: 10px;
-      @include h4;
     }
   }
 

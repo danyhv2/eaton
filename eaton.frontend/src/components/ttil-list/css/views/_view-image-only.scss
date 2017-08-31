@@ -4,16 +4,9 @@
 
 .eaton-ttil-image-list {
 
-  &__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
   &__item {
-    flex-basis: 31%;
     padding: 0 10px;
-    margin-bottom: ($spacing__sm * 2);
+
   }
 
   &__content {
@@ -31,12 +24,13 @@
   // ----------------------------
   @include media-mobile-and-tablet {
     &__container {
-      flex-direction: column;
+      display: block;
     }
 
     &__item {
       flex-basis: 100%;
       padding: 0 10px;
+      margin-bottom: $spacing__sm;
 
       &:last-child {
         margin-bottom: 0;
@@ -50,6 +44,27 @@
     &__image {
       width: 150px;
       display: inline-block;
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &__item {
+      flex-basis: 31%;
+      margin-bottom: ($spacing__sm * 2);
+
+      // Only 2 images should display when used in two column grid
+      .eaton-grid-control & {
+        flex-basis: 50%;
+      }
     }
   }
 }

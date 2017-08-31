@@ -13,14 +13,17 @@
 
 .module-anchor-links__list { list-style-type: none; padding: 0; }
 
-.module-anchor-links__list-item { border-bottom: 1px solid #CCD2D7; padding: 2px 0; width: 100%; }
+.module-anchor-links__list-item { border-bottom: 1px solid #CCD2D7; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; min-height: 75px; min-width: 100%; padding: 0; }
 
 .module-anchor-links__list-item:first-child { border-top: 1px solid #CCD2D7; }
 
-.module-anchor-links__list-link { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background-color: #FFF; color: #005EB8; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; min-height: 75px; padding: 0 20px; position: relative; text-align: left; width: 100%; }
+.module-anchor-links__list-link { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background-color: #FFF; color: #005EB8; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; position: relative; text-align: left; padding: 20px; width: 100%; }
 
 .module-anchor-links__list-link:hover { background-color: #EEF0F2; font-weight: bold; outline: 0; }
 
 .module-anchor-links__list-link span { padding-right: 20px; }
 
 .module-anchor-links__list-link .icon { color: #005EB8; font-size: 1rem; height: 10px; position: absolute; right: 20px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .module-anchor-links { /* IE11 and Up */ }
+  .module-anchor-links__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
