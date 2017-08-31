@@ -8,4 +8,16 @@
   left: 0;
   right: 0;
   top: 0;
+
+  .bg-alignment & {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bg-alignment-left & { background-position: center left; }
+
+  .bg-alignment-center & { background-position: center center; }
+
+  .bg-alignment-right & { background-position: center right; }
+
 }

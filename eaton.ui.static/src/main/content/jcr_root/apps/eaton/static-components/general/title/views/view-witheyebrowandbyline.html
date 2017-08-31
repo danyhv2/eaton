@@ -3,22 +3,30 @@
   <div class="eaton-title eaton-title--eyebrow-and-byline">
 
     <!--/* If Grid Enabled */-->
-    <div data-sly-test="${ properties.toggleInnerGrid }"
-      class="container">
+    <sly data-sly-test="${ properties.toggleInnerGrid }">
+      <div class="container">
+    </sly>
+
       <div class="eaton-title__eyebrow b-eyebrow-small">${ data.eyebrow }</div>
-      <h2 class="eaton-title__eyebrow-and-byline b-heading-h2">${ data.title }</h2>
-      <span class="article-list-single-feature--border"></span>
+
+      <!--/*
+        NOTE: "data.style" should have a value of "h1, h2, h3, h4, h5, or h6"
+        This option allows the author to select the HTML tag for SEO purposes / Semantics
+        Its important to keep the css class "b-heading-h1" since the appearance of the title should always be the same regardless of the HTML Tag
+      */-->
+      <sly data-sly-test=${data.style}>
+        <div data-sly-element="${data.style}"
+          class="eaton-title__eyebrow-and-byline b-heading-h1">${ data.title }</div>
+      </sly>
+      <sly data-sly-test=${!data.style}>
+        <h2 class="eaton-title__headline b-heading-h1">${ data.title }</h2>
+      </sly>
+      <span class="eaton-title__line"></span>
       <div data-sly-test="${ data.byline }"
         class="eaton-title__byline b-body-copy-small">${ data.byline }</div>
-    </div>
 
-
-    <!--/* If Grid NOT-Enabled */-->
-    <sly data-sly-test="${ !properties.toggleInnerGrid }">
-      <div class="eaton-title__eyebrow b-eyebrow-small">${ data.eyebrow }</div>
-      <h2 class="eaton-title__headline b-heading-h1">${ data.title }</h2>
-      <div data-sly-test="${ data.byline }"
-        class="eaton-title__byline b-body-copy-small">${ data.byline }</div>
+    <sly data-sly-test="${ properties.toggleInnerGrid }">
+      </div>
     </sly>
 
   </div>

@@ -17,8 +17,8 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__content {
-      font-size: 1.063em;
-      line-height: 2em;
+      font-size: 2.3rem;
+      line-height: 3rem;
     }
   }
 
@@ -27,7 +27,8 @@
   //-----------------------------------
   @include media-desktop-and-up {
     &__content {
-      font-size: 1.625em;
+      font-size: 3.4rem;
+      line-height: 5rem;
     }
   }
 }
