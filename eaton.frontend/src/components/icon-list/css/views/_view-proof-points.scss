@@ -3,13 +3,13 @@
 //-----------------------------------
 
 .icon-list-proof-points {
+  padding: ($spacing__lg / 2) 0;
 
   &__item {
     display: flex;
   }
 
   &__image {
-    margin-top: 20px;
 
     img { width: 80px; }
   }
@@ -19,7 +19,7 @@
   }
 
   &__text {
-    font-weight: bold;
+    font-family: 'EatonBold';
     color: $color__accent-aqua;
     display: flex;
     margin-left: -3px;
@@ -35,6 +35,7 @@
   @include media-mobile-and-tablet {
     &__item {
       justify-content: center;
+      align-items: center;
       margin-bottom: ($spacing__sm ) + 10;
 
       &:last-child {
@@ -43,16 +44,18 @@
     }
 
     &__text {
-      font-size: 83px;
+      font-size: 8.3rem;
+      line-height: 8.5rem;
     }
 
     &__symbol {
-      font-size: 40px;
+      font-size: 4rem;
+      line-height: 4rem;
       top: 13px;
     }
 
     &__title {
-      font-size: 18px;
+      @include body-copy--desktop;
     }
   }
 
@@ -82,17 +85,23 @@
       }
     }
 
+    &__image {
+      margin-top: 20px;
+    }
+
     &__text {
-      font-size: 75px;
+      font-size: 10rem;
+      line-height: 10.5rem;
     }
 
     &__symbol {
-      font-size: 45px;
+      font-size: 6rem;
+      line-height: 6rem;
       top: 8px;
     }
 
     &__title {
-      font-size: 24px;
+      @include body-copy-small--desktop;
     }
   }
 }
