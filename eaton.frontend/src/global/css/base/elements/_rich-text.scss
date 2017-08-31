@@ -71,6 +71,12 @@
 
     color: $color__white;
 
+    a,
+    a:visited {
+      text-decoration: underline;
+      color: $color__white;
+    }
+
     // Headings
     //--------------
     h2,
