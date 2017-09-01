@@ -602,26 +602,29 @@ use(function () {
   if(facetvaluesArr) {
     var activeFiltersArr = [];
     var activeFiltersObjArr = [];
-    data.facets.facetItems[0].facetName = "Yeahh "; //+ facetvalues.join(',');
+    // data.facets.facetItems[0].facetName = "Yeahh "; //+ facetvalues.join(',');
+    // data.facets.facetItems[0].facetName = facetvaluesArr; //+ facetvalues.join(',');
 
     // each query string parameter
     for (var p = 0; p < facetvaluesArr.length; p++) {
-      var facetvalue = facetvaluesArr[p];
-      data.facets.facetItems[0].facetName += facetvalue;
+      // var facetvalue = facetvaluesArr[p];
+      // data.facets.facetItems[0].facetName += facetvalue;
 
       // ecach facet group
       for (var f = 0; f < data.facets.facetItems.length; f++) {
-        for (var i = 0; i < data.facets.facetItems[0].facetValues.length; i++) {
+        for (var i = 0; i < data.facets.facetItems[f].facetValues.length; i++) {
           var facetId = data.facets.facetItems[f].facetValues[i].id;
 
           // activate the link
           // data.facets.facetItems[0].facetName += '('+facetId+'-'+facetvaluesArr+') ';
+          // data.facets.facetItems[0].facetName = facetvaluesArr.join(',');
           if(facetvaluesArr.join(',').indexOf(facetId) >= 0) {
-            data.facets.facetItems[f].facetValues[i].active = true;
+            // data.facets.facetItems[0].facetName = 'si '+facetId;
+            data.facets.facetItems[f].facetValues[i].isChecked = true;
           }
 
           // add the active facets to array later we'll add it to the URL
-          if(data.facets.facetItems[f].facetValues[i].active){
+          if(data.facets.facetItems[f].facetValues[i].isChecked){
             activeFiltersArr.push(facetId);
             activeFiltersObjArr.push(data.facets.facetItems[f].facetValues[i]);
           }
@@ -631,9 +634,9 @@ use(function () {
 
     // change the url params dynamically
     for (var f = 0; f < data.facets.facetItems.length; f++) {
-      for (var i = 0; i < data.facets.facetItems[0].facetValues.length; i++) {
+      for (var i = 0; i < data.facets.facetItems[f].facetValues.length; i++) {
         var facetId = data.facets.facetItems[f].facetValues[i].id;
-        var isFacedChecked = data.facets.facetItems[f].facetValues[i].active;
+        var isFacedChecked = data.facets.facetItems[f].facetValues[i].isChecked;
         var disableactiveFiltersArr = activeFiltersArr.filter(function(f){return f!=facetId});
         var enablectiveFiltersArr = activeFiltersArr.concat([facetId]);
 
