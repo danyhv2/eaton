@@ -11,15 +11,23 @@
  */
 
 
-.eaton-featured-topic { padding-top: 30px; padding-bottom: 30px; }
+.eaton-featured-topic { padding-top: 20px; padding-bottom: 30px; }
 
 .eaton-featured-topic .glyphicon { display: none; }
-
-.eaton-featured-topic .eaton-link-list-vertical__list-link, .eaton-featured-topic .eaton-link-list-vertical__eyebrow { font-weight: bold; text-transform: none; }
 
 .eaton-featured-topic__text { margin-bottom: 60px; }
 
 .eaton-featured-topic__button-container { margin-top: 60px; }
+
+.eaton-featured-topic .eaton-link-list-vertical__eyebrow { font-family: Arial, sans-serif; font-size: 2.2rem; font-weight: bold; line-height: 2.9rem; }
+
+@media screen and (min-width: 992px) { .eaton-featured-topic .eaton-link-list-vertical__eyebrow { font-family: Arial, sans-serif; font-size: 3rem; font-weight: bold; line-height: 4.2rem; } }
+
+.eaton-featured-topic .eaton-link-list-vertical__list-link { font-family: Arial, sans-serif; font-size: 2rem; font-weight: bold; line-height: 3rem; font-family: "EatonBold", Arial, sans-serif; color: #005EB8; }
+
+@media screen and (min-width: 992px) { .eaton-featured-topic .eaton-link-list-vertical__list-link { font-family: Arial, sans-serif; font-size: 2.6rem; font-weight: bold; line-height: 4rem; } }
+
+@media screen and (min-width: 992px) { .eaton-featured-topic .eaton-link-list-vertical__list-link { font-family: "EatonBold", Arial, sans-serif; } }
 
 @media screen and (max-width: 767px) { .eaton-featured-topic__title { padding-bottom: 30px; }
   .eaton-featured-topic__list-title { margin-top: 30px; }
@@ -27,9 +35,7 @@
   .eaton-featured-topic__text { margin-bottom: 30px; }
   .eaton-featured-topic__button-container { margin-top: 0; }
   .eaton-featured-topic__button-container .b-button.b-button__primary { width: 100%; }
-  .eaton-featured-topic .eaton-link-list-vertical__eyebrow { margin-bottom: 10px; font-family: Arial, sans-serif; font-size: 2.2rem; font-weight: bold; line-height: 2.9rem; } }
-
-@media screen and (max-width: 767px) and (min-width: 992px) { .eaton-featured-topic .eaton-link-list-vertical__eyebrow { font-family: Arial, sans-serif; font-size: 3rem; font-weight: bold; line-height: 4.2rem; } }
+  .eaton-featured-topic .eaton-link-list-vertical__eyebrow { margin-bottom: 10px; } }
 
 @media screen and (min-width: 992px) { .eaton-featured-topic { padding-top: 120px; padding-bottom: 120px; }
   .eaton-featured-topic__list-left::after { background: #F8F8F8; content: ''; height: 85%; position: absolute; right: 0; top: 5px; width: 2px; }

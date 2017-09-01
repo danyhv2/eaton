@@ -71,6 +71,10 @@
   display: none;
   z-index: 1; // Fixes issue the button can't be clicked / The content overlaps this button
 
+  @include media-mobile-only {
+    bottom: 3rem;
+  }
+
   &.visible {
     display: block;
   }
@@ -82,11 +86,8 @@
     height: 100%;
     text-align: center;
     color: $color__primary-blue;
-    line-height: 6.5rem;
+    line-height: 6.8rem;
 
-    &::before {
-      transform: rotateX(180deg);
-    }
   }
 }
 

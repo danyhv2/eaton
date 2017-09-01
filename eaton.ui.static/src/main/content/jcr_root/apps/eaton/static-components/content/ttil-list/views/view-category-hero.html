@@ -12,10 +12,6 @@
   }">
 
     <div class="eaton-category-hero__image">
-
-      <div data-sly-test="${ data.imageMaskEnabled }"
-        class="eaton-category-hero__image-mask"></div>
-
       <!-- Start: Rendition Image Component -->
       <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-background.html">
         <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>

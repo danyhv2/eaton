@@ -11,32 +11,35 @@
  */
 
 
-.icon-list-proof-points__item { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.icon-list-proof-points { padding: 45px 0; }
 
-.icon-list-proof-points__image { margin-top: 20px; }
+.icon-list-proof-points__item { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
 .icon-list-proof-points__image img { width: 80px; }
 
 .icon-list-proof-points__content { padding-left: 40px; }
 
-.icon-list-proof-points__text { font-weight: bold; color: #00B2A9; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-left: -3px; }
+.icon-list-proof-points__text { font-family: 'EatonBold'; color: #00B2A9; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-left: -3px; }
 
 .icon-list-proof-points__symbol { position: relative; }
 
+.icon-list-proof-points__title { margin-top: 10px; }
+
 @media screen and (max-width: 991px) { .icon-list-proof-points__item { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 40px; }
   .icon-list-proof-points__item:last-child { margin-bottom: 0; }
-  .icon-list-proof-points__text { font-size: 83px; }
-  .icon-list-proof-points__symbol { font-size: 40px; top: 13px; }
-  .icon-list-proof-points__title { font-size: 18px; } }
+  .icon-list-proof-points__text { font-size: 8.3rem; line-height: 8.5rem; }
+  .icon-list-proof-points__symbol { font-size: 4rem; line-height: 4rem; top: 13px; }
+  .icon-list-proof-points__title { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; } }
 
 @media screen and (min-width: 992px) { .icon-list-proof-points__wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
   .eaton-grid-control .icon-list-proof-points__wrapper { display: block; }
   .icon-list-proof-points__item { -webkit-flex-basis: 33.33%; -ms-flex-preferred-size: 33.33%; flex-basis: 33.33%; }
   .eaton-grid-control .icon-list-proof-points__item { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; margin-bottom: 40px; }
   .eaton-grid-control .icon-list-proof-points__item:last-child { margin-bottom: 0; }
-  .icon-list-proof-points__text { font-size: 75px; }
-  .icon-list-proof-points__symbol { font-size: 45px; top: 8px; }
-  .icon-list-proof-points__title { font-size: 24px; } }
+  .icon-list-proof-points__image { margin-top: 20px; }
+  .icon-list-proof-points__text { font-size: 10rem; line-height: 10.5rem; }
+  .icon-list-proof-points__symbol { font-size: 6rem; line-height: 6rem; top: 8px; }
+  .icon-list-proof-points__title { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.4rem; } }
 
 .icon-list-no-image-highlights { background: #F8F8F8; }
 
@@ -53,9 +56,9 @@
 @media screen and (max-width: 991px) { .icon-list-no-image-highlights { padding: 30px 0; }
   .icon-list-no-image-highlights__item { margin-bottom: 40px; }
   .icon-list-no-image-highlights__item:last-child { margin-bottom: 0; }
-  .icon-list-no-image-highlights__text { font-size: 3.125em; line-height: 55px; }
-  .icon-list-no-image-highlights__symbol { font-size: 0.6em; top: -15px; }
-  .icon-list-no-image-highlights__title { font-size: 0.875em; margin-bottom: 5px; } }
+  .icon-list-no-image-highlights__text { font-size: 5rem; line-height: 5.5rem; }
+  .icon-list-no-image-highlights__symbol { font-size: 3rem; top: -15px; }
+  .icon-list-no-image-highlights__title { margin-bottom: 5px; } }
 
 @media screen and (min-width: 992px) { .icon-list-no-image-highlights { padding: 60px 0; }
   .eaton-grid-control .icon-list-no-image-highlights { padding: 30px 0; }
@@ -63,9 +66,9 @@
   .eaton-grid-control .icon-list-no-image-highlights__wrapper { display: block; }
   .eaton-grid-control .icon-list-no-image-highlights__item { margin-bottom: 40px; }
   .eaton-grid-control .icon-list-no-image-highlights__item:last-child { margin-bottom: 0; }
-  .icon-list-no-image-highlights__text { font-size: 3.75em; line-height: 65px; }
-  .icon-list-no-image-highlights__symbol { font-size: 0.667em; top: -15px; }
-  .icon-list-no-image-highlights__title { font-size: 1.125em; margin-bottom: 15px; } }
+  .icon-list-no-image-highlights__text { font-size: 6rem; line-height: 6.5rem; }
+  .icon-list-no-image-highlights__symbol { font-size: 4rem; top: -15px; }
+  .icon-list-no-image-highlights__title { margin-bottom: 15px; } }
 
 .eaton-top-list-with-icon { margin-top: 45px; overflow: hidden; }
 
