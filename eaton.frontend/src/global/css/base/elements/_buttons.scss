@@ -1,6 +1,15 @@
 //-----------------------------------
 // Styleguide - Buttons
 //-----------------------------------
+.eaton-cta {
+  text-align: center;
+
+  @include media-desktop-and-up {
+    text-align: left;
+  }
+}
+
+
 
 .button--reset {
   border: 0;
@@ -167,3 +176,4 @@
   }
 
 }
+
