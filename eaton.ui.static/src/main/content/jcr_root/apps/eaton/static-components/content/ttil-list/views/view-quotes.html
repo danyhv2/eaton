@@ -2,9 +2,13 @@
 
   <sly data-sly-list.quote=${data.items}>
   <div class="eaton-ttil-quote ${quoteList.even ? 'eaton-ttil-quote__right' : 'eaton-ttil-quote__left'}">
-      <div class="eaton-ttil-quote__image">
+      <div class="eaton-ttil-quote__image
+      ${quote.image.alignment ? 'bg-alignment' : ''}
+            ${quote.image.alignment == 'left' ? 'bg-alignment-left' : ''}
+            ${quote.image.alignment == 'center' ? 'bg-alignment-center' : ''}
+            ${quote.image.alignment == 'right' ? 'bg-alignment-right' : ''}">
         <!-- Start: Rendition Image Component -->
-        <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+        <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-background.html">
           <sly data-sly-call="${ tpl.module @ data=quote.image }"></sly>
         </sly>
         <!-- End: Rendition Image Component -->
