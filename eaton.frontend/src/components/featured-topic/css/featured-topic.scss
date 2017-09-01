@@ -28,11 +28,11 @@
 
   .eaton-link-list-vertical__eyebrow {
     @include h4;
+    text-transform: none;
   }
 
   .eaton-link-list-vertical__list-link {
     @include h5-link-bold;
-    color: $color__primary-blue;
   }
 
   // &__list-title {
