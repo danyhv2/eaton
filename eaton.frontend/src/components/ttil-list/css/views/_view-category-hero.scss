@@ -110,4 +110,19 @@
   }
 
 
+  //-----------------------------------
+  // IE11 Styles - http://browserhacks.com/
+  //-----------------------------------
+  // It fixes vertical alignment issues in IE11 due to flexbox elements inside a container with "min-height"
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE11 and Up */
+    height: 92.6666vw;
+  }
+
+  @media all and (-ms-high-contrast: none) and (min-width: $grid__md), (-ms-high-contrast: active) {
+    /* IE11 and Up */
+    height: 25vw;
+  }
+
+
 }

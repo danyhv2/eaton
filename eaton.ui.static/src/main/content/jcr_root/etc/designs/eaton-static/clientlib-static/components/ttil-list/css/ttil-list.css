@@ -186,6 +186,10 @@
   .eaton-category-hero__eyebrow { margin-bottom: 1.2rem; }
   .eaton-category-hero__title { padding-bottom: 3.2rem; } }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { .eaton-category-hero { /* IE11 and Up */ height: 92.6666vw; } }
+
+@media all and (-ms-high-contrast: none) and (min-width: 992px), (-ms-high-contrast: active) { .eaton-category-hero { /* IE11 and Up */ height: 25vw; } }
+
 .eaton-featured-list__eyebrow { margin-bottom: 30px; text-transform: uppercase; }
 
 .dark-theme .eaton-featured-list__eyebrow { color: #FFF; }
