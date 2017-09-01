@@ -45,7 +45,7 @@
 
 .carousel-component__dots:only-child { display: none; }
 
-.carousel-component__dots button { background-color: #EEF0F2; }
+.carousel-component__dots button { background-color: #EEF0F2; height: 10px; width: 10px; border: 10px; line-height: 0; display: inline; padding: 5px; cursor: pointer; color: transparent; border-radius: 10px; }
 
 .carousel-component__down-arrow { position: absolute; bottom: 25px; color: #FFF; width: 100%; font-size: 1.5em; z-index: 10; text-align: center; }
 
