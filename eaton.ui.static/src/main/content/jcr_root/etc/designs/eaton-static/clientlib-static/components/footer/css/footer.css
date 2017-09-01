@@ -37,9 +37,7 @@
 
 .eaton-footer-back-to-top.visible { display: block; }
 
-.eaton-footer-back-to-top .icon { font-size: 3rem; display: block; width: 100%; height: 100%; text-align: center; color: #005EB8; line-height: 6.5rem; }
-
-.eaton-footer-back-to-top .icon::before { -webkit-transform: rotateX(180deg); transform: rotateX(180deg); }
+.eaton-footer-back-to-top .icon { font-size: 3rem; display: block; width: 100%; height: 100%; text-align: center; color: #005EB8; line-height: 6.8rem; }
 
 @media screen and (max-width: 991px) { .eaton-footer-top__logo { margin-bottom: 60px; }
   .eaton-footer-top__content { margin-bottom: 120px; }
