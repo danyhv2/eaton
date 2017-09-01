@@ -122,14 +122,3 @@
 		padding-right: 10px;
 }
 
-.slick-slider li button {
-		height: 10px;
-		width: 10px;
-		line-height: 0;
-		display: inline;
-		padding: 5px;
-		cursor: pointer;
-		color: transparent;
-		border-radius: 10px;
-		border: 10px;
-}
