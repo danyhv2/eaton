@@ -1,10 +1,18 @@
+//-----------------------------------
+// Module L2 Hero - Is Part of M-49 Category Highlight
+//-----------------------------------
 .l2-hero {
   position: relative;
-  height: 400px;
 
   &--vertical-align {
     display: flex;
     align-items: center;
+  }
+
+  &__content {
+    position: relative;
+    padding: 15px 0;
+    width: 100%;
   }
 
   &__title,
@@ -12,18 +20,44 @@
     color: $color__white;
   }
 
-  &__text {
-    font-size: 2.8rem;
-    line-height: 4.4rem;
+  &__title {
+    margin-bottom: 0;
+  }
 
-    @include media-tablet-and-up {
-      font-size: 2.0rem;
-      line-height: 3.2rem;
+  &__text {
+    margin-top: 18px; // Visually 30px Spacing between Headline and Text.
+  }
+
+
+  //-----------------------------------
+  // Media Query: 0 - 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    // Image Aspect Ratio Mobile
+    height: #{(628/750) * 100}vw;
+    min-height: 370px;
+    max-height: 500px;
+
+    &__text {
+      font-size: 1.4rem;
+      line-height: 2.2rem;
     }
   }
 
+
+  //-----------------------------------
+  // Media Query: > 992px and up
+  //-----------------------------------
   @include media-desktop-and-up {
-    height: 450px;
+    // Aspect Ratio Desktop: 26:9
+    height: #{(9/26) * 100}vw;
+
+    &__text {
+      font-size: 2rem;
+      line-height: 3.2rem;
+      margin-top: 12px; // Visually 30px Spacing between Headline and Text.
+    }
   }
 
 }

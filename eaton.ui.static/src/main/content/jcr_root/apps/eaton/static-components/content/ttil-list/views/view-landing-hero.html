@@ -53,7 +53,7 @@
           <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
               <sly data-sly-call="${ tpl.module @ data=slide.image }"></sly>
           </sly>
-        <div class="carousel-component-slide__caption carousel-caption">
+        <div class="carousel-component-slide__caption">
           <span class="b-heading-h1-hero">${slide.title}</span>
           <div class="carousel-component-slide__separator" data-sly-test="${properties.showSeparator}"></div>
           <p class="carousel-component-slide__text b-hero-description">${slide.text @ context = 'html'}</p>

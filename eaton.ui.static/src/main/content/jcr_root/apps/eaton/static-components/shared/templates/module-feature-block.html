@@ -1,8 +1,12 @@
 <template data-sly-template.module="${ @ data}">
     <div style="background-color: ${data.backgroundColor @ context='styleString'}">
         <div class="feature-block-component ${data.imgAlignment == 'right' ? 'feature-block-component__right' : 'feature-block-component__left'}">
-            <div class="feature-block-component__image">
-                <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+            <div class="feature-block-component__image
+            ${data.image.alignment ? 'bg-alignment' : ''}
+            ${data.image.alignment == 'left' ? 'bg-alignment-left' : ''}
+            ${data.image.alignment == 'center' ? 'bg-alignment-center' : ''}
+            ${data.image.alignment == 'right' ? 'bg-alignment-right' : ''}">
+                <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-background.html">
                     <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
                 </sly>
             </div>
