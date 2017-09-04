@@ -31,7 +31,7 @@ App.search = (function() {
   const addEventListeners = () => {
     $(window).on('scroll', (event) => {
       const scrollTop = $(window).scrollTop();
-      const isGoingUp = (scrollTop < lastScrollTop);
+      const isGoingUp = (scrollTop < lastScrollTop) && (scrollTop > 0);
       $componentElement.toggleClass('visible', isGoingUp);
       lastScrollTop = scrollTop;
 
