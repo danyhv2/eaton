@@ -6,6 +6,7 @@
 
 .quote {
   @include component-spacing();
+  padding-top: 40px;
 }
 
 .eaton-quote {
@@ -98,7 +99,9 @@
 
     &.dark-theme {
       .eaton-quote {
-        &__image, &__text, &__author {
+        &__image,
+        &__text,
+        &__author {
           color: $color__white;
         }
       }

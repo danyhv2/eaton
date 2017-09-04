@@ -1,15 +1,26 @@
 <template data-sly-template.module="${ @ data}">
     <div style="background-color: ${data.backgroundColor @ context='styleString'}">
         <div class="feature-block-component ${data.imgAlignment == 'right' ? 'feature-block-component__right' : 'feature-block-component__left'}">
-            <div class="feature-block-component__image">
-                <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+            <div class="feature-block-component__image
+            ${data.image.alignment ? 'bg-alignment' : ''}
+            ${data.image.alignment == 'left' ? 'bg-alignment-left' : ''}
+            ${data.image.alignment == 'center' ? 'bg-alignment-center' : ''}
+            ${data.image.alignment == 'right' ? 'bg-alignment-right' : ''}">
+                <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-background.html">
                     <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
                 </sly>
             </div>
             <div class="feature-block-component__text-container ${data.backgroundColor == '#005EB8' ? 'feature-block-component__text-container--white' : ''}">
                 <h2>${data.title}</h2>
                 <div class="feature-block-component__description b-body-copy">${data.text @ context = 'html'}</div>
-                <a data-sly-test="${data.cta.url.length > 0}" class="b-button b-button__primary ${data.backgroundColor == '#005EB8' ? 'b-button__primary--dark' : 'b-button__primary--light'} feature-block-component__cta" href="${data.cta.url}" role="button" data-sly-test="${data.cta.url.length > 0}">${data.cta.text}</a>
+                <div class="feature-block-component__cta-wrapper">
+                  <a data-sly-test="${data.cta.url.length > 0}"
+                    class="b-button b-button__primary feature-block-component__cta ${ data.backgroundColor == '#005EB8' ? 'b-button__primary--dark' : 'b-button__primary--light'}"
+                    href="${data.cta.url}"
+                    role="button"
+                    data-sly-test="${data.cta.url.length > 0}">${data.cta.text}</a>
+                </div>
+
             </div>
         </div>
     </div>

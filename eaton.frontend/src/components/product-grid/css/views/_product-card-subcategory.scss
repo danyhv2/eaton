@@ -5,7 +5,7 @@
 
 // Results Grid Wrapper
 //-----------------------------------
-.product-grid-results--family {
+.product-grid-results--subcategory {
 
   .results-list__content {
     display: flex;
@@ -18,13 +18,8 @@
   // MediaQuery: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
-    .container { width: 100%; }
 
-    .results-list {
-      // Override Bootstrap's grid gutter so the Image goes from edge to edge of the screen
-      margin-left: ($grid__gutter-width * -1); // Negative Margin
-      margin-right: ($grid__gutter-width * -1); // Negative Margin
-    }
+    .container { width: 100%; }
 
     .results-list__bottom {
       margin-top: 0;
@@ -38,7 +33,7 @@
 //-----------------------------------
 // Each Grid Item
 //-----------------------------------
-.product-card-family {
+.product-card-subcategory {
 
   // Local Variables
   //--------------
@@ -100,11 +95,6 @@
     max-width: 440px;
     margin-left: auto;
     margin-right: auto;
-
-    &__content-wrapper {
-      // It Adds extra padding since Bootstrap Grid container paddings were overriten for this component
-      padding: 0 $grid__gutter-width;
-    }
   }
 
 
@@ -113,10 +103,14 @@
   //-----------------------------------
   @include media-tablet-only {
     width: 50%;
+  }
 
-    &__content-wrapper {
-      // It Adds extra padding since Bootstrap Grid container paddings were overriten for this component
-      padding: 0 $grid__gutter-width;
+
+  @include media-mobile-and-tablet {
+    &__image-wrapper {
+      // Override Bootstrap's grid gutter so the Image goes from edge to edge of the screen
+      margin-left: ($grid__gutter-width * -1); // Negative Margin
+      margin-right: ($grid__gutter-width * -1); // Negative Margin
     }
   }
 

@@ -15,7 +15,8 @@ use(function () {
                 mobile: 'http://lorempixel.com/750/750/technics/2/750x750/',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
                 desktop: '/content/dam/eaton/images/Cityscape_mob.png',
-                altText: ''
+                altText: '',
+                alignment: 'center'
             },
             imgAlignment:'right',
             backgroundColor: '#F8F8F8'
@@ -36,7 +37,8 @@ use(function () {
                 mobile: 'http://lorempixel.com/750/750/technics/750x750/',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
                 desktop: '/content/dam/eaton/images/energy.png',
-                altText: ''
+                altText: '',
+                alignment: 'center'
             },
             imgAlignment:'right',
             backgroundColor: '#FFFFFF'
@@ -53,7 +55,8 @@ use(function () {
                 mobile: 'http://lorempixel.com/750/750/technics/3/750x750/',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
                 desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockRight-1.png',
-                altText: ''
+                altText: '',
+                alignment: 'center'
             },
 
             imgAlignment:'right',
@@ -71,7 +74,8 @@ use(function () {
                 mobile: 'http://lorempixel.com/750/750/technics/5/750x750/',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
                 desktop: '/content/dam/eaton/images/Cityscape_mob.png',
-                altText: ''
+                altText: '',
+                alignment: 'center'
             },
             imgAlignment:'right',
             backgroundColor: '#005EB8'
