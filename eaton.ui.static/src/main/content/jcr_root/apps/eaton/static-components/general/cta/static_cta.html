@@ -14,12 +14,10 @@
   <div class="alert alert-warning">CTA Component</div>
 </sly>
 
-<div class="eaton-cta">
-  <sly data-sly-test="${ properties.view == 'default' }">
-    <sly data-sly-include="views/view-default.html" data-sly-unwrap></sly>
-  </sly>
+<sly data-sly-test="${ properties.view == 'default' }">
+  <sly data-sly-include="views/view-default.html" data-sly-unwrap></sly>
+</sly>
 
-  <sly data-sly-test="${ properties.view == 'link' }">
-    <sly data-sly-include="views/view-link.html" data-sly-unwrap></sly>
-  </sly>
-</div>
+<sly data-sly-test="${ properties.view == 'link' }">
+  <sly data-sly-include="views/view-link.html" data-sly-unwrap></sly>
+</sly>
