@@ -33,6 +33,7 @@
 
   .eaton-link-list-vertical__list-link {
     @include h5-link-bold;
+    font-family: $font-family__secondary;
   }
 
   // &__list-title {

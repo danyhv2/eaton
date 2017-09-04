@@ -84,11 +84,11 @@ App.productGrid = (function() {
     const resultsObjectMap = {
       'product-card-sku': 'sku',
       'product-card-subcategory': 'subcategory'
-    }
+    };
 
     // Else Fetch New Results
     fetchData(requestURL, requestNextPage)
-      .done( data  => {
+      .done( data => {
 
         // Loop over all result items
         const newResults = data[resultsObjectMap[gridType]].resultsList.reduce((items, currentItem) => {
