@@ -34,13 +34,16 @@
     padding: 2rem 6rem;
     text-align: center;
     font-size: 1.8rem;
+  }
 
-    &:hover,
-    &:focus,
-    &:active {
+  // EATON-431: (NOTE: Add Underline to links only and Not to Disabled Tabs)
+  //--------------
+  &__list-item {
+    a:hover,
+    a:focus,
+    a:active {
       text-decoration: underline;
     }
-
   }
 
   // Active Tab
