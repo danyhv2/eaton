@@ -4,9 +4,9 @@
 'use strict';
 
 let App = window.App || {};
-App.ttilList = function () {
+App.ttilListLandingHero = function () {
 
-  const $componentEl = $('.carousel-component-slide');
+  const $componentEl = $('.eaton-landing-hero__slide-list');
 
   const init = () => {
     initCarousels();
@@ -23,10 +23,9 @@ App.ttilList = function () {
       autoplay: true,
       autoplaySpeed: 5000,
       dots: true,
-      dotsClass: 'carousel-component__dots',
-      prevArrow: $('.carousel-component__arrow--prev'),
-      nextArrow: $('.carousel-component__arrow--next')
-
+      dotsClass: 'eaton-landing-hero__dots',
+      prevArrow: $componentEl.find('.eaton-landing-hero__arrow--prev'),
+      nextArrow: $componentEl.find('.eaton-landing-hero__arrow--next')
     });
   };
 

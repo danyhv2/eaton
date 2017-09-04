@@ -147,7 +147,7 @@ h5, .b-heading-h5 { font-family: Arial, sans-serif; font-size: 2rem; font-weight
 
 h5 a, .b-heading-h5 a { color: #005EB8; }
 
-.b-heading-h1-hero { font-family: 'EatonMedium', sans-serif; font-size: 7.0rem; line-height: 8.0rem; margin-top: 0; }
+.b-heading-h1-hero { font-family: 'EatonMedium', sans-serif; font-size: 3.5rem; line-height: 4rem; margin-top: 0; }
 
 @media screen and (min-width: 992px) { .b-heading-h1-hero { font-family: 'EatonMedium', sans-serif; font-size: 5.4rem; line-height: 6.8rem; } }
 

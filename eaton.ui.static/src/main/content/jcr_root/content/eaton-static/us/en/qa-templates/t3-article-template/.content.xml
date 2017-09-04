@@ -291,7 +291,7 @@
                 sling:resourceType="eaton/static-components/content/ttil-list"
                 showSeparator="false"
                 testdata="article-hero"
-                view="landing-hero-single"/>
+                view="landing-hero" />
             <title
                 jcr:created="{Date}2017-07-20T05:36:36.506Z"
                 jcr:createdBy="etn-marie"

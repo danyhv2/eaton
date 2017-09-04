@@ -30,10 +30,6 @@
                 jcr:primaryType="nt:unstructured"
                 text="Landing Hero"
                 value="landing-hero"/>
-              <landing-hero-single
-                jcr:primaryType="nt:unstructured"
-                text="Landing Hero - Single"
-                value="landing-hero-single"/>
               <tile-link
                 jcr:primaryType="nt:unstructured"
                 text="Tile Link"
@@ -64,14 +60,6 @@
             name="./toggleInnerGrid"
             type="checkbox"
             xtype="selection" />
-          <showCta
-            jcr:primaryType="cq:Widget"
-            fieldDescription="Show or hide the cta"
-            fieldLabel="Show cta"
-            inputValue="true"
-            name="./showCta"
-            type="checkbox"
-            xtype="selection"/>
           <showSeparator
             jcr:primaryType="cq:Widget"
             fieldDescription="Show or hide the separator for the headline"
