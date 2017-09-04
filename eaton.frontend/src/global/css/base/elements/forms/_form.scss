@@ -5,6 +5,8 @@
 
 .eaton-form {
 
+  $light-gray: #eef0f2;
+
   font-family: Arial, 'Arial', sans-serif;
 
   form {
@@ -176,13 +178,13 @@
       top: -8px;
       width: 2.5em;
       height: 2.5em;
-      background-color: #eef0f2;
+      background-color: $light-gray;
     }
 
     &:checked + span::after {
-      content: '\E900';
+      @extend %font-family-glyphicon;
+      @extend %icon-checkmark;
       font-size: 1.4em;
-      font-family: 'eaton-glyphicon';
       line-height: 0.8;
       color: $color__primary-blue;
       position: absolute;
@@ -287,7 +289,7 @@
     margin-top: 10px;
 
     &__inner {
-      background: #fff url('/content/dam/eaton/images/down_arrow.png') no-repeat;
+      background: #FFF url('images/down_arrow.png') no-repeat;
       background-position: 98%;
       background-size: 12px;
       border-radius: 0;
@@ -312,6 +314,12 @@
 
     &__item[role="option"] {
       color: $color__primary-blue;
+
+      &.is-highlighted {
+        // NOTE: Add background color for accessibility purposes
+        // When using keyboard navigation, background color-white is not visible;
+        background-color: $light-gray;
+      }
     }
 
     &[data-type*=select-one]::after {
