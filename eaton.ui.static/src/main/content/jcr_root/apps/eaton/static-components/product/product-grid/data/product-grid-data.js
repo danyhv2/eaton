@@ -8,7 +8,7 @@ use(function () {
 
     // Facets Config
     //--------------
-    data.facets {
+    data.facets = {
       "config": {
         "facetGroupsMinVisible": 4,
         "facetValuesMinVisible": 4,
