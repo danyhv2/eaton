@@ -19,7 +19,8 @@
 var App = window.App || {};
 App.ttilListLandingHero = function () {
 
-  var $componentEl = $('.eaton-landing-hero__slide-list');
+  var $componentEl = $('.eaton-landing-hero');
+  var $componentSlidesEl = $componentEl.find('.eaton-landing-hero__slide-list');
 
   var init = function init() {
     initCarousels();
@@ -29,7 +30,7 @@ App.ttilListLandingHero = function () {
    * Initialize Bootstrap Carousel
    */
   var initCarousels = function initCarousels() {
-    $componentEl.slick({
+    $componentSlidesEl.slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,

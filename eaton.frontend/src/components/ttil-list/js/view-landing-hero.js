@@ -6,7 +6,8 @@
 let App = window.App || {};
 App.ttilListLandingHero = function () {
 
-  const $componentEl = $('.eaton-landing-hero__slide-list');
+  const $componentEl = $('.eaton-landing-hero');
+  const $componentSlidesEl = $componentEl.find('.eaton-landing-hero__slide-list');
 
   const init = () => {
     initCarousels();
@@ -17,7 +18,7 @@ App.ttilListLandingHero = function () {
    * Initialize Bootstrap Carousel
    */
   const initCarousels = () => {
-    $componentEl.slick({
+    $componentSlidesEl.slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
