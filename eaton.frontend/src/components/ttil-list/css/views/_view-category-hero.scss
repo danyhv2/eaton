@@ -43,6 +43,8 @@
     }
   }
 
+  // EATON-474: Category Hero, Landing Hero - Semi-Transparent gradient should be applied on the whole image
+  //--------------
   .image-mask & {
     &__image::before {
       @include image-mask-gradient();
