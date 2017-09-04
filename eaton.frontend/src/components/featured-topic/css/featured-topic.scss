@@ -72,6 +72,12 @@
     }
   }
 
+  @include media-tablet-and-up {
+    .eaton-link-list-vertical__list-link {
+      font-family: $font-family__secondary;
+    }
+  }
+
   @include media-desktop-and-up {
     padding-top: $spacing__xl;
     padding-bottom: $spacing__xl;
