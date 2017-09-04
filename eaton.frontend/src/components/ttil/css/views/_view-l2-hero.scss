@@ -35,7 +35,7 @@
   @include media-mobile-and-tablet {
 
     // Image Aspect Ratio Mobile
-    height: #{(628/750) * 100}vw;
+    height: #{(628 / 750) * 100}vw;
     min-height: 370px;
     max-height: 500px;
 
@@ -50,8 +50,9 @@
   // Media Query: > 992px and up
   //-----------------------------------
   @include media-desktop-and-up {
+
     // Aspect Ratio Desktop: 26:9
-    height: #{(9/26) * 100}vw;
+    height: #{(9 / 26) * 100}vw;
 
     &__text {
       font-size: 2rem;
