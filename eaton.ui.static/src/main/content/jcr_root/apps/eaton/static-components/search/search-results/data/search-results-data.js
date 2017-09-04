@@ -9,296 +9,302 @@ use(function () {
   // if ((typeof(testdata) == "undefined")) {
 
 
-    // Results Tabs
-    //--------------
-    data.tabs = {
-      "items": [
-        {
-          "label": "Product",
-          "id": "product",
-          "isHiddenTab": false,
-          "isActiveTab": false,
-          "isADisabledTab": false,
-          "resultsCount": 36,
-          "url": "http://eaton.dev/results.tab.product.html",
-          "target": "_self"
-        },
-        {
-          "label": "News & insights",
-          "id": "news-insights",
-          "isHiddenTab": false,
-          "isActiveTab": false,
-          "isADisabledTab": false,
-          "resultsCount": 97,
-          "url": "http://eaton.dev/results.tab.news-insights.html",
-          "target": "_self"
-        },
-        {
-          "label": "Resources",
-          "id": "resources",
-          "isHiddenTab": false,
-          "isActiveTab": false,
-          "isADisabledTab": true,
-          "resultsCount": 0,
-          "url": "http://eaton.dev/results.tab.resources.html",
-          "target": "_self"
-        },
-        {
-          "label": "This Tab Should be hidden",
-          "id": "resources",
-          "isHiddenTab": true,
-          "isActiveTab": false,
-          "isADisabledTab": false,
-          "resultsCount": 15,
-          "url": "http://eaton.dev/results.tab.hidden.html",
-          "target": "_self"
-        },
-      ]
-    };
+  // Results Tabs
+  //--------------
+  data.tabs = {
+    "items": [
+      {
+        "label": "Product",
+        "id": "product",
+        "isHiddenTab": false,
+        "isActiveTab": false,
+        "isADisabledTab": false,
+        "resultsCount": 36,
+        "url": "http://eaton.dev/results.tab.product.html",
+        "target": "_self"
+      },
+      {
+        "label": "News & insights",
+        "id": "news-insights",
+        "isHiddenTab": false,
+        "isActiveTab": false,
+        "isADisabledTab": false,
+        "resultsCount": 97,
+        "url": "http://eaton.dev/results.tab.news-insights.html",
+        "target": "_self"
+      },
+      {
+        "label": "Resources",
+        "id": "resources",
+        "isHiddenTab": false,
+        "isActiveTab": false,
+        "isADisabledTab": true,
+        "resultsCount": 0,
+        "url": "http://eaton.dev/results.tab.resources.html",
+        "target": "_self"
+      },
+      {
+        "label": "This Tab Should be hidden",
+        "id": "resources",
+        "isHiddenTab": true,
+        "isActiveTab": false,
+        "isADisabledTab": false,
+        "resultsCount": 15,
+        "url": "http://eaton.dev/results.tab.hidden.html",
+        "target": "_self"
+      },
+    ]
+  };
 
 
     // Facets Config
     //--------------
     data.facets = {
       "config": {
-        "facetItemsMinVisible": 4,
-        "facetValuesMinVisible": 4
+        "facetGroupsMinVisible": 4,
+        "facetValuesMinVisible": 4,
+        // "facetGroupExpanded": 2
       },
+      "facetLabel": "Narrow Results",
+      "viewMoreLabel": "View More",
+      "filtersLabel": "Filters",
+      "closeFiltersLabel": "Close Filters",
+      "applyLabel": "Done",
       "facetItems": [
         {
-          "facetName": "Content Type",
-          "facetId": "content-type",
+          "facetGroupName": "Content Type",
+          "facetGroupId": "content-type",
           "facetType": "radios",
           "facetValues": [
             {
-              "id": "product",
-              "label": "Products",
-              "url": "t10-search-results.html?facetvalue=product",
-              "isChecked": true,
+              "facetId": "product",
+              "facetLabel": "Products",
+              "facetURL": "t10-search-results.html?facetvalue=product",
+              "facetIsChecked": true,
               "target": "_self"
             },
             {
-              "id": "news",
-              "label": "News & Insights",
-              "url": "t10-search-results.html?facetvalue=news",
-              "isChecked": false,
+              "facetId": "news",
+              "facetLabel": "News & Insights",
+              "facetURL": "t10-search-results.html?facetvalue=news",
+              "facetIsChecked": false,
               "target": "_self"
             },
             {
-              "id": "resources",
-              "label": "Resources",
-              "url": "t10-search-results.html?facetvalue=resources",
-              "isChecked": false,
+              "facetId": "resources",
+              "facetLabel": "Resources",
+              "facetURL": "t10-search-results.html?facetvalue=resources",
+              "facetIsChecked": false,
               "target": "_self"
             }
           ]
         },
         {
-          "facetName": "Voltage",
-          "facetId": "voltage",
+          "facetGroupName": "Voltage",
+          "facetGroupId": "voltage",
           "facetType": "checkboxes",
           "facetValues": [
             {
-              "id": "700va",
-              "label": "700 VA",
-              "url": "t10-search-results.html?facetvalue=700va",
-              "isChecked": true
+              "facetId": "700va",
+              "facetLabel": "700 VA",
+              "facetURL": "t10-search-results.html?facetvalue=700va",
+              "facetIsChecked": true
             },
             {
-              "id": "1000va",
-              "label": "1000 VA",
-              "url": "t10-search-results.html?facetvalue=1000va",
-              "isChecked": true
+              "facetId": "1000va",
+              "facetLabel": "1000 VA",
+              "facetURL": "t10-search-results.html?facetvalue=1000va",
+              "facetIsChecked": true
             },
             {
-              "id": "1500va",
-              "label": "1500 VA",
-              "url": "t10-search-results.html?facetvalue=1500va",
-              "isChecked": false
+              "facetId": "1500va",
+              "facetLabel": "1500 VA",
+              "facetURL": "t10-search-results.html?facetvalue=1500va",
+              "facetIsChecked": false
             },
             {
-              "id": "2000va",
-              "label": "2000 VA",
-              "url": "t10-search-results.html?facetvalue=2000va",
-              "isChecked": true
+              "facetId": "2000va",
+              "facetLabel": "2000 VA",
+              "facetURL": "t10-search-results.html?facetvalue=2000va",
+              "facetIsChecked": true
             },
             {
-              "id": "3000va",
-              "label": "3000 VA",
-              "url": "t10-search-results.html?facetvalue=3000va",
-              "isChecked": true,
+              "facetId": "3000va",
+              "facetLabel": "3000 VA",
+              "facetURL": "t10-search-results.html?facetvalue=3000va",
+              "facetIsChecked": true,
             },
             {
-              "id": "5000va",
-              "label": "3500 VA",
-              "url": "t10-search-results.html?facetvalue=3500va",
-              "isChecked": true,
+              "facetId": "5000va",
+              "facetLabel": "3500 VA",
+              "facetURL": "t10-search-results.html?facetvalue=3500va",
+              "facetIsChecked": true,
             }
           ]
         },
         {
-          "facetName": "Facet 01",
-          "facetId": "name1",
+          "facetGroupName": "Facet 01",
+          "facetGroupId": "name1",
           "facetType": "radios",
           "facetValues": [
             {
-              "id": "value1",
-              "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=value1",
-              "isChecked": false
+              "facetId": "value1",
+              "facetLabel": "Value 1",
+              "facetURL": "t10-search-results.html?facetvalue=value1",
+              "facetIsChecked": false
             },
             {
-              "id": "value2",
-              "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=value2",
-              "isChecked": false
+              "facetId": "value2",
+              "facetLabel": "Value 2",
+              "facetURL": "t10-search-results.html?facetvalue=value2",
+              "facetIsChecked": false
             },
             {
-              "id": "value3",
-              "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=value3",
-              "isChecked": false
+              "facetId": "value3",
+              "facetLabel": "Value 3",
+              "facetURL": "t10-search-results.html?facetvalue=value3",
+              "facetIsChecked": false
             },
             {
-              "id": "value4",
-              "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=value4",
-              "isChecked": false
+              "facetId": "value4",
+              "facetLabel": "Value 4",
+              "facetURL": "t10-search-results.html?facetvalue=value4",
+              "facetIsChecked": false
             },
             {
-              "id": "value5",
-              "label": "Value 5",
-              "url": "t10-search-results.html?facetvalue=value5",
-              "isChecked": false
+              "facetId": "value5",
+              "facetLabel": "Value 5",
+              "facetURL": "t10-search-results.html?facetvalue=value5",
+              "facetIsChecked": false
             },
             {
-              "id": "value6",
-              "label": "Value 6",
-              "url": "t10-search-results.html?facetvalue=value6",
-              "isChecked": false
+              "facetId": "value6",
+              "facetLabel": "Value 6",
+              "facetURL": "t10-search-results.html?facetvalue=value6",
+              "facetIsChecked": false
             },
             {
-              "id": "value7",
-              "label": "Value 7",
-              "url": "t10-search-results.html?facetvalue=value7",
-              "isChecked": false
+              "facetId": "value7",
+              "facetLabel": "Value 7",
+              "facetURL": "t10-search-results.html?facetvalue=value7",
+              "facetIsChecked": false
             },
             {
-              "id": "value8",
-              "label": "Value 8",
-              "url": "t10-search-results.html?facetvalue=value8",
-              "isChecked": false
+              "facetId": "value8",
+              "facetLabel": "Value 8",
+              "facetURL": "t10-search-results.html?facetvalue=value8",
+              "facetIsChecked": false
             }
           ]
         },
         {
-          "facetName": "Facet 02",
-          "facetId": "name02",
+          "facetGroupName": "Facet 02",
+          "facetGroupId": "name02",
           "facetType": "checkboxes",
           "facetValues": [
             {
-              "id": "f2value1",
-              "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=f2value1",
-              "isChecked": false
+              "facetId": "f2value1",
+              "facetLabel": "Value 1",
+              "facetURL": "t10-search-results.html?facetvalue=f2value1",
+              "facetIsChecked": false
             },
             {
-              "id": "f2value2",
-              "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=f2value2",
-              "isChecked": false
+              "facetId": "f2value2",
+              "facetLabel": "Value 2",
+              "facetURL": "t10-search-results.html?facetvalue=f2value2",
+              "facetIsChecked": false
             },
             {
-              "id": "f2value3",
-              "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=f2value3",
-              "isChecked": false
+              "facetId": "f2value3",
+              "facetLabel": "Value 3",
+              "facetURL": "t10-search-results.html?facetvalue=f2value3",
+              "facetIsChecked": false
             },
             {
-              "id": "f2value4",
-              "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=f2value4",
-              "isChecked": false
+              "facetId": "f2value4",
+              "facetLabel": "Value 4",
+              "facetURL": "t10-search-results.html?facetvalue=f2value4",
+              "facetIsChecked": false
             },
             {
-              "id": "f2value5",
-              "label": "Value 5",
-              "url": "t10-search-results.html?facetvalue=f2value5",
-              "isChecked": false
+              "facetId": "f2value5",
+              "facetLabel": "Value 5",
+              "facetURL": "t10-search-results.html?facetvalue=f2value5",
+              "facetIsChecked": false
             },
             {
-              "id": "f2value6",
-              "label": "Value 6",
-              "url": "t10-search-results.html?facetvalue=f2value6",
-              "isChecked": false
+              "facetId": "f2value6",
+              "facetLabel": "Value 6",
+              "facetURL": "t10-search-results.html?facetvalue=f2value6",
+              "facetIsChecked": false
             }
           ]
         },
         {
-          "facetName": "Facet 03",
-          "facetId": "name3",
+          "facetGroupName": "Facet 03",
+          "facetGroupId": "name3",
           "facetType": "radios",
           "facetValues": [
             {
-              "id": "f3value1",
-              "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=f3value1",
-              "isChecked": true
+              "facetId": "f3value1",
+              "facetLabel": "Value 1",
+              "facetURL": "t10-search-results.html?facetvalue=f3value1",
+              "facetIsChecked": false
             },
             {
-              "id": "f3value2",
-              "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=f3value2",
-              "isChecked": true
+              "facetId": "f3value2",
+              "facetLabel": "Value 2",
+              "facetURL": "t10-search-results.html?facetvalue=f3value2",
+              "facetIsChecked": false
             },
             {
-              "id": "f3value3",
-              "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=f3value3",
-              "isChecked": true
+              "facetId": "f3value3",
+              "facetLabel": "Value 3",
+              "facetURL": "t10-search-results.html?facetvalue=f3value3",
+              "facetIsChecked": false
             },
             {
-              "id": "f3value4",
-              "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=f3value4",
-              "isChecked": true
+              "facetId": "f3value4",
+              "facetLabel": "Value 4",
+              "facetURL": "t10-search-results.html?facetvalue=f3value4",
+              "facetIsChecked": false
             },
             {
-              "id": "f3value5",
-              "label": "Value 5",
-              "url": "t10-search-results.html?facetvalue=f3value5",
-              "isChecked": true
+              "facetId": "f3value5",
+              "facetLabel": "Value 5",
+              "facetURL": "t10-search-results.html?facetvalue=f3value5",
+              "facetIsChecked": false
             }
           ]
         },
         {
-          "facetName": "Facet 04",
-          "facetId": "name04",
+          "facetGroupName": "Facet 04",
+          "facetGroupId": "name04",
           "facetType": "checkboxes",
           "facetValues": [
             {
-              "id": "f4value1",
-              "label": "Value 1",
-              "url": "t10-search-results.html?facetvalue=f4value1",
-              "isChecked": true
+              "facetId": "f4value1",
+              "facetLabel": "Value 1",
+              "facetURL": "t10-search-results.html?facetvalue=f4value1",
+              "facetIsChecked": false
             },
             {
-              "id": "f4value2",
-              "label": "Value 2",
-              "url": "t10-search-results.html?facetvalue=f4value2",
-              "isChecked": true
+              "facetId": "f4value2",
+              "facetLabel": "Value 2",
+              "facetURL": "t10-search-results.html?facetvalue=f4value2",
+              "facetIsChecked": false
             },
             {
-              "id": "f4value3",
-              "label": "Value 3",
-              "url": "t10-search-results.html?facetvalue=f4value3",
-              "isChecked": true
+              "facetId": "f4value3",
+              "facetLabel": "Value 3",
+              "facetURL": "t10-search-results.html?facetvalue=f4value3",
+              "facetIsChecked": false
             },
             {
-              "id": "f4value4",
-              "label": "Value 4",
-              "url": "t10-search-results.html?facetvalue=f4value4",
-              "isChecked": true
+              "facetId": "f4value4",
+              "facetLabel": "Value 4",
+              "facetURL": "t10-search-results.html?facetvalue=f4value4",
+              "facetIsChecked": false
             }
           ]
         }
@@ -312,8 +318,9 @@ use(function () {
       "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/search-results--more-data.json",
       "ajaxRequestNextPage": 2,
       "resultsCount": 200,
-      "resultsLabel": 'Results',
       "currentPage": 1,
+      "resultsLabel": 'Results',
+      "loadMoreLabel": 'Load More',
       "resultsOptions": {
         "showLoadMore": true,
         "disclaimerEnabled": true,
@@ -333,7 +340,7 @@ use(function () {
           "url": "t10-search-results.html?clear-all-filters=true",
           "target": "_self"
         },
-        "items": [
+        "values": [
           {
             "label": "Products",
             "url": "t10-search-results.html?remove-filter=products",
@@ -391,14 +398,23 @@ use(function () {
           }
         ]
       },
-      "results": [
+    };
+
+
+    //-----------------------------------
+    // Results List for: Page T10-search-results
+    //-----------------------------------
+    data.search.searchResults = {
+      "resultsList": [
         {
           "contentType": "family",
           "contentItem": {
             "name": "Network, Server & Storage UPS",
-            "imgSrc": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-            "imgAlt": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "src": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "altText": "Network, Server & Storage UPS",
+            },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
               "url": "http://www.cooperindustries.com/",
@@ -442,9 +458,11 @@ use(function () {
           "contentType": "sku",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "imgSrc": "/content/dam/eaton/images/products/product-2-thumbnail.png",
-            "imgAlt": "9E6Ki-Eaton 9E",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "src": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+              "altText": "9E6Ki-Eaton 9E",
+            },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
               "url": "http://www.cooperindustries.com/",
@@ -475,9 +493,11 @@ use(function () {
           "contentType": "family",
           "contentItem": {
             "name": "Network, Server & Storage UPS",
-            "imgSrc": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-            "imgAlt": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "src": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "altText": "Network, Server & Storage UPS",
+            },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
               "url": "http://www.cooperindustries.com/",
@@ -522,9 +542,11 @@ use(function () {
           "contentType": "sku",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "imgSrc": "/content/dam/eaton/images/products/product-7-thumbnail.png",
-            "imgAlt": "9E6Ki-Eaton 9E",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "src": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+              "altText": "9E6Ki-Eaton 9E",
+            },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
               "url": "http://www.cooperindustries.com/",
@@ -569,9 +591,11 @@ use(function () {
           "contentType": "family",
           "contentItem": {
             "name": "Network, Server & Storage UPS",
-            "imgSrc": "/content/dam/eaton/images/products/product-5-thumbnail.png",
-            "imgAlt": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "src": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+              "altText": "Network, Server & Storage UPS",
+            },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
               "url": "http://www.cooperindustries.com/",
@@ -612,18 +636,18 @@ use(function () {
     // ecach facet group
     for (var f = 0; f < data.facets.facetItems.length; f++) {
       for (var i = 0; i < data.facets.facetItems[f].facetValues.length; i++) {
-        var facetId = data.facets.facetItems[f].facetValues[i].id;
+        var facetId = data.facets.facetItems[f].facetValues[i].facetId;
 
         // activate the link
         // data.facets.facetItems[0].facetName += '('+facetId+'-'+facetvaluesArr+') ';
         // data.facets.facetItems[0].facetName = facetvaluesArr.join(',');
         if(facetvaluesArr.join(',').indexOf(facetId) >= 0) {
           // data.facets.facetItems[0].facetName = 'si '+facetId;
-          data.facets.facetItems[f].facetValues[i].isChecked = true;
+          data.facets.facetItems[f].facetValues[i].facetIsChecked = true;
         }
 
         // add the active facets to array later we'll add it to the URL
-        if(data.facets.facetItems[f].facetValues[i].isChecked){
+        if(data.facets.facetItems[f].facetValues[i].facetIsChecked){
           activeFiltersArr.push(facetId);
           activeFiltersObjArr.push(data.facets.facetItems[f].facetValues[i]);
         }
@@ -634,19 +658,22 @@ use(function () {
   // change the url params dynamically
   for (var f = 0; f < data.facets.facetItems.length; f++) {
     for (var i = 0; i < data.facets.facetItems[f].facetValues.length; i++) {
-      var facetId = data.facets.facetItems[f].facetValues[i].id;
-      var isFacedChecked = data.facets.facetItems[f].facetValues[i].isChecked;
+      var facetId = data.facets.facetItems[f].facetValues[i].facetId;
+      var isFacedChecked = data.facets.facetItems[f].facetValues[i].facetIsChecked;
       var disableactiveFiltersArr = activeFiltersArr.filter(function(f){return f!=facetId});
       var enablectiveFiltersArr = activeFiltersArr.concat([facetId]);
 
       data.facets.facetItems[f].facetValues[i].url =
         request.requestURL + '?facetvalue=' +
-          ( isFacedChecked ?
-            disableactiveFiltersArr.join(',') :
-            enablectiveFiltersArr.join(','))
+          ( isFacedChecked
+            ? disableactiveFiltersArr.join(',')
+            : enablectiveFiltersArr.join(',')
+          )
     }
 
-    data.search.activeFilters.items = activeFiltersObjArr;
+    // NOTE: disabled due to issues when rendering the page - ActiveFilters Property seems to be empty at this point
+    // data.search.activeFilters.values = activeFiltersObjArr;
+
   }
 
   // REMOVE for integration and production, only for test porpouses

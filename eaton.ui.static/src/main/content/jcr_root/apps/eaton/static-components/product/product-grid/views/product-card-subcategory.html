@@ -1,7 +1,7 @@
 <!--/*
   M-37 - Product Grid: Family Results List
 */-->
-<template data-sly-template.view="${ @ data }">
+<template data-sly-template.view="${ @ data, results }">
 
   <!--/* Results Wrapper */-->
   <!--/*
@@ -11,15 +11,17 @@
   <div class="results-list"
     data-results-url="${ data.ajaxRequestUrl }"
     data-results-next-page="${ data.ajaxRequestNextPage }"
-    data-results-type="product-card-family"
-    data-i18n='{ "goTo": "${ "Go to" @ i18n }" }'
+    data-results-type="product-card-subcategory"
+    data-i18n='{
+      "goTo": "${ "Go to" @ i18n }"
+    }'
   >
 
     <!--/* Result Items - Family */-->
     <div class="results-list__content">
-      <sly data-sly-list="${ data.results }">
-        <sly data-sly-use.tpl="views/partials/product-card-family-item.html">
-          <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      <sly data-sly-list="${ results.resultsList }">
+        <sly data-sly-use.tpl="views/partials/product-card-subcategory-item.html">
+          <sly data-sly-call="${ tpl.item @ results=results, itemData=item }"></sly>
         </sly>
       </sly>
     </div>

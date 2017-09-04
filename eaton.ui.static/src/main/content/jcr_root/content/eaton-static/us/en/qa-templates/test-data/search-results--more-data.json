@@ -2,110 +2,116 @@
   "search": {
     "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/search-results--more-data.json",
     "ajaxRequestNextPage": 3,
-    "results": [
-      {
-        "contentType": "family",
-        "contentItem": {
-          "name": "New Family Item",
-          "imgSrc": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-          "imgAlt": "Network, `Server & Storage UPS",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
-          "link": {
-            "text": "www.cooperindustries.com/.../product_updates.html",
-            "url": "http://www.cooperindustries.com/",
-            "target": "_blank"
-          },
-          "secondaryLinks": [
-            {
-              "text": "Overview",
-              "url": "#overview",
+    "searchResults": {
+      "resultsList": [
+        {
+          "contentType": "family",
+          "contentItem": {
+            "name": "New Family Item",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "src": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "altText": "Network, `Server & Storage UPS"
+            },
+            "link": {
+              "text": "www.cooperindustries.com/.../product_updates.html",
+              "url": "http://www.cooperindustries.com/",
               "target": "_blank"
             },
-            {
-              "text": "Models",
-              "url": "#models",
-              "target": "_blank"
-            },
-            {
-              "text": "Resources",
-              "url": "#resources",
+            "secondaryLinks": [
+              {
+                "text": "Overview",
+                "url": "#overview",
+                "target": "_blank"
+              },
+              {
+                "text": "Models",
+                "url": "#models",
+                "target": "_blank"
+              },
+              {
+                "text": "Resources",
+                "url": "#resources",
+                "target": "_blank"
+              }
+            ]
+          }
+        },
+        {
+          "contentType": "article",
+          "contentItem": {
+            "articleType": "external",
+            "name": "New External Article",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+            "link": {
+              "text": "www.cooperindustries.com/.../product_updates.html",
+              "url": "http://www.cooperindustries.com/",
               "target": "_blank"
             }
-          ]
-        }
-      },
-      {
-        "contentType": "article",
-        "contentItem": {
-          "articleType": "external",
-          "name": "New External Article",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
-          "link": {
-            "text": "www.cooperindustries.com/.../product_updates.html",
-            "url": "http://www.cooperindustries.com/",
-            "target": "_blank"
           }
-        }
-      },
-      {
-        "contentType": "article",
-        "contentItem": {
-          "articleType": "internal",
-          "name": "New Interal Article",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
-          "date": "November 27, 2015",
-          "link": {
-            "text": "www.cooperindustries.com/.../product_updates.html",
-            "url": "http://www.cooperindustries.com/",
-            "target": "_blank"
-          }
-        }
-      },
-      {
-        "contentType": "sku",
-        "contentItem": {
-          "name": "New SKU Item",
-          "imgSrc": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-          "imgAlt": "9E6Ki-Eaton 9E",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
-          "link": {
-            "text": "www.cooperindustries.com/.../product_updates.html",
-            "url": "http://www.cooperindustries.com/",
-            "target": "_blank"
-          },
-          "secondaryLinks": [
-            {
-              "text": "Overview",
-              "url": "#overview",
-              "target": "_blank"
-            },
-            {
-              "text": "Models",
-              "url": "#models",
-              "target": "_blank"
-            },
-            {
-              "text": "Resources",
-              "url": "#resources",
+        },
+        {
+          "contentType": "article",
+          "contentItem": {
+            "articleType": "internal",
+            "name": "New Interal Article",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
+            "date": "November 27, 2015",
+            "link": {
+              "text": "www.cooperindustries.com/.../product_updates.html",
+              "url": "http://www.cooperindustries.com/",
               "target": "_blank"
             }
-          ]
-        }
-      },
-      {
-        "contentType": "resource",
-        "contentItem": {
-          "name": "New Resource Item",
-          "documentType": "PDF",
-          "documentSize": "4MB",
-          "documentName": "Specs-2017.pdf",
-          "link": {
-            "text": "www.eaton.co/.../specs.pdf",
-            "url": "https://eaton.dev/resources/specs.pdf?download=true",
-            "target": "_blank"
+          }
+        },
+        {
+          "contentType": "sku",
+          "contentItem": {
+            "name": "New SKU Item",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "src": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "altText": "9E6Ki-Eaton 9E"
+            },
+            "link": {
+              "text": "www.cooperindustries.com/.../product_updates.html",
+              "url": "http://www.cooperindustries.com/",
+              "target": "_blank"
+            },
+            "secondaryLinks": [
+              {
+                "text": "Overview",
+                "url": "#overview",
+                "target": "_blank"
+              },
+              {
+                "text": "Models",
+                "url": "#models",
+                "target": "_blank"
+              },
+              {
+                "text": "Resources",
+                "url": "#resources",
+                "target": "_blank"
+              }
+            ]
+          }
+        },
+        {
+          "contentType": "resource",
+          "contentItem": {
+            "name": "New Resource Item",
+            "documentType": "PDF",
+            "documentSize": "4MB",
+            "documentName": "Specs-2017.pdf",
+            "link": {
+              "text": "www.eaton.co/.../specs.pdf",
+              "url": "https://eaton.dev/resources/specs.pdf?download=true",
+              "target": "_blank"
+            }
           }
         }
-      }
-    ]
+      ]
+    }
   }
 }

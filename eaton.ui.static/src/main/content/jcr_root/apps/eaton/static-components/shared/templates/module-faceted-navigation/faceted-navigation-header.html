@@ -35,12 +35,12 @@
       <sly data-sly-call="${ tpl.module @ activeFilters=data.activeFilters }"></sly>
     </sly>
 
-    <a data-sly-test="${ data.activeFilters.items.length }"
+    <a data-sly-test="${ data.activeFilters.values }"
       target="_self"
       data-toggle-modal-facet
       class="open-facets-mobile b-button b-button__primary b-button__primary--light"
       role="button">
-      ${ '{0} ({1})' @ i18n, format=[ 'Filters', data.activeFilters.items.length ] }
+      ${ '{0} ({1})' @ i18n, format=[ 'Filters', data.activeFilters.values.length ] }
     </a>
   </div>
 </template>

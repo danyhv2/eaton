@@ -92,7 +92,7 @@ App.searchResults = function () {
 
 
       // Loop over all result items
-      var newResults = search.results.reduce(function (items, currentItem) {
+      var newResults = search.searchResults.resultsList.reduce(function (items, currentItem) {
 
         // Get the HTML Template for the current Result Item
         return items += getItemTemplate(currentItem, i18nStrings);

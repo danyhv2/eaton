@@ -1,9 +1,9 @@
 <template data-sly-template.module="${ @ activeFilters }">
-  <div data-sly-test="${ activeFilters.items.length }"
+  <div data-sly-test="${ activeFilters.values.length }"
     class="faceted-navigation-filters">
 
     <!--/* If There Are Active Filters */-->
-    <div data-sly-list.filter="${ activeFilters.items }"
+    <div data-sly-list.filter="${ activeFilters.values }"
       class="faceted-navigation-header__active-filters">
       <a class="faceted-navigation-header__filter-link"
         href="${ filter.url }"
