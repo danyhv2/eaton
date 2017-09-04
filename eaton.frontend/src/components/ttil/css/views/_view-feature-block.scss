@@ -92,4 +92,18 @@
       margin-left: calc((100% - 1140px) / 2);
     }
   }
+
+
+  //-----------------------------------
+  // Media-Query: 0-991px
+  //-----------------------------------
+  @include media-mobile-only {
+
+    // EATON-538: Feature Block - CTA should be centered in Mobile.
+    &__cta-wrapper {
+      text-align: center;
+    }
+
+  }
+
 }

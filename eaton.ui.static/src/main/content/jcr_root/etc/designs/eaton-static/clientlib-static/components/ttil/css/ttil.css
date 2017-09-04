@@ -77,6 +77,8 @@
 @media screen and (min-width: 1200px) { .feature-block-component { width: calc((100% - 1140px) / 2 + 1140px); }
   .feature-block-component__right { margin-left: calc((100% - 1140px) / 2); } }
 
+@media screen and (max-width: 767px) { .feature-block-component__cta-wrapper { text-align: center; } }
+
 .eaton-article-feature { font-family: "Eaton", Arial, sans-serif; }
 
 .eaton-article-feature__image { width: 100%; height: auto; margin-top: 60px; }
