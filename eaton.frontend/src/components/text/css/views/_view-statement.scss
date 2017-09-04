@@ -13,7 +13,7 @@
   }
 
   //-----------------------------------
-  // Media-Query: Mobile
+  // Media-Query: 0-991px
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__content {
@@ -22,13 +22,26 @@
     }
   }
 
+
   //-----------------------------------
-  // Media-Query: Desktop
+  // Media-Query: >992 px
   //-----------------------------------
   @include media-desktop-and-up {
     &__content {
       font-size: 3.4rem;
       line-height: 5rem;
+
+      // EATON-566: Fix - Text - Statement and Image list too close to each other when placed in two column grid.
+      max-width: 420px;
+    }
+  }
+
+
+  //-----------------------------------
+  // Media-Query: > 1200px and up
+  //-----------------------------------
+  @include media-desktop-large {
+    &__content {
 
       // EATON-566: Fix - Text - Statement and Image list too close to each other when placed in two column grid.
       max-width: 460px;
