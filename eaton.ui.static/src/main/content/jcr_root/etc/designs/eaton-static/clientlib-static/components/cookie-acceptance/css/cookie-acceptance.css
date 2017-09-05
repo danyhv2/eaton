@@ -17,8 +17,10 @@
 
 .cookie-acceptancebox__agreement a, .cookie-acceptancebox__agreement a:hover { color: #fff; text-decoration: underline; }
 
+.cookie-acceptancebox__cta { padding: 10px 0px; width: 212px; }
+
 @media screen and (max-width: 767px) { .cookie-acceptancebox { padding: 15px 0 15px; }
-  .cookie-acceptancebox__cta { width: 100%; margin-top: 15px; } }
+  .cookie-acceptancebox__cta { width: 100%; margin-top: 15px; max-width: none; padding: 10px 0px; } }
 
 @media screen and (min-width: 768px) and (max-width: 991px) { .cookie-acceptancebox { padding: 15px 0 15px; }
-  .cookie-acceptancebox__cta { width: 100%; margin-top: 15px; } }
+  .cookie-acceptancebox__cta { width: 100%; margin-top: 15px; max-width: none; } }

@@ -1,5 +1,5 @@
 <!--/* M-60: Results List */-->
-<template data-sly-template.module="${ @ data }">
+<template data-sly-template.module="${ @ data, results }">
 
 <!--/*
   NOTE: data-i18n is a JSON object that contains a list i18n strings used in this View
@@ -10,7 +10,7 @@
   data-results-next-page="${ data.ajaxRequestNextPage }"
   data-i18n='{ "goTo": "${ "Go to" @ i18n }", "download": "${ "Download" @ i18n }" }'
   >
-  <div data-sly-list="${ data.results }"
+  <div data-sly-list="${ results.resultsList }"
     class="results-list__content">
 
     <sly data-sly-test="${ item.contentType == 'family' }">
@@ -47,7 +47,7 @@
         data-sly-test="${ data.ajaxRequestUrl }"
         class="b-button b-button__primary b-button__primary--light"
         role="button"
-        data-load-more>${ 'Load More' @ i18n }</button>
+        data-load-more>${ data.loadMoreLabel }</button>
     </div>
   </div>
 

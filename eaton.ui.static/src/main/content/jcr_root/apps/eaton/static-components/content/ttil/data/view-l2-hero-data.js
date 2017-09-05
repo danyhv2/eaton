@@ -11,7 +11,8 @@ use(function () {
         mobile: "/content/dam/eaton/images/story_board.png",
         tablet: "/content/dam/eaton/images/story_board.png",
         desktop: "/content/dam/eaton/images/story_board.png",
-        altText: ""
+        altText: "",
+        alignment: 'center'
       }
     };
   }
@@ -24,7 +25,8 @@ use(function () {
         mobile: "/content/dam/eaton/images/story_board.png",
         tablet: "/content/dam/eaton/images/story_board.png",
         desktop: "/content/dam/eaton/images/story_board.png",
-        altText: ""
+        altText: "",
+        alignment: 'center'
       }
     };
   }
@@ -37,11 +39,12 @@ use(function () {
         mobile: "/content/dam/eaton/images/story_board.png",
         tablet: "/content/dam/eaton/images/story_board.png",
         desktop: "/content/dam/eaton/images/story_board.png",
-        altText: ""
+        altText: "",
+        alignment: 'center'
       }
     };
   }
-  
+
   else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors")) {
     data = {
       title: "The power of Eaton",
@@ -50,7 +53,8 @@ use(function () {
         mobile: "/content/dam/eaton/images/the-power-of-eaton.png",
         tablet: "/content/dam/eaton/images/the-power-of-eaton.png",
         desktop: "/content/dam/eaton/images/the-power-of-eaton.png",
-        altText: ""
+        altText: "",
+        alignment: 'center'
       }
     };
   }
@@ -63,7 +67,8 @@ use(function () {
         mobile: "/content/dam/eaton/images/story_board.png",
         tablet: "/content/dam/eaton/images/story_board.png",
         desktop: "/content/dam/eaton/images/story_board.png",
-        altText: ""
+        altText: "",
+        alignment: 'center'
       }
     };
   }

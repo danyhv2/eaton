@@ -1,72 +1,57 @@
-<template data-sly-template.multiple="${@ param}">
-    <div data-sly-use.data="${'../data/view-landing-hero-multiple-data.js' @testdata=param.testdata}" class="eaton-landing-hero carousel-component" data-sly-test="${param.hero.length > 1}">
-
-        <ul class="carousel-component-slide" data-sly-list.slide="${data.hero}">
-            <li>
-                <div class="carousel-component-slide__image">
-                    <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
-                        <sly data-sly-call="${ tpl.module @ data=slide.image }"></sly>
-                    </sly>
-                    <div class="carousel-component-slide__caption">
-                        <div class="row">
-                            <div>
-                                <span class="b-heading-h1-hero">${slide.title}</span>
-                                <p class="carousel-component-slide__text b-hero-description">${slide.text @ context = 'html'}</p>
-                                <a class="carousel-component-slide__cta b-button b-button__primary b-button__primary--dark" href="${slide.cta.url}" role="button" data-sly-test="${slide.cta.text.length > 0}">${slide.cta.text}</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <div class="carousel-component__down-arrow visible-xs">
-            <span class="icon icon-chevron-down"></span>
-        </div>
-
-        <sly data-sly-test="${data.hero.length > 1 }">
-            <button class="carousel-component__arrow--prev carousel-component__arrow button--reset">
-                <span class="icon icon-chevron-left"></span>
-                <span class="sr-only">Go to Previous Item</span>
-            </button>
-            <button class="carousel-component__arrow--next carousel-component__arrow button--reset">
-                <span class="icon icon-chevron-right"></span>
-                <span class="sr-only">Go to Next Item</span>
-            </button>
-        </sly>
-
-    </div>
-</template>
-
-
-<template data-sly-template.single="${@ param}">
-  <div data-sly-use.data="${'../data/view-landing-hero-single-data.js' @testdata=param.testdata}"
-    data-sly-test="${param.hero.length == 1}"
-    class="eaton-landing-hero eaton-landing-hero--single carousel-component"
-    data-ride="carousel"
-    data-pause="hover">
-
-    <div class="carousel-component-slide carousel-inner"
-      data-sly-list.slide="${data.hero}"
-      role="listbox">
-      <div class="carousel-component-slide__image item ${slideList.index == 0 ? 'active' : ''}">
-          <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
-              <sly data-sly-call="${ tpl.module @ data=slide.image }"></sly>
+<sly data-sly-use.data="${'../data/view-landing-hero-data.js' @testdata=properties.testdata }">
+  <div class="eaton-landing-hero">
+    <ul class="eaton-landing-hero__slide-list" data-sly-list.slide="${ data.hero }">
+      <li class="eaton-landing-hero__slide-item ${
+        slide.imageMaskEnabled ? 'image-mask' : ''
+      } ${
+        slide.image.alignment ? 'bg-alignment' : ''
+      } ${
+        slide.image.alignment == 'left' ? 'bg-alignment-left' : ''
+      } ${
+        slide.image.alignment == 'center' ? 'bg-alignment-center' : ''
+      } ${
+        slide.image.alignment == 'right' ? 'bg-alignment-right' : ''
+      }">
+        <div class="eaton-landing-hero__image">
+          <!-- Start: Rendition Image Component -->
+          <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-background.html">
+            <sly data-sly-call="${ tpl.module @ data=slide.image }"></sly>
           </sly>
-        <div class="carousel-component-slide__caption carousel-caption">
-          <span class="b-heading-h1-hero">${slide.title}</span>
-          <div class="carousel-component-slide__separator" data-sly-test="${properties.showSeparator}"></div>
-          <p class="carousel-component-slide__text b-hero-description">${slide.text @ context = 'html'}</p>
-          <a data-sly-test="${properties.showCta}"
-            class="carousel-component-slide__cta b-button b-button__primary b-button__primary--dark"
-            href="${slide.cta.url}" role="button">${slide.cta.text}</a>
+          <!-- End: Rendition Image Component -->
         </div>
-      </div>
+        <div class="eaton-landing-hero__content">
+          <div class="container">
+            <div class="eaton-landing-hero__caption">
+              <h2 class="b-heading-h1-hero">${ slide.title }</h2>
+              <div data-sly-test="${ properties.showSeparator }"
+                class="eaton-landing-hero__separator"></div>
+              <div class="eaton-landing-hero__text b-hero-description">${ slide.text @ context = 'html'}</div>
+              <a data-sly-test="${ slide.cta.text.length > 0 }"
+                class="eaton-landing-hero__cta b-button b-button__primary b-button__primary--dark"
+                href="${ slide.cta.url }"
+                target="${ slide.cta.target }"
+                role="button">${ slide.cta.text }</a>
+            </div>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+
+    <div class="eaton-landing-hero__down-arrow visible-xs">
+      <i class="icon icon-chevron-down" aria-hidden="true"></i>
     </div>
 
-      <div class="carousel-component__down-arrow visible-xs">
-          <span class="icon icon-chevron-down"></span>
-      </div>
+    <sly data-sly-test="${data.hero.length > 1 }">
+      <button class="eaton-landing-hero__arrow--prev eaton-landing-hero__arrow button--reset">
+        <i class="icon icon-chevron-left" aria-hidden="true"></i>
+        <span class="sr-only">${ 'Go to Previous Item' @i18n }</span>
+      </button>
+      <button class="eaton-landing-hero__arrow--next eaton-landing-hero__arrow button--reset">
+        <i class="icon icon-chevron-right" aria-hidden="true"></i>
+        <span class="sr-only">${ 'Go to Next Item' @i18n }</span>
+      </button>
+    </sly>
 
   </div>
-</template>
+</sly>

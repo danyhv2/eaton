@@ -34,7 +34,7 @@
         width: 100%;
         text-align: left;
         padding-left: 2rem;
-        padding-top: 2rem;
+        padding-top: 2.5rem;
         border: 1px solid $color__white;
 
         &[aria-expanded="true"] {
@@ -108,10 +108,12 @@
     }
   }
 
-  a.open-facets-mobile {
-    width: 100%;
+  &__container {
     text-align: center;
-    max-width: unset;
+  }
+
+  a.open-facets-mobile {
+
   }
 
   .faceted-navigation-filters {

@@ -19,7 +19,7 @@ App.global.templates = (function() {
             class="product-card-sku__image-link"
             target="${ data.contentItem.link.target }"
           >
-            <img src="${ data.contentItem.imgSrc }"
+            <img src="${ data.contentItem.image.src }"
               class="product-card-sku__image"
               alt="${ data.contentItem.name }" />
           </a>
@@ -37,7 +37,7 @@ App.global.templates = (function() {
                 <i class="icon icon-chevron-right" aria-hidden="true"></i>
               </a>
             </h3>
-            <div class="product-card-sku__price b-body-copy">${ data.contentItem.price }*</div>
+            <div class="product-card-sku__price b-body-copy">${ data.contentItem.productPrice }*</div>
           </div>
 
           <ul class="product-card-sku__links-list">
@@ -45,9 +45,9 @@ App.global.templates = (function() {
               <a href="${ data.contentItem.productLinks.specificationsURL }"
                 class="product-card-sku__link-item-link"
                 target="_self"
-                aria-label="${ i18n.goTo } Specifications"
+                aria-label="${ i18n.goTo } ${ i18n.productSpecificationTitle }"
               >
-                <span class="link-label">Specifications</span>
+                <span class="link-label">${ i18n.productSpecificationTitle }</span>
                 <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
               </a>
             </li>
@@ -56,9 +56,9 @@ App.global.templates = (function() {
               <a href="${ data.contentItem.productLinks.resourcesURL }"
                 class="product-card-sku__link-item-link"
                 target="_self"
-                aria-label="${ i18n.goTo } Resources"
+                aria-label="${ i18n.goTo } ${ i18n.productResourcesTitle }"
               >
-                <span class="link-label">Resources</span>
+                <span class="link-label">${ i18n.productResourcesTitle }</span>
                 <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
               </a>
             </li>
@@ -72,8 +72,8 @@ App.global.templates = (function() {
             ${ data.contentItem.productAttributes.map((attribute) => {
               return `
                 <div class="product-card-sku__attrs-list-item">
-                  <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">${ attribute.label }</div>
-                  <div class="product-card-sku__attr-value b-body-copy">${ attribute.value }</div>
+                  <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">${ attribute.productAttributeLabel }</div>
+                  <div class="product-card-sku__attr-value b-body-copy">${ attribute.productAttributeValue }</div>
                 </div>`;
             }).join('')
             }
@@ -86,27 +86,27 @@ App.global.templates = (function() {
   };
 
 
-  // M-37: Family Card Template
+  // M-37: Subcategory Card Template
   //--------------
-  const productGridFamily = function(data, i18n) {
+  const productGridSubcategory = function(data, i18n) {
     return `
-      <div class="product-card-family">
+      <div class="product-card-subcategory">
 
         <a href="${ data.contentItem.link.url }"
           target="${ data.contentItem.link.target }"
-          class="product-card-family__link">
+          class="product-card-subcategory__link">
           <span class="sr-only">${ i18n.goTo } ${ data.contentItem.name }</span>
         </a>
 
-        <div class="product-card-family__image-wrapper">
-          <img src="${ data.contentItem.imgSrc }"
-            class="product-card-family__image"
+        <div class="product-card-subcategory__image-wrapper">
+          <img src="${ data.contentItem.image.src }"
+            class="product-card-subcategory__image"
             alt="${ data.contentItem.name }" />
         </div>
 
-        <div class="product-card-family__content-wrapper">
-          <div class="product-card-family__subcategory b-eyebrow-small">${ data.contentItem.subcategory }</div>
-          <h2 class="product-card-family__name">${ data.contentItem.name }</h2>
+        <div class="product-card-subcategory__content-wrapper">
+          <div class="product-card-subcategory__subcategory b-eyebrow-small">${ data.contentItem.subcategory }</div>
+          <h2 class="product-card-subcategory__name">${ data.contentItem.name }</h2>
         </div>
 
       </div>`;
@@ -125,9 +125,9 @@ App.global.templates = (function() {
             class="results-list-submodule__image-link"
             target="${ data.contentItem.link.target }"
           >
-            <img src="${ data.contentItem.imgSrc }"
+            <img src="${ data.contentItem.image.src }"
               class="results-list-submodule__image"
-              alt="${ data.contentItem.imgAlt }" />
+              alt="${ data.contentItem.image.altText }" />
             </a>
         </div>
         <div class="results-list-submodule__content-wrapper">
@@ -256,7 +256,7 @@ App.global.templates = (function() {
 
   return {
     productGridSKU,
-    productGridFamily,
+    productGridSubcategory,
     searchResultsProductFamily,
     searchResultsArticle,
     searchResultsResource

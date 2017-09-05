@@ -72,6 +72,8 @@
 
 .article-list-single-feature { padding-bottom: 30px; padding-top: 25px; }
 
+@media screen and (max-width: 767px) { .article-list-single-feature { padding-bottom: 0; } }
+
 @media screen and (min-width: 768px) { .article-list-single-feature { padding-bottom: 60px; padding-top: 50px; } }
 
 .article-list-single-feature--border { border-top: 4px solid; border-color: #005EB8; width: 60px; display: block; }

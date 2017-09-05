@@ -34,3 +34,7 @@
 .module-product-detail-card__links ul li a { color: #005EB8; display: inline-block; padding: 0 0 10px 0; }
 
 .module-product-detail-card__links ul .icon { vertical-align: middle; padding-right: 10px; }
+
+.module-product-detail-card__actions { text-align: center; }
+
+@media screen and (min-width: 992px) { .module-product-detail-card__actions { text-align: left; } }

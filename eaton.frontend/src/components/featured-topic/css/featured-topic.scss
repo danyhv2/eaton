@@ -12,12 +12,6 @@
     display: none;
   }
 
-  // .eaton-link-list-vertical__list-link,
-  // .eaton-link-list-vertical__eyebrow {
-  //   font-weight: bold;
-  //   text-transform: none;
-  // }
-
   &__text {
     margin-bottom: $spacing__md;
   }
@@ -28,17 +22,13 @@
 
   .eaton-link-list-vertical__eyebrow {
     @include h4;
+    text-transform: none;
   }
 
   .eaton-link-list-vertical__list-link {
     @include h5-link-bold;
-    color: $color__primary-blue;
+    font-family: $font-family__secondary;
   }
-
-  // &__list-title {
-  //   font-weight: bold;
-  //   margin-bottom: $spacing__sm;
-  // }
 
   @include media-mobile-only {
     &__title {
@@ -68,6 +58,12 @@
 
     .eaton-link-list-vertical__eyebrow {
       margin-bottom: 10px;
+    }
+  }
+
+  @include media-tablet-and-up {
+    .eaton-link-list-vertical__list-link {
+      font-family: $font-family__secondary;
     }
   }
 

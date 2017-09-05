@@ -3,6 +3,10 @@
   padding-bottom: 30px;
   padding-top: 25px;
 
+  @include media-mobile-only {
+    padding-bottom: 0;
+  }
+
   @include media-tablet-and-up {
     padding-bottom: 60px;
     padding-top: 50px;

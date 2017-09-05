@@ -87,7 +87,7 @@ App.searchResults = (function() {
       .done(({ search }) => {
 
         // Loop over all result items
-        const newResults = search.results.reduce((items, currentItem) => {
+        const newResults = search.searchResults.resultsList.reduce((items, currentItem) => {
 
           // Get the HTML Template for the current Result Item
           return items += getItemTemplate(currentItem, i18nStrings);

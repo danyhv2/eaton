@@ -2,16 +2,30 @@
 // LinkList Component: Vertical View
 //-----------------------------------
 .eaton-link-list-vertical {
+
+  /*
+  // NOTE: This style was disabled since is affecting multiple components in unexpected ways.
+  // (It's Causing regresions in multiple pages templates)
+  // Please move this overrided to the specific component that needs it, instead of being a global override.
   font-size: 2.4rem;
+  */
+
   &__eyebrow {
     text-transform: uppercase;
   }
 
+
+  /*
+  // NOTE: This style was disabled since is affecting multiple components in unexpected ways.
+  // (It's Causing regresions in multiple pages templates)
+  // Please move this overrided to the specific component that needs it, instead of being a global override.
   &__eyebrow.heading {
     font-size: 2.4rem;
     line-height: 2.8rem;
   }
+  */
 
+  /*
   @include media-desktop-and-up {
     font-size: 1.8rem;
 
@@ -19,6 +33,7 @@
       font-size: 1.8rem;
     }
   }
+  */
 
   &__list {
     padding: 0;

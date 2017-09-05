@@ -66,5 +66,13 @@
     }
   }
 
+  &__actions {
+    text-align: center;
+  }
 
+  @include media-desktop-and-up {
+    &__actions {
+      text-align: left;
+    }
+  }
 }

@@ -15,7 +15,8 @@ use(function () {
                 mobile: 'http://lorempixel.com/750/750/technics/750x750/',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
                 desktop: '/content/dam/eaton/images/feature_block_desktop.png',
-                altText: ''
+                altText: '',
+                alignment: 'center'
             },
             imgAlignment:'left',
             backgroundColor: '#005EB8'
@@ -33,7 +34,8 @@ use(function () {
                 mobile: 'http://lorempixel.com/750/750/technics/750x750/',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
                 desktop: '/content/dam/eaton/images/feature_block_desktop.png',
-                altText: ''
+                altText: '',
+                alignment: 'center'
             },
             imgAlignment:'left',
             backgroundColor: '#005EB8'
@@ -51,7 +53,8 @@ use(function () {
                 mobile: 'http://lorempixel.com/750/750/technics/750x750/',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
                 desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-1.png',
-                altText: ''
+                altText: '',
+                alignment: 'center'
             },
             imgAlignment:'left',
             backgroundColor: '#FFFFFF'
@@ -69,7 +72,8 @@ use(function () {
                 mobile: 'http://lorempixel.com/750/750/technics/750x750/',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
                 desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-2.png',
-                altText: ''
+                altText: '',
+                alignment: 'center'
             },
             imgAlignment:'left',
             backgroundColor: '#FFFFFF'
@@ -84,10 +88,11 @@ use(function () {
                 text:'Make a bigger difference'
             },
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
+                mobile: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
                 tablet: 'http://lorempixel.com/750/750/technics/750x750/',
                 desktop: '/content/dam/eaton/images/feature_block_desktop.png',
-                altText: ''
+                altText: '',
+                alignment: 'center'
             },
             imgAlignment:'left',
             backgroundColor: '#F8F8F8'

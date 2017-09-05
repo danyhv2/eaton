@@ -62,8 +62,8 @@ App.productGrid = function () {
   var getItemTemplate = function getItemTemplate(item, i18n, gridType) {
     if (item.contentType === 'product-card' && gridType === 'product-card-sku') {
       return App.global.templates.productGridSKU(item, i18n);
-    } else if (item.contentType === 'product-card' && gridType === 'product-card-family') {
-      return App.global.templates.productGridFamily(item, i18n);
+    } else if (item.contentType === 'product-card' && gridType === 'product-card-subcategory') {
+      return App.global.templates.productGridSubcategory(item, i18n);
     }
   };
 
@@ -85,13 +85,18 @@ App.productGrid = function () {
       return;
     }
 
-    // Else Fetch New Results
-    fetchData(requestURL, requestNextPage).done(function (_ref) {
-      var search = _ref.search;
+    // This object is used as a helper to map the AJAX Response Object
+    // to the appropiate productGridType (sku / subcategory)
+    var resultsObjectMap = {
+      'product-card-sku': 'sku',
+      'product-card-subcategory': 'subcategory'
+    };
 
+    // Else Fetch New Results
+    fetchData(requestURL, requestNextPage).done(function (data) {
 
       // Loop over all result items
-      var newResults = search.results.reduce(function (items, currentItem) {
+      var newResults = data[resultsObjectMap[gridType]].resultsList.reduce(function (items, currentItem) {
 
         // Get the HTML Template for the current Result Item
         return items += getItemTemplate(currentItem, i18nStrings, gridType);
@@ -103,13 +108,13 @@ App.productGrid = function () {
       $newResults.fadeIn(300);
 
       // if the next page of results is "null" or empty, remove "Load More" button
-      if (!search.ajaxRequestNextPage) {
+      if (!data.search.ajaxRequestNextPage) {
         $currentComponent.find('[data-load-more]').remove();
       }
 
       // Update Fetch URL for the next set of items / next AJAX Request
-      $currentComponent.attr('data-results-url', search.ajaxRequestUrl);
-      $currentComponent.attr('data-results-next-page', search.ajaxRequestNextPage);
+      $currentComponent.attr('data-results-url', data.search.ajaxRequestUrl);
+      $currentComponent.attr('data-results-next-page', data.search.ajaxRequestNextPage);
     })
 
     // Callback for Failed Request
