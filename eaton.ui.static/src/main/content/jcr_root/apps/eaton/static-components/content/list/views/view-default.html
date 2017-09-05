@@ -16,15 +16,13 @@
 
         <ul class="listdefault__slides" data-sly-list.slider="${data.cards}">
             <li class="slides col-sm-12 col-md-4">
-               <a href="${slider.cta.url}" target="${slider.cta.target}" class="">
+               <a href="${slider.cta.url}" target="${slider.cta.target}" class="listdefault__link">
                        
                         <div class="listdefault__card">
 
                             <div class="listdefault__image">
                                 <img src="${slider.image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
-                            </div>
-
-                            <div class="listdefault__content"> 
+                            </div><div class="listdefault__content"> 
                                 <p class="b-eyebrow-small">${slider.title}</p>
                                 <p class="b-heading-h5">${slider.text}</p>
                                 <p class="category-item-date"><em>${slider.date_text}</em></p>

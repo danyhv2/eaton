@@ -168,6 +168,16 @@
     &__slides {
       padding: 0;
       list-style: none;
+      //display: flex;
+
+      li  {
+      //display: flex;
+      //flex-wrap: wrap;
+      //flex-direction: row;
+
+      }
+      
+
 
      .slick-active button {
         background-color: $color__primary-blue;
@@ -176,11 +186,13 @@
     }
 
 
+&__link {
+  height: 100%;
+}
+
     &__card {
       border: 1px solid $color__secondary-gray4;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
+      height: 100%;
     }
 
     &__content {
