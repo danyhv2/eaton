@@ -360,11 +360,21 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form .field-p { margin-bottom: 30px; }
 
-.eaton-form .LV_validation_message { font-size: 14px; font-weight: 100; font-style: italic; margin: 0; position: relative; top: 10px; width: 100%; }
+.eaton-form .field-size-top-large .label { padding: 0; }
 
-.eaton-form .label-position { display: block; font-size: 15px; }
+.eaton-form .LV_validation_message { font-size: 1.3rem; font-weight: 100; font-style: italic; margin: 0; position: relative; top: 10px; width: 100%; }
 
-.eaton-form .field-group .label { width: 100%; float: left; color: #333f48; font-size: 20px; text-align: left; padding: 0; margin-bottom: 30px; }
+@media screen and (min-width: 768px) { .eaton-form .LV_validation_message { font-size: 1.8rem; } }
+
+.eaton-form .LV_invalid_field { border: 0 !important; }
+
+.eaton-form .label-position { display: block; font-size: 1.3rem; color: #333F48; }
+
+@media screen and (min-width: 768px) { .eaton-form .label-position { font-size: 1.8rem; } }
+
+.eaton-form .field-group .label { width: 100%; float: left; color: #333F48; font-size: 2.0rem; text-align: left; padding: 0; margin-bottom: 30px; }
+
+@media screen and (min-width: 768px) { .eaton-form .field-group .label { font-size: 2.6rem; } }
 
 .eaton-form .field-group ._100 { float: left; width: 100%; }
 
@@ -374,9 +384,13 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 768px) { .eaton-form .field-group div:first-child { margin-right: 10%; } }
 
-.eaton-form .field-p label:not(.label):not(.label-position) { font-weight: 100; font-style: italic; font-size: 14px; color: #333f48; padding-top: 10px; width: 100%; }
+.eaton-form .field-p label:not(.label):not(.label-position) { font-weight: 100; font-style: italic; font-size: 1.3rem; color: #5B6770; padding-top: 10px; width: 100%; }
 
-.eaton-form .field-p .label .inner { font-weight: 100; }
+@media screen and (min-width: 768px) { .eaton-form .field-p label:not(.label):not(.label-position) { font-size: 1.8rem; } }
+
+.eaton-form .field-p .label .inner { font-weight: 100; font-size: 1.3rem; }
+
+@media screen and (min-width: 768px) { .eaton-form .field-p .label .inner { font-size: 1.8rem; } }
 
 .eaton-form ._50_left { width: 100%; float: left; }
 
@@ -384,15 +398,17 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form .radio-option.field-size-top-large, .eaton-form .radio-option.field-size-left-large { float: left; width: 100%; margin-top: 10px; }
 
-.eaton-form .radio-option .inner { vertical-align: middle; color: #000; }
+.eaton-form .radio-option .inner { vertical-align: middle; color: #333F48; }
 
 .eaton-form .radio-option .list-order.twoColumn { padding-bottom: 20px; float: left; width: 35%; }
 
 @media screen and (max-width: 767px) { .eaton-form .radio-option .list-order.twoColumn { width: 50%; } }
 
-.eaton-form .radio-option .list-order.twoColumnLeft { padding-bottom: 30px; float: left; width: 20%; }
+.eaton-form .radio-option .list-order.twoColumnLeft { padding-bottom: 30px; float: left; width: 50%; }
 
-.eaton-form input[type="text"] { width: 100%; height: 50px; display: block; margin-top: 10px; padding: 10px; border: 1px solid #8c9aa5; }
+@media screen and (min-width: 768px) { .eaton-form .radio-option .list-order.twoColumnLeft { width: 20%; } }
+
+.eaton-form input[type="text"] { width: 100%; height: 50px; display: block; margin-top: 10px; padding: 10px; border: 1px solid #98A4AE; }
 
 @media screen and (min-width: 768px) and (max-width: 991px) { .eaton-form input[type="text"] { width: 310px; } }
 
@@ -400,21 +416,25 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form [type="checkbox"]:not(:checked), .eaton-form [type="checkbox"]:checked { position: absolute; left: -100%; }
 
-.eaton-form [type="checkbox"]:not(:checked) + span, .eaton-form [type="checkbox"]:checked + span { position: relative; padding-left: 45px; }
+.eaton-form [type="checkbox"]:not(:checked) + span, .eaton-form [type="checkbox"]:checked + span { position: relative; padding-left: 38px; }
 
-.eaton-form [type="checkbox"]:not(:checked) + span::before, .eaton-form [type="checkbox"]:checked + span::before { display: block; content: ''; position: absolute; left: 0; top: -8px; width: 2.5em; height: 2.5em; background-color: #eef0f2; }
+@media screen and (min-width: 768px) { .eaton-form [type="checkbox"]:not(:checked) + span, .eaton-form [type="checkbox"]:checked + span { padding-left: 45px; } }
 
-.eaton-form [type="checkbox"]:checked + span::after { font-size: 1.4em; line-height: 0.8; color: #005EB8; position: absolute; top: 2px; left: 5px; }
+.eaton-form [type="checkbox"]:not(:checked) + span::before, .eaton-form [type="checkbox"]:checked + span::before { display: block; content: ''; position: absolute; left: 0; top: -8px; width: 2.5em; height: 2.5em; background-color: #eef0f2; font-size: 1.2rem; }
+
+@media screen and (min-width: 768px) { .eaton-form [type="checkbox"]:not(:checked) + span::before, .eaton-form [type="checkbox"]:checked + span::before { top: -4px; } }
+
+.eaton-form [type="checkbox"]:checked + span::after { font-size: 1.6rem; line-height: 0.8; color: #005EB8; position: absolute; top: 2px; left: 5px; }
 
 .eaton-form [type="checkbox"]:focus + span::before { border-color: #5a99db; -webkit-box-shadow: 0 1px 12px #85bffd; box-shadow: 0 1px 12px #85bffd; outline: 0 none; }
 
 .eaton-form input[type="radio"]:not(:checked), .eaton-form input[type="radio"]:checked { position: absolute; display: inline-block; left: -100%; }
 
-.eaton-form input[type="radio"]:not(:checked) + span, .eaton-form input[type="radio"]:checked + span { position: relative; padding-left: 30px; }
+.eaton-form input[type="radio"]:not(:checked) + span, .eaton-form input[type="radio"]:checked + span { position: relative; padding-left: 40px; }
 
-.eaton-form input[type="radio"]:not(:checked) + span::before, .eaton-form input[type="radio"]:checked + span::before { content: ''; position: absolute; left: -12px; top: -10px; width: 2.5em; height: 2.5em; border: 1px solid #8c9aa5; border-radius: 100%; background: #fff; }
+.eaton-form input[type="radio"]:not(:checked) + span::before, .eaton-form input[type="radio"]:checked + span::before { content: ''; position: absolute; left: -6px; top: -6px; width: 2.5em; height: 2.5em; border: 1px solid #98A4AE; border-radius: 100%; background: #fff; font-size: 1.2rem; }
 
-.eaton-form input[type="radio"]:checked + span::after { content: ''; width: 18px; height: 18px; background: #005EB8; position: absolute; top: -4px; left: -6px; border-radius: 100%; }
+.eaton-form input[type="radio"]:checked + span::after { content: ''; width: 18px; height: 18px; background: #005EB8; position: absolute; top: 0; left: 0; border-radius: 100%; }
 
 .eaton-form input[type="radio"]:focus + span::before { border-color: #5a99db; -webkit-box-shadow: 0 1px 12px #85bffd; box-shadow: 0 1px 12px #85bffd; outline: 0 none; }
 
@@ -422,11 +442,11 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-form input[type="submit"]:hover { color: #FFF; background: #005EB8; text-decoration: none; }
 
-.eaton-form textarea { display: block; margin-top: 10px; width: 100%; height: 225px; border: 1px solid #8c9aa5; }
+.eaton-form textarea { display: block; margin-top: 10px; width: 100%; height: 225px; border: 1px solid #98A4AE; }
 
 .eaton-form .choices { width: 100%; margin-top: 10px; }
 
-.eaton-form .choices__inner { background: #FFF url("images/down_arrow.png") no-repeat; background-position: 98%; background-size: 12px; border-radius: 0; border: 1px solid #8c9aa5; }
+.eaton-form .choices__inner { background: #FFF url("images/down_arrow.png") no-repeat; background-position: 98%; background-size: 12px; border-radius: 0; border: 1px solid #98A4AE; }
 
 .eaton-form .choices__list .is-highlighted { background-color: #fff; }
 
@@ -445,6 +465,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 .eaton-form select[name="multipleSelectMenu"] { width: 100%; margin-top: 10px; color: #005EB8; }
 
 .eaton-form select[name="multipleSelectMenu"] option { padding: 10px 20px; }
+
+@media screen and (max-width: 767px) { .eaton-form select[name="multipleSelectMenu"] option { font-size: 1.3rem; } }
 
 .eaton-form select[name="multipleSelectMenu"] option[selected="selected"] { background-color: #EEF0F2; }
 

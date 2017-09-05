@@ -29,6 +29,13 @@
     text-decoration: underline;
   }
 
+
+  &__cta {
+    padding: 10px 0px;
+    width: 212px;
+  }
+
+
   @include media-mobile-only {
 
     padding: 15px 0 15px;
@@ -37,6 +44,8 @@
     &__cta {
       width: 100%;
       margin-top: 15px;
+      max-width: none;
+      padding: 10px 0px;
     }
 
   }
@@ -51,6 +60,7 @@
     &__cta {
       width: 100%;
       margin-top: 15px;
+      max-width: none;
     }
 
   }
