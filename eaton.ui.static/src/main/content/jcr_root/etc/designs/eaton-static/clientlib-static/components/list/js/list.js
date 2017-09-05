@@ -65,3 +65,88 @@ App.listComponent = function () {
     init();
   }
 }();
+
+// -----------------------------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------------------------
+
+
+App.carouselListDefault = function () {
+
+  var $carousel = $('.listdefault__slides');
+
+  var init = function init() {
+    initCarousel();
+    addEventListeners();
+  };
+
+  var addEventListeners = function addEventListeners() {
+
+    if (window.matchMedia) {
+
+      // min-width 992px
+      var mqMobile = window.matchMedia(App.global.constants.MEDIA_QUERIES.TABLET);
+
+      // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
+      mqMobile.addListener(onBreakpointChange);
+    }
+  };
+
+  /**
+    * Breakpoint Change Callback Function
+    * @param { Object} event - MatchMedia Event Object
+    */
+  var onBreakpointChange = function onBreakpointChange(event) {
+
+    if (event.matches) {
+      $carousel.slick('unslick');
+    } else {
+      initCarousel();
+    }
+  };
+
+  /**
+   * Initialize Slick Carousel
+   */
+  var initCarousel = function initCarousel() {
+
+    $carousel.slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      dots: true,
+      dotsClass: 'module-related-products__dots',
+      prevArrow: $('.listdefault__prev-arrow'),
+      nextArrow: $('.listdefault__next-arrow'),
+      responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }, {
+        breakpoint: 991,
+        settings: 'unslick'
+      }, {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+    });
+  };
+
+  /**
+   * If containing DOM element is found, Initialize and Expose public methods
+   */
+  if ($carousel.length > 0) {
+    init();
+    console.log('Slick Carousel rework !!');
+  }
+}();

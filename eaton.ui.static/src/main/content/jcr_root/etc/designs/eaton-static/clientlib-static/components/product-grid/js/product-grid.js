@@ -90,9 +90,10 @@ App.productGrid = function () {
     var resultsObjectMap = {
       'product-card-sku': 'sku',
       'product-card-subcategory': 'subcategory'
+    };
 
-      // Else Fetch New Results
-    };fetchData(requestURL, requestNextPage).done(function (data) {
+    // Else Fetch New Results
+    fetchData(requestURL, requestNextPage).done(function (data) {
 
       // Loop over all result items
       var newResults = data[resultsObjectMap[gridType]].resultsList.reduce(function (items, currentItem) {

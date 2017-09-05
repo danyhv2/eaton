@@ -156,3 +156,76 @@
     }
   }
 }
+
+
+
+
+
+.listdefault{
+
+
+
+    &__slides {
+      padding: 0;
+      list-style: none;
+
+     .slick-active button {
+        background-color: $color__primary-blue;
+      }
+
+    }
+
+
+    &__card {
+      border: 1px solid $color__secondary-gray4;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    &__content {
+      padding: 30px 30px 15px 30px;
+    }
+
+
+
+
+
+ 
+
+
+
+
+  @include media-mobile-only {
+
+    &__image {
+      width: 100%;
+    }
+
+   &__content {
+      padding: 15px 15px 0 15px;
+      width: 100%;
+    }
+
+  }
+
+
+
+
+  @include media-tablet-only {
+
+    &__card {
+      margin-bottom: 20px;
+    }
+
+   &__image {
+      width: 50%;
+    }
+    
+    &__content {
+      padding: 30px 15px 15px 30px;
+      width: 50%;
+    }
+  }
+
+}

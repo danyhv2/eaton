@@ -7,43 +7,38 @@
 
 
 
-
-
-
-
-
-<h1>reafactor</h1>
-
-
-
-
-
-
-
+<h2 class="b-heading-h2">Related Items</h2>
 
 
 
 
     <div class="row">
 
-        <ul class="text-only-3-column__slides" data-sly-list.card="${data.cards}">
-            <li class="slides text-only-3-column__card">
-               <a href="${data.single_feature_card.cta.url}" target="${data.single_feature_card.cta.target}" class="article-list-single-feature__link">
-                        <span class="article-list-single-feature--border"></span>
-                        <div class="article-list-single-feature__article--copy">
-                            <p class="b-eyebrow-small">${card.title}</p>
-                            <p class="b-heading-h5">${card.text}</p>
-                            <p class="category-item-date"><em>${card.date_text}</em></p>
+        <ul class="listdefault__slides" data-sly-list.slider="${data.cards}">
+            <li class="slides col-sm-12 col-md-4">
+               <a href="${slider.cta.url}" target="${slider.cta.target}" class="">
+                       
+                        <div class="listdefault__card">
+
+                            <div class="listdefault__image">
+                                <img src="${slider.image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
+                            </div>
+
+                            <div class="listdefault__content"> 
+                                <p class="b-eyebrow-small">${slider.title}</p>
+                                <p class="b-heading-h5">${slider.text}</p>
+                                <p class="category-item-date"><em>${slider.date_text}</em></p>
+                            </div>
                         </div>
                 </a>
             </li>
         </ul>
 
-            <button class="text-only-3-column__prev-arrow upsell-products__arrows button--reset">
+            <button class="listdefault__prev-arrow upsell-products__arrows button--reset">
                 <i class="icon icon-chevron-left"></i>
                 <span class="sr-only">Go to Previous Item</span>
             </button>
-            <button class="text-only-3-column__next-arrow upsell-products__arrows button--reset">
+            <button class="listdefault__next-arrow upsell-products__arrows button--reset">
                 <i class="icon icon-chevron-right"></i>
                 <span class="sr-only">Go to Next Item</span>
             </button>

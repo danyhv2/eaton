@@ -58,6 +58,21 @@
   .eaton-list-component .category__item, .eaton-list-component .category__image { min-height: 263px; }
   .eaton-list-component .category__link--font { font-size: 1.3em; } }
 
+.listdefault__slides { padding: 0; list-style: none; }
+
+.listdefault__slides .slick-active button { background-color: #005EB8; }
+
+.listdefault__card { border: 1px solid #CCD2D7; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+
+.listdefault__content { padding: 30px 30px 15px 30px; }
+
+@media screen and (max-width: 767px) { .listdefault__image { width: 100%; }
+  .listdefault__content { padding: 15px 15px 0 15px; width: 100%; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) { .listdefault__card { margin-bottom: 20px; }
+  .listdefault__image { width: 50%; }
+  .listdefault__content { padding: 30px 15px 15px 30px; width: 50%; } }
+
 .featured-category--topbottompadding { padding: 30px 0; }
 
 .featured-category-container { margin-bottom: 30px; }
