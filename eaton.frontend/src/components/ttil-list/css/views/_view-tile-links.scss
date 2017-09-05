@@ -75,6 +75,10 @@
     padding: 10px 30px 25px;
     font-size: 2.8rem;
 
+    @include media-mobile-portrait {
+      width: 315px;
+    }
+
     @include media-tablet-and-up {
       font-size: 3.2rem;
       padding: 20px 30px;
