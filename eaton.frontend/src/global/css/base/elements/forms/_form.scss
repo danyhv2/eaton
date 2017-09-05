@@ -221,6 +221,10 @@
       height: 2.5em;
       background-color: $light-gray;
       font-size: 1.2rem;
+
+      @include media-tablet-and-up {
+        top: -4px;
+      }
     }
 
     &:checked + span::after {
