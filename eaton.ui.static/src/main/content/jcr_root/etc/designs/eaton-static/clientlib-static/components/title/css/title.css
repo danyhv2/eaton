@@ -29,6 +29,8 @@ h2.eaton-title__eyebrow-and-byline { margin-top: 0; margin-bottom: 15px; }
 
 .eaton-title__eyebrow { margin-bottom: 15px; }
 
+.eaton-title__eyebrow i { font-weight: normal; font-size: 1.6rem; margin-right: 5px; }
+
 .dark-theme .eaton-title__headline, .dark-theme .eaton-title__eyebrow, .dark-theme .eaton-title__byline { color: #FFF; }
 
 .dark-theme .eaton-title__line { border-color: #FFF; }
