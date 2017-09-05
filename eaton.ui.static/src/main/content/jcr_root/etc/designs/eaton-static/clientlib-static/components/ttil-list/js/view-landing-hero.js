@@ -17,9 +17,10 @@
 'use strict';
 
 var App = window.App || {};
-App.ttilList = function () {
+App.ttilListLandingHero = function () {
 
-  var $componentEl = $('.carousel-component-slide');
+  var $componentEl = $('.eaton-landing-hero');
+  var $componentSlidesEl = $componentEl.find('.eaton-landing-hero__slide-list');
 
   var init = function init() {
     initCarousels();
@@ -29,16 +30,15 @@ App.ttilList = function () {
    * Initialize Bootstrap Carousel
    */
   var initCarousels = function initCarousels() {
-    $componentEl.slick({
+    $componentSlidesEl.slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 5000,
       dots: true,
-      dotsClass: 'carousel-component__dots',
-      prevArrow: $('.carousel-component__arrow--prev'),
-      nextArrow: $('.carousel-component__arrow--next')
-
+      dotsClass: 'eaton-landing-hero__dots',
+      prevArrow: $componentEl.find('.eaton-landing-hero__arrow--prev'),
+      nextArrow: $componentEl.find('.eaton-landing-hero__arrow--next')
     });
   };
 
