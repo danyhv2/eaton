@@ -29,10 +29,6 @@
     position: relative;
   }
 
-  &__title {
-    margin-top: 10px;
-  }
-
   //-----------------------------------
   // Media-Query: Mobile
   //-----------------------------------
@@ -105,6 +101,7 @@
 
     &__title {
       @include body-copy-small--desktop;
+      margin-top: 10px;
     }
   }
 }
