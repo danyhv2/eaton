@@ -663,7 +663,7 @@ use(function () {
       var disableactiveFiltersArr = activeFiltersArr.filter(function(f){return f!=facetId});
       var enablectiveFiltersArr = activeFiltersArr.concat([facetId]);
 
-      data.facets.facetItems[f].facetValues[i].url =
+      data.facets.facetItems[f].facetValues[i].facetURL =
         request.requestURL + '?facetvalue=' +
           ( isFacedChecked
             ? disableactiveFiltersArr.join(',')

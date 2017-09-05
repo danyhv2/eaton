@@ -12,6 +12,7 @@ App.search = (function() {
   const $componentElement = $(componentClass);
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
   let lastScrollTop = 0;
+  let hideTimerID = 0;
 
   /**
   * Init
@@ -30,9 +31,17 @@ App.search = (function() {
   const addEventListeners = () => {
     $(window).on('scroll', (event) => {
       const scrollTop = $(window).scrollTop();
-      const isGoingDown = (lastScrollTop < scrollTop);
-      $componentElement.toggleClass('visible', isGoingDown);
+      const isGoingUp = (scrollTop < lastScrollTop) && (scrollTop > 0);
+      $componentElement.toggleClass('visible', isGoingUp);
       lastScrollTop = scrollTop;
+
+      if (!isGoingUp) { return; }
+
+      // hide the back to top buton after 3 seconds
+      clearTimeout(hideTimerID);
+      hideTimerID = setTimeout(function() {
+        $componentElement.toggleClass('visible', false);
+      }, 3000);
     });
   };
 

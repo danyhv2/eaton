@@ -31,7 +31,7 @@
       margin: 0 15px;
       display: block;
       padding: 20px 0;
-      font-size: 1.8rem;
+      font-size: 1.8rem;  // small link deviation
     }
   }
 
@@ -55,8 +55,8 @@
     }
 
     &__nav-item {
-      border-bottom: 1px solid $color__white;
-      border-right: 1px solid $color__white;
+      border-bottom: 1px solid $color__primary-gray3;
+      border-right: 2px solid $color__primary-gray3;
       display: inline-block;
       float: left;
       padding: 20px $spacing__sm;

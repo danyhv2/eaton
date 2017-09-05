@@ -7,7 +7,7 @@
     position: relative;
     min-height: 92.6666vw;
 
-    @include media-tablet-only{
+    @include media-tablet-only {
       min-height: 60vw;
       min-width: 48vw;
     }

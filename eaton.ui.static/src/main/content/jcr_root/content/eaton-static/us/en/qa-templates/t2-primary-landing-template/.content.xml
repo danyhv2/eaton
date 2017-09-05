@@ -292,7 +292,7 @@
                 showCta="true"
                 showSeparator="false"
                 testdata="primary-landing-hero"
-                view="landing-hero-single"/>
+                view="landing-hero"/>
             <title_text_image_lin_594130545
                 jcr:created="{Date}2017-07-20T05:21:26.308Z"
                 jcr:createdBy="etn-marie"

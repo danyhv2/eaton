@@ -11,14 +11,9 @@
  */
 
 
-.eaton-link-list-vertical { font-size: 2.4rem; }
+.eaton-link-list-vertical { /* // NOTE: This style was disabled since is affecting multiple components in unexpected ways. // (It's Causing regresions in multiple pages templates) // Please move this overrided to the specific component that needs it, instead of being a global override. font-size: 2.4rem; */ /* // NOTE: This style was disabled since is affecting multiple components in unexpected ways. // (It's Causing regresions in multiple pages templates) // Please move this overrided to the specific component that needs it, instead of being a global override. &__eyebrow.heading { font-size: 2.4rem; line-height: 2.8rem; } */ /* @include media-desktop-and-up { font-size: 1.8rem; &__eyebrow.heading { font-size: 1.8rem; } } */ }
 
 .eaton-link-list-vertical__eyebrow { text-transform: uppercase; }
-
-.eaton-link-list-vertical__eyebrow.heading { font-size: 2.4rem; line-height: 2.8rem; }
-
-@media screen and (min-width: 992px) { .eaton-link-list-vertical { font-size: 1.8rem; }
-  .eaton-link-list-vertical__eyebrow.heading { font-size: 1.8rem; } }
 
 .eaton-link-list-vertical__list { padding: 0; margin: 0; list-style-type: none; }
 
@@ -110,7 +105,7 @@
 
 @media screen and (min-width: 992px) { .eaton-link-list-section-navigation .container { position: relative; }
   .eaton-link-list-section-navigation .container::after { background: #5B6770; bottom: 0; height: 1px; left: 0; position: absolute; width: 100%; }
-  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #FFF; border-right: 1px solid #FFF; display: inline-block; float: left; padding: 20px 30px; }
+  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; border-right: 2px solid #98A4AE; display: inline-block; float: left; padding: 20px 30px; }
   .eaton-link-list-section-navigation__nav-item:first-child { padding-left: 15px; } }
 
 .eaton-linklist-2column { overflow: hidden; }
