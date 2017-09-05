@@ -18,6 +18,26 @@
     }
   }
 
+
+  h2 {
+    padding-bottom: 10px;
+    padding-top: 120px;
+  }
+
+  @include media-tablet-only {
+
+    h2 {
+      padding-bottom: 15px;
+    }
+
+  }
+
+
+
+
+/*
+
+
   .carousel-indicators {
     position: inherit;
     margin: 40px auto 0;
@@ -39,6 +59,7 @@
     height: 15px;
     margin: 0 4px;
   }
+
 
 
   .category__image {
@@ -155,7 +176,20 @@
       font-size: 1.3em;
     }
   }
+
+
+
+
+*/
+
+
 }
+
+
+
+
+
+
 
 
 

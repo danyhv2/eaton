@@ -20,9 +20,13 @@
 
                         <div class="listdefault__card">
 
-                            <div class="listdefault__image">
-                                <img src="${slider.image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
-                            </div><div class="listdefault__content">
+                          <div class="listdefault__image">
+                          <!-- Start: Rendition Image Component -->
+                          <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+                            <sly data-sly-call="${ tpl.module @ data=slider.image }"></sly>
+                          </sly>
+                          <!-- End: Rendition Image Component -->
+                          </div><div class="listdefault__content">
                                 <p class="b-eyebrow-small">${slider.title}</p>
                                 <p class="b-heading-h5">${slider.text}</p>
                                 <p class="category-item-date"><em>${slider.date_text}</em></p>
