@@ -9,8 +9,8 @@ use(function () {
     	data.title = "Backup Power UPS";
         data.text = "Eaton is a leading provider of quality backup power UPS, Uninterruptable Power Supply. Eaton UPSs are designed to deliver high quality backup power from desktop PCs to large data centers.";
         data.image = {
-            mobile: 'http://lorempixel.com/750/677/city/3/750x677/',
-            tablet: 'http://lorempixel.com/750/677/city/3/750x677/',
+            mobile: '/content/dam/eaton/images/lorempixel/city/750x677-3.jpeg',
+            tablet: '/content/dam/eaton/images/lorempixel/city/750x677-3.jpeg',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
             altText: '',
             alignment: 'center'
@@ -25,8 +25,8 @@ use(function () {
     	data.title = "Network, server & storage UPS";
         data.text = "Networks, servers and storage systems are the central nerve center for bussines today, and it is critical that they are protected by an uninterruptible power supply (UPS).";
         data.image = {
-            mobile: 'http://lorempixel.com/750/677/business/2/750x677/',
-            tablet: 'http://lorempixel.com/750/677/business/2/750x677/',
+            mobile: '/content/dam/eaton/images/lorempixel/business/750x677-2.jpeg',
+            tablet: '/content/dam/eaton/images/lorempixel/business/750x677-2.jpeg',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
             altText: '',
             alignment: 'center'
@@ -42,8 +42,8 @@ use(function () {
     	data.title = "News Releases";
         data.text = "";
         data.image = {
-            mobile: 'http://lorempixel.com/750/677/business/9/750x677/',
-            tablet: 'http://lorempixel.com/750/677/business/9/750x677/',
+    		mobile: '/content/dam/eaton/images/lorempixel/business/750x677-9.jpeg',
+            tablet: '/content/dam/eaton/images/lorempixel/business/750x677-9.jpeg',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
             altText: '',
             alignment: 'center'
@@ -59,8 +59,8 @@ use(function () {
     	data.title = "Investor relations";
         data.text = "Our shareholders invest in us with the intention of benefiting from our long-term success. We take strategic action, create next-generation innovations, and deliver on commitments.";
         data.image = {
-            mobile: 'http://lorempixel.com/750/677/business/4/750x677/',
-            tablet: 'http://lorempixel.com/750/677/business/4/750x677/',
+    		mobile: '/content/dam/eaton/images/lorempixel/business/750x677-4.jpeg',
+            tablet: '/content/dam/eaton/images/lorempixel/business/750x677-4.jpeg',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing_Investors.png',
             altText: '',
             alignment: 'center'
@@ -76,8 +76,8 @@ use(function () {
     	data.title = "Global careers";
         data.text = "At Eaton, we offer more than competitive benefits and growth opportunities for our employees. We create an enviroment where creativity, invention and discovery are reality every day.";
         data.image = {
-            mobile: 'http://lorempixel.com/750/677/business/5/750x677/',
-            tablet: 'http://lorempixel.com/750/677/business/5/750x677/',
+    		mobile: '/content/dam/eaton/images/lorempixel/business/750x677-5.jpeg',
+            tablet: '/content/dam/eaton/images/lorempixel/business/750x677-5.jpeg',
             desktop: '/content/dam/eaton/images/Hero_image_Secondary_Landing_Careers.png',
             altText: '',
             alignment: 'center'

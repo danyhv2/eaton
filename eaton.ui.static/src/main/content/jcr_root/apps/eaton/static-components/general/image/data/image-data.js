@@ -8,9 +8,9 @@ use(function () {
 	  
 	  data = {
 			  image: {
-			      mobile: 'http://lorempixel.com/350/350/business/Image-size--350x350/',
-			      tablet: 'http://lorempixel.com/350/350/business/Image-size--350x350/',
-			      desktop:'http://lorempixel.com/350/350/business/Image-size--350x350/',
+			      mobile: '/content/dam/eaton/images/lorempixel/business/350x350-1.jpeg',
+			      tablet: '/content/dam/eaton/images/lorempixel/business/350x350-1.jpeg',
+			      desktop:'/content/dam/eaton/images/lorempixel/business/350x350-1.jpeg',
 			      altText: "Image Alt Text Goes here"
 			  }
 	  };
@@ -19,9 +19,9 @@ use(function () {
 	  
 	  data = {
 			  image: {
-			      mobile: 'http://lorempixel.com/630/630/technics/Image-size--630x630/',
-			      tablet: 'http://lorempixel.com/460/460/technics/Image-size--460x460/',
-			      desktop:'http://lorempixel.com/460/460/technics/Image-size--460x460/',
+			      mobile: '/content/dam/eaton/images/lorempixel/technics/630x630-4.jpeg',
+			      tablet: '/content/dam/eaton/images/lorempixel/technics/630x630-4.jpeg',
+			      desktop:'/content/dam/eaton/images/lorempixel/technics/460x460-8.jpeg',
 			      altText: "Image Alt Text Goes here"
 			  }
 	  };
@@ -30,9 +30,9 @@ use(function () {
 	  
 	  data = {
 			  image: {
-			      mobile: 'http://lorempixel.com/630/630/technics/Image-size-630x630/',
-			      tablet: 'http://lorempixel.com/552/552/technics/Image-size-552x552/',
-			      desktop:'http://lorempixel.com/552/552/technics/Image-size-552x552/',
+			      mobile: '/content/dam/eaton/images/lorempixel/technics/630x630-8.jpeg',
+			      tablet: '/content/dam/eaton/images/lorempixel/technics/630x630-8.jpeg',
+			      desktop:'/content/dam/eaton/images/lorempixel/technics/552x552-4.jpeg',
 			      altText: "Image Alt Text Goes here"
 			  }
 	  };
@@ -41,9 +41,9 @@ use(function () {
 	  
 	  data = {
 			  image: {
-			      mobile: 'http://lorempixel.com/750/750/technics/Image-size--750x750/',
-			      tablet: 'http://lorempixel.com/550/550/technics/Image-size--550x550/',
-			      desktop:'http://lorempixel.com/350/350/technics/Image-size--350x350/',
+			      mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+			      tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+			      desktop:'/content/dam/eaton/images/lorempixel/technics/350x350-8.jpeg',
 			      altText: "Image Alt Text Goes here"
 			  }
 	  };
