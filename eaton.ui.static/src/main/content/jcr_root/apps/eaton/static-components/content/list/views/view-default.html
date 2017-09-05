@@ -17,12 +17,12 @@
         <ul class="listdefault__slides" data-sly-list.slider="${data.cards}">
             <li class="slides col-sm-12 col-md-4">
                <a href="${slider.cta.url}" target="${slider.cta.target}" class="listdefault__link">
-                       
+
                         <div class="listdefault__card">
 
                             <div class="listdefault__image">
                                 <img src="${slider.image}" class="img-responsive category__image" alt="${slider.image_alt}"/>
-                            </div><div class="listdefault__content"> 
+                            </div><div class="listdefault__content">
                                 <p class="b-eyebrow-small">${slider.title}</p>
                                 <p class="b-heading-h5">${slider.text}</p>
                                 <p class="category-item-date"><em>${slider.date_text}</em></p>
@@ -50,8 +50,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
         <!--/* Desktop/Tablet Layout */-->
-        <div class="row hidden-xs visible-sm visible-md visible-lg">
+
+
+<!--         <div class="row hidden-xs visible-sm visible-md visible-lg">
             <div data-sly-list.slider="${data.cards}" role="listbox">
                 <div class="col-sm-12 ${data.cards.length == 2 ? 'col-md-6' : 'col-md-4'}">
                     <a href="${slider.cta.url}" class="equal-height-row tablet-card" target="${slider.cta.target}">
@@ -66,10 +79,12 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!--/* Mobile slider */-->
-        <div class="row visible-xs">
+
+
+<!--         <div class="row visible-xs">
             <div class="col-xs-12">
                 <div class="default-view-carousel-component carousel slide">
                     <div class="carousel-inner" data-sly-list.slider="${data.cards}" role="listbox">
@@ -93,7 +108,19 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
 
