@@ -9,18 +9,18 @@
   }
 
   &__title {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: $color__primary-gray1;
-    text-transform: uppercase;
-    margin-top: 30px;
+    // font-size: 1.5em;
+    // font-weight: bold;
+    // color: $color__primary-gray1;
+    // text-transform: uppercase;
+    margin-top: 55px;
   }
 
   &__cta {
-    color: $color__primary-blue;
-    font-size: 2.5em;
-    font-family: Arial;
-    font-weight: bold;
+    // color: $color__primary-blue;
+    // font-size: 2.5em;
+    // font-family: Arial;
+    // font-weight: bold;
     margin-top: 15px;
     margin-bottom: 15px;
 
@@ -35,12 +35,12 @@
 
   &__date {
     font-style: italic;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   &__body {
     margin-bottom: 60px;
-    font-size: 1.5em;
+    // font-size: 1.5em;
   }
 }
 
@@ -51,7 +51,7 @@
     }
 
     &__title {
-      font-size: 1.1em;
+      // font-size: 1.1em;
       margin-top: 15px;
     }
 
@@ -61,12 +61,12 @@
 
     &__body {
       margin-bottom: 30px;
-      line-height: 1.5em;
-      font-size: 1.2em;
+      // line-height: 1.5em;
+      // font-size: 1.2em;
     }
 
     &__cta {
-      font-size: 1.5em;
+      // font-size: 1.5em;
       margin-top: 10px;
       margin-bottom: 10px;
     }
