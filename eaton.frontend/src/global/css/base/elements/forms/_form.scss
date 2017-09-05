@@ -64,6 +64,10 @@
       text-align: left;
       padding: 0;
       margin-bottom: 30px;
+
+      @include media-tablet-and-up {
+        font-size: 2.6rem;
+      }
     }
 
     // stylelint-disable-next-line selector-class-pattern
@@ -252,15 +256,15 @@
     &:not(:checked) + span,
     &:checked + span {
       position: relative;
-      padding-left: 30px;
+      padding-left: 40px;
     }
 
     &:not(:checked) + span::before,
     &:checked + span::before {
       content: '';
       position: absolute;
-      left: -12px;
-      top: -10px;
+      left: -6px;
+      top: -6px;
       width: 2.5em;
       height: 2.5em;
       border: 1px solid $color__primary-gray3;
@@ -275,8 +279,8 @@
       height: 18px;
       background: $color__primary-blue;
       position: absolute;
-      top: -4px;
-      left: -6px;
+      top: 0;
+      left: 0;
       border-radius: 100%;
     }
 
