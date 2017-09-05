@@ -55,6 +55,9 @@
 
     &__title {
       @include body-copy--desktop;
+      line-height: 3rem;
+      position: relative;
+      top: -5px;
     }
   }
 
