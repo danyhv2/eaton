@@ -46,6 +46,8 @@ use(function () {
   	}
   ];
 
+  data.grandparentIndex = 5;
+
   return data;
 
 });
