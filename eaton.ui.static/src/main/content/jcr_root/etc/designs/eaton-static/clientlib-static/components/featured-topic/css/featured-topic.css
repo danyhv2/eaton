@@ -11,7 +11,7 @@
  */
 
 
-.eaton-featured-topic { padding-top: 20px; padding-bottom: 30px; }
+.eaton-featured-topic { margin-top: 60px; margin-bottom: 60px; }
 
 .eaton-featured-topic .glyphicon { display: none; }
 
@@ -39,6 +39,5 @@
 
 @media screen and (min-width: 768px) { .eaton-featured-topic .eaton-link-list-vertical__list-link { font-family: Arial, "Arial", sans-serif; } }
 
-@media screen and (min-width: 992px) { .eaton-featured-topic { padding-top: 120px; padding-bottom: 120px; }
-  .eaton-featured-topic__list-left::after { background: #F8F8F8; content: ''; height: 85%; position: absolute; right: 0; top: 5px; width: 2px; }
+@media screen and (min-width: 992px) { .eaton-featured-topic__list-left::after { background: #F8F8F8; content: ''; height: 85%; position: absolute; right: 0; top: 5px; width: 2px; }
   .eaton-featured-topic__list-right { padding-left: 9%; } }

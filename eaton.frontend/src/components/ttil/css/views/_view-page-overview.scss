@@ -4,7 +4,8 @@
 
 .eaton-page-overview {
 
-  padding: ($spacing__xl / 2) 0;
+  margin-top: $spacing__xl;
+  margin-bottom: $spacing__md;
 
   // Page Overview Styles
   //--------------
@@ -56,7 +57,6 @@
   // Media-Query: Desktop & Desktop Large
   //-----------------------------------
   @include media-desktop-and-up {
-    padding: $spacing__xl 0;
 
     &__title { padding-bottom: 50px; }
 

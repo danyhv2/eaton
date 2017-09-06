@@ -5,8 +5,8 @@
 @import "../../../global/css/_config/sass";
 
 .eaton-featured-topic {
-  padding-top: 20px;
-  padding-bottom: $spacing__md / 2;
+  margin-top: $spacing__md;
+  margin-bottom: $spacing__md;
 
   .glyphicon {
     display: none;
@@ -68,8 +68,6 @@
   }
 
   @include media-desktop-and-up {
-    padding-top: $spacing__xl;
-    padding-bottom: $spacing__xl;
 
     &__list-left {
       &::after {
