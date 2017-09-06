@@ -18,75 +18,6 @@
 
 var App = window.App || {};
 
-/*
-App.listComponent = function () {
-
-  const $carousel = $('.module-related-products__slides');
-
-  const init = () => {
-    initCarousel();
-  };
-
-*/
-/**
- * Initialize Slick Carousel
- */
-
-/*
- const initCarousel = () => {
-  for (let i = 0; i < $carousel.length; i++) {
-     $carousel.eq(i).addClass('module-related-products__slides--' + i);
-    let $slides = $('.module-related-products__slides--' + i + ' .slides').length > 4 ? 4 : 3;
-     $carousel.eq(i).slick({
-      slidesToShow: $slides,
-      slidesToScroll: $slides,
-      dots: true,
-      dotsClass: 'module-related-products__dots',
-      prevArrow: $('.module-related-products__prev-arrow'),
-      nextArrow: $('.module-related-products__next-arrow'),
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
-  }
- };
-*/ /**
-   * If containing DOM element is found, Initialize and Expose public methods
-   */
-
-/*
-  if ($carousel.length > 0) {
-    init();
-  }
-
-}();
-
-*/
-
-// -----------------------------------------------------------------------------------------------
-
-// -----------------------------------------------------------------------------------------------
-
-// -----------------------------------------------------------------------------------------------
-
-// -----------------------------------------------------------------------------------------------
-
-// -----------------------------------------------------------------------------------------------
-
-
 App.carouselListDefault = function () {
 
   var $carousel = $('.listdefault__slides');
@@ -114,13 +45,24 @@ App.carouselListDefault = function () {
     */
   var onBreakpointChange = function onBreakpointChange(event) {
 
-    console.log(event);
-
     if (event.matches) {
       initCarousel();
     } else {
       $carousel.slick('unslick');
     }
+  };
+
+  var sliderCheck = function sliderCheck() {
+    var numSlides = 3;
+
+    if ($('.js-col6').length === 1) {
+      // check how many items are on the list in order to initialize the carousel
+      numSlides = 2;
+    } else {
+      numSlides = 3;
+    }
+
+    return numSlides;
   };
 
   /**
@@ -129,8 +71,8 @@ App.carouselListDefault = function () {
   var initCarousel = function initCarousel() {
 
     $carousel.slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: sliderCheck(),
+      slidesToScroll: sliderCheck(),
       dots: true,
       dotsClass: 'module-related-products__dots',
       prevArrow: $('.listdefault__prev-arrow'),
@@ -156,6 +98,5 @@ App.carouselListDefault = function () {
    */
   if ($carousel.length > 0) {
     init();
-    console.log('Slick Carousel rework !!');
   }
 }();
