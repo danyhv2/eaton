@@ -45,9 +45,9 @@
 
 .icon-list-no-image-highlights__content { text-align: center; }
 
-.icon-list-no-image-highlights__title { text-transform: uppercase; font-weight: bold; color: #5B6770; }
+.icon-list-no-image-highlights__title { text-transform: uppercase; font-weight: bold; color: #333F48; }
 
-.icon-list-no-image-highlights__text { word-wrap: break-word; }
+.icon-list-no-image-highlights__text { word-wrap: break-word; color: #333F48; font-family: 'EatonMedium'; }
 
 .icon-list-no-image-highlights__symbol { position: relative; }
 
@@ -55,8 +55,7 @@
   .icon-list-no-image-highlights__item { margin-bottom: 40px; }
   .icon-list-no-image-highlights__item:last-child { margin-bottom: 0; }
   .icon-list-no-image-highlights__text { font-size: 5rem; line-height: 5.5rem; }
-  .icon-list-no-image-highlights__symbol { font-size: 3rem; top: -15px; }
-  .icon-list-no-image-highlights__title { margin-bottom: 5px; } }
+  .icon-list-no-image-highlights__symbol { font-size: 3rem; top: -15px; } }
 
 @media screen and (min-width: 992px) { .icon-list-no-image-highlights { padding: 60px 0; }
   .eaton-grid-control .icon-list-no-image-highlights { padding: 30px 0; }
