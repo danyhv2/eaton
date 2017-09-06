@@ -103,7 +103,6 @@ App.carousel3ColumnText = function () {
      */
   if ($carousel.length > 0) {
     init();
-    console.log('Slick Carousel 0001 !!');
   }
 
 }();
