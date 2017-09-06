@@ -9,7 +9,9 @@
         <div class="eaton-featured-list__item">
             <a href="${ item.link }" aria-label="Go to ${ item.title }" class="eaton-featured-list__link">
                 <div class="eaton-featured-list__image">
-                  <img src="${item.image}" alt="${item.altText}"/>
+                  <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+                    <sly data-sly-call="${ tpl.module @ data=item.image }"></sly>
+                  </sly>
                 </div>
 
                 <div class="eaton-featured-list__body">

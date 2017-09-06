@@ -230,7 +230,7 @@
 
 .dark-theme .eaton-featured-list__link { color: #FFF; }
 
-.eaton-featured-list__image { max-width: 300px; }
+.eaton-featured-list__image { width: 167px; min-width: 167px; height: 167px; display: block; }
 
 .eaton-featured-list__body { padding-left: 20px; }
 
