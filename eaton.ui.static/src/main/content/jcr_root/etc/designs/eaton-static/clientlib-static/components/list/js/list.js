@@ -17,54 +17,64 @@
 'use strict';
 
 var App = window.App || {};
+
+/*
 App.listComponent = function () {
 
-  var $carousel = $('.module-related-products__slides');
+  const $carousel = $('.module-related-products__slides');
 
-  var init = function init() {
+  const init = () => {
     initCarousel();
   };
 
-  /**
-   * Initialize Slick Carousel
-   */
-  var initCarousel = function initCarousel() {
-    for (var i = 0; i < $carousel.length; i++) {
+*/
+/**
+ * Initialize Slick Carousel
+ */
 
-      $carousel.eq(i).addClass('module-related-products__slides--' + i);
-      var $slides = $('.module-related-products__slides--' + i + ' .slides').length > 4 ? 4 : 3;
-
-      $carousel.eq(i).slick({
-        slidesToShow: $slides,
-        slidesToScroll: $slides,
-        dots: true,
-        dotsClass: 'module-related-products__dots',
-        prevArrow: $('.module-related-products__prev-arrow'),
-        nextArrow: $('.module-related-products__next-arrow'),
-        responsive: [{
+/*
+ const initCarousel = () => {
+  for (let i = 0; i < $carousel.length; i++) {
+     $carousel.eq(i).addClass('module-related-products__slides--' + i);
+    let $slides = $('.module-related-products__slides--' + i + ' .slides').length > 4 ? 4 : 3;
+     $carousel.eq(i).slick({
+      slidesToShow: $slides,
+      slidesToScroll: $slides,
+      dots: true,
+      dotsClass: 'module-related-products__dots',
+      prevArrow: $('.module-related-products__prev-arrow'),
+      nextArrow: $('.module-related-products__next-arrow'),
+      responsive: [
+        {
           breakpoint: 991,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3
           }
-        }, {
+        },
+        {
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
           }
-        }]
-      });
-    }
-  };
-
-  /**
+        }
+      ]
+    });
+  }
+ };
+*/ /**
    * If containing DOM element is found, Initialize and Expose public methods
    */
+
+/*
   if ($carousel.length > 0) {
     init();
   }
+
 }();
+
+*/
 
 // -----------------------------------------------------------------------------------------------
 
@@ -91,7 +101,7 @@ App.carouselListDefault = function () {
     if (window.matchMedia) {
 
       // min-width 992px
-      var mqMobile = window.matchMedia(App.global.constants.MEDIA_QUERIES.TABLET);
+      var mqMobile = window.matchMedia(App.global.constants.MEDIA_QUERIES.MOBILE);
 
       // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
       mqMobile.addListener(onBreakpointChange);
@@ -104,10 +114,12 @@ App.carouselListDefault = function () {
     */
   var onBreakpointChange = function onBreakpointChange(event) {
 
+    console.log(event);
+
     if (event.matches) {
-      $carousel.slick('unslick');
-    } else {
       initCarousel();
+    } else {
+      $carousel.slick('unslick');
     }
   };
 
@@ -125,10 +137,7 @@ App.carouselListDefault = function () {
       nextArrow: $('.listdefault__next-arrow'),
       responsive: [{
         breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
-        }
+        settings: 'unslick'
       }, {
         breakpoint: 991,
         settings: 'unslick'

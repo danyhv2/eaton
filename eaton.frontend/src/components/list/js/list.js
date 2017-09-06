@@ -4,6 +4,8 @@
 'use strict';
 
 let App = window.App || {};
+
+/*
 App.listComponent = function () {
 
   const $carousel = $('.module-related-products__slides');
@@ -12,9 +14,14 @@ App.listComponent = function () {
     initCarousel();
   };
 
+*/
     /**
      * Initialize Slick Carousel
      */
+
+
+  /*
+
   const initCarousel = () => {
     for (let i = 0; i < $carousel.length; i++) {
 
@@ -49,16 +56,18 @@ App.listComponent = function () {
 
   };
 
-    /**
+*/    /**
      * If containing DOM element is found, Initialize and Expose public methods
      */
+
+/*
   if ($carousel.length > 0) {
     init();
   }
 
 }();
 
-
+*/
 
 
 
@@ -101,7 +110,7 @@ App.carouselListDefault = function () {
     if (window.matchMedia) {
 
         // min-width 992px
-      let mqMobile = window.matchMedia(App.global.constants.MEDIA_QUERIES.TABLET);
+      let mqMobile = window.matchMedia(App.global.constants.MEDIA_QUERIES.MOBILE);
 
         // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
       mqMobile.addListener(onBreakpointChange);
@@ -125,12 +134,15 @@ App.carouselListDefault = function () {
   const onBreakpointChange = (event) => {
 
 
+    console.log (event);
+
     if (event.matches) {
-      $carousel.slick('unslick');
+      initCarousel ();
 
     }
     else {
-      initCarousel ();
+      $carousel.slick('unslick');
+
     }
 
 
@@ -156,10 +168,7 @@ App.carouselListDefault = function () {
 
         {
           breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
+          settings: 'unslick'
         },
 
 
