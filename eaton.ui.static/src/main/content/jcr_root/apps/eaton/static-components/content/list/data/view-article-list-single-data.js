@@ -31,9 +31,9 @@ use(function () {
 	            title: 'Company',
 	            text: 'Eaton to announce first quarter 2017 earnings on May 2, 2017',
                 image: {
-                    mobile:'http://lorempixel.com/630/473/technics/630x473/',
-                    tablet:'http://lorempixel.com/630/473/technics/630x473/',
-                    desktop:'http://lorempixel.com/550/413/technics/550x413/',
+                    mobile:'/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                    tablet:'/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                    desktop:'/content/dam/eaton/images/lorempixel/technics/550x413-8.jpeg',
                     altText:'Image 2'
                 },
 	            cta: {url: 'http://www.eaton.com', target: '_self'},
@@ -68,9 +68,9 @@ use(function () {
 	            title: 'Featured Category',
 	            text: 'Why reality is the innovation challenge',
                 image: {
-                    mobile:'http://lorempixel.com/630/473/technics/630x473/',
-                    tablet:'http://lorempixel.com/630/473/technics/630x473/',
-                    desktop:'http://lorempixel.com/550/413/technics/550x413/',
+                    mobile:'/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                    tablet:'/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                    desktop:'/content/dam/eaton/images/lorempixel/technics/550x413-8.jpeg',
                     altText:'Image 2'
                 },
 	            cta: {url: 'http://www.eaton.com', target: '_self'},

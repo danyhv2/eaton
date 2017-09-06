@@ -3,6 +3,14 @@
 //-----------------------------------
 
 .mega-menu {
+
+  .eaton-link-list-vertical {
+    &__external-icon {
+      padding-right: 0.4rem;
+      font-size: 1.2rem;
+    }
+  }
+  
   //-----------------------------------
   // Media Query: Mobile/Tablet
   //-----------------------------------

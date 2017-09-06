@@ -12,8 +12,8 @@ use(function () {
                 text:'Make a bigger difference'
             },
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
-                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
                 desktop: '/content/dam/eaton/images/feature_block_desktop.png',
                 altText: '',
                 alignment: 'center'
@@ -31,8 +31,8 @@ use(function () {
                 text:'Make a bigger difference'
             },
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
-                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
                 desktop: '/content/dam/eaton/images/feature_block_desktop.png',
                 altText: '',
                 alignment: 'center'
@@ -50,8 +50,8 @@ use(function () {
                 text:'View all job opportunities'
             },
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
-                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
                 desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-1.png',
                 altText: '',
                 alignment: 'center'
@@ -69,8 +69,8 @@ use(function () {
                 text:'Find career'
             },
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
-                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
                 desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-2.png',
                 altText: '',
                 alignment: 'center'
@@ -88,8 +88,8 @@ use(function () {
                 text:'Make a bigger difference'
             },
             image: {
-                mobile: '/content/dam/eaton/images/Hero_image_Secondary_Landing.png',
-                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
                 desktop: '/content/dam/eaton/images/feature_block_desktop.png',
                 altText: '',
                 alignment: 'center'

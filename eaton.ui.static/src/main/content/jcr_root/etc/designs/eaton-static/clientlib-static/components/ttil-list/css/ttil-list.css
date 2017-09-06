@@ -140,6 +140,8 @@
 
 .tile-link-component__title { position: absolute; bottom: 0; width: 100%; margin: 0; padding: 10px 30px 25px; font-size: 2.8rem; }
 
+@media screen and (max-width: 479px) { .tile-link-component__title { width: 86vw; } }
+
 @media screen and (min-width: 768px) { .tile-link-component__title { font-size: 3.2rem; padding: 20px 30px; } }
 
 .tile-link-component__title--background { background-color: #333F48; opacity: 0.7; }
@@ -273,6 +275,6 @@
 @media screen and (min-width: 1200px) { .eaton-ttil-quote { width: calc((100% - 1140px) / 2 + 1140px); }
   .eaton-ttil-quote__text-container { width: calc(1140px - 484px); }
   .eaton-ttil-quote__right { margin-left: calc((100% - 1140px) / 2); }
-  .eaton-ttil-quote__right .eaton-ttil-quote__text-container { float: left; padding-left: 70px; padding-right: 0; }
+  .eaton-ttil-quote__right .eaton-ttil-quote__text-container { float: left; padding-left: 110px; padding-right: 0; }
   .eaton-ttil-quote__left { -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
-  .eaton-ttil-quote__left .eaton-ttil-quote__text-container { padding-left: 0; padding-right: 70px; } }
+  .eaton-ttil-quote__left .eaton-ttil-quote__text-container { padding-left: 0; padding-right: 110px; } }

@@ -43,7 +43,7 @@
 
 .faceted-navigation-header__filter-link .icon { font-size: 1rem; margin-right: 2px; margin-top: 5px; }
 
-.faceted-navigation-header a.open-facets-mobile { width: 100%; text-align: center; max-width: unset; }
+.faceted-navigation-header__container { text-align: center; }
 
 .faceted-navigation-header .faceted-navigation-filters { margin-top: 30px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 

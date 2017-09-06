@@ -12,8 +12,8 @@ use(function () {
                 text:'Make a bigger difference'
             },
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/2/750x750/',
-                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
                 desktop: '/content/dam/eaton/images/Cityscape_mob.png',
                 altText: '',
                 alignment: 'center'
@@ -34,8 +34,8 @@ use(function () {
                 text:''
             },
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/750x750/',
-                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+            	mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
                 desktop: '/content/dam/eaton/images/energy.png',
                 altText: '',
                 alignment: 'center'
@@ -52,8 +52,8 @@ use(function () {
                 text:'Learn more'
             },
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/3/750x750/',
-                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+            	mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
                 desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockRight-1.png',
                 altText: '',
                 alignment: 'center'
@@ -71,8 +71,8 @@ use(function () {
                 text:'Make a bigger difference'
             },
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/5/750x750/',
-                tablet: 'http://lorempixel.com/750/750/technics/750x750/',
+            	mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
                 desktop: '/content/dam/eaton/images/Cityscape_mob.png',
                 altText: '',
                 alignment: 'center'

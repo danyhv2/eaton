@@ -8,9 +8,9 @@ use(function(){
     items : [
       {
         image: {
-          mobile: 'http://lorempixel.com/750/470/business/2/750x470/',
-          tablet: 'http://lorempixel.com/750/470/business/2/750x470/',
-          desktop: 'http://lorempixel.com/488/470/business/2/488x470/',
+          mobile: '/content/dam/eaton/images/lorempixel/business/750x470-2.jpeg',
+          tablet: '/content/dam/eaton/images/lorempixel/business/750x470-2.jpeg',
+          desktop: '/content/dam/eaton/images/lorempixel/business/488x470-2.jpeg',
           altText: 'Alt Text',
           alignment: 'center'
         },
@@ -20,9 +20,9 @@ use(function(){
       },
       {
         image: {
-          mobile: 'http://lorempixel.com/750/470/business/7/750x470/',
-          tablet: 'http://lorempixel.com/750/470/business/7/750x470/',
-          desktop: 'http://lorempixel.com/488/470/business/7/488x470/',
+          mobile: '/content/dam/eaton/images/lorempixel/business/750x470-7.jpeg',
+          tablet: '/content/dam/eaton/images/lorempixel/business/750x470-7.jpeg',
+          desktop: '/content/dam/eaton/images/lorempixel/business/488x470-7.jpeg',
           altText: 'Alt Text',
           alignment: 'left'
         },
