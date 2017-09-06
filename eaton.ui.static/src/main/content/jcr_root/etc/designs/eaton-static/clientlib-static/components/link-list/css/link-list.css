@@ -105,7 +105,7 @@
 
 @media screen and (min-width: 992px) { .eaton-link-list-section-navigation .container { position: relative; }
   .eaton-link-list-section-navigation .container::after { background: #5B6770; bottom: 0; height: 1px; left: 0; position: absolute; width: 100%; }
-  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; border-right: 2px solid #98A4AE; display: inline-block; float: left; padding: 20px 30px; }
+  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #5B6770; border-right: 2px solid #5B6770; display: inline-block; float: left; padding: 20px 30px; }
   .eaton-link-list-section-navigation__nav-item:first-child { padding-left: 15px; } }
 
 .eaton-linklist-2column { overflow: hidden; }
