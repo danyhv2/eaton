@@ -125,7 +125,6 @@
 
   .eaton-footer-bottom { padding: 40px 0; }
 
-  .eaton-footer-bottom__link-list { float: left; }
 
   .eaton-footer-bottom__copyright { float: right; }
 
@@ -135,6 +134,10 @@
         font-size: 18px;
         line-height: 26px;
       }
+  .eaton-footer-bottom__link-list {
+    float: left;
+    width: 68%; // EATON-536: Link List and Copyright Alignment [ALM-107]
+  }
 
     }
   }
