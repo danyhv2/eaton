@@ -3,7 +3,8 @@
 //-----------------------------------
 
 .eaton-ttil-image-list {
-
+  margin: 30px 0;
+  
   &__item {
     padding: 0 10px;
 
@@ -11,6 +12,12 @@
 
   &__content {
     display: block;
+    text-align: center;
+  }
+
+  &__image img {
+    display: inline-block;
+    width: 100%;
   }
 
   &__image-headline {
@@ -42,8 +49,9 @@
     }
 
     &__image {
-      width: 150px;
-      display: inline-block;
+      max-width: 480px;
+      min-width: 250px;
+      margin: 0 auto;
     }
   }
 
@@ -58,7 +66,7 @@
     }
 
     &__item {
-      flex-basis: 31%;
+      flex-basis: 33.33%;
       margin-bottom: ($spacing__sm * 2);
 
       // Only 2 images should display when used in two column grid
