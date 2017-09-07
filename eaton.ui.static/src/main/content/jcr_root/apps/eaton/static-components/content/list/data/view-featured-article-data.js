@@ -1,19 +1,22 @@
 "use strict";
 use(function () {
-	
+
     var data = {};
     var testdata = this.testdata;
-    
+
     if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors")) {
-    	
+
     	data = {
 	        cards: [
 	            {
 	                title: 'Category Name',
 	                text: 'Engineers across Eaton offer their thoughts on the "Power of Eaton."',
-	                image: '/content/dam/eaton/images/t9-inverstors-feature-article-left.png',
-	                mobile_image: '/content/dam/eaton/images/t9-inverstors-feature-article-left.png',
-	                image_alt: 'Image 1',
+	                 image : {
+	                      mobile: '/content/dam/eaton/images/lorempixel/technics/630x473-2.jpg',
+	                      tablet: '/content/dam/eaton/images/lorempixel/technics/630x473-2.jpg',
+	                      desktop: '/content/dam/eaton/images/lorempixel/technics/358x258-2.jpg',
+	                      altText: 'Eaton image 01'
+	                 },
 	                date_text: '',
 	                cta: {
 	                    url: 'http://www.eaton.com',
@@ -23,9 +26,12 @@ use(function () {
 	            {
 	                title: 'Category Name',
 	                text: 'Megatrends: The power behind Eaton global green growth',
-	                image: '/content/dam/eaton/images/t9-inverstors-feature-article-center.png',
-	                mobile_image: '/content/dam/eaton/images/t9-inverstors-feature-article-center.png',
-	                image_alt: 'Image 2',
+	                 image : {
+	                      mobile: '/content/dam/eaton/images/lorempixel/technics/630x473-2.jpg',
+	                      tablet: '/content/dam/eaton/images/lorempixel/technics/630x473-2.jpg',
+	                      desktop: '/content/dam/eaton/images/lorempixel/technics/358x258-2.jpg',
+	                      altText: 'Eaton image 02'
+	                 },
 	                date_text: '',
 	                cta: {
 	                    url: 'http://www.eaton.com',
@@ -35,9 +41,12 @@ use(function () {
 	            {
 	                title: 'Category Name',
 	                text: 'Eaton bussines system: How we work',
-	                image: '/content/dam/eaton/images/t9-inverstors-feature-article-right.png',
-	                mobile_image: '/content/dam/eaton/images/t9-inverstors-feature-article-right.png',
-	                image_alt: 'Image 3',
+	                 image : {
+	                      mobile: '/content/dam/eaton/images/lorempixel/technics/630x473-2.jpg',
+	                      tablet: '/content/dam/eaton/images/lorempixel/technics/630x473-2.jpg',
+	                      desktop: '/content/dam/eaton/images/lorempixel/technics/358x258-2.jpg',
+	                      altText: 'Eaton image 03'
+	                 },
 	                date_text: '',
 	                cta: {
 	                    url: 'http://www.eaton.com',
@@ -45,7 +54,7 @@ use(function () {
 	                }
 	            }
 	        ],
-        
+
 	        single_feature_card: {
 	            title: 'Category Name',
 	            text: 'We make what matters work.*',
@@ -59,7 +68,7 @@ use(function () {
 	            }
 	        }
          };
-    	
+
     } else {
 
     	data = {
@@ -101,7 +110,7 @@ use(function () {
 	                }
 	            }
 	        ],
-        
+
 	        single_feature_card: {
 	            title: 'Featured Category',
 	            text: 'Why reality is the innovation challenge',
@@ -115,9 +124,9 @@ use(function () {
 	            }
 	        }
          };
-    	
+
     }
-    
+
     return data;
-    
+
 });
