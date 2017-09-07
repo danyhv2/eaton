@@ -29,11 +29,23 @@
 
 .dark-theme .eaton-link-list-vertical .icon-chevron-right { display: inline-block; }
 
-.dark-theme .eaton-link-list-vertical__eyebrow, .dark-theme .eaton-link-list-vertical__list-link, .dark-theme .eaton-link-list-vertical__download-text { color: #FFF; }
-
 .dark-theme .eaton-link-list-vertical__eyebrow { font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 1.4rem; line-height: normal; margin-bottom: 20px; text-transform: uppercase; }
 
 @media screen and (min-width: 992px) { .dark-theme .eaton-link-list-vertical__eyebrow { font-family: Arial, "Arial", sans-serif; font-size: 1.8rem; line-height: 2rem; text-transform: uppercase; margin-bottom: 20px; } }
+
+.dark-theme .eaton-link-list-vertical__list-item { font-family: Arial, sans-serif; font-size: 1.3rem; font-weight: normal; line-height: 1.7rem; }
+
+.dark-theme .eaton-link-list-vertical__list-item a { color: #005EB8; }
+
+@media screen and (min-width: 992px) { .dark-theme .eaton-link-list-vertical__list-item { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.4rem; } }
+
+.dark-theme .eaton-link-list-vertical__eyebrow, .dark-theme .eaton-link-list-vertical__list-item a, .dark-theme .eaton-link-list-vertical__download-text { color: #FFF; }
+
+.dark-theme .eaton-link-list-vertical__list-icon { font-size: 1.4rem; }
+
+.dark-theme .eaton-link-list-vertical__external-icon { font-size: 1.5rem; }
+
+.dark-theme .eaton-link-list-vertical__download-text { font-size: 1.6rem; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 20px; } }
 
