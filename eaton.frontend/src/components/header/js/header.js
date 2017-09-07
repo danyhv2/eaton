@@ -22,7 +22,6 @@ App.header = (function() {
   const openDrawerBtn = $('.open-country-selector');
   const regionDesktopList = $('.country-selector-drawer__region-list');
   const regionPanels = $('.country-selector-drawer .panel-collapse');
-  let resizeTimer = '';
 
   // Media Breakpoint
   let mediumScreenWidth = App.global.constants.GRID.MD;
