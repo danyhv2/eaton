@@ -24,7 +24,6 @@
     margin-top: ($spacing__sm);
     color: $color__primary-blue;
     font-weight: bold;
-    text-align: left;
   }
 
   //-----------------------------
@@ -54,6 +53,10 @@
       min-width: 250px;
       margin: 0 auto;
     }
+
+    &__image-headline {
+      text-align: center;
+    }
   }
 
   //-----------------------------------
@@ -74,6 +77,10 @@
       .eaton-grid-control & {
         flex-basis: 50%;
       }
+    }
+
+    &__image-headline {
+      text-align: left;
     }
   }
 }
