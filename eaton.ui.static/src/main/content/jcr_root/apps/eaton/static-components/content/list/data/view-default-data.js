@@ -1,19 +1,22 @@
 "use strict";
 use(function () {
-	
+
     var data = {};
     var testdata = this.testdata;
-    
+
     if ((typeof(testdata) != "undefined") && (testdata == "t5-category-with-list")) {
-  	  
+
     	data = {
     	  cards: [
              {
-                 title: 'Data Center Facility UPS',
-                 text: 'Emergency power system basics',
-                 image: '/content/dam/eaton/images/Jet.png',
-                 mobile_image: '/content/dam/eaton/images/Jet.png',
-                 image_alt: 'Image 1',
+                 title: 'Data Center Facility UPS 01',
+                 text: 'Emergency power system basics 01',
+                 image : {
+                      mobile: '/content/dam/eaton/images/lorempixel/technics/630x473-2.jpg',
+                      tablet: '/content/dam/eaton/images/lorempixel/technics/630x473-2.jpg',
+                      desktop: '/content/dam/eaton/images/lorempixel/technics/358x258-2.jpg',
+                      altText: 'Eaton 9PX UPS'
+                 },
                  date_text: 'November 30, 2016',
                  cta: {
                      url: 'http://www.eaton.com',
@@ -23,9 +26,12 @@ use(function () {
              {
                  title: 'Knowledge Center',
                  text: 'Eaton Awarded U.S. Army Corps Contract to Modernize Electrical Systems',
-                 image: '/content/dam/eaton/images/Tractors.png',
-                 mobile_image: '/content/dam/eaton/images/Tractors.png',
-                 image_alt: 'Image 2',
+                 image : {
+                      mobile: '/content/dam/eaton/images/lorempixel/technics/630x473-8.jpeg',
+                      tablet: '/content/dam/eaton/images/lorempixel/technics/630x473-8.jpeg',
+                      desktop: '/content/dam/eaton/images/lorempixel/technics/358x258-8.jpg',
+                      altText: 'Eaton 9PX UPS'
+                 },
                  date_text: 'December 12, 2015',
                  cta: {
                      url: 'http://www.eaton.com',
@@ -34,17 +40,20 @@ use(function () {
              }
    	      ]
    	    };
-  	  
+
     } else {
-    		
+
     	data = {
     	  cards: [
     	     {
                 title: 'Data Center Facility UPS',
                 text: 'Emergency power system basics',
-                image: '/content/dam/eaton/images/Jet.png',
-                mobile_image: '/content/dam/eaton/images/Jet.png',
-                image_alt: 'Image 1',
+                 image : {
+                      mobile: '/content/dam/eaton/images/lorempixel/technics/630x473-2.jpg',
+                      tablet: '/content/dam/eaton/images/lorempixel/technics/630x473-2.jpg',
+                      desktop: '/content/dam/eaton/images/lorempixel/technics/358x258-2.jpg',
+                      altText: 'Eaton 9PX UPS'
+                 },
                 date_text: 'November 30, 2016',
                 cta: {
                     url: 'http://www.eaton.com',
@@ -54,9 +63,12 @@ use(function () {
             {
                 title: 'Knowledge Center',
                 text: 'Eaton Awarded U.S. Army Corps Contract to Modernize Electrical Systems',
-                image: '/content/dam/eaton/images/Tractors.png',
-                mobile_image: '/content/dam/eaton/images/Tractors.png',
-                image_alt: 'Image 2',
+                 image : {
+                      mobile: '/content/dam/eaton/images/lorempixel/technics/630x473-8.jpeg',
+                      tablet: '/content/dam/eaton/images/lorempixel/technics/630x473-8.jpeg',
+                      desktop: '/content/dam/eaton/images/lorempixel/technics/358x258-8.jpg',
+                      altText: 'Eaton 9PX UPS'
+                 },
                 date_text: 'December 12, 2015',
                 cta: {
                     url: 'http://www.eaton.com',
@@ -66,9 +78,12 @@ use(function () {
             {
                 title: 'Healthcare',
                 text: 'Unlock power and reverse with a modern UPS',
-                image: '/content/dam/eaton/images/Power_Lines.png',
-                mobile_image: '/content/dam/eaton/images/Power_Lines.png',
-                image_alt: 'Image 3',
+                 image : {
+                      mobile: '/content/dam/eaton/images/lorempixel/technics/630x473-10.jpg',
+                      tablet: '/content/dam/eaton/images/lorempixel/technics/630x473-10.jpg',
+                      desktop: '/content/dam/eaton/images/lorempixel/technics/358x258-10.jpg',
+                      altText: 'Eaton 9PX UPS'
+                 },
                 date_text: 'October 12, 2014',
                 cta: {
                     url: 'http://www.eaton.com',
@@ -77,9 +92,9 @@ use(function () {
             }
   	      ]
   	    };
-    
+
     }
-    
+
     return data;
-    
+
 });

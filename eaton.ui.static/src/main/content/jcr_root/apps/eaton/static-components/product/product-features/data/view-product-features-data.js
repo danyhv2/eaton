@@ -47,8 +47,8 @@ use(function () {
             text: '<p>Designed for virtualized environments, these models offer double-conversion topology for constant power condition monitoring and up to 93 percent efficiency. They work well in IT, industrial and medical applications.</p>' +
             '<p>With an array of form factors, options and accessories, these virtualization-ready models maximize the availability of your IT systems. They also pack more power and runtime into a small space than traditional UPSs.</p>',
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/7/750x750/',
-                tablet: 'http://lorempixel.com/750/750/technics/10/750x750/',
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
                 desktop: '/content/dam/eaton/images/feature_block_image.png',
                 altText: ''
             },
@@ -65,8 +65,8 @@ use(function () {
             '<p>Maximizes availability with extended battery modules for more runtime and optional maintenance bypass.</p>' +
             '<p>Help save money and protect the environment through energy efficiency operation.</p>',
             image: {
-                mobile: 'http://lorempixel.com/750/750/technics/7/750x750/',
-                tablet: 'http://lorempixel.com/750/750/technics/10/750x750/',
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
                 desktop: '/content/dam/eaton/images/feature_block_image.png',
                 altText: ''
             },

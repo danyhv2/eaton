@@ -16,11 +16,13 @@
   &__title {
     text-transform: uppercase;
     font-weight: bold;
-    color: $color__primary-gray2;
+    color: $color__primary-gray1;
   }
 
   &__text {
     word-wrap: break-word;
+    color: $color__primary-gray1;
+    font-family: 'EatonMedium';
   }
 
   &__symbol {
@@ -49,10 +51,6 @@
     &__symbol {
       font-size: 3rem;
       top: -15px;
-    }
-
-    &__title {
-      margin-bottom: 5px;
     }
   }
 

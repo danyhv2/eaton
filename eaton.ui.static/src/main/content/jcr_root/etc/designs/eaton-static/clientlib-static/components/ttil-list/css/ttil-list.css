@@ -114,6 +114,8 @@
 @media screen and (min-width: 768px) and (max-width: 991px) { .featured-story-component__text { padding-top: 15px; width: 250px; }
   .featured-story-component__content { padding: 60px 30px 60px 50px; } }
 
+.tile-link-component { margin-top: 60px; margin-bottom: 60px; }
+
 @media screen and (min-width: 768px) { .tile-link-component__container { padding: 0 15px; } }
 
 .tile-link-component__copy { padding: 60px 0; }
@@ -230,7 +232,7 @@
 
 .dark-theme .eaton-featured-list__link { color: #FFF; }
 
-.eaton-featured-list__image { max-width: 300px; }
+.eaton-featured-list__image { width: 167px; min-width: 167px; height: 167px; display: block; }
 
 .eaton-featured-list__body { padding-left: 20px; }
 
@@ -275,6 +277,6 @@
 @media screen and (min-width: 1200px) { .eaton-ttil-quote { width: calc((100% - 1140px) / 2 + 1140px); }
   .eaton-ttil-quote__text-container { width: calc(1140px - 484px); }
   .eaton-ttil-quote__right { margin-left: calc((100% - 1140px) / 2); }
-  .eaton-ttil-quote__right .eaton-ttil-quote__text-container { float: left; padding-left: 70px; padding-right: 0; }
+  .eaton-ttil-quote__right .eaton-ttil-quote__text-container { float: left; padding-left: 110px; padding-right: 0; }
   .eaton-ttil-quote__left { -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
-  .eaton-ttil-quote__left .eaton-ttil-quote__text-container { padding-left: 0; padding-right: 70px; } }
+  .eaton-ttil-quote__left .eaton-ttil-quote__text-container { padding-left: 0; padding-right: 110px; } }

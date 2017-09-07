@@ -5,7 +5,7 @@
   &__image {
     width: 100%;
     height: auto;
-    margin-top: 60px;
+    margin-top: 120px;
   }
 
   &__title {
@@ -18,9 +18,8 @@
 
   &__cta {
     // color: $color__primary-blue;
-    // font-size: 2.5em;
-    // font-family: Arial;
-    // font-weight: bold;
+    font-size: 4.0rem;
+    line-height: 5.0rem;
     margin-top: 15px;
     margin-bottom: 15px;
 
@@ -35,7 +34,7 @@
 
   &__date {
     font-style: italic;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   &__body {
@@ -44,31 +43,32 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .article-feature {
+@include media-mobile-and-tablet {
+  .eaton-article-feature {
     &__image {
-      margin-top: 30px;
+      margin-top: 60px;
     }
 
     &__title {
       // font-size: 1.1em;
-      margin-top: 15px;
+      margin-top: 27px;
     }
 
     &__date {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     &__body {
-      margin-bottom: 30px;
+      margin-bottom: 8px;
       // line-height: 1.5em;
       // font-size: 1.2em;
     }
 
     &__cta {
-      // font-size: 1.5em;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      font-size: 2.8rem;
+      line-height: 3.2rem;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
 }

@@ -73,8 +73,8 @@ use(function () {
                     title: 'Eaton 9px Family',
                     text: 'Eaton S-Series Enlosure',
                     image: {
-                        mobile:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
-                        tablet:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
+                        mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
+                        tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                         desktop:'/content/dam/eaton/images/product.png',
                         altText:'Image 1'
                     },
@@ -85,8 +85,8 @@ use(function () {
                     title: 'Eaton 9px Family',
                     text: 'Eaton FlexPDU& HotSwap MBP',
                     image: {
-                        mobile:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
-                        tablet:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
+                        mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
+                        tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                         desktop:'/content/dam/eaton/images/product2.png',
                         altText:'Image 2'
                     },
@@ -97,8 +97,8 @@ use(function () {
                     title: 'Eaton 9px Family',
                     text: 'Eaton S-Series Enlosure',
                     image: {
-                        mobile:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
-                        tablet:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
+                        mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
+                        tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                         desktop:'/content/dam/eaton/images/product.png',
                         altText:'Image 3'
                     },
@@ -109,8 +109,8 @@ use(function () {
                     title: 'Eaton 9px Family',
                     text: 'Eaton FlexPDU& HotSwap MBP',
                     image: {
-                        mobile:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
-                        tablet:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
+                        mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
+                        tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                         desktop:'/content/dam/eaton/images/product2.png',
                         altText:'Image 4'
                     },
@@ -121,8 +121,8 @@ use(function () {
                     title: 'Eaton 9px Family',
                     text: 'Eaton S-Series Enlosure',
                     image: {
-                        mobile:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
-                        tablet:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
+                        mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
+                        tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                         desktop:'/content/dam/eaton/images/product.png',
                         altText:'Image 4'
                     },
@@ -133,8 +133,8 @@ use(function () {
                     title: 'Eaton 9px Family',
                     text: 'Eaton FlexPDU& HotSwap MBP',
                     image: {
-                        mobile:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
-                        tablet:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
+                        mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
+                        tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                         desktop:'/content/dam/eaton/images/product2.png',
                         altText:'Image 6'
                     },
@@ -145,8 +145,8 @@ use(function () {
                     title: 'Eaton 9px Family',
                     text: 'Eaton S-Series Enlosure',
                     image: {
-                        mobile:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
-                        tablet:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
+                        mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
+                        tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                         desktop:'/content/dam/eaton/images/product.png',
                         altText:'Image 7'
                     },
@@ -157,8 +157,8 @@ use(function () {
                     title: 'Eaton 9px Family',
                     text: 'Eaton FlexPDU& HotSwap MBP',
                     image: {
-                        mobile:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
-                        tablet:'http://lorempixel.com/1000/1000/technics/Image-size--1000x1000/',
+                        mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
+                        tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                         desktop:'/content/dam/eaton/images/product2.png',
                         altText:'Image 8'
                     },

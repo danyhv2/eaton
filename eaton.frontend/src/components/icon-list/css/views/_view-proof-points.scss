@@ -3,7 +3,7 @@
 //-----------------------------------
 
 .icon-list-proof-points {
-  padding: ($spacing__lg / 2) 0;
+  margin: $spacing__lg 0;
 
   &__item {
     display: flex;
@@ -55,6 +55,9 @@
 
     &__title {
       @include body-copy--desktop;
+      line-height: 3rem;
+      position: relative;
+      top: -5px;
     }
   }
 

@@ -11,17 +11,41 @@
  */
 
 
-.eaton-list-component { margin-bottom: 60px; }
+.eaton-list-component { margin-bottom: 60px; /*
+
+
+  .carousel-indicators {
+    position: inherit;
+    margin: 40px auto 0;
+  }
+
+  .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    cursor: inherit;
+    background-color: $color__primary-gray3;
+    border: 0;
+    border-radius: 50%;
+    margin: 0 4px;
+  }
+
+  .carousel-indicators .active {
+    background-color: $color__primary-blue;
+    width: 15px;
+    height: 15px;
+    margin: 0 4px;
+  }
+
+
+*/ }
 
 .eaton-list-component a { text-decoration: none; }
 
 .eaton-list-component a:hover, .eaton-list-component a:active, .eaton-list-component a:visited, .eaton-list-component a:focus { color: #005EB8; text-decoration: none; }
 
-.eaton-list-component .carousel-indicators { position: inherit; margin: 40px auto 0; }
+.eaton-list-component h2 { padding-bottom: 10px; padding-top: 120px; }
 
-.eaton-list-component .carousel-indicators li { width: 15px; height: 15px; cursor: inherit; background-color: #98A4AE; border: 0; border-radius: 50%; margin: 0 4px; }
-
-.eaton-list-component .carousel-indicators .active { background-color: #005EB8; width: 15px; height: 15px; margin: 0 4px; }
+@media screen and (min-width: 768px) and (max-width: 991px) { .eaton-list-component h2 { padding-bottom: 15px; } }
 
 .eaton-list-component .category__image { width: 100%; }
 
@@ -58,6 +82,33 @@
   .eaton-list-component .category__item, .eaton-list-component .category__image { min-height: 263px; }
   .eaton-list-component .category__link--font { font-size: 1.3em; } }
 
+.listdefault__slides { padding: 0; list-style: none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+.listdefault__slides .slick-track { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.listdefault__slides .slick-slide { height: auto; }
+
+.listdefault__slides .slick-active button { background-color: #005EB8; }
+
+.listdefault__link { height: 100%; }
+
+.listdefault__card { border: 1px solid #CCD2D7; height: 100%; }
+
+.listdefault__card .category-item-date { color: #98A4AE; }
+
+.listdefault__card .rendition img { width: 100%; }
+
+.listdefault__content { padding: 30px 30px 15px 30px; }
+
+@media screen and (max-width: 767px) { .listdefault__slides { display: block; }
+  .listdefault__image { width: 100%; }
+  .listdefault__content { padding: 15px 15px 0 15px; width: 100%; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) { .listdefault__slides { display: block; }
+  .listdefault__card { margin-bottom: 20px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+  .listdefault__image { width: 50%; }
+  .listdefault__content { padding: 30px 15px 15px 30px; width: 50%; } }
+
 .featured-category--topbottompadding { padding: 30px 0; }
 
 .featured-category-container { margin-bottom: 30px; }
@@ -70,11 +121,7 @@
 
 @media only screen and (max-width: 767px) { .featured-category-container { padding: 0; margin-bottom: 30px; } }
 
-.article-list-single-feature { padding-bottom: 30px; padding-top: 25px; }
-
-@media screen and (max-width: 767px) { .article-list-single-feature { padding-bottom: 0; } }
-
-@media screen and (min-width: 768px) { .article-list-single-feature { padding-bottom: 60px; padding-top: 50px; } }
+.article-list-single-feature { margin-top: 50px; }
 
 .article-list-single-feature--border { border-top: 4px solid; border-color: #005EB8; width: 60px; display: block; }
 
@@ -85,6 +132,8 @@
 .article-list-single-feature__article--copy { padding: 15px 0; }
 
 .article-list-single-feature__cta { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.article-list-single-feature img { width: 100%; }
 
 @media screen and (max-width: 767px) { .article-list-single-feature__article { margin-top: 30px; } }
 

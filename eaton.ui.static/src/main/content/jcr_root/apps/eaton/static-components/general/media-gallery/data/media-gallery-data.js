@@ -12,10 +12,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 1",
-          "thumbnail": "http://lorempixel.com/220/220/business/4/220x220/",
-          "preview": "http://lorempixel.com/1000/1000/business/4/1000x1000/",
-          "zoom": "http://lorempixel.com/1500/1500/business/4/2000x2000/",
-          "download": "http://lorempixel.com/1500/1500/business/4/2000x2000/"
+          "thumbnail": "/content/dam/eaton/images/lorempixel/business/220x220-4.jpeg",
+          "preview": "/content/dam/eaton/images/lorempixel/business/1000x1000-4.jpeg",
+          "zoom": "/content/dam/eaton/images/lorempixel/business/1500x1500-4.jpeg",
+          "download": "/content/dam/eaton/images/lorempixel/business/1500x1500-4.jpeg"
         }
       },
       {
@@ -24,9 +24,9 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 2",
-          "thumbnail": "http://lorempixel.com/220/220/business/5/220x220/",
-          "preview": "http://lorempixel.com/1000/1000/business/5/1000x1000/",
-          "zoom": "http://lorempixel.com/1500/1500/business/5/1000x1000/",
+          "thumbnail": "/content/dam/eaton/images/lorempixel/business/220x220-5.jpeg",
+          "preview": "/content/dam/eaton/images/lorempixel/business/1000x1000-5.jpeg",
+          "zoom": "/content/dam/eaton/images/lorempixel/business/1500x1500-5.jpeg",
           "download": ""
         }
       },
@@ -36,10 +36,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 3",
-          "thumbnail": "http://lorempixel.com/220/220/business/6/220x220/",
-          "preview": "http://lorempixel.com/1000/1000/business/6/1000x1000/",
-          "zoom": "http://lorempixel.com/1500/1500/business/6/2000x2000/",
-          "download": "http://lorempixel.com/1500/1500/business/6/2000x2000/"
+          "thumbnail": "/content/dam/eaton/images/lorempixel/business/220x220-6.jpeg",
+          "preview": "/content/dam/eaton/images/lorempixel/business/1000x1000-6.jpeg",
+          "zoom": "/content/dam/eaton/images/lorempixel/business/1500x1500-6.jpeg",
+          "download": "/content/dam/eaton/images/lorempixel/business/1500x1500-6.jpeg"
         }
       },
       {
@@ -48,10 +48,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 4",
-          "thumbnail": "http://lorempixel.com/220/220/business/1/220x220/",
-          "preview": "http://lorempixel.com/1000/1000/business/1/1000x1000/",
-          "zoom": "http://lorempixel.com/1500/1500/business/1/2000x2000/",
-          "download": "http://lorempixel.com/1500/1500/business/1/2000x2000/"
+          "thumbnail": "/content/dam/eaton/images/lorempixel/business/220x220-1.jpeg",
+          "preview": "/content/dam/eaton/images/lorempixel/business/1000x1000-1.jpeg",
+          "zoom": "/content/dam/eaton/images/lorempixel/business/1500x1500-1.jpeg",
+          "download": "/content/dam/eaton/images/lorempixel/business/1500x1500-1.jpeg"
         }
       },
       {
@@ -60,10 +60,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 5",
-          "thumbnail": "http://lorempixel.com/220/220/business/9/220x220/",
-          "preview": "http://lorempixel.com/1000/1000/business/9/1000x1000/",
-          "zoom": "http://lorempixel.com/1500/1500/business/9/2000x2000/",
-          "download": "http://lorempixel.com/1500/1500/business/9/2000x2000/"
+          "thumbnail": "/content/dam/eaton/images/lorempixel/business/220x220-9.jpeg",
+          "preview": "/content/dam/eaton/images/lorempixel/business/1000x1000-9.jpeg",
+          "zoom": "/content/dam/eaton/images/lorempixel/business/1500x1500-9.jpeg",
+          "download": "/content/dam/eaton/images/lorempixel/business/1500x1500-9.jpeg"
         }
       },
       {
@@ -72,10 +72,10 @@ use(function () {
         "isVideo": false, // isVideo is not currenly supported. This propery is just a placeholder for future development
         "images": {
           "altText": "Gallery Item 6",
-          "thumbnail": "http://lorempixel.com/220/220/business/8/220x220/",
-          "preview": "http://lorempixel.com/1000/1000/business/8/1000x1000/",
-          "zoom": "http://lorempixel.com/1500/1500/business/8/2000x2000/",
-          "download": "http://lorempixel.com/1500/1500/business/8/2000x2000/"
+          "thumbnail": "/content/dam/eaton/images/lorempixel/business/220x220-8.jpeg",
+          "preview": "/content/dam/eaton/images/lorempixel/business/1000x1000-8.jpeg",
+          "zoom": "/content/dam/eaton/images/lorempixel/business/1500x1500-8.jpeg",
+          "download": "/content/dam/eaton/images/lorempixel/business/1500x1500-8.jpeg"
         }
       }
     ]
