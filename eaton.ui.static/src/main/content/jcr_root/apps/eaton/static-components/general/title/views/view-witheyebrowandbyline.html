@@ -7,7 +7,12 @@
       <div class="container">
     </sly>
 
-      <div class="eaton-title__eyebrow b-eyebrow-small"><i class="icon icon-chevron-left"></i>${ data.eyebrow }</div>
+      <sly data-sly-test="${!data.eyebrowLink}">
+        <div class="eaton-title__eyebrow b-eyebrow-small"><i class="icon icon-chevron-left"></i>${ data.eyebrow }</div>
+      </sly>
+      <sly data-sly-test="${data.eyebrowLink}">
+        <a href="${data.eyebrowLink}" class="eaton-title__eyebrow b-eyebrow-small"><i class="icon icon-chevron-left" target="${data.eyebrowTarget}" title="${data.eyebrow}"></i>${ data.eyebrow }</a>
+      </sly>
 
       <!--/*
         NOTE: "data.style" should have a value of "h1, h2, h3, h4, h5, or h6"

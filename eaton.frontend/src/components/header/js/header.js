@@ -22,6 +22,7 @@ App.header = (function() {
   const openDrawerBtn = $('.open-country-selector');
   const regionDesktopList = $('.country-selector-drawer__region-list');
   const regionPanels = $('.country-selector-drawer .panel-collapse');
+  let resizeTimer = '';
 
   // Media Breakpoint
   let mediumScreenWidth = App.global.constants.GRID.MD;
@@ -41,6 +42,14 @@ App.header = (function() {
       $(document).on( App.global.constants.EVENTS.HEADER.COOKIE_SET, function() {
         updateHeaderLayoutMobile();
       });
+
+      // Handle Resizing scenarios for the Header Layout
+      windowEl.on('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+          updateHeaderLayoutMobile();
+        }, 200);
+      });
     }
   };
 
@@ -54,6 +63,9 @@ App.header = (function() {
 
     if (windowEl.width() < mediumScreenWidth) {
       headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', headerHeight);
+    } else {
+      // Reset the top offset for the elements - Desktop
+      headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', 'auto');
     }
   };
 

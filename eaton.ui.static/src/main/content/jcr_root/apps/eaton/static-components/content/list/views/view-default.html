@@ -3,8 +3,72 @@
     <!--/* Container */-->
     <div class="container eaton-list-component eaton-list-component-default-view">
 
+
+
+
+
+<h2 class="b-heading-h2">Related Items</h2>
+
+
+
+
+    <div class="row">
+
+        <ul class="listdefault__slides ${data.cards.length == 2 ? 'js-col6' : 'js-col4'}" data-sly-list.slider="${data.cards}">
+            <li class="slides col-sm-12 ${data.cards.length == 2 ? 'col-md-6' : 'col-md-4'}">
+               <a href="${slider.cta.url}" target="${slider.cta.target}" class="listdefault__link">
+
+                        <div class="listdefault__card">
+
+                          <div class="listdefault__image">
+                          <!-- Start: Rendition Image Component -->
+                          <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+                            <sly data-sly-call="${ tpl.module @ data=slider.image }"></sly>
+                          </sly>
+                          <!-- End: Rendition Image Component -->
+                          </div><div class="listdefault__content">
+                                <p class="b-eyebrow-small">${slider.title}</p>
+                                <p class="b-heading-h5">${slider.text}</p>
+                                <p class="category-item-date"><em>${slider.date_text}</em></p>
+                            </div>
+                        </div>
+                </a>
+            </li>
+        </ul>
+
+            <button class="listdefault__prev-arrow upsell-products__arrows button--reset">
+                <i class="icon icon-chevron-left"></i>
+                <span class="sr-only">Go to Previous Item</span>
+            </button>
+            <button class="listdefault__next-arrow upsell-products__arrows button--reset">
+                <i class="icon icon-chevron-right"></i>
+                <span class="sr-only">Go to Next Item</span>
+            </button>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!--/* Desktop/Tablet Layout */-->
-        <div class="row hidden-xs visible-sm visible-md visible-lg">
+
+
+<!--         <div class="row hidden-xs visible-sm visible-md visible-lg">
             <div data-sly-list.slider="${data.cards}" role="listbox">
                 <div class="col-sm-12 ${data.cards.length == 2 ? 'col-md-6' : 'col-md-4'}">
                     <a href="${slider.cta.url}" class="equal-height-row tablet-card" target="${slider.cta.target}">
@@ -19,10 +83,12 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!--/* Mobile slider */-->
-        <div class="row visible-xs">
+
+
+<!--         <div class="row visible-xs">
             <div class="col-xs-12">
                 <div class="default-view-carousel-component carousel slide">
                     <div class="carousel-inner" data-sly-list.slider="${data.cards}" role="listbox">
@@ -46,7 +112,19 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
 

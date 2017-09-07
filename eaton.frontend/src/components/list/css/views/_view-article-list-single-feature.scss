@@ -1,16 +1,6 @@
 .article-list-single-feature {
 
-  padding-bottom: 30px;
-  padding-top: 25px;
-
-  @include media-mobile-only {
-    padding-bottom: 0;
-  }
-
-  @include media-tablet-and-up {
-    padding-bottom: 60px;
-    padding-top: 50px;
-  }
+  margin-top: 50px;
 
   &--border {
     border-top: 4px solid;
@@ -40,6 +30,10 @@
   &__cta {
     display: flex;
     justify-content: center;
+  }
+
+  img {
+    width: 100%;
   }
 }
 

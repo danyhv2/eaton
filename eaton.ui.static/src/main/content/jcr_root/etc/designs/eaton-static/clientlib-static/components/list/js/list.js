@@ -17,6 +17,7 @@
 'use strict';
 
 var App = window.App || {};
+
 App.listComponent = function () {
 
   var $carousel = $('.module-related-products__slides');
@@ -28,6 +29,7 @@ App.listComponent = function () {
   /**
    * Initialize Slick Carousel
    */
+
   var initCarousel = function initCarousel() {
     for (var i = 0; i < $carousel.length; i++) {
 
@@ -56,6 +58,93 @@ App.listComponent = function () {
         }]
       });
     }
+  };
+
+  /**
+    * If containing DOM element is found, Initialize and Expose public methods
+  */
+
+  if ($carousel.length > 0) {
+    init();
+  }
+}();
+
+// -----------------------------------------------------------------------------------------------
+
+
+App.carouselListDefault = function () {
+
+  var $carousel = $('.listdefault__slides');
+
+  var init = function init() {
+    initCarousel();
+    addEventListeners();
+  };
+
+  var addEventListeners = function addEventListeners() {
+
+    if (window.matchMedia) {
+
+      // min-width 992px
+      var mqMobile = window.matchMedia(App.global.constants.MEDIA_QUERIES.MOBILE);
+
+      // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
+      mqMobile.addListener(onBreakpointChange);
+    }
+  };
+
+  /**
+    * Breakpoint Change Callback Function
+    * @param { Object} event - MatchMedia Event Object
+    */
+  var onBreakpointChange = function onBreakpointChange(event) {
+
+    if (event.matches) {
+      initCarousel();
+    } else {
+      $carousel.slick('unslick');
+    }
+  };
+
+  var sliderCheck = function sliderCheck() {
+    var numSlides = 3;
+
+    if ($('.js-col6').length === 1) {
+      // check how many items are on the list in order to initialize the carousel
+      numSlides = 2;
+    } else {
+      numSlides = 3;
+    }
+
+    return numSlides;
+  };
+
+  /**
+   * Initialize Slick Carousel
+   */
+  var initCarousel = function initCarousel() {
+
+    $carousel.slick({
+      slidesToShow: sliderCheck(),
+      slidesToScroll: sliderCheck(),
+      dots: true,
+      dotsClass: 'module-related-products__dots',
+      prevArrow: $('.listdefault__prev-arrow'),
+      nextArrow: $('.listdefault__next-arrow'),
+      responsive: [{
+        breakpoint: 1200,
+        settings: 'unslick'
+      }, {
+        breakpoint: 991,
+        settings: 'unslick'
+      }, {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+    });
   };
 
   /**

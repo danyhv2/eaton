@@ -33,7 +33,7 @@
 
 .eaton-search--default .icon-search { top: 2px; position: relative; }
 
-.eaton-search--default__form-input { color: #FFF; background: transparent; padding: 0; }
+.eaton-search--default__form-input { color: #FFF; background: transparent; padding: 0; resize: none; }
 
 .eaton-search--default__form-input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: transparent; }
 
