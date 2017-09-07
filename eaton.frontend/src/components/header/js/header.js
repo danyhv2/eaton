@@ -29,7 +29,6 @@ App.header = (function() {
 
   // Check AEM Author Mode
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
-
   /**
   * Init
   */
@@ -44,12 +43,8 @@ App.header = (function() {
       });
 
       // Handle Resizing scenarios for the Header Layout
-      windowEl.on('resize', function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
-          updateHeaderLayoutMobile();
-        }, 200);
-      });
+      let lazyResize = App.global.utils.throttle(updateHeaderLayoutMobile, 200);
+      windowEl.on('resize', lazyResize);
     }
   };
 
@@ -65,7 +60,7 @@ App.header = (function() {
       headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', headerHeight);
     } else {
       // Reset the top offset for the elements - Desktop
-      headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', 'auto');
+      headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', 'unset');
     }
   };
 
