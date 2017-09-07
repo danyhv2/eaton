@@ -17,15 +17,21 @@
 
 .eaton-link-list-vertical__list { padding: 0; margin: 0; list-style-type: none; }
 
+.eaton-link-list-vertical__list-text { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
+
 .eaton-link-list-vertical__list-link { display: inline-block; padding: 10px 0; }
 
-.eaton-link-list-vertical__list-icon { font-size: 1.4rem; }
+.eaton-link-list-vertical__list-icon { padding-right: 10px; font-size: 2.8rem; padding-top: 5px; }
 
-.eaton-link-list-vertical__external-icon { padding-right: 10px; font-size: 1.5rem; }
+.eaton-link-list-vertical__external-icon { padding-right: 10px; font-size: 2.8rem; margin-top: 8px; }
 
-.eaton-link-list-vertical__download-text { width: 100%; margin-left: 30px; font-size: 1.6rem; }
+.eaton-link-list-vertical__external-icon.icon-link-external { margin-top: 0; top: 2px; position: relative; }
+
+.eaton-link-list-vertical__download-text { width: 100%; margin-left: 40px; font-size: 1.8rem; margin-top: -10px; }
 
 .eaton-link-list-vertical__download-text--description { color: #98A4AE; font-family: Arial, "Arial", sans-serif; }
+
+.eaton-link-list-vertical__download-text p { margin: 0 0 5px; }
 
 .dark-theme .eaton-link-list-vertical .icon-chevron-right { display: inline-block; }
 

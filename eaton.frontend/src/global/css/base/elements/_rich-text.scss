@@ -18,8 +18,10 @@
 
   // wysiwyng classes
   span.b-eyebrow-large {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     display: inline-block;
+    top: -5px;
+    position: relative;
   }
 
   // stylelint-disable selector-max-compound-selectors
