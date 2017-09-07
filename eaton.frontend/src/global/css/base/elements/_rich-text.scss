@@ -57,22 +57,21 @@
   //--------------
   ul {
     list-style-type: none;
-    padding: 0;
+    padding: 20px 0 0;
 
     li {
       position: relative;
-      padding-left: 40px;
+      padding: 0 0 15px 30px;
 
       &::before {
-        @include square(6px); // Width & Height
+        @include square(10px); // Width & Height
 
         content: '';
         background-color: $color__primary-blue;
         border-radius: 50%;
-        left: 20px;
+        left: 0;
         position: absolute;
         top: 0.6em;
-
       }
     }
   }
