@@ -2,6 +2,7 @@
 use(function () {
 
   var data = {};
+  var testdata = this.testdata;
 
   data.view = {
     links: [
@@ -22,6 +23,12 @@ use(function () {
       }
     ]
   };
+
+  if ((typeof(testdata) != 'undefined') && (testdata == 'footer-b')) {
+    data.view.links[2].title = 'Manage Electrical and mechanical power';
+    data.view.links[2].url = '#manage-electrical-power';
+    data.view.links.push({ title: 'Site map', url: '#site-map', target: '_self' });
+  }
 
   return data;
 

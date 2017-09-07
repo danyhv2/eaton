@@ -1,7 +1,7 @@
-<sly data-sly-use.data="../data/view-horizontal-data.js">
+<sly data-sly-use.data="${ '../data/view-horizontal-data.js' @testdata=properties.testdata }">
 
   <!--/* Link List Horizontal */-->
-  <div class="link-list-horizontal">
+  <div class="link-list-horizontal b-body-copy-small">
     <ul
       data-sly-list="${ data.view.links }"
       class="link-list-horizontal__list"
