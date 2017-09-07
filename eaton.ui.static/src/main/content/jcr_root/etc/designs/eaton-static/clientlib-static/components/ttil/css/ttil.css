@@ -35,7 +35,7 @@
 
 .dark-theme .eaton-single-feature__headline, .dark-theme .eaton-single-feature__eyebrow { color: #FFF; }
 
-.eaton-single-feature__image { max-width: 300px; }
+.eaton-single-feature__image img { width: 100%; }
 
 .eaton-single-feature__eyebrow { margin-bottom: 15px; }
 

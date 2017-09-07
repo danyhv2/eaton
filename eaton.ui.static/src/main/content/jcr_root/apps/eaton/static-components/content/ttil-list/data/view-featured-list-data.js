@@ -1,3 +1,5 @@
+// Image Sizes are 1:1
+
 "use strict";
 use(function () {
     var data = {
