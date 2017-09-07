@@ -46,9 +46,9 @@ use(function () {
 	        items: [
 	            {
                 image: {
-                  mobile:'/content/dam/eaton/images/lorempixel/business/220x220-8.jpeg',
-                  tablet:'/content/dam/eaton/images/lorempixel/business/220x220-8.jpeg',
-                  desktop: '/content/dam/eaton/images/lorempixel/business/220x220-8.jpeg',
+                  mobile:'/content/dam/eaton/images/lorempixel/technics/550x413-4.jpeg',
+                  tablet:'/content/dam/eaton/images/lorempixel/technics/550x413-4.jpeg',
+                  desktop: '/content/dam/eaton/images/lorempixel/technics/550x413-4.jpeg',
                   altText: 'Alt text for Image 1',
                 }
 	            },
@@ -70,9 +70,9 @@ use(function () {
 	            },
               {
                 image: {
-                  mobile:'/content/dam/eaton/images/lorempixel/technics/270x152-4.jpeg',
-                  tablet:'/content/dam/eaton/images/lorempixel/technics/270x152-4.jpeg',
-                  desktop: '/content/dam/eaton/images/lorempixel/technics/270x152-4.jpeg',
+                  mobile:'/content/dam/eaton/images/lorempixel/technics/265x265-7.jpeg',
+                  tablet:'/content/dam/eaton/images/lorempixel/technics/265x265-7.jpeg',
+                  desktop: '/content/dam/eaton/images/lorempixel/technics/265x265-7.jpeg',
                   altText: 'Alt text for Image 4'
                 }
 	            },
@@ -81,15 +81,15 @@ use(function () {
                   mobile:'/content/dam/eaton/images/lorempixel/technics/460x460-8.jpeg',
                   tablet:'/content/dam/eaton/images/lorempixel/technics/460x460-8.jpeg',
                   desktop: '/content/dam/eaton/images/lorempixel/technics/460x460-8.jpeg',
-                  altText: 'Alt text for Image ',
+                  altText: 'Alt text for Image 5'
                 }
 	            },
 	            {
                 image: {
-                  mobile:'/content/dam/eaton/images/lorempixel/technics/265x265-7.jpeg',
-                  tablet:'/content/dam/eaton/images/lorempixel/technics/265x265-7.jpeg',
-                  desktop: '/content/dam/eaton/images/lorempixel/technics/265x265-7.jpeg',
-                  altText: 'Alt text for Image 6',
+                  mobile:'/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                  tablet:'/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                  desktop: '/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                  altText: 'Alt text for Image 6'
                 }
 	            }
 	        ]
