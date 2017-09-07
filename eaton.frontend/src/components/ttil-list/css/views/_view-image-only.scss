@@ -4,7 +4,7 @@
 
 .eaton-ttil-image-list {
   margin: 30px 0;
-  
+
   &__item {
     padding: 0 10px;
 
@@ -24,6 +24,7 @@
     margin-top: ($spacing__sm);
     color: $color__primary-blue;
     font-weight: bold;
+    text-align: left;
   }
 
   //-----------------------------

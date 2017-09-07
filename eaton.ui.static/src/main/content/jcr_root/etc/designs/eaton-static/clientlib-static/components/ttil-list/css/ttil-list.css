@@ -178,7 +178,7 @@
 
 .eaton-ttil-image-list__image img { display: inline-block; width: 100%; }
 
-.eaton-ttil-image-list__image-headline { margin-top: 30px; color: #005EB8; font-weight: bold; }
+.eaton-ttil-image-list__image-headline { margin-top: 30px; color: #005EB8; font-weight: bold; text-align: left; }
 
 @media screen and (max-width: 991px) { .eaton-ttil-image-list__container { display: block; }
   .eaton-ttil-image-list__item { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; padding: 0 10px; margin-bottom: 30px; }
