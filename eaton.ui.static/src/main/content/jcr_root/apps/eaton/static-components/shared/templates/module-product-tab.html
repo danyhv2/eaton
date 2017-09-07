@@ -46,10 +46,10 @@
                 target="${item.target}"
                 aria-label="Go to ${item.title}"
               >
-                <label for="tab-${itemList.index}" class="${item.selected ? 'tab-active' : ''}" >
+                <div for="tab-${itemList.index}" class="tab-label ${item.selected ? 'tab-active' : ''}" >
                   <i class="icon icon-${item.icon}" aria-hidden="true"></i>
                   <span>${item.title}</span>
-                </label>
+                </div>
               </a>
             </sly>
           </div>

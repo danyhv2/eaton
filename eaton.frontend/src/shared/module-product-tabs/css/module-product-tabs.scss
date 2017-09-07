@@ -13,7 +13,8 @@
       &:checked {
         ~ .row,
         ~ .container {
-          label[for="#{$radioId}"] {
+          label[for="#{$radioId}"],
+          div.tab-label {
             background-color: $color__secondary-gray5;
           }
 
@@ -31,7 +32,8 @@
         &:checked {
           ~ .row,
           ~ .container {
-            label[for="#{$radioId}"] {
+            label[for="#{$radioId}"],
+            div.tab-label {
               background-color: $color__primary-gray2;
             }
           }
@@ -57,7 +59,8 @@
       }
     }
 
-    label {
+    label,
+    div.tab-label {
       background-color: $color__primary-gray1;
 
       &:hover,
@@ -170,7 +173,8 @@
     }
   }
 
-  label {
+  label,
+  div.tab-label {
     cursor: pointer;
     width: 100%;
     text-align: center;
@@ -364,7 +368,8 @@
       width: 100%;
     }
 
-    label {
+    label,
+    div.tab-label {
       padding: 4rem 0;
 
       .icon {

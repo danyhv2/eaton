@@ -13,37 +13,37 @@
 
 .eaton-product-tabs input[id="tab-0"] { display: none; }
 
-.eaton-product-tabs input[id="tab-0"]:target ~ .row label[for="tab-0"], .eaton-product-tabs input[id="tab-0"]:target ~ .container label[for="tab-0"], .eaton-product-tabs input[id="tab-0"]:checked ~ .row label[for="tab-0"], .eaton-product-tabs input[id="tab-0"]:checked ~ .container label[for="tab-0"] { background-color: #EEF0F2; }
+.eaton-product-tabs input[id="tab-0"]:target ~ .row label[for="tab-0"], .eaton-product-tabs input[id="tab-0"]:target ~ .row div.tab-label, .eaton-product-tabs input[id="tab-0"]:target ~ .container label[for="tab-0"], .eaton-product-tabs input[id="tab-0"]:target ~ .container div.tab-label, .eaton-product-tabs input[id="tab-0"]:checked ~ .row label[for="tab-0"], .eaton-product-tabs input[id="tab-0"]:checked ~ .row div.tab-label, .eaton-product-tabs input[id="tab-0"]:checked ~ .container label[for="tab-0"], .eaton-product-tabs input[id="tab-0"]:checked ~ .container div.tab-label { background-color: #EEF0F2; }
 
 .eaton-product-tabs input[id="tab-0"]:target ~ .row div[data-tab-name="tab-0"], .eaton-product-tabs input[id="tab-0"]:target ~ .container div[data-tab-name="tab-0"], .eaton-product-tabs input[id="tab-0"]:checked ~ .row div[data-tab-name="tab-0"], .eaton-product-tabs input[id="tab-0"]:checked ~ .container div[data-tab-name="tab-0"] { display: block; }
 
-.dark-theme .eaton-product-tabs input[id="tab-0"]:target ~ .row label[for="tab-0"], .dark-theme .eaton-product-tabs input[id="tab-0"]:target ~ .container label[for="tab-0"], .dark-theme .eaton-product-tabs input[id="tab-0"]:checked ~ .row label[for="tab-0"], .dark-theme .eaton-product-tabs input[id="tab-0"]:checked ~ .container label[for="tab-0"], .eaton-product-tabs.dark-theme input[id="tab-0"]:target ~ .row label[for="tab-0"], .eaton-product-tabs.dark-theme input[id="tab-0"]:target ~ .container label[for="tab-0"], .eaton-product-tabs.dark-theme input[id="tab-0"]:checked ~ .row label[for="tab-0"], .eaton-product-tabs.dark-theme input[id="tab-0"]:checked ~ .container label[for="tab-0"] { background-color: #5B6770; }
+.dark-theme .eaton-product-tabs input[id="tab-0"]:target ~ .row label[for="tab-0"], .dark-theme .eaton-product-tabs input[id="tab-0"]:target ~ .row div.tab-label, .dark-theme .eaton-product-tabs input[id="tab-0"]:target ~ .container label[for="tab-0"], .dark-theme .eaton-product-tabs input[id="tab-0"]:target ~ .container div.tab-label, .dark-theme .eaton-product-tabs input[id="tab-0"]:checked ~ .row label[for="tab-0"], .dark-theme .eaton-product-tabs input[id="tab-0"]:checked ~ .row div.tab-label, .dark-theme .eaton-product-tabs input[id="tab-0"]:checked ~ .container label[for="tab-0"], .dark-theme .eaton-product-tabs input[id="tab-0"]:checked ~ .container div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-0"]:target ~ .row label[for="tab-0"], .eaton-product-tabs.dark-theme input[id="tab-0"]:target ~ .row div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-0"]:target ~ .container label[for="tab-0"], .eaton-product-tabs.dark-theme input[id="tab-0"]:target ~ .container div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-0"]:checked ~ .row label[for="tab-0"], .eaton-product-tabs.dark-theme input[id="tab-0"]:checked ~ .row div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-0"]:checked ~ .container label[for="tab-0"], .eaton-product-tabs.dark-theme input[id="tab-0"]:checked ~ .container div.tab-label { background-color: #5B6770; }
 
 .eaton-product-tabs input[id="tab-1"] { display: none; }
 
-.eaton-product-tabs input[id="tab-1"]:target ~ .row label[for="tab-1"], .eaton-product-tabs input[id="tab-1"]:target ~ .container label[for="tab-1"], .eaton-product-tabs input[id="tab-1"]:checked ~ .row label[for="tab-1"], .eaton-product-tabs input[id="tab-1"]:checked ~ .container label[for="tab-1"] { background-color: #EEF0F2; }
+.eaton-product-tabs input[id="tab-1"]:target ~ .row label[for="tab-1"], .eaton-product-tabs input[id="tab-1"]:target ~ .row div.tab-label, .eaton-product-tabs input[id="tab-1"]:target ~ .container label[for="tab-1"], .eaton-product-tabs input[id="tab-1"]:target ~ .container div.tab-label, .eaton-product-tabs input[id="tab-1"]:checked ~ .row label[for="tab-1"], .eaton-product-tabs input[id="tab-1"]:checked ~ .row div.tab-label, .eaton-product-tabs input[id="tab-1"]:checked ~ .container label[for="tab-1"], .eaton-product-tabs input[id="tab-1"]:checked ~ .container div.tab-label { background-color: #EEF0F2; }
 
 .eaton-product-tabs input[id="tab-1"]:target ~ .row div[data-tab-name="tab-1"], .eaton-product-tabs input[id="tab-1"]:target ~ .container div[data-tab-name="tab-1"], .eaton-product-tabs input[id="tab-1"]:checked ~ .row div[data-tab-name="tab-1"], .eaton-product-tabs input[id="tab-1"]:checked ~ .container div[data-tab-name="tab-1"] { display: block; }
 
-.dark-theme .eaton-product-tabs input[id="tab-1"]:target ~ .row label[for="tab-1"], .dark-theme .eaton-product-tabs input[id="tab-1"]:target ~ .container label[for="tab-1"], .dark-theme .eaton-product-tabs input[id="tab-1"]:checked ~ .row label[for="tab-1"], .dark-theme .eaton-product-tabs input[id="tab-1"]:checked ~ .container label[for="tab-1"], .eaton-product-tabs.dark-theme input[id="tab-1"]:target ~ .row label[for="tab-1"], .eaton-product-tabs.dark-theme input[id="tab-1"]:target ~ .container label[for="tab-1"], .eaton-product-tabs.dark-theme input[id="tab-1"]:checked ~ .row label[for="tab-1"], .eaton-product-tabs.dark-theme input[id="tab-1"]:checked ~ .container label[for="tab-1"] { background-color: #5B6770; }
+.dark-theme .eaton-product-tabs input[id="tab-1"]:target ~ .row label[for="tab-1"], .dark-theme .eaton-product-tabs input[id="tab-1"]:target ~ .row div.tab-label, .dark-theme .eaton-product-tabs input[id="tab-1"]:target ~ .container label[for="tab-1"], .dark-theme .eaton-product-tabs input[id="tab-1"]:target ~ .container div.tab-label, .dark-theme .eaton-product-tabs input[id="tab-1"]:checked ~ .row label[for="tab-1"], .dark-theme .eaton-product-tabs input[id="tab-1"]:checked ~ .row div.tab-label, .dark-theme .eaton-product-tabs input[id="tab-1"]:checked ~ .container label[for="tab-1"], .dark-theme .eaton-product-tabs input[id="tab-1"]:checked ~ .container div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-1"]:target ~ .row label[for="tab-1"], .eaton-product-tabs.dark-theme input[id="tab-1"]:target ~ .row div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-1"]:target ~ .container label[for="tab-1"], .eaton-product-tabs.dark-theme input[id="tab-1"]:target ~ .container div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-1"]:checked ~ .row label[for="tab-1"], .eaton-product-tabs.dark-theme input[id="tab-1"]:checked ~ .row div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-1"]:checked ~ .container label[for="tab-1"], .eaton-product-tabs.dark-theme input[id="tab-1"]:checked ~ .container div.tab-label { background-color: #5B6770; }
 
 .eaton-product-tabs input[id="tab-2"] { display: none; }
 
-.eaton-product-tabs input[id="tab-2"]:target ~ .row label[for="tab-2"], .eaton-product-tabs input[id="tab-2"]:target ~ .container label[for="tab-2"], .eaton-product-tabs input[id="tab-2"]:checked ~ .row label[for="tab-2"], .eaton-product-tabs input[id="tab-2"]:checked ~ .container label[for="tab-2"] { background-color: #EEF0F2; }
+.eaton-product-tabs input[id="tab-2"]:target ~ .row label[for="tab-2"], .eaton-product-tabs input[id="tab-2"]:target ~ .row div.tab-label, .eaton-product-tabs input[id="tab-2"]:target ~ .container label[for="tab-2"], .eaton-product-tabs input[id="tab-2"]:target ~ .container div.tab-label, .eaton-product-tabs input[id="tab-2"]:checked ~ .row label[for="tab-2"], .eaton-product-tabs input[id="tab-2"]:checked ~ .row div.tab-label, .eaton-product-tabs input[id="tab-2"]:checked ~ .container label[for="tab-2"], .eaton-product-tabs input[id="tab-2"]:checked ~ .container div.tab-label { background-color: #EEF0F2; }
 
 .eaton-product-tabs input[id="tab-2"]:target ~ .row div[data-tab-name="tab-2"], .eaton-product-tabs input[id="tab-2"]:target ~ .container div[data-tab-name="tab-2"], .eaton-product-tabs input[id="tab-2"]:checked ~ .row div[data-tab-name="tab-2"], .eaton-product-tabs input[id="tab-2"]:checked ~ .container div[data-tab-name="tab-2"] { display: block; }
 
-.dark-theme .eaton-product-tabs input[id="tab-2"]:target ~ .row label[for="tab-2"], .dark-theme .eaton-product-tabs input[id="tab-2"]:target ~ .container label[for="tab-2"], .dark-theme .eaton-product-tabs input[id="tab-2"]:checked ~ .row label[for="tab-2"], .dark-theme .eaton-product-tabs input[id="tab-2"]:checked ~ .container label[for="tab-2"], .eaton-product-tabs.dark-theme input[id="tab-2"]:target ~ .row label[for="tab-2"], .eaton-product-tabs.dark-theme input[id="tab-2"]:target ~ .container label[for="tab-2"], .eaton-product-tabs.dark-theme input[id="tab-2"]:checked ~ .row label[for="tab-2"], .eaton-product-tabs.dark-theme input[id="tab-2"]:checked ~ .container label[for="tab-2"] { background-color: #5B6770; }
+.dark-theme .eaton-product-tabs input[id="tab-2"]:target ~ .row label[for="tab-2"], .dark-theme .eaton-product-tabs input[id="tab-2"]:target ~ .row div.tab-label, .dark-theme .eaton-product-tabs input[id="tab-2"]:target ~ .container label[for="tab-2"], .dark-theme .eaton-product-tabs input[id="tab-2"]:target ~ .container div.tab-label, .dark-theme .eaton-product-tabs input[id="tab-2"]:checked ~ .row label[for="tab-2"], .dark-theme .eaton-product-tabs input[id="tab-2"]:checked ~ .row div.tab-label, .dark-theme .eaton-product-tabs input[id="tab-2"]:checked ~ .container label[for="tab-2"], .dark-theme .eaton-product-tabs input[id="tab-2"]:checked ~ .container div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-2"]:target ~ .row label[for="tab-2"], .eaton-product-tabs.dark-theme input[id="tab-2"]:target ~ .row div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-2"]:target ~ .container label[for="tab-2"], .eaton-product-tabs.dark-theme input[id="tab-2"]:target ~ .container div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-2"]:checked ~ .row label[for="tab-2"], .eaton-product-tabs.dark-theme input[id="tab-2"]:checked ~ .row div.tab-label, .eaton-product-tabs.dark-theme input[id="tab-2"]:checked ~ .container label[for="tab-2"], .eaton-product-tabs.dark-theme input[id="tab-2"]:checked ~ .container div.tab-label { background-color: #5B6770; }
 
 .dark-theme .eaton-product-tabs__buttons, .eaton-product-tabs.dark-theme__buttons { background-color: #333F48; }
 
 .dark-theme .eaton-product-tabs__buttons::before, .eaton-product-tabs.dark-theme__buttons::before { background-color: #333F48; }
 
-.dark-theme .eaton-product-tabs label, .eaton-product-tabs.dark-theme label { background-color: #333F48; }
+.dark-theme .eaton-product-tabs label, .dark-theme .eaton-product-tabs div.tab-label, .eaton-product-tabs.dark-theme label, .eaton-product-tabs.dark-theme div.tab-label { background-color: #333F48; }
 
-.dark-theme .eaton-product-tabs label:hover, .dark-theme .eaton-product-tabs label:focus, .dark-theme .eaton-product-tabs label:active, .dark-theme .eaton-product-tabs label.tab-active, .eaton-product-tabs.dark-theme label:hover, .eaton-product-tabs.dark-theme label:focus, .eaton-product-tabs.dark-theme label:active, .eaton-product-tabs.dark-theme label.tab-active { background-color: #5B6770; }
+.dark-theme .eaton-product-tabs label:hover, .dark-theme .eaton-product-tabs label:focus, .dark-theme .eaton-product-tabs label:active, .dark-theme .eaton-product-tabs label.tab-active, .dark-theme .eaton-product-tabs div.tab-label:hover, .dark-theme .eaton-product-tabs div.tab-label:focus, .dark-theme .eaton-product-tabs div.tab-label:active, .dark-theme .eaton-product-tabs div.tab-label.tab-active, .eaton-product-tabs.dark-theme label:hover, .eaton-product-tabs.dark-theme label:focus, .eaton-product-tabs.dark-theme label:active, .eaton-product-tabs.dark-theme label.tab-active, .eaton-product-tabs.dark-theme div.tab-label:hover, .eaton-product-tabs.dark-theme div.tab-label:focus, .eaton-product-tabs.dark-theme div.tab-label:active, .eaton-product-tabs.dark-theme div.tab-label.tab-active { background-color: #5B6770; }
 
-.dark-theme .eaton-product-tabs label .icon, .dark-theme .eaton-product-tabs label span, .eaton-product-tabs.dark-theme label .icon, .eaton-product-tabs.dark-theme label span { color: #FFF; }
+.dark-theme .eaton-product-tabs label .icon, .dark-theme .eaton-product-tabs label span, .dark-theme .eaton-product-tabs div.tab-label .icon, .dark-theme .eaton-product-tabs div.tab-label span, .eaton-product-tabs.dark-theme label .icon, .eaton-product-tabs.dark-theme label span, .eaton-product-tabs.dark-theme div.tab-label .icon, .eaton-product-tabs.dark-theme div.tab-label span { color: #FFF; }
 
 .dark-theme .eaton-product-tabs__description .b-eyebrow-small, .dark-theme .eaton-product-tabs__description .icon, .dark-theme .eaton-product-tabs__description .b-heading-h5, .eaton-product-tabs.dark-theme__description .b-eyebrow-small, .eaton-product-tabs.dark-theme__description .icon, .eaton-product-tabs.dark-theme__description .b-heading-h5 { color: #FFF; }
 
@@ -75,17 +75,17 @@
 
 .eaton-product-tabs__tab-panel.panel-active { display: block; }
 
-.eaton-product-tabs label { cursor: pointer; width: 100%; text-align: center; float: left; padding: 1.3rem 0; margin: 0; background-color: #F8F8F8; font-weight: normal; }
+.eaton-product-tabs label, .eaton-product-tabs div.tab-label { cursor: pointer; width: 100%; text-align: center; float: left; padding: 1.3rem 0; margin: 0; background-color: #F8F8F8; font-weight: normal; }
 
-.eaton-product-tabs label a { display: block; width: 100%; height: 100%; }
+.eaton-product-tabs label a, .eaton-product-tabs div.tab-label a { display: block; width: 100%; height: 100%; }
 
-.eaton-product-tabs label a:hover, .eaton-product-tabs label a:focus, .eaton-product-tabs label a:active { text-decoration: none; }
+.eaton-product-tabs label a:hover, .eaton-product-tabs label a:focus, .eaton-product-tabs label a:active, .eaton-product-tabs div.tab-label a:hover, .eaton-product-tabs div.tab-label a:focus, .eaton-product-tabs div.tab-label a:active { text-decoration: none; }
 
-.eaton-product-tabs label:hover, .eaton-product-tabs label:focus, .eaton-product-tabs label:active, .eaton-product-tabs label.tab-active { background-color: #EEF0F2; }
+.eaton-product-tabs label:hover, .eaton-product-tabs label:focus, .eaton-product-tabs label:active, .eaton-product-tabs label.tab-active, .eaton-product-tabs div.tab-label:hover, .eaton-product-tabs div.tab-label:focus, .eaton-product-tabs div.tab-label:active, .eaton-product-tabs div.tab-label.tab-active { background-color: #EEF0F2; }
 
-.eaton-product-tabs label .icon { color: #005EB8; display: block; font-size: 2.4rem; }
+.eaton-product-tabs label .icon, .eaton-product-tabs div.tab-label .icon { color: #005EB8; display: block; font-size: 2.4rem; }
 
-.eaton-product-tabs label span { color: #005EB8; display: inline-block; font-size: 1.2rem; padding-top: 8px; }
+.eaton-product-tabs label span, .eaton-product-tabs div.tab-label span { color: #005EB8; display: inline-block; font-size: 1.2rem; padding-top: 8px; }
 
 .eaton-product-tabs__dropdown { background-color: #4C8C2B; border: 0; color: #FFF; display: inline-block; font-family: Arial, "Arial", sans-serif; font-size: 1.6rem; height: 57px; margin: 40px 0; width: 100%; position: relative; }
 
@@ -120,9 +120,9 @@
   .eaton-product-tabs__description { position: relative; top: 78px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
   .eaton-product-tabs__description .icon { font-size: 1.4rem; }
   .eaton-product-tabs .eaton-product-tabs__dropdown__content { top: 97px; left: 50%; margin-left: -50%; width: 100%; }
-  .eaton-product-tabs label { padding: 4rem 0; }
-  .eaton-product-tabs label .icon { font-size: 4rem; }
-  .eaton-product-tabs label span { font-size: 1.4rem; }
+  .eaton-product-tabs label, .eaton-product-tabs div.tab-label { padding: 4rem 0; }
+  .eaton-product-tabs label .icon, .eaton-product-tabs div.tab-label .icon { font-size: 4rem; }
+  .eaton-product-tabs label span, .eaton-product-tabs div.tab-label span { font-size: 1.4rem; }
   .eaton-product-tabs--fixed .eaton-product-tabs__buttons { top: 80px; margin-left: -15px; margin-right: -15px; }
   .eaton-product-tabs--fixed .eaton-product-tabs__page-utility { margin-top: 274px; } }
 
