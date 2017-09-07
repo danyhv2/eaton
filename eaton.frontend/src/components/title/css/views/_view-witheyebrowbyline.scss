@@ -27,9 +27,9 @@ h2.eaton-title__eyebrow-and-byline {
   &__eyebrow {
     margin-bottom: 15px;
 
-    i{
+    i {
       font-weight: normal;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       margin-right: 5px;
     }
   }
@@ -43,6 +43,15 @@ h2.eaton-title__eyebrow-and-byline {
 
     &__line {
       border-color: $color__white;
+    }
+  }
+
+  @include media-desktop-and-up {
+
+    &__eyebrow {
+      i {
+        font-size: 1.6rem;
+      }
     }
   }
 }

@@ -37,7 +37,6 @@ App.search = function () {
       // console.log('Initialize Search');
       addEventListeners();
     }
-    autosize($('.search-box textarea'));
   };
 
   /**
