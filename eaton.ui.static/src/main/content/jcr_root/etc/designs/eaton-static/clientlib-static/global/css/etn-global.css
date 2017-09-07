@@ -326,6 +326,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 992px) { .eaton-text-default .rich-text-container { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; } }
 
+.eaton-text-default .rich-text-container span.b-eyebrow-large { padding-bottom: 25px; display: inline-block; }
+
 .eaton-text-default .rich-text-container b, .eaton-text-default .rich-text-container strong { font-weight: bold; }
 
 .eaton-text-default .rich-text-container h3 { font-family: Arial, sans-serif; font-weight: bold; font-size: 2.4rem; }

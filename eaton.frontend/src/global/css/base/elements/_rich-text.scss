@@ -9,8 +9,18 @@
   font-family: Arial, sans-serif;
   font-size: 2.4rem;
   line-height: 3.8rem;
-
   margin-top: 15px;
+
+  // &__left-padded {
+  //   padding-left: 15px;
+  //   margin-top: -5px; //remove extra space
+  // }
+
+  // wysiwyng classes
+  span.b-eyebrow-large {
+    padding-bottom: 25px;
+    display: inline-block;
+  }
 
   // stylelint-disable selector-max-compound-selectors
   b,

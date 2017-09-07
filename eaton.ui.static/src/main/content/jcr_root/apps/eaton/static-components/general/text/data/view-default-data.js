@@ -50,16 +50,17 @@ use(function () {
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam dolore magnam aliquam quaerat voluptatem.</p> \
     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam dolore magnam aliquam quaerat voluptatem veritatis. Eaque ipsa quae ab illo inventore veritatis et qua eaque ipsa quae ab illo inventore, inventore veritatis et quasi. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae sunt explicabo.</p>";
   } else if ((typeof(testdata) != "undefined") && (testdata == "article-nextsteps")) {
-    data.text = "<p><h3>FOR MORE INFORMATION</h3></p> \
-    <p><b><i>Name</i></b></p> \
+    data.text = '<p> \
+    <span class="b-eyebrow-large">FOR MORE INFORMATION</span> \
+    <b><i>Name</i></b><br/> \
     <i>Title, sector & market</i><br/> \
     Country, Region<br/> \
     (555) 555-5555<br/><br/> \
-    <p><b><i>Eaton</i></b></p> \
+    <b><i>Eaton</i></b><br/> \
     <i>Vehicle Group</i><br/> \
     13100 E. Michigan Ave.<br/> \
     Galesburg, MI 40053<br/> \
-    1-800-826-HELP (4357)";
+    1-800-826-HELP (4357)</p>';
   } else if ((typeof(testdata) != "undefined") && (testdata == "l2-news-nextsteps")) {
     data.text = "<h3>MEDIA CONTACTS</h3> \
     <p><b>Scott Schroeder</b></p> \

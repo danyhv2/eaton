@@ -44,7 +44,10 @@ App.productTabs = function () {
 
       // if Mobile add the tabsDescriptionHeight
       var scrollOffset = headerHeight + (isMobile ? tabsDescriptionHeight : 0);
-      var shouldBeFixed = isHeaderFixed || scrollTop > scrollOffset;
+      var isTop = scrollTop === 0;
+      var shouldBeFixed = isHeaderFixed && !isTop || scrollTop > scrollOffset;
+
+      // console.log('scrollTop', scrollTop, 'scrollOffset', scrollOffset, 'shouldBeFixed', shouldBeFixed);
 
       $componentClass.toggleClass(componentFixedClass, shouldBeFixed);
       $componentClass.find(buttonsClass).toggleClass('row', !shouldBeFixed);
