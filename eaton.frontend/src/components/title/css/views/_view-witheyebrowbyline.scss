@@ -8,15 +8,19 @@ h2.eaton-title__eyebrow-and-byline {
 
 }
 
-.eaton-title--eyebrow-and-byline {
-  margin-top: $spacing__sm;
-}
-
 // .eaton-title--eyebrow-and-byline .article-list-single-feature--border{
 // 	margin-bottom: 30px;
 // }
 
 .eaton-title {
+
+  &--eyebrow-and-byline {
+
+    // EATON-372 & EATON-598 - General spacing between components
+    margin-top: $spacing__md;
+  }
+
+
   &__line {
     border-top: 4px solid $color__primary-blue;
     width: 60px;
