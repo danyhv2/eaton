@@ -33,11 +33,12 @@ App.search = function () {
   */
   var init = function init() {
     // If not in AEM Author Mode & component exists on page - initialize scripts
+    autosize($('.search-box textarea'));
     if (!isAEMAuthorMode) {
       // console.log('Initialize Search');
       addEventListeners();
     }
-    autosize($('.search-box textarea'));
+    $('.search-box textarea').css('height','38px');
   };
 
   /**
