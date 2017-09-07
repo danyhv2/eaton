@@ -11,6 +11,11 @@
 
   &__content {
     display: block;
+    text-align: center;
+  }
+
+  &__image img {
+    display: inline-block;
   }
 
   &__image-headline {
@@ -42,8 +47,8 @@
     }
 
     &__image {
-      width: 150px;
-      display: inline-block;
+      max-width: 480px;
+      min-width: 250px;
     }
   }
 
