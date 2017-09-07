@@ -126,6 +126,14 @@
   // Media Query: Mobile/Tablet
   //-----------------------------------
   @include media-mobile-and-tablet {
+    &__external-icon {
+      font-size: 2rem;
+      margin-top: 3px;
+    }
+
+    &__download-text {
+      margin-left: 30px;
+    }
 
     &__eyebrow {
       margin-bottom: 20px;
@@ -134,7 +142,7 @@
 
 
   //-----------------------------------
-  // Media Query: Mobile/Tablet
+  // Media Query: desktop and up
   //-----------------------------------
   @include media-desktop-and-up {
 

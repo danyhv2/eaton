@@ -326,7 +326,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 992px) { .eaton-text-default .rich-text-container { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; } }
 
-.eaton-text-default .rich-text-container span.b-eyebrow-large { padding-bottom: 20px; display: inline-block; top: -5px; position: relative; }
+.eaton-text-default .rich-text-container span.b-eyebrow-large { padding-bottom: 20px; display: block; top: -5px; position: relative; }
 
 .eaton-text-default .rich-text-container b, .eaton-text-default .rich-text-container strong { font-weight: bold; }
 
@@ -336,7 +336,11 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-text-default .rich-text-container a { text-decoration: underline; }
 
-.eaton-text-default .rich-text-container p { font-family: Arial, sans-serif; font-size: 2.4rem; line-height: 3.8rem; }
+.eaton-text-default .rich-text-container p { font-family: Arial, sans-serif; font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; }
+
+.eaton-text-default .rich-text-container p a { color: #005EB8; }
+
+@media screen and (min-width: 992px) { .eaton-text-default .rich-text-container p { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; } }
 
 .eaton-text-default .rich-text-container ul { list-style-type: none; padding: 0; }
 
@@ -351,6 +355,11 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 .dark-theme .eaton-text-default .rich-text-container h2, .dark-theme .eaton-text-default .rich-text-container h3, .dark-theme .eaton-text-default .rich-text-container h4, .dark-theme .eaton-text-default .rich-text-container h5, .dark-theme .eaton-text-default .rich-text-container h6 { color: #FFF; }
 
 .dark-theme .eaton-text-default .rich-text-container ul li::before { background-color: #FFF; }
+
+@media screen and (max-width: 991px) { .eaton-text-default .rich-text-container { font-family: Arial, sans-serif; font-size: 1.3rem; font-weight: normal; line-height: 1.7rem; }
+  .eaton-text-default .rich-text-container a { color: #005EB8; } }
+
+@media screen and (max-width: 991px) and (min-width: 992px) { .eaton-text-default .rich-text-container { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.4rem; } }
 
 @media screen and (min-width: 992px) { .eaton-text-default .rich-text-container h3 { font-family: Arial, sans-serif; font-weight: bold; font-size: 1.8rem; padding: 0; margin-bottom: 15px; line-height: 2.4rem; } }
 
