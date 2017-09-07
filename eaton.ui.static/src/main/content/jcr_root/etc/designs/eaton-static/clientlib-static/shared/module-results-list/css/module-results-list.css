@@ -25,9 +25,9 @@
 
 .results-list-submodule__image { border: 1px solid #EEF0F2; background: #F8F8F8; padding: 1rem; }
 
-.results-list-submodule__date { color: #98A4AE; font-style: italic; margin-bottom: 3px; }
+.results-list-submodule__date { color: #98A4AE; font-style: italic; margin-bottom: 12px; }
 
-.results-list-submodule__document { margin-bottom: 1px; }
+.results-list-submodule__document { margin-bottom: 4px; }
 
 .results-list-submodule__secondary-links { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
