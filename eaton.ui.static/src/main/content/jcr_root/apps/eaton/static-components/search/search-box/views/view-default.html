@@ -10,12 +10,11 @@
               target="${data.form.isExternal == true ? '_blank' : '_self'}">
           <div class="form-group">
             <label for="mega-menu-search" class="sr-only">${data.header}</label>
-            <input type="text"
-                    name="search-term"
+            <textarea name="search-term"
                     id="primary-menu-search"
                     class="form-control eaton-search--default__form-input"
                     placeholder="${data.form.placeholder}"
-                    required="required">
+                    required="required"></textarea>
 
             <div class="eaton-search--default__form-mobile-label u-visible-mobile
                         ${ data.form.isExternal ? ' with-external ' : '' }">
