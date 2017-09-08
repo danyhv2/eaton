@@ -29,7 +29,7 @@
 
 .eaton-search--default { padding: 30px 0; background: #005EB8; }
 
-.eaton-search--default textarea { padding-top: 7px; height: 38px; }
+.eaton-search--default textarea { padding: 7px 12px 0 0; height: 38px; }
 
 .eaton-search--default .form-group { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-bottom: 1px solid #FFF; margin-bottom: 0; position: relative; }
 
