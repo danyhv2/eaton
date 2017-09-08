@@ -21,7 +21,10 @@
 
   h2 {
     padding-bottom: 10px;
-    padding-top: 120px;
+
+    .category-highlight & {
+      padding-top: 120px;
+    }
   }
 
   @include media-tablet-only {

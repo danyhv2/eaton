@@ -73,6 +73,16 @@
         position: absolute;
         top: 0.6em;
       }
+
+      @include media-mobile-and-tablet {
+        padding: 0 0 15px 15px;
+
+        &::before {
+          @include square(5px); // Width & Height
+          left: 1px;
+          top: 0.3em;
+        }
+      }
     }
   }
 
