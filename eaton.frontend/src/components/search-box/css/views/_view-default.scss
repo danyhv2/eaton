@@ -216,13 +216,22 @@
 
   }
 
+  @include media-tablet-and-up {
+    &__form-input {
+      font-size: 2.6rem;
+    }
+  }
+
+  @include media-mobile-only {
+    &__form-input {
+      font-size: 2rem;
+    }
+  }
+
   //-----------------------------------
   // Desktop Breakpoint
   //-----------------------------------
   @include media-desktop-and-up {
-    &__form-input {
-      font-size: 2.4rem;
-    }
 
     .icon-search {
       font-size: 2.1rem;
@@ -244,3 +253,6 @@
     }
   }
 }
+
+
+  
