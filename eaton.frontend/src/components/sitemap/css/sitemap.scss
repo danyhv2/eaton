@@ -9,12 +9,14 @@
   padding: 30px 0;
 
   &__levelone {
+    font-family: $font-family__primary;
     font-size: 5.0rem;
     color: $color__primary-blue;
     margin-bottom: 30px;
   }
 
   &__leveltow {
+    font-family: $font-family__primary;
     font-size: 3.2rem;
     display: block;
     color: $color__primary-blue;
