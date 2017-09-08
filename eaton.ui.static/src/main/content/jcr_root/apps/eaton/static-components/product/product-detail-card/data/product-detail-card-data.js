@@ -128,6 +128,8 @@ use(function () {
   // Related Products M-41
   //--------------
   data.relatedProducts = {
+    title: 'Designed to work together',
+    description: 'Discover other Eaton products and accesories built to enhance this product.',
     items: [
       {
         title: 'Eaton 9px Family',
