@@ -62,13 +62,13 @@ use(function () {
     Galesburg, MI 40053<br/> \
     1-800-826-HELP (4357)</p>';
   } else if ((typeof(testdata) != "undefined") && (testdata == "l2-news-nextsteps")) {
-    data.text = "<h3>MEDIA CONTACTS</h3> \
+    data.text = '<span class="b-eyebrow-large">MEDIA CONTACTS</span> \
     <p><b>Scott Schroeder</b></p> \
     ScottRSchroeder@eaton.com<br/> \
     (440) 523-5150<br/><br/> \
     <p><b>Ann Marie Halal</b></p> \
     AnnMHalal@eaton.com<br/> \
-    (440) 523-4418";
+    (440) 523-4418';
   } else if ((typeof(testdata) != "undefined") && (testdata == "rich-text-editor")) {
     // Rich-Text-Editor - Content-Example:
     data.text = '<p><strong>Eaton Text component</strong>. Eaton is a power management company with 2016 sales of $19.7 billion. <em>We provide energy-efficient solutions</em> that help <b>our customers</b> effectively manage electrical, <i>hydraulic and mechanical</i> power more efficiently, safely and sustainably.</p> \

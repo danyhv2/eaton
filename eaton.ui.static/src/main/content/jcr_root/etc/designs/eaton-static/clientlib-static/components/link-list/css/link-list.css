@@ -19,7 +19,7 @@
 
 .eaton-link-list-vertical__list-text { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
 
-.eaton-link-list-vertical__list-link { display: inline-block; padding: 10px 0; }
+.eaton-link-list-vertical__list-link { display: inline-block; padding: 10px 0; font-weight: bold; }
 
 .eaton-link-list-vertical__list-icon { padding-right: 10px; font-size: 2.8rem; padding-top: 5px; }
 
@@ -38,6 +38,8 @@
 .dark-theme .eaton-link-list-vertical__eyebrow { font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 1.4rem; line-height: normal; margin-bottom: 20px; text-transform: uppercase; }
 
 @media screen and (min-width: 992px) { .dark-theme .eaton-link-list-vertical__eyebrow { font-family: Arial, "Arial", sans-serif; font-size: 1.8rem; line-height: 2rem; text-transform: uppercase; margin-bottom: 20px; } }
+
+.dark-theme .eaton-link-list-vertical__list-link { font-weight: normal; }
 
 .dark-theme .eaton-link-list-vertical__list-item { font-family: Arial, sans-serif; font-size: 1.3rem; font-weight: normal; line-height: 1.7rem; }
 

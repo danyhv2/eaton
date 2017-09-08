@@ -48,6 +48,7 @@
   &__list-link {
     display: inline-block;
     padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
+    font-weight: bold;
   }
 
   &__list-icon {
@@ -95,6 +96,10 @@
 
     &__eyebrow {
       @include eyebrow-small;
+    }
+
+    &__list-link {
+      font-weight: normal;
     }
 
     // Override font-sizes for dark-theme
