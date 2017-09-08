@@ -156,9 +156,14 @@
       top: 0;
       display: table;
       height: 46px;
+      font-size: 2rem;
 
       &.with-external {
         padding-right: 87px;
+      }
+
+      &.u-visible-mobile{
+        padding-top: 10px;
       }
 
       span {
