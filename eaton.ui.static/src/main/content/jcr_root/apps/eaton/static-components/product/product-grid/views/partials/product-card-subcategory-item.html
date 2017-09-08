@@ -20,9 +20,11 @@
 
     <!--/* Card Content */-->
     <div class="product-card-subcategory__image-wrapper">
-      <img src="${ itemData.contentItem.image.src }"
-        class="product-card-subcategory__image"
-        alt="${ itemData.contentItem.name }" />
+      <!-- Start: Rendition Image Component -->
+      <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+        <sly data-sly-call="${ tpl.module @ data=itemData.contentItem.image }"></sly>
+      </sly>
+      <!-- End: Rendition Image Component -->
     </div>
 
     <div class="product-card-subcategory__content-wrapper">

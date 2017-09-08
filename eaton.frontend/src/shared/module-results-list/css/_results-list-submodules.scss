@@ -16,7 +16,7 @@
     display: block;
   }
 
-  &__image {
+  .rendition__image {
     border: 1px solid $color__image-border;
     background: $color__image-bg;
     padding: 1rem;
@@ -88,7 +88,7 @@
       margin-bottom: 20px;
     }
 
-    &__image {
+    .rendition__image {
       width: 100%;
       max-width: 260px;
     }
@@ -113,7 +113,7 @@
       padding-top: $line-height-offset; // Used to align the Icon with the Result Title
     }
 
-    &__image {
+    .rendition__image {
       max-width: 140px;
     }
 

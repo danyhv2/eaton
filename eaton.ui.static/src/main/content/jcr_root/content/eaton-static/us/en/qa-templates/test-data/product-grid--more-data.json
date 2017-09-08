@@ -15,8 +15,10 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "productPrice": 2400,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-            "altText": ""
+            "mobile": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "altText": "New Product 1"
           },
           "link": {
             "url": "http://eaton.dev/product-pid-new-1.html",
@@ -49,8 +51,10 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "productPrice": 3200,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-2-thumbnail.png",
-            "altText": ""
+            "mobile": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "altText": "New Product 2"
           },
           "link": {
             "url": "http://eaton.dev/product-pid-new-2.html",
@@ -83,8 +87,10 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "productPrice": 99500,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-            "altText": ""
+            "mobile": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "altText": "New Product 3"
           },
           "link": {
             "url": "http://eaton.dev/product-pid-new-3.html",
@@ -117,8 +123,10 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "productPrice": 2400,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-4-thumbnail.png",
-            "altText": ""
+            "mobile": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "altText": "New Product 4"
           },
           "link": {
             "url": "http://eaton.dev/product-pid-new-4.html",
@@ -151,8 +159,10 @@
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "productPrice": 2400,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-5-thumbnail.png",
-            "altText": ""
+            "mobile": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "altText": "New Product 5"
           },
           "link": {
             "url": "http://eaton.dev/product-pid-new-5.html",
@@ -191,8 +201,10 @@
           "name": "New Product 1",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-            "altText": ""
+            "mobile": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "altText": "New Product 1"
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-1.html",
@@ -206,8 +218,10 @@
           "name": "New Product 2",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-2-thumbnail.png",
-            "altText": ""
+            "mobile": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "altText": "New Product 2"
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-2.html",
@@ -221,8 +235,10 @@
           "name": "New Product 3",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-            "altText": ""
+            "mobile": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "altText": "New Product 3"
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-3.html",
@@ -236,8 +252,10 @@
           "name": "New Product 4",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-4-thumbnail.png",
-            "altText": ""
+            "mobile": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "altText": "New Product 4"
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-4.html",
@@ -251,8 +269,10 @@
           "name": "New Product 5",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-5-thumbnail.png",
-            "altText": ""
+            "mobile": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "altText": "New Product 5"
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-5.html",

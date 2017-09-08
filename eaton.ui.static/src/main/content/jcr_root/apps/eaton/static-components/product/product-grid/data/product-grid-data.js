@@ -336,8 +336,10 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 2400,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "altText": "Fuse Disconnect ePDUs",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -371,8 +373,10 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 3200,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-2-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "altText": "9E6Ki-Eaton 9E",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -406,8 +410,10 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 99500,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "altText": "Eaton 5P Tower UPS",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -441,8 +447,10 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 2400,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-4-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "altText": "Fuse Disconnect ePDUs",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -476,8 +484,10 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 2400,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-5-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "altText": "9E6Ki-Eaton 9E",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -511,8 +521,10 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 2400,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-6-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-6-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-6-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-6-thumbnail.png",
+            "altText": "Fuse Disconnect ePDUs",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -546,8 +558,10 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 3200,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-7-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+            "altText": "9E6Ki-Eaton 9E",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -581,8 +595,10 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 99500,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "altText": "Network, Server & Storage UPS long name used for testing purposes",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -616,7 +632,9 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 2400,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "mobile": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-2-thumbnail.png",
             "altText": "",
           },
           "link": {
@@ -651,8 +669,10 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 2400,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "altText": "9E6Ki-Eaton 9E",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -686,8 +706,10 @@ use(function () {
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna…",
           "productPrice": 2400,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-4-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "altText": "Fuse Disconnect ePDUs",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -721,8 +743,10 @@ use(function () {
           "subcategory": "Network, Server & Storage UPS",
           "productPrice": 3200,
           "image": {
-            "src": "/content/dam/eaton/images/products/product-5-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "altText": "9E6Ki-Eaton 9E",
           },
           "link": {
             "url": "http://eaton.dev/products/pid-1.overview.html",
@@ -766,8 +790,10 @@ use(function () {
           "name": "Fuse Disconnect ePDUs",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "altText": "Fuse Disconnect ePDUs",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-1.html",
@@ -781,8 +807,10 @@ use(function () {
           "name": "9E6Ki-Eaton 9E",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-2-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "altText": "9E6Ki-Eaton 9E",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-2.html",
@@ -796,8 +824,10 @@ use(function () {
           "name": "Eaton 5P Tower UPS",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "altText": "Eaton 5P Tower UPS",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-3.html",
@@ -811,8 +841,10 @@ use(function () {
           "name": "Fuse Disconnect ePDUs",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-4-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "altText": "Fuse Disconnect ePDUs",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-4.html",
@@ -826,8 +858,10 @@ use(function () {
           "name": "9E6Ki-Eaton 9E",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-5-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "altText": "9E6Ki-Eaton 9E",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-5.html",
@@ -841,8 +875,10 @@ use(function () {
           "name": "Fuse Disconnect ePDUs",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-6-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-6-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-6-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-6-thumbnail.png",
+            "altText": "Fuse Disconnect ePDUs",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-6.html",
@@ -856,8 +892,10 @@ use(function () {
           "name": "9E6Ki-Eaton 9E",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-7-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+            "altText": "9E6Ki-Eaton 9E",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-7.html",
@@ -871,8 +909,10 @@ use(function () {
           "name": "Network, Server & Storage UPS long name used for testing purposes",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+            "altText": "Network, Server & Storage UPS long name used for testing purposes",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-8.html",
@@ -886,8 +926,10 @@ use(function () {
           "name": "Fuse Disconnect ePDUs",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-2-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+            "altText": "Fuse Disconnect ePDUs",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-9.html",
@@ -901,8 +943,10 @@ use(function () {
           "name": "9E6Ki-Eaton 9E",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+            "altText": "9E6Ki-Eaton 9E",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-10.html",
@@ -916,8 +960,10 @@ use(function () {
           "name": "Fuse Disconnect ePDUs",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-4-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-4-thumbnail.png",
+            "altText": "Fuse Disconnect ePDUs",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-11.html",
@@ -931,8 +977,10 @@ use(function () {
           "name": "9E6Ki-Eaton 9E",
           "subcategory": "Network, Server & Storage UPS",
           "image": {
-            "src": "/content/dam/eaton/images/products/product-5-thumbnail.png",
-            "altText": "",
+            "mobile": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "tablet": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "desktop": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+            "altText": "9E6Ki-Eaton 9E",
           },
           "link": {
             "url": "http://eaton.dev/products/familypageURL-12.html",
