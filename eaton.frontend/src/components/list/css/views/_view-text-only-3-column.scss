@@ -35,6 +35,8 @@
 
   @include media-mobile-only {
 
+    margin-bottom: 60px;
+
     &__cta-container a {
       width: 100%;
     }
