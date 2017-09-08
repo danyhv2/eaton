@@ -221,7 +221,9 @@
 
 .text-only-3-column__cta-container { margin-top: 3px; }
 
-@media screen and (max-width: 767px) { .text-only-3-column__cta-container a { width: 100%; } }
+@media screen and (max-width: 767px) { .text-only-3-column__cta-container a { width: 100%; }
+  .text-only-3-column h2 { padding-bottom: 20px; }
+  .text-only-3-column .b-eyebrow-small { padding-bottom: 30px; } }
 
 @media screen and (min-width: 768px) { .text-only-3-column { padding-top: 120px; margin-bottom: 120px; }
   .text-only-3-column h2 { padding-bottom: 10px; }
