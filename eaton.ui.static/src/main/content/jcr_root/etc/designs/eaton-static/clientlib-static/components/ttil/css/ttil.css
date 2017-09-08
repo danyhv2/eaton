@@ -119,9 +119,7 @@
 
 .eaton-ttil-card-view__image-wrapper { margin-bottom: 26px; }
 
-.eaton-ttil-card-view__title { color: #005EB8; padding: 0 15px; }
-
-.eaton-ttil-card-view__eyebrow { padding: 0 15px; }
+.eaton-ttil-card-view__title { color: #005EB8; }
 
 @media screen and (max-width: 991px) { .eaton-ttil-card-view__eyebrow { margin-bottom: 4px; } }
 
