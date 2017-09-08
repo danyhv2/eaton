@@ -7,6 +7,11 @@
   padding: $spacing__sm 0;
   background: $color__primary-blue;
 
+  textarea{
+    /*padding-top: 20px;*/
+    height: 38px;
+  }
+
   .form-group {
     display: flex;
     border-bottom: 1px solid $color__white;
