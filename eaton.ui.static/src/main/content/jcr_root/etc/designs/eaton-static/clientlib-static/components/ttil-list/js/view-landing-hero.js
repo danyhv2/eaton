@@ -21,6 +21,7 @@ App.ttilListLandingHero = function () {
 
   var $componentEl = $('.eaton-landing-hero');
   var $componentSlidesEl = $componentEl.find('.eaton-landing-hero__slide-list');
+  var $arrows = $('.eaton-landing-hero__arrow');
 
   var init = function init() {
     initCarousels();
@@ -39,6 +40,10 @@ App.ttilListLandingHero = function () {
       dotsClass: 'eaton-landing-hero__dots',
       prevArrow: $componentEl.find('.eaton-landing-hero__arrow--prev'),
       nextArrow: $componentEl.find('.eaton-landing-hero__arrow--next')
+    });
+
+    $arrows.hover(function () {
+      $componentSlidesEl.slick('slickPause');
     });
   };
 
