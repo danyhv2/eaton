@@ -12,3 +12,7 @@
 
 
 .eaton-product-detail-card { margin-bottom: 60px; }
+
+.product-detail-card__related-products-header { padding-left: 15px; margin-bottom: 45px; }
+
+.product-detail-card__related-products-description { margin-top: 10px; }
