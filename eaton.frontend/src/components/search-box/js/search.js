@@ -116,6 +116,7 @@ App.search = (function() {
   */
   if ($componentElement.length > 0) {
     autosize($('.search-box textarea'));
+    autosize($('.eaton-header textarea'));
     init();
   }
 
