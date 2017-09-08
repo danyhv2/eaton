@@ -149,6 +149,6 @@
   .eaton-topic-link-white__text-wrapper { width: calc(100% - 100px); display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; float: right; }
   .eaton-topic-link-white__text-wrapper.no-icon { width: 100%; }
   .eaton-topic-link-white__text { width: 70%; -webkit-box-flex: 0; -webkit-flex: 0 0 70%; -ms-flex: 0 0 70%; flex: 0 0 70%; }
-  .eaton-topic-link-white__text.no-cta { width: 100%; -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
+  .eaton-topic-link-white__text.no-cta { width: 100%; max-width: 420px; -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; }
   .eaton-topic-link-white__cta-wrapper { width: 30%; -webkit-box-flex: 0; -webkit-flex: 0 0 30%; -ms-flex: 0 0 30%; flex: 0 0 30%; text-align: right; }
   .eaton-topic-link-white__cta-wrapper .b-button__primary { text-align: center; } }
