@@ -336,7 +336,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .eaton-text-default .rich-text-container a { text-decoration: underline; }
 
-.eaton-text-default .rich-text-container p { font-family: Arial, sans-serif; font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; }
+.eaton-text-default .rich-text-container p { font-family: Arial, sans-serif; margin: 0; font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; }
 
 .eaton-text-default .rich-text-container p a { color: #005EB8; }
 

@@ -10,8 +10,10 @@
             "name": "New Family Item",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "image": {
-              "src": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-              "altText": "Network, `Server & Storage UPS"
+              "mobile": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "altText": "New Family Item"
             },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
@@ -70,8 +72,10 @@
             "name": "New SKU Item",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "image": {
-              "src": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-              "altText": "9E6Ki-Eaton 9E"
+              "mobile": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "altText": "New SKU Item"
             },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",

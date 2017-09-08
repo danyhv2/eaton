@@ -113,11 +113,19 @@
   .eaton-page-overview__cta--mobile { display: none; }
   .eaton-page-overview__cta--desktop { display: block; } }
 
-.eaton-ttil-card-view__image { margin-bottom: 30px; }
+.eaton-ttil-card-view { position: relative; }
 
-.eaton-ttil-card-view__title { margin-bottom: 45px; }
+.eaton-ttil-card-view__cta { display: block; }
 
-.eaton-ttil-card-view__text { color: #005EB8; text-transform: none; }
+.eaton-ttil-card-view__image-wrapper { margin-bottom: 26px; }
+
+.eaton-ttil-card-view__title { color: #005EB8; padding: 0 15px; }
+
+.eaton-ttil-card-view__eyebrow { padding: 0 15px; }
+
+@media screen and (max-width: 991px) { .eaton-ttil-card-view__eyebrow { margin-bottom: 4px; } }
+
+@media screen and (min-width: 992px) { .eaton-ttil-card-view__eyebrow { margin-bottom: 20px; } }
 
 .eaton-topic-link-white { overflow: hidden; padding: 50px 0; }
 
