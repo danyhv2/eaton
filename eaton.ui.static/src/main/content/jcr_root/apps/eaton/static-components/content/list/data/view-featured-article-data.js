@@ -76,9 +76,12 @@ use(function () {
 	            {
 	                title: 'Data Center Facility UPS',
 	                text: 'Emergency power system basics',
-	                image: '/content/dam/eaton/images/Jet.png',
-	                mobile_image: '/content/dam/eaton/images/Jet.png',
-	                image_alt: 'Image 1',
+	                image: {
+                    mobile: '/content/dam/eaton/images/Jet.png',
+                    tablet: '/content/dam/eaton/images/Jet.png',
+                    desktop: '/content/dam/eaton/images/Jet.png',
+	                  altText: 'Image 1',
+                  },
 	                date_text: 'November 30, 2016',
 	                cta: {
 	                    url: 'http://www.eaton.com',
@@ -88,9 +91,12 @@ use(function () {
 	            {
 	                title: 'Knowledge Center',
 	                text: 'Eaton Awarded U.S. Army Corps Contract to Modernize Electrical Systems',
-	                image: '/content/dam/eaton/images/Tractors.png',
-	                mobile_image: '/content/dam/eaton/images/Tractors.png',
-	                image_alt: 'Image 2',
+	                image: {
+                    mobile: '/content/dam/eaton/images/Tractors.png',
+                    tablet: '/content/dam/eaton/images/Tractors.png',
+                    desktop: '/content/dam/eaton/images/Tractors.png',
+	                  altText: 'Image 2',
+                  },
 	                date_text: 'December 12, 2015',
 	                cta: {
 	                    url: 'http://www.eaton.com',
@@ -100,9 +106,12 @@ use(function () {
 	            {
 	                title: 'Healthcare',
 	                text: 'Unlock power and reverse with a modern UPS',
-	                image: '/content/dam/eaton/images/Power_Lines.png',
-	                mobile_image: '/content/dam/eaton/images/Power_Lines.png',
-	                image_alt: 'Image 3',
+	                image: {
+                    mobile: '/content/dam/eaton/images/Power_Lines.png',
+                    tablet: '/content/dam/eaton/images/Power_Lines.png',
+                    desktop: '/content/dam/eaton/images/Power_Lines.png',
+	                  altText: 'Image 3',
+                  },
 	                date_text: 'October 12, 2014',
 	                cta: {
 	                    url: 'http://www.eaton.com',
