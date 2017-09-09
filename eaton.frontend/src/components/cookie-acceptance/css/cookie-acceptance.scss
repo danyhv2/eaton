@@ -15,19 +15,26 @@
   left: 0;
   width: 100%;
   padding: 30px 0 20px;
-  z-index: 99999;
+  z-index: 220;
+  position: relative;
   display: none;
 
   &__agreement {
     color: $color__white;
-
   }
 
-  &__agreement a, 
-  &__agreement a:hover{
+  &__agreement a,
+  &__agreement a:hover {
     color: #fff;
     text-decoration: underline;
   }
+
+
+  &__cta {
+    padding: 10px 0px;
+    width: 212px;
+  }
+
 
   @include media-mobile-only {
 
@@ -37,6 +44,8 @@
     &__cta {
       width: 100%;
       margin-top: 15px;
+      max-width: none;
+      padding: 10px 0px;
     }
 
   }
@@ -51,6 +60,7 @@
     &__cta {
       width: 100%;
       margin-top: 15px;
+      max-width: none;
     }
 
   }

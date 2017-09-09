@@ -15,7 +15,6 @@
 //--------------
 .eaton-footer-top {
   background: $color__primary-gray2;
-  padding: 60px 0;
 
   .eaton-text-default__content {
     @include body-copy-small;
@@ -29,11 +28,6 @@
 
   .eaton-footer-top__link-list {
     margin-bottom: 40px;
-
-    a {
-      font-size: 13px;
-      line-height: 17px;
-    }
   }
 
 }
@@ -49,12 +43,15 @@
   .dark-theme & {
     color: $color__white;
 
+    .b-body-copy,
+    .b-body-copy-small,
     a,
     a:hover,
     a:focus {
       color: $color__white;
     }
   }
+
 }
 
 // Footer Back to top button
@@ -69,6 +66,11 @@
   box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, .15);
   cursor: pointer;
   display: none;
+  z-index: 1; // Fixes issue the button can't be clicked / The content overlaps this button
+
+  @include media-mobile-only {
+    bottom: 3rem;
+  }
 
   &.visible {
     display: block;
@@ -81,11 +83,7 @@
     height: 100%;
     text-align: center;
     color: $color__primary-blue;
-    line-height: 6.5rem;
-
-    &::before {
-      transform: rotateX(180deg);
-    }
+    line-height: 6.8rem;
   }
 }
 
@@ -95,23 +93,23 @@
 //-----------------------------------
 @include media-mobile-and-tablet {
 
-  .eaton-footer-top__logo { margin-bottom: 60px; }
+  .eaton-footer-top { padding: 30px 0 60px; }
 
-  .eaton-footer-top__content { margin-bottom: 120px; }
+  .eaton-footer-top__logo { margin-bottom: 12px; } // Visually 30px Spacing bettween Logo and Text
+
+  .eaton-footer-top__content { margin-bottom: 60px; }
 
   .eaton-footer-top__link-list { margin-bottom: 60px; }
 
-  .eaton-footer-bottom { padding: 120px 0; }
+  .eaton-footer-bottom { padding: 60px 0; }
 
   .eaton-footer-bottom__link-list {
 
     // LinkList Component Nested in the Footer
-    .eaton-link-list-horizontal__list-item {
-      margin-bottom: 32px; // Visually 40px between elements
+    .link-list-horizontal__list-item {
+      margin-bottom: 12px; // Visually 20px between elements
     }
-
   }
-
 }
 
 //-----------------------------------
@@ -119,22 +117,23 @@
 //-----------------------------------
 @include media-desktop-and-up {
 
-  .eaton-footer-top__logo { margin-bottom: 30px; }
+  .eaton-footer-top { padding: 60px 0; }
 
-  .eaton-footer-bottom { padding: 40px 0; }
+  .eaton-footer-top__logo { margin-bottom: 10px; }
 
-  .eaton-footer-bottom__link-list { float: left; }
+  .eaton-footer-top__link-list { margin-top: 20px; } // It aligns the Eyebrows with the Paragraph in the first column
 
-  .eaton-footer-bottom__copyright { float: right; }
+  .eaton-footer-bottom {
+    padding: 40px 0;
+  }
 
-  .eaton-footer-top {
-    .eaton-footer-top__link-list {
-      a {
-        font-size: 18px;
-        line-height: 26px;
-      }
+  .eaton-footer-bottom__link-list {
+    float: left;
+    width: 68%; // EATON-536: Link List and Copyright Alignment [ALM-107]
+  }
 
-    }
+  .eaton-footer-bottom__copyright {
+    float: right;
   }
 
 }

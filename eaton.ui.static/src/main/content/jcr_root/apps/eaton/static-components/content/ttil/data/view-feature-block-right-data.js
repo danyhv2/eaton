@@ -11,11 +11,14 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'Make a bigger difference'
             },
-            imgSrc: '/content/dam/eaton/images/Cityscape_mob.png',
-            imgMobile:'/content/dam/eaton/images/Cityscape_mob.png',
-            imgTablet:'/content/dam/eaton/images/Cityscape_mob.png',
+            image: {
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                desktop: '/content/dam/eaton/images/Cityscape_mob.png',
+                altText: '',
+                alignment: 'center'
+            },
             imgAlignment:'right',
-            imgAlt: 'Test image',
             backgroundColor: '#F8F8F8'
         }
     } else if ((typeof(testdata) != "undefined") && (testdata == "t7-product-family-template-overview-tab")) {
@@ -30,11 +33,14 @@ use(function () {
                 url: '',
                 text:''
             },
-            imgSrc: '/content/dam/eaton/images/energy.png',
-            imgMobile:'/content/dam/eaton/images/energy.png',
-            imgTablet:'/content/dam/eaton/images/energy.png',
+            image: {
+            	mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                desktop: '/content/dam/eaton/images/energy.png',
+                altText: '',
+                alignment: 'center'
+            },
             imgAlignment:'right',
-            imgAlt: 'Test image',
             backgroundColor: '#FFFFFF'
         }
     } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-careers-1")) {
@@ -45,11 +51,15 @@ use(function () {
             	url: 'http://www.eaton.com',
                 text:'Learn more'
             },
-            imgSrc: '/content/dam/eaton/images/T9-Careers-FeatureBlockRight-1.png',
-            imgMobile:'/content/dam/eaton/images/T9-Careers-FeatureBlockRight-1.png',
-            imgTablet:'/content/dam/eaton/images/T9-Careers-FeatureBlockRight-1.png',
+            image: {
+            	mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockRight-1.png',
+                altText: '',
+                alignment: 'center'
+            },
+
             imgAlignment:'right',
-            imgAlt: 'Test image',
             backgroundColor: '#FFFFFF'
         }
     } else {
@@ -60,11 +70,14 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'Make a bigger difference'
             },
-            imgSrc: '/content/dam/eaton/images/Cityscape_mob.png',
-            imgMobile:'/content/dam/eaton/images/Cityscape_mob.png',
-            imgTablet:'/content/dam/eaton/images/Cityscape_mob.png',
+            image: {
+            	mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                desktop: '/content/dam/eaton/images/Cityscape_mob.png',
+                altText: '',
+                alignment: 'center'
+            },
             imgAlignment:'right',
-            imgAlt: 'Test image',
             backgroundColor: '#005EB8'
         }
     }

@@ -10,7 +10,7 @@ App.cookieAcceptance = (function() {
   // Variable Declarations
   const componentClass = '.cookie-acceptancebox';
   const $componentElement = $(componentClass);
-  const $componentToPadding = $('body');
+
 
   // Check AEM Author Mode
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -46,7 +46,6 @@ App.cookieAcceptance = (function() {
 
   // localStorage.clear('eatoncookies');
 
-
     readStatus();
 
     $componentElement.find('.cookie-acceptancebox__cta').on('click',function(e) {
@@ -54,6 +53,8 @@ App.cookieAcceptance = (function() {
       // alert ('Cookies Accepted!');
       window.localStorage.setItem('eatoncookies', 'yes');
       $componentElement.hide();
+      // Publish - Cookie Set
+      $(document).trigger( App.global.constants.EVENTS.HEADER.COOKIE_SET);
     });
 
 

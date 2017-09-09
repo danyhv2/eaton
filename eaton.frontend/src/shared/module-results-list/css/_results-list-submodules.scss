@@ -16,7 +16,7 @@
     display: block;
   }
 
-  &__image {
+  .rendition__image {
     border: 1px solid $color__image-border;
     background: $color__image-bg;
     padding: 1rem;
@@ -25,6 +25,11 @@
   &__date {
     color: $color__primary-gray3;
     font-style: italic;
+    margin-bottom: 12px;
+  }
+
+  &__document {
+    margin-bottom: 4px;
   }
 
   &__secondary-links {
@@ -43,7 +48,7 @@
   &__description,
   &__url,
   &__link-list {
-    margin-bottom: 12px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
+    margin-bottom: 10px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
   }
 
   &__url {
@@ -67,7 +72,7 @@
 
 
   //-----------------------------------
-  // MediaQuery: Mobile & Tablet Only
+  // MediaQuery: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
 
@@ -83,7 +88,7 @@
       margin-bottom: 20px;
     }
 
-    &__image {
+    .rendition__image {
       width: 100%;
       max-width: 260px;
     }
@@ -91,29 +96,43 @@
 
 
   //-----------------------------------
-  // Media-Query: Desktop & Desktop Large
+  // Media-Query: > 992px
   //-----------------------------------
   @include media-desktop-and-up {
 
-    margin-bottom: 40px; // Visually 60px Bottom Margin
+    margin-bottom: 38px; // Visually 60px Bottom Margin
 
     // Product Item with Image (Thumbnail)
     //--------------
     &__image-wrapper {
-      flex-basis: 140px;
+
+      // NOTE: "flex-basis" was replaced with "width" due to issues in old versions of Android & iOS
+      // flex-basis: 140px;
+      min-width: 140px;
       margin-right: $spacing__sm;
       padding-top: $line-height-offset; // Used to align the Icon with the Result Title
     }
 
-    &__image {
+    .rendition__image {
       max-width: 140px;
+    }
+
+    &__content-wrapper {
+      width: 100%;
+    }
+
+    &--type-resource {
+      margin-bottom: 44px;
     }
 
 
     // Resource Item with Download Icon
     //--------------
     &__icon-wrapper {
-      flex-basis: 48px;
+
+      // NOTE: "flex-basis" was replaced with "width" due to issues in old versions of Android & iOS
+      // flex-basis: 48px;
+      width: 48px;
       margin-right: $spacing__sm;
       padding-top: $line-height-offset; // Used to align the Icon with the Result Title
 

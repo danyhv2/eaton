@@ -52,7 +52,7 @@
 
       span {
         color: $color__primary-blue;
-        font-size: 20px;
+        font-size: 2.0rem;
       }
 
       &.collapsed {
@@ -88,6 +88,7 @@
 
     &__item {
       border-color: transparent;
+      border-bottom: 0;
 
       > a {
         color: $color__primary-blue;
@@ -102,22 +103,9 @@
       }
 
       a {
-        padding-bottom: 50px;
+        padding-bottom: 30px;
         color: $color__primary-blue;
       }
-    }
-
-    &__tab-links {
-      border-left: 1px solid $color__primary-gray3;
-    }
-
-    &__tabs {
-      display: block;
-      overflow: hidden;
-    }
-
-    &__item {
-      border-bottom: 0;
 
       &.desktop {
         flex: 0 0 33%;
@@ -142,6 +130,16 @@
           order: 9;
         }
       }
+    }
+
+    &__tab-links {
+      border-left: 1px solid $color__primary-gray3;
+      padding-left: 40px;
+    }
+
+    &__tabs {
+      display: block;
+      overflow: hidden;
     }
 
     &__tab {
@@ -176,7 +174,7 @@
     }
 
     .tab-pane {
-      padding: 50px 0;
+      padding: 50px 0 30px;
     }
 
     .tab-container {

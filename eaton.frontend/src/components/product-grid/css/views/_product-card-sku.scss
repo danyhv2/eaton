@@ -48,7 +48,7 @@
     z-index: 2;
   }
 
-  &__image {
+  .rendition__image {
     @include square($thumbnail-size-mobile); // Width & Height
     border: 1px solid $color__image-border;
     background-color: $color__white;
@@ -187,7 +187,7 @@
       top: 20px;
     }
 
-    &__image {
+    .rendition__image {
       @include square($thumbnail-size-desktop); // Width & Height
       padding: 1rem;
     }

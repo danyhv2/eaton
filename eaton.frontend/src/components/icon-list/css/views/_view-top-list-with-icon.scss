@@ -75,6 +75,29 @@
       }
     }
   }
+
+  .eaton-grid-control & {
+
+    margin-top: 0;
+
+    .container {
+      width: 100%;
+
+      .col-md-4 {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  .eaton-grid-control.dark-theme & {
+    &__text-wrapper {
+      color: $color__white;
+
+      a {
+        color: $color__white;
+      }
+    }
+  }
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -83,6 +106,16 @@
       &.row {
         .col-md-4 {
           flex: 0 0 30%;
+        }
+      }
+    }
+
+    .eaton-grid-control & {
+      .container {
+        &.row {
+          .col-md-4 {
+            flex: 0 0 100%;
+          }
         }
       }
     }

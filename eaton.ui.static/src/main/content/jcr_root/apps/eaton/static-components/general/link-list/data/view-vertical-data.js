@@ -390,7 +390,7 @@ use(function () {
             }
 	    ]
 	  }
-  } else if ((typeof(testdata) != "undefined") && testdata == "t11-listing-page-3") {
+  } else if ((typeof(testdata) != "undefined") && ( (testdata == "t11-listing-page-3") || (testdata == "m17") ) ) {
 	    data.view = {
 	      eyebrow: '',
 	      links: [
@@ -449,7 +449,7 @@ use(function () {
     } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-1")) {
         
     	data.view = {
-	      eyebrow: 'Eaton bussines highlights',
+	      eyebrow: '',
 	      links: [
 		      {  
 		        title: '2016 annual report',
@@ -519,7 +519,7 @@ use(function () {
    		     }
   	      ]
   	    }
-   
+  	  
     } else {
     	
     data.view = {

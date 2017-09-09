@@ -52,6 +52,14 @@
                   value="primary-nav"/>
             </options>
           </view>
+          <toggleInnerGrid
+            jcr:primaryType="cq:Widget"
+            fieldDescription=""
+            fieldLabel="Enable Inner Grid"
+            inputValue="true"
+            name="./toggleInnerGrid"
+            type="checkbox"
+            xtype="selection" />
           <testdata
             jcr:primaryType="cq:Widget"
             allowBlank="false"

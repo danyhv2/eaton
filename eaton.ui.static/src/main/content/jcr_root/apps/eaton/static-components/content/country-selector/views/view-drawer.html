@@ -1,10 +1,77 @@
 <!--/* Country Selector: Drawer */-->
-<div class="country-selector--drawer">
-    <div class="container">
+<sly data-sly-use.data="${'../data/view-data.js' @testdata=properties.testdata}">
+  <div class="country-selector-drawer">
+
+    <!--/* Header *-->
+    <div class="country-selector-drawer__header">
+      <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                Country Selector -- View Drawer
-            </div>
+          <h2 class="country-selector-drawer__title">${data.header}</h2>
+          <button class="button--reset country-selector-drawer__close-menu">
+            <span class="sr-only">Close Drawer</span>
+            <i class="country-selector-drawer__icon icon icon-close" aria-hidden="true"></i>
+          </button>
         </div>
+      </div>
     </div>
-</div>
+
+    <!--/* List of Regions & Countries/ Languages *-->
+    <div class="container country-selector-drawer__container">
+      <div class="row">
+        <ul class="u-visible-desktop col-md-3 country-selector-drawer__region-list" data-sly-list="${data.regionList}">
+          <li>
+            <a href="#drawer-collapse-${itemList.index}"
+            class="country-selector-drawer__region-link ${itemList.index == 0 ? 'active' : ''}"
+            role="button"
+            aria-expanded="false"
+            aria-controls="drawer-collapse-${itemList.index}"
+            data-toggle="collapse"
+            data-parent="country-selector-drawer__item">
+                <span class="sr-only">Select your location</span>
+                ${item.regionName}
+                <i class="country-selector-drawer__region-icon glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+            </a>
+            </li>
+        </ul>
+
+        <div data-sly-list="${data.regionList}" class="col-sm-12 col-md-9 panel-group country-selector-drawer__panel-list" role="tablist" aria-multiselectable="true">
+                <div class="panel country-selector-drawer__item">
+                    <div class="panel-heading country-selector-drawer__item-header" role="tab" id="drawer-${item.regionId}">
+                        <a href="#drawer-collapse-${itemList.index}"
+                        class="country-selector-drawer__item-link u-absolute-fill"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="drawer-collapse-${itemList.index}"
+                        data-toggle="collapse"
+                        data-parent="country-selector-drawer__item">
+                            <span class="sr-only">Select your location</span>
+                        </a>
+                        <h3 class="country-selector-drawer__item-title b-heading-h3">${item.regionName}</h3>
+                        <i class="country-selector-drawer__item-icon icon" aria-hidden="true">
+                          <span class="sr-only"></span>
+                        </i>
+                    </div>
+
+                    <div id="drawer-collapse-${itemList.index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="drawer-${item.regionId}">
+                        <div class="country-selector-drawer__item-body">
+                            <ul data-sly-list.country="${item.countryList}" class="country-selector-drawer__item-list">
+                                <li class="country-selector-drawer__item-country">
+                                    <div class="country-selector-drawer__item-country-name">
+                                      <i class="country-selector-drawer__item-country-flag flag-${country.countryId}" aria-hidden="true"></i>
+                                      <span class="country-selector-drawer__item-country-label b-eyebrow-small">${country.countryName}</span>
+                                    </div>
+                                    <ul data-sly-list.language="${country.languageList}" class="country-selector-drawer__item-language-list b-body-copy-small">
+                                        <li class="country-selector-drawer__item-language">
+                                          <a href="${language.languagePath}" target="{language.target}">${language.languageName}</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+ </div>
+</sly>

@@ -30,9 +30,12 @@ use(function () {
 	        single_feature_card: {
 	            title: 'Company',
 	            text: 'Eaton to announce first quarter 2017 earnings on May 2, 2017',
-	            image: '/content/dam/eaton/images/t9-inverstors-bridge.png',
-	            mobile_image: '/content/dam/eaton/images/t9-inverstors-bridge.png',
-	            image_alt: 'Featured image',
+                image: {
+                    mobile:'/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                    tablet:'/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                    desktop:'/content/dam/eaton/images/lorempixel/technics/550x413-8.jpeg',
+                    altText:'Image 2'
+                },
 	            cta: {url: 'http://www.eaton.com', target: '_self'},
 	            date_text: 'April 13, 2017'
 	        }
@@ -64,9 +67,12 @@ use(function () {
 	        single_feature_card: {
 	            title: 'Featured Category',
 	            text: 'Why reality is the innovation challenge',
-	            image: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
-	            mobile_image: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
-	            image_alt: 'Featured image',
+                image: {
+                    mobile:'/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                    tablet:'/content/dam/eaton/images/lorempixel/technics/630x473-4.jpeg',
+                    desktop:'/content/dam/eaton/images/lorempixel/technics/550x413-8.jpeg',
+                    altText:'Image 2'
+                },
 	            cta: {url: 'http://www.eaton.com', target: '_self'},
 	            date_text: 'September 23, 2013'
 	        }

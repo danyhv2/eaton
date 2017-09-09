@@ -3,35 +3,37 @@
 
   &__image {
     text-align: center;
-
-    .rendition {
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
+    width: 100%;
+    height: 62vw;
+    position: relative;
 
     &__icon {
-      margin-top: -31px;
+      bottom: -31px;
+      position: absolute;
+      transform: translateX(-50%);
 
     }
   }
 
   &__text-container {
+
+    @include media-mobile-only {
+      padding: $spacing__md $spacing__md / 2 $spacing__sm $spacing__lg / 2;
+    }
+
     padding: $spacing__md / 2 $spacing__sm $spacing__lg / 2;
     color: $color__white;
   }
 
   &__quote {
     padding-bottom: $spacing__md / 2;
-    font-size: 23px;
-    line-height: 38px;
+    font-size: 2.3rem;
+    line-height: 3.8rem;
     font-style: italic;
   }
 
   &__author {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-style: italic;
 
     .author {
@@ -54,20 +56,14 @@
       display: inline-block;
       position: relative;
       order: 1;
-
-      .rendition {
-        img {
-          width: 484px;
-          height: 484px;
-        }
-      }
+      width: 484px;
+      height: 484px;
 
       &__icon {
         margin: 0;
-        position: absolute;
         left: 100%;
         top: 50%;
-        transform: translateX(-50%);
+        bottom: 0;
       }
     }
 
@@ -78,13 +74,13 @@
     }
 
     &__quote {
-      font-size: 30px;
-      line-height: 48px;
+      font-size: 3.0rem;
+      line-height: 4.8rem;
       padding-bottom: $spacing__md;
     }
 
     &__author {
-      font-size: 20px;
+      font-size: 2.0rem;
     }
 
     &__left {
@@ -117,8 +113,27 @@
   @include media-desktop-large {
     width: calc((100% - 1140px) / 2 + 1140px);
 
-    &__left {
+    &__text-container {
+      width: calc(1140px - 484px);
+    }
+
+    &__right {
       margin-left: calc((100% - 1140px) / 2);
+
+      .eaton-ttil-quote__text-container {
+        float: left;
+        padding-left: 110px;
+        padding-right: 0;
+      }
+    }
+
+    &__left {
+      justify-content: flex-end;
+
+      .eaton-ttil-quote__text-container {
+        padding-left: 0;
+        padding-right: 110px;
+      }
     }
   }
 }

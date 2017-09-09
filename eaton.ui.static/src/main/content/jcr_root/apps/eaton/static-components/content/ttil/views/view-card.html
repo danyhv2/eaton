@@ -1,11 +1,21 @@
 <sly data-sly-use.data="${'../data/view-card-data.js' @testdata=properties.testdata}">
 
   <div class="eaton-ttil-card-view">
-    <div class="eaton-ttil-card-view__image">
-      <img src="${ data.imgSrc }" class="img-responsive" alt="${ data.imgAlt }" />
+    <a href="${ data.link.url }"
+      class="eaton-ttil-card-view__cta u-absolute-fill"
+      target="${ data.link.target }"
+    > <span class="sr-only">${ data.title }</span>
+    </a>
+
+    <div class="eaton-ttil-card-view__image-wrapper">
+      <!-- Start: Rendition Image Component -->
+      <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+        <sly data-sly-call="${ tpl.module @ data=data.image }"></sly>
+      </sly>
+      <!-- End: Rendition Image Component -->
     </div>
-    <div class="eaton-ttil-card-view__title b-eyebrow-small text-uppercase">${ data.title }</div>
-    <div class="eaton-ttil-card-view__text b-heading-h5">${ data.text }</div>
+    <div class="eaton-ttil-card-view__eyebrow b-eyebrow-small text-uppercase">${ data.text }</div>
+    <div class="eaton-ttil-card-view__title b-heading-h5">${ data.title }</div>
   </div>
 
 </sly>

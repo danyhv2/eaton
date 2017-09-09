@@ -264,6 +264,14 @@
                 sling:resourceType="eaton/static-components/search/search-box"
                 testdata="primary-nav-search"
                 view="default"/>
+            <full-page-drawer jcr:primaryType="nt:unstructured">
+                <country-selector
+                    jcr:lastModified="{Date}2017-08-28T15:43:30.993-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/content/country-selector"
+                    view="drawer"/>
+            </full-page-drawer>
         </eaton-header>
         <par
             jcr:primaryType="nt:unstructured"
@@ -338,16 +346,6 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="eaton/static-components/search/search-box"
-                view="default"/>
-            <title
-                jcr:created="{Date}2017-08-03T12:36:35.803-06:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2017-08-03T12:37:10.516-06:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/general/title"
-                testdata="related-products"
-                toggleInnerGrid="true"
                 view="default"/>
             <list
                 jcr:created="{Date}2017-08-03T12:36:45.349-06:00"

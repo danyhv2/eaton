@@ -55,26 +55,29 @@
 
     .container {
       margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
 
-      &.row {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+      .col-md-3 {
+        flex: 0 0 24%;
+        padding: 0;
+      }
 
-        .col-md-4 {
-          flex: 0 0 33%;
-          padding: 0;
-        }
+      .col-md-9 {
+        flex: 0 0 75%;
+        padding: 0;
 
-        .col-md-8 {
-          flex: 0 0 66%;
-          padding: 0;
+        .col-md-6 {
+          flex: 0 0 49%;
 
-          > .row {
+          &:nth-child(2n) {
+            padding-left: 60px;
+            padding-right: 0;
+          }
 
-            .col-md-6 {
-              flex: 0 0 49%;
-            }
+          &:nth-child(2n+1) {
+            padding-left: 30px;
           }
         }
 
@@ -92,14 +95,13 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .eaton-how-to-buy {
     .container {
-      &.row {
-        .col-md-8 {
+      .col-md-9 {
 
-          > .row .col-md-6 {
-            flex: 0 0 41%;
-          }
+        .col-md-6 {
+          flex: 0 0 41%;
         }
       }
+
     }
   }
 }

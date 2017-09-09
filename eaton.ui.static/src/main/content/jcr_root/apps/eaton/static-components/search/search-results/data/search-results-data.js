@@ -9,260 +9,302 @@ use(function () {
   // if ((typeof(testdata) == "undefined")) {
 
 
-    // Results Tabs
-    //--------------
-    data.tabs = {
-      "items": [
-        {
-          "label": "Product",
-          "id": "product",
-          "isHiddenTab": false,
-          "isActiveTab": false,
-          "isADisabledTab": false,
-          "resultsCount": 36,
-          "url": "http://eaton.dev/results.tab.product.html",
-          "target": "_self"
-        },
-        {
-          "label": "News & insights",
-          "id": "news-insights",
-          "isHiddenTab": false,
-          "isActiveTab": false,
-          "isADisabledTab": false,
-          "resultsCount": 97,
-          "url": "http://eaton.dev/results.tab.news-insights.html",
-          "target": "_self"
-        },
-        {
-          "label": "Resources",
-          "id": "resources",
-          "isHiddenTab": false,
-          "isActiveTab": false,
-          "isADisabledTab": true,
-          "resultsCount": 0,
-          "url": "http://eaton.dev/results.tab.resources.html",
-          "target": "_self"
-        },
-        {
-          "label": "This Tab Should be hidden",
-          "id": "resources",
-          "isHiddenTab": true,
-          "isActiveTab": false,
-          "isADisabledTab": false,
-          "resultsCount": 15,
-          "url": "http://eaton.dev/results.tab.hidden.html",
-          "target": "_self"
-        },
-      ]
-    };
+  // Results Tabs
+  //--------------
+  data.tabs = {
+    "items": [
+      {
+        "label": "Product",
+        "id": "product",
+        "isHiddenTab": false,
+        "isActiveTab": false,
+        "isADisabledTab": false,
+        "resultsCount": 36,
+        "url": "http://eaton.dev/results.tab.product.html",
+        "target": "_self"
+      },
+      {
+        "label": "News & insights",
+        "id": "news-insights",
+        "isHiddenTab": false,
+        "isActiveTab": false,
+        "isADisabledTab": false,
+        "resultsCount": 97,
+        "url": "http://eaton.dev/results.tab.news-insights.html",
+        "target": "_self"
+      },
+      {
+        "label": "Resources",
+        "id": "resources",
+        "isHiddenTab": false,
+        "isActiveTab": false,
+        "isADisabledTab": true,
+        "resultsCount": 0,
+        "url": "http://eaton.dev/results.tab.resources.html",
+        "target": "_self"
+      },
+      {
+        "label": "This Tab Should be hidden",
+        "id": "resources",
+        "isHiddenTab": true,
+        "isActiveTab": false,
+        "isADisabledTab": false,
+        "resultsCount": 15,
+        "url": "http://eaton.dev/results.tab.hidden.html",
+        "target": "_self"
+      },
+    ]
+  };
 
 
     // Facets Config
     //--------------
     data.facets = {
       "config": {
-        "facetItemsMinVisible": 4,
-        "facetValuesMinVisible": 4
+        "facetGroupsMinVisible": 4,
+        "facetValuesMinVisible": 4,
+        // "facetGroupExpanded": 2
       },
+      "facetLabel": "Narrow Results",
+      "viewMoreLabel": "View More",
+      "filtersLabel": "Filters",
+      "closeFiltersLabel": "Close Filters",
+      "applyLabel": "Done",
       "facetItems": [
         {
-          "facetName": "Content Type",
-          "facetId": "content-type",
+          "facetGroupName": "Content Type",
+          "facetGroupId": "content-type",
           "facetType": "radios",
           "facetValues": [
             {
-              "id": "product",
-              "label": "Products",
-              "url": "http://eaton.dev/results.html?facetvalue=products",
-              "active": false
+              "facetId": "product",
+              "facetLabel": "Products",
+              "facetURL": "t10-search-results.html?facetvalue=product",
+              "facetIsChecked": true,
+              "target": "_self"
             },
             {
-              "id": "news",
-              "label": "News & Insights",
-              "url": "http://eaton.dev/results.html?facetvalue=news",
-              "active": false
+              "facetId": "news",
+              "facetLabel": "News & Insights",
+              "facetURL": "t10-search-results.html?facetvalue=news",
+              "facetIsChecked": false,
+              "target": "_self"
             },
             {
-              "id": "resources",
-              "label": "Resources",
-              "url": "http://eaton.dev/results.html?facetvalue=resources",
-              "active": false
+              "facetId": "resources",
+              "facetLabel": "Resources",
+              "facetURL": "t10-search-results.html?facetvalue=resources",
+              "facetIsChecked": false,
+              "target": "_self"
             }
           ]
         },
         {
-          "facetName": "Voltage",
-          "facetId": "voltage",
+          "facetGroupName": "Voltage",
+          "facetGroupId": "voltage",
           "facetType": "checkboxes",
           "facetValues": [
             {
-              "id": "700va",
-              "label": "700 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=700va"
+              "facetId": "700va",
+              "facetLabel": "700 VA",
+              "facetURL": "t10-search-results.html?facetvalue=700va",
+              "facetIsChecked": true
             },
             {
-              "id": "1000va",
-              "label": "1000 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=1000va",
-              "active": true
+              "facetId": "1000va",
+              "facetLabel": "1000 VA",
+              "facetURL": "t10-search-results.html?facetvalue=1000va",
+              "facetIsChecked": true
             },
             {
-              "id": "1500va",
-              "label": "1500 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=1500va"
+              "facetId": "1500va",
+              "facetLabel": "1500 VA",
+              "facetURL": "t10-search-results.html?facetvalue=1500va",
+              "facetIsChecked": false
             },
             {
-              "id": "2000va",
-              "label": "2000 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=2000va"
+              "facetId": "2000va",
+              "facetLabel": "2000 VA",
+              "facetURL": "t10-search-results.html?facetvalue=2000va",
+              "facetIsChecked": true
             },
             {
-              "id": "3000va",
-              "label": "3000 VA",
-              "url": "http://eaton.dev/results.html?facetvalue=3000va"
+              "facetId": "3000va",
+              "facetLabel": "3000 VA",
+              "facetURL": "t10-search-results.html?facetvalue=3000va",
+              "facetIsChecked": true,
+            },
+            {
+              "facetId": "5000va",
+              "facetLabel": "3500 VA",
+              "facetURL": "t10-search-results.html?facetvalue=3500va",
+              "facetIsChecked": true,
             }
           ]
         },
         {
-          "facetName": "Facet 01",
-          "facetId": "name1",
+          "facetGroupName": "Facet 01",
+          "facetGroupId": "name1",
           "facetType": "radios",
           "facetValues": [
             {
-              "id": "value1",
-              "label": "Value 1",
-              "url": "http://eaton.dev/results.html?facetvalue=value1"
+              "facetId": "value1",
+              "facetLabel": "Value 1",
+              "facetURL": "t10-search-results.html?facetvalue=value1",
+              "facetIsChecked": false
             },
             {
-              "id": "value2",
-              "label": "Value 2",
-              "url": "http://eaton.dev/results.html?facetvalue=value2"
+              "facetId": "value2",
+              "facetLabel": "Value 2",
+              "facetURL": "t10-search-results.html?facetvalue=value2",
+              "facetIsChecked": false
             },
             {
-              "id": "value3",
-              "label": "Value 3",
-              "url": "http://eaton.dev/results.html?facetvalue=value3"
+              "facetId": "value3",
+              "facetLabel": "Value 3",
+              "facetURL": "t10-search-results.html?facetvalue=value3",
+              "facetIsChecked": false
             },
             {
-              "id": "value4",
-              "label": "Value 4",
-              "url": "http://eaton.dev/results.html?facetvalue=value4"
+              "facetId": "value4",
+              "facetLabel": "Value 4",
+              "facetURL": "t10-search-results.html?facetvalue=value4",
+              "facetIsChecked": false
             },
             {
-              "id": "value5",
-              "label": "Value 5",
-              "url": "http://eaton.dev/results.html?facetvalue=value5"
+              "facetId": "value5",
+              "facetLabel": "Value 5",
+              "facetURL": "t10-search-results.html?facetvalue=value5",
+              "facetIsChecked": false
             },
             {
-              "id": "value6",
-              "label": "Value 6",
-              "url": "http://eaton.dev/results.html?facetvalue=value6"
+              "facetId": "value6",
+              "facetLabel": "Value 6",
+              "facetURL": "t10-search-results.html?facetvalue=value6",
+              "facetIsChecked": false
             },
             {
-              "id": "value7",
-              "label": "Value 7",
-              "url": "http://eaton.dev/results.html?facetvalue=value7"
+              "facetId": "value7",
+              "facetLabel": "Value 7",
+              "facetURL": "t10-search-results.html?facetvalue=value7",
+              "facetIsChecked": false
             },
             {
-              "id": "value8",
-              "label": "Value 8",
-              "url": "http://eaton.dev/results.html?facetvalue=value8"
+              "facetId": "value8",
+              "facetLabel": "Value 8",
+              "facetURL": "t10-search-results.html?facetvalue=value8",
+              "facetIsChecked": false
             }
           ]
         },
         {
-          "facetName": "Facet 02",
-          "facetId": "name02",
+          "facetGroupName": "Facet 02",
+          "facetGroupId": "name02",
           "facetType": "checkboxes",
           "facetValues": [
             {
-              "id": "value1",
-              "label": "Value 1",
-              "url": "http://eaton.dev/results.html?facetvalue=value1"
+              "facetId": "f2value1",
+              "facetLabel": "Value 1",
+              "facetURL": "t10-search-results.html?facetvalue=f2value1",
+              "facetIsChecked": false
             },
             {
-              "id": "value2",
-              "label": "Value 2",
-              "url": "http://eaton.dev/results.html?facetvalue=value2"
+              "facetId": "f2value2",
+              "facetLabel": "Value 2",
+              "facetURL": "t10-search-results.html?facetvalue=f2value2",
+              "facetIsChecked": false
             },
             {
-              "id": "value3",
-              "label": "Value 3",
-              "url": "http://eaton.dev/results.html?facetvalue=value3"
+              "facetId": "f2value3",
+              "facetLabel": "Value 3",
+              "facetURL": "t10-search-results.html?facetvalue=f2value3",
+              "facetIsChecked": false
             },
             {
-              "id": "value4",
-              "label": "Value 4",
-              "url": "http://eaton.dev/results.html?facetvalue=value4"
+              "facetId": "f2value4",
+              "facetLabel": "Value 4",
+              "facetURL": "t10-search-results.html?facetvalue=f2value4",
+              "facetIsChecked": false
             },
             {
-              "id": "value5",
-              "label": "Value 5",
-              "url": "http://eaton.dev/results.html?facetvalue=value5"
+              "facetId": "f2value5",
+              "facetLabel": "Value 5",
+              "facetURL": "t10-search-results.html?facetvalue=f2value5",
+              "facetIsChecked": false
             },
             {
-              "id": "value6",
-              "label": "Value 6",
-              "url": "http://eaton.dev/results.html?facetvalue=value6"
+              "facetId": "f2value6",
+              "facetLabel": "Value 6",
+              "facetURL": "t10-search-results.html?facetvalue=f2value6",
+              "facetIsChecked": false
             }
           ]
         },
         {
-          "facetName": "Facet 03",
-          "facetId": "name3",
+          "facetGroupName": "Facet 03",
+          "facetGroupId": "name3",
           "facetType": "radios",
           "facetValues": [
             {
-              "id": "value1",
-              "label": "Value 1",
-              "url": "http://eaton.dev/results.html?facetvalue=value1"
+              "facetId": "f3value1",
+              "facetLabel": "Value 1",
+              "facetURL": "t10-search-results.html?facetvalue=f3value1",
+              "facetIsChecked": false
             },
             {
-              "id": "value2",
-              "label": "Value 2",
-              "url": "http://eaton.dev/results.html?facetvalue=value2"
+              "facetId": "f3value2",
+              "facetLabel": "Value 2",
+              "facetURL": "t10-search-results.html?facetvalue=f3value2",
+              "facetIsChecked": false
             },
             {
-              "id": "value3",
-              "label": "Value 3",
-              "url": "http://eaton.dev/results.html?facetvalue=value3"
+              "facetId": "f3value3",
+              "facetLabel": "Value 3",
+              "facetURL": "t10-search-results.html?facetvalue=f3value3",
+              "facetIsChecked": false
             },
             {
-              "id": "value4",
-              "label": "Value 4",
-              "url": "http://eaton.dev/results.html?facetvalue=value4"
+              "facetId": "f3value4",
+              "facetLabel": "Value 4",
+              "facetURL": "t10-search-results.html?facetvalue=f3value4",
+              "facetIsChecked": false
             },
             {
-              "id": "value5",
-              "label": "Value 5",
-              "url": "http://eaton.dev/results.html?facetvalue=value5"
+              "facetId": "f3value5",
+              "facetLabel": "Value 5",
+              "facetURL": "t10-search-results.html?facetvalue=f3value5",
+              "facetIsChecked": false
             }
           ]
         },
         {
-          "facetName": "Facet 04",
-          "facetId": "name04",
+          "facetGroupName": "Facet 04",
+          "facetGroupId": "name04",
           "facetType": "checkboxes",
           "facetValues": [
             {
-              "id": "value1",
-              "label": "Value 1",
-              "url": "http://eaton.dev/results.html?facetvalue=value1"
+              "facetId": "f4value1",
+              "facetLabel": "Value 1",
+              "facetURL": "t10-search-results.html?facetvalue=f4value1",
+              "facetIsChecked": false
             },
             {
-              "id": "value2",
-              "label": "Value 2",
-              "url": "http://eaton.dev/results.html?facetvalue=value2"
+              "facetId": "f4value2",
+              "facetLabel": "Value 2",
+              "facetURL": "t10-search-results.html?facetvalue=f4value2",
+              "facetIsChecked": false
             },
             {
-              "id": "value3",
-              "label": "Value 3",
-              "url": "http://eaton.dev/results.html?facetvalue=value3"
+              "facetId": "f4value3",
+              "facetLabel": "Value 3",
+              "facetURL": "t10-search-results.html?facetvalue=f4value3",
+              "facetIsChecked": false
             },
             {
-              "id": "value4",
-              "label": "Value 4",
-              "url": "http://eaton.dev/results.html?facetvalue=value4"
+              "facetId": "f4value4",
+              "facetLabel": "Value 4",
+              "facetURL": "t10-search-results.html?facetvalue=f4value4",
+              "facetIsChecked": false
             }
           ]
         }
@@ -275,9 +317,10 @@ use(function () {
     data.search = {
       "ajaxRequestUrl": "/content/eaton-static/us/en/qa-templates/test-data/search-results--more-data.json",
       "ajaxRequestNextPage": 2,
-      "resultsCount": 184,
-      "resultsLabel": 'results',
+      "resultsCount": 200,
       "currentPage": 1,
+      "resultsLabel": 'Results',
+      "loadMoreLabel": 'Load More',
       "resultsOptions": {
         "showLoadMore": true,
         "disclaimerEnabled": true,
@@ -294,55 +337,86 @@ use(function () {
         "removeFilterLabel": "Remove Filter",
         "clearAllFilters": {
           "label": "Clear filters",
-          "url": "http://eaton.dev/results.html?clear-all-filters=true",
+          "url": "t10-search-results.html?clear-all-filters=true",
           "target": "_self"
         },
-        "items": [
+        "values": [
           {
             "label": "Products",
-            "url": "http://eaton.dev/results.html?remove-filter=products",
+            "url": "t10-search-results.html?remove-filter=products",
+            "target": "_self"
+          },
+          {
+            "label": "700 VA",
+            "url": "t10-search-results.html?remove-filter=700-va",
             "target": "_self"
           },
           {
             "label": "1000 VA",
-            "url": "http://eaton.dev/results.html?remove-filter=1000-va",
+            "url": "t10-search-results.html?remove-filter=1000-va",
+            "target": "_self"
+          },
+          {
+            "label": "2000 VA",
+            "url": "t10-search-results.html?remove-filter=2000-va",
+            "target": "_self"
+          },
+          {
+            "label": "3000 VA",
+            "url": "t10-search-results.html?remove-filter=3000-va",
+            "target": "_self"
+          },
+          {
+            "label": "3500 VA",
+            "url": "t10-search-results.html?remove-filter=3500-va",
             "target": "_self"
           }
         ]
       },
       "sortBy": {
-        "sortByLabel": "Sort by",
+        "sortByLabel": "Sort By",
         "items": [
           {
             "label": "Relevance",
-            "url": 'http://eaton.dev/results.html?sortby=relevance',
+            "url": 't10-search-results.html?sortby=relevance',
             "target": '_self'
           },
           {
             "label": "Newest",
-            "url": 'http://eaton.dev/results.html?sortby=newest',
+            "url": 't10-search-results.html?sortby=newest',
             "target": '_self'
           },
           {
             "label": "A to Z",
-            "url": 'http://eaton.dev/results.html?sortby=a-z',
+            "url": 't10-search-results.html?sortby=a-z',
             "target": '_self'
           },
           {
             "label": "Z to A",
-            "url": 'http://eaton.dev/results.html?sortby=z-a',
+            "url": 't10-search-results.html?sortby=z-a',
             "target": '_self'
           }
         ]
       },
-      "results": [
+    };
+
+
+    //-----------------------------------
+    // Results List for: Page T10-search-results
+    //-----------------------------------
+    data.search.searchResults = {
+      "resultsList": [
         {
           "contentType": "family",
           "contentItem": {
             "name": "Network, Server & Storage UPS",
-            "imgSrc": "/content/dam/eaton/images/products/product-1-thumbnail.png",
-            "imgAlt": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "mobile": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "altText": "Network, Server & Storage UPS",
+            },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
               "url": "http://www.cooperindustries.com/",
@@ -386,9 +460,13 @@ use(function () {
           "contentType": "sku",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "imgSrc": "/content/dam/eaton/images/products/product-2-thumbnail.png",
-            "imgAlt": "9E6Ki-Eaton 9E",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "mobile": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+              "altText": "9E6Ki-Eaton 9E",
+            },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
               "url": "http://www.cooperindustries.com/",
@@ -419,9 +497,13 @@ use(function () {
           "contentType": "family",
           "contentItem": {
             "name": "Network, Server & Storage UPS",
-            "imgSrc": "/content/dam/eaton/images/products/product-3-thumbnail.png",
-            "imgAlt": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "mobile": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "altText": "Network, Server & Storage UPS",
+            },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
               "url": "http://www.cooperindustries.com/",
@@ -466,9 +548,13 @@ use(function () {
           "contentType": "sku",
           "contentItem": {
             "name": "9E6Ki-Eaton 9E",
-            "imgSrc": "/content/dam/eaton/images/products/product-7-thumbnail.png",
-            "imgAlt": "9E6Ki-Eaton 9E",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "mobile": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+              "altText": "9E6Ki-Eaton 9E",
+            },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
               "url": "http://www.cooperindustries.com/",
@@ -513,9 +599,13 @@ use(function () {
           "contentType": "family",
           "contentItem": {
             "name": "Network, Server & Storage UPS",
-            "imgSrc": "/content/dam/eaton/images/products/product-5-thumbnail.png",
-            "imgAlt": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
+            "image": {
+              "mobile": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+              "altText": "Network, Server & Storage UPS",
+            },
             "link": {
               "text": "www.cooperindustries.com/.../product_updates.html",
               "url": "http://www.cooperindustries.com/",

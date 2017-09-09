@@ -14,6 +14,8 @@
 //--------------
 @mixin h1-hero--mobile {
   font-family: 'EatonMedium', sans-serif;
+  // font-size: 7.0rem;
+  // line-height: 8.0rem;
   font-size: 3.5rem;
   line-height: 4rem;
 }
@@ -21,7 +23,7 @@
 @mixin h1-hero--desktop {
   font-family: 'EatonMedium', sans-serif;
   font-size: 5.4rem;
-  line-height: 6.3rem;
+  line-height: 6.8rem;
 }
 
 @mixin h1-hero {
@@ -295,15 +297,18 @@
 @mixin eyebrow-small--mobile {
   font-family: $font-family__secondary;
   font-size: 1.4rem;
-  line-height: 1.7rem;
+  line-height: normal;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 @mixin eyebrow-small--desktop {
   font-family: $font-family__secondary;
   font-size: 1.8rem;
-  line-height: 2rem;
+  line-height: 2rem;  // updated as per CRUX feedback 2017-08-14  https://lion.app.box.com/notes/210357592212
+  // line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 @mixin eyebrow-small {

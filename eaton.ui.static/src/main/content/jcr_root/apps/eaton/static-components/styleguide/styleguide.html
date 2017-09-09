@@ -17,6 +17,7 @@ Component used to showcase different UI Elements
       <div class="sg-section stlyeguide-toc b-body-copy-small">
         <h2>Table of contents</h2>
         <ol>
+          <li><a href="#sg-change-log">Change log</a></li>
           <li><a href="#sg-colors">Color Palette</a></li>
           <li><a href="#sg-fonts">Fonts</a></li>
           <li><a href="#sg-typography">Typography</a></li>
@@ -24,8 +25,36 @@ Component used to showcase different UI Elements
           <li><a href="#sg-scss-helpers">SCSS Helpers</a></li>
           <li><a href="#sg-glyphicon-font">Glyphicon-Font</a></li>
         </ol>
-        <hr class="sg-divider" />
       </div>
+
+      <div id="sg-change-log" class="sg-section styleguide-changelog b-body-copy-small">
+        <h2>Change log:</h2>
+        <ul class="styleguide-changelog__list">
+          <li>
+            <h3>Typography Updates - Style Guide CRUX Feedback 08.14</h3>
+            <ul>
+              <li>
+                <h4>Headings</h4>
+                <ul>
+                  <li><strong>H1 Hero Desktop: </strong> line-height: 6.3rem </li>
+                  <li><strong>H1 Desktop:</strong> size:  5.0rem   line-height: 6.0rem </li>
+                </ul>
+              </li>
+
+              <li>
+                <h4>Body Copy</h4>
+                <ul>
+                  <li><strong>Hero Description Desktop:</strong> line-height: 3.2rem </li>
+                  <li><strong>Eyebrow Large Desktop:</strong> line-height: 2.8rem </li>
+                  <li><strong>Eyebrow Small Desktop:</strong> line-height: 2.0rem </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="sg-divider" />
 
       <!--/* Section: Colors */-->
       <sly data-sly-use.tpl="partials/styleguide-colors.html">
@@ -53,8 +82,10 @@ Component used to showcase different UI Elements
       </sly>
 
       <!--/* Section: Glyphicon-Font */-->
-      <sly data-sly-use.tpl="partials/styleguide-glyphicon-font.html">
-        <sly data-sly-call="${ tpl.section @ data=data.glyphiconFont }"></sly>
+      <sly data-sly-use.glyphicons="${ 'data/glyphicons-data.js' }">
+        <sly data-sly-use.tpl="partials/styleguide-glyphicon-font.html">
+          <sly data-sly-call="${ tpl.section @ data=glyphicons }"></sly>
+        </sly>
       </sly>
 
     </div>
@@ -106,6 +137,41 @@ Component used to showcase different UI Elements
     }
 
 
+    .styleguide-changelog__list {
+      background: #F2F2F2;
+      border: 1px solid #DDD;
+      padding: 20px;
+      list-style-type: none;
+    }
+
+    .styleguide-changelog__list h3 {
+      padding-bottom: .5rem;
+      margin-bottom: .5rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      font-size: 2.6rem;
+      color: #005EB8;
+      font-weight: normal;
+    }
+
+    .styleguide-changelog__list h4 {
+      font-size: 2rem;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+
+    .sg-section .panel-heading {
+      background-color: #005EB8;
+      border: 0;
+      border-radius: 0;
+    }
+
+    .sg-section .panel-title a,
+    .sg-section .panel-title a small,
+    .sg-section .panel-title a:hover {
+      color: #FFF;
+    }
+
+
     /*------------------------------------*
     * Styleguide (SG) Responsive Tables
     *-------------------------------------*/
@@ -146,7 +212,6 @@ Component used to showcase different UI Elements
         padding-right: 10px;
         white-space: nowrap;
       }
-
     }
 
     </style>

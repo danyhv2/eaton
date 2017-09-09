@@ -1,9 +1,62 @@
 //-----------------------------------
 // Component: Title - View: With Eyebrow and Byline
 //-----------------------------------
-.eaton-title--eyebrow-and-byline {
+h2.eaton-title__eyebrow-and-byline {
 
-  margin-top: $spacing__lg;
-  margin-bottom: $spacing__sm;
+  margin-top: 0;
+  margin-bottom: 15px;
 
+}
+
+// .eaton-title--eyebrow-and-byline .article-list-single-feature--border{
+// 	margin-bottom: 30px;
+// }
+
+.eaton-title {
+
+  &--eyebrow-and-byline {
+
+    // EATON-372 & EATON-598 - General spacing between components
+    margin-top: $spacing__md;
+  }
+
+
+  &__line {
+    border-top: 4px solid $color__primary-blue;
+    width: 60px;
+    display: block;
+    margin: 20px 0 25px;
+  }
+
+  &__eyebrow {
+    margin-bottom: 15px;
+    display: block;
+
+    i {
+      font-weight: normal;
+      font-size: 1.2rem;
+      margin-right: 5px;
+    }
+  }
+
+  .dark-theme & {
+    &__headline,
+    &__eyebrow,
+    &__byline {
+      color: $color__white;
+    }
+
+    &__line {
+      border-color: $color__white;
+    }
+  }
+
+  @include media-desktop-and-up {
+
+    &__eyebrow {
+      i {
+        font-size: 1.6rem;
+      }
+    }
+  }
 }

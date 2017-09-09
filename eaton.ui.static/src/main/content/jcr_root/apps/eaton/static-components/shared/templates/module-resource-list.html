@@ -10,10 +10,9 @@
                             <sly data-sly-list="${ data.anchors }">
                                 <li class="module-anchor-links__list-item b-body-copy-small">
                                     <!--/* NOTE: data-scroll-to="#element-id" is a CSS Selector (Class, ID) */-->
-                                    <button
-                                            data-scroll-to="#${ item.anchorId }"
-                                            data-scroll-to-offset-enabled="true"
-                                            class="module-anchor-links__list-link button--reset">
+                                    <button data-scroll-to="#${ item.anchorId }"
+                                      data-scroll-to-offset-enabled="true"
+                                      class="module-anchor-links__list-link button--reset">
                                         <span>${ item.anchorTitle }</span>
                                         <i class="icon icon-chevron-right" aria-hidden="true"></i>
                                     </button>
@@ -44,7 +43,7 @@
                                         <li class="eaton-download-list__item secondary-content-accordion__download-icon">
                                             <i class="icon icon-download" aria-hidden="true"></i>
                                             <div class="eaton-download-list__document">
-                                                <a href="${document.url}" aria-label="Download ${document.type} for ${ document.title }" target="${document.target}" class="b-h5-link">${document.title}</a>
+                                                <a href="${document.url}" aria-label="Download ${document.type} for ${ document.title }" target="${document.target}" class="b-heading-h5">${document.title}</a>
                                                 <span data-sly-test="${document.isNew}" class="secondary-content-accordion__badge">NEW</span>
                                                 <span class="b-body-copy-small eaton-download-list__size">(${document.type} ${document.size}, ${document.date})</span>
                                             </div>

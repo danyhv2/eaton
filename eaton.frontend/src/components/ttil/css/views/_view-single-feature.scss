@@ -20,7 +20,8 @@
   }
 
   &__image {
-    max-width: 300px;
+
+    img { width: 100%; }
   }
 
   &__eyebrow {
@@ -34,14 +35,13 @@
   }
 
   &__item {
-    display: flex;
-    align-items: center;
     padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
     text-decoration: none;
+    display: block;
 
     i {
-      font-size: 0.75em;
-      margin-left: 0.25em;
+      font-size: 1.4rem;
+      margin-left: 0.4rem;
     }
 
     .dark-theme & {

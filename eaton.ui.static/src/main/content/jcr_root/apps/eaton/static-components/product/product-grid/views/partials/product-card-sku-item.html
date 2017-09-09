@@ -7,19 +7,21 @@
   Since that files contains a Javascript Template that is used when more results are loaded with AJAX
 
 */-->
-<template data-sly-template.item="${ @ data }">
+<template data-sly-template.item="${ @ results, itemData }">
 
   <div class="product-card-sku">
 
     <!--/* Product Image */-->
     <div class="product-card-sku__image-wrapper b-body-copy-small">
-      <a href="${ data.contentItem.link.url @ context='uri' }"
+      <a href="${ itemData.contentItem.link.url @ context='uri' }"
         class="product-card-sku__image-link"
-        target="${ data.contentItem.link.target }"
+        target="${ itemData.contentItem.link.target }"
       >
-        <img src="${ data.contentItem.imgSrc }"
-          class="product-card-sku__image"
-          alt="${ data.contentItem.name }" />
+        <!-- Start: Rendition Image Component -->
+        <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+          <sly data-sly-call="${ tpl.module @ data=itemData.contentItem.image }"></sly>
+        </sly>
+        <!-- End: Rendition Image Component -->
       </a>
     </div>
 
@@ -28,37 +30,37 @@
 
       <div class="product-card-sku__title-wrapper">
         <h3 class="product-card-sku__name">
-          <a href="${ data.contentItem.link.url @ context='uri' }"
-            target="${ data.contentItem.link.target }"
+          <a href="${ itemData.contentItem.link.url @ context='uri' }"
+            target="${ itemData.contentItem.link.target }"
             class="product-card-sku__url-link"
           >
-            <span class="name-label">${ data.contentItem.name }</span>
+            <span class="name-label">${ itemData.contentItem.name }</span>
             <i class="icon icon-chevron-right" aria-hidden="true"></i>
           </a>
         </h3>
-        <div class="product-card-sku__price b-body-copy">${ '${0}*' @ format=[ data.contentItem.price ] }</div>
+        <div class="product-card-sku__price b-body-copy">${ '${0}*' @ format=[ itemData.contentItem.productPrice ] }</div>
       </div>
 
       <!--/* Product Links */-->
       <ul class="product-card-sku__links-list">
         <li class="product-card-sku__link-item">
-          <a href="${ data.contentItem.productLinks.specificationsURL @ context='uri' }"
+          <a href="${ itemData.contentItem.productLinks.specificationsURL @ context='uri' }"
             class="product-card-sku__link-item-link"
             target="_self"
-            aria-label="${ 'Go to' @ i18n } ${ 'Specifications' @ i18n }"
+            aria-label="${ 'Go to' @ i18n } ${ results.productSpecificationTitle }"
           >
-            <span class="link-label">${ 'Specifications' @ i18n }</span>
+            <span class="link-label">${ results.productSpecificationTitle }</span>
             <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
           </a>
         </li>
 
         <li class="product-card-sku__link-item">
-          <a href="${ data.contentItem.productLinks.resourcesURL @ context='uri' }"
+          <a href="${ itemData.contentItem.productLinks.resourcesURL @ context='uri' }"
             class="product-card-sku__link-item-link"
             target="_self"
-            aria-label="${ 'Go to' @ i18n } ${ 'Resources' @ i18n }"
+            aria-label="${ 'Go to' @ i18n } ${ results.productResourcesTitle }"
           >
-            <span class="link-label">${ 'Resources' @ i18n }</span>
+            <span class="link-label">${ results.productResourcesTitle }</span>
             <i class="icon icon-chevron-right u-visible-mobile" aria-hidden="true"></i>
           </a>
         </li>
@@ -70,13 +72,13 @@
     <!--/* Card Content */-->
     <div class="product-card-sku__content">
       <div class="product-card-sku__attrs-list"
-        data-sly-list.attribute="${ data.contentItem.productAttributes }">
+        data-sly-list.attribute="${ itemData.contentItem.productAttributes }">
         <div class="product-card-sku__attrs-list-item">
-          <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">${ attribute.label }</div>
-          <div class="product-card-sku__attr-value b-body-copy">${ attribute.value }</div>
+          <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">${ attribute.productAttributeLabel }</div>
+          <div class="product-card-sku__attr-value b-body-copy">${ attribute.productAttributeValue }</div>
         </div>
       </div>
-      <div class="product-card-sku__description">${ data.contentItem.description }</div>
+      <div class="product-card-sku__description">${ itemData.contentItem.description }</div>
     </div>
 
   </div>

@@ -9,10 +9,12 @@ use(function () {
             text: '<p>Built in energy metering.</p><p>Extends battery service life by 50% with ABM technology.</p>' +
             '<p>Maximizes availability with extended battery modules for more runtime and optional maintenance bypass.</p>' +
             '<p>Help save money and protect the environment through energy efficiency operation.</p>',
-            imgSrc: '',
-            imgMobile:'',
-            imgTablet:'',
-            imgAlt: '',
+            image: {
+                mobile: '',
+                tablet: '',
+                desktop: '',
+                altText: ''
+            },
             backgroundColor: '#FFFFFF',
             cta: {
                 url: '',
@@ -27,10 +29,12 @@ use(function () {
             '<p>Abrasion, ozone, and weather resistant cover</p>' +
             '<p>For suction & discharge of dry bulk materials, sand, gravel and dry cement</p>' +
             '<p>Abrasion resistant tube</p>',
-            imgSrc: '',
-            imgMobile:'',
-            imgTablet:'',
-            imgAlt: '',
+            image: {
+                mobile: '',
+                tablet: '',
+                desktop: '',
+                altText: ''
+            },
             backgroundColor: '#FFFFFF',
             cta: {
                 url: '',
@@ -42,10 +46,12 @@ use(function () {
     		title: 'Benefits',
             text: '<p>Designed for virtualized environments, these models offer double-conversion topology for constant power condition monitoring and up to 93 percent efficiency. They work well in IT, industrial and medical applications.</p>' +
             '<p>With an array of form factors, options and accessories, these virtualization-ready models maximize the availability of your IT systems. They also pack more power and runtime into a small space than traditional UPSs.</p>',
-            imgSrc: '/content/dam/eaton/images/feature_block_image.png',
-            imgMobile:'/content/dam/eaton/images/feature_block_image.png',
-            imgTablet:'/content/dam/eaton/images/feature_block_image.png',
-            imgAlt: 'Alt Text goes here',
+            image: {
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                desktop: '/content/dam/eaton/images/feature_block_image.png',
+                altText: ''
+            },
             backgroundColor: '#FFFFFF',
             cta: {
                 url: '',
@@ -58,10 +64,12 @@ use(function () {
             text: '<p>Built in energy metering.</p><p>Extends battery service life by 50% with ABM technology.</p>' +
             '<p>Maximizes availability with extended battery modules for more runtime and optional maintenance bypass.</p>' +
             '<p>Help save money and protect the environment through energy efficiency operation.</p>',
-            imgSrc: '/content/dam/eaton/images/feature_block_image.png',
-            imgMobile:'/content/dam/eaton/images/feature_block_image.png',
-            imgTablet:'/content/dam/eaton/images/feature_block_image.png',
-            imgAlt: 'Alt Text goes here',
+            image: {
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-8.jpeg',
+                desktop: '/content/dam/eaton/images/feature_block_image.png',
+                altText: ''
+            },
             backgroundColor: '#FFFFFF',
             cta: {
                 url: '',

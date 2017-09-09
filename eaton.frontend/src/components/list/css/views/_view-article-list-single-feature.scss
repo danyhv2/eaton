@@ -1,6 +1,6 @@
 .article-list-single-feature {
 
-  padding-bottom: 60px;
+  margin-top: 50px;
 
   &--border {
     border-top: 4px solid;
@@ -30,6 +30,10 @@
   &__cta {
     display: flex;
     justify-content: center;
+  }
+
+  img {
+    width: 100%;
   }
 }
 

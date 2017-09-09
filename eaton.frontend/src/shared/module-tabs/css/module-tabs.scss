@@ -26,21 +26,24 @@
 
     &:first-child { border-left: 1px solid $color__white; }
 
+    // EATON-431: (NOTE: Add Underline to links only and Not to Disabled Tabs)
+    //--------------
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: underline;
+    }
+
   }
 
   &__list-link {
     background-color: transparent;
     display: block;
-    padding: 2rem;
+    padding: 2rem 6rem;
     text-align: center;
-
-    &:hover,
-    &:focus,
-    &:active {
-      text-decoration: none;
-    }
-
+    font-size: 1.8rem;
   }
+
 
   // Active Tab
   //--------------

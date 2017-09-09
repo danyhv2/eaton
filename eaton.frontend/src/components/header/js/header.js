@@ -19,10 +19,15 @@ App.header = (function() {
   const closeMegaMenuBtn = componentClass.find('.mega-menu-title__close-menu');
   const toggleMobileMenuBtn = $('.header-primary-nav__toggle-mobile-menu');
   const openSearchDropdownBtn = $('.header-primary-nav__open-search');
+  const openDrawerBtn = $('.open-country-selector');
+  const regionDesktopList = $('.country-selector-drawer__region-list');
+  const regionPanels = $('.country-selector-drawer .panel-collapse');
+
+  // Media Breakpoint
+  let mediumScreenWidth = App.global.constants.GRID.MD;
 
   // Check AEM Author Mode
   const isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
-
   /**
   * Init
   */
@@ -30,9 +35,33 @@ App.header = (function() {
     // If not in AEM Author Mode - initialize scripts
     if (!isAEMAuthorMode) {
       addEventListeners();
+
+      // Subscribe - Cookie Acceptance
+      $(document).on( App.global.constants.EVENTS.HEADER.COOKIE_SET, function() {
+        updateHeaderLayoutMobile();
+      });
+
+      // Handle Resizing scenarios for the Header Layout
+      let lazyResize = App.global.utils.throttle(updateHeaderLayoutMobile, 200);
+      windowEl.on('resize', lazyResize);
     }
   };
 
+  /**
+  * Handle height updation of Header Modules / components
+  * Includes Top offset - Mega Menu, Links container, Search
+  */
+  const updateHeaderLayoutMobile = () => {
+    const headerEl = $('header');
+    const headerHeight = headerEl.height() + 'px';
+
+    if (windowEl.width() < mediumScreenWidth) {
+      headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', headerHeight);
+    } else {
+      // Reset the top offset for the elements - Desktop
+      headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', 'unset');
+    }
+  };
 
   /**
   * Handle Page Scroll - Sticky Navigation Behaviors
@@ -40,10 +69,13 @@ App.header = (function() {
   const handleScroll = (event) => {
 
     const scrollTop = windowEl.scrollTop();
-    const headerHeight = 40;
+    const utilityNavOffset = $('.header-utility-nav').offset().top;
+    const utilityNavHeight = $('.header-utility-nav').outerHeight();
 
-    if ( scrollTop > (headerHeight)) {
+    if ( scrollTop > ((utilityNavOffset + utilityNavHeight))) {
       componentClass.addClass('eaton-header--fixed');
+      // Close the drawer if open - Country Selector
+      bodyEl.removeClass('drawer-open drawer-is-animating');
     } else {
       componentClass.removeClass('eaton-header--fixed');
     }
@@ -60,6 +92,7 @@ App.header = (function() {
 
     // Close Search if open
     closeSearch(event);
+    updateHeaderLayoutMobile();
 
     // Highlight only the active Link
     primaryLinks.removeClass('active');
@@ -99,6 +132,8 @@ App.header = (function() {
     // Close Search if open
     closeSearch(event);
 
+    updateHeaderLayoutMobile();
+
     if (bodyEl.hasClass('nav-open')) {
 
       // Check if Level 2 - open/close
@@ -121,7 +156,7 @@ App.header = (function() {
   */
   const handleTitleClick = (event) => {
     const activeLink = primaryLinks.filter('.active');
-    if (windowEl.width() <= 991) {
+    if (windowEl.width() < mediumScreenWidth) {
       event.preventDefault();
 
       bodyEl.removeClass('level-2-open');
@@ -136,6 +171,7 @@ App.header = (function() {
 
     event.preventDefault();
     closeMegaMenu(event);
+    updateHeaderLayoutMobile();
 
     bodyEl.toggleClass('search-open');
 
@@ -161,9 +197,55 @@ App.header = (function() {
   };
 
   /**
+  * Handle Click behaviors - for Selector Drawer - Desktop
+  */
+  const openDrawer = (event) => {
+
+    event.preventDefault();
+
+    // Check for window-width.
+    // If Desktop Breakpoint, activate the first region-panel
+    // Close Search & Mega Menu if open
+    if (windowEl.width() >= mediumScreenWidth) {
+      regionPanels.removeClass('in');
+      regionPanels.filter('#drawer-collapse-0').addClass('in');
+
+      regionDesktopList.find('a').removeClass('active');
+      regionDesktopList.find('a').eq(0).addClass('active');
+
+      setTimeout(function() {
+        $('.country-selector-drawer__close-menu').focus();
+      }, 10);
+
+      closeMegaMenu(event);
+      closeSearch(event);
+    }
+
+    bodyEl.addClass('drawer-open drawer-is-animating');
+    $(event.currentTarget).attr('aria-expanded', true);
+
+    // After the drawer transition is completed
+    document.querySelector('.full-page-drawer').addEventListener('transitionend', function(event) {
+      bodyEl.removeClass('drawer-is-animating');
+    }, false);
+  };
+
+  /**
+  * Breakpoint Change Callback Function
+  * @param { Object} event - MatchMedia Event Object
+  */
+  const onBreakpointChange = (event) => {
+    // Close Menu & Search
+    closeMegaMenu(event);
+    closeSearch(event);
+  };
+
+  /**
    * Bind All Event Listeners
    */
   const addEventListeners = () => {
+
+    let mqDesktop = null;
 
     // Handle Scroll - Sticky Navigation Behaviors
     windowEl.on('scroll', handleScroll);
@@ -182,6 +264,20 @@ App.header = (function() {
 
     // Handle click on Search Icon
     openSearchDropdownBtn.on('click', handleSearch);
+
+    // Handle click on Country Selector button
+    openDrawerBtn.on('click', openDrawer);
+
+    // JavaScript MediaQueries
+    //--------------
+    if (window.matchMedia) {
+
+      // min-width 992px
+      mqDesktop = window.matchMedia(App.global.constants.MEDIA_QUERIES.DESKTOP);
+
+      // EventListener that gets fired when the Breakpoint changes from Mobile to Desktop / Desktop to Mobile
+      mqDesktop.addListener(onBreakpointChange);
+    }
   };
 
   /**

@@ -6,6 +6,9 @@ vendors/bootstrap-3.3.7.min.js
 vendors/bootstrap-accessibility.min.js
 vendors/accessibility-focus-ring.js
 vendors/slick.min.js
+vendors/autosize.min.js
+vendors/jquery.zoom.min.js
+vendors/jquery.touch-swipe.min.js
 vendors/choices.min.js
 
 
@@ -13,5 +16,6 @@ vendors/choices.min.js
 etn-global.js
 etn-global-constants.js
 etn-global-utils.js
+etn-global-templates.js
 etn-scroll-to.js
 etn-form.js

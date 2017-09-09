@@ -112,3 +112,13 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+.slick-slider ul {
+		text-align: center;
+}
+
+.slick-slider ul li {
+		display: inline;
+		padding-right: 10px;
+}
+

@@ -8,9 +8,8 @@
   <div class="responsive-table">
     <div class="container">
       <h2 class="responsive-table__title b-heading-h3">${ data.sectionTitle }</h2>
-      <h3>${ data.l }</h3>
-      <div class="responsive-table__content">
 
+      <div class="responsive-table__content">
 
         <!--/* Table Header For Desktop Breakpoint Only */-->
         <div class="responsive-table__group responsive-table--visible-desktop">
@@ -42,7 +41,8 @@
               <!--/*
                 NOTE: This component only supports 6 Columns MAX (The Label Column + Other 5 Columns)
               */-->
-              <div class="responsive-table__group-item" data-sly-test="${ columnList.count < 6 }">
+              <div class="responsive-table__group-item"
+                data-sly-test="${ columnList.count < data.maxAllowedColumns }">
                 <div class="responsive-table__cell responsive-table--visible-mobile">${ data.tableHeader.columns[ columnList.index ] }</div>
                 <div class="responsive-table__cell">${ column }</div>
               </div>

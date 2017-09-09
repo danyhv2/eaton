@@ -7,23 +7,72 @@
 
   <div class="eaton-breadcrumb">
     <div class="container">
-      <ul data-sly-list.link="${data.links}" class="eaton-breadcrumb__list">
-        <li class="eaton-breadcrumb__list-item" >
+      <sly data-sly-test="${data.links.length < 6}">
+        <ul data-sly-list.link="${data.links}" class="eaton-breadcrumb__list">
+          <li class="eaton-breadcrumb__list-item" >
 
-          <!--/* If the Breadcrum item has a valid / non-empty url */-->
-        	<a data-sly-test.haslink="${ link.url }"
-            href="${ link.url }"
-            target="${ link.target }"
-            aria-label="Go back to ${ link.text }">${ link.text }</a>
+            <!--/* If the Breadcrum item has a valid / non-empty url */-->
+          	<a data-sly-test.haslink="${ link.url }"
+              href="${ link.url }"
+              target="${ link.target }"
+              aria-label="Go back to ${ link.text }">${ link.text }</a>
 
-          <!--/* Else render just the label witout link */-->
-          <span data-sly-test="${ !haslink }">${ link.text }</span>
+            <!--/* Else render just the label witout link */-->
+            <span data-sly-test="${ !haslink }">${ link.text }</span>
 
-          <!--/* Don't render the icon for the last link */-->
-          <i data-sly-test="${ linkList.index != data.links.length }"
-            class="icon icon-chevron-right"></i>
-        </li>
-      </ul>
+            <!--/* Don't render the icon for the last link */-->
+            <i data-sly-test="${ linkList.index != data.links.length }"
+              class="icon icon-chevron-right"></i>
+          </li>
+        </ul>
+      </sly>
+      <sly data-sly-test="${data.links.length >= 6}">
+        <ul data-sly-list.link="${data.links}" class="eaton-breadcrumb__list">
+          <sly data-sly-test="${linkList.first}">
+
+            <li class="eaton-breadcrumb__list-item" >
+
+
+              <!--/* If the Breadcrum item has a valid / non-empty url */-->
+              <a data-sly-test.haslink="${ link.url}"
+                href="${ link.url }"
+                target="${ link.target }"
+                aria-label="Go back to ${ link.text }">${ link.text }</a>
+
+              <!--/* Else render just the label witout link */-->
+              <span data-sly-test="${ !haslink }">${ link.text }</span>
+
+              <!--/* Don't render the icon for the last link */-->
+              <i data-sly-test="${ linkList.index != data.links.length }"
+                class="icon icon-chevron-right"></i>
+            </li>
+          </sly>
+          <sly data-sly-test="${linkList.index == 1}">
+            <li class="eaton-breadcrumb__list-item" >
+              <span>...</span>
+              <i class="icon icon-chevron-right"></i>
+            </li>
+          </sly>
+          <sly data-sly-test="${linkList.index >= data.grandparentIndex}">
+            <li class="eaton-breadcrumb__list-item" >
+
+
+              <!--/* If the Breadcrum item has a valid / non-empty url */-->
+              <a data-sly-test.haslink="${ link.url}"
+                href="${ link.url }"
+                target="${ link.target }"
+                aria-label="Go back to ${ link.text }">${ link.text }</a>
+
+              <!--/* Else render just the label witout link */-->
+              <span data-sly-test="${ !haslink }">${ link.text }</span>
+
+              <!--/* Don't render the icon for the last link */-->
+              <i data-sly-test="${ linkList.index != data.links.length }"
+                class="icon icon-chevron-right"></i>
+            </li>
+          </sly>
+        </ul>
+      </sly>
     </div>
   </div>
 

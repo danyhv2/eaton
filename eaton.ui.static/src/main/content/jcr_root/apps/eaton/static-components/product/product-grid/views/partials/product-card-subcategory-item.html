@@ -1,0 +1,37 @@
+<!--/*
+  M-37 - Product Card: Subcategory Item
+
+  -
+  NOTE: If the HTML structure of this file changes, please also Update the file:
+  `/eaton.frontend/src/components/product-grid/js/product-grid.js`
+  Since that files contains a Javascript Template that is used when more results are loaded with AJAX
+
+*/-->
+<template data-sly-template.item="${ @ results, itemData }">
+
+  <div class="product-card-subcategory">
+
+    <!--/* Active Area / Link */-->
+    <a href="${ itemData.contentItem.link.url }"
+      target="${ itemData.contentItem.link.target }"
+      class="product-card-subcategory__link">
+      <span class="sr-only">${ 'Go to' } ${ itemData.contentItem.name }</span>
+    </a>
+
+    <!--/* Card Content */-->
+    <div class="product-card-subcategory__image-wrapper">
+      <!-- Start: Rendition Image Component -->
+      <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+        <sly data-sly-call="${ tpl.module @ data=itemData.contentItem.image }"></sly>
+      </sly>
+      <!-- End: Rendition Image Component -->
+    </div>
+
+    <div class="product-card-subcategory__content-wrapper">
+      <div class="product-card-subcategory__subcategory b-eyebrow-small">${ itemData.contentItem.subcategory }</div>
+      <h2 class="product-card-subcategory__name">${ itemData.contentItem.name }</h2>
+    </div>
+
+  </div>
+
+</template>

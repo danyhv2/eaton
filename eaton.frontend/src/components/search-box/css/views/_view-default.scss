@@ -7,6 +7,11 @@
   padding: $spacing__sm 0;
   background: $color__primary-blue;
 
+  textarea{
+    padding: 7px 12px 0 0;
+    height: 38px;
+  }
+
   .form-group {
     display: flex;
     border-bottom: 1px solid $color__white;
@@ -23,6 +28,7 @@
     color: $color__white;
     background: transparent;
     padding: 0;
+    resize: none;
 
     &:focus {
       //-----------------------------------
@@ -67,7 +73,7 @@
   &__form-submit { // Styles for Form Elements
     color: $color__white;
     background: transparent;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 14px;
   }
 
   &__results {
@@ -133,6 +139,12 @@
   // Mobile Breakpoint
   //-----------------------------------
   @include media-mobile-portrait {
+    .eaton-search--default__form-input {
+      &:valid + .eaton-search--default__form-mobile-label {
+        display: none;
+      }
+    }
+
     &__form-mobile-label {
       position: absolute;
       width: 100%;
@@ -142,7 +154,23 @@
       line-height: normal;
       left: 0;
       top: 0;
-      display: inline-block;
+      display: table;
+      height: 46px;
+      font-size: 2rem;
+
+      &.with-external {
+        padding-right: 87px;
+      }
+
+      &.u-visible-mobile{
+        padding-top: 10px;
+      }
+
+      span {
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+      }
     }
 
     //-----------------------------------
@@ -173,7 +201,7 @@
   //-----------------------------------
   @include media-mobile-and-tablet {
     &__form-input {
-      font-size: 1em;
+      font-size: 1.8rem;
       padding-right: 20px;
     }
 
@@ -193,13 +221,25 @@
 
   }
 
+  @include media-tablet-and-up {
+    &__form-input {
+      font-size: 2.6rem;
+    }
+  }
+
+  @include media-mobile-only {
+    &__form-input {
+      font-size: 2rem;
+    }
+  }
+
   //-----------------------------------
   // Desktop Breakpoint
   //-----------------------------------
   @include media-desktop-and-up {
-    &__form-input,
+
     .icon-search {
-      font-size: 1.5em;
+      font-size: 2.1rem;
       left: 10px;
 
       .eaton-header--fixed & {
@@ -212,5 +252,12 @@
         padding-right: 0;
       }
     }
+
+    &__result-item {
+      line-height: 3rem;
+    }
   }
 }
+
+
+  

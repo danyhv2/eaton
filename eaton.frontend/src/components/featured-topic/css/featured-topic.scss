@@ -5,17 +5,11 @@
 @import "../../../global/css/_config/sass";
 
 .eaton-featured-topic {
-  padding-top: $spacing__xl;
-  padding-bottom: $spacing__xl;
+  margin-top: $spacing__md;
+  margin-bottom: $spacing__md;
 
   .glyphicon {
     display: none;
-  }
-
-  .eaton-link-list-vertical__list-link,
-  .eaton-link-list-vertical__eyebrow {
-    font-weight: bold;
-    text-transform: none;
   }
 
   &__text {
@@ -26,10 +20,15 @@
     margin-top: $spacing__md;
   }
 
-  // &__list-title {
-  //   font-weight: bold;
-  //   margin-bottom: $spacing__sm;
-  // }
+  .eaton-link-list-vertical__eyebrow {
+    @include h4;
+    text-transform: none;
+  }
+
+  .eaton-link-list-vertical__list-link {
+    @include h5-link-bold;
+    font-family: $font-family__secondary;
+  }
 
   @include media-mobile-only {
     &__title {
@@ -59,11 +58,17 @@
 
     .eaton-link-list-vertical__eyebrow {
       margin-bottom: 10px;
-      font-size: 18px;
+    }
+  }
+
+  @include media-tablet-and-up {
+    .eaton-link-list-vertical__list-link {
+      font-family: $font-family__secondary;
     }
   }
 
   @include media-desktop-and-up {
+
     &__list-left {
       &::after {
         background: $color__secondary-gray6;

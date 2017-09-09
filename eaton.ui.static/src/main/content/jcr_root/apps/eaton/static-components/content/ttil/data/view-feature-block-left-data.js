@@ -11,11 +11,14 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'Make a bigger difference'
             },
-            imgSrc: '/content/dam/eaton/images/feature_block_desktop.png',
-            imgMobile:'/content/dam/eaton/images/feature_block_desktop.png',
-            imgTablet:'/content/dam/eaton/images/feature_block_desktop.png',
+            image: {
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                desktop: '/content/dam/eaton/images/feature_block_desktop.png',
+                altText: '',
+                alignment: 'center'
+            },
             imgAlignment:'left',
-            imgAlt: 'Test image',
             backgroundColor: '#005EB8'
         }
    
@@ -27,11 +30,14 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'Make a bigger difference'
             },
-            imgSrc: '/content/dam/eaton/images/feature_block_desktop.png',
-            imgMobile:'/content/dam/eaton/images/feature_block_desktop.png',
-            imgTablet:'/content/dam/eaton/images/feature_block_desktop.png',
+            image: {
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                desktop: '/content/dam/eaton/images/feature_block_desktop.png',
+                altText: '',
+                alignment: 'center'
+            },
             imgAlignment:'left',
-            imgAlt: 'Test image',
             backgroundColor: '#005EB8'
         }
         
@@ -43,11 +49,14 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'View all job opportunities'
             },
-            imgSrc: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-1.png',
-            imgMobile:'/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-1.png',
-            imgTablet:'/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-1.png',
+            image: {
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-1.png',
+                altText: '',
+                alignment: 'center'
+            },
             imgAlignment:'left',
-            imgAlt: 'Test image',
             backgroundColor: '#FFFFFF'
         }
         
@@ -59,11 +68,14 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'Find career'
             },
-            imgSrc: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-2.png',
-            imgMobile:'/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-2.png',
-            imgTablet:'/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-2.png',
+            image: {
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                desktop: '/content/dam/eaton/images/T9-Careers-FeatureBlockLeft-2.png',
+                altText: '',
+                alignment: 'center'
+            },
             imgAlignment:'left',
-            imgAlt: 'Test image',
             backgroundColor: '#FFFFFF'
         }
                 
@@ -75,11 +87,14 @@ use(function () {
                 url: 'http://www.eaton.com',
                 text:'Make a bigger difference'
             },
-            imgSrc: '/content/dam/eaton/images/feature_block_desktop.png',
-            imgMobile:'/content/dam/eaton/images/feature_block_desktop.png',
-            imgTablet:'/content/dam/eaton/images/feature_block_desktop.png',
+            image: {
+                mobile: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                tablet: '/content/dam/eaton/images/lorempixel/technics/750x750-4.jpeg',
+                desktop: '/content/dam/eaton/images/feature_block_desktop.png',
+                altText: '',
+                alignment: 'center'
+            },
             imgAlignment:'left',
-            imgAlt: 'Test image',
             backgroundColor: '#F8F8F8'
         }
     }

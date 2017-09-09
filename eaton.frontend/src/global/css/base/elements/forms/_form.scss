@@ -1,4 +1,11 @@
+
+.eaton-form-container {
+  padding-top: 60px;
+}
+
 .eaton-form {
+
+  $light-gray: #eef0f2;
 
   font-family: Arial, 'Arial', sans-serif;
 
@@ -11,20 +18,40 @@
     margin-bottom: 30px;
   }
 
+  .field-size-top-large {
+    .label {
+      padding: 0;
+    }
+  }
+
   // stylelint-disable-next-line selector-class-pattern
   .LV_validation_message {
-    font-size: 14px;
+    font-size: 1.3rem;
     font-weight: 100;
     font-style: italic;
     margin: 0;
     position: relative;
     top: 10px;
     width: 100%;
+
+    @include media-tablet-and-up {
+      font-size: 1.8rem;
+    }
+  }
+
+  // stylelint-disable-next-line selector-class-pattern
+  .LV_invalid_field {
+    border: 0 !important;  // stylelint-disable-line declaration-no-important
   }
 
   .label-position {
     display: block;
-    font-size: 15px;
+    font-size: 1.3rem;
+    color: $color__primary-gray1;
+
+    @include media-tablet-and-up {
+      font-size: 1.8rem;
+    }
   }
 
   .field-group {
@@ -32,11 +59,15 @@
     .label {
       width: 100%;
       float: left;
-      color: #333f48;
-      font-size: 20px;
+      color: $color__primary-gray1;
+      font-size: 2.0rem;
       text-align: left;
       padding: 0;
       margin-bottom: 30px;
+
+      @include media-tablet-and-up {
+        font-size: 2.6rem;
+      }
     }
 
     // stylelint-disable-next-line selector-class-pattern
@@ -69,10 +100,23 @@
   .field-p label:not(.label, .label-position) {
     font-weight: 100;
     font-style: italic;
-    font-size: 14px;
-    color: #333f48;
+    font-size: 1.3rem;
+    color: $color__primary-gray2;
     padding-top: 10px;
     width: 100%;
+
+    @include media-tablet-and-up {
+      font-size: 1.8rem;
+    }
+  }
+
+  .field-p .label .inner {
+    font-weight: 100;
+    font-size: 1.3rem;
+
+    @include media-tablet-and-up {
+      font-size: 1.8rem;
+    }
   }
 
   // TWO COLUMN
@@ -99,7 +143,7 @@
 
     .inner {
       vertical-align: middle;
-      color: #000;
+      color: $color__primary-gray1;
     }
 
     .list-order {
@@ -119,7 +163,11 @@
       &.twoColumnLeft {
         padding-bottom: 30px;
         float: left;
-        width: 20%;
+        width: 50%;
+
+        @include media-tablet-and-up {
+          width: 20%;
+        }
       }
     }
   }
@@ -132,7 +180,7 @@
     display: block;
     margin-top: 10px;
     padding: 10px;
-    border: 1px solid #8c9aa5;
+    border: 1px solid $color__primary-gray3;
 
     @include media-tablet-only {
       width: 310px;
@@ -155,7 +203,11 @@
     &:not(:checked) + span,
     &:checked + span {
       position: relative;
-      padding-left: 45px;
+      padding-left: 38px;
+
+      @include media-tablet-and-up {
+        padding-left: 45px;
+      }
     }
 
     &:not(:checked) + span::before,
@@ -167,13 +219,18 @@
       top: -8px;
       width: 2.5em;
       height: 2.5em;
-      background-color: #eef0f2;
+      background-color: $light-gray;
+      font-size: 1.2rem;
+
+      @include media-tablet-and-up {
+        top: -4px;
+      }
     }
 
     &:checked + span::after {
-      content: '\E900';
-      font-size: 1.4em;
-      font-family: 'eaton-glyphicon';
+      @extend %font-family-glyphicon;
+      @extend %icon-checkmark;
+      font-size: 1.6rem;
       line-height: 0.8;
       color: $color__primary-blue;
       position: absolute;
@@ -203,20 +260,21 @@
     &:not(:checked) + span,
     &:checked + span {
       position: relative;
-      padding-left: 30px;
+      padding-left: 40px;
     }
 
     &:not(:checked) + span::before,
     &:checked + span::before {
       content: '';
       position: absolute;
-      left: -12px;
-      top: -10px;
+      left: -6px;
+      top: -6px;
       width: 2.5em;
       height: 2.5em;
-      border: 1px solid #ddd;
+      border: 1px solid $color__primary-gray3;
       border-radius: 100%;
       background: #fff;
+      font-size: 1.2rem;
     }
 
     &:checked + span::after {
@@ -225,8 +283,8 @@
       height: 18px;
       background: $color__primary-blue;
       position: absolute;
-      top: -4px;
-      left: -6px;
+      top: 0;
+      left: 0;
       border-radius: 100%;
     }
 
@@ -251,6 +309,7 @@
     padding: 15px 100px;
     color: $color__primary-blue;
     border-color: $color__primary-blue;
+    border-radius: 0;
 
     &:hover {
       color: $color__white;
@@ -266,7 +325,7 @@
     margin-top: 10px;
     width: 100%;
     height: 225px;
-    border: 1px solid #8c9aa5;
+    border: 1px solid $color__primary-gray3;
 
   }
 
@@ -277,11 +336,11 @@
     margin-top: 10px;
 
     &__inner {
-      background: #fff url('/content/dam/eaton/images/down_arrow.png') no-repeat;
+      background: #FFF url('images/down_arrow.png') no-repeat;
       background-position: 98%;
       background-size: 12px;
       border-radius: 0;
-      border: 1px solid #8c9aa5;
+      border: 1px solid $color__primary-gray3;
     }
 
     &__list {
@@ -302,6 +361,12 @@
 
     &__item[role="option"] {
       color: $color__primary-blue;
+
+      &.is-highlighted {
+        // NOTE: Add background color for accessibility purposes
+        // When using keyboard navigation, background color-white is not visible;
+        background-color: $light-gray;
+      }
     }
 
     &[data-type*=select-one]::after {
@@ -324,6 +389,10 @@
 
     option {
       padding: 10px 20px;
+
+      @include media-mobile-only {
+        font-size: 1.3rem;
+      }
 
       &[selected="selected"] {
         background-color: $color__secondary-gray5;

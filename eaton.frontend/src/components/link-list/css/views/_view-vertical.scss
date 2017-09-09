@@ -3,9 +3,37 @@
 //-----------------------------------
 .eaton-link-list-vertical {
 
+  /*
+  // NOTE: This style was disabled since is affecting multiple components in unexpected ways.
+  // (It's Causing regresions in multiple pages templates)
+  // Please move this overrided to the specific component that needs it, instead of being a global override.
+  font-size: 2.4rem;
+  */
+
   &__eyebrow {
     text-transform: uppercase;
   }
+
+
+  /*
+  // NOTE: This style was disabled since is affecting multiple components in unexpected ways.
+  // (It's Causing regresions in multiple pages templates)
+  // Please move this overrided to the specific component that needs it, instead of being a global override.
+  &__eyebrow.heading {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  */
+
+  /*
+  @include media-desktop-and-up {
+    font-size: 1.8rem;
+
+    &__eyebrow.heading {
+      font-size: 1.8rem;
+    }
+  }
+  */
 
   &__list {
     padding: 0;
@@ -13,33 +41,47 @@
     list-style-type: none;
   }
 
-  &__list-item {
-
+  &__list-text {
+    display: inline-flex;
   }
 
   &__list-link {
     display: inline-block;
     padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
+    font-weight: bold;
   }
 
   &__list-icon {
-    font-size: 0.75em;
-    margin-left: 0.25em;
+    padding-right: 10px;
+    font-size: 2.8rem;
+    padding-top: 5px;
   }
 
   &__external-icon {
     padding-right: 10px;
-    font-size: 1.5rem;
+    font-size: 2.8rem;
+    margin-top: 8px;
+
+    &.icon-link-external {
+      margin-top: 0;
+      top: 2px;
+      position: relative;
+    }
   }
 
   &__download-text {
     width: 100%;
-    margin-left: 30px;
-    font-size: 0.9em;
+    margin-left: 40px;
+    font-size: 1.8rem;
+    margin-top: -10px;
 
     &--description {
       color: $color__primary-gray3;
       font-family: $font-family__secondary;
+    }
+
+    p {
+      margin: 0 0 5px;
     }
   }
 
@@ -52,9 +94,35 @@
       display: inline-block;
     }
 
-    &__eyebrow,
+    &__eyebrow {
+      @include eyebrow-small;
+    }
+
     &__list-link {
+      font-weight: normal;
+    }
+
+    // Override font-sizes for dark-theme
+    &__list-item {
+      @include body-copy-small;
+    }
+
+    &__eyebrow,
+    &__list-item a, // Override style added by the mixins
+    &__download-text {
       color: $color__white;
+    }
+
+    &__list-icon {
+      font-size: 1.4rem;
+    }
+
+    &__external-icon {
+      font-size: 1.5rem;
+    }
+
+    &__download-text {
+      font-size: 1.6rem;
     }
   }
 
@@ -63,15 +131,23 @@
   // Media Query: Mobile/Tablet
   //-----------------------------------
   @include media-mobile-and-tablet {
+    &__external-icon {
+      font-size: 2rem;
+      margin-top: 3px;
+    }
+
+    &__download-text {
+      margin-left: 30px;
+    }
 
     &__eyebrow {
-      margin-bottom: $spacing__md / 2;
+      margin-bottom: 20px;
     }
   }
 
 
   //-----------------------------------
-  // Media Query: Mobile/Tablet
+  // Media Query: desktop and up
   //-----------------------------------
   @include media-desktop-and-up {
 

@@ -7,18 +7,18 @@ use(function () {
     data = {
       header: 'The perfect solution is never one size fits all',
       description: 'Our tools will help you find the exact Eaton product you need.',
-      icon: '/content/dam/eaton/images/cat_icon.png'
+      icon: '/content/dam/eaton/images/iconlist/cat_icon.png'
     };
   } else if ((typeof(testdata) != "undefined") && (testdata == "t6-subcategory-1")) {
     data = {
       header: 'Tools to help you find the rigth product',
       description: 'Use our tools to find the right Eaton product for you.',
-      icon: '/content/dam/eaton/images/cat_icon.png'
+      icon: '/content/dam/eaton/images/iconlist/cat_icon.png'
     };
   } else if ((typeof(testdata) != "undefined") && (testdata == "t6-subcategory-2")) {
     data = {
       header: 'How to buy from Eaton',
-      icon: '/content/dam/eaton/images/locator_orange_icon.png'
+      icon: '/content/dam/eaton/images/iconlist/locator_orange_icon.png'
     };
   } else if ((typeof(testdata) != "undefined") && (testdata == "t5-category-with-list-view-support-cta" || testdata == "t6-subcategory-view-support-cta")) {
     data = {
@@ -31,7 +31,7 @@ use(function () {
     };
   } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-1")) {
     data = {
-      icon: '/content/dam/eaton/images/calendar-icon.png',
+      icon: '/content/dam/eaton/images/iconlist/calendar-icon.png',
       header: 'First quarter earnings',
       description: 'Eaton to announce first quarter 2017 earnings on May 2, 2017',
       color: 'white',
@@ -41,7 +41,7 @@ use(function () {
     };
   } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-2")) {
     data = {
-      icon: '/content/dam/eaton/images/cat_icon.png',
+      icon: '/content/dam/eaton/images/iconlist/cat_icon.png',
       header: 'Investor toolkit',
       description: 'Get the very latest description how we drive for our shareholders.',
       color: 'white'
@@ -58,7 +58,7 @@ use(function () {
   } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors-4")) {
     data = {
 	  header: 'Get digital delivery on proxy materials',
-      icon: '/content/dam/eaton/images/laptop-icon.png',
+      icon: '/content/dam/eaton/images/iconlist/laptop-icon.png',
       description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders.',
       ctaText: 'Register for eDelivery',
       ctaLink: '#',
@@ -68,7 +68,7 @@ use(function () {
   } else if ((typeof(testdata) != "undefined") && (testdata == "no-cta")) {
     data = {
       header: 'Get digital delivery on proxy materials',
-      icon: '/content/dam/eaton/images/faq_orange_icon.png',
+      icon: '/content/dam/eaton/images/iconlist/faq_orange_icon.png',
       description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders',
       color: 'white'
     };
@@ -106,12 +106,12 @@ use(function () {
 	      ctaText: 'Join now',
 	      ctaLink: '#',
 	      ctaTarget: '_blank',
-	      color: 'white'
+	      color: 'grey'
 	    };
   } else {
     data = {
       header: 'Get digital delivery on proxy materials',
-      icon: '/content/dam/eaton/images/faq_orange_icon.png',
+      icon: '/content/dam/eaton/images/iconlist/faq_orange_icon.png',
       description: 'Reducing printing and mailing costs allows us to control expenses in the interest of delivering more value for all our shareholders',
       ctaText: 'Register for eDelivery',
       ctaLink: '#',

@@ -9,14 +9,14 @@
   <div class="product-grid-results ${
     properties.view == 'product-card-sku'
       ? 'product-grid-results--sku'
-      : 'product-grid-results--family'
+      : 'product-grid-results--subcategory'
     }">
     <div class="container">
 
       <!--/* Results Header */-->
       <div class="row">
         <div class="col-xs-12">
-          <sly data-sly-use.tpl="../../shared/templates/module-faceted-navigation/faceted-navigation-header.html">
+          <sly data-sly-use.tpl="eaton/static-components/shared/templates/module-faceted-navigation/faceted-navigation-header.html">
             <sly data-sly-call="${ tpl.module @ data=data.search }"></sly>
           </sly>
         </div>
@@ -27,8 +27,8 @@
 
         <!--/* M-62: Faceted Navigation */-->
         <div class="col-xs-12 col-md-3">
-          <sly data-sly-use.tpl="../../shared/templates/module-faceted-navigation/faceted-navigation.html">
-            <sly data-sly-call="${ tpl.module @ data=data.facets }"></sly>
+          <sly data-sly-use.tpl="eaton/static-components/shared/templates/module-faceted-navigation/faceted-navigation.html">
+            <sly data-sly-call="${ tpl.module @ data=data.facets, search=data.search }"></sly>
           </sly>
         </div>
 
@@ -38,14 +38,14 @@
           <!--/* View: Card-SKU */-->
           <sly data-sly-test.isViewSKU="${ properties.view == 'product-card-sku' }">
             <sly data-sly-use.tpl="views/product-card-sku.html">
-              <sly data-sly-call="${ tpl.view @ data=data.search }"></sly>
+              <sly data-sly-call="${ tpl.view @ data=data.search, results=data.sku.searchResults }"></sly>
             </sly>
           </sly>
 
-          <!--/* View: Card-Family */-->
+          <!--/* View: Card-Subcategory */-->
           <sly data-sly-test="${ !isViewSKU }">
-            <sly data-sly-use.tpl="views/product-card-family.html">
-              <sly data-sly-call="${ tpl.view @ data=data.search }"></sly>
+            <sly data-sly-use.tpl="views/product-card-subcategory.html">
+              <sly data-sly-call="${ tpl.view @ data=data.search, results=data.subcategory.searchResults }"></sly>
             </sly>
           </sly>
 

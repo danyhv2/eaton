@@ -1,3 +1,5 @@
+// Image Sizes are 1:1
+
 "use strict";
 use(function () {
     var data = {
@@ -6,22 +8,34 @@ use(function () {
             {
                 title: 'Aerospace',
                 link: 'http://www.eaton.com',
-                image: '/content/dam/eaton/images/Image1.png',
-                altText: 'Alt text for Image',
+                image: {
+                  mobile:'/content/dam/eaton/images/lorempixel/technics/265x265-7.jpeg',
+                  tablet:'/content/dam/eaton/images/lorempixel/technics/265x265-7.jpeg',
+                  desktop: '/content/dam/eaton/images/lorempixel/technics/265x265-7.jpeg',
+                  altText: 'Alt text for Image',
+                },
                 text: 'Motor protection for the IE3 revolution, that discusses the impact of the Energy-related Products (ErP) directive on switchgear and protection systems for electric motors.'
             },
             {
                 title: 'Renewables',
                 link: 'http://www.eaton.com',
-                image: '/content/dam/eaton/images/Image2.png',
-                altText: 'Alt text for Image',
+                image: {
+                  mobile:'/content/dam/eaton/images/lorempixel/technics/350x350-4.jpeg',
+                  tablet:'/content/dam/eaton/images/lorempixel/technics/350x350-4.jpeg',
+                  desktop: '/content/dam/eaton/images/lorempixel/technics/350x350-4.jpeg',
+                  altText: 'Alt text for Image',
+                },
                 text: 'Motor protection for the IE3 revolution, that discusses the impact of the Energy-related Products (ErP) directive on switchgear and protection systems for electric motors.'
             },
             {
                 title: 'Oil & Gas',
                 link: 'http://www.eaton.com',
-                image: '/content/dam/eaton/images/Image3.png',
-                altText: 'Alt text for Image',
+                image: {
+                  mobile:'/content/dam/eaton/images/lorempixel/technics/350x350-8.jpeg',
+                  tablet:'/content/dam/eaton/images/lorempixel/technics/350x350-8.jpeg',
+                  desktop: '/content/dam/eaton/images/lorempixel/technics/350x350-8.jpeg',
+                  altText: 'Alt text for Image',
+                },
                 text: 'Motor protection for the IE3 revolution, that discusses the impact of the Energy-related Products (ErP) directive on switchgear and protection systems for electric motors.'
             }
         ]

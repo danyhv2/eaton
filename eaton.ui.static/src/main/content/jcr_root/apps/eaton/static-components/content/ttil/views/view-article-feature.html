@@ -9,12 +9,12 @@
             <img src="${data.imgSrc}" class="hidden-xs img-responsive eaton-article-feature__image" alt="${data.imgAlt}" />
             <img src="${data.imgSrcMobile}" class="visible-xs img-responsive  eaton-article-feature__image" alt="${data.imgAlt}" />
           </div>
-          <div class="eaton-article-feature__title">${data.title}</div>
-          <div class="eaton-article-feature__cta">
+          <div class="eaton-article-feature__title b-eyebrow-large">${data.title}</div>
+          <div class="eaton-article-feature__cta b-heading-h4">
             <a href="${data.cta.url}" target="${data.cta.target}">${data.cta.text}</a>
           </div>
-          <div class="small-body-copy eaton-article-feature__date">${data.byline @context='html'}</div>
-          <div class="body-copy eaton-article-feature__body">${data.text}</div>
+          <div class="small-body-copy eaton-article-feature__date b-body-copy-small">${data.byline @context='html'}</div>
+          <div class="body-copy eaton-article-feature__body b-body-copy">${data.text}</div>
         </div>
       </div>
     </div>

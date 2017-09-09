@@ -3,34 +3,45 @@
 //-----------------------------------
 
 .eaton-ttil-image-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  margin: 30px 0;
 
   &__item {
-    flex-basis: 31%;
     padding: 0 10px;
-    margin-bottom: ($spacing__sm * 2);
+
   }
 
   &__content {
     display: block;
+    text-align: center;
+  }
+
+  &__image img {
+    display: inline-block;
+    width: 100%;
   }
 
   &__image-headline {
     margin-top: ($spacing__sm);
     color: $color__primary-blue;
+    font-weight: bold;
   }
 
   //-----------------------------
   // Mobile-Tablet Breakpoint
   // ----------------------------
   @include media-mobile-and-tablet {
-    flex-direction: column;
+    &__container {
+      display: block;
+    }
 
     &__item {
       flex-basis: 100%;
       padding: 0 10px;
+      margin-bottom: $spacing__sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &__content {
@@ -38,8 +49,38 @@
     }
 
     &__image {
-      width: 150px;
-      display: inline-block;
+      max-width: 480px;
+      min-width: 250px;
+      margin: 0 auto;
+    }
+
+    &__image-headline {
+      text-align: center;
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      // align-items: center;
+    }
+
+    &__item {
+      flex-basis: 33.33%;
+      margin-bottom: ($spacing__sm * 2);
+
+      // Only 2 images should display when used in two column grid
+      .eaton-grid-control & {
+        flex-basis: 50%;
+      }
+    }
+
+    &__image-headline {
+      text-align: left;
     }
   }
 }

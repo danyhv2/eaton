@@ -1,112 +1,130 @@
-.eaton-ttil-list-category-hero {
-  font-family: $font-family__primary;
-  overflow: hidden;
-}
+.eaton-category-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
 
-.category-hero {
-  &__header-image {
+  &__image {
+    z-index: 1;
+    @include absolute-fill();
+  }
+
+  &__content {
+    position: relative;
+    padding: 15px 0;
     width: 100%;
-    height: auto;
+    z-index: 5;
   }
 
-  &__header-content {
-    position: absolute;
-    top: 25%;
-    color: $color__white;
-    width: 100%;
+  &__cta {
+    &:hover,
+    &:visited {
+      text-decoration: underline;
+    }
+
+    .icon {
+      font-size: 1.4rem;
+      position: relative;
+      top: 1px;
+    }
   }
 
-  &__header-cta {
-    border: 0;
-    font-size: 1.2em;
-    color: $color__white;
-    font-family: $font-family__secondary;
+  &__title {
+    margin: 0;
+    position: relative;
+
+    &::after {
+      background: $color__white;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: .5rem;
+      width: 6rem;
+    }
   }
 
-  &-eye-brown {
-    color: $color__white;
+  // EATON-474: Category Hero, Landing Hero - Semi-Transparent gradient should be applied on the whole image
+  //--------------
+  .image-mask & {
+    &__image::before {
+      @include image-mask-gradient();
+    }
+  }
 
-    a:hover,
-    a:active,
-    a:visited,
-    a:focus {
+
+  //-----------------------------------
+  // Add Support For DarkTheme (White Text Over Dark Background)
+  //-----------------------------------
+  .dark-theme & {
+    &__title,
+    &__text {
       color: $color__white;
-      text-decoration: none;
+    }
+
+    &__cta {
+      &,
+      &:hover,
+      &:visited {
+        color: $color__white;
+      }
     }
   }
 
-  &-body-copy {
-    color: $color__white;
-    font-size: 1.2em;
-    margin-top: 30px;
-    font-family: $font-family__secondary;
+
+  //-----------------------------------
+  // MediaQuery: >0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    min-height: 92.6666vw; // Mobile and Tablet Aspect Ratio
+
+    &__eyebrow {
+      margin-bottom: 1.2rem;
+    }
+
+    &__title {
+      padding-bottom: 2.4rem;
+    }
+
+    &__text {
+      margin-top: 1.5rem;
+    }
+
   }
 
-  &__header-title h2 {
-    font-size: 3.5em;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
 
-  &-bottomline {
-    background-color: $color__white;
-    height: 0.3em;
-    width: 4em;
-  }
-}
+  //-----------------------------------
+  // MediaQuery: >992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+    min-height: 25vw; // Desktop Aspect Ratio
 
-@media only screen and (max-width: 480px) {
-  .category-hero {
-    &__header-image {
-      height: 430px;
+    &__content {
+      padding: 30px 0;
     }
 
-    &__header-content {
-      top: 15%;
+    &__eyebrow {
+      margin-bottom: 1.2rem;
     }
 
-    &__header-title h2 {
-      font-size: 2em;
-    }
-
-    &-body-copy {
-      font-size: 1em;
-    }
-
-    &__header-cta {
-      font-size: 1em;
+    &__title {
+      padding-bottom: 3.2rem;
     }
   }
-}
 
-@media only screen and (min-width: 481px) and (max-width: 991px) {
-  .category-hero {
-    &__header-image {
-      height: 430px;
-    }
 
-    &__header-content {
-      top: 15%;
-    }
-
-    &__header-title h2 {
-      font-size: 2.5em;
-    }
-
-    &-body-copy {
-      font-size: 1.5em;
-    }
-
-    &__header-cta {
-      font-size: 1.5em;
-    }
+  //-----------------------------------
+  // IE11 Styles - http://browserhacks.com/
+  //-----------------------------------
+  // It fixes vertical alignment issues in IE11 due to flexbox elements inside a container with "min-height"
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE11 and Up */
+    height: 92.6666vw;
   }
-}
 
-@media only screen and (min-width: 991px) {
-  .category-hero {
-    &__header-image {
-      min-height: 385px;
-    }
+  @media all and (-ms-high-contrast: none) and (min-width: $grid__md), (-ms-high-contrast: active) {
+    /* IE11 and Up */
+    height: 25vw;
   }
+
+
 }

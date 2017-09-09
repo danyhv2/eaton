@@ -1,0 +1,147 @@
+//------------------------------------------
+// Handles Header Behaviors & Interactions
+// Visual state when the nav is open (desktop/mobile)
+// Visual state when the search is open (default)
+// Visual state when the drawer is open (default)
+//------------------------------------------
+.search-open {
+
+  .header-primary-nav__open-search {
+    transition: background 0.3s ease-in-out;
+    background: $color__primary-gray1;
+
+    .icon-search {
+      display: none;
+    }
+
+    .icon-close {
+      display: block;
+      font-size: 1.8rem;
+      color: $color__white;
+    }
+  }
+}
+
+//-----------------------------------
+// Mobile Breakpoint
+//-----------------------------------
+@include media-mobile-and-tablet {
+  .nav-open {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+
+    .eaton-link-list-primary-nav {
+      overflow: auto;
+      visibility: visible;
+      opacity: 1;
+      // transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .header-primary-nav__toggle-mobile-menu {
+      transition: background 0.3s ease-in-out;
+      background: $color__primary-gray1;
+
+      .icon-hamburger {
+        display: none;
+      }
+
+      .icon-close {
+        display: block;
+        top: -3px;
+        font-size: 1.8rem;
+      }
+    }
+
+    .header-utility-nav {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .level-2-open {
+    // Styles on Body while the nav is open
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+
+    .eaton-link-list-primary-nav {
+      transform: translate(-100%, 0);
+    }
+
+    .mega-menu {
+      transform: translate(0, 0);
+    }
+  }
+
+  .nav-is-animating {
+    .mega-menu {
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+
+  .search-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+
+    .header-primary-nav__open-search {
+
+      .icon-close {
+        top: -3px;
+      }
+    }
+  }
+
+  .drawer-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+
+    .full-page-drawer {
+      transform: translate(0, 0);
+      visibility: visible;
+    }
+  }
+
+  .drawer-is-animating {
+    .full-page-drawer {
+      transition: transform 0.5s ease-in-out, visibility 0.8s ease-in-out;
+    }
+  }
+}
+
+//-----------------------------------
+// Desktop Breakpoint
+//-----------------------------------
+@include media-desktop-and-up {
+  .level-2-open {
+    .mega-menu {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .search-open {
+
+    .header-primary-nav__open-search {
+
+      .icon-close {
+        top: -5px;
+      }
+    }
+  }
+
+  .drawer-open {
+    .full-page-drawer {
+      visibility: visible;
+      max-height: 1200px; // Max height for the Desktop Breakpoint
+    }
+  }
+
+  .drawer-is-animating {
+    .full-page-drawer {
+      transition: max-height 0.5s ease-in-out, visibility 0.8s ease-in-out;
+    }
+  }
+}

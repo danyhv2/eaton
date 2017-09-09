@@ -13,7 +13,8 @@
       &:checked {
         ~ .row,
         ~ .container {
-          label[for="#{$radioId}"] {
+          label[for="#{$radioId}"],
+          div.tab-label {
             background-color: $color__secondary-gray5;
           }
 
@@ -31,7 +32,8 @@
         &:checked {
           ~ .row,
           ~ .container {
-            label[for="#{$radioId}"] {
+            label[for="#{$radioId}"],
+            div.tab-label {
               background-color: $color__primary-gray2;
             }
           }
@@ -57,7 +59,8 @@
       }
     }
 
-    label {
+    label,
+    div.tab-label {
       background-color: $color__primary-gray1;
 
       &:hover,
@@ -101,6 +104,15 @@
       display: block;
       left: -50%;
     }
+
+    &__center {
+      a {
+        width: 33.333%;
+        display: inline-block;
+        float: left;
+      }
+    }
+
   }
 
   &--fixed {
@@ -161,9 +173,10 @@
     }
   }
 
-  label {
+  label,
+  div.tab-label {
     cursor: pointer;
-    width: 33.333%;
+    width: 100%;
     text-align: center;
     float: left;
     padding: 1.3rem 0;
@@ -210,7 +223,6 @@
     color: $color__white;
     display: inline-block;
     font-family: $font-family__secondary;
-    font-size: 16px;
     font-size: 1.6rem;
     height: 57px;
     margin: 40px 0;
@@ -219,7 +231,7 @@
 
     .icon {
       display: inline-block;
-      font-size: 14px;
+      font-size: 1.4rem;
       padding-left: 10px;
       vertical-align: middle;
     }
@@ -260,7 +272,7 @@
         }
 
         .icon {
-          font-size: 25px;
+          font-size: 2.5rem;
           left: 0;
           padding: 0 10px 0 0;
           position: absolute;
@@ -335,7 +347,6 @@
 
   @include media-desktop-and-up {
     &__dropdown {
-      font-size: 18px;
       font-size: 1.8rem;
       font-weight: bold;
     }
@@ -357,7 +368,8 @@
       width: 100%;
     }
 
-    label {
+    label,
+    div.tab-label {
       padding: 4rem 0;
 
       .icon {

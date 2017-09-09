@@ -34,11 +34,22 @@
   }
 
   &__image {
-    max-width: 300px;
+    width: 167px;
+    min-width: 167px;
+    height: 167px;
+    display: block;
   }
 
   &__body {
     padding-left: 20px;
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  &__title,
+  &__text {
 
     .dark-theme & {
       color: $color__white;

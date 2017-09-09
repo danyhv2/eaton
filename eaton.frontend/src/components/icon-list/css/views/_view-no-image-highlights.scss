@@ -16,11 +16,13 @@
   &__title {
     text-transform: uppercase;
     font-weight: bold;
-    color: $color__primary-gray2;
+    color: $color__primary-gray1;
   }
 
   &__text {
     word-wrap: break-word;
+    color: $color__primary-gray1;
+    font-family: 'EatonMedium';
   }
 
   &__symbol {
@@ -42,18 +44,13 @@
     }
 
     &__text {
-      font-size: 3.125em;
-      line-height: 55px;
+      font-size: 5rem;
+      line-height: 5.5rem;
     }
 
     &__symbol {
-      font-size: 0.6em;
+      font-size: 3rem;
       top: -15px;
-    }
-
-    &__title {
-      font-size: 0.875em;
-      margin-bottom: 5px;
     }
   }
 
@@ -63,22 +60,40 @@
   @include media-desktop-and-up {
     padding: ($spacing__sm * 2) 0;
 
+    .eaton-grid-control & {
+      padding: $spacing__sm 0;
+    }
+
     &__wrapper {
       display: flex;
+      flex-wrap: nowrap;
+
+      .eaton-grid-control & {
+        display: block;
+      }
+    }
+
+    &__item {
+      .eaton-grid-control & {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
 
     &__text {
-      font-size: 3.75em;
-      line-height: 65px;
+      font-size: 6rem;
+      line-height: 6.5rem;
     }
 
     &__symbol {
-      font-size: 0.667em;
+      font-size: 4rem;
       top: -15px;
     }
 
     &__title {
-      font-size: 1.125em;
       margin-bottom: ($spacing__sm / 2);
     }
   }
