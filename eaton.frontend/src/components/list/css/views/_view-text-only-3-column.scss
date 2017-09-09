@@ -31,7 +31,7 @@
 
     &::before {
       content: '';
-      border-color: $color__primary-blue;
+      background-color: $color__primary-blue;
       display: block;
       height: 4px;
       width: 60px;
