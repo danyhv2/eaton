@@ -386,7 +386,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 768px) { .eaton-form .label-position { font-size: 1.8rem; } }
 
-.eaton-form .field-group .label { width: 100%; float: left; color: #333F48; font-size: 2.0rem; text-align: left; padding: 0; margin-bottom: 30px; }
+.eaton-form .field-group .label { width: 100%; float: left; color: #333F48; font-size: 2.0rem; text-align: left; padding: 0; margin-bottom: 30px; white-space: inherit; }
 
 @media screen and (min-width: 768px) { .eaton-form .field-group .label { font-size: 2.6rem; } }
 
@@ -417,6 +417,8 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 .eaton-form .radio-option .list-order.twoColumn { padding-bottom: 20px; float: left; width: 35%; }
 
 @media screen and (max-width: 767px) { .eaton-form .radio-option .list-order.twoColumn { width: 50%; } }
+
+@media screen and (max-width: 320px) { .eaton-form .radio-option .list-order.twoColumn { width: 100%; } }
 
 .eaton-form .radio-option .list-order.twoColumnLeft { padding-bottom: 30px; float: left; width: 50%; }
 
