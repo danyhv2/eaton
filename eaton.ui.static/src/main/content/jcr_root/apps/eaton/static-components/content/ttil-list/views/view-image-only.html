@@ -15,7 +15,7 @@
             </div>
 
             <!--/* When Image has Headline & Url */-->
-            <a data-sly-test="${item.link && item.headline}" href="${item.link.url}" class="eaton-ttil-image-list__content">
+            <a data-sly-test="${item.link && item.headline}" href="${item.link.url}" target="${item.link.target}" class="eaton-ttil-image-list__content">
               <div class="eaton-ttil-image-list__image">
                 <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
                   <sly data-sly-call="${ tpl.module @ data=item.image }"></sly>
@@ -25,7 +25,16 @@
             </a>
 
             <!--/* When Image has no Headline and has a URL */-->
-            <a data-sly-test="${!item.headline && item.link}" href="${item.link.url}" class="eaton-ttil-image-list__content">
+            <a data-sly-test="${!item.headline && item.link}" href="${item.link.url}" target="${item.link.target}" class="eaton-ttil-image-list__content">
+              <div class="eaton-ttil-image-list__image">
+                <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
+                  <sly data-sly-call="${ tpl.module @ data=item.image }"></sly>
+                </sly>
+              </div>
+            </a>
+
+            <!--/* When Image has no Headline and no URL */-->
+            <div data-sly-test="${!item.headline && item.link}" class="eaton-ttil-image-list__content">
               <div class="eaton-ttil-image-list__image">
                 <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
                   <sly data-sly-call="${ tpl.module @ data=item.image }"></sly>
