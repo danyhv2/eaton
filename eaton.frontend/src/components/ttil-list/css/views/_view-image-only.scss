@@ -7,7 +7,6 @@
 
   &__item {
     padding: 0 10px;
-
   }
 
   &__content {
@@ -70,12 +69,13 @@
     }
 
     &__item {
-      flex-basis: 33.33%;
+      flex-basis: 31%;
       margin-bottom: ($spacing__sm * 2);
 
       // Only 2 images should display when used in two column grid
       .eaton-grid-control & {
         flex-basis: 50%;
+        padding: 0;
       }
     }
 

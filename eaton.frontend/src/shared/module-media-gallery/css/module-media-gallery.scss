@@ -12,6 +12,8 @@
 
 .module-media-gallery {
 
+  margin: 60px 0;
+
   //-----------------------------------
   // Gallery Headline & Description
   //-----------------------------------
@@ -190,8 +192,6 @@
   // Desktop Breakpoint: >992 px
   //-----------------------------------
   @include media-desktop-and-up {
-    padding: $spacing__md 0 $spacing__xl;
-
 
     // Slide Container
     //--------------

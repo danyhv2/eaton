@@ -7,6 +7,7 @@
 
 
 .eaton-product-family-card {
+  margin-bottom: 60px;
 
   &__header {
     padding-bottom: $spacing__sm / 2;
@@ -32,13 +33,13 @@
 
   &__cta {
     text-align: center;
-    margin-bottom: $spacing__md / 2;
+    margin-bottom: 0;
   }
 
   &__links {
     a {
       display: block;
-      margin-bottom: $spacing__sm / 2;
+      margin-bottom: 0;
     }
   }
 
@@ -71,7 +72,7 @@
     }
 
     &__links {
-      margin-bottom: $spacing__sm;
+      margin-bottom: 0;
     }
   }
 }

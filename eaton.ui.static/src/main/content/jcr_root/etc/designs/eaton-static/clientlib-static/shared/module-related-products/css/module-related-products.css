@@ -25,7 +25,7 @@
 
 .module-related-products__dots button { background-color: #EEF0F2; height: 10px; width: 10px; border: 10px; line-height: 0; display: inline; padding: 5px; cursor: pointer; color: transparent; border-radius: 10px; }
 
-.module-related-products__arrows { position: absolute; top: 25%; color: #CCD2D7; display: none !important; }
+.module-related-products__arrows { position: absolute; top: 22%; color: #CCD2D7; display: none !important; }
 
 .module-related-products__arrows .icon { font-size: 37px; }
 

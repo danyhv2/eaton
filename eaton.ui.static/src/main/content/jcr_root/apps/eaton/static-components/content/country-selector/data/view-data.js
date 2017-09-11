@@ -84,7 +84,7 @@ use(function () {
               },
               {
                 countryName: 'Korea',
-                countryId: 'korea',
+                countryId: 'south-korea',
                 languageList: [
                   {
                     languageName: 'Korean',
