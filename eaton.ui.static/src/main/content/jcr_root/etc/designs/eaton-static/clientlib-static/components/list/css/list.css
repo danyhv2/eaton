@@ -139,13 +139,13 @@
 
 @media screen and (max-width: 767px) { .article-list-single-feature__article { margin-top: 30px; } }
 
-.eaton-list-links { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; oadding: 40px 0; }
+.eaton-list-links { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
 .eaton-list-links__col { padding: 0; margin: 0; list-style-type: none; }
 
 .eaton-list-links__link { padding: 10px 0; text-decoration: none; display: inline; }
 
-.eaton-list-links__link span { color: #FFF; font-style: normal; font-weight: normal; font-size: 1.8rem; display: block; line-height: 2.4rem; font-family: Arial, "Arial", sans-serif; padding: 10px 0; }
+.eaton-list-links__link span { color: #FFF; font-style: normal; font-weight: normal; font-size: 1.5rem; display: block; line-height: 2.4rem; font-family: Arial, "Arial", sans-serif; padding: 10px 0; }
 
 .eaton-list-links__link span:after { color: #FFF; position: relative; top: 1px; content: "\e258"; font-family: 'Glyphicons Halflings'; font-size: 1.4rem; display: inline; padding-left: 7px; text-decoration: none; }
 
@@ -157,9 +157,11 @@
 
 @media screen and (max-width: 991px) { .eaton-list-links { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
   .eaton-list-links__link { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; padding: 20px 0; border-bottom: 1px solid rgba(238, 240, 242, 0.3); -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 1.5rem; }
+  .eaton-list-links__link span { font-size: 1.5rem; }
   .eaton-list-links__link:after { color: #FFF; position: relative; top: 1px; content: "\e258"; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; font-size: 1.4rem; display: inline-block; text-decoration: none; }
   .eaton-list-links__link span:after { display: none; }
-  .eaton-list-links__text { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; margin-right: 15px; } }
+  .eaton-list-links__text { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; margin-right: 15px; }
+  .eaton-list-links .eaton-list-links__col .eaton-list-links__item span { font-size: 1.5rem; } }
 
 @media screen and (min-width: 992px) { .eaton-list-links { -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
   .eaton-list-links__col { width: 100%; margin: 0 15px; }

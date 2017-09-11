@@ -67,6 +67,10 @@
       align-items: center;
       font-size: 1.5rem;
 
+      span{
+        font-size: 1.5rem;
+      }
+
       &:after{
         color: #FFF;
         position: relative;
@@ -88,6 +92,10 @@
     &__text {
       flex: 1;
       margin-right: ($spacing__sm / 2);
+    }
+
+    .eaton-list-links__col .eaton-list-links__item span{
+      font-size: 1.5rem;
     }
   }
 
