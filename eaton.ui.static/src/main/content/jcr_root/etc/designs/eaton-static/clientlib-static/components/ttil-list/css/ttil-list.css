@@ -95,11 +95,13 @@
 
 .featured-story-component__row--nopadding { padding: 0; }
 
-.featured-story-component__arrow { font-size: 0.7em; left: 10px; }
+.featured-story-component__arrow::before { font-size: 0.7em; left: 10px; }
 
 .featured-story-component__title { color: #FFF; }
 
 .featured-story-component__link:hover, .featured-story-component__link:active, .featured-story-component__link:focus { text-decoration: none; color: #FFF; }
+
+.featured-story-component__link h2.featured-story-component__text::after { color: #FFF; margin-left: 20px; content: "\e258"; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; font-size: 2.4rem; }
 
 .featured-story-component__blue { position: absolute; top: 0; height: 100%; background-color: rgba(0, 94, 184, 0.8); color: #FFF; padding: 0; }
 
