@@ -3,15 +3,20 @@
   padding-top: 60px;
   margin-bottom: 120px;
 
-  h2 {
+  &__heading {
     padding-bottom: 10px;
+  }
+
+  &__cta {
+    display: block;
+    z-index: 10;
   }
 
   .b-eyebrow-small {
     padding: 0;
   }
 
-  .category-item-date {
+  &__date {
     padding-top: 0;
     color: $color__primary-gray3;
   }
@@ -20,15 +25,35 @@
     padding-top: 0;
   }
 
+  &__article-copy {
+    padding: 15px 50px 15px 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: $color__primary-blue;
+      display: block;
+      height: 4px;
+      width: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
   &__card {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
   }
 
   &__cta-container {
     margin-top: 3px;
+  }
+
+  &__title {
+    color: $color__primary-blue;
   }
 
 
@@ -41,7 +66,7 @@
       width: 100%;
     }
 
-    h2 {
+    &__heading {
       padding-bottom: 20px;
     }
 
@@ -58,16 +83,15 @@
     margin-bottom: 120px;
 
 
-    h2 {
+    &__heading {
       padding-bottom: 10px;
     }
-
 
     .b-eyebrow-small {
       padding: 15px 0 30px 0;
     }
 
-    .category-item-date {
+    &__date {
       padding-top: 8px;
     }
 
@@ -78,7 +102,6 @@
     &__article {
       padding-top: 30px;
     }
-
 
     &__cta-container {
       margin-top: 30px;

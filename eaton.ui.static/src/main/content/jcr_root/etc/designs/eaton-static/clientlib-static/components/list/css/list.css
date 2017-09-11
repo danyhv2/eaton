@@ -209,27 +209,35 @@
 
 .text-only-3-column { padding-top: 60px; margin-bottom: 120px; }
 
-.text-only-3-column h2 { padding-bottom: 10px; }
+.text-only-3-column__heading { padding-bottom: 10px; }
+
+.text-only-3-column__cta { display: block; z-index: 10; }
 
 .text-only-3-column .b-eyebrow-small { padding: 0; }
 
-.text-only-3-column .category-item-date { padding-top: 0; color: #98A4AE; }
+.text-only-3-column__date { padding-top: 0; color: #98A4AE; }
 
 .text-only-3-column__article { padding-top: 0; }
 
-.text-only-3-column__card { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+.text-only-3-column__article-copy { padding: 15px 50px 15px 0; position: relative; }
+
+.text-only-3-column__article-copy::before { content: ''; background-color: #005EB8; display: block; height: 4px; width: 60px; position: absolute; top: 0; left: 0; }
+
+.text-only-3-column__card { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
 
 .text-only-3-column__cta-container { margin-top: 3px; }
 
+.text-only-3-column__title { color: #005EB8; }
+
 @media screen and (max-width: 767px) { .text-only-3-column { margin-bottom: 60px; }
   .text-only-3-column__cta-container a { width: 100%; }
-  .text-only-3-column h2 { padding-bottom: 20px; }
+  .text-only-3-column__heading { padding-bottom: 20px; }
   .text-only-3-column .b-eyebrow-small { padding-bottom: 30px; } }
 
 @media screen and (min-width: 768px) { .text-only-3-column { padding-top: 120px; margin-bottom: 120px; }
-  .text-only-3-column h2 { padding-bottom: 10px; }
+  .text-only-3-column__heading { padding-bottom: 10px; }
   .text-only-3-column .b-eyebrow-small { padding: 15px 0 30px 0; }
-  .text-only-3-column .category-item-date { padding-top: 8px; }
+  .text-only-3-column__date { padding-top: 8px; }
   .text-only-3-column__description { padding-bottom: 15px; }
   .text-only-3-column__article { padding-top: 30px; }
   .text-only-3-column__cta-container { margin-top: 30px; } }

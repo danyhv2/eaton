@@ -73,54 +73,54 @@ use(function () {
         {
           headline: 'Eaton Named a 2016 Best Employer for Healthy Lifestyles, Earns Global Distingtion Award',
           image: {
-            mobile:'/content/dam/eaton/images/Image4.png',
-            tablet:'/content/dam/eaton/images/Image4.png',
-            desktop: '/content/dam/eaton/images/Image4.png',
+            mobile:'/content/dam/eaton/images/WME_2016.png',
+            tablet:'/content/dam/eaton/images/WME_2016.png',
+            desktop: '/content/dam/eaton/images/WME_2016.png',
             altText: 'Alt text for Image 1',
           }
         },
         {
           headline: 'Partner of the year by the EPA for 3rd consecutive year',
           image: {
-            mobile:'/content/dam/eaton/images/Image4.png',
-            tablet:'/content/dam/eaton/images/Image4.png',
-            desktop: '/content/dam/eaton/images/Image4.png',
+            mobile:'/content/dam/eaton/images/WME_2016.png',
+            tablet:'/content/dam/eaton/images/WME_2016.png',
+            desktop: '/content/dam/eaton/images/WME_2016.png',
             altText: 'Alt text for Image 2'
           }
         },
         {
           headline: 'World most ethical companies 2007-2014',
           image: {
-            mobile:'/content/dam/eaton/images/Image4.png',
-            tablet:'/content/dam/eaton/images/Image4.png',
-            desktop: '/content/dam/eaton/images/Image4.png',
+            mobile:'/content/dam/eaton/images/WME_2016.png',
+            tablet:'/content/dam/eaton/images/WME_2016.png',
+            desktop: '/content/dam/eaton/images/WME_2016.png',
             altText: 'Alt text for Image 3',
           }
         },
         {
           headline: 'Top 100 innovators of 2011, 2012 and 2013',
           image: {
-            mobile:'/content/dam/eaton/images/Image4.png',
-            tablet:'/content/dam/eaton/images/Image4.png',
-            desktop: '/content/dam/eaton/images/Image4.png',
+            mobile:'/content/dam/eaton/images/WME_2016.png',
+            tablet:'/content/dam/eaton/images/WME_2016.png',
+            desktop: '/content/dam/eaton/images/WME_2016.png',
             altText: 'Alt text for Image 4'
           }
         },
         {
           headline: 'Readers choise, Top 50 employers for workplace diversity',
           image: {
-            mobile:'/content/dam/eaton/images/Image4.png',
-            tablet:'/content/dam/eaton/images/Image4.png',
-            desktop: '/content/dam/eaton/images/Image4.png',
+            mobile:'/content/dam/eaton/images/WME_2016.png',
+            tablet:'/content/dam/eaton/images/WME_2016.png',
+            desktop: '/content/dam/eaton/images/WME_2016.png',
             altText: 'Alt text for Image 5'
           }
         },
         {
           headline: 'Best places to work 2016',
           image: {
-            mobile:'/content/dam/eaton/images/Image4.png',
-            tablet:'/content/dam/eaton/images/Image4.png',
-            desktop: '/content/dam/eaton/images/Image4.png',
+            mobile:'/content/dam/eaton/images/WME_2016.png',
+            tablet:'/content/dam/eaton/images/WME_2016.png',
+            desktop: '/content/dam/eaton/images/WME_2016.png',
             altText: 'Alt text for Image 6'
           }
         }
@@ -129,6 +129,60 @@ use(function () {
 
   } else {
 
+    data = {
+      items: [
+        {
+          image: {
+            mobile:'/content/dam/eaton/images/TOP_100.png',
+            tablet:'/content/dam/eaton/images/TOP_100.png',
+            desktop: '/content/dam/eaton/images/TOP_100.png',
+            altText: 'Alt text for Image 1',
+          }
+        },
+        {
+          image: {
+            mobile:'/content/dam/eaton/images/TOP_100.png',
+            tablet:'/content/dam/eaton/images/TOP_100.png',
+            desktop: '/content/dam/eaton/images/TOP_100.png',
+            altText: 'Alt text for Image 2'
+          }
+        },
+        {
+          image: {
+            mobile:'/content/dam/eaton/images/TOP_100.png',
+            tablet:'/content/dam/eaton/images/TOP_100.png',
+            desktop: '/content/dam/eaton/images/TOP_100.png',
+            altText: 'Alt text for Image 3',
+          }
+        },
+        {
+          image: {
+            mobile:'/content/dam/eaton/images/TOP_100.png',
+            tablet:'/content/dam/eaton/images/TOP_100.png',
+            desktop: '/content/dam/eaton/images/TOP_100.png',
+            altText: 'Alt text for Image 4'
+          }
+        },
+        {
+          image: {
+            mobile:'/content/dam/eaton/images/TOP_100.png',
+            tablet:'/content/dam/eaton/images/TOP_100.png',
+            desktop: '/content/dam/eaton/images/TOP_100.png',
+            altText: 'Alt text for Image 5'
+          }
+        },
+        {
+          image: {
+            mobile:'/content/dam/eaton/images/TOP_100.png',
+            tablet:'/content/dam/eaton/images/TOP_100.png',
+            desktop: '/content/dam/eaton/images/TOP_100.png',
+            altText: 'Alt text for Image 6'
+          }
+        }
+      ]
+    };
+
+    /*
     data = {
       items: [
         {
@@ -182,6 +236,7 @@ use(function () {
       ]
     };
 
+    */
   }
 
   return data;
