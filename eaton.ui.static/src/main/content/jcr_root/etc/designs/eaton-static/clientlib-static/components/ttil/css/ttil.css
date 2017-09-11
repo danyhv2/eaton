@@ -149,7 +149,7 @@
 
 .eaton-topic-link-white--blue .eaton-topic-link-white__header, .eaton-topic-link-white--blue .eaton-topic-link-white__description { color: #FFF; }
 
-@media screen and (min-width: 992px) { .eaton-topic-link-white__icon { width: 70px; margin-bottom: 0; margin-right: 30px; display: inline-block; }
+@media screen and (min-width: 992px) { .eaton-topic-link-white__icon { width: 70px; margin-bottom: 0; margin-right: 30px; display: inline-block; float: left; }
   .eaton-topic-link-white__icon img { width: 70px; height: 70px; }
   .eaton-topic-link-white__header, .eaton-topic-link-white__description { margin-bottom: 0; }
   .eaton-topic-link-white__text-wrapper { width: calc(100% - 100px); display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; float: right; }
