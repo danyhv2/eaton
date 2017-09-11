@@ -3,18 +3,19 @@
       <!--/* Check if Grid is enabled */-->
       <div data-sly-list="${ data.items }" class="${properties.toggleInnerGrid ? 'container' : ''} eaton-ttil-image-list__container">
         <div class="eaton-ttil-image-list__item">
+
             <!--/* When Image has Headline & No Url */-->
-            <div data-sly-test="${!item.url && item.headline}" class="eaton-ttil-image-list__content">
+            <div data-sly-test="${!item.link && item.headline}" class="eaton-ttil-image-list__content">
               <div class="eaton-ttil-image-list__image">
                 <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
                   <sly data-sly-call="${ tpl.module @ data=item.image }"></sly>
                 </sly>
               </div>
-              <div class="img-responsive eaton-ttil-image-list__image-headline">${item.headline}</div>
+              <div class="eaton-ttil-image-list__image-headline">${item.headline}</div>
             </div>
 
             <!--/* When Image has Headline & Url */-->
-            <a data-sly-test="${item.url && item.headline}" href="${item.url}" class="eaton-ttil-image-list__content">
+            <a data-sly-test="${item.link && item.headline}" href="${item.link.url}" class="eaton-ttil-image-list__content">
               <div class="eaton-ttil-image-list__image">
                 <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
                   <sly data-sly-call="${ tpl.module @ data=item.image }"></sly>
@@ -23,14 +24,14 @@
               <div class="eaton-ttil-image-list__image-headline">${item.headline}</div>
             </a>
 
-            <!--/* When Image has no Headline */-->
-            <div data-sly-test="${!item.headline}" class="eaton-ttil-image-list__content">
+            <!--/* When Image has no Headline and has a URL */-->
+            <a data-sly-test="${!item.headline && item.link}" href="${item.link.url}" class="eaton-ttil-image-list__content">
               <div class="eaton-ttil-image-list__image">
                 <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
                   <sly data-sly-call="${ tpl.module @ data=item.image }"></sly>
                 </sly>
               </div>
-            </div>
+            </a>
         </div>
       </div>
     </div>

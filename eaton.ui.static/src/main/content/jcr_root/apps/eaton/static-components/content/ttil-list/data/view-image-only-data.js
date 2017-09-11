@@ -137,6 +137,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/TOP_100.png',
             desktop: '/content/dam/eaton/images/TOP_100.png',
             altText: 'Alt text for Image 1',
+          },
+          link: {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         },
         {
@@ -145,6 +149,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/TOP_100.png',
             desktop: '/content/dam/eaton/images/TOP_100.png',
             altText: 'Alt text for Image 2'
+          },
+          link: {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         },
         {
@@ -153,6 +161,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/TOP_100.png',
             desktop: '/content/dam/eaton/images/TOP_100.png',
             altText: 'Alt text for Image 3',
+          },
+          link: {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         },
         {
@@ -161,6 +173,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/TOP_100.png',
             desktop: '/content/dam/eaton/images/TOP_100.png',
             altText: 'Alt text for Image 4'
+          },
+          link: {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         },
         {
@@ -169,6 +185,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/TOP_100.png',
             desktop: '/content/dam/eaton/images/TOP_100.png',
             altText: 'Alt text for Image 5'
+          },
+          link: {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         },
         {
@@ -177,6 +197,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/TOP_100.png',
             desktop: '/content/dam/eaton/images/TOP_100.png',
             altText: 'Alt text for Image 6'
+          },
+          link: {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         }
       ]
