@@ -86,9 +86,9 @@
   }
 
 
-  // Over DARK-Background
-  //--------------
-  .dark-theme & {
+  // Override font-sizes for dark-theme & on header/footer
+  .eaton-footer.dark-theme & {
+    padding-bottom: 0;
 
     .icon-chevron-right {
       display: inline-block;
@@ -98,19 +98,12 @@
       @include eyebrow-small;
     }
 
-    &__list-link {
-      font-weight: normal;
-    }
-
-    // Override font-sizes for dark-theme
     &__list-item {
       @include body-copy-small;
     }
 
-    &__eyebrow,
-    &__list-item a, // Override style added by the mixins
-    &__download-text {
-      color: $color__white;
+    &__list-link {
+      font-weight: normal;
     }
 
     &__list-icon {
@@ -123,6 +116,24 @@
 
     &__download-text {
       font-size: 1.6rem;
+    }
+
+    &__eyebrow,
+    &__list-item a, // Override style added by the mixins
+    &__download-text {
+      color: $color__white;
+    }
+  }
+
+  // Over DARK-Background
+  //--------------
+  .dark-theme & {
+    padding-bottom: 30px;
+
+    &__eyebrow,
+    &__list-item a, // Override style added by the mixins
+    &__download-text {
+      color: $color__white;
     }
   }
 
