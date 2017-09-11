@@ -57,7 +57,7 @@ use(function () {
         {
           imageMaskEnabled: true,
           title: 'We make big ideas work.',
-          text: 'This slide uses image alignment, the same image used in desktop breakpoint is also used in mobile breakpoint. For this exsample, in mobile breakpoint, the image is Aligned to the LEFT.',
+          text: 'This slide uses image alignment, the same image used in desktop breakpoint is also used in mobile breakpoint. In this example, mobile breakpoint image is Aligned to the LEFT.',
           image: {
             mobile: '/content/dam/eaton/images/Hero Images.png',
             tablet: '/content/dam/eaton/images/Hero Images.png',
@@ -84,7 +84,7 @@ use(function () {
         {
           imageMaskEnabled: true,
           title: 'Slide #4.',
-          text: 'This slide uses image alignment, the same image used in desktop breakpoint is also used in mobile breakpoint. For this exsample, in mobile breakpoint, the image is CENTER Aligned.',
+          text: 'This slide uses image alignment, the same image used in desktop breakpoint is also used in mobile breakpoint. In this example, mobile breakpoint image is CENTER Aligned.',
           image: {
             mobile: '/content/dam/eaton/images/Hero Images.png',
             tablet: '/content/dam/eaton/images/Hero Images.png',

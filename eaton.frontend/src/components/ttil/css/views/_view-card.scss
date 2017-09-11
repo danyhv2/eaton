@@ -3,13 +3,43 @@
 //-----------------------------------
 .eaton-ttil-card-view {
 
-  &__image { margin-bottom: $spacing__sm; }
+  position: relative;
 
-  &__title { margin-bottom: $spacing__sm; }
+  &__cta {
+    display: block;
+  }
 
-  &__text {
+  &__image-wrapper {
+    margin-bottom: 26px; // Visually 30px bottom margin
+  }
+
+  &__title {
     color: $color__primary-blue;
-    text-transform: none;
+    // padding: 0 15px; // TODO: Review if this padding needs to be added
+  }
+
+  &__eyebrow {
+    // padding: 0 15px; // TODO: Review if this padding needs to be added
+  }
+
+
+  //-----------------------------------
+  // Media Query: Mobile 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__eyebrow {
+      margin-bottom: 4px; // Visually 15px margin
+    }
+  }
+
+
+  //-----------------------------------
+  // Media Query: Desktop >992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__eyebrow {
+      margin-bottom: 20px; // Visually 30px margin
+    }
   }
 
 }

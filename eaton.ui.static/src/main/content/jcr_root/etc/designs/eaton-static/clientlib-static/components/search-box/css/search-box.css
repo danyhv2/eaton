@@ -29,6 +29,8 @@
 
 .eaton-search--default { padding: 30px 0; background: #005EB8; }
 
+.eaton-search--default textarea { padding: 7px 12px 0 0; height: 38px; }
+
 .eaton-search--default .form-group { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-bottom: 1px solid #FFF; margin-bottom: 0; position: relative; }
 
 .eaton-search--default .icon-search { top: 2px; position: relative; }
@@ -74,8 +76,9 @@
 .eaton-search--default :-moz-placeholder { /* Firefox 18- */ color: #FFF; }
 
 @media screen and (max-width: 479px) { .eaton-search--default .eaton-search--default__form-input:valid + .eaton-search--default__form-mobile-label { display: none; }
-  .eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; left: 0; top: 0; display: table; height: 46px; }
+  .eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; left: 0; top: 0; display: table; height: 46px; font-size: 2rem; }
   .eaton-search--default__form-mobile-label.with-external { padding-right: 87px; }
+  .eaton-search--default__form-mobile-label.u-visible-mobile { padding-top: 10px; }
   .eaton-search--default__form-mobile-label span { display: table-cell; text-align: left; vertical-align: middle; }
   .eaton-search--default ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: transparent; }
   .eaton-search--default ::-moz-placeholder { /* Firefox 19+ */ color: transparent; }
@@ -87,8 +90,11 @@
   .eaton-search--default .icon-search { font-size: 1.25em; }
   .search-open .eaton-search--default { height: 100%; overflow-y: auto; } }
 
-@media screen and (min-width: 992px) { .eaton-search--default__form-input { font-size: 2.4rem; }
-  .eaton-search--default .icon-search { font-size: 2.1rem; left: 10px; }
+@media screen and (min-width: 768px) { .eaton-search--default__form-input { font-size: 2.6rem; } }
+
+@media screen and (max-width: 767px) { .eaton-search--default__form-input { font-size: 2rem; } }
+
+@media screen and (min-width: 992px) { .eaton-search--default .icon-search { font-size: 2.1rem; left: 10px; }
   .eaton-header--fixed .eaton-search--default .icon-search { left: 0; }
   .eaton-header--fixed .eaton-search--default__form-submit { padding-right: 0; }
   .eaton-search--default__result-item { line-height: 3rem; } }

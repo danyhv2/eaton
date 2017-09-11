@@ -1,4 +1,4 @@
-<div class="eaton-topic-link-white ${data.ctaText ? '' : 'no-cta'} eaton-topic-link-white--${data.color}" data-sly-use.data="${'../data/view-topic-link-white-data.js' @testdata=properties.testdata}">
+<div class="eaton-topic-link-white ${data.ctaText ? '' : 'no-cta'} ${!data.color ? '' : ['eaton-topic-link-white--', data.color] @ join=''}" data-sly-use.data="${'../data/view-topic-link-white-data.js' @testdata=properties.testdata}">
 
     <div class="container ${data.ctaText ? '' : 'no-cta'}">
 

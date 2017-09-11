@@ -1,37 +1,50 @@
-<div class="eaton-list-component text-only-3-column container" data-sly-use.data="${'../data/view-text-only-3-column.js' @testdata=properties.testdata}">
-    <div class="row">
+<!--/*
+  Module M-32 - Related Items - Text Only
+*/-->
+<sly data-sly-use.data="${'../data/view-text-only-3-column.js' @testdata=properties.testdata}">
 
+  <div class="text-only-3-column">
+    <div class="container">
 
-<div class="col-xs-12">
-<h2 class="b-heading-h2">${data.title}</h2>
-</div>
-</div>
-    <div class="row">
+      <!--/* Component Header */-->
+      <div data-sly-test="${ data.title }" class="row">
+        <div class="col-xs-12">
+          <h2 class="text-only-3-column__heading b-heading-h2">${ data.title }</h2>
+        </div>
+      </div>
 
-        <ul class="text-only-3-column__slides" data-sly-list.card="${data.cards}">
-            <li class="slides text-only-3-column__card">
-               <a href="${data.single_feature_card.cta.url}" target="${data.single_feature_card.cta.target}" class="article-list-single-feature__link">
-                        <span class="article-list-single-feature--border"></span>
-                        <div class="article-list-single-feature__article--copy">
-                            <p class="b-eyebrow-small">${card.title}</p>
-                            <p class="b-heading-h5">${card.text}</p>
-                            <p class="category-item-date"><em>${card.date_text}</em></p>
-                        </div>
-                </a>
-            </li>
+      <!--/* Component Content */-->
+      <div class="row">
+        <ul data-sly-list.card="${ data.cards }"
+          class="text-only-3-column__slides">
+          <li class="slides text-only-3-column__card">
+
+            <div class="text-only-3-column__article-copy">
+              <div class="text-only-3-column__eyebrow b-eyebrow-small">${ card.title }</div>
+              <h3 class="text-only-3-column__title b-heading-h5">
+                <a href="${ card.cta.url }"
+                  target="${ cta.target }"
+                  class="text-only-3-column__cta">
+                  ${ card.text }</a>
+              </h3>
+              <div data-sly-test="${ card.date_text }" class="text-only-3-column__date">
+                <em>${ card.date_text }</em>
+              </div>
+            </div>
+
+          </li>
         </ul>
 
-            <button class="text-only-3-column__prev-arrow upsell-products__arrows button--reset">
-                <i class="icon icon-chevron-left"></i>
-                <span class="sr-only">Go to Previous Item</span>
-            </button>
-            <button class="text-only-3-column__next-arrow upsell-products__arrows button--reset">
-                <i class="icon icon-chevron-right"></i>
-                <span class="sr-only">Go to Next Item</span>
-            </button>
+        <button class="text-only-3-column__prev-arrow upsell-products__arrows button--reset">
+          <i class="icon icon-chevron-left"></i>
+          <span class="sr-only">Go to Previous Item</span>
+        </button>
+        <button class="text-only-3-column__next-arrow upsell-products__arrows button--reset">
+          <i class="icon icon-chevron-right"></i>
+          <span class="sr-only">Go to Next Item</span>
+        </button>
 
-
+      </div>
     </div>
-
-
-</div>
+  </div>
+</sly>

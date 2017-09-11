@@ -1,18 +1,25 @@
+//-----------------------------------
+// Module M-32 - Related Items - Text Only (Text-Only 3-Col)
+//-----------------------------------
 .text-only-3-column {
 
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // EATON-598: General Spacing between components
+  margin-top: 30px;
+  margin-bottom: 110px; // Visually, 120px spacing
 
-
-  h2 {
+  &__heading {
     padding-bottom: 10px;
   }
 
-  .b-eyebrow-small {
+  &__cta {
+    display: block;
+  }
+
+  &__eyebrow {
     padding: 0;
   }
 
-  .category-item-date {
+  &__date {
     padding-top: 0;
     color: $color__primary-gray3;
   }
@@ -21,55 +28,99 @@
     padding-top: 0;
   }
 
+  &__article-copy {
+    padding: 16px 50px 15px 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: $color__primary-blue;
+      display: block;
+      height: 4px;
+      width: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
   &__card {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
   }
 
   &__cta-container {
     margin-top: 3px;
   }
 
+  &__title {
+    color: $color__primary-blue;
+    margin: 0;
+  }
 
 
+  &__slides {
+    padding-left: 15px;
+    margin-bottom: 0;
+
+    .slick-active button {
+      background-color: $color__primary-blue;
+    }
+  }
+
+
+
+
+  //-----------------------------------
+  // 0-767px
+  //-----------------------------------
   @include media-mobile-only {
 
     &__cta-container a {
       width: 100%;
     }
 
+    &__heading {
+      padding-bottom: 20px;
+    }
+
+    &__eyebrow {
+      margin-bottom: 20px; // Visually, 30px spacing
+    }
+
+    &__date {
+      margin-top: 5px;
+    }
+
   }
 
 
+  //-----------------------------------
+  // > 768px
+  //-----------------------------------
   @include media-tablet-and-up {
 
-    padding-top: 120px;
-    padding-bottom: 60px;
-
-
-    h2 {
+    &__heading {
       padding-bottom: 10px;
-    }
-
-
-    .b-eyebrow-small {
-      padding: 15px 0 40px 0;
-    }
-
-    .category-item-date {
-      padding-top: 8px;
-    }
-
-    &__description {
-      padding-bottom: 15px;
     }
 
     &__article {
       padding-top: 30px;
     }
 
+    &__article-copy {
+      padding-bottom: 45px;
+    }
+
+    &__description {
+      padding-bottom: 15px;
+    }
+
+    &__date {
+      margin-top: 5px;
+    }
 
     &__cta-container {
       margin-top: 30px;
@@ -78,13 +129,29 @@
   }
 
 
-}
+  //-----------------------------------
+  // MediaQuery: > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__article-copy {
+      padding: 30px 50px 0 0;
+    }
 
-.text-only-3-column__slides {
-  padding-left: 15px;
+    &__eyebrow {
+      margin-bottom: 45px; // Visually, 60px spacing
+    }
 
-  .slick-active button {
-    background-color: $color__primary-blue;
+    &__date {
+      margin-top: 15px; // Visually, 30px Spacing
+    }
   }
 
+}
+
+
+//-----------------------------------
+// EATON-598 - Spacing between components exceptions
+//-----------------------------------
+.ttil-list + .list > .text-only-3-column {
+  margin-top: 60px;
 }

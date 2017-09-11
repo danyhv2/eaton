@@ -1,7 +1,7 @@
 .tile-link-component {
 
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 0; // NOTE: Remove bottom margin since each '&__element' already has bottom margin
 
   &__container {
 
@@ -152,4 +152,3 @@
     }
   }
 }
-

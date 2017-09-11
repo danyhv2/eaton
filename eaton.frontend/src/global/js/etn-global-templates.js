@@ -8,6 +8,47 @@ App.global = App.global || {};
 
 App.global.templates = (function() {
 
+
+  /**
+  * Based on AEM Template: /eaton.ui.static/src/main/content/jcr_root/apps/eaton/static-components/shared/templates/rendition-image.html
+  * @param { Object } image - Image URL's for all breakpoints
+  * Aditional Info: Jira EATON-81
+  */
+  const renditionImage = (image) => {
+    return `
+      <div class="rendition">
+        <img
+          class="rendition__image img-responsive"
+          data-src="${ image.mobile }"
+          data-mobile-rendition="${ image.mobile }"
+          data-tablet-rendition="${ image.tablet }"
+          data-desktop-rendition="${ image.desktop }"
+          alt="${ image.altText }"
+        />
+      </div>
+    `;
+  };
+
+
+  /**
+  * Based on AEM Template: /eaton.ui.static/src/main/content/jcr_root/apps/eaton/static-components/shared/templates/rendition-background.html
+  * @param { Object } image - Image URL's for all breakpoints
+  * Aditional Info: Jira EATON-81
+  */
+  const renditionBackground = (image) => {
+    return `
+      <div class="rendition-bg"
+        style="background-image: url('${ image.mobile }');"
+        data-src="${ image.mobile }"
+        data-mobile-rendition="${ image.mobile }"
+        data-tablet-rendition="${ image.tablet }"
+        data-desktop-rendition="${ image.desktop }"
+      >
+      </div>
+    `;
+  };
+
+
   // M-36: SKU Card Template
   //--------------
   const productGridSKU = function(data, i18n) {
@@ -19,9 +60,7 @@ App.global.templates = (function() {
             class="product-card-sku__image-link"
             target="${ data.contentItem.link.target }"
           >
-            <img src="${ data.contentItem.image.src }"
-              class="product-card-sku__image"
-              alt="${ data.contentItem.name }" />
+            ${ renditionImage(data.contentItem.image) }
           </a>
         </div>
 
@@ -99,9 +138,7 @@ App.global.templates = (function() {
         </a>
 
         <div class="product-card-subcategory__image-wrapper">
-          <img src="${ data.contentItem.image.src }"
-            class="product-card-subcategory__image"
-            alt="${ data.contentItem.name }" />
+          ${ renditionImage(data.contentItem.image) }
         </div>
 
         <div class="product-card-subcategory__content-wrapper">
@@ -125,9 +162,7 @@ App.global.templates = (function() {
             class="results-list-submodule__image-link"
             target="${ data.contentItem.link.target }"
           >
-            <img src="${ data.contentItem.image.src }"
-              class="results-list-submodule__image"
-              alt="${ data.contentItem.image.altText }" />
+            ${ renditionImage(data.contentItem.image) }
             </a>
         </div>
         <div class="results-list-submodule__content-wrapper">
@@ -255,6 +290,8 @@ App.global.templates = (function() {
   };
 
   return {
+    renditionImage,
+    renditionBackground,
     productGridSKU,
     productGridSubcategory,
     searchResultsProductFamily,

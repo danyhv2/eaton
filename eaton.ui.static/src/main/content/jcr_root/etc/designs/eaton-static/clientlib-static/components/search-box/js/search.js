@@ -126,6 +126,8 @@ App.search = function () {
   * If containing DOM element is found, Initialize and Expose public methods
   */
   if ($componentElement.length > 0) {
+    autosize($('.search-box textarea'));
+    autosize($('.eaton-header textarea'));
     init();
   }
 }();

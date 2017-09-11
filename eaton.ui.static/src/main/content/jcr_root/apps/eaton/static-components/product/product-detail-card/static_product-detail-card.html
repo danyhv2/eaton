@@ -21,11 +21,26 @@
 
     <!--/* M-41: Related Products */-->
     <!--/* NOTE: It should behave as an Upsell Component: Carousel starts after 3 items */-->
-    <div class="eaton-product-detail-card__related-products">
+    <div class="product-detail-card__related-products">
       <div class="container">
+        <div
+          data-sly-test="${ viewData.relatedProducts.title || viewData.relatedProducts.description }"
+          class="product-detail-card__related-products-header">
+
+          <h3 data-sly-test="${ viewData.relatedProducts.title }"
+            class="product-detail-card__related-products-title"
+          >${ viewData.relatedProducts.title }</h3>
+
+          <p data-sly-test="${ viewData.relatedProducts.description }"
+            class="product-detail-card__related-products-description"
+          >${ viewData.relatedProducts.description }</p>
+
+        </div>
+
         <sly data-sly-use.tpl="eaton/static-components/shared/templates/module-upsell-products.html">
           <sly data-sly-call="${ tpl.module @ data=viewData.relatedProducts.items }"></sly>
         </sly>
+
       </div>
     </div>
 

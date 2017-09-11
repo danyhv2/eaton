@@ -412,7 +412,9 @@ use(function () {
             "name": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "image": {
-              "src": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "mobile": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-1-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-1-thumbnail.png",
               "altText": "Network, Server & Storage UPS",
             },
             "link": {
@@ -460,7 +462,9 @@ use(function () {
             "name": "9E6Ki-Eaton 9E",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "image": {
-              "src": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+              "mobile": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-2-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-2-thumbnail.png",
               "altText": "9E6Ki-Eaton 9E",
             },
             "link": {
@@ -495,7 +499,9 @@ use(function () {
             "name": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "image": {
-              "src": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "mobile": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-3-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-3-thumbnail.png",
               "altText": "Network, Server & Storage UPS",
             },
             "link": {
@@ -544,7 +550,9 @@ use(function () {
             "name": "9E6Ki-Eaton 9E",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "image": {
-              "src": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+              "mobile": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-7-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-7-thumbnail.png",
               "altText": "9E6Ki-Eaton 9E",
             },
             "link": {
@@ -593,7 +601,9 @@ use(function () {
             "name": "Network, Server & Storage UPS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sed do eiusmod tempor incididunt ut labore et dolore magna …",
             "image": {
-              "src": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+              "mobile": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+              "tablet": "/content/dam/eaton/images/products/product-5-thumbnail.png",
+              "desktop": "/content/dam/eaton/images/products/product-5-thumbnail.png",
               "altText": "Network, Server & Storage UPS",
             },
             "link": {

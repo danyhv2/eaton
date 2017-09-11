@@ -115,6 +115,9 @@ App.productGrid = function () {
       // Update Fetch URL for the next set of items / next AJAX Request
       $currentComponent.attr('data-results-url', data.search.ajaxRequestUrl);
       $currentComponent.attr('data-results-next-page', data.search.ajaxRequestNextPage);
+
+      // Request the image rendition module to update the images in the elements loaded with AJAX
+      App.renditions.updateImagesSrc();
     })
 
     // Callback for Failed Request
