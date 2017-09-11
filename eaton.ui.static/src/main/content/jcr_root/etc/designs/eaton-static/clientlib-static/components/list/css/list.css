@@ -157,7 +157,7 @@
   .eaton-list-links__col { width: 100%; margin: 0 15px; }
   .eaton-list-links__col:first-child { margin-left: 0; } }
 
-.related-products-component { padding: 30px 0; }
+.related-products-component { padding: 60px 0; }
 
 .related-products-component__text { padding-left: 15px; padding-bottom: 45px; }
 
