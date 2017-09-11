@@ -88,3 +88,5 @@ body.zoom-overlay-open { overflow: hidden; }
   .module-media-gallery__thumbnail-item { position: relative; margin: 0 30px; padding-bottom: 10px; }
   .module-media-gallery__thumbnail-item.active::after { content: ''; position: absolute; height: 2px; width: 100%; background: #005EB8; bottom: 0; }
   .module-media-gallery__thumbnail-aspect-ratio { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: none; border-radius: 0; border: 0; margin: 0; width: 100%; } }
+
+.eaton-media-gallery .module-media-gallery__slide-utility .icon { color: #FFF; text-shadow: 0 0 2px rgba(0, 0, 0, 0.7); }

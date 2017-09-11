@@ -247,4 +247,22 @@
       width: 100%;
     }
   }
+
+
+
+  //-----------------------------------
+  // Overrides when the module is used as an Standalone component
+  // Eg: (Authored Media Gallery)
+  //-----------------------------------
+
+  // EATON-507: Media Gallery - Icons are hard to see on some gallery images
+  .eaton-media-gallery & {
+
+    &__slide-utility .icon {
+      color: $color__white;
+      text-shadow: 0 0 2px rgba(#000, 0.7)
+    }
+
+  }
+
 }
