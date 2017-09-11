@@ -492,7 +492,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .flag-afghanistan { background-image: url(images/flags-sprite.png); background-position: -28px 0px; width: 24px; height: 24px; }
 
-.flag-albania { background-image: url(images/flags-sprite.png); background-position: -140px -252px; width: 24px; height: 24px; }
+.flag-albania { background-image: url(images/flags-sprite.png); background-position: -84px -252px; width: 24px; height: 24px; }
 
 .flag-algeria { background-image: url(images/flags-sprite.png); background-position: 0px -28px; width: 24px; height: 24px; }
 
@@ -570,7 +570,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .flag-costa-rica { background-image: url(images/flags-sprite.png); background-position: -168px -84px; width: 24px; height: 24px; }
 
-.flag-cote-divoire { background-image: url(images/flags-sprite.png); background-position: -168px -112px; width: 24px; height: 24px; }
+.flag-cote-d-ivoire { background-image: url(images/flags-sprite.png); background-position: -168px -112px; width: 24px; height: 24px; }
 
 .flag-croatia { background-image: url(images/flags-sprite.png); background-position: -168px -140px; width: 24px; height: 24px; }
 
@@ -588,284 +588,278 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 .flag-dominican-republic { background-image: url(images/flags-sprite.png); background-position: -168px -168px; width: 24px; height: 24px; }
 
-.flag-ecuador { background-image: url(images/flags-sprite.png); background-position: -196px 0px; width: 24px; height: 24px; }
+.flag-egypt { background-image: url(images/flags-sprite.png); background-position: -196px 0px; width: 24px; height: 24px; }
 
-.flag-egypt { background-image: url(images/flags-sprite.png); background-position: -196px -28px; width: 24px; height: 24px; }
+.flag-el-salvador { background-image: url(images/flags-sprite.png); background-position: -196px -28px; width: 24px; height: 24px; }
 
-.flag-el-salvador { background-image: url(images/flags-sprite.png); background-position: -196px -56px; width: 24px; height: 24px; }
+.flag-equatorial-guinea { background-image: url(images/flags-sprite.png); background-position: -196px -56px; width: 24px; height: 24px; }
 
-.flag-equatorial-guinea { background-image: url(images/flags-sprite.png); background-position: -196px -84px; width: 24px; height: 24px; }
+.flag-eritrea { background-image: url(images/flags-sprite.png); background-position: -196px -84px; width: 24px; height: 24px; }
 
-.flag-eritrea { background-image: url(images/flags-sprite.png); background-position: -196px -112px; width: 24px; height: 24px; }
+.flag-ethiopia { background-image: url(images/flags-sprite.png); background-position: -196px -112px; width: 24px; height: 24px; }
 
-.flag-estonia { background-image: url(images/flags-sprite.png); background-position: -196px -140px; width: 24px; height: 24px; }
+.flag-fiji { background-image: url(images/flags-sprite.png); background-position: -196px -140px; width: 24px; height: 24px; }
 
-.flag-ethiopia { background-image: url(images/flags-sprite.png); background-position: -196px -168px; width: 24px; height: 24px; }
+.flag-finland { background-image: url(images/flags-sprite.png); background-position: -196px -168px; width: 24px; height: 24px; }
 
-.flag-fiji { background-image: url(images/flags-sprite.png); background-position: 0px -196px; width: 24px; height: 24px; }
+.flag-france { background-image: url(images/flags-sprite.png); background-position: 0px -196px; width: 24px; height: 24px; }
 
-.flag-finland { background-image: url(images/flags-sprite.png); background-position: -28px -196px; width: 24px; height: 24px; }
+.flag-gabon { background-image: url(images/flags-sprite.png); background-position: -28px -196px; width: 24px; height: 24px; }
 
-.flag-france { background-image: url(images/flags-sprite.png); background-position: -56px -196px; width: 24px; height: 24px; }
+.flag-gambia { background-image: url(images/flags-sprite.png); background-position: -56px -196px; width: 24px; height: 24px; }
 
-.flag-gabon { background-image: url(images/flags-sprite.png); background-position: -84px -196px; width: 24px; height: 24px; }
+.flag-georgia { background-image: url(images/flags-sprite.png); background-position: -84px -196px; width: 24px; height: 24px; }
 
-.flag-gambia { background-image: url(images/flags-sprite.png); background-position: -112px -196px; width: 24px; height: 24px; }
+.flag-germany { background-image: url(images/flags-sprite.png); background-position: -112px -196px; width: 24px; height: 24px; }
 
-.flag-georgia { background-image: url(images/flags-sprite.png); background-position: -140px -196px; width: 24px; height: 24px; }
+.flag-ghana { background-image: url(images/flags-sprite.png); background-position: -140px -196px; width: 24px; height: 24px; }
 
-.flag-germany { background-image: url(images/flags-sprite.png); background-position: -168px -196px; width: 24px; height: 24px; }
+.flag-greece { background-image: url(images/flags-sprite.png); background-position: -168px -196px; width: 24px; height: 24px; }
 
-.flag-ghana { background-image: url(images/flags-sprite.png); background-position: -196px -196px; width: 24px; height: 24px; }
+.flag-grenada { background-image: url(images/flags-sprite.png); background-position: -196px -196px; width: 24px; height: 24px; }
 
-.flag-greece { background-image: url(images/flags-sprite.png); background-position: -224px 0px; width: 24px; height: 24px; }
+.flag-guatemala { background-image: url(images/flags-sprite.png); background-position: -224px 0px; width: 24px; height: 24px; }
 
-.flag-grenada { background-image: url(images/flags-sprite.png); background-position: -224px -28px; width: 24px; height: 24px; }
+.flag-guinea-bissau { background-image: url(images/flags-sprite.png); background-position: -224px -28px; width: 24px; height: 24px; }
 
-.flag-guatemala { background-image: url(images/flags-sprite.png); background-position: -224px -56px; width: 24px; height: 24px; }
+.flag-guinea { background-image: url(images/flags-sprite.png); background-position: -224px -56px; width: 24px; height: 24px; }
 
-.flag-guinea-bissau { background-image: url(images/flags-sprite.png); background-position: -224px -84px; width: 24px; height: 24px; }
+.flag-guyana { background-image: url(images/flags-sprite.png); background-position: -224px -84px; width: 24px; height: 24px; }
 
-.flag-guinea { background-image: url(images/flags-sprite.png); background-position: -224px -112px; width: 24px; height: 24px; }
+.flag-haiti { background-image: url(images/flags-sprite.png); background-position: -224px -112px; width: 24px; height: 24px; }
 
-.flag-guyana { background-image: url(images/flags-sprite.png); background-position: -224px -140px; width: 24px; height: 24px; }
+.flag-honduras { background-image: url(images/flags-sprite.png); background-position: -224px -140px; width: 24px; height: 24px; }
 
-.flag-haiti { background-image: url(images/flags-sprite.png); background-position: -224px -168px; width: 24px; height: 24px; }
+.flag-hungary { background-image: url(images/flags-sprite.png); background-position: -224px -168px; width: 24px; height: 24px; }
 
-.flag-honduras { background-image: url(images/flags-sprite.png); background-position: -224px -196px; width: 24px; height: 24px; }
+.flag-iceland { background-image: url(images/flags-sprite.png); background-position: -224px -196px; width: 24px; height: 24px; }
 
-.flag-hungary { background-image: url(images/flags-sprite.png); background-position: 0px -224px; width: 24px; height: 24px; }
+.flag-india { background-image: url(images/flags-sprite.png); background-position: 0px -224px; width: 24px; height: 24px; }
 
-.flag-iceland { background-image: url(images/flags-sprite.png); background-position: -28px -224px; width: 24px; height: 24px; }
+.flag-indonesia { background-image: url(images/flags-sprite.png); background-position: -28px -224px; width: 24px; height: 24px; }
 
-.flag-india { background-image: url(images/flags-sprite.png); background-position: -56px -224px; width: 24px; height: 24px; }
+.flag-iran { background-image: url(images/flags-sprite.png); background-position: -56px -224px; width: 24px; height: 24px; }
 
-.flag-indonesia { background-image: url(images/flags-sprite.png); background-position: -84px -224px; width: 24px; height: 24px; }
+.flag-iraq { background-image: url(images/flags-sprite.png); background-position: -84px -224px; width: 24px; height: 24px; }
 
-.flag-iran { background-image: url(images/flags-sprite.png); background-position: -112px -224px; width: 24px; height: 24px; }
+.flag-ireland { background-image: url(images/flags-sprite.png); background-position: -112px -224px; width: 24px; height: 24px; }
 
-.flag-iraq { background-image: url(images/flags-sprite.png); background-position: -140px -224px; width: 24px; height: 24px; }
+.flag-italy { background-image: url(images/flags-sprite.png); background-position: -140px -224px; width: 24px; height: 24px; }
 
-.flag-ireland { background-image: url(images/flags-sprite.png); background-position: -168px -224px; width: 24px; height: 24px; }
+.flag-jamaica { background-image: url(images/flags-sprite.png); background-position: -168px -224px; width: 24px; height: 24px; }
 
-.flag-italy { background-image: url(images/flags-sprite.png); background-position: -196px -224px; width: 24px; height: 24px; }
+.flag-japan { background-image: url(images/flags-sprite.png); background-position: -196px -224px; width: 24px; height: 24px; }
 
-.flag-jamaica { background-image: url(images/flags-sprite.png); background-position: -224px -224px; width: 24px; height: 24px; }
+.flag-jordan { background-image: url(images/flags-sprite.png); background-position: -224px -224px; width: 24px; height: 24px; }
 
-.flag-japan { background-image: url(images/flags-sprite.png); background-position: -252px 0px; width: 24px; height: 24px; }
+.flag-kazakhstan { background-image: url(images/flags-sprite.png); background-position: -252px 0px; width: 24px; height: 24px; }
 
-.flag-jordan { background-image: url(images/flags-sprite.png); background-position: -252px -28px; width: 24px; height: 24px; }
+.flag-kenya { background-image: url(images/flags-sprite.png); background-position: -252px -28px; width: 24px; height: 24px; }
 
-.flag-kazakhstan { background-image: url(images/flags-sprite.png); background-position: -252px -56px; width: 24px; height: 24px; }
+.flag-kiribati { background-image: url(images/flags-sprite.png); background-position: -252px -56px; width: 24px; height: 24px; }
 
-.flag-kenya { background-image: url(images/flags-sprite.png); background-position: -252px -84px; width: 24px; height: 24px; }
+.flag-kuwait { background-image: url(images/flags-sprite.png); background-position: -252px -84px; width: 24px; height: 24px; }
 
-.flag-kiribati { background-image: url(images/flags-sprite.png); background-position: -252px -112px; width: 24px; height: 24px; }
+.flag-kyrgyzstan { background-image: url(images/flags-sprite.png); background-position: -252px -112px; width: 24px; height: 24px; }
 
-.flag-kuwait { background-image: url(images/flags-sprite.png); background-position: -252px -140px; width: 24px; height: 24px; }
+.flag-laos { background-image: url(images/flags-sprite.png); background-position: -252px -140px; width: 24px; height: 24px; }
 
-.flag-kyrgyzstan { background-image: url(images/flags-sprite.png); background-position: -252px -168px; width: 24px; height: 24px; }
+.flag-latvia { background-image: url(images/flags-sprite.png); background-position: -252px -168px; width: 24px; height: 24px; }
 
-.flag-laos { background-image: url(images/flags-sprite.png); background-position: -252px -196px; width: 24px; height: 24px; }
+.flag-lebanon { background-image: url(images/flags-sprite.png); background-position: -252px -196px; width: 24px; height: 24px; }
 
-.flag-latvia { background-image: url(images/flags-sprite.png); background-position: -252px -224px; width: 24px; height: 24px; }
+.flag-lesotho { background-image: url(images/flags-sprite.png); background-position: -252px -224px; width: 24px; height: 24px; }
 
-.flag-lebanon { background-image: url(images/flags-sprite.png); background-position: 0px -252px; width: 24px; height: 24px; }
+.flag-liberia { background-image: url(images/flags-sprite.png); background-position: 0px -252px; width: 24px; height: 24px; }
 
-.flag-lesotho { background-image: url(images/flags-sprite.png); background-position: -28px -252px; width: 24px; height: 24px; }
+.flag-libya { background-image: url(images/flags-sprite.png); background-position: -28px -252px; width: 24px; height: 24px; }
 
-.flag-liberia { background-image: url(images/flags-sprite.png); background-position: -56px -252px; width: 24px; height: 24px; }
-
-.flag-libya { background-image: url(images/flags-sprite.png); background-position: -84px -252px; width: 24px; height: 24px; }
-
-.flag-lichtenstein { background-image: url(images/flags-sprite.png); background-position: -112px -252px; width: 24px; height: 24px; }
+.flag-lichtenstein { background-image: url(images/flags-sprite.png); background-position: -56px -252px; width: 24px; height: 24px; }
 
 .flag-lithuania { background-image: url(images/flags-sprite.png); background-position: 0px 0px; width: 24px; height: 24px; }
 
-.flag-luxemburg { background-image: url(images/flags-sprite.png); background-position: -168px -252px; width: 24px; height: 24px; }
+.flag-luxemburg { background-image: url(images/flags-sprite.png); background-position: -112px -252px; width: 24px; height: 24px; }
 
-.flag-macedonia { background-image: url(images/flags-sprite.png); background-position: -196px -252px; width: 24px; height: 24px; }
+.flag-macedonia { background-image: url(images/flags-sprite.png); background-position: -140px -252px; width: 24px; height: 24px; }
 
-.flag-madagascar { background-image: url(images/flags-sprite.png); background-position: -224px -252px; width: 24px; height: 24px; }
+.flag-madagascar { background-image: url(images/flags-sprite.png); background-position: -168px -252px; width: 24px; height: 24px; }
 
-.flag-malavi { background-image: url(images/flags-sprite.png); background-position: -252px -252px; width: 24px; height: 24px; }
+.flag-malavi { background-image: url(images/flags-sprite.png); background-position: -196px -252px; width: 24px; height: 24px; }
 
-.flag-malaysia { background-image: url(images/flags-sprite.png); background-position: -280px 0px; width: 24px; height: 24px; }
+.flag-malaysia { background-image: url(images/flags-sprite.png); background-position: -224px -252px; width: 24px; height: 24px; }
 
-.flag-maledives { background-image: url(images/flags-sprite.png); background-position: -280px -28px; width: 24px; height: 24px; }
+.flag-maledives { background-image: url(images/flags-sprite.png); background-position: -252px -252px; width: 24px; height: 24px; }
 
-.flag-mali { background-image: url(images/flags-sprite.png); background-position: -280px -56px; width: 24px; height: 24px; }
+.flag-mali { background-image: url(images/flags-sprite.png); background-position: -280px 0px; width: 24px; height: 24px; }
 
-.flag-malta { background-image: url(images/flags-sprite.png); background-position: -280px -84px; width: 24px; height: 24px; }
+.flag-malta { background-image: url(images/flags-sprite.png); background-position: -280px -28px; width: 24px; height: 24px; }
 
-.flag-marshal-islands { background-image: url(images/flags-sprite.png); background-position: -280px -112px; width: 24px; height: 24px; }
+.flag-marshal-islands { background-image: url(images/flags-sprite.png); background-position: -280px -56px; width: 24px; height: 24px; }
 
-.flag-mauritania { background-image: url(images/flags-sprite.png); background-position: -280px -140px; width: 24px; height: 24px; }
+.flag-mauritania { background-image: url(images/flags-sprite.png); background-position: -280px -84px; width: 24px; height: 24px; }
 
-.flag-mauritius { background-image: url(images/flags-sprite.png); background-position: -280px -168px; width: 24px; height: 24px; }
+.flag-mauritius { background-image: url(images/flags-sprite.png); background-position: -280px -112px; width: 24px; height: 24px; }
 
-.flag-mexico { background-image: url(images/flags-sprite.png); background-position: -280px -196px; width: 24px; height: 24px; }
+.flag-mexico { background-image: url(images/flags-sprite.png); background-position: -280px -140px; width: 24px; height: 24px; }
 
-.flag-micronesia { background-image: url(images/flags-sprite.png); background-position: -280px -224px; width: 24px; height: 24px; }
+.flag-micronesia { background-image: url(images/flags-sprite.png); background-position: -280px -168px; width: 24px; height: 24px; }
 
-.flag-moldova { background-image: url(images/flags-sprite.png); background-position: -280px -252px; width: 24px; height: 24px; }
+.flag-moldova { background-image: url(images/flags-sprite.png); background-position: -280px -196px; width: 24px; height: 24px; }
 
-.flag-monaco { background-image: url(images/flags-sprite.png); background-position: 0px -280px; width: 24px; height: 24px; }
+.flag-monaco { background-image: url(images/flags-sprite.png); background-position: -280px -224px; width: 24px; height: 24px; }
 
-.flag-mongolia { background-image: url(images/flags-sprite.png); background-position: -28px -280px; width: 24px; height: 24px; }
+.flag-mongolia { background-image: url(images/flags-sprite.png); background-position: -280px -252px; width: 24px; height: 24px; }
 
-.flag-montenegro { background-image: url(images/flags-sprite.png); background-position: -56px -280px; width: 24px; height: 24px; }
+.flag-montenegro { background-image: url(images/flags-sprite.png); background-position: 0px -280px; width: 24px; height: 24px; }
 
-.flag-morocco { background-image: url(images/flags-sprite.png); background-position: -84px -280px; width: 24px; height: 24px; }
+.flag-morocco { background-image: url(images/flags-sprite.png); background-position: -28px -280px; width: 24px; height: 24px; }
 
-.flag-mozambique { background-image: url(images/flags-sprite.png); background-position: -112px -280px; width: 24px; height: 24px; }
+.flag-mozambique { background-image: url(images/flags-sprite.png); background-position: -56px -280px; width: 24px; height: 24px; }
 
-.flag-namibia { background-image: url(images/flags-sprite.png); background-position: -140px -280px; width: 24px; height: 24px; }
+.flag-namibia { background-image: url(images/flags-sprite.png); background-position: -84px -280px; width: 24px; height: 24px; }
 
-.flag-nauru { background-image: url(images/flags-sprite.png); background-position: -168px -280px; width: 24px; height: 24px; }
+.flag-nauru { background-image: url(images/flags-sprite.png); background-position: -112px -280px; width: 24px; height: 24px; }
 
-.flag-nepal { background-image: url(images/flags-sprite.png); background-position: -196px -280px; width: 24px; height: 24px; }
+.flag-nepal { background-image: url(images/flags-sprite.png); background-position: -140px -280px; width: 24px; height: 24px; }
 
-.flag-netherlands { background-image: url(images/flags-sprite.png); background-position: -224px -280px; width: 24px; height: 24px; }
+.flag-netherlands { background-image: url(images/flags-sprite.png); background-position: -168px -280px; width: 24px; height: 24px; }
 
-.flag-new-zealand { background-image: url(images/flags-sprite.png); background-position: -252px -280px; width: 24px; height: 24px; }
+.flag-new-zealand { background-image: url(images/flags-sprite.png); background-position: -196px -280px; width: 24px; height: 24px; }
 
-.flag-nicaragua { background-image: url(images/flags-sprite.png); background-position: -280px -280px; width: 24px; height: 24px; }
+.flag-nicaragua { background-image: url(images/flags-sprite.png); background-position: -224px -280px; width: 24px; height: 24px; }
 
-.flag-niger { background-image: url(images/flags-sprite.png); background-position: -308px 0px; width: 24px; height: 24px; }
+.flag-niger { background-image: url(images/flags-sprite.png); background-position: -252px -280px; width: 24px; height: 24px; }
 
-.flag-nigeria { background-image: url(images/flags-sprite.png); background-position: -308px -28px; width: 24px; height: 24px; }
+.flag-nigeria { background-image: url(images/flags-sprite.png); background-position: -280px -280px; width: 24px; height: 24px; }
 
-.flag-north-korea { background-image: url(images/flags-sprite.png); background-position: -308px -56px; width: 24px; height: 24px; }
+.flag-north-korea { background-image: url(images/flags-sprite.png); background-position: -308px 0px; width: 24px; height: 24px; }
 
-.flag-norway { background-image: url(images/flags-sprite.png); background-position: -308px -84px; width: 24px; height: 24px; }
+.flag-norway { background-image: url(images/flags-sprite.png); background-position: -308px -28px; width: 24px; height: 24px; }
 
-.flag-oman { background-image: url(images/flags-sprite.png); background-position: -308px -112px; width: 24px; height: 24px; }
+.flag-oman { background-image: url(images/flags-sprite.png); background-position: -308px -56px; width: 24px; height: 24px; }
 
-.flag-pakistan { background-image: url(images/flags-sprite.png); background-position: -308px -140px; width: 24px; height: 24px; }
+.flag-pakistan { background-image: url(images/flags-sprite.png); background-position: -308px -84px; width: 24px; height: 24px; }
 
-.flag-palau { background-image: url(images/flags-sprite.png); background-position: -308px -168px; width: 24px; height: 24px; }
+.flag-palau { background-image: url(images/flags-sprite.png); background-position: -308px -112px; width: 24px; height: 24px; }
 
-.flag-panama { background-image: url(images/flags-sprite.png); background-position: -308px -196px; width: 24px; height: 24px; }
+.flag-papua-new-guinea { background-image: url(images/flags-sprite.png); background-position: -308px -140px; width: 24px; height: 24px; }
 
-.flag-papua-new-guinea { background-image: url(images/flags-sprite.png); background-position: -308px -224px; width: 24px; height: 24px; }
+.flag-paraguay { background-image: url(images/flags-sprite.png); background-position: -308px -168px; width: 24px; height: 24px; }
 
-.flag-paraguay { background-image: url(images/flags-sprite.png); background-position: -308px -252px; width: 24px; height: 24px; }
+.flag-peru { background-image: url(images/flags-sprite.png); background-position: -308px -196px; width: 24px; height: 24px; }
 
-.flag-peru { background-image: url(images/flags-sprite.png); background-position: -308px -280px; width: 24px; height: 24px; }
+.flag-philippines { background-image: url(images/flags-sprite.png); background-position: -308px -224px; width: 24px; height: 24px; }
 
-.flag-philippines { background-image: url(images/flags-sprite.png); background-position: 0px -308px; width: 24px; height: 24px; }
+.flag-poland { background-image: url(images/flags-sprite.png); background-position: -308px -252px; width: 24px; height: 24px; }
 
-.flag-poland { background-image: url(images/flags-sprite.png); background-position: -28px -308px; width: 24px; height: 24px; }
+.flag-portugal { background-image: url(images/flags-sprite.png); background-position: -308px -280px; width: 24px; height: 24px; }
 
-.flag-portugal { background-image: url(images/flags-sprite.png); background-position: -56px -308px; width: 24px; height: 24px; }
+.flag-qatar { background-image: url(images/flags-sprite.png); background-position: 0px -308px; width: 24px; height: 24px; }
 
-.flag-qatar { background-image: url(images/flags-sprite.png); background-position: -84px -308px; width: 24px; height: 24px; }
+.flag-russia { background-image: url(images/flags-sprite.png); background-position: -28px -308px; width: 24px; height: 24px; }
 
-.flag-russia { background-image: url(images/flags-sprite.png); background-position: -112px -308px; width: 24px; height: 24px; }
+.flag-rwanda { background-image: url(images/flags-sprite.png); background-position: -56px -308px; width: 24px; height: 24px; }
 
-.flag-rwanda { background-image: url(images/flags-sprite.png); background-position: -140px -308px; width: 24px; height: 24px; }
+.flag-saint-kitts-and-nevis { background-image: url(images/flags-sprite.png); background-position: -84px -308px; width: 24px; height: 24px; }
 
-.flag-saint-kitts-and-nevis { background-image: url(images/flags-sprite.png); background-position: -168px -308px; width: 24px; height: 24px; }
+.flag-saint-lucia { background-image: url(images/flags-sprite.png); background-position: -112px -308px; width: 24px; height: 24px; }
 
-.flag-saint-lucia { background-image: url(images/flags-sprite.png); background-position: -196px -308px; width: 24px; height: 24px; }
+.flag-saint-vincent { background-image: url(images/flags-sprite.png); background-position: -140px -308px; width: 24px; height: 24px; }
 
-.flag-saint-vincent { background-image: url(images/flags-sprite.png); background-position: -224px -308px; width: 24px; height: 24px; }
+.flag-samoa { background-image: url(images/flags-sprite.png); background-position: -168px -308px; width: 24px; height: 24px; }
 
-.flag-samoa { background-image: url(images/flags-sprite.png); background-position: -252px -308px; width: 24px; height: 24px; }
+.flag-san-marino { background-image: url(images/flags-sprite.png); background-position: -196px -308px; width: 24px; height: 24px; }
 
-.flag-san-marino { background-image: url(images/flags-sprite.png); background-position: -280px -308px; width: 24px; height: 24px; }
+.flag-sao-tome-and-principe { background-image: url(images/flags-sprite.png); background-position: -224px -308px; width: 24px; height: 24px; }
 
-.flag-sao-tome-and-principe { background-image: url(images/flags-sprite.png); background-position: -308px -308px; width: 24px; height: 24px; }
+.flag-saudi-arabia { background-image: url(images/flags-sprite.png); background-position: -252px -308px; width: 24px; height: 24px; }
 
-.flag-saudi-arabia { background-image: url(images/flags-sprite.png); background-position: -336px 0px; width: 24px; height: 24px; }
+.flag-senegal { background-image: url(images/flags-sprite.png); background-position: -280px -308px; width: 24px; height: 24px; }
 
-.flag-senegal { background-image: url(images/flags-sprite.png); background-position: -336px -28px; width: 24px; height: 24px; }
+.flag-serbia { background-image: url(images/flags-sprite.png); background-position: -308px -308px; width: 24px; height: 24px; }
 
-.flag-serbia { background-image: url(images/flags-sprite.png); background-position: -336px -56px; width: 24px; height: 24px; }
+.flag-seychelles { background-image: url(images/flags-sprite.png); background-position: -336px 0px; width: 24px; height: 24px; }
 
-.flag-seychelles { background-image: url(images/flags-sprite.png); background-position: -336px -84px; width: 24px; height: 24px; }
+.flag-sierra-leone { background-image: url(images/flags-sprite.png); background-position: -336px -28px; width: 24px; height: 24px; }
 
-.flag-sierra-leone { background-image: url(images/flags-sprite.png); background-position: -336px -112px; width: 24px; height: 24px; }
+.flag-singapore { background-image: url(images/flags-sprite.png); background-position: -336px -56px; width: 24px; height: 24px; }
 
-.flag-singapore { background-image: url(images/flags-sprite.png); background-position: -336px -140px; width: 24px; height: 24px; }
+.flag-slovakia { background-image: url(images/flags-sprite.png); background-position: -336px -84px; width: 24px; height: 24px; }
 
-.flag-slovakia { background-image: url(images/flags-sprite.png); background-position: -336px -168px; width: 24px; height: 24px; }
+.flag-slovenia { background-image: url(images/flags-sprite.png); background-position: -336px -112px; width: 24px; height: 24px; }
 
-.flag-slovenia { background-image: url(images/flags-sprite.png); background-position: -336px -196px; width: 24px; height: 24px; }
+.flag-solomon-islands { background-image: url(images/flags-sprite.png); background-position: -336px -140px; width: 24px; height: 24px; }
 
-.flag-solomon-islands { background-image: url(images/flags-sprite.png); background-position: -336px -224px; width: 24px; height: 24px; }
+.flag-somalia { background-image: url(images/flags-sprite.png); background-position: -336px -168px; width: 24px; height: 24px; }
 
-.flag-somalia { background-image: url(images/flags-sprite.png); background-position: -336px -252px; width: 24px; height: 24px; }
+.flag-south-africa { background-image: url(images/flags-sprite.png); background-position: -336px -196px; width: 24px; height: 24px; }
 
-.flag-south-africa { background-image: url(images/flags-sprite.png); background-position: -336px -280px; width: 24px; height: 24px; }
+.flag-south-korea { background-image: url(images/flags-sprite.png); background-position: -336px -224px; width: 24px; height: 24px; }
 
-.flag-south-korea { background-image: url(images/flags-sprite.png); background-position: -336px -308px; width: 24px; height: 24px; }
+.flag-south-sudan { background-image: url(images/flags-sprite.png); background-position: -336px -252px; width: 24px; height: 24px; }
 
-.flag-south-sudan { background-image: url(images/flags-sprite.png); background-position: 0px -336px; width: 24px; height: 24px; }
+.flag-spain { background-image: url(images/flags-sprite.png); background-position: -336px -280px; width: 24px; height: 24px; }
 
-.flag-spain { background-image: url(images/flags-sprite.png); background-position: -28px -336px; width: 24px; height: 24px; }
+.flag-sri-lanka { background-image: url(images/flags-sprite.png); background-position: -336px -308px; width: 24px; height: 24px; }
 
-.flag-sri-lanka { background-image: url(images/flags-sprite.png); background-position: -56px -336px; width: 24px; height: 24px; }
+.flag-sudan { background-image: url(images/flags-sprite.png); background-position: 0px -336px; width: 24px; height: 24px; }
 
-.flag-sudan { background-image: url(images/flags-sprite.png); background-position: -84px -336px; width: 24px; height: 24px; }
+.flag-suriname { background-image: url(images/flags-sprite.png); background-position: -28px -336px; width: 24px; height: 24px; }
 
-.flag-suriname { background-image: url(images/flags-sprite.png); background-position: -112px -336px; width: 24px; height: 24px; }
+.flag-swaziland { background-image: url(images/flags-sprite.png); background-position: -56px -336px; width: 24px; height: 24px; }
 
-.flag-swaziland { background-image: url(images/flags-sprite.png); background-position: -140px -336px; width: 24px; height: 24px; }
+.flag-sweden { background-image: url(images/flags-sprite.png); background-position: -84px -336px; width: 24px; height: 24px; }
 
-.flag-sweden { background-image: url(images/flags-sprite.png); background-position: -168px -336px; width: 24px; height: 24px; }
+.flag-switzerland { background-image: url(images/flags-sprite.png); background-position: -112px -336px; width: 24px; height: 24px; }
 
-.flag-switzerland { background-image: url(images/flags-sprite.png); background-position: -196px -336px; width: 24px; height: 24px; }
+.flag-syria { background-image: url(images/flags-sprite.png); background-position: -140px -336px; width: 24px; height: 24px; }
 
-.flag-syria { background-image: url(images/flags-sprite.png); background-position: -224px -336px; width: 24px; height: 24px; }
+.flag-tajikistan { background-image: url(images/flags-sprite.png); background-position: -168px -336px; width: 24px; height: 24px; }
 
-.flag-tajikistan { background-image: url(images/flags-sprite.png); background-position: -252px -336px; width: 24px; height: 24px; }
+.flag-tanzania { background-image: url(images/flags-sprite.png); background-position: -196px -336px; width: 24px; height: 24px; }
 
-.flag-tanzania { background-image: url(images/flags-sprite.png); background-position: -280px -336px; width: 24px; height: 24px; }
+.flag-thailand { background-image: url(images/flags-sprite.png); background-position: -224px -336px; width: 24px; height: 24px; }
 
-.flag-thailand { background-image: url(images/flags-sprite.png); background-position: -308px -336px; width: 24px; height: 24px; }
+.flag-timor-leste { background-image: url(images/flags-sprite.png); background-position: -252px -336px; width: 24px; height: 24px; }
 
-.flag-timor-leste { background-image: url(images/flags-sprite.png); background-position: -336px -336px; width: 24px; height: 24px; }
+.flag-togo { background-image: url(images/flags-sprite.png); background-position: -280px -336px; width: 24px; height: 24px; }
 
-.flag-togo { background-image: url(images/flags-sprite.png); background-position: -364px 0px; width: 24px; height: 24px; }
+.flag-tonga { background-image: url(images/flags-sprite.png); background-position: -308px -336px; width: 24px; height: 24px; }
 
-.flag-tonga { background-image: url(images/flags-sprite.png); background-position: -364px -28px; width: 24px; height: 24px; }
+.flag-trinidad-and-tobago { background-image: url(images/flags-sprite.png); background-position: -336px -336px; width: 24px; height: 24px; }
 
-.flag-trinidad-and-tobago { background-image: url(images/flags-sprite.png); background-position: -364px -56px; width: 24px; height: 24px; }
+.flag-tunisha { background-image: url(images/flags-sprite.png); background-position: -364px 0px; width: 24px; height: 24px; }
 
-.flag-tunisha { background-image: url(images/flags-sprite.png); background-position: -364px -84px; width: 24px; height: 24px; }
+.flag-turkey { background-image: url(images/flags-sprite.png); background-position: -364px -28px; width: 24px; height: 24px; }
 
-.flag-turkey { background-image: url(images/flags-sprite.png); background-position: -364px -112px; width: 24px; height: 24px; }
+.flag-turkmenistan { background-image: url(images/flags-sprite.png); background-position: -364px -56px; width: 24px; height: 24px; }
 
-.flag-turkmenistan { background-image: url(images/flags-sprite.png); background-position: -364px -140px; width: 24px; height: 24px; }
+.flag-tuvalu { background-image: url(images/flags-sprite.png); background-position: -364px -84px; width: 24px; height: 24px; }
 
-.flag-tuvalu { background-image: url(images/flags-sprite.png); background-position: -364px -168px; width: 24px; height: 24px; }
+.flag-uganda { background-image: url(images/flags-sprite.png); background-position: -364px -112px; width: 24px; height: 24px; }
 
-.flag-uganda { background-image: url(images/flags-sprite.png); background-position: -364px -196px; width: 24px; height: 24px; }
+.flag-ukraine { background-image: url(images/flags-sprite.png); background-position: -364px -140px; width: 24px; height: 24px; }
 
-.flag-ukraine { background-image: url(images/flags-sprite.png); background-position: -364px -224px; width: 24px; height: 24px; }
+.flag-united-arab-emirates { background-image: url(images/flags-sprite.png); background-position: -364px -168px; width: 24px; height: 24px; }
 
-.flag-united-arab-emirates { background-image: url(images/flags-sprite.png); background-position: -364px -252px; width: 24px; height: 24px; }
+.flag-united-kingdom { background-image: url(images/flags-sprite.png); background-position: -364px -196px; width: 24px; height: 24px; }
 
-.flag-united-kingdom { background-image: url(images/flags-sprite.png); background-position: -364px -280px; width: 24px; height: 24px; }
+.flag-united-states-of-america { background-image: url(images/flags-sprite.png); background-position: -364px -224px; width: 24px; height: 24px; }
 
-.flag-united-states-of-america { background-image: url(images/flags-sprite.png); background-position: -364px -308px; width: 24px; height: 24px; }
+.flag-uruguay { background-image: url(images/flags-sprite.png); background-position: -364px -252px; width: 24px; height: 24px; }
 
-.flag-uruguay { background-image: url(images/flags-sprite.png); background-position: -364px -336px; width: 24px; height: 24px; }
+.flag-uzbekistan { background-image: url(images/flags-sprite.png); background-position: -364px -280px; width: 24px; height: 24px; }
 
-.flag-uzbekistan { background-image: url(images/flags-sprite.png); background-position: 0px -364px; width: 24px; height: 24px; }
+.flag-vanatu { background-image: url(images/flags-sprite.png); background-position: -364px -308px; width: 24px; height: 24px; }
 
-.flag-vanatu { background-image: url(images/flags-sprite.png); background-position: -28px -364px; width: 24px; height: 24px; }
+.flag-vatican-city { background-image: url(images/flags-sprite.png); background-position: -364px -336px; width: 24px; height: 24px; }
 
-.flag-vatican-city { background-image: url(images/flags-sprite.png); background-position: -56px -364px; width: 24px; height: 24px; }
+.flag-venezuela { background-image: url(images/flags-sprite.png); background-position: 0px -364px; width: 24px; height: 24px; }
 
-.flag-venezuela { background-image: url(images/flags-sprite.png); background-position: -84px -364px; width: 24px; height: 24px; }
+.flag-vietnam { background-image: url(images/flags-sprite.png); background-position: -28px -364px; width: 24px; height: 24px; }
 
-.flag-vietnam { background-image: url(images/flags-sprite.png); background-position: -112px -364px; width: 24px; height: 24px; }
+.flag-yemen { background-image: url(images/flags-sprite.png); background-position: -56px -364px; width: 24px; height: 24px; }
 
-.flag-yemen { background-image: url(images/flags-sprite.png); background-position: -140px -364px; width: 24px; height: 24px; }
+.flag-zambia { background-image: url(images/flags-sprite.png); background-position: -84px -364px; width: 24px; height: 24px; }
 
-.flag-zambia { background-image: url(images/flags-sprite.png); background-position: -168px -364px; width: 24px; height: 24px; }
-
-.flag-zimbabwe { background-image: url(images/flags-sprite.png); background-position: -196px -364px; width: 24px; height: 24px; }
+.flag-zimbabwe { background-image: url(images/flags-sprite.png); background-position: -112px -364px; width: 24px; height: 24px; }
