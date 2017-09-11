@@ -100,7 +100,7 @@
 
 .listdefault__card .rendition img { width: 100%; }
 
-.listdefault__content { padding: 30px 30px 15px 30px; }
+.listdefault__content { padding: 30px 30px 15px 30px; background: #FFF; }
 
 @media screen and (max-width: 767px) { .listdefault__slides { display: block; }
   .listdefault__image { width: 100%; }
