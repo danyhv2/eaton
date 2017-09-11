@@ -20,7 +20,18 @@ App.facets = (function() {
     $componentClass.on('click', '[data-facets-more-groups]', showAllFacetsGroups);
     $componentClass.on('click', '[data-facets-more-values]', showAllFacetsValues);
     $componentClass.find('.faceted-navigation__header').on('click', toggleIcons);
+    $('.native-select').on('change', navigateSelect);
     $('[data-toggle-modal-facet]').on('click', toggleModal);
+  };
+
+  /**
+  * toggle the mobile factes modal
+  * @param  { Object } event - the click event object
+  */
+  const navigateSelect = function(e) {
+    e.preventDefault();
+    let urlToNavigate = $('.native-select option:selected')[0].value;
+    document.location.href = urlToNavigate;
   };
 
   /**
