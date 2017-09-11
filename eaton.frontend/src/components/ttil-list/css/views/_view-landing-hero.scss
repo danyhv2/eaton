@@ -67,7 +67,9 @@
     width: 5%;
     height: 2px;
     background: $color__white;
-    margin: 20px auto;
+
+    // EATON-516 Landing Hero - Article Page - Incorrect spacing between Headline, Horizontal Rule, and Description.
+    margin: 48px auto 52px; // Visually, 60px Spacing above and below - extracted from PSD File
   }
 
   &__arrow {
