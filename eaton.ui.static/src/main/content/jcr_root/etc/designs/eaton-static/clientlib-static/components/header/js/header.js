@@ -84,11 +84,22 @@ App.header = function () {
     var scrollTop = windowEl.scrollTop();
     var utilityNavOffset = $('.header-utility-nav').offset().top;
     var utilityNavHeight = $('.header-utility-nav').outerHeight();
+    var isDrawerOpen = bodyEl.hasClass('drawer-open');
+    var FIXED_HEADER_HEIGHT = 80; // Height of the sticky navigation - header
 
     if (scrollTop > utilityNavOffset + utilityNavHeight) {
       componentClass.addClass('eaton-header--fixed');
-      // Close the drawer if open - Country Selector
-      bodyEl.removeClass('drawer-open drawer-is-animating');
+
+      if (isDrawerOpen) {
+        // Close the drawer if open - Country Selector
+        bodyEl.removeClass('drawer-open drawer-is-animating');
+        // Scroll to the top of the page once the drawer is closed
+        // This prevents page scroll to bottom once sticky-nav is activated
+        windowEl.scrollTop(FIXED_HEADER_HEIGHT);
+
+        // Set Flag to False
+        isDrawerOpen = false;
+      }
     } else {
       componentClass.removeClass('eaton-header--fixed');
     }
