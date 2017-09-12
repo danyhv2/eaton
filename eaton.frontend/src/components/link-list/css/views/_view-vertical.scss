@@ -87,7 +87,8 @@
 
 
   // Override font-sizes for dark-theme & on header/footer
-  .eaton-footer.dark-theme & {
+  .eaton-footer &,
+  .eaton-header & {
     padding-bottom: 0;
 
     .icon-chevron-right {

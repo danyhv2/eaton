@@ -139,13 +139,13 @@
 
 @media screen and (max-width: 767px) { .article-list-single-feature__article { margin-top: 30px; } }
 
-.eaton-list-links { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; oadding: 40px 0; }
+.eaton-list-links { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
 .eaton-list-links__col { padding: 0; margin: 0; list-style-type: none; }
 
 .eaton-list-links__link { padding: 10px 0; text-decoration: none; display: inline; }
 
-.eaton-list-links__link span { color: #FFF; font-style: normal; font-weight: normal; font-size: 1.8rem; display: block; line-height: 2.4rem; font-family: Arial, "Arial", sans-serif; padding: 10px 0; }
+.eaton-list-links__link span { color: #FFF; font-style: normal; font-weight: normal; font-size: 1.5rem; display: block; line-height: 2.4rem; font-family: Arial, "Arial", sans-serif; padding: 10px 0; }
 
 .eaton-list-links__link span:after { color: #FFF; position: relative; top: 1px; content: "\e258"; font-family: 'Glyphicons Halflings'; font-size: 1.4rem; display: inline; padding-left: 7px; text-decoration: none; }
 

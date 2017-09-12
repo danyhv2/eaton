@@ -33,29 +33,29 @@
 
 .eaton-link-list-vertical__download-text p { margin: 0 0 5px; }
 
-.eaton-footer.dark-theme .eaton-link-list-vertical { padding-bottom: 0; }
+.eaton-footer .eaton-link-list-vertical, .eaton-header .eaton-link-list-vertical { padding-bottom: 0; }
 
-.eaton-footer.dark-theme .eaton-link-list-vertical .icon-chevron-right { display: inline-block; }
+.eaton-footer .eaton-link-list-vertical .icon-chevron-right, .eaton-header .eaton-link-list-vertical .icon-chevron-right { display: inline-block; }
 
-.eaton-footer.dark-theme .eaton-link-list-vertical__eyebrow { font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 1.4rem; line-height: normal; margin-bottom: 20px; text-transform: uppercase; }
+.eaton-footer .eaton-link-list-vertical__eyebrow, .eaton-header .eaton-link-list-vertical__eyebrow { font-weight: bold; font-family: Arial, "Arial", sans-serif; font-size: 1.4rem; line-height: normal; margin-bottom: 20px; text-transform: uppercase; }
 
-@media screen and (min-width: 992px) { .eaton-footer.dark-theme .eaton-link-list-vertical__eyebrow { font-family: Arial, "Arial", sans-serif; font-size: 1.8rem; line-height: 2rem; text-transform: uppercase; margin-bottom: 20px; } }
+@media screen and (min-width: 992px) { .eaton-footer .eaton-link-list-vertical__eyebrow, .eaton-header .eaton-link-list-vertical__eyebrow { font-family: Arial, "Arial", sans-serif; font-size: 1.8rem; line-height: 2rem; text-transform: uppercase; margin-bottom: 20px; } }
 
-.eaton-footer.dark-theme .eaton-link-list-vertical__list-item { font-family: Arial, sans-serif; font-size: 1.3rem; font-weight: normal; line-height: 1.7rem; }
+.eaton-footer .eaton-link-list-vertical__list-item, .eaton-header .eaton-link-list-vertical__list-item { font-family: Arial, sans-serif; font-size: 1.3rem; font-weight: normal; line-height: 1.7rem; }
 
-.eaton-footer.dark-theme .eaton-link-list-vertical__list-item a { color: #005EB8; }
+.eaton-footer .eaton-link-list-vertical__list-item a, .eaton-header .eaton-link-list-vertical__list-item a { color: #005EB8; }
 
-@media screen and (min-width: 992px) { .eaton-footer.dark-theme .eaton-link-list-vertical__list-item { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.4rem; } }
+@media screen and (min-width: 992px) { .eaton-footer .eaton-link-list-vertical__list-item, .eaton-header .eaton-link-list-vertical__list-item { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.4rem; } }
 
-.eaton-footer.dark-theme .eaton-link-list-vertical__list-link { font-weight: normal; }
+.eaton-footer .eaton-link-list-vertical__list-link, .eaton-header .eaton-link-list-vertical__list-link { font-weight: normal; }
 
-.eaton-footer.dark-theme .eaton-link-list-vertical__list-icon { font-size: 1.4rem; }
+.eaton-footer .eaton-link-list-vertical__list-icon, .eaton-header .eaton-link-list-vertical__list-icon { font-size: 1.4rem; }
 
-.eaton-footer.dark-theme .eaton-link-list-vertical__external-icon { font-size: 1.5rem; }
+.eaton-footer .eaton-link-list-vertical__external-icon, .eaton-header .eaton-link-list-vertical__external-icon { font-size: 1.5rem; }
 
-.eaton-footer.dark-theme .eaton-link-list-vertical__download-text { font-size: 1.6rem; }
+.eaton-footer .eaton-link-list-vertical__download-text, .eaton-header .eaton-link-list-vertical__download-text { font-size: 1.6rem; }
 
-.eaton-footer.dark-theme .eaton-link-list-vertical__eyebrow, .eaton-footer.dark-theme .eaton-link-list-vertical__list-item a, .eaton-footer.dark-theme .eaton-link-list-vertical__download-text { color: #FFF; }
+.eaton-footer .eaton-link-list-vertical__eyebrow, .eaton-footer .eaton-link-list-vertical__list-item a, .eaton-footer .eaton-link-list-vertical__download-text, .eaton-header .eaton-link-list-vertical__eyebrow, .eaton-header .eaton-link-list-vertical__list-item a, .eaton-header .eaton-link-list-vertical__download-text { color: #FFF; }
 
 .dark-theme .eaton-link-list-vertical { padding-bottom: 30px; }
 
