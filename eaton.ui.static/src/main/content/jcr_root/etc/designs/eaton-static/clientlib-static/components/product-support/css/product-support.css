@@ -11,9 +11,9 @@
  */
 
 
-.product-support-component { padding: 120px 30px; }
+.product-support-component { padding: 60px 30px; }
 
-@media screen and (min-width: 768px) { .product-support-component { padding: 120px 0; } }
+@media screen and (min-width: 768px) { .product-support-component { padding: 60px 0; } }
 
 @media screen and (max-width: 991px) { .product-support-component--left { margin-bottom: 30px; } }
 

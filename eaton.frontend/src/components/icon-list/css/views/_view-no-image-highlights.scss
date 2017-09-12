@@ -36,11 +36,14 @@
     padding: $spacing__sm 0;
 
     &__item {
-      margin-bottom: 40px;
+      margin-bottom: 45px;
 
       &:last-child {
         margin-bottom: 0;
       }
+    }
+    &__title {
+      margin-bottom: 5px; // Visually account for 15px gap between title and text
     }
 
     &__text {

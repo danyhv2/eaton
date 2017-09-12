@@ -6,7 +6,7 @@
 @import "../../../global/css/_config/sass";
 
 .eaton-how-to-buy {
-  padding-top: $spacing__lg / 2;
+  padding-top: $spacing__md;
   overflow: hidden;
   background: $color__secondary-gray6;
 
@@ -28,12 +28,14 @@
   }
 
   &__element {
-    margin-bottom: $spacing__lg / 2;
+    margin-bottom: $spacing__md / 2;
+
+
   }
 
 
   @include media-desktop-and-up {
-    padding-top: $spacing__lg;
+    padding-top: $spacing__md;
 
     &__icon {
       max-width: 70px;
@@ -50,7 +52,7 @@
     }
 
     &__element {
-      margin-bottom: $spacing__lg;
+      margin-bottom: $spacing__md;
     }
 
     .container {
