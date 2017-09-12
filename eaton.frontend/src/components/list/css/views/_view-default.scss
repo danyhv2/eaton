@@ -195,7 +195,7 @@
     .slick-track {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     .slick-slide {
