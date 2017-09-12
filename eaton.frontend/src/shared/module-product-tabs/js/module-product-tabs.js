@@ -19,6 +19,9 @@ App.productTabs = (function() {
    * Bind All Event Listeners
    */
   const addEventListeners = () => {
+    if (location.hash === '#no-sticky-tab') {
+      return;
+    }
 
     $(window).on('scroll', (event) => {
       const scrollTop = $(window).scrollTop();
