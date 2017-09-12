@@ -55,7 +55,7 @@ App.header = (function() {
     const headerEl = $('header');
     const headerHeight = headerEl.height() + 'px';
 
-    if (windowEl.width() < mediumScreenWidth) {
+    if (windowEl.outerWidth() < mediumScreenWidth) {
       headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', headerHeight);
     } else {
       // Reset the top offset for the elements - Desktop
