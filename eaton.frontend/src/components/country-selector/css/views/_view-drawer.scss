@@ -254,7 +254,9 @@ $border-color: rgba($color__secondary-gray4, 0.5);
     }
 
     &__item-country {
-      flex-basis: 33.33%;
+      // NOTE: "flex-basis" was replaced with "width" due to layout issues in IE11
+      // flex-basis: 33.33%;
+      width: 33.33%;
       padding: 0 25px 40px 25px;
     }
 

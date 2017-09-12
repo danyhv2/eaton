@@ -6,7 +6,7 @@
 
 
 .eaton-top-list-with-icon {
-  margin-top: $spacing__lg / 2;
+  margin-top: $spacing__md;
   overflow: hidden;
 
   &__icon {
@@ -34,7 +34,6 @@
 
 
   @include media-desktop-and-up {
-    margin-top: $spacing__lg;
 
     &__icon {
       max-width: 70px;
