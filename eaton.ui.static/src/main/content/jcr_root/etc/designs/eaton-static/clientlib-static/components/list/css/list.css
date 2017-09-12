@@ -84,6 +84,8 @@
   .eaton-list-component .category__item, .eaton-list-component .category__image { min-height: 263px; }
   .eaton-list-component .category__link--font { font-size: 1.3em; } }
 
+.eaton-list-component-default-view { margin-top: 60px; }
+
 .listdefault__slides { padding: 0; list-style: none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
 .listdefault__slides .slick-track { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }

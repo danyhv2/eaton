@@ -67,7 +67,7 @@
   .icon-list-no-image-highlights__symbol { font-size: 4rem; top: -15px; }
   .icon-list-no-image-highlights__title { margin-bottom: 15px; } }
 
-.eaton-top-list-with-icon { margin-top: 45px; overflow: hidden; }
+.eaton-top-list-with-icon { margin-top: 60px; overflow: hidden; }
 
 .eaton-top-list-with-icon__icon { color: #ED8B00; max-width: 60px; display: inline-block; }
 
@@ -77,8 +77,7 @@
 
 .eaton-top-list-with-icon__element { margin-bottom: 45px; }
 
-@media screen and (min-width: 992px) { .eaton-top-list-with-icon { margin-top: 90px; }
-  .eaton-top-list-with-icon__icon { max-width: 70px; }
+@media screen and (min-width: 992px) { .eaton-top-list-with-icon__icon { max-width: 70px; }
   .eaton-top-list-with-icon__icon img { width: 70px; height: 70px; }
   .eaton-top-list-with-icon__text-wrapper { width: calc(100% - 100px); }
   .eaton-top-list-with-icon__element { margin-bottom: 90px; }
