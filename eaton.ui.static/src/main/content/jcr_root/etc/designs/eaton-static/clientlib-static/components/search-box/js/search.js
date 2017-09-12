@@ -18,7 +18,7 @@
 
 var App = window.App || {};
 
-App.search = function () {
+App.search = function (autosize) {
 
   // Variable Declarations
   var componentClass = '.eaton-search';
@@ -130,4 +130,4 @@ App.search = function () {
     autosize($('.eaton-header textarea'));
     init();
   }
-}();
+}(window.autosize);

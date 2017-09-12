@@ -5,7 +5,7 @@
 
 let App = window.App || {};
 
-App.search = (function() {
+App.search = (function(autosize) {
 
   // Variable Declarations
   const componentClass = '.eaton-search';
@@ -120,4 +120,4 @@ App.search = (function() {
     init();
   }
 
-}());
+}(window.autosize));
