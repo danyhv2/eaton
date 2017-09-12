@@ -52,8 +52,9 @@
 .icon-list-no-image-highlights__symbol { position: relative; }
 
 @media screen and (max-width: 991px) { .icon-list-no-image-highlights { padding: 30px 0; }
-  .icon-list-no-image-highlights__item { margin-bottom: 40px; }
+  .icon-list-no-image-highlights__item { margin-bottom: 45px; }
   .icon-list-no-image-highlights__item:last-child { margin-bottom: 0; }
+  .icon-list-no-image-highlights__title { margin-bottom: 5px; }
   .icon-list-no-image-highlights__text { font-size: 5rem; line-height: 5.5rem; }
   .icon-list-no-image-highlights__symbol { font-size: 3rem; top: -15px; } }
 
