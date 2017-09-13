@@ -10,7 +10,7 @@
                 <sly data-sly-call="${ tpl.module @ data=item.image }"></sly>
               </sly>
             </div>
-            <div data-sly-test="${item.headline}" class="eaton-ttil-image-list__image-headline">${item.headline}</div>
+            <div data-sly-test="${item.headline}" class="eaton-ttil-image-list__image-headline  ${item.link ? 'headline-link' : ''}">${item.headline}</div>
             <a data-sly-test="${item.link}" class="eaton-ttil-image-list__image-link u-absolute-fill" href="${item.link.url}" target="${item.link.target}"></a>
           </div>
         </div>

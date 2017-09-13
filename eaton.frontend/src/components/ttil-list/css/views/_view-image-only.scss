@@ -21,9 +21,17 @@
 
   &__image-headline {
     margin-top: ($spacing__sm);
-    color: $color__primary-blue;
     font-weight: bold;
   }
+
+  .headline-link {
+    color: $color__primary-blue;
+  }
+
+  // If the item has a link - update the headline color
+  // &--has-link .eaton-ttil-image-list__image-headline {
+  //   color: $color__primary-blue;
+  // }
 
   //-----------------------------
   // Mobile-Tablet Breakpoint
