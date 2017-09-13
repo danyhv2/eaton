@@ -39,7 +39,7 @@
   .icon-list-proof-points__symbol { font-size: 6rem; line-height: 6rem; top: 8px; }
   .icon-list-proof-points__title { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.4rem; margin-top: 10px; } }
 
-.icon-list-no-image-highlights { background: #F8F8F8; }
+.icon-list-no-image-highlights { margin: 60px 0; background: #F8F8F8; }
 
 .icon-list-no-image-highlights__item { color: #5B6770; }
 
@@ -51,7 +51,7 @@
 
 .icon-list-no-image-highlights__symbol { position: relative; }
 
-@media screen and (max-width: 991px) { .icon-list-no-image-highlights { padding: 30px 0; }
+@media screen and (max-width: 991px) { .icon-list-no-image-highlights { padding: 60px 0; }
   .icon-list-no-image-highlights__item { margin-bottom: 45px; }
   .icon-list-no-image-highlights__item:last-child { margin-bottom: 0; }
   .icon-list-no-image-highlights__title { margin-bottom: 5px; }

@@ -3,6 +3,7 @@
 //-----------------------------------
 
 .icon-list-no-image-highlights {
+  margin: $spacing__md 0;
   background: $color__secondary-gray6;
 
   &__item {
@@ -33,7 +34,7 @@
   // Media-Query: Mobile
   //-----------------------------------
   @include media-mobile-and-tablet {
-    padding: $spacing__sm 0;
+    padding: $spacing__md 0;
 
     &__item {
       margin-bottom: 45px;
