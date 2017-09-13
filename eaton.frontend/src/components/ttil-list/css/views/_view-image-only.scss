@@ -88,9 +88,9 @@
       width: 100%;
       padding: 0;
       text-align: center;
-      border: 1px solid $color__primary-blue;
       overflow: hidden;
 
+      // Create a bounding-box 1:1 for the image
       &::before {
         display: block;
         content: '';

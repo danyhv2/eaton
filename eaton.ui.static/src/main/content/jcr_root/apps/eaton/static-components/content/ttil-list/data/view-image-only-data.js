@@ -77,6 +77,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/imagelist/BEHL_Gold.jpg',
             desktop: '/content/dam/eaton/images/imagelist/BEHL_Gold.jpg',
             altText: 'Alt text for Image 1',
+          },
+          link : {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         },
         {
@@ -86,6 +90,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/imagelist/WME_2016.jpg',
             desktop: '/content/dam/eaton/images/imagelist/WME_2016.jpg',
             altText: 'Alt text for Image 2'
+          },
+          link : {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         },
         {
@@ -95,6 +103,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/imagelist/Best_place.jpg',
             desktop: '/content/dam/eaton/images/imagelist/Best_place.jpg',
             altText: 'Alt text for Image 3',
+          },
+          link : {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         },
         {
@@ -104,6 +116,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/imagelist/BEHL_Gold.jpg',
             desktop: '/content/dam/eaton/images/imagelist/BEHL_Gold.jpg',
             altText: 'Alt text for Image 4'
+          },
+          link : {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         },
         {
@@ -113,6 +129,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/imagelist/WME_2016.jpg',
             desktop: '/content/dam/eaton/images/imagelist/WME_2016.jpg',
             altText: 'Alt text for Image 5'
+          },
+          link : {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         },
         {
@@ -122,6 +142,10 @@ use(function () {
             tablet:'/content/dam/eaton/images/imagelist/Best_place.jpg',
             desktop: '/content/dam/eaton/images/imagelist/Best_place.jpg',
             altText: 'Alt text for Image 6'
+          },
+          link : {
+            url: 'http://www.eaton.com',
+            target: '_blank'
           }
         }
       ]
