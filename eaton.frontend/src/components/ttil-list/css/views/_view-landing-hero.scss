@@ -170,7 +170,7 @@
   @include media-desktop-and-up {
 
     // Aspect Ratio Desktop Breakpoint
-    $aspect-ratio--desktop: #{(9 / 16) * 100 }vw;
+    $aspect-ratio--desktop: #{(5 / 12) * 100 }vw;
 
     height: $aspect-ratio--desktop;
 
