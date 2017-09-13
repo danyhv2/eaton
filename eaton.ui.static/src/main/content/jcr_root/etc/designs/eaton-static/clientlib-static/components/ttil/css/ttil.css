@@ -123,9 +123,15 @@
 
 .eaton-topic-link-white { overflow: hidden; padding: 50px 0; }
 
-.eaton-topic-link-white.no-cta { padding: 0; }
+.eaton-topic-link-white.no-cta { padding: 0; margin-bottom: -35px; }
 
 .eaton-topic-link-white.no-cta .container { width: 100%; padding: 0; }
+
+.eaton-topic-link-white.no-cta .eaton-topic-link-white__icon { margin-bottom: 20px; }
+
+.eaton-topic-link-white.no-cta .eaton-topic-link-white__header { margin-bottom: 5px; }
+
+.eaton-topic-link-white.no-cta .eaton-topic-link-white__description { margin-bottom: 0; }
 
 .eaton-topic-link-white__icon { width: 100%; margin-bottom: 30px; }
 
