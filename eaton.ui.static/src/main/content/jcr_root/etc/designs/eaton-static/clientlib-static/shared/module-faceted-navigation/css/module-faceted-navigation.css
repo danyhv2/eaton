@@ -94,7 +94,7 @@
 
 .faceted-navigation__facet-group { border-bottom: 1px solid #EEF0F2; margin-bottom: 1rem; }
 
-.faceted-navigation__header.button--reset, .faceted-navigation__view-more-groups { cursor: pointer; margin: 1.5rem 0; text-align: left; width: 100%; }
+.faceted-navigation__header.button--reset, .faceted-navigation__view-more-groups { cursor: pointer; margin: 1.5rem 0; text-align: left; width: 100%; font-size: 1.8rem; }
 
 .faceted-navigation__header.button--reset .icon::before, .faceted-navigation__view-more-groups .icon::before { position: absolute; right: 0; color: #005EB8; font-size: 1.2rem; margin-top: 6px; }
 
