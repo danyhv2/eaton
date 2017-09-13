@@ -2,7 +2,6 @@
 // Component 4.2: Header - Mega Menu
 // List - View - Links
 //-----------------------------------
-
 .eaton-list-links {
   display: flex;
 
@@ -17,7 +16,7 @@
     text-decoration: none;
     display: inline;
 
-    span{
+    span {
       color: #FFF;
       font-style: normal;
       font-weight: normal;
@@ -27,7 +26,7 @@
       font-family: Arial, "Arial", sans-serif;
       padding: 10px 0;
 
-      &:after{
+      &::after {
         color: #FFF;
         position: relative;
         top: 1px;
@@ -36,7 +35,7 @@
         font-size: 1.4rem;
         display: inline;
         padding-left: 7px;
-        text-decoration:none;
+        text-decoration: none;
       }
     }
 
@@ -50,11 +49,9 @@
   }
 
   .eaton-list-links__col .eaton-list-links__item:first-child span {
-    padding:0;
+    padding: 0;
     line-height: 1.9rem;
-  }
-
-  //-----------------------------
+  } //-----------------------------
   // Mobile-Tablet Breakpoint
   // ----------------------------
   @include media-mobile-and-tablet {
@@ -67,11 +64,11 @@
       align-items: center;
       font-size: 1.5rem;
 
-      span{
+      span {
         font-size: 1.5rem;
       }
 
-      &:after{
+      &::after {
         color: #FFF;
         position: relative;
         top: 1px;
@@ -81,11 +78,11 @@
         font-weight: normal;
         font-size: 1.4rem;
         display: inline-block;
-        text-decoration:none;
+        text-decoration: none;
       }
 
-      span:after{
-        display:none;
+      span::after {
+        display: none;
       }
     }
 
@@ -94,12 +91,10 @@
       margin-right: ($spacing__sm / 2);
     }
 
-    .eaton-list-links__col .eaton-list-links__item span{
+    .eaton-list-links__col .eaton-list-links__item span {
       font-size: 1.5rem;
     }
-  }
-
-  //-----------------------------
+  } //-----------------------------
   // Desktop Breakpoint
   // ----------------------------
   @include media-desktop-and-up {
@@ -107,7 +102,7 @@
 
     &__col {
       width: 100%;
-      margin: 0 ($spacing__sm / 2 );
+      margin: 0 ($spacing__sm / 2);
 
       &:first-child {
         margin-left: 0;
