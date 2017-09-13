@@ -21,20 +21,19 @@ App.search = (function(autosize) {
   const init = () => {
     // If not in AEM Author Mode & component exists on page - initialize scripts
     if (!isAEMAuthorMode) {
-      // console.log('Initialize Search');
       addEventListeners();
+
+      // Intercept Carriage Return on TextArea and submit form.
+      $searchInputEl.keydown(function (e) {
+        const keyCode = e.keyCode || e.which;
+        const $activeSearchComponent = $(event.currentTarget).closest(componentClass);
+
+        if (keyCode === 13) {
+          $activeSearchComponent.find('form').submit();
+          return false;
+        }
+      });
     }
-
-    // Intercept Carriage Return on TextArea and submit form.
-    $searchInputEl.keydown(function (e) {
-      const keyCode = e.keyCode || e.which;
-      const $activeSearchComponent = $(event.currentTarget).closest(componentClass);
-
-      if (keyCode === 13) {
-        $activeSearchComponent.find('form').submit();
-        return false;
-      }
-    });
   };
 
   /**

@@ -117,6 +117,8 @@ App.header = function () {
     // Close Search if open
     closeSearch(event);
     updateHeaderLayoutMobile();
+    // Publish - Mega Menu Open
+    $(document).trigger(App.global.constants.EVENTS.HEADER.MEGAMENU_OPEN);
 
     // Highlight only the active Link
     primaryLinks.removeClass('active');
