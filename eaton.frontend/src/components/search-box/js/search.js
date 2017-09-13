@@ -24,6 +24,17 @@ App.search = (function(autosize) {
       // console.log('Initialize Search');
       addEventListeners();
     }
+
+    // Intercept Carriage Return on TextArea and submit form.
+    $searchInputEl.keydown(function (e) {
+      const keyCode = e.keyCode || e.which;
+      const $activeSearchComponent = $(event.currentTarget).closest(componentClass);
+
+      if (keyCode === 13) {
+        $activeSearchComponent.find('form').submit();
+        return false;
+      }
+    });
   };
 
   /**
