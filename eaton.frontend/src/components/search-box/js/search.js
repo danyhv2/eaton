@@ -25,8 +25,10 @@ App.search = (function(autosize) {
 
       // Intercept Carriage Return on TextArea and submit form.
       $searchInputEl.keydown(function (e) {
-        const keyCode = e.keyCode || e.which;
-        const $activeSearchComponent = $(event.currentTarget).closest(componentClass);
+        const evt = e || window.event; // compliant with ie6
+        const keyCode = evt.keyCode || evt.which;
+
+        const $activeSearchComponent = $(e.currentTarget).closest(componentClass);
 
         if (keyCode === 13) {
           $activeSearchComponent.find('form').submit();
