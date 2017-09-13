@@ -97,7 +97,9 @@
   }
 
   &__facet-group {
-    border-bottom: 1px solid $color__secondary-gray5;
+
+    // EATON-616: Horizontal Divider needs to be darker - Divider color should be "Gray-4"
+    border-bottom: 1px solid $color__secondary-gray4;
     margin-bottom: 1rem;
   }
 
