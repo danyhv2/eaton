@@ -88,12 +88,13 @@
       width: 100%;
       padding: 0;
       text-align: center;
+      border: 1px solid $color__primary-blue;
+      overflow: hidden;
 
       &::before {
         display: block;
         content: '';
         padding-top: 100%;
-        border: 1px solid $color__primary-blue;
       }
     }
 
