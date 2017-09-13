@@ -22,13 +22,15 @@ App.mediaGallery = function () {
   var componentClass = '.module-media-gallery';
   var $componentEl = $(componentClass);
 
+  // Placeholder variables for Multilanguage strings
+  var i18nStrings = {};
+
   // Cached DOM Elements
   //--------------
   var $bodyEl = $('body');
   var $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
   var $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
   var $thumbnailItems = $componentEl.find('.module-media-gallery__thumbnail-item');
-  var i18nStrings = {};
 
   // Zoom Behavior
   //--------------
@@ -134,8 +136,9 @@ App.mediaGallery = function () {
   */
   var zoomInitialize = function zoomInitialize() {
 
-    // Default Settings
-    //--------------
+    /**
+    * Zoom Behavior - Default Config
+    */
     zoom = {
       eventDesktop: 'click',
       // eventMobile: 'overlay',
@@ -225,9 +228,15 @@ App.mediaGallery = function () {
   * @param { String } imageSrc - ImageURL that will be displayed in the overlay
   */
   var zoomOpenOverlay = function zoomOpenOverlay(imageSrc) {
+
+    // Update Background image in the overlay
     var style = 'background-image: url("' + imageSrc + '")';
     zoom.$overlayImageEl.attr('style', style);
+
+    // Prevent scrolling in the page
     $bodyEl.addClass(zoom.cssClasses.zoomOverlayOpen);
+
+    // It makes zoom-overlay visible
     zoom.$overlayEl.fadeIn(function () {
 
       // Focus the Close Overlay button as soon as the overlay is visible

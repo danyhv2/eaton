@@ -6,10 +6,26 @@
   &.no-cta {
 
     padding: 0;
+    margin-bottom: -35px;
 
     .container {
       width: 100%;
       padding: 0;
+    }
+
+    .eaton-topic-link-white {
+
+      &__icon {
+        margin-bottom: 20px;
+      }
+
+      &__header {
+        margin-bottom: 5px;
+      }
+
+      &__description {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -62,7 +78,7 @@
       margin-bottom: 0;
       margin-right: $spacing__sm;
       display: inline-block;
-      float:left;
+      float: left;
 
       img {
         width: 70px;

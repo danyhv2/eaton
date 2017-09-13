@@ -107,6 +107,7 @@
     margin: 1.5rem 0;
     text-align: left;
     width: 100%;
+    font-size: 1.8rem;
 
     .icon::before {
       position: absolute;
@@ -228,6 +229,22 @@
 
     header {
       display: none;
+    }
+  }
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .faceted-navigation {
+    &__list-item {
+      input[type="radio"],
+      input[type="checkbox"] {
+        &.input--small {
+          &:checked + span::after {
+            top: .7rem;
+          }
+        }
+      }
     }
   }
 }

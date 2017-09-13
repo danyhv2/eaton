@@ -18,7 +18,7 @@
 
 var App = window.App || {};
 
-App.search = function () {
+App.search = function (autosize) {
 
   // Variable Declarations
   var componentClass = '.eaton-search';
@@ -34,8 +34,18 @@ App.search = function () {
   var init = function init() {
     // If not in AEM Author Mode & component exists on page - initialize scripts
     if (!isAEMAuthorMode) {
-      // console.log('Initialize Search');
       addEventListeners();
+
+      // Intercept Carriage Return on TextArea and submit form.
+      $searchInputEl.keydown(function (e) {
+        var keyCode = e.keyCode || e.which;
+        var $activeSearchComponent = $(event.currentTarget).closest(componentClass);
+
+        if (keyCode === 13) {
+          $activeSearchComponent.find('form').submit();
+          return false;
+        }
+      });
     }
   };
 
@@ -130,4 +140,4 @@ App.search = function () {
     autosize($('.eaton-header textarea'));
     init();
   }
-}();
+}(window.autosize);

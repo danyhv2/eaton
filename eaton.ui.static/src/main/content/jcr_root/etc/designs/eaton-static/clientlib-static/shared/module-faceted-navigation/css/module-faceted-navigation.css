@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 991px) { .faceted-navigation-header__sort-options { margin-right: -20px; width: 130px; height: 70px; } }
 
-.faceted-navigation-header__sort-options select.native-select { position: absolute; background: transparent; top: 5px; right: -10px; width: 170px; height: 45px; border: 0; color: transparent; }
+.faceted-navigation-header__sort-options select.native-select { position: absolute; background: transparent; top: 0; right: -10px; width: 170px; height: 45px; border: 0; color: transparent; }
 
 @media screen and (min-width: 992px) { .faceted-navigation-header__sort-options select.native-select { display: none; } }
 
@@ -94,7 +94,7 @@
 
 .faceted-navigation__facet-group { border-bottom: 1px solid #EEF0F2; margin-bottom: 1rem; }
 
-.faceted-navigation__header.button--reset, .faceted-navigation__view-more-groups { cursor: pointer; margin: 1.5rem 0; text-align: left; width: 100%; }
+.faceted-navigation__header.button--reset, .faceted-navigation__view-more-groups { cursor: pointer; margin: 1.5rem 0; text-align: left; width: 100%; font-size: 1.8rem; }
 
 .faceted-navigation__header.button--reset .icon::before, .faceted-navigation__view-more-groups .icon::before { position: absolute; right: 0; color: #005EB8; font-size: 1.2rem; margin-top: 6px; }
 
@@ -123,3 +123,5 @@
 
 @media screen and (max-width: 991px) { body.facets-open { position: fixed; width: 100%; overflow: hidden; }
   body.facets-open header { display: none; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .faceted-navigation__list-item input[type="radio"].input--small:checked + span::after, .faceted-navigation__list-item input[type="checkbox"].input--small:checked + span::after { top: .7rem; } }

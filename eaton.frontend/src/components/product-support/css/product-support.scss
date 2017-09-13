@@ -2,10 +2,10 @@
 @import "../../../global/css/_config/sass";
 
 .product-support-component {
-  padding: 120px 30px;
+  padding: 60px 30px;
 
   @include media-tablet-and-up {
-    padding: 120px 0;
+    padding: 60px 0;
   }
 
   &--left {

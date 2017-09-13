@@ -56,8 +56,8 @@
   .eaton-landing-hero__caption { padding: 0; }
   .eaton-landing-hero__separator { display: none; } }
 
-@media screen and (min-width: 992px) { .eaton-landing-hero { height: 56.25vw; }
-  .eaton-landing-hero__slide-item { height: 56.25vw; }
+@media screen and (min-width: 992px) { .eaton-landing-hero { height: 41.66667vw; }
+  .eaton-landing-hero__slide-item { height: 41.66667vw; }
   .eaton-landing-hero__caption { padding: 0 100px; } }
 
 @media screen and (min-width: 1200px) { .eaton-landing-hero:hover .eaton-landing-hero__arrow { display: block !important; }
