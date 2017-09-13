@@ -15,7 +15,6 @@
     padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
     text-decoration: none;
     display: block;
-    padding: 10px 0;
 
     span {
       color: $color__white;
@@ -61,7 +60,6 @@
       flex: 1;
       margin-right: ($spacing__sm / 2);
     }
-
   }
 
   //-----------------------------
@@ -93,7 +91,8 @@
         text-decoration: none;
       }
     }
-    .eaton-list-links__col .eaton-list-links__item:first-child  .eaton-list-links__link {
+
+    .eaton-list-links__col .eaton-list-links__item:first-child .eaton-list-links__link {
       padding-top: 0;
     }
   }
