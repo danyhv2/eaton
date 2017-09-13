@@ -14,29 +14,11 @@
   &__link {
     padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
     text-decoration: none;
-    display: inline;
+    display: block;
+    padding: 10px 0;
 
     span {
-      color: #FFF;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 1.5rem;
-      display: block;
-      line-height: 2.4rem;
-      font-family: Arial, "Arial", sans-serif;
-      padding: 10px 0;
-
-      &::after {
-        color: #FFF;
-        position: relative;
-        top: 1px;
-        content: "\e258";
-        font-family: 'Glyphicons Halflings';
-        font-size: 1.4rem;
-        display: inline;
-        padding-left: 7px;
-        text-decoration: none;
-      }
+      color: $color__white;
     }
 
     i {
@@ -48,10 +30,7 @@
     }
   }
 
-  .eaton-list-links__col .eaton-list-links__item:first-child span {
-    padding: 0;
-    line-height: 1.9rem;
-  } //-----------------------------
+  //-----------------------------
   // Mobile-Tablet Breakpoint
   // ----------------------------
   @include media-mobile-and-tablet {
@@ -64,25 +43,17 @@
       align-items: center;
       font-size: 1.5rem;
 
-      span {
-        font-size: 1.5rem;
-      }
-
       &::after {
-        color: #FFF;
+        color: $color__white;
         position: relative;
         top: 1px;
-        content: "\e258";
-        font-family: 'Glyphicons Halflings';
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
         font-style: normal;
         font-weight: normal;
         font-size: 1.4rem;
         display: inline-block;
         text-decoration: none;
-      }
-
-      span::after {
-        display: none;
       }
     }
 
@@ -91,10 +62,9 @@
       margin-right: ($spacing__sm / 2);
     }
 
-    .eaton-list-links__col .eaton-list-links__item span {
-      font-size: 1.5rem;
-    }
-  } //-----------------------------
+  }
+
+  //-----------------------------
   // Desktop Breakpoint
   // ----------------------------
   @include media-desktop-and-up {
@@ -107,6 +77,24 @@
       &:first-child {
         margin-left: 0;
       }
+    }
+
+    &__link span {
+
+      &::after {
+        color: $color__white;
+        position: relative;
+        top: 1px;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 1.4rem;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+    }
+    .eaton-list-links__col .eaton-list-links__item:first-child  .eaton-list-links__link {
+      padding-top: 0;
     }
   }
 }
