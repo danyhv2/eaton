@@ -22,14 +22,14 @@ use(function () {
 				title: 'Help center',
 				link: '#',
 				target: '_self',
-				text: 'Still have questions? We&quote;ve got the answers.'
+				text: 'Still have questions? We&acute;ve got the answers.'
 			},
 			{
 				image: '/content/dam/eaton/images/iconlist/edit_orange_icon.png',
 				title: 'Help center',
 				link: '#',
 				target: '_self',
-				text: 'Still have questions? We&quote;ve got the answers.'
+				text: 'Still have questions? We&acute;ve got the answers.'
 			}
 
 		]

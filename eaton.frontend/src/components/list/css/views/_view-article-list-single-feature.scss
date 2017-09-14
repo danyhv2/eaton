@@ -24,6 +24,12 @@
 
     &--copy {
       padding: 15px 0;
+
+      &:last-child {
+        .category-item-date--padding {
+          padding-bottom: 0;
+        }
+      }
     }
   }
 

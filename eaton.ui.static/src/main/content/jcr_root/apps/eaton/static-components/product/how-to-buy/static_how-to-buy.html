@@ -24,7 +24,7 @@
         </div>
         <div class="eaton-how-to-buy__text-wrapper">
           <a href="${link.linkl}" class="${data.headline ? 'b-h4-link-bold' : 'b-h5-link-bold'}" title="${link.title}" target="${link.target}">${link.title}</a>
-          <div class="p-body-copy">${link.text}</div>
+          <div class="p-body-copy">${link.text @ context='html'}</div>
         </div>
       </div>
       <div class="col-xs-12 col-md-4 eaton-how-to-buy__element" data-sly-test="${!link.image}">

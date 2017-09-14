@@ -34,8 +34,20 @@ App.search = function (autosize) {
   var init = function init() {
     // If not in AEM Author Mode & component exists on page - initialize scripts
     if (!isAEMAuthorMode) {
-      // console.log('Initialize Search');
       addEventListeners();
+
+      // Intercept Carriage Return on TextArea and submit form.
+      $searchInputEl.keydown(function (e) {
+        var evt = e || window.event; // compliant with ie6
+        var keyCode = evt.keyCode || evt.which;
+
+        var $activeSearchComponent = $(e.currentTarget).closest(componentClass);
+
+        if (keyCode === 13) {
+          $activeSearchComponent.find('form').submit();
+          return false;
+        }
+      });
     }
   };
 

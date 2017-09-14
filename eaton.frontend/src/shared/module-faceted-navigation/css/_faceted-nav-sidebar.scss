@@ -97,7 +97,9 @@
   }
 
   &__facet-group {
-    border-bottom: 1px solid $color__secondary-gray5;
+
+    // EATON-616: Horizontal Divider needs to be darker - Divider color should be "Gray-4"
+    border-bottom: 1px solid $color__secondary-gray4;
     margin-bottom: 1rem;
   }
 
@@ -107,6 +109,7 @@
     margin: 1.5rem 0;
     text-align: left;
     width: 100%;
+    font-size: 1.8rem;
 
     .icon::before {
       position: absolute;
@@ -162,6 +165,13 @@
     &__view-more-groups {
       .icon::before {
         right: 30px;
+      }
+    }
+
+    &__header.button--reset {
+      span {
+        font-size: 1.8rem;
+        line-height: 1.9rem;
       }
     }
 
@@ -236,11 +246,18 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .faceted-navigation {
     &__list-item {
-      input[type="radio"],
+      input[type="radio"] {
+        &.input--small {
+          &:checked + span::after {
+            top: 1px;
+          }
+        }
+      }
+
       input[type="checkbox"] {
         &.input--small {
           &:checked + span::after {
-            top: .7rem;
+            top: 6px;
           }
         }
       }

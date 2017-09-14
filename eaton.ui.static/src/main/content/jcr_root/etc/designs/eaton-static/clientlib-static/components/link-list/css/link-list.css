@@ -144,6 +144,6 @@
 
 .eaton-linklist-2column > div .col-xs-12 { padding: 0; }
 
-.eaton-linklist-2column__link { margin-bottom: 30px; }
+.eaton-linklist-2column__link { margin-bottom: 20px; }
 
 @media screen and (min-width: 992px) { .eaton-linklist-2column > div { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; } }
