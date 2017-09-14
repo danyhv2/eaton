@@ -129,6 +129,8 @@
 
 .eaton-topic-link-white__text-wrapper { width: calc(100% - 90px); display: inline-block; float: right; }
 
+.eaton-topic-link-white__text-wrapper.no-icon { width: 100%; }
+
 .eaton-topic-link-white__header { margin-bottom: 30px; }
 
 .eaton-topic-link-white__description { margin-bottom: 30px; }
