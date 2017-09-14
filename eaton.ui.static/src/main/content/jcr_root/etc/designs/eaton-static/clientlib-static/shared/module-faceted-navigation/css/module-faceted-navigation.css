@@ -124,4 +124,5 @@
 @media screen and (max-width: 991px) { body.facets-open { position: fixed; width: 100%; overflow: hidden; }
   body.facets-open header { display: none; } }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .faceted-navigation__list-item input[type="radio"].input--small:checked + span::after, .faceted-navigation__list-item input[type="checkbox"].input--small:checked + span::after { top: .7rem; } }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .faceted-navigation__list-item input[type="radio"].input--small:checked + span::after { top: 1px; }
+  .faceted-navigation__list-item input[type="checkbox"].input--small:checked + span::after { top: 6px; } }

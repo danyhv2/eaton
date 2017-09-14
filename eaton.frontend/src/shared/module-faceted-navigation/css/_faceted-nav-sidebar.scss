@@ -239,11 +239,17 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .faceted-navigation {
     &__list-item {
-      input[type="radio"],
+      input[type="radio"] {
+        &.input--small {
+          &:checked + span::after {
+            top: 1px;
+          }
+        }
+      }
       input[type="checkbox"] {
         &.input--small {
           &:checked + span::after {
-            top: .7rem;
+            top: 6px;
           }
         }
       }
