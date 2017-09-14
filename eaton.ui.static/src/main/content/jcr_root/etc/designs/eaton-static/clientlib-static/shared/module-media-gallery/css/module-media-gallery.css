@@ -78,7 +78,7 @@ body.zoom-overlay-open { overflow: hidden; }
 @media screen and (max-width: 991px) { .module-media-gallery__dots { text-align: center; margin: 30px 0; }
   .module-media-gallery__dots li { display: inline; padding-right: 10px; }
   .module-media-gallery__dots li.slick-active button { background-color: #005EB8; }
-  .module-media-gallery__dots button { display: inline; height: 10px; width: 10px; border: 10px; border-radius: 50%; font-size: 0; color: transparent; background-color: #EEF0F2; padding: 5px; }
+  .module-media-gallery__dots button { display: inline; height: 10px; width: 10px; border: 10px; border-radius: 50%; font-size: 0; color: transparent; background-color: #CCD2D7; padding: 5px; }
   .module-media-gallery__thumbnail-container { display: none; } }
 
 @media screen and (min-width: 992px) { .module-media-gallery__slide-container .module-media-gallery__arrows .icon { font-size: 37px; }
