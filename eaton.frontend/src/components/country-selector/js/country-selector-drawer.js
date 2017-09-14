@@ -62,6 +62,8 @@ App.countrySelector = (function() {
       return false;
     }
 
+    // console.log('ActiveLink is', activeLink);
+
     // Highlight only the active Link
     regionDesktopLinks.removeClass('active');
     regionDesktopLinks.attr('aria-expanded', false);
