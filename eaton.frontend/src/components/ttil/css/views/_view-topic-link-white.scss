@@ -20,6 +20,10 @@
     width: calc(100% - 90px);
     display: inline-block;
     float: right;
+
+    &.no-icon {
+      width: 100%;
+    }
   }
 
   &__header {
