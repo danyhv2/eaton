@@ -40,6 +40,11 @@
     text-decoration: none;
   }
 
+  .open-sign-in:hover {
+    // EATON-465: Underline on hover (this is a stand-alone navigation link)
+    text-decoration: underline;
+  }
+
   //-----------------------------
   // Mobile Breakpoints
   // ----------------------------
