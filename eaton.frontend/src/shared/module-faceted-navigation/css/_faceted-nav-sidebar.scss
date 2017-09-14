@@ -168,6 +168,12 @@
       }
     }
 
+    &__header.button--reset {
+      span {
+        font-size: 1.8rem;
+      }
+    }
+
     .mobile-header {
       display: none;
     }
