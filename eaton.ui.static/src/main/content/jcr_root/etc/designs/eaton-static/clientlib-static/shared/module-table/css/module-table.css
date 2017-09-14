@@ -13,7 +13,7 @@
 
 .module-table__head { margin-top: 0; margin-bottom: 22px; padding-left: 20px; }
 
-.module-table__row:nth-child(odd) { background-color: #EEF0F2; }
+.module-table__row:nth-child(odd) { background-color: #F8F8F8; }
 
 .module-table__col { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
 
