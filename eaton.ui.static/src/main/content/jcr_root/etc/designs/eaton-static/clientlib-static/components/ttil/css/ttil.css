@@ -53,7 +53,7 @@
 
 @media screen and (min-width: 992px) { .feature-block-component__image { min-height: 44vw; min-width: 44vw; } }
 
-.feature-block-component__description { padding: 30px 0; }
+.feature-block-component__description { padding-top: 10px; padding-bottom: 30px; }
 
 @media screen and (max-width: 767px) { .feature-block-component__text-container { padding: 60px 30px; } }
 
