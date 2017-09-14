@@ -25,6 +25,8 @@
 
 .header-utility-nav .open-country-selector, .header-utility-nav .open-sign-in { color: #FFF; text-decoration: none; }
 
+.header-utility-nav .open-sign-in:hover { text-decoration: underline; }
+
 @media screen and (max-width: 991px) { .header-utility-nav { position: fixed; bottom: 0; z-index: 113; /* Higher Stacking order than Primary Nav but Less than Search */ width: 100%; right: 0; opacity: 0; visibility: hidden; -webkit-transition: opacity 0.5s ease-in-out; transition: opacity 0.5s ease-in-out; padding: 0; }
   .header-utility-nav .container { padding: 0; }
   .header-utility-nav__row { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 0; }

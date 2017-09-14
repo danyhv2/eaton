@@ -36,3 +36,5 @@ h2.eaton-title__eyebrow-and-byline { margin-top: 0; margin-bottom: 15px; }
 .dark-theme .eaton-title__line { border-color: #FFF; }
 
 @media screen and (min-width: 992px) { .eaton-title__eyebrow i { font-size: 1.6rem; } }
+
+.title + .grid-2-column-control .eaton-grid-control { margin-top: 0px; }
