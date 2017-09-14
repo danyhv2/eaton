@@ -82,8 +82,13 @@ App.header = (function() {
         bodyEl.removeClass('drawer-open drawer-is-animating');
         // Scroll to the top of the page once the drawer is closed
         // This prevents page scroll to bottom once sticky-nav is activated
-        windowEl.scrollTop(FIXED_HEADER_HEIGHT);
-        // console.log('Scroll is over', scrollTop);
+
+        bodyEl.scrollTop(FIXED_HEADER_HEIGHT);
+        // In cases of browsers that do not interpret scrollTep value set
+        // Animate the bodyEl to the header position
+        if (bodyEl.scrollTop !== FIXED_HEADER_HEIGHT) {
+          bodyEl.animate({scrollTop: FIXED_HEADER_HEIGHT});
+        }
 
         // Set Flag to False
         isDrawerOpen = false;
