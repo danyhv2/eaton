@@ -108,7 +108,7 @@
   .facets-open .faceted-navigation { position: fixed; top: 0; display: block; width: 100%; left: 0; padding-top: 5.2rem; bottom: 0px; padding-bottom: 7.3rem; z-index: 10; overflow-y: auto; background-color: #FFF; }
   .facets-open .faceted-navigation .mobile-header { display: block; }
   .faceted-navigation__header.button--reset .icon::before, .faceted-navigation__view-more-groups .icon::before { right: 30px; }
-  .faceted-navigation__header.button--reset span { font-size: 1.8rem; }
+  .faceted-navigation__header.button--reset span { font-size: 1.8rem; line-height: 1.9rem; }
   .faceted-navigation .mobile-header { display: none; }
   .faceted-navigation__view-more-values { padding-top: 8px; }
   .faceted-navigation__header { margin: .9rem 0; }
