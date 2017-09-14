@@ -72,7 +72,7 @@ App.header = function () {
       headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', headerHeight);
     } else {
       // Reset the top offset for the elements - Desktop
-      headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', 'unset');
+      headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', 'auto');
     }
   };
 
@@ -118,7 +118,7 @@ App.header = function () {
 
     var activeCategory = '';
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
     // Close Search if open
     closeSearch(event);
@@ -145,7 +145,7 @@ App.header = function () {
   */
   var closeMegaMenu = function closeMegaMenu(event) {
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
     primaryLinks.removeClass('active');
     megaMenuSections.removeClass('mega-menu__content--active');
@@ -157,7 +157,7 @@ App.header = function () {
   */
   var mobileMenuInteractions = function mobileMenuInteractions(event) {
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
     // Close Search if open
     closeSearch(event);
@@ -186,7 +186,7 @@ App.header = function () {
   var handleTitleClick = function handleTitleClick(event) {
     var activeLink = primaryLinks.filter('.active');
     if (windowEl.width() < mediumScreenWidth) {
-      event.preventDefault();
+      event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
       bodyEl.removeClass('level-2-open');
       activeLink.focus();
@@ -198,7 +198,7 @@ App.header = function () {
   */
   var handleSearch = function handleSearch(event) {
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
     closeMegaMenu(event);
     updateHeaderLayoutMobile();
 
@@ -221,7 +221,7 @@ App.header = function () {
   */
   var closeSearch = function closeSearch(event) {
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
     bodyEl.removeClass('search-open');
   };
 
@@ -230,7 +230,7 @@ App.header = function () {
   */
   var openDrawer = function openDrawer(event) {
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
     // Check for window-width.
     // If Desktop Breakpoint, activate the first region-panel
