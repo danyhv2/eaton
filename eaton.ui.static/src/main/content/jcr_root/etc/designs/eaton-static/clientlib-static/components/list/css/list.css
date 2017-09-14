@@ -182,11 +182,7 @@
 
 @media screen and (min-width: 768px) { .related-products-component__info { padding: 0 30px; } }
 
-.related-products-component__title { padding-bottom: 20px; padding-top: 30px; }
-
-@media screen and (min-width: 768px) and (max-width: 991px) { .related-products-component__title { padding-top: 60px; } }
-
-@media screen and (min-width: 992px) { .related-products-component__title { padding-bottom: 10px; } }
+.related-products-component__title { padding-top: 30px; margin-bottom: 10px; }
 
 .related-products-component__arrow { bottom: 35%; }
 

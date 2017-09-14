@@ -171,6 +171,7 @@
     &__header.button--reset {
       span {
         font-size: 1.8rem;
+        line-height: 1.9rem;
       }
     }
 
@@ -252,6 +253,7 @@
           }
         }
       }
+
       input[type="checkbox"] {
         &.input--small {
           &:checked + span::after {
