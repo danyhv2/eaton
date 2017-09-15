@@ -11,7 +11,6 @@ App.scroll = (function() {
   const $componentSelector = $('[data-scroll-to]');
   const $htmlEl = $('html, body');
   const headerEl = document.querySelector('.header');
-  const productTabsEl = document.querySelector('.eaton-product-tabs');
 
   const HEADER_HEIGHT_WHEN_STICKY = 84;
   const HEADER_HEIGHT = (headerEl)
