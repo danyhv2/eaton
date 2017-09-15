@@ -11,16 +11,17 @@
  */
 
 
-.module-table__head { margin-top: 0; margin-bottom: 22px; padding-left: 20px; }
+.module-table__head { margin-top: 0; margin-bottom: 22px; }
 
 .module-table__row:nth-child(odd) { background-color: #F8F8F8; }
 
 .module-table__col { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
 
 @media screen and (max-width: 991px) { .module-table { margin-bottom: 30px; }
-  .module-table__row { padding: 12px 15px; } }
+  .module-table__row { padding: 12px 15px; }
+  .module-table__head { padding-left: 15px; } }
 
 @media screen and (min-width: 992px) { .module-table { margin-bottom: 60px; }
-  .module-table__head { margin-bottom: 48px; }
+  .module-table__head { margin-bottom: 48px; padding-left: 20px; }
   .module-table__row { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; padding: 26px 20px; }
   .module-table__col { -webkit-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; } }
