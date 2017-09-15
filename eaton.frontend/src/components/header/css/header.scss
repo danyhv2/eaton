@@ -53,6 +53,7 @@
       .eaton-logo__link {
         width: 126px;
         height: 40px;
+        transition: height ease-in-out 0.3s, width ease-in-out 0.3s;
       }
     }
   }
