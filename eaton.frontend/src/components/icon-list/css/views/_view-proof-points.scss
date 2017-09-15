@@ -76,10 +76,12 @@
 
     &__item {
       flex-basis: 33.33%;
+      margin-right: $spacing__sm;
 
       .eaton-grid-control & {
         flex-basis: 100%;
         margin-bottom: ($spacing__sm ) + 10;
+        margin-right: 0;
 
         &:last-child {
           margin-bottom: 0;
