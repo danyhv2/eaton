@@ -16,6 +16,12 @@
     }
   }
 
+  // EATON-638 - All browsers - Image should be centered correctly
+  .rendition__image {
+    margin: 0 auto;
+    padding: 20px;
+  }
+
   &__arrows {
     position: absolute;
     top: 22%;

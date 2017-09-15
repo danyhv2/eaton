@@ -6,7 +6,6 @@
 
   &__header {
     position: relative;
-    padding: 30px 0 10px;
 
     &--title {
       color: $color__primary-gray1;
@@ -91,6 +90,11 @@
   // Mobile: 0-991px
   //-----------------------------------
   @include media-mobile-and-tablet {
+
+    &__header {
+      padding: 20px 0; // EATON-635: Mobile - Header should be vertically centered
+    }
+
     // EATON-635: Mobile - Toggle Header and "+/-" need to be vertically centered
     // NOTE: Selector with Higher specificity as the one used by bootstrap.css. Required in order to override the default values.
     &.panel-group .panel + .panel {
@@ -99,7 +103,6 @@
 
     &__icons {
       position: absolute;
-      // bottom: unset;
       bottom: auto;
       top: 50%;
       transform: translateY(-50%);
@@ -111,6 +114,11 @@
   // Desktop: > 992px and up
   //-----------------------------------
   @include media-desktop-and-up {
+
+    &__header {
+      padding: 30px 0 10px;
+    }
+
     &__icons {
       bottom: 22px;
     }
