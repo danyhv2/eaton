@@ -58,8 +58,12 @@ App.productTabs = function () {
 
       // if Mobile add the tabsDescriptionHeight
       var isTop = scrollTop === 0;
-      var scrollOffset = headerHeight + (isMobile ? tabsDescriptionHeight : 0);
-      var shouldBeFixed = isHeaderFixed && !isTop || scrollTop > scrollOffset;
+      var scrollOffset = headerHeight + tabsDescriptionHeight;
+      var shouldBeFixed = isHeaderFixed && !isTop;
+      shouldBeFixed = isMobile ? scrollTop > scrollOffset : shouldBeFixed;
+
+      // const scrollOffset = headerHeight + (isMobile ? tabsDescriptionHeight : 0);
+      // const shouldBeFixed = (isHeaderFixed && !isTop) || (scrollTop > scrollOffset);
 
       // EATON-619: Dropdown should close when user has it open then scrolls down.
       closeDropdown();
