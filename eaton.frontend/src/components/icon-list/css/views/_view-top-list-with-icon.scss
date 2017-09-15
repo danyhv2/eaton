@@ -29,6 +29,10 @@
   &__element {
     margin-bottom: $spacing__lg / 2;
 
+    .p-body-copy{
+      margin-top:5px;
+    }
+
     a{
       line-height: 3.4rem;
     }

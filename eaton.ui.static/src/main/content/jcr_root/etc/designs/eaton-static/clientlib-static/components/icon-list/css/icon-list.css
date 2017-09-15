@@ -78,6 +78,8 @@
 
 .eaton-top-list-with-icon__element { margin-bottom: 45px; }
 
+.eaton-top-list-with-icon__element .p-body-copy { margin-top: 5px; }
+
 .eaton-top-list-with-icon__element a { line-height: 3.4rem; }
 
 @media screen and (min-width: 992px) { .eaton-top-list-with-icon__icon { max-width: 70px; }
