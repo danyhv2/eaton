@@ -20,7 +20,7 @@
 .faceted-navigation-header__sort-options { float: right; margin-right: -52px; width: 160px; margin-top: -15px; position: relative; }
 
 @media screen and (max-width: 991px) { .faceted-navigation-header__sort-options { margin-right: -20px; width: 130px; height: 70px; }
-  .faceted-navigation-header__sort-options .dropdown [data-toggle="dropdown"][aria-expanded="true"] { border: none; }
+  .faceted-navigation-header__sort-options .dropdown [data-toggle="dropdown"][aria-expanded="true"] { border: 0; }
   .faceted-navigation-header__sort-options .dropdown-menu { display: none; } }
 
 @media screen and (min-width: 992px) and (max-width: 1265px) { .faceted-navigation-header__sort-options { margin-right: -15px; width: 124px; }
