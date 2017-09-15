@@ -23,7 +23,6 @@ App.productTabs = function () {
   //--------------
   var $componentClass = $('.eaton-product-tabs');
   var $headerEl = $('header');
-  var $headerComponent = $('.eaton-header');
   var $window = $(window);
   var $tabsDescription = $componentClass.find('.eaton-product-tabs__description');
   var $tabsDropdown = $componentClass.find('.dropdown'); // Bootstrap Dropdown Container
@@ -31,7 +30,6 @@ App.productTabs = function () {
 
   // CSS Selectors
   var componentFixedClass = 'eaton-product-tabs--fixed';
-  var buttonsClass = '.eaton-product-tabs__buttons';
 
   // Utility Detect AEM's Author / Edit Mode
   var isAEMAuthorMode = App.global.utils.isAEMAuthorMode();
@@ -49,30 +47,25 @@ App.productTabs = function () {
    * Bind All Event Listeners
    */
   var addEventListeners = function addEventListeners() {
-    if (location.hash === '#no-sticky-tab') {
-      return;
-    }
-
     $window.on('scroll', function (event) {
       var scrollTop = $window.scrollTop();
       var isMobile = $window.innerWidth() < App.global.constants.GRID.MD;
       var headerHeight = $headerEl.outerHeight();
       var tabsDescriptionHeight = $tabsDescription.outerHeight();
-      var isHeaderFixed = $headerComponent.hasClass('eaton-header--fixed');
+      var utilityNavOffset = $('.header-utility-nav').offset().top;
+      var utilityNavHeight = $('.header-utility-nav').outerHeight();
+      var isHeaderFixed = scrollTop > utilityNavOffset + utilityNavHeight;
+      // const isHeaderFixed = $headerComponent.hasClass('eaton-header--fixed');
 
       // if Mobile add the tabsDescriptionHeight
-      var scrollOffset = headerHeight + (isMobile ? tabsDescriptionHeight : 0);
       var isTop = scrollTop === 0;
+      var scrollOffset = headerHeight + (isMobile ? tabsDescriptionHeight : 0);
       var shouldBeFixed = isHeaderFixed && !isTop || scrollTop > scrollOffset;
 
       // EATON-619: Dropdown should close when user has it open then scrolls down.
       closeDropdown();
 
-      // console.log('scrollTop', scrollTop, 'scrollOffset', scrollOffset, 'shouldBeFixed', shouldBeFixed);
-
       $componentClass.toggleClass(componentFixedClass, shouldBeFixed);
-      $componentClass.find(buttonsClass).toggleClass('row', !shouldBeFixed);
-      $componentClass.find(buttonsClass).toggleClass('container', shouldBeFixed);
     });
   };
 
