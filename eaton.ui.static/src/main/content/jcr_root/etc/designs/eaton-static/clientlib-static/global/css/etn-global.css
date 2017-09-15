@@ -440,7 +440,7 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 768px) { .eaton-form [type="checkbox"]:not(:checked) + span::before, .eaton-form [type="checkbox"]:checked + span::before { top: -4px; } }
 
-.eaton-form [type="checkbox"]:checked + span::after { font-size: 1.6rem; line-height: 0.8; color: #005EB8; position: absolute; top: 2px; left: 5px; }
+.eaton-form [type="checkbox"]:checked + span::after { font-size: 1.6rem; color: #005EB8; line-height: 1; position: absolute; top: 4px; bottom: auto; left: 5px; }
 
 .eaton-form [type="checkbox"]:focus + span::before { border-color: #5a99db; -webkit-box-shadow: 0 1px 12px #85bffd; box-shadow: 0 1px 12px #85bffd; outline: 0 none; }
 

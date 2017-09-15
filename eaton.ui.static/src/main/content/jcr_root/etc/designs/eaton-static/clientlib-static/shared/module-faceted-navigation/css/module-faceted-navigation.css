@@ -78,9 +78,11 @@
 
 .faceted-navigation__list-item input[type="radio"].input--small + span, .faceted-navigation__list-item input[type="checkbox"].input--small + span { padding-left: 35px; }
 
-.faceted-navigation__list-item input[type="radio"].input--small + span::before, .faceted-navigation__list-item input[type="checkbox"].input--small + span::before { width: 2rem; height: 2rem; left: 0; top: -.3rem; }
+.faceted-navigation__list-item input[type="radio"].input--small + span::before, .faceted-navigation__list-item input[type="checkbox"].input--small + span::before { width: 2rem; height: 2rem; left: 0; top: -3px; }
 
-.faceted-navigation__list-item input[type="radio"].input--small:checked + span::after, .faceted-navigation__list-item input[type="checkbox"].input--small:checked + span::after { width: 1.2rem; height: 1.2rem; top: .1rem; left: .4rem; font-size: 1rem; line-height: 1.4rem; }
+.faceted-navigation__list-item input[type="radio"].input--small:checked + span::after, .faceted-navigation__list-item input[type="checkbox"].input--small:checked + span::after { width: 1.2rem; height: 1.2rem; left: 4px; font-size: 1rem; line-height: 1; top: 3px; }
+
+.faceted-navigation__list-item input[type="radio"].input--small:checked + span::after { top: 1px; }
 
 .faceted-navigation .hidden { display: none; }
 
@@ -125,5 +127,4 @@
 @media screen and (max-width: 991px) { body.facets-open { position: fixed; width: 100%; overflow: hidden; }
   body.facets-open header { display: none; } }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .faceted-navigation__list-item input[type="radio"].input--small:checked + span::after { top: 1px; }
-  .faceted-navigation__list-item input[type="checkbox"].input--small:checked + span::after { top: 6px; } }
+/* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .faceted-navigation { &__list-item { input[type="radio"] { &.input--small { &:checked + span::after { top: 1px; } } } input[type="checkbox"] { &.input--small { &:checked + span::after { top: 6px; } } } } } } */

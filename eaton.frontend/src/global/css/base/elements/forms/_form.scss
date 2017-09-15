@@ -237,10 +237,11 @@
       @extend %font-family-glyphicon;
       @extend %icon-checkmark;
       font-size: 1.6rem;
-      line-height: 0.8;
       color: $color__primary-blue;
+      line-height: 1;
       position: absolute;
-      top: 2px;
+      top: 4px;
+      bottom: auto;
       left: 5px;
     }
 
