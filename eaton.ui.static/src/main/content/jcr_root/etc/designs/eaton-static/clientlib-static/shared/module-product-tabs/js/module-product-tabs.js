@@ -55,7 +55,6 @@ App.productTabs = function () {
       var utilityNavOffset = $('.header-utility-nav').offset().top;
       var utilityNavHeight = $('.header-utility-nav').outerHeight();
       var isHeaderFixed = scrollTop > utilityNavOffset + utilityNavHeight;
-      // const isHeaderFixed = $headerComponent.hasClass('eaton-header--fixed');
 
       // if Mobile add the tabsDescriptionHeight
       var isTop = scrollTop === 0;
