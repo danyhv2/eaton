@@ -40,10 +40,13 @@ App.search = function (autosize) {
       $searchInputEl.keydown(function (e) {
         var evt = e || window.event; // compliant with ie6
         var keyCode = evt.keyCode || evt.which;
+        var inputVal = $searchInputEl.val();
+        $searchInputEl.val($searchInputEl.val().replace(/^\s*(\n)\s*$/, ''));
 
+        var regex = new RegExp('^[a-zA-Z0-9]+$');
         var $activeSearchComponent = $(e.currentTarget).closest(componentClass);
 
-        if (keyCode === 13) {
+        if (keyCode === 13 && inputVal.length >= 1 && regex.test(inputVal)) {
           $activeSearchComponent.find('form').submit();
           return false;
         }
@@ -72,10 +75,11 @@ App.search = function (autosize) {
 
     // Check if the #of characters in the inputBox exceeds characterLimit - 3
     var $activeSearchComponent = $(event.currentTarget).closest(componentClass);
+    var inputVal = event.target.value;
 
     if (event.target.value.length >= 3) {
       // Request Search Results - AJAX
-      getSearchResults(event, event.target.value);
+      getSearchResults(event, inputVal);
     } else {
       // Empty the contents of the result-list
       $activeSearchComponent.find('.eaton-search--default__results').removeClass('active');
