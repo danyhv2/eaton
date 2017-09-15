@@ -13,13 +13,9 @@ App.scroll = (function() {
   const headerEl = document.querySelector('.header');
   const productTabsEl = document.querySelector('.eaton-product-tabs');
 
-  const headerHeightFixed = 84;
-  const headerHeight = (headerEl)
-    ? headerHeightFixed
-    : 0;
-
-  const productTabsHeight = (productTabsEl)
-    ? productTabsEl.querySelector('.eaton-product-tabs__buttons').clientHeight
+  const HEADER_HEIGHT_WHEN_STICKY = 84;
+  const HEADER_HEIGHT = (headerEl)
+    ? HEADER_HEIGHT_WHEN_STICKY
     : 0;
 
   const init = () => {
@@ -43,21 +39,20 @@ App.scroll = (function() {
   * Scroll the window to the given selector
   * @param { String } cssSelector. ID or Class of the element to scroll to
   */
-  const toElementSelector = (cssSelector, duration = 500, offsetFixedComponets = true) => {
+  const toElementSelector = (cssSelector, duration, isOffsetEnabled) => {
+    duration = duration || 500;
+    isOffsetEnabled = (isOffsetEnabled) ? true : false;
+
     let positionTop = $(cssSelector).eq(0).offset().top;
-    const titleHeight = 120;
+    const TITLE_HEIGHT = 120;
 
     // NOTE: There are components like the Header that can have "Position: Fixed".
     // It adds these components height as an offset to the scroll behavior
-    if (offsetFixedComponets) {
+    if (isOffsetEnabled) {
 
-      // Offeset Header
-      positionTop -= headerHeight;
-
-      // Offset Product Tabs
-      positionTop -= productTabsHeight;
-
-      positionTop -= titleHeight;
+      // Remove Header height from the scroll position
+      positionTop -= HEADER_HEIGHT;
+      positionTop -= TITLE_HEIGHT;
 
     }
 

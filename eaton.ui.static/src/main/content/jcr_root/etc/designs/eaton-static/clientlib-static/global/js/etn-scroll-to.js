@@ -26,10 +26,8 @@ App.scroll = function () {
   var headerEl = document.querySelector('.header');
   var productTabsEl = document.querySelector('.eaton-product-tabs');
 
-  var headerHeightFixed = 84;
-  var headerHeight = headerEl ? headerHeightFixed : 0;
-
-  var productTabsHeight = productTabsEl ? productTabsEl.querySelector('.eaton-product-tabs__buttons').clientHeight : 0;
+  var HEADER_HEIGHT_WHEN_STICKY = 84;
+  var HEADER_HEIGHT = headerEl ? HEADER_HEIGHT_WHEN_STICKY : 0;
 
   var init = function init() {
     addEventListeners();
@@ -48,24 +46,20 @@ App.scroll = function () {
   * Scroll the window to the given selector
   * @param { String } cssSelector. ID or Class of the element to scroll to
   */
-  var toElementSelector = function toElementSelector(cssSelector) {
-    var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
-    var offsetFixedComponets = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+  var toElementSelector = function toElementSelector(cssSelector, duration, isOffsetEnabled) {
+    duration = duration || 500;
+    isOffsetEnabled = isOffsetEnabled ? true : false;
 
     var positionTop = $(cssSelector).eq(0).offset().top;
-    var titleHeight = 120;
+    var TITLE_HEIGHT = 120;
 
     // NOTE: There are components like the Header that can have "Position: Fixed".
     // It adds these components height as an offset to the scroll behavior
-    if (offsetFixedComponets) {
+    if (isOffsetEnabled) {
 
-      // Offeset Header
-      positionTop -= headerHeight;
-
-      // Offset Product Tabs
-      positionTop -= productTabsHeight;
-
-      positionTop -= titleHeight;
+      // Remove Header height from the scroll position
+      positionTop -= HEADER_HEIGHT;
+      positionTop -= TITLE_HEIGHT;
     }
 
     $htmlEl.animate({
