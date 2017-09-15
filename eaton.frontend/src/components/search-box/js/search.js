@@ -27,13 +27,15 @@ App.search = (function(autosize) {
       $searchInputEl.keydown(function (e) {
         const evt = e || window.event; // compliant with ie6
         const keyCode = evt.keyCode || evt.which;
-        let inputVal = $searchInputEl.val();
-        $searchInputEl.val($searchInputEl.val().replace(/^\s*(\n)\s*$/, ''));
-
-        const regex = new RegExp('^[a-zA-Z0-9]+$');
+        let inputVal = e.target.value; // Targets the active input
         const $activeSearchComponent = $(e.currentTarget).closest(componentClass);
+        const regex = new RegExp('^[a-zA-Z0-9]+$');
 
-        if (keyCode === 13 && (inputVal.length >= 1) && regex.test(inputVal)) {
+        // Remove new lines on the 'active' text area if no character exists
+        e.target.value = inputVal.replace(/^\s*(\n)\s*$/, '');
+
+        // Allow submit only if the textarea has atleast one alphanumeric character on carriage return
+        if (keyCode === 13 && (e.target.value.length >= 1) && regex.test(e.target.value)) {
           $activeSearchComponent.find('form').submit();
           return false;
         }
