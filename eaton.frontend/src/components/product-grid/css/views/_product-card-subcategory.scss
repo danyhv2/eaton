@@ -79,9 +79,9 @@
   &__name {
     color: $color__primary-blue;
     font-family: $font-family__secondary;
-    font-size: 24px;
+    font-size: 2.4rem; // H5 Deviation
     font-weight: bold;
-    line-height: 26px;
+    line-height: 2.6rem; // H5 Deviation
     margin-top: 18px;
     margin-bottom: 0;
   }
@@ -127,8 +127,8 @@
     &:nth-child(3n+3) { margin-right: 0; }
 
     &__name {
-      font-size: 28px;
-      line-height: 32px;
+      font-size: 2.8rem;   // H5 Deviation
+      line-height: 3.2rem; // H5 Deviation
     }
   }
 

@@ -28,6 +28,9 @@
     color: $color__white;
   }
 
+  &__name {
+    margin-bottom: 5px; // EATON-380: The padding between the Header and the Specification and Resource Links should be 20px
+  }
 
   // Product Card - General Styles
   //--------------
@@ -62,7 +65,7 @@
   }
 
   &__attr-label {
-    margin-bottom: 5px;
+    margin-bottom: 2px; // EATON-625: Spacing between Attribute Label and Value should be 15px visually
   }
 
 
@@ -236,13 +239,25 @@
 
     &__link-item {
       @include body-copy-small--desktop;
+      position: relative;
 
-      border-right: 1px solid $color__white;
       margin-right: 20px;
       padding-right: 16px;
 
-      &:last-child {
-        border-right: 0;
+      &::after {
+        content: '';
+        background-color: $color__white;
+        height: 18px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+      }
+
+      &:last-child::after {
+        content: none;
+        display: none;
       }
     }
 
@@ -273,7 +288,15 @@
       margin-bottom: $spacing__sm;
     }
 
-    &__attrs-list-item { flex: 1; }
+    &__attrs-list-item {
+      flex: 1;
+      padding-right: 20px;
+      word-wrap: break-word;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
 
     &__description {
       @include body-copy-small--desktop;

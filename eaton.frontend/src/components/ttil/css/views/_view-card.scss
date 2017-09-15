@@ -3,6 +3,9 @@
 //-----------------------------------
 .eaton-ttil-card-view {
 
+  $color__image-bg: $color__secondary-gray6;
+  $color__image-border: $color__secondary-gray5;
+
   position: relative;
 
   &__cta {
@@ -11,6 +14,16 @@
 
   &__image-wrapper {
     margin-bottom: 26px; // Visually 30px bottom margin
+    text-align: center;
+  }
+
+  .rendition__image {
+    background-color: $color__image-bg;
+    border: 1px solid $color__image-border;
+    margin: 0 auto;
+    padding: 20px;
+    height: auto;
+    width: 100%;
   }
 
   &__title {

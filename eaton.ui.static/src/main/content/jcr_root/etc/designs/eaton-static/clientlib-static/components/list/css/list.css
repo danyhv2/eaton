@@ -255,7 +255,7 @@
   .text-only-3-column__cta-container { margin-top: 30px; } }
 
 @media screen and (min-width: 992px) { .text-only-3-column__article-copy { padding: 30px 50px 0 0; }
-  .text-only-3-column__eyebrow { margin-bottom: 45px; }
+  .text-only-3-column__eyebrow { margin-bottom: 15px; }
   .text-only-3-column__date { margin-top: 15px; } }
 
 .ttil-list + .list > .text-only-3-column { margin-top: 60px; }

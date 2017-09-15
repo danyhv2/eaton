@@ -13,14 +13,15 @@
 
 .autocorrected-search {
 
-  margin-top: 50px;
-  // font-size: 24px;
-
 
   //-----------------------------------
   // MediaQuery: 0 to 991px
   //-----------------------------------
   @include media-mobile-and-tablet {
+
+    margin-top: 44px; // EATON-662, Spacing between Tabs and Auto correct should be 50x.
+    margin-bottom: 4px; // EATON-662: Spacing between Auto Correct and Number of Results should be 40px
+
     &__search-instead {
       display: block;
     }
@@ -32,6 +33,9 @@
   // Media Query: > 992px
   //-----------------------------------
   @include media-desktop-and-up {
+
+    margin-top: 40px;   // EATON-662: Spacing between Tabs and Auto correct should be 50x.
+    margin-bottom: 4px; // EATON-662: Spacing between Auto Correct and Number of Results should be 40px
 
     &__results {
       display: inline-block;

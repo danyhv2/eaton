@@ -123,9 +123,16 @@
   }
 
   &__thumbnail-container &__arrows {
+    background-color: $color__white;
     color: $color__primary-blue;
     top: 50%;
     transform: translateY(-50%);
+    height: 100%;
+    padding: 10px; // Increase button active area / as per iOS, Android guidelines: buttons should have at least 44px active area
+  }
+
+  &__thumbnail-item {
+    // Empty Selector for future reference
   }
 
   &__thumbnail-image-wrapper {

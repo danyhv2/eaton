@@ -8,9 +8,9 @@ use(function () {
       title: 'UltraShift Plus Transmissions',
       text: 'Transmissions',
       image: {
-        mobile: '/content/dam/eaton/images/next-steps--mobile.jpg',
-        tablet: '/content/dam/eaton/images/next-steps--mobile.jpg',
-        desktop: '/content/dam/eaton/images/next-steps--desktop.jpg',
+        mobile: '/content/dam/eaton/images/products/product-3-thumbnail.png',
+        tablet: '/content/dam/eaton/images/products/product-3-thumbnail.png',
+        desktop: '/content/dam/eaton/images/products/product-3-thumbnail.png',
         altText: 'Alt Text goes here',
       },
       link: {
@@ -24,9 +24,9 @@ use(function () {
       title: 'PREMERA and COPA 2 gang switched socket with 2 USB ports',
       text: 'RESIDENTIAL & LIGHT COMMERCIAL BUILDINGS',
       image: {
-        mobile: '/content/dam/eaton/images/Socket.png',
-        tablet: '/content/dam/eaton/images/Socket.png',
-        desktop: '/content/dam/eaton/images/Socket.png',
+        mobile: '/content/dam/eaton/images/products/socket--bg-transparent.png',
+        tablet: '/content/dam/eaton/images/products/socket--bg-transparent.png',
+        desktop: '/content/dam/eaton/images/products/socket--bg-transparent.png',
         altText: 'Alt Text goes here',
       },
       link: {
@@ -40,9 +40,9 @@ use(function () {
       title: 'Realize your full potential at Eaton, as you help solve some of the most critical issues.',
       text: 'We make big ideas work',
       image: {
-        mobile: '/content/dam/eaton/images/next-steps--mobile.jpg',
-        tablet: '/content/dam/eaton/images/next-steps--mobile.jpg',
-        desktop: '/content/dam/eaton/images/next-steps--desktop.jpg',
+        mobile: '/content/dam/eaton/images/products/product-3-thumbnail.png',
+        tablet: '/content/dam/eaton/images/products/product-3-thumbnail.png',
+        desktop: '/content/dam/eaton/images/products/product-3-thumbnail.png',
         altText: 'Alt Text goes here',
       },
       link: {
