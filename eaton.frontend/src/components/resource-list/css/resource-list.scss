@@ -1,14 +1,17 @@
 // Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
 @import "../../../global/css/_config/sass";
 
+
 .secondary-content-accordion {
 
   &__header {
     position: relative;
-    padding: 0;
+    padding: 30px 0 10px;
 
     &--title {
       color: $color__primary-gray1;
+      display: block;
+      margin-bottom: 0;
 
       &:hover,
       &:active,
@@ -24,7 +27,7 @@
 
   &__panel {
     border-bottom: 3px solid $color__secondary-gray5;
-    padding: 30px 0 0;
+    padding: 0;
     box-shadow: none;
 
     &:first-child {
@@ -82,6 +85,34 @@
     right: 0;
     color: $color__primary-blue;
     font-size: 2.25rem;
-    bottom: 10px;
+  }
+
+  //-----------------------------------
+  // Mobile: 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    // EATON-635: Mobile - Toggle Header and "+/-" need to be vertically centered
+    // NOTE: Selector with Higher specificity as the one used by bootstrap.css. Required in order to override the default values.
+    &.panel-group .panel + .panel {
+      margin-top: 0; // Overrides Bootstrap's default margin in order to center the Plus-Sign icon vertically
+    }
+
+    &__icons {
+      position: absolute;
+      bottom: unset;
+      // bottom: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+
+  //-----------------------------------
+  // Desktop: > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__icons {
+      bottom: 22px;
+    }
   }
 }
