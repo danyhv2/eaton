@@ -26,8 +26,6 @@
     img {
       width: 100%;
       height: auto;
-      max-width: 43px;
-      max-height: 43px;
       vertical-align: middle;
     }
   }
@@ -38,7 +36,7 @@
 
 
   //-----------------------------------
-  // MediaQuery: Mobile & Tablet Only
+  // MediaQuery: 0-991px
   //-----------------------------------
   @include media-mobile-and-tablet {
 
@@ -46,5 +44,30 @@
       display: none;
     }
 
+    .value-type-image {
+      img {
+        margin-left: 6px;
+        max-width: 26px;
+        max-height: 26px;
+      }
+    }
+
+  }
+
+
+  //-----------------------------------
+  // MeidaQuery: > 992px
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    .value-type-image {
+
+      $image-size: 42px;
+
+      img {
+        max-width: $image-size;
+        max-height: $image-size;
+      }
+    }
   }
 }
