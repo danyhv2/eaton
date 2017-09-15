@@ -113,7 +113,9 @@
 
 .eaton-ttil-card-view__cta { display: block; }
 
-.eaton-ttil-card-view__image-wrapper { margin-bottom: 26px; }
+.eaton-ttil-card-view__image-wrapper { margin-bottom: 26px; text-align: center; }
+
+.eaton-ttil-card-view .rendition__image { background-color: #F8F8F8; border: 1px solid #EEF0F2; margin: 0 auto; padding: 20px; height: auto; width: 100%; }
 
 .eaton-ttil-card-view__title { color: #005EB8; }
 
