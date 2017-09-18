@@ -99,8 +99,8 @@ App.header = function () {
         bodyEl.scrollTop(FIXED_HEADER_HEIGHT);
         // In cases of browsers that do not interpret scrollTep value set
         // Animate the bodyEl to the header position
-        if (bodyEl.scrollTop !== FIXED_HEADER_HEIGHT) {
-          bodyEl.animate({ scrollTop: FIXED_HEADER_HEIGHT });
+        if (bodyEl.scrollTop() !== FIXED_HEADER_HEIGHT) {
+          $('body,html').animate({ scrollTop: FIXED_HEADER_HEIGHT }, 300);
         }
 
         // Set Flag to False
