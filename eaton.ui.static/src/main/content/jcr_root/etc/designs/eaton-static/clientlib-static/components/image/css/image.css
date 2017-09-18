@@ -14,3 +14,5 @@
 .eaton-image .rendition { text-align: center; }
 
 .eaton-image .rendition img { display: inline; }
+
+.eaton-grid-control__column .eaton-image { margin-top: 25px; }
