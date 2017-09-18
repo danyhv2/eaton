@@ -112,6 +112,7 @@
   .eaton-header .eaton-logo__link { width: 100px; height: 32px; } }
 
 @media screen and (min-width: 992px) { .eaton-header .eaton-logo { padding: 20px 15px 16px; }
+  .eaton-header .eaton-logo__link { -webkit-transition: height ease-in-out 0.3s, width ease-in-out 0.3s; transition: height ease-in-out 0.3s, width ease-in-out 0.3s; }
   .eaton-header--fixed { position: fixed; width: 100%; z-index: 250; top: 0; }
   .eaton-header--fixed .header-utility-nav { display: none; }
-  .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; -webkit-transition: height ease-in-out 0.3s, width ease-in-out 0.3s; transition: height ease-in-out 0.3s, width ease-in-out 0.3s; } }
+  .eaton-header--fixed .eaton-logo__link { width: 126px; height: 40px; } }

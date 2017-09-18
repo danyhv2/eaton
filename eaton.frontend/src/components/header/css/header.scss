@@ -40,6 +40,10 @@
       padding: 20px 15px 16px;
     }
 
+    .eaton-logo__link {
+      transition: height ease-in-out 0.3s, width ease-in-out 0.3s;
+    }
+
     &--fixed {
       position: fixed;
       width: 100%;
@@ -53,7 +57,6 @@
       .eaton-logo__link {
         width: 126px;
         height: 40px;
-        transition: height ease-in-out 0.3s, width ease-in-out 0.3s;
       }
     }
   }
