@@ -59,7 +59,7 @@
 
 .eaton-list-component .category__item-innerpadding { padding: 30px 30px 15px 30px; }
 
-.eaton-list-component .category__title--bottompadding { padding-bottom: 10px; }
+.eaton-list-component .category__title--bottompadding { padding-bottom: 0; }
 
 .eaton-list-component .header-text__topmargin { margin-top: 5%; }
 
@@ -133,7 +133,9 @@
 
 .article-list-single-feature__text { margin-left: 15px; }
 
-.article-list-single-feature__article--copy { padding: 15px 0; }
+.article-list-single-feature__article--copy { padding: 15px 0 40px 0; }
+
+.article-list-single-feature__article--copy:last-child { padding: 15px 0; }
 
 .article-list-single-feature__article--copy:last-child .category-item-date--padding { padding-bottom: 0; }
 
