@@ -290,7 +290,7 @@
   .eaton-ttil-quote__left .eaton-ttil-quote__text-container { -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
   .eaton-ttil-quote__right .eaton-ttil-quote__text-container { text-align: left; } }
 
-@media screen and (min-width: 1200px) { .eaton-ttil-quote { width: calc(((100% - 1140px) / 2) + 1140px); }
+@media screen and (min-width: 1200px) { .eaton-ttil-quote { width: calc(((100% - 1140px) / 2) + (1140px)); }
   .eaton-ttil-quote__text-container { width: calc(1140px - 484px); }
   .eaton-ttil-quote__right { margin-left: calc((100% - 1140px) / 2); }
   .eaton-ttil-quote__right .eaton-ttil-quote__text-container { float: left; padding-left: 110px; padding-right: 0; }
