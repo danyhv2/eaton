@@ -68,7 +68,7 @@ use(function () {
         },
         {
           icon: 'phone',
-          title: 'Call toll-free 1 800 365 5794',
+          title: 'Call toll-free <br/> 1 800 365 5794',
           href: '#18003655794',
           target: '_blank'
         },
