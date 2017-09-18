@@ -42,14 +42,16 @@ App.search = function (autosize) {
         var keyCode = evt.keyCode || evt.which;
         var inputVal = e.target.value; // Targets the active input
         var $activeSearchComponent = $(e.currentTarget).closest(componentClass);
-        var regex = new RegExp('^[a-zA-Z0-9]+$');
 
         // Remove new lines on the 'active' text area if no character exists
         e.target.value = inputVal.replace(/^\s*(\n)\s*$/, '');
 
-        // Allow submit only if the textarea has atleast one alphanumeric character on carriage return
-        if (keyCode === 13 && e.target.value.length >= 1 && regex.test(e.target.value)) {
-          $activeSearchComponent.find('form').submit();
+        // Detect Carriage return
+        if (keyCode === 13) {
+          if (e.target.value.length >= 1) {
+            // Allow submit only if the textarea has atleast one alphanumeric character on carriage return
+            $activeSearchComponent.find('form').submit();
+          }
           return false;
         }
       });
