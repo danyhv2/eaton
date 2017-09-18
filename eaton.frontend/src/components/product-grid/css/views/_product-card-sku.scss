@@ -38,7 +38,16 @@
   &__link-item {
 
     // Caret Icon
-    .icon { font-size: $icon-arrow-right-size; }
+    .icon { font-size: 2rem; }
+
+  }
+
+  &__name {
+    @include media-desktop-and-up {
+      .icon.icon-chevron-right{
+        font-size: 2rem;
+      }
+    }
 
   }
 
@@ -109,6 +118,7 @@
         right: $grid-container-padding-mobile;
         top: 50%;
         transform: translateY(-50%);
+        font-size: 1rem;
       }
     }
 
@@ -129,18 +139,23 @@
 
       background-color: $color__secondary-gray6;
       padding: 12px $grid-container-padding-mobile;
+
+      .icon{
+        font-size: 1rem;
+      }
     }
 
     &__link-item-link {
       align-items: center;
       display: flex;
+      font-size: 1rem;
 
       &:hover {
         color: $color__primary-blue;
         text-decoration: none;
       }
 
-      .link-label { flex: 1; }
+      .link-label { flex: 1; font-size: 1.3rem; }
 
     }
 
