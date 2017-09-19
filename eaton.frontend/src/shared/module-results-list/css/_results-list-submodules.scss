@@ -37,7 +37,7 @@
   }
 
   &__name {
-    margin-bottom: 5px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
+    margin-bottom: 0px; // Visually 15px Top Margin. Smaller margin value due to font Line-height
 
     // External Link Icon
     .icon {
@@ -45,7 +45,10 @@
     }
   }
 
-  &__description,
+  &__description {
+    margin-bottom: 5px;
+  }
+
   &__url,
   &__link-list {
     margin-bottom: 10px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
@@ -85,7 +88,7 @@
     }
 
     &__image-wrapper {
-      margin-bottom: 20px;
+      margin-bottom: 8px;
     }
 
     .rendition__image {

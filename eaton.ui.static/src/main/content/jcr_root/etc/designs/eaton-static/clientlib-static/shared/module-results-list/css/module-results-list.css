@@ -35,7 +35,7 @@
 
 .results-list-submodule__name .icon { margin-left: 10px; }
 
-.results-list-submodule__description, .results-list-submodule__url, .results-list-submodule__link-list { margin-bottom: 10px; }
+.results-list-submodule__description, .results-list-submodule__url, .results-list-submodule__link-list { margin-bottom: 8px; }
 
 .results-list-submodule__url { word-wrap: break-word; }
 
@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 991px) { .results-list-submodule { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
   .results-list-submodule--type-family, .results-list-submodule--type-sku { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
-  .results-list-submodule__image-wrapper { margin-bottom: 20px; }
+  .results-list-submodule__image-wrapper { margin-bottom: 8px; }
   .results-list-submodule .rendition__image { width: 100%; max-width: 260px; } }
 
 @media screen and (min-width: 992px) { .results-list-submodule { margin-bottom: 38px; }
