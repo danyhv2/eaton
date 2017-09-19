@@ -17,7 +17,7 @@
 
 .results-list__bottom { margin-top: 80px; }
 
-@media screen and (min-width: 992px) { .results-list { margin-bottom: 90px; } }
+@media screen and (min-width: 992px) { .results-list { margin-bottom: 60px; } }
 
 .results-list-submodule { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-bottom: 30px; }
 
