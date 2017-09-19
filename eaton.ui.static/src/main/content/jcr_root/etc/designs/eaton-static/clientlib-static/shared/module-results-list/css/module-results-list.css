@@ -31,11 +31,13 @@
 
 .results-list-submodule__secondary-links { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
-.results-list-submodule__name { margin-bottom: 5px; }
+.results-list-submodule__name { margin-bottom: 0px; }
 
 .results-list-submodule__name .icon { margin-left: 10px; }
 
-.results-list-submodule__description, .results-list-submodule__url, .results-list-submodule__link-list { margin-bottom: 8px; }
+.results-list-submodule__description { margin-bottom: 5px; }
+
+.results-list-submodule__url, .results-list-submodule__link-list { margin-bottom: 10px; }
 
 .results-list-submodule__url { word-wrap: break-word; }
 
