@@ -70,7 +70,7 @@
     }
 
     &__toggle-selector {
-      padding: 25px 0 25px 30px;
+      padding: 20px 30px;
       flex-grow: 1;
       background: $color__primary-gray1;
     }
@@ -83,10 +83,22 @@
 
     &__signin { display: none; }
 
-    .icon {
+    .open-country-selector {
+      display: flex;
+      align-items: center;
+    }
 
+    &__language {
+      display: block;
+    }
+
+    .icon {
       &.icon-globe {
         margin-right: 5px;
+      }
+
+      &.icon-chevron-down {
+        display: none;
       }
     }
   }
@@ -105,6 +117,10 @@
 
     &__toggle-selector {
       flex: 1;
+    }
+
+    &__label {
+      display: inline;
     }
 
     .icon {
