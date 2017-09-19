@@ -13,7 +13,7 @@
   margin-bottom: $spacing__md / 2;
 
   &__image-link {
-    display: block;
+    display: inline-block;
   }
 
   .rendition__image {
@@ -42,6 +42,7 @@
     // External Link Icon
     .icon {
       margin-left: 10px;
+      vertical-align: middle;
     }
   }
 
@@ -49,10 +50,15 @@
     margin-bottom: 5px;
   }
 
-  &__url,
-  &__link-list {
-    margin-bottom: 10px; // Visually 20px Top Margin. Smaller margin value due to font Line-height
+  &__url {
+    margin-bottom: 0px;
   }
+
+  &__link-list {
+    margin-top: 8px;
+    margin-bottom: 4px; // Visually 15px Top Margin. Smaller margin value due to font Line-height
+  }
+
 
   &__url {
     word-wrap: break-word;
@@ -89,12 +95,22 @@
 
     &__image-wrapper {
       margin-bottom: 8px;
+      margin-top: 5px;
     }
 
     .rendition__image {
       width: 100%;
       max-width: 260px;
     }
+
+    &__icon-wrapper {
+      margin-top: 6px;
+    }
+
+    &__link-list {
+      margin-bottom: 0px;
+    }
+
   }
 
 
