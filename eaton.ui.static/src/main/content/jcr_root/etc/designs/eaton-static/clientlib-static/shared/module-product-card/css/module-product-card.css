@@ -37,4 +37,6 @@
 
 .module-product-detail-card__actions { text-align: center; }
 
-@media screen and (min-width: 992px) { .module-product-detail-card__actions { text-align: left; } }
+@media screen and (min-width: 992px) { .module-product-detail-card__actions { text-align: left; }
+  .module-product-detail-card__links { padding-bottom: 0; }
+  .module-product-detail-card__links ul { margin-bottom: 0; } }
