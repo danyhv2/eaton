@@ -273,4 +273,18 @@
 
   }
 
+
+  @include media-desktop-and-up {
+
+    // EATON-639: Override Line-height in the Title in order to create better hierarchy
+    &__title {
+      line-height: 3.4rem;
+    }
+
+    &__card .category-item-date {
+      margin-top: 16px; // Visually, 30px spacing between Title and Date
+    }
+
+  }
+
 }

@@ -113,6 +113,9 @@
   .listdefault__image { width: 50%; }
   .listdefault__content { padding: 30px 15px 15px 30px; width: 50%; } }
 
+@media screen and (min-width: 992px) { .listdefault__title { line-height: 3.4rem; }
+  .listdefault__card .category-item-date { margin-top: 16px; } }
+
 .featured-category--topbottompadding { padding: 30px 0; }
 
 .featured-category-container { margin-bottom: 30px; }
