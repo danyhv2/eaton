@@ -29,7 +29,7 @@
 
 .eaton-search--default { padding: 30px 0; background: #005EB8; }
 
-.eaton-search--default textarea { padding: 7px 10px 0 0; height: 38px; }
+.eaton-search--default textarea { height: 28px; padding-top: 14px; }
 
 .eaton-search--default .form-group { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-bottom: 1px solid #FFF; margin-bottom: 0; position: relative; }
 
@@ -85,7 +85,7 @@
   .eaton-search--default :-ms-input-placeholder { /* IE 10+ */ color: transparent; }
   .eaton-search--default :-moz-placeholder { /* Firefox 18- */ color: transparent; } }
 
-@media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1.8rem; padding-right: 20px; }
+@media screen and (max-width: 991px) { .eaton-search--default__form-input { font-size: 1.8rem; padding-right: 0; }
   .eaton-search--default__form-submit { padding-right: 0; }
   .eaton-search--default .icon-search { font-size: 1.25em; }
   .search-open .eaton-search--default { height: 100%; overflow-y: auto; } }
