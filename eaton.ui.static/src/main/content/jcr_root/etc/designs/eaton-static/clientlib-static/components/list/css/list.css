@@ -170,13 +170,9 @@
 
 .related-products-component { padding: 60px 0; }
 
-.related-products-component__text { padding-left: 15px; padding-bottom: 45px; }
+.related-products-component__text { padding-left: 15px; padding-bottom: 15px; }
 
-@media screen and (max-width: 767px) { .related-products-component__text { padding-bottom: 15px; } }
-
-.related-products-component__description { padding-top: 10px; }
-
-@media screen and (max-width: 767px) { .related-products-component__description { padding-top: 5px; } }
+.related-products-component__text h3 { margin-bottom: 5px; }
 
 .related-products-component__card { background-color: #F8F8F8; padding: 0 15px; margin-right: 15px; border: 1px solid #EEF0F2; }
 
