@@ -19,8 +19,6 @@
 
 .product-card-sku__name .icon, .product-card-sku__link-item .icon { font-size: 2rem; }
 
-@media screen and (min-width: 992px) { .product-card-sku__name .icon.icon-chevron-right { font-size: 2rem; } }
-
 .product-card-sku__image-link { display: block; }
 
 .product-card-sku__image-wrapper { position: absolute; z-index: 2; }
@@ -54,6 +52,7 @@
   .product-card-sku__header { background-color: #005EB8; padding: 20px 120px 20px 188px; position: relative; }
   .product-card-sku__name { font-family: Arial, sans-serif; font-size: 2.6rem; font-weight: bold; line-height: 4rem; }
   .product-card-sku__name .icon { font-size: 26px; position: relative; top: 4px; }
+  .product-card-sku__name .icon.icon-chevron-right { font-size: 2rem; }
   .product-card-sku__price { position: absolute; top: 50%; right: 20px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
   .product-card-sku__links-list { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-flow: row nowrap; -ms-flex-flow: row nowrap; flex-flow: row nowrap; }
   .product-card-sku__link-item { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.4rem; position: relative; margin-right: 20px; padding-right: 16px; }

@@ -42,15 +42,6 @@
 
   }
 
-  &__name {
-    @include media-desktop-and-up {
-      .icon.icon-chevron-right{
-        font-size: 2rem;
-      }
-    }
-
-  }
-
   &__image-link {
     display: block;
   }
@@ -140,7 +131,7 @@
       background-color: $color__secondary-gray6;
       padding: 12px $grid-container-padding-mobile;
 
-      .icon{
+      .icon {
         font-size: 1rem;
       }
     }
@@ -155,7 +146,10 @@
         text-decoration: none;
       }
 
-      .link-label { flex: 1; font-size: 1.3rem; }
+      .link-label {
+        flex: 1;
+        font-size: 1.3rem;
+      }
 
     }
 
@@ -237,6 +231,11 @@
         position: relative;
         top: 4px; // Icon Vertical Alignment
       }
+
+      .icon.icon-chevron-right {
+        font-size: 2rem;
+      }
+
     }
 
     &__price {

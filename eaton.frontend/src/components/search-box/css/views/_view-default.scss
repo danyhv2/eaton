@@ -8,8 +8,8 @@
   background: $color__primary-blue;
 
   textarea {
-    padding: 7px 10px 0 0;
-    height: 38px;
+    height: 28px;
+    padding-top: 14px;
   }
 
   .form-group {
@@ -202,7 +202,7 @@
   @include media-mobile-and-tablet {
     &__form-input {
       font-size: 1.8rem;
-      padding-right: 20px;
+      padding-right: 0;
     }
 
     &__form-submit {

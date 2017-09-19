@@ -192,8 +192,8 @@ use(function () {
         target: '_self'
       },
       {
-        title: 'Eaton 9px Family long title used for testing purposes',
-        text: 'Network, Server & Storage UPS Long text used for testing purposes',
+        title: 'Eaton 9px',
+        text: 'Network, Server & Storage UPS',
         image: {
           mobile: '/content/dam/eaton/images/products/product-6-thumbnail.png',
           tablet: '/content/dam/eaton/images/products/product-6-thumbnail.png',
