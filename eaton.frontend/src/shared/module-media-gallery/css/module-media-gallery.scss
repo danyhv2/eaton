@@ -157,6 +157,10 @@
       // empty selector for future reference
     }
 
+    &__slide-utility {
+      bottom: -3px; // Align the icons to the bottom of the image in mobile
+    }
+
     // Dot Navigation - Preview Carousel
     //------------------------------------
     &__dots {
