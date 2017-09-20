@@ -140,7 +140,7 @@
 
 .article-list-single-feature__article--copy:last-child { padding: 15px 0; }
 
-.article-list-single-feature__article--copy:last-child .category-item-date--padding { padding-bottom: 0; }
+.article-list-single-feature__article--copy:last-child .category-item-date--padding { padding-bottom: 30px; }
 
 .article-list-single-feature__cta { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
