@@ -1,6 +1,12 @@
 .related-products-component {
 
-  padding: 60px 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 0 15px;
+
+  @include media-desktop-and-up {
+    padding: 0;
+  }
 
   &__text {
     padding-left: 15px;
