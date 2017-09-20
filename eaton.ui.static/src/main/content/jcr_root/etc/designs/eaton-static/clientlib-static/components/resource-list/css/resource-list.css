@@ -45,3 +45,5 @@
 
 @media screen and (min-width: 992px) { .secondary-content-accordion__header { padding: 30px 0 10px; }
   .secondary-content-accordion__icons { bottom: 22px; } }
+
+.resource-list { margin-bottom: 40px; }
