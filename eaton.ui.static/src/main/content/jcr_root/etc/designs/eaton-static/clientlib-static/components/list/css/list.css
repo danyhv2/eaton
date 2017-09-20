@@ -171,7 +171,9 @@
   .eaton-list-links__link span::after { color: #FFF; position: relative; top: 1px; content: "\EA07"; font-family: 'eaton-glyphicon'; display: inline; font-size: 1.4rem; padding-left: 7px; text-decoration: none; }
   .eaton-list-links .eaton-list-links__col .eaton-list-links__item:first-child .eaton-list-links__link { padding-top: 0; } }
 
-.related-products-component { padding: 60px 0; }
+.related-products-component { margin-top: 60px; margin-bottom: 60px; padding: 0 15px; }
+
+@media screen and (min-width: 992px) { .related-products-component { padding: 0; } }
 
 .related-products-component__text { padding-left: 15px; padding-bottom: 15px; }
 

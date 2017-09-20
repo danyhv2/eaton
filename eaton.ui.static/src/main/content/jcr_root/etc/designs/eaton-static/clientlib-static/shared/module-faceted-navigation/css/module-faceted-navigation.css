@@ -60,6 +60,8 @@
 
 .faceted-navigation-header__container { text-align: center; }
 
+.faceted-navigation-header a.open-facets-mobile { max-width: none; }
+
 .faceted-navigation-header .faceted-navigation-filters { margin-top: 30px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
 @media screen and (max-width: 991px) { .faceted-navigation-header .faceted-navigation-filters { display: none; }
