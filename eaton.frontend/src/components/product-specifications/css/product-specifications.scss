@@ -63,11 +63,14 @@
 
     .value-type-image {
 
-      $image-size: 42px;
+      $image-size: 26px;
 
       img {
+        // EATON-347: FIX - Attribute Label not aligned with Attribute Value
+        margin-left: 6px;
         max-width: $image-size;
         max-height: $image-size;
+        vertical-align: text-bottom;
       }
     }
   }
