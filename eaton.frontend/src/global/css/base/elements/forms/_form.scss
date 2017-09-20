@@ -6,6 +6,7 @@
 .eaton-form {
 
   $light-gray: #eef0f2;
+  $form-red: #FB5A5F;
 
   font-family: Arial, 'Arial', sans-serif;
 
@@ -42,6 +43,12 @@
   // stylelint-disable-next-line selector-class-pattern
   .LV_invalid_field {
     border: 0 !important;  // stylelint-disable-line declaration-no-important
+    color: $form-red;
+  }
+
+  // stylelint-disable-next-line selector-class-pattern
+  .LV_invalid {
+    color: $form-red;
   }
 
   .label-position {

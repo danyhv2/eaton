@@ -384,7 +384,9 @@ h5 a, .b-heading-h5 a { color: #005EB8; }
 
 @media screen and (min-width: 768px) { .eaton-form .LV_validation_message { font-size: 1.8rem; } }
 
-.eaton-form .LV_invalid_field { border: 0 !important; }
+.eaton-form .LV_invalid_field { border: 0 !important; color: #FB5A5F; }
+
+.eaton-form .LV_invalid { color: #FB5A5F; }
 
 .eaton-form .label-position { display: block; font-size: 1.3rem; color: #333F48; }
 
