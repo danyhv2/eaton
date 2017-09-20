@@ -21,6 +21,8 @@
 
 .eaton-tabbed-menu-list__title { display: block; padding: 30px 0; font-weight: bold; }
 
+.eaton-tabbed-menu-list__title:focus, .eaton-tabbed-menu-list__title:active { text-decoration: none; }
+
 .eaton-tabbed-menu-list__item { padding: 0; border-bottom: 4px solid #F8F8F8; }
 
 .eaton-tabbed-menu-list__item a { display: block; padding-bottom: 30px; }
