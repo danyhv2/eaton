@@ -52,6 +52,7 @@
 
   &__url {
     margin-bottom: 0px;
+    word-wrap: break-word;
   }
 
   &__link-list {
@@ -59,10 +60,6 @@
     margin-bottom: 4px; // Visually 15px Top Margin. Smaller margin value due to font Line-height
   }
 
-
-  &__url {
-    word-wrap: break-word;
-  }
 
   &__link-item {
     border-right: 1px solid $color__secondary-gray4;
