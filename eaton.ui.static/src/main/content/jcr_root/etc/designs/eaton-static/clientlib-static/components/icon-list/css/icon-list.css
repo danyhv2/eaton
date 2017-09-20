@@ -27,7 +27,7 @@
   .icon-list-proof-points__item:last-child { margin-bottom: 0; }
   .icon-list-proof-points__text { font-size: 8.3rem; line-height: 8.5rem; }
   .icon-list-proof-points__symbol { font-size: 4rem; line-height: 4rem; top: 13px; }
-  .icon-list-proof-points__title { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; position: relative; top: -5px; } }
+  .icon-list-proof-points__title { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; position: relative; top: -5px; } }
 
 @media screen and (min-width: 992px) { .icon-list-proof-points__wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
   .eaton-grid-control .icon-list-proof-points__wrapper { display: block; }
