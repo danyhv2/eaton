@@ -17,17 +17,19 @@
 
 .eaton-link-list-vertical__list { padding: 0; margin: 0; list-style-type: none; }
 
-.eaton-link-list-vertical__list-text { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
+.eaton-link-list-vertical__list-text { display: inline; }
 
 .eaton-link-list-vertical__list-link { display: inline-block; padding: 10px 0; font-weight: bold; }
 
-.eaton-link-list-vertical__list-icon { padding-right: 10px; font-size: 2.8rem; padding-top: 5px; }
+.eaton-link-list-vertical__list-link span::after { color: #FFF; position: relative; top: 1px; content: "\EA07"; font-family: 'eaton-glyphicon'; display: inline; font-size: 1.4rem; padding-left: 7px; text-decoration: none; }
 
-.eaton-link-list-vertical__external-icon { padding-right: 10px; font-size: 2.8rem; margin-top: 8px; }
+.eaton-link-list-vertical__list-icon { padding-left: 10px; font-size: 2.8rem; padding-top: 5px; }
+
+.eaton-link-list-vertical__external-icon { padding-left: 10px; font-size: 2.8rem; margin-top: 8px; }
 
 .eaton-link-list-vertical__external-icon.icon-link-external { margin-top: 0; top: 2px; position: relative; }
 
-.eaton-link-list-vertical__download-text { width: 100%; margin-left: 40px; font-size: 1.8rem; margin-top: -10px; }
+.eaton-link-list-vertical__download-text { width: 100%; font-size: 1.8rem; margin-top: -10px; }
 
 .eaton-link-list-vertical__download-text--description { color: #98A4AE; font-family: Arial, "Arial", sans-serif; }
 
@@ -62,11 +64,12 @@
 .dark-theme .eaton-link-list-vertical__eyebrow, .dark-theme .eaton-link-list-vertical__list-item a, .dark-theme .eaton-link-list-vertical__download-text { color: #FFF; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-vertical__external-icon { font-size: 2rem; margin-top: 3px; }
-  .eaton-link-list-vertical__download-text { margin-left: 30px; }
   .eaton-link-list-vertical__eyebrow { margin-bottom: 20px; } }
 
 @media screen and (min-width: 992px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; }
-  .eaton-link-list-vertical__download-text { width: auto; } }
+  .eaton-link-list-vertical__download-text { width: auto; max-width: calc(100% - 40px); }
+  .eaton-link-list-vertical__list-link.download { max-width: calc(100% - 40px); float: left; }
+  .eaton-link-list-vertical__external-icon.icon-download { float: right; margin-top: 20px; color: #005EB8; } }
 
 .link-list-horizontal__list { margin: 0; padding: 0; list-style-type: none; }
 

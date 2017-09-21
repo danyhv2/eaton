@@ -16,6 +16,17 @@
     }
   }
 
+  // TODO: FIXME: This is not a BEM Selector
+  .category__image {
+    position: relative;
+    padding-top: $ratio__4-3;
+
+    .rendition-bg {
+      background-position: center center;
+      background-size: auto 100%;
+    }
+  }
+
   &__text {
     margin-left: 15px;
   }
@@ -40,9 +51,7 @@
     justify-content: center;
   }
 
-  img {
-    width: 100%;
-  }
+
 }
 
 @include media-mobile-only {
@@ -50,6 +59,16 @@
 
     &__article {
       margin-top: 30px;
+    }
+  }
+}
+
+@include media-tablet-only {
+  .article-list-single-feature {
+
+    // TODO: FIXME: This is not a BEM Selector
+    .category__image {
+      padding-top: ($ratio__4-3 / 2); // Half since the element has 50% width;
     }
   }
 }

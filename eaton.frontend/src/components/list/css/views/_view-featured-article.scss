@@ -17,6 +17,16 @@
     }
   }
 
+  &__image {
+    position: relative;
+    padding-top: $ratio__16-9;
+
+    .rendition-bg {
+      background-position: center center;
+      background-size: auto 100%;
+    }
+  }
+
   &__title {
     font-family: $font-family__secondary;
     color: $color__primary-blue;

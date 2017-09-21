@@ -13,7 +13,7 @@ use(function () {
                         image: {
                           mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                           tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
-                          desktop:'/content/dam/eaton/images/product2.png',
+                          desktop:'/content/dam/eaton/images/products/product-1-thumbnail.png',
                           altText:'Image 1'
                         },
                         link: 'http://www.eaton.com/',
@@ -23,9 +23,9 @@ use(function () {
                         title: 'Eaton 9px Family',
                         text: 'Eaton FlexPDU& HotSwap MBP',
                         image: {
-                          mobile: '/content/dam/eaton/images/product2.png',
-                          tablet: '/content/dam/eaton/images/product2.png',
-                          desktop: '/content/dam/eaton/images/product2.png',
+                          mobile: '/content/dam/eaton/images/products/product-1-thumbnail.png',
+                          tablet: '/content/dam/eaton/images/products/product-1-thumbnail.png',
+                          desktop: '/content/dam/eaton/images/products/product-1-thumbnail.png',
                           altText: 'Image 2',
                         },
                         link: 'http://www.eaton.com/',
@@ -35,9 +35,9 @@ use(function () {
                         title: 'Eaton 9px Family',
                         text: 'Eaton S-Series Enlosure',
                         image: {
-                          mobile: '/content/dam/eaton/images/product.png',
-                          tablet: '/content/dam/eaton/images/product.png',
-                          desktop: '/content/dam/eaton/images/product.png',
+                          mobile: '/content/dam/eaton/images/products/product-3-thumbnail.png',
+                          tablet: '/content/dam/eaton/images/products/product-3-thumbnail.png',
+                          desktop: '/content/dam/eaton/images/products/product-3-thumbnail.png',
                           altText: 'Image 3',
                         },
                         link: 'http://www.eaton.com/',
@@ -47,9 +47,9 @@ use(function () {
                         title: 'Eaton 9px Family',
                         text: 'Eaton FlexPDU& HotSwap MBP',
                         image: {
-                          mobile: '/content/dam/eaton/images/product2.png',
-                          tablet: '/content/dam/eaton/images/product2.png',
-                          desktop: '/content/dam/eaton/images/product2.png',
+                          mobile: '/content/dam/eaton/images/products/product-1-thumbnail.png',
+                          tablet: '/content/dam/eaton/images/products/product-1-thumbnail.png',
+                          desktop: '/content/dam/eaton/images/products/product-1-thumbnail.png',
                           altText: 'Image 4',
                         },
                         link: 'http://www.eaton.com/',
@@ -71,7 +71,7 @@ use(function () {
                         image: {
                           mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                           tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
-                          desktop:'/content/dam/eaton/images/product.png',
+                          desktop:'/content/dam/eaton/images/products/product-3-thumbnail.png',
                           altText:'Image 1'
                         },
                         link: 'http://www.eaton.com/',
@@ -83,7 +83,7 @@ use(function () {
                         image: {
                           mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                           tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
-                          desktop:'/content/dam/eaton/images/product2.png',
+                          desktop:'/content/dam/eaton/images/products/product-1-thumbnail.png',
                           altText:'Image 2'
                         },
                         link: 'http://www.eaton.com/',
@@ -95,7 +95,7 @@ use(function () {
                         image: {
                           mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                           tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
-                          desktop:'/content/dam/eaton/images/product.png',
+                          desktop:'/content/dam/eaton/images/products/product-3-thumbnail.png',
                           altText:'Image 3'
                         },
                         link: 'http://www.eaton.com/',
@@ -107,7 +107,7 @@ use(function () {
                         image: {
                           mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                           tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
-                          desktop:'/content/dam/eaton/images/product2.png',
+                          desktop:'/content/dam/eaton/images/products/product-1-thumbnail.png',
                           altText:'Image 4'
                         },
                         link: 'http://www.eaton.com/',
@@ -119,7 +119,7 @@ use(function () {
                         image: {
                           mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                           tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
-                          desktop:'/content/dam/eaton/images/product.png',
+                          desktop:'/content/dam/eaton/images/products/product-3-thumbnail.png',
                           altText:'Image 5'
                         },
                         link: 'http://www.eaton.com/',
@@ -131,7 +131,7 @@ use(function () {
                         image: {
                           mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                           tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
-                          desktop:'/content/dam/eaton/images/product2.png',
+                          desktop:'/content/dam/eaton/images/products/product-1-thumbnail.png',
                           altText:'Image 6'
                         },
                         link: 'http://www.eaton.com/',
@@ -143,7 +143,7 @@ use(function () {
                         image: {
                           mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                           tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
-                          desktop:'/content/dam/eaton/images/product.png',
+                          desktop:'/content/dam/eaton/images/products/product-3-thumbnail.png',
                           altText:'Image 7'
                         },
                         link: 'http://www.eaton.com/',
@@ -155,7 +155,7 @@ use(function () {
                         image: {
                           mobile:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
                           tablet:'/content/dam/eaton/images/lorempixel/technics/1000x1000-4.jpeg',
-                          desktop:'/content/dam/eaton/images/product2.png',
+                          desktop:'/content/dam/eaton/images/products/product-1-thumbnail.png',
                           altText:'Image 8'
                         },
                         link: 'http://www.eaton.com/',

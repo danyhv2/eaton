@@ -56,8 +56,8 @@ gulp.task('sprite',
 // Shortcuts for Common Tasks
 //--------------
 gulp.task('lint', ['lint:css', 'lint:js']);
-gulp.task('css', ['lint:css', 'css:build']);
-gulp.task('js', ['lint:js', 'js:build']);
+gulp.task('css', ['css:build', 'lint:css']);
+gulp.task('js', ['js:build', 'lint:js']);
 
 
 

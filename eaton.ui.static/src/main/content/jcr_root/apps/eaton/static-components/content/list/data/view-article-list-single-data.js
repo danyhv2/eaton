@@ -1,11 +1,11 @@
 "use strict";
 use(function () {
-	
+
     var data = {};
     var testdata = this.testdata;
-    
+
     if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors")) {
-	
+
 	    data = {
 	        cards: [
 	            {
@@ -40,9 +40,9 @@ use(function () {
 	            date_text: 'April 13, 2017'
 	        }
 	    };
-	    
+
     } else {
-    	
+
     	data = {
 	        cards: [
 	            {
@@ -77,9 +77,9 @@ use(function () {
 	            date_text: 'September 23, 2013'
 	        }
 	    };
-    	
+
     }
-    
+
     return data;
-    
+
 });

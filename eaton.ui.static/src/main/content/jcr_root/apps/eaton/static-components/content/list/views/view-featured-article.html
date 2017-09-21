@@ -1,68 +1,79 @@
 <sly data-sly-use.data="${'../data/view-featured-article-data.js' @testdata=properties.testdata}">
 
-    <!--/* Container */-->
-    <div class="container eaton-list-component eaton-list-component-featured-article-view">
+  <!--/* Container */-->
+  <div class="container eaton-list-component eaton-list-component-featured-article-view">
 
-        <!--/* Featured Article */-->
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="featured-category-container">
-                    <a href="${data.single_feature_card.cta.url}" target="${data.single_feature_card.cta.target}">
-                        <img src="${data.single_feature_card.image}" class="hidden-xs img-responsive category__image" alt="${data.single_feature_card.image_alt}"/>
-                        <img src="${data.single_feature_card.mobile_image}" class="visible-xs img-responsive category__image" alt="${data.single_feature_card.image_alt}"/>
-                        <div class="featured-category--topbottompadding">
-                            <div class="b-eyebrow-large category__title--bottompadding">${data.single_feature_card.title}</div>
-                            <div class="featured-category__title">${data.single_feature_card.text}</div>
-                            <div class="category-item-date category-item-date--gray2 b-body-copy-small"><em>${data.single_feature_card.date_text}</em></div>
-                        </div>
-                    </a>
-                </div>
+    <!--/* Featured Article */-->
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="featured-category-container">
+          <a href="${data.single_feature_card.cta.url}" target="${data.single_feature_card.cta.target}">
+
+            <!--/* TODO: Replace these images with renditions */-->
+
+            <div class="featured-category__image">
+              <!-- Start: Rendition Image Component -->
+              <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-background.html">
+                <sly data-sly-call="${ tpl.module @ data=data.single_feature_card.image }"></sly>
+              </sly>
+              <!-- End: Rendition Image Component -->
             </div>
+
+            <!-- <img src="${data.single_feature_card.image}" class="hidden-xs img-responsive category__image" alt="${data.single_feature_card.image_alt}"/> -->
+            <!-- <img src="${data.single_feature_card.mobile_image}" class="visible-xs img-responsive category__image" alt="${data.single_feature_card.image_alt}"/> -->
+
+            <div class="featured-category--topbottompadding">
+              <div class="b-eyebrow-large category__title--bottompadding">${data.single_feature_card.title}</div>
+              <div class="featured-category__title">${data.single_feature_card.text}</div>
+              <div class="category-item-date category-item-date--gray2 b-body-copy-small"><em>${data.single_feature_card.date_text}</em></div>
+            </div>
+          </a>
         </div>
-
-
-            <div class="row">
-
-                <ul class="listdefault__slides ${data.cards.length == 2 ? 'js-col6' : 'js-col4'}" data-sly-list.slider="${data.cards}">
-                    <li class="slides col-sm-12 ${data.cards.length == 2 ? 'col-md-6' : 'col-md-4'}">
-                       <a href="${slider.cta.url}" target="${slider.cta.target}" class="listdefault__link">
-
-                                <div class="listdefault__card">
-
-                                  <div class="listdefault__image">
-                                  <!-- Start: Rendition Image Component -->
-                                  <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
-                                    <sly data-sly-call="${ tpl.module @ data=slider.image }"></sly>
-                                  </sly>
-                                  <!-- End: Rendition Image Component -->
-                                  </div><div class="listdefault__content">
-                                        <p class="b-eyebrow-small">${slider.title}</p>
-                                        <p class="b-heading-h5">${slider.text}</p>
-                                        <p class="category-item-date"><em>${slider.date_text}</em></p>
-                                    </div>
-                                </div>
-                        </a>
-                    </li>
-                </ul>
-
-                    <button class="listdefault__prev-arrow upsell-products__arrows button--reset">
-                        <i class="icon icon-chevron-left"></i>
-                        <span class="sr-only">Go to Previous Item</span>
-                    </button>
-                    <button class="listdefault__next-arrow upsell-products__arrows button--reset">
-                        <i class="icon icon-chevron-right"></i>
-                        <span class="sr-only">Go to Next Item</span>
-                    </button>
-            </div>
-
-
-        <!--/* Bottom CTA */-->
-        <div class="row">
-            <div class="col-xs-12 text-center featured-category__cta-container">
-                <sly data-sly-resource="${'featured-article-ctabutton' @ resourceType='/apps/eaton/static-components/general/cta'}"></sly>
-            </div>
-        </div>
-
+      </div>
     </div>
+
+
+    <div class="row">
+      <ul class="listdefault__slides ${data.cards.length == 2 ? 'js-col6' : 'js-col4'}" data-sly-list.slider="${data.cards}">
+        <li class="slides col-sm-12 ${data.cards.length == 2 ? 'col-md-6' : 'col-md-4'}">
+          <a href="${slider.cta.url}" target="${slider.cta.target}" class="listdefault__link">
+
+            <div class="listdefault__card">
+              <div class="listdefault__image">
+                <!-- Start: Rendition Image Component -->
+                <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-background.html">
+                  <sly data-sly-call="${ tpl.module @ data=slider.image }"></sly>
+                </sly>
+                <!-- End: Rendition Image Component -->
+              </div>
+              <div class="listdefault__content">
+                <p class="b-eyebrow-small">${slider.title}</p>
+                <p class="b-heading-h5">${slider.text}</p>
+                <p class="category-item-date"><em>${slider.date_text}</em></p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <button class="listdefault__prev-arrow upsell-products__arrows button--reset">
+        <i class="icon icon-chevron-left"></i>
+        <span class="sr-only">Go to Previous Item</span>
+      </button>
+      <button class="listdefault__next-arrow upsell-products__arrows button--reset">
+        <i class="icon icon-chevron-right"></i>
+        <span class="sr-only">Go to Next Item</span>
+      </button>
+    </div>
+
+
+    <!--/* Bottom CTA */-->
+    <div class="row">
+      <div class="col-xs-12 text-center featured-category__cta-container">
+        <sly data-sly-resource="${'featured-article-ctabutton' @ resourceType='/apps/eaton/static-components/general/cta'}"></sly>
+      </div>
+    </div>
+
+  </div>
 
 </sly>
