@@ -17,9 +17,11 @@
 
 .eaton-link-list-vertical__list { padding: 0; margin: 0; list-style-type: none; }
 
-.eaton-link-list-vertical__list-text { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
+.eaton-link-list-vertical__list-text { display: inline; }
 
 .eaton-link-list-vertical__list-link { display: inline-block; padding: 10px 0; font-weight: bold; }
+
+.eaton-link-list-vertical__list-link span::after { color: #FFF; position: relative; top: 1px; content: "\EA07"; font-family: 'eaton-glyphicon'; display: inline; font-size: 1.4rem; padding-left: 7px; text-decoration: none; }
 
 .eaton-link-list-vertical__list-icon { padding-right: 10px; font-size: 2.8rem; padding-top: 5px; }
 

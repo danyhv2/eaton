@@ -42,13 +42,28 @@
   }
 
   &__list-text {
-    display: inline-flex;
+    display: inline;
   }
 
   &__list-link {
     display: inline-block;
     padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
     font-weight: bold;
+
+    span {
+
+      &::after {
+        color: $color__white;
+        position: relative;
+        top: 1px;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 1.4rem;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+    }
   }
 
   &__list-icon {
