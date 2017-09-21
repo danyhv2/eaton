@@ -51,6 +51,8 @@
 
 .eaton-search--default__form-external { color: #FFF; -webkit-align-self: center; -ms-flex-item-align: center; align-self: center; border-right: 1px solid #FFF; padding-right: 20px; }
 
+@media screen and (max-width: 767px) { .eaton-search--default__form-external { padding-right: 15px; } }
+
 .eaton-search--default__form-submit { color: #FFF; background: transparent; padding: 10px 20px 10px 14px; }
 
 .eaton-search--default__results { padding: 30px 0 6px; display: none; }
@@ -77,8 +79,8 @@
 
 @media screen and (max-width: 479px) { .eaton-search--default .eaton-search--default__form-input:valid + .eaton-search--default__form-mobile-label { display: none; }
   .eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; left: 0; top: 0; display: table; height: 46px; font-size: 2rem; }
-  .eaton-search--default__form-mobile-label.with-external { padding-right: 87px; }
-  .eaton-search--default__form-mobile-label.u-visible-mobile { padding-top: 10px; }
+  .eaton-search--default__form-mobile-label.with-external { padding-right: 80px; }
+  .eaton-search--default__form-mobile-label.u-visible-mobile { padding-top: 10px; padding-right: 80px; }
   .eaton-search--default__form-mobile-label span { display: table-cell; text-align: left; vertical-align: middle; }
   .eaton-search--default ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: transparent; }
   .eaton-search--default ::-moz-placeholder { /* Firefox 19+ */ color: transparent; }

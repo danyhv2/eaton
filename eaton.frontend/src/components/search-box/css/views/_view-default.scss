@@ -68,6 +68,10 @@
     align-self: center;
     border-right: 1px solid $color__white;
     padding-right: 20px;
+
+    @include media-mobile-only{
+      padding-right: 15px;
+    }
   }
 
   &__form-submit { // Styles for Form Elements
@@ -159,11 +163,12 @@
       font-size: 2rem;
 
       &.with-external {
-        padding-right: 87px;
+        padding-right: 80px;
       }
 
       &.u-visible-mobile {
         padding-top: 10px;
+        padding-right: 80px;
       }
 
       span {
