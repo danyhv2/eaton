@@ -23,7 +23,9 @@
 
 .eaton-product-family-card__cta { text-align: center; margin-bottom: 0; }
 
-.eaton-product-family-card__links a { display: block; margin-bottom: 0; }
+.eaton-product-family-card__links a { display: block; margin-bottom: 10px; }
+
+.eaton-product-family-card__links a:last-child { margin-bottom: 0; }
 
 @media screen and (min-width: 992px) { .eaton-product-family-card__header { padding-bottom: 30px; }
   .eaton-product-family-card__separator { margin-bottom: 30px; }
@@ -31,4 +33,6 @@
   .eaton-product-family-card__image-wrapper img { max-width: 360px; }
   .eaton-product-family-card__link-wrapper { margin-top: 60px; }
   .eaton-product-family-card__cta { text-align: left; }
-  .eaton-product-family-card__links { margin-bottom: 0; } }
+  .eaton-product-family-card__links { margin-bottom: 0; }
+  .eaton-product-family-card__links a { margin-bottom: 20px; }
+  .eaton-product-family-card__links a:last-child { margin-bottom: 0; } }
