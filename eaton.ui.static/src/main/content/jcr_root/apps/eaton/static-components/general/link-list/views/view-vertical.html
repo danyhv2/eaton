@@ -12,18 +12,20 @@
       <li class="eaton-link-list-vertical__list-item b-body-copy">
         <a href="${item.document_download ? item.document_download : item.url}"
           aria-label="Go to ${ item.title }"
-          class="eaton-link-list-vertical__list-link"
+          class="eaton-link-list-vertical__list-link ${ item.document_download ? 'download' : ''} "
           target="${ item.external_link ? '_blank' : '_self' }"
           data-sly-attribute.download="${ item.document_download}"><span class="eaton-link-list-vertical__list-text">${ item.title }
           <i data-sly-test="${item.external_link}"
             class="eaton-link-list-vertical__external-icon icon icon-link-external"
             aria-hidden="true"></i>
+
+          </span>
+
+        </a>
+
           <i data-sly-test="${ item.document_download }"
             class="eaton-link-list-vertical__external-icon icon icon-download"
             aria-hidden="true"></i>
-
-          </span></a>
-
         <div class="eaton-link-list-vertical__download-text"
           data-sly-test="${ item.document_download }">
             <p>(${item.document_size})</p>
