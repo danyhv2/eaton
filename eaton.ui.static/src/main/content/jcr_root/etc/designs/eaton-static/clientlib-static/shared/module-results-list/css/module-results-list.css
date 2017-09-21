@@ -37,11 +37,9 @@
 
 .results-list-submodule__description { margin-bottom: 5px; }
 
-.results-list-submodule__url { margin-bottom: 0px; }
+.results-list-submodule__url { margin-bottom: 0px; word-wrap: break-word; }
 
 .results-list-submodule__link-list { margin-top: 8px; margin-bottom: 4px; }
-
-.results-list-submodule__url { word-wrap: break-word; }
 
 .results-list-submodule__link-item { border-right: 1px solid #CCD2D7; margin-right: 16px; padding-right: 16px; }
 

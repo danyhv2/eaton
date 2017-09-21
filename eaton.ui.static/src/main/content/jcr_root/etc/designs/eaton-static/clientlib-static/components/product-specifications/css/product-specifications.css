@@ -22,4 +22,4 @@
 @media screen and (max-width: 991px) { .product-specifications .module-anchor-links { display: none; }
   .product-specifications .value-type-image img { margin-left: 6px; max-width: 26px; max-height: 26px; } }
 
-@media screen and (min-width: 992px) { .product-specifications .value-type-image img { max-width: 42px; max-height: 42px; } }
+@media screen and (min-width: 992px) { .product-specifications .value-type-image img { margin-left: 6px; max-width: 26px; max-height: 26px; vertical-align: text-bottom; } }
