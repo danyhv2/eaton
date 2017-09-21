@@ -1,0 +1,23 @@
+<sly data-sly-use.data="${'../data/view-proof-points-data.js' @testdata=properties.testdata}">
+
+  <div class="icon-list-proof-points">
+    <div class="${properties.toggleInnerGrid ? 'container' : ''} icon-list-proof-points__container">
+      <div class="${properties.toggleInnerGrid ? 'row' : ''} icon-list-proof-points__row">
+          <!--/* Icon List */-->
+          <div class="icon-list-proof-points__wrapper" data-sly-list="${ data.items }">
+            <div class="icon-list-proof-points__item">
+              <div class="icon-list-proof-points__image">
+                <img src="${item.image}" alt="${item.title}" />
+              </div>
+
+              <div class="icon-list-proof-points__content">
+                <!--/* Post integration - to be mapped with ${item.text} */-->
+                <div class="icon-list-proof-points__text">${item.tcsText @context = 'html'}</div>
+                <div class="icon-list-proof-points__title">${item.title}</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</sly>

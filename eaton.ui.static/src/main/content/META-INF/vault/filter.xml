@@ -3,6 +3,7 @@
     <filter root="/apps/eaton/static-templates"/>
     <filter root="/apps/eaton/static-components"/>
     <filter root="/content/eaton-static/us/en/qa-templates"/>
+    <filter root="/content/eaton-static/us/en/qa-templates-refactor"/>
     <filter root="/conf/static-eaton"/>
     <filter root="/etc/designs/eaton-static"/>
 </workspaceFilter>

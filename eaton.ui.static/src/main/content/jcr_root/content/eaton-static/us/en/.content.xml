@@ -29,6 +29,6 @@
         </par>
     </jcr:content>
     <qa-templates/>
+    <qa-templates-refactor/>
     <qa-components/>
-    <qa-components-2/>
 </jcr:root>
