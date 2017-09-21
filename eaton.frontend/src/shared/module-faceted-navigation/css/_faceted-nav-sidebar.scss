@@ -141,7 +141,7 @@
 
   .b-button-facets-apply {
     width: 100%;
-    max-width: unset;
+    max-width: none;
   }
 
   //-----------------------------------
@@ -201,6 +201,11 @@
       bottom: 0;
       left: 0;
       width: 100%;
+
+      .b-button-facets-apply {
+        width: 100%;
+        max-width: none;
+      }
     }
 
   }

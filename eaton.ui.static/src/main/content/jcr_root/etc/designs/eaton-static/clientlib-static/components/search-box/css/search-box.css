@@ -29,7 +29,9 @@
 
 .eaton-search--default { padding: 30px 0; background: #005EB8; }
 
-.eaton-search--default textarea { height: 28px; padding-top: 14px; }
+.eaton-search--default textarea { height: 28px; padding-top: 14px; height: auto; }
+
+@media (min-width: 768px) and (max-width: 1199px) { .eaton-search--default textarea { height: 80x; } }
 
 .eaton-search--default .form-group { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border-bottom: 1px solid #FFF; margin-bottom: 0; position: relative; }
 
@@ -50,6 +52,8 @@
 .eaton-search--default__form-mobile-label { display: none; }
 
 .eaton-search--default__form-external { color: #FFF; -webkit-align-self: center; -ms-flex-item-align: center; align-self: center; border-right: 1px solid #FFF; padding-right: 20px; }
+
+@media screen and (max-width: 767px) { .eaton-search--default__form-external { padding-right: 15px; } }
 
 .eaton-search--default__form-submit { color: #FFF; background: transparent; padding: 10px 20px 10px 14px; }
 
@@ -77,8 +81,8 @@
 
 @media screen and (max-width: 479px) { .eaton-search--default .eaton-search--default__form-input:valid + .eaton-search--default__form-mobile-label { display: none; }
   .eaton-search--default__form-mobile-label { position: absolute; width: 100%; padding-right: 32px; color: #FFF; pointer-events: none; line-height: normal; left: 0; top: 0; display: table; height: 46px; font-size: 2rem; }
-  .eaton-search--default__form-mobile-label.with-external { padding-right: 87px; }
-  .eaton-search--default__form-mobile-label.u-visible-mobile { padding-top: 10px; }
+  .eaton-search--default__form-mobile-label.u-visible-mobile { padding-top: 10px; padding-right: 40px; }
+  .eaton-search--default__form-mobile-label.u-visible-mobile.with-external { padding-right: 80px; }
   .eaton-search--default__form-mobile-label span { display: table-cell; text-align: left; vertical-align: middle; }
   .eaton-search--default ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: transparent; }
   .eaton-search--default ::-moz-placeholder { /* Firefox 19+ */ color: transparent; }
@@ -99,7 +103,7 @@
   .eaton-header--fixed .eaton-search--default__form-submit { padding-right: 0; }
   .eaton-search--default__result-item { line-height: 3rem; } }
 
-.mega-menu__col .eaton-search textarea.form-control { font-size: 1.6rem; padding: 11px 0 10px 10px; }
+.mega-menu__col .eaton-search textarea.form-control { font-size: 1.6rem; padding: 11px 0 10px 10px; color: #999; }
 
 @media (min-width: 768px) and (max-width: 1199px) { .mega-menu__col .eaton-search textarea.form-control { height: 67px; } }
 
