@@ -4,8 +4,8 @@
     <jcr:content
         cq:lastModified="{Date}2017-07-20T05:26:40.081Z"
         cq:lastModifiedBy="etn-marie"
-        cq:lastReplicated="{Date}2017-07-20T05:26:51.886Z"
-        cq:lastReplicatedBy="etn-marie"
+        cq:lastReplicated="{Date}2017-09-07T15:52:16.854Z"
+        cq:lastReplicatedBy="etn-jorge"
         cq:lastReplicationAction="Activate"
         cq:template="/apps/eaton/static-templates/eaton-homepage-template-html"
         jcr:isCheckedOut="{Boolean}true"
@@ -28,18 +28,6 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/general/text"
                     view="default"/>
-                <footer-link-list-company
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/general/link-list"
-                    view="vertical"/>
-                <footer-link-list-popular
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/general/link-list"
-                    view="vertical"/>
-                <footer-link-list-legal
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="eaton/static-components/general/link-list"
-                    view="horizontal"/>
                 <link-list-2nd-col
                     jcr:lastModified="{Date}2017-07-20T05:26:25.270Z"
                     jcr:lastModifiedBy="etn-marie"
@@ -57,6 +45,7 @@
                     jcr:lastModifiedBy="etn-marie"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="eaton/static-components/general/link-list"
+                    testdata="footer-b"
                     view="horizontal"/>
             </footer>
         </par>
