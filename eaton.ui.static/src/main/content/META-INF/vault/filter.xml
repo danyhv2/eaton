@@ -2,6 +2,7 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/eaton/static-templates"/>
     <filter root="/apps/eaton/static-components"/>
+    <filter root="/content/eaton-static/us/en/qa-components"/>
     <filter root="/content/eaton-static/us/en/qa-templates"/>
     <filter root="/content/eaton-static/us/en/qa-templates-refactor"/>
     <filter root="/conf/static-eaton"/>
