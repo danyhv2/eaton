@@ -164,7 +164,7 @@
     }
 
     &__download-text {
-      margin-left: 30px;
+      // margin-left: 30px;
     }
 
     &__eyebrow {
@@ -184,6 +184,24 @@
 
     &__download-text {
       width: auto;
+      max-width: calc(100% - 40px);
+    }
+
+    &__list-link {
+      &.download {
+        max-width: calc(100% - 40px);
+        float: left;
+      }
+
+    }
+
+    &__external-icon {
+
+      &.icon-download {
+        float: right;
+        margin-top: 20px;
+        color: $color__primary-blue;
+      }
     }
 
   }
