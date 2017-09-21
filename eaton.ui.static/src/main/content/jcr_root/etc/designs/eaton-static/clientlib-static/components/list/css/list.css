@@ -11,33 +11,7 @@
  */
 
 
-.eaton-list-component { margin-bottom: 60px; /*
-
-
-  .carousel-indicators {
-    position: inherit;
-    margin: 40px auto 0;
-  }
-
-  .carousel-indicators li {
-    width: 15px;
-    height: 15px;
-    cursor: inherit;
-    background-color: $color__primary-gray3;
-    border: 0;
-    border-radius: 50%;
-    margin: 0 4px;
-  }
-
-  .carousel-indicators .active {
-    background-color: $color__primary-blue;
-    width: 15px;
-    height: 15px;
-    margin: 0 4px;
-  }
-
-
-*/ }
+.eaton-list-component { margin-bottom: 60px; }
 
 .eaton-list-component a { text-decoration: none; }
 
@@ -96,13 +70,15 @@
 
 .listdefault__link { height: 100%; }
 
-.listdefault__card { border: 1px solid #CCD2D7; height: 100%; }
+.listdefault__card { border: 1px solid #CCD2D7; background: #FFF; height: 100%; }
 
 .listdefault__card .category-item-date { color: #98A4AE; }
 
-.listdefault__card .rendition img { width: 100%; }
+.listdefault__image { position: relative; padding-top: 75%; }
 
-.listdefault__content { padding: 30px 30px 15px 30px; background: #FFF; }
+.listdefault__image .rendition-bg { background-position: center center; background-size: auto 100%; }
+
+.listdefault__content { padding: 30px 30px 15px 30px; }
 
 @media screen and (max-width: 767px) { .listdefault__slides { display: block; }
   .listdefault__image { width: 100%; }
@@ -110,7 +86,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) { .listdefault__slides { display: block; }
   .listdefault__card { margin-bottom: 20px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
-  .listdefault__image { width: 50%; }
+  .listdefault__image { width: 50%; padding-top: 37.5%; }
   .listdefault__content { padding: 30px 15px 15px 30px; width: 50%; } }
 
 @media screen and (min-width: 992px) { .listdefault__title { line-height: 3.4rem; }
@@ -124,6 +100,10 @@
 
 .featured-category__cta-container a:hover, .featured-category__cta-container a:active, .featured-category__cta-container a:focus { color: #FFF; }
 
+.featured-category__image { position: relative; padding-top: 56.25%; }
+
+.featured-category__image .rendition-bg { background-position: center center; background-size: auto 100%; }
+
 .featured-category__title { font-family: Arial, "Arial", sans-serif; color: #005EB8; font-size: 2.875rem; font-weight: bold; line-height: 50px; }
 
 @media only screen and (max-width: 767px) { .featured-category-container { padding: 0; margin-bottom: 30px; } }
@@ -133,6 +113,10 @@
 .article-list-single-feature--border { border-top: 4px solid; border-color: #005EB8; width: 60px; display: block; }
 
 .article-list-single-feature__link:hover { text-decoration: none; }
+
+.article-list-single-feature .category__image { position: relative; padding-top: 75%; }
+
+.article-list-single-feature .category__image .rendition-bg { background-position: center center; background-size: auto 100%; }
 
 .article-list-single-feature__text { margin-left: 15px; }
 
@@ -144,9 +128,9 @@
 
 .article-list-single-feature__cta { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
-.article-list-single-feature img { width: 100%; }
-
 @media screen and (max-width: 767px) { .article-list-single-feature__article { margin-top: 30px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) { .article-list-single-feature .category__image { padding-top: 37.5%; } }
 
 .eaton-list-links { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
@@ -179,7 +163,7 @@
 
 .related-products-component__text h3 { margin-bottom: 5px; }
 
-.related-products-component__card { background-color: #F8F8F8; padding: 0 15px; margin-right: 15px; border: 1px solid #EEF0F2; }
+.related-products-component__card { background-color: #F8F8F8; border: 1px solid #EEF0F2; padding-left: 15px; padding-right: 15px; margin-right: 15px; }
 
 .related-products-component__info { padding: 0 15px; }
 
@@ -188,6 +172,10 @@
 .related-products-component__title { padding-top: 30px; margin-bottom: 10px; }
 
 .related-products-component__arrow { bottom: 35%; }
+
+.related-products-component .related-products-component__card { padding-top: 75%; position: relative; }
+
+.related-products-component .related-products-component__card .rendition-bg { background-position: center center; background-size: auto 100%; }
 
 .text-only-2-column { padding-top: 60px; padding-bottom: 60px; }
 
