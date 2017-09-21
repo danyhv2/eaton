@@ -258,3 +258,25 @@
     }
   }
 }
+
+.mega-menu__col .eaton-search{
+  textarea.form-control{
+    font-size: 1.6rem;
+    padding: 11px 0 10px 10px;
+
+    @media (min-width: 768px) and (max-width: 1199px){
+      height: 67px;
+    }
+
+    @media (min-width: 1200px){
+      height: auto;
+    }
+  }
+  .eaton-search--default__form-input {
+    font-size: 1.6rem;
+  }
+
+  .eaton-search--inline__form-submit{
+    padding: 10px 20px 10px 8px;
+  }
+}
