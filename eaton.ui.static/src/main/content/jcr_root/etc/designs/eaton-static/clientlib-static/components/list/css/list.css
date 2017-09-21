@@ -100,6 +100,10 @@
 
 .featured-category__cta-container a:hover, .featured-category__cta-container a:active, .featured-category__cta-container a:focus { color: #FFF; }
 
+.featured-category__image { position: relative; padding-top: 56.25%; }
+
+.featured-category__image .rendition-bg { background-position: center center; background-size: auto 100%; }
+
 .featured-category__title { font-family: Arial, "Arial", sans-serif; color: #005EB8; font-size: 2.875rem; font-weight: bold; line-height: 50px; }
 
 @media only screen and (max-width: 767px) { .featured-category-container { padding: 0; margin-bottom: 30px; } }
@@ -159,9 +163,7 @@
 
 .related-products-component__text h3 { margin-bottom: 5px; }
 
-.related-products-component__card { background-color: #F8F8F8; border: 1px solid #EEF0F2; padding-left: 15px; padding-right: 15px; padding-top: 75%; position: relative; margin-right: 15px; }
-
-.related-products-component__card .rendition-bg { background-position: center center; background-size: auto 90%; }
+.related-products-component__card { background-color: #F8F8F8; border: 1px solid #EEF0F2; padding-left: 15px; padding-right: 15px; margin-right: 15px; }
 
 .related-products-component__info { padding: 0 15px; }
 
@@ -170,6 +172,10 @@
 .related-products-component__title { padding-top: 30px; margin-bottom: 10px; }
 
 .related-products-component__arrow { bottom: 35%; }
+
+.related-products-component .related-products-component__card { padding-top: 75%; position: relative; }
+
+.related-products-component .related-products-component__card .rendition-bg { background-position: center center; background-size: auto 100%; }
 
 .text-only-2-column { padding-top: 60px; padding-bottom: 60px; }
 

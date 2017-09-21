@@ -22,14 +22,7 @@
     border: 1px solid $color__secondary-gray5;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: $ratio__4-3;
-    position: relative;
     margin-right: 15px;
-
-    .rendition-bg {
-      background-position: center center;
-      background-size: auto 100%;
-    }
   }
 
   &__info {
@@ -49,4 +42,23 @@
     bottom: 35%;
   }
 
+
+  //-----------------------------------
+  // EATON-673:
+  // The aspect ratio of the image within any list component should not affect
+  // the display and alignment of the List Cards with Images.
+  // If the user uploads a 16:9 image we should crop the image to the center
+  // to maintain the aspect ratio of the container.
+  //-----------------------------------
+  // NOTE: High specificity selector used in order to update only the CrossSell component
+  // and not the Upsell Component
+  & &__card {
+    padding-top: $ratio__4-3;
+    position: relative;
+
+    .rendition-bg {
+      background-position: center center;
+      background-size: auto 100%;
+    }
+  }
 }
