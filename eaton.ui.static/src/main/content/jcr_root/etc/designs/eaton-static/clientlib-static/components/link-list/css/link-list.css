@@ -21,13 +21,13 @@
 
 .eaton-link-list-vertical__list-link { display: inline-block; padding: 10px 0; font-weight: bold; }
 
-.eaton-link-list-vertical__list-icon { padding-right: 10px; font-size: 2.8rem; padding-top: 5px; }
+.eaton-link-list-vertical__list-icon { padding-left: 10px; font-size: 2.8rem; padding-top: 5px; }
 
-.eaton-link-list-vertical__external-icon { padding-right: 10px; font-size: 2.8rem; margin-top: 8px; }
+.eaton-link-list-vertical__external-icon { padding-left: 10px; font-size: 2.8rem; margin-top: 8px; }
 
 .eaton-link-list-vertical__external-icon.icon-link-external { margin-top: 0; top: 2px; position: relative; }
 
-.eaton-link-list-vertical__download-text { width: 100%; margin-left: 40px; font-size: 1.8rem; margin-top: -10px; }
+.eaton-link-list-vertical__download-text { width: 100%; font-size: 1.8rem; margin-top: -10px; }
 
 .eaton-link-list-vertical__download-text--description { color: #98A4AE; font-family: Arial, "Arial", sans-serif; }
 
