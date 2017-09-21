@@ -101,7 +101,7 @@
   .eaton-header--fixed .eaton-search--default__form-submit { padding-right: 0; }
   .eaton-search--default__result-item { line-height: 3rem; } }
 
-.mega-menu__col .eaton-search textarea.form-control { font-size: 1.6rem; padding: 11px 0 10px 10px; }
+.mega-menu__col .eaton-search textarea.form-control { font-size: 1.6rem; padding: 11px 0 10px 10px; color: #999; }
 
 @media (min-width: 768px) and (max-width: 1199px) { .mega-menu__col .eaton-search textarea.form-control { height: 67px; } }
 
