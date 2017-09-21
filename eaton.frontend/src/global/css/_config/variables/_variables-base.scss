@@ -41,3 +41,10 @@ $font-family__primary: 'Eaton', Arial, sans-serif;
 $font-family__primary-bold: 'EatonBold', Arial, sans-serif;
 $font-family__primary-medium: 'EatonMedium', Arial, sans-serif;
 $font-family__secondary: Arial, 'Arial', sans-serif;
+
+
+// Aspect Ratios
+//--------------
+$ratio__4-3: percentage(3 / 4);
+$ratio__16-9: percentage(9 / 16);
+$ratio__1-1: 100%;

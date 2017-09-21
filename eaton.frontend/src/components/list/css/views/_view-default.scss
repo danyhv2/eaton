@@ -1,4 +1,5 @@
 //-----------------------------------
+// M-33: Related Item with images
 // List Component: View Deafult
 //-----------------------------------
 
@@ -35,36 +36,6 @@
 
   }
 
-
-
-
-  /*
-
-
-  .carousel-indicators {
-    position: inherit;
-    margin: 40px auto 0;
-  }
-
-  .carousel-indicators li {
-    width: 15px;
-    height: 15px;
-    cursor: inherit;
-    background-color: $color__primary-gray3;
-    border: 0;
-    border-radius: 50%;
-    margin: 0 4px;
-  }
-
-  .carousel-indicators .active {
-    background-color: $color__primary-blue;
-    width: 15px;
-    height: 15px;
-    margin: 0 4px;
-  }
-
-
-*/
   .category__image {
     width: 100%;
   }
@@ -207,32 +178,40 @@
     }
   }
 
-
   &__link {
     height: 100%;
   }
 
   &__card {
     border: 1px solid $color__secondary-gray4;
+    background: $color__white;
     height: 100%;
 
     .category-item-date {
       color: $color__primary-gray3;
     }
+  }
 
-    .rendition img {
-      width: 100%;
+  &__image {
+    position: relative;
+    padding-top: $ratio__4-3;
+
+    .rendition-bg {
+      background-position: center center;
+      background-size: auto 100%;
     }
-
   }
 
   &__content {
     padding: 30px 30px 15px 30px;
-    background: $color__white;
   }
 
 
 
+
+  //-----------------------------------
+  // MediaQuery: 0-767px
+  //-----------------------------------
   @include media-mobile-only {
 
     &__slides {
@@ -264,6 +243,7 @@
 
     &__image {
       width: 50%;
+      padding-top: ($ratio__4-3 / 2); // Half since the element has 50% width;
     }
 
     &__content {

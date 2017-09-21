@@ -21,46 +21,45 @@
         </div>
 
 
-            <div class="row">
+        <div class="row">
+          <ul class="listdefault__slides ${data.cards.length == 2 ? 'js-col6' : 'js-col4'}" data-sly-list.slider="${data.cards}">
+              <li class="slides col-sm-12 ${data.cards.length == 2 ? 'col-md-6' : 'col-md-4'}">
+                 <a href="${slider.cta.url}" target="${slider.cta.target}" class="listdefault__link">
 
-                <ul class="listdefault__slides ${data.cards.length == 2 ? 'js-col6' : 'js-col4'}" data-sly-list.slider="${data.cards}">
-                    <li class="slides col-sm-12 ${data.cards.length == 2 ? 'col-md-6' : 'col-md-4'}">
-                       <a href="${slider.cta.url}" target="${slider.cta.target}" class="listdefault__link">
+                    <div class="listdefault__card">
+                      <div class="listdefault__image">
+                        <!-- Start: Rendition Image Component -->
+                        <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-background.html">
+                          <sly data-sly-call="${ tpl.module @ data=slider.image }"></sly>
+                        </sly>
+                        <!-- End: Rendition Image Component -->
+                      </div>
+                      <div class="listdefault__content">
+                        <p class="b-eyebrow-small">${slider.title}</p>
+                        <p class="b-heading-h5">${slider.text}</p>
+                        <p class="category-item-date"><em>${slider.date_text}</em></p>
+                      </div>
+                    </div>
+                  </a>
+              </li>
+          </ul>
 
-                                <div class="listdefault__card">
-
-                                  <div class="listdefault__image">
-                                  <!-- Start: Rendition Image Component -->
-                                  <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
-                                    <sly data-sly-call="${ tpl.module @ data=slider.image }"></sly>
-                                  </sly>
-                                  <!-- End: Rendition Image Component -->
-                                  </div><div class="listdefault__content">
-                                        <p class="b-eyebrow-small">${slider.title}</p>
-                                        <p class="b-heading-h5">${slider.text}</p>
-                                        <p class="category-item-date"><em>${slider.date_text}</em></p>
-                                    </div>
-                                </div>
-                        </a>
-                    </li>
-                </ul>
-
-                    <button class="listdefault__prev-arrow upsell-products__arrows button--reset">
-                        <i class="icon icon-chevron-left"></i>
-                        <span class="sr-only">Go to Previous Item</span>
-                    </button>
-                    <button class="listdefault__next-arrow upsell-products__arrows button--reset">
-                        <i class="icon icon-chevron-right"></i>
-                        <span class="sr-only">Go to Next Item</span>
-                    </button>
-            </div>
+          <button class="listdefault__prev-arrow upsell-products__arrows button--reset">
+              <i class="icon icon-chevron-left"></i>
+              <span class="sr-only">Go to Previous Item</span>
+          </button>
+          <button class="listdefault__next-arrow upsell-products__arrows button--reset">
+              <i class="icon icon-chevron-right"></i>
+              <span class="sr-only">Go to Next Item</span>
+          </button>
+        </div>
 
 
         <!--/* Bottom CTA */-->
         <div class="row">
-            <div class="col-xs-12 text-center featured-category__cta-container">
-                <sly data-sly-resource="${'featured-article-ctabutton' @ resourceType='/apps/eaton/static-components/general/cta'}"></sly>
-            </div>
+          <div class="col-xs-12 text-center featured-category__cta-container">
+              <sly data-sly-resource="${'featured-article-ctabutton' @ resourceType='/apps/eaton/static-components/general/cta'}"></sly>
+          </div>
         </div>
 
     </div>
