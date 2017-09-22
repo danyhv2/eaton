@@ -81,16 +81,15 @@
     }
 
     &__link-item {
+      // EATON-678: Added border around the entire item (left/right) as per BA Feedback
       border-bottom: 1px solid $color-border;
-      border-right: 2px solid $color-border;
+      border-left: 1px solid $color-border;
+      border-right: 1px solid $color-border;
       display: inline-block;
       float: left;
       padding: 20px $spacing__sm;
     }
 
-    &__list-item:last-child &__link-item {
-      border-right: none;
-    }
   }
 
 }
