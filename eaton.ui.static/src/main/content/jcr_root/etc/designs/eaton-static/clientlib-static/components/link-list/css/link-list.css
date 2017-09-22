@@ -137,21 +137,24 @@
 
 .eaton-download-list--has-desc .eaton-download-list__headline { margin-bottom: 30px; }
 
-.eaton-link-list-section-navigation { background-color: #333F48; }
+.section-navigation { background-color: #333F48; }
 
-.eaton-link-list-section-navigation__nav-item { color: #FFF; font-family: Arial; font-weight: bold; }
+.section-navigation__list { margin: 0; padding: 0; }
 
-.eaton-link-list-section-navigation__nav-item:last-child { border-right: 0; }
+.section-navigation__link-item { color: #FFF; font-family: Arial, "Arial", sans-serif; font-weight: bold; }
 
-.eaton-link-list-section-navigation__nav-item:hover, .eaton-link-list-section-navigation__nav-item:active, .eaton-link-list-section-navigation__nav-item:focus { color: #FFF; }
+.section-navigation__link-item:hover, .section-navigation__link-item:active, .section-navigation__link-item:focus { color: #FFF; }
 
-@media screen and (max-width: 991px) { .eaton-link-list-section-navigation { padding: 10px 0; }
-  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #98A4AE; margin: 0 15px; display: block; padding: 20px 0; font-size: 1.8rem; } }
+@media screen and (max-width: 991px) { .section-navigation { padding: 10px 0; }
+  .section-navigation__list-item { width: 100%; }
+  .section-navigation__link-item { border-bottom: 1px solid #5B6770; margin: 0; display: block; padding: 20px 0; font-size: 1.8rem; }
+  .section-navigation__list-item:last-child .section-navigation__link-item { border-bottom: 0; } }
 
-@media screen and (min-width: 992px) { .eaton-link-list-section-navigation .container { position: relative; }
-  .eaton-link-list-section-navigation .container::after { background: #5B6770; bottom: 0; height: 1px; left: 0; position: absolute; width: 100%; }
-  .eaton-link-list-section-navigation__nav-item { border-bottom: 1px solid #5B6770; border-right: 2px solid #5B6770; display: inline-block; float: left; padding: 20px 30px; }
-  .eaton-link-list-section-navigation__nav-item:first-child { padding-left: 15px; } }
+@media screen and (min-width: 992px) { .section-navigation .container { position: relative; }
+  .section-navigation__list { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .section-navigation__list::after { content: ''; background-color: #5B6770; position: absolute; bottom: 0; left: 0; height: 1px; width: 100%; }
+  .section-navigation__link-item { border-bottom: 1px solid #5B6770; border-right: 2px solid #5B6770; display: inline-block; float: left; padding: 20px 30px; }
+  .section-navigation__list-item:last-child .section-navigation__link-item { border-right: none; } }
 
 .eaton-linklist-2column { overflow: hidden; }
 

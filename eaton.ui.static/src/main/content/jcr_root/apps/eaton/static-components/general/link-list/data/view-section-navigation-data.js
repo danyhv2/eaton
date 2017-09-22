@@ -5,7 +5,7 @@ use(function () {
   var testdata = this.testdata;
 
 	if ((typeof(testdata) != "undefined") && testdata == "l2-news") {
-		
+
 		  data.links = [
 	        {
 	          title: 'Press releases',
@@ -23,9 +23,9 @@ use(function () {
 	          target: '_self'
 	        }
 	      ];
-		  
+
 	} else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-investors")) {
-  	  
+
 		data.links = [
           {
             title: 'Financial reports',
@@ -48,10 +48,10 @@ use(function () {
             target: '_self'
           }
         ];
-    	
-        
+
+
     } else if ((typeof(testdata) != "undefined") && (testdata == "t9-secondary-landing-careers")) {
-  	  
+
     	data.links = [
           {
             title: 'Job opportunities',
@@ -79,9 +79,9 @@ use(function () {
             target: '_self'
           }
         ];
-		
+
 	} else {
-		
+
 	  data.links = [
         {
           title: 'Press releases',
@@ -109,9 +109,9 @@ use(function () {
           target: '_self'
         }
       ];
-		
+
 	}
 
   return data;
-  
+
 });
