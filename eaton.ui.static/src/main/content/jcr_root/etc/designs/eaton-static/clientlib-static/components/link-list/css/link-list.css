@@ -71,6 +71,16 @@
   .eaton-link-list-vertical__list-link.download { max-width: calc(100% - 40px); float: left; }
   .eaton-link-list-vertical__external-icon.icon-download { float: right; margin-top: 20px; color: #005EB8; } }
 
+.eaton-header .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-footer .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-featured-topic .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-featured-topic .eaton-link-list-vertical span::after { display: none; }
+
+.mega-menu .eaton-link-list-vertical__list-link { padding: 0; }
+
+.mega-menu .eaton-link-list-vertical__list-text { display: inline-block; padding: 10px 0; }
+
+.mega-menu .eaton-link-list-vertical__list-text span::after { color: #FFF; position: relative; top: 1px; content: "\EA07"; font-family: 'eaton-glyphicon'; display: inline; font-size: 1.4rem; padding-left: 7px; text-decoration: none; font-weight: normal; }
+
+.mega-menu .eaton-link-list-vertical__list-text span::not(.eaton-featured-topic span.eaton-link-list-vertical__list-text::after) { display: none; }
+
 .link-list-horizontal__list { margin: 0; padding: 0; list-style-type: none; }
 
 @media screen and (max-width: 991px) { .link-list-horizontal__list-item { padding: 0; width: 100%; } }

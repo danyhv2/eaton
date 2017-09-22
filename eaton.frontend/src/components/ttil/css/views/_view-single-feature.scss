@@ -39,6 +39,20 @@
     text-decoration: none;
     display: block;
 
+    span {
+      &::after {
+        color: $color__white;
+        position: relative;
+        top: 1px;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 1.4rem;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+    }
+
     i {
       font-size: 1.4rem;
       margin-left: 0.4rem;

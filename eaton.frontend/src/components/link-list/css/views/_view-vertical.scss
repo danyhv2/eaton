@@ -205,6 +205,46 @@
     }
 
   }
+}
+
+.eaton-header .eaton-link-list-vertical .icon.icon-chevron-right,
+.eaton-footer .eaton-link-list-vertical .icon.icon-chevron-right,
+.eaton-featured-topic .eaton-link-list-vertical .icon.icon-chevron-right,
+.eaton-featured-topic .eaton-link-list-vertical span::after{
+  display: none;
+}
+
+.mega-menu {
+  .eaton-link-list-vertical{
+    &__list-link{
+      padding: 0;
+    }
+
+    &__list-text {
+      display: inline-block;
+      padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
 
 
+
+      span {
+
+        &::after {
+          color: $color__white;
+          position: relative;
+          top: 1px;
+          content: "\EA07";
+          font-family: 'eaton-glyphicon';
+          display: inline;
+          font-size: 1.4rem;
+          padding-left: 7px;
+          text-decoration: none;
+          font-weight: normal;
+        }
+
+        &::not(.eaton-featured-topic span.eaton-link-list-vertical__list-text::after){
+          display:none;
+        }
+      }
+    }
+  }
 }
