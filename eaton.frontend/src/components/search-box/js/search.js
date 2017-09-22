@@ -5,7 +5,7 @@
 
 let App = window.App || {};
 
-App.search = (function() {
+App.search = (function(autosize) {
 
   // Variable Declarations
   const componentClass = '.eaton-search';
@@ -21,8 +21,27 @@ App.search = (function() {
   const init = () => {
     // If not in AEM Author Mode & component exists on page - initialize scripts
     if (!isAEMAuthorMode) {
-      // console.log('Initialize Search');
       addEventListeners();
+
+      // Intercept Carriage Return on TextArea and submit form.
+      $searchInputEl.keydown(function (e) {
+        const evt = e || window.event; // compliant with ie6
+        const keyCode = evt.keyCode || evt.which;
+        let inputVal = e.target.value; // Targets the active input
+        const $activeSearchComponent = $(e.currentTarget).closest(componentClass);
+
+        // Remove new lines on the 'active' text area if no character exists
+        e.target.value = inputVal.replace(/^\s*(\n)\s*$/, '');
+
+        // Detect Carriage return
+        if (keyCode === 13) {
+          if ((e.target.value.length >= 1)) {
+            // Allow submit only if the textarea has atleast one alphanumeric character on carriage return
+            $activeSearchComponent.find('form').submit();
+          }
+          return false;
+        }
+      });
     }
   };
 
@@ -50,10 +69,11 @@ App.search = (function() {
 
     // Check if the #of characters in the inputBox exceeds characterLimit - 3
     const $activeSearchComponent = $(event.currentTarget).closest(componentClass);
+    let inputVal = event.target.value;
 
-    if ( event.target.value.length >= 3 ) {
+    if ( event.target.value.length >= 3) {
       // Request Search Results - AJAX
-      getSearchResults(event, event.target.value);
+      getSearchResults(event, inputVal);
     } else {
       // Empty the contents of the result-list
       $activeSearchComponent.find('.eaton-search--default__results').removeClass('active');
@@ -120,4 +140,4 @@ App.search = (function() {
     init();
   }
 
-}());
+}(window.autosize));

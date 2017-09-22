@@ -19,6 +19,7 @@ App.countrySelector = (function() {
   const regionPanels = componentEl.find('.panel-collapse');
   const closeDrawerBtn = componentEl.find('.country-selector-drawer__close-menu');
   const drawerEl = bodyEl.find('.full-page-drawer');
+  let megaMenuOpen = '';
 
   // Media Breakpoint
   let mediumScreenWidth = App.global.constants.GRID.MD;
@@ -34,8 +35,15 @@ App.countrySelector = (function() {
     if (!isAEMAuthorMode) {
       addEventListeners();
 
+      // Close Drawer - Escape Key
       $(document).keyup(function(e) {
         if (e.keyCode === 27) { closeDrawer(); }   // esc
+      });
+
+      // Subscribe - Mega Menu Open - Close the Drawer
+      $(document).on( App.global.constants.EVENTS.HEADER.MEGAMENU_OPEN, function() {
+        closeDrawer();
+        megaMenuOpen = true;
       });
     }
   };
@@ -53,6 +61,8 @@ App.countrySelector = (function() {
     if (activeLink.hasClass('active')) {
       return false;
     }
+
+    // console.log('ActiveLink is', activeLink);
 
     // Highlight only the active Link
     regionDesktopLinks.removeClass('active');
@@ -88,6 +98,11 @@ App.countrySelector = (function() {
     bodyEl.removeClass('drawer-is-animating');
     if (windowEl.width() < mediumScreenWidth) {
       resetDrawer();
+    }
+
+    // Scroll to the top of the page if mega-menu is open
+    if ( megaMenuOpen ) {
+      windowEl.scrollTop(0);
     }
     // Remove Event Listener post completion
     drawerEl.off('transitionend', onTransitionEnd);

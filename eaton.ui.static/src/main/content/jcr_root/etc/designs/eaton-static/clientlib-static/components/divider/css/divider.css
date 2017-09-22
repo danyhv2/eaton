@@ -14,3 +14,5 @@
 .eaton-divider { height: 6px; background-color: #EEF0F2; margin-bottom: 10px; }
 
 @media screen and (min-width: 992px) { .eaton-divider { height: 10px; margin-bottom: 20px; } }
+
+.eaton-grid-control .col-md-4 .eaton-divider { margin-top: 25px; }

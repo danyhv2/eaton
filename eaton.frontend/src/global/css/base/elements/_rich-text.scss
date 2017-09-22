@@ -61,6 +61,7 @@
     padding: 20px 0 0;
 
     li {
+      @include body-copy;
       position: relative;
       padding: 0 0 15px 30px;
 
@@ -81,7 +82,7 @@
         &::before {
           @include square(5px); // Width & Height
           left: 1px;
-          top: 0.3em;
+          top: 10px;
         }
       }
     }

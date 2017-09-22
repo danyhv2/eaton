@@ -58,9 +58,12 @@ use(function () {
       single_feature_card: {
         title: 'Category Name',
         text: 'We make what matters work.*',
-        image: '/content/dam/eaton/images/t9-inverstors-feature-article-top.png',
-        mobile_image: '/content/dam/eaton/images/t9-inverstors-feature-article-top.png',
-        image_alt: 'Featured image',
+        image: {
+          mobile: '/content/dam/eaton/images/t9-inverstors-feature-article-top.png',
+          tablet: '/content/dam/eaton/images/t9-inverstors-feature-article-top.png',
+          desktop: '/content/dam/eaton/images/t9-inverstors-feature-article-top.png',
+          altText: 'Featured image'
+        },
         date_text: '',
         cta: {
           url: 'http://www.eaton.com',
@@ -123,9 +126,12 @@ use(function () {
       single_feature_card: {
         title: 'Featured Category',
         text: 'Why reality is the innovation challenge',
-        image: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
-        mobile_image: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
-        image_alt: 'Featured image',
+        image: {
+          mobile: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
+          tablet: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
+          desktop: '/content/dam/eaton/images/category_highlight_secondary_Landing.png',
+          altText: 'Featured image'
+        },
         date_text: 'September 23, 2013',
         cta: {
           url: 'http://www.eaton.com',

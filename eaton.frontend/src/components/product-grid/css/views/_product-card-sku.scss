@@ -28,6 +28,9 @@
     color: $color__white;
   }
 
+  &__name {
+    margin-bottom: 5px; // EATON-380: The padding between the Header and the Specification and Resource Links should be 20px
+  }
 
   // Product Card - General Styles
   //--------------
@@ -35,7 +38,7 @@
   &__link-item {
 
     // Caret Icon
-    .icon { font-size: $icon-arrow-right-size; }
+    .icon { font-size: 2rem; }
 
   }
 
@@ -59,6 +62,10 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+
+  &__attr-label {
+    margin-bottom: 2px; // EATON-625: Spacing between Attribute Label and Value should be 15px visually
   }
 
 
@@ -102,6 +109,7 @@
         right: $grid-container-padding-mobile;
         top: 50%;
         transform: translateY(-50%);
+        font-size: 1rem;
       }
     }
 
@@ -122,18 +130,26 @@
 
       background-color: $color__secondary-gray6;
       padding: 12px $grid-container-padding-mobile;
+
+      .icon {
+        font-size: 1rem;
+      }
     }
 
     &__link-item-link {
       align-items: center;
       display: flex;
+      font-size: 1rem;
 
       &:hover {
         color: $color__primary-blue;
         text-decoration: none;
       }
 
-      .link-label { flex: 1; }
+      .link-label {
+        flex: 1;
+        font-size: 1.3rem;
+      }
 
     }
 
@@ -215,6 +231,11 @@
         position: relative;
         top: 4px; // Icon Vertical Alignment
       }
+
+      .icon.icon-chevron-right {
+        font-size: 2rem;
+      }
+
     }
 
     &__price {
@@ -232,13 +253,25 @@
 
     &__link-item {
       @include body-copy-small--desktop;
+      position: relative;
 
-      border-right: 1px solid $color__white;
       margin-right: 20px;
       padding-right: 16px;
 
-      &:last-child {
-        border-right: 0;
+      &::after {
+        content: '';
+        background-color: $color__white;
+        height: 18px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+      }
+
+      &:last-child::after {
+        content: none;
+        display: none;
       }
     }
 
@@ -269,7 +302,15 @@
       margin-bottom: $spacing__sm;
     }
 
-    &__attrs-list-item { flex: 1; }
+    &__attrs-list-item {
+      flex: 1;
+      padding-right: 20px;
+      word-wrap: break-word;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
 
     &__description {
       @include body-copy-small--desktop;

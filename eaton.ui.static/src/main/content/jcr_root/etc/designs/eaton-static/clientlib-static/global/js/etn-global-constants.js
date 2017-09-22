@@ -46,7 +46,8 @@ App.global.constants = function () {
     // Events
     EVENTS: {
       HEADER: {
-        COOKIE_SET: 'eaton.cookie.set'
+        COOKIE_SET: 'eaton.cookie.set',
+        MEGAMENU_OPEN: 'eaton.megamenu.open'
       }
     }
 

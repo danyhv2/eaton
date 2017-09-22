@@ -17,13 +17,13 @@
 
 .eaton-title__byline { color: #98A4AE; font-family: Arial, "Arial", sans-serif; font-size: 15px; font-style: italic; }
 
-.eaton-title--inset .eaton-title__headline { padding-top: 30px; }
+.eaton-title--inset .eaton-title__headline { padding-top: 60px; }
 
 @media screen and (min-width: 992px) { .eaton-title__byline { font-size: 20px; } }
 
 h2.eaton-title__eyebrow-and-byline { margin-top: 0; margin-bottom: 15px; }
 
-.eaton-title--eyebrow-and-byline { margin-top: 60px; }
+.eaton-title--eyebrow-and-byline { margin-top: 30px; }
 
 .eaton-title__line { border-top: 4px solid #005EB8; width: 60px; display: block; margin: 20px 0 25px; }
 
@@ -36,3 +36,5 @@ h2.eaton-title__eyebrow-and-byline { margin-top: 0; margin-bottom: 15px; }
 .dark-theme .eaton-title__line { border-color: #FFF; }
 
 @media screen and (min-width: 992px) { .eaton-title__eyebrow i { font-size: 1.6rem; } }
+
+.title + .grid-2-column-control .eaton-grid-control { margin-top: 0px; }

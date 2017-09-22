@@ -11,7 +11,7 @@
  */
 
 
-.rendition-bg { background-size: cover; position: absolute; bottom: 0; left: 0; right: 0; top: 0; }
+.rendition-bg { background-repeat: no-repeat; background-size: cover; position: absolute; bottom: 0; left: 0; right: 0; top: 0; }
 
 .bg-alignment .rendition-bg { background-size: cover; background-repeat: no-repeat; }
 

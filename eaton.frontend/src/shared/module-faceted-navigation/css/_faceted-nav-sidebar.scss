@@ -46,17 +46,25 @@
             width: 2rem;
             height: 2rem;
             left: 0;
-            top: -.3rem;
+            top: -3px;
           }
         }
 
         &:checked + span::after {
           width: 1.2rem;
           height: 1.2rem;
-          top: .1rem;
-          left: .4rem;
+          left: 4px;
           font-size: 1rem;
-          line-height: 1.4rem;
+          line-height: 1;
+          top: 3px;
+        }
+      }
+    }
+
+    input[type="radio"] {
+      &.input--small {
+        &:checked + span::after {
+          top: 1px;
         }
       }
     }
@@ -97,7 +105,9 @@
   }
 
   &__facet-group {
-    border-bottom: 1px solid $color__secondary-gray5;
+
+    // EATON-616: Horizontal Divider needs to be darker - Divider color should be "Gray-4"
+    border-bottom: 1px solid $color__secondary-gray4;
     margin-bottom: 1rem;
   }
 
@@ -107,6 +117,7 @@
     margin: 1.5rem 0;
     text-align: left;
     width: 100%;
+    font-size: 1.8rem;
 
     .icon::before {
       position: absolute;
@@ -130,7 +141,7 @@
 
   .b-button-facets-apply {
     width: 100%;
-    max-width: unset;
+    max-width: none;
   }
 
   //-----------------------------------
@@ -165,6 +176,13 @@
       }
     }
 
+    &__header.button--reset {
+      span {
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+      }
+    }
+
     .mobile-header {
       display: none;
     }
@@ -183,6 +201,11 @@
       bottom: 0;
       left: 0;
       width: 100%;
+
+      .b-button-facets-apply {
+        width: 100%;
+        max-width: none;
+      }
     }
 
   }
@@ -231,3 +254,27 @@
     }
   }
 }
+
+/*
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .faceted-navigation {
+    &__list-item {
+      input[type="radio"] {
+        &.input--small {
+          &:checked + span::after {
+            top: 1px;
+          }
+        }
+      }
+
+      input[type="checkbox"] {
+        &.input--small {
+          &:checked + span::after {
+            top: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+*/

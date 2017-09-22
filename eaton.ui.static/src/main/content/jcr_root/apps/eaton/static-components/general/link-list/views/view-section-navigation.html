@@ -1,16 +1,24 @@
 <sly data-sly-use.data="${'../data/view-section-navigation-data.js' @testdata=properties.testdata}">
-    <!--/* List Links */-->
-    <nav class="eaton-link-list-section-navigation">
-      <div class="container">
-        <div class="row">
-          <a
-            data-sly-repeat="${data.links}"
-            aria-label="Go to ${ item.title }"
-            class="eaton-link-list-section-navigation__nav-item"
-            target="${ item.target }"
-            href="${ item.url }"
-          >${ item.title }</a>
+  <!--/* List Links */-->
+  <nav class="section-navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="section-navigation__list">
+            <li
+              data-sly-repeat="${data.links}"
+              class="section-navigation__list-item"
+            >
+              <a
+                aria-label="Go to ${ item.title }"
+                class="section-navigation__link-item"
+                target="${ item.target }"
+                href="${ item.url }"
+              >${ item.title }</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 </sly>

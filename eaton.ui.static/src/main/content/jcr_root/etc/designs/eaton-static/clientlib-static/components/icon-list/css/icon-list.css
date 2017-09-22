@@ -27,19 +27,19 @@
   .icon-list-proof-points__item:last-child { margin-bottom: 0; }
   .icon-list-proof-points__text { font-size: 8.3rem; line-height: 8.5rem; }
   .icon-list-proof-points__symbol { font-size: 4rem; line-height: 4rem; top: 13px; }
-  .icon-list-proof-points__title { font-family: Arial, sans-serif; font-size: 2.4rem; font-weight: normal; line-height: 3.8rem; line-height: 3rem; position: relative; top: -5px; } }
+  .icon-list-proof-points__title { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.8rem; position: relative; top: -5px; } }
 
 @media screen and (min-width: 992px) { .icon-list-proof-points__wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
   .eaton-grid-control .icon-list-proof-points__wrapper { display: block; }
-  .icon-list-proof-points__item { -webkit-flex-basis: 33.33%; -ms-flex-preferred-size: 33.33%; flex-basis: 33.33%; }
-  .eaton-grid-control .icon-list-proof-points__item { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; margin-bottom: 40px; }
+  .icon-list-proof-points__item { -webkit-flex-basis: 33.33%; -ms-flex-preferred-size: 33.33%; flex-basis: 33.33%; margin-right: 30px; }
+  .eaton-grid-control .icon-list-proof-points__item { -webkit-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; margin-bottom: 40px; margin-right: 0; }
   .eaton-grid-control .icon-list-proof-points__item:last-child { margin-bottom: 0; }
   .icon-list-proof-points__image { margin-top: 20px; }
   .icon-list-proof-points__text { font-size: 10rem; line-height: 10.5rem; }
   .icon-list-proof-points__symbol { font-size: 6rem; line-height: 6rem; top: 8px; }
   .icon-list-proof-points__title { font-family: Arial, sans-serif; font-size: 1.8rem; font-weight: normal; line-height: 2.4rem; margin-top: 10px; } }
 
-.icon-list-no-image-highlights { background: #F8F8F8; }
+.icon-list-no-image-highlights { margin: 60px 0; background: #F8F8F8; }
 
 .icon-list-no-image-highlights__item { color: #5B6770; }
 
@@ -51,9 +51,10 @@
 
 .icon-list-no-image-highlights__symbol { position: relative; }
 
-@media screen and (max-width: 991px) { .icon-list-no-image-highlights { padding: 30px 0; }
-  .icon-list-no-image-highlights__item { margin-bottom: 40px; }
+@media screen and (max-width: 991px) { .icon-list-no-image-highlights { padding: 60px 0; }
+  .icon-list-no-image-highlights__item { margin-bottom: 45px; }
   .icon-list-no-image-highlights__item:last-child { margin-bottom: 0; }
+  .icon-list-no-image-highlights__title { margin-bottom: 5px; }
   .icon-list-no-image-highlights__text { font-size: 5rem; line-height: 5.5rem; }
   .icon-list-no-image-highlights__symbol { font-size: 3rem; top: -15px; } }
 
@@ -67,7 +68,7 @@
   .icon-list-no-image-highlights__symbol { font-size: 4rem; top: -15px; }
   .icon-list-no-image-highlights__title { margin-bottom: 15px; } }
 
-.eaton-top-list-with-icon { margin-top: 45px; overflow: hidden; }
+.eaton-top-list-with-icon { margin-top: 60px; overflow: hidden; }
 
 .eaton-top-list-with-icon__icon { color: #ED8B00; max-width: 60px; display: inline-block; }
 
@@ -77,8 +78,11 @@
 
 .eaton-top-list-with-icon__element { margin-bottom: 45px; }
 
-@media screen and (min-width: 992px) { .eaton-top-list-with-icon { margin-top: 90px; }
-  .eaton-top-list-with-icon__icon { max-width: 70px; }
+.eaton-top-list-with-icon__element .p-body-copy { margin-top: 5px; }
+
+.eaton-top-list-with-icon__element a { line-height: 3.4rem; }
+
+@media screen and (min-width: 992px) { .eaton-top-list-with-icon__icon { max-width: 70px; }
   .eaton-top-list-with-icon__icon img { width: 70px; height: 70px; }
   .eaton-top-list-with-icon__text-wrapper { width: calc(100% - 100px); }
   .eaton-top-list-with-icon__element { margin-bottom: 90px; }
@@ -99,3 +103,5 @@
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { .eaton-top-list-with-icon .container.row .col-md-4 { -webkit-box-flex: 0; -webkit-flex: 0 0 30%; -ms-flex: 0 0 30%; flex: 0 0 30%; }
   .eaton-grid-control .eaton-top-list-with-icon .container.row .col-md-4 { -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; } }
+
+.icon-list + .resource-list { margin-top: -30px; }

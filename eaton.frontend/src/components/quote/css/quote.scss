@@ -4,12 +4,11 @@
 // Import All SASS config files (Variables, Mixins, Functions etc...)
 @import "../../../global/css/_config/sass";
 
-.quote {
-  @include component-spacing();
-  padding-top: 40px;
-}
+
 
 .eaton-quote {
+  margin: $spacing__md 0;
+
   .container {
     padding: 100px 0 60px;
     border-top: 4px solid $color__secondary-gray5;

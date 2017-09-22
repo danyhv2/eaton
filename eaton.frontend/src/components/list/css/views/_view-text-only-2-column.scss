@@ -1,38 +1,61 @@
+//-----------------------------------
+// Module M-26 - Article List: No Feature (Text-Only 2-Col)
+//-----------------------------------
 .text-only-2-column {
 
   padding-top: 60px;
   padding-bottom: 60px;
 
-
-  h2 {
+  &__heading {
     padding-bottom: 10px;
   }
-
-  .b-eyebrow-small {
-    padding: 0;
-  }
-
-  .category-item-date {
-    padding-top: 0;
-    color: $color__primary-gray3;
-    font-size: 2rem;
-  }
-
-  &__article {
-    padding-top: 0;
-  }
-
-
-  &__description {
-    padding-bottom: 15px;
-  }
-
 
   &__card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    position: relative;
+  }
 
+  &__article-copy {
+    margin: 15px 0 12px;
+    padding: 15px 20px 0 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: $color__primary-blue;
+      display: block;
+      height: 4px;
+      width: 50px;
+      position: absolute;
+      top: 0;
+      left: 0px;
+    }
+  }
+
+  &__eyebrow {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__cta {
+    display: block;
+  }
+
+  &__title {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  &__description {
+    padding-bottom: 15px;
+  }
+
+  &__date {
+    color: $color__primary-gray3;
+    font-size: 1.3rem; // Deviation
+    margin-top: 5px;
   }
 
   &__cta-container {
@@ -41,48 +64,41 @@
 
 
 
-  @include media-mobile-only {
-
-    &__cta-container a {
-      width: 100%;
-    }
-
-  }
-
-
+  //-----------------------------------
+  // MediaQuery: > 992px and up
+  //-----------------------------------
   @include media-desktop-and-up {
 
     padding-top: 120px;
     padding-bottom: 60px;
 
-
-    h2 {
+    &__heading {
       padding-bottom: 35px;
     }
 
-
-    .b-eyebrow-small {
-      padding: 15px 0 10px 0;
+    &__article-copy {
+      margin: 20px 0 35px;
+      padding-top: 30px;
     }
 
-    .category-item-date {
-      padding-top: 8px;
+    &__title {
+      margin-top: 16px;
+      margin-bottom: 0;
     }
 
     &__description {
       padding-bottom: 15px;
     }
 
-    &__article {
-      padding-top: 30px;
+    &__date {
+      margin: 14px 0 0 0;
+      font-size: 2rem;
     }
-
 
     &__cta-container {
       margin-top: 30px;
     }
 
   }
-
 
 }

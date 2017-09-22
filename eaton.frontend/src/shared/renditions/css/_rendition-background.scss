@@ -2,6 +2,7 @@
 // EATON-81: Rendition Background Images
 //-----------------------------------
 .rendition-bg {
+  background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   bottom: 0;

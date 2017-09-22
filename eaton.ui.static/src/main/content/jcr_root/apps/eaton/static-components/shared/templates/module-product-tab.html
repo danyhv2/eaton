@@ -35,7 +35,7 @@
             <sly data-sly-test="${ data.graphicToggle }" >
               <label data-sly-repeat="${data.tabs}" for="tab-${itemList.index}" >
                 <i class="icon icon-${item.icon}" aria-hidden="true"></i>
-                <span>${item.title}</span>
+                <span>${item.title @ context = 'html'}</span>
               </label>
             </sly>
 
@@ -48,7 +48,7 @@
               >
                 <div for="tab-${itemList.index}" class="tab-label ${item.selected ? 'tab-active' : ''}" >
                   <i class="icon icon-${item.icon}" aria-hidden="true"></i>
-                  <span>${item.title}</span>
+                  <span>${item.title @ context = 'html'}</span>
                 </div>
               </a>
             </sly>
@@ -62,7 +62,7 @@
               type="button"
               data-toggle="dropdown"
               aria-haspopup="true"
-              aria-expanded="false" >
+              aria-expanded="false">
               ${data.dropdown.label}
               <i class="icon icon-chevron-down" aria-hidden="true"></i>
             </button>
@@ -73,7 +73,7 @@
                 <a href="${item.href}"
                  target="${item.target}"
                  aria-label="Go to ${item.title}" >
-                <i class="icon icon-${item.icon}" aria-hidden="true"></i><span>${item.title}</span>
+                <i class="icon icon-${item.icon}" aria-hidden="true"></i><span>${item.title @ context = 'html'}</span>
                 </a>
               </li>
             </ul>

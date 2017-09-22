@@ -17,13 +17,16 @@
         class="results-list-submodule__url-link"
         aria-label="${ 'Download' @i18n } ${ data.contentItem.documentName }"
       >
-        <i class="icon icon-download" aria-hidden="true"></i>
+
         <span class="sr-only">${ data.contentItem.link.text }</span>
+        <i class="icon icon-download" aria-hidden="true"></i>
       </a>
     </div>
 
     <!--/* Content */-->
     <div class="results-list-submodule__content-wrapper">
+
+
 
       <h4 class="results-list-submodule__name b-heading-h5">
         <a href="${ data.contentItem.link.url @ context='uri' }"
@@ -34,7 +37,7 @@
 
       <div class="results-list-submodule__document b-body-copy">${ '({0} {1})' @ format=[ data.contentItem.documentType, data.contentItem.documentSize ] }</div>
 
-      <div class="results-list-submodule__link-url b-body-copy-small">
+      <div class="results-list-submodule__url b-body-copy-small">
         <a href="${ data.contentItem.link.url @ context='uri' }"
           target="${ data.contentItem.link.target }"
           class="results-list-submodule__link"
@@ -43,6 +46,7 @@
       </div>
 
     </div>
+
   </div>
 
 </template>

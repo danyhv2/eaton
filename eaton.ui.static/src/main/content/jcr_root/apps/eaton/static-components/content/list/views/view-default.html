@@ -16,14 +16,14 @@
 
               <div class="listdefault__image">
                 <!-- Start: Rendition Image Component -->
-                <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-image.html">
-                  <sly data-sly-call="${  tpl.module @ data=slider.image }"></sly>
+                <sly data-sly-use.tpl="eaton/static-components/shared/templates/rendition-background.html">
+                  <sly data-sly-call="${ tpl.module @ data=slider.image }"></sly>
                 </sly>
                 <!-- End: Rendition Image Component -->
               </div>
               <div class="listdefault__content">
-                <p class="b-eyebrow-small">${ slider.title }</p>
-                <p class="b-heading-h5">${ slider.text }</p>
+                <p class="listdefault__eyebrow b-eyebrow-small">${ slider.title }</p>
+                <p class="listdefault__title b-heading-h5">${ slider.text }</p>
                 <p class="category-item-date"><em>${ slider.date_text }</em></p>
               </div>
             </div>

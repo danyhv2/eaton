@@ -6,7 +6,7 @@
 
 
 .eaton-top-list-with-icon {
-  margin-top: $spacing__lg / 2;
+  margin-top: $spacing__md;
   overflow: hidden;
 
   &__icon {
@@ -28,13 +28,20 @@
 
   &__element {
     margin-bottom: $spacing__lg / 2;
+
+    .p-body-copy {
+      margin-top: 5px;
+    }
+
+    a {
+      line-height: 3.4rem;
+    }
   }
 
 
 
 
   @include media-desktop-and-up {
-    margin-top: $spacing__lg;
 
     &__icon {
       max-width: 70px;
@@ -120,4 +127,8 @@
       }
     }
   }
+}
+
+.icon-list + .resource-list {
+  margin-top: -30px;
 }

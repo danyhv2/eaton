@@ -5,17 +5,18 @@
 
 <sly data-sly-use.data="data/breadcrumb-data.js">
 
-  <div class="eaton-breadcrumb">
+  <div class="eaton-breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
     <div class="container">
       <sly data-sly-test="${data.links.length < 6}">
         <ul data-sly-list.link="${data.links}" class="eaton-breadcrumb__list">
-          <li class="eaton-breadcrumb__list-item" >
+          <li class="eaton-breadcrumb__list-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 
             <!--/* If the Breadcrum item has a valid / non-empty url */-->
           	<a data-sly-test.haslink="${ link.url }"
               href="${ link.url }"
               target="${ link.target }"
-              aria-label="Go back to ${ link.text }">${ link.text }</a>
+              aria-label="Go back to ${ link.text }" itemprop="item" itemprop="name">${ link.text }</a>
+              <meta itemprop="position" content="${ linkList.index }" />
 
             <!--/* Else render just the label witout link */-->
             <span data-sly-test="${ !haslink }">${ link.text }</span>
@@ -30,14 +31,16 @@
         <ul data-sly-list.link="${data.links}" class="eaton-breadcrumb__list">
           <sly data-sly-test="${linkList.first}">
 
-            <li class="eaton-breadcrumb__list-item" >
+            <li class="eaton-breadcrumb__list-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 
 
               <!--/* If the Breadcrum item has a valid / non-empty url */-->
               <a data-sly-test.haslink="${ link.url}"
                 href="${ link.url }"
                 target="${ link.target }"
-                aria-label="Go back to ${ link.text }">${ link.text }</a>
+                aria-label="Go back to ${ link.text }" itemprop="item" itemprop="name">${ link.text }</a>
+
+              <meta itemprop="position" content="${ linkList.index }" />
 
               <!--/* Else render just the label witout link */-->
               <span data-sly-test="${ !haslink }">${ link.text }</span>
@@ -54,14 +57,16 @@
             </li>
           </sly>
           <sly data-sly-test="${linkList.index >= data.grandparentIndex}">
-            <li class="eaton-breadcrumb__list-item" >
+            <li class="eaton-breadcrumb__list-item" itemscope itemtype="http://schema.org/ListItem">
 
 
               <!--/* If the Breadcrum item has a valid / non-empty url */-->
               <a data-sly-test.haslink="${ link.url}"
                 href="${ link.url }"
                 target="${ link.target }"
-                aria-label="Go back to ${ link.text }">${ link.text }</a>
+                aria-label="Go back to ${ link.text }" itemprop="item" itemprop="name">${ link.text }</a>
+
+              <meta itemprop="position" content="${ linkList.index }" />
 
               <!--/* Else render just the label witout link */-->
               <span data-sly-test="${ !haslink }">${ link.text }</span>

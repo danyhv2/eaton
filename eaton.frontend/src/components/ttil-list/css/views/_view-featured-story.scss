@@ -1,5 +1,7 @@
 .featured-story-component {
 
+  margin: 60px 0;
+
   // Override Component - Rendition Images
   //--------------
   .rendition__image {
@@ -22,7 +24,7 @@
     }
   }
 
-  &__arrow {
+  &__arrow::before {
     font-size: 0.7em;
     left: 10px;
   }
@@ -39,6 +41,16 @@
       text-decoration: none;
       color: $color__white;
     }
+  }
+
+  &__link h2.featured-story-component__text::after {
+    color: $color__white;
+    margin-left: 20px;
+    content: "\e258";
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.4rem;
   }
 
   &__blue {

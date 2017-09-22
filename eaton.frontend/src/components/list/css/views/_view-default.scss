@@ -1,4 +1,5 @@
 //-----------------------------------
+// M-33: Related Item with images
 // List Component: View Deafult
 //-----------------------------------
 
@@ -35,36 +36,6 @@
 
   }
 
-
-
-
-  /*
-
-
-  .carousel-indicators {
-    position: inherit;
-    margin: 40px auto 0;
-  }
-
-  .carousel-indicators li {
-    width: 15px;
-    height: 15px;
-    cursor: inherit;
-    background-color: $color__primary-gray3;
-    border: 0;
-    border-radius: 50%;
-    margin: 0 4px;
-  }
-
-  .carousel-indicators .active {
-    background-color: $color__primary-blue;
-    width: 15px;
-    height: 15px;
-    margin: 0 4px;
-  }
-
-
-*/
   .category__image {
     width: 100%;
   }
@@ -94,7 +65,7 @@
   }
 
   .category__title--bottompadding {
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
 
   .header-text__topmargin {
@@ -179,6 +150,10 @@
       font-size: 1.3em;
     }
   }
+
+  &-default-view {
+    margin-top: 60px;
+  }
 }
 
 .listdefault {
@@ -191,7 +166,7 @@
     .slick-track {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     .slick-slide {
@@ -203,23 +178,28 @@
     }
   }
 
-
   &__link {
     height: 100%;
   }
 
   &__card {
     border: 1px solid $color__secondary-gray4;
+    background: $color__white;
     height: 100%;
 
     .category-item-date {
       color: $color__primary-gray3;
     }
+  }
 
-    .rendition img {
-      width: 100%;
+  &__image {
+    position: relative;
+    padding-top: $ratio__4-3;
+
+    .rendition-bg {
+      background-position: center center;
+      background-size: auto 100%;
     }
-
   }
 
   &__content {
@@ -228,6 +208,10 @@
 
 
 
+
+  //-----------------------------------
+  // MediaQuery: 0-767px
+  //-----------------------------------
   @include media-mobile-only {
 
     &__slides {
@@ -259,11 +243,26 @@
 
     &__image {
       width: 50%;
+      padding-top: ($ratio__4-3 / 2); // Half since the element has 50% width;
     }
 
     &__content {
       padding: 30px 15px 15px 30px;
       width: 50%;
+    }
+
+  }
+
+
+  @include media-desktop-and-up {
+
+    // EATON-639: Override Line-height in the Title in order to create better hierarchy
+    &__title {
+      line-height: 3.4rem;
+    }
+
+    &__card .category-item-date {
+      margin-top: 16px; // Visually, 30px spacing between Title and Date
     }
 
   }

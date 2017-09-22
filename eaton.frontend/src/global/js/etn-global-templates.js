@@ -285,6 +285,8 @@ App.global.templates = (function() {
           </div>
 
         </div>
+
+
       </div>
     `;
   };

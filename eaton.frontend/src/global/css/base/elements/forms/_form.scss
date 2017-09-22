@@ -6,6 +6,7 @@
 .eaton-form {
 
   $light-gray: #eef0f2;
+  $form-red: #FB5A5F;
 
   font-family: Arial, 'Arial', sans-serif;
 
@@ -42,6 +43,12 @@
   // stylelint-disable-next-line selector-class-pattern
   .LV_invalid_field {
     border: 0 !important;  // stylelint-disable-line declaration-no-important
+    color: $form-red;
+  }
+
+  // stylelint-disable-next-line selector-class-pattern
+  .LV_invalid {
+    color: $form-red;
   }
 
   .label-position {
@@ -64,6 +71,7 @@
       text-align: left;
       padding: 0;
       margin-bottom: 30px;
+      white-space: inherit;
 
       @include media-tablet-and-up {
         font-size: 2.6rem;
@@ -157,6 +165,11 @@
         @include media-mobile-only {
           width: 50%;
         }
+
+        //media query for XP screens
+        @media screen and ( max-width: 320px ) {
+          width: 100%;
+        }
       }
 
       // stylelint-disable-next-line selector-class-pattern
@@ -231,10 +244,11 @@
       @extend %font-family-glyphicon;
       @extend %icon-checkmark;
       font-size: 1.6rem;
-      line-height: 0.8;
       color: $color__primary-blue;
+      line-height: 1;
       position: absolute;
-      top: 2px;
+      top: 4px;
+      bottom: auto;
       left: 5px;
     }
 

@@ -8,7 +8,9 @@
 
 // Import SubModules
 .product-specifications {
-  padding: 20px 0;
+
+  margin-top: 60px;
+  margin-bottom: 40px;
 
   .value-type-document {
     // empty selector for future reference
@@ -25,8 +27,6 @@
     img {
       width: 100%;
       height: auto;
-      max-width: 43px;
-      max-height: 43px;
       vertical-align: middle;
     }
   }
@@ -37,7 +37,7 @@
 
 
   //-----------------------------------
-  // MediaQuery: Mobile & Tablet Only
+  // MediaQuery: 0-991px
   //-----------------------------------
   @include media-mobile-and-tablet {
 
@@ -45,14 +45,33 @@
       display: none;
     }
 
+    .value-type-image {
+      img {
+        margin-left: 6px;
+        max-width: 26px;
+        max-height: 26px;
+      }
+    }
+
   }
 
 
-
   //-----------------------------------
-  // Media Query Desktop & Desktop Large
+  // MeidaQuery: > 992px
   //-----------------------------------
   @include media-desktop-and-up {
-    padding: 40px 0;
+
+    .value-type-image {
+
+      $image-size: 26px;
+
+      img {
+        // EATON-347: FIX - Attribute Label not aligned with Attribute Value
+        margin-left: 6px;
+        max-width: $image-size;
+        max-height: $image-size;
+        vertical-align: text-bottom;
+      }
+    }
   }
 }

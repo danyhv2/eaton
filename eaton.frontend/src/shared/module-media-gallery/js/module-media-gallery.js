@@ -9,13 +9,15 @@ App.mediaGallery = function () {
   const componentClass = '.module-media-gallery';
   const $componentEl = $(componentClass);
 
+  // Placeholder variables for Multilanguage strings
+  let i18nStrings = {};
+
   // Cached DOM Elements
   //--------------
   const $bodyEl = $('body');
   const $slideCarousel = $componentEl.find('.module-media-gallery__slide-list');
   const $thumbnailCarousel = $componentEl.find('.module-media-gallery__thumbnail-list');
   const $thumbnailItems = $componentEl.find('.module-media-gallery__thumbnail-item');
-  let i18nStrings = {};
 
   // Zoom Behavior
   //--------------
@@ -59,8 +61,15 @@ App.mediaGallery = function () {
     $.each($slideCarousel, (index, item) => {
 
       const $currentSlider = $(item);
-      const $slideContainer = $currentSlider.closest(componentClass).find('.module-media-gallery__slide-container');
+      const $currentComponent = $currentSlider.closest(componentClass);
+      const $slideContainer = $currentComponent.find('.module-media-gallery__slide-container');
 
+      // EATON-682: Blue line under image thumbnail doesn't change to match active image
+      $currentSlider.on('afterChange', (event, slick) => {
+        updateActiveThumbnail($currentComponent, slick.currentSlide);
+      });
+
+      // Initialize Preview Area Carousel
       $currentSlider.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -126,16 +135,35 @@ App.mediaGallery = function () {
 
 
   /**
+  * Set the active thumbnail to the given slideIndex number
+  * @param {jQueyElement} $currentComponent
+  * @param {number} slideIndex
+  */
+  const updateActiveThumbnail = ($currentComponent, slideIndex) => {
+    const $currentThumbnailSlider = $currentComponent.find('.module-media-gallery__thumbnail-list');
+    const $currentThumbnailItems = $currentComponent.find('.module-media-gallery__thumbnail-item');
+
+    // Move to the slider to the active thumbnail if is not currently visible
+    $currentThumbnailSlider.slick('slickGoTo', slideIndex, true);
+
+    // Toggle the custom "active" class that highlights the active thumbnail in the UI
+    $currentThumbnailItems.removeClass('active');
+    $currentThumbnailItems.filter(`[data-slick-index="${ slideIndex }"]`).addClass('active');
+  };
+
+
+  /**
   * Initialize Zoom Behavior
   */
   const zoomInitialize = () => {
 
-    // Default Settings
-    //--------------
+    /**
+    * Zoom Behavior - Default Config
+    */
     zoom = {
       eventDesktop: 'click',
       // eventMobile: 'overlay',
-      scaleMobile: 2,  // It Means that the image will be scale at 2x (200%)
+      scaleMobile: 2, // It Means that the image will be scale at 2x (200%)
       scaleDesktop: 1, // The default value is 1, meaning the zoomed image should be at 100% of its natural width and height.
 
       state: {
@@ -234,9 +262,15 @@ App.mediaGallery = function () {
   * @param { String } imageSrc - ImageURL that will be displayed in the overlay
   */
   const zoomOpenOverlay = (imageSrc) => {
+
+    // Update Background image in the overlay
     const style = `background-image: url("${ imageSrc }")`;
     zoom.$overlayImageEl.attr('style', style);
+
+    // Prevent scrolling in the page
     $bodyEl.addClass(zoom.cssClasses.zoomOverlayOpen);
+
+    // It makes zoom-overlay visible
     zoom.$overlayEl.fadeIn(() => {
 
       // Focus the Close Overlay button as soon as the overlay is visible

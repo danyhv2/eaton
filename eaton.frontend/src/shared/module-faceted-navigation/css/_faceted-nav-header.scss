@@ -18,15 +18,60 @@
 
   &__sort-options {
     float: right;
+    margin-right: -52px;
     width: 160px;
-    margin-right: -50px;
     margin-top: -15px;
+    position: relative;
+
+    @include media-mobile-and-tablet {
+      margin-right: -20px;
+      width: 130px;
+      height: 70px;
+
+      .dropdown [data-toggle="dropdown"][aria-expanded="true"] {
+        border: 0;
+      }
+
+      .dropdown-menu {
+        display: none;
+      }
+    }
+
+    // EATON-650: very specific behavior for these resolutuions
+    @media screen and (min-width: 992px) and (max-width: 1265px) {
+      margin-right: -15px;
+      width: 124px;
+
+      .dropdown-menu {
+        width: 124px;
+        min-width: 124px;
+      }
+    }
+
+    select.native-select {
+      position: absolute;
+      background: transparent;
+      top: 0;
+      right: -10px;
+      width: 170px;
+      height: 45px;
+      border: 0;
+      color: transparent;
+
+      @include media-desktop-and-up {
+        display: none;
+      }
+    }
 
     .dropdown {
       font-family: $font-family__secondary;
       font-size: 1.8rem;
       width: 100%;
-      position: relative;
+
+      @include media-mobile-and-tablet {
+        position: absolute;
+        top: 0;
+      }
 
       [data-toggle="dropdown"] {
         background: $color__white;
@@ -36,6 +81,10 @@
         padding-left: 2rem;
         padding-top: 2.5rem;
         border: 1px solid $color__white;
+
+        @include media-mobile-and-tablet {
+          padding-top: 15px;
+        }
 
         &[aria-expanded="true"] {
           border-color: $color__secondary-gray5;
@@ -85,8 +134,8 @@
   //--------------
   &__header-top {
     border-bottom: .2rem solid $color__secondary-gray6;
-    padding-bottom: 3rem;
-    padding-top: 5rem;
+    padding-bottom: 20px; // EATON-662: Visually 30px Spacing
+    padding-top: 20px;    // EATON-662: Visually 40px Spacing
   }
 
   &__title {
@@ -113,7 +162,7 @@
   }
 
   a.open-facets-mobile {
-
+    max-width: none;
   }
 
   .faceted-navigation-filters {

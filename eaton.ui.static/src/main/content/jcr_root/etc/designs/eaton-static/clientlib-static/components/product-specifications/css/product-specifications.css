@@ -11,14 +11,15 @@
  */
 
 
-.product-specifications { padding: 20px 0; }
+.product-specifications { margin-top: 60px; margin-bottom: 40px; }
 
 .product-specifications .value-type-link { margin-right: 1rem; }
 
 .product-specifications .value-type-image a { display: inline-block; }
 
-.product-specifications .value-type-image img { width: 100%; height: auto; max-width: 43px; max-height: 43px; vertical-align: middle; }
+.product-specifications .value-type-image img { width: 100%; height: auto; vertical-align: middle; }
 
-@media screen and (max-width: 991px) { .product-specifications .module-anchor-links { display: none; } }
+@media screen and (max-width: 991px) { .product-specifications .module-anchor-links { display: none; }
+  .product-specifications .value-type-image img { margin-left: 6px; max-width: 26px; max-height: 26px; } }
 
-@media screen and (min-width: 992px) { .product-specifications { padding: 40px 0; } }
+@media screen and (min-width: 992px) { .product-specifications .value-type-image img { margin-left: 6px; max-width: 26px; max-height: 26px; vertical-align: text-bottom; } }

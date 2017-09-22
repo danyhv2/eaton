@@ -77,6 +77,7 @@ $border-color: rgba($color__secondary-gray4, 0.5);
     margin-right: ($spacing__sm / 3); //TODO: Enable
     width: 24px;
     height: 24px;
+    border-radius: 50%;
   }
 
   &__item-country-name {
@@ -253,7 +254,9 @@ $border-color: rgba($color__secondary-gray4, 0.5);
     }
 
     &__item-country {
-      flex-basis: 33.33%;
+      // NOTE: "flex-basis" was replaced with "width" due to layout issues in IE11
+      // flex-basis: 33.33%;
+      width: 33.33%;
       padding: 0 25px 40px 25px;
     }
 
@@ -263,15 +266,18 @@ $border-color: rgba($color__secondary-gray4, 0.5);
 
     &__item-language {
       display: inline-block;
-      padding: 0 8px;
       border-right: 1px solid $color__white;
-
-      &:first-child {
-        padding-left: 0;
-      }
 
       &:last-child {
         border: 0;
+      }
+
+      a {
+        padding: 0 8px;
+
+        &:first-child {
+          padding-left: 0;
+        }
       }
     }
   }

@@ -360,7 +360,7 @@ use(function () {
             },
             {
               "productAttributeLabel": "Output Recepticles",
-              "productAttributeValue": "110-127V right pigtail undervoltage release"
+              "productAttributeValue": "110-127V right pigtail same side undervoltage release"
             }
           ]
         }
@@ -434,7 +434,7 @@ use(function () {
             },
             {
               "productAttributeLabel": "Output Recepticles",
-              "productAttributeValue": "110-127V right pigtail undervoltage release"
+              "productAttributeValue": "110-127V right pigtail same side undervoltage release"
             }
           ]
         }
@@ -471,7 +471,7 @@ use(function () {
             },
             {
               "productAttributeLabel": "Output Recepticles",
-              "productAttributeValue": "110-127V right pigtail undervoltage release"
+              "productAttributeValue": "110-127V right pigtail same side undervoltage release"
             }
           ]
         }
@@ -508,7 +508,7 @@ use(function () {
             },
             {
               "productAttributeLabel": "Output Recepticles",
-              "productAttributeValue": "110-127V right pigtail undervoltage release"
+              "productAttributeValue": "110-127V right pigtail same side undervoltage release"
             }
           ]
         }
@@ -545,7 +545,7 @@ use(function () {
             },
             {
               "productAttributeLabel": "Output Recepticles",
-              "productAttributeValue": "110-127V right pigtail undervoltage release"
+              "productAttributeValue": "110-127V right pigtail same side undervoltage release"
             }
           ]
         }
@@ -619,7 +619,7 @@ use(function () {
             },
             {
               "productAttributeLabel": "Output Recepticles",
-              "productAttributeValue": "110-127V right pigtail undervoltage release"
+              "productAttributeValue": "110-127V right pigtail same side undervoltage release"
             }
           ]
         }
@@ -656,7 +656,7 @@ use(function () {
             },
             {
               "productAttributeLabel": "Output Recepticles",
-              "productAttributeValue": "110-127V right pigtail undervoltage release"
+              "productAttributeValue": "110-127V right pigtail same side undervoltage release"
             }
           ]
         }
@@ -693,7 +693,7 @@ use(function () {
             },
             {
               "productAttributeLabel": "Output Recepticles",
-              "productAttributeValue": "110-127V right pigtail undervoltage release"
+              "productAttributeValue": "110-127V right pigtail same side undervoltage release"
             }
           ]
         }
@@ -730,7 +730,7 @@ use(function () {
             },
             {
               "productAttributeLabel": "Output Recepticles",
-              "productAttributeValue": "110-127V right pigtail undervoltage release"
+              "productAttributeValue": "110-127V right pigtail same side undervoltage release"
             }
           ]
         }

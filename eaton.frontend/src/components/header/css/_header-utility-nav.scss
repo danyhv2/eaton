@@ -40,6 +40,11 @@
     text-decoration: none;
   }
 
+  .open-sign-in:hover {
+    // EATON-465: Underline on hover (this is a stand-alone navigation link)
+    text-decoration: underline;
+  }
+
   //-----------------------------
   // Mobile Breakpoints
   // ----------------------------
@@ -61,10 +66,11 @@
 
     &__row {
       align-items: center;
+      margin: 0;
     }
 
     &__toggle-selector {
-      padding: 25px 0 25px 30px;
+      padding: 20px 30px;
       flex-grow: 1;
       background: $color__primary-gray1;
     }
@@ -72,15 +78,27 @@
     &__sign-in {
       text-align: center;
       padding: 0 $spacing__sm;
-      flex-basis: 100px;
+      flex-basis: 80px;
     }
 
     &__signin { display: none; }
 
-    .icon {
+    .open-country-selector {
+      display: flex;
+      align-items: center;
+    }
 
+    &__language {
+      display: block;
+    }
+
+    .icon {
       &.icon-globe {
         margin-right: 5px;
+      }
+
+      &.icon-chevron-down {
+        display: none;
       }
     }
   }
@@ -99,6 +117,10 @@
 
     &__toggle-selector {
       flex: 1;
+    }
+
+    &__label {
+      display: inline;
     }
 
     .icon {

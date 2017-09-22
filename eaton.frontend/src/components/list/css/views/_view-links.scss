@@ -2,7 +2,6 @@
 // Component 4.2: Header - Mega Menu
 // List - View - Links
 //-----------------------------------
-
 .eaton-list-links {
   display: flex;
 
@@ -15,7 +14,11 @@
   &__link {
     padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
     text-decoration: none;
-    display: inline-block;
+    display: block;
+
+    span {
+      color: $color__white;
+    }
 
     i {
       font-size: 1.4rem;
@@ -38,6 +41,19 @@
       border-bottom: 1px solid rgba(238, 240, 242, 0.3);
       align-items: center;
       font-size: 1.5rem;
+
+      &::after {
+        color: $color__white;
+        position: relative;
+        top: 1px;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        display: inline-block;
+        text-decoration: none;
+      }
     }
 
     &__text {
@@ -54,11 +70,30 @@
 
     &__col {
       width: 100%;
-      margin: 0 ($spacing__sm / 2 );
+      margin: 0 ($spacing__sm / 2);
 
       &:first-child {
         margin-left: 0;
       }
+    }
+
+    &__link span {
+
+      &::after {
+        color: $color__white;
+        position: relative;
+        top: 1px;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 1.4rem;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+    }
+
+    .eaton-list-links__col .eaton-list-links__item:first-child .eaton-list-links__link {
+      padding-top: 0;
     }
   }
 }

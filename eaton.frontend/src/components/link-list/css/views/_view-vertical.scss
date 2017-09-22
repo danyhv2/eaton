@@ -42,30 +42,82 @@
   }
 
   &__list-text {
-    display: inline-flex;
+    display: inline;
   }
 
   &__list-link {
     display: inline-block;
     padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
     font-weight: bold;
+
+    span {
+
+      &::after {
+        color: $color__white;
+        position: relative;
+        top: 1px;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 1.4rem;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+    }
+
+    span.download {
+      display: table-row;
+      margin-right: 15px;
+      &::after {
+        color: $color__white;
+        position: relative;
+        top: 1px;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 1.4rem;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+    }
+
+    span.external {
+      display: table-row;
+      margin-right: 15px;
+      &::after {
+        color: $color__white;
+        position: relative;
+        top: 1px;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 1.4rem;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+    }
   }
 
   &__list-icon {
-    padding-right: 10px;
+    padding-left: 10px;
     font-size: 2.8rem;
     padding-top: 5px;
   }
 
   &__external-icon {
-    padding-right: 10px;
     font-size: 2.8rem;
     margin-top: 8px;
+    display:table-cell;
+
+    &::before{
+      margin-right:15px;
+    }
 
     &.icon-link-external {
       margin-top: 0;
       top: 2px;
       position: relative;
+      display:table-cell;
     }
   }
 
@@ -86,9 +138,10 @@
   }
 
 
-  // Over DARK-Background
-  //--------------
-  .dark-theme & {
+  // Override font-sizes for dark-theme & on header/footer
+  .eaton-footer &,
+  .eaton-header & {
+    padding-bottom: 0;
 
     .icon-chevron-right {
       display: inline-block;
@@ -98,19 +151,12 @@
       @include eyebrow-small;
     }
 
-    &__list-link {
-      font-weight: normal;
-    }
-
-    // Override font-sizes for dark-theme
     &__list-item {
       @include body-copy-small;
     }
 
-    &__eyebrow,
-    &__list-item a, // Override style added by the mixins
-    &__download-text {
-      color: $color__white;
+    &__list-link {
+      font-weight: normal;
     }
 
     &__list-icon {
@@ -123,6 +169,24 @@
 
     &__download-text {
       font-size: 1.6rem;
+    }
+
+    &__eyebrow,
+    &__list-item a, // Override style added by the mixins
+    &__download-text {
+      color: $color__white;
+    }
+  }
+
+  // Over DARK-Background
+  //--------------
+  .dark-theme & {
+    padding-bottom: 30px;
+
+    &__eyebrow,
+    &__list-item a, // Override style added by the mixins
+    &__download-text {
+      color: $color__white;
     }
   }
 
@@ -160,6 +224,47 @@
     }
 
   }
+}
+
+.eaton-header .eaton-link-list-vertical .icon.icon-chevron-right,
+.eaton-footer .eaton-link-list-vertical .icon.icon-chevron-right,
+.eaton-featured-topic .eaton-link-list-vertical .icon.icon-chevron-right,
+.eaton-featured-topic .eaton-link-list-vertical span::after,
+.eaton-grid-control .eaton-link-list-vertical span::after{
+  display: none;
+}
+
+.mega-menu {
+  .eaton-link-list-vertical{
+    &__list-link{
+      padding: 0;
+    }
+
+    &__list-text {
+      display: inline-block;
+      padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
 
 
+
+      span {
+
+        &::after {
+          color: $color__white;
+          position: relative;
+          top: 1px;
+          content: "\EA07";
+          font-family: 'eaton-glyphicon';
+          display: inline;
+          font-size: 1.4rem;
+          padding-left: 7px;
+          text-decoration: none;
+          font-weight: normal;
+        }
+
+        &::not(.eaton-featured-topic span.eaton-link-list-vertical__list-text::after){
+          display:none;
+        }
+      }
+    }
+  }
 }

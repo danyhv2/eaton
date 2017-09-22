@@ -6,14 +6,25 @@
 @import "../../../global/css/_config/sass";
 
 .eaton-product-back-to-search {
-  margin: $spacing__sm 0;
+  margin: $spacing__sm 0 0 0;
 
   i {
     font-size: 1.1rem;
     padding-right: 5px;
   }
 
+  //-----------------------------------
+  // 0-991px
+  //-----------------------------------
   @include media-mobile-and-tablet {
     margin: 0;
+  }
+
+
+  //-----------------------------------
+  // 768px to 991px
+  //-----------------------------------
+  @include media-tablet-only {
+    width: 50%;
   }
 }

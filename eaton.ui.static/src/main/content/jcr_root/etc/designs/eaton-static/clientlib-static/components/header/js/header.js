@@ -68,11 +68,11 @@ App.header = function () {
     var headerEl = $('header');
     var headerHeight = headerEl.height() + 'px';
 
-    if (windowEl.width() < mediumScreenWidth) {
+    if (windowEl.outerWidth() < mediumScreenWidth) {
       headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', headerHeight);
     } else {
       // Reset the top offset for the elements - Desktop
-      headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', 'unset');
+      headerEl.find('.mega-menu, .eaton-link-list-primary-nav, .header-search').css('top', 'auto');
     }
   };
 
@@ -84,11 +84,28 @@ App.header = function () {
     var scrollTop = windowEl.scrollTop();
     var utilityNavOffset = $('.header-utility-nav').offset().top;
     var utilityNavHeight = $('.header-utility-nav').outerHeight();
+    var isDrawerOpen = bodyEl.hasClass('drawer-open');
+    var FIXED_HEADER_HEIGHT = 80; // Height of the sticky navigation - header
 
     if (scrollTop > utilityNavOffset + utilityNavHeight) {
       componentClass.addClass('eaton-header--fixed');
-      // Close the drawer if open - Country Selector
-      bodyEl.removeClass('drawer-open drawer-is-animating');
+
+      if (isDrawerOpen) {
+        // Close the drawer if open - Country Selector
+        bodyEl.removeClass('drawer-open drawer-is-animating');
+        // Scroll to the top of the page once the drawer is closed
+        // This prevents page scroll to bottom once sticky-nav is activated
+
+        bodyEl.scrollTop(FIXED_HEADER_HEIGHT);
+        // In cases of browsers that do not interpret scrollTep value set
+        // Animate the bodyEl to the header position
+        if (bodyEl.scrollTop() !== FIXED_HEADER_HEIGHT) {
+          $('body,html').animate({ scrollTop: FIXED_HEADER_HEIGHT }, 300);
+        }
+
+        // Set Flag to False
+        isDrawerOpen = false;
+      }
     } else {
       componentClass.removeClass('eaton-header--fixed');
     }
@@ -101,11 +118,13 @@ App.header = function () {
 
     var activeCategory = '';
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
     // Close Search if open
     closeSearch(event);
     updateHeaderLayoutMobile();
+    // Publish - Mega Menu Open
+    $(document).trigger(App.global.constants.EVENTS.HEADER.MEGAMENU_OPEN);
 
     // Highlight only the active Link
     primaryLinks.removeClass('active');
@@ -126,7 +145,7 @@ App.header = function () {
   */
   var closeMegaMenu = function closeMegaMenu(event) {
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
     primaryLinks.removeClass('active');
     megaMenuSections.removeClass('mega-menu__content--active');
@@ -138,7 +157,7 @@ App.header = function () {
   */
   var mobileMenuInteractions = function mobileMenuInteractions(event) {
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
     // Close Search if open
     closeSearch(event);
@@ -167,7 +186,7 @@ App.header = function () {
   var handleTitleClick = function handleTitleClick(event) {
     var activeLink = primaryLinks.filter('.active');
     if (windowEl.width() < mediumScreenWidth) {
-      event.preventDefault();
+      event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
       bodyEl.removeClass('level-2-open');
       activeLink.focus();
@@ -179,7 +198,7 @@ App.header = function () {
   */
   var handleSearch = function handleSearch(event) {
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
     closeMegaMenu(event);
     updateHeaderLayoutMobile();
 
@@ -202,7 +221,7 @@ App.header = function () {
   */
   var closeSearch = function closeSearch(event) {
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
     bodyEl.removeClass('search-open');
   };
 
@@ -211,7 +230,7 @@ App.header = function () {
   */
   var openDrawer = function openDrawer(event) {
 
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
     // Check for window-width.
     // If Desktop Breakpoint, activate the first region-panel
