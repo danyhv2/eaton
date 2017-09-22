@@ -23,7 +23,7 @@
 
 .eaton-landing-hero__image { position: absolute; left: 0; top: 0; height: 100%; width: 100%; }
 
-.image-mask .eaton-landing-hero__image::before { position: absolute; left: 0; top: 0; height: 100%; width: 100%; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=0 ); background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, transparent), to(rgba(0, 0, 0, 0.75))); background: linear-gradient(to bottom, transparent 15%, rgba(0, 0, 0, 0.75) 100%); content: ''; z-index: 2; }
+.image-mask .eaton-landing-hero__image::before { position: absolute; left: 0; top: 0; height: 100%; width: 100%; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#bf000000', GradientType=0); background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(85%, rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))); background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.75) 85%, rgba(0, 0, 0, 0.75) 100%); content: ''; z-index: 2; }
 
 .eaton-landing-hero__text { margin-top: 20px; }
 
@@ -216,7 +216,7 @@
 
 .eaton-category-hero__title::after { background: #FFF; content: ''; position: absolute; bottom: 0; left: 0; height: .5rem; width: 6rem; }
 
-.image-mask .eaton-category-hero__image::before { position: absolute; left: 0; top: 0; height: 100%; width: 100%; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=0 ); background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, transparent), to(rgba(0, 0, 0, 0.75))); background: linear-gradient(to bottom, transparent 15%, rgba(0, 0, 0, 0.75) 100%); content: ''; z-index: 2; }
+.image-mask .eaton-category-hero__image::before { position: absolute; left: 0; top: 0; height: 100%; width: 100%; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#bf000000', GradientType=0); background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(85%, rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))); background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.75) 85%, rgba(0, 0, 0, 0.75) 100%); content: ''; z-index: 2; }
 
 .dark-theme .eaton-category-hero__title, .dark-theme .eaton-category-hero__text { color: #FFF; }
 
