@@ -64,12 +64,11 @@
 .dark-theme .eaton-link-list-vertical__eyebrow, .dark-theme .eaton-link-list-vertical__list-item a, .dark-theme .eaton-link-list-vertical__download-text { color: #FFF; }
 
 @media screen and (max-width: 991px) { .eaton-link-list-vertical__external-icon { font-size: 2rem; margin-top: 3px; }
+  .eaton-link-list-vertical__download-text { margin-left: 30px; }
   .eaton-link-list-vertical__eyebrow { margin-bottom: 20px; } }
 
 @media screen and (min-width: 992px) { .eaton-link-list-vertical__eyebrow { margin-bottom: 15px; }
-  .eaton-link-list-vertical__download-text { width: auto; max-width: calc(100% - 40px); }
-  .eaton-link-list-vertical__list-link.download { max-width: calc(100% - 40px); float: left; }
-  .eaton-link-list-vertical__external-icon.icon-download { float: right; margin-top: 20px; color: #005EB8; } }
+  .eaton-link-list-vertical__download-text { width: auto; } }
 
 .eaton-header .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-footer .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-featured-topic .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-featured-topic .eaton-link-list-vertical span::after, .eaton-grid-control .eaton-link-list-vertical span::after { display: none; }
 
