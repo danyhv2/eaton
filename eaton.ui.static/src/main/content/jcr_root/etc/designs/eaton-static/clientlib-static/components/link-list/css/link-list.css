@@ -152,9 +152,8 @@
 
 @media screen and (min-width: 992px) { .section-navigation .container { position: relative; }
   .section-navigation__list { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .section-navigation__list::after { content: ''; background-color: #5B6770; position: absolute; bottom: 0; left: 0; height: 1px; width: 100%; }
-  .section-navigation__link-item { border-bottom: 1px solid #5B6770; border-right: 2px solid #5B6770; display: inline-block; float: left; padding: 20px 30px; }
-  .section-navigation__list-item:last-child .section-navigation__link-item { border-right: none; } }
+  .section-navigation__list::after { content: ''; background-color: #333F48; position: absolute; bottom: 0; left: 0; height: 1px; width: 100%; }
+  .section-navigation__link-item { border-bottom: 1px solid #5B6770; border-left: 1px solid #5B6770; border-right: 1px solid #5B6770; display: inline-block; float: left; padding: 20px 30px; } }
 
 .eaton-linklist-2column { overflow: hidden; }
 
