@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-07-20T04:58:00.226Z"
+        cq:lastModifiedBy="etn-marie"
+        cq:lastReplicated="{Date}2017-07-19T16:44:10.395Z"
+        cq:lastReplicatedBy="etn-daniel"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/eaton/static-templates/eaton-homepage-template-html"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="m49-home-category-highlight"
+        jcr:uuid="f190c5fa-ddc1-4924-b8c5-687154641ac4"
+        sling:resourceType="eaton/static-components/structure/eaton-home-page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <category_highlight
+                jcr:created="{Date}2017-07-14T18:26:36.578Z"
+                jcr:createdBy="etn-daniel"
+                jcr:lastModified="{Date}2017-07-14T18:26:36.578Z"
+                jcr:lastModifiedBy="etn-daniel"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/category-highlight">
+                <title-text-image-link
+                    jcr:lastModified="{Date}2017-07-14T18:26:43.285Z"
+                    jcr:lastModifiedBy="etn-daniel"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/content/ttil"
+                    view="l2-hero"/>
+                <list
+                    jcr:lastModified="{Date}2017-07-20T04:58:00.221Z"
+                    jcr:lastModifiedBy="etn-marie"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="eaton/static-components/content/list"
+                    view="nofeaturedarticle"/>
+            </category_highlight>
+        </par>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-08-01T15:41:30.560Z"
+        cq:lastModifiedBy="etn-erick"
+        cq:lastReplicated="{Date}2017-07-28T19:41:24.100Z"
+        cq:lastReplicatedBy="etn-erick"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/eaton/static-templates/eaton-content-page-template-html"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="m42-topic-list-with-icon"
+        jcr:uuid="cad7ef33-12fc-4bcc-bc0d-7c05ef4debc0"
+        sling:resourceType="eaton/static-components/structure/eaton-content-page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <icon_list
+                jcr:created="{Date}2017-07-26T17:09:57.809Z"
+                jcr:createdBy="etn-erick"
+                jcr:lastModified="{Date}2017-07-28T17:26:04.597Z"
+                jcr:lastModifiedBy="etn-erick"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/icon-list"
+                view="top-list-with-icon"/>
+            <icon_list_299887013
+                jcr:created="{Date}2017-07-26T17:10:50.652Z"
+                jcr:createdBy="etn-erick"
+                jcr:lastModified="{Date}2017-07-26T17:11:01.633Z"
+                jcr:lastModifiedBy="etn-erick"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="eaton/static-components/content/icon-list"
+                testdata="long-list"
+                view="top-list-with-icon"/>
+        </par>
+    </jcr:content>
+</jcr:root>
