@@ -149,7 +149,7 @@ App.mediaGallery = function () {
     // Toggle the custom "active" class that highlights the active thumbnail in the UI
     $currentThumbnailItems.removeClass('active');
     $currentThumbnailItems.filter(`[data-slick-index="${ slideIndex }"]`).addClass('active');
-  }
+  };
 
 
   /**
