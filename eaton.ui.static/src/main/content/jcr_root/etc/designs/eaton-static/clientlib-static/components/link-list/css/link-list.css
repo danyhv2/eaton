@@ -71,7 +71,7 @@
   .eaton-link-list-vertical__list-link.download { max-width: calc(100% - 40px); float: left; }
   .eaton-link-list-vertical__external-icon.icon-download { float: right; margin-top: 20px; color: #005EB8; } }
 
-.eaton-header .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-footer .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-featured-topic .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-featured-topic .eaton-link-list-vertical span::after { display: none; }
+.eaton-header .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-footer .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-featured-topic .eaton-link-list-vertical .icon.icon-chevron-right, .eaton-featured-topic .eaton-link-list-vertical span::after, .eaton-grid-control .eaton-link-list-vertical span::after { display: none; }
 
 .mega-menu .eaton-link-list-vertical__list-link { padding: 0; }
 

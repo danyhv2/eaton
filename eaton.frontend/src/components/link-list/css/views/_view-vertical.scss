@@ -210,7 +210,8 @@
 .eaton-header .eaton-link-list-vertical .icon.icon-chevron-right,
 .eaton-footer .eaton-link-list-vertical .icon.icon-chevron-right,
 .eaton-featured-topic .eaton-link-list-vertical .icon.icon-chevron-right,
-.eaton-featured-topic .eaton-link-list-vertical span::after{
+.eaton-featured-topic .eaton-link-list-vertical span::after,
+.eaton-grid-control .eaton-link-list-vertical span::after{
   display: none;
 }
 
