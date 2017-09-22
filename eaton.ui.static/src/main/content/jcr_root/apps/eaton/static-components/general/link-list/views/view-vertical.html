@@ -10,20 +10,35 @@
     <ul data-sly-list="${ data.view.links }"
       class="eaton-link-list-vertical__list">
       <li class="eaton-link-list-vertical__list-item b-body-copy">
-        <a href="${item.document_download ? item.document_download : item.url}"
+        <a data-sly-test="${!item.external_link && !item.document_download}" href="${item.document_download ? item.document_download : item.url}"
           aria-label="Go to ${ item.title }"
           class="eaton-link-list-vertical__list-link"
           target="${ item.external_link ? '_blank' : '_self' }"
           data-sly-attribute.download="${ item.document_download}">
           <span class="eaton-link-list-vertical__list-text">
-            <i data-sly-test="${item.external_link}"
-              class="eaton-link-list-vertical__external-icon icon icon-link-external"
-              aria-hidden="true"></i>
+            <i class="eaton-link-list-vertical__external-icon icon"
+              aria-hidden="true"></i>${ item.title }</span></a>
+
+        <a data-sly-test="${item.external_link}" href="${item.document_download ? item.document_download : item.url}"
+          aria-label="Go to ${ item.title }"
+          class="eaton-link-list-vertical__list-link"
+          target="${ item.external_link ? '_blank' : '_self' }"
+          data-sly-attribute.download="${ item.document_download}">
+          <span class="eaton-link-list-vertical__list-text external">
+            <i class="eaton-link-list-vertical__external-icon icon icon-link-external"
+              aria-hidden="true"></i>${ item.title }</span></a>
+
+        <a data-sly-test="${item.document_download}" href="${item.document_download ? item.document_download : item.url}"
+          aria-label="Go to ${ item.title }"
+          class="eaton-link-list-vertical__list-link"
+          target="${ item.external_link ? '_blank' : '_self' }"
+          data-sly-attribute.download="${ item.document_download}">
+
+          <span data-sly-test="${item.document_download}" class="eaton-link-list-vertical__list-text download">
             <i data-sly-test="${ item.document_download }"
               class="eaton-link-list-vertical__external-icon icon icon-download"
-              aria-hidden="true"></i>
-            ${ item.title }
-          </span>
+              aria-hidden="true"></i>${ item.title }</span>
+
           <!--/* "Arrow-Right" icon should be displayed only when used over dark-themes (eg: Header & Footer) */-->
           <i data-sly-test="${ !item.document_download }"
             class="eaton-link-list-vertical__list-icon icon icon-chevron-right u-hide"
