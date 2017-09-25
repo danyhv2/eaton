@@ -23,17 +23,15 @@
                 jcr:lastModified="{Date}2017-07-28T17:26:04.597Z"
                 jcr:lastModifiedBy="etn-erick"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/icon-list"
-                view="top-list-with-icon"/>
+                sling:resourceType="eaton/static-components/content/topic-link-with-icon"/>
             <icon_list_299887013
                 jcr:created="{Date}2017-07-26T17:10:50.652Z"
                 jcr:createdBy="etn-erick"
                 jcr:lastModified="{Date}2017-07-26T17:11:01.633Z"
                 jcr:lastModifiedBy="etn-erick"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/icon-list"
-                testdata="long-list"
-                view="top-list-with-icon"/>
+                sling:resourceType="eaton/static-components/content/topic-link-with-icon"
+                testdata="long-list"/>
         </par>
     </jcr:content>
 </jcr:root>

@@ -308,10 +308,9 @@
                 jcr:lastModified="{Date}2017-08-31T15:00:32.220-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/icon-list"
+                sling:resourceType="eaton/static-components/content/proof-points"
                 testdata="primary-landing"
-                toggleInnerGrid="true"
-                view="proof-points"/>
+                toggleInnerGrid="true"/>
             <title_text_image_lin_623764064
                 jcr:created="{Date}2017-07-19T21:08:14.030Z"
                 jcr:createdBy="etn-supriya"

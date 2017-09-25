@@ -14,7 +14,7 @@
         cq:lastModifiedBy="etn-supriya"
         cq:template="/apps/eaton/static-templates/eaton-homepage-template-html"
         jcr:primaryType="cq:PageContent"
-        jcr:title="QA-templates"
+        jcr:title="QA-templates-refactor"
         sling:resourceType="eaton/static-components/structure/eaton-home-page"/>
     <test-data/>
     <styleguide/>

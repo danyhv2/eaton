@@ -316,9 +316,8 @@
                         jcr:lastModified="{Date}2017-08-21T15:20:56.971-06:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="eaton/static-components/content/icon-list"
-                        testdata="m15"
-                        view="proof-points"/>
+                        sling:resourceType="eaton/static-components/content/proof-points"
+                        testdata="m15"/>
                 </col2-par>
             </grid_2_column_contro>
         </par>
