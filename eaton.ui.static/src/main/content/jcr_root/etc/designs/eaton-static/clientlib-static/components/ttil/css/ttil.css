@@ -43,6 +43,8 @@
 
 .eaton-single-feature__item { padding: 10px 0; text-decoration: none; display: block; }
 
+.eaton-single-feature__item span::after { color: #FFF; position: relative; top: 1px; content: "\EA07"; font-family: 'eaton-glyphicon'; display: inline; font-size: 1.4rem; padding-left: 7px; text-decoration: none; }
+
 .eaton-single-feature__item i { font-size: 1.4rem; margin-left: 0.4rem; }
 
 .dark-theme .eaton-single-feature__item { color: #FFF; }

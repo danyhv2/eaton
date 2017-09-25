@@ -64,6 +64,38 @@
         text-decoration: none;
       }
     }
+
+    span.download {
+      display: table-row;
+      margin-right: 15px;
+      &::after {
+        color: $color__white;
+        position: relative;
+        top: 1px;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 1.4rem;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+    }
+
+    span.external {
+      display: table-row;
+      margin-right: 15px;
+      &::after {
+        color: $color__white;
+        position: relative;
+        top: 1px;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 1.4rem;
+        padding-left: 7px;
+        text-decoration: none;
+      }
+    }
   }
 
   &__list-icon {
@@ -73,20 +105,25 @@
   }
 
   &__external-icon {
-    padding-left: 10px;
     font-size: 2.8rem;
     margin-top: 8px;
+    display:table-cell;
+
+    &::before{
+      margin-right:15px;
+    }
 
     &.icon-link-external {
       margin-top: 0;
       top: 2px;
       position: relative;
+      display:table-cell;
     }
   }
 
   &__download-text {
     width: 100%;
-    // margin-left: 40px;
+    margin-left: 40px;
     font-size: 1.8rem;
     margin-top: -10px;
 
@@ -164,7 +201,7 @@
     }
 
     &__download-text {
-      // margin-left: 30px;
+      margin-left: 30px;
     }
 
     &__eyebrow {
@@ -184,27 +221,50 @@
 
     &__download-text {
       width: auto;
-      max-width: calc(100% - 40px);
-    }
-
-    &__list-link {
-      &.download {
-        max-width: calc(100% - 40px);
-        float: left;
-      }
-
-    }
-
-    &__external-icon {
-
-      &.icon-download {
-        float: right;
-        margin-top: 20px;
-        color: $color__primary-blue;
-      }
     }
 
   }
+}
+
+.eaton-header .eaton-link-list-vertical .icon.icon-chevron-right,
+.eaton-footer .eaton-link-list-vertical .icon.icon-chevron-right,
+.eaton-featured-topic .eaton-link-list-vertical .icon.icon-chevron-right,
+.eaton-featured-topic .eaton-link-list-vertical span::after,
+.eaton-grid-control .eaton-link-list-vertical span::after{
+  display: none;
+}
+
+.mega-menu {
+  .eaton-link-list-vertical{
+    &__list-link{
+      padding: 0;
+    }
+
+    &__list-text {
+      display: inline-block;
+      padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
 
 
+
+      span {
+
+        &::after {
+          color: $color__white;
+          position: relative;
+          top: 1px;
+          content: "\EA07";
+          font-family: 'eaton-glyphicon';
+          display: inline;
+          font-size: 1.4rem;
+          padding-left: 7px;
+          text-decoration: none;
+          font-weight: normal;
+        }
+
+        &::not(.eaton-featured-topic span.eaton-link-list-vertical__list-text::after){
+          display:none;
+        }
+      }
+    }
+  }
 }

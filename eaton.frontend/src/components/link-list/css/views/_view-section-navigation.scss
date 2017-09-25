@@ -1,17 +1,26 @@
 //-----------------------------------
 // LinkList Component: Horizontal View
 //-----------------------------------
-.eaton-link-list-section-navigation {
-  background-color: $color__primary-gray1;
+.section-navigation {
 
-  &__nav-item {
+  $color-border: $color__primary-gray2;
+  $color-bg: $color__primary-gray1;
+
+  background-color: $color-bg;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    // Empty selector for future reference
+  }
+
+  &__link-item {
     color: $color__white;
-    font-family: Arial;
+    font-family: $font-family__secondary;
     font-weight: bold;
-
-    &:last-child {
-      border-right: 0;
-    }
 
     &:hover,
     &:active,
@@ -26,13 +35,23 @@
   @include media-mobile-and-tablet {
     padding: 10px 0;
 
-    &__nav-item {
-      border-bottom: 1px solid $color__primary-gray3;
-      margin: 0 15px;
+
+    &__list-item {
+      width: 100%;
+    }
+
+    &__link-item {
+      border-bottom: 1px solid $color-border;
+      margin: 0;
       display: block;
       padding: 20px 0;
       font-size: 1.8rem;  // small link deviation
     }
+
+    &__list-item:last-child &__link-item {
+      border-bottom: 0;
+    }
+
   }
 
 
@@ -42,29 +61,35 @@
   @include media-desktop-and-up {
     .container {
       position: relative;
+    }
 
-      // hide the white line for fist line nav items
+    &__list {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
       &::after {
-        background: $color__primary-gray2;
-        bottom: 0;
-        height: 1px;
-        left: 0;
+        content: '';
+        background-color: $color-bg;
         position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
         width: 100%;
       }
     }
 
-    &__nav-item {
-      border-bottom: 1px solid $color__primary-gray2;
-      border-right: 2px solid $color__primary-gray2;
+    &__link-item {
+      // EATON-678: Added border around the entire item (left/right) as per BA Feedback
+      border-bottom: 1px solid $color-border;
+      border-left: 1px solid $color-border;
+      border-right: 1px solid $color-border;
       display: inline-block;
       float: left;
       padding: 20px $spacing__sm;
-
-      &:first-child {
-        padding-left: 15px;
-      }
     }
+
   }
 
 }

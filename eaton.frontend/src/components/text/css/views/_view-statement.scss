@@ -29,16 +29,10 @@
   @include media-desktop-and-up {
     &__content {
       font-size: 3.4rem;
-      line-height: 5rem;
+      line-height: 6rem;
 
       // EATON-566: Fix - Text - Statement and Image list too close to each other when placed in two column grid.
       max-width: 420px;
-
-      // Statement text styles when placed in two column grid
-      .eaton-grid-control & {
-        font-size: 2.3rem;
-        line-height: 3rem;
-      }
     }
   }
 

@@ -254,6 +254,17 @@ App.global.templates = (function() {
     return `
       <div class="results-list-submodule results-list-submodule--type-${ data.contentType }">
 
+        <div class="results-list-submodule__icon-wrapper">
+          <a href="${ data.contentItem.link.url }"
+            target="${ data.contentItem.link.target }"
+            class="results-list-submodule__url-link"
+            aria-label="${ i18n.download } ${ data.contentItem.documentName }"
+          >
+            <i class="icon icon-download" aria-hidden="true"></i>
+            <span class="sr-only">${ data.contentItem.link.text }</span>
+          </a>
+        </div>
+
         <div class="results-list-submodule__content-wrapper">
 
           <h4 class="results-list-submodule__name b-heading-h5">
@@ -275,16 +286,7 @@ App.global.templates = (function() {
 
         </div>
 
-        <div class="results-list-submodule__icon-wrapper">
-          <a href="${ data.contentItem.link.url }"
-            target="${ data.contentItem.link.target }"
-            class="results-list-submodule__url-link"
-            aria-label="${ i18n.download } ${ data.contentItem.documentName }"
-          >
-            <i class="icon icon-download" aria-hidden="true"></i>
-            <span class="sr-only">${ data.contentItem.link.text }</span>
-          </a>
-        </div>
+
       </div>
     `;
   };
