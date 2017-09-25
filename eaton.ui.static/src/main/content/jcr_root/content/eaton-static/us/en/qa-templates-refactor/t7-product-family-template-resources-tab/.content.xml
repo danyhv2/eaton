@@ -291,8 +291,7 @@
                 jcr:lastModified="{Date}2017-08-03T12:32:28.563-06:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="eaton/static-components/content/icon-list"
-                view="top-list-with-icon"/>
+                sling:resourceType="eaton/static-components/content/topic-link-with-icon"/>
             <resource_list
                 jcr:created="{Date}2017-08-04T21:55:27.665-06:00"
                 jcr:createdBy="admin"
